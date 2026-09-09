@@ -21,7 +21,8 @@ qa/*.js               Playwright test suites (content, chain, overhaul, voices, 
 
 ## 1. Run it locally (2 minutes)
 
-The game must be served over HTTP (not opened as a `file://`) so it can find `audio/manifest.json`.
+`index.html` is a complete standalone page. Serve it over HTTP (not as a `file://`) so it can find
+`audio/manifest.json` — opened from disk it still runs, but with device voices only.
 
 ```bash
 python3 -m http.server 8000
@@ -85,12 +86,13 @@ with < 4 source items, per-language pools missing a language, malformed dialogue
 ```bash
 npm install                                  # playwright
 npx playwright install chromium              # or set CHROMIUM_PATH to an existing binary
-python3 tools/mkqa.py                        # builds qa/hub-qa-wrapped.html
-node qa/qa_modules.js && node qa/qa_chain.js && node qa/qa_overhaul.js && node qa/qa_voice.js
-python3 -m http.server 8000 &  # qa_clips needs HTTP for the audio manifest
-CHROMIUM_PATH=/opt/pw-browsers/chromium   # only if Playwright did not download its own Chromium
-node qa/qa_clips.js
+npm run qa                                   # builds qa/hub-qa-wrapped.html and runs all six suites
 ```
+
+`npm run qa` (or `make qa`) runs qa_modules, qa_chain, qa_overhaul, qa_voice and qa_c2 from disk, then
+`qa/with_server.js` serves the repo on a free port and runs qa_clips against it (the clips suite needs HTTP
+for the audio manifest). Run one suite alone with `node qa/qa_modules.js`, or the clips suite with
+`npm run qa:clips`. Either audio build passes: external `audio/` + manifest, or embedded via `embed_audio.py`.
 
 ## Architecture notes (for the next engineer, human or otherwise)
 
