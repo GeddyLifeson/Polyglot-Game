@@ -1,0 +1,19 @@
+# Alternative to requirements.txt for tools/gen_audio.py --backend onnx: no torch, no Hugging Face.
+# Same Kokoro-82M weights exported to ONNX + the same misaki G2P. Download the two model files from
+# https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0 into models/
+# (kokoro-v1.0.onnx and voices-v1.0.bin), then: python3 tools/gen_audio.py B1 B2 C1 C2 --backend onnx
+misaki>=0.9.4
+kokoro-onnx
+onnxruntime
+espeakng-loader
+soundfile
+numpy
+jieba
+unidic-lite
+cn2an
+pypinyin
+fugashi
+jaconv
+mojimoji
+pyopenjtalk
+ordered-set

@@ -52,6 +52,14 @@ Re-running skips anything already recorded. Options: `--langs es,ja`, `--bitrate
 To also record the A1/A2 sentences and dialogue lines (only their vocabulary shipped):
 `python3 tools/gen_audio.py A1 A2` — it only records what's missing.
 
+**No torch, or no access to Hugging Face?** Use the ONNX backend: the same Kokoro-82M weights
+exported to ONNX, the same voices and the same misaki G2P, so clips come out identical to the shipped
+A1/A2 ones. Install `pip install -r requirements-onnx.txt`, download `kokoro-v1.0.onnx` and
+`voices-v1.0.bin` from https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0 into
+`models/` (git-ignored), then `python3 tools/gen_audio.py B1 B2 C1 C2 --backend onnx`. Without
+`--backend` the script picks torch when the `kokoro` package is importable and ONNX otherwise.
+The Playwright ffmpeg lacks an Opus encoder; `pip install imageio-ffmpeg` ships a static build that has one.
+
 Voices used (Kokoro-82M): es `ef_dora`, fr `ff_siwis`, it `if_sara`, pt-BR `pf_dora`,
 ja `jf_alpha`, zh `zf_xiaobei`. Swap them in the `KOKO` table in `tools/gen_audio.py`
 (e.g. `em_alex`, `im_nicola`, `pm_alex`, `jm_kumo`, `zm_yunxi` for male voices).
