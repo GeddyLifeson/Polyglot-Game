@@ -12,7 +12,7 @@ Everything the game needs at runtime is `index.html` plus (optionally) the `audi
 index.html            the built game (content already spliced in; audio NOT embedded)
 content/              the vocabulary & skill content, one Python module per batch
 build.py              validates content/ and splices it into index.html
-audio/                native-speaker recordings (Ogg Opus) + manifest.json  ← A1 + A2 included
+audio/                native-speaker recordings (Ogg Opus) + manifest.json  ← all six bands, 30,510 clips
 tools/gen_audio.py    records any band with Kokoro-82M            (→ audio/<TIER>/…)
 tools/embed_audio.py  optional: bakes audio/ into index.html for a single-file build
 tools/mkqa.py         builds qa/hub-qa-wrapped.html with a window.__QA debug hook
@@ -29,12 +29,14 @@ python3 -m http.server 8000
 # open http://localhost:8000/
 ```
 
-That's a fully working game. A1 and A2 already play the built-in recordings (7,476 clips);
-B1–C2 fall back to the best native voice installed on the device (🎙️ Voices panel in the HUD).
+That's a fully working game with a recording for every word, sentence and dialogue line in all six
+bands and six languages (30,510 clips, ~125 MB). Anything without a clip falls back to the best native
+voice installed on the device (🎙️ Voices panel in the HUD).
 
-## 2. Record the remaining bands (B1, B2, C1, C2)
+## 2. Re-record or extend the recordings
 
-This is the part that couldn't ship in the hosted version (16 MB page cap). Locally there is no cap.
+All bands ship recorded. Use this when you add content, change a translation, or want different voices
+(the hosted single-file build embeds only A1 because of its 16 MB page cap; locally there is no cap).
 
 ```bash
 # system deps: ffmpeg on PATH, Python 3.10+
@@ -67,7 +69,7 @@ ja `jf_alpha`, zh `zf_xiaobei`. Swap them in the `KOKO` table in `tools/gen_audi
 ## 3. Host it
 
 Any static host works — the whole thing is `index.html` + `audio/`. All six bands recorded
-is roughly 60–70 MB of Opus files. GitHub Pages, Netlify, Cloudflare Pages, S3, or a
+are about 125 MB of Opus files. GitHub Pages, Netlify, Cloudflare Pages, S3, or a
 `python3 -m http.server` on a LAN all work. If `audio/` lives somewhere else, set
 `window.AUDIO_BASE = 'https://cdn.example.com/voyager-audio/'` in a `<script>` before the game's.
 
