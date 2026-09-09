@@ -1,5 +1,6 @@
-# Builds hub-qa-wrapped.html: the game with a window.__QA debug hook, wrapped in the same minimal
-# skeleton the Artifact publisher adds.
+# Builds qa/hub-qa-wrapped.html: the game with a window.__QA debug hook exposing its internals.
+# index.html is already a complete document; this only injects the hook and points AUDIO_BASE
+# at ../audio/ so the page works from the qa/ folder (over HTTP, for the clips suite).
 with open('index.html', encoding='utf-8') as f:
     content = f.read()
 
@@ -24,13 +25,9 @@ hook = """
 })();
 """
 assert "\n  showHome();\n})();\n" in content
-content2 = content.replace("\n  showHome();\n})();\n", hook, 1)
-wrapped = """<!doctype html>
-<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<style>[hidden]{display:none!important}</style><script>window.AUDIO_BASE="../audio/";</script></head><body>
-""" + content2 + """
-</body></html>
-"""
+assert "<head>\n" in content
+content = content.replace("\n  showHome();\n})();\n", hook, 1)
+content = content.replace("<head>\n", '<head>\n<script>window.AUDIO_BASE="../audio/";</script>\n', 1)
 with open('qa/hub-qa-wrapped.html', 'w', encoding='utf-8') as f:
-    f.write(wrapped)
+    f.write(content)
 print('qa/hub-qa-wrapped.html rebuilt')
