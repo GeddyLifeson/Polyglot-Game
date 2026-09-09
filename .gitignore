@@ -1,0 +1,5 @@
+node_modules/
+qa/hub-qa-wrapped.html
+__pycache__/
+*.wav
+*.png

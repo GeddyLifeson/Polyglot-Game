@@ -1,0 +1,14 @@
+# Kokoro-82M neural TTS (Apache-2.0) + CPU torch; ja/zh phonemizers
+--extra-index-url https://download.pytorch.org/whl/cpu
+kokoro>=0.9
+soundfile
+numpy
+jieba
+unidic-lite
+cn2an
+pypinyin
+fugashi
+jaconv
+mojimoji
+pyopenjtalk
+ordered-set
