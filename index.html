@@ -189,6 +189,17 @@
   .storm-card .sc-meta{ font-family:var(--font-mono); font-size:11.5px; color:var(--paper-dim); }
   .asc-row{ display:flex; align-items:center; justify-content:center; gap:10px; margin-top:12px; font-family:var(--font-mono); font-size:12px; color:var(--paper-dim); }
   .asc-row b{ color:#ffd93e; }
+  .asc-row{ flex-direction:column; gap:8px; }
+  .noise-head{ display:flex; flex-wrap:wrap; gap:6px 14px; justify-content:center; align-items:center; }
+  .noise-pay{ color:var(--paper-faint); }
+  .noise-grid{ display:flex; flex-wrap:wrap; gap:6px; justify-content:center; }
+  .noise-chip{ display:inline-flex; align-items:center; gap:6px; background:var(--surface); border:1px solid var(--line); color:var(--paper-dim); border-radius:999px; padding:5px 10px; font:inherit; cursor:pointer; }
+  .noise-chip.on{ border-color:#ffd93e; color:var(--paper); background:color-mix(in srgb, #ffd93e 14%, var(--surface)); }
+  .noise-chip .nc-w{ font-size:10px; color:var(--paper-faint); }
+  .noise-chip.on .nc-w{ color:#ffd93e; }
+  .noise-desc{ max-width:640px; text-align:center; color:var(--paper-faint); font-size:11px; line-height:1.5; }
+  .shop-item.refit{ border-color:color-mix(in srgb, #b48cff 45%, var(--line)); }
+  .shop-item.refit .sh-name .rf-lvl{ font-family:var(--font-mono); font-size:10px; color:#b48cff; margin-left:6px; }
   .event-card{ text-align:center; }
   .event-card .ev-icon{ font-size:44px; }
   .event-card h2{ font-size:22px; margin-top:6px; }
@@ -6065,6 +6076,11 @@
     {id:'storm1', icon:'🌩️', name:'Storm Rider', desc:'Complete a daily Signal Storm.', reward:120, check:function(){ return save.stats.stormsCleared>=1; }},
     {id:'storm10', icon:'⚡', name:'Storm Chaser', desc:'Complete 10 daily Signal Storms.', reward:400, check:function(){ return save.stats.stormsCleared>=10; }},
     {id:'endless50', icon:'♾️', name:'Open Channel', desc:'Decode 50 transmissions in one Open Channel run.', reward:150, check:function(){ return save.stats.bestEndless>=50; }},
+    {id:'noise5', icon:'📡', name:'Noise Maker', desc:'Clear a relay at Noise Level 5 or higher.', reward:200, check:function(){ return (save.stats.bestNoiseClear||0)>=5; }},
+    {id:'noise10', icon:'📡', name:'Deafening', desc:'Clear a relay at Noise Level 10 or higher.', reward:600, check:function(){ return (save.stats.bestNoiseClear||0)>=10; }},
+    {id:'dark50', icon:'🌌', name:'Dark Harvest', desc:'Collect 50 Dark Matter in total.', reward:300, check:function(){ return (save.stats.darkEarned||0)>=50; }},
+    {id:'floor5', icon:'🌌', name:'Deep Space', desc:'Reach floor 5 of a Deep Space Run.', reward:400, check:function(){ return (save.stats.bestFloor||0)>=5; }},
+    {id:'refit3', icon:'⚛️', name:'Refitted', desc:'Fit three Resonance modules.', reward:250, check:function(){ return (save.refitOwned||[]).length>=3; }},
     {id:'shop10', icon:'🛠️', name:'Refit', desc:'Own 10 Engineering Bay upgrades.', reward:100, check:function(){ return save.shopOwned.length>=10; }},
     {id:'shop30', icon:'🏗️', name:'Full Refit', desc:'Own 30 Engineering Bay upgrades.', reward:400, check:function(){ return save.shopOwned.length>=30; }},
     {id:'captain', icon:'🎗️', name:'Captain’s Bars', desc:'Reach the rank of Captain.', reward:300, check:function(){ return rankIndex()>=7; }},
@@ -6132,6 +6148,67 @@
     {id:'shop_chainpay', cat:'economy', icon:'🔗', name:'Chain Dividend', desc:'+3% credits per link in your Signal Chain (max +60%).', cost:520}
   ];
 
+  /* ============================= INTERFERENCE / NOISE LEVEL =============================
+     Self-imposed interference on the signal. Each source has a weight; the total is the Noise Level.
+     Every point of noise pays +12% credits and +8% XP; Noise 3+ starts producing Dark Matter. */
+  var INTERFERENCE = [
+    {id:'compress',  w:1, icon:'⏱️', name:'Time Compression', desc:'−10% decode time on every transmission.'},
+    {id:'static',    w:1, icon:'📉', name:'Static',           desc:'Sync multiplier caps 5 steps lower.'},
+    {id:'flare',     w:1, icon:'☀️', name:'Solar Flare',      desc:'The decode timer shrinks 2% with every correct decode (down to half).'},
+    {id:'cold',      w:1, icon:'🧊', name:'Cold Start',       desc:'No loadout draft — you fly with what is welded on.'},
+    {id:'blackout',  w:2, icon:'🌑', name:'Blackout',         desc:'Vocabulary transmissions are spoken only: no text until you answer.'},
+    {id:'breach',    w:2, icon:'💥', name:'Hull Breach',      desc:'An unshielded wrong decode costs two power cells.'},
+    {id:'cipher',    w:2, icon:'🔐', name:'Cipher Lock',      desc:'Every transmission is encrypted: −20% time, six options.'},
+    {id:'crosstalk', w:2, icon:'🌀', name:'Crosstalk',        desc:'Prompts arrive in English; you pick the answer in the target language.'},
+    {id:'single',    w:3, icon:'🔋', name:'Single Cell',      desc:'One power cell. No backups, no chain cells.'}
+  ];
+  var DEEP_SPACE_ORDER = ['compress','static','flare','cipher','crosstalk','blackout'];   /* one more per Deep Space floor */
+  function interferenceById(id){ return INTERFERENCE.filter(function(i){ return i.id===id; })[0]; }
+  function interferenceOn(id){ return (save.interference||[]).indexOf(id)!==-1; }
+  function noiseLevel(list){ return (list||save.interference||[]).reduce(function(s,id){ var i = interferenceById(id); return s + (i ? i.w : 0); }, 0); }
+  function noiseChipHtml(noise, list){
+    var srcs = (list||save.interference||[]).map(function(id){ var i = interferenceById(id); return i ? i.icon : ''; }).join('');
+    return '<span class="perk-chip chain" title="Noise Level '+noise+' · +'+(12*noise)+'% credits · +'+(8*noise)+'% XP" style="color:#ffd93e;border-color:#ffd93e;"><span class="pc-icon">📡</span>Noise '+noise+' '+srcs+'</span>';
+  }
+
+  /* ============================= DEEP SPACE REFIT (Dark Matter) =============================
+     Opens with Lieutenant clearance. Reactor Tuning tracks never end; Resonance modules need a deed. */
+  var REFIT_TUNING = [
+    {id:'tune_data',    icon:'📡', name:'Reactor Tuning: Data Output', desc:'+2% data on every decode per level.', base:3},
+    {id:'tune_time',    icon:'⏱️', name:'Reactor Tuning: Chronometer', desc:'+1.5% decode time per level.', base:4},
+    {id:'tune_salvage', icon:'💠', name:'Reactor Tuning: Salvage Yield', desc:'+3% credits from every relay per level.', base:3}
+  ];
+  var REFIT_MODULES = [
+    {id:'rf_echo',     icon:'🔮', name:'Echo Resonance',  cost:12, desc:'Finish a relay with a shield still up and it pays +25% credits.',
+      clearance:'Clear a relay at Noise 3 or higher.', met:function(){ return (save.stats.bestNoiseClear||0)>=3; }},
+    {id:'rf_anchor',   icon:'🧲', name:'Gravity Anchor',  cost:10, desc:'Single Cell and Hull Breach relays start with a shield already up.',
+      clearance:'Clear a relay with Single Cell on.', met:function(){ return !!save.stats.singleCellClear; }},
+    {id:'rf_overflow', icon:'🌊', name:'Overflow Coupler', cost:15, desc:'Sync past the cap spills into time: +0.15 s decode time per step over.',
+      clearance:'Reach a 20-streak in one relay.', met:function(){ return (save.stats.bestCombo||0)>=20; }},
+    {id:'rf_harmonic', icon:'⚛️', name:'Harmonic Weld',   cost:20, desc:'The newest welded module on your chain applies twice.',
+      clearance:'Hold a Signal Chain of 15.', met:function(){ return (save.chain.best||0)>=15; }},
+    {id:'rf_uplink',   icon:'🛰️', name:'Dark Uplink',     cost:18, desc:'Every Dark Matter payout is +1.',
+      clearance:'Clear a C1 or C2 relay at Noise 5 or higher.', met:function(){ return (save.stats.bestNoiseClearHigh||0)>=5; }}
+  ];
+  function refitOwned(id){ return (save.refitOwned||[]).indexOf(id)!==-1; }
+  function tuningLevel(id){ return (save.tuning||{})[id]||0; }
+  function tuningCost(t){ return Math.round(t.base * Math.pow(1.25, tuningLevel(t.id))); }
+  function refitUnlocked(){ return rankIndex()>=4 || (save.stats.bestNoiseClearHigh||0)>0; }
+  /* Engineering Bay prices climb 6% with every upgrade already fitted */
+  function shopPrice(u){ var n = save.shopOwned.filter(function(id){ var x = SHOP_UPGRADES.filter(function(s){ return s.id===id; })[0]; return x && !x.consumable; }).length; return Math.round(u.cost * Math.pow(1.06, n)); }
+  /* Dark Matter for a cleared run: C1/C2 relays always produce it, any relay at Noise 3+ does too */
+  function darkMatterFor(tierCode, noise, firstClear, perfect){
+    var base = tierCode==='C1' ? 2 : tierCode==='C2' ? 3 : 0;
+    var fromNoise = noise>=3 ? Math.floor(noise/2) : 0;
+    var dm = base + fromNoise;
+    if(dm<=0) return 0;
+    if(firstClear) dm *= 2;
+    if(perfect) dm += 1;
+    if(refitOwned('rf_uplink')) dm += 1;
+    return dm;
+  }
+  function awardDark(dm){ if(dm>0){ save.dark = (save.dark||0) + dm; bumpStat('darkEarned', dm); } return dm; }
+
   /* Signal Chain: progressive abilities that come online as your chain of first-clear relays grows */
   var CHAIN_MILESTONES = [
     {at:2,  icon:'📶', name:'Warm Signal',   desc:'+10% decode time',            apply:function(f){ f.timeMult *= 1.1; }},
@@ -6151,9 +6228,11 @@
     var d = loadSave.defaults = { stars:[0,0,0,0,0,0], bestFusion:0, learned:[], facts:[], muted:false,
       tips:0, shopOwned:[], bestFloorIdx:-1, bestScore:0, clearedDungeons:{},
       chain:{len:0, best:0, carried:[]}, xp:0, ascension:0, missed:{}, commendations:[], voices:{}, speechRate:0, useClips:true,
+      interference:[], dark:0, refitOwned:[], tuning:{},
       storm:{date:'', best:0, runs:0, cleared:false},
       stats:{decodes:0, correct:0, relaysCleared:0, relaysFailed:0, perfectRelays:0, encryptedCracked:0, events:0,
-        recoveryCleared:0, stormsCleared:0, bestEndless:0, bestAscension:0, riskClears:0, byLang:{}, byType:{}, playMs:0} };
+        recoveryCleared:0, stormsCleared:0, bestEndless:0, bestAscension:0, riskClears:0, byLang:{}, byType:{}, playMs:0,
+        bestNoiseClear:0, bestNoiseClearHigh:0, bestCombo:0, bestFloor:0, darkEarned:0, singleCellClear:false} };
     try{
       var raw = localStorage.getItem(KEY);
       if(raw){ var p = JSON.parse(raw); for(var k in d){ if(p[k]!==undefined) d[k]=p[k]; } }
@@ -6165,7 +6244,11 @@
   if(!Array.isArray(save.chain.carried)) save.chain.carried = [];
   (function(){ var d = loadSave.defaults; ['stats','storm','missed'].forEach(function(k){ if(!save[k] || typeof save[k]!=='object') save[k] = JSON.parse(JSON.stringify(d[k])); });
     for(var k in d.stats){ if(save.stats[k]===undefined) save.stats[k] = JSON.parse(JSON.stringify(d.stats[k])); }
-    if(!Array.isArray(save.commendations)) save.commendations = []; if(typeof save.xp!=='number') save.xp = 0; if(typeof save.ascension!=='number') save.ascension = 0; })();
+    if(!Array.isArray(save.commendations)) save.commendations = []; if(typeof save.xp!=='number') save.xp = 0; if(typeof save.ascension!=='number') save.ascension = 0;
+    if(!Array.isArray(save.interference)) save.interference = []; if(typeof save.dark!=='number') save.dark = 0; if(!Array.isArray(save.refitOwned)) save.refitOwned = []; if(!save.tuning || typeof save.tuning!=='object') save.tuning = {};
+    ['bestNoiseClear','bestNoiseClearHigh','bestCombo','bestFloor','darkEarned'].forEach(function(k){ if(typeof save.stats[k]!=='number') save.stats[k] = 0; });
+    /* Ascension became Interference: an old Ascension level carries over as Time Compression */
+    if(save.ascension>0 && !save.interference.length){ save.interference = ['compress']; } save.ascension = 0; })();
   var learnedSet = new Set(save.learned);
   var factsShown = new Set(save.facts);
   function persist(){
@@ -6456,7 +6539,7 @@
 
   function refreshHud(){
     el.hudLevel.textContent = bestFloorLabel();
-    el.hudStars.textContent = save.tips;
+    el.hudStars.textContent = save.tips + ((save.dark||0) ? ' · 🌌 '+save.dark : '');
     el.hudWords.textContent = wordsLearned();
     el.hudWordsMax.textContent = wordsMax();
     el.hudBest.textContent = save.bestScore;
@@ -6470,7 +6553,7 @@
   function rankInfo(){ var i = rankIndex(); return {idx:i, rank:RANKS[i], next:RANKS[i+1]||null}; }
   function addXp(n){
     var before = rankIndex();
-    save.xp += Math.round(n * (st.perkFlags && st.perkFlags.xpMult || 1) * (1 + 0.1*save.ascension));
+    save.xp += Math.round(n * (st.perkFlags && st.perkFlags.xpMult || 1) * (1 + 0.08*(st.runActive && st.topic!=='__recovery' ? (st.noise||0) : 0)));
     var after = rankIndex();
     if(after > before){
       var r = RANKS[after]; var bonus = after*40;
@@ -6553,6 +6636,7 @@
                                                 : {key:o.id, emoji:o.emoji||null, main:itemMeaning(o), sub:null, correct:false});
       });
       round.options = shuffle(round.options);
+      if(round.crosstalk){ crosstalkSwap(round); }
     }
   }
 
@@ -6624,6 +6708,10 @@
     if(type){ var T = save.stats.byType[type] = save.stats.byType[type] || {c:0,t:0}; T.t++; if(correct) T.c++; }
   }
   function shopTipMult(){
+    var tuned = 1 + 0.03*tuningLevel('tune_salvage');
+    return shopTipMultBase() * tuned;
+  }
+  function shopTipMultBase(){
     var m = 1;
     if(owned('shop_tips1')) m += 0.1;
     if(owned('shop_tips2')) m += 0.1;
@@ -6721,27 +6809,42 @@
     el.homeProfile.innerHTML =
       '<div class="pf-badge">'+ri.rank.icon+'</div><div class="pf-body">'+
       '<div class="pf-rank">'+ri.rank.title+' <span style="color:var(--paper-faint);font-weight:400;font-size:12px;">· rank '+(ri.idx+1)+'/'+RANKS.length+'</span></div>'+
-      '<div class="pf-sub">'+save.xp.toLocaleString()+' XP'+(ri.next ? ' · '+(ri.next.xp-save.xp).toLocaleString()+' to '+ri.next.title : ' · max rank')+' · 🎖️ '+save.commendations.length+'/'+COMMENDATIONS.length+' commendations'+(save.ascension?' · ☄️ Ascension '+save.ascension:'')+'</div>'+
+      '<div class="pf-sub">'+save.xp.toLocaleString()+' XP'+(ri.next ? ' · '+(ri.next.xp-save.xp).toLocaleString()+' to '+ri.next.title : ' · max rank')+' · 🎖️ '+save.commendations.length+'/'+COMMENDATIONS.length+' commendations'+(noiseLevel()?' · 📡 Noise '+noiseLevel():'')+'</div>'+
       '<div class="xp-track"><div class="xp-fill" style="width:'+pct+'%"></div></div>'+
       (ri.next && ri.next.unlock ? '<div class="pf-sub" style="margin-top:6px;">Next: '+ri.next.unlock+'</div>' : '')+
       '</div>';
     el.stormCard.innerHTML = stormCardHtml();
     var stormBtn = document.getElementById('btn-storm'); if(stormBtn) stormBtn.addEventListener('click', startStorm);
-    var ascOk = rankIndex()>=2 || save.ascension>0;
+    var ascOk = rankIndex()>=2 || save.interference.length>0;
     el.ascRow.hidden = !ascOk;
-    if(ascOk){
-      el.ascRow.innerHTML = '☄️ Ascension <b>'+save.ascension+'</b>/5 <button class="btn btn-sm btn-ghost" id="asc-minus" '+(save.ascension<=0?'disabled':'')+'>−</button><button class="btn btn-sm btn-ghost" id="asc-plus" '+(save.ascension>=5?'disabled':'')+'>+</button> <span style="color:var(--paper-faint);">each level: −8% time · +15% credits · +10% XP</span>';
-      document.getElementById('asc-minus').addEventListener('click', function(){ save.ascension = Math.max(0, save.ascension-1); persist(); showHome(); });
-      document.getElementById('asc-plus').addEventListener('click', function(){ save.ascension = Math.min(5, save.ascension+1); persist(); showHome(); });
-    }
+    if(ascOk){ renderInterferencePanel(); }
     checkCommendations();
     el.homeStats.innerHTML =
       statBox(save.tips+' 💠','Credits banked') +
       statBox(clearedCount+'/'+totalDungeons,'Relays decoded') +
-      statBox(save.bestScore,'Best relay score') +
-      statBox('🔗 '+save.chain.len,'Signal chain'+(save.chain.best>save.chain.len?' · best '+save.chain.best:''));
+      statBox('🔗 '+save.chain.len,'Signal chain'+(save.chain.best>save.chain.len?' · best '+save.chain.best:'')) +
+      statBox('🌌 '+(save.dark||0),'Dark matter');
     renderHubMap();
     refreshHud();
+  }
+
+  function renderInterferencePanel(){
+    var noise = noiseLevel();
+    var html = '<div class="noise-head">📡 Interference · Noise Level <b>'+noise+'</b>'+
+      '<span class="noise-pay">+'+(12*noise)+'% credits · +'+(8*noise)+'% XP'+(noise>=3?' · 🌌 Dark Matter':' · Dark Matter from Noise 3')+'</span></div><div class="noise-grid">';
+    INTERFERENCE.forEach(function(i){
+      var on = interferenceOn(i.id);
+      html += '<button type="button" class="noise-chip'+(on?' on':'')+'" data-id="'+i.id+'" title="'+i.desc+'"><span class="nc-icon">'+i.icon+'</span><span class="nc-name">'+i.name+'</span><span class="nc-w">+'+i.w+'</span></button>';
+    });
+    html += '</div><div class="noise-desc" id="noise-desc">'+(noise ? save.interference.map(function(id){ var i = interferenceById(id); return i ? i.icon+' '+i.desc : ''; }).join(' ') : 'Add interference to the signal for better pay. Everything here applies to relays, storms and Open Channel runs; never to recovery drills.')+'</div>';
+    el.ascRow.innerHTML = html;
+    Array.prototype.forEach.call(el.ascRow.querySelectorAll('.noise-chip'), function(b){
+      b.addEventListener('click', function(){
+        var id = b.getAttribute('data-id'); var i = save.interference.indexOf(id);
+        if(i===-1) save.interference.push(id); else save.interference.splice(i,1);
+        persist(); showHome();
+      });
+    });
   }
 
   function renderHubMap(){
@@ -6870,7 +6973,7 @@
   }
 
   function renderShop(){
-    el.shopBalance.innerHTML = '💠 <b style="color:var(--brass);">'+save.tips+'</b> credits banked · 🔗 chain '+save.chain.len+' · carrying '+save.chain.carried.length+'/'+carryCap()+' modules';
+    el.shopBalance.innerHTML = '💠 <b style="color:var(--brass);">'+save.tips+'</b> credits · 🌌 <b style="color:#b48cff;">'+(save.dark||0)+'</b> dark matter · 🔗 chain '+save.chain.len+' · carrying '+save.chain.carried.length+'/'+carryCap()+' modules · prices +6% per upgrade fitted';
     el.shopGrid.innerHTML = '';
     SHOP_CATS.forEach(function(cat){
       var head = document.createElement('div'); head.className = 'shop-cat'; head.textContent = cat.label;
@@ -6882,20 +6985,63 @@
         row.className = 'shop-item' + (isOwned ? (u.consumable?' armed':' owned') : '') + (locked && !isOwned?' locked':'');
         var btnHtml;
         if(isOwned){ btnHtml = '<span class="sh-buy">'+(u.consumable?'🧿 Armed':'✓ Owned')+'</span>'; }
-        else if(locked){ btnHtml = '<span class="sh-buy" title="Requires '+(SHOP_UPGRADES.filter(function(x){ return x.id===u.requires; })[0]||{}).name+'">🔒 '+u.cost+'</span>'; }
-        else { btnHtml = '<button class="btn btn-sm '+(save.tips>=u.cost?'btn-primary':'btn-ghost')+' sh-buy" '+(save.tips<u.cost?'disabled':'')+'>'+u.cost+' 💠</button>'; }
+        var price = shopPrice(u);
+        if(!isOwned && locked){ btnHtml = '<span class="sh-buy" title="Requires '+(SHOP_UPGRADES.filter(function(x){ return x.id===u.requires; })[0]||{}).name+'">🔒 '+price+'</span>'; }
+        else if(!isOwned){ btnHtml = '<button class="btn btn-sm '+(save.tips>=price?'btn-primary':'btn-ghost')+' sh-buy" '+(save.tips<price?'disabled':'')+'>'+price+' 💠</button>'; }
         var reqName = locked ? (SHOP_UPGRADES.filter(function(x){ return x.id===u.requires; })[0]||{}).name : null;
         row.innerHTML = '<span class="sh-icon">'+u.icon+'</span><div class="sh-body"><div class="sh-name">'+u.name+'</div><div class="sh-desc">'+u.desc+(reqName?' <em>Needs '+reqName+'.</em>':'')+'</div></div>'+btnHtml;
         if(!isOwned && !locked){
           row.querySelector('.sh-buy').addEventListener('click', function(){
-            if(save.tips < u.cost) return;
-            save.tips -= u.cost;
+            var priceNow = shopPrice(u);
+            if(save.tips < priceNow) return;
+            save.tips -= priceNow;
             save.shopOwned.push(u.id);
-            persist(); refreshHud(); renderShop();
+            checkCommendations(); persist(); refreshHud(); renderShop();
           });
         }
         el.shopGrid.appendChild(row);
       });
+    });
+    renderRefit();
+  }
+
+  /* Deep Space Refit: the Dark Matter wing of the bay */
+  function renderRefit(){
+    var head = document.createElement('div'); head.className = 'shop-cat'; head.textContent = '🌌 Deep Space Refit — Dark Matter';
+    el.shopGrid.appendChild(head);
+    if(!refitUnlocked()){
+      var lockRow = document.createElement('div'); lockRow.className = 'shop-item locked';
+      lockRow.innerHTML = '<span class="sh-icon">🔒</span><div class="sh-body"><div class="sh-name">Clearance required</div><div class="sh-desc">The Refit opens at <b>Lieutenant</b> rank, or the first time you clear a C1/C2 relay with any Interference on. Dark Matter comes from C1/C2 relays, from any relay at Noise 3+, from first storm clears and from Deep Space floors.</div></div>';
+      el.shopGrid.appendChild(lockRow);
+      return;
+    }
+    REFIT_TUNING.forEach(function(t){
+      var lvl = tuningLevel(t.id), cost = tuningCost(t);
+      var row = document.createElement('div'); row.className = 'shop-item refit';
+      row.innerHTML = '<span class="sh-icon">'+t.icon+'</span><div class="sh-body"><div class="sh-name">'+t.name+' <span class="rf-lvl">Lv '+lvl+'</span></div><div class="sh-desc">'+t.desc+' No cap: each level costs 25% more.</div></div>'+
+        '<button class="btn btn-sm '+((save.dark||0)>=cost?'btn-primary':'btn-ghost')+' sh-buy" '+((save.dark||0)<cost?'disabled':'')+'>'+cost+' 🌌</button>';
+      row.querySelector('.sh-buy').addEventListener('click', function(){
+        var c = tuningCost(t); if((save.dark||0) < c) return;
+        save.dark -= c; save.tuning[t.id] = tuningLevel(t.id)+1;
+        checkCommendations(); persist(); refreshHud(); renderShop();
+      });
+      el.shopGrid.appendChild(row);
+    });
+    REFIT_MODULES.forEach(function(m){
+      var isOwned = refitOwned(m.id), cleared = false; try{ cleared = !!m.met(); }catch(e){}
+      var row = document.createElement('div'); row.className = 'shop-item refit'+(isOwned?' owned':'')+(!isOwned && !cleared?' locked':'');
+      var btnHtml = isOwned ? '<span class="sh-buy">✓ Fitted</span>'
+        : !cleared ? '<span class="sh-buy" title="'+m.clearance+'">🔒 '+m.cost+'</span>'
+        : '<button class="btn btn-sm '+((save.dark||0)>=m.cost?'btn-primary':'btn-ghost')+' sh-buy" '+((save.dark||0)<m.cost?'disabled':'')+'>'+m.cost+' 🌌</button>';
+      row.innerHTML = '<span class="sh-icon">'+m.icon+'</span><div class="sh-body"><div class="sh-name">'+m.name+'</div><div class="sh-desc">'+m.desc+' <em>Clearance: '+m.clearance+(cleared||isOwned?' ✓':'')+'</em></div></div>'+btnHtml;
+      if(!isOwned && cleared){
+        row.querySelector('.sh-buy').addEventListener('click', function(){
+          if((save.dark||0) < m.cost) return;
+          save.dark -= m.cost; save.refitOwned.push(m.id);
+          checkCommendations(); persist(); refreshHud(); renderShop();
+        });
+      }
+      el.shopGrid.appendChild(row);
     });
   }
 
@@ -6959,7 +7105,7 @@
     Object.keys(carriedCounts).forEach(function(id){ var p = perkById(id); if(p) chips.push(perkChipHtml(p,'carried',carriedCounts[id]>1?' ×'+carriedCounts[id]:'')); });
     Object.keys(ownCounts).forEach(function(id){ var p = perkById(id); if(p) chips.push(perkChipHtml(p,'',ownCounts[id]>1?' ×'+ownCounts[id]:'')); });
     (st.chainMilestoneNames||[]).forEach(function(m){ chips.push('<span class="perk-chip chain" title="'+m.desc+'"><span class="pc-icon">'+m.icon+'</span>'+m.name+'</span>'); });
-    if(save.ascension && st.runActive && st.topic!=='__recovery'){ chips.push('<span class="perk-chip chain" title="−'+(8*save.ascension)+'% time · +'+(15*save.ascension)+'% credits · +'+(10*save.ascension)+'% XP" style="color:#ffd93e;border-color:#ffd93e;"><span class="pc-icon">☄️</span>Ascension '+save.ascension+'</span>'); }
+    if(st.noise && st.runActive && st.topic!=='__recovery'){ chips.push(noiseChipHtml(st.noise, st.noiseList)); }
     if(st.storm){ st.storm.mods.forEach(function(m){ chips.push('<span class="perk-chip chain" title="'+m.desc+'" style="color:#ffd93e;border-color:#ffd93e;"><span class="pc-icon">'+m.icon+'</span>'+m.name+'</span>'); }); }
     if(!chips.length){ el.runPerks.hidden = true; el.runPerks.innerHTML=''; return; }
     el.runPerks.hidden = false;
@@ -7070,7 +7216,7 @@
         return '<span class="lang-tag"><span class="lang-dot" style="background:'+LANGS[l].color+'"></span>'+LANGS[l].name+'</span>';
       }).join('');
       el.pvConcepts.hidden = true; el.pvConcepts.innerHTML='';
-      el.pvCount.textContent = 'Open Channel — every relay you’ve cracked, every language, until the power runs out';
+      el.pvCount.textContent = 'Deep Space Run — every relay you’ve cracked, every language, until the power runs out. Every 10 decodes is a floor, and every floor adds interference. Floors past the first pay 🌌 Dark Matter.'+(noiseLevel()?' · 📡 Noise '+noiseLevel():'');
       el.pvChain.hidden = false; el.pvChain.innerHTML = chainBoxHtml(false, true);
       el.btnStart.textContent = '▶ Open the Channel';
       el.btnPreviewBack.textContent = '← Star Chart';
@@ -7113,7 +7259,7 @@
       el.pvChain.hidden = false; el.pvChain.innerHTML = topic==='__recovery' ? chainBoxHtml(false, true).replace('Open Channel runs never extend or break the chain','Recovery drills never extend or break the chain') : chainBoxHtml(!cleared, false);
       if(topic==='__recovery'){ el.pvSub.textContent = 'The '+LANGS[lang].name+' words in this sector you keep getting wrong, drilled until they stick. Every miss adds a strike, every correct decode clears one — a word with no strikes left leaves the list.'; }
       el.btnStart.textContent = topic==='__recovery' ? '🩺 Start Recovery' : cleared ? '↺ Re-run Relay' : '▶ Engage Relay';
-      if(save.ascension && topic!=='__recovery'){ el.pvCount.textContent += ' · ☄️ Ascension '+save.ascension; }
+      if(noiseLevel() && topic!=='__recovery'){ el.pvCount.textContent += ' · 📡 Noise '+noiseLevel(); }
       el.btnPreviewBack.textContent = '← Back to Topics';
       el.btnPreviewBack.onclick = function(){ showTopics(idx, lang); };
     }
@@ -7131,6 +7277,7 @@
   /* Loadout draft — one perk pick before a dungeon attempt begins. Resets every attempt. */
   function showLoadoutDraft(idx, lang, topic){
     hideToast();
+    if(interferenceOn('cold') && topic!=='__recovery'){ startDungeonAttempt(idx, lang, topic, null); return; }
     el.screenHome.hidden = true; el.screenHub.hidden = true; el.screenTopics.hidden = true; el.screenPreview.hidden = true;
     el.screenPlaying.hidden = true; el.screenComplete.hidden = true; el.screenShop.hidden = true;
     el.screenPerks.hidden = false;
@@ -7174,6 +7321,7 @@
     st.firstAttempt = !tier.endless && !!lang && !!topic && topic!=='__recovery' && topic!=='__storm' && !isDungeonCleared(idx, lang, topic);
     if(topic!=='__storm') st.storm = null;
     st.temp = null; st.encryptedExtra = 0; st.encryptAll = false; st.blackout = false; st.phoenixUsed = false; st.echoUsed = false;
+    st.flare = false; st.flareSteps = 0; st.breach = false; st.crosstalk = false; st.floor = 0; st.noise = 0; st.noiseList = []; st.darkEarned = 0; st.bestComboRun = 0;
     st.encryptedThisRun = 0; st.eventsThisRun = 0; st.runStart = Date.now();
     st.draftedPerkId = perk ? perk.id : null;
     st.maxLives = 3 + (owned('shop_life1')?1:0) + (owned('shop_life2')?1:0) + (owned('shop_life3')?1:0);
@@ -7207,10 +7355,18 @@
     if(owned('shop_speed')) f.speedMult = 1.5;
     if(tier.endless && owned('shop_endless1')){ st.maxLives += 2; st.lives = st.maxLives; }
     if(tier.endless && owned('shop_endless2')){ f.scoreMult *= 1.25; }
-    /* Ascension — self-imposed pressure for better pay */
-    if(save.ascension && topic!=='__recovery'){ f.timeMult *= (1 - 0.08*save.ascension); f.tipMult += 0.15*save.ascension; }
+    /* Reactor Tuning (Deep Space Refit) */
+    f.scoreMult *= 1 + 0.02*tuningLevel('tune_data');
+    f.timeMult *= 1 + 0.015*tuningLevel('tune_time');
+    /* Interference — self-imposed noise on the signal for better pay */
+    if(topic!=='__recovery'){
+      st.noiseList = save.interference.slice();
+      st.noiseList.forEach(function(id){ applyInterference(id, f); });
+      st.noise = noiseLevel(st.noiseList);
+      f.tipMult += 0.12*st.noise;
+    }
     /* Signal Chain — welded modules + milestones */
-    save.chain.carried.forEach(function(id){ var p = perkById(id); if(p){ st.carriedPerkIds.push(id); applyPerk(p); } });
+    save.chain.carried.forEach(function(id, ci){ var p = perkById(id); if(p){ st.carriedPerkIds.push(id); applyPerk(p); if(refitOwned('rf_harmonic') && ci===save.chain.carried.length-1){ applyPerk(p); } } });
     activeMilestones(save.chain.len).forEach(function(m){ m.apply(f, st); st.chainMilestoneNames.push(m); });
     if(owned('shop_startperk')){
       var starter = pick(PERKS.filter(function(p){ return p.id!=='deep_pockets'; }));
@@ -7220,7 +7376,38 @@
     st.riskActive = st.activePerkIds.some(function(id){ var p = perkById(id); return p && p.risk; });
     /* Signal Storm modifiers apply last and override */
     if(st.storm){ st.storm.mods.forEach(function(m){ m.apply(f, st); }); }
+    /* Single Cell wins over every cell bonus; Gravity Anchor gives the hard modes a shield */
+    if(interferenceOn('single') && topic!=='__recovery'){ st.maxLives = 1; st.lives = 1; }
+    if(refitOwned('rf_anchor') && (interferenceOn('single') || interferenceOn('breach')) && topic!=='__recovery'){ f.shieldCharges = (f.shieldCharges||0) + 1; }
     beginDungeonPlay();
+  }
+
+  /* one interference source, applied at relay start or when a Deep Space floor adds it mid-run */
+  function applyInterference(id, f){
+    if(id==='compress'){ f.timeMult *= 0.9; }
+    else if(id==='static'){ f.comboCapBonus -= 5; }
+    else if(id==='flare'){ st.flare = true; }
+    else if(id==='blackout'){ st.blackout = true; }
+    else if(id==='breach'){ st.breach = true; }
+    else if(id==='cipher'){ st.encryptAll = true; }
+    else if(id==='crosstalk'){ st.crosstalk = true; }
+    /* 'cold' is handled in showLoadoutDraft, 'single' at the end of startDungeonAttempt */
+  }
+  /* Deep Space Run: a new floor every 10 decodes, each adding one interference source */
+  function deepSpaceFloorCheck(){
+    var floor = Math.floor(st.total/10);
+    if(floor <= st.floor) return;
+    st.floor = floor;
+    if(floor > (save.stats.bestFloor||0)) save.stats.bestFloor = floor;
+    var id = DEEP_SPACE_ORDER[floor-1];
+    if(id && st.noiseList.indexOf(id)===-1){
+      st.noiseList.push(id); applyInterference(id, st.perkFlags);
+      var i = interferenceById(id); st.noise = noiseLevel(st.noiseList); st.perkFlags.tipMult += 0.12*i.w;
+      renderPerkStrip();
+      toast('🌌 <b>Floor '+floor+'</b> — '+i.icon+' '+i.name+' cuts in. '+i.desc);
+    } else {
+      toast('🌌 <b>Floor '+floor+'</b> — deeper still.');
+    }
   }
 
   function beginDungeonPlay(){
@@ -7343,8 +7530,10 @@
     if(mod.type==='match'){
       var mlang = (entry && entry.lang) || st.lang;
       var mpool = st.storm ? st.storm.pool : relayPool(vocabForTier(tier));
-      if(st.storm && st.blackout && !save.muted && speechReady){ return listenRound(item, mlang, mpool, tier); }
-      return matchRound(item, mlang, tier.bias, mpool, tier);
+      if(st.blackout && !save.muted && (speechReady || hasClip(item.id+':'+mlang))){ return listenRound(item, mlang, mpool, tier); }
+      var mr = matchRound(item, mlang, tier.bias, mpool, tier);
+      if(st.crosstalk){ crosstalkSwap(mr); }
+      return mr;
     }
     if(mod.type==='dialogue'){ return dialogueRound(item, st.lang, tier); }
     if(mod.type==='build'){ return buildRound(item, tier); }
@@ -7408,6 +7597,13 @@
     };
   }
 
+  /* Crosstalk: the English meaning is the prompt and the options are the target-language words */
+  function crosstalkSwap(r){
+    r.crosstalk = true;
+    var target = ITEM[r.conceptId];
+    r.main = (target.emoji ? target.emoji+' ' : '')+target.en; r.mainClass = 'is-sentence'; r.sub = 'Pick the '+LANGS[r.lang].name;
+    r.options.forEach(function(o){ var it = ITEM[o.key]; if(it && it[r.lang]){ o.main = it[r.lang].t; o.sub = (r.lang==='zh' && it[r.lang].r) ? it[r.lang].r : null; o.emoji = null; } });
+  }
   function matchRound(concept, lang, bias, pool, tier){
     var distractors = pickDistractors(concept, bias, pool);
     var opts = shuffle([concept].concat(distractors)).map(function(o){
@@ -7512,6 +7708,8 @@
 
     st.roundStart = performance.now();
     var seconds = round.time * st.perkFlags.timeMult * tempTime() * ((st.perkFlags.momentum && st.combo>=5) ? 1.2 : 1);
+    if(st.flare){ seconds *= Math.max(0.5, 1 - 0.02*st.flareSteps); }
+    if(refitOwned('rf_overflow')){ var capNow = 10 + (st.perkFlags.comboCapBonus||0); if(st.combo > capNow) seconds += 0.15*(st.combo-capNow); }
     round.seconds = seconds;
     el.plTimerbar.style.transition = 'none';
     el.plTimerbar.style.width = '100%';
@@ -7608,6 +7806,7 @@
     if(!correct && opts.timeout && st.holdCharges>0){ held = true; st.holdCharges--; }
     else if(!correct && st.perkFlags.echo && !st.echoUsed && missKey && save.missed[missKey]){ echoed = true; st.echoUsed = true; }
     else if(!correct && st.shieldAvailable){ shielded = true; st.shieldCharges--; st.shieldAvailable = st.shieldCharges > 0; }
+    var breachHit = !correct && st.breach && !shielded && !held && !echoed;
     bumpStat('decodes'); if(correct) bumpStat('correct');
     bumpLangType(round.lang, round.kind, correct);
     if(missKey){ if(correct) noteHit(round.conceptId, round.lang); else noteMiss(round.conceptId, round.lang); }
@@ -7619,6 +7818,9 @@
 
     if(correct){
       st.combo++;
+      if(st.flare) st.flareSteps++;
+      if(st.combo > st.bestComboRun) st.bestComboRun = st.combo;
+      if(st.combo > (save.stats.bestCombo||0)) save.stats.bestCombo = st.combo;
       var mult = comboMultiplier();
       var speedBonus = Math.round(remainFrac*60*(st.perkFlags.speedMult||1));
       if(round.kind==='match' && ROMANCE.indexOf(round.lang)!==-1){
@@ -7666,6 +7868,7 @@
     } else {
       if(st.perkFlags.softCombo){ st.combo = Math.floor(st.combo/2); } else { st.combo = 0; }
       st.lives--;
+      if(breachHit && st.lives>0){ st.lives--; toast('💥 <b>Hull Breach</b> — a second cell vents.'); }
       if(st.lives<=0 && st.perkFlags.phoenix && !st.phoenixUsed){ st.lives = 1; st.phoenixUsed = true; toast('🔥 <b>Phoenix Cell</b> — one cell rekindled.'); }
       var msg = opts.timeout ? 'Signal lost!' : 'Off frequency.';
       var extra = round.note ? ' '+round.note : (opts.reveal ? ' '+opts.reveal : '');
@@ -7686,7 +7889,7 @@
   function advanceRound(){
     var tier = TIERS[st.tierIdx];
     if(st.lives<=0){ tier.endless ? endEndless() : onDungeonFailed(); return; }
-    if(tier.endless){ nextRound(); return; }
+    if(tier.endless){ deepSpaceFloorCheck(); if(st.lives<=0){ endEndless(); return; } nextRound(); return; }
     st.pos++;
     if(st.pos >= st.queue.length){ onDungeonCleared(); return; }
     if(st.eventsAt.indexOf(st.pos)!==-1){ st.eventsAt = st.eventsAt.filter(function(p){ return p!==st.pos; }); showEvent(); return; }
@@ -7747,7 +7950,7 @@
     var acc = S.decodes ? Math.round(100*S.correct/S.decodes) : 0;
     var h = '';
     h += '<div class="log-section">Officer</div>';
-    h += '<div class="stat-grid">'+statBox(ri.rank.icon+' '+ri.rank.title,'Rank')+statBox(save.xp.toLocaleString(),'XP')+statBox('🔗 '+save.chain.len+' / '+save.chain.best,'Chain · best')+statBox('☄️ '+save.ascension,'Ascension')+'</div>';
+    h += '<div class="stat-grid">'+statBox(ri.rank.icon+' '+ri.rank.title,'Rank')+statBox(save.xp.toLocaleString(),'XP')+statBox('🔗 '+save.chain.len+' / '+save.chain.best,'Chain · best')+statBox('🌌 '+(save.dark||0)+' / '+(save.stats.darkEarned||0),'Dark matter · total')+'</div>';
     h += '<div class="log-section">Transmissions</div>';
     h += '<div class="stat-grid">'+statBox(S.decodes.toLocaleString(),'Decodes')+statBox(acc+'%','Accuracy')+statBox(S.relaysCleared,'Relays cleared')+statBox(S.relaysFailed,'Relays failed')+statBox(S.perfectRelays,'Perfect relays')+statBox(S.encryptedCracked,'Encrypted cracked')+statBox(S.events,'Anomalies resolved')+statBox(S.stormsCleared,'Storms cleared')+statBox(Math.round(S.playMs/60000)+' min','Time on channel')+statBox(Object.keys(save.missed).length,'Weak words')+'</div>';
     h += '<div class="log-section">Words learned by language</div>';
@@ -7822,9 +8025,13 @@
     var perfect = st.total>0 && st.correct===st.total;
     if(perfect) bumpStat('perfectRelays');
     if(st.riskActive) bumpStat('riskClears');
-    if(save.ascension > (save.stats.bestAscension||0)) save.stats.bestAscension = save.ascension;
+    var noise = isRecovery ? 0 : (st.noise||0);
+    if(noise > (save.stats.bestNoiseClear||0)) save.stats.bestNoiseClear = noise;
+    if((tier.code==='C1' || tier.code==='C2') && noise > (save.stats.bestNoiseClearHigh||0)) save.stats.bestNoiseClearHigh = noise;
+    if(!isRecovery && interferenceOn('single')) save.stats.singleCellClear = true;
+    var dmEarned = isRecovery ? 0 : awardDark(darkMatterFor(tier.code, noise, firstClear, perfect));
     var dungeonTips = 20 + Math.round(st.floorCorrect*3) + (firstClear ? 30 : 0) + (firstClear && owned('shop_discovery') ? 40 : 0);
-    var mult = st.perkFlags.tipMult * shopTipMult();
+    var mult = st.perkFlags.tipMult * shopTipMult() * (refitOwned('rf_echo') && st.shieldCharges>0 ? 1.25 : 1);
     var tipsEarned = st.perkFlags.noCredits ? 0 : Math.round(dungeonTips * mult) + st.tipsThisRun;
     save.tips += tipsEarned;
     save.bestScore = Math.max(save.bestScore, st.score);
@@ -7854,8 +8061,9 @@
       statBox(Math.round(accuracy*100)+'%','Accuracy') +
       statBox(st.score,'Relay score') +
       statBox(tipsEarned+' 💠','Credits earned') +
-      statBox('+'+Math.round(xpGain*(1+0.1*save.ascension))+' XP', rankInfo().rank.title) +
-      statBox('🔗 '+save.chain.len,'Signal chain');
+      statBox('+'+Math.round(xpGain*(1+0.08*noise))+' XP', rankInfo().rank.title) +
+      statBox('🔗 '+save.chain.len,'Signal chain') +
+      (dmEarned ? statBox('+'+dmEarned+' 🌌','Dark matter'+(noise?' · Noise '+noise:'')) : '');
     el.cpStats.innerHTML += '<div class="chain-box" style="grid-column:1 / -1;">'+chainResult.text+(isRecovery?' 🩺 '+Object.keys(save.missed).filter(function(k){ return k.slice(-3)===':'+st.lang; }).length+' weak '+LANGS[st.lang].name+' words remain.':'')+'</div>';
     if(chainResult.milestones && chainResult.milestones.length){ toast('🎉 Chain milestone: '+chainResult.milestones[0].icon+' <b>'+chainResult.milestones[0].name+'</b> is now online.'); }
     el.btnRetry.textContent = isRecovery ? '🩺 Drill Again' : '↺ Re-run Relay';
@@ -7917,6 +8125,7 @@
     save.bestScore = Math.max(save.bestScore, st.score);
     bumpStat('playMs', Date.now()-st.runStart);
     if(st.correct > (save.stats.bestEndless||0)) save.stats.bestEndless = st.correct;
+    var dmEarned = awardDark(Math.max(0, (st.floor||0)-1) + (st.floor>1 && refitOwned('rf_uplink') ? 1 : 0));
     addXp(st.correct*2);
     checkCommendations();
     persist(); refreshHud();
@@ -7928,13 +8137,15 @@
 
     var accuracy = st.total>0 ? st.correct/st.total : 0;
     el.cpTitle.textContent = 'Channel closed — signal lost';
-    el.cpStars.innerHTML = '🏅 Open Channel — final score '+st.score;
+    el.cpStars.innerHTML = '🏅 Deep Space Run — floor '+(st.floor||0)+' — final score '+st.score;
     el.cpSub.textContent = 'You held the channel open as long as you could. Every power cell has a limit.';
     el.cpStats.innerHTML =
       statBox(st.correct+'/'+st.total,'Decoded correctly') +
       statBox(Math.round(accuracy*100)+'%','Accuracy') +
       statBox(st.score,'Session score') +
-      statBox(tipsEarned+' 💠','Credits earned');
+      statBox(tipsEarned+' 💠','Credits earned') +
+      statBox('🌌 '+(st.floor||0),'Floor reached') +
+      (dmEarned ? statBox('+'+dmEarned+' 🌌','Dark matter') : '');
     el.btnRetry.textContent = '↺ Reopen Channel';
     el.btnRetry.onclick = function(){ enterDungeon(TIERS.length-1, null); };
     el.btnBackHub.textContent = '🗺️ Star Chart';
@@ -7950,6 +8161,7 @@
     var mult = st.perkFlags.tipMult * shopTipMult();
     var tipsEarned = Math.round((st.score/10) * mult) + (firstToday ? 120 : 0) + st.tipsThisRun;
     save.tips += tipsEarned; save.bestScore = Math.max(save.bestScore, st.score);
+    var dmEarned = awardDark(firstToday ? 2 + Math.floor((st.noise||0)/2) + (refitOwned('rf_uplink')?1:0) : 0);
     var xpGain = st.correct*3 + 30; addXp(xpGain);
     checkCommendations(); persist(); refreshHud();
     hideAllScreens(); el.screenComplete.hidden = false; el.btnPhrasebook.disabled = false; el.shiftRibbon.hidden = true; el.runPerks.hidden = true;
@@ -7957,7 +8169,7 @@
     el.cpTitle.textContent = '🌩️ Storm weathered!';
     el.cpStars.innerHTML = 'Signal Storm — '+save.storm.date+' — '+st.storm.mods.map(function(m){ return m.icon+' '+m.name; }).join(' · ');
     el.cpSub.textContent = firstToday ? 'First clear of today’s storm. Come back tomorrow for a new one — or run it again for a better score.' : 'Storm cleared again. Best today: '+save.storm.best+'.';
-    el.cpStats.innerHTML = statBox(st.correct+'/'+st.total,'Decoded correctly') + statBox(Math.round(accuracy*100)+'%','Accuracy') + statBox(st.score,'Storm score') + statBox(tipsEarned+' 💠','Credits earned') + statBox('+'+xpGain+' XP', rankInfo().rank.title) + statBox('🔗 '+save.chain.len,'Chain (unchanged)');
+    el.cpStats.innerHTML = statBox(st.correct+'/'+st.total,'Decoded correctly') + statBox(Math.round(accuracy*100)+'%','Accuracy') + statBox(st.score,'Storm score') + statBox(tipsEarned+' 💠','Credits earned') + statBox('+'+xpGain+' XP', rankInfo().rank.title) + statBox('🔗 '+save.chain.len,'Chain (unchanged)') + (dmEarned ? statBox('+'+dmEarned+' 🌌','Dark matter') : '');
     el.btnRetry.textContent = '⚡ Run it again'; el.btnRetry.onclick = startStorm;
     el.btnBackHub.textContent = '🗺️ Star Chart'; el.btnBackHub.onclick = showHome;
   }

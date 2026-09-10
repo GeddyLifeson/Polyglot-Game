@@ -13,7 +13,7 @@ function log(label, ok, extra) {
 
   // 1. home: profile card, storm card, log button
   const home = await page.evaluate(() => ({ profile: document.getElementById('home-profile').textContent, storm: document.getElementById('storm-card').textContent, asc: document.getElementById('asc-row').hidden }));
-  log('home: profile shows Cadet + XP, storm card with 2 modifiers, ascension hidden at rank 0', /Comms Cadet/.test(home.profile) && /0 XP/.test(home.profile) && /Signal Storm/.test(home.storm) && home.asc === true, { p: home.profile.slice(0, 80), s: home.storm.slice(0, 60) });
+  log('home: profile shows Cadet + XP, storm card with 2 modifiers, interference panel hidden at rank 0', /Comms Cadet/.test(home.profile) && /0 XP/.test(home.profile) && /Signal Storm/.test(home.storm) && home.asc === true, { p: home.profile.slice(0, 80), s: home.storm.slice(0, 60) });
   await page.screenshot({ path: 'ov_home.png', fullPage: true });
 
   // 2. rank-gated draft: rank 0 → commons only; xp 300 → rare allowed; 2400 → legendary
@@ -130,15 +130,15 @@ function log(label, ok, extra) {
   function window_total(c) { return c.total; }
   await page.screenshot({ path: 'ov_log.png', fullPage: true });
 
-  // 10. ascension: −8% time, +15% credits per level; perk strip chip
+  // 10. interference: Time Compression + Static + Solar Flare = Noise 3 -> 0.9x time, +36% credits, chip, Dark Matter from noise
   const asc = await page.evaluate(() => {
-    const Q = window.__QA; Q.save.ascension = 3; Q.save.chain.len = 0; Q.save.chain.carried = [];
+    const Q = window.__QA; Q.save.interference = ['compress','static','flare']; Q.save.chain.len = 0; Q.save.chain.carried = []; Q.save.dark = 0;
     Q.startDungeonAttempt(0, 'pt', 'people', null);
-    const out = { time: Q.st.perkFlags.timeMult, tip: Q.st.perkFlags.tipMult, chip: Array.from(document.querySelectorAll('#run-perks .perk-chip')).map(c => c.textContent).join('|') };
-    Q.st.correct = 10; Q.st.total = 10; Q.onDungeonCleared(); out.bestAsc = Q.save.stats.bestAscension;
-    Q.save.ascension = 0; return out;
+    const out = { time: Q.st.perkFlags.timeMult, tip: Q.st.perkFlags.tipMult, cap: Q.st.perkFlags.comboCapBonus, noise: Q.st.noise, chip: Array.from(document.querySelectorAll('#run-perks .perk-chip')).map(c => c.textContent).join('|') };
+    Q.st.correct = 10; Q.st.total = 10; Q.onDungeonCleared(); out.bestNoise = Q.save.stats.bestNoiseClear; out.dark = Q.save.dark;
+    Q.save.interference = []; return out;
   });
-  log('Ascension 3: 0.76× time, +45% credits, chip shown, bestAscension recorded', Math.abs(asc.time - 0.76) < 1e-9 && Math.abs(asc.tip - 1.45) < 1e-9 && /Ascension 3/.test(asc.chip) && asc.bestAsc === 3, asc);
+  log('Interference: Noise 3 -> 0.9x time, +36% credits, cap -5, chip shown, bestNoiseClear + Dark Matter recorded', Math.abs(asc.time - 0.9) < 1e-9 && Math.abs(asc.tip - 1.36) < 1e-9 && asc.cap === -5 && asc.noise === 3 && /Noise 3/.test(asc.chip) && asc.bestNoise === 3 && asc.dark >= 1, asc);
 
   // 11. legendary perks: glass cannon −1 cell & 1.6× score; iron link protects chain on first-attempt fail; phoenix
   const leg = await page.evaluate(() => {
