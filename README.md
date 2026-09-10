@@ -89,6 +89,25 @@ are about 125 MB of Opus files. GitHub Pages, Netlify, Cloudflare Pages, S3, or 
 Single-file build (no `audio/` folder) — only sensible for one or two bands because of size:
 `CLIPDIR=audio python3 tools/embed_audio.py A1 A2`.
 
+## 3b. Progression systems (for tuning)
+
+All numbers live near the top of the script in `index.html`, next to `SHOP_UPGRADES`.
+
+- **Interference / Noise Level** (`INTERFERENCE`): nine self-imposed handicaps the player toggles on the
+  home screen, each with a weight; the total is the Noise Level. Every point pays +12% credits and +8% XP.
+  Applies to relays, storms and Open Channel, never to recovery drills. Replaces the old Ascension dial
+  (an old Ascension save carries over as Time Compression).
+- **Dark Matter** (`darkMatterFor`): the late currency. C1 relays pay 2, C2 pay 3, any relay at Noise 3+ pays
+  floor(noise/2); first clears double it, a perfect run adds 1. First storm clear of the day pays 2 + noise/2.
+  Deep Space floors past the first pay 1 each.
+- **Engineering Bay prices** (`shopPrice`): +6% per upgrade already fitted, so the full bay costs about
+  67k credits instead of 15k and the last items land around C1.
+- **Deep Space Refit** (`REFIT_TUNING`, `REFIT_MODULES`): the Dark Matter wing of the bay. Opens at Lieutenant
+  or on the first C1/C2 clear with any interference on. Reactor Tuning tracks have no cap and cost 25% more
+  per level; Resonance modules each need a Clearance (a deed: a 20-streak, a chain of 15, a Single Cell clear…).
+- **Deep Space Run**: Open Channel gains a floor every 10 decodes; each floor adds one interference source
+  from `DEEP_SPACE_ORDER`.
+
 ## 4. Edit content
 
 Content lives in `content/*.py`. Each module exports `TIER`, `TOPICS` (key → label) and
