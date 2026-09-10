@@ -4,7 +4,7 @@ build:
 serve:
 	python3 -m http.server 8000
 qa:
-	python3 tools/mkqa.py && node qa/qa_modules.js && node qa/qa_chain.js && node qa/qa_overhaul.js && node qa/qa_voice.js && node qa/qa_c2.js
+	python3 tools/mkqa.py && node qa/qa_modules.js && node qa/qa_chain.js && node qa/qa_overhaul.js && node qa/qa_voice.js && node qa/qa_c2.js && node qa/with_server.js qa/qa_clips.js
 audio:
 	python3 tools/gen_audio.py B1 B2 C1 C2
 audio-all:

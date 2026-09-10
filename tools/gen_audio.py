@@ -15,6 +15,14 @@ Keys are `<id>:<lang>`; the game plays a clip whenever a key exists in audio/man
 
 Requires: index.html already built (python3 build.py), ffmpeg on PATH, and
   pip install kokoro soundfile jieba unidic-lite cn2an pypinyin fugashi jaconv mojimoji pyopenjtalk
+
+Backends (--backend auto|torch|onnx, default auto = torch if `kokoro` is importable, else onnx):
+  torch  the reference pipeline (kokoro + torch); weights come from huggingface.co/hexgrad/Kokoro-82M
+  onnx   the same Kokoro-82M weights exported to ONNX, same voices, same misaki G2P — for machines
+         without torch or without access to Hugging Face. Needs `pip install misaki[ja,zh] kokoro-onnx`
+         plus the two files from github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0
+         (kokoro-v1.0.onnx, voices-v1.0.bin) — pass them with --onnx-model/--onnx-voices or put
+         them in models/.
 """
 import sys, os, re, json, subprocess, time, warnings, argparse
 warnings.filterwarnings('ignore')
@@ -26,10 +34,26 @@ ap.add_argument('--bitrate', default='16k')
 ap.add_argument('--out', default='audio')
 ap.add_argument('--html', default='index.html')
 ap.add_argument('--speed', type=float, default=0.95)
+ap.add_argument('--backend', choices=['auto', 'torch', 'onnx'], default='auto')
+ap.add_argument('--onnx-model', default=os.environ.get('KOKORO_ONNX_MODEL', 'models/kokoro-v1.0.onnx'))
+ap.add_argument('--onnx-voices', default=os.environ.get('KOKORO_ONNX_VOICES', 'models/voices-v1.0.bin'))
 args = ap.parse_args()
 
 import numpy as np, soundfile as sf
-from kokoro import KPipeline
+
+backend = args.backend
+if backend == 'auto':
+    try:
+        import kokoro  # noqa: F401
+        backend = 'torch'
+    except ImportError:
+        backend = 'onnx'
+if backend == 'torch':
+    from kokoro import KPipeline
+else:
+    from kokoro_onnx import Kokoro
+    from misaki import espeak
+print('backend:', backend, flush=True)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 html = open(os.path.join(ROOT, args.html), encoding='utf-8').read()
@@ -41,6 +65,33 @@ sentences = block('BUILD_SENTENCES')
 dialogues = block('DIALOGUES')
 COL = {'es':5,'fr':6,'it':7,'pt':8,'ja':9,'zh':10}
 KOKO = {'es':('e','ef_dora'), 'fr':('f','ff_siwis'), 'it':('i','if_sara'), 'pt':('p','pf_dora'), 'ja':('j','jf_alpha'), 'zh':('z','zf_xiaobei')}
+ESPEAK_LANG = {'e':'es', 'f':'fr-fr', 'i':'it', 'p':'pt-br'}   # what kokoro.KPipeline uses per lang_code
+
+
+class OnnxPipeline:
+    """Drop-in for kokoro.KPipeline: identical misaki G2P per language, Kokoro-82M via onnxruntime."""
+    _model = None
+
+    def __init__(self, lang_code):
+        if OnnxPipeline._model is None:
+            for f in (args.onnx_model, args.onnx_voices):
+                if not os.path.exists(f):
+                    sys.exit('onnx backend: missing %s (see the docstring for where to download it)' % f)
+            OnnxPipeline._model = Kokoro(args.onnx_model, args.onnx_voices)
+        if lang_code == 'j':
+            from misaki import ja
+            self.g2p = ja.JAG2P()
+        elif lang_code == 'z':
+            from misaki import zh
+            self.g2p = zh.ZHG2P(version=None)
+        else:
+            self.g2p = espeak.EspeakG2P(language=ESPEAK_LANG[lang_code])
+
+    def __call__(self, text, voice, speed=1.0):
+        ps, _ = self.g2p(text)
+        ps = ps[:510]
+        samples, _sr = OnnxPipeline._model.create(ps, voice=voice, speed=speed, is_phonemes=True)
+        yield text, ps, np.asarray(samples, dtype=np.float32)
 
 def clean(text):
     t = re.sub(r'\{([^|{}]+)\|[^}]+\}', r'\1', text)            # {漢字|かな} -> 漢字
@@ -71,7 +122,7 @@ for tier in args.tiers:
     tdir = os.path.join(out_root, tier); os.makedirs(tdir, exist_ok=True)
     for lang in args.langs.split(','):
         code, voice = KOKO[lang]
-        pipe = KPipeline(lang_code=code, repo_id='hexgrad/Kokoro-82M')
+        pipe = KPipeline(lang_code=code, repo_id='hexgrad/Kokoro-82M') if backend == 'torch' else OnnxPipeline(code)
         todo = [(i, t) for i, t in items_for(tier, lang) if (i+':'+lang) not in keys]
         print(f'{tier} {lang}: {len(todo)} clips to record', flush=True)
         t0 = time.time()

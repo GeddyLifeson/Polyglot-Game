@@ -21,7 +21,8 @@ function log(l, ok, x){ console.log((ok?'PASS':'FAIL')+' — '+l+(x!==undefined?
   });
   console.log('audio mode: ' + info.mode + ' ' + JSON.stringify(info.info));
   const allCovered = info.info.tiers.length > 0 && info.info.tiers.every(t => info.cov[t].covered === info.cov[t].words);
-  log('recordings found for A1 + A2 — every word in all six languages; page loads', info.info.count === 7476 && /^A1,A2$/.test(info.info.tiers.join(',')) && allCovered && load < 60000, { ...info, loadMs: load });
+  const expected = info.mode === 'external' ? require(path.resolve(__dirname, '..', 'audio', 'manifest.json')).keys.length : info.info.count;
+  log('recordings found for every listed band — every word in all six languages; page loads', info.info.count === expected && info.info.count > 0 && allCovered && load < 60000, { ...info, expected, loadMs: load });
   // speakText takes the recording branch when a clip exists
   const play = await page.evaluate(async () => {
     const Q = window.__QA; Q.save.muted = false;
@@ -35,13 +36,13 @@ function log(l, ok, x){ console.log((ok?'PASS':'FAIL')+' — '+l+(x!==undefined?
   const ended = await page.evaluate(async () => { const Q = window.__QA; const a = new Audio(Q.clipSrc('a1-hello:es')); const p = new Promise(r => { a.addEventListener('ended', () => r('ended')); a.addEventListener('error', () => r('error')); setTimeout(() => r('timeout'), 8000); }); try { await a.play(); } catch (e) { return 'play-rejected:' + e.message; } return { r: await p, dur: a.duration, src: a.currentSrc.slice(0, 80) }; });
   log('an Opus clip decodes and plays to the end in Chromium', ended.r === 'ended' && ended.dur > 0.3, ended);
   // a match round in A1 gets a clipKey; a tier without recordings (B1) falls back to the TTS path
-  const rt = await page.evaluate(() => { const Q = window.__QA; Q.startDungeonAttempt(0, 'es', 'greetings', null); Q.nextRound(); const r = Q.st.round; const b1 = Q.CONCEPTS.find(c => c.tier === 'B1'); return { kind: r.kind, key: r.conceptId + ':' + r.lang, has: Q.hasClip(r.conceptId + ':' + r.lang), b1: Q.hasClip(b1.id + ':es'), missing: Q.hasClip('a2-no-such-word:es') }; });
-  log('A1 rounds have recordings; unrecorded bands fall back to device voice', rt.has === true && rt.b1 === false && rt.missing === false, rt);
+  const rt = await page.evaluate(() => { const Q = window.__QA; Q.startDungeonAttempt(0, 'es', 'greetings', null); Q.nextRound(); const r = Q.st.round; const tiers = Q.clipsInfo().tiers; const un = Q.CONCEPTS.find(c => tiers.indexOf(c.tier) === -1); return { kind: r.kind, key: r.conceptId + ':' + r.lang, has: Q.hasClip(r.conceptId + ':' + r.lang), unrecordedTier: un ? un.tier : null, unrecorded: un ? Q.hasClip(un.id + ':es') : false, missing: Q.hasClip('a2-no-such-word:es') }; });
+  log('A1 rounds have recordings; unrecorded bands and unknown keys fall back to device voice', rt.has === true && rt.unrecorded === false && rt.missing === false, rt);
   const toggle = await page.evaluate(() => { const Q = window.__QA; Q.save.useClips = false; const off = Q.hasClip('a1-hello:es'); Q.save.useClips = true; return off; });
   log('"Use built-in recordings" toggle disables clips', toggle === false);
   await page.click('#btn-voices'); await page.waitForTimeout(150);
   const panel = await page.evaluate(() => document.getElementById('voices-body').textContent.slice(0, 160));
-  log('Voices panel explains the studio recordings', /7,476 native-speaker recordings/.test(panel), panel);
+  log('Voices panel explains the studio recordings', new RegExp(expected.toLocaleString('en-US') + ' native-speaker recordings').test(panel), panel);
   await page.screenshot({ path: 'clips_panel.png' });
   await browser.close(); console.log('DONE');
 })();
