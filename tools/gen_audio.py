@@ -51,6 +51,16 @@ if backend == 'auto':
 if backend == 'torch':
     from kokoro import KPipeline
 else:
+    import onnxruntime as ort
+    # GPU by default: onnxruntime-gpu needs its CUDA/cuDNN DLLs loaded first (pip's nvidia-* wheels),
+    # and kokoro-onnx would otherwise try TensorRT first and fall back to the CPU when it is missing.
+    if hasattr(ort, 'preload_dlls'):
+        try: ort.preload_dlls()
+        except Exception: pass
+    if not os.environ.get('ONNX_PROVIDER'):
+        _avail = ort.get_available_providers()
+        for _p in ('CUDAExecutionProvider', 'DmlExecutionProvider', 'CPUExecutionProvider'):
+            if _p in _avail: os.environ['ONNX_PROVIDER'] = _p; break
     from kokoro_onnx import Kokoro
     from misaki import espeak
 print('backend:', backend, flush=True)
@@ -63,6 +73,7 @@ def block(name):
 rows = block('VOCAB_RAW')
 sentences = block('BUILD_SENTENCES')
 dialogues = block('DIALOGUES')
+nuance = block('NUANCE')
 COL = {'es':5,'fr':6,'it':7,'pt':8,'ja':9,'zh':10}
 KOKO = {'es':('e','ef_dora'), 'fr':('f','ff_siwis'), 'it':('i','if_sara'), 'pt':('p','pf_dora'), 'ja':('j','jf_alpha'), 'zh':('z','zf_xiaobei')}
 ESPEAK_LANG = {'e':'es', 'f':'fr-fr', 'i':'it', 'p':'pt-br'}   # what kokoro.KPipeline uses per lang_code
@@ -73,11 +84,13 @@ class OnnxPipeline:
     _model = None
 
     def __init__(self, lang_code):
+        self.lang_code = lang_code
         if OnnxPipeline._model is None:
             for f in (args.onnx_model, args.onnx_voices):
                 if not os.path.exists(f):
                     sys.exit('onnx backend: missing %s (see the docstring for where to download it)' % f)
             OnnxPipeline._model = Kokoro(args.onnx_model, args.onnx_voices)
+            print('onnx provider:', OnnxPipeline._model.sess.get_providers()[0], flush=True)
         if lang_code == 'j':
             from misaki import ja
             self.g2p = ja.JAG2P()
@@ -88,29 +101,83 @@ class OnnxPipeline:
             self.g2p = espeak.EspeakG2P(language=ESPEAK_LANG[lang_code])
 
     def __call__(self, text, voice, speed=1.0):
-        ps, _ = self.g2p(text)
+        ps = self.phonemes(text)
+        if len(ps) > 510:
+            print('WARN phonemes truncated', len(ps), text[:40], flush=True)
         ps = ps[:510]
         samples, _sr = OnnxPipeline._model.create(ps, voice=voice, speed=speed, is_phonemes=True)
         yield text, ps, np.asarray(samples, dtype=np.float32)
 
-def clean(text):
-    t = re.sub(r'\{([^|{}]+)\|[^}]+\}', r'\1', text)            # {漢字|かな} -> 漢字
+    def phonemes(self, text):
+        """Japanese honours the furigana the content authors wrote. The kanji form gives the G2P the
+        best segmentation and long vowels, but it guesses readings (明日 -> asu, 辛い -> tsurai). When
+        the kana form disagrees on the sounds, the kana phonemes win and the kanji form's word breaks
+        are projected onto them, because kana-only input splits words in odd places."""
+        if self.lang_code != 'j' or '{' not in text:
+            return self.g2p(clean(text))[0]
+        pk, _ = self.g2p(clean(text))
+        ph, _ = self.g2p(clean(text, reading=True))
+        k = pk.replace(' ', ''); h = ph.replace(' ', '')
+        if k == h:
+            return pk
+        import difflib
+        breaks = set(); pos = 0
+        for c in pk:
+            if c == ' ': breaks.add(pos)
+            else: pos += 1
+        kept = set()
+        for a, b, n in difflib.SequenceMatcher(None, k, h, autojunk=False).get_matching_blocks():
+            for j in range(n):
+                if (a + j) in breaks: kept.add(b + j)
+        out = []
+        for i, c in enumerate(h):
+            if i in kept and i: out.append(' ')
+            out.append(c)
+        return ''.join(out)
+
+def clean(text, reading=False):
+    if reading: t = re.sub(r'\{[^|{}]+\|([^}]+)\}', r'\1', text)   # {漢字|かな} -> かな
+    else:       t = re.sub(r'\{([^|{}]+)\|[^}]+\}', r'\1', text)   # {漢字|かな} -> 漢字
     t = re.sub(r'\s*[（(][^)）]*[)）]\s*', ' ', t)                 # drop (glosses)
     t = t.replace('〜', '').replace('~', '').replace('_', '').strip()
     return re.sub(r'\s+', ' ', t)
 
+def fnv1a(text):
+    """Stable id for a spoken string; index.html computes the same hash (tileClipKey) over code points."""
+    h = 0x811c9dc5
+    for ch in text:
+        h = ((h ^ ord(ch)) * 0x01000193) & 0xffffffff
+    return format(h, '08x')
+
+def tile_items(lang):
+    """The TILES band: every sentence-building tile and every nuance option, so nothing the game speaks
+    falls back to the device's own voice. Keys are x-<hash>:<lang>; the game derives the same hash."""
+    seen = {}
+    for s in sentences:
+        if isinstance(s.get(lang), list):
+            for t in s[lang]:
+                seen.setdefault('x-' + fnv1a(t), t)
+    for n in nuance:
+        if n.get('lang') == lang:
+            for o in n.get('options', []):
+                seen.setdefault('x-' + fnv1a(o), o)
+    return sorted(seen.items())
+
 def items_for(tier, lang):
+    if tier == 'TILES':
+        # a tile that is only a parenthetical gloss, e.g. "(officieux)", is still spoken when tapped
+        return [(i, t if clean(t) else t.strip('()（） ')) for i, t in tile_items(lang) if clean(t) or t.strip('()（） ')]
     out = []
     for r in rows:
-        if r[4] == tier: out.append((r[0], clean(r[COL[lang]])))
+        if r[4] == tier: out.append((r[0], r[COL[lang]]))
     for s in sentences:
         if s.get('tier') == tier and isinstance(s.get(lang), list):
             joiner = '' if lang in ('ja','zh') else ' '
-            out.append((s['id'], clean(joiner.join(s[lang]))))
+            out.append((s['id'], joiner.join(s[lang])))
     for d in dialogues:
         if d.get('tier') == tier and isinstance(d.get(lang), list) and d[lang]:
-            out.append((d['id'], clean(d[lang][0])))
-    return [(i, t) for i, t in out if t]
+            out.append((d['id'], d[lang][0]))
+    return [(i, t) for i, t in out if clean(t)]
 
 out_root = os.path.join(ROOT, args.out)
 os.makedirs(out_root, exist_ok=True)
@@ -130,7 +197,8 @@ for tier in args.tiers:
             key = iid+':'+lang
             wav = os.path.join(tdir, f'{iid}_{lang}.wav'); ogg = wav[:-4]+'.ogg'
             try:
-                audio = np.concatenate([a for _, _, a in pipe(text, voice=voice, speed=args.speed)])
+                spoken = text if backend == 'onnx' else clean(text)
+                audio = np.concatenate([a for _, _, a in pipe(spoken, voice=voice, speed=args.speed)])
                 idx = np.where(np.abs(audio) > 0.01)[0]
                 if len(idx): audio = audio[max(0, idx[0]-1200): min(len(audio), idx[-1]+2400)]
                 sf.write(wav, audio, 24000)
@@ -138,7 +206,7 @@ for tier in args.tiers:
                 os.remove(wav)
                 keys.add(key); manifest['dir'][key] = tier
             except Exception as e:
-                print('FAIL', key, text[:40], repr(e)[:100], flush=True)
+                print('FAIL', key, clean(text)[:40], repr(e)[:100], flush=True)
             if n % 50 == 49:
                 manifest['keys'] = sorted(keys); json.dump(manifest, open(man_path, 'w'))
                 print(f'  {tier} {lang} {n+1}/{len(todo)} · {round(time.time()-t0)}s', flush=True)

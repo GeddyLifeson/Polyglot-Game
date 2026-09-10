@@ -1,0 +1,14 @@
+# GPU variant of requirements-onnx.txt for tools/gen_audio.py --backend onnx (NVIDIA, CUDA 13).
+# Install this INSTEAD of requirements-onnx.txt (the plain `onnxruntime` package must not be present,
+# it shadows onnxruntime-gpu). The nvidia-* wheels ship the CUDA/cuDNN DLLs; gen_audio.py preloads them.
+#   pip install -r requirements-onnx-gpu.txt
+#   pip uninstall -y onnxruntime      # if a CPU build was pulled in as a dependency
+-r requirements-onnx.txt
+onnxruntime-gpu
+nvidia-cuda-runtime
+nvidia-cudnn-cu13
+nvidia-cublas
+nvidia-cufft
+nvidia-curand
+nvidia-cuda-nvrtc
+nvidia-nvjitlink
