@@ -637,7 +637,7 @@ WORDS = {
     'a2-beach': ('Παραλία', 'paralia'),
     'a2-museum': ('Μουσείο', 'musio'),
     'a2-to-visit': ('Επισκέπτομαι', 'episkeptome'),
-    'a2-round-trip': ('Μετ' επιστροφής', 'met epistrofis'),
+    'a2-round-trip': ("Μετ' επιστροφής", 'met epistrofis'),
     'a2-one-way': ('Απλή μετάβαση', 'apli metavasi'),
     'a2-abroad': ('Στο εξωτερικό', 'sto eksoteriko'),
     'a2-doctor': ('Γιατρός', 'yatros'),

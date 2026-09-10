@@ -16,7 +16,7 @@ function log(label, ok, extra) {
   await page.evaluate(() => window.__QA.showShop());
   await page.waitForTimeout(100);
   const shop = await page.evaluate(() => ({ cats: document.querySelectorAll('#shop-grid .shop-cat').length, items: document.querySelectorAll('#shop-grid .shop-item').length, n: window.__QA.SHOP_UPGRADES.length }));
-  log('shop: 6 credit categories + Deep Space Refit, all upgrades rendered', shop.cats === 7 && shop.items >= shop.n && shop.n >= 42, shop);
+  log('shop: 6 credit categories + Deep Space Refit + Warp Drive, all upgrades rendered', shop.cats === 8 && shop.items >= shop.n && shop.n >= 68, shop);
   await page.screenshot({ path: 'chain_shop.png', fullPage: true });
 
   // 1. fresh chain; preview shows chain box for first attempt
