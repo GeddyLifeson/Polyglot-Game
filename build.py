@@ -46,7 +46,7 @@ LANG_META = {
     'ko': ('Korean', '한국어', '🇰🇷', 'ko-KR', True, False),
     'yue': ('Cantonese', '廣東話', '🇭🇰', 'zh-HK', True, False),
     'vi': ('Vietnamese', 'Tiếng Việt', '🇻🇳', 'vi-VN', False, False),
-    'id': ('Indonesian', 'Bahasa Indonesia', '🇮🇩', 'id-ID', False, False),
+    'ind': ('Indonesian', 'Bahasa Indonesia', '🇮🇩', 'id-ID', False, False),   # 'id' would collide with the item id field
 }
 XL = {}   # lang -> {'words': {id: (text, reading)}, 'sentences': {id: tiles}, 'dialogues': {id: 5 lines}}
 
@@ -119,7 +119,10 @@ for path in sorted(glob.glob(os.path.join(CONTENT, '*.json'))):
 
 for path in sorted(glob.glob(os.path.join(CONTENT, 'xlate_*.py'))):
     src = os.path.basename(path)
-    mod = load_py(path)
+    try:
+        mod = load_py(path)
+    except Exception as e:   # a translation file still being written is skipped, not fatal
+        warnings.append('%s: skipped, does not parse yet (%s)' % (src, str(e).splitlines()[0][:80])); continue
     lang = getattr(mod, 'LANG', None)
     if lang not in LANG_META:
         errors.append('%s: unknown LANG %r (add it to LANG_META in build.py)' % (src, lang)); continue

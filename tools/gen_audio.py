@@ -34,7 +34,11 @@ ap.add_argument('--bitrate', default='16k')
 ap.add_argument('--out', default='audio')
 ap.add_argument('--html', default='index.html')
 ap.add_argument('--speed', type=float, default=0.95)
-ap.add_argument('--backend', choices=['auto', 'torch', 'onnx'], default='auto')
+ap.add_argument('--backend', choices=['auto', 'torch', 'onnx', 'azure'], default='auto')
+ap.add_argument('--azure-key', default=os.environ.get('AZURE_TTS_KEY', ''))
+ap.add_argument('--azure-region', default=os.environ.get('AZURE_TTS_REGION', 'eastus'))
+ap.add_argument('--voice', default='', help='override the voice name for every language in --langs')
+ap.add_argument('--only', default='', help='comma-separated keys (id:lang) or a file of keys: re-record just these')
 ap.add_argument('--onnx-model', default=os.environ.get('KOKORO_ONNX_MODEL', 'models/kokoro-v1.0.onnx'))
 ap.add_argument('--onnx-voices', default=os.environ.get('KOKORO_ONNX_VOICES', 'models/voices-v1.0.bin'))
 args = ap.parse_args()
@@ -48,7 +52,11 @@ if backend == 'auto':
         backend = 'torch'
     except ImportError:
         backend = 'onnx'
-if backend == 'torch':
+if backend == 'azure':
+    import urllib.request, html as _html
+    if not args.azure_key:
+        sys.exit('azure backend: set AZURE_TTS_KEY (and AZURE_TTS_REGION) or pass --azure-key/--azure-region')
+elif backend == 'torch':
     from kokoro import KPipeline
 else:
     import onnxruntime as ort
@@ -75,7 +83,15 @@ sentences = block('BUILD_SENTENCES')
 dialogues = block('DIALOGUES')
 nuance = block('NUANCE')
 COL = {'es':5,'fr':6,'it':7,'pt':8,'ja':9,'zh':10}
-KOKO = {'es':('e','ef_dora'), 'fr':('f','ff_siwis'), 'it':('i','if_sara'), 'pt':('p','pf_dora'), 'ja':('j','jf_alpha'), 'zh':('z','zf_xiaobei')}
+KOKO = {'es':('e','ef_dora'), 'fr':('f','ff_siwis'), 'it':('i','if_sara'), 'pt':('p','pf_dora'), 'ja':('j','jf_alpha'), 'zh':('z','zf_xiaobei'),
+        'hi':('h','hf_alpha')}
+# Azure Neural voices (the same voices Edge's Read Aloud uses); output is Ogg Opus straight from the service.
+AZURE = {
+    'es':('es-ES','es-ES-ElviraNeural'), 'fr':('fr-FR','fr-FR-DeniseNeural'), 'it':('it-IT','it-IT-ElsaNeural'), 'pt':('pt-BR','pt-BR-FranciscaNeural'),
+    'ja':('ja-JP','ja-JP-NanamiNeural'), 'zh':('zh-CN','zh-CN-XiaoxiaoNeural'), 'de':('de-DE','de-DE-KatjaNeural'), 'nl':('nl-NL','nl-NL-ColetteNeural'),
+    'sv':('sv-SE','sv-SE-SofieNeural'), 'pl':('pl-PL','pl-PL-ZofiaNeural'), 'ru':('ru-RU','ru-RU-SvetlanaNeural'), 'el':('el-GR','el-GR-AthinaNeural'),
+    'la':('it-IT','it-IT-DiegoNeural'), 'tr':('tr-TR','tr-TR-EmelNeural'), 'ar':('ar-SA','ar-SA-ZariyahNeural'), 'hi':('hi-IN','hi-IN-SwaraNeural'),
+    'ko':('ko-KR','ko-KR-SunHiNeural'), 'yue':('zh-HK','zh-HK-HiuMaanNeural'), 'vi':('vi-VN','vi-VN-HoaiMyNeural'), 'ind':('id-ID','id-ID-GadisNeural')}
 ESPEAK_LANG = {'e':'es', 'f':'fr-fr', 'i':'it', 'p':'pt-br'}   # what kokoro.KPipeline uses per lang_code
 
 
@@ -135,6 +151,33 @@ class OnnxPipeline:
             out.append(c)
         return ''.join(out)
 
+class AzurePipeline:
+    """Azure Speech REST: text in, Ogg Opus bytes out. Japanese furigana is honoured by sending the kana reading
+    inside <sub alias>, so the neural voice reads the intended pronunciation."""
+    def __init__(self, lang):
+        self.locale, self.voice = AZURE[lang]
+        if args.voice: self.voice = args.voice
+        self.url = 'https://%s.tts.speech.microsoft.com/cognitiveservices/v1' % args.azure_region
+    def ssml(self, text):
+        t = re.sub(r'\s*[（(][^)）]*[)）]\s*', ' ', text).replace('〜', '').replace('~', '').replace('_', '').strip()
+        t = re.sub(r'\{([^|{}]+)\|([^}]+)\}', lambda m: '<sub alias="%s">%s</sub>' % (_html.escape(m.group(2)), _html.escape(m.group(1))), t)
+        t = re.sub(r'\s+', ' ', t)
+        rate = '%+d%%' % round((args.speed - 1) * 100)
+        return ('<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="%s">'
+                '<voice name="%s"><prosody rate="%s">%s</prosody></voice></speak>') % (self.locale, self.voice, rate, t)
+    def synth_ogg(self, text):
+        body = self.ssml(text).encode('utf-8')
+        req = urllib.request.Request(self.url, data=body, method='POST', headers={
+            'Ocp-Apim-Subscription-Key': args.azure_key, 'Content-Type': 'application/ssml+xml',
+            'X-Microsoft-OutputFormat': 'ogg-24khz-16bit-mono-opus', 'User-Agent': 'polyglot-voyager'})
+        for attempt in range(4):
+            try:
+                with urllib.request.urlopen(req, timeout=60) as r:
+                    return r.read()
+            except Exception as e:
+                if attempt == 3: raise
+                time.sleep(2 * (attempt + 1))
+
 def clean(text, reading=False):
     if reading: t = re.sub(r'\{[^|{}]+\|([^}]+)\}', r'\1', text)   # {漢字|かな} -> かな
     else:       t = re.sub(r'\{([^|{}]+)\|[^}]+\}', r'\1', text)   # {漢字|かな} -> 漢字
@@ -169,7 +212,9 @@ def items_for(tier, lang):
         return [(i, t if clean(t) else t.strip('()（） ')) for i, t in tile_items(lang) if clean(t) or t.strip('()（） ')]
     out = []
     for r in rows:
-        if r[4] == tier: out.append((r[0], r[COL[lang]]))
+        if r[4] != tier: continue
+        if lang in COL: out.append((r[0], r[COL[lang]]))
+        elif len(r) > 13 and isinstance(r[13], dict) and r[13].get(lang): out.append((r[0], r[13][lang][0]))
     for s in sentences:
         if s.get('tier') == tier and isinstance(s.get(lang), list):
             joiner = '' if lang in ('ja','zh') else ' '
@@ -185,18 +230,38 @@ man_path = os.path.join(out_root, 'manifest.json')
 manifest = json.load(open(man_path)) if os.path.exists(man_path) else {'keys': [], 'dir': {}, 'tiers': [], 'bitrate': args.bitrate}
 keys = set(manifest['keys'])
 
+only = None
+if args.only:
+    raw = open(args.only, encoding='utf-8').read() if os.path.exists(args.only) else args.only
+    only = set(k.strip() for k in re.split(r'[,\s]+', raw) if k.strip())
+    keys -= only   # force these to be re-recorded
+
 for tier in args.tiers:
     tdir = os.path.join(out_root, tier); os.makedirs(tdir, exist_ok=True)
     for lang in args.langs.split(','):
-        code, voice = KOKO[lang]
-        pipe = KPipeline(lang_code=code, repo_id='hexgrad/Kokoro-82M') if backend == 'torch' else OnnxPipeline(code)
-        todo = [(i, t) for i, t in items_for(tier, lang) if (i+':'+lang) not in keys]
+        if backend == 'azure':
+            if lang not in AZURE: print('skip', lang, '(no Azure voice mapped)'); continue
+            pipe = AzurePipeline(lang); voice = pipe.voice
+        else:
+            if lang not in KOKO: print('skip', lang, '(no Kokoro voice; use --backend azure)'); continue
+            code, voice = KOKO[lang]
+            pipe = KPipeline(lang_code=code, repo_id='hexgrad/Kokoro-82M') if backend == 'torch' else OnnxPipeline(code)
+        todo = [(i, t) for i, t in items_for(tier, lang) if (i+':'+lang) not in keys and (only is None or (i+':'+lang) in only)]
         print(f'{tier} {lang}: {len(todo)} clips to record', flush=True)
         t0 = time.time()
         for n, (iid, text) in enumerate(todo):
             key = iid+':'+lang
             wav = os.path.join(tdir, f'{iid}_{lang}.wav'); ogg = wav[:-4]+'.ogg'
             try:
+                if backend == 'azure':
+                    data = pipe.synth_ogg(text)
+                    if len(data) < 200: raise RuntimeError('empty audio from Azure')
+                    open(ogg, 'wb').write(data)
+                    keys.add(key); manifest['dir'][key] = tier
+                    if n % 50 == 49:
+                        manifest['keys'] = sorted(keys); json.dump(manifest, open(man_path, 'w'))
+                        print(f'  {tier} {lang} {n+1}/{len(todo)} · {round(time.time()-t0)}s', flush=True)
+                    continue
                 spoken = text if backend == 'onnx' else clean(text)
                 audio = np.concatenate([a for _, _, a in pipe(spoken, voice=voice, speed=args.speed)])
                 idx = np.where(np.abs(audio) > 0.01)[0]
