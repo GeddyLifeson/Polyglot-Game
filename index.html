@@ -6320,7 +6320,7 @@
     if(!clipSupport || !/^https?:$/.test(location.protocol) || typeof fetch!=='function') return;
     var base = (window.AUDIO_BASE || 'audio/').replace(/\/?$/, '/');
     try{
-      fetch(base+'manifest.json', {cache:'force-cache'}).then(function(r){ return r.ok ? r.json() : null; }).then(function(m){
+      fetch(base+'manifest.json', {cache:'no-cache'})   /* always revalidate: new bands must show up on the next reload */.then(function(r){ return r.ok ? r.json() : null; }).then(function(m){
         if(!m || !m.keys) return;
         var set = {}; (m.keys||[]).forEach(function(k){ set[k] = m.dir && m.dir[k] ? m.dir[k] : (k.split('-')[0].toUpperCase()); });
         AUDIO_EXT = {base:base, keys:set, tiers:m.tiers||[], count:(m.keys||[]).length};
@@ -6328,6 +6328,18 @@
       }).catch(function(){});
     }catch(e){}
   })();
+  /* Sentence tiles and nuance options have recordings too (the TILES band). The key is a hash of the
+     exact tile text, computed the same way in tools/gen_audio.py, so nothing spoken in a relay has to
+     fall back to the device's own voice. */
+  function tileClipKey(text, lang){
+    if(!text || !lang) return null;
+    var h = 0x811c9dc5;
+    for(var i = 0; i < text.length; i++){
+      var c = text.codePointAt(i); if(c > 0xffff) i++;
+      h = Math.imul(h ^ c, 0x01000193) >>> 0;
+    }
+    return 'x-' + ('00000000' + h.toString(16)).slice(-8) + ':' + lang;
+  }
   function clipSrc(key){
     if(AUDIO_CLIPS[key]) return 'data:audio/ogg;base64,'+AUDIO_CLIPS[key];
     if(AUDIO_EXT && AUDIO_EXT.keys[key]){ return AUDIO_EXT.base+AUDIO_EXT.keys[key]+'/'+key.replace(/:([a-z]{2})$/, '_$1')+'.ogg'; }
@@ -7551,7 +7563,7 @@
       var b = document.createElement('button');
       b.className='tile'; b.type='button'; b.innerHTML = furi(byIdx[idx]);
       b.addEventListener('click', function(){
-        speakText(byIdx[idx], st.round.lang);
+        speakText(byIdx[idx], st.round.lang, false, tileClipKey(byIdx[idx], st.round.lang));
         var i = st.placed.indexOf(idx);
         if(i!==-1){ st.placed.splice(i,1); drawBuilder(); }
       });
@@ -7562,7 +7574,7 @@
       if(st.placed.indexOf(t.idx)!==-1) return;
       var b = document.createElement('button');
       b.className='tile'; b.type='button'; b.innerHTML = furi(t.text);
-      b.addEventListener('click', function(){ speakText(t.text, st.round.lang); st.placed.push(t.idx); drawBuilder(); });
+      b.addEventListener('click', function(){ speakText(t.text, st.round.lang, false, tileClipKey(t.text, st.round.lang)); st.placed.push(t.idx); drawBuilder(); });
       el.plBank.appendChild(b);
     });
     el.btnSubmitTiles.disabled = st.placed.length !== st.roundTiles.length;
@@ -7582,7 +7594,7 @@
        word once it's known, whichever way the round went */
     if(round.kind==='nuance'){
       var correctNuanceOpt = round.options.find(function(o){ return o.correct; });
-      if(correctNuanceOpt){ speakText(correctNuanceOpt.main, round.lang); }
+      if(correctNuanceOpt){ speakText(correctNuanceOpt.main, round.lang, false, tileClipKey(correctNuanceOpt.main, round.lang)); }
     }
 
     if(round.kind==='listen'){
