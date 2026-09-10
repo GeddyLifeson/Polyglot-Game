@@ -100,7 +100,7 @@ All numbers live near the top of the script in `index.html`, next to `SHOP_UPGRA
 - **Dark Matter** (`darkMatterFor`): the late currency. C1 relays pay 2, C2 pay 3, any relay at Noise 3+ pays
   floor(noise/2); first clears double it, a perfect run adds 1. First storm clear of the day pays 2 + noise/2.
   Deep Space floors past the first pay 1 each.
-- **Engineering Bay prices** (`shopPrice`): +6% per upgrade already fitted, so the full bay costs about
+- **Engineering Bay prices** (`shopPrice`): +4% per upgrade already fitted, so the full bay costs about
   67k credits instead of 15k and the last items land around C1.
 - **Deep Space Refit** (`REFIT_TUNING`, `REFIT_MODULES`): the Dark Matter wing of the bay. Opens at Lieutenant
   or on the first C1/C2 clear with any interference on. Reactor Tuning tracks have no cap and cost 25% more

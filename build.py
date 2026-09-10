@@ -22,6 +22,34 @@ HTML = os.path.join(HERE, 'index.html')
 LANGS = ['es', 'fr', 'it', 'pt', 'ja', 'zh']
 TIERS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
+# Every language the game knows. The first six are authored inline in the vocab rows and have studio
+# recordings; the rest come from content/xlate_<lang>_*.py files (WORDS / SENTENCES / DIALOGUES dicts keyed
+# by item id) and are offered only for the tiers they cover completely.
+#   code: (English name, native name, flag, Web Speech locale, has a reading line, audio recorded)
+LANG_META = {
+    'es': ('Spanish', 'Español', '🇪🇸', 'es-ES', False, True),
+    'fr': ('French', 'Français', '🇫🇷', 'fr-FR', False, True),
+    'it': ('Italian', 'Italiano', '🇮🇹', 'it-IT', False, True),
+    'pt': ('Portuguese', 'Português', '🇧🇷', 'pt-BR', False, True),
+    'ja': ('Japanese', '日本語', '🇯🇵', 'ja-JP', False, True),
+    'zh': ('Mandarin', '普通话', '🇨🇳', 'zh-CN', True, True),
+    'de': ('German', 'Deutsch', '🇩🇪', 'de-DE', False, False),
+    'nl': ('Dutch', 'Nederlands', '🇳🇱', 'nl-NL', False, False),
+    'sv': ('Swedish', 'Svenska', '🇸🇪', 'sv-SE', False, False),
+    'pl': ('Polish', 'Polski', '🇵🇱', 'pl-PL', False, False),
+    'ru': ('Russian', 'Русский', '🇷🇺', 'ru-RU', True, False),
+    'el': ('Greek', 'Ελληνικά', '🇬🇷', 'el-GR', True, False),
+    'la': ('Latin', 'Latina', '🏛️', 'it-IT', False, False),
+    'tr': ('Turkish', 'Türkçe', '🇹🇷', 'tr-TR', False, False),
+    'ar': ('Arabic', 'العربية', '🇸🇦', 'ar-SA', True, False),
+    'hi': ('Hindi', 'हिन्दी', '🇮🇳', 'hi-IN', True, False),
+    'ko': ('Korean', '한국어', '🇰🇷', 'ko-KR', True, False),
+    'yue': ('Cantonese', '廣東話', '🇭🇰', 'zh-HK', True, False),
+    'vi': ('Vietnamese', 'Tiếng Việt', '🇻🇳', 'vi-VN', False, False),
+    'id': ('Indonesian', 'Bahasa Indonesia', '🇮🇩', 'id-ID', False, False),
+}
+XL = {}   # lang -> {'words': {id: (text, reading)}, 'sentences': {id: tiles}, 'dialogues': {id: 5 lines}}
+
 vocab_rows, sentences, grammar, idioms, nuance, dialogues, listen = [], [], [], [], [], [], []
 topic_labels = {}
 errors, warnings = [], []
@@ -89,8 +117,24 @@ for path in sorted(glob.glob(os.path.join(CONTENT, '*.json'))):
                   'dialogues': dialogues, 'listen': listen}[t]
         add_items(target, data['items'], t, src)
 
+for path in sorted(glob.glob(os.path.join(CONTENT, 'xlate_*.py'))):
+    src = os.path.basename(path)
+    mod = load_py(path)
+    lang = getattr(mod, 'LANG', None)
+    if lang not in LANG_META:
+        errors.append('%s: unknown LANG %r (add it to LANG_META in build.py)' % (src, lang)); continue
+    x = XL.setdefault(lang, {'words': {}, 'sentences': {}, 'dialogues': {}})
+    for k, v in getattr(mod, 'WORDS', {}).items():
+        t, r = (tuple(v) + (None,))[:2] if isinstance(v, (list, tuple)) else (v, None)
+        if isinstance(t, str) and t.strip():
+            x['words'][k] = (t.strip(), (r or '').strip() or None)
+    x['sentences'].update(getattr(mod, 'SENTENCES', {}))
+    x['dialogues'].update(getattr(mod, 'DIALOGUES', {}))
+
 for path in sorted(glob.glob(os.path.join(CONTENT, '*.py'))):
     src = os.path.basename(path)
+    if src.startswith('xlate_'):
+        continue
     mod = load_py(path)
     topic_labels.update(getattr(mod, 'TOPICS', {}))
     tier = getattr(mod, 'TIER', None)
@@ -118,6 +162,30 @@ for d in vocab_rows:
             cand = '%s-%d' % (base, n); n += 1
         d['id'] = cand
     claim(d['id'], 'vocab')
+
+# ---------------- extra languages: merge translations, record per-tier coverage ----------------
+EXTRA = [l for l in LANG_META if l not in LANGS and l in XL]
+lang_tiers = {l: list(TIERS) for l in LANGS}
+for lang in EXTRA:
+    have = {t: 0 for t in TIERS}; total = {t: 0 for t in TIERS}
+    for d in vocab_rows:
+        total[d['tier']] += 1
+        tv = XL[lang]['words'].get(d['id'])
+        if tv:
+            d.setdefault('xl', {})[lang] = [tv[0], tv[1]]
+            have[d['tier']] += 1
+    lang_tiers[lang] = [t for t in TIERS if total[t] and have[t] == total[t]]
+    for t in TIERS:
+        if have[t] and have[t] != total[t]:
+            warnings.append('%s: %s vocab is partial (%d/%d) — tier not offered for that language' % (lang, t, have[t], total[t]))
+    for d in sentences:
+        v = XL[lang]['sentences'].get(d['id'])
+        if isinstance(v, list) and 3 <= len(v) <= 8 and all(isinstance(x, str) and x.strip() for x in v):
+            d[lang] = [x.strip() for x in v]
+    for d in dialogues:
+        v = XL[lang]['dialogues'].get(d['id'])
+        if isinstance(v, list) and len(v) == 5 and all(isinstance(x, str) and x.strip() for x in v):
+            d[lang] = [x.strip() for x in v]
 
 for d in sentences:
     claim(d['id'], 'sentence')
@@ -204,9 +272,18 @@ def strip(d):
 vocab_js_rows = []
 for d in vocab_rows:
     row = [d['id'], d['en'], d['emoji'], d['topic'], d['tier'], d['es'], d['fr'], d['it'], d['pt'], d['ja'], d['zh'], d.get('pinyin', '')]
-    if d.get('fact'):
-        row.append(d['fact'])
+    if d.get('fact') or d.get('xl'):
+        row.append(d.get('fact') or '')
+    if d.get('xl'):
+        row.append(d['xl'])
     vocab_js_rows.append(js(row))
+
+lang_meta_js = {}
+for code, (name, native, flag, speech, reading, audio) in LANG_META.items():
+    if code in LANGS or code in XL:
+        lang_meta_js[code] = {'name': name, 'native': native, 'flag': flag, 'speech': speech, 'reading': reading,
+                              'audio': audio, 'tiers': lang_tiers.get(code, []),
+                              'sentences': sum(1 for d in sentences if d.get(code)), 'dialogues': sum(1 for d in dialogues if d.get(code))}
 
 # topic order per tier, in authored order
 tier_topics = {}
@@ -214,7 +291,8 @@ for d in vocab_rows: tier_topics.setdefault(d['tier'], []).append(d['topic']) if
 
 out = []
 out.append('  /* ==== GENERATED CONTENT START (build.py — do not hand-edit) ==== */')
-out.append('  /* vocab row: [id, en, emoji, topic, tier, es, fr, it, pt, ja, zh, pinyin, fact?] */')
+out.append('  /* vocab row: [id, en, emoji, topic, tier, es, fr, it, pt, ja, zh, pinyin, fact?, {lang:[text, reading]}?] */')
+out.append('  var LANG_META = ' + js(lang_meta_js) + ';')
 out.append('  var VOCAB_RAW = [\n' + ',\n'.join('    ' + r for r in vocab_js_rows) + '\n  ];')
 out.append('  var TOPIC_LABELS = ' + js(topic_labels) + ';')
 out.append('  var BUILD_SENTENCES = [\n' + ',\n'.join('    ' + js(strip(d)) for d in sentences) + '\n  ];')
@@ -241,4 +319,7 @@ for d in vocab_rows: per_tier[d['tier']] += 1
 print('vocab: %d total  %s' % (len(vocab_rows), '  '.join('%s=%d' % (t, per_tier[t]) for t in TIERS)))
 print('sentences %d | grammar %d | idioms %d | nuance %d | dialogues %d | listen modules %d' % (
     len(sentences), len(grammar), len(idioms), len(nuance), len(dialogues), len(listen)))
+for code in EXTRA:
+    print('  +%s %s: tiers %s, sentences %d, dialogues %d' % (code, LANG_META[code][0], ','.join(lang_tiers[code]) or 'none',
+          lang_meta_js[code]['sentences'], lang_meta_js[code]['dialogues']))
 print('generated block: %d KB' % (len(block.encode('utf-8')) // 1024))
