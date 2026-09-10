@@ -199,6 +199,14 @@
   .noise-chip.on .nc-w{ color:#ffd93e; }
   .noise-desc{ max-width:640px; text-align:center; color:var(--paper-faint); font-size:11px; line-height:1.5; }
   .shop-item.refit{ border-color:color-mix(in srgb, #b48cff 45%, var(--line)); }
+  .warp-card{ margin-top:12px; padding:12px 14px; border:1px dashed color-mix(in srgb, #7fd4ff 55%, var(--line)); border-radius:10px; background:color-mix(in srgb, #7fd4ff 6%, var(--surface)); font-size:12px; color:var(--paper-dim); text-align:center; }
+  .warp-head{ font-family:var(--font-mono); color:var(--paper); }
+  .warp-head b{ color:#7fd4ff; }
+  .warp-n, .warp-bonus{ color:var(--paper-faint); font-size:11px; margin-left:6px; }
+  .warp-body{ margin-top:6px; line-height:1.5; max-width:640px; margin-left:auto; margin-right:auto; }
+  .warp-actions{ margin-top:8px; }
+  .wipe-row{ margin-top:10px; text-align:center; }
+  .wipe-btn{ color:var(--paper-faint); font-size:11px; }
   .shop-item.refit .sh-name .rf-lvl{ font-family:var(--font-mono); font-size:10px; color:#b48cff; margin-left:6px; }
   .event-card{ text-align:center; }
   .event-card .ev-icon{ font-size:44px; }
@@ -424,10 +432,12 @@
         <div class="hub-map" id="hub-map"></div>
         <div class="storm-card" id="storm-card"></div>
         <div class="asc-row" id="asc-row" hidden></div>
+        <div class="warp-card" id="warp-card"></div>
         <div class="home-actions">
           <button class="btn btn-ghost" id="btn-open-shop">🛠️ Engineering Bay</button>
           <button class="btn btn-ghost" id="btn-open-log">📓 Mission Log</button>
         </div>
+        <div class="wipe-row" id="wipe-row"></div>
       </div>
     </section>
 
@@ -6081,6 +6091,8 @@
     {id:'dark50', icon:'🌌', name:'Dark Harvest', desc:'Collect 50 Dark Matter in total.', reward:300, check:function(){ return (save.stats.darkEarned||0)>=50; }},
     {id:'floor5', icon:'🌌', name:'Deep Space', desc:'Reach floor 5 of a Deep Space Run.', reward:400, check:function(){ return (save.stats.bestFloor||0)>=5; }},
     {id:'refit3', icon:'⚛️', name:'Refitted', desc:'Fit three Resonance modules.', reward:250, check:function(){ return (save.refitOwned||[]).length>=3; }},
+    {id:'warp1', icon:'🚀', name:'Warp Jump', desc:'Make your first Warp Jump.', reward:300, check:function(){ return ((save.warp&&save.warp.jumps)||0)>=1; }},
+    {id:'warp10', icon:'🚀', name:'Voyager', desc:'Hold 10 warp cores.', reward:800, check:function(){ return warpCores()>=10; }},
     {id:'shop10', icon:'🛠️', name:'Refit', desc:'Own 10 Engineering Bay upgrades.', reward:100, check:function(){ return save.shopOwned.length>=10; }},
     {id:'shop30', icon:'🏗️', name:'Full Refit', desc:'Own 30 Engineering Bay upgrades.', reward:400, check:function(){ return save.shopOwned.length>=30; }},
     {id:'captain', icon:'🎗️', name:'Captain’s Bars', desc:'Reach the rank of Captain.', reward:300, check:function(){ return rankIndex()>=7; }},
@@ -6207,6 +6219,54 @@
     if(refitOwned('rf_uplink')) dm += 1;
     return dm;
   }
+  /* ============================= WARP JUMP (prestige) =============================
+     Jumping resets the voyage — relays, credits, bay, chain, rank, Dark Matter, Refit — and banks Warp
+     Cores that never reset: +3% credits, +3% data, +2% XP each. Cores come from lifetime XP and lifetime
+     Dark Matter, so a longer voyage before the jump always pays more. Learned words, commendations,
+     lifetime stats and settings survive. */
+  function warpCores(){ return (save.warp && save.warp.cores) || 0; }
+  function warpCoresFor(xpLifetime, darkEarned){ return Math.floor(Math.sqrt(Math.max(0, xpLifetime)/100)) + Math.floor(Math.max(0, darkEarned)/25); }
+  function warpClaimable(){ return Math.max(0, warpCoresFor(save.stats.xpLifetime||0, save.stats.darkEarned||0) - warpCores()); }
+  function nextWarpCoreXp(){ var have = Math.floor(Math.sqrt((save.stats.xpLifetime||0)/100)); return (have+1)*(have+1)*100; }
+  function doWarpJump(){
+    var claim = warpClaimable(); if(claim<=0) return false;
+    var keep = { learned:Array.from(learnedSet), facts:Array.from(factsShown), muted:save.muted, commendations:save.commendations, voices:save.voices, speechRate:save.speechRate, useClips:save.useClips, stats:save.stats, bestScore:save.bestScore, interference:save.interference };
+    var fresh = saveDefaults();
+    for(var k in keep){ fresh[k] = keep[k]; }
+    fresh.warp = { cores: warpCores() + claim, jumps: ((save.warp && save.warp.jumps)||0) + 1 };
+    for(var kk in fresh){ save[kk] = fresh[kk]; }
+    learnedSet = new Set(save.learned||[]); factsShown = new Set(save.facts||[]);
+    bumpStat('warpJumps');
+    persist(); checkCommendations(); persist();
+    return true;
+  }
+  function wipeSave(){ try{ localStorage.removeItem(KEY); }catch(e){} location.reload(); }
+  function renderWarpCard(){
+    var card = document.getElementById('warp-card'); if(!card) return;
+    var claim = warpClaimable(), cores = warpCores(), jumps = (save.warp && save.warp.jumps)||0;
+    var bonus = cores ? ('+'+(3*cores)+'% credits · +'+(3*cores)+'% data · +'+(2*cores)+'% XP') : 'no cores yet';
+    card.innerHTML = '<div class="warp-head">🚀 Warp Jump'+(jumps?' <span class="warp-n">×'+jumps+'</span>':'')+' · <b>'+cores+'</b> warp core'+(cores===1?'':'s')+' <span class="warp-bonus">'+bonus+'</span></div>'+
+      '<div class="warp-body">'+(claim>0
+        ? 'A jump now banks <b>+'+claim+'</b> core'+(claim===1?'':'s')+' and restarts the voyage from A1: relays, credits, the bay, the chain, your rank, Dark Matter and the Refit all reset. Learned words, commendations and lifetime records stay.'
+        : 'Cores come from lifetime XP (next at '+nextWarpCoreXp().toLocaleString()+' XP, you have '+(save.stats.xpLifetime||0).toLocaleString()+') and from every 25 Dark Matter ever earned. Jump when there is something to bank.')+'</div>'+
+      (claim>0 ? '<div class="warp-actions"><button class="btn btn-sm btn-primary" id="btn-warp">🚀 Warp Jump (+'+claim+')</button></div>' : '');
+    var b = document.getElementById('btn-warp');
+    if(b){ b.addEventListener('click', function(){
+      if(b.getAttribute('data-armed')!=='1'){ b.setAttribute('data-armed','1'); b.textContent = '⚠️ Confirm: reset the voyage and bank +'+claim+' core'+(claim===1?'':'s'); b.className = 'btn btn-sm btn-ghost'; return; }
+      if(doWarpJump()){ showHome(); toast('🚀 <b>Warp Jump '+save.warp.jumps+'</b> — '+save.warp.cores+' warp cores online. New voyage, better ship.'); }
+    }); }
+  }
+  function renderWipeRow(){
+    var row = document.getElementById('wipe-row'); if(!row) return;
+    row.innerHTML = '<button class="btn btn-sm btn-ghost wipe-btn" id="btn-wipe">🗑️ Wipe all progress</button>';
+    var b = document.getElementById('btn-wipe'), armed = 0;
+    b.addEventListener('click', function(){
+      armed++;
+      if(armed===1){ b.textContent = '⚠️ This deletes everything on this device, warp cores included. Click again to confirm.'; return; }
+      if(armed===2){ b.textContent = '🗑️ Last chance — click once more to wipe'; return; }
+      wipeSave();
+    });
+  }
   function awardDark(dm){ if(dm>0){ save.dark = (save.dark||0) + dm; bumpStat('darkEarned', dm); } return dm; }
 
   /* Signal Chain: progressive abilities that come online as your chain of first-clear relays grows */
@@ -6224,15 +6284,18 @@
   ];
 
   var KEY = 'polyglotBistro.v2';
-  function loadSave(){
-    var d = loadSave.defaults = { stars:[0,0,0,0,0,0], bestFusion:0, learned:[], facts:[], muted:false,
+  function saveDefaults(){
+    return { stars:[0,0,0,0,0,0], bestFusion:0, learned:[], facts:[], muted:false,
       tips:0, shopOwned:[], bestFloorIdx:-1, bestScore:0, clearedDungeons:{},
       chain:{len:0, best:0, carried:[]}, xp:0, ascension:0, missed:{}, commendations:[], voices:{}, speechRate:0, useClips:true,
-      interference:[], dark:0, refitOwned:[], tuning:{},
+      interference:[], dark:0, refitOwned:[], tuning:{}, warp:{cores:0, jumps:0},
       storm:{date:'', best:0, runs:0, cleared:false},
       stats:{decodes:0, correct:0, relaysCleared:0, relaysFailed:0, perfectRelays:0, encryptedCracked:0, events:0,
         recoveryCleared:0, stormsCleared:0, bestEndless:0, bestAscension:0, riskClears:0, byLang:{}, byType:{}, playMs:0,
-        bestNoiseClear:0, bestNoiseClearHigh:0, bestCombo:0, bestFloor:0, darkEarned:0, singleCellClear:false} };
+        bestNoiseClear:0, bestNoiseClearHigh:0, bestCombo:0, bestFloor:0, darkEarned:0, singleCellClear:false, xpLifetime:0} };
+  }
+  function loadSave(){
+    var d = saveDefaults(); loadSave.defaults = saveDefaults();   /* .defaults stays pristine */
     try{
       var raw = localStorage.getItem(KEY);
       if(raw){ var p = JSON.parse(raw); for(var k in d){ if(p[k]!==undefined) d[k]=p[k]; } }
@@ -6246,7 +6309,10 @@
     for(var k in d.stats){ if(save.stats[k]===undefined) save.stats[k] = JSON.parse(JSON.stringify(d.stats[k])); }
     if(!Array.isArray(save.commendations)) save.commendations = []; if(typeof save.xp!=='number') save.xp = 0; if(typeof save.ascension!=='number') save.ascension = 0;
     if(!Array.isArray(save.interference)) save.interference = []; if(typeof save.dark!=='number') save.dark = 0; if(!Array.isArray(save.refitOwned)) save.refitOwned = []; if(!save.tuning || typeof save.tuning!=='object') save.tuning = {};
-    ['bestNoiseClear','bestNoiseClearHigh','bestCombo','bestFloor','darkEarned'].forEach(function(k){ if(typeof save.stats[k]!=='number') save.stats[k] = 0; });
+    ['bestNoiseClear','bestNoiseClearHigh','bestCombo','bestFloor','darkEarned','xpLifetime'].forEach(function(k){ if(typeof save.stats[k]!=='number') save.stats[k] = 0; });
+    if(!save.warp || typeof save.warp!=='object') save.warp = {cores:0, jumps:0};
+    /* lifetime XP was not tracked before Warp Jumps existed: seed it from the current rank progress */
+    if(!save.stats.xpLifetime && save.xp) save.stats.xpLifetime = save.xp;
     /* Ascension became Interference: an old Ascension level carries over as Time Compression */
     if(save.ascension>0 && !save.interference.length){ save.interference = ['compress']; } save.ascension = 0; })();
   var learnedSet = new Set(save.learned);
@@ -6553,7 +6619,8 @@
   function rankInfo(){ var i = rankIndex(); return {idx:i, rank:RANKS[i], next:RANKS[i+1]||null}; }
   function addXp(n){
     var before = rankIndex();
-    save.xp += Math.round(n * (st.perkFlags && st.perkFlags.xpMult || 1) * (1 + 0.08*(st.runActive && st.topic!=='__recovery' ? (st.noise||0) : 0)));
+    var gained = Math.round(n * (st.perkFlags && st.perkFlags.xpMult || 1) * (1 + 0.08*(st.runActive && st.topic!=='__recovery' ? (st.noise||0) : 0)) * (1 + 0.02*warpCores()));
+    save.xp += gained; save.stats.xpLifetime = (save.stats.xpLifetime||0) + gained;
     var after = rankIndex();
     if(after > before){
       var r = RANKS[after]; var bonus = after*40;
@@ -6809,7 +6876,7 @@
     el.homeProfile.innerHTML =
       '<div class="pf-badge">'+ri.rank.icon+'</div><div class="pf-body">'+
       '<div class="pf-rank">'+ri.rank.title+' <span style="color:var(--paper-faint);font-weight:400;font-size:12px;">· rank '+(ri.idx+1)+'/'+RANKS.length+'</span></div>'+
-      '<div class="pf-sub">'+save.xp.toLocaleString()+' XP'+(ri.next ? ' · '+(ri.next.xp-save.xp).toLocaleString()+' to '+ri.next.title : ' · max rank')+' · 🎖️ '+save.commendations.length+'/'+COMMENDATIONS.length+' commendations'+(noiseLevel()?' · 📡 Noise '+noiseLevel():'')+'</div>'+
+      '<div class="pf-sub">'+save.xp.toLocaleString()+' XP'+(ri.next ? ' · '+(ri.next.xp-save.xp).toLocaleString()+' to '+ri.next.title : ' · max rank')+' · 🎖️ '+save.commendations.length+'/'+COMMENDATIONS.length+' commendations'+(noiseLevel()?' · 📡 Noise '+noiseLevel():'')+(warpCores()?' · 🚀 '+warpCores()+' cores':'')+'</div>'+
       '<div class="xp-track"><div class="xp-fill" style="width:'+pct+'%"></div></div>'+
       (ri.next && ri.next.unlock ? '<div class="pf-sub" style="margin-top:6px;">Next: '+ri.next.unlock+'</div>' : '')+
       '</div>';
@@ -6819,6 +6886,7 @@
     el.ascRow.hidden = !ascOk;
     if(ascOk){ renderInterferencePanel(); }
     checkCommendations();
+    renderWarpCard(); renderWipeRow();
     el.homeStats.innerHTML =
       statBox(save.tips+' 💠','Credits banked') +
       statBox(clearedCount+'/'+totalDungeons,'Relays decoded') +
@@ -7357,6 +7425,8 @@
     if(tier.endless && owned('shop_endless2')){ f.scoreMult *= 1.25; }
     /* Reactor Tuning (Deep Space Refit) */
     f.scoreMult *= 1 + 0.02*tuningLevel('tune_data');
+    /* Warp Cores (prestige): permanent, survive every jump */
+    f.scoreMult *= 1 + 0.03*warpCores(); f.tipMult += 0.03*warpCores();
     f.timeMult *= 1 + 0.015*tuningLevel('tune_time');
     /* Interference — self-imposed noise on the signal for better pay */
     if(topic!=='__recovery'){
@@ -7950,7 +8020,7 @@
     var acc = S.decodes ? Math.round(100*S.correct/S.decodes) : 0;
     var h = '';
     h += '<div class="log-section">Officer</div>';
-    h += '<div class="stat-grid">'+statBox(ri.rank.icon+' '+ri.rank.title,'Rank')+statBox(save.xp.toLocaleString(),'XP')+statBox('🔗 '+save.chain.len+' / '+save.chain.best,'Chain · best')+statBox('🌌 '+(save.dark||0)+' / '+(save.stats.darkEarned||0),'Dark matter · total')+'</div>';
+    h += '<div class="stat-grid">'+statBox(ri.rank.icon+' '+ri.rank.title,'Rank')+statBox(save.xp.toLocaleString(),'XP')+statBox('🔗 '+save.chain.len+' / '+save.chain.best,'Chain · best')+statBox('🌌 '+(save.dark||0)+' / '+(save.stats.darkEarned||0),'Dark matter · total')+statBox('🚀 '+warpCores()+' · ×'+((save.warp&&save.warp.jumps)||0),'Warp cores · jumps')+'</div>';
     h += '<div class="log-section">Transmissions</div>';
     h += '<div class="stat-grid">'+statBox(S.decodes.toLocaleString(),'Decodes')+statBox(acc+'%','Accuracy')+statBox(S.relaysCleared,'Relays cleared')+statBox(S.relaysFailed,'Relays failed')+statBox(S.perfectRelays,'Perfect relays')+statBox(S.encryptedCracked,'Encrypted cracked')+statBox(S.events,'Anomalies resolved')+statBox(S.stormsCleared,'Storms cleared')+statBox(Math.round(S.playMs/60000)+' min','Time on channel')+statBox(Object.keys(save.missed).length,'Weak words')+'</div>';
     h += '<div class="log-section">Words learned by language</div>';

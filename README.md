@@ -107,6 +107,11 @@ All numbers live near the top of the script in `index.html`, next to `SHOP_UPGRA
   per level; Resonance modules each need a Clearance (a deed: a 20-streak, a chain of 15, a Single Cell clear…).
 - **Deep Space Run**: Open Channel gains a floor every 10 decodes; each floor adds one interference source
   from `DEEP_SPACE_ORDER`.
+- **Warp Jump** (prestige, `warpCoresFor`): resets the voyage (relays, credits, bay, chain, rank, Dark Matter,
+  Refit) and banks Warp Cores that never reset: +3% credits, +3% data, +2% XP each. Cores = floor(sqrt(lifetime
+  XP / 100)) + floor(lifetime Dark Matter / 25), minus cores already held. Learned words, commendations,
+  lifetime stats, interference choices and settings survive a jump. **Wipe all progress** on the home screen
+  deletes the save entirely after two confirmations.
 
 ## 4. Edit content
 
