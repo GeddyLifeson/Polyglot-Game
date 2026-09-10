@@ -7330,7 +7330,7 @@
     if(!item) return null;
     if(mod.type==='match'){
       var mlang = (entry && entry.lang) || st.lang;
-      var mpool = st.storm ? st.storm.pool : vocabForTier(tier);
+      var mpool = st.storm ? st.storm.pool : relayPool(vocabForTier(tier));
       if(st.storm && st.blackout && !save.muted && speechReady){ return listenRound(item, mlang, mpool, tier); }
       return matchRound(item, mlang, tier.bias, mpool, tier);
     }
@@ -7344,9 +7344,22 @@
       var src = lm.source==='vocab' ? vocabForTier(tier)
               : lm.source==='sentences' ? BUILD_SENTENCES.filter(function(s){ return s.tier===tier.code; })
               : DIALOGUES.filter(function(d){ return d.tier===tier.code; });
-      return listenRound(item, st.lang, src, tier);
+      return listenRound(item, st.lang, relayPool(src), tier);
     }
     return null;
+  }
+
+  /* Distractors come from the relay itself: a numbers relay only ever offers numbers. The pool is the
+     items in the current queue; the wider tier pool is used only when a relay is too small to fill the
+     option slots (4 options, 6 when encrypted). */
+  function relayPool(fallback){
+    var seen = {}; var out = [];
+    (st.queue||[]).forEach(function(entry){
+      var id = (entry && entry.conceptId) ? entry.conceptId : entry;
+      var it = ITEM[id];
+      if(it && !seen[id]){ seen[id] = true; out.push(it); }
+    });
+    return out.length >= 6 ? out : fallback;
   }
 
   /* the spoken/displayed target-language text of any item, for one language */
