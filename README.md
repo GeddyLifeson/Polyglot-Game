@@ -100,8 +100,10 @@ All numbers live near the top of the script in `index.html`, next to `SHOP_UPGRA
 - **Dark Matter** (`darkMatterFor`): the late currency. C1 relays pay 2, C2 pay 3, any relay at Noise 3+ pays
   floor(noise/2); first clears double it, a perfect run adds 1. First storm clear of the day pays 2 + noise/2.
   Deep Space floors past the first pay 1 each.
-- **Engineering Bay prices** (`shopPrice`): +4% per upgrade already fitted, so the full bay costs about
-  67k credits instead of 15k and the last items land around C1.
+- **Engineering Bay prices** (`shopPrice`): +1.5% per upgrade already fitted, times a repertoire multiplier of
+  1 + 0.3 per extra language on the voyage (`repertoireMult`, also applied to Reactor Tuning). The 68-item bay
+  costs about 60k credits for a one-language voyage and about 165k for six, against roughly 60k and 400k of
+  lifetime income, so there is always something left to buy going into C2.
 - **Deep Space Refit** (`REFIT_TUNING`, `REFIT_MODULES`): the Dark Matter wing of the bay. Opens at Lieutenant
   or on the first C1/C2 clear with any interference on. Reactor Tuning tracks have no cap and cost 25% more
   per level; Resonance modules each need a Clearance (a deed: a 20-streak, a chain of 15, a Single Cell clear…).
