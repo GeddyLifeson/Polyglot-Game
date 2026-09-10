@@ -51,6 +51,16 @@ if backend == 'auto':
 if backend == 'torch':
     from kokoro import KPipeline
 else:
+    import onnxruntime as ort
+    # GPU by default: onnxruntime-gpu needs its CUDA/cuDNN DLLs loaded first (pip's nvidia-* wheels),
+    # and kokoro-onnx would otherwise try TensorRT first and fall back to the CPU when it is missing.
+    if hasattr(ort, 'preload_dlls'):
+        try: ort.preload_dlls()
+        except Exception: pass
+    if not os.environ.get('ONNX_PROVIDER'):
+        _avail = ort.get_available_providers()
+        for _p in ('CUDAExecutionProvider', 'DmlExecutionProvider', 'CPUExecutionProvider'):
+            if _p in _avail: os.environ['ONNX_PROVIDER'] = _p; break
     from kokoro_onnx import Kokoro
     from misaki import espeak
 print('backend:', backend, flush=True)
@@ -80,6 +90,7 @@ class OnnxPipeline:
                 if not os.path.exists(f):
                     sys.exit('onnx backend: missing %s (see the docstring for where to download it)' % f)
             OnnxPipeline._model = Kokoro(args.onnx_model, args.onnx_voices)
+            print('onnx provider:', OnnxPipeline._model.sess.get_providers()[0], flush=True)
         if lang_code == 'j':
             from misaki import ja
             self.g2p = ja.JAG2P()

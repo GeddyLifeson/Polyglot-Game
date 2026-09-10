@@ -70,6 +70,11 @@ A1/A2 ones. Install `pip install -r requirements-onnx.txt`, download `kokoro-v1.
 `--backend` the script picks torch when the `kokoro` package is importable and ONNX otherwise.
 The Playwright ffmpeg lacks an Opus encoder; `pip install imageio-ffmpeg` ships a static build that has one.
 
+**GPU.** On an NVIDIA card use `requirements-onnx-gpu.txt` instead (onnxruntime-gpu plus the CUDA 13
+wheels; make sure the plain `onnxruntime` package is not also installed, it shadows the GPU build).
+`gen_audio.py` then picks the CUDA provider by default, DirectML if that is what is installed, and the
+CPU otherwise, and prints which one it used. Set `ONNX_PROVIDER=CPUExecutionProvider` to force the CPU.
+
 Voices used (Kokoro-82M): es `ef_dora`, fr `ff_siwis`, it `if_sara`, pt-BR `pf_dora`,
 ja `jf_alpha`, zh `zf_xiaobei`. Swap them in the `KOKO` table in `tools/gen_audio.py`
 (e.g. `em_alex`, `im_nicola`, `pm_alex`, `jm_kumo`, `zm_yunxi` for male voices).
