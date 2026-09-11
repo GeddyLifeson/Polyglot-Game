@@ -211,6 +211,28 @@
   .wipe-row{ margin-top:10px; text-align:center; }
   .flag-box{ width:100%; min-height:90px; font-family:var(--font-mono); font-size:11px; background:var(--surface-2); color:var(--paper-dim); border:1px solid var(--line); border-radius:8px; padding:8px; }
   #btn-flag{ opacity:.55; }
+  .plan-card{ text-align:left; }
+  .plan-streak{ float:right; color:#ffb347; font-weight:400; }
+  .plan-quests{ display:flex; flex-direction:column; gap:6px; margin-top:8px; }
+  .plan-q{ display:flex; align-items:center; gap:10px; }
+  .plan-q.done{ opacity:.55; }
+  .plan-q .pq-icon{ width:22px; text-align:center; }
+  .plan-q .pq-body{ flex:1; min-width:0; }
+  .plan-q .pq-text{ font-size:12.5px; }
+  .plan-q .pq-bar{ height:5px; background:var(--surface); border-radius:3px; overflow:hidden; margin-top:3px; }
+  .plan-q .pq-bar div{ height:100%; background:var(--basil); }
+  .plan-q .pq-meta{ font-family:var(--font-mono); font-size:11px; color:var(--paper-faint); white-space:nowrap; }
+  .plan-track{ display:flex; flex-wrap:wrap; gap:6px 12px; align-items:center; margin-top:10px; font-family:var(--font-mono); font-size:11px; color:var(--paper-faint); }
+  .plan-ms.done{ color:var(--basil); }
+  .pb-stars{ font-size:10.5px; color:#b48cff; margin-top:2px; }
+  .pl-q{ font-family:var(--font-mono); font-size:12px; color:var(--paper-faint); margin:10px 0; }
+  .pl-word{ font-size:26px; font-weight:700; margin:8px 0 14px; }
+  .ic-form{ display:flex; flex-direction:column; gap:8px; margin-top:12px; }
+  .ic-select, .ic-textarea{ font:inherit; background:var(--surface-2); color:var(--paper); border:1px solid var(--line); border-radius:8px; padding:8px 10px; width:100%; }
+  .ic-text{ text-align:left; line-height:1.9; margin-top:14px; background:var(--surface-2); border:1px solid var(--line); border-radius:10px; padding:12px 14px; white-space:pre-wrap; }
+  .ic-known{ background:color-mix(in srgb, var(--basil) 25%, transparent); border-radius:4px; padding:0 2px; }
+  .ic-ladder{ background:color-mix(in srgb, #ffb347 30%, transparent); border-radius:4px; padding:0 2px; border-bottom:2px solid #ffb347; }
+  .ic-stats{ font-family:var(--font-mono); font-size:11.5px; color:var(--paper-faint); margin-top:8px; }
   .journey-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:8px; margin-top:14px; }
   .journey-card{ display:flex; flex-direction:column; align-items:flex-start; gap:2px; text-align:left; background:var(--surface-2); border:1px solid var(--line); border-radius:10px; padding:10px 12px; font:inherit; color:var(--paper-dim); cursor:pointer; min-height:92px; }
   .journey-card.on{ border-color:var(--basil); background:color-mix(in srgb, var(--basil) 10%, var(--surface-2)); color:var(--paper); }
@@ -452,6 +474,26 @@
       </div>
     </section>
 
+    <section class="screen" id="screen-placement" hidden>
+      <div class="card home-card">
+        <div class="home-hero">📐</div>
+        <h2 style="font-size:24px;">Placement test</h2>
+        <div id="placement-body"></div>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-intercept" hidden>
+      <div class="card home-card">
+        <div class="home-hero">📰</div>
+        <h2 style="font-size:24px;">Signal Intercept</h2>
+        <p class="preview-sub" style="margin:0 auto;">Paste anything written in one of your languages: a headline, a paragraph, song lyrics you typed yourself. Words in the ladder light up, decoded ones in green, and the ones you haven't decoded yet become a relay.</p>
+        <div class="ic-form"><select id="ic-lang" class="ic-select"></select><textarea id="ic-text" class="ic-textarea" rows="6" placeholder="Paste text here…"></textarea></div>
+        <div class="home-actions"><button class="btn btn-primary" id="btn-ic-run">🔎 Analyse</button><button class="btn btn-ghost" id="btn-ic-back">← Star Chart</button></div>
+        <div id="ic-result"></div>
+        <div class="home-actions" id="ic-actions"></div>
+      </div>
+    </section>
+
     <section class="screen" id="screen-home">
       <div class="card home-card">
         <div class="home-hero">🧑‍🚀</div>
@@ -462,12 +504,15 @@
         <div class="hub-map" id="hub-map"></div>
         <div class="storm-card" id="storm-card"></div>
         <div class="storm-card" id="sweep-card" hidden></div>
+        <div class="storm-card plan-card" id="plan-card" hidden></div>
         <div class="asc-row" id="asc-row" hidden></div>
         <div class="warp-card" id="warp-card"></div>
         <div class="home-actions">
           <button class="btn btn-ghost" id="btn-open-shop">🛠️ Engineering Bay</button>
           <button class="btn btn-ghost" id="btn-open-log">📓 Mission Log</button>
           <button class="btn btn-ghost" id="btn-open-journey">🌐 Languages</button>
+          <button class="btn btn-ghost" id="btn-open-placement">📐 Placement</button>
+          <button class="btn btn-ghost" id="btn-open-intercept">📰 Intercept</button>
         </div>
         <div class="wipe-row" id="wipe-row"></div>
       </div>
@@ -6423,6 +6468,7 @@
       tips:0, shopOwned:[], bestFloorIdx:-1, bestScore:0, clearedDungeons:{},
       chain:{len:0, best:0, carried:[]}, xp:0, ascension:0, missed:{}, commendations:[], voices:{}, speechRate:0, useClips:true,
       interference:[], dark:0, refitOwned:[], tuning:{}, warp:{cores:0, jumps:0, spent:0, drive:{}}, flagged:{}, srs:{},
+      streak:{days:0, last:0, best:0, shield:0}, plan:null, placed:{},
       journey:{langs:['es','fr','it','pt','ja','zh'], set:false},
       storm:{date:'', best:0, runs:0, cleared:false},
       stats:{decodes:0, correct:0, relaysCleared:0, relaysFailed:0, perfectRelays:0, encryptedCracked:0, events:0,
@@ -6449,6 +6495,8 @@
     if(typeof save.warp.spent!=='number') save.warp.spent = 0; if(!save.warp.drive || typeof save.warp.drive!=='object') save.warp.drive = {};
     if(!save.flagged || typeof save.flagged!=='object') save.flagged = {};
     if(!save.srs || typeof save.srs!=='object') save.srs = {};
+    if(!save.streak || typeof save.streak!=='object') save.streak = {days:0, last:0, best:0, shield:0};
+    if(!save.placed || typeof save.placed!=='object') save.placed = {};
     if(!save.journey || typeof save.journey!=='object' || !Array.isArray(save.journey.langs)) save.journey = {langs:['es','fr','it','pt','ja','zh'], set:false};
     /* a voyage that already has progress was started before the Journey screen existed: keep its six */
     if(!save.journey.set && (save.xp>0 || Object.keys(save.clearedDungeons||{}).length)) save.journey.set = true;
@@ -6895,6 +6943,217 @@
     var out = {}; journeyLangs().forEach(function(l){ var n = srsDueIds(l).length; if(n) out[l] = n; }); return out;
   }
 
+  /* ---- streak: one cleared relay, storm or sweep a day keeps it; a Dark Matter shield covers one missed day ---- */
+  function streakTouch(){
+    var s = save.streak, today = srsDay();
+    if(s.last===today) return 0;
+    if(s.last===today-1 || s.days===0){ s.days = (s.last===today-1) ? s.days+1 : 1; }
+    else if(s.last===today-2 && s.shield>0){ s.shield--; s.days++; toast('🛡️ Streak shield spent — the streak holds at '+s.days+'.'); }
+    else { s.days = 1; }
+    s.last = today; s.best = Math.max(s.best, s.days);
+    return s.days;
+  }
+  function streakAlive(){ var s = save.streak, today = srsDay(); return s.days>0 && (s.last===today || s.last===today-1 || (s.last===today-2 && s.shield>0)); }
+  function streakBonus(noise){ var s = save.streak; if(!streakAlive()) return 0; return Math.round(Math.min(s.days, 30) * 2 * (1 + 0.1*(noise||0))); }
+
+  /* ---- Flight Plan: a weekly set of quests generated from the voyage's languages, plus a milestone track ---- */
+  function planWeek(){ return Math.floor((srsDay()-4)/7); }
+  function planMetric(id, l){
+    var S = save.stats;
+    if(id==='relays') return S.relaysCleared||0;
+    if(id==='perfect') return S.perfectRelays||0;
+    if(id==='noise') return S.noiseClears||0;
+    if(id==='storms') return S.stormsCleared||0;
+    if(id==='sweeps') return S.sweepsCleared||0;
+    if(id==='words') return wordsInLang(l);
+    if(id==='decodes') return (S.byLang[l]||{}).c||0;
+    if(id==='dark') return S.darkEarned||0;
+    return 0;
+  }
+  function buildPlan(){
+    var langs = journeyLangs(); var rng = seededRng('plan-'+planWeek()+'-'+langs.join(','));
+    var pickL = function(){ return langs[Math.floor(rng()*langs.length)]; };
+    var l1 = pickL(), l2 = langs.length>1 ? langs.filter(function(l){ return l!==l1; })[Math.floor(rng()*(langs.length-1))] : null;
+    var quests = [
+      {id:'q_words', metric:'words', lang:l1, target:40, icon:'📡', text:'Decode 40 new '+LANGS[l1].name+' words', reward:{tips:250}},
+      {id:'q_relays', metric:'relays', target:6, icon:'🛰️', text:'Clear 6 relays', reward:{tips:200}},
+      {id:'q_noise', metric:'noise', target:2, icon:'📡', text:'Clear 2 relays at Noise 3 or higher', reward:{dark:3}},
+      {id:'q_perfect', metric:'perfect', target:3, icon:'✨', text:'3 relays with 100% accuracy', reward:{tips:300}},
+      (planWeek()%2===0) ? {id:'q_sweeps', metric:'sweeps', target:2, icon:'🛰️', text:'Complete 2 Maintenance Sweeps', reward:{dark:2}}
+                         : {id:'q_storm', metric:'storms', target:1, icon:'🌩️', text:'Weather a Signal Storm', reward:{dark:2}}
+    ];
+    if(l2){ quests.push({id:'q_decodes2', metric:'decodes', lang:l2, target:60, icon:'💬', text:'60 correct '+LANGS[l2].name+' decodes', reward:{tips:200}}); }
+    quests.forEach(function(q){ q.base = planMetric(q.metric, q.lang); q.done = false; });
+    return {week: planWeek(), langs: langs.slice(), quests: quests, milestones:[{at:2, reward:{tips:300}, done:false},{at:4, reward:{dark:6}, done:false},{at:quests.length, reward:{core:1}, done:false}]};
+  }
+  function currentPlan(){
+    var langs = journeyLangs().join(',');
+    if(!save.plan || save.plan.week!==planWeek() || save.plan.langs.join(',')!==langs){ save.plan = buildPlan(); persist(); }
+    return save.plan;
+  }
+  function questProgress(q){ return Math.max(0, Math.min(q.target, planMetric(q.metric, q.lang) - q.base)); }
+  function grantReward(r){
+    var parts = [];
+    if(r.tips){ save.tips += r.tips; parts.push('+'+r.tips+' 💠'); }
+    if(r.dark){ awardDark(r.dark); parts.push('+'+r.dark+' 🌌'); }
+    if(r.core){ save.warp.cores = warpCores()+r.core; parts.push('+'+r.core+' 🚀 core'); }
+    return parts.join(' ');
+  }
+  function checkPlan(){
+    var plan = currentPlan(); var newly = [];
+    plan.quests.forEach(function(q){ if(!q.done && questProgress(q)>=q.target){ q.done = true; newly.push('🧭 <b>'+q.text+'</b> — '+grantReward(q.reward)); } });
+    var doneN = plan.quests.filter(function(q){ return q.done; }).length;
+    plan.milestones.forEach(function(m){ if(!m.done && doneN>=m.at){ m.done = true; newly.push('🧭 <b>Flight Plan milestone '+m.at+'</b> — '+grantReward(m.reward)); } });
+    if(newly.length){ persist(); newly.forEach(function(t, i){ setTimeout(function(){ toast(t); }, 1200*i); }); }
+    return newly.length;
+  }
+  function renderPlanCard(){
+    var card = document.getElementById('plan-card'); if(!card) return;
+    var plan = currentPlan(); var doneN = plan.quests.filter(function(q){ return q.done; }).length;
+    var s = save.streak;
+    var html = '<div class="storm-head">🧭 Flight Plan · this week · <b>'+doneN+'/'+plan.quests.length+'</b> objectives'+
+      '<span class="plan-streak" title="One cleared relay, storm or sweep a day keeps it">🔥 '+(streakAlive()?s.days:0)+'-day streak'+(s.shield?' · 🛡️×'+s.shield:'')+'</span></div>';
+    html += '<div class="plan-quests">'+plan.quests.map(function(q){ var pr = questProgress(q); var pct = Math.round(100*pr/q.target);
+      return '<div class="plan-q'+(q.done?' done':'')+'"><span class="pq-icon">'+q.icon+'</span><div class="pq-body"><div class="pq-text">'+q.text+'</div><div class="pq-bar"><div style="width:'+pct+'%"></div></div></div><span class="pq-meta">'+(q.done?'✓':pr+'/'+q.target)+' · '+(q.reward.tips?q.reward.tips+' 💠':q.reward.dark?q.reward.dark+' 🌌':'')+'</span></div>'; }).join('')+'</div>';
+    html += '<div class="plan-track">'+plan.milestones.map(function(m){ return '<span class="plan-ms'+(m.done?' done':'')+'">'+(m.done?'✓ ':'')+m.at+' objectives → '+(m.reward.tips?m.reward.tips+' 💠':m.reward.dark?m.reward.dark+' 🌌':'1 🚀 core')+'</span>'; }).join('')+
+      '<button class="btn btn-sm btn-ghost" id="btn-streak-shield" '+(s.shield>=2||(save.dark||0)<4?'disabled':'')+' title="Covers one missed day. 4 Dark Matter, max two.">🛡️ Streak shield · 4 🌌</button></div>';
+    card.innerHTML = html; card.hidden = false;
+    var b = document.getElementById('btn-streak-shield');
+    if(b){ b.addEventListener('click', function(){ if((save.dark||0)<4 || s.shield>=2) return; save.dark -= 4; s.shield++; persist(); renderPlanCard(); refreshHud(); toast('🛡️ Streak shield armed ('+s.shield+').'); }); }
+  }
+
+  /* ---- constellations: the same or a similar word in another language on the voyage (cognates, loanwords, shared characters) ---- */
+  function normWord(t){ return plainText(t||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\([^)]*\)/g,'').replace(/[^\p{L}\p{N}\s]/gu,' ').replace(/\s+/g,' ').trim(); }
+  function leven(a, b){ var m = a.length, k = b.length; if(!m) return k; if(!k) return m; var prev = []; for(var j=0;j<=k;j++) prev[j]=j; for(var i=1;i<=m;i++){ var cur=[i]; for(var jj=1;jj<=k;jj++){ cur[jj] = Math.min(prev[jj]+1, cur[jj-1]+1, prev[jj-1]+(a[i-1]===b[jj-1]?0:1)); } prev = cur; } return prev[k]; }
+  function cjkChars(t){ return (plainText(t||'').match(/[\u3400-\u9fff]/g)||[]); }
+  function isCjkLang(l){ return l==='ja' || l==='zh' || l==='yue'; }
+  function wordRelation(a, la, b, lb){
+    if(isCjkLang(la) && isCjkLang(lb)){
+      var ca = cjkChars(a), cb = cjkChars(b); if(!ca.length || !cb.length) return null;
+      if(ca.join('')===cb.join('')) return 'same';
+      var shared = ca.filter(function(c){ return cb.indexOf(c)!==-1; });
+      return (shared.length && ca.length<=3 && cb.length<=3) ? 'shared-char' : null;
+    }
+    if(isCjkLang(la) || isCjkLang(lb)) return null;
+    var na = normWord(a), nb = normWord(b); if(na.length<3 || nb.length<3) return null;
+    if(/[\u0400-\u04ff]/.test(na)!==/[\u0400-\u04ff]/.test(nb)) return null;
+    if(/[\u0370-\u03ff\u0600-\u06ff\u0900-\u097f\uac00-\ud7af]/.test(na) || /[\u0370-\u03ff\u0600-\u06ff\u0900-\u097f\uac00-\ud7af]/.test(nb)) return null;   /* different scripts: no string similarity */
+    if(na===nb) return 'same';
+    var L = Math.max(na.length, nb.length), d = leven(na, nb);
+    if(d <= Math.max(1, Math.floor(L/4))) return 'similar';
+    var pre = 0; while(pre<na.length && pre<nb.length && na[pre]===nb[pre]) pre++;
+    if(pre>=4 && Math.min(na.length, nb.length)/L >= 0.6) return 'similar';
+    return null;
+  }
+  function constellationsFor(conceptId, lang){
+    var c = ITEM[conceptId]; if(!c || !c[lang]) return [];
+    var out = [], mine = c[lang].t;
+    journeyLangs().forEach(function(l){ if(l===lang || !c[l]) return; var r = wordRelation(mine, lang, c[l].t, l); if(r) out.push({lang:l, text:c[l].t, rel:r}); });
+    if(!isCjkLang(lang)){ var re = wordRelation(mine, lang, c.en, 'en'); if(re) out.push({lang:'en', text:c.en, rel:re}); }
+    return out;
+  }
+  function constellationHtml(list){
+    if(!list.length) return '';
+    return '🌌 '+list.map(function(x){ return (x.lang==='en'?'🇬🇧':LANG_META[x.lang].flag)+' '+plainText(x.text)+(x.rel==='same'?' (same)':x.rel==='shared-char'?' (shared character)':' (similar)'); }).join(' · ');
+  }
+
+  /* ---- placement test: adaptive, twelve questions, may pre-clear the tiers below the level reached ---- */
+  var placement = null;
+  function showPlacement(lang){
+    hideToast(); hideAllScreens();
+    var sc = document.getElementById('screen-placement'); sc.hidden = false;
+    placement = {lang:lang, tierIdx:1, asked:0, history:[], correct:{}};
+    placementNext();
+  }
+  function placementNext(){
+    var P = placement; var body = document.getElementById('placement-body');
+    if(P.asked>=12){ return placementFinish(); }
+    var tier = TIERS[P.tierIdx]; var pool = CONCEPTS.filter(function(c){ return c.tier===tier.code && c[P.lang]; });
+    var c = pick(pool); var opts = shuffle([c].concat(pickDistractors(c, 0.3, pool, P.lang)));
+    var show = c[P.lang].t + (c[P.lang].r ? ' <span style="color:var(--paper-faint);font-size:12px;">'+c[P.lang].r+'</span>' : '');
+    body.innerHTML = '<div class="pl-q"><span class="lvl-badge" style="background:'+tier.color+'">'+tier.code+'</span> Question '+(P.asked+1)+' of 12</div>'+
+      '<div class="pl-word">'+furi(show)+'</div><div class="answer-grid">'+opts.map(function(o){ return '<button type="button" class="answer-btn pl-ans" data-ok="'+(o.id===c.id?1:0)+'"><span class="ab-main">'+(o.emoji?o.emoji+' ':'')+o.en+'</span></button>'; }).join('')+'</div>';
+    Array.prototype.forEach.call(body.querySelectorAll('.pl-ans'), function(b){ b.addEventListener('click', function(){
+      var ok = b.getAttribute('data-ok')==='1'; P.history.push({tier:P.tierIdx, ok:ok}); P.asked++;
+      P.correct[P.tierIdx] = (P.correct[P.tierIdx]||0) + (ok?1:0);
+      if(ok && P.tierIdx<5) P.tierIdx++; else if(!ok && P.tierIdx>0) P.tierIdx--;
+      placementNext();
+    }); });
+  }
+  function placementFinish(){
+    var P = placement; var recent = P.history.slice(-6).map(function(x){ return x.tier; }).sort(function(a,b){ return a-b; });
+    var level = recent.length ? recent[Math.floor(recent.length/2)] : 0;
+    var okAtLevel = P.history.filter(function(x){ return x.tier===level && x.ok; }).length;
+    if(okAtLevel<2 && level>0) level--;
+    var body = document.getElementById('placement-body'); var lang = P.lang;
+    var below = TIERS.slice(0, level).map(function(t){ return t.code; });
+    body.innerHTML = '<div class="pl-word">'+LANG_META[lang].flag+' '+LANGS[lang].name+': you place at <b>'+TIERS[level].code+' · '+TIERS[level].name+'</b></div>'+
+      '<p class="preview-sub" style="margin:0 auto;">'+(below.length ? 'Mark '+below.join(', ')+' as decoded for '+LANGS[lang].name+' and start at '+TIERS[level].code+'? Nothing is lost: pre-cleared relays can still be replayed, they just count as done for the sector.' : 'You start at A1, which is where the ladder begins. Nothing to skip.')+'</p>'+
+      '<div class="home-actions">'+(below.length ? '<button class="btn btn-primary" id="btn-place-apply">✓ Start at '+TIERS[level].code+'</button>' : '')+'<button class="btn btn-ghost" id="btn-place-back">← Star Chart</button></div>';
+    var a = document.getElementById('btn-place-apply');
+    if(a){ a.addEventListener('click', function(){
+      for(var i=0;i<level;i++){ topicsForTier(TIERS[i], lang).forEach(function(topic){ save.clearedDungeons[i+':'+lang+':'+topic] = true; }); }
+      save.placed[lang] = TIERS[level].code; persist(); toast('📐 '+LANGS[lang].name+' placed at '+TIERS[level].code+'.'); showHome();
+    }); }
+    document.getElementById('btn-place-back').addEventListener('click', showHome);
+  }
+  function showPlacementPicker(){
+    hideToast(); hideAllScreens();
+    var sc = document.getElementById('screen-placement'); sc.hidden = false;
+    document.getElementById('placement-body').innerHTML = '<p class="preview-sub" style="margin:0 auto 12px;">Twelve quick questions that climb when you are right and drop when you are wrong. Pick a language:</p><div class="home-actions">'+
+      journeyLangs().map(function(l){ return '<button class="btn btn-ghost pl-lang" data-lang="'+l+'">'+LANG_META[l].flag+' '+LANGS[l].name+(save.placed[l]?' · placed '+save.placed[l]:'')+'</button>'; }).join('')+'<button class="btn btn-ghost" id="btn-place-back">← Star Chart</button></div>';
+    Array.prototype.forEach.call(document.querySelectorAll('.pl-lang'), function(b){ b.addEventListener('click', function(){ showPlacement(b.getAttribute('data-lang')); }); });
+    document.getElementById('btn-place-back').addEventListener('click', showHome);
+  }
+
+  /* ---- Signal Intercept: paste any text; words in the ladder light up, the unknown ones become a relay ---- */
+  var _lex = {};
+  function lexiconFor(lang){
+    if(_lex[lang]) return _lex[lang];
+    var m = {}; CONCEPTS.forEach(function(c){ if(!c[lang]) return; var k = normWord(c[lang].t); if(k && !m[k]) m[k] = c.id; });
+    _lex[lang] = m; return m;
+  }
+  function interceptAnalyze(text, lang){
+    var lex = lexiconFor(lang); var hits = {}; var out = [];
+    if(isCjkLang(lang)){
+      var s = plainText(text); var i = 0;
+      while(i < s.length){
+        var found = null;
+        for(var len=4; len>=1; len--){ var sub = s.substr(i, len); if(lex[sub]){ found = {t:sub, id:lex[sub]}; break; } }
+        if(found){ out.push(found); hits[found.id] = true; i += found.t.length; } else { out.push({t:s[i]}); i++; }
+      }
+    } else {
+      var toks = plainText(text).split(/(\s+|[.,;:!?¡¿"'“”‘’()\[\]…—-]+)/);
+      for(var j=0;j<toks.length;j++){
+        var tok = toks[j]; if(!tok) continue;
+        var pair = (j+2<toks.length) ? normWord(tok+' '+toks[j+2]) : null;
+        if(pair && lex[pair]){ out.push({t:tok+toks[j+1]+toks[j+2], id:lex[pair]}); hits[lex[pair]] = true; j += 2; continue; }
+        var k = normWord(tok); if(k && lex[k]){ out.push({t:tok, id:lex[k]}); hits[lex[k]] = true; } else { out.push({t:tok}); }
+      }
+    }
+    return {tokens:out, ids:Object.keys(hits)};
+  }
+  function showIntercept(){
+    hideToast(); hideAllScreens();
+    var sc = document.getElementById('screen-intercept'); sc.hidden = false;
+    var sel = document.getElementById('ic-lang'); sel.innerHTML = journeyLangs().map(function(l){ return '<option value="'+l+'">'+LANG_META[l].flag+' '+LANGS[l].name+'</option>'; }).join('');
+    document.getElementById('ic-result').innerHTML = ''; document.getElementById('ic-actions').innerHTML = '';
+  }
+  function interceptRun(){
+    var lang = document.getElementById('ic-lang').value; var text = document.getElementById('ic-text').value || '';
+    if(!text.trim()){ toast('📰 Paste some '+LANGS[lang].name+' text first.'); return; }
+    var a = interceptAnalyze(text, lang);
+    var known = a.ids.filter(function(id){ return learnedSet.has(id+':'+lang); }); var todo = a.ids.filter(function(id){ return !learnedSet.has(id+':'+lang); });
+    var html = a.tokens.map(function(t){ if(!t.id) return t.t.replace(/</g,'&lt;'); var cls = learnedSet.has(t.id+':'+lang) ? 'ic-known' : 'ic-ladder'; return '<span class="'+cls+'" title="'+ITEM[t.id].en.replace(/"/g,'')+'">'+t.t.replace(/</g,'&lt;')+'</span>'; }).join('');
+    document.getElementById('ic-result').innerHTML = '<div class="ic-text">'+html+'</div><div class="ic-stats">'+a.ids.length+' ladder words in this text · <span class="ic-known">'+known.length+' decoded</span> · <span class="ic-ladder">'+todo.length+' not yet</span></div>';
+    var act = document.getElementById('ic-actions'); act.innerHTML = '';
+    if(todo.length){
+      var b = document.createElement('button'); b.className = 'btn btn-primary'; b.textContent = '📰 Decode the '+Math.min(30, todo.length)+' unknown words';
+      b.addEventListener('click', function(){ st.interceptIds = todo.slice(0, 30); var tiers = st.interceptIds.map(function(id){ return TIERS.findIndex(function(t){ return t.code===ITEM[id].tier; }); }); var idx = tiers.sort(function(x,y){ return x-y; })[Math.floor(tiers.length/2)]; enterDungeon(idx, lang, '__intercept'); });
+      act.appendChild(b);
+    }
+  }
+
   /* ---- daily Signal Storm: seeded by the date, same modifiers for everyone that day ---- */
   function stormDate(){ var d = new Date(); return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2); }
   function seededRng(seed){ var h = 2166136261; for(var i=0;i<seed.length;i++){ h ^= seed.charCodeAt(i); h = Math.imul(h, 16777619); } return function(){ h += 0x6D2B79F5; var t = Math.imul(h ^ (h>>>15), 1 | h); t ^= t + Math.imul(t ^ (t>>>7), 61 | t); return ((t ^ (t>>>14))>>>0)/4294967296; }; }
@@ -7037,6 +7296,7 @@
     hideToast();
     if(!save.journey.set){ showJourney(); return; }
     var jsc = document.getElementById('screen-journey'); if(jsc) jsc.hidden = true;
+    ['screen-placement','screen-intercept'].forEach(function(id){ var e = document.getElementById(id); if(e) e.hidden = true; });
     st.playing = false; st.runActive = false;
     ['screenHub','screenTopics','screenPreview','screenPlaying','screenPerks','screenShop','screenComplete'].forEach(function(id){ el[id].hidden = true; });
     el.screenHome.hidden = false;
@@ -7057,12 +7317,12 @@
     el.homeProfile.innerHTML =
       '<div class="pf-badge">'+ri.rank.icon+'</div><div class="pf-body">'+
       '<div class="pf-rank">'+ri.rank.title+' <span style="color:var(--paper-faint);font-weight:400;font-size:12px;">· rank '+(ri.idx+1)+'/'+RANKS.length+'</span></div>'+
-      '<div class="pf-sub">'+save.xp.toLocaleString()+' XP'+(ri.next ? ' · '+(ri.next.xp-save.xp).toLocaleString()+' to '+ri.next.title : ' · max rank')+' · 🎖️ '+save.commendations.length+'/'+COMMENDATIONS.length+' commendations'+(noiseLevel()?' · 📡 Noise '+noiseLevel():'')+(warpCores()?' · 🚀 '+warpCores()+' cores':'')+'</div>'+
+      '<div class="pf-sub">'+save.xp.toLocaleString()+' XP'+(ri.next ? ' · '+(ri.next.xp-save.xp).toLocaleString()+' to '+ri.next.title : ' · max rank')+' · 🎖️ '+save.commendations.length+'/'+COMMENDATIONS.length+' commendations'+(noiseLevel()?' · 📡 Noise '+noiseLevel():'')+(warpCores()?' · 🚀 '+warpCores()+' cores':'')+(streakAlive()?' · 🔥 '+save.streak.days+'-day streak':'')+'</div>'+
       '<div class="xp-track"><div class="xp-fill" style="width:'+pct+'%"></div></div>'+
       (ri.next && ri.next.unlock ? '<div class="pf-sub" style="margin-top:6px;">Next: '+ri.next.unlock+'</div>' : '')+
       '</div>';
     el.stormCard.innerHTML = stormCardHtml();
-    renderSweepCard();
+    renderSweepCard(); renderPlanCard();
     var stormBtn = document.getElementById('btn-storm'); if(stormBtn) stormBtn.addEventListener('click', startStorm);
     var ascOk = rankIndex()>=2 || save.interference.length>0;
     el.ascRow.hidden = !ascOk;
@@ -8238,8 +8498,10 @@
         var wasLearned = learnedSet.has(round.conceptId+':'+round.lang);
         learnedSet.add(round.conceptId+':'+round.lang);
         var concept = ITEM[round.conceptId];
-        if(cognate){ toast('🔗 <b>Cross-reference!</b> You already decoded “'+concept.en+'” on another Romance-language relay. +'+cognateBonus); }
-        else if(!wasLearned && concept.fact && !factsShown.has(concept.id)){ factsShown.add(concept.id); toast('💡 '+concept.fact); }
+        var stars = constellationHtml(constellationsFor(round.conceptId, round.lang));
+        if(cognate){ toast('🔗 <b>Cross-reference!</b> You already decoded “'+concept.en+'” on another Romance-language relay. +'+cognateBonus+(stars?' '+stars:'')); }
+        else if(!wasLearned && concept.fact && !factsShown.has(concept.id)){ factsShown.add(concept.id); toast('💡 '+concept.fact+(stars?' '+stars:'')); }
+        else if(stars && !wasLearned){ toast('✅ Decoded! +'+roundScore+' '+stars); }
         else { toast('✅ Decoded! +'+roundScore); }
       } else if(round.kind==='listen'){
         var li = ITEM[round.conceptId];
@@ -8338,6 +8600,7 @@
   function hideAllScreens(){
     ['screenHome','screenHub','screenTopics','screenPreview','screenPlaying','screenPerks','screenShop','screenComplete','screenEvent','screenLog'].forEach(function(id){ el[id].hidden = true; });
     var js = document.getElementById('screen-journey'); if(js) js.hidden = true;
+    ['screen-placement','screen-intercept'].forEach(function(id){ var e = document.getElementById(id); if(e) e.hidden = true; });
   }
 
   /* ============================= JOURNEY: choose the languages for this voyage ============================= */
@@ -8470,12 +8733,14 @@
     var dungeonTips = 20 + Math.round(st.floorCorrect*3) + (firstClear ? 30 : 0) + (firstClear && owned('shop_discovery') ? 40 : 0) + (firstClear && owned('shop_discovery2') ? 60 : 0);
     var mult = st.perkFlags.tipMult * shopTipMult() * (refitOwned('rf_echo') && st.shieldCharges>0 ? 1.25 : 1);
     var tipsEarned = st.perkFlags.noCredits ? 0 : Math.round(dungeonTips * mult) + st.tipsThisRun;
+    if(noise>=3 && !isRecovery) bumpStat('noiseClears');
+    streakTouch(); var streakPay = streakBonus(noise); tipsEarned += streakPay;
     save.tips += tipsEarned;
     save.bestScore = Math.max(save.bestScore, st.score);
     var xpGain = st.correct*2 + (firstClear ? 40 : 10) + st.encryptedThisRun*5 + (perfect ? 15 : 0);
     addXp(xpGain);
     var chainResult = settleChain('clear', {firstAttempt: st.firstAttempt && firstClear, draftedPerkId: st.draftedPerkId, perfect: perfect, extraLinks: st.perkFlags.chainLinks||0});
-    checkCommendations();
+    checkCommendations(); checkPlan();
     var langNowCleared = isLangCleared(st.tierIdx, st.lang);
     var hubNowCleared = isHubCleared(st.tierIdx);
     persist(); refreshHud();
@@ -8497,7 +8762,7 @@
       statBox(st.correct+'/'+st.total,'Decoded correctly') +
       statBox(Math.round(accuracy*100)+'%','Accuracy') +
       statBox(st.score,'Relay score') +
-      statBox(tipsEarned+' 💠','Credits earned') +
+      statBox(tipsEarned+' 💠','Credits earned'+(streakPay?' · 🔥 '+save.streak.days+'-day streak +'+streakPay:'')) +
       statBox('+'+Math.round(xpGain*(1+0.08*noise))+' XP', rankInfo().rank.title) +
       statBox('🔗 '+save.chain.len,'Signal chain') +
       (dmEarned ? statBox('+'+dmEarned+' 🌌','Dark matter'+(noise?' · Noise '+noise:'')) : '');
@@ -8598,10 +8863,11 @@
     var mult = st.perkFlags.tipMult * shopTipMult();
     mult *= owned('shop_stormpay') ? 1.5 : 1;
     var tipsEarned = Math.round((st.score/10) * mult) + (firstToday ? (driveLevel('wd_storm') ? 240 : 120) : 0) + st.tipsThisRun;
+    streakTouch(); tipsEarned += streakBonus(st.noise||0);
     save.tips += tipsEarned; save.bestScore = Math.max(save.bestScore, st.score);
     var dmEarned = awardDark(firstToday ? 2 + Math.floor((st.noise||0)/2) + (refitOwned('rf_uplink')?1:0) : 0);
     var xpGain = st.correct*3 + 30; addXp(xpGain);
-    checkCommendations(); persist(); refreshHud();
+    checkCommendations(); checkPlan(); persist(); refreshHud();
     hideAllScreens(); el.screenComplete.hidden = false; el.btnPhrasebook.disabled = false; el.shiftRibbon.hidden = true; el.runPerks.hidden = true;
     var accuracy = st.total>0 ? st.correct/st.total : 0;
     el.cpTitle.textContent = '🌩️ Storm weathered!';
@@ -8664,9 +8930,11 @@
       var cells = journeyLangs().map(function(l){
         var key = c.id+':'+l;
         if(learnedSet.has(key)){
-          if(l==='ja'){ return '<td>'+furi(c[l].t)+'</td>'; }
+          var stars = constellationsFor(c.id, l).filter(function(x){ return x.lang!=='en'; });
+          var sh = stars.length ? '<div class="pb-stars" title="Same or similar word elsewhere on your voyage">'+stars.map(function(x){ return LANG_META[x.lang].flag+(x.rel==='same'?'=':'≈'); }).join(' ')+'</div>' : '';
+          if(l==='ja'){ return '<td>'+furi(c[l].t)+sh+'</td>'; }
           var r = c[l].r ? '<div style="font-size:10.5px;color:var(--paper-faint);">'+c[l].r+'</div>' : '';
-          return '<td>'+c[l].t+r+'</td>';
+          return '<td>'+c[l].t+r+sh+'</td>';
         }
         return '<td class="pb-locked">?????</td>';
       }).join('');
@@ -8685,6 +8953,10 @@
   el.btnTopicsBack.addEventListener('click', function(){ showHub(st.tierIdx); });
   el.btnOpenShop.addEventListener('click', showShop);
   document.getElementById('btn-open-journey').addEventListener('click', showJourney);
+  document.getElementById('btn-open-placement').addEventListener('click', showPlacementPicker);
+  document.getElementById('btn-open-intercept').addEventListener('click', showIntercept);
+  document.getElementById('btn-ic-run').addEventListener('click', interceptRun);
+  document.getElementById('btn-ic-back').addEventListener('click', showHome);
   document.getElementById('btn-note').addEventListener('click', function(){ if(st.round && st.round.note) toast('📘 '+st.round.note); });
   /* shadowing: record ~4 s from the microphone, then play the native clip and the recording back to back */
   var shadowRec = null;
