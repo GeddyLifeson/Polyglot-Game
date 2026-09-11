@@ -138,3 +138,29 @@ language and its keys from the manifest before merging, or add a `--replace` fla
 Every claim in commits was checked live: Playwright suites, the QA hook (`window.__QA`), and scripted
 sweeps (25,051 rounds for duplicate options; 358 relays for relay scoping; every translation file for
 script and id coverage). Keep that bar.
+
+## Feature programme agreed 2026-09-11 (owner picked from a list; build in this order)
+
+Phase 1, code only, each item verified in the QA wrapper and pushed:
+1. Spaced repetition: FSRS-style schedule per (word, language) in `save.srs`; a daily "Maintenance Sweep" relay
+   of due words per language (`__sweep` topic, chain-neutral like recovery).
+2. Graduated recall inside a relay: a missed item is re-queued ~4 rounds later, then ~9 later if missed again.
+3. Cloze rounds: new module type `cloze` per tier from BUILD_SENTENCES tiles (blank one tile; options from
+   other tiles of the same language and tier).
+4. Shadowing (speaking option 2): 🎤 button on any round with a clip; records ~4 s via MediaRecorder, plays
+   the clip then the recording back to back. No scoring.
+5. Grammar notes on tap: 📘 button reveals the sentence/dialogue/grammar `note` before answering.
+6. Streak with shield economy: daily streak, Interference multiplies streak pay, a Dark Matter streak shield.
+7. Voyage milestone track ("Flight Plan", never "season pass"): weekly quests + a milestone track generated
+   from the player's journey languages; rewards in credits / Dark Matter / cores.
+8. Placement test: adaptive quiz per language that can pre-clear tiers.
+9. Tutorial: guided first launch — Journey setup, then a coached first relay.
+10. Reading your own text ("Signal Intercept"): paste text, known words highlighted, unknown in-ladder
+    words become a custom relay.
+11. Constellations (word families across the journey): cognates / loanwords / near-identical words computed
+    from the data (normalised string similarity, English↔target too), shown only for languages on the
+    voyage; shared characters for ja↔zh↔yue. Shown after answering and in the Lexicon.
+Phase 2, content via subagents (no fan-out, unique output paths, script-validated):
+12. Stories: ~6 short parallel-text stories with comprehension questions, authored in English, translated
+    into all 20 languages.
+13. Grammar / idiom / nuance modules for the fourteen new languages.
