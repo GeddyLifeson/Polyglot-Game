@@ -173,6 +173,16 @@ until the local TLS root is appended to certifi (`tools/export_local_roots.ps1`)
   read one paragraph at a time (tap for the English, 🔊 to hear it, decoded ladder words glow) with four
   comprehension questions in English between paragraphs. First finish pays credits by tier (40/60/80/100)
   plus Dark Matter for C1/C2 and a perfect score; a later perfect read pays 20 credits once.
+- **Library modes** (`STORY_MODES`): every story can be taken four ways: 📖 Read (as above), ✍️ Translate
+  (each paragraph shown in your language, write it in the one you are learning), 🎧 Dictation (hear it, type it
+  in that language) and 🗣️ Interpret (hear it, write what it means in your language). Typed answers are graded
+  by accent-, case- and punctuation-blind similarity (`storySim`, CJK by character); a paragraph counts at 72%
+  (45% for Interpret). Typed modes pay ×1.6 / ×1.6 / ×1.4 and track their own best per story and language.
+- **Your own language** (`save.native`, `applyNative`, picked at the top of the Journey screen): the meaning
+  side of every word and sentence is swapped to that language at boot, the story "other side" follows it, and
+  English joins the chart as a learnable language (code `eng`, device voice). Coach notes, grammar notes and
+  story questions stay in English. Folk tales carry only their own language plus English, so their other side
+  is English for everyone.
 - **Skill drills for every language**: the fourteen added languages have their own B2 grammar, C1 idiom and
   C2 nuance items in `content/xlate_<lang>_skills2.py` (same schema and topic keys as the core six), so the
   grammar / idiom / nuance modules now appear in those sectors for every language on the voyage.

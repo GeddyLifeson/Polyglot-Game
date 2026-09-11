@@ -180,6 +180,11 @@ Phase 2b (2026-09-11, owner's idea): the Library also holds each language's OWN 
 language (B1 x2, B2 x2, C1, C2) in `content/folk_<lang>.py` (`FOLK` list: title/title_en/origin/paras/paras_en/
 questions), written natively with the English beside; build.py turns them into stories with `only: <lang>` so
 they show only for that language. The six crew stories stay as the shared set.
+Phase 3 (2026-09-11 afternoon, owner's request): Library modes Read / Translate / Dictation / Interpret
+(`STORY_MODES`, `storyTypedStep`, `storySim`), a native-language picker on the Journey screen (`save.native`,
+`applyNative` swaps c.en / s.en to that language at boot; originals kept in `en_src`), and English as a target
+language (`eng`: `c.eng`, `s.eng`, `LANG_META.eng`, hidden while the native language is English). Changing the
+native language reloads the page. README 3d documents it.
 Open follow-ups from Phase 2: the new drill items and story paragraphs have no recorded clips (the running
 Chatterbox chains were started before they existed); after the chains finish, re-run gen_audio.py per language
 (it only records missing keys) if studio voice is wanted for them. Web Speech covers them meanwhile.

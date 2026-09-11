@@ -260,6 +260,12 @@
   .story-q .opts .btn.right{ border-color:var(--basil); }
   .story-q .opts .btn.wrong{ border-color:#e0665f; opacity:.7; }
   .story-done{ text-align:center; margin-top:14px; font-size:15px; }
+  .journey-native{ margin:12px auto 4px; font-size:14px; }
+  .story-modes{ display:flex; gap:6px; flex-wrap:wrap; justify-content:center; margin-top:12px; }
+  .story-type{ width:100%; min-height:72px; font:inherit; font-size:16px; background:var(--surface-2); color:var(--paper); border:1px solid var(--line); border-radius:8px; padding:8px 10px; margin-top:6px; }
+  .story-ref{ font-size:14px; color:var(--paper-faint); margin-top:6px; line-height:1.7; }
+  .story-ref b{ color:var(--paper); }
+  .story-verdict{ font-weight:600; margin-top:6px; }
   .journey-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:8px; margin-top:14px; }
   .journey-card{ display:flex; flex-direction:column; align-items:flex-start; gap:2px; text-align:left; background:var(--surface-2); border:1px solid var(--line); border-radius:10px; padding:10px 12px; font:inherit; color:var(--paper-dim); cursor:pointer; min-height:92px; }
   .journey-card.on{ border-color:var(--basil); background:color-mix(in srgb, var(--basil) 10%, var(--surface-2)); color:var(--paper); }
@@ -6391,6 +6397,7 @@
       es:{t:r[5]}, fr:{t:r[6]}, it:{t:r[7]}, pt:{t:r[8]}, ja:{t:r[9]}, zh:{t:r[10], r:r[11]||null}};
     if(r[12]) c.fact = r[12];
     if(r[13]){ for(var xl in r[13]){ c[xl] = {t:r[13][xl][0], r:r[13][xl][1]||null}; } }
+    c.eng = {t:r[1], r:null};   /* English as a target language for players whose own language is not English */
     return c;
   }
   var CONCEPTS = VOCAB_RAW.map(expandVocab);
@@ -6410,6 +6417,9 @@
       LANG_ORDER.push(c);
     });
   })();
+  LANG_META.eng = {name:'English', native:'English', flag:'🇬🇧', speech:'en-US', reading:false, audio:false, tiers:['A1','A2','B1','B2','C1','C2'], sentences:BUILD_SENTENCES.length, dialogues:0};
+  LANGS.eng = {name:'English', color:'#9ad0ec'}; LANG_ORDER.push('eng');
+  BUILD_SENTENCES.forEach(function(s){ if(s.en && !s.eng) s.eng = s.en.replace(/[.!?]$/,'').split(' '); });
   var ROMANCE = ['es','fr','it','pt','la'];
   var SPEECH_LANG = {en:'en-US'};
   Object.keys(LANG_META).forEach(function(c){ SPEECH_LANG[c] = LANG_META[c].speech; });
@@ -6417,7 +6427,8 @@
   function journeyLangs(){
     var j = save.journey && save.journey.langs;
     var list = (j && j.length) ? j : BASE_LANGS;
-    return list.filter(function(l){ return !!LANG_META[l]; });
+    var nat = (save && save.native) || 'en';
+    return list.filter(function(l){ return !!LANG_META[l] && !(l==='eng' && nat==='en') && !(l===nat); });
   }
   function langHasTier(l, tier){ return tier.endless || ((LANG_META[l] && LANG_META[l].tiers) || []).indexOf(tier.code)!==-1; }
   function tierLangs(tier){ return journeyLangs().filter(function(l){ return langHasTier(l, tier); }); }
@@ -6915,7 +6926,7 @@
       tips:0, shopOwned:[], bestFloorIdx:-1, bestScore:0, clearedDungeons:{},
       chain:{len:0, best:0, carried:[]}, xp:0, ascension:0, missed:{}, commendations:[], voices:{}, speechRate:0, useClips:true,
       interference:[], dark:0, refitOwned:[], tuning:{}, warp:{cores:0, jumps:0, spent:0, drive:{}}, flagged:{}, srs:{},
-      streak:{days:0, last:0, best:0, shield:0}, plan:null, placed:{}, tutorial:{done:false, seen:{}}, stories:{},
+      streak:{days:0, last:0, best:0, shield:0}, plan:null, placed:{}, tutorial:{done:false, seen:{}}, stories:{}, native:'en',
       journey:{langs:['es','fr','it','pt','ja','zh'], set:false},
       storm:{date:'', best:0, runs:0, cleared:false},
       stats:{decodes:0, correct:0, relaysCleared:0, relaysFailed:0, perfectRelays:0, encryptedCracked:0, events:0,
@@ -6946,6 +6957,7 @@
     if(!save.placed || typeof save.placed!=='object') save.placed = {};
     if(!save.tutorial || typeof save.tutorial!=='object') save.tutorial = {done:false, seen:{}};
     if(!save.stories || typeof save.stories!=='object') save.stories = {};
+    if(!save.native || (save.native!=='en' && !LANG_META[save.native])) save.native = 'en';
     if(!save.tutorial.seen) save.tutorial.seen = {};
     /* a voyage that already has progress never sees the tutorial */
     if(!save.tutorial.done && (save.stats.relaysCleared||0)>0) save.tutorial.done = true;
@@ -6969,6 +6981,17 @@
   /* one id -> item index across every pool (build.py guarantees ids are globally unique) */
   var ITEM = {};
   [BUILD_SENTENCES, GRAMMAR_ITEMS, IDIOMS, NUANCE, DIALOGUES].forEach(function(pool){ pool.forEach(function(x){ ITEM[x.id]=x; }); });
+  /* The player's own language. English is the authored pivot; when the player speaks something else, every
+     word and sentence's meaning side is swapped to that language (the data carries all twenty), and English
+     itself becomes a learnable language ('eng'). Grammar notes, story questions and the UI stay in English. */
+  function nativeLang(){ return (save.native && save.native!=='en' && LANG_META[save.native]) ? save.native : 'en'; }
+  function nativeName(){ var l = nativeLang(); return l==='en' ? 'English' : LANGS[l].name; }
+  function applyNative(){
+    var nat = nativeLang(); if(nat==='en') return;
+    CONCEPTS.forEach(function(c){ if(!c.en_src) c.en_src = c.en; c.en = (c[nat] && c[nat].t) ? plainText(c[nat].t) : c.en_src; });
+    BUILD_SENTENCES.forEach(function(s){ if(!s.en_src) s.en_src = s.en; if(Array.isArray(s[nat])) s.en = plainText(s[nat].join(isCjkLang(nat) ? '' : ' ')); });
+  }
+  applyNative();
   CONCEPTS.forEach(function(c){ ITEM[c.id]=c; });
 
   /* ============================= DOM ============================= */
@@ -7633,10 +7656,24 @@
 
   /* ---- Ship's Library: graded parallel-text stories with comprehension checks ---- */
   var STORY_PAY = {B1:{tips:40}, B2:{tips:60}, C1:{tips:80, dark:1}, C2:{tips:100, dark:2}};
-  function storyText(story, lang){ return lang==='en' ? {title:story.title, paras:story.paras} : (story.xl && story.xl[lang]) || null; }
+  var STORY_MODES = [
+    {id:'read',      icon:'📖', name:'Read',      desc:'Read it in the language; tap a paragraph for yours; answer the questions.', mult:1},
+    {id:'translate', icon:'✍️', name:'Translate', desc:'See each paragraph in your language and write it in the one you are learning.', mult:1.6},
+    {id:'dictate',   icon:'🎧', name:'Dictation', desc:'Hear each paragraph and type what you hear, in the language you are learning.', mult:1.6},
+    {id:'interpret', icon:'🗣️', name:'Interpret', desc:'Hear each paragraph and write what it means in your language.', mult:1.4}
+  ];
+  function storyText(story, lang){ return (lang==='en' || lang==='eng') ? {title:story.title, paras:story.paras} : (story.xl && story.xl[lang]) || null; }
+  function storyNative(story){ return storyText(story, nativeLang()) || storyText(story, 'en'); }
+  function storyMode(){ return STORY_MODES.filter(function(m){ return m.id===st.storyMode; })[0] || STORY_MODES[0]; }
+  /* how close a typed answer is to the reference, 0..1: accent-, case- and punctuation-blind; CJK compares characters */
+  function storySim(typed, ref, lang){
+    function norm(s){ s = plainText(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, isCjkLang(lang) ? '' : ' ').trim(); return s; }
+    var a = norm(typed), b = norm(ref); if(!a || !b) return 0;
+    return Math.max(0, 1 - leven(a, b) / Math.max(a.length, b.length));
+  }
   function storyTierIdx(story){ return TIERS.findIndex(function(t){ return t.code===story.tier; }); }
   function storyOpen(story, lang){ var idx = storyTierIdx(story); return idx<=frontierHubIdx() && langHasTier(lang, TIERS[idx]); }
-  function storyKey(story, lang){ return story.id+':'+lang; }
+  function storyKey(story, lang, mode){ return story.id+':'+lang+((mode||'read')==='read' ? '' : ':'+mode); }
   function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
   function showStories(){
     hideToast(); hideAllScreens(); st.playing = false;
@@ -7646,18 +7683,21 @@
     var cur = st.storyLang && langs.indexOf(st.storyLang)!==-1 ? st.storyLang : langs[0];
     st.storyLang = cur;
     var pick = langs.length>1 ? '<div class="storm-actions" style="margin-top:12px;">'+langs.map(function(l){ return '<button class="btn btn-sm '+(l===cur?'btn-primary':'btn-ghost')+' story-lang" data-lang="'+l+'">'+LANG_META[l].flag+' '+LANGS[l].name+'</button>'; }).join('')+'</div>' : '';
+    var mode = storyMode();
+    pick += '<div class="story-modes">'+STORY_MODES.map(function(m){ return '<button class="btn btn-sm '+(m.id===mode.id?'btn-primary':'btn-ghost')+' story-mode" data-mode="'+m.id+'" title="'+m.desc+'">'+m.icon+' '+m.name+'</button>'; }).join('')+'</div><div class="story-meta" style="text-align:center;">'+mode.desc+(mode.mult>1?' · pays ×'+mode.mult:'')+'</div>';
     var tiles = STORIES.filter(function(s){ return !s.only || s.only===cur; }).map(function(s){
       var tx = storyText(s, cur);
       if(!tx) return '<div class="story-tile locked"><div class="story-tier">'+s.tier+'</div><div class="story-title">'+esc(s.title)+'</div><div class="story-meta">Not yet translated into '+LANGS[cur].name+'</div></div>';
-      var open = storyOpen(s, cur); var rec = save.stories[storyKey(s, cur)]; var pay = STORY_PAY[s.tier];
-      var meta = !open ? '🔒 Clear the '+TIERS[storyTierIdx(s)-1].code+' sector first' : rec ? '✅ Read · best '+rec.best+'/4'+(rec.best===4?' · perfect':'') : 'Not read yet · +'+pay.tips+' 💠'+(pay.dark?' +'+pay.dark+' 🌌':'')+' on first finish';
+      var open = storyOpen(s, cur); var rec = save.stories[storyKey(s, cur, mode.id)]; var pay = STORY_PAY[s.tier]; var outOf = mode.id==='read' ? 4 : 7;
+      var meta = !open ? '🔒 Clear the '+TIERS[storyTierIdx(s)-1].code+' sector first' : rec ? '✅ Done · best '+rec.best+'/'+outOf+(rec.best===outOf?' · perfect':'') : 'Not done yet · +'+Math.round(pay.tips*mode.mult)+' 💠'+(pay.dark?' +'+pay.dark+' 🌌':'')+' on first finish';
       return '<div class="story-tile'+(open?'':' locked')+'" data-id="'+s.id+'"><div class="story-tier">'+s.tier+' · '+TIERS[storyTierIdx(s)].name+(s.only?' · 📜 '+esc(s.origin||'traditional tale'):' · 🚀 crew story')+'</div><div class="story-title">'+furi(esc(tx.title))+'</div><div class="story-meta">'+esc(s.title)+' · '+meta+'</div></div>';
     }).join('');
     body.innerHTML = pick+'<div class="story-list">'+tiles+'</div>';
     act.innerHTML = '<button class="btn btn-ghost" id="btn-story-back">← Star Chart</button>';
     document.getElementById('btn-story-back').addEventListener('click', showHome);
     Array.prototype.forEach.call(body.querySelectorAll('.story-lang'), function(b){ b.addEventListener('click', function(){ st.storyLang = b.getAttribute('data-lang'); showStories(); }); });
-    Array.prototype.forEach.call(body.querySelectorAll('.story-tile[data-id]:not(.locked)'), function(t){ t.addEventListener('click', function(){ startStory(t.getAttribute('data-id'), cur); }); });
+    Array.prototype.forEach.call(body.querySelectorAll('.story-mode'), function(b){ b.addEventListener('click', function(){ st.storyMode = b.getAttribute('data-mode'); showStories(); }); });
+    Array.prototype.forEach.call(body.querySelectorAll('.story-tile[data-id]:not(.locked)'), function(t){ t.addEventListener('click', function(){ startStory(t.getAttribute('data-id'), cur, mode.id); }); });
   }
   function storyParaHtml(text, lang){
     /* ladder words the player has decoded glow; everything else is plain. Furigana groups {漢字|かな} are
@@ -7673,12 +7713,14 @@
     }
     return out + run(text.slice(last));
   }
-  function startStory(id, lang){
+  function startStory(id, lang, mode){
     var story = STORIES.filter(function(s){ return s.id===id; })[0]; var tx = story && storyText(story, lang);
     if(!story || !tx) return;
-    st.story = {id:id, lang:lang, pos:0, answered:{}, right:0};
+    st.storyMode = mode || st.storyMode || 'read'; var M = storyMode();
+    st.story = {id:id, lang:lang, mode:M.id, pos:0, answered:{}, right:0};
     var body = document.getElementById('story-body'), act = document.getElementById('story-actions');
-    body.innerHTML = '<div class="story-read"><div class="story-head"><span class="story-tier">'+story.tier+' · '+LANG_META[lang].flag+' '+LANGS[lang].name+'</span><h3 style="margin:0;">'+furi(esc(tx.title))+'</h3></div><div id="story-flow"></div></div>';
+    var natNote = (nativeLang()!=='en' && !storyText(story, nativeLang())) ? '<div class="story-meta">This tale has no '+nativeName()+' text yet, so the English side is used.</div>' : '';
+    body.innerHTML = '<div class="story-read"><div class="story-head"><span class="story-tier">'+story.tier+' · '+LANG_META[lang].flag+' '+LANGS[lang].name+' · '+M.icon+' '+M.name+'</span><h3 style="margin:0;">'+furi(esc(tx.title))+'</h3></div>'+natNote+'<div id="story-flow"></div></div>';
     act.innerHTML = '<button class="btn btn-ghost" id="btn-story-list">← Library</button>';
     document.getElementById('btn-story-list').addEventListener('click', showStories);
     storyNext();
@@ -7689,8 +7731,10 @@
     var flow = document.getElementById('story-flow');
     if(S.pos>=tx.paras.length){ storyFinish(story); return; }
     var i = S.pos, text = tx.paras[i];
+    if(S.mode!=='read'){ storyTypedStep(story, tx, i, flow); return; }
+    var nat = storyNative(story);
     var para = document.createElement('div'); para.className = 'story-para'+(isCjkLang(S.lang)?' cjk':''); para.setAttribute('lang', SPEECH_LANG[S.lang]||S.lang);
-    para.innerHTML = storyParaHtml(text, S.lang)+'<div class="en">'+esc(story.paras[i])+'</div>';
+    para.innerHTML = storyParaHtml(text, S.lang)+'<div class="en">'+furi(esc(nat.paras[i]))+'</div>';
     para.addEventListener('click', function(){ para.classList.toggle('open'); });
     flow.appendChild(para);
     var tools = document.createElement('div'); tools.className = 'story-tools';
@@ -7707,6 +7751,31 @@
       flow.appendChild(more);
     }
     try{ para.scrollIntoView({behavior:'smooth', block:'nearest'}); }catch(e){}
+  }
+  /* translate / dictate / interpret: one paragraph at a time, the player types, similarity decides */
+  function storyTypedStep(story, tx, i, flow){
+    var S = st.story; var nat = storyNative(story); var target = tx.paras[i];
+    var toLang = S.mode==='interpret' ? nativeLang() : S.lang;                       /* the language the player writes in */
+    var ref = S.mode==='interpret' ? nat.paras[i] : target;                         /* what the answer is compared with */
+    var box = document.createElement('div'); box.className = 'story-q';
+    var prompt = S.mode==='translate' ? '<div class="story-para" style="cursor:auto;">'+furi(esc(nat.paras[i]))+'</div><div class="q">✍️ Write it in '+LANGS[S.lang].name+'</div>'
+               : '<div class="q">🎧 Listen, then '+(S.mode==='dictate' ? 'type what you hear in '+LANGS[S.lang].name : 'write what it means in '+nativeName())+'</div><div class="story-tools" style="justify-content:flex-start;"><button class="btn btn-sm btn-ghost story-say">🔊 Play</button></div>';
+    box.innerHTML = prompt+'<textarea class="story-type" lang="'+(SPEECH_LANG[toLang]||toLang)+'" placeholder="'+(isCjkLang(toLang)?'…':'Type here…')+'"></textarea><div class="story-tools"><span class="story-meta" style="margin-right:auto;">Paragraph '+(i+1)+' of 7</span><button class="btn btn-sm btn-primary story-check">Check</button></div><div class="story-result"></div>';
+    flow.appendChild(box);
+    var say = box.querySelector('.story-say'); if(say){ say.addEventListener('click', function(){ speakText(target, S.lang, true); }); setTimeout(function(){ speakText(target, S.lang, true); }, 250); }
+    var ta = box.querySelector('.story-type'); ta.focus();
+    box.querySelector('.story-check').addEventListener('click', function(){
+      var typed = ta.value; if(!typed.trim()){ toast('Type your answer first.'); return; }
+      var sim = storySim(typed, ref, toLang); var ok = sim >= (S.mode==='interpret' ? 0.45 : 0.72);
+      if(ok) S.right++; S.answered[i] = sim; bumpLangType(S.lang, 'story-'+S.mode, ok);
+      ta.disabled = true; this.disabled = true;
+      var pct = Math.round(sim*100);
+      box.querySelector('.story-result').innerHTML = '<div class="story-verdict">'+(ok ? '✅ Close enough · '+pct+'% match' : '❌ '+pct+'% match')+'</div>'+
+        '<div class="story-ref"><b>Reference:</b> '+furi(esc(ref))+(S.mode!=='translate' && S.mode!=='interpret' ? '' : '')+(S.mode==='dictate' || S.mode==='interpret' ? '<br><b>Meaning:</b> '+furi(esc(S.mode==='interpret' ? target : nat.paras[i])) : '')+'</div>'+
+        '<div class="story-tools"><button class="btn btn-sm btn-primary story-more">'+(S.pos+1>=7?'Finish':'Continue ▸')+'</button></div>';
+      box.querySelector('.story-more').addEventListener('click', function(){ S.pos++; storyNext(); });
+    });
+    try{ box.scrollIntoView({behavior:'smooth', block:'nearest'}); }catch(e){}
   }
   function storyAsk(story, q, flow){
     var S = st.story; var qi = story.questions.indexOf(q);
@@ -7729,15 +7798,15 @@
     });
   }
   function storyFinish(story){
-    var S = st.story; var key = storyKey(story, S.lang); var first = !save.stories[key];
-    var rec = save.stories[key] || {best:0, reads:0}; var wasPerfect = rec.best===4; rec.reads++; rec.best = Math.max(rec.best, S.right); save.stories[key] = rec;
+    var S = st.story; var M = storyMode(); var outOf = S.mode==='read' ? 4 : 7; var key = storyKey(story, S.lang, S.mode); var first = !save.stories[key];
+    var rec = save.stories[key] || {best:0, reads:0}; var wasPerfect = rec.best===outOf; rec.reads++; rec.best = Math.max(rec.best, S.right); save.stories[key] = rec;
     var gained = '';
-    if(first){ var pay = STORY_PAY[story.tier] || {tips:40}; gained = grantReward({tips:Math.round(pay.tips*shopTipMult()), dark:(pay.dark||0) + (S.right===4?1:0)}); bumpStat('storiesRead'); }
-    else if(S.right===4 && !wasPerfect){ gained = grantReward({tips:20}); }
+    if(first){ var pay = STORY_PAY[story.tier] || {tips:40}; gained = grantReward({tips:Math.round(pay.tips*M.mult*shopTipMult()), dark:(pay.dark||0) + (S.right===outOf?1:0)}); bumpStat('storiesRead'); }
+    else if(S.right===outOf && !wasPerfect){ gained = grantReward({tips:20}); }
     streakTouch(); persist(); refreshHud();
     var flow = document.getElementById('story-flow');
     var d = document.createElement('div'); d.className = 'story-done';
-    d.innerHTML = '📖 <b>'+furi(esc(storyText(story, S.lang).title))+'</b> — '+S.right+'/4 questions right'+(gained ? ' · '+gained : first ? '' : ' · already read')+'<div class="home-actions"><button class="btn btn-primary" id="btn-story-again">← Library</button></div>';
+    d.innerHTML = M.icon+' <b>'+furi(esc(storyText(story, S.lang).title))+'</b> — '+S.right+'/'+outOf+(S.mode==='read' ? ' questions right' : ' paragraphs matched')+(gained ? ' · '+gained : first ? '' : ' · already read')+'<div class="home-actions"><button class="btn btn-primary" id="btn-story-again">← Library</button></div>';
     flow.appendChild(d); try{ d.scrollIntoView({behavior:'smooth', block:'nearest'}); }catch(e){}
     document.getElementById('btn-story-again').addEventListener('click', showStories);
     checkPlan(); checkCommendations();
@@ -9209,9 +9278,23 @@
     el.shiftRibbon.hidden = true; el.runPerks.hidden = true;
     var picked = save.journey.langs.slice();
     var grid = document.getElementById('journey-grid');
+    var natBox = document.getElementById('journey-native');
+    if(!natBox){
+      natBox = document.createElement('div'); natBox.id = 'journey-native'; natBox.className = 'journey-native';
+      grid.parentNode.insertBefore(natBox, grid);
+    }
+    natBox.innerHTML = '<label for="native-sel">🗣️ I speak</label> <select id="native-sel" class="ic-select" style="width:auto;display:inline-block;">'+
+      [['en','🇬🇧 English']].concat(LANG_ORDER.filter(function(l){ return l!=='eng'; }).map(function(l){ return [l, LANG_META[l].flag+' '+LANG_META[l].name+' · '+LANG_META[l].native]; })).map(function(o){ return '<option value="'+o[0]+'"'+(o[0]===nativeLang()?' selected':'')+'>'+o[1]+'</option>'; }).join('')+
+      '</select><div class="jc-meta" style="margin-top:6px;">Meanings, answer options and story translations are shown in your language. Coach notes and story questions stay in English.'+(nativeLang()!=='en'?' English is on the chart as a language to learn.':'')+'</div>';
+    document.getElementById('native-sel').addEventListener('change', function(){
+      var v = this.value; if(v===nativeLang()) return;
+      save.native = v; save.journey.langs = picked.filter(function(l){ return l!==v; }); if(!save.journey.langs.length) save.journey.langs = [v==='es'?'fr':'es'];
+      persist(); toast('🗣️ Switching to '+(v==='en'?'English':LANGS[v].name)+'…'); setTimeout(function(){ location.reload(); }, 400);
+    });
     function render(){
       grid.innerHTML = '';
       LANG_ORDER.forEach(function(l){
+        if(l===nativeLang() || (l==='eng' && nativeLang()==='en')) return;
         var m = LANG_META[l]; var on = picked.indexOf(l)!==-1;
         var tiers = m.tiers||[]; var cover = tiers.length===6 ? 'full ladder A1–C2' : tiers.length ? tiers[0]+'–'+tiers[tiers.length-1]+' so far' : 'coming soon';
         var card = document.createElement('button'); card.type = 'button';
