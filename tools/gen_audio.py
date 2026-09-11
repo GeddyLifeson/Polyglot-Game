@@ -34,7 +34,9 @@ ap.add_argument('--bitrate', default='16k')
 ap.add_argument('--out', default='audio')
 ap.add_argument('--html', default='index.html')
 ap.add_argument('--speed', type=float, default=0.95)
-ap.add_argument('--backend', choices=['auto', 'torch', 'onnx', 'azure'], default='auto')
+ap.add_argument('--backend', choices=['auto', 'torch', 'onnx', 'azure', 'chatterbox'], default='auto')
+ap.add_argument('--cbx-prompt', default=os.environ.get('CBX_PROMPT', ''), help='chatterbox: reference wav for the narrator voice (optional)')
+ap.add_argument('--cbx-device', default=os.environ.get('CBX_DEVICE', 'cuda'))
 ap.add_argument('--azure-key', default=os.environ.get('AZURE_TTS_KEY', ''))
 ap.add_argument('--azure-region', default=os.environ.get('AZURE_TTS_REGION', 'eastus'))
 ap.add_argument('--voice', default='', help='override the voice name for every language in --langs')
@@ -52,7 +54,9 @@ if backend == 'auto':
         backend = 'torch'
     except ImportError:
         backend = 'onnx'
-if backend == 'azure':
+if backend == 'chatterbox':
+    import torch
+elif backend == 'azure':
     import urllib.request, html as _html
     if not args.azure_key:
         sys.exit('azure backend: set AZURE_TTS_KEY (and AZURE_TTS_REGION) or pass --azure-key/--azure-region')
@@ -85,6 +89,10 @@ nuance = block('NUANCE')
 COL = {'es':5,'fr':6,'it':7,'pt':8,'ja':9,'zh':10}
 KOKO = {'es':('e','ef_dora'), 'fr':('f','ff_siwis'), 'it':('i','if_sara'), 'pt':('p','pf_dora'), 'ja':('j','jf_alpha'), 'zh':('z','zf_xiaobei'),
         'hi':('h','hf_alpha')}
+# Chatterbox Multilingual V3 (Resemble AI, MIT): our code -> its language id. Latin reads through the Italian
+# model, Indonesian through Malay; Cantonese and Vietnamese are not covered (use --backend azure for those).
+CBX = {'es':'es', 'fr':'fr', 'it':'it', 'pt':'pt', 'ja':'ja', 'zh':'zh', 'de':'de', 'nl':'nl', 'sv':'sv', 'pl':'pl', 'ru':'ru',
+       'el':'el', 'la':'it', 'tr':'tr', 'ar':'ar', 'hi':'hi', 'ko':'ko', 'ind':'ms'}
 # Azure Neural voices (the same voices Edge's Read Aloud uses); output is Ogg Opus straight from the service.
 AZURE = {
     'es':('es-ES','es-ES-ElviraNeural'), 'fr':('fr-FR','fr-FR-DeniseNeural'), 'it':('it-IT','it-IT-ElsaNeural'), 'pt':('pt-BR','pt-BR-FranciscaNeural'),
@@ -150,6 +158,38 @@ class OnnxPipeline:
             if i in kept and i: out.append(' ')
             out.append(c)
         return ''.join(out)
+
+class ChatterboxPipeline:
+    """Chatterbox Multilingual V3 on the GPU. One model for every language; Japanese is fed the kana reading
+    from the furigana so kanji are never misread. Yields 24 kHz float audio like the other pipelines."""
+    _model = None
+    def __init__(self, lang):
+        self.lang = lang; self.lang_id = CBX[lang]
+        if ChatterboxPipeline._model is None:
+            import perth
+            if getattr(perth, 'PerthImplicitWatermarker', None) is None: perth.PerthImplicitWatermarker = perth.DummyWatermarker   # optional watermarker not installed
+            from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+            t = time.time()
+            # model files live in models/chatterbox (downloaded with curl: this machine's Python cannot reach
+            # huggingface.co over TLS); see README for the list
+            local = os.path.join(ROOT, 'models', 'chatterbox')
+            if os.path.exists(os.path.join(local, 't3_mtl23ls_v3.safetensors')):
+                ChatterboxPipeline._model = ChatterboxMultilingualTTS.from_local(local, args.cbx_device, t3_model='v3'); print('chatterbox: multilingual v3 (local)', flush=True)
+            else:
+                ChatterboxPipeline._model = ChatterboxMultilingualTTS.from_pretrained(device=args.cbx_device, t3_model='v3'); print('chatterbox: multilingual v3 (hub)', flush=True)
+            print('chatterbox: model loaded on %s in %.0fs' % (args.cbx_device, time.time()-t), flush=True)
+    def __call__(self, text, voice=None, speed=1.0):
+        m = ChatterboxPipeline._model
+        spoken = clean(text, reading=(self.lang == 'ja'))
+        kw = {'language_id': self.lang_id, 'exaggeration': 0.4, 'cfg_weight': 0.5}
+        if args.cbx_prompt: kw['audio_prompt_path'] = args.cbx_prompt
+        with torch.inference_mode():
+            wav = m.generate(spoken, **kw)
+        a = wav.squeeze().detach().cpu().numpy().astype(np.float32)
+        if m.sr != 24000:
+            import librosa
+            a = librosa.resample(a, orig_sr=m.sr, target_sr=24000)
+        yield text, '', a
 
 class AzurePipeline:
     """Azure Speech REST: text in, Ogg Opus bytes out. Japanese furigana is honoured by sending the kana reading
@@ -242,6 +282,9 @@ for tier in args.tiers:
         if backend == 'azure':
             if lang not in AZURE: print('skip', lang, '(no Azure voice mapped)'); continue
             pipe = AzurePipeline(lang); voice = pipe.voice
+        elif backend == 'chatterbox':
+            if lang not in CBX: print('skip', lang, '(chatterbox has no model for it; use --backend azure)'); continue
+            pipe = ChatterboxPipeline(lang); voice = 'chatterbox'
         else:
             if lang not in KOKO: print('skip', lang, '(no Kokoro voice; use --backend azure)'); continue
             code, voice = KOKO[lang]
@@ -262,7 +305,7 @@ for tier in args.tiers:
                         manifest['keys'] = sorted(keys); json.dump(manifest, open(man_path, 'w'))
                         print(f'  {tier} {lang} {n+1}/{len(todo)} · {round(time.time()-t0)}s', flush=True)
                     continue
-                spoken = text if backend == 'onnx' else clean(text)
+                spoken = text if backend in ('onnx', 'chatterbox') else clean(text)
                 audio = np.concatenate([a for _, _, a in pipe(spoken, voice=voice, speed=args.speed)])
                 idx = np.where(np.abs(audio) > 0.01)[0]
                 if len(idx): audio = audio[max(0, idx[0]-1200): min(len(audio), idx[-1]+2400)]

@@ -1,0 +1,6 @@
+# Chatterbox Multilingual V3 backend for tools/gen_audio.py --backend chatterbox (Python 3.11 recommended).
+# Install torch first from the CUDA index: pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+# then this file. The pip release lags the repo (no V3 option); install the GitHub master:
+chatterbox-tts @ https://github.com/resemble-ai/chatterbox/archive/refs/heads/master.zip
+soundfile
+imageio-ffmpeg

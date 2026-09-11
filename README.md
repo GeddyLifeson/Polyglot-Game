@@ -136,6 +136,13 @@ Recordings for the fourteen new languages are not shipped yet; they use the devi
 and `AZURE_TTS_REGION`; about 63k characters per language, 1.14M for all twenty), and `--only` re-records
 just the keys listed by the in-game 🚩 flag button (Mission Log). Kokoro covers es, fr, it, pt, ja, zh, hi.
 
+`--backend chatterbox` records with Chatterbox Multilingual V3 (Resemble AI, MIT; 23 languages, covering all of
+ours except Cantonese and Vietnamese; Latin reads through the Italian model, Indonesian through Malay). Set up
+with `pip install -r requirements-chatterbox.txt` in a Python 3.11 env with CUDA torch 2.6, download the six model
+files listed in `tools/cbx_bench.py` into `models/chatterbox/`, and run `python tools/cbx_bench.py cuda` to check.
+About 8 s per clip on a 16-core CPU, well under 1 s on a GPU. On this machine Python cannot reach HTTPS hosts
+until the local TLS root is appended to certifi (`tools/export_local_roots.ps1`).
+
 ## 4. Edit content
 
 Content lives in `content/*.py`. Each module exports `TIER`, `TOPICS` (key → label) and
