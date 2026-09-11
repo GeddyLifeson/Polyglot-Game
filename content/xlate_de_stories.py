@@ -1,0 +1,76 @@
+# -*- coding: utf-8 -*-
+LANG = 'de'
+STORIES = {
+    'st-b1-01': {
+        'title': 'Der verspätete Zug',
+        'paras': [
+            'Die Rosetta landete in der Nähe einer kleinen Marktstadt. Ana und Marco verließen das Schiff, um den Bahnhof zu besuchen. Sie wollten Fahrkarten in die Stadt kaufen.',
+            'Am Bahnhof warteten viele Menschen auf dem Bahnsteig. Eine Frau sagte ihnen, dass der Zug Verspätung hatte. "Es gibt ein Problem mit den Gleisen", sagte sie.',
+            'Ana schaute auf die Uhr. Es war schon zehn Uhr, und ihr Zug sollte eigentlich um halb zehn abfahren. Marco setzte sich auf eine Bank und seufzte.',
+            'Ein Mann neben ihnen öffnete seine Tasche und holte etwas Brot heraus. Er bot Ana und Marco ein Stück an. "Ihr könnt hier bei mir warten", sagte er mit einem Lächeln.',
+            'Sie sprachen mit dem Mann über seine Familie und seine Arbeit. Er arbeitete auf dem Markt und verkaufte jeden Tag Gemüse. Ana erzählte ihm von der Rosetta und ihrer Reise.',
+            'Endlich, nach einer Stunde, kam der Zug an. Alle standen schnell auf und gingen zu den Türen. Ana und Marco bedankten sich bei dem Mann für das Brot.',
+            'Im Zug schaute Ana aus dem Fenster auf die Felder. Sie war froh, dass sie einen freundlichen Fremden getroffen hatten. Marco sagte, manchmal bringe ein verspäteter Zug eine gute Überraschung.',
+        ],
+    },
+    'st-b1-02': {
+        'title': 'Abendessen bei Yukis Familie',
+        'paras': [
+            'Die Crew der Rosetta besuchte für ein paar Tage ein ruhiges Dorf. Yuki lud Sam ein, mit ihrer Familie zu Abend zu essen. Sam war nervös, weil er sie nicht gut kannte.',
+            'Yukis Mutter öffnete die Tür und lächelte herzlich. "Willkommen", sagte sie. "Wir freuen uns, dass du gekommen bist." Das Haus roch nach Suppe und frischem Brot.',
+            'Am Tisch stellte Yukis Vater Sam viele Fragen über die Rosetta. Sam erklärte, dass das Schiff viele Städte besuchte und den Menschen half. Yukis kleiner Bruder hörte mit großen Augen zu.',
+            'Sie aßen zusammen Suppe, Reis und Gemüse. Sam probierte ein neues Gericht, das er noch nie gegessen hatte. Es schmeckte ihm sehr gut, und er bat um noch mehr.',
+            'Nach dem Essen brachte Yukis Mutter einen Kuchen als Nachtisch. Sie sagte, es sei ein besonderes Rezept von ihrer eigenen Mutter. Alle bekamen ein großes Stück und erzählten alte Geschichten.',
+            'Sam bedankte sich bei der Familie für den wunderbaren Abend. Er sagte, er fühle sich schon wie ein Teil der Familie. Yukis Vater schüttelte ihm die Hand und lud ihn ein, bald wiederzukommen.',
+            'Auf dem Rückweg zum Schiff sagte Sam zu Yuki, dass ihm das Essen sehr gefallen habe. Er sagte, Familien seien überall gleich: warmherzig und großzügig. Yuki lächelte und stimmte ihm zu.',
+        ],
+    },
+    'st-b2-01': {
+        'title': 'Das Vorstellungsgespräch',
+        'paras': [
+            'Hätte die Rosetta keine Reparaturen gebraucht, wäre Marco nie lange genug geblieben, um sich in der Hafenstadt um eine Stelle zu bewerben. Er hatte eine Anzeige für eine Mechanikerstelle gesehen und beschlossen, sein Glück zu versuchen. Er war neugierig zu sehen, wie Menschen auf dem Boden Probleme lösten, ohne die fortschrittlichen Werkzeuge des Schiffes.',
+            'Die Interviewerin, eine große Frau namens Ana, fragte ihn, warum er den Job wolle. Marco erklärte, dass er jahrelang Maschinen unter schwierigen Bedingungen repariert habe, oft mit begrenzten Ersatzteilen. Er fügte hinzu, er lerne lieber ein neues System richtig, als vorzugeben, er wisse schon alles.',
+            'Ana schien beeindruckt, wies aber darauf hin, dass die Ausrüstung der Werkstatt viel älter sei als alles, was er gewohnt war. "Wenn Sie hier arbeiten würden", sagte sie, "müssten Sie sich einige Gewohnheiten abgewöhnen." Marco gab zu, dass die Anpassung Geduld erfordern könnte, doch er sei bereit, es zu versuchen.',
+            'Dann fragte sie, was er tun würde, wenn während einer Arbeit eine Maschine kaputtginge und keine Ersatzteile verfügbar wären. Marco überlegte einen Moment und sagte, er würde improvisieren und nutzen, was gerade zur Hand sei, so wie er es an Bord des Schiffes während eines Sturms im letzten Jahr getan hatte. Ana nickte langsam und dachte sichtlich über seine Antwort nach.',
+            'Gegen Ende des Gesprächs fragte Ana, ob er sich verpflichten könne, auch dann zu bleiben, wenn die Rosetta irgendwann abflöge. Marco zögerte und gab zu, dass er nicht sicher sei, wie lange er in der Stadt bleiben würde. Ehrlichkeit, so glaubte er, zähle mehr, als ihr zu sagen, was sie hören wollte.',
+            'Ana dankte ihm für seine Offenheit und sagte, sie werde es mit ihren Partnern besprechen, bevor sie entschieden. Sie erwähnte, dass die meisten Bewerber ihre Erfahrung übertrieben und seine Direktheit aufgefallen sei. Marco verließ die Werkstatt, ohne zu wissen, ob er seinen Chancen geholfen oder geschadet hatte.',
+            'Ein paar Tage später traf eine Nachricht ein, die ihn zu einer Probewoche einlud. Marco erkannte, dass seine Ehrlichkeit, mehr als seine technischen Fähigkeiten allein, den Ausschlag gegeben hatte, ihm eine Chance zu geben. Er fragte sich, ob er irgendwann zwischen der Werkstatt und den Sternen würde wählen müssen.',
+        ],
+    },
+    'st-b2-02': {
+        'title': 'Im Wartezimmer',
+        'paras': [
+            'Als Sams Fieber nicht abklingen wollte, schlug der Schiffsarzt vor, er solle das örtliche Krankenhaus aufsuchen, da die Ausrüstung der Stadt Tests durchführen konnte, die der Rosetta fehlten. Yuki begleitete ihn, teils aus Sorge, teils aus Neugier, wie das Krankenhaus funktionierte. Keiner von beiden hatte erwartet, dass das Wartezimmer so voll sein würde.',
+            'Sie saßen zwischen einem älteren Mann, der eine Zeitung las, und einer jungen Mutter, die versuchte, ihr weinendes Kind zu beruhigen. Hätte Yuki gewusst, dass die Wartezeit so lange dauern würde, hätte sie etwas zum Lesen mitgebracht. Stattdessen beobachtete sie die Uhr und lauschte den gedämpften Gesprächen um sie herum.',
+            'Nach fast zwei Stunden rief eine Krankenschwester Sams Namen und führte ihn in ein Untersuchungszimmer. Yuki bot an mitzukommen, doch die Schwester erklärte, normalerweise dürfe nur eine Person hinein. Sam drückte kurz ihre Hand, bevor er hinter der Tür verschwand.',
+            'Allein im Wartezimmer kam Yuki mit dem älteren Mann neben ihr ins Gespräch. Er erzählte, er komme jeden Monat für eine Routineuntersuchung ins Krankenhaus und das Personal behandle ihn stets freundlich, so beschäftigt es auch sei. Yuki fand seine Geduld bemerkenswert, angesichts der langen Wartezeit für alle.',
+            'Als Sam endlich zurückkehrte, erklärte er, der Arzt habe nichts Ernstes gefunden, nur eine Infektion, die Antibiotika innerhalb einer Woche heilen würden. Yuki spürte eine Welle der Erleichterung, deren Anspannung ihr gar nicht bewusst gewesen war. Sie neckte ihn sanft dafür, dass er ihr solche Sorgen gemacht hatte.',
+            'Als sie hinausgingen, gab Sam zu, er sei ängstlicher gewesen, als er sich anmerken ließ, da er an Bord des Schiffes nur selten krank werde. Yuki sagte, genau deshalb habe sie darauf bestanden mitzukommen, damit er dem nicht allein hätte begegnen müssen. Er dankte ihr, ein wenig verlegen darüber, wie sehr ihre Anwesenheit ihm bedeutet hatte.',
+            'Auf dem Rückweg zur Rosetta kamen sie wieder am älteren Mann vorbei, der nun langsam zur Bushaltestelle ging. Yuki winkte, und er winkte müde, aber aufrichtig lächelnd zurück. Sam bemerkte, dass Krankenhäuser trotz all des Wartens und der Sorgen offenbar eine stille Freundlichkeit in den Menschen weckten.',
+        ],
+    },
+    'st-c1-01': {
+        'title': 'Ein Streit im Café',
+        'paras': [
+            'Das Café war während ihres Aufenthalts zu einer Art Stammlokal für die Crew der Rosetta geworden; seine abgenutzten Holztische und das stete Stimmengewirr boten einen willkommenen Kontrast zu den sterilen Gängen des Schiffes. Marco und Ana hatten sich gerade in ihrer gewohnten Ecke niedergelassen, als eine Debatte am Nachbartisch ihre Aufmerksamkeit weckte. Zwei Stammgäste stritten mit spürbarer Leidenschaft darüber, ob die neuen Marktvorschriften der Stadt den örtlichen Händlern nützen oder schaden würden.',
+            'Ein Mann, von Beruf Obstverkäufer, beharrte darauf, die Vorschriften seien ein kaum verhüllter Versuch, größere, finanzstärkere Anbieter auf Kosten kleiner Stände wie seines eigenen zu begünstigen. Sein Gegenüber, der in der Nähe eine kleine Buchhandlung führte, hielt dagegen, dass der Markt ohne eine gewisse Aufsicht chaotisch geworden sei, mit unzuverlässigen Preisen und Händlern, die sich gegenseitig bis zum Ruin unterböten. Keiner der beiden schien bereit, auch nur einen Fußbreit nachzugeben.',
+            'Ana, stets neugierig, beugte sich zu Marco hinüber und gestand, sie fühle sich zwischen den beiden Positionen hin- und hergerissen. Marco wies darauf hin, dass beide Männer ein berechtigtes Anliegen hätten, auch wenn ihre vorgeschlagenen Lösungen stark voneinander abwichen. Ihm fiel auf, dass es bei solchen Streitigkeiten selten einen Schuldigen gebe; häufiger stünden sich zwei nachvollziehbare Ängste gegenüber.',
+            'Ermutigt durch eine zweite Tasse Kaffee erhob der Obstverkäufer die Stimme und warf dem Rat vor, dem Druck wohlhabenderer Kaufleute nachgegeben zu haben. Der Buchhändler, sichtlich verärgert, entgegnete, solche Vorwürfe seien unbegründet und auch er drohe unter strengeren Regeln Kunden zu verlieren. Ihr Wortwechsel wurde so hitzig, dass andere Gäste zu ihnen hinüberblickten.',
+            'Als er spürte, dass die Spannung kurz vor dem Überkochen stand, griff der Besitzer des Cafés ein, stellte einen Teller mit Gebäck zwischen die beiden Männer und bemerkte trocken, Streitgespräche verliefen bei vollem Magen besser. Die Geste brach die wachsende Feindseligkeit, und beide Männer nahmen, ein wenig verlegen, das Friedensangebot an. Ana flüsterte Marco zu, sie bewundere, wie geschickt der Besitzer die Situation entschärft habe.',
+            'Nachdem sich die unmittelbare Reibung gelegt hatte, wandte sich das Gespräch gemeinsamem Boden zu: Beide waren sich einig, dass der Rat es versäumt hatte, die einfachen Händler vor der Ausarbeitung der Vorschriften zu konsultieren. Marco fand diese Wendung aufschlussreich, denn sie legte nahe, dass es beim eigentlichen Streit weniger um die Politik selbst ging als darum, wer eine Stimme bei ihrer Gestaltung erhielt. Ana nickte und bemerkte, Ausgrenzung erzeuge eher Groll als Meinungsverschiedenheit.',
+            'Als die beiden Männer sich schließlich in freundlichem Ton trennten, dachte Marco darüber nach, wie oft die Crew der Rosetta erwartete, einfache Geschichten von Eintracht oder Konflikt vorzufinden, nur um die unordentlichere Wahrheit zu entdecken: Die meisten Streitigkeiten wurzelten in der Angst, übersehen zu werden. Ana stimmte zu und fügte hinzu, das Nützlichste, was sie dem Schiff berichten könnten, sei vielleicht kein Urteil darüber, wer recht gehabt habe, sondern eine Schilderung davon, wie schnell Verbitterung schwinden könne, sobald Menschen sich gehört fühlten. Sie verließen das Café und freuten sich bereits auf ihren nächsten Besuch.',
+        ],
+    },
+    'st-c2-01': {
+        'title': 'Zwischen zwei Abreisen',
+        'paras': [
+            'Als sich die Reparaturen der Rosetta ihrem Ende näherten, hatte Sam fast so etwas wie Zuneigung zum Bahnhofsvorsteher entwickelt, einem wortkargen Mann namens Marco, dessen Schroffheit, wie er inzwischen begriffen hatte, eine geradezu zeremoniell anmutende Pünktlichkeitsbesessenheit verbarg. Ihre anfangs steifen Gespräche hatten sich zu einem angenehmen Rhythmus eingespielt, jeder Wortwechsel durchzogen von jenem trockenen Humor, den nur gegenseitiger Respekt gestattet. Es war diese Vertrautheit, mehr als irgendein fortbestehender technischer Mangel, die Sam Vorwände suchen ließ, sich in der Nähe des Bahnsteigs aufzuhalten.',
+            'An dem Morgen, der eigentlich sein letzter in der Stadt sein sollte, fand Sam Marco ungewöhnlich still vor, wie er methodisch eine Messingtafel polierte, die an die Gründung des Bahnhofs vor Jahrzehnten erinnerte. Als Sam die untypische Sentimentalität ansprach, gab Marco mit spürbarem Widerwillen zu, dass ihm Abschiede zuwider seien, ganz gleich, wie oft ihn sein Beruf zwinge, sie zu ertragen. Es sei, gestand er, der einzige Aspekt der Arbeit, mit dem er sich nie habe abfinden können.',
+            'Sam, der ihre Bekanntschaft für zu kurz gehalten hatte, um solche Offenheit zu rechtfertigen, war von diesem Eingeständnis seltsam berührt. Er wagte die Vermutung, das Unbehagen rühre vielleicht nicht vom Abschied selbst her, sondern von der ihm innewohnenden Asymmetrie: Der Reisende bewege sich dem Neuen entgegen, während der Zurückbleibende, wie würdevoll auch immer, in die Routine zurückkehre. Marco räumte ein, der Gedanke sei nicht ohne Berechtigung, wehrte sich jedoch ein wenig dagegen, bloß als der Zurückgelassene betrachtet zu werden.',
+            'Ihr Gespräch wurde von der Lautsprecheranlage des Bahnhofs unterbrochen, die knisternd verkündete, der Zug nach Norden werde wegen einer Signalstörung um mehr als vierzig Minuten verspätet sein. Marco, sichtlich erleichtert über den Aufschub, murmelte, das Schicksal habe sich offenbar verschworen, das Gespräch noch etwas zu verlängern. Sam lachte und schlug vor, das Beste aus der unerwarteten Pause zu machen.',
+            'Sie zogen sich in das kleine Büro des Bahnhofs zurück, wo Marco eine Kanne Tee hervorholte, die er, wie er etwas verlegen zugab, genau für solche Gelegenheiten aufbewahrte. In der folgenden halben Stunde schweifte ihr Gespräch von der banalen Logistik der Abreise der Rosetta zu tiefergehenden Fragen ab: ob ein Leben, das einem einzigen, festen Punkt gewidmet sei, jemals mit einem Leben in ständiger Bewegung mithalten könne, oder ob beide lediglich eine Form der Rastlosigkeit gegen eine andere eintauschten. Keiner von beiden behauptete, die Frage endgültig geklärt zu haben.',
+            'Als der verspätete Zug endlich ächzend in den Bahnhof einfuhr, begleitete Marco Sam zum Bahnsteig mit einer Förmlichkeit, die paradoxerweise den Moment eher zu erweichen als zu versteifen schien. Er streckte die Hand aus, bot dann jedoch, scheinbar gegen seine eigene bessere Einsicht, stattdessen eine unbeholfene Umarmung an und murmelte etwas von einer Ausnahme, die er mache. Sam versicherte ihm, die Ausnahme sei gegenseitig und durchaus willkommen.',
+            'Als die Rosetta später an diesem Abend abhob, ertappte sich Sam dabei, wie er länger zum Bahnhof zurückblickte, als es der Anlass eigentlich verlangte, während er Marcos frühere Bemerkung über die Asymmetrie im Geiste wälzte. Er vermutete, der alte Mann habe auf seine eigene zurückhaltende Weise etwas ausgesprochen, das Sam selbst nie ganz in Worte gefasst hatte: dass jeder Abschied verlange, dass eine Person die Erinnerung weiterträgt, während die andere den Ort bewacht, an dem es geschah. Es war, dachte er, eine faire Aufteilung der Aufgaben, solange keine Seite den Anteil der anderen vergaß.',
+        ],
+    },
+}

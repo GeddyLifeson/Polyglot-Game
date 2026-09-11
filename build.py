@@ -51,6 +51,7 @@ LANG_META = {
 XL = {}   # lang -> {'words': {id: (text, reading)}, 'sentences': {id: tiles}, 'dialogues': {id: 5 lines}}
 
 vocab_rows, sentences, grammar, idioms, nuance, dialogues, listen = [], [], [], [], [], [], []
+stories = []   # English source stories (content/stories_src.py); translations come from xlate_<lang>_stories.py
 topic_labels = {}
 errors, warnings = [], []
 
@@ -139,7 +140,8 @@ for path in sorted(glob.glob(os.path.join(CONTENT, 'xlate_*.py'))):
             d = dict(it); d['lang'] = lang; d['_src'] = src
             if not d.get('tier'): errors.append('%s: %s item %s has no tier' % (src, name, d.get('id')))
             target.append(d)
-    x['stories'] = x.get('stories', {}); x['stories'].update(getattr(mod, 'STORIES', {}) if isinstance(getattr(mod, 'STORIES', None), dict) else {})
+    x['stories'] = x.get('stories', {})
+    if isinstance(getattr(mod, 'STORIES', None), dict): x['stories'].update(mod.STORIES)
 
 for path in sorted(glob.glob(os.path.join(CONTENT, '*.py'))):
     src = os.path.basename(path)
@@ -156,6 +158,8 @@ for path in sorted(glob.glob(os.path.join(CONTENT, '*.py'))):
     add_items(nuance, getattr(mod, 'NUANCE', []), 'nuance', src, tier)
     add_items(dialogues, getattr(mod, 'DIALOGUES', []), 'dialogues', src, tier)
     add_items(listen, getattr(mod, 'LISTEN', []), 'listen', src, tier)
+    if isinstance(getattr(mod, 'STORIES', None), list):
+        stories.extend(dict(x, _src=src) for x in mod.STORIES)
 
 # ---------------- ids + validation ----------------
 ids = set()
@@ -204,7 +208,7 @@ for d in sentences:
             errors.append('sentence %s missing tiles for %s' % (d['id'], l))
 for d in grammar + idioms + nuance:
     claim(d['id'], 'per-lang item')
-    if d.get('lang') not in LANGS:
+    if d.get('lang') not in LANG_META:
         errors.append('item %s bad lang' % d['id'])
     if d.get('correct') not in d.get('options', []):
         errors.append('item %s: correct answer not in options' % d['id'])
@@ -264,6 +268,22 @@ for name, pool in [('grammar', grammar), ('idioms', idioms), ('nuance', nuance)]
         if missing:
             errors.append('%s topic %s/%s has no items for %s' % (name, tier, topic, ','.join(missing)))
 
+# stories: 7 paragraphs, 4 questions; attach every complete translation under 'xl'
+for d in stories:
+    claim(d['id'], 'story')
+    if len(d.get('paras', [])) != 7 or len(d.get('questions', [])) != 4:
+        errors.append('story %s must have 7 paragraphs and 4 questions' % d['id'])
+    for q in d.get('questions', []):
+        if len(q.get('options', [])) != 4 or not (0 <= q.get('correct', -1) < 4) or not (0 <= q.get('after', -1) < 7):
+            errors.append('story %s: bad question %r' % (d['id'], q.get('q')))
+    d['xl'] = {}
+    for lang in XL:
+        v = XL[lang].get('stories', {}).get(d['id'])
+        if isinstance(v, dict) and isinstance(v.get('paras'), list) and len(v['paras']) == 7 and v.get('title')                 and all(isinstance(x, str) and x.strip() for x in v['paras']):
+            d['xl'][lang] = {'title': v['title'].strip(), 'paras': [x.strip() for x in v['paras']]}
+        elif v is not None:
+            warnings.append('%s: story %s translation is incomplete, skipped' % (lang, d['id']))
+
 if errors:
     print('BUILD FAILED — %d error(s):' % len(errors))
     for e in errors[:60]:
@@ -309,6 +329,7 @@ out.append('  var BUILD_SENTENCES = [\n' + ',\n'.join('    ' + js(strip(d)) for 
 out.append('  var GRAMMAR_ITEMS = [\n' + ',\n'.join('    ' + js(strip(d)) for d in grammar) + '\n  ];')
 out.append('  var IDIOMS = [\n' + ',\n'.join('    ' + js(strip(d)) for d in idioms) + '\n  ];')
 out.append('  var NUANCE = [\n' + ',\n'.join('    ' + js(strip(d)) for d in nuance) + '\n  ];')
+out.append('  var STORIES = [\n' + ',\n'.join('    ' + js(strip(d)) for d in stories) + '\n  ];')
 out.append('  var DIALOGUES = [\n' + ',\n'.join('    ' + js(strip(d)) for d in dialogues) + '\n  ];')
 out.append('  var LISTEN_MODULES = [\n' + ',\n'.join('    ' + js(strip(d)) for d in listen) + '\n  ];')
 out.append('  /* ==== GENERATED CONTENT END ==== */')
@@ -327,6 +348,7 @@ with open(HTML, 'w', encoding='utf-8') as f:
 per_tier = {t: 0 for t in TIERS}
 for d in vocab_rows: per_tier[d['tier']] += 1
 print('vocab: %d total  %s' % (len(vocab_rows), '  '.join('%s=%d' % (t, per_tier[t]) for t in TIERS)))
+print('stories %d, translated into %s' % (len(stories), ','.join(sorted(set(l for d in stories for l in d['xl']))) or 'nothing yet'))
 print('sentences %d | grammar %d | idioms %d | nuance %d | dialogues %d | listen modules %d' % (
     len(sentences), len(grammar), len(idioms), len(nuance), len(dialogues), len(listen)))
 for code in EXTRA:

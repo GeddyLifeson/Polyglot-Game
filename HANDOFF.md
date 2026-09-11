@@ -164,3 +164,11 @@ Phase 2, content via subagents (no fan-out, unique output paths, script-validate
 12. Stories: ~6 short parallel-text stories with comprehension questions, authored in English, translated
     into all 20 languages.
 13. Grammar / idiom / nuance modules for the fourteen new languages.
+
+Status 2026-09-11 afternoon: Phase 1 (items 1-11) and Phase 2 (12-13) are DONE and on main. README section 3d
+documents every system. Stories live in `content/stories_src.py` (English) + `content/xlate_<lang>_stories.py`;
+drills for the added languages in `content/xlate_<lang>_skills2.py`; build.py reads GRAMMAR / IDIOMS / NUANCE /
+STORIES from xlate files and emits `var STORIES`. The QA hook exposes `STORIES`, `showStories`, `startStory`.
+Open follow-ups from Phase 2: the new drill items and story paragraphs have no recorded clips (the running
+Chatterbox chains were started before they existed); after the chains finish, re-run gen_audio.py per language
+(it only records missing keys) if studio voice is wanted for them. Web Speech covers them meanwhile.
