@@ -3647,3 +3647,1144 @@
    ]
   }
  ],
+ "fk-tr-01": [
+  {
+   "q": "O que o vizinho encontrou dentro do caldeirão quando Hodja o devolveu?",
+   "options": [
+    "Uma carta",
+    "Uma panelinha",
+    "Algumas moedas",
+    "Um pedaço de pano"
+   ]
+  },
+  {
+   "q": "Por que o vizinho emprestou o caldeirão a Hodja de bom grado uma segunda vez?",
+   "options": [
+    "Queria que Hodja o consertasse",
+    "Pensou que talvez desse à luz de novo",
+    "Precisava de espaço em casa",
+    "Hodja lhe pagou dinheiro"
+   ]
+  },
+  {
+   "q": "Que notícia Hodja deu ao vizinho sobre o caldeirão?",
+   "options": [
+    "Que foi roubado",
+    "Que quebrou",
+    "Que morreu",
+    "Que ele o vendeu"
+   ]
+  },
+  {
+   "q": "Qual foi o argumento esperto de Hodja no final da história?",
+   "options": [
+    "Que caldeirões são caros",
+    "Que o vizinho deveria comprar um caldeirão novo",
+    "Que se o vizinho acreditou que deu à luz, deveria acreditar que morreu",
+    "Que o vizinho era ganancioso demais"
+   ]
+  }
+ ],
+ "fk-tr-02": [
+  {
+   "q": "Por que os criados não deixaram Hodja entrar no casamento a princípio?",
+   "options": [
+    "Chegou tarde demais",
+    "Parecia pobre demais",
+    "Não havia sido convidado",
+    "Era um estranho para eles"
+   ]
+  },
+  {
+   "q": "Como as pessoas trataram Hodja de forma diferente quando ele voltou?",
+   "options": [
+    "Ignoraram-no completamente",
+    "Deram-lhe comida pior",
+    "Trataram-no com respeito e deram-lhe o melhor lugar",
+    "Pediram-lhe que saísse de novo"
+   ]
+  },
+  {
+   "q": "O que Hodja fez com seu casaco de pele à mesa?",
+   "options": [
+    "Vendeu-o",
+    "Mergulhou a manga na comida",
+    "Deu-o ao anfitrião",
+    "Tirou-o"
+   ]
+  },
+  {
+   "q": "Qual é o significado do ditado \"Come, meu casaco de pele, come\"?",
+   "options": [
+    "Que roupas finas trazem boa sorte",
+    "Que a comida nunca deve ser desperdiçada",
+    "Que as pessoas devem ser respeitadas por quem são, não por suas roupas",
+    "Que os convidados devem sempre se vestir formalmente"
+   ]
+  }
+ ],
+ "fk-tr-03": [
+  {
+   "q": "Por que os moradores não conseguiam lidar com o gigante sozinhos?",
+   "options": [
+    "Não tinham líder",
+    "Não tinham força para lutar contra ele",
+    "Já haviam deixado o povoado",
+    "Não acreditavam que ele existia"
+   ]
+  },
+  {
+   "q": "Que truque Keloğlan usou para assustar o gigante?",
+   "options": [
+    "Atirou fogo nele",
+    "Fingiu espremer água de uma pedra",
+    "Pediu ajuda a soldados",
+    "Mostrou uma espada ao gigante"
+   ]
+  },
+  {
+   "q": "O que o gigante decidiu fazer depois de ser enganado?",
+   "options": [
+    "Lutar contra Keloğlan mesmo assim",
+    "Mudar-se para longe do povoado para sempre",
+    "Pedir a Keloğlan que fosse seu amigo",
+    "Roubar mais animais antes de partir"
+   ]
+  },
+  {
+   "q": "Que lição este conto ensina, segundo o texto?",
+   "options": [
+    "Que a força sempre vence",
+    "Que a esperteza importa tanto quanto a força",
+    "Que gigantes nunca são reais",
+    "Que os moradores nunca devem confiar em estranhos"
+   ]
+  }
+ ],
+ "fk-tr-04": [
+  {
+   "q": "Por que a construção da mesquita ficou mais lenta?",
+   "options": [
+    "Não havia pedra suficiente",
+    "Os trabalhadores paravam para ouvir a conversa de Karagöz e Hacivat",
+    "O sultão ficou sem dinheiro",
+    "Uma tempestade danificou o local"
+   ]
+  },
+  {
+   "q": "O que o sultão sentiu depois de ordenar a execução?",
+   "options": [
+    "Alívio por a mesquita ficar pronta mais rápido",
+    "Remorso, porque sentia falta das conversas deles",
+    "Raiva contra os trabalhadores",
+    "Orgulho de sua decisão"
+   ]
+  },
+  {
+   "q": "Que material o poeta usou para fazer os bonecos?",
+   "options": [
+    "Madeira",
+    "Papel",
+    "Pele de camelo",
+    "Tecido"
+   ]
+  },
+  {
+   "q": "Quando os espetáculos de sombras de Karagöz e Hacivat são tradicionalmente apresentados hoje?",
+   "options": [
+    "Durante casamentos",
+    "Durante o mês do Ramadã",
+    "Na véspera de Ano Novo",
+    "Durante festivais de colheita"
+   ]
+  }
+ ],
+ "fk-tr-05": [
+  {
+   "q": "O que tornava impossível para os exércitos dos senhores derrotar Tepegöz?",
+   "options": [
+    "Ele conseguia voar para longe deles",
+    "Sua pele era como ferro e não podia ser ferida",
+    "Escondia-se num lugar que ninguém encontrava",
+    "Tinha muitos outros gigantes ajudando-o"
+   ]
+  },
+  {
+   "q": "Por que os senhores oguzes recorreram a Basat por ajuda?",
+   "options": [
+    "Era o senhor mais velho e sábio",
+    "Era um guerreiro extraordinário, criado por uma leoa",
+    "Era irmão de Tepegöz",
+    "Já havia derrotado gigantes antes"
+   ]
+  },
+  {
+   "q": "Como Basat escapou depois de cegar Tepegöz?",
+   "options": [
+    "Abriu caminho à espada",
+    "Envolveu-se numa pele de carneiro e escapuliu",
+    "Cavou um túnel sob a caverna",
+    "Esperou até o gigante adormecer"
+   ]
+  },
+  {
+   "q": "O que o texto diz que essa história demonstra na tradição épica turca?",
+   "options": [
+    "Que os gigantes sempre vencem no final",
+    "Que a esperteza e a coragem podem superar a força bruta",
+    "Que os pastores são os heróis mais corajosos",
+    "Que as fadas protegem o povo oguz"
+   ]
+  }
+ ],
+ "fk-tr-06": [
+  {
+   "q": "Que condição Mehmene Banu impôs para que Ferhat ganhasse a mão de Şirin?",
+   "options": [
+    "Teria que derrotar um príncipe rival",
+    "Teria que abrir caminho através do monte Bisütun para trazer água",
+    "Teria que se tornar nobre",
+    "Teria que deixar o reino para sempre"
+   ]
+  },
+  {
+   "q": "O que Mehmene Banu fez quando a montanha estava quase rompida?",
+   "options": [
+    "Cumpriu sua promessa imediatamente",
+    "Enviou uma velha para dizer falsamente a Ferhat que Şirin havia morrido",
+    "Ofereceu ouro a Ferhat em vez disso",
+    "Pediu a Şirin que se casasse com outro abertamente"
+   ]
+  },
+  {
+   "q": "Como Şirin morreu?",
+   "options": [
+    "Foi morta por Mehmene Banu",
+    "Morreu de velhice",
+    "Chorou sobre o túmulo de Ferhat até dar seu último suspiro",
+    "Caiu da montanha"
+   ]
+  },
+  {
+   "q": "Como o texto descreve o legado deste conto?",
+   "options": [
+    "Como uma comédia apresentada em festivais",
+    "Como uma história de advertência sobre lealdade e o preço de uma mentira ruinosa",
+    "Como um registro histórico de uma guerra real",
+    "Como uma canção de ninar infantil"
+   ]
+  }
+ ],
+ "fk-vi-01": [
+  {
+   "q": "Por que o rei Hùng mandou os filhos saírem à procura?",
+   "options": [
+    "Para encontrar o prato mais delicioso para oferecer aos ancestrais",
+    "Para encontrar ouro e tesouro para o palácio",
+    "Para encontrar uma esposa para o rei",
+    "Para mapear as fronteiras do reino"
+   ]
+  },
+  {
+   "q": "O que o deus disse a Lang Liêu em seu sonho?",
+   "options": [
+    "Que o ouro é a coisa mais preciosa",
+    "Que o arroz é a coisa mais preciosa sob os céus",
+    "Que ele deveria caçar na floresta",
+    "Que ele deveria navegar até uma ilha distante"
+   ]
+  },
+  {
+   "q": "O que o rei Hùng achou dos bolos de Lang Liêu?",
+   "options": [
+    "Achou-os simples demais e os rejeitou",
+    "Ficou profundamente comovido e elogiou seu significado",
+    "Deu-os aos criados",
+    "Pediu a Lang Liêu que fizesse comida mais exótica"
+   ]
+  },
+  {
+   "q": "O que o povo vietnamita faz com o bánh chưng hoje?",
+   "options": [
+    "Vende-o apenas no interior",
+    "Embrulha-o todo Tết para lembrar suas raízes",
+    "Já não o fazem mais",
+    "Só o comem em casamentos"
+   ]
+  }
+ ],
+ "fk-vi-02": [
+  {
+   "q": "Por que a filha do professor se apaixonou primeiro pelo irmão errado?",
+   "options": [
+    "Preferia a personalidade de Lang",
+    "Os dois irmãos eram exatamente iguais",
+    "Tân se recusava a falar com ela",
+    "Nunca havia conhecido nenhum dos dois irmãos"
+   ]
+  },
+  {
+   "q": "O que aconteceu a Lang depois do mal-entendido?",
+   "options": [
+    "Casou-se com a outra filha do professor",
+    "Deixou a casa, desabou à beira de um rio e se transformou em pedra",
+    "Mudou-se para o palácio",
+    "Reconciliou-se com Tân imediatamente"
+   ]
+  },
+  {
+   "q": "No que a esposa de Tân se transformou depois de morrer procurando por ele?",
+   "options": [
+    "Num bloco de calcário",
+    "Numa areca",
+    "Num cipó de betel",
+    "Num rio"
+   ]
+  },
+  {
+   "q": "O que o betel e a areca simbolizam no Vietnã hoje?",
+   "options": [
+    "Riqueza e boa sorte",
+    "O laço entre cônjuges e irmãos",
+    "Vitória na guerra",
+    "Um aviso contra o ciúme"
+   ]
+  }
+ ],
+ "fk-vi-03": [
+  {
+   "q": "O que havia de incomum no menino aos três anos?",
+   "options": [
+    "Já sabia montar a cavalo",
+    "Não conseguia falar, rir nem andar, e ficava só deitado",
+    "Já havia deixado casa",
+    "Só falava com o rei"
+   ]
+  },
+  {
+   "q": "Que três coisas o menino pediu ao rei que forjasse para ele?",
+   "options": [
+    "Uma espada de madeira, um escudo e um arco",
+    "Um cavalo de ferro, uma armadura de ferro e um chicote de ferro",
+    "Uma coroa dourada, um manto e uma bandeira",
+    "Um barco, uma rede e uma lança"
+   ]
+  },
+  {
+   "q": "O que o guerreiro usou depois que seu chicote de ferro quebrou?",
+   "options": [
+    "Suas mãos nuas",
+    "Rochas da montanha",
+    "Bambu arrancado da beira da estrada",
+    "Uma espada emprestada de um aldeão"
+   ]
+  },
+  {
+   "q": "O que aconteceu ao guerreiro depois que ele derrotou os invasores?",
+   "options": [
+    "Estabeleceu-se e governou o povoado",
+    "Pediu ao rei uma grande recompensa",
+    "Tirou a armadura e voou para o céu com seu cavalo",
+    "Foi morto numa batalha final"
+   ]
+  }
+ ],
+ "fk-vi-04": [
+  {
+   "q": "Que poderes Sơn Tinh e Thủy Tinh tinham, cada um?",
+   "options": [
+    "Sơn Tinh podia voar; Thủy Tinh podia ficar invisível",
+    "Sơn Tinh podia mover montanhas; Thủy Tinh podia convocar chuva e vento",
+    "Ambos só sabiam lutar com espadas",
+    "Sơn Tinh governava o mar; Thủy Tinh governava o céu"
+   ]
+  },
+  {
+   "q": "O que aconteceu depois que Sơn Tinh trouxe primeiro os presentes de noivado?",
+   "options": [
+    "O rei mudou de ideia e escolheu Thủy Tinh em vez dele",
+    "Sơn Tinh se casou com Mỵ Nương, e Thủy Tinh fez as águas subirem de fúria",
+    "Ambos os pretendentes foram rejeitados",
+    "Mỵ Nương recusou-se a se casar com qualquer um deles"
+   ]
+  },
+  {
+   "q": "Por que o povo do delta do Rio Vermelho constrói diques todo ano?",
+   "options": [
+    "Para guardar água doce para a agricultura",
+    "Porque acreditam que Thủy Tinh inunda o rio todo ano para lutar contra Sơn Tinh novamente",
+    "Para honrar o aniversário do rei Hùng",
+    "Porque Sơn Tinh os manda fazer isso"
+   ]
+  },
+  {
+   "q": "Que lição a história de Sơn Tinh e Thủy Tinh transmite?",
+   "options": [
+    "Que a riqueza sempre vence no final",
+    "Que os deuses nunca devem ser irritados",
+    "Que o povo persiste e resiste firme diante de uma natureza dura e recorrente",
+    "Que concursos de casamento sempre terminam mal"
+   ]
+  }
+ ],
+ "fk-vi-05": [
+  {
+   "q": "Como Cám ganhou a recompensa por pegar mais camarões?",
+   "options": [
+    "Trabalhou o dobro que Tấm",
+    "Enganou Tấm para que se abaixasse e depois roubou seus camarões",
+    "Comprou camarões de um pescador",
+    "Pediu à mãe que pegasse os camarões por ela"
+   ]
+  },
+  {
+   "q": "O que Buda disse a Tấm para fazer com as espinhas de peixe depois que Cám matou o peixe-lodo?",
+   "options": [
+    "Jogá-las no rio",
+    "Enterrá-las sob as quatro pernas da cama dela",
+    "Dá-las à madrasta como oferenda",
+    "Queimá-las no altar do povoado"
+   ]
+  },
+  {
+   "q": "Que formas Tấm assumiu antes de viver com a velha vendedora de chá?",
+   "options": [
+    "Um pássaro dourado, uma árvore de pessegueiro e um tear",
+    "Um peixe, um pássaro e uma flor",
+    "Um sapato, um cavalo e um vestido",
+    "Um poço, um jardim e uma lanterna"
+   ]
+  },
+  {
+   "q": "Como o rei reconheceu Tấm na barraca de chá?",
+   "options": [
+    "Ela vestia suas vestes reais",
+    "Reconheceu o quid de betel em forma de fênix que só ela sabia dobrar",
+    "Um mensageiro lhe disse onde ela estava",
+    "Ela o chamou pelo nome"
+   ]
+  }
+ ],
+ "fk-vi-06": [
+  {
+   "q": "O que Lạc Long Quân fazia cada vez que vinha à terra, segundo a história?",
+   "options": [
+    "Cobrava tributo dos povoados",
+    "Ensinava ao povo a agricultura, a construção de casas e a pesca",
+    "Combatia invasores vindos do norte",
+    "Procurava Âu Cơ pelas montanhas"
+   ]
+  },
+  {
+   "q": "Por que Lạc Long Quân e Âu Cơ finalmente decidiram se separar?",
+   "options": [
+    "Tiveram uma briga pelo trono",
+    "Suas naturezas estavam ligadas a dois mundos diferentes, o mar e as montanhas, difíceis de reconciliar",
+    "Âu Cơ desejava voltar sozinha ao seu reino de fadas",
+    "Os cem filhos exigiram ser divididos"
+   ]
+  },
+  {
+   "q": "O que o casal concordou antes de se separar?",
+   "options": [
+    "Que seus descendentes nunca mais falariam entre si",
+    "Que os filhos da montanha governariam os filhos do mar",
+    "Que seus descendentes sempre se considerariam parentes e se ajudariam nas dificuldades",
+    "Que se reuniriam depois de cem anos"
+   ]
+  },
+  {
+   "q": "O que os \"cem ovos\" simbolizam na memória cultural vietnamita?",
+   "options": [
+    "A riqueza das dezoito dinastias Hùng",
+    "O parentesco entre todo o povo vietnamita, onde quer que viva",
+    "Um aviso contra casar fora do próprio grupo",
+    "A fundação específica de Phong Châu"
+   ]
+  }
+ ],
+ "fk-yue-01": [
+  {
+   "q": "Que problema o povo de Cantão tinha antes de os imortais chegarem?",
+   "options": [
+    "Nenhuma chuva e nada conseguia crescer",
+    "Enchentes demais",
+    "Uma guerra com uma cidade vizinha",
+    "Animais selvagens atacando as plantações"
+   ]
+  },
+  {
+   "q": "O que cada imortal carregava?",
+   "options": [
+    "Uma espada de jade",
+    "Uma espiga de arroz de cinco cores",
+    "Um sino dourado",
+    "Um cajado de madeira"
+   ]
+  },
+  {
+   "q": "O que aconteceu aos cinco carneiros depois que os imortais partiram?",
+   "options": [
+    "Correram para as montanhas",
+    "Transformaram-se em pedra",
+    "Voaram de volta ao céu também",
+    "Foram comidos pelos moradores"
+   ]
+  },
+  {
+   "q": "Que apelido Cantão ganhou por causa dessa lenda?",
+   "options": [
+    "Cidade das Flores",
+    "Cidade dos Carneiros",
+    "Cidade da Chuva",
+    "Cidade dos Imortais"
+   ]
+  }
+ ],
+ "fk-yue-02": [
+  {
+   "q": "O que Hou Yi fez para salvar o mundo?",
+   "options": [
+    "Construiu uma grande muralha",
+    "Derrubou nove sóis com flechas",
+    "Derrotou um dragão",
+    "Encontrou um poço mágico"
+   ]
+  },
+  {
+   "q": "Por que Hou Yi não comeu logo a pílula da imortalidade?",
+   "options": [
+    "Não confiava na Rainha Mãe",
+    "Não queria deixar a esposa",
+    "A pílula tinha gosto ruim",
+    "Queria dividi-la com os aldeões"
+   ]
+  },
+  {
+   "q": "Por que Chang'e engoliu a pílula ela mesma?",
+   "options": [
+    "Queria se tornar poderosa",
+    "Estava com fome",
+    "Um homem mau tentou ameaçá-la para que a entregasse",
+    "Queria se juntar ao marido no céu"
+   ]
+  },
+  {
+   "q": "O que Hou Yi faz todo Festival do Meio do Outono?",
+   "options": [
+    "Atira uma flecha na lua",
+    "Coloca bolinhos da lua para homenagear Chang'e",
+    "Escala uma montanha",
+    "Acende lanternas para o retorno dela"
+   ]
+  }
+ ],
+ "fk-yue-03": [
+  {
+   "q": "Por que o rei de Chu deixou de confiar em Qu Yuan?",
+   "options": [
+    "Qu Yuan perdeu uma batalha",
+    "Ele deu ouvidos à calúnia de oficiais traiçoeiros",
+    "Qu Yuan se recusou a escrever poemas para ele",
+    "Qu Yuan tentou tomar o trono"
+   ]
+  },
+  {
+   "q": "Que notícia chegou a Qu Yuan durante seu exílio?",
+   "options": [
+    "Sua família havia morrido",
+    "A capital de Chu havia caído para Qin",
+    "O rei queria que ele voltasse",
+    "Uma fome havia atingido a terra"
+   ]
+  },
+  {
+   "q": "Por que os pescadores jogaram bolinhos de arroz no rio?",
+   "options": [
+    "Para se alimentarem durante a busca",
+    "Para marcar o local onde ele se afogou",
+    "Para que peixes e camarões não devorassem seu corpo",
+    "Como oferenda ao deus do rio"
+   ]
+  },
+  {
+   "q": "Que festival nasceu desta história?",
+   "options": [
+    "O Festival do Meio do Outono",
+    "O Festival do Barco-Dragão",
+    "O Festival das Lanternas",
+    "O Festival de Qingming"
+   ]
+  }
+ ],
+ "fk-yue-04": [
+  {
+   "q": "O que Wong Cho-ping estava fazendo quando conheceu o imortal?",
+   "options": [
+    "Pescando à beira de um rio",
+    "Pastoreando ovelhas nas montanhas",
+    "Estudando num templo",
+    "Cultivando arroz"
+   ]
+  },
+  {
+   "q": "O que o irmão mais velho achou que havia acontecido a Wong Cho-ping?",
+   "options": [
+    "Havia ficado rico",
+    "Havia morrido",
+    "Havia deixado o país",
+    "Havia se tornado monge em outra província"
+   ]
+  },
+  {
+   "q": "O que Wong Cho-ping fez para provar seus poderes ao irmão?",
+   "options": [
+    "Transformou pedras de volta em ovelhas",
+    "Curou um aldeão doente",
+    "Voou para o céu",
+    "Previu o tempo"
+   ]
+  },
+  {
+   "q": "O que se acredita que Wong Tai Sin faz pelos devotos fiéis?",
+   "options": [
+    "Concede apenas riqueza",
+    "Atende a tudo que pedem com sinceridade",
+    "Só cura doenças",
+    "Protege marinheiros no mar"
+   ]
+  }
+ ],
+ "fk-yue-05": [
+  {
+   "q": "Como os soldados de Lo Chun acabaram vivendo nas ilhas?",
+   "options": [
+    "Foram enviados para lá pescar para o imperador",
+    "Fugiram para lá depois que sua rebelião foi derrotada",
+    "Eram marinheiros naufragados",
+    "Eram criminosos exilados"
+   ]
+  },
+  {
+   "q": "Segundo a lenda, com que se parecia o Lo Ting?",
+   "options": [
+    "Totalmente humano, mas com pele verde",
+    "Rostos humanos com corpos de peixe e choro de recém-nascido",
+    "Peixes gigantes sem traços humanos",
+    "Criaturas aladas que viviam em árvores"
+   ]
+  },
+  {
+   "q": "Como os Lo Ting supostamente ajudavam os pescadores próximos?",
+   "options": [
+    "Pescavam para eles",
+    "Gritavam para avisar sobre tempestades que se aproximavam",
+    "Reparavam barcos danificados",
+    "Guiavam navios pelo nevoeiro"
+   ]
+  },
+  {
+   "q": "Como as famílias de pescadores ao redor da ilha de Lantau tradicionalmente viam os Lo Ting?",
+   "options": [
+    "Como monstros perigosos a temer",
+    "Como guardiões do mar a serem honrados com oferendas",
+    "Como pragas que arruinavam suas pescarias",
+    "Como espiões de um povoado rival"
+   ]
+  }
+ ],
+ "fk-yue-06": [
+  {
+   "q": "Como o Rei Macaco surgiu?",
+   "options": [
+    "Nasceu de pais macacos",
+    "Irrompeu de um ovo de pedra",
+    "Foi criado pelo Imperador de Jade",
+    "Era um humano transformado por magia"
+   ]
+  },
+  {
+   "q": "Como o Rei Macaco obteve o Cajado Dourado Ruyi?",
+   "options": [
+    "Forjou-o ele mesmo",
+    "Ganhou-o num concurso contra o Rei Dragão",
+    "Exigiu-o do Rei Dragão, que não teve escolha a não ser entregá-lo",
+    "Foi um presente do Imperador de Jade"
+   ]
+  },
+  {
+   "q": "Por que o Rei Macaco ficou furioso por ser \"Protetor dos Cavalos\"?",
+   "options": [
+    "Descobriu que era o posto mais humilde da corte celestial",
+    "Os cavalos o atacaram",
+    "Queria ser general em vez disso",
+    "O Imperador de Jade recusou-se a pagá-lo"
+   ]
+  },
+  {
+   "q": "O que levou o Imperador de Jade a enviar cem mil soldados celestiais contra o Rei Macaco?",
+   "options": [
+    "Recusou-se a voltar à Montanha das Flores e Frutas",
+    "Roubou pêssegos e elixir imortais, e arruinou o Banquete dos Pêssegos",
+    "Atacou o palácio do Rei Dragão de novo",
+    "Tentou roubar o trono do Imperador de Jade"
+   ]
+  }
+ ],
+ "fk-zh-01": [
+  {
+   "q": "O que a mãe trouxe para casa?",
+   "options": [
+    "Um cesto de peras",
+    "Um cesto de maçãs",
+    "Um saco de arroz",
+    "Uma caixa de doces"
+   ]
+  },
+  {
+   "q": "Qual pera Kong Rong pegou?",
+   "options": [
+    "A maior",
+    "A menor",
+    "Duas médias",
+    "Nenhuma"
+   ]
+  },
+  {
+   "q": "Por que Kong Rong disse que pegou a pera pequena?",
+   "options": [
+    "Não gostava de peras",
+    "Não estava com fome",
+    "Porque era novo e os irmãos eram mais velhos",
+    "Porque a mãe o mandou fazer isso"
+   ]
+  },
+  {
+   "q": "Que lição as pessoas costumam tirar desta história?",
+   "options": [
+    "Comer sempre depressa",
+    "Partilhar e ceder as coisas boas aos outros",
+    "Nunca confiar nos irmãos",
+    "Fruta grande tem gosto melhor"
+   ]
+  }
+ ],
+ "fk-zh-02": [
+  {
+   "q": "Onde as crianças estavam brincando?",
+   "options": [
+    "Na escola",
+    "Num jardim com uma grande jarra d'água",
+    "Junto a um rio",
+    "Numa cozinha"
+   ]
+  },
+  {
+   "q": "O que aconteceu a uma das crianças?",
+   "options": [
+    "Subiu numa árvore",
+    "Caiu dentro da jarra d'água",
+    "Correu para casa",
+    "Quebrou um brinquedo"
+   ]
+  },
+  {
+   "q": "O que Sima Guang fez para salvar o amigo?",
+   "options": [
+    "Pulou dentro da jarra",
+    "Chamou um adulto e esperou",
+    "Jogou uma pedra para quebrar a jarra",
+    "Virou a jarra"
+   ]
+  },
+  {
+   "q": "Que lição a história ensina?",
+   "options": [
+    "Nunca brincar perto de água",
+    "Manter a calma e pensar com clareza ajuda em momentos de perigo",
+    "Adultos são sempre necessários para resolver problemas",
+    "Pedras grandes são perigosas"
+   ]
+  }
+ ],
+ "fk-zh-03": [
+  {
+   "q": "O que causou o dano ao céu?",
+   "options": [
+    "O impacto de um meteoro",
+    "Gonggong se chocando contra o monte Buzhou depois de perder uma batalha",
+    "Um erro da própria Nuwa",
+    "Uma grande seca"
+   ]
+  },
+  {
+   "q": "Que desastres se seguiram ao desabamento do céu?",
+   "options": [
+    "Só a escuridão caiu",
+    "Enchentes despencaram e feras atacaram as pessoas",
+    "O sol desapareceu",
+    "A terra ficou mais fria"
+   ]
+  },
+  {
+   "q": "Como Nuwa consertou o céu?",
+   "options": [
+    "Teceu-o com fio de seda",
+    "Derreteu pedras de cinco cores e preencheu as fendas",
+    "Pediu ajuda ao deus do fogo",
+    "Rezou ao sol"
+   ]
+  },
+  {
+   "q": "O que Nuwa usou para sustentar os cantos do céu?",
+   "options": [
+    "Pilares de madeira",
+    "Picos de montanha",
+    "As quatro patas de uma tartaruga gigante",
+    "Correntes de ferro"
+   ]
+  }
+ ],
+ "fk-zh-04": [
+  {
+   "q": "Como o Boiadeiro conseguiu se casar com a Tecelã?",
+   "options": [
+    "Pediu diretamente ao Imperador de Jade",
+    "Escondeu o manto dela, como o velho boi havia aconselhado",
+    "Construiu um palácio para ela",
+    "Ela o escolheu por acaso"
+   ]
+  },
+  {
+   "q": "Por que o Imperador de Jade ficou furioso?",
+   "options": [
+    "O Boiadeiro roubou tesouro",
+    "Uma fada havia se casado em segredo com um mortal",
+    "O boi sabia falar",
+    "As crianças se comportaram mal"
+   ]
+  },
+  {
+   "q": "O que a Rainha Mãe do Oeste criou para separar o casal?",
+   "options": [
+    "Uma cordilheira",
+    "Uma muralha de fogo",
+    "O Rio de Prata (Via Láctea)",
+    "Uma floresta densa"
+   ]
+  },
+  {
+   "q": "Como o Boiadeiro e a Tecelã conseguem se encontrar uma vez por ano?",
+   "options": [
+    "O Imperador de Jade os carrega pessoalmente",
+    "Pegas formam uma ponte sobre o rio",
+    "Atravessam nadando",
+    "Um dragão os leva de barco"
+   ]
+  }
+ ],
+ "fk-zh-05": [
+  {
+   "q": "Que problema as duas montanhas causavam ao velho?",
+   "options": [
+    "Bloqueavam terras de cultivo",
+    "Bloqueavam a passagem para dentro e fora de sua casa",
+    "Causavam enchentes",
+    "Escondiam o sol"
+   ]
+  },
+  {
+   "q": "Que objeção a esposa do velho levantou?",
+   "options": [
+    "Achou o plano perigoso",
+    "Duvidou de sua força e perguntou para onde iria a terra",
+    "Queria se mudar em vez disso",
+    "Recusou-se a deixar os filhos ajudarem"
+   ]
+  },
+  {
+   "q": "Do que o \"Velho Sábio\" zombou no Velho Tolo?",
+   "options": [
+    "De ser rico demais",
+    "De tentar algo além de sua força já idosa",
+    "De se recusar a viajar",
+    "De falar com espíritos"
+   ]
+  },
+  {
+   "q": "Como a história finalmente se resolveu?",
+   "options": [
+    "O velho desistiu",
+    "A família abandonou o projeto",
+    "O Imperador de Jade mandou levar as montanhas embora",
+    "Uma enchente arrastou as montanhas"
+   ]
+  }
+ ],
+ "fk-zh-06": [
+  {
+   "q": "O que aconteceu a Nuwa enquanto navegava?",
+   "options": [
+    "Chegou a um novo continente",
+    "Uma tempestade virou seu barco e ela se afogou",
+    "Foi resgatada por pescadores",
+    "Adormeceu e foi levada até a costa"
+   ]
+  },
+  {
+   "q": "No que o espírito de Nuwa se transformou?",
+   "options": [
+    "Num dragão",
+    "Num pássaro estranho chamado Jingwei",
+    "Numa estátua de pedra",
+    "Numa árvore"
+   ]
+  },
+  {
+   "q": "Que promessa Jingwei fez?",
+   "options": [
+    "Evitar o mar para sempre",
+    "Preencher o mar para que outros não morressem nele",
+    "Voltar a ser humana",
+    "Avisar os marinheiros com seu canto"
+   ]
+  },
+  {
+   "q": "O que a expressão \"Jingwei preenche o mar\" simboliza?",
+   "options": [
+    "Perigo imprudente",
+    "Determinação persistente contra dificuldades impossíveis",
+    "O poder da natureza sobre os humanos",
+    "Um aviso contra o excesso de confiança"
+   ]
+  }
+ ],
+ "st-b1-01": [
+  {
+   "q": "Por que o trem estava atrasado?",
+   "options": [
+    "Havia um problema com os trilhos",
+    "Estava chovendo",
+    "O maquinista estava doente",
+    "Havia passageiros demais"
+   ]
+  },
+  {
+   "q": "O que o homem ofereceu a Ana e Marco?",
+   "options": [
+    "Um pouco de água",
+    "Um jornal",
+    "Um pedaço de pão",
+    "Seu assento"
+   ]
+  },
+  {
+   "q": "Com que o homem trabalhava?",
+   "options": [
+    "Dirigia trens",
+    "Vendia verduras no mercado",
+    "Trabalhava em navios",
+    "Era professor"
+   ]
+  },
+  {
+   "q": "Como Ana se sentiu no final da história?",
+   "options": [
+    "Zangada com o atraso",
+    "Cansada e entediada",
+    "Feliz por terem conhecido um estranho gentil",
+    "Preocupada por perder a cidade"
+   ]
+  }
+ ],
+ "st-b1-02": [
+  {
+   "q": "Por que Sam estava nervoso?",
+   "options": [
+    "Não gostava de sopa",
+    "Não conhecia bem a família de Yuki",
+    "Estava atrasado para o jantar",
+    "Esqueceu um presente"
+   ]
+  },
+  {
+   "q": "O que Sam explicou ao pai de Yuki?",
+   "options": [
+    "Como o navio funcionava",
+    "Que o Rosetta visitava muitas cidades e ajudava as pessoas",
+    "Que estava cansado",
+    "Que não podia comer arroz"
+   ]
+  },
+  {
+   "q": "Quem criou a receita especial do bolo?",
+   "options": [
+    "Yuki",
+    "Sam",
+    "A mãe de Yuki, a partir da receita da própria mãe dela",
+    "Um restaurante do povoado"
+   ]
+  },
+  {
+   "q": "O que Sam disse sobre as famílias?",
+   "options": [
+    "São todas diferentes",
+    "São calorosas e generosas em toda parte",
+    "Comem demais",
+    "Conversam de menos"
+   ]
+  }
+ ],
+ "st-b2-01": [
+  {
+   "q": "Por que Marco queria o emprego de mecânico?",
+   "options": [
+    "Precisava de dinheiro urgentemente",
+    "Tinha curiosidade de ver como os trabalhadores em terra resolviam problemas sem ferramentas avançadas",
+    "Ana pediu-lhe pessoalmente",
+    "Queria deixar o Rosetta permanentemente"
+   ]
+  },
+  {
+   "q": "O que Marco faria se uma máquina quebrasse sem peças de reposição?",
+   "options": [
+    "Chamaria o Rosetta para pedir peças",
+    "Desistiria do reparo",
+    "Improvisaria com os materiais disponíveis",
+    "Esperaria a chegada de peças novas"
+   ]
+  },
+  {
+   "q": "O que Ana disse que se destacava em Marco em comparação com outros candidatos?",
+   "options": [
+    "Seus certificados técnicos",
+    "Sua confiança",
+    "Sua honestidade, já que a maioria dos candidatos exagerava",
+    "Sua pontualidade"
+   ]
+  },
+  {
+   "q": "O que aconteceu alguns dias depois da entrevista?",
+   "options": [
+    "Marco foi rejeitado",
+    "Marco recebeu um convite para voltar por uma semana de teste",
+    "A oficina fechou",
+    "Ana deixou a cidade"
+   ]
+  }
+ ],
+ "st-b2-02": [
+  {
+   "q": "Por que Yuki desejou ter trazido algo para ler?",
+   "options": [
+    "Estava cansada do jornal",
+    "Não esperava uma espera tão longa",
+    "A enfermeira disse para ela fazer isso",
+    "Sam pediu que ela lesse para ele"
+   ]
+  },
+  {
+   "q": "O que o idoso disse a Yuki sobre suas visitas?",
+   "options": [
+    "Estava visitando pela primeira vez",
+    "Vinha todo mês para um exame de rotina",
+    "Trabalhava no hospital",
+    "Estava esperando pela filha"
+   ]
+  },
+  {
+   "q": "O que Sam realmente tinha?",
+   "options": [
+    "Uma doença grave",
+    "Nada",
+    "Uma infecção tratável com antibióticos",
+    "Um osso quebrado"
+   ]
+  },
+  {
+   "q": "O que Sam disse que os hospitais pareciam despertar nas pessoas?",
+   "options": [
+    "Impaciência",
+    "Uma gentileza silenciosa",
+    "Medo",
+    "Tédio"
+   ]
+  }
+ ],
+ "st-c1-01": [
+  {
+   "q": "Qual era o principal argumento do dono da livraria?",
+   "options": [
+    "As regulamentações favoreciam os grandes vendedores injustamente",
+    "Sem fiscalização, o mercado tinha se tornado caótico e pouco confiável",
+    "Ele queria fechar sua loja",
+    "Apoiava totalmente o vendedor de frutas"
+   ]
+  },
+  {
+   "q": "Que acusação o vendedor de frutas fez depois do segundo café?",
+   "options": [
+    "Que o dono da livraria estava mentindo",
+    "Que o conselho havia cedido à pressão dos comerciantes mais ricos",
+    "Que o café servia café ruim",
+    "Que as regulamentações não existiam"
+   ]
+  },
+  {
+   "q": "Como o dono do café aliviou a tensão?",
+   "options": [
+    "Pedindo que fossem embora",
+    "Chamando as autoridades",
+    "Oferecendo doces com um comentário irônico",
+    "Ignorando a discussão por completo"
+   ]
+  },
+  {
+   "q": "Que ponto em comum os dois homens finalmente encontraram?",
+   "options": [
+    "Que o mercado deveria ser fechado",
+    "Que o conselho tinha falhado em consultar os comerciantes comuns",
+    "Que os preços deveriam ser fixados pelo governo",
+    "Que o vendedor de frutas tinha razão o tempo todo"
+   ]
+  }
+ ],
+ "st-c2-01": [
+  {
+   "q": "O que Marco estava fazendo na última manhã de Sam que pareceu fora do comum a Sam?",
+   "options": [
+    "Gritando com os passageiros",
+    "Polindo uma placa comemorativa de latão com um sentimentalismo incomum",
+    "Recusando-se a falar com Sam",
+    "Fazendo as malas para partir"
+   ]
+  },
+  {
+   "q": "Por que o trem em direção ao norte estava atrasado?",
+   "options": [
+    "Uma falha de sinalização",
+    "Mau tempo",
+    "Falta de passageiros",
+    "O Rosetta bloqueou os trilhos"
+   ]
+  },
+  {
+   "q": "O que Marco fez em vez de simplesmente apertar a mão de Sam?",
+   "options": [
+    "Foi embora sem dizer uma palavra",
+    "Deu-lhe um presente",
+    "Ofereceu um abraço desajeitado, chamando-o de exceção",
+    "Convidou-o para ficar permanentemente"
+   ]
+  },
+  {
+   "q": "Que ideia Sam atribuiu ao comentário de Marco sobre assimetria?",
+   "options": [
+    "Que os viajantes são sempre mais felizes que os que ficam",
+    "Que uma pessoa leva a memória adiante enquanto a outra guarda o lugar onde ela aconteceu",
+    "Que as despedidas deveriam ser evitadas por completo",
+    "Que a rotina é superior à novidade"
+   ]
+  }
+ ]
+}

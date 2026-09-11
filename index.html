@@ -6417,7 +6417,7 @@
       LANG_ORDER.push(c);
     });
   })();
-  LANG_META.eng = {name:'English', native:'English', flag:'🇬🇧', speech:'en-US', reading:false, audio:false, tiers:['A1','A2','B1','B2','C1','C2'], sentences:BUILD_SENTENCES.length, dialogues:0};
+  LANG_META.eng = {name:'English', native:'English', flag:'🇬🇧', speech:'en-US', reading:false, audio:true, tiers:['A1','A2','B1','B2','C1','C2'], sentences:BUILD_SENTENCES.length, dialogues:0};
   LANGS.eng = {name:'English', color:'#9ad0ec'}; LANG_ORDER.push('eng');
   BUILD_SENTENCES.forEach(function(s){ if(s.en && !s.eng) s.eng = s.en.replace(/[.!?]$/,'').split(' '); });
   var ROMANCE = ['es','fr','it','pt','la'];
