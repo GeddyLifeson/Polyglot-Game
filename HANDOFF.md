@@ -26,6 +26,9 @@ way through C2), pronunciations must be as natural as possible, and the whole th
 | Recorder | `tools/gen_audio.py` | backends: `onnx` (Kokoro, GPU by default), `azure`, `chatterbox`, `torch` |
 | Merge staged audio | `tools/merge_audio.py <staging dirs>` | never overwrites an existing clip |
 | QA | `tools/mkqa.py` then `qa/*.js` | six Playwright suites; run against a live server with `QA_URL=http://localhost:8765` |
+| Localization sources | `tools/l10n_prep.py` → `l10n_in/` (git-ignored, regenerate after build) | coach, notes, idiom meanings, nuance situations, dialogue scenes, story questions, folk tales' English side |
+| Localization output | `l10n_out/<lang>_<chunk>.json` → `l10n/<lang>.json` (build.py) | chunks: notes, questions, folk_1..3; validate with `tools/l10n_check.py <lang> <chunk>` |
+| Local translator | `tools/l10n_ollama.py <lang> <chunk>` | Ollama-driven, resumable, same files + validator; lower quality than the agent pass, GPU-hungry |
 | Env, Kokoro CPU | `.venv312` | Python 3.12, misaki refuses 3.13, pyopenjtalk-plus instead of pyopenjtalk |
 | Env, Kokoro GPU | `.venv312gpu` | onnxruntime-gpu 1.29 = CUDA 13 wheels; the plain `onnxruntime` package must not be installed alongside |
 | Env, Chatterbox | `.venv311cbx` | Python 3.11, torch 2.6 cu124, chatterbox-tts from GitHub master (V3), Russian stresser from GitHub |

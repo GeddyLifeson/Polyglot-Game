@@ -15,9 +15,14 @@ index.html            the built game (content already spliced in; audio NOT embe
 content/              the vocabulary & skill content, one Python module per batch
 build.py              validates content/ and splices it into index.html
 audio/                native-speaker recordings (Ogg Opus) + manifest.json  ← all six bands, 30,510 clips
-tools/gen_audio.py    records any band with Kokoro-82M            (→ audio/<TIER>/…)
+tools/gen_audio.py    records any band: Kokoro (onnx/torch), Chatterbox, Edge, Azure  (→ audio/<TIER>/…)
+tools/merge_audio.py  merges a staging folder of recordings into audio/ (never overwrites)
 tools/embed_audio.py  optional: bakes audio/ into index.html for a single-file build
 tools/mkqa.py         builds qa/hub-qa-wrapped.html with a window.__QA debug hook
+tools/l10n_prep.py    extracts the English-only layer (coach, notes, questions, folk tales) to l10n_in/
+tools/l10n_check.py   validates one translated chunk in l10n_out/ (shape, no empties, not still English)
+tools/l10n_ollama.py  translates one chunk with a local Ollama model (resumable; cloud agents did the first pass)
+l10n/<lang>.json      assembled by build.py from l10n_out/; fetched by the game for a non-English player
 qa/*.js               Playwright test suites (content, chain, overhaul, voices, clips)
 ```
 
