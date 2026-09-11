@@ -143,6 +143,30 @@ files listed in `tools/cbx_bench.py` into `models/chatterbox/`, and run `python 
 About 8 s per clip on a 16-core CPU, well under 1 s on a GPU. On this machine Python cannot reach HTTPS hosts
 until the local TLS root is appended to certifi (`tools/export_local_roots.ps1`).
 
+## 3d. Learning systems (September 2026)
+
+- **Spaced repetition** (`save.srs`, `srsUpdate`): every correctly or incorrectly decoded (word, language) gets a
+  card; intervals 1 day, 3 days, then interval × ease (2.5 → 3.0), a miss resets to tomorrow. Due words show
+  as a home card and a chain-neutral **Maintenance Sweep** tile on the topics screen (`__sweep`).
+- **Graduated recall**: a missed word is re-queued 4 rounds later, then 9 later on a second miss.
+- **Fill the Gap** (`cloze` module per band): one tile of a sentence blanked, options from other sentences of
+  the band; the prompt is silent until answered, then the full sentence plays.
+- **📘 Note** shows a sentence's grammar note before answering; **🎤 Shadow** records four seconds and plays
+  the native clip and your take back to back.
+- **Streak** (`save.streak`): a cleared relay, storm or sweep a day; pays min(days, 30) × 2 credits scaled by
+  Noise; a 4-Dark-Matter shield covers one missed day, max two.
+- **Flight Plan** (`buildPlan`, `checkPlan`): six weekly objectives generated from the voyage's languages
+  (seeded by ISO week and language set), progress measured from lifetime stats since the plan began,
+  rewards on completion, three milestones ending in a warp core.
+- **Placement test** (`showPlacement`): twelve adaptive questions per language; may pre-clear the tiers
+  below the level reached, for that language only.
+- **Signal Intercept** (`interceptAnalyze`): paste any text; ladder words light up, decoded ones green;
+  the unknown ones become a chain-neutral relay (`__intercept`). CJK text is scanned by longest match.
+- **Constellations** (`wordRelation`, `constellationsFor`): same / similar / shared-character words across
+  the voyage's languages only (English loanwords included), shown on decode and in the Lexicon.
+- **Tutorial** (`COACH`, `coach`): one coach card per screen the first time a new voyage reaches it, from the
+  Journey through the first relay result; skippable; never shown to a save with cleared relays.
+
 ## 4. Edit content
 
 Content lives in `content/*.py`. Each module exports `TIER`, `TOPICS` (key → label) and

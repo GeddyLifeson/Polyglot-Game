@@ -133,6 +133,13 @@ for path in sorted(glob.glob(os.path.join(CONTENT, 'xlate_*.py'))):
             x['words'][k] = (t.strip(), (r or '').strip() or None)
     x['sentences'].update(getattr(mod, 'SENTENCES', {}))
     x['dialogues'].update(getattr(mod, 'DIALOGUES', {}))
+    # per-language skill drills authored for the added languages (same schema as the core files)
+    for name, target in (('GRAMMAR', grammar), ('IDIOMS', idioms), ('NUANCE', nuance)):
+        for it in getattr(mod, name, []):
+            d = dict(it); d['lang'] = lang; d['_src'] = src
+            if not d.get('tier'): errors.append('%s: %s item %s has no tier' % (src, name, d.get('id')))
+            target.append(d)
+    x['stories'] = x.get('stories', {}); x['stories'].update(getattr(mod, 'STORIES', {}) if isinstance(getattr(mod, 'STORIES', None), dict) else {})
 
 for path in sorted(glob.glob(os.path.join(CONTENT, '*.py'))):
     src = os.path.basename(path)
