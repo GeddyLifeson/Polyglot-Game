@@ -1,7 +1,9 @@
 # Polyglot Voyager — source & build kit
 
 A single-file, sci-fi roguelite language-learning game: a 5,005-word A1→C2 fluency ladder in
-six languages (Spanish, French, Italian, Brazilian Portuguese, Japanese, Mandarin) with
+twenty languages (Spanish, French, Italian, Brazilian Portuguese, Japanese, Mandarin, German, Dutch,
+Swedish, Polish, Russian, Greek, Latin, Turkish, Arabic, Hindi, Korean, Cantonese, Vietnamese,
+Indonesian) with
 vocabulary, dialogue, sentence-building, grammar, idiom, nuance and listening modules,
 a Signal Chain meta-progression, an Engineering Bay, anomaly events, daily Signal Storms,
 officer ranks, commendations, and native-speaker recordings generated with Kokoro-82M.
@@ -100,8 +102,10 @@ All numbers live near the top of the script in `index.html`, next to `SHOP_UPGRA
 - **Dark Matter** (`darkMatterFor`): the late currency. C1 relays pay 2, C2 pay 3, any relay at Noise 3+ pays
   floor(noise/2); first clears double it, a perfect run adds 1. First storm clear of the day pays 2 + noise/2.
   Deep Space floors past the first pay 1 each.
-- **Engineering Bay prices** (`shopPrice`): +6% per upgrade already fitted, so the full bay costs about
-  67k credits instead of 15k and the last items land around C1.
+- **Engineering Bay prices** (`shopPrice`): +1.5% per upgrade already fitted, times a repertoire multiplier of
+  1 + 0.3 per extra language on the voyage (`repertoireMult`, also applied to Reactor Tuning). The 68-item bay
+  costs about 60k credits for a one-language voyage and about 165k for six, against roughly 60k and 400k of
+  lifetime income, so there is always something left to buy going into C2.
 - **Deep Space Refit** (`REFIT_TUNING`, `REFIT_MODULES`): the Dark Matter wing of the bay. Opens at Lieutenant
   or on the first C1/C2 clear with any interference on. Reactor Tuning tracks have no cap and cost 25% more
   per level; Resonance modules each need a Clearance (a deed: a 20-streak, a chain of 15, a Single Cell clear…).
@@ -112,6 +116,25 @@ All numbers live near the top of the script in `index.html`, next to `SHOP_UPGRA
   XP / 100)) + floor(lifetime Dark Matter / 25), minus cores already held. Learned words, commendations,
   lifetime stats, interference choices and settings survive a jump. **Wipe all progress** on the home screen
   deletes the save entirely after two confirmations.
+
+## 3c. Languages and the Journey
+
+The first six languages are authored inline in `content/vocab_*.py` and have studio recordings. The other
+fourteen live in `content/xlate_<lang>_<band>.py` files (`WORDS` keyed by item id, plus `SENTENCES` and
+`DIALOGUES` in the `_skills` file) and are merged by `build.py`, which emits `LANG_META` with each language's
+name, flag, speech locale, whether it shows a reading line, and which tiers its translations cover
+completely. A language is offered for a tier only when every word of that tier is translated. Grammar,
+idiom and nuance modules are authored per language and exist for the six recorded languages only.
+
+On first launch the **Journey** screen asks which languages to take; it can be changed any time from the
+Star Chart. Sectors hold one relay per chosen language, storms and the Deep Space Run mix the chosen
+languages, and the Lexicon, Voices panel and Mission Log follow the choice. Indonesian uses the code `ind`
+(`id` would collide with the item id field).
+
+Recordings for the fourteen new languages are not shipped yet; they use the device voice until recorded.
+`tools/gen_audio.py --backend azure` records any language with Azure Neural voices (set `AZURE_TTS_KEY`
+and `AZURE_TTS_REGION`; about 63k characters per language, 1.14M for all twenty), and `--only` re-records
+just the keys listed by the in-game 🚩 flag button (Mission Log). Kokoro covers es, fr, it, pt, ja, zh, hi.
 
 ## 4. Edit content
 
