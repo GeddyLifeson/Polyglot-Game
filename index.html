@@ -211,6 +211,12 @@
   .wipe-row{ margin-top:10px; text-align:center; }
   .flag-box{ width:100%; min-height:90px; font-family:var(--font-mono); font-size:11px; background:var(--surface-2); color:var(--paper-dim); border:1px solid var(--line); border-radius:8px; padding:8px; }
   #btn-flag{ opacity:.55; }
+  .coach{ position:fixed; left:50%; bottom:18px; transform:translateX(-50%); z-index:70; width:min(94vw, 520px); }
+  .coach-body{ background:var(--surface-3); border:1px solid var(--basil); border-radius:12px; padding:12px 14px; box-shadow:var(--shadow); }
+  .coach-tag{ font-family:var(--font-mono); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--basil); margin-bottom:4px; }
+  .coach-text{ font-size:13px; line-height:1.55; color:var(--paper); }
+  .coach-actions{ display:flex; gap:8px; margin-top:10px; flex-wrap:wrap; }
+  @media (max-width:480px){ .coach{ bottom:auto; top:8px; } }
   .plan-card{ text-align:left; }
   .plan-streak{ float:right; color:#ffb347; font-weight:400; }
   .plan-quests{ display:flex; flex-direction:column; gap:6px; margin-top:8px; }
@@ -691,6 +697,7 @@
   </div>
 </div>
 
+<div class="coach" id="coach" hidden><div class="coach-body"><div class="coach-tag">🧑‍🚀 Comms Chief</div><div class="coach-text" id="coach-text"></div><div class="coach-actions"><button class="btn btn-sm btn-primary" id="coach-next">Got it</button><button class="btn btn-sm btn-ghost" id="coach-skip">Skip the tutorial</button></div></div></div>
 <div class="toast" id="toast"></div>
 
 <script>
@@ -6468,7 +6475,7 @@
       tips:0, shopOwned:[], bestFloorIdx:-1, bestScore:0, clearedDungeons:{},
       chain:{len:0, best:0, carried:[]}, xp:0, ascension:0, missed:{}, commendations:[], voices:{}, speechRate:0, useClips:true,
       interference:[], dark:0, refitOwned:[], tuning:{}, warp:{cores:0, jumps:0, spent:0, drive:{}}, flagged:{}, srs:{},
-      streak:{days:0, last:0, best:0, shield:0}, plan:null, placed:{},
+      streak:{days:0, last:0, best:0, shield:0}, plan:null, placed:{}, tutorial:{done:false, seen:{}},
       journey:{langs:['es','fr','it','pt','ja','zh'], set:false},
       storm:{date:'', best:0, runs:0, cleared:false},
       stats:{decodes:0, correct:0, relaysCleared:0, relaysFailed:0, perfectRelays:0, encryptedCracked:0, events:0,
@@ -6497,6 +6504,10 @@
     if(!save.srs || typeof save.srs!=='object') save.srs = {};
     if(!save.streak || typeof save.streak!=='object') save.streak = {days:0, last:0, best:0, shield:0};
     if(!save.placed || typeof save.placed!=='object') save.placed = {};
+    if(!save.tutorial || typeof save.tutorial!=='object') save.tutorial = {done:false, seen:{}};
+    if(!save.tutorial.seen) save.tutorial.seen = {};
+    /* a voyage that already has progress never sees the tutorial */
+    if(!save.tutorial.done && (save.stats.relaysCleared||0)>0) save.tutorial.done = true;
     if(!save.journey || typeof save.journey!=='object' || !Array.isArray(save.journey.langs)) save.journey = {langs:['es','fr','it','pt','ja','zh'], set:false};
     /* a voyage that already has progress was started before the Journey screen existed: keep its six */
     if(!save.journey.set && (save.xp>0 || Object.keys(save.clearedDungeons||{}).length)) save.journey.set = true;
@@ -6943,6 +6954,31 @@
     var out = {}; journeyLangs().forEach(function(l){ var n = srsDueIds(l).length; if(n) out[l] = n; }); return out;
   }
 
+  /* ---- tutorial coach: one short card per screen the first time a new voyage reaches it ---- */
+  var COACH = {
+    journey:  'Welcome aboard the Rosetta. First, chart your voyage: pick the languages you want to learn. One is fine to start; you can add more any time from the Star Chart.',
+    home:     'This is the Star Chart. Each sector is a fluency band, A1 up to C2, and holds one relay per language you chose. Tap the <b>A1</b> sector to begin.',
+    hub:      'One relay per language. Clearing every relay in a sector unlocks the next one. Pick the language you want to start with.',
+    topics:   'A relay is made of modules: vocabulary, conversations, sentences and more. Clear them all to decode the relay. Start with the first <b>Vocabulary</b> module.',
+    preview:  'The briefing. You have power cells (lives), a timer per transmission, and this is a <b>first attempt</b>: clear it and your Signal Chain grows, fail it and the chain breaks. Engage when ready.',
+    draft:    'Before every relay you draft one module for the run: a temporary perk. On a first clear it gets welded onto your chain and rides into the next relay. Pick one.',
+    play:     'A transmission arrives in your target language. Tap its meaning before the timer runs out. 🔊 replays it, 📘 shows a grammar note when there is one, 🎤 lets you shadow the native voice, 🚩 flags a bad pronunciation. Correct answers in a row raise your sync multiplier.',
+    complete: 'Relay locked in. Credits go to the Engineering Bay for upgrades, XP raises your rank, and every decoded word joins your Lexicon and a spaced-repetition schedule: the <b>Maintenance Sweep</b> on the Star Chart will bring words back when they are due. That is the loop. Enjoy the voyage.'
+  };
+  function coach(step){
+    if(!save.tutorial || save.tutorial.done || save.tutorial.seen[step] || !COACH[step]) return;
+    var box = document.getElementById('coach'); if(!box) return;
+    save.tutorial.seen[step] = true; persist();
+    document.getElementById('coach-text').innerHTML = COACH[step];
+    var isLast = step==='complete';
+    document.getElementById('coach-next').textContent = isLast ? 'Onward' : 'Got it';
+    document.getElementById('coach-skip').hidden = isLast;
+    box.hidden = false;
+    if(isLast){ save.tutorial.done = true; persist(); }
+  }
+  document.getElementById('coach-next').addEventListener('click', function(){ document.getElementById('coach').hidden = true; });
+  document.getElementById('coach-skip').addEventListener('click', function(){ save.tutorial.done = true; persist(); document.getElementById('coach').hidden = true; toast('Tutorial skipped. The Mission Log explains everything if you need it later.'); });
+
   /* ---- streak: one cleared relay, storm or sweep a day keeps it; a Dark Matter shield covers one missed day ---- */
   function streakTouch(){
     var s = save.streak, today = srsDay();
@@ -7323,6 +7359,7 @@
       '</div>';
     el.stormCard.innerHTML = stormCardHtml();
     renderSweepCard(); renderPlanCard();
+    coach('home');
     var stormBtn = document.getElementById('btn-storm'); if(stormBtn) stormBtn.addEventListener('click', startStorm);
     var ascOk = rankIndex()>=2 || save.interference.length>0;
     el.ascRow.hidden = !ascOk;
@@ -7409,6 +7446,7 @@
   function showHub(idx){
     hideToast();
     st.playing = false;
+    coach('hub');
     ['screenHome','screenTopics','screenPreview','screenPlaying','screenPerks','screenShop','screenComplete'].forEach(function(id){ el[id].hidden = true; });
     el.screenHub.hidden = false;
     el.shiftRibbon.hidden = true;
@@ -7450,6 +7488,7 @@
     var tier = TIERS[idx];
     el.topicsBadge.textContent = tier.code; el.topicsBadge.style.background = tier.color;
     el.topicsTitle.textContent = tier.name+' — '+LANGS[lang].name;
+    coach('topics');
     var mods = modulesForLang(tier, lang);
     var clearedMods = mods.filter(function(m){ return isDungeonCleared(idx, lang, m.key); }).length;
     var vocabN = vocabForTier(tier).length;
@@ -7785,6 +7824,7 @@
   function showDungeonIntro(idx, lang, topic){
     hideToast();
     st.playing = false;
+    if(!isDrillTopic(topic) && topic!=='__storm') coach('preview');
     el.screenHome.hidden = true;
     el.screenHub.hidden = true;
     el.screenTopics.hidden = true;
@@ -7871,6 +7911,7 @@
   function showLoadoutDraft(idx, lang, topic){
     hideToast();
     if(interferenceOn('cold') && !isDrillTopic(topic)){ startDungeonAttempt(idx, lang, topic, null); return; }
+    coach('draft');
     el.screenHome.hidden = true; el.screenHub.hidden = true; el.screenTopics.hidden = true; el.screenPreview.hidden = true;
     el.screenPlaying.hidden = true; el.screenComplete.hidden = true; el.screenShop.hidden = true;
     el.screenPerks.hidden = false;
@@ -8343,6 +8384,7 @@
       }
     } else if(round.lang && round.kind!=='nuance' && !round.silent){ speakText(round.main, round.lang, false, round.clipKey || null); }
     var nb = document.getElementById('btn-note'); if(nb){ nb.hidden = !round.note; }
+    if(st.pos===0 && !tier.endless) coach('play');
     var sb = document.getElementById('btn-shadow'); if(sb){ sb.hidden = !(round.clipKey && hasClip(round.clipKey)); sb.textContent = '🎤 Shadow'; }
 
     if(round.uiMode==='buttons'){
@@ -8607,6 +8649,7 @@
   function showJourney(){
     hideToast();
     hideAllScreens();
+    coach('journey');
     var sc = document.getElementById('screen-journey'); sc.hidden = false;
     el.shiftRibbon.hidden = true; el.runPerks.hidden = true;
     var picked = save.journey.langs.slice();
@@ -8752,6 +8795,7 @@
 
     var accuracy = st.total>0 ? st.correct/st.total : 0;
     el.cpTitle.textContent = '✅ Relay locked in!';
+    coach('complete');
     el.cpStars.innerHTML = LANGS[st.lang].name+' — '+tier.name+' ('+tier.code+') — '+topicLabel(st.topic)+' mastered'+(firstClear?'':' again');
     el.cpSub.textContent = hubNowCleared
       ? ('Every relay in '+tier.name+' is decoded! '+nextLockedHint())
