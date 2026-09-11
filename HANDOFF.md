@@ -81,7 +81,7 @@ State at 2026-09-11 09:00:
 | tr | 2,924 | recording (chain B) |
 | hi | 62 | partial from an earlier CPU run; chain C resumes it |
 | sv pl el la ar ko ind | 0 | queued |
-| es fr it pt ja zh | 0 | queued in chain D; the owner may drop these to save ~14 h (see next steps) |
+| es fr it pt ja zh | 0 | chain D dropped 2026-09-11 (owner: "do whatever is best"); Kokoro recordings stay |
 
 ## What happens when a language finishes (repeat per language)
 
@@ -100,8 +100,8 @@ language and its keys from the manifest before merging, or add a `--replace` fla
 
 1. Keep merging languages as chains report them (above). Watch the monitor output; if the GPU rate
    collapses, check `nvidia-smi` and `ollama ps` for a model that reloaded onto the card.
-2. Decide with the owner whether chain D (re-recording the six Kokoro languages) stays queued. Dropping it
-   saves about 14 hours; the six already have good recordings. To drop: kill the `run_cbx_queue.sh A D` bash.
+2. Chain D (re-recording the six Kokoro languages) was dropped to save ~14 h. Re-queue with
+   `bash run_cbx_queue.sh A D es fr it pt ja zh` only if the owner asks for it.
 3. Cantonese and Vietnamese: record with `--backend azure` once the owner provides a key.
 4. When every language is merged: run all six QA suites against the live server, update README language
    notes (which languages have studio voice), update the memory file, and merge.
