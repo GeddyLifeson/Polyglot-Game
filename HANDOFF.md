@@ -192,7 +192,11 @@ Sonnet agent per (language, chunk) writes `l10n_out/<lang>_<chunk>.json` (100 ag
 scratchpad `l10n_<lang>_<chunk>.txt`), validated by `tools/l10n_check.py <lang> <chunk>`; build.py assembles
 `l10n/<lang>.json`; the game fetches it at boot for a non-English player (`loadL10n` / `applyL10n`).
 Missing chunks simply leave that piece in English, so partial coverage is safe to ship. Check coverage with
-`ls l10n_out` (expect 100 files) and the "l10n files:" line build.py prints.
+`ls l10n_out` (expect 100 files) and the "l10n files:" line build.py prints. Done 2026-09-11 evening: 100/100.
+Token note (owner asked): those 100 agents cost roughly 15-20M Sonnet tokens. For FUTURE bulk translation use
+`tools/l10n_ollama.py <lang> <chunk>` (local Ollama, same chunk files, same validator, resumable). Its quality
+is below the agents' (weakest for CJK / Arabic / Hindi), so spot-check, and run it only when the recording chains
+are finished: a loaded model drops the Chatterbox recorders from ~30 to ~6 clips a minute.
 
 English recordings: `--backend edge` with en-US-AriaNeural (Kokoro's English G2P needs spacy, whose DLL is
 blocked by Application Control on this machine). Two recorders: `staging_edge_eng1` (A1 A2 B1) and

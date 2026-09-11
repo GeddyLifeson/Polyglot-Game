@@ -4559,3 +4559,232 @@
    ]
   }
  ],
+ "st-b1-01": [
+  {
+   "q": "Mengapa kereta itu terlambat?",
+   "options": [
+    "Ada masalah dengan relnya",
+    "Sedang hujan",
+    "Sang masinis sedang sakit",
+    "Penumpangnya terlalu banyak"
+   ]
+  },
+  {
+   "q": "Apa yang ditawarkan lelaki itu kepada Ana dan Marco?",
+   "options": [
+    "Segelas air",
+    "Sebuah koran",
+    "Sepotong roti",
+    "Kursinya"
+   ]
+  },
+  {
+   "q": "Apa pekerjaan lelaki itu?",
+   "options": [
+    "Ia mengemudikan kereta",
+    "Ia menjual sayuran di pasar",
+    "Ia bekerja di kapal",
+    "Ia seorang guru"
+   ]
+  },
+  {
+   "q": "Bagaimana perasaan Ana di akhir kisah ini?",
+   "options": [
+    "Marah karena keterlambatan itu",
+    "Lelah dan bosan",
+    "Senang karena bertemu orang asing yang ramah",
+    "Khawatir akan tertinggal masuk kota"
+   ]
+  }
+ ],
+ "st-b1-02": [
+  {
+   "q": "Mengapa Sam gugup?",
+   "options": [
+    "Ia tidak suka sup",
+    "Ia tidak begitu mengenal keluarga Yuki",
+    "Ia terlambat untuk makan malam",
+    "Ia lupa membawa hadiah"
+   ]
+  },
+  {
+   "q": "Apa yang dijelaskan Sam kepada ayah Yuki?",
+   "options": [
+    "Cara kerja kapal itu",
+    "Bahwa Rosetta mengunjungi banyak kota dan membantu orang",
+    "Bahwa ia lelah",
+    "Bahwa ia tidak bisa makan nasi"
+   ]
+  },
+  {
+   "q": "Siapa yang membuat resep kue spesial itu?",
+   "options": [
+    "Yuki",
+    "Sam",
+    "Ibu Yuki, dari resep ibunya sendiri",
+    "Sebuah restoran di desa itu"
+   ]
+  },
+  {
+   "q": "Apa yang dikatakan Sam tentang keluarga?",
+   "options": [
+    "Mereka semua berbeda-beda",
+    "Mereka hangat dan murah hati di mana-mana",
+    "Mereka makan terlalu banyak",
+    "Mereka terlalu sedikit bicara"
+   ]
+  }
+ ],
+ "st-b2-01": [
+  {
+   "q": "Mengapa Marco menginginkan pekerjaan montir itu?",
+   "options": [
+    "Ia butuh uang mendesak",
+    "Ia penasaran bagaimana pekerja darat menyelesaikan masalah tanpa peralatan canggih",
+    "Ana memintanya langsung",
+    "Ia ingin meninggalkan Rosetta selamanya"
+   ]
+  },
+  {
+   "q": "Apa yang akan dilakukan Marco jika sebuah mesin rusak tanpa suku cadang?",
+   "options": [
+    "Memanggil Rosetta untuk mengirim suku cadang",
+    "Menyerah memperbaikinya",
+    "Berimprovisasi dengan bahan apa pun yang tersedia",
+    "Menunggu suku cadang baru datang"
+   ]
+  },
+  {
+   "q": "Menurut Ana, apa yang menonjol dari Marco dibandingkan pelamar lain?",
+   "options": [
+    "Sertifikat teknisnya",
+    "Rasa percaya dirinya",
+    "Kejujurannya, karena kebanyakan pelamar melebih-lebihkan",
+    "Kedisiplinan waktunya"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi beberapa hari setelah wawancara itu?",
+   "options": [
+    "Marco ditolak",
+    "Marco menerima undangan kembali untuk minggu percobaan",
+    "Bengkel itu tutup",
+    "Ana meninggalkan kota itu"
+   ]
+  }
+ ],
+ "st-b2-02": [
+  {
+   "q": "Mengapa Yuki berharap ia membawa sesuatu untuk dibaca?",
+   "options": [
+    "Ia bosan dengan korannya",
+    "Ia tidak menyangka akan menunggu selama itu",
+    "Perawat menyuruhnya",
+    "Sam memintanya membacakan untuknya"
+   ]
+  },
+  {
+   "q": "Apa yang diceritakan lelaki tua itu kepada Yuki tentang kunjungannya?",
+   "options": [
+    "Ia berkunjung untuk pertama kalinya",
+    "Ia datang setiap bulan untuk pemeriksaan rutin",
+    "Ia bekerja di rumah sakit itu",
+    "Ia sedang menunggu putrinya"
+   ]
+  },
+  {
+   "q": "Sebenarnya apa yang terjadi pada Sam?",
+   "options": [
+    "Penyakit serius",
+    "Tidak ada apa-apa sama sekali",
+    "Infeksi yang bisa diobati dengan antibiotik",
+    "Tulang yang patah"
+   ]
+  },
+  {
+   "q": "Menurut Sam, apa yang tampaknya dimunculkan rumah sakit dari dalam diri orang?",
+   "options": [
+    "Ketidaksabaran",
+    "Kebaikan yang tenang",
+    "Ketakutan",
+    "Kebosanan"
+   ]
+  }
+ ],
+ "st-c1-01": [
+  {
+   "q": "Apa argumen utama pemilik toko buku itu?",
+   "options": [
+    "Peraturan itu tidak adil menguntungkan pedagang besar",
+    "Tanpa pengawasan, pasar telah menjadi kacau dan tidak bisa diandalkan",
+    "Ia ingin menutup tokonya",
+    "Ia sepenuhnya mendukung penjual buah itu"
+   ]
+  },
+  {
+   "q": "Tuduhan apa yang diajukan penjual buah itu setelah kopi keduanya?",
+   "options": [
+    "Bahwa pemilik toko buku itu berbohong",
+    "Bahwa dewan kota telah menyerah pada tekanan pedagang yang lebih kaya",
+    "Bahwa kafe itu menyajikan kopi yang buruk",
+    "Bahwa peraturan itu tidak ada"
+   ]
+  },
+  {
+   "q": "Bagaimana pemilik kafe itu meredakan ketegangan?",
+   "options": [
+    "Dengan meminta mereka pergi",
+    "Dengan memanggil pihak berwenang",
+    "Dengan menawarkan kue dan komentar yang menggelitik",
+    "Dengan mengabaikan perdebatan itu sepenuhnya"
+   ]
+  },
+  {
+   "q": "Kesamaan apa yang akhirnya ditemukan kedua pria itu?",
+   "options": [
+    "Bahwa pasar itu harus ditutup",
+    "Bahwa dewan kota gagal berkonsultasi dengan para pedagang biasa",
+    "Bahwa harga harus ditetapkan oleh pemerintah",
+    "Bahwa penjual buah itu benar sejak awal"
+   ]
+  }
+ ],
+ "st-c2-01": [
+  {
+   "q": "Apa yang dilakukan Marco pada pagi terakhir Sam yang tampak tidak biasa baginya?",
+   "options": [
+    "Berteriak kepada para penumpang",
+    "Menggosok sebuah plakat kuningan peringatan dengan sentimentalitas yang tak biasa",
+    "Menolak berbicara dengan Sam",
+    "Mengemasi barang-barangnya untuk pergi"
+   ]
+  },
+  {
+   "q": "Mengapa kereta ke arah utara itu tertunda?",
+   "options": [
+    "Gangguan sinyal",
+    "Cuaca buruk",
+    "Kekurangan penumpang",
+    "Rosetta menghalangi rel"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Marco alih-alih sekadar menjabat tangan Sam?",
+   "options": [
+    "Ia pergi tanpa sepatah kata pun",
+    "Ia memberinya sebuah hadiah",
+    "Ia memberikan pelukan canggung, menyebutnya sebagai pengecualian",
+    "Ia mengundangnya untuk tinggal selamanya"
+   ]
+  },
+  {
+   "q": "Gagasan apa yang dikaitkan Sam dengan komentar Marco tentang asimetri?",
+   "options": [
+    "Bahwa para musafir selalu lebih bahagia daripada mereka yang tinggal",
+    "Bahwa satu orang membawa kenangan itu maju sementara yang lain menjaga tempat itu terjadi",
+    "Bahwa perpisahan sebaiknya dihindari sepenuhnya",
+    "Bahwa rutinitas lebih unggul daripada hal baru"
+   ]
+  }
+ ]
+}
