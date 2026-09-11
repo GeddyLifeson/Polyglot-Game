@@ -54,9 +54,16 @@ zh (pinyin), ru, el, ar, hi, ko, yue (Jyutping). Japanese carries furigana `{漢
 ## Audio: the current job
 
 Chatterbox Multilingual V3 (Resemble AI, MIT) is recording every language. It covers 18 of our 20;
-Latin reads through the Italian model, Indonesian through Malay. **Cantonese and Vietnamese are not
-covered** and still need `--backend azure` (needs `AZURE_TTS_KEY` and `AZURE_TTS_REGION`; ~63k characters
-per language; the Azure free tier is 500k characters a month).
+Latin reads through the Italian model, Indonesian through Malay. **Cantonese and Vietnamese** are recorded
+with `--backend edge` (edge-tts: the free, keyless Microsoft Edge neural voices, zh-HK-HiuMaan and vi-VN-HoaiMy;
+network-bound, ~1 clip/s, no GPU). Azure is not used (owner: "azure aint free"). The `.venv312` certifi
+bundle carries the local TLS roots so edge-tts can connect.
+
+```
+PATH="$PWD/bin:$PATH" .venv312/python.exe tools/gen_audio.py A1 A2 B1 B2 C1 C2 TILES --langs yue --backend edge --out staging_edge_yue > gen_edge_yue.log
+```
+Both (yue, vi) were started 2026-09-11 12:00 in the background; logs `gen_edge_<lang>.log`, staging `staging_edge_<lang>/`.
+Merge them exactly like the Chatterbox languages (merge_audio.py, flip the LANG_META audio flag).
 
 Recording runs as two GPU chains plus two queued chains, all resumable:
 
@@ -102,7 +109,7 @@ language and its keys from the manifest before merging, or add a `--replace` fla
    collapses, check `nvidia-smi` and `ollama ps` for a model that reloaded onto the card.
 2. Chain D (re-recording the six Kokoro languages) was dropped to save ~14 h. Re-queue with
    `bash run_cbx_queue.sh A D es fr it pt ja zh` only if the owner asks for it.
-3. Cantonese and Vietnamese: record with `--backend azure` once the owner provides a key.
+3. Cantonese and Vietnamese: Edge recordings running (see above); merge when their logs say DONE.
 4. When every language is merged: run all six QA suites against the live server, update README language
    notes (which languages have studio voice), update the memory file, and merge.
 5. Restore what was stopped for the GPU (see below), then restart the Panscriptum loops.
@@ -111,10 +118,10 @@ language and its keys from the manifest before merging, or add a `--replace` fla
 
 ## Things stopped for the GPU, and how to restore them
 
-- **Ollama** is running CPU-only from a background shell (`CUDA_VISIBLE_DEVICES=-1 GGML_VK_VISIBLE_DEVICES=-1
-  OLLAMA_KEEP_ALIVE=5m ollama serve`, log `C:\Users\imarl\ollama_cpu.log`). Hiding CUDA alone is not
-  enough; it falls back to Vulkan. Restore: kill `ollama.exe`, relaunch `ollama app.exe` from
-  `C:\Users\imarl\AppData\Local\Programs\Ollama`.
+- **Ollama** was updated to 0.34.0 on 2026-09-11 12:00 (owner: "update ollama and run it") and is back to the
+  normal tray app (`ollama app.exe`, GPU-capable). Idle it holds no VRAM; a loaded model will slow the
+  Chatterbox recorders (~6 clips/min instead of ~30). The old CPU-only shell trick (CUDA_VISIBLE_DEVICES=-1
+  GGML_VK_VISIBLE_DEVICES=-1 OLLAMA_KEEP_ALIVE=5m ollama serve) is available if that becomes a problem.
 - **Panscriptum library kit** background loops (`overnight.py`, `read.py`, `foreman.py`, `overwatch.py`,
   `pipeline.py`, `autostart.py --watch`, `drill.py`, `health.py`, ...) were stopped because they pinned
   qwen3:8b on the card with keep-alive forever. The owner said not to touch Panscriptum until recording is
@@ -169,6 +176,10 @@ Status 2026-09-11 afternoon: Phase 1 (items 1-11) and Phase 2 (12-13) are DONE a
 documents every system. Stories live in `content/stories_src.py` (English) + `content/xlate_<lang>_stories.py`;
 drills for the added languages in `content/xlate_<lang>_skills2.py`; build.py reads GRAMMAR / IDIOMS / NUANCE /
 STORIES from xlate files and emits `var STORIES`. The QA hook exposes `STORIES`, `showStories`, `startStory`.
+Phase 2b (2026-09-11, owner's idea): the Library also holds each language's OWN traditional tales: six per
+language (B1 x2, B2 x2, C1, C2) in `content/folk_<lang>.py` (`FOLK` list: title/title_en/origin/paras/paras_en/
+questions), written natively with the English beside; build.py turns them into stories with `only: <lang>` so
+they show only for that language. The six crew stories stay as the shared set.
 Open follow-ups from Phase 2: the new drill items and story paragraphs have no recorded clips (the running
 Chatterbox chains were started before they existed); after the chains finish, re-run gen_audio.py per language
 (it only records missing keys) if studio voice is wanted for them. Web Speech covers them meanwhile.

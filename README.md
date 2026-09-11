@@ -166,9 +166,10 @@ until the local TLS root is appended to certifi (`tools/export_local_roots.ps1`)
   the voyage's languages only (English loanwords included), shown on decode and in the Lexicon.
 - **Tutorial** (`COACH`, `coach`): one coach card per screen the first time a new voyage reaches it, from the
   Journey through the first relay result; skippable; never shown to a save with cleared relays.
-- **Ship's Library** (`STORIES`, `showStories`): six graded parallel-text stories (two B1, two B2, one C1,
-  one C2) authored in English in `content/stories_src.py` and translated into every language in
-  `content/xlate_<lang>_stories.py`. A story opens once its sector is reachable for that language; it is
+- **Ship's Library** (`STORIES`, `showStories`): each language's own traditional tales (six per language,
+  two B1, two B2, one C1, one C2, in `content/folk_<lang>.py`: myths, legends, fables and folk humour retold
+  natively with the English beside, shown only for that language) plus six shared crew stories authored in
+  English in `content/stories_src.py` and translated into every language in `content/xlate_<lang>_stories.py`. A story opens once its sector is reachable for that language; it is
   read one paragraph at a time (tap for the English, 🔊 to hear it, decoded ladder words glow) with four
   comprehension questions in English between paragraphs. First finish pays credits by tier (40/60/80/100)
   plus Dark Matter for C1/C2 and a perfect score; a later perfect read pays 20 credits once.

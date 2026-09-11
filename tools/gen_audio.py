@@ -34,7 +34,7 @@ ap.add_argument('--bitrate', default='16k')
 ap.add_argument('--out', default='audio')
 ap.add_argument('--html', default='index.html')
 ap.add_argument('--speed', type=float, default=0.95)
-ap.add_argument('--backend', choices=['auto', 'torch', 'onnx', 'azure', 'chatterbox'], default='auto')
+ap.add_argument('--backend', choices=['auto', 'torch', 'onnx', 'azure', 'chatterbox', 'edge'], default='auto')
 ap.add_argument('--cbx-prompt', default=os.environ.get('CBX_PROMPT', ''), help='chatterbox: reference wav for the narrator voice (optional)')
 ap.add_argument('--cbx-device', default=os.environ.get('CBX_DEVICE', 'cuda'))
 ap.add_argument('--azure-key', default=os.environ.get('AZURE_TTS_KEY', ''))
@@ -56,6 +56,8 @@ if backend == 'auto':
         backend = 'onnx'
 if backend == 'chatterbox':
     import torch
+elif backend == 'edge':
+    import asyncio, edge_tts   # free Microsoft Edge neural voices (same voice names as Azure); needs the internet, no key
 elif backend == 'azure':
     import urllib.request, html as _html
     if not args.azure_key:
@@ -218,6 +220,27 @@ class AzurePipeline:
                 if attempt == 3: raise
                 time.sleep(2 * (attempt + 1))
 
+class EdgePipeline:
+    """edge-tts: the neural voices Microsoft Edge's Read Aloud uses, free and keyless. Plain text only (no SSML),
+    so furigana is resolved to the kanji and the voice reads it itself. MP3 in, Ogg Opus out via ffmpeg."""
+    def __init__(self, lang):
+        self.locale, self.voice = AZURE[lang]
+        if args.voice: self.voice = args.voice
+        self.rate = '%+d%%' % round((args.speed - 1) * 100)
+    def synth_ogg(self, text, ogg):
+        mp3 = ogg[:-4] + '.mp3'
+        async def go():
+            await edge_tts.Communicate(clean(text), self.voice, rate=self.rate).save(mp3)
+        for attempt in range(5):
+            try:
+                asyncio.run(go())
+                if os.path.getsize(mp3) < 200: raise RuntimeError('empty audio from Edge')
+                subprocess.run(['ffmpeg','-y','-loglevel','error','-i',mp3,'-ac','1','-ar','24000','-c:a','libopus','-b:a',args.bitrate,'-vbr','on','-application','voip','-frame_duration','40',ogg], check=True)
+                os.remove(mp3); return
+            except Exception:
+                if attempt == 4: raise
+                time.sleep(3 * (attempt + 1))
+
 def clean(text, reading=False):
     if reading: t = re.sub(r'\{[^|{}]+\|([^}]+)\}', r'\1', text)   # {漢字|かな} -> かな
     else:       t = re.sub(r'\{([^|{}]+)\|[^}]+\}', r'\1', text)   # {漢字|かな} -> 漢字
@@ -282,6 +305,9 @@ for tier in args.tiers:
         if backend == 'azure':
             if lang not in AZURE: print('skip', lang, '(no Azure voice mapped)'); continue
             pipe = AzurePipeline(lang); voice = pipe.voice
+        elif backend == 'edge':
+            if lang not in AZURE: print('skip', lang, '(no Edge voice mapped)'); continue
+            pipe = EdgePipeline(lang); voice = pipe.voice
         elif backend == 'chatterbox':
             if lang not in CBX: print('skip', lang, '(chatterbox has no model for it; use --backend azure)'); continue
             pipe = ChatterboxPipeline(lang); voice = 'chatterbox'
@@ -296,10 +322,12 @@ for tier in args.tiers:
             key = iid+':'+lang
             wav = os.path.join(tdir, f'{iid}_{lang}.wav'); ogg = wav[:-4]+'.ogg'
             try:
-                if backend == 'azure':
-                    data = pipe.synth_ogg(text)
-                    if len(data) < 200: raise RuntimeError('empty audio from Azure')
-                    open(ogg, 'wb').write(data)
+                if backend in ('azure', 'edge'):
+                    if backend == 'edge': pipe.synth_ogg(text, ogg)
+                    else:
+                        data = pipe.synth_ogg(text)
+                        if len(data) < 200: raise RuntimeError('empty audio from Azure')
+                        open(ogg, 'wb').write(data)
                     keys.add(key); manifest['dir'][key] = tier
                     if n % 50 == 49:
                         manifest['keys'] = sorted(keys); json.dump(manifest, open(man_path, 'w'))

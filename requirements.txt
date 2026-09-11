@@ -12,3 +12,4 @@ jaconv
 mojimoji
 pyopenjtalk
 ordered-set
+edge-tts>=7  # --backend edge: free Microsoft Edge neural voices (Cantonese, Vietnamese, anything without a local model)

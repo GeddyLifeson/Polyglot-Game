@@ -160,6 +160,12 @@ for path in sorted(glob.glob(os.path.join(CONTENT, '*.py'))):
     add_items(listen, getattr(mod, 'LISTEN', []), 'listen', src, tier)
     if isinstance(getattr(mod, 'STORIES', None), list):
         stories.extend(dict(x, _src=src) for x in mod.STORIES)
+    # folk_<lang>.py: that culture's own tales, target text + English side by side, offered only for that language
+    if isinstance(getattr(mod, 'FOLK', None), list) and getattr(mod, 'LANG', None):
+        for x in mod.FOLK:
+            stories.append({'id': x['id'], 'tier': x['tier'], 'title': x['title_en'], 'paras': x['paras_en'],
+                            'questions': x['questions'], 'origin': x.get('origin', ''), 'only': mod.LANG,
+                            '_xl': {mod.LANG: {'title': x['title'], 'paras': x['paras']}}, '_src': src})
 
 # ---------------- ids + validation ----------------
 ids = set()
@@ -276,8 +282,8 @@ for d in stories:
     for q in d.get('questions', []):
         if len(q.get('options', [])) != 4 or not (0 <= q.get('correct', -1) < 4) or not (0 <= q.get('after', -1) < 7):
             errors.append('story %s: bad question %r' % (d['id'], q.get('q')))
-    d['xl'] = {}
-    for lang in XL:
+    d['xl'] = dict(d.pop('_xl', {}))
+    for lang in ([] if d.get('only') else XL):
         v = XL[lang].get('stories', {}).get(d['id'])
         if isinstance(v, dict) and isinstance(v.get('paras'), list) and len(v['paras']) == 7 and v.get('title')                 and all(isinstance(x, str) and x.strip() for x in v['paras']):
             d['xl'][lang] = {'title': v['title'].strip(), 'paras': [x.strip() for x in v['paras']]}
@@ -348,7 +354,9 @@ with open(HTML, 'w', encoding='utf-8') as f:
 per_tier = {t: 0 for t in TIERS}
 for d in vocab_rows: per_tier[d['tier']] += 1
 print('vocab: %d total  %s' % (len(vocab_rows), '  '.join('%s=%d' % (t, per_tier[t]) for t in TIERS)))
-print('stories %d, translated into %s' % (len(stories), ','.join(sorted(set(l for d in stories for l in d['xl']))) or 'nothing yet'))
+print('stories: %d shared (in %s) + %d folk tales for %s' % (
+    sum(1 for d in stories if not d.get('only')), ','.join(sorted(set(l for d in stories if not d.get('only') for l in d['xl']))) or 'nothing yet',
+    sum(1 for d in stories if d.get('only')), ','.join(sorted(set(d['only'] for d in stories if d.get('only')))) or 'no language yet'))
 print('sentences %d | grammar %d | idioms %d | nuance %d | dialogues %d | listen modules %d' % (
     len(sentences), len(grammar), len(idioms), len(nuance), len(dialogues), len(listen)))
 for code in EXTRA:
