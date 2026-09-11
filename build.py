@@ -41,7 +41,7 @@ LANG_META = {
     'el': ('Greek', 'Ελληνικά', '🇬🇷', 'el-GR', True, False),
     'la': ('Latin', 'Latina', '🏛️', 'it-IT', False, False),
     'tr': ('Turkish', 'Türkçe', '🇹🇷', 'tr-TR', False, True),
-    'ar': ('Arabic', 'العربية', '🇸🇦', 'ar-SA', True, False),
+    'ar': ('Arabic', 'العربية', '🇸🇦', 'ar-SA', True, True),
     'hi': ('Hindi', 'हिन्दी', '🇮🇳', 'hi-IN', True, False),
     'ko': ('Korean', '한국어', '🇰🇷', 'ko-KR', True, False),
     'yue': ('Cantonese', '廣東話', '🇭🇰', 'zh-HK', True, True),
