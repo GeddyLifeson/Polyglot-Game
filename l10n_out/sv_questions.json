@@ -1,0 +1,4790 @@
+{
+ "fk-ar-01": [
+  {
+   "q": "Varför klev Juha av åsnan första gången?",
+   "options": [
+    "Eftersom åsnan var trött",
+    "Eftersom några män kritiserade honom för att rida medan hans son gick",
+    "Eftersom hans son bad om att få rida ensam",
+    "Eftersom vägen var för brant"
+   ]
+  },
+  {
+   "q": "Vad bestämde Juha och hans son att göra efter att den gamle mannen under trädet klagade?",
+   "options": [
+    "Sälja åsnan",
+    "Båda rida på åsnan tillsammans",
+    "Båda gå och låta åsnan gå tom bredvid dem",
+    "Vända om hem"
+   ]
+  },
+  {
+   "q": "Vilken läxa berättade Juha för sin son?",
+   "options": [
+    "Lyssna aldrig på främlingar",
+    "Det är omöjligt att göra alla nöjda",
+    "Rid alltid ensam på åsnan",
+    "Bönder vet bäst"
+   ]
+  },
+  {
+   "q": "Vad blev berättelsen, enligt sista stycket?",
+   "options": [
+    "En lag i staden",
+    "En sång som sjöngs på bröllop",
+    "En saga som berättas för barn för att lära ut en läxa",
+    "En dikt skriven av Juhas son"
+   ]
+  }
+ ],
+ "fk-ar-02": [
+  {
+   "q": "Vilken överenskommelse gjorde djuren med lejonet?",
+   "options": [
+    "De skulle slåss mot lejonet tillsammans",
+    "De skulle skicka ett djur varje dag så att lejonet skulle lämna resten i fred",
+    "De skulle lämna skogen",
+    "De skulle ge lejonet honung istället för kött"
+   ]
+  },
+  {
+   "q": "Varför sa haren till lejonet att han var sen?",
+   "options": [
+    "Han sa att han hade gått vilse",
+    "Han sa att ett annat lejon försökte äta upp honom på vägen",
+    "Han sa att han var sjuk",
+    "Han sa att de andra djuren hade stoppat honom"
+   ]
+  },
+  {
+   "q": "Vad såg lejonet i brunnen?",
+   "options": [
+    "En fisk",
+    "En annan hare",
+    "Sin egen spegelbild, som han trodde var en rivaliserande lejon",
+    "Ingenting alls"
+   ]
+  },
+  {
+   "q": "Vilken läxa lär berättelsen ut, enligt sista stycket?",
+   "options": [
+    "Styrka vinner alltid",
+    "Klokskap kan besegra styrka",
+    "Lejon bör inte dricka vatten",
+    "Harar är de snabbaste djuren"
+   ]
+  }
+ ],
+ "fk-ar-03": [
+  {
+   "q": "Vad hände innan Sindbads resa började?",
+   "options": [
+    "Han ärvde rikedom, gjorde snabbt av med den och bestämde sig för att handla varor till sjöss",
+    "Han var fiskare som ville bli köpman",
+    "Han tvingades ombord på skeppet av pirater",
+    "Han ärvde ett skepp av sin far"
+   ]
+  },
+  {
+   "q": "Vad visade sig ön vara som skeppets besättning landade på?",
+   "options": [
+    "En flytande flotte",
+    "En enorm sovande val",
+    "En sandbank",
+    "En övergiven fästning"
+   ]
+  },
+  {
+   "q": "Hur nådde Sindbad den andra ön?",
+   "options": [
+    "Han räddades av ett förbipasserande skepp",
+    "Vågor förde honom dit på en trädbit",
+    "Han simmade hela vägen av egen vilja",
+    "En annan val bar honom"
+   ]
+  },
+  {
+   "q": "Vad gjorde Sindbad efter att äntligen ha återvänt hem till Bagdad?",
+   "options": [
+    "Han slutade segla för alltid",
+    "Han blev hästtränare",
+    "Inte långt därefter gav han sig ut på ännu en sjöresa",
+    "Han flyttade bort från Bagdad för gott"
+   ]
+  }
+ ],
+ "fk-ar-04": [
+  {
+   "q": "Vad bevittnade Ali Baba att de fyrtio rövarna gjorde?",
+   "options": [
+    "Begravde en kropp i skogen",
+    "Sa en magisk fras som öppnade en hemlig dörr i en klippa",
+    "Anföll en förbipasserande karavan",
+    "Grälade om stulet guld"
+   ]
+  },
+  {
+   "q": "Hur upptäckte Qasim Ali Babas hemlighet?",
+   "options": [
+    "Ali Baba berättade det direkt för honom",
+    "Hans hustru hittade ett guldmynt fastklibbat i vax på en lånad våg",
+    "Han följde efter Ali Baba till skogen",
+    "En rövare erkände för honom"
+   ]
+  },
+  {
+   "q": "Vad hände med Qasim i grottan?",
+   "options": [
+    "Han flydde med skatten",
+    "Han glömde de magiska orden för att komma ut och dödades senare av rövarna",
+    "Han blev vän med rövarna",
+    "Han gömde skatten och återvände säkert"
+   ]
+  },
+  {
+   "q": "Hur besegrade Marjana rövarna?",
+   "options": [
+    "Hon anmälde dem till kungens vakter",
+    "Hon hällde kokande olja i krukorna de gömde sig i",
+    "Hon låste in dem i grottan",
+    "Hon lurade dem att lämna staden"
+   ]
+  }
+ ],
+ "fk-ar-05": [
+  {
+   "q": "Varför kom kungens budbärare till Hatims tält?",
+   "options": [
+    "För att byta hästar med honom",
+    "För att be om hans värdefulla sto, för att pröva hans berömda generositet",
+    "För att bjuda in honom till kungens palats",
+    "För att utmana honom i en poesitävling"
+   ]
+  },
+  {
+   "q": "Varför slaktade Hatim sitt enda sto?",
+   "options": [
+    "Han hade inget annat sätt att mätta sin gäst, eftersom han inte hade någon mat den natten",
+    "Stoet var sjukt och skulle dö ändå",
+    "Han ville ha en belöning av kungen",
+    "Budbäraren krävde det"
+   ]
+  },
+  {
+   "q": "Varför tände Hatim en stor eld varje natt på en kulle?",
+   "options": [
+    "För att laga mat åt sin familj",
+    "För att leda vilsna resenärer till sitt tält för mat och skydd",
+    "För att signalera till sin stam under räder",
+    "För att hålla vilda djur borta"
+   ]
+  },
+  {
+   "q": "Enligt sista stycket, varför minns man Hatim genom generationerna?",
+   "options": [
+    "Eftersom han var rikare än alla omkring honom",
+    "Eftersom han gjorde generositet till en orubblig princip även i svåra tider",
+    "Eftersom han vann många krig",
+    "Eftersom han skrev sin tids mest berömda dikter"
+   ]
+  }
+ ],
+ "fk-ar-06": [
+  {
+   "q": "Varför fick Antarah inte fullt erkännande i sin stam till en början?",
+   "options": [
+    "Han var född i en rivaliserande stam",
+    "Hans mor var en abessinsk slavkvinna, så han kallades \"Banu Abs slav\"",
+    "Han vägrade slåss i strider",
+    "Han var för ung för att erkännas"
+   ]
+  },
+  {
+   "q": "Hur förtjänade Antarah sin frihet och erkännande som Shaddads son?",
+   "options": [
+    "Han betalade en lösensumma till sin far",
+    "Han kämpade hårt för att återta de stulna kamelerna, vilket fick hans far att offentligt erkänna honom",
+    "Han gifte sig med Abla i hemlighet",
+    "Han vann en poesitävling"
+   ]
+  },
+  {
+   "q": "Vilket omöjligt villkor ställde Malik för att gifta bort Abla med Antarah?",
+   "options": [
+    "Antarah var tvungen att besegra Malik i envig",
+    "Antarah var tvungen att skaffa tusen sällsynta rödbrandade kamelston",
+    "Antarah var tvungen att bli poet först",
+    "Antarah var tvungen att lämna sin stam för alltid"
+   ]
+  },
+  {
+   "q": "Enligt sista stycket, vad symboliserar Antarah i arabiskt kulturarv?",
+   "options": [
+    "En tragisk gestalt som aldrig nådde sina mål",
+    "Den kärleksslagna riddaren som vann värdighet och frihet genom sina egna gärningar, inte genom sin börd",
+    "En grym erövrare som alla fruktade",
+    "En förmögen köpman som köpte sig status"
+   ]
+  }
+ ],
+ "fk-de-01": [
+  {
+   "q": "Vad berättade mjölnaren för kungen om sin dotter?",
+   "options": [
+    "Att hon kunde spinna halm till guld",
+    "Att hon kunde baka magiskt bröd",
+    "Att hon kunde sjunga vackert",
+    "Att hon kunde väva sidentyg"
+   ]
+  },
+  {
+   "q": "Vad gav flickan den lille mannen första gången han hjälpte henne?",
+   "options": [
+    "Ett guldmynt",
+    "Sitt halsband",
+    "Sina skor",
+    "Ett bröd"
+   ]
+  },
+  {
+   "q": "Vad lovade flickan den lille mannen den tredje natten?",
+   "options": [
+    "Halva kungariket",
+    "Sitt första barn",
+    "Att gifta sig med honom",
+    "Sin ring"
+   ]
+  },
+  {
+   "q": "Hur fick drottningen reda på den lille mannens namn?",
+   "options": [
+    "Han berättade det själv för henne",
+    "Hon läste det i en bok",
+    "En budbärare hörde honom sjunga det i skogen",
+    "Kungen gissade det"
+   ]
+  }
+ ],
+ "fk-de-02": [
+  {
+   "q": "Varför varnade getmamman sina barn?",
+   "options": [
+    "På grund av den elaka vargen",
+    "På grund av en storm",
+    "På grund av jägare",
+    "På grund av en eld"
+   ]
+  },
+  {
+   "q": "Vad gjorde vargen för att få sin röst att låta mjuk?",
+   "options": [
+    "Han drack varm mjölk",
+    "Han åt krita",
+    "Han sjöng en sång",
+    "Han viskade"
+   ]
+  },
+  {
+   "q": "Hur räddade getmamman de sex killingarna?",
+   "options": [
+    "Hon skrämde bort vargen",
+    "Hon skar upp hans buk och befriade dem",
+    "Hon lurade honom ner i brunnen",
+    "Hon ringde en jägare"
+   ]
+  },
+  {
+   "q": "Hur dog vargen till slut?",
+   "options": [
+    "Han sköts av en jägare",
+    "Han föll ner från ett träd",
+    "Stenarna i hans buk drog ner honom i brunnen",
+    "Han sprang iväg och kom aldrig tillbaka"
+   ]
+  }
+ ],
+ "fk-de-03": [
+  {
+   "q": "Vilket problem hade staden Hameln?",
+   "options": [
+    "Ett råttangrepp",
+    "En torka",
+    "En sjukdomsepidemi",
+    "En översvämning"
+   ]
+  },
+  {
+   "q": "Varför vägrade borgmästaren betala flöjtspelaren?",
+   "options": [
+    "Han hade inga pengar kvar",
+    "Han tyckte att den fulla summan inte var motiverad",
+    "Han trodde inte att flöjtspelaren hade utfört arbetet",
+    "Han ville betala honom senare"
+   ]
+  },
+  {
+   "q": "Vad hände med de flesta av Hamelns barn?",
+   "options": [
+    "De leddes in i ett berg och försvann",
+    "De rymde till en annan stad",
+    "De räddades av borgmästaren",
+    "De somnade i kyrkan"
+   ]
+  },
+  {
+   "q": "Vilken regel fanns kvar i Hameln efter den dagen?",
+   "options": [
+    "Inga råttor fick vistas i staden",
+    "Ingen musik fick spelas på gatan barnen tog",
+    "Inga fester hölls längre",
+    "Inga främlingar fick komma in i staden"
+   ]
+  }
+ ],
+ "fk-de-04": [
+  {
+   "q": "Vad var Till Eulenspiegel känd för?",
+   "options": [
+    "Att ta instruktioner bokstavligt för att spela spratt",
+    "Att baka Tysklands bästa bröd",
+    "Att spå resenärers framtid",
+    "Att slåss i tornerspel"
+   ]
+  },
+  {
+   "q": "Vad bakade Till istället för bröd?",
+   "options": [
+    "Ingenting alls",
+    "Figurer av ugglor och apor",
+    "Bröd formade som gårdsdjur",
+    "Bränt, oätligt deg"
+   ]
+  },
+  {
+   "q": "Hur reagerade invånarna i Braunschweig på de märkliga bakverken?",
+   "options": [
+    "De vägrade köpa dem",
+    "De klagade till borgmästaren",
+    "De köpte dem av nyfikenhet",
+    "De krävde pengarna tillbaka"
+   ]
+  },
+  {
+   "q": "Vad gjorde Till efter att ha lämnat bagaren?",
+   "options": [
+    "Han bosatte sig permanent i Braunschweig",
+    "Han bad om ursäkt och slutade spela spratt",
+    "Han reste vidare och spelade spratt i andra städer",
+    "Han blev bagare själv"
+   ]
+  }
+ ],
+ "fk-de-05": [
+  {
+   "q": "Varför fruktade båtsmän Loreley-klippan?",
+   "options": [
+    "På grund av pirater som gömde sig där",
+    "Eftersom strömmen är lömsk och många båtar förliste där",
+    "Eftersom den sades vara förbannad av en kung",
+    "Eftersom den blockerade den enda vägen nerför Rhen"
+   ]
+  },
+  {
+   "q": "Varför kraschade så många båtar nära klippan, enligt legenden?",
+   "options": [
+    "En storm slog alltid till i skymningen",
+    "Båtsmännen distraherades av jungfruns sång",
+    "Floden var för smal för stora båtar",
+    "Klippan själv rörde sig ut i vattnet"
+   ]
+  },
+  {
+   "q": "Vad gjorde Loreley när hon nådde toppen av klippan för sista gången?",
+   "options": [
+    "Hon sjöng en sista sång och försvann in i skogen",
+    "Hon såg sin förlorade älskades båt och kastade sig i floden",
+    "Hon räddades av kurfurstens soldater",
+    "Hon förvandlades till en fågel och flög iväg"
+   ]
+  },
+  {
+   "q": "Vem gjorde Loreley-legenden berömd långt bortom Rhendalen?",
+   "options": [
+    "Heinrich Heine, med sin berömda dikt",
+    "En medeltida krönikör",
+    "Bröderna Grimm",
+    "En lokal fiskare"
+   ]
+  }
+ ],
+ "fk-de-06": [
+  {
+   "q": "Vad ska ha hänt Barbarossa istället för att han dog i strid?",
+   "options": [
+    "Han bars in i berget av övernaturliga krafter för att vänta på en framtida återkomst",
+    "Han drog sig tillbaka i tysthet till ett kloster",
+    "Han förråddes och fängslades av sin egen son",
+    "Han seglade iväg och sågs aldrig mer"
+   ]
+  },
+  {
+   "q": "Vad ska Barbarossa ha sagt när herden bekräftade att korparna fortfarande kretsade kring berget?",
+   "options": [
+    "Att han genast skulle vakna",
+    "Att han måste sova ytterligare hundra år innan hans tid var inne",
+    "Att korparna borde dödas",
+    "Att herden aldrig skulle återvända"
+   ]
+  },
+  {
+   "q": "Hur förändrades Barbarossa-myten på artonhundratalet?",
+   "options": [
+    "Den glömdes bort helt",
+    "Den avfärdades som falsk av historiker",
+    "Den fick en renässans knuten till längtan efter tysk politisk enighet",
+    "Den kom att förknippas med en annan, obesläktad legend"
+   ]
+  },
+  {
+   "q": "Vad söker besökare till Kyffhäuser symboliskt än idag, enligt texten?",
+   "options": [
+    "En nedgrävd skatt som sägs vara gömd i berget",
+    "Den sovande kejsaren vars uppvaknande skulle inleda en bättre tid",
+    "Ett botemedel mot sjukdom vid en helig källa",
+    "Korpens grav från legenden"
+   ]
+  }
+ ],
+ "fk-el-01": [
+  {
+   "q": "Vad föreslog sköldpaddan för haren?",
+   "options": [
+    "En kapplöpning",
+    "En simtur över sjön",
+    "En måltid tillsammans",
+    "Ingenting särskilt"
+   ]
+  },
+  {
+   "q": "Varför bestämde sig haren för att sluta springa?",
+   "options": [
+    "Han trodde han hade gott om tid att vila",
+    "Han gick vilse i skogen",
+    "Han var skadad",
+    "Han ville äta något"
+   ]
+  },
+  {
+   "q": "Vad gjorde sköldpaddan medan haren sov?",
+   "options": [
+    "Hon fortsatte gå stadigt mot mållinjen",
+    "Hon väckte honom",
+    "Hon vände om",
+    "Hon väntade på honom"
+   ]
+  },
+  {
+   "q": "Vad är berättelsens läxa?",
+   "options": [
+    "Ståndaktig möda besegrar hastverk",
+    "Fart vinner alltid",
+    "Sömn är farligt",
+    "Djur bör inte tävla"
+   ]
+  }
+ ],
+ "fk-el-02": [
+  {
+   "q": "Vad gjorde cikadan medan myran arbetade?",
+   "options": [
+    "Sjöng på en gren",
+    "Sov",
+    "Samlade mat den också",
+    "Byggde ett bo"
+   ]
+  },
+  {
+   "q": "Varför samlade inte cikadan någon mat?",
+   "options": [
+    "Den trodde att sommaren aldrig skulle ta slut",
+    "Den hade ingen mat att samla",
+    "Den var sjuk",
+    "Den hjälpte myran"
+   ]
+  },
+  {
+   "q": "Vad bad cikadan myran om på vintern?",
+   "options": [
+    "Lite mat",
+    "En varm plats att sova på",
+    "Hjälp att hitta sin familj",
+    "Pengar"
+   ]
+  },
+  {
+   "q": "Vad lär berättelsen ut?",
+   "options": [
+    "Hur viktigt det är att förbereda sig för framtiden",
+    "Att sjunga är viktigare än att arbeta",
+    "Myror är själviska",
+    "Vintern kommer aldrig egentligen"
+   ]
+  }
+ ],
+ "fk-el-03": [
+  {
+   "q": "Varför kunde Daedalus och Ikaros inte fly till lands eller sjöss?",
+   "options": [
+    "Kung Minos bevakade båda vägarna",
+    "De hade ingen båt",
+    "De visste inte vägen",
+    "Ikaros vägrade lämna platsen"
+   ]
+  },
+  {
+   "q": "Vilken varning gav Daedalus till Ikaros?",
+   "options": [
+    "Att inte flyga för lågt eller för högt",
+    "Att inte titta på solen",
+    "Att inte flyga på natten",
+    "Att inte flyga över havet"
+   ]
+  },
+  {
+   "q": "Varför smälte vaxet på Ikaros vingar?",
+   "options": [
+    "Han flög för nära solen",
+    "Han flög genom en storm",
+    "Han flög för fort",
+    "Han landade för hårt"
+   ]
+  },
+  {
+   "q": "Vad betyder uttrycket \"att flyga för nära solen\" idag?",
+   "options": [
+    "Att ta farliga risker på grund av överdriven ambition",
+    "Att resa mycket långt",
+    "Att arbeta för hårt",
+    "Att vara mycket modig"
+   ]
+  }
+ ],
+ "fk-el-04": [
+  {
+   "q": "Hur blev Gordias kung?",
+   "options": [
+    "Han kom in i staden med sin vagn och uppfyllde ett orakel",
+    "Han vann ett slag",
+    "Han valdes av folket",
+    "Han ärvde tronen"
+   ]
+  },
+  {
+   "q": "Vad lovade oraklet om knuten?",
+   "options": [
+    "Den som löste den skulle härska över hela Asien",
+    "Den som löste den skulle bli bonde",
+    "Knuten kunde aldrig lösas",
+    "Knuten skulle föra med sig otur"
+   ]
+  },
+  {
+   "q": "Hur löste Alexander knuten?",
+   "options": [
+    "Han skar av den med sitt svärd",
+    "Han knöt upp den tålmodigt",
+    "Han brände den",
+    "Han bad prästerna lösa den"
+   ]
+  },
+  {
+   "q": "Vad betyder \"att hugga av den gordiska knuten\" idag?",
+   "options": [
+    "Att hitta en djärv, okonventionell lösning på ett svårt problem",
+    "Att förlora en tävling",
+    "Att följa reglerna exakt",
+    "Att ge upp en uppgift"
+   ]
+  }
+ ],
+ "fk-el-05": [
+  {
+   "q": "Var befann sig Odysseus och hans män?",
+   "options": [
+    "I en grotta som tillhörde en kyklop vid namn Polyfemos",
+    "På en öde ö utan invånare",
+    "I kung Minos palats",
+    "På ett skepp i en storm"
+   ]
+  },
+  {
+   "q": "Vilket namn gav Odysseus kyklopen?",
+   "options": [
+    "\"Ingen\"",
+    "Sitt riktiga namn",
+    "\"Främling\"",
+    "Han vägrade uppge något namn"
+   ]
+  },
+  {
+   "q": "Varför hjälpte inte de andra kykloperna Polyfemos?",
+   "options": [
+    "Han sa att \"Ingen\" skadade honom, så de trodde att inget var fel",
+    "De var rädda för Odysseus",
+    "De var för långt bort för att höra honom",
+    "De tyckte inte om Polyfemos"
+   ]
+  },
+  {
+   "q": "Vilken konsekvens fick Odysseus stolthet?",
+   "options": [
+    "Poseidons vrede försenade hans hemresa med tio år",
+    "Han förlorade alla sina män omedelbart",
+    "Han förvandlades till sten",
+    "Han välkomnades hem i förtid"
+   ]
+  }
+ ],
+ "fk-el-06": [
+  {
+   "q": "Vad gjorde Persefone när Hades först lade märke till henne?",
+   "options": [
+    "Plockade blommor med nymferna",
+    "Bad i ett tempel",
+    "Seglade över havet",
+    "Sov i en äng"
+   ]
+  },
+  {
+   "q": "Hur påverkade Demeters sorg världen?",
+   "options": [
+    "Hon lät jorden vissna och skördarna slå fel, vilket orsakade hungersnöd",
+    "Hon förvandlade dödliga till blommor",
+    "Hon översvämmade landet med regn",
+    "Hon bad Zeus förstöra underjorden"
+   ]
+  },
+  {
+   "q": "Varför kunde Persefone inte lämna underjorden helt?",
+   "options": [
+    "Hon hade ätit granatäppelkärnor från underjorden",
+    "Hades låste grindarna",
+    "Hon hade förlorat minnet",
+    "Zeus förbjöd henne att lämna platsen"
+   ]
+  },
+  {
+   "q": "Vad representerar årstiderna i denna myt?",
+   "options": [
+    "Demeters glädje när Persefone återvänder och hennes sorg när hon far iväg",
+    "Striderna mellan gudarna",
+    "Hades växlande humör",
+    "De mänskliga generationernas gång"
+   ]
+  }
+ ],
+ "fk-es-01": [
+  {
+   "q": "Vad ser coyoten speglas i brunnen som ger kaninen en idé?",
+   "options": [
+    "Solen",
+    "Sitt eget ansikte",
+    "Månen",
+    "En fisk"
+   ]
+  },
+  {
+   "q": "Vad händer när coyoten hoppar ner i brunnen?",
+   "options": [
+    "Han fångar kaninen",
+    "Han hittar riktig ost",
+    "Osten försvinner och han blir dyblöt",
+    "Han drunknar"
+   ]
+  },
+  {
+   "q": "Vilken ursäkt använder kaninen andra gången för att fly?",
+   "options": [
+    "Han säger att han är sjuk",
+    "Han säger att himlen håller på att falla och ber coyoten hålla upp ett träd",
+    "Han säger att en jägare är på väg",
+    "Han säger att han inte har något kött på benen"
+   ]
+  },
+  {
+   "q": "Vilken läxa avslutas berättelsen med?",
+   "options": [
+    "Styrka vinner alltid till slut",
+    "Coyoter är smartare än kaniner",
+    "Den som tänker bättre vinner ibland över den som är starkare",
+    "Lita aldrig på en främling"
+   ]
+  }
+ ],
+ "fk-es-02": [
+  {
+   "q": "Vilket villkor ställer kejsaren innan Popocatépetl får gifta sig med hans dotter?",
+   "options": [
+    "Han måste bygga ett tempel",
+    "Han måste dra ut i krig och återvända som segrare",
+    "Han måste vänta i tio år",
+    "Han måste besegra kejsaren i strid"
+   ]
+  },
+  {
+   "q": "Vilken lögn berättar den svartsjuka rivalen för Iztaccíhuatl?",
+   "options": [
+    "Att Popocatépetl har gift sig med någon annan",
+    "Att Popocatépetl har dött i kriget",
+    "Att kejsaren har förbjudit äktenskapet",
+    "Att Popocatépetl inte längre älskar henne"
+   ]
+  },
+  {
+   "q": "Vad gör gudarna av medlidande med de älskande?",
+   "options": [
+    "De väcker Iztaccíhuatl till liv igen",
+    "De straffar den svartsjuka rivalen",
+    "De förvandlar paret till två vulkaner",
+    "De skickar Popocatépetl till underjorden"
+   ]
+  },
+  {
+   "q": "Vad representerar Popocatépetls rök, enligt legenden?",
+   "options": [
+    "En varning för fara",
+    "Hans sorg över Iztaccíhuatl",
+    "Gudarnas vrede",
+    "Krigets slut"
+   ]
+  }
+ ],
+ "fk-es-03": [
+  {
+   "q": "Hur började Marías man behandla henne med åren?",
+   "options": [
+    "Han blev mer kärleksfull",
+    "Han försummade henne och var ofta borta från byn",
+    "Han skickade tillbaka henne till sina föräldrar",
+    "Han bad henne följa med honom på resa"
+   ]
+  },
+  {
+   "q": "Vad gör María i ett ögonblick av raseri vid floden?",
+   "options": [
+    "Hon konfronterar sin mans följeslagare",
+    "Hon dränker sina egna barn",
+    "Hon flyr med sina barn",
+    "Hon sätter eld på vagnen"
+   ]
+  },
+  {
+   "q": "Vad brukar mödrar i Latinamerika varna sina barn för när det gäller La Llorona?",
+   "options": [
+    "Att inte simma ensamma i floder",
+    "Att inte gå ut på natten, annars tar hon dem",
+    "Att inte prata med främlingar",
+    "Att inte gifta sig för pengar"
+   ]
+  },
+  {
+   "q": "Vilket är berättarens centrala budskap i legenden?",
+   "options": [
+    "Floder är alltid farliga på natten",
+    "Rikedom garanterar inte lycka",
+    "Ett ögonblick av vrede kan kosta det man älskar mest",
+    "Spöken kan inte förlåtas"
+   ]
+  }
+ ],
+ "fk-es-04": [
+  {
+   "q": "Hur bedömer berättaren infantierna av Carrións äktenskap med Cids döttrar?",
+   "options": [
+    "Det var ett äktenskap av sann kärlek",
+    "Det arrangerades huvudsakligen av egenintresse",
+    "Det tvingades fram av kungen",
+    "Det skedde mot Cids vilja"
+   ]
+  },
+  {
+   "q": "Hur reagerar infantierna av Carrión när lejonet kommer lös?",
+   "options": [
+    "De hjälper Cid fånga det",
+    "De flyr i skräck och gömmer sig, och tänker bara på sig själva",
+    "De dödar lejonet",
+    "De guidar lugnt de andra gästerna i säkerhet"
+   ]
+  },
+  {
+   "q": "Hur hanterar Cid det lösa lejonet?",
+   "options": [
+    "Han kallar på sina soldater för att fånga det med nät",
+    "Han tar det lugnt i manen och för tillbaka det till sin bur",
+    "Han dödar det med sitt svärd",
+    "Han låser in sig i palatset"
+   ]
+  },
+  {
+   "q": "Vilken bestående effekt får episoden på infantierna av Carrión?",
+   "options": [
+    "De blir trogna beundrare av Cid",
+    "Deras skam förvandlas till växande agg mot honom",
+    "De lämnar Valencia omedelbart",
+    "De prisas för sin försiktighet"
+   ]
+  }
+ ],
+ "fk-es-05": [
+  {
+   "q": "Varför går Sancho Panza med på att tjäna som Don Quijotes väpnare?",
+   "options": [
+    "Av familjelojalitet",
+    "I utbyte mot det framtida guvernörskapet över en ö",
+    "Eftersom han också älskar riddarböcker",
+    "Eftersom han inte har någonstans annanstans att bo"
+   ]
+  },
+  {
+   "q": "Vad berättar Sancho för Don Quijote att väderkvarnarna egentligen är?",
+   "options": [
+    "Vakttorn byggda av en fiende",
+    "Väderkvarnar vars vingar bara ser ut som armar",
+    "Sovande jättar under en förtrollning",
+    "Statyer lämnade av forntida riddare"
+   ]
+  },
+  {
+   "q": "Hur förklarar Don Quijote sitt nederlag efter att ha kraschat in i väderkvarnen?",
+   "options": [
+    "Han erkänner att han helt enkelt hade fel",
+    "Han skyller på Sancho för att ha distraherat honom",
+    "Han hävdar att en trollkarl förvandlade jättarna till väderkvarnar för att lura honom på ära",
+    "Han säger att Rocinante snubblade av misstag"
+   ]
+  },
+  {
+   "q": "Enligt sista stycket, vad kommer denna episod att symbolisera om Don Quijote?",
+   "options": [
+    "Hans skicklighet som en verklig krigare",
+    "Hans förmåga att se storhet i vardagliga ting och sträva efter sina ideal trots ständiga bevis på att han har fel",
+    "Hans växande misstro mot Sancho",
+    "Hans beslut att överge riddarväsendet"
+   ]
+  }
+ ],
+ "fk-es-06": [
+  {
+   "q": "Under vilken förevändning kallas tvillingarna till Xibalbá?",
+   "options": [
+    "En bröllopsfest",
+    "En bollspelsmatch",
+    "En religiös ceremoni",
+    "En rättegång för deras fars brott"
+   ]
+  },
+  {
+   "q": "Vad händer med Hunahpú i Fladdermöss hus?",
+   "options": [
+    "Han fryser till is",
+    "Han uppäts helt",
+    "En fladdermus river av hans huvud",
+    "Han kommer undan oskadd"
+   ]
+  },
+  {
+   "q": "Vilket slutgiltigt prov ber Xibalbás herrar tvillingarna utföra?",
+   "options": [
+    "Att besegra en jaguar i strid",
+    "Att offra varandra och sedan återuppstå",
+    "Att tillbringa en natt i Mörkrets hus utan hjälp",
+    "Att lösa en gåta om sina förfäder"
+   ]
+  },
+  {
+   "q": "Hur avslutas berättelsen för Hun-Camé och Vucub-Camé?",
+   "options": [
+    "De återuppstår och blir tvillingarnas bundsförvanter",
+    "Tvillingarna låter dem dö för gott efter att de också underkastat sig offret",
+    "De flyr Xibalbá besegrade",
+    "De förlåts och förvisas istället för att dödas"
+   ]
+  }
+ ],
+ "fk-fr-01": [
+  {
+   "q": "Vad gjorde myran hela sommaren?",
+   "options": [
+    "Samlade och lagrade mat",
+    "Dansade på fälten",
+    "Sov i solen",
+    "Sjöng med cikadan"
+   ]
+  },
+  {
+   "q": "Vad hände när vintern kom?",
+   "options": [
+    "Cikadan hade gott om mat sparad",
+    "Cikadan hade inget kvar att äta",
+    "Myran lämnade sitt hem",
+    "Cikadan flyttade till ett annat fält"
+   ]
+  },
+  {
+   "q": "Hur svarade cikadan på myrans fråga om sommaren?",
+   "options": [
+    "Hon sa att hon hade lagrat mat",
+    "Hon sa att hon hade sjungit hela sommaren",
+    "Hon sa att hon hade rest långt",
+    "Hon sa att hon hade sovit mycket"
+   ]
+  },
+  {
+   "q": "Vilken läxa lär berättelsen ut?",
+   "options": [
+    "Vikten av att förbereda sig för framtiden",
+    "Vikten av att sjunga högt",
+    "Vikten av att dela mat",
+    "Vikten av att sova gott"
+   ]
+  }
+ ],
+ "fk-fr-02": [
+  {
+   "q": "Varför stannade räven under trädet?",
+   "options": [
+    "Han kände doften av osten i kråkans näbb",
+    "Han ville sova där",
+    "Han letade efter vatten",
+    "Han ville sjunga"
+   ]
+  },
+  {
+   "q": "Vad påstod räven om kråkan?",
+   "options": [
+    "Att han var ful",
+    "Att han skulle bli skogens kung om hans röst matchade hans fjäderdräkt",
+    "Att han borde lämna skogen",
+    "Att hans fjädrar var glanslösa"
+   ]
+  },
+  {
+   "q": "Vad hände med osten?",
+   "options": [
+    "Kråkan åt upp den själv",
+    "Den föll och räven fångade den",
+    "Räven gav tillbaka den",
+    "Den försvann in i trädet"
+   ]
+  },
+  {
+   "q": "Vad är fabelns moral?",
+   "options": [
+    "Lita aldrig på någon som smickrar dig för mycket",
+    "Sjung alltid högt i skogen",
+    "Rävar är farliga djur",
+    "Kråkor bör inte flyga på natten"
+   ]
+  }
+ ],
+ "fk-fr-03": [
+  {
+   "q": "Vem ansvarade för att stänga stadsportarna varje natt?",
+   "options": [
+    "Prinsessan Dahut själv",
+    "En väktare, medan kungen höll nyckeln",
+    "Sankt Corentin",
+    "Djävulen förklädd"
+   ]
+  },
+  {
+   "q": "Vad gjorde Dahut under stormen?",
+   "options": [
+    "Hon varnade sin far för fara",
+    "Hon stal nyckeln och öppnade porten",
+    "Hon flydde staden ensam",
+    "Hon bekämpade främlingen"
+   ]
+  },
+  {
+   "q": "Vad hände med Dahut till slut, enligt legenden?",
+   "options": [
+    "Hon drunknade och sågs aldrig mer",
+    "Hon knuffades ner i havet och blev en sjöjungfru",
+    "Hon flydde säkert till Quimper",
+    "Hon besegrade demonen"
+   ]
+  },
+  {
+   "q": "Vad säger bretonska fiskare att de fortfarande kan höra?",
+   "options": [
+    "Dahuts sjungande röst",
+    "Klockorna från den dränkta staden som ringer under vågorna",
+    "Kungens häst som galopperar",
+    "Djävulen som skrattar"
+   ]
+  }
+ ],
+ "fk-fr-04": [
+  {
+   "q": "Vad var olifanten?",
+   "options": [
+    "Rolands svärd",
+    "Ett elfenbenshorn som kunde höras på långt håll",
+    "En sorts sköld",
+    "Namnet på bergspasset"
+   ]
+  },
+  {
+   "q": "Varför vägrade Roland att blåsa i hornet till en början?",
+   "options": [
+    "Han visste inte hur man använde det",
+    "Av stolthet, han ville inte verka rädd",
+    "Eftersom Olivier sa åt honom att inte göra det",
+    "Eftersom hornet var trasigt"
+   ]
+  },
+  {
+   "q": "Vad fann Karl den store när han nådde Roncesvalles?",
+   "options": [
+    "Roland levande men sårad",
+    "Roland och hans följeslagare redan döda",
+    "Ett tomt slagfält utan spår av strid",
+    "Morerna som väntade på att förhandla"
+   ]
+  },
+  {
+   "q": "Vad symboliserar berättelsen om Roland i Frankrike?",
+   "options": [
+    "Bara militär strategi",
+    "Mod, lojalitet och priset för stolthet",
+    "Paris grundande",
+    "Fredsavtal med Spanien"
+   ]
+  }
+ ],
+ "fk-fr-05": [
+  {
+   "q": "Vilket villkor ställde Mélusine för deras äktenskap?",
+   "options": [
+    "Han fick aldrig få veta hennes verkliga namn",
+    "Han fick aldrig se henne på lördagar, när hon stängde in sig",
+    "Han var tvungen att avstå sina marker",
+    "Han fick aldrig gifta om sig"
+   ]
+  },
+  {
+   "q": "Vad drev Raymondin att spionera på Mélusine?",
+   "options": [
+    "En dröm han hade haft",
+    "Hans brors svartsjuka antydningar om att hon var otrogen",
+    "Ett brev han hittat",
+    "Råd från en präst"
+   ]
+  },
+  {
+   "q": "Hur avslöjades hemligheten slutligen för alla?",
+   "options": [
+    "Mélusine erkände det själv",
+    "Raymondin kallade henne \"serpente\" inför hovet under en tvist",
+    "Deras son upptäckte det",
+    "En tjänare spred ryktet"
+   ]
+  },
+  {
+   "q": "Vad säger legenden händer när en ättling till huset Lusignan är nära döden?",
+   "options": [
+    "En klocka ringer i slottet",
+    "Mélusines skrik hörs",
+    "En drake syns på himlen",
+    "Källan sinar"
+   ]
+  }
+ ],
+ "fk-fr-06": [
+  {
+   "q": "Vilka var de två villkoren i pakten med djävulen?",
+   "options": [
+    "Betala guld och aldrig återvända",
+    "Aldrig säga Guds namn och återvända innan tuppen gal",
+    "Aldrig se sig om och aldrig tala",
+    "Ta med en gåva och sjunga högt"
+   ]
+  },
+  {
+   "q": "Vad hände när männen nådde byn?",
+   "options": [
+    "De avvisades av byborna",
+    "De dansade och festade till sent på natten",
+    "De greps för intrång",
+    "De glömde varför de hade kommit"
+   ]
+  },
+  {
+   "q": "Hur höll resan tillbaka på att sluta i katastrof?",
+   "options": [
+    "De fick slut på bränsle",
+    "En man svor vid himlen och bröt pakten, och kanoten kom ur kontroll",
+    "De gick vilse i en snöstorm",
+    "Djävulen krävde fler själar innan de fick återvända"
+   ]
+  },
+  {
+   "q": "Vilken läxa drar gamla québecska sagoberättare av denna legend?",
+   "options": [
+    "Res aldrig ensam på vintern",
+    "Ett löfte till djävulen, även på skämt, kostar alltid dyrt",
+    "Lita alltid på en främlings erbjudande",
+    "Kanoter är farliga i snön"
+   ]
+  }
+ ],
+ "fk-hi-01": [
+  {
+   "q": "Vad levde apan på?",
+   "options": [
+    "Söt frukt från ett jamun-träd",
+    "Fisk från floden",
+    "Ris från byn",
+    "Löv från trädet"
+   ]
+  },
+  {
+   "q": "Varför ville krokodilens hustru ha apans hjärta?",
+   "options": [
+    "Hon trodde att söt frukt betydde ett sött hjärta",
+    "Hon var arg på apan",
+    "Hon ville sätta sin man på prov",
+    "Hon var väldigt hungrig"
+   ]
+  },
+  {
+   "q": "Hur flydde apan?",
+   "options": [
+    "Han lurade krokodilen att vända tillbaka till trädet",
+    "Han hoppade rakt ner i vattnet",
+    "Han ropade på hjälp från fåglar",
+    "Han slogs mot krokodilen"
+   ]
+  },
+  {
+   "q": "Vilken läxa lär berättelsen ut?",
+   "options": [
+    "Klokskap kan rädda dig från svek",
+    "Krokodiler är alltid pålitliga",
+    "Frukt bör aldrig delas",
+    "Vänskap är omöjlig mellan djur"
+   ]
+  }
+ ],
+ "fk-hi-02": [
+  {
+   "q": "Vilken uppgörelse gjorde djuren med lejonet?",
+   "options": [
+    "Att skicka honom ett djur varje dag istället för att jagas",
+    "Att ge honom frukt istället för kött",
+    "Att gömma sig för honom i grottor",
+    "Att slåss mot honom tillsammans"
+   ]
+  },
+  {
+   "q": "Hur förklarade kaninen sin sena ankomst?",
+   "options": [
+    "Han påstod att han mött ett annat lejon som kallade sig kung",
+    "Han sa att han gått vilse i djungeln",
+    "Han sa att han jagat efter mat",
+    "Han skyllde på de andra djuren"
+   ]
+  },
+  {
+   "q": "Vad såg lejonet i brunnen?",
+   "options": [
+    "Sin egen spegelbild, som han trodde var en rival",
+    "Ett verkligt andra lejon",
+    "En fisk",
+    "Sin egen skugga på marken"
+   ]
+  },
+  {
+   "q": "Vad är berättelsens moral?",
+   "options": [
+    "Intelligens är större än styrka",
+    "Styrka vinner alltid",
+    "Djur kan inte överlista varandra",
+    "Lejon är de visaste av alla"
+   ]
+  }
+ ],
+ "fk-hi-03": [
+  {
+   "q": "Vilken utmaning ställde Akbar?",
+   "options": [
+    "Om någon kunde stå hela natten i en kall damm",
+    "Om någon kunde laga den snabbaste måltiden",
+    "Om någon kunde lösa en gåta",
+    "Om någon kunde klättra över palatsmuren"
+   ]
+  },
+  {
+   "q": "Varför nekades den fattige mannen sin belöning?",
+   "options": [
+    "Akbar sa att värmen från den avlägsna lampan gjorde provet ogiltigt",
+    "Han somnade under provet",
+    "Han bad om för mycket pengar",
+    "Han gick faktiskt aldrig ner i dammen"
+   ]
+  },
+  {
+   "q": "Vad bevisade Birbals khichdi-demonstration?",
+   "options": [
+    "Att det tidigare resonemanget om avlägsen värme var absurt och orättvist",
+    "Att Birbal var en bättre kock än de kungliga kockarna",
+    "Att eld alltid lagar mat snabbare på avstånd",
+    "Att Akbars bedömning alltid var korrekt"
+   ]
+  },
+  {
+   "q": "Vad visar berättelsen slutligen om Birbal?",
+   "options": [
+    "Han förenade klokskap med en stark rättskänsla",
+    "Han höll alltid med kejsaren för att vara på den säkra sidan",
+    "Han föredrog matlagning framför att ge råd",
+    "Han ogillade fattiga människor"
+   ]
+  }
+ ],
+ "fk-hi-04": [
+  {
+   "q": "Vad gjorde kung Krishnadevaraya med de sällsynta mangorna?",
+   "options": [
+    "Han delade ut en till varje favorithovman",
+    "Han behöll dem alla själv",
+    "Han sålde dem på marknaden",
+    "Han gav dem till sina elefanter"
+   ]
+  },
+  {
+   "q": "Varför klagade den svartsjuka hovmannen till kungen?",
+   "options": [
+    "Han fick ingen mango och ansåg att Tenali Rama inte förtjänade äran",
+    "Han trodde mangorna var ruttna",
+    "Han ville ha mer guld istället för frukt",
+    "Han trodde att kungen favoriserade utlänningar"
+   ]
+  },
+  {
+   "q": "Hur försvarade Tenali Rama sig inför kungen?",
+   "options": [
+    "Genom att omformulera sin kommentar som beröm av kungens generositet",
+    "Genom att be om ursäkt och lämna tillbaka mangon",
+    "Genom att öppet skylla på den svartsjuka hovmannen",
+    "Genom att ignorera kungens fråga"
+   ]
+  },
+  {
+   "q": "Vad visar berättelsen om Tenali Ramas skarpsinne?",
+   "options": [
+    "Den kunde förvandla en spänd anklagelse till beröm och dämpa konflikten",
+    "Den ledde alltid till att han hamnade i djupare trubbel",
+    "Den var verkningslös mot svartsjuka hovmän",
+    "Den fungerade bara när kungen var frånvarande"
+   ]
+  }
+ ],
+ "fk-hi-05": [
+  {
+   "q": "Vad gjorde hjorten Sita såg så märklig?",
+   "options": [
+    "Dess gyllene kropp och juvelbesatta horn",
+    "Dess enorma storlek och mörka färg",
+    "Dess förmåga att tala",
+    "Dess glödande röda ögon"
+   ]
+  },
+  {
+   "q": "Vem var hjorten egentligen, och varför skickades den?",
+   "options": [
+    "Demonen Maricha, skickad av Ravana för att locka bort Rama från Sita",
+    "En skogsande som satte Ramas tålamod på prov",
+    "En verklig hjort som Sita hade uppfostrat sedan födseln",
+    "Lakshmanas illusion för att pröva Sita"
+   ]
+  },
+  {
+   "q": "Varför lämnade Lakshmana till slut hyddan trots sin tvekan?",
+   "options": [
+    "Sita insisterade, upprörd av skriket hon trodde var Ramas",
+    "Han ville se den gyllene hjorten själv",
+    "Rama hade kallat på honom direkt",
+    "Han misstänkte att Ravana redan var i närheten"
+   ]
+  },
+  {
+   "q": "Vad blev den yttersta konsekvensen av den gyllene hjortens knep?",
+   "options": [
+    "Det ledde till Sitas bortförande, vilket satte scenen för kriget mellan Rama och Ravana",
+    "Det återförenade Rama med hans förlorade bror",
+    "Det avslöjade Ravanas sanna identitet för Lakshmana",
+    "Det fick Rama att ge upp sitt sökande efter Sita"
+   ]
+  }
+ ],
+ "fk-hi-06": [
+  {
+   "q": "Vem valde Savitri att gifta sig med, och vad var ovanligt med honom?",
+   "options": [
+    "Satyavan, en landsförvisad prins som levde som skogsasket med ett dolt öde",
+    "En förmögen köpman som hennes far hade arrangerat",
+    "En krigare från ett rivaliserande kungarike",
+    "En vis man som helt avsagt sig äktenskap"
+   ]
+  },
+  {
+   "q": "Vad gjorde Savitri när Satyavans förutspådda dödsdag närmade sig?",
+   "options": [
+    "Hon höll ett strängt löfte i tre nätter utan sömn eller vila",
+    "Hon skickade iväg Satyavan till ett avlägset kungarike för säkerhets skull",
+    "Hon bad Narada ändra profetian",
+    "Hon höll en stor fest för hela skogen"
+   ]
+  },
+  {
+   "q": "Hur överlistade Savitri Yama?",
+   "options": [
+    "Hon utverkade en gåva om hundra söner med Satyavan, vilket logiskt tvingade honom att ge Satyavan livet tillbaka",
+    "Hon slogs mot Yama i envig",
+    "Hon lurade honom att somna",
+    "Hon mutade honom med kunglig skatt"
+   ]
+  },
+  {
+   "q": "Vilken bestående tradition inspirerar berättelsen om Savitri?",
+   "options": [
+    "Vat Savitri-fastan som hålls av gifta kvinnor till hennes ära",
+    "En årlig jaktfest i skogen",
+    "En pilgrimsfärd till kung Ashvapatis palats",
+    "Ett förbud mot vedhuggning under sommaren"
+   ]
+  }
+ ],
+ "fk-ind-01": [
+  {
+   "q": "Varför ville rådjursmusen korsa floden?",
+   "options": [
+    "För att äta frukt på andra sidan",
+    "För att besöka släktingar",
+    "För att fly undan en storm",
+    "För att hitta vatten att dricka"
+   ]
+  },
+  {
+   "q": "Vilket knep använde rådjursmusen för att korsa floden?",
+   "options": [
+    "Den simmade snabbt förbi krokodilerna",
+    "Den bad krokodilerna ställa upp sig på rad så den kunde räkna dem",
+    "Den byggde en träflotte",
+    "Den väntade tills krokodilerna somnade"
+   ]
+  },
+  {
+   "q": "Hur kände sig krokodilerna när de insåg att de blivit lurade?",
+   "options": [
+    "Road",
+    "Tacksamma",
+    "Rasande",
+    "Likgiltiga"
+   ]
+  },
+  {
+   "q": "Vad kommer rådjursmusen att symbolisera i berättelsen?",
+   "options": [
+    "Fysisk styrka",
+    "Klokskap som övervinner styrka",
+    "Feghet",
+    "Grymhet"
+   ]
+  }
+ ],
+ "fk-ind-02": [
+  {
+   "q": "Vad gav jätten Mbok Sirni?",
+   "options": [
+    "En påse guld",
+    "Ett magiskt gurkfrö",
+    "Ett par magiska skor",
+    "En talande fågel"
+   ]
+  },
+  {
+   "q": "Vad hittade Mbok Sirni inuti den gyllene gurkan?",
+   "options": [
+    "En pojkbaby",
+    "En kista full av juveler",
+    "En flickbaby",
+    "Ett magiskt svärd"
+   ]
+  },
+  {
+   "q": "Vad gav eremiten Timun Mas för att fly jätten?",
+   "options": [
+    "Fyra magiska knyten: gurkfrön, en nål, salt och räkpasta",
+    "En magisk osynlighetsmantel",
+    "En flygande häst",
+    "En karta till en dold grotta"
+   ]
+  },
+  {
+   "q": "Vad hände med jätten till slut?",
+   "options": [
+    "Han blev Timun Mas vän",
+    "Han uppslukades av kokande lera",
+    "Han förvandlades till sten",
+    "Han flydde till ett annat kungarike"
+   ]
+  }
+ ],
+ "fk-ind-03": [
+  {
+   "q": "Varför var Malins mor tvungen att arbeta hårt ensam?",
+   "options": [
+    "Malin vägrade hjälpa henne",
+    "Hans far hade dött till sjöss",
+    "Hon ville köpa ett hus",
+    "Hon sparade till en resa"
+   ]
+  },
+  {
+   "q": "Vad hade Malin blivit när hans skepp återvände till hans by?",
+   "options": [
+    "En fattig fiskare som sin far",
+    "En förmögen köpman gift med en adelskvinna",
+    "En skeppskapten utan familj",
+    "En berömd sagoberättare"
+   ]
+  },
+  {
+   "q": "Hur reagerade Malin när hans mor kom för att omfamna honom?",
+   "options": [
+    "Han presenterade henne glatt för sin hustru",
+    "Han förnekade att hon var hans mor",
+    "Han bjöd in henne ombord på skeppet",
+    "Han grät av glädje"
+   ]
+  },
+  {
+   "q": "Vad hände med Malin till följd av hans mors förbannelse?",
+   "options": [
+    "Han blev omätligt rik",
+    "Han förvandlades till sten i en storm",
+    "Han förvisades från byn",
+    "Han förlorade minnet"
+   ]
+  }
+ ],
+ "fk-ind-04": [
+  {
+   "q": "Hur behandlades Bawang Putih i sitt eget hem?",
+   "options": [
+    "Som ett älskat enda barn",
+    "Som en tjänare",
+    "Som kungligheter",
+    "Hon skickades bort till skolan"
+   ]
+  },
+  {
+   "q": "Vilket villkor ställde den gamla kvinnan för att lämna tillbaka tyget?",
+   "options": [
+    "Bawang Putih var tvungen att hitta en förlorad ring",
+    "Bawang Putih var tvungen att hjälpa till med hushållsarbete i flera dagar",
+    "Bawang Putih var tvungen att sjunga en sång",
+    "Bawang Putih var tvungen att betala med guld"
+   ]
+  },
+  {
+   "q": "Varför gick Bawang Merah till samma flod?",
+   "options": [
+    "För att tvätta sina egna kläder",
+    "För att hitta sin syster",
+    "För att härma Bawang Putih och få en liknande belöning",
+    "För att hämta dricksvatten"
+   ]
+  },
+  {
+   "q": "Vad fanns inuti den stora pumpan Bawang Merah valde?",
+   "options": [
+    "Guld och juveler",
+    "Färsk frukt",
+    "Ormar och giftiga varelser",
+    "Ingenting alls"
+   ]
+  }
+ ],
+ "fk-ind-05": [
+  {
+   "q": "Vem var Tumang, i själva verket?",
+   "options": [
+    "En vanlig hund",
+    "En gud förbannad att anta hundform",
+    "Dayang Sumbis bror",
+    "En grannkung"
+   ]
+  },
+  {
+   "q": "Varför gick Sangkuriang och Dayang Sumbi med på att gifta sig?",
+   "options": [
+    "De visste båda att de var släkt och gifte sig av plikt",
+    "Sangkuriang kände igen henne men hon visste inte vem han var",
+    "Ingen av dem kände igen den andra som mor och son",
+    "En kung arrangerade äktenskapet"
+   ]
+  },
+  {
+   "q": "Hur stoppade Dayang Sumbi andarna från att avsluta båten?",
+   "options": [
+    "Hon bad Sangkuriang direkt att sluta",
+    "Hon skapade en falsk gryning med facklor och risstampning",
+    "Hon gömde båten över natten",
+    "Hon bad gudarna sända regn"
+   ]
+  },
+  {
+   "q": "Vad blev den kantrade båten?",
+   "options": [
+    "En flod",
+    "En grotta",
+    "Ett berg, Tangkuban Perahu",
+    "En sjö"
+   ]
+  }
+ ],
+ "fk-ind-06": [
+  {
+   "q": "Varför blev Bandung Bondowoso förälskad i Roro Jonggrang?",
+   "options": [
+    "Hon var dotter till kungen han hade besegrat, och känd för sin skönhet",
+    "Hon hjälpte honom vinna striden",
+    "Hon var en utländsk prinsessa som besökte hovet",
+    "De hade varit barndomsvänner"
+   ]
+  },
+  {
+   "q": "Vad hände när Bandung Bondowoso klättrade ner i brunnen?",
+   "options": [
+    "Han hittade en skatt",
+    "Roro Jonggrangs anhängare begravde honom levande, men han kom undan",
+    "Han drunknade omedelbart",
+    "Han vägrade gå ner"
+   ]
+  },
+  {
+   "q": "Hur lurade Roro Jonggrang andarna att sluta sitt arbete?",
+   "options": [
+    "Hon hotade dem med ett svärd",
+    "Hon skapade en falsk gryning med risstampning och brinnande halm",
+    "Hon mutade dem med guld",
+    "Hon bad Bandung Bondowoso kalla av dem"
+   ]
+  },
+  {
+   "q": "Vad hände till slut med Roro Jonggrang?",
+   "options": [
+    "Hon gifte sig lyckligt med Bandung Bondowoso",
+    "Hon förbannades till en stenstaty",
+    "Hon flydde till ett annat kungarike",
+    "Hon blev drottning av Prambanan"
+   ]
+  }
+ ],
+ "fk-it-01": [
+  {
+   "q": "Vad gör Amulius när han får veta att Rea Silvia har fått tvillingar?",
+   "options": [
+    "Han beordrar att bebisarna ska dödas",
+    "Han uppfostrar dem själv",
+    "Han gör dem till sina arvingar",
+    "Han förvisar Rea Silvia"
+   ]
+  },
+  {
+   "q": "Vad händer med korgen med tvillingarna?",
+   "options": [
+    "Den sjunker i floden",
+    "Den flyter nerför Tibern och når stranden",
+    "En fiskare hittar den genast",
+    "Den förstörs av strömmen"
+   ]
+  },
+  {
+   "q": "Vem uppfostrar Romulus och Remus efter honvargen?",
+   "options": [
+    "Kung Amulius",
+    "En herde vid namn Faustulus och hans hustru",
+    "Numitor själv",
+    "Präster i ett tempel"
+   ]
+  },
+  {
+   "q": "Hur kommer det sig att staden Rom grundas?",
+   "options": [
+    "Bröderna bygger staden tillsammans i fred",
+    "Numitor bestämmer var den ska byggas",
+    "Remus hånar Romulus mur, Romulus dödar honom och grundar sedan Rom",
+    "Remus blir kung istället för Romulus"
+   ]
+  }
+ ],
+ "fk-it-02": [
+  {
+   "q": "Vad gör Pinocchio istället för att gå till skolan?",
+   "options": [
+    "Han går för att träffa Geppetto",
+    "Han rymmer in i skogen",
+    "Han går för att arbeta",
+    "Han stannar hemma"
+   ]
+  },
+  {
+   "q": "Vilken lögn berättar Pinocchio för Feen?",
+   "options": [
+    "Att han förlorat sina mynt i spel",
+    "Att Geppetto tog hans pengar",
+    "Att två onda män stal hans guldmynt",
+    "Att han aldrig hade några mynt"
+   ]
+  },
+  {
+   "q": "Vad händer med Pinocchios näsa när han ljuger?",
+   "options": [
+    "Den blir blå",
+    "Den växer så lång att han inte kan komma ut genom dörren",
+    "Den faller av",
+    "Ingenting händer"
+   ]
+  },
+  {
+   "q": "Hur löser sig berättelsen, och vilken läxa lär sig Pinocchio?",
+   "options": [
+    "Feen klipper av hans näsa",
+    "Pinocchios näsa förblir lång för alltid",
+    "Geppetto lagar hans näsa med verktyg",
+    "Hackspettar äter upp hans långa näsa och han lär sig att inte ljuga"
+   ]
+  }
+ ],
+ "fk-it-03": [
+  {
+   "q": "Vad för sorts person är Giufà, enligt berättelsen?",
+   "options": [
+    "En slug bedragare som lurar alla",
+    "En enkel man som tar instruktioner mycket bokstavligt",
+    "En förmögen köpman",
+    "En sträng skollärare"
+   ]
+  },
+  {
+   "q": "Vad tror Giufà har hänt när han tittar ner i brunnen?",
+   "options": [
+    "Han tror att en skatt är gömd där",
+    "Han tror att ett monster bor där",
+    "Han tror att månen har fallit ner i brunnen",
+    "Han tror att brunnen är torr"
+   ]
+  },
+  {
+   "q": "Vad gör Giufà för att försöka rädda månen?",
+   "options": [
+    "Han hoppar ner i brunnen själv",
+    "Han ber prästen om hjälp",
+    "Han bygger en stege ner",
+    "Han sänker ner ett rep med en krok i brunnen"
+   ]
+  },
+  {
+   "q": "Hur slutar berättelsen, och vad kommer \"en ny Giufà\" att betyda i byn?",
+   "options": [
+    "Byborna straffar Giufà för att ha slösat deras tid",
+    "Giufà blir byns borgmästare",
+    "Giufà tror att han räddade månen, och uttrycket blir ett skämt för den som skryter om en omöjlig bedrift",
+    "Månen försvinner faktiskt för alltid"
+   ]
+  }
+ ],
+ "fk-it-04": [
+  {
+   "q": "Vad gör Befana, enligt legendens inledning?",
+   "options": [
+    "Hon åker en släde dragen av renar",
+    "Hon flyger över hustak på en kvast och lämnar gåvor till barn",
+    "Hon bor i skorstenarna i varje hus",
+    "Hon besöker bara barn i Rom"
+   ]
+  },
+  {
+   "q": "Varför vägrade den gamla kvinnan att följa med de tre vise männen?",
+   "options": [
+    "Hon trodde inte på deras berättelse om stjärnan",
+    "Hon var rädd för att resa nattetid",
+    "Hon sa att hon hade för mycket hushållssysslor att göra",
+    "Hon visste inte vägen"
+   ]
+  },
+  {
+   "q": "Vad hände efter att den gamla kvinnan ändrat sig och försökte följa de vise männen?",
+   "options": [
+    "Hon hann ikapp dem precis i tid",
+    "Hon hittade en annan bebis att ge gåvor till",
+    "Hon vände genast tillbaka hem",
+    "Hon kunde aldrig hitta rätt väg till Betlehem"
+   ]
+  },
+  {
+   "q": "Hur förklarar legenden traditionen med strumpan och kolet?",
+   "options": [
+    "Hon lämnar kol till alla barn som en påminnelse om sitt misstag",
+    "Strumptraditionen har inget att göra med henne",
+    "Befana lämnar godis till snälla barn och kol till stygga",
+    "Hon ger bara gåvor till barn uppkallade efter de vise männen"
+   ]
+  }
+ ],
+ "fk-it-05": [
+  {
+   "q": "Vad terroriserade staden Gubbio i berättelsens början?",
+   "options": [
+    "En rövarband som gömde sig i skogen",
+    "En vild varg som attackerade boskap och till och med människor",
+    "En pest som drog fram genom staden",
+    "En översvämning från en närliggande flod"
+   ]
+  },
+  {
+   "q": "Vad gjorde Franciskus när vargen anföll honom?",
+   "options": [
+    "Han sprang tillbaka till stadsmurarna för säkerhets skull",
+    "Han kastade ett spjut mot vargen",
+    "Han gjorde korstecknet och befallde den att stanna i Guds namn",
+    "Han erbjöd vargen mat omedelbart"
+   ]
+  },
+  {
+   "q": "Vilken uppgörelse föreslog Franciskus mellan vargen och stadsborna?",
+   "options": [
+    "Vargen skulle lämna trakten för alltid",
+    "Stadsborna skulle bygga ett skydd åt vargen",
+    "Vargen skulle vakta staden om natten",
+    "Vargen skulle sluta attackera i utbyte mot att bli matad varje dag"
+   ]
+  },
+  {
+   "q": "Hur slutar legenden om vargen i Gubbio?",
+   "options": [
+    "Vargen anföll till slut igen och dödades",
+    "Vargen återvände till skogen efter ett år",
+    "Vargen levde fredligt bland stadsborna i ytterligare två år och sörjdes och begravdes när den dog",
+    "Vargen fördes till Assisi för att leva med Franciskus"
+   ]
+  }
+ ],
+ "fk-it-06": [
+  {
+   "q": "Vad händer i Venedig i legendens början?",
+   "options": [
+    "En krigsflotta anfaller lagunen",
+    "En våldsam storm hotar att svälja staden",
+    "En stor brand sprider sig genom staden",
+    "En pest dödar invånarna"
+   ]
+  },
+  {
+   "q": "Vad gör fiskaren efter att ha plockat upp den första främlingen?",
+   "options": [
+    "Han vägrar ta fler passagerare",
+    "Han vänder genast tillbaka till stranden",
+    "Han tar ombord ytterligare två främlingar och för alla tre ut mot öppet vatten",
+    "Han kastas överbord av främlingen"
+   ]
+  },
+  {
+   "q": "Vad ger den helige Markus fiskaren, och varför?",
+   "options": [
+    "En summa guld som betalning för resan",
+    "En karta som visar var demonerna kom ifrån",
+    "En ring, som bevis så att dogen ska tro hans berättelse",
+    "Ingenting, eftersom helgonen helt enkelt försvinner"
+   ]
+  },
+  {
+   "q": "Hur bekräftas fiskarens berättelse till slut?",
+   "options": [
+    "Dogen väljer helt enkelt att tro honom utan bevis",
+    "Andra vittnen träder fram och bekräftar stormen",
+    "Fiskaren kan inte alls bevisa sin berättelse",
+    "Ringen visar sig saknas från basilikans skattkammare, vilket matchar den han fick"
+   ]
+  }
+ ],
+ "fk-ja-01": [
+  {
+   "q": "Vad hittade den gamla kvinnan medan hon tvättade kläder i floden?",
+   "options": [
+    "En stor persika",
+    "En liten fisk",
+    "En trälåda",
+    "Ett guldmynt"
+   ]
+  },
+  {
+   "q": "Vilka djur hade anslutit sig till Momotaro som följeslagare vid den här punkten i berättelsen?",
+   "options": [
+    "En hund, en katt och en fågel",
+    "En tiger, en apa och en trana",
+    "En hund, en apa och en fasan",
+    "En hund, en björn och en räv"
+   ]
+  },
+  {
+   "q": "Hur besegrade Momotaro demonerna?",
+   "options": [
+    "Han lurade demonerna att lämna ön",
+    "Han slogs mot demonhövdingen tillsammans med sina tre djurföljeslagare och vann",
+    "Han köpte tillbaka skatten från demonerna",
+    "Han bad byborna slåss åt honom"
+   ]
+  },
+  {
+   "q": "Vad hände i slutet av berättelsen?",
+   "options": [
+    "Demonerna tillfångatog Momotaro",
+    "Persikan förvandlades till guld",
+    "Momotaro stannade kvar på ön för alltid",
+    "Momotaro och hans följeslagare förde hem skatten och byn levde i fred"
+   ]
+  }
+ ],
+ "fk-ja-02": [
+  {
+   "q": "Varför tog sköldpaddan med sig Taro till Drakpalatset?",
+   "options": [
+    "För att straffa honom för att han fiskat för mycket",
+    "För att tacka honom för att han räddat dess liv",
+    "Eftersom den hade gått vilse och behövde hjälp",
+    "För att byta honom mot skatter"
+   ]
+  },
+  {
+   "q": "Vad gav Otohime Taro när han bestämde sig för att åka hem?",
+   "options": [
+    "En juvelbesatt låda som han aldrig fick öppna",
+    "Ett magiskt fisknät",
+    "En karta tillbaka till byn",
+    "Ett pärlhalsband"
+   ]
+  },
+  {
+   "q": "Vad hade egentligen hänt under de dagar Taro tillbringade i Drakpalatset?",
+   "options": [
+    "Hans familj hade flyttat bort",
+    "Byn hade förstörts av en storm",
+    "Ingenting alls hade förändrats",
+    "Hundratals år hade förflutit i hans hemby"
+   ]
+  },
+  {
+   "q": "Vad hände när Taro öppnade lådan?",
+   "options": [
+    "Guldmynt vällde ut",
+    "Sköldpaddan dök upp igen",
+    "Vit rök kom ut och han förvandlades genast till en gammal man",
+    "Ingenting hände alls"
+   ]
+  }
+ ],
+ "fk-ja-03": [
+  {
+   "q": "Vad började hända varje gång den gamle mannen skar bambu efter att ha hittat flickan?",
+   "options": [
+    "Bambun förvandlades till silver",
+    "Stjälkarna började glöda",
+    "Guld hittades inuti stjälkarna",
+    "Inget ovanligt hände"
+   ]
+  },
+  {
+   "q": "Vilket villkor ställde Kaguya-hime för varje friare som ville gifta sig med henne?",
+   "options": [
+    "Han var tvungen att besegra henne i en poesitävling",
+    "Han var tvungen att godkännas av kejsaren",
+    "Han var tvungen att vänta i tio år",
+    "Han var tvungen att ge henne en skatt som var nästan omöjlig att få tag på"
+   ]
+  },
+  {
+   "q": "Vad erkände Kaguya-hime till slut för sina oroliga föräldrar?",
+   "options": [
+    "Att hon kom från månen och snart måste återvända dit",
+    "Att hon hemligen var kär i kejsaren",
+    "Att hon trots allt önskade gifta sig med en friare",
+    "Att hon var sjuk och döende"
+   ]
+  },
+  {
+   "q": "Enligt sägnen, varför sägs Fujiberget ha fått sitt namn?",
+   "options": [
+    "Eftersom Kaguya-hime föddes där",
+    "Eftersom kejsaren lät bränna odödlighetselixiret på dess topp",
+    "Eftersom bambuskäraren bodde på berget",
+    "Eftersom månbudbärarna landade där"
+   ]
+  }
+ ],
+ "fk-ja-04": [
+  {
+   "q": "Vad bad den mystiska kvinnan mannen om kvällen hon anlände?",
+   "options": [
+    "Att gifta sig med honom genast",
+    "Att ge henne mat och pengar",
+    "Att hjälpa henne hitta tranan",
+    "Att få stanna eftersom hon hade gått vilse"
+   ]
+  },
+  {
+   "q": "Vilket villkor ställde hustrun innan hon började väva?",
+   "options": [
+    "Att han måste köpa henne en ny vävstol",
+    "Att han aldrig fick titta in i rummet medan hon vävde",
+    "Att han aldrig fick berätta för någon om tyget",
+    "Att han måste hjälpa henne väva"
+   ]
+  },
+  {
+   "q": "Vad upptäckte mannen att hustruns sanna identitet var?",
+   "options": [
+    "En rävande i förklädnad",
+    "En vävare från en grannby",
+    "Tranan han en gång räddat ur fällan",
+    "Hans avlidna mors spöke"
+   ]
+  },
+  {
+   "q": "Hur slutar berättelsen?",
+   "options": [
+    "Tranan flyger sin väg och mannen blir kvar ensam med sin ånger",
+    "Mannen och tranan lever lyckliga tillsammans för alltid",
+    "Mannen förvandlas också till en trana",
+    "Byborna straffar mannen"
+   ]
+  }
+ ],
+ "fk-ja-05": [
+  {
+   "q": "Vad var Kintaros dagliga rutin med björnarna?",
+   "options": [
+    "Brottas med dem",
+    "Springa i kapp med dem uppför berget",
+    "Mata dem med fisk",
+    "Lära dem trick"
+   ]
+  },
+  {
+   "q": "Varför sökte Yorimitsu upp Kintaros mor?",
+   "options": [
+    "För att köpa familjens mark",
+    "För att varna henne att Kintaro var för farlig",
+    "För att erbjuda henne ett arbete i huvudstaden",
+    "För att fråga om han kunde ta med sig hennes son till huvudstaden som vasall"
+   ]
+  },
+  {
+   "q": "Hur besegrade Yorimitsus män enligt legenden demonen Shuten-doji?",
+   "options": [
+    "De utmanade honom till envig",
+    "De gjorde honom full på sake och slog ner honom medan han var försvarslös",
+    "De fångade honom i en grotta",
+    "De lurade honom med en magisk spegel"
+   ]
+  },
+  {
+   "q": "Vad symboliserar Kintaro i Japan idag?",
+   "options": [
+    "Lycka i affärer",
+    "Skydd mot demoner",
+    "Sund uppväxt för unga pojkar, hedrad med dockor på Pojkfestivalen",
+    "Framgång i bågskytte"
+   ]
+  }
+ ],
+ "fk-ja-06": [
+  {
+   "q": "Vilken ambition hyste Issun-boshi i hemlighet trots andras hån?",
+   "options": [
+    "En önskan att växa längre genom magi",
+    "En längtan att en dag göra sig ett namn i huvudstaden",
+    "En önskan att bli bonde",
+    "Ett hopp om att hitta sina biologiska föräldrar"
+   ]
+  },
+  {
+   "q": "Vilken roll kom Issun-boshi att inta i adelsmannens hushåll?",
+   "options": [
+    "Chef för hushållets vakter",
+    "En kock i köket",
+    "En betrodd tjänare åt husets unga fröken",
+    "Ett bud mellan byar"
+   ]
+  },
+  {
+   "q": "Hur flydde Issun-boshi efter att ha svalts av demonen?",
+   "options": [
+    "Han stack inuti demonens mage med sin nål tills den spottade ut honom",
+    "Han högg sig ut med ett svärd",
+    "Han krympte sig själv och gled ut",
+    "Han räddades av fröken"
+   ]
+  },
+  {
+   "q": "Vad gjorde den lyckobringande klubban för Issun-boshi?",
+   "options": [
+    "Den gjorde honom osynlig",
+    "Den gav honom stor rikedom",
+    "Den förvandlade honom till en demon",
+    "Den fick hans kropp att växa till en vanlig människas längd"
+   ]
+  }
+ ],
+ "fk-ko-01": [
+  {
+   "q": "Vad hände efter att föräldrarna dog?",
+   "options": [
+    "Nolbu delade egendomen jämnt",
+    "Nolbu tog all egendom och kastade ut Heungbu",
+    "Heungbu blev rik",
+    "Bröderna flyttade bort tillsammans"
+   ]
+  },
+  {
+   "q": "Vad förde svalan tillbaka till Heungbu följande vår?",
+   "options": [
+    "En säck ris",
+    "Ett litet frö",
+    "Ett brev",
+    "En korg frukt"
+   ]
+  },
+  {
+   "q": "Vad gjorde Nolbu efter att ha hört att Heungbu blivit rik?",
+   "options": [
+    "Han gratulerade Heungbu",
+    "Han bröt avsiktligt av en svalas ben",
+    "Han flyttade söderut",
+    "Han gav sin rikedom till Heungbu"
+   ]
+  },
+  {
+   "q": "Vad kom ut ur Nolbus kalebass?",
+   "options": [
+    "Guld och skatter",
+    "Troll som straffade honom",
+    "Fler svalor",
+    "Ingenting alls"
+   ]
+  }
+ ],
+ "fk-ko-02": [
+  {
+   "q": "Vad bad tigern modern om på bergsstigen?",
+   "options": [
+    "Hennes kläder",
+    "En riskaka",
+    "Vägbeskrivning hem",
+    "Pengar"
+   ]
+  },
+  {
+   "q": "Hur insåg syskonen att besökaren inte var deras mor?",
+   "options": [
+    "De såg dess svans",
+    "Dess hand var täckt av päls",
+    "Den talade ett främmande språk",
+    "Den luktade tiger"
+   ]
+  },
+  {
+   "q": "Vad hände med tigerns rep?",
+   "options": [
+    "Det var gjort av guld",
+    "Det var ruttet och gick av",
+    "Det förvandlades till en orm",
+    "Det var för kort för att nå fram"
+   ]
+  },
+  {
+   "q": "Vad blev bror och syster?",
+   "options": [
+    "Stjärnor",
+    "Solen och månen",
+    "Fåglar",
+    "Berg"
+   ]
+  }
+ ],
+ "fk-ko-03": [
+  {
+   "q": "Vilken omöjlig uppgift gav styvmodern Kongjwi?",
+   "options": [
+    "Sopa hela byn",
+    "Fylla en kruka med trasig botten med vatten",
+    "Sy hundra klänningar",
+    "Fånga en vild oxe"
+   ]
+  },
+  {
+   "q": "Vem hjälpte Kongjwi rensa det steniga fältet?",
+   "options": [
+    "En padda",
+    "Hennes far",
+    "En svart oxe från himlen",
+    "Patjwi"
+   ]
+  },
+  {
+   "q": "Vad förlorade Kongjwi när hon korsade bäcken?",
+   "options": [
+    "Sin klänning",
+    "En av sina blomskor",
+    "En korg riskakor",
+    "Sin hårnål"
+   ]
+  },
+  {
+   "q": "Hur valde magistraten sin brud?",
+   "options": [
+    "Genom att hålla en styrketävling",
+    "Genom att hitta vems fot som passade den förlorade skon",
+    "Genom att fråga byns äldste",
+    "Genom att gifta sig med den rikaste kvinnan"
+   ]
+  }
+ ],
+ "fk-ko-04": [
+  {
+   "q": "Vad hände Shim Cheongs far innan han träffade munken?",
+   "options": [
+    "Han förlorade sitt arbete",
+    "Han föll i en bäck",
+    "Han blev rånad",
+    "Han gick vilse i bergen"
+   ]
+  },
+  {
+   "q": "Varför sökte Shim Cheong upp sjömännen?",
+   "options": [
+    "För att be dem om ett arbete",
+    "För att erbjuda sig själv som offer i utbyte mot ris åt sin far",
+    "För att sälja sitt handarbete",
+    "För att hitta en väg till en annan by"
+   ]
+  },
+  {
+   "q": "Vad gjorde Drakkungen med Shim Cheong?",
+   "options": [
+    "Han höll henne fången för alltid",
+    "Han skickade upp henne igen inuti en lotusblomma",
+    "Han förvandlade henne till en fisk",
+    "Han straffade henne för att hon ljugit"
+   ]
+  },
+  {
+   "q": "Hur återfick Shim Cheongs far sin syn?",
+   "options": [
+    "En läkare botade honom",
+    "Han drack en magisk trolldryck",
+    "Han blev överlycklig när han äntligen återsåg sin dotter",
+    "Drakkungen återställde den"
+   ]
+  }
+ ],
+ "fk-ko-05": [
+  {
+   "q": "Vilket villkor ställde rådjuret för att lämna tillbaka feens fjäderdräkt?",
+   "options": [
+    "Att inte lämna tillbaka den förrän de varit gifta i tio år",
+    "Att inte lämna tillbaka den förrän feen fött tre barn",
+    "Att inte lämna tillbaka den förrän vintern kom",
+    "Att inte lämna tillbaka den förrän rådjuret själv sa till"
+   ]
+  },
+  {
+   "q": "Varför fick feen till slut tillbaka sin fjäderdräkt?",
+   "options": [
+    "Hon hittade den själv medan hon städade",
+    "Rådjuret gav tillbaka den till henne",
+    "Vedhuggaren gav efter för hennes böner och visade henne den",
+    "Barnen hittade den och gav den till henne"
+   ]
+  },
+  {
+   "q": "Hur nådde vedhuggaren himlen?",
+   "options": [
+    "Han fick vingar själv",
+    "Han åkte upp i en hink som feerna använde för att hämta vatten",
+    "Han klättrade upp i ett enormt träd",
+    "Han bad jägarna om hjälp"
+   ]
+  },
+  {
+   "q": "Enligt berättelsen, vad händer i en version av sagans slut?",
+   "options": [
+    "Vedhuggaren stannar i himlen för alltid utan problem",
+    "Vedhuggaren bryter en regel när han försöker besöka sin mor och kan inte återvända till himlen",
+    "Feen återvänder till jorden för att leva med honom",
+    "Rådjuret blir en människa"
+   ]
+  }
+ ],
+ "fk-ko-06": [
+  {
+   "q": "Vad lovade Mong-ryong Chunhyang innan han for till Hanyang?",
+   "options": [
+    "Att skicka henne pengar varje månad",
+    "Att klara statsexamen och återvända för att gifta sig med henne ordentligt",
+    "Att ta henne till Hanyang genast",
+    "Att glömma sina studier"
+   ]
+  },
+  {
+   "q": "Hur svarade Chunhyang på Byun Hak-dos krav att hon skulle tjäna honom?",
+   "options": [
+    "Hon gick med på det av rädsla",
+    "Hon flydde från Namwon",
+    "Hon vägrade och sa att hon redan tillhörde en man",
+    "Hon mutade honom att lämna henne ifred"
+   ]
+  },
+  {
+   "q": "Vilken position fick Mong-ryong efter att ha klarat statsexamen?",
+   "options": [
+    "Lokal magistrat i Namwon",
+    "En hemlig kunglig inspektör",
+    "En hovpoet",
+    "En palatsvakt"
+   ]
+  },
+  {
+   "q": "Vilken titel gav kungen Chunhyang för hennes trofasthet?",
+   "options": [
+    "Namwons drottning",
+    "Kyskhetens dam",
+    "Kunglig inspektör",
+    "Pensionerad gisaeng"
+   ]
+  }
+ ],
+ "fk-la-01": [
+  {
+   "q": "Varför lämnade Amulius tvillingpojkarna i floden?",
+   "options": [
+    "Eftersom han fruktade dem",
+    "Eftersom han älskade dem",
+    "Eftersom en präst beordrade det",
+    "Eftersom pojkarna var sjuka"
+   ]
+  },
+  {
+   "q": "Vem hittade och uppfostrade pojkarna efter vargen?",
+   "options": [
+    "En herde vid namn Faustulus",
+    "En kung",
+    "En präst",
+    "En soldat"
+   ]
+  },
+  {
+   "q": "Varför grälade bröderna innan de grundade staden?",
+   "options": [
+    "De var oense om var den skulle byggas",
+    "De var oense om vem som var deras mor",
+    "De grälade om vargen",
+    "De grälade om sin farfar"
+   ]
+  },
+  {
+   "q": "Vad hände mellan bröderna?",
+   "options": [
+    "Romulus dödade Remus i vrede",
+    "Remus dödade Romulus",
+    "De blev samregenter",
+    "De lämnade staden tillsammans"
+   ]
+  }
+ ],
+ "fk-la-02": [
+  {
+   "q": "Varför gömde sig Androcles i en grotta?",
+   "options": [
+    "Han flydde från sin herre",
+    "Han jagade djur",
+    "Han hade gått vilse i en storm",
+    "Han sökte efter en skatt"
+   ]
+  },
+  {
+   "q": "Vad gjorde Androcles för lejonet?",
+   "options": [
+    "Han tog bort en törntagg ur dess tass",
+    "Han gav det mat",
+    "Han byggde det ett lya",
+    "Han lärde det trick"
+   ]
+  },
+  {
+   "q": "Varför skickades Androcles ner i arenan?",
+   "options": [
+    "För att slukas av ett vilt lejon som straff",
+    "För att slåss mot gladiatorer",
+    "För att tämja lejonet inför publiken",
+    "För att friges av kejsaren"
+   ]
+  },
+  {
+   "q": "Varför anföll inte lejonet Androcles?",
+   "options": [
+    "Lejonet kände igen honom som vännen som en gång hjälpt det",
+    "Lejonet var för gammalt för att anfalla",
+    "Lejonet sov",
+    "Tränarna hade lugnat lejonet"
+   ]
+  }
+ ],
+ "fk-la-03": [
+  {
+   "q": "Vad höll kråkan i näbben?",
+   "options": [
+    "En bit ost den hade stulit",
+    "En fisk",
+    "En guldring",
+    "Ett bo med ägg"
+   ]
+  },
+  {
+   "q": "Vad sa räven till kråkan?",
+   "options": [
+    "Att dess sångröst sannolikt var lika vacker som dess fjädrar",
+    "Att dess fjädrar var fula",
+    "Att den skulle ge henne osten direkt",
+    "Att rävar och kråkor borde vara vänner"
+   ]
+  },
+  {
+   "q": "Vad hände med osten?",
+   "options": [
+    "Räven tog och åt upp den efter att kråkan tappade den",
+    "Kråkan åt upp den innan räven kom fram",
+    "Osten hängde för högt för räven att nå",
+    "En hund stal den från dem båda"
+   ]
+  },
+  {
+   "q": "Vad är fabelns moral?",
+   "options": [
+    "Lita inte på smickrare, som vanligtvis vill ha något av dig",
+    "Fåglar bör inte sjunga nära rävar",
+    "Ost bör alltid gömmas i träd",
+    "Rävar är alltid farliga för kråkor"
+   ]
+  }
+ ],
+ "fk-la-04": [
+  {
+   "q": "Varför marscherade Lars Porsena mot Rom?",
+   "options": [
+    "För att återinsätta den landsförvisade kungen vid makten",
+    "För att erövra ny odlingsmark",
+    "För att straffa Horatius personligen",
+    "För att kräva in obetald skatt"
+   ]
+  },
+  {
+   "q": "Vad föreslog Horatius att göra?",
+   "options": [
+    "Hålla bron med två kamrater medan romarna rev den",
+    "Kapitulera staden för att rädda liv",
+    "Förhandla fred med Porsena",
+    "Bränna bron själv, ensam"
+   ]
+  },
+  {
+   "q": "Vad gjorde Horatius när bron nästan var riven?",
+   "options": [
+    "Han skickade tillbaka sina kamrater i säkerhet och höll den bortre änden ensam",
+    "Han drog sig genast tillbaka med sina kamrater",
+    "Han byggde upp bron själv igen",
+    "Han kallade på förstärkning från staden"
+   ]
+  },
+  {
+   "q": "Hur flydde Horatius efter att bron rasat?",
+   "options": [
+    "Han bad till flodguden och simmade över i sin rustning",
+    "Han räddades av en förbipasserande båt",
+    "Han sprang längs stranden till ett vadställe",
+    "Han kapitulerade för etruskerna"
+   ]
+  }
+ ],
+ "fk-la-05": [
+  {
+   "q": "Vad betyder namnet Cincinnatus, och vad gjorde han innan han blev berömd?",
+   "options": [
+    "Det betyder \"lockhårig\", och han brukade en liten jordlott",
+    "Det betyder \"den starke\", och han ledde armén",
+    "Det betyder \"den vise\", och han tjänstgjorde i senaten",
+    "Det betyder \"den landsförvisade\", och han levde utomlands"
+   ]
+  },
+  {
+   "q": "Varför beslutade senaten att utse en diktator?",
+   "options": [
+    "Eftersom en konsul och hans armé var instängda av fienden och läget verkade desperat",
+    "Eftersom konsulerna hade mördats",
+    "Eftersom en pest hade slagit till mot staden",
+    "Eftersom vanligt folk gjorde uppror"
+   ]
+  },
+  {
+   "q": "Vad gjorde Cincinnatus så snart han kom till Rom?",
+   "options": [
+    "Han kallade genast alla yngre medborgare till vapen",
+    "Han höll en triumfparad",
+    "Han avrättade den föregående konsuln",
+    "Han byggde nya befästningar"
+   ]
+  },
+  {
+   "q": "Vad gjorde Cincinnatus efter att ha vunnit kriget?",
+   "options": [
+    "Han avsade sig frivilligt sin makt, långt tidigare än lagen krävde, och återvände till sin gård",
+    "Han behöll sin makt hela de sex månaderna och kandiderade sedan till konsul",
+    "Han utropade sig själv till kung av Rom",
+    "Han förvisade de besegrade aequerna från Italien"
+   ]
+  }
+ ],
+ "fk-la-06": [
+  {
+   "q": "Vad gjorde Jupiter och Merkurius, förklädda till dödliga?",
+   "options": [
+    "Sökte gästfrihet bland folket i Frygien, men avvisades överallt",
+    "Prövade de lokala krigarnas styrka",
+    "Letade efter ett förlorat tempel",
+    "Samlade in skatt från byborna"
+   ]
+  },
+  {
+   "q": "Vad gjorde Baucis och Philemon för sina gäster trots att de inte visste vilka de var?",
+   "options": [
+    "De erbjöd allt de hade, glatt, även om det var enkel kost",
+    "De vägrade släppa in främlingar i sitt hem",
+    "De skickade dem till en rikare granne",
+    "De bad främlingarna betala i förskott"
+   ]
+  },
+  {
+   "q": "Vilket under fick det gamla paret att inse att deras gäster var gudar?",
+   "options": [
+    "Vinskålen fylldes på av sig själv hur mycket man än hällde ur den",
+    "Huset blev plötsligt varmt",
+    "Deras gås började tala till dem",
+    "En ljus stjärna dök upp över taket"
+   ]
+  },
+  {
+   "q": "Vad hände till slut med Baucis och Philemon?",
+   "options": [
+    "När döden till slut kom förvandlades de tillsammans till två träd istället för att skiljas åt",
+    "De gjordes odödliga och levde för alltid i marmortemplet",
+    "De förstenades av floden",
+    "De skildes åt, den ena dog långt före den andra"
+   ]
+  }
+ ],
+ "fk-nl-01": [
+  {
+   "q": "Vad gjorde kaptenen trots att besättningen var rädd?",
+   "options": [
+    "Han vände skeppet",
+    "Han fortsatte segla ändå",
+    "Han bad besättningen rösta",
+    "Han ankrade skeppet"
+   ]
+  },
+  {
+   "q": "Vad heter kaptenens skepp i legenden?",
+   "options": [
+    "The Golden Hind",
+    "Den flygande holländaren",
+    "Silverstjärnan",
+    "Havsspöket"
+   ]
+  },
+  {
+   "q": "Vad varnar legenden om den flygande holländaren för?",
+   "options": [
+    "Att aldrig segla nära Afrika",
+    "Att vara för högmodig",
+    "Att lita på främlingar",
+    "Att segla nattetid"
+   ]
+  },
+  {
+   "q": "Enligt berättelsen, vad letar den flygande holländaren alltid efter?",
+   "options": [
+    "Skatter",
+    "Sin förlorade besättning",
+    "En säker hamn",
+    "En ny kapten"
+   ]
+  }
+ ],
+ "fk-nl-02": [
+  {
+   "q": "Vilka är de vita kvinnorna, enligt legenden?",
+   "options": [
+    "Andar av visa kvinnor från förr",
+    "Spöken av förlorade sjömän",
+    "Alfer som vaktar skatter",
+    "Bönders andar"
+   ]
+  },
+  {
+   "q": "Vad kunde de vita kvinnorna göra?",
+   "options": [
+    "Bota sjuka",
+    "Förutspå framtiden",
+    "Styra vädret",
+    "Förvandlas till djur"
+   ]
+  },
+  {
+   "q": "Var kan man besöka gravhögarna idag?",
+   "options": [
+    "I provinser som Drenthe och Overijssel",
+    "Bara i Amsterdam",
+    "Bara i Belgien",
+    "De finns inte längre"
+   ]
+  },
+  {
+   "q": "Hur lever legenden vidare idag?",
+   "options": [
+    "Bara genom skolböcker",
+    "Genom berättelser som mor- och farföräldrar berättar för barn",
+    "Genom en årlig festival",
+    "Den har glömts bort"
+   ]
+  }
+ ],
+ "fk-nl-03": [
+  {
+   "q": "Vad beordrade kvinnan kaptenen att föra tillbaka?",
+   "options": [
+    "Guld och juveler",
+    "Den mest värdefulla lasten han kunde hitta",
+    "Ett nytt skepp",
+    "Kryddor från Östern"
+   ]
+  },
+  {
+   "q": "Vad gjorde kvinnan med vetet kaptenen förde med sig?",
+   "options": [
+    "Hon sålde det",
+    "Hon gav det till de fattiga",
+    "Hon lät kasta det i havet",
+    "Hon lagrade det för vintern"
+   ]
+  },
+  {
+   "q": "Vad hittade fiskarhustrun inuti fisken?",
+   "options": [
+    "En karta",
+    "Köpmanskvinnans guldring",
+    "Ett brev",
+    "Ett pärlhalsband"
+   ]
+  },
+  {
+   "q": "Vad sägs ha bildats där vetet sjönk?",
+   "options": [
+    "En ny ö",
+    "En fyr",
+    "En sandbank kallad Vrouwenzand",
+    "En malström"
+   ]
+  }
+ ],
+ "fk-nl-04": [
+  {
+   "q": "Vad skickade kungen björnen Bruin att göra?",
+   "options": [
+    "Slåss mot Reinaert",
+    "Föra Reinaert till hovet",
+    "Vakta Reinaerts fäste",
+    "Straffa bönderna"
+   ]
+  },
+  {
+   "q": "Vad hände med Bruin när han slet sig loss från trädstammen?",
+   "options": [
+    "Han bröt benet",
+    "Han förlorade huden på huvud och tassar",
+    "Han föll i en flod",
+    "Han fångades av bönder"
+   ]
+  },
+  {
+   "q": "Vad hände med katten Tybert?",
+   "options": [
+    "Han fångade många möss",
+    "Han skickades in i en fälla men undkom precis",
+    "Han vägrade gå",
+    "Han blev vän med Reinaert"
+   ]
+  },
+  {
+   "q": "Vad lär berättelsen ut, enligt sista stycket?",
+   "options": [
+    "Att styrka alltid vinner",
+    "Att kungar inte bör lita på någon",
+    "Att list ofta uppnår mer än rå styrka",
+    "Att djur inte kan lita på varandra"
+   ]
+  }
+ ],
+ "fk-nl-05": [
+  {
+   "q": "Vad gjorde Sankt Nikolaus i hemlighet för den fattige mannens döttrar, enligt traditionen?",
+   "options": [
+    "Han hittade själv män åt dem",
+    "Han kastade guldmynt genom fönstret om natten",
+    "Han gav dem ett hus",
+    "Han skrev till kungen å deras vägnar"
+   ]
+  },
+  {
+   "q": "Vad kallas Sinterklaas hjälpare traditionellt?",
+   "options": [
+    "Zwarte Pieten",
+    "De Wieven",
+    "De Kabouters",
+    "De Boeken"
+   ]
+  },
+  {
+   "q": "Varifrån kommer namnet på den amerikanska jultomten Santa Claus, enligt texten?",
+   "options": [
+    "Ett gammalt tyskt ord",
+    "Det holländska ordet Sinterklaas",
+    "En spansk legend",
+    "En förkristen vintergud"
+   ]
+  },
+  {
+   "q": "Vilken kärnidé i berättelsen förblir enligt sista stycket orörd?",
+   "options": [
+    "Att barn alltid måste vara lydiga",
+    "Att generositet given i hemlighet är den vackraste formen av att ge",
+    "Att biskopar bör vara rika",
+    "Att Spanien och Nederländerna hör ihop"
+   ]
+  }
+ ],
+ "fk-nl-06": [
+  {
+   "q": "Vilka var Lange Wappers favoritoffer, enligt legenden?",
+   "options": [
+    "Barn som lekte utomhus",
+    "Fyllon och latmaskar ute efter stängningsdags",
+    "Sjömän som återvände till hamnen",
+    "Marknadsförsäljare"
+   ]
+  },
+  {
+   "q": "Vad hände när nattväktarna försökte gripa Lange Wapper?",
+   "options": [
+    "Han flydde genom att krympa till en muss storlek",
+    "Han svällde upp, bröt bojorna och försvann över hustaken",
+    "Han mutade dem med guld",
+    "Han förvandlades till rök"
+   ]
+  },
+  {
+   "q": "Hur är Lange Wapper fortfarande närvarande i Antwerpen idag?",
+   "options": [
+    "Som en staty i hamnen",
+    "Som en jättefigur som paraderar genom gatorna under festliga processioner",
+    "Bara som namnet på en lokal öl",
+    "Han är helt bortglömd"
+   ]
+  },
+  {
+   "q": "Vad antyder sista stycket om varelsens sanna natur?",
+   "options": [
+    "Att den enbart uppfanns av kyrkan",
+    "Att den huvudsakligen finns i fantasin hos dem som fortfarande tror på den",
+    "Att den var en verklig historisk brottsling",
+    "Att den inte längre har någon betydelse idag"
+   ]
+  }
+ ],
+ "fk-pl-01": [
+  {
+   "q": "Var bodde draken?",
+   "options": [
+    "I en grotta under Wawelkullen",
+    "I det kungliga slottet",
+    "I en skog",
+    "I själva floden"
+   ]
+  },
+  {
+   "q": "Vem styrde staden Krakow?",
+   "options": [
+    "Ett råd av riddare",
+    "Kung Krak",
+    "Skomakaren Skuba",
+    "En biskop"
+   ]
+  },
+  {
+   "q": "Vad var Skubas plan?",
+   "options": [
+    "Slåss mot draken med svärd",
+    "Fånga draken i ett nät",
+    "Fylla ett får med svavel åt draken att äta",
+    "Förgifta flodvattnet"
+   ]
+  },
+  {
+   "q": "Hur dog draken?",
+   "options": [
+    "En riddare dödade den med eld",
+    "Den drack så mycket vatten att dess buk brast",
+    "Kungen förgiftade den",
+    "Den föll från Wawelkullen"
+   ]
+  }
+ ],
+ "fk-pl-02": [
+  {
+   "q": "Var bor den gyllene anden?",
+   "options": [
+    "I en brunn utanför staden",
+    "I en djup källare under ett gammalt hus",
+    "I ett kyrktorn",
+    "I en skogsgrotta"
+   ]
+  },
+  {
+   "q": "Vad såg lärlingen mästarna göra om natten?",
+   "options": [
+    "Baka bröd",
+    "Mana fram onda andar",
+    "Sälja skatter",
+    "Bygga ett hus"
+   ]
+  },
+  {
+   "q": "Vad måste anden vakta?",
+   "options": [
+    "En samling gamla böcker",
+    "En skatt av guld och ädelstenar",
+    "Ett magiskt svärd",
+    "En kunglig krona"
+   ]
+  },
+  {
+   "q": "Hur många svåra prövningar måste klaras för att hitta skatten?",
+   "options": [
+    "Två",
+    "Tre",
+    "Fem",
+    "En"
+   ]
+  }
+ ],
+ "fk-pl-03": [
+  {
+   "q": "Varifrån kom sjöjungfrun?",
+   "options": [
+    "Östersjön",
+    "Svarta havet",
+    "En bergssjö",
+    "Oceanen"
+   ]
+  },
+  {
+   "q": "Vad ville köpmannen göra med sjöjungfrun?",
+   "options": [
+    "Frige henne genast",
+    "Fånga henne och visa upp henne för pengar",
+    "Gifta sig med henne",
+    "Ge henne en gåva"
+   ]
+  },
+  {
+   "q": "Vem befriade sjöjungfrun?",
+   "options": [
+    "En fiskare",
+    "Köpmannen själv",
+    "Skjulägarens son",
+    "En soldat"
+   ]
+  },
+  {
+   "q": "Vad bär sjöjungfrun när hon försvarar staden?",
+   "options": [
+    "Ett svärd och en sköld",
+    "En krona och en spira",
+    "Ett nät och en krok",
+    "En harpa och en flöjt"
+   ]
+  }
+ ],
+ "fk-pl-04": [
+  {
+   "q": "Varför var de tre bröderna på resa?",
+   "options": [
+    "För att hitta nytt land och grunda sina egna riken",
+    "För att fly undan en drake",
+    "För att hitta skatter",
+    "För att besöka en kung"
+   ]
+  },
+  {
+   "q": "Vilken riktning reste Rus?",
+   "options": [
+    "Väster",
+    "Öster",
+    "Söder",
+    "Norr"
+   ]
+  },
+  {
+   "q": "Vad döpte Lech sin bosättning till, och efter vilket ord?",
+   "options": [
+    "Gniezno, efter \"gniazdo\" (bo)",
+    "Kraków, efter \"kruk\" (korp)",
+    "Warszawa, efter \"wars\"",
+    "Poznań, efter \"poznać\" (att känna)"
+   ]
+  },
+  {
+   "q": "Vad blev den vita örnen?",
+   "options": [
+    "Symbolen för Lechs nya rike, senare Polens emblem",
+    "En symbol för Czechs berg",
+    "En symbol för Rus floder",
+    "En symbol för otur"
+   ]
+  }
+ ],
+ "fk-pl-05": [
+  {
+   "q": "Vad sades Pan Twardowski kunna göra?",
+   "options": [
+    "Flyga till andra länder",
+    "Väcka upp de döda och förutspå framtiden",
+    "Bara förvandla bly till guld",
+    "Tala med djur"
+   ]
+  },
+  {
+   "q": "Under vilket villkor kunde djävulen ta Twardowskis själ?",
+   "options": [
+    "Endast i Rom",
+    "Endast vid midnatt",
+    "Endast om Twardowski gifte sig",
+    "Endast i Krakow"
+   ]
+  },
+  {
+   "q": "Var hamnade Twardowski efter att ha bett en bön?",
+   "options": [
+    "Hemma i säkerhet",
+    "På månen",
+    "I Rom",
+    "På värdshuset"
+   ]
+  },
+  {
+   "q": "Vilket polskt uttryck kommer från denna legend?",
+   "options": [
+    "\"Att försvinna som Twardowski på månen\"",
+    "\"Att dansa som djävulen\"",
+    "\"Att be som ett helgon\"",
+    "\"Att handla som en köpman\""
+   ]
+  }
+ ],
+ "fk-pl-06": [
+  {
+   "q": "Vad sägs basilisken ha kläckts ur?",
+   "options": [
+    "Ett ägg lagt av en gammal tupp",
+    "En häxas förbannelse",
+    "En draktand",
+    "En förbannad brunn"
+   ]
+  },
+  {
+   "q": "Vilken svaghet sa folktron att basilisken hade?",
+   "options": [
+    "Den dör av att se sin egen spegelbild",
+    "Den fruktar eld",
+    "Den kan inte korsa vatten",
+    "Den sover på dagen"
+   ]
+  },
+  {
+   "q": "Vad hände med fången efter att ha besegrat basilisken?",
+   "options": [
+    "Han avrättades ändå",
+    "Han benådades som utlovat",
+    "Han blev borgmästare",
+    "Han flydde staden"
+   ]
+  },
+  {
+   "q": "Vid sidan av vilka andra legender nämns basilisken i krönikor?",
+   "options": [
+    "Wawel-draken och Warszawas sjöjungfru",
+    "Pan Twardowski och Janosik",
+    "Lech och Czech",
+    "Den gyllene anden och Krak"
+   ]
+  }
+ ],
+ "fk-pt-01": [
+  {
+   "q": "Vad har Saci-Pererê istället för två ben?",
+   "options": [
+    "Bara ett ben",
+    "Tre ben",
+    "En fiskstjärt",
+    "Vingar"
+   ]
+  },
+  {
+   "q": "Enligt berättelsen, vad gör Saci med kornas mjölk?",
+   "options": [
+    "Han låter den surna över natten",
+    "Han förvandlar den till ost",
+    "Han spiller den på marken",
+    "Han dricker upp allt"
+   ]
+  },
+  {
+   "q": "Hur kan man enligt legenden fånga Saci?",
+   "options": [
+    "Genom att kasta en sil eller ett radband in i virvelvinden",
+    "Genom att erbjuda honom mat",
+    "Genom att sjunga en speciell sång",
+    "Genom att tända en eld nära honom"
+   ]
+  },
+  {
+   "q": "Hur lyckades den gamle bonden fånga Saci?",
+   "options": [
+    "I en glasflaska förseglad med kork och ett kors",
+    "I en trälåda",
+    "Med ett nät kastat över honom",
+    "Genom att binda hans ben vid ett träd"
+   ]
+  }
+ ],
+ "fk-pt-02": [
+  {
+   "q": "Varför dödade Jurupari pojken?",
+   "options": [
+    "Av svartsjuka på hur älskad pojken var",
+    "Eftersom pojken stal från honom",
+    "Av misstag under en jakt",
+    "Eftersom pojken förolämpade honom"
+   ]
+  },
+  {
+   "q": "Vad sa den heliga rösten till modern att göra?",
+   "options": [
+    "Plantera pojkens två ögon, ett i skogen och ett nära huset",
+    "Begrava pojken under ett guaranaträd",
+    "Kasta pojkens ögon i floden",
+    "Ge pojkens ögon till schamanen"
+   ]
+  },
+  {
+   "q": "Vad för slags växter kom upp ur de två planterade ögonen?",
+   "options": [
+    "En vild växt i skogen och en tam växt nära huset",
+    "Två identiska vilda växter",
+    "En växt som inte gav någon frukt",
+    "Ett träd och en ranka"
+   ]
+  },
+  {
+   "q": "Varför fick frukten namnet guaraná?",
+   "options": [
+    "Eftersom dess frö och fruktkött liknade ett människoöga",
+    "Eftersom den hittades nära en flod som hette Guaraná",
+    "Eftersom den namngavs efter pojkens mor",
+    "På grund av sin form, som en liten gitarr"
+   ]
+  }
+ ],
+ "fk-pt-03": [
+  {
+   "q": "Varför förvirrar Curupiras baklänges fötter folk?",
+   "options": [
+    "Eftersom fotspåren pekar åt motsatt håll från vart han egentligen är på väg",
+    "Eftersom han kan flyga över marken",
+    "Eftersom han bara går ute nattetid",
+    "Eftersom hans fötter inte lämnar några spår alls"
+   ]
+  },
+  {
+   "q": "Vad gjorde Curupira mot jägare som dödade fler djur än nödvändigt?",
+   "options": [
+    "Han hämnades på dem",
+    "Han gav dem ett varningsbrev",
+    "Han struntade helt enkelt i dem",
+    "Han bad djuren förlåta dem"
+   ]
+  },
+  {
+   "q": "Vad övertygade Curupira att äntligen släppa Chico?",
+   "options": [
+    "Chico lovade att sluta jaga mer än nödvändigt",
+    "Chico gav Curupira en gåva av tobak",
+    "Chico byggde ett altare i skogen",
+    "Chico lämnade trakten för gott"
+   ]
+  },
+  {
+   "q": "Vad lämnar resenärer fortfarande som offergåvor till Curupira?",
+   "options": [
+    "Lite tobak eller cachaça på en trädstam",
+    "Färsk frukt vid skogens ingång",
+    "Små snidade statyer",
+    "Mynt nedgrävda i marken"
+   ]
+  }
+ ],
+ "fk-pt-04": [
+  {
+   "q": "Hur ser Iara ut, enligt legenden?",
+   "options": [
+    "En kvinna med långt grönt hår och en fiskstjärt",
+    "En gammal kvinna med silverfjäll",
+    "En jättelik orm med människoögon",
+    "En fågel med en kvinnas ansikte"
+   ]
+  },
+  {
+   "q": "Hur blev Iara en flodvarelse?",
+   "options": [
+    "Fiskarna förbarmade sig över henne efter att hennes far kastat henne i floden",
+    "Hon dök i floden för att fly en storm",
+    "En trollkarl förbannade henne för att hon vägrade gifta sig",
+    "Hon föddes ur floden själv"
+   ]
+  },
+  {
+   "q": "Vad gjorde Beto när han först hörde Iaras sång?",
+   "options": [
+    "Arbetade ensam vid floden i skymningen",
+    "Fiskade med sin mormor",
+    "Sov i sin kanot",
+    "Simmade med vänner"
+   ]
+  },
+  {
+   "q": "Hur lyckades Beto undkomma Iaras trollformel?",
+   "options": [
+    "Han täckte öronen och sprang tillbaka till sin kanot",
+    "Han sjöng en högre sång för att överrösta henne",
+    "Han kastade sitt nät över henne",
+    "Han bad sin mormor rädda honom personligen"
+   ]
+  }
+ ],
+ "fk-pt-05": [
+  {
+   "q": "Hur beskrivs Pedro Malasartes i allmänhet?",
+   "options": [
+    "Fattig på ägodelar men slug och påhittig",
+    "En förmögen men oärlig godsägare",
+    "En tystlåten bonde utan ambitioner",
+    "En utländsk köpman på genomresa"
+   ]
+  },
+  {
+   "q": "Vad gömde Pedro inuti grytan innan demonstrationen?",
+   "options": [
+    "En redan tillagad gryta",
+    "En hög glödande kol",
+    "En andra, mindre gryta",
+    "Ingenting, grytan var verkligen tom"
+   ]
+  },
+  {
+   "q": "Vad hände när köpmannen prövade grytan hemma?",
+   "options": [
+    "De råa grönsakerna blev aldrig kokta",
+    "Grytan exploderade",
+    "Grytan lagade maten omedelbart",
+    "Grytan fattade eld"
+   ]
+  },
+  {
+   "q": "Vad fann köpmannen när han gick tillbaka för att konfrontera Pedro?",
+   "options": [
+    "Pedro hade redan lämnat byn med pengarna",
+    "Pedro bad om ursäkt och lämnade tillbaka pengarna",
+    "Pedro erbjöd honom ett andra magiskt föremål",
+    "Pedro greps av byborna"
+   ]
+  }
+ ],
+ "fk-pt-06": [
+  {
+   "q": "Vilken stämning beskriver berättelsen i inledningen?",
+   "options": [
+    "En flodfesta junina-marknad på natten",
+    "En stillsam begravningsprocession",
+    "En livlig morgonmarknad",
+    "En stormig fiskeexpedition"
+   ]
+  },
+  {
+   "q": "Vad var anmärkningsvärt med hur främlingen dansade?",
+   "options": [
+    "Han dansade med en grace som verkade utomvärldslig",
+    "Han vägrade dansa med någon",
+    "Han dansade bara ensam i ett hörn",
+    "Han lärde alla en ny dans"
+   ]
+  },
+  {
+   "q": "Vad hände med flickan några månader efter festivalen?",
+   "options": [
+    "Hon visade sig vara gravid utan någon förklaring om fadern",
+    "Hon lämnade byn för att leta efter främlingen",
+    "Hon gifte sig med en annan man från marknaden",
+    "Hon blev sjuk och tillfrisknade aldrig"
+   ]
+  },
+  {
+   "q": "Enligt de äldre barnmorskorna, vem var främlingen egentligen?",
+   "options": [
+    "Boto, en förtrollad flodtumlare förklädd till man",
+    "En vandrande ande utan fast form",
+    "En rivaliserande bys hövding förklädd",
+    "Spöket av en drunknad fiskare"
+   ]
+  }
+ ],
+ "fk-ru-01": [
+  {
+   "q": "Vem kallar farfar på hjälp först?",
+   "options": [
+    "Hunden",
+    "Farmor",
+    "Katten",
+    "Musen"
+   ]
+  },
+  {
+   "q": "Vem kallar sondottern på hjälp?",
+   "options": [
+    "Musen",
+    "Katten",
+    "Hunden Zjutjka",
+    "Farfar"
+   ]
+  },
+  {
+   "q": "Vem kallar Zjutjka på hjälp?",
+   "options": [
+    "Katten",
+    "Musen",
+    "Farmor",
+    "Sondottern"
+   ]
+  },
+  {
+   "q": "Vem gör det till slut möjligt att dra upp rovan?",
+   "options": [
+    "Farfar ensam",
+    "Katten",
+    "Musen",
+    "Farmor ensam"
+   ]
+  }
+ ],
+ "fk-ru-02": [
+  {
+   "q": "Varför började kolobok rulla ner för vägen?",
+   "options": [
+    "Den hoppade självmant från fönsterbrädan",
+    "Den gamla kvinnan knuffade ut den",
+    "En varg bar bort den",
+    "Den blåstes av vinden"
+   ]
+  },
+  {
+   "q": "Hur flyr kolobok från haren och vargen?",
+   "options": [
+    "Den gömmer sig i ett hål",
+    "Den sjunger en sång och rullar iväg",
+    "Den kallar på björnen",
+    "Den biter dem"
+   ]
+  },
+  {
+   "q": "Vad ber räven kolobok att göra?",
+   "options": [
+    "Rulla iväg snabbt",
+    "Ge henne lite bröd",
+    "Sjunga sin sång igen, närmare henne",
+    "Möta björnen"
+   ]
+  },
+  {
+   "q": "Vad händer till slut med kolobok?",
+   "options": [
+    "Den flyr för alltid",
+    "Räven äter upp den",
+    "Björnen äter upp den",
+    "Den kommer hem"
+   ]
+  }
+ ],
+ "fk-ru-03": [
+  {
+   "q": "Varför skickar styvmodern styvdottern ut i skogen?",
+   "options": [
+    "För att samla ved",
+    "För att lämna henne där ensam, av ovilja",
+    "För att medvetet möta Morozko",
+    "För att hitta henne en man"
+   ]
+  },
+  {
+   "q": "Hur svarar styvdottern när Morozko frågar om hon är varm?",
+   "options": [
+    "Hon gråter och ber om hjälp",
+    "Hon springer sin väg",
+    "Hon svarar artigt att hon är varm",
+    "Hon vägrar svara"
+   ]
+  },
+  {
+   "q": "Vilken belöning ger Morozko styvdottern?",
+   "options": [
+    "Ingenting alls",
+    "En varm päls och en kista med juveler",
+    "En magisk häst",
+    "Ett nytt hus"
+   ]
+  },
+  {
+   "q": "Vad händer med styvmoderns egen dotter i skogen?",
+   "options": [
+    "Hon får ännu större rikedomar",
+    "Morozko fryser henne eftersom hon är oförskämd",
+    "Hon gifter sig med Morozko",
+    "Hon går vilse men kommer hem säkert"
+   ]
+  }
+ ],
+ "fk-ru-04": [
+  {
+   "q": "Vad stal de gyllene äpplena ur trädgården?",
+   "options": [
+    "En björn",
+    "Eldfågeln",
+    "En varg",
+    "Den äldste brodern"
+   ]
+  },
+  {
+   "q": "Vad erbjöd Gråvargen Ivan efter att ha ätit hans häst?",
+   "options": [
+    "Ingenting, den sprang bara iväg",
+    "Sin egen hjälp i stället för hästen",
+    "En gyllene fjäder",
+    "Ett magiskt svärd"
+   ]
+  },
+  {
+   "q": "Vad gjorde Ivans bröder mot honom på vägen hem?",
+   "options": [
+    "De hjälpte honom bära skatterna",
+    "De dödade honom och tog hans troféer",
+    "De övergav honom men lät honom leva",
+    "De gifte sig själva med Elena"
+   ]
+  },
+  {
+   "q": "Hur slutar berättelsen för Ivan och Gråvargen?",
+   "options": [
+    "De dör båda på stäppen",
+    "Ivan gifter sig med Elena och vargen återvänder till skogen",
+    "Vargen blir tsar",
+    "Ivan förlåter aldrig sina bröder"
+   ]
+  }
+ ],
+ "fk-ru-05": [
+  {
+   "q": "Hur vann Sadko först havskungens gunst?",
+   "options": [
+    "Han gav honom guld",
+    "Han slogs mot ett sjöodjur",
+    "Han spelade gusli så väl att det förtrollade honom",
+    "Han byggde honom ett palats"
+   ]
+  },
+  {
+   "q": "Varför stannade Sadkos skepp plötsligt till sjöss?",
+   "options": [
+    "En storm slog sönder dem",
+    "Havskungen krävde en tribut som aldrig betalats",
+    "De fick slut på vind",
+    "Pirater blockerade vägen"
+   ]
+  },
+  {
+   "q": "Vad gjorde Sadko för att stoppa den förödande dansen i havet?",
+   "options": [
+    "Han sjöng högre",
+    "Han slet av strängarna på sin gusli",
+    "Han dök ner i vattnet",
+    "Han bad sjöjungfrurna om hjälp"
+   ]
+  },
+  {
+   "q": "Hur lämnade Sadko till slut havskungens undervattensrike?",
+   "options": [
+    "Han slogs sig ut",
+    "Han gifte sig med en sjöjungfru och stannade för alltid",
+    "Han somnade bredvid Tjernavusjka och vaknade på flodstranden hemma",
+    "Havskungen förvisade honom"
+   ]
+  }
+ ],
+ "fk-ru-06": [
+  {
+   "q": "Hur kom Snegurochka till?",
+   "options": [
+    "Hon hittades övergiven i skogen",
+    "Ett gammalt barnlöst par formade henne av snö och hon blev levande",
+    "Hon föddes av paret på vanligt sätt",
+    "Modervåren skickade henne som en gåva från början"
+   ]
+  },
+  {
+   "q": "Vad hände med Snegurochka efter att hon träffat herden Lel?",
+   "options": [
+    "Hon blev genast sjuk",
+    "En varm känsla rördes i hennes hjärta för första gången",
+    "Hon flydde tillbaka till sina föräldrar",
+    "Hon vägrade lyssna på hans sång"
+   ]
+  },
+  {
+   "q": "Vad kostade Modervårens gåva av sann kärlek Snegurochka till slut?",
+   "options": [
+    "Hennes minne",
+    "Ingenting, det var en gåva utan pris",
+    "Hennes liv, eftersom mötet med sommarsolen visade sig ödesdigert",
+    "Hennes skönhet"
+   ]
+  },
+  {
+   "q": "Hur tolkade folket Snegurochkas öde efteråt?",
+   "options": [
+    "Som bevis på att magi inte finns",
+    "Som en liknelse om skör skönhet som inte kan stå emot det sanna livets hetta",
+    "Som en varning mot att sjunga på fester",
+    "Som ett obetydligt lokalt rykte"
+   ]
+  }
+ ],
+ "fk-sv-01": [
+  {
+   "q": "Var bodde tomten?",
+   "options": [
+    "I bondgårdens kök",
+    "I ladan eller på vinden",
+    "I skogen i närheten",
+    "I byns kyrka"
+   ]
+  },
+  {
+   "q": "Vad ställde familjen ut till tomten på julafton?",
+   "options": [
+    "Ett glas mjölk och bröd",
+    "Risgrynsgröt med smör",
+    "En ny röd mössa",
+    "Mynt och silver"
+   ]
+  },
+  {
+   "q": "Varför var tomten arg?",
+   "options": [
+    "Familjen flyttade bort",
+    "En pojke åt upp smöret som var avsett för honom",
+    "Ladan brann ner",
+    "Bonden sålde korna"
+   ]
+  },
+  {
+   "q": "Vad hände efter att familjen gjort saker och ting rätt igen?",
+   "options": [
+    "Tomten lämnade gården för alltid",
+    "Gården fick god lycka igen",
+    "Pojken blev själv bonde",
+    "Tomten förvandlades till en ko"
+   ]
+  }
+ ],
+ "fk-sv-02": [
+  {
+   "q": "Vad bestämde sig räven och björnen för att göra?",
+   "options": [
+    "Jaga tillsammans på vintern",
+    "Så en åker tillsammans och dela skörden",
+    "Bygga ett hus tillsammans",
+    "Kapplöpa genom skogen"
+   ]
+  },
+  {
+   "q": "Vilken gröda planterade de det första året, och vem gynnades?",
+   "options": [
+    "Säd, och björnen gynnades",
+    "Rovor, och räven gynnades",
+    "Rovor, och björnen gynnades",
+    "Säd, och räven förlorade allt"
+   ]
+  },
+  {
+   "q": "Vad hände med den andra grödan?",
+   "options": [
+    "Björnen fick äntligen den bättre delen",
+    "Räven tog återigen den värdefulla delen",
+    "De delade den jämnt den här gången",
+    "Skörden slog helt fel"
+   ]
+  },
+  {
+   "q": "Hur slutar berättelsen?",
+   "options": [
+    "Räven ber björnen om ursäkt",
+    "Björnen fångar och äter upp räven",
+    "Räven flyr och blir ihågkommen som det klokaste djuret",
+    "Björnen och räven blir vänner igen"
+   ]
+  }
+ ],
+ "fk-sv-03": [
+  {
+   "q": "Enligt folktron, vad gör Näcken?",
+   "options": [
+    "Han vaktar gårdsdjur om natten",
+    "Han sitter vid floder och spelar fiol och lockar folk i vattnet",
+    "Han bygger broar över floder",
+    "Han skyddar barn från att drunkna"
+   ]
+  },
+  {
+   "q": "Vad såg Anders vid forsen?",
+   "options": [
+    "En gammal kvinna som tvättade kläder",
+    "En ung man som spelade fiol på en klippa",
+    "En grupp dansande barn",
+    "Ingenting alls, bara det tomma vattnet"
+   ]
+  },
+  {
+   "q": "Vad varnade Anders mormor honom för?",
+   "options": [
+    "Att isen var för tunn",
+    "Att mannen var Näcken och till slut skulle dra honom ner i vattnet",
+    "Att fiolen var stulen",
+    "Att man aldrig kunde lita på främlingar med pengar"
+   ]
+  },
+  {
+   "q": "Vad gjorde Anders för att skydda sig?",
+   "options": [
+    "Han flyttade bort från byn",
+    "Han kastade en bit stål i vattnet",
+    "Han bad en präst välsigna floden",
+    "Han byggde ett staket runt forsen"
+   ]
+  }
+ ],
+ "fk-sv-04": [
+  {
+   "q": "Varför reste Gustav Eriksson genom Dalarna?",
+   "options": [
+    "Han var på pilgrimsfärd",
+    "Han flydde den danske kungen och sökte hjälp",
+    "Han jagade för nöjes skull",
+    "Han byggde en ny kyrka"
+   ]
+  },
+  {
+   "q": "Vad gjorde folket i Dalarna till en början?",
+   "options": [
+    "De gav honom genast en armé",
+    "De vägrade hjälpa honom",
+    "De utlämnade honom till danskarna",
+    "De valde honom till kung på fläcken"
+   ]
+  },
+  {
+   "q": "Vad övertygade dalabönderna att ändra sig?",
+   "options": [
+    "Ett brev från Norge",
+    "Nyheten om Stockholms blodbad",
+    "Livsmedelsbrist",
+    "Ett budskap från påven"
+   ]
+  },
+  {
+   "q": "Vad görs idag till minne av jakten på Gustav Vasa?",
+   "options": [
+    "En julgudstjänst varje år",
+    "Vasaloppet",
+    "En teaterpjäs i Stockholm",
+    "En staty restes i Sälen"
+   ]
+  }
+ ],
+ "fk-sv-05": [
+  {
+   "q": "Vad är utmärkande för skogsråets utseende?",
+   "options": [
+    "Hon har inget ansikte alls",
+    "Hon är vacker framifrån men ihålig på ryggen som ett ruttet träd",
+    "Hon är osynlig utom på natten",
+    "Hon uppträder alltid som en gammal kvinna"
+   ]
+  },
+  {
+   "q": "Vad bad kvinnan Olof om?",
+   "options": [
+    "Mat och husrum för vintern",
+    "Att få värma sig vid hans eld",
+    "Vägbeskrivning tillbaka till byn",
+    "Skjuts hem på hans släde"
+   ]
+  },
+  {
+   "q": "Hur reagerade Olof när han insåg vem hon var?",
+   "options": [
+    "Han sprang skrikande sin väg",
+    "Han tackade henne lugnt och önskade henne god natt",
+    "Han kastade aska på elden för att skrämma bort henne",
+    "Han krävde att hon skulle lämna genast"
+   ]
+  },
+  {
+   "q": "Vad blev resultatet av Olofs hövlighet?",
+   "options": [
+    "Ingenting förändrades alls",
+    "Både hans mila och hans jaktlycka förbättrades den säsongen",
+    "Han förbannades för resten av livet",
+    "Han bjöds in att bo i skogen"
+   ]
+  }
+ ],
+ "fk-sv-06": [
+  {
+   "q": "Vad fann Thor och hans följeslagare i skymningen i Jotunheim?",
+   "options": [
+    "En liten by med bönder",
+    "En så väldig borg att de fick böja huvudet bakåt för att se dess topp",
+    "En tillfrusen flod som spärrade deras väg",
+    "Ett tomt slagfält"
+   ]
+  },
+  {
+   "q": "Vad hände i Lokes ätartävling mot Loge?",
+   "options": [
+    "Loke vann lätt",
+    "Loke förlorade grovt, eftersom Loge slukade kött, ben och tråg på samma gång",
+    "De blev oavgjort och delade köttet",
+    "Loke vägrade tävla"
+   ]
+  },
+  {
+   "q": "Vilka var de tre prövningar Thor mötte?",
+   "options": [
+    "Brottning, bågskytte och simning",
+    "Dricka ur ett horn, lyfta en katt och brottas mot en gammal kvinna",
+    "Bestiga ett berg, lyfta en sten och en löptävling",
+    "Sång, drickande och hoppande"
+   ]
+  },
+  {
+   "q": "Vad var hornet Thor drack ur egentligen kopplat till?",
+   "options": [
+    "En brunn under borgen",
+    "Havet, så hans klunkar fick tidvattnet att ebba ut",
+    "En flod av eld",
+    "Ingenting — det var bara ett väldigt djupt horn"
+   ]
+  }
+ ],
+ "fk-tr-01": [
+  {
+   "q": "Vad hittade grannen inuti grytan när Hodja lämnade tillbaka den?",
+   "options": [
+    "Ett brev",
+    "En liten kruka",
+    "Några mynt",
+    "En tygbit"
+   ]
+  },
+  {
+   "q": "Varför lånade grannen gärna ut grytan till Hodja en andra gång?",
+   "options": [
+    "Han ville att Hodja skulle laga den",
+    "Han trodde att den kanske skulle föda fler grytor igen",
+    "Han behövde plats i sitt hus",
+    "Hodja betalade honom pengar"
+   ]
+  },
+  {
+   "q": "Vilken nyhet gav Hodja grannen om grytan?",
+   "options": [
+    "Att den blivit stulen",
+    "Att den gått sönder",
+    "Att den dött",
+    "Att han sålt den"
+   ]
+  },
+  {
+   "q": "Vad var Hodjas kloka argument i slutet av berättelsen?",
+   "options": [
+    "Att grytor är dyra",
+    "Att grannen borde köpa en ny gryta",
+    "Att om grannen trodde att den fött ungar, borde han också tro att den dog",
+    "Att grannen var för girig"
+   ]
+  }
+ ],
+ "fk-tr-02": [
+  {
+   "q": "Varför släppte inte tjänarna in Hodja på bröllopet till en början?",
+   "options": [
+    "Han kom för sent",
+    "Han såg för fattig ut",
+    "Han var inte bjuden",
+    "Han var en främling för dem"
+   ]
+  },
+  {
+   "q": "Hur behandlade folk Hodja annorlunda när han kom tillbaka?",
+   "options": [
+    "De ignorerade honom helt",
+    "De gav honom sämre mat",
+    "De behandlade honom med respekt och gav honom bästa platsen",
+    "De bad honom gå igen"
+   ]
+  },
+  {
+   "q": "Vad gjorde Hodja med sin pälsrock vid bordet?",
+   "options": [
+    "Han sålde den",
+    "Han doppade ärmen i maten",
+    "Han gav den till värden",
+    "Han tog av sig den"
+   ]
+  },
+  {
+   "q": "Vad betyder ordspråket \"Ät, min pälsrock, ät\"?",
+   "options": [
+    "Att fina kläder ger tur",
+    "Att mat aldrig ska slösas bort",
+    "Att människor ska respekteras för den de är, inte för sina kläder",
+    "Att gäster alltid bör klä sig formellt"
+   ]
+  }
+ ],
+ "fk-tr-03": [
+  {
+   "q": "Varför kunde byborna inte hantera jätten själva?",
+   "options": [
+    "De hade ingen ledare",
+    "De hade inte kraft att slåss mot honom",
+    "De hade redan lämnat byn",
+    "De trodde inte att han fanns"
+   ]
+  },
+  {
+   "q": "Vilket knep använde Keloğlan för att skrämma jätten?",
+   "options": [
+    "Han kastade eld mot honom",
+    "Han låtsades pressa vatten ur en sten",
+    "Han kallade på hjälp från soldater",
+    "Han visade jätten ett svärd"
+   ]
+  },
+  {
+   "q": "Vad bestämde sig jätten för att göra efter att ha blivit lurad?",
+   "options": [
+    "Slåss mot Keloğlan ändå",
+    "Flytta bort från byn för alltid",
+    "Be Keloğlan bli hans vän",
+    "Stjäla fler djur innan han gav sig av"
+   ]
+  },
+  {
+   "q": "Vilken läxa lär denna saga ut, enligt texten?",
+   "options": [
+    "Att styrka alltid vinner",
+    "Att klokskap betyder lika mycket som styrka",
+    "Att jättar aldrig är verkliga",
+    "Att bybor aldrig bör lita på främlingar"
+   ]
+  }
+ ],
+ "fk-tr-04": [
+  {
+   "q": "Varför gick moskébygget långsammare?",
+   "options": [
+    "Det fanns inte tillräckligt med sten",
+    "Arbetarna slutade för att lyssna på Karagöz och Hacivat prata",
+    "Sultanen fick slut på pengar",
+    "En storm skadade platsen"
+   ]
+  },
+  {
+   "q": "Vad kände sultanen efter att ha beordrat avrättningen?",
+   "options": [
+    "Lättnad över att moskén skulle bli klar snabbare",
+    "Ånger, eftersom han saknade deras samtal",
+    "Ilska mot arbetarna",
+    "Stolthet över sitt beslut"
+   ]
+  },
+  {
+   "q": "Vilket material använde poeten för att göra dockorna?",
+   "options": [
+    "Trä",
+    "Papper",
+    "Kamelhud",
+    "Tyg"
+   ]
+  },
+  {
+   "q": "När framförs Karagöz-Hacivat-skuggspel traditionellt idag?",
+   "options": [
+    "Under bröllop",
+    "Under ramadanmånaden",
+    "På nyårsafton",
+    "Under skördefester"
+   ]
+  }
+ ],
+ "fk-tr-05": [
+  {
+   "q": "Vad gjorde det omöjligt för hövdingarnas arméer att besegra Tepegöz?",
+   "options": [
+    "Han kunde flyga ifrån dem",
+    "Hans hud var som järn och kunde inte skadas",
+    "Han gömde sig på en plats ingen kunde hitta",
+    "Han hade många andra jättar som hjälpte honom"
+   ]
+  },
+  {
+   "q": "Varför vände sig oghuzhövdingarna till Basat för hjälp?",
+   "options": [
+    "Han var den äldste och visaste hövdingen",
+    "Han var en enastående krigare uppfostrad av en lejoninna",
+    "Han var Tepegöz bror",
+    "Han hade besegrat jättar tidigare"
+   ]
+  },
+  {
+   "q": "Hur flydde Basat efter att ha bländat Tepegöz?",
+   "options": [
+    "Han kämpade sig förbi honom med ett svärd",
+    "Han svepte in sig i ett fårskinn och smög sig förbi",
+    "Han grävde en tunnel under grottan",
+    "Han väntade tills jätten somnade"
+   ]
+  },
+  {
+   "q": "Vad säger texten att den här berättelsen visar i turkisk episk tradition?",
+   "options": [
+    "Att jättar alltid vinner till slut",
+    "Att klokskap och mod kan besegra rå styrka",
+    "Att herdar är de modigaste hjältarna",
+    "Att älvor skyddar oghuzfolket"
+   ]
+  }
+ ],
+ "fk-tr-06": [
+  {
+   "q": "Vilket villkor ställde Mehmene Banu för att Ferhat skulle vinna Şirins hand?",
+   "options": [
+    "Han var tvungen att besegra en rivaliserande prins",
+    "Han var tvungen att hugga genom berget Bisütun för att föra dit vatten",
+    "Han var tvungen att bli adelsman",
+    "Han var tvungen att lämna riket för alltid"
+   ]
+  },
+  {
+   "q": "Vad gjorde Mehmene Banu när berget nästan var genombrutet?",
+   "options": [
+    "Hon höll genast sitt löfte",
+    "Hon skickade en gammal kvinna för att falskt berätta för Ferhat att Şirin dött",
+    "Hon erbjöd Ferhat guld istället",
+    "Hon bad Şirin gifta sig med någon annan öppet"
+   ]
+  },
+  {
+   "q": "Hur dog Şirin?",
+   "options": [
+    "Hon dödades av Mehmene Banu",
+    "Hon dog av ålderdom",
+    "Hon grät vid Ferhats grav tills hon drog sin sista suck",
+    "Hon föll från berget"
+   ]
+  },
+  {
+   "q": "Hur beskriver texten sagans arv?",
+   "options": [
+    "Som en komedi som framförs på fester",
+    "Som en varnande berättelse om lojalitet och priset för en förödande lögn",
+    "Som ett historiskt vittnesbörd om ett verkligt krig",
+    "Som en barnvisa"
+   ]
+  }
+ ],
+ "fk-vi-01": [
+  {
+   "q": "Varför skickade kung Hùng ut sina söner för att söka?",
+   "options": [
+    "För att hitta den läckraste rätten att offra åt sina förfäder",
+    "För att hitta guld och skatter till palatset",
+    "För att hitta en hustru åt kungen",
+    "För att kartlägga rikets gränser"
+   ]
+  },
+  {
+   "q": "Vad sa guden till Lang Liêu i hans dröm?",
+   "options": [
+    "Att guld är det mest värdefulla",
+    "Att ris är det mest värdefulla under himlen",
+    "Att han skulle jaga i skogen",
+    "Att han skulle segla till en avlägsen ö"
+   ]
+  },
+  {
+   "q": "Vad tyckte kung Hùng om Lang Liêus kakor?",
+   "options": [
+    "Han tyckte de var för enkla och avvisade dem",
+    "Han blev djupt berörd och prisade deras innebörd",
+    "Han gav dem till tjänarna",
+    "Han bad Lang Liêu tillaga mer exotisk mat istället"
+   ]
+  },
+  {
+   "q": "Vad gör vietnameser med bánh chưng idag?",
+   "options": [
+    "De säljer den bara på landsbygden",
+    "De lindar den varje Tết för att minnas sina rötter",
+    "De gör den inte längre",
+    "De äter den bara på bröllop"
+   ]
+  }
+ ],
+ "fk-vi-02": [
+  {
+   "q": "Varför föll lärarens dotter först för fel bror?",
+   "options": [
+    "Hon föredrog Langs personlighet",
+    "De två bröderna såg exakt likadana ut",
+    "Tân vägrade tala med henne",
+    "Hon hade aldrig träffat någon av bröderna"
+   ]
+  },
+  {
+   "q": "Vad hände med Lang efter missförståndet?",
+   "options": [
+    "Han gifte sig med lärarens andra dotter",
+    "Han lämnade hemmet, föll ihop vid en flod och förvandlades till en sten",
+    "Han flyttade in i palatset",
+    "Han försonades genast med Tân"
+   ]
+  },
+  {
+   "q": "Vad förvandlades Tâns hustru till efter att hon dött under sitt sökande efter honom?",
+   "options": [
+    "Ett kalkstensblock",
+    "Ett areca-träd",
+    "En betelranka",
+    "En flod"
+   ]
+  },
+  {
+   "q": "Vad symboliserar betel och areca i Vietnam idag?",
+   "options": [
+    "Rikedom och god lycka",
+    "Bandet mellan makar och syskon",
+    "Seger i krig",
+    "En varning mot svartsjuka"
+   ]
+  }
+ ],
+ "fk-vi-03": [
+  {
+   "q": "Vad var ovanligt med pojken vid tre års ålder?",
+   "options": [
+    "Han kunde redan rida hästar",
+    "Han kunde inte tala, skratta eller gå, och bara låg stilla",
+    "Han hade redan lämnat hemmet",
+    "Han talade bara med kungen"
+   ]
+  },
+  {
+   "q": "Vilka tre saker bad pojken kungen smida åt honom?",
+   "options": [
+    "Ett träsvärd, en sköld och en pilbåge",
+    "En järnhäst, järnrustning och en järnpiska",
+    "En gyllene krona, en mantel och en flagga",
+    "En båt, ett nät och ett spjut"
+   ]
+  },
+  {
+   "q": "Vad använde krigaren när hans järnpiska gick sönder?",
+   "options": [
+    "Sina bara händer",
+    "Stenar från berget",
+    "Bambu ryckt upp vid vägkanten",
+    "Ett lånat svärd av en bybo"
+   ]
+  },
+  {
+   "q": "Vad hände med krigaren efter att han besegrat inkräktarna?",
+   "options": [
+    "Han slog sig ner och styrde byn",
+    "Han bad kungen om en stor belöning",
+    "Han tog av sig rustningen och flög upp mot himlen med sin häst",
+    "Han dödades i en sista strid"
+   ]
+  }
+ ],
+ "fk-vi-04": [
+  {
+   "q": "Vilka krafter hade Sơn Tinh respektive Thủy Tinh?",
+   "options": [
+    "Sơn Tinh kunde flyga; Thủy Tinh kunde bli osynlig",
+    "Sơn Tinh kunde flytta berg; Thủy Tinh kunde mana fram regn och vind",
+    "Båda kunde bara slåss med svärd",
+    "Sơn Tinh styrde havet; Thủy Tinh styrde himlen"
+   ]
+  },
+  {
+   "q": "Vad hände efter att Sơn Tinh kommit med trolovningsgåvorna först?",
+   "options": [
+    "Kungen ändrade sig och valde Thủy Tinh istället",
+    "Sơn Tinh gifte sig med Mỵ Nương, och Thủy Tinh höjde vattnen i raseri",
+    "Båda friarna avvisades",
+    "Mỵ Nương vägrade gifta sig med någon av dem"
+   ]
+  },
+  {
+   "q": "Varför bygger folket i Röda flodens delta vallar varje år?",
+   "options": [
+    "För att lagra sötvatten för jordbruket",
+    "Eftersom de tror att Thủy Tinh översvämmar floden varje år för att åter slåss mot Sơn Tinh",
+    "För att hedra kung Hùngs födelsedag",
+    "Eftersom Sơn Tinh befaller dem"
+   ]
+  },
+  {
+   "q": "Vilken läxa förmedlar berättelsen om Sơn Tinh och Thủy Tinh?",
+   "options": [
+    "Att rikedom alltid vinner till slut",
+    "Att gudarna aldrig bör förargas",
+    "Att människor håller ut och står fasta mot en hård, återkommande natur",
+    "Att äktenskapstävlingar alltid slutar illa"
+   ]
+  }
+ ],
+ "fk-vi-05": [
+  {
+   "q": "Hur vann Cám belöningen för att ha fångat flest räkor?",
+   "options": [
+    "Hon arbetade dubbelt så hårt som Tấm",
+    "Hon lurade Tấm att böja sig ner och stal sedan hennes räkor",
+    "Hon köpte räkor av en fiskare",
+    "Hon bad sin mor fånga räkorna åt henne"
+   ]
+  },
+  {
+   "q": "Vad sa Buddha åt Tấm att göra med fiskbenen efter att Cám dödat guldfisken?",
+   "options": [
+    "Kasta dem i floden",
+    "Begrava dem under sängens fyra ben",
+    "Ge dem till styvmodern som offergåva",
+    "Bränna dem vid byns helgedom"
+   ]
+  },
+  {
+   "q": "Vilken form tog Tấm innan hon bodde hos den gamla teförsäljerskan?",
+   "options": [
+    "En gyllene sångfågel, ett persikoträ och en vävstol",
+    "En fisk, en fågel och en blomma",
+    "En sko, en häst och en klänning",
+    "En brunn, en trädgård och en lykta"
+   ]
+  },
+  {
+   "q": "Hur kände kungen igen Tấm vid tekiosken?",
+   "options": [
+    "Hon bar sina kungliga dräkter",
+    "Han kände igen den fenixformade betelrullen som bara hon visste hur man vek",
+    "Ett bud berättade var hon fanns",
+    "Hon ropade på honom vid namn"
+   ]
+  }
+ ],
+ "fk-vi-06": [
+  {
+   "q": "Vad gjorde Lạc Long Quân varje gång han kom i land, enligt berättelsen?",
+   "options": [
+    "Han samlade in tribut från byarna",
+    "Han lärde folket jordbruk, husbygge och fiske",
+    "Han bekämpade inkräktare från norr",
+    "Han sökte efter Âu Cơ över bergen"
+   ]
+  },
+  {
+   "q": "Varför bestämde sig Lạc Long Quân och Âu Cơ slutligen att skiljas åt?",
+   "options": [
+    "De hade en dispyt om tronen",
+    "Deras naturer var bundna till två olika världar, havet och bergen, vilket visade sig svårt att förena",
+    "Âu Cơ önskade återvända ensam till sitt älvrike",
+    "De hundra sönerna krävde att bli delade upp"
+   ]
+  },
+  {
+   "q": "Vad kom paret överens om innan de skildes åt?",
+   "options": [
+    "Att deras ättlingar aldrig mer skulle tala med varandra",
+    "Att bergssönerna skulle härska över havssönerna",
+    "Att deras ättlingar alltid skulle betrakta varandra som släkt och hjälpa varandra i svåra tider",
+    "Att de skulle återförenas efter hundra år"
+   ]
+  },
+  {
+   "q": "Vad symboliserar de \"hundra äggen\" i vietnamesiskt kulturminne?",
+   "options": [
+    "Rikedomen hos de arton Hùng-dynastierna",
+    "Släktskapet mellan alla vietnameser, var de än bor",
+    "En varning mot att gifta sig utanför sin egen sort",
+    "Grundandet av just Phong Châu"
+   ]
+  }
+ ],
+ "fk-yue-01": [
+  {
+   "q": "Vilket problem hade folket i Guangzhou innan de odödliga kom?",
+   "options": [
+    "Inget regn och inget kunde växa",
+    "För mycket översvämning",
+    "Ett krig med en grannstad",
+    "Vilda djur som anföll fälten"
+   ]
+  },
+  {
+   "q": "Vad bar varje odödlig?",
+   "options": [
+    "Ett jadesvärd",
+    "En femfärgad risstjälk",
+    "En gyllene klocka",
+    "En trästav"
+   ]
+  },
+  {
+   "q": "Vad hände med de fem vädurarna efter att de odödliga försvunnit?",
+   "options": [
+    "De sprang in i bergen",
+    "De förvandlades till sten",
+    "De flög också tillbaka till himlen",
+    "De åts upp av byborna"
+   ]
+  },
+  {
+   "q": "Vilket smeknamn fick Guangzhou på grund av denna legend?",
+   "options": [
+    "Blomstaden",
+    "Vädurstaden",
+    "Regnstaden",
+    "De odödligas stad"
+   ]
+  }
+ ],
+ "fk-yue-02": [
+  {
+   "q": "Vad gjorde Hou Yi för att rädda världen?",
+   "options": [
+    "Han byggde en stor mur",
+    "Han sköt ner nio solar",
+    "Han besegrade en drake",
+    "Han hittade en magisk brunn"
+   ]
+  },
+  {
+   "q": "Varför åt inte Hou Yi odödlighetspillret genast?",
+   "options": [
+    "Han litade inte på drottningmodern",
+    "Han ville inte lämna sin hustru",
+    "Pillret smakade illa",
+    "Han ville dela det med byborna"
+   ]
+  },
+  {
+   "q": "Varför svalde Chang\\u2019e pillret själv?",
+   "options": [
+    "Hon ville bli mäktig",
+    "Hon var hungrig",
+    "En ond man försökte tvinga henne att lämna ifrån sig det",
+    "Hon ville förena sig med sin man på himlen"
+   ]
+  },
+  {
+   "q": "Vad gör Hou Yi varje mittshöstfestival?",
+   "options": [
+    "Han skjuter en pil mot månen",
+    "Han ställer ut månkakor till Chang\\u2019es ära",
+    "Han bestiger ett berg",
+    "Han tänder lyktor för hennes återkomst"
+   ]
+  }
+ ],
+ "fk-yue-03": [
+  {
+   "q": "Varför slutade kungen av Chu lita på Qu Yuan?",
+   "options": [
+    "Qu Yuan förlorade ett slag",
+    "Han lyssnade på förtal från förrädiska ämbetsmän",
+    "Qu Yuan vägrade skriva dikter åt honom",
+    "Qu Yuan försökte gripa tronen"
+   ]
+  },
+  {
+   "q": "Vilken nyhet nådde Qu Yuan under hans landsflykt?",
+   "options": [
+    "Hans familj hade dött",
+    "Chus huvudstad hade fallit för Qin",
+    "Kungen ville ha honom tillbaka",
+    "En hungersnöd hade drabbat landet"
+   ]
+  },
+  {
+   "q": "Varför kastade fiskarna riskloss i floden?",
+   "options": [
+    "För att mätta sig själva under sökandet",
+    "För att markera platsen där han drunknat",
+    "Så att fiskar och räkor inte skulle äta hans kropp",
+    "Som en offergåva till flodguden"
+   ]
+  },
+  {
+   "q": "Vilken festival växte fram ur denna berättelse?",
+   "options": [
+    "Mittshöstfestivalen",
+    "Drakbåtsfestivalen",
+    "Lyktfestivalen",
+    "Qingming-festivalen"
+   ]
+  }
+ ],
+ "fk-yue-04": [
+  {
+   "q": "Vad gjorde Wong Cho-ping när han träffade den odödlige?",
+   "options": [
+    "Fiskade vid en flod",
+    "Vallade får i bergen",
+    "Studerade i ett tempel",
+    "Odlade ris"
+   ]
+  },
+  {
+   "q": "Vad trodde äldre brodern hade hänt Wong Cho-ping?",
+   "options": [
+    "Han hade blivit rik",
+    "Han hade dött",
+    "Han hade lämnat landet",
+    "Han hade blivit munk i en annan provins"
+   ]
+  },
+  {
+   "q": "Vad gjorde Wong Cho-ping för att bevisa sina krafter för sin bror?",
+   "options": [
+    "Han förvandlade stenar tillbaka till får",
+    "Han botade en sjuk bybo",
+    "Han flög upp i himlen",
+    "Han förutspådde vädret"
+   ]
+  },
+  {
+   "q": "Vad tros Wong Tai Sin göra för hängivna tillbedjare?",
+   "options": [
+    "Bara ge rikedom",
+    "Besvara vad de än uppriktigt ber om",
+    "Bara bota sjukdom",
+    "Skydda sjömän till havs"
+   ]
+  }
+ ],
+ "fk-yue-05": [
+  {
+   "q": "Hur kom det sig att Lo Chuns soldater slutade bo på öarna?",
+   "options": [
+    "De skickades dit för att fiska åt kejsaren",
+    "De flydde dit efter att deras uppror slagits ner",
+    "De var skeppsbrutna sjömän",
+    "De var förvisade brottslingar"
+   ]
+  },
+  {
+   "q": "Enligt legenden, hur såg Lo Ting ut?",
+   "options": [
+    "Helt mänskliga men med grön hud",
+    "Med människoansikten och fiskkroppar, med spädbarnsliknande skrik",
+    "Jättefiskar utan mänskliga drag",
+    "Bevingade varelser som bodde i träd"
+   ]
+  },
+  {
+   "q": "Hur ska Lo Ting ha hjälpt fiskare i närheten?",
+   "options": [
+    "De fångade fisk åt dem",
+    "De ropade för att varna om kommande stormar",
+    "De reparerade skadade båtar",
+    "De guidade skepp genom dimma"
+   ]
+  },
+  {
+   "q": "Hur betraktade fiskarfamiljer runt Lantau-ön traditionellt Lo Ting?",
+   "options": [
+    "Som farliga monster att frukta",
+    "Som havets väktare att hedra med offergåvor",
+    "Som skadedjur som förstörde deras fångst",
+    "Som spioner för en rivaliserande by"
+   ]
+  }
+ ],
+ "fk-yue-06": [
+  {
+   "q": "Hur uppstod Apkungen?",
+   "options": [
+    "Han föddes av apföräldrar",
+    "Han sprang fram ur ett stenägg",
+    "Han skapades av Jadekejsaren",
+    "Han var en människa förvandlad av magi"
+   ]
+  },
+  {
+   "q": "Hur fick Apkungen sin Ruyi guldbandade stav?",
+   "options": [
+    "Han smidde den själv",
+    "Han vann den i en tävling mot Drakkungen",
+    "Han krävde den av Drakkungen, som inte hade något annat val än att ge den",
+    "Den var en gåva från Jadekejsaren"
+   ]
+  },
+  {
+   "q": "Varför blev Apkungen rasande över att vara \"Hästarnas beskyddare\"?",
+   "options": [
+    "Han upptäckte att det var den lägsta posten i himmelska hovet",
+    "Hästarna anföll honom",
+    "Han ville istället bli general",
+    "Jadekejsaren vägrade betala honom"
+   ]
+  },
+  {
+   "q": "Vad fick Jadekejsaren att skicka hundra tusen himmelska soldater mot Apkungen?",
+   "options": [
+    "Han vägrade återvända till Blomfrukt-berget",
+    "Han stal odödlighetspersikor och elixir, och förstörde persikbanketten",
+    "Han anföll Drakkungens palats igen",
+    "Han försökte stjäla Jadekejsarens tron"
+   ]
+  }
+ ],
+ "fk-zh-01": [
+  {
+   "q": "Vad tog modern med sig hem?",
+   "options": [
+    "En korg päron",
+    "En korg äpplen",
+    "En säck ris",
+    "En ask godis"
+   ]
+  },
+  {
+   "q": "Vilket päron tog Kong Rong?",
+   "options": [
+    "Det största",
+    "Det minsta",
+    "Två medelstora",
+    "Inget alls"
+   ]
+  },
+  {
+   "q": "Varför sa Kong Rong att han tog det lilla päronet?",
+   "options": [
+    "Han tyckte inte om päron",
+    "Han var inte hungrig",
+    "Eftersom han var yngst och hans bröder äldre",
+    "Eftersom hans mor sa åt honom"
+   ]
+  },
+  {
+   "q": "Vilken läxa brukar folk dra av denna berättelse?",
+   "options": [
+    "Ät alltid snabbt",
+    "Dela med dig och ge goda saker till andra",
+    "Lita aldrig på dina bröder",
+    "Stor frukt smakar bättre"
+   ]
+  }
+ ],
+ "fk-zh-02": [
+  {
+   "q": "Var lekte barnen?",
+   "options": [
+    "I skolan",
+    "I en trädgård med ett stort vattenkrus",
+    "Vid en flod",
+    "I ett kök"
+   ]
+  },
+  {
+   "q": "Vad hände med ett av barnen?",
+   "options": [
+    "Han klättrade upp i ett träd",
+    "Han föll ner i vattenkruset",
+    "Han sprang hem",
+    "Han bröt sönder en leksak"
+   ]
+  },
+  {
+   "q": "Vad gjorde Sima Guang för att rädda sin vän?",
+   "options": [
+    "Han hoppade ner i kruset",
+    "Han kallade på en vuxen och väntade",
+    "Han kastade en sten för att krossa kruset",
+    "Han välte kruset"
+   ]
+  },
+  {
+   "q": "Vilken läxa lär berättelsen ut?",
+   "options": [
+    "Lek aldrig nära vatten",
+    "Att hålla sig lugn och tänka klart hjälper i fara",
+    "Vuxna behövs alltid för att lösa problem",
+    "Stora stenar är farliga"
+   ]
+  }
+ ],
+ "fk-zh-03": [
+  {
+   "q": "Vad orsakade att himlen skadades?",
+   "options": [
+    "Ett meteornedslag",
+    "Gonggong som kraschade in i berget Buzhou efter att ha förlorat en strid",
+    "Nüwas eget misstag",
+    "En stor torka"
+   ]
+  },
+  {
+   "q": "Vilka katastrofer följde efter himlens kollaps?",
+   "options": [
+    "Bara mörker föll",
+    "Översvämningar forsade ner och odjur anföll människor",
+    "Solen försvann",
+    "Jorden blev kallare"
+   ]
+  },
+  {
+   "q": "Hur lagade Nüwa himlen?",
+   "options": [
+    "Hon vävde ihop den med silketråd",
+    "Hon smälte femfärgade stenar och fyllde sprickorna",
+    "Hon bad eldguden om hjälp",
+    "Hon bad till solen"
+   ]
+  },
+  {
+   "q": "Vad använde Nüwa för att stötta himlens hörn?",
+   "options": [
+    "Träpelare",
+    "Bergstoppar",
+    "En jättesköldpaddas fyra ben",
+    "Järnkedjor"
+   ]
+  }
+ ],
+ "fk-zh-04": [
+  {
+   "q": "Hur lyckades Kohanterlaren gifta sig med Vävflickan?",
+   "options": [
+    "Han bad Jadekejsaren direkt",
+    "Han gömde hennes dräkt som den gamle oxen rådde",
+    "Han byggde henne ett palats",
+    "Hon valde honom av en slump"
+   ]
+  },
+  {
+   "q": "Varför blev Jadekejsaren arg?",
+   "options": [
+    "Kohanterlaren stal en skatt",
+    "En fe hade gift sig med en dödlig i hemlighet",
+    "Oxen kunde tala",
+    "Barnen misskötte sig"
+   ]
+  },
+  {
+   "q": "Vad skapade Västerns drottningmoder för att skilja paret åt?",
+   "options": [
+    "En bergskedja",
+    "En eldmur",
+    "Silverfloden (Vintergatan)",
+    "En djup skog"
+   ]
+  },
+  {
+   "q": "Hur kan Kohanterlaren och Vävflickan träffas en gång om året?",
+   "options": [
+    "Jadekejsaren bär dem personligen",
+    "Skator bildar en bro över floden",
+    "De simmar över",
+    "En drake för dem över"
+   ]
+  }
+ ],
+ "fk-zh-05": [
+  {
+   "q": "Vilket problem orsakade de två bergen för den gamle mannen?",
+   "options": [
+    "De blockerade jordbruksmark",
+    "De blockerade resor till och från hans hem",
+    "De orsakade översvämningar",
+    "De skymde solen"
+   ]
+  },
+  {
+   "q": "Vilken invändning hade den gamle mannens hustru?",
+   "options": [
+    "Hon tyckte planen var farlig",
+    "Hon betvivlade hans styrka och frågade vart jorden skulle ta vägen",
+    "Hon ville flytta bort istället",
+    "Hon vägrade låta sina söner hjälpa till"
+   ]
+  },
+  {
+   "q": "Vad hånade \"den vise gamle mannen\" den dåraktige gamle mannen för?",
+   "options": [
+    "Att vara för rik",
+    "Att försöka något bortom hans åldrade styrka",
+    "Att vägra resa",
+    "Att tala med andar"
+   ]
+  },
+  {
+   "q": "Hur löstes berättelsen till slut?",
+   "options": [
+    "Den gamle mannen gav upp",
+    "Hans familj övergav projektet",
+    "Jadekejsaren lät bära bort bergen",
+    "En översvämning sköljde bort bergen"
+   ]
+  }
+ ],
+ "fk-zh-06": [
+  {
+   "q": "Vad hände med Nüwa medan hon seglade?",
+   "options": [
+    "Hon nådde en ny kontinent",
+    "En storm kapsejsade hennes båt och hon drunknade",
+    "Hon räddades av fiskare",
+    "Hon somnade och drev iland"
+   ]
+  },
+  {
+   "q": "Vad förvandlades Nüwas ande till?",
+   "options": [
+    "En drake",
+    "En märklig fågel kallad Jingwei",
+    "En stenstaty",
+    "Ett träd"
+   ]
+  },
+  {
+   "q": "Vilket löfte gav Jingwei?",
+   "options": [
+    "Att undvika havet för alltid",
+    "Att fylla igen havet så att andra inte skulle dö i det",
+    "Att bli människa igen",
+    "Att varna sjömän med sitt skri"
+   ]
+  },
+  {
+   "q": "Vad symboliserar uttrycket \"Jingwei fyller havet\"?",
+   "options": [
+    "Hänsynslös fara",
+    "Ihärdig beslutsamhet mot omöjliga odds",
+    "Naturens makt över människor",
+    "En varning mot övermod"
+   ]
+  }
+ ],
+ "st-b1-01": [
+  {
+   "q": "Varför var tåget sent?",
+   "options": [
+    "Det var ett problem med spåren",
+    "Det regnade",
+    "Föraren var sjuk",
+    "Det var för många passagerare"
+   ]
+  },
+  {
+   "q": "Vad erbjöd mannen Ana och Marco?",
+   "options": [
+    "Lite vatten",
+    "En tidning",
+    "En bit bröd",
+    "Sin plats"
+   ]
+  },
+  {
+   "q": "Vad arbetade mannen med?",
+   "options": [
+    "Han körde tåg",
+    "Han sålde grönsaker på marknaden",
+    "Han arbetade på fartyg",
+    "Han var lärare"
+   ]
+  },
+  {
+   "q": "Hur kände sig Ana i slutet av berättelsen?",
+   "options": [
+    "Arg över förseningen",
+    "Trött och uttråkad",
+    "Glad att de träffat en vänlig främling",
+    "Orolig för att missa staden"
+   ]
+  }
+ ],
+ "st-b1-02": [
+  {
+   "q": "Varför var Sam nervös?",
+   "options": [
+    "Han tyckte inte om soppa",
+    "Han kände inte Yukis familj så väl",
+    "Han var sen till middagen",
+    "Han glömde en present"
+   ]
+  },
+  {
+   "q": "Vad förklarade Sam för Yukis far?",
+   "options": [
+    "Hur skeppet fungerade",
+    "Att Rosetta besökte många städer och hjälpte människor",
+    "Att han var trött",
+    "Att han inte kunde äta ris"
+   ]
+  },
+  {
+   "q": "Vem gjorde det speciella tårtreceptet?",
+   "options": [
+    "Yuki",
+    "Sam",
+    "Yukis mor, efter sin egen mors recept",
+    "En restaurang i byn"
+   ]
+  },
+  {
+   "q": "Vad sa Sam om familjer?",
+   "options": [
+    "De är alla olika",
+    "De är varma och generösa överallt",
+    "De äter för mycket",
+    "De pratar för lite"
+   ]
+  }
+ ],
+ "st-b2-01": [
+  {
+   "q": "Varför ville Marco ha mekanikerjobbet?",
+   "options": [
+    "Han behövde pengar akut",
+    "Han var nyfiken på hur markarbetare löste problem utan avancerade verktyg",
+    "Ana bad honom personligen",
+    "Han ville lämna Rosetta permanent"
+   ]
+  },
+  {
+   "q": "Vad skulle Marco göra om en maskin gick sönder utan reservdelar?",
+   "options": [
+    "Ringa Rosetta för delar",
+    "Ge upp reparationen",
+    "Improvisera med vad som fanns tillgängligt",
+    "Vänta på att nya delar skulle komma"
+   ]
+  },
+  {
+   "q": "Vad sa Ana stack ut hos Marco jämfört med andra sökande?",
+   "options": [
+    "Hans tekniska certifikat",
+    "Hans självförtroende",
+    "Hans ärlighet, eftersom de flesta sökande överdrev",
+    "Hans punktlighet"
+   ]
+  },
+  {
+   "q": "Vad hände några dagar efter intervjun?",
+   "options": [
+    "Marco blev refuserad",
+    "Marco fick en inbjudan tillbaka för en provvecka",
+    "Verkstaden stängde",
+    "Ana lämnade staden"
+   ]
+  }
+ ],
+ "st-b2-02": [
+  {
+   "q": "Varför önskade Yuki att hon tagit med sig något att läsa?",
+   "options": [
+    "Hon var trött på tidningen",
+    "Hon hade inte väntat sig en så lång väntan",
+    "Sjuksköterskan sa åt henne",
+    "Sam bad henne läsa för honom"
+   ]
+  },
+  {
+   "q": "Vad berättade den äldre mannen för Yuki om sina besök?",
+   "options": [
+    "Han besökte för första gången",
+    "Han kom varje månad för en rutinkontroll",
+    "Han arbetade på sjukhuset",
+    "Han väntade på sin dotter"
+   ]
+  },
+  {
+   "q": "Vad var egentligen fel på Sam?",
+   "options": [
+    "En allvarlig sjukdom",
+    "Ingenting alls",
+    "En infektion som gick att behandla med antibiotika",
+    "Ett brutet ben"
+   ]
+  },
+  {
+   "q": "Vad sa Sam att sjukhus verkade väcka fram hos människor?",
+   "options": [
+    "Otålighet",
+    "En tyst vänlighet",
+    "Rädsla",
+    "Tristess"
+   ]
+  }
+ ],
+ "st-c1-01": [
+  {
+   "q": "Vad var bokhandlarens huvudargument?",
+   "options": [
+    "Reglerna gynnade stora försäljare orättvist",
+    "Utan tillsyn hade marknaden blivit kaotisk och opålitlig",
+    "Han ville stänga sin butik",
+    "Han stödde fruktförsäljaren fullt ut"
+   ]
+  },
+  {
+   "q": "Vilken anklagelse framförde fruktförsäljaren efter sin andra kopp kaffe?",
+   "options": [
+    "Att bokhandlaren ljög",
+    "Att rådet hade vikit sig för påtryckningar från rikare köpmän",
+    "Att kaféet serverade dåligt kaffe",
+    "Att reglerna inte fanns"
+   ]
+  },
+  {
+   "q": "Hur lugnade kaféägaren ner situationen?",
+   "options": [
+    "Genom att be dem gå",
+    "Genom att ringa myndigheterna",
+    "Genom att bjuda på bakverk med en syrlig kommentar",
+    "Genom att helt ignorera grälet"
+   ]
+  },
+  {
+   "q": "Vilken gemensam grund fann de två männen till slut?",
+   "options": [
+    "Att marknaden borde stängas",
+    "Att rådet hade misslyckats med att rådfråga vanliga handlare",
+    "Att priserna borde fastställas av staten",
+    "Att fruktförsäljaren hade rätt hela tiden"
+   ]
+  }
+ ],
+ "st-c2-01": [
+  {
+   "q": "Vad gjorde Marco på Sams sista morgon som slog Sam som ovanligt?",
+   "options": [
+    "Skrek åt passagerare",
+    "Putsade en minnesplakett i mässing med ovanlig sentimentalitet",
+    "Vägrade tala med Sam",
+    "Packade sina tillhörigheter för att åka"
+   ]
+  },
+  {
+   "q": "Varför var det norrgående tåget försenat?",
+   "options": [
+    "Ett signalfel",
+    "Dåligt väder",
+    "Brist på passagerare",
+    "Rosetta blockerade spåren"
+   ]
+  },
+  {
+   "q": "Vad gjorde Marco istället för att bara skaka hand med Sam?",
+   "options": [
+    "Han gav honom en gåva",
+    "Han vandrade iväg utan ett ord",
+    "Han erbjöd en klumpig kram och kallade det ett undantag",
+    "Han bjöd in honom att stanna permanent"
+   ]
+  },
+  {
+   "q": "Vilken idé tillskrev Sam Marcos kommentar om asymmetri?",
+   "options": [
+    "Att resenärer alltid är lyckligare än de som stannar",
+    "Att en person bär minnet vidare medan den andra vaktar platsen där det hände",
+    "Att avsked bör undvikas helt",
+    "Att rutin är överlägsen nyhet"
+   ]
+  }
+ ]
+}
