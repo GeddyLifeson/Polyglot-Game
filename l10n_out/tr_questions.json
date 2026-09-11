@@ -1,0 +1,4790 @@
+{
+ "fk-ar-01": [
+  {
+   "q": "Juha eşekten ilk seferinde neden indi?",
+   "options": [
+    "Çünkü eşek yorgundu",
+    "Çünkü bazı adamlar oğlu yürürken kendisinin binmesini eleştirdi",
+    "Çünkü oğlu tek başına binmek istedi",
+    "Çünkü yol çok dikti"
+   ]
+  },
+  {
+   "q": "Ağacın altındaki yaşlı adam şikayet ettikten sonra Juha ile oğlu ne yapmaya karar verdi?",
+   "options": [
+    "Eşeği satmak",
+    "İkisi birlikte eşeğe binmek",
+    "İkisi de yürüyüp eşeğin yanlarında yüksüz gitmesine izin vermek",
+    "Eve geri dönmek"
+   ]
+  },
+  {
+   "q": "Juha oğluna hangi dersi verdi?",
+   "options": [
+    "Yabancıları asla dinleme",
+    "Herkesi memnun etmek imkansızdır",
+    "Eşeğe her zaman tek başına bin",
+    "En iyisini çiftçiler bilir"
+   ]
+  },
+  {
+   "q": "Son paragrafa göre bu öykü zamanla neye dönüştü?",
+   "options": [
+    "Şehirde bir kanuna",
+    "Düğünlerde söylenen bir şarkıya",
+    "Çocuklara ders vermek için anlatılan bir masala",
+    "Juha'nın oğlunun yazdığı bir şiire"
+   ]
+  }
+ ],
+ "fk-ar-02": [
+  {
+   "q": "Hayvanlar aslanla ne konusunda anlaştı?",
+   "options": [
+    "Aslana karşı birlikte savaşacaklardı",
+    "Aslan geri kalanları rahat bıraksın diye ona her gün bir hayvan gönderilecekti",
+    "Ormanı terk edeceklerdi",
+    "Aslana et yerine bal vereceklerdi"
+   ]
+  },
+  {
+   "q": "Tavşan aslana neden geç kaldığını söyledi?",
+   "options": [
+    "Yolunu kaybettiğini söyledi",
+    "Yolda kendini kral ilan eden başka bir aslanın onu yemeye çalıştığını söyledi",
+    "Hasta olduğunu söyledi",
+    "Diğer hayvanların onu durdurduğunu söyledi"
+   ]
+  },
+  {
+   "q": "Aslan kuyuda ne gördü?",
+   "options": [
+    "Bir balık",
+    "Başka bir tavşan",
+    "Rakip bir aslan sandığı kendi yansımasını",
+    "Hiçbir şey"
+   ]
+  },
+  {
+   "q": "Son paragrafa göre hikaye hangi dersi veriyor?",
+   "options": [
+    "Güç her zaman kazanır",
+    "Zeka güce üstün gelebilir",
+    "Aslanlar su içmemelidir",
+    "Tavşanlar en hızlı hayvanlardır"
+   ]
+  }
+ ],
+ "fk-ar-03": [
+  {
+   "q": "Sindbad'ın yolculuğu başlamadan önce ne oldu?",
+   "options": [
+    "Bir miras aldı, hızla harcadı ve deniz yoluyla ticaret yapmaya karar verdi",
+    "Tüccar olmak isteyen bir balıkçıydı",
+    "Korsanlar tarafından gemiye zorla bindirildi",
+    "Babasından bir gemi miras aldı"
+   ]
+  },
+  {
+   "q": "Geminin mürettebatının indiği ada aslında ne çıktı?",
+   "options": [
+    "Yüzen bir sal",
+    "Uyuyan devasa bir balina",
+    "Bir kum bankı",
+    "Terk edilmiş bir kale"
+   ]
+  },
+  {
+   "q": "Sindbad ikinci adaya nasıl ulaştı?",
+   "options": [
+    "Geçmekte olan bir gemi tarafından kurtarıldı",
+    "Dalgalar onu bir tahta parçasının üzerinde oraya sürükledi",
+    "Tüm yolu isteyerek yüzdü",
+    "Onu başka bir balina taşıdı"
+   ]
+  },
+  {
+   "q": "Sindbad sonunda Bağdat'a döndüğünde ne yaptı?",
+   "options": [
+    "Denizciliği tamamen bıraktı",
+    "At terbiyecisi oldu",
+    "Çok geçmeden yeniden bir deniz yolculuğuna çıktı",
+    "Bağdat'tan kalıcı olarak ayrıldı"
+   ]
+  }
+ ],
+ "fk-ar-04": [
+  {
+   "q": "Ali Baba kırk hırsızın ne yaptığına tanık oldu?",
+   "options": [
+    "Ormanda bir ceset gömdüklerine",
+    "Bir kayadaki gizli kapıyı açan sihirli bir söz söylediklerine",
+    "Geçmekte olan bir kervana saldırdıklarına",
+    "Çalıntı altın yüzünden tartıştıklarına"
+   ]
+  },
+  {
+   "q": "Kasım, Ali Baba'nın sırrını nasıl öğrendi?",
+   "options": [
+    "Ali Baba ona doğrudan söyledi",
+    "Karısı, ödünç aldığı terazideki mumda yapışık bir altın para buldu",
+    "Ali Baba'yı ormana kadar takip etti",
+    "Bir hırsız ona itiraf etti"
+   ]
+  },
+  {
+   "q": "Mağarada Kasım'a ne oldu?",
+   "options": [
+    "Hazineyle birlikte kaçtı",
+    "Dışarı çıkmak için gereken sihirli sözcükleri unuttu ve sonradan hırsızlar tarafından öldürüldü",
+    "Hırsızlarla arkadaş oldu",
+    "Hazineyi saklayıp güvenle döndü"
+   ]
+  },
+  {
+   "q": "Marjana hırsızları nasıl alt etti?",
+   "options": [
+    "Onları kralın muhafızlarına ihbar etti",
+    "Saklandıkları küplere kaynar yağ döktü",
+    "Onları mağaraya kilitledi",
+    "Onları şehirden ayrılmaları için kandırdı"
+   ]
+  }
+ ],
+ "fk-ar-05": [
+  {
+   "q": "Kralın habercisi Hatim'in çadırına neden geldi?",
+   "options": [
+    "Onunla at takas etmek için",
+    "Ünlü cömertliğini sınamak için değerli kısrağını istemek için",
+    "Onu kralın sarayına davet etmek için",
+    "Onu bir şiir yarışmasına davet etmek için"
+   ]
+  },
+  {
+   "q": "Hatim tek kısrağını neden kesti?",
+   "options": [
+    "O gece hiç yiyeceği olmadığı için konuğunu başka türlü besleyemedi",
+    "Kısrak hastaydı ve zaten ölmek üzereydi",
+    "Kraldan bir ödül istiyordu",
+    "Haberci bunu talep etti"
+   ]
+  },
+  {
+   "q": "Hatim her gece bir tepede neden büyük bir ateş yaktı?",
+   "options": [
+    "Ailesi için yemek pişirmek için",
+    "Yolunu kaybetmiş yolcuları çadırına, yiyecek ve barınağa yönlendirmek için",
+    "Baskınlar sırasında kabilesine işaret vermek için",
+    "Vahşi hayvanları uzak tutmak için"
+   ]
+  },
+  {
+   "q": "Son paragrafa göre Hatim nesiller boyunca neden hatırlanıyor?",
+   "options": [
+    "Çünkü çevresindeki herkesten daha zengindi",
+    "Çünkü zor zamanlarda bile cömertliği sarsılmaz bir ilke haline getirdi",
+    "Çünkü birçok savaş kazandı",
+    "Çünkü çağının en ünlü şiirlerini yazdı"
+   ]
+  }
+ ],
+ "fk-ar-06": [
+  {
+   "q": "Antarah kabilesinde başlangıçta neden tam olarak tanınmadı?",
+   "options": [
+    "Rakip bir kabilede doğmuştu",
+    "Annesi Habeşli bir köle kadındı, bu yüzden \"Banu Abs'ın kölesi\" diye çağrılıyordu",
+    "Savaşlara katılmayı reddetti",
+    "Tanınamayacak kadar gençti"
+   ]
+  },
+  {
+   "q": "Antarah özgürlüğünü ve Shaddad'ın oğlu olarak tanınmasını nasıl kazandı?",
+   "options": [
+    "Babasına fidye ödedi",
+    "Çalınan develeri geri almak için amansızca savaştı ve babasını onu herkesin önünde sahiplenmeye yöneltti",
+    "Abla ile gizlice evlendi",
+    "Bir şiir yarışması kazandı"
+   ]
+  },
+  {
+   "q": "Malik, Abla'yı Antarah'la evlendirmek için ne gibi imkansız bir koşul koydu?",
+   "options": [
+    "Antarah'ın Malik'i tek düelloda yenmesi gerekiyordu",
+    "Antarah'ın bin adet nadir kızıl alevli dişi deve getirmesi gerekiyordu",
+    "Antarah'ın önce şair olması gerekiyordu",
+    "Antarah'ın kabilesini sonsuza dek terk etmesi gerekiyordu"
+   ]
+  },
+  {
+   "q": "Son paragrafa göre Antarah Arap mirasında neyi simgeliyor?",
+   "options": [
+    "Hedeflerine hiç ulaşamamış trajik bir figürü",
+    "Doğumu değil kendi başarılarıyla onur ve özgürlük kazanan, aşkla dolu şövalyeyi",
+    "Herkesin korktuğu acımasız bir fatihi",
+    "Statüsünü parayla satın almış zengin bir tüccarı"
+   ]
+  }
+ ],
+ "fk-de-01": [
+  {
+   "q": "Değirmenci krala kızı hakkında ne söyledi?",
+   "options": [
+    "Samanı altına çevirebildiğini",
+    "Sihirli ekmek pişirebildiğini",
+    "Güzel şarkı söyleyebildiğini",
+    "İpek kumaş dokuyabildiğini"
+   ]
+  },
+  {
+   "q": "Kız kendisine ilk kez yardım eden küçük adama ne verdi?",
+   "options": [
+    "Bir altın para",
+    "Kolyesini",
+    "Ayakkabılarını",
+    "Bir somun ekmek"
+   ]
+  },
+  {
+   "q": "Kız üçüncü gece küçük adama ne söz verdi?",
+   "options": [
+    "Krallığın yarısını",
+    "İlk çocuğunu",
+    "Onunla evlenmeyi",
+    "Yüzüğünü"
+   ]
+  },
+  {
+   "q": "Kraliçe küçük adamın adını nasıl öğrendi?",
+   "options": [
+    "Kendisi söyledi",
+    "Bir kitapta okudu",
+    "Bir haberci onun ormanda şarkı söylerken adını söylediğini duydu",
+    "Kral tahmin etti"
+   ]
+  }
+ ],
+ "fk-de-02": [
+  {
+   "q": "Anne keçi çocuklarını neden uyardı?",
+   "options": [
+    "Kötü kurt yüzünden",
+    "Bir fırtına yüzünden",
+    "Avcılar yüzünden",
+    "Bir yangın yüzünden"
+   ]
+  },
+  {
+   "q": "Kurt sesini yumuşak göstermek için ne yaptı?",
+   "options": [
+    "Sıcak süt içti",
+    "Tebeşir yedi",
+    "Bir şarkı söyledi",
+    "Fısıldadı"
+   ]
+  },
+  {
+   "q": "Anne keçi altı yavrusunu nasıl kurtardı?",
+   "options": [
+    "Kurdu korkutup kaçırdı",
+    "Karnını yarıp onları kurtardı",
+    "Onu kuyuya kandırdı",
+    "Bir avcı çağırdı"
+   ]
+  },
+  {
+   "q": "Kurt sonunda nasıl öldü?",
+   "options": [
+    "Bir avcı tarafından vuruldu",
+    "Bir ağaçtan düştü",
+    "Karnındaki taşlar onu kuyuya çekti",
+    "Kaçtı ve bir daha dönmedi"
+   ]
+  }
+ ],
+ "fk-de-03": [
+  {
+   "q": "Hamelin kasabasının sorunu neydi?",
+   "options": [
+    "Fare istilası",
+    "Kuraklık",
+    "Bir hastalık salgını",
+    "Bir sel"
+   ]
+  },
+  {
+   "q": "Belediye başkanı kavalcıya ödeme yapmayı neden reddetti?",
+   "options": [
+    "Hiç parası kalmamıştı",
+    "Tam meblağın haklı olmadığını düşündü",
+    "Kavalcının işi yaptığına inanmadı",
+    "Ona daha sonra ödemek istedi"
+   ]
+  },
+  {
+   "q": "Hamelin'deki çocukların çoğuna ne oldu?",
+   "options": [
+    "Bir dağın içine götürülüp kayboldular",
+    "Başka bir kasabaya kaçtılar",
+    "Belediye başkanı tarafından kurtarıldılar",
+    "Kilisede uyuyakaldılar"
+   ]
+  },
+  {
+   "q": "O günden sonra Hamelin'de hangi kural kaldı?",
+   "options": [
+    "Kasabaya fare sokulmasına izin verilmedi",
+    "Çocukların geçtiği sokakta müzik çalınmasına izin verilmedi",
+    "Bir daha festival düzenlenmedi",
+    "Kasabaya yabancıların girmesine izin verilmedi"
+   ]
+  }
+ ],
+ "fk-de-04": [
+  {
+   "q": "Till Eulenspiegel neyle tanınırdı?",
+   "options": [
+    "Şaka yapmak için talimatları harfiyen uygulamakla",
+    "Almanya'nın en iyi ekmeğini pişirmekle",
+    "Yolculara fal bakmakla",
+    "Turnuvalarda savaşmakla"
+   ]
+  },
+  {
+   "q": "Till ekmek yerine ne pişirdi?",
+   "options": [
+    "Hiçbir şey",
+    "Baykuş ve maymun şekilleri",
+    "Çiftlik hayvanları şeklinde somunlar",
+    "Yanık, yenmeyecek hamur"
+   ]
+  },
+  {
+   "q": "Braunschweig sakinleri garip hamur işlerine nasıl tepki verdi?",
+   "options": [
+    "Satın almayı reddettiler",
+    "Belediye başkanına şikayet ettiler",
+    "Merak yüzünden satın aldılar",
+    "Para iadesi istediler"
+   ]
+  },
+  {
+   "q": "Till fırıncıdan ayrıldıktan sonra ne yaptı?",
+   "options": [
+    "Braunschweig'a kalıcı olarak yerleşti",
+    "Özür diledi ve şaka yapmayı bıraktı",
+    "Yoluna devam edip başka kasabalarda şakalar yaptı",
+    "Fırıncı oldu"
+   ]
+  }
+ ],
+ "fk-de-05": [
+  {
+   "q": "Sandalcılar Loreley kayasından neden korkardı?",
+   "options": [
+    "Orada saklanan korsanlar yüzünden",
+    "Akıntı tehlikeli olduğu ve birçok tekne orada battığı için",
+    "Bir kral tarafından lanetlendiği söylendiği için",
+    "Ren Nehri'ndeki tek geçidi kapattığı için"
+   ]
+  },
+  {
+   "q": "Efsaneye göre kayanın yanında neden bu kadar çok tekne battı?",
+   "options": [
+    "Alacakaranlıkta her zaman bir fırtına çıkardı",
+    "Sandalcılar genç kızın şarkısıyla dikkatlerini yitirirdi",
+    "Nehir büyük tekneler için çok dardı",
+    "Kayanın kendisi suya doğru hareket ederdi"
+   ]
+  },
+  {
+   "q": "Loreley son kez kayanın tepesine ulaştığında ne yaptı?",
+   "options": [
+    "Son bir şarkı söyleyip ormana kayboldu",
+    "Kayıp sevgilisinin teknesini gördü ve kendini nehre attı",
+    "Kontun askerleri tarafından kurtarıldı",
+    "Bir kuşa dönüşüp uçup gitti"
+   ]
+  },
+  {
+   "q": "Loreley efsanesini Ren bölgesinin çok ötesinde kim ünlü yaptı?",
+   "options": [
+    "Ünlü şiiriyle Heinrich Heine",
+    "Ortaçağlı bir vakanüvis",
+    "Grimm Kardeşler",
+    "Yerli bir balıkçı"
+   ]
+  }
+ ],
+ "fk-de-06": [
+  {
+   "q": "Barbarossa'nın savaşta ölmek yerine başına geldiği söylenen şey nedir?",
+   "options": [
+    "Doğaüstü güçler tarafından geleceğe dönüşünü beklemek üzere dağın içine taşındı",
+    "Sessizce bir manastıra çekildi",
+    "Kendi oğlu tarafından ihanete uğrayıp hapsedildi",
+    "Denize açılıp bir daha görülmedi"
+   ]
+  },
+  {
+   "q": "Çoban, kargaların hâlâ dağın etrafında döndüğünü doğruladığında Barbarossa'nın söylediği rivayet edilen söz neydi?",
+   "options": [
+    "Hemen uyanacağını",
+    "Zamanı gelmeden önce yüz yıl daha uyuması gerektiğini",
+    "Kargaların öldürülmesi gerektiğini",
+    "Çobanın bir daha asla geri dönmemesi gerektiğini"
+   ]
+  },
+  {
+   "q": "Barbarossa efsanesi on dokuzuncu yüzyılda nasıl değişti?",
+   "options": [
+    "Tamamen unutuldu",
+    "Tarihçiler tarafından yalan diye reddedildi",
+    "Alman siyasi birliği özlemine bağlı bir canlanma yaşadı",
+    "Farklı, ilgisiz bir efsaneyle ilişkilendirildi"
+   ]
+  },
+  {
+   "q": "Metne göre Kyffhäuser'i ziyaret edenler bugün sembolik olarak neyi arıyor?",
+   "options": [
+    "Dağda saklı olduğu söylenen gömülü hazineyi",
+    "Uyanışının daha iyi bir çağı başlatacağı uyuyan imparatoru",
+    "Kutsal bir kaynakta hastalığa çare",
+    "Efsanedeki kargaların mezarını"
+   ]
+  }
+ ],
+ "fk-el-01": [
+  {
+   "q": "Kaplumbağa tavşana ne önerdi?",
+   "options": [
+    "Bir yarış",
+    "Gölde yüzmek",
+    "Birlikte yemek yemek",
+    "Özel bir şey değil"
+   ]
+  },
+  {
+   "q": "Tavşan koşmayı neden bıraktı?",
+   "options": [
+    "Dinlenmek için bol zamanı olduğunu düşündü",
+    "Ormanda kayboldu",
+    "Yaralandı",
+    "Bir şeyler yemek istedi"
+   ]
+  },
+  {
+   "q": "Tavşan uyurken kaplumbağa ne yaptı?",
+   "options": [
+    "Bitiş çizgisine doğru istikrarlı bir şekilde yürümeye devam etti",
+    "Onu uyandırdı",
+    "Geri döndü",
+    "Onu bekledi"
+   ]
+  },
+  {
+   "q": "Hikayenin dersi nedir?",
+   "options": [
+    "İstikrarlı çaba acelenin önüne geçer",
+    "Hız her zaman kazanır",
+    "Uyumak tehlikelidir",
+    "Hayvanlar yarışmamalıdır"
+   ]
+  }
+ ],
+ "fk-el-02": [
+  {
+   "q": "Karınca çalışırken ağustosböceği ne yapıyordu?",
+   "options": [
+    "Bir dalda şarkı söylüyordu",
+    "Uyuyordu",
+    "O da yiyecek topluyordu",
+    "Yuva yapıyordu"
+   ]
+  },
+  {
+   "q": "Ağustosböceği neden hiç yiyecek toplamadı?",
+   "options": [
+    "Yazın hiç bitmeyeceğine inanıyordu",
+    "Toplayacak yiyeceği yoktu",
+    "Hastaydı",
+    "Karıncaya yardım ediyordu"
+   ]
+  },
+  {
+   "q": "Ağustosböceği kışın karıncadan ne istedi?",
+   "options": [
+    "Biraz yiyecek",
+    "Uyuyacak sıcak bir yer",
+    "Ailesini bulmakta yardım",
+    "Para"
+   ]
+  },
+  {
+   "q": "Hikaye ne öğretiyor?",
+   "options": [
+    "Geleceğe hazırlanmanın ne kadar önemli olduğunu",
+    "Şarkı söylemenin çalışmaktan daha önemli olduğunu",
+    "Karıncaların bencil olduğunu",
+    "Kışın hiç gerçekten gelmediğini"
+   ]
+  }
+ ],
+ "fk-el-03": [
+  {
+   "q": "Daedalus ve Icarus karadan ya da denizden neden kaçamadı?",
+   "options": [
+    "Kral Minos her iki yolu da bekletiyordu",
+    "Tekneleri yoktu",
+    "Yolu bilmiyorlardı",
+    "Icarus ayrılmayı reddetti"
+   ]
+  },
+  {
+   "q": "Daedalus, Icarus'a hangi uyarıyı yaptı?",
+   "options": [
+    "Ne çok alçak ne de çok yüksek uçmamasını",
+    "Güneşe bakmamasını",
+    "Gece uçmamasını",
+    "Denizin üzerinden uçmamasını"
+   ]
+  },
+  {
+   "q": "Icarus'un kanatlarındaki balmumu neden eridi?",
+   "options": [
+    "Güneşe çok yaklaştı",
+    "Bir fırtınanın içinden uçtu",
+    "Çok hızlı uçtu",
+    "Çok sert indi"
+   ]
+  },
+  {
+   "q": "'Güneşe çok yaklaşmak' deyimi bugün ne anlama gelir?",
+   "options": [
+    "Aşırı hırs yüzünden tehlikeli riskler almak",
+    "Çok uzağa seyahat etmek",
+    "Çok sıkı çalışmak",
+    "Çok cesur olmak"
+   ]
+  }
+ ],
+ "fk-el-04": [
+  {
+   "q": "Gordias nasıl kral oldu?",
+   "options": [
+    "Bir kehaneti gerçekleştirerek şehre arabayla girdi",
+    "Bir savaş kazandı",
+    "Halk tarafından seçildi",
+    "Tahtı miras aldı"
+   ]
+  },
+  {
+   "q": "Kehanet düğüm hakkında ne vadediyordu?",
+   "options": [
+    "Onu çözen kişi tüm Asya'yı yönetecekti",
+    "Onu çözen kişi çiftçi olacaktı",
+    "Düğüm asla çözülemezdi",
+    "Düğüm kötü şans getirecekti"
+   ]
+  },
+  {
+   "q": "İskender düğümü nasıl çözdü?",
+   "options": [
+    "Kılıcıyla kesti",
+    "Sabırla çözdü",
+    "Yaktı",
+    "Rahiplerden çözmelerini istedi"
+   ]
+  },
+  {
+   "q": "'Gordion düğümünü kesmek' bugün ne anlama gelir?",
+   "options": [
+    "Zor bir soruna cesur, alışılmadık bir çözüm bulmak",
+    "Bir yarışmayı kaybetmek",
+    "Kurallara harfiyen uymak",
+    "Bir görevden vazgeçmek"
+   ]
+  }
+ ],
+ "fk-el-05": [
+  {
+   "q": "Odysseus ve adamları kendilerini nerede buldu?",
+   "options": [
+    "Polyphemus adlı bir Kiklop'a ait bir mağarada",
+    "Kimsenin yaşamadığı ıssız bir adada",
+    "Kral Minos'un sarayında",
+    "Fırtınadaki bir gemide"
+   ]
+  },
+  {
+   "q": "Odysseus Kiklop'a hangi adı verdi?",
+   "options": [
+    "'Hiçkimse'",
+    "Gerçek adını",
+    "'Yabancı'",
+    "Bir ad vermeyi reddetti"
+   ]
+  },
+  {
+   "q": "Diğer Kiklopslar Polyphemus'a neden yardım etmedi?",
+   "options": [
+    "'Hiçkimse' onu incitiyor dedi, bu yüzden yanlış bir şey olmadığını düşündüler",
+    "Odysseus'tan korkuyorlardı",
+    "Onu duyamayacak kadar uzaktaydılar",
+    "Polyphemus'u sevmiyorlardı"
+   ]
+  },
+  {
+   "q": "Odysseus'un gururu ne gibi bir sonuç doğurdu?",
+   "options": [
+    "Poseidon'un öfkesi eve dönüşünü on yıl geciktirdi",
+    "Tüm adamlarını hemen kaybetti",
+    "Taşa dönüştü",
+    "Eve erkenden karşılandı"
+   ]
+  }
+ ],
+ "fk-el-06": [
+  {
+   "q": "Hades onu ilk fark ettiğinde Persephone ne yapıyordu?",
+   "options": [
+    "Su perileriyle çiçek topluyordu",
+    "Bir tapınakta dua ediyordu",
+    "Denizde yelken açıyordu",
+    "Bir çayırda uyuyordu"
+   ]
+  },
+  {
+   "q": "Demeter'in kederi dünyayı nasıl etkiledi?",
+   "options": [
+    "Toprağın kurumasına ve mahsulün yok olmasına izin vererek kıtlığa neden oldu",
+    "Ölümlüleri çiçeklere dönüştürdü",
+    "Toprağı yağmurla sele boğdu",
+    "Zeus'tan yeraltı dünyasını yok etmesini istedi"
+   ]
+  },
+  {
+   "q": "Persephone yeraltı dünyasını neden tamamen terk edemedi?",
+   "options": [
+    "Yeraltı dünyasından nar taneleri yemişti",
+    "Hades kapıları kilitledi",
+    "Hafızasını kaybetti",
+    "Zeus onun ayrılmasını yasakladı"
+   ]
+  },
+  {
+   "q": "Bu mitte mevsimler neyi temsil ediyor?",
+   "options": [
+    "Persephone döndüğünde Demeter'in sevincini, gittiğinde ise kederini",
+    "Tanrılar arasındaki savaşları",
+    "Hades'in değişen ruh hallerini",
+    "İnsan nesillerinin geçişini"
+   ]
+  }
+ ],
+ "fk-es-01": [
+  {
+   "q": "Çakala kuyuda yansıyan ve tavşana bir fikir veren şey nedir?",
+   "options": [
+    "Güneş",
+    "Kendi yüzü",
+    "Ay",
+    "Bir balık"
+   ]
+  },
+  {
+   "q": "Çakal kuyuya atladığında ne olur?",
+   "options": [
+    "Tavşanı yakalar",
+    "Gerçek peynir bulur",
+    "Peynir kaybolur ve sırılsıklam olur",
+    "Boğulur"
+   ]
+  },
+  {
+   "q": "Tavşan ikinci kez kaçmak için hangi bahaneyi kullanır?",
+   "options": [
+    "Hasta olduğunu söyler",
+    "Gökyüzünün düştüğünü söyler ve çakaldan bir ağacı tutmasını ister",
+    "Bir avcının geldiğini söyler",
+    "Kemiklerinde et olmadığını söyler"
+   ]
+  },
+  {
+   "q": "Hikaye hangi dersle sona erer?",
+   "options": [
+    "Güç sonunda her zaman kazanır",
+    "Çakallar tavşanlardan daha akıllıdır",
+    "Daha iyi düşünen bazen daha güçlü olana üstün gelir",
+    "Bir yabancıya asla güvenme"
+   ]
+  }
+ ],
+ "fk-es-02": [
+  {
+   "q": "İmparator, Popocatépetl'in kızıyla evlenebilmesi için hangi koşulu koyar?",
+   "options": [
+    "Bir tapınak inşa etmesi gerekir",
+    "Savaşa gidip zaferle dönmesi gerekir",
+    "On yıl beklemesi gerekir",
+    "İmparatoru dövüşte yenmesi gerekir"
+   ]
+  },
+  {
+   "q": "Kıskanç rakip Iztaccíhuatl'a hangi yalanı söyler?",
+   "options": [
+    "Popocatépetl'in başkasıyla evlendiğini",
+    "Popocatépetl'in savaşta öldüğünü",
+    "İmparatorun evliliği yasakladığını",
+    "Popocatépetl'in onu artık sevmediğini"
+   ]
+  },
+  {
+   "q": "Tanrılar aşıklara acıyarak ne yapar?",
+   "options": [
+    "Iztaccíhuatl'ı hayata döndürürler",
+    "Kıskanç rakibi cezalandırırlar",
+    "İkisini iki yanardağa dönüştürürler",
+    "Popocatépetl'i yeraltı dünyasına gönderirler"
+   ]
+  },
+  {
+   "q": "Efsaneye göre Popocatépetl'in dumanı neyi simgeliyor?",
+   "options": [
+    "Bir tehlike uyarısını",
+    "Iztaccíhuatl için duyduğu yası",
+    "Tanrıların öfkesini",
+    "Savaşın sonunu"
+   ]
+  }
+ ],
+ "fk-es-03": [
+  {
+   "q": "María'nın kocası yıllar içinde ona nasıl davranmaya başladı?",
+   "options": [
+    "Daha sevecen davranmaya başladı",
+    "Onu ihmal etti, çoğu zaman köyden uzak kaldı",
+    "Onu ailesinin yanına geri gönderdi",
+    "Onunla birlikte seyahat etmesini istedi"
+   ]
+  },
+  {
+   "q": "María nehir kenarında bir öfke anında ne yapar?",
+   "options": [
+    "Kocasının yol arkadaşıyla yüzleşir",
+    "Kendi çocuklarını boğar",
+    "Çocuklarıyla birlikte kaçar",
+    "Arabayı ateşe verir"
+   ]
+  },
+  {
+   "q": "Latin Amerika'da anneler geleneksel olarak çocuklarını La Llorona konusunda neye karşı uyarır?",
+   "options": [
+    "Nehirlerde tek başına yüzmemeye karşı",
+    "Gece dışarı çıkmamaya karşı, yoksa onları alır",
+    "Yabancılarla konuşmamaya karşı",
+    "Para için evlenmemeye karşı"
+   ]
+  },
+  {
+   "q": "Anlatıcının efsaneden çıkardığı asıl mesaj nedir?",
+   "options": [
+    "Nehirler geceleri her zaman tehlikelidir",
+    "Zenginlik mutluluğu garanti etmez",
+    "Bir anlık öfke, en çok sevilen şeye mal olabilir",
+    "Hayaletler affedilemez"
+   ]
+  }
+ ],
+ "fk-es-04": [
+  {
+   "q": "Anlatıcının Carrión İnfantelerinin Cid'in kızlarıyla evliliği hakkındaki değerlendirmesi nedir?",
+   "options": [
+    "Gerçek bir aşk evliliğiydi",
+    "Ağırlıklı olarak çıkar için düzenlendi",
+    "Kral tarafından zorlandı",
+    "Cid'in isteklerine aykırı gerçekleşti"
+   ]
+  },
+  {
+   "q": "Aslan kaçtığında Carrión İnfanteleri nasıl tepki verir?",
+   "options": [
+    "Cid'in onu yakalamasına yardım ederler",
+    "Dehşet içinde kaçıp saklanırlar, sadece kendilerini düşünerek",
+    "Aslanı öldürürler",
+    "Diğer konukları sakince güvenli bir yere yönlendirirler"
+   ]
+  },
+  {
+   "q": "Cid, kaçan aslanla nasıl başa çıkar?",
+   "options": [
+    "Onu ağlarla yakalamaları için askerlerini çağırır",
+    "Sakince yelesinden tutup kafesine geri götürür",
+    "Kılıcıyla öldürür",
+    "Kendini sarayda kilitler"
+   ]
+  },
+  {
+   "q": "Bu olayın Carrión İnfanteleri üzerinde kalıcı etkisi nedir?",
+   "options": [
+    "Cid'in sadık hayranları haline gelirler",
+    "Utançları ona karşı giderek büyüyen bir kine dönüşür",
+    "Hemen Valencia'yı terk ederler",
+    "Temkinlilikleri için övülürler"
+   ]
+  }
+ ],
+ "fk-es-05": [
+  {
+   "q": "Sancho Panza, Don Quixote'nin silahtarı olmayı neden kabul eder?",
+   "options": [
+    "Aile sadakatinden dolayı",
+    "Gelecekte bir adanın valiliği karşılığında",
+    "O da şövalyelik kitaplarını sevdiği için",
+    "Başka gidecek yeri olmadığı için"
+   ]
+  },
+  {
+   "q": "Sancho, Don Quixote'ye yel değirmenlerinin gerçekte ne olduğunu söyler?",
+   "options": [
+    "Bir düşman tarafından inşa edilmiş gözetleme kuleleri",
+    "Kanatları sadece kollara benzeyen yel değirmenleri",
+    "Büyülenmiş uyuyan devler",
+    "Eski şövalyelerin bıraktığı heykeller"
+   ]
+  },
+  {
+   "q": "Don Quixote yel değirmenine çarptıktan sonra yenilgisini nasıl açıklar?",
+   "options": [
+    "Sadece yanıldığını kabul eder",
+    "Dikkatini dağıttığı için Sancho'yu suçlar",
+    "Bir büyücünün, onu zaferden mahrum etmek için devleri yel değirmenlerine dönüştürdüğünü iddia eder",
+    "Rocinante'nin kazara sendelediğini söyler"
+   ]
+  },
+  {
+   "q": "Kapanış paragrafına göre bu bölüm Don Quixote hakkında neyi simgeler hale gelir?",
+   "options": [
+    "Gerçek bir savaşçı olarak becerisini",
+    "Sıradan şeylerde büyüklük görebilme ve yanıldığına dair sürekli kanıta rağmen ideallerini sürdürme yeteneğini",
+    "Sancho'ya duyduğu artan güvensizliği",
+    "Şövalyelikten vazgeçme kararını"
+   ]
+  }
+ ],
+ "fk-es-06": [
+  {
+   "q": "İkizler hangi bahaneyle Xibalbá'ya çağrılır?",
+   "options": [
+    "Bir düğün ziyafeti",
+    "Bir top oyunu",
+    "Dini bir tören",
+    "Babalarının suçları için bir yargılama"
+   ]
+  },
+  {
+   "q": "Yarasalar Evi'nde Hunahpú'ya ne olur?",
+   "options": [
+    "Tamamen donar",
+    "Tamamen yutulur",
+    "Bir yarasa başını koparır",
+    "Zarar görmeden kaçar"
+   ]
+  },
+  {
+   "q": "Xibalbá lordları ikizlerden son olarak ne yapmalarını ister?",
+   "options": [
+    "Bir jaguarı dövüşte yenmelerini",
+    "Birbirlerini kurban edip sonra tekrar dirilmelerini",
+    "Kimsenin yardımı olmadan Karanlık Ev'de bir gece geçirmelerini",
+    "Ataları hakkında bir bilmeceyi çözmelerini"
+   ]
+  },
+  {
+   "q": "Hikaye Hun-Camé ve Vucub-Camé için nasıl sona erer?",
+   "options": [
+    "Diriltilip ikizlerin müttefiki yapılırlar",
+    "İkizler, onlar da kurban olmayı kabul ettikten sonra kalıcı olarak ölmelerine izin verir",
+    "Yenilgiyle Xibalbá'dan kaçarlar",
+    "Öldürülmek yerine affedilip sürgün edilirler"
+   ]
+  }
+ ],
+ "fk-fr-01": [
+  {
+   "q": "Karınca bütün yaz ne yaptı?",
+   "options": [
+    "Yiyecek topladı ve depoladı",
+    "Tarlalarda dans etti",
+    "Güneşte uyudu",
+    "Ağustosböceğiyle birlikte şarkı söyledi"
+   ]
+  },
+  {
+   "q": "Kış geldiğinde ne oldu?",
+   "options": [
+    "Ağustosböceğinin biriktirdiği bol yiyeceği vardı",
+    "Ağustosböceğinin yiyecek hiçbir şeyi kalmamıştı",
+    "Karınca evinden ayrıldı",
+    "Ağustosböceği başka bir tarlaya taşındı"
+   ]
+  },
+  {
+   "q": "Ağustosböceği, karıncanın yaz hakkındaki sorusuna nasıl cevap verdi?",
+   "options": [
+    "Yiyecek biriktirdiğini söyledi",
+    "Bütün yaz şarkı söylediğini söyledi",
+    "Uzaklara seyahat ettiğini söyledi",
+    "Çok uyuduğunu söyledi"
+   ]
+  },
+  {
+   "q": "Hikaye hangi dersi öğretiyor?",
+   "options": [
+    "Geleceğe hazırlanmanın önemini",
+    "Yüksek sesle şarkı söylemenin önemini",
+    "Yiyecek paylaşmanın önemini",
+    "İyi uyumanın önemini"
+   ]
+  }
+ ],
+ "fk-fr-02": [
+  {
+   "q": "Tilki ağacın altında neden durdu?",
+   "options": [
+    "Kargazın gagasındaki peynirin kokusunu aldı",
+    "Orada uyumak istedi",
+    "Su arıyordu",
+    "Şarkı söylemek istedi"
+   ]
+  },
+  {
+   "q": "Tilki karga hakkında ne iddia etti?",
+   "options": [
+    "Çirkin olduğunu",
+    "Sesi tüyleri kadar güzel olsaydı ormanın kralı olacağını",
+    "Ormanı terk etmesi gerektiğini",
+    "Tüylerinin donuk olduğunu"
+   ]
+  },
+  {
+   "q": "Peynire ne oldu?",
+   "options": [
+    "Karga onu kendisi yedi",
+    "Düştü ve tilki onu yakaladı",
+    "Tilki onu geri verdi",
+    "Ağacın içinde kayboldu"
+   ]
+  },
+  {
+   "q": "Bu fablın ahlaki dersi nedir?",
+   "options": [
+    "Sizi fazla pohpohlayan kimseye asla güvenmeyin",
+    "Ormanda her zaman yüksek sesle şarkı söyleyin",
+    "Tilkiler tehlikeli hayvanlardır",
+    "Kargalar gece uçmamalıdır"
+   ]
+  }
+ ],
+ "fk-fr-03": [
+  {
+   "q": "Şehir kapılarını her gece kapatmaktan kim sorumluydu?",
+   "options": [
+    "Prenses Dahut'un kendisi",
+    "Kralın anahtarı elinde tutarken bir muhafız",
+    "Aziz Corentin",
+    "Kılık değiştirmiş şeytan"
+   ]
+  },
+  {
+   "q": "Dahut fırtına sırasında ne yaptı?",
+   "options": [
+    "Babasını tehlikeye karşı uyardı",
+    "Anahtarı çaldı ve kapıyı açtı",
+    "Şehirden tek başına kaçtı",
+    "Yabancıyla savaştı"
+   ]
+  },
+  {
+   "q": "Efsaneye göre sonunda Dahut'a ne oldu?",
+   "options": [
+    "Boğuldu ve bir daha görülmedi",
+    "Denize itildi ve bir denizkızına dönüştü",
+    "Quimper'a güvenle kaçtı",
+    "İblisi yendi"
+   ]
+  },
+  {
+   "q": "Breton balıkçıları hâlâ ne duyabildiklerini söylüyor?",
+   "options": [
+    "Dahut'un şarkı söyleyen sesini",
+    "Dalgaların altında çalan boğulmuş şehrin çanlarını",
+    "Kralın atının dörtnala koşuşunu",
+    "Şeytanın kahkahasını"
+   ]
+  }
+ ],
+ "fk-fr-04": [
+  {
+   "q": "Olifant neydi?",
+   "options": [
+    "Roland'ın kılıcı",
+    "Uzaktan duyulabilen fildişi bir boru",
+    "Bir tür kalkan",
+    "Dağ geçidinin adı"
+   ]
+  },
+  {
+   "q": "Roland başlangıçta borusunu çalmayı neden reddetti?",
+   "options": [
+    "Nasıl kullanılacağını bilmiyordu",
+    "Korkmuş görünmek istemediği için gururdan",
+    "Olivier ona çalmamasını söylediği için",
+    "Boru kırık olduğu için"
+   ]
+  },
+  {
+   "q": "Charlemagne Roncevaux'a ulaştığında ne buldu?",
+   "options": [
+    "Roland'ı canlı ama yaralı",
+    "Roland ve yoldaşlarını çoktan ölmüş halde",
+    "Savaş izi olmayan boş bir savaş alanı",
+    "Müzakere etmek için bekleyen Mağripleri"
+   ]
+  },
+  {
+   "q": "Roland'ın hikayesi Fransa'da neyi simgeliyor?",
+   "options": [
+    "Sadece askeri stratejiyi",
+    "Cesareti, sadakati ve gururun bedelini",
+    "Paris'in kuruluşunu",
+    "İspanya ile barış antlaşmalarını"
+   ]
+  }
+ ],
+ "fk-fr-05": [
+  {
+   "q": "Mélusine evlilikleri için hangi koşulu koydu?",
+   "options": [
+    "Gerçek adını asla öğrenmemeliydi",
+    "Kendini kilitlediği cumartesi günleri onu asla görmemeliydi",
+    "Topraklarından vazgeçmeliydi",
+    "Bir daha asla evlenmemeliydi"
+   ]
+  },
+  {
+   "q": "Raymondin'i Mélusine'yi gizlice gözetlemeye iten neydi?",
+   "options": [
+    "Gördüğü bir rüya",
+    "Kardeşinin onun sadakatsiz olduğuna dair kıskanç ima ve söylentileri",
+    "Bulduğu bir mektup",
+    "Bir rahibin öğüdü"
+   ]
+  },
+  {
+   "q": "Sır sonunda herkese nasıl açığa çıktı?",
+   "options": [
+    "Mélusine bunu kendisi itiraf etti",
+    "Raymondin bir anlaşmazlık sırasında sarayın önünde ona \"yılan kadın\" dedi",
+    "Oğulları bunu keşfetti",
+    "Bir hizmetçi söylentiyi yaydı"
+   ]
+  },
+  {
+   "q": "Lusignan hanedanından bir soyundan gelen kişi ölmek üzereyken efsaneye göre ne olur?",
+   "options": [
+    "Kalede bir çan çalar",
+    "Mélusine'nin çığlığı duyulur",
+    "Gökyüzünde bir ejderha belirir",
+    "Çeşme kurur"
+   ]
+  }
+ ],
+ "fk-fr-06": [
+  {
+   "q": "Şeytanla yapılan anlaşmanın iki koşulu neydi?",
+   "options": [
+    "Altın ödemek ve bir daha dönmemek",
+    "Tanrı'nın adını asla anmamak ve horoz ötmeden önce dönmek",
+    "Asla arkaya bakmamak ve asla konuşmamak",
+    "Bir hediye getirmek ve yüksek sesle şarkı söylemek"
+   ]
+  },
+  {
+   "q": "Adamlar köye ulaştıklarında ne oldu?",
+   "options": [
+    "Köylüler tarafından geri çevrildiler",
+    "Gecenin geç saatlerine kadar dans edip kutlama yaptılar",
+    "Mülke tecavüzden tutuklandılar",
+    "Neden geldiklerini unuttular"
+   ]
+  },
+  {
+   "q": "Dönüş yolculuğu neredeyse nasıl bir felaketle sonuçlandı?",
+   "options": [
+    "Yakıtları bitti",
+    "Bir adam cennet adına yemin edip anlaşmayı bozdu ve kano kontrolden çıktı",
+    "Bir kar fırtınasında kayboldular",
+    "Şeytan onları geri bırakmadan önce daha fazla ruh istedi"
+   ]
+  },
+  {
+   "q": "Yaşlı Québec'li anlatıcılar bu efsaneden hangi dersi çıkarıyor?",
+   "options": [
+    "Kışın asla tek başına seyahat etme",
+    "Şeytana yapılan bir söz, şaka bile olsa, her zaman pahalıya mal olur",
+    "Bir yabancının teklifine her zaman güven",
+    "Kanolar karda tehlikelidir"
+   ]
+  }
+ ],
+ "fk-hi-01": [
+  {
+   "q": "Maymun neyle besleniyordu?",
+   "options": [
+    "Bir jamun ağacındaki tatlı meyveyle",
+    "Nehirdeki balıklarla",
+    "Köydeki pirinçle",
+    "Ağaçtaki yapraklarla"
+   ]
+  },
+  {
+   "q": "Timsahın karısı maymunun kalbini neden istedi?",
+   "options": [
+    "Tatlı meyvenin tatlı bir kalp anlamına geldiğine inanıyordu",
+    "Maymuna kızgındı",
+    "Kocasını sınamak istedi",
+    "Çok açtı"
+   ]
+  },
+  {
+   "q": "Maymun nasıl kaçtı?",
+   "options": [
+    "Timsahı ağaca geri dönmesi için kandırdı",
+    "Doğrudan suya atladı",
+    "Kuşlardan yardım istedi",
+    "Timsahla dövüştü"
+   ]
+  },
+  {
+   "q": "Hikaye hangi dersi öğretiyor?",
+   "options": [
+    "Zeka seni ihanetten kurtarabilir",
+    "Timsahlara her zaman güvenilir",
+    "Meyve asla paylaşılmamalıdır",
+    "Hayvanlar arasında dostluk imkansızdır"
+   ]
+  }
+ ],
+ "fk-hi-02": [
+  {
+   "q": "Hayvanlar aslanla ne gibi bir düzenleme yaptı?",
+   "options": [
+    "Avlanmak yerine ona her gün bir hayvan göndermek",
+    "Ona et yerine meyve vermek",
+    "Mağaralarda ondan saklanmak",
+    "Ona birlikte karşı koymak"
+   ]
+  },
+  {
+   "q": "Tavşan gecikmesini nasıl açıkladı?",
+   "options": [
+    "Kendini kral ilan eden başka bir aslanla karşılaştığını iddia etti",
+    "Ormanda kaybolduğunu söyledi",
+    "Yiyecek aradığını söyledi",
+    "Diğer hayvanları suçladı"
+   ]
+  },
+  {
+   "q": "Aslan kuyuda ne gördü?",
+   "options": [
+    "Rakibi sandığı kendi yansımasını",
+    "Gerçek bir ikinci aslanı",
+    "Bir balık",
+    "Yerdeki gölgesini"
+   ]
+  },
+  {
+   "q": "Hikayenin ahlaki dersi nedir?",
+   "options": [
+    "Zeka güçten üstündür",
+    "Güç her zaman kazanır",
+    "Hayvanlar birbirini alt edemez",
+    "Aslanlar en bilgedir"
+   ]
+  }
+ ],
+ "fk-hi-03": [
+  {
+   "q": "Ekber hangi meydan okumayı ortaya attı?",
+   "options": [
+    "Birinin soğuk bir havuzda bütün gece durup duramayacağını",
+    "Birinin en hızlı yemeği pişirip pişiremeyeceğini",
+    "Birinin bir bilmeceyi çözüp çözemeyeceğini",
+    "Birinin saray duvarına tırmanıp tırmanamayacağını"
+   ]
+  },
+  {
+   "q": "Fakir adam ödülünden neden mahrum bırakıldı?",
+   "options": [
+    "Ekber, uzaktaki lambanın sıcaklığının testi geçersiz kıldığını söyledi",
+    "Test sırasında uyuyakaldı",
+    "Fazla para istedi",
+    "Aslında hiç havuza girmedi"
+   ]
+  },
+  {
+   "q": "Birbal'ın khichdi gösterisi neyi kanıtladı?",
+   "options": [
+    "Uzaktaki sıcaklık hakkındaki önceki mantığın saçma ve haksız olduğunu",
+    "Birbal'ın saray aşçılarından daha iyi bir aşçı olduğunu",
+    "Ateşin uzaktan yemeği her zaman daha hızlı pişirdiğini",
+    "Ekber'in kararının her zaman doğru olduğunu"
+   ]
+  },
+  {
+   "q": "Hikaye sonuçta Birbal hakkında neyi gösteriyor?",
+   "options": [
+    "Zekayı güçlü bir adalet duygusuyla birleştirdiğini",
+    "Güvende kalmak için her zaman imparatora katıldığını",
+    "Öğüt vermek yerine yemek pişirmeyi tercih ettiğini",
+    "Fakir insanlardan hoşlanmadığını"
+   ]
+  }
+ ],
+ "fk-hi-04": [
+  {
+   "q": "Kral Krishnadevaraya nadir mangolarla ne yaptı?",
+   "options": [
+    "Her sevdiği saray mensubuna bir tane dağıttı",
+    "Hepsini kendine sakladı",
+    "Pazarda sattı",
+    "Fillerine yedirdi"
+   ]
+  },
+  {
+   "q": "Kıskanç saray mensubu krala neden şikayet etti?",
+   "options": [
+    "Mango almadığı için ve Tenali Rama'nın onura layık olmadığını düşündüğü için",
+    "Mangoların çürük olduğunu düşündüğü için",
+    "Meyve yerine daha fazla altın istediği için",
+    "Kralın yabancıları kayırdığına inandığı için"
+   ]
+  },
+  {
+   "q": "Tenali Rama kralın önünde kendini nasıl savundu?",
+   "options": [
+    "Sözünü kralın cömertliğine övgü olarak yeniden çerçeveleyerek",
+    "Özür dileyip mangoyu geri vererek",
+    "Kıskanç saray mensubunu açıkça suçlayarak",
+    "Kralın sorusunu görmezden gelerek"
+   ]
+  },
+  {
+   "q": "Hikaye Tenali Rama'nın zekası hakkında neyi örnekliyor?",
+   "options": [
+    "Gergin bir suçlamayı övgüye çevirip çatışmayı yatıştırabildiğini",
+    "Onu her zaman daha derin belaya soktuğunu",
+    "Kıskanç saray mensuplarına karşı işe yaramadığını",
+    "Sadece kral yokken işe yaradığını"
+   ]
+  }
+ ],
+ "fk-hi-05": [
+  {
+   "q": "Sita'nın gördüğü geyiği bu kadar olağanüstü yapan neydi?",
+   "options": [
+    "Altın rengi vücudu ve mücevherle bezeli boynuzları",
+    "Devasa büyüklüğü ve koyu rengi",
+    "Konuşabilme yeteneği",
+    "Parlayan kırmızı gözleri"
+   ]
+  },
+  {
+   "q": "Geyik aslında kimdi ve neden gönderilmişti?",
+   "options": [
+    "Ravana tarafından Rama'yı Sita'dan uzaklaştırmak için gönderilen iblis Maricha",
+    "Rama'nın sabrını sınayan bir orman ruhu",
+    "Sita'nın doğduğundan beri büyüttüğü gerçek bir geyik",
+    "Sita'yı sınamak için Lakshmana'nın bir yanılsaması"
+   ]
+  },
+  {
+   "q": "Lakshmana tereddüdüne rağmen sonunda kulübeyi neden terk etti?",
+   "options": [
+    "Sita ısrar etti, Rama'nınki olduğuna inandığı çığlıktan sıkıntı duydu",
+    "Altın geyiği kendisi görmek istedi",
+    "Rama onu doğrudan çağırmıştı",
+    "Ravana'nın zaten yakında olduğundan şüphelendi"
+   ]
+  },
+  {
+   "q": "Altın geyiğin oyununun nihai sonucu ne oldu?",
+   "options": [
+    "Sita'nın kaçırılmasına yol açtı ve Rama ile Ravana arasındaki savaşın zeminini hazırladı",
+    "Rama'yı kayıp kardeşiyle yeniden buluşturdu",
+    "Ravana'nın gerçek kimliğini Lakshmana'ya ifşa etti",
+    "Rama'nın Sita'yı aramaktan vazgeçmesine neden oldu"
+   ]
+  }
+ ],
+ "fk-hi-06": [
+  {
+   "q": "Savitri kiminle evlenmeyi seçti ve onda olağandışı olan neydi?",
+   "options": [
+    "Ormanda münzevi olarak yaşayan, gizli bir kaderi olan sürgün prens Satyavan'ı",
+    "Babasının kendisi için ayarladığı zengin bir tüccarı",
+    "Rakip bir krallıktan bir savaşçıyı",
+    "Evlilikten tamamen vazgeçmiş bir bilgeyi"
+   ]
+  },
+  {
+   "q": "Satyavan'ın kaderde yazılı ölüm günü yaklaşırken Savitri ne yaptı?",
+   "options": [
+    "Uykusuz, dinlenmeden üç gecelik sıkı bir yemin tuttu",
+    "Satyavan'ı güvenlik için uzak bir krallığa gönderdi",
+    "Kehaneti değiştirmesi için Narada'dan istedi",
+    "Bütün orman için büyük bir ziyafet düzenledi"
+   ]
+  },
+  {
+   "q": "Savitri, Yama'yı nasıl alt etti?",
+   "options": [
+    "Satyavan'dan yüz oğul olacağına dair bir lütuf koparıp Yama'yı mantıken Satyavan'ın hayatını geri vermeye zorladı",
+    "Yama'yla tek başına dövüştü",
+    "Onu uyutmak için kandırdı",
+    "Onu kraliyet hazinesiyle rüşvet verdi"
+   ]
+  },
+  {
+   "q": "Savitri'nin hikayesi hangi kalıcı geleneğe ilham veriyor?",
+   "options": [
+    "Evli kadınların onun onuruna tuttuğu Vat Savitri orucunu",
+    "Ormanda yıllık bir av festivalini",
+    "Kral Ashvapati'nin sarayına bir hac ziyaretini",
+    "Yazın odun kesmenin yasaklanmasını"
+   ]
+  }
+ ],
+ "fk-ind-01": [
+  {
+   "q": "Fare geyik nehri neden geçmek istedi?",
+   "options": [
+    "Karşı yakada meyve yemek için",
+    "Akrabalarını ziyaret etmek için",
+    "Bir fırtınadan kaçmak için",
+    "İçecek su bulmak için"
+   ]
+  },
+  {
+   "q": "Fare geyik nehri geçmek için hangi hileyi kullandı?",
+   "options": [
+    "Timsahların yanından hızla yüzdü",
+    "Timsahlardan sayabilmesi için sıraya girmelerini istedi",
+    "Tahta bir sal yaptı",
+    "Timsahlar uyuyana kadar bekledi"
+   ]
+  },
+  {
+   "q": "Timsahlar kandırıldıklarını anladıklarında ne hissetti?",
+   "options": [
+    "Eğlendiler",
+    "Minnettar oldular",
+    "Çok öfkelendiler",
+    "Kayıtsız kaldılar"
+   ]
+  },
+  {
+   "q": "Fare geyik hikayede neyin simgesi haline gelir?",
+   "options": [
+    "Fiziksel gücün",
+    "Zekanın güce üstün gelmesinin",
+    "Korkaklığın",
+    "Zalimliğin"
+   ]
+  }
+ ],
+ "fk-ind-02": [
+  {
+   "q": "Dev, Mbok Sirni'ye ne verdi?",
+   "options": [
+    "Bir torba altın",
+    "Sihirli bir salatalık tohumu",
+    "Sihirli bir ayakkabı çifti",
+    "Konuşan bir kuş"
+   ]
+  },
+  {
+   "q": "Mbok Sirni altın salatalığın içinde ne buldu?",
+   "options": [
+    "Bir erkek bebek",
+    "Bir mücevher sandığı",
+    "Bir kız bebek",
+    "Sihirli bir kılıç"
+   ]
+  },
+  {
+   "q": "Münzevi, devden kaçması için Timun Mas'a ne verdi?",
+   "options": [
+    "Dört sihirli bohça: salatalık tohumu, iğne, tuz ve karides ezmesi",
+    "Görünmezlik sağlayan sihirli bir pelerin",
+    "Uçan bir at",
+    "Gizli bir mağaranın haritası"
+   ]
+  },
+  {
+   "q": "Sonunda deve ne oldu?",
+   "options": [
+    "Timun Mas'ın arkadaşı oldu",
+    "Kaynar çamura gömülüp yutuldu",
+    "Taşa dönüştü",
+    "Başka bir krallığa kaçtı"
+   ]
+  }
+ ],
+ "fk-ind-03": [
+  {
+   "q": "Malin'in annesi neden tek başına ağır çalışmak zorunda kaldı?",
+   "options": [
+    "Malin ona yardım etmeyi reddetti",
+    "Babası denizde ölmüştü",
+    "Bir ev almak istiyordu",
+    "Bir seyahat için para biriktiriyordu"
+   ]
+  },
+  {
+   "q": "Malin'in gemisi köyüne döndüğünde Malin ne olmuştu?",
+   "options": [
+    "Babası gibi yoksul bir balıkçı",
+    "Bir soylu kadınla evli zengin bir tüccar",
+    "Ailesi olmayan bir gemi kaptanı",
+    "Ünlü bir masal anlatıcısı"
+   ]
+  },
+  {
+   "q": "Annesi onu kucaklamaya geldiğinde Malin nasıl tepki verdi?",
+   "options": [
+    "Onu mutlulukla karısıyla tanıştırdı",
+    "Onun annesi olduğunu reddetti",
+    "Onu gemiye davet etti",
+    "Sevinçle ağladı"
+   ]
+  },
+  {
+   "q": "Annesinin laneti sonucunda Malin'e ne oldu?",
+   "options": [
+    "Ölçüsüz derecede zenginleşti",
+    "Bir fırtınada taşa dönüştü",
+    "Köyden sürgün edildi",
+    "Hafızasını kaybetti"
+   ]
+  }
+ ],
+ "fk-ind-04": [
+  {
+   "q": "Bawang Putih kendi evinde nasıl muamele görüyordu?",
+   "options": [
+    "Sevilen tek çocuk gibi",
+    "Bir hizmetçi gibi",
+    "Kraliyet mensubu gibi",
+    "Okula gönderilmişti"
+   ]
+  },
+  {
+   "q": "Yaşlı kadın kumaşı geri vermek için hangi koşulu koydu?",
+   "options": [
+    "Bawang Putih kayıp bir yüzüğü bulmalıydı",
+    "Bawang Putih birkaç gün ev işlerinde yardım etmeliydi",
+    "Bawang Putih bir şarkı söylemeliydi",
+    "Bawang Putih altınla ödemeliydi"
+   ]
+  },
+  {
+   "q": "Bawang Merah aynı nehre neden gitti?",
+   "options": [
+    "Kendi çamaşırlarını yıkamak için",
+    "Kız kardeşini bulmak için",
+    "Bawang Putih'i taklit edip benzer bir ödül almak için",
+    "İçme suyu getirmek için"
+   ]
+  },
+  {
+   "q": "Bawang Merah'ın seçtiği büyük balkabağının içinde ne vardı?",
+   "options": [
+    "Altın ve mücevherler",
+    "Taze meyve",
+    "Yılanlar ve zehirli yaratıklar",
+    "Hiçbir şey"
+   ]
+  }
+ ],
+ "fk-ind-05": [
+  {
+   "q": "Tumang gerçekte kimdi?",
+   "options": [
+    "Sıradan bir köpek",
+    "Köpek biçimine lanetlenmiş bir tanrı",
+    "Dayang Sumbi'nin kardeşi",
+    "Komşu bir kral"
+   ]
+  },
+  {
+   "q": "Sangkuriang ve Dayang Sumbi neden evlenmeyi kabul etti?",
+   "options": [
+    "İkisi de akraba olduklarını biliyor ama görev bilinciyle evleniyordu",
+    "Sangkuriang onu tanıdı ama o onu tanımadı",
+    "Hiçbiri diğerini anne ve oğul olarak tanımadı",
+    "Bir kral evliliği ayarladı"
+   ]
+  },
+  {
+   "q": "Dayang Sumbi ruhların teknesini bitirmesini nasıl engelledi?",
+   "options": [
+    "Sangkuriang'dan doğrudan durmasını rica etti",
+    "Meşalelerle ve pirinç dövme sesiyle sahte bir şafak yarattı",
+    "Tekneyi geceleyin sakladı",
+    "Tanrılardan yağmur göndermelerini istedi"
+   ]
+  },
+  {
+   "q": "Devrilen tekne neye dönüştü?",
+   "options": [
+    "Bir nehre",
+    "Bir mağaraya",
+    "Bir dağa, Tangkuban Perahu'ya",
+    "Bir göle"
+   ]
+  }
+ ],
+ "fk-ind-06": [
+  {
+   "q": "Bandung Bondowoso, Roro Jonggrang'a neden aşık oldu?",
+   "options": [
+    "Yendiği kralın kızıydı ve ünlü derecede güzeldi",
+    "Savaşı kazanmasına yardım etmişti",
+    "Sarayı ziyaret eden yabancı bir prensesti",
+    "Çocukluktan beri arkadaşlardı"
+   ]
+  },
+  {
+   "q": "Bandung Bondowoso kuyuya indiğinde ne oldu?",
+   "options": [
+    "Hazine buldu",
+    "Roro Jonggrang'ın adamları onu diri diri gömdü ama o kaçtı",
+    "Anında boğuldu",
+    "Aşağı inmeyi reddetti"
+   ]
+  },
+  {
+   "q": "Roro Jonggrang ruhları işi durdurmaları için nasıl kandırdı?",
+   "options": [
+    "Onları bir kılıçla tehdit etti",
+    "Pirinç dövme sesi ve yanan saman ile sahte bir şafak yarattı",
+    "Onlara altın rüşvet verdi",
+    "Bandung Bondowoso'dan onları durdurmasını istedi"
+   ]
+  },
+  {
+   "q": "Roro Jonggrang'a sonunda ne oldu?",
+   "options": [
+    "Bandung Bondowoso ile mutlu bir şekilde evlendi",
+    "Taştan bir heykele lanetlendi",
+    "Başka bir krallığa kaçtı",
+    "Prambanan'ın kraliçesi oldu"
+   ]
+  }
+ ],
+ "fk-it-01": [
+  {
+   "q": "Amulius, Rea Silvia'nın ikiz doğurduğunu öğrendiğinde ne yapar?",
+   "options": [
+    "Bebeklerin öldürülmesini emreder",
+    "Onları kendisi büyütür",
+    "Onları vârisi yapar",
+    "Rea Silvia'yı sürgün eder"
+   ]
+  },
+  {
+   "q": "İkizlerle sepete ne olur?",
+   "options": [
+    "Nehirde batar",
+    "Tiber Nehri'nde sürüklenip kıyıya ulaşır",
+    "Bir balıkçı onu hemen bulur",
+    "Akıntı tarafından yok edilir"
+   ]
+  },
+  {
+   "q": "Dişi kurttan sonra Romulus ve Remus'u kim büyütür?",
+   "options": [
+    "Kral Amulius",
+    "Faustulus adlı bir çoban ve karısı",
+    "Numitor'un kendisi",
+    "Bir tapınağın rahipleri"
+   ]
+  },
+  {
+   "q": "Roma şehri nasıl kurulur?",
+   "options": [
+    "Kardeşler şehri birlikte barış içinde inşa eder",
+    "Numitor nereye inşa edileceğine karar verir",
+    "Remus, Romulus'un duvarıyla alay eder, Romulus onu öldürür ve sonra Roma'yı kurar",
+    "Remus, Romulus yerine kral olur"
+   ]
+  }
+ ],
+ "fk-it-02": [
+  {
+   "q": "Pinocchio okula gitmek yerine ne yapar?",
+   "options": [
+    "Geppetto'yu görmeye gider",
+    "Ormana kaçar",
+    "İşe gider",
+    "Evde kalır"
+   ]
+  },
+  {
+   "q": "Pinocchio Perî'ye hangi yalanı söyler?",
+   "options": [
+    "Paralarını kumarda kaybettiğini",
+    "Geppetto'nun parasını aldığını",
+    "İki kötü adamın altın paralarını çaldığını",
+    "Hiç parası olmadığını"
+   ]
+  },
+  {
+   "q": "Pinocchio yalan söyledikçe burnuna ne olur?",
+   "options": [
+    "Maviye döner",
+    "O kadar uzar ki kapıdan çıkamaz",
+    "Düşer",
+    "Hiçbir şey olmaz"
+   ]
+  },
+  {
+   "q": "Hikaye nasıl sonuçlanır ve Pinocchio hangi dersi öğrenir?",
+   "options": [
+    "Perî burnunu keser",
+    "Pinocchio'nun burnu sonsuza dek uzun kalır",
+    "Geppetto burnunu aletlerle onarır",
+    "Ağaçkakanlar uzun burnunu yer ve yalan söylememeyi öğrenir"
+   ]
+  }
+ ],
+ "fk-it-03": [
+  {
+   "q": "Hikayeye göre Giufà nasıl bir insandır?",
+   "options": [
+    "Herkesi kandıran zeki bir hilekâr",
+    "Talimatları çok harfiyen alan saf bir adam",
+    "Zengin bir tüccar",
+    "Katı bir öğretmen"
+   ]
+  },
+  {
+   "q": "Giufà kuyuya baktığında ne olduğunu düşünür?",
+   "options": [
+    "Orada bir hazine saklandığını düşünür",
+    "Orada bir canavar yaşadığını düşünür",
+    "Ayın kuyuya düştüğünü düşünür",
+    "Kuyunun kurumuş olduğunu düşünür"
+   ]
+  },
+  {
+   "q": "Giufà ayı kurtarmaya çalışmak için ne yapar?",
+   "options": [
+    "Kendisi kuyuya atlar",
+    "Rahipten yardım ister",
+    "Aşağıya bir merdiven kurar",
+    "Kuyuya kancalı bir ip sarkıtır"
+   ]
+  },
+  {
+   "q": "Hikaye nasıl sona erer ve köyde 'yeni bir Giufà' ne anlama gelir?",
+   "options": [
+    "Köylüler zamanlarını boşa harcadığı için Giufà'yı cezalandırır",
+    "Giufà köyün muhtarı olur",
+    "Giufà ayı kurtardığına inanır ve bu söz, imkansız bir şeyle övünen herkes için bir şakaya dönüşür",
+    "Ay sonsuza dek kaybolur"
+   ]
+  }
+ ],
+ "fk-it-04": [
+  {
+   "q": "Efsanenin başında Befana ne yapar?",
+   "options": [
+    "Ren geyiklerinin çektiği bir kızakla gezer",
+    "Süpürgesiyle çatıların üzerinden uçarak çocuklara hediye dağıtır",
+    "Her evin bacasında yaşar",
+    "Sadece Roma'daki çocukları ziyaret eder"
+   ]
+  },
+  {
+   "q": "Yaşlı kadın Üç Müneccim Krala neden katılmayı reddetti?",
+   "options": [
+    "Yıldız hakkındaki hikayelerine inanmadı",
+    "Geceleyin seyahat etmekten korktu",
+    "Yapacak çok fazla ev işi olduğunu söyledi",
+    "Yolu bilmiyordu"
+   ]
+  },
+  {
+   "q": "Yaşlı kadın fikrini değiştirip Müneccim Krallara yetişmeye çalıştıktan sonra ne oldu?",
+   "options": [
+    "Onlara tam zamanında yetişti",
+    "Hediye vermek için başka bir bebek buldu",
+    "Hemen eve döndü",
+    "Beytüllahim'e giden doğru yolu bir türlü bulamadı"
+   ]
+  },
+  {
+   "q": "Efsane, çorap ve kömür geleneğini nasıl açıklıyor?",
+   "options": [
+    "Hatasının hatırlatıcısı olarak tüm çocuklara kömür bırakır",
+    "Çorap geleneğinin onunla hiçbir ilgisi yoktur",
+    "Befana iyi çocuklara şeker, yaramaz olanlara kömür bırakır",
+    "Sadece Müneccim Krallar adını taşıyan çocuklara hediye verir"
+   ]
+  }
+ ],
+ "fk-it-05": [
+  {
+   "q": "Hikayenin başında Gubbio kasabasını dehşete düşüren neydi?",
+   "options": [
+    "Ormanda saklanan bir haydut çetesi",
+    "Çiftlik hayvanlarına ve hatta insanlara saldıran vahşi bir kurt",
+    "Kasabayı kasıp kavuran bir veba salgını",
+    "Yakındaki bir nehirden gelen sel"
+   ]
+  },
+  {
+   "q": "Kurt Francesco'ya saldırdığında Francesco ne yaptı?",
+   "options": [
+    "Güvenlik için kasaba surlarına koştu",
+    "Kurda bir mızrak fırlattı",
+    "Haç çıkarıp Tanrı adına durmasını emretti",
+    "Kurda hemen yiyecek teklif etti"
+   ]
+  },
+  {
+   "q": "Francesco'nun kurt ile kasaba halkı arasında önerdiği anlaşma neydi?",
+   "options": [
+    "Kurt bölgeyi sonsuza dek terk edecekti",
+    "Kasaba halkı kurda bir barınak inşa edecekti",
+    "Kurt geceleri kasabayı koruyacaktı",
+    "Kurt her gün beslenmesi karşılığında saldırmayı bırakacaktı"
+   ]
+  },
+  {
+   "q": "Gubbio kurdunun efsanesi nasıl sona erer?",
+   "options": [
+    "Kurt sonunda yeniden saldırdı ve öldürüldü",
+    "Kurt bir yıl sonra ormana döndü",
+    "Kurt iki yıl daha kasaba halkıyla huzur içinde yaşadı, öldüğünde yasını tuttular ve gömdüler",
+    "Kurt, Francesco ile yaşamak üzere Assisi'ye götürüldü"
+   ]
+  }
+ ],
+ "fk-it-06": [
+  {
+   "q": "Efsanenin başında Venedik'te ne oluyor?",
+   "options": [
+    "Bir savaş filosu lagüne saldırıyor",
+    "Şiddetli bir fırtına şehri boğmakla tehdit ediyor",
+    "Şehirde büyük bir yangın yayılıyor",
+    "Bir veba sakinleri öldürüyor"
+   ]
+  },
+  {
+   "q": "Balıkçı ilk yabancıyı aldıktan sonra ne yapar?",
+   "options": [
+    "Daha fazla yolcu almayı reddeder",
+    "Hemen kıyıya geri döner",
+    "İki yabancıyı daha tekneye alır ve üçünü de açık denize götürür",
+    "Yabancı tarafından denize atılır"
+   ]
+  },
+  {
+   "q": "Aziz Markos balıkçıya ne verir ve neden?",
+   "options": [
+    "Yolculuk için ödeme olarak bir miktar altın",
+    "İblislerin nereden geldiğini gösteren bir harita",
+    "Dük'ün hikayesine inanması için kanıt olarak bir yüzük",
+    "Hiçbir şey, azizler sadece kaybolur"
+   ]
+  },
+  {
+   "q": "Balıkçının hikayesi sonunda nasıl doğrulanır?",
+   "options": [
+    "Dük hiçbir kanıt olmadan ona inanmayı seçer",
+    "Başka tanıklar fırtınayı doğrulamak için ortaya çıkar",
+    "Balıkçı hikayesini hiçbir şekilde kanıtlayamaz",
+    "Bazilikanın hazinesinden kayıp bulunan yüzük, ona verilenle eşleşir"
+   ]
+  }
+ ],
+ "fk-ja-01": [
+  {
+   "q": "Yaşlı kadın nehirde çamaşır yıkarken ne buldu?",
+   "options": [
+    "Büyük bir şeftali",
+    "Küçük bir balık",
+    "Ahşap bir kutu",
+    "Altın bir para"
+   ]
+  },
+  {
+   "q": "Hikayenin bu noktasında hangi hayvanlar Momotaro'ya takipçi olarak katılmıştı?",
+   "options": [
+    "Bir köpek, bir kedi ve bir kuş",
+    "Bir kaplan, bir maymun ve bir turna",
+    "Bir köpek, bir maymun ve bir sülün",
+    "Bir köpek, bir ayı ve bir tilki"
+   ]
+  },
+  {
+   "q": "Momotaro devleri nasıl yendi?",
+   "options": [
+    "Devleri adayı terk etmeleri için kandırdı",
+    "Üç hayvan takipçisiyle devlerin reisiyle savaştı ve kazandı",
+    "Hazineyi devlerden geri satın aldı",
+    "Köylülerden onun için savaşmasını istedi"
+   ]
+  },
+  {
+   "q": "Hikayenin sonunda ne oldu?",
+   "options": [
+    "Devler Momotaro'yu esir aldı",
+    "Şeftali altına dönüştü",
+    "Momotaro sonsuza dek adada kaldı",
+    "Momotaro ve takipçileri hazineyi eve getirdi ve köy huzur içinde yaşadı"
+   ]
+  }
+ ],
+ "fk-ja-02": [
+  {
+   "q": "Kaplumbağa Taro'yu Ejderha Sarayı'na neden götürdü?",
+   "options": [
+    "Onu çok balık tuttuğu için cezalandırmak için",
+    "Hayatını kurtardığı için teşekkür etmek için",
+    "Kaybolduğu ve yardıma ihtiyacı olduğu için",
+    "Onu hazineyle takas etmek için"
+   ]
+  },
+  {
+   "q": "Otohime, Taro ayrılmaya karar verdiğinde ona ne verdi?",
+   "options": [
+    "Asla açmaması gereken mücevherli bir kutu",
+    "Sihirli bir balık ağı",
+    "Köye geri dönen bir harita",
+    "İnci bir kolye"
+   ]
+  },
+  {
+   "q": "Taro'nun Ejderha Sarayı'nda geçirdiği günlerde gerçekte ne olmuştu?",
+   "options": [
+    "Ailesi taşınmıştı",
+    "Köy bir fırtına tarafından yok edilmişti",
+    "Hiçbir şey değişmemişti",
+    "Kendi köyünde yüzlerce yıl geçmişti"
+   ]
+  },
+  {
+   "q": "Taro kutuyu açtığında ne oldu?",
+   "options": [
+    "Altın paralar döküldü",
+    "Kaplumbağa yeniden ortaya çıktı",
+    "Beyaz bir duman çıktı ve anında yaşlı bir adama dönüştü",
+    "Hiçbir şey olmadı"
+   ]
+  }
+ ],
+ "fk-ja-03": [
+  {
+   "q": "Kızı bulduktan sonra yaşlı adam her bambu kestiğinde ne olmaya başladı?",
+   "options": [
+    "Bambu gümüşe dönüştü",
+    "Saplar parlamaya başladı",
+    "Sapların içinde altın bulundu",
+    "Alışılmadık bir şey olmadı"
+   ]
+  },
+  {
+   "q": "Kaguya-hime kendisiyle evlenmek isteyen herhangi bir talip için hangi koşulu koydu?",
+   "options": [
+    "Onu bir şiir yarışmasında yenmesi gerekiyordu",
+    "İmparator tarafından onaylanması gerekiyordu",
+    "On yıl beklemesi gerekiyordu",
+    "Neredeyse elde edilmesi imkansız bir hazine getirmesi gerekiyordu"
+   ]
+  },
+  {
+   "q": "Kaguya-hime endişeli ebeveynlerine sonunda ne itiraf etti?",
+   "options": [
+    "Aydan geldiğini ve yakında oraya dönmesi gerektiğini",
+    "Gizlice İmparator'a aşık olduğunu",
+    "Sonunda bir talipla evlenmek istediğini",
+    "Hasta olup ölmekte olduğunu"
+   ]
+  },
+  {
+   "q": "Masala göre Fuji Dağı adını nasıl almış?",
+   "options": [
+    "Çünkü Kaguya-hime orada doğmuş",
+    "Çünkü İmparator ölümsüzlük iksirini zirvesinde yaktırmış",
+    "Çünkü bambu kesici dağda yaşıyormuş",
+    "Çünkü ay elçileri oraya inmiş"
+   ]
+  }
+ ],
+ "fk-ja-04": [
+  {
+   "q": "Gizemli kadın geldiği gece adamdan ne istedi?",
+   "options": [
+    "Onunla hemen evlenmesini",
+    "Kendisine yiyecek ve para vermesini",
+    "Turnayı bulmasında yardım etmesini",
+    "Yolunu kaybettiği için kalmasına izin vermesini"
+   ]
+  },
+  {
+   "q": "Kadın dokumaya başlamadan önce hangi koşulu koydu?",
+   "options": [
+    "Ona yeni bir dokuma tezgahı almasını",
+    "Dokurken odaya asla bakmamasını",
+    "Kumaş hakkında kimseye asla söylememesini",
+    "Ona dokumada yardım etmesini"
+   ]
+  },
+  {
+   "q": "Adam, karısının gerçek kimliğinin ne olduğunu keşfetti?",
+   "options": [
+    "Kılık değiştirmiş bir tilki ruhu",
+    "Komşu bir köyün dokumacısı",
+    "Bir zamanlar tuzaktan kurtardığı turna",
+    "Ölmüş annesinin hayaleti"
+   ]
+  },
+  {
+   "q": "Hikaye nasıl sona erer?",
+   "options": [
+    "Turna uçup gider ve adam pişmanlıkla yalnız kalır",
+    "Adam ve turna sonsuza dek mutlu bir şekilde birlikte yaşar",
+    "Adam da bir turnaya dönüşür",
+    "Köylüler adamı cezalandırır"
+   ]
+  }
+ ],
+ "fk-ja-05": [
+  {
+   "q": "Kintaro'nun ayılarla günlük rutini neydi?",
+   "options": [
+    "Onlarla güreşmek",
+    "Onlarla dağa yarışmak",
+    "Onlara balık yedirmek",
+    "Onlara numaralar öğretmek"
+   ]
+  },
+  {
+   "q": "Yorimitsu, Kintaro'nun annesine neden yaklaştı?",
+   "options": [
+    "Ailenin arazisini satın almak için",
+    "Kintaro'nun çok tehlikeli olduğu konusunda onu uyarmak için",
+    "Ona başkentte bir iş teklif etmek için",
+    "Oğlunu başkente maiyetine almak için izin istemek için"
+   ]
+  },
+  {
+   "q": "Efsaneye göre Yorimitsu'nun adamları dev Shuten-doji'yi nasıl yendi?",
+   "options": [
+    "Onu tek düelloya davet ettiler",
+    "Onu sakeyle sarhoş edip savunmasızken vurdular",
+    "Onu bir mağaraya hapsettiler",
+    "Onu sihirli bir aynayla kandırdılar"
+   ]
+  },
+  {
+   "q": "Kintaro bugün Japonya'da neyi simgeliyor?",
+   "options": [
+    "İş hayatında iyi talihi",
+    "Devlere karşı korumayı",
+    "Erkek çocuklarda sağlıklı büyümeyi, Çocuk Bayramı'nda bebeklerle onurlandırılan",
+    "Okçulukta başarıyı"
+   ]
+  }
+ ],
+ "fk-ja-06": [
+  {
+   "q": "Issun-boshi başkalarının alaylarına rağmen gizlice hangi hırsı besliyordu?",
+   "options": [
+    "Sihirle boyunu uzatma isteğini",
+    "Bir gün başkentte adını duyurma özlemini",
+    "Çiftçi olma arzusunu",
+    "Doğduğu ailesini bulma umudunu"
+   ]
+  },
+  {
+   "q": "Issun-boshi soylunun evinde hangi rolü üstlendi?",
+   "options": [
+    "Evin muhafızlarının başı",
+    "Mutfakta bir aşçı",
+    "Evin genç hanımının güvendiği bir hizmetkar",
+    "Köyler arasında bir haberci"
+   ]
+  },
+  {
+   "q": "Issun-boshi dev tarafından yutulduktan sonra nasıl kaçtı?",
+   "options": [
+    "Devin karnını iğnesiyle dürttü, ta ki dev onu tükürene kadar",
+    "Kılıçla yolunu keserek kaçtı",
+    "Kendini küçültüp sıyrıldı",
+    "Genç hanım tarafından kurtarıldı"
+   ]
+  },
+  {
+   "q": "Şanslı tokmak Issun-boshi için ne yaptı?",
+   "options": [
+    "Onu görünmez yaptı",
+    "Ona büyük zenginlik verdi",
+    "Onu bir deve dönüştürdü",
+    "Vücudunu normal bir insan boyuna büyüttü"
+   ]
+  }
+ ],
+ "fk-ko-01": [
+  {
+   "q": "Ebeveynleri öldükten sonra ne oldu?",
+   "options": [
+    "Nolbu mülkü eşit paylaştı",
+    "Nolbu tüm mülkü aldı ve Heungbu'yu dışarı attı",
+    "Heungbu zengin oldu",
+    "Kardeşler birlikte taşındı"
+   ]
+  },
+  {
+   "q": "Kırlangıç ertesi ilkbaharda Heungbu'ya ne getirdi?",
+   "options": [
+    "Bir torba pirinç",
+    "Küçük bir tohum",
+    "Bir mektup",
+    "Bir sepet meyve"
+   ]
+  },
+  {
+   "q": "Nolbu, Heungbu'nun zengin olduğunu duyunca ne yaptı?",
+   "options": [
+    "Heungbu'yu kutladı",
+    "Bilerek bir kırlangıcın bacağını kırdı",
+    "Güneye taşındı",
+    "Servetini Heungbu'ya verdi"
+   ]
+  },
+  {
+   "q": "Nolbu'nun kabağından ne çıktı?",
+   "options": [
+    "Altın ve hazine",
+    "Onu cezalandıran goblinler",
+    "Daha fazla kırlangıç",
+    "Hiçbir şey"
+   ]
+  }
+ ],
+ "fk-ko-02": [
+  {
+   "q": "Kaplan dağ patikasında anneden ne istedi?",
+   "options": [
+    "Kıyafetlerini",
+    "Bir pirinç keki",
+    "Eve giden yolu",
+    "Para"
+   ]
+  },
+  {
+   "q": "Kardeşler ziyaretçinin anneleri olmadığını nasıl anladı?",
+   "options": [
+    "Kuyruğunu gördüler",
+    "Eli kürkle kaplıydı",
+    "Yabancı bir dil konuştu",
+    "Kaplan gibi kokuyordu"
+   ]
+  },
+  {
+   "q": "Kaplanın ipine ne oldu?",
+   "options": [
+    "Altından yapılmıştı",
+    "Çürümüştü ve koptu",
+    "Bir yılana dönüştü",
+    "Ulaşmak için çok kısaydı"
+   ]
+  },
+  {
+   "q": "Kardeşler neye dönüştü?",
+   "options": [
+    "Yıldızlara",
+    "Güneş ve aya",
+    "Kuşlara",
+    "Dağlara"
+   ]
+  }
+ ],
+ "fk-ko-03": [
+  {
+   "q": "Üvey anne Kongjwi'ye ne gibi imkansız bir görev verdi?",
+   "options": [
+    "Tüm köyü süpürmesini",
+    "Dibi kırık bir kavanozu su ile doldurmasını",
+    "Yüz elbise dikmesini",
+    "Yabani bir öküz yakalamasını"
+   ]
+  },
+  {
+   "q": "Kongjwi'ye taşlık tarlayı otlamada kim yardım etti?",
+   "options": [
+    "Bir kurbağa",
+    "Babası",
+    "Gökten inen siyah bir öküz",
+    "Patjwi"
+   ]
+  },
+  {
+   "q": "Kongjwi dereyi geçerken neyi kaybetti?",
+   "options": [
+    "Elbisesini",
+    "Çiçekli ayakkabılarından birini",
+    "Bir sepet pirinç keki",
+    "Saç tokasını"
+   ]
+  },
+  {
+   "q": "Vali gelinini nasıl seçti?",
+   "options": [
+    "Bir güç yarışması düzenleyerek",
+    "Kayıp ayakkabıya kimin ayağının uyduğunu bularak",
+    "Köy büyüklerine sorarak",
+    "En zengin kadınla evlenerek"
+   ]
+  }
+ ],
+ "fk-ko-04": [
+  {
+   "q": "Keşişle tanışmadan önce Shim Cheong'un babasına ne oldu?",
+   "options": [
+    "İşini kaybetti",
+    "Bir dereye düştü",
+    "Soyuldu",
+    "Dağlarda kayboldu"
+   ]
+  },
+  {
+   "q": "Shim Cheong denizcileri neden aradı?",
+   "options": [
+    "Onlardan bir iş istemek için",
+    "Babası için pirinç karşılığında kendini kurban olarak sunmak için",
+    "El işlerini satmak için",
+    "Başka bir köye geçiş bulmak için"
+   ]
+  },
+  {
+   "q": "Ejderha Kral, Shim Cheong'a ne yaptı?",
+   "options": [
+    "Onu sonsuza dek tutsak etti",
+    "Onu bir lotus çiçeğinin içinde yeniden yukarı gönderdi",
+    "Onu bir balığa dönüştürdü",
+    "Yalan söylediği için cezalandırdı"
+   ]
+  },
+  {
+   "q": "Shim Cheong'un babası görüşünü nasıl geri kazandı?",
+   "options": [
+    "Bir doktor onu iyileştirdi",
+    "Sihirli bir iksir içti",
+    "Sonunda kızıyla buluştuğunda sevinçten görme yetisi geri geldi",
+    "Ejderha Kral onu geri verdi"
+   ]
+  }
+ ],
+ "fk-ko-05": [
+  {
+   "q": "Geyik, perinin tüylü elbisesini geri vermek için hangi koşulu koydu?",
+   "options": [
+    "On yıl evli kalana kadar geri vermemesini",
+    "Peri üç çocuk doğurana kadar geri vermemesini",
+    "Kış gelene kadar geri vermemesini",
+    "Geyik doğrudan söyleyene kadar geri vermemesini"
+   ]
+  },
+  {
+   "q": "Peri sonunda tüylü elbisesini neden geri aldı?",
+   "options": [
+    "Temizlik yaparken kendisi buldu",
+    "Geyik ona geri verdi",
+    "Oduncu yalvarmasına dayanamayıp elbiseyi gösterdi",
+    "Çocuklar onu buldu ve ona verdi"
+   ]
+  },
+  {
+   "q": "Oduncu göğe nasıl ulaştı?",
+   "options": [
+    "Kendisi kanat büyüttü",
+    "Perilerin su çekmek için kullandığı kovada yukarı çıktı",
+    "Devasa bir ağaca tırmandı",
+    "Avcılardan yardım istedi"
+   ]
+  },
+  {
+   "q": "Hikayeye göre masalın bir versiyonunun sonunda ne olur?",
+   "options": [
+    "Oduncu hiçbir sorun yaşamadan sonsuza dek gökte kalır",
+    "Oduncu annesini görmeye çalışırken bir kuralı çiğner ve göğe geri dönemez",
+    "Peri onunla yaşamak için yeryüzüne döner",
+    "Geyik insana dönüşür"
+   ]
+  }
+ ],
+ "fk-ko-06": [
+  {
+   "q": "Mong-ryong, Hanyang'a gitmeden önce Chunhyang'a ne söz verdi?",
+   "options": [
+    "Ona her ay para göndereceğini",
+    "Devlet sınavını geçip onunla usulünce evlenmek üzere döneceğini",
+    "Onu hemen Hanyang'a getireceğini",
+    "Çalışmalarını unutacağını"
+   ]
+  },
+  {
+   "q": "Chunhyang, Byun Hak-do'nun ona hizmet etmesi talebine nasıl karşılık verdi?",
+   "options": [
+    "Korkudan kabul etti",
+    "Namwon'dan kaçtı",
+    "Zaten bir kocaya ait olduğunu söyleyerek reddetti",
+    "Onu bırakması için rüşvet verdi"
+   ]
+  },
+  {
+   "q": "Mong-ryong devlet sınavını geçtikten sonra hangi görevi kazandı?",
+   "options": [
+    "Namwon'un yerel valisi",
+    "Gizli bir kraliyet müfettişi",
+    "Bir saray şairi",
+    "Bir saray muhafızı"
+   ]
+  },
+  {
+   "q": "Kral, Chunhyang'ın sadakati için ona hangi unvanı verdi?",
+   "options": [
+    "Namwon Kraliçesi",
+    "İffet Hanımı",
+    "Kraliyet Müfettişi",
+    "Emekli bir gisaeng"
+   ]
+  }
+ ],
+ "fk-la-01": [
+  {
+   "q": "Amulius ikiz oğlanları nehre neden bıraktı?",
+   "options": [
+    "Onlardan korktuğu için",
+    "Onları sevdiği için",
+    "Bir rahip emrettiği için",
+    "Çocuklar hasta olduğu için"
+   ]
+  },
+  {
+   "q": "Kurttan sonra oğlanları kim buldu ve büyüttü?",
+   "options": [
+    "Faustulus adında bir çoban",
+    "Bir kral",
+    "Bir rahip",
+    "Bir asker"
+   ]
+  },
+  {
+   "q": "Kardeşler şehri kurmadan önce neden tartıştı?",
+   "options": [
+    "Nereye inşa edeceklerini konusunda anlaşamadılar",
+    "Annelerinin kim olduğu konusunda anlaşamadılar",
+    "Kurt yüzünden kavga ettiler",
+    "Büyükbabaları hakkında tartıştılar"
+   ]
+  },
+  {
+   "q": "Kardeşler arasında ne oldu?",
+   "options": [
+    "Romulus öfkeyle Remus'u öldürdü",
+    "Remus, Romulus'u öldürdü",
+    "Ortak kral oldular",
+    "Şehri birlikte terk ettiler"
+   ]
+  }
+ ],
+ "fk-la-02": [
+  {
+   "q": "Androcles neden bir mağaraya saklandı?",
+   "options": [
+    "Efendisinden kaçıyordu",
+    "Hayvan avlıyordu",
+    "Bir fırtınada kaybolmuştu",
+    "Hazine arıyordu"
+   ]
+  },
+  {
+   "q": "Androcles aslan için ne yaptı?",
+   "options": [
+    "Pençesinden bir diken çıkardı",
+    "Ona yiyecek verdi",
+    "Ona bir in yaptı",
+    "Ona numaralar öğretti"
+   ]
+  },
+  {
+   "q": "Androcles arenaya neden gönderildi?",
+   "options": [
+    "Ceza olarak vahşi bir aslan tarafından yenilmesi için",
+    "Gladyatörlerle dövüşmesi için",
+    "Kalabalık için aslanı evcilleştirmesi için",
+    "İmparator tarafından serbest bırakılması için"
+   ]
+  },
+  {
+   "q": "Aslan Androcles'e neden saldırmadı?",
+   "options": [
+    "Aslan onu bir zamanlar yardım eden dostu olarak tanıdı",
+    "Aslan saldıramayacak kadar yaşlıydı",
+    "Aslan uyuyordu",
+    "Terbiyeciler aslanı sakinleştirmişti"
+   ]
+  }
+ ],
+ "fk-la-03": [
+  {
+   "q": "Karga gagasında ne tutuyordu?",
+   "options": [
+    "Çaldığı bir parça peynir",
+    "Bir balık",
+    "Altın bir yüzük",
+    "Bir yumurta yuvası"
+   ]
+  },
+  {
+   "q": "Tilki kargaya ne söyledi?",
+   "options": [
+    "Şarkı söyleme sesinin muhtemelen tüyleri kadar güzel olduğunu",
+    "Tüylerinin çirkin olduğunu",
+    "Peyniri doğrudan ona vermesi gerektiğini",
+    "Tilkilerle kargaların arkadaş olması gerektiğini"
+   ]
+  },
+  {
+   "q": "Peynire ne oldu?",
+   "options": [
+    "Karga onu düşürdükten sonra tilki kapıp yedi",
+    "Karga tilki gelmeden onu yedi",
+    "Peynir tilkinin ulaşamayacağı kadar yüksekteydi",
+    "Bir köpek ikisinden de çaldı"
+   ]
+  },
+  {
+   "q": "Bu fablın ahlaki dersi nedir?",
+   "options": [
+    "Genellikle sizden bir şey isteyen pohpohlayıcılara güvenmeyin",
+    "Kuşlar tilkilerin yanında şarkı söylememelidir",
+    "Peynir her zaman ağaçlarda saklanmalıdır",
+    "Tilkiler kargalar için her zaman tehlikelidir"
+   ]
+  }
+ ],
+ "fk-la-04": [
+  {
+   "q": "Lars Porsena Roma üzerine neden yürüdü?",
+   "options": [
+    "Sürgündeki kralı yeniden iktidara getirmek için",
+    "Yeni tarım arazisi fethetmek için",
+    "Horatius'u kişisel olarak cezalandırmak için",
+    "Ödenmemiş haracı toplamak için"
+   ]
+  },
+  {
+   "q": "Horatius ne yapmayı önerdi?",
+   "options": [
+    "Romalılar köprüyü yıkarken iki yoldaşıyla köprüyü tutmak",
+    "Hayat kurtarmak için şehri teslim etmek",
+    "Porsena ile barış görüşmesi yapmak",
+    "Köprüyü tek başına yakmak"
+   ]
+  },
+  {
+   "q": "Köprü neredeyse tamamen yıkıldığında Horatius ne yaptı?",
+   "options": [
+    "Yoldaşlarını güvenli yere geri gönderdi ve uzak ucu tek başına tuttu",
+    "Yoldaşlarıyla birlikte hemen geri çekildi",
+    "Köprüyü kendisi yeniden inşa etti",
+    "Şehirden takviye çağırdı"
+   ]
+  },
+  {
+   "q": "Köprü çöktükten sonra Horatius nasıl kaçtı?",
+   "options": [
+    "Nehir tanrısına dua etti ve zırhıyla nehri yüzerek geçti",
+    "Geçmekte olan bir tekne tarafından kurtarıldı",
+    "Kıyı boyunca bir sığ geçite koştu",
+    "Etrüsklere teslim oldu"
+   ]
+  }
+ ],
+ "fk-la-05": [
+  {
+   "q": "Cincinnatus adı ne anlama gelir ve ünlü olmadan önce ne yapıyordu?",
+   "options": [
+    "\"Kıvırcık saçlı\" anlamına gelir ve küçük bir toprak parçasında çiftçilik yapıyordu",
+    "\"Güçlü olan\" anlamına gelir ve orduyu yönetiyordu",
+    "\"Bilge olan\" anlamına gelir ve senatoda görev yapıyordu",
+    "\"Sürgün\" anlamına gelir ve yurt dışında yaşıyordu"
+   ]
+  },
+  {
+   "q": "Senato neden bir diktatör atamaya karar verdi?",
+   "options": [
+    "Çünkü bir konsül ve ordusu düşman tarafından kıstırılmıştı ve durum umutsuz görünüyordu",
+    "Çünkü konsüller suikaste kurban gitmişti",
+    "Çünkü şehri bir veba vurmuştu",
+    "Çünkü sıradan halk isyan ediyordu"
+   ]
+  },
+  {
+   "q": "Cincinnatus Roma'ya vardığında hemen ne yaptı?",
+   "options": [
+    "Tüm genç vatandaşları hemen silah başına çağırdı",
+    "Zafer alayı düzenledi",
+    "Önceki konsülü idam etti",
+    "Yeni istihkamlar inşa etti"
+   ]
+  },
+  {
+   "q": "Cincinnatus savaşı kazandıktan sonra ne yaptı?",
+   "options": [
+    "Kanunun izin verdiğinden çok daha erken, gönüllü olarak iktidarından vazgeçip çiftliğine döndü",
+    "Tam altı ay iktidarda kaldı ve ardından konsüllüğe aday oldu",
+    "Kendini Roma kralı ilan etti",
+    "Yenilen Aequileri İtalya'dan sürdü"
+   ]
+  }
+ ],
+ "fk-la-06": [
+  {
+   "q": "Ölümlü kılığında Jüpiter ve Merkür ne yapıyordu?",
+   "options": [
+    "Frigya halkı arasında konukseverlik arıyor ve her yerde geri çevriliyorlardı",
+    "Yerel savaşçıların gücünü sınıyorlardı",
+    "Kayıp bir tapınağı arıyorlardı",
+    "Köylülerden vergi topluyorlardı"
+   ]
+  },
+  {
+   "q": "Baucis ve Philemon, misafirlerinin kim olduğunu bilmedikleri halde onlar için ne yaptı?",
+   "options": [
+    "Ellerindeki her şeyi, mütevazı olmasına rağmen sevinçle sundular",
+    "Yabancıları evlerine almayı reddettiler",
+    "Onları daha zengin bir komşuya gönderdiler",
+    "Yabancılardan önce ödeme istediler"
+   ]
+  },
+  {
+   "q": "Yaşlı çiftin misafirlerinin tanrı olduğunu fark etmesini sağlayan mucize neydi?",
+   "options": [
+    "Ne kadar dökülürse dökülsün şarap kâsesinin kendini sürekli doldurması",
+    "Evin aniden ısınması",
+    "Kazlarının onlarla konuşmaya başlaması",
+    "Çatının üzerinde parlak bir yıldız belirmesi"
+   ]
+  },
+  {
+   "q": "Sonunda Baucis ve Philemon'a ne oldu?",
+   "options": [
+    "Ölüm nihayet geldiğinde, ayrılmak yerine birlikte iki ağaca dönüştürüldüler",
+    "Ölümsüz kılınıp mermer tapınakta sonsuza dek yaşadılar",
+    "Selde taşa dönüştüler",
+    "Ayrıldılar, biri diğerinden çok önce öldü"
+   ]
+  }
+ ],
+ "fk-nl-01": [
+  {
+   "q": "Mürettebatı korkmasına rağmen kaptan ne yaptı?",
+   "options": [
+    "Gemiyi geri çevirdi",
+    "Yine de yelken açmaya devam etti",
+    "Mürettebattan oy istedi",
+    "Gemiyi demirledi"
+   ]
+  },
+  {
+   "q": "Efsanede kaptanın gemisinin adı nedir?",
+   "options": [
+    "Altın Geyik",
+    "Uçan Hollandalı",
+    "Gümüş Yıldız",
+    "Deniz Hayaleti"
+   ]
+  },
+  {
+   "q": "Uçan Hollandalı efsanesi insanları neye karşı uyarıyor?",
+   "options": [
+    "Asla Afrika yakınında yelken açmamaya",
+    "Fazla gururlu olmaya karşı",
+    "Yabancılara güvenmeye karşı",
+    "Gece yelken açmaya karşı"
+   ]
+  },
+  {
+   "q": "Hikayeye göre Uçan Hollandalı her zaman neyi arıyor?",
+   "options": [
+    "Hazine",
+    "Kayıp mürettebatını",
+    "Güvenli bir liman",
+    "Yeni bir kaptan"
+   ]
+  }
+ ],
+ "fk-nl-02": [
+  {
+   "q": "Efsaneye göre Beyaz Kadınlar kimdir?",
+   "options": [
+    "Geçmişten bilge kadınların ruhları",
+    "Kayıp denizcilerin hayaletleri",
+    "Hazineyi koruyan periler",
+    "Çiftçilerin ruhları"
+   ]
+  },
+  {
+   "q": "Beyaz Kadınlar ne yapabilirdi?",
+   "options": [
+    "Hastaları iyileştirmek",
+    "Geleceği tahmin etmek",
+    "Havayı kontrol etmek",
+    "Hayvanlara dönüşmek"
+   ]
+  },
+  {
+   "q": "Bugün höyükleri nerede ziyaret edebilirsiniz?",
+   "options": [
+    "Drenthe ve Overijssel gibi illerde",
+    "Sadece Amsterdam'da",
+    "Sadece Belçika'da",
+    "Artık mevcut değiller"
+   ]
+  },
+  {
+   "q": "Efsane bugün nasıl yaşamaya devam ediyor?",
+   "options": [
+    "Sadece okul ders kitapları aracılığıyla",
+    "Büyükanne ve büyükbabaların çocuklara anlattığı hikayeler aracılığıyla",
+    "Yıllık bir festival aracılığıyla",
+    "Unutuldu"
+   ]
+  }
+ ],
+ "fk-nl-03": [
+  {
+   "q": "Kadın, kaptandan geri getirmesini ne istedi?",
+   "options": [
+    "Altın ve mücevherler",
+    "Bulabileceği en değerli kargoyu",
+    "Yeni bir gemi",
+    "Doğu'dan baharatlar"
+   ]
+  },
+  {
+   "q": "Kadın kaptanın getirdiği buğdayla ne yaptı?",
+   "options": [
+    "Onu sattı",
+    "Fakirlere verdi",
+    "Denize attırdı",
+    "Kış için sakladı"
+   ]
+  },
+  {
+   "q": "Balıkçının karısı balığın içinde ne buldu?",
+   "options": [
+    "Bir harita",
+    "Tüccar kadının altın yüzüğü",
+    "Bir mektup",
+    "İnci bir kolye"
+   ]
+  },
+  {
+   "q": "Buğdayın battığı yerde ne oluştuğu söylenir?",
+   "options": [
+    "Yeni bir ada",
+    "Bir deniz feneri",
+    "Vrouwenzand adında bir kum bankı",
+    "Bir girdap"
+   ]
+  }
+ ],
+ "fk-nl-04": [
+  {
+   "q": "Kral, Ayı Bruin'i ne yapmaya gönderdi?",
+   "options": [
+    "Reynard'la savaşmaya",
+    "Reynard'ı saraya getirmeye",
+    "Reynard'ın kalesini korumaya",
+    "Çiftçileri cezalandırmaya"
+   ]
+  },
+  {
+   "q": "Bruin kendini ağaç kütüğünden kurtardığında ne oldu?",
+   "options": [
+    "Bacağını kırdı",
+    "Kafasının ve pençelerinin derisini kaybetti",
+    "Nehre düştü",
+    "Çiftçiler tarafından yakalandı"
+   ]
+  },
+  {
+   "q": "Kedi Tibert'e ne oldu?",
+   "options": [
+    "Birçok fare yakaladı",
+    "Bir tuzağa gönderildi ama kıl payı kurtuldu",
+    "Gitmeyi reddetti",
+    "Reynard'la arkadaş oldu"
+   ]
+  },
+  {
+   "q": "Son paragrafa göre hikaye ne öğretiyor?",
+   "options": [
+    "Gücün her zaman kazandığını",
+    "Kralların kimseye güvenmemesi gerektiğini",
+    "Kurnazlığın çoğu zaman ham güçten daha fazlasını başardığını",
+    "Hayvanlara güvenilemeyeceğini"
+   ]
+  }
+ ],
+ "fk-nl-05": [
+  {
+   "q": "Geleneğe göre Aziz Nikolas fakir adamın kızları için gizlice ne yaptı?",
+   "options": [
+    "Onlara kendisi koca buldu",
+    "Geceleyin pencereden altın paralar attı",
+    "Onlara bir ev verdi",
+    "Onlar adına krala mektup yazdı"
+   ]
+  },
+  {
+   "q": "Sinterklaas'ın yardımcılarına geleneksel olarak ne denir?",
+   "options": [
+    "Zwarte Pieten",
+    "De Wieven",
+    "De Kabouters",
+    "De Boeken"
+   ]
+  },
+  {
+   "q": "Metne göre Amerikan Noel Baba'sının adı nereden geliyor?",
+   "options": [
+    "Eski bir Alman kelimesinden",
+    "Hollandaca Sinterklaas kelimesinden",
+    "İspanyol bir efsaneden",
+    "Hristiyanlık öncesi bir kış tanrısından"
+   ]
+  },
+  {
+   "q": "Son paragraf, hikayenin hangi temel fikrinin dokunulmadan kaldığını söylüyor?",
+   "options": [
+    "Çocukların her zaman itaatkar olması gerektiğini",
+    "Gizlice yapılan cömertliğin verme biçiminin en güzeli olduğunu",
+    "Piskoposların zengin olması gerektiğini",
+    "İspanya ile Hollanda'nın birbirine bağlı olduğunu"
+   ]
+  }
+ ],
+ "fk-nl-06": [
+  {
+   "q": "Efsaneye göre Lange Wapper'ın en sevdiği kurbanlar kimdi?",
+   "options": [
+    "Dışarıda oynayan çocuklar",
+    "Kapanış saatinden sonra dışarıda olan sarhoşlar ve avareler",
+    "Limana dönen denizciler",
+    "Pazar satıcıları"
+   ]
+  },
+  {
+   "q": "Bekçiler Lange Wapper'ı tutuklamaya çalıştığında ne oldu?",
+   "options": [
+    "Kendini bir fareye küçültüp kaçtı",
+    "Şişip zincirleri kırdı ve çatıların üzerinden kayboldu",
+    "Onlara altın rüşvet verdi",
+    "Dumana dönüştü"
+   ]
+  },
+  {
+   "q": "Lange Wapper bugün Anvers'te hâlâ nasıl mevcut?",
+   "options": [
+    "Limanda bir heykel olarak",
+    "Şenlik alaylarında yürüyen devasa bir figür olarak",
+    "Sadece yerel bir biranın adı olarak",
+    "Tamamen unutuldu"
+   ]
+  },
+  {
+   "q": "Son paragraf bu varlığın gerçek doğası hakkında neyi ima ediyor?",
+   "options": [
+    "Tamamen kilise tarafından icat edildiğini",
+    "Esas olarak hâlâ ona inananların hayal gücünde var olduğunu",
+    "Gerçek tarihi bir suçlu olduğunu",
+    "Bugün artık hiçbir anlamı olmadığını"
+   ]
+  }
+ ],
+ "fk-pl-01": [
+  {
+   "q": "Ejderha nerede yaşardı?",
+   "options": [
+    "Wawel tepesinin altındaki bir mağarada",
+    "Kraliyet kalesinde",
+    "Bir ormanda",
+    "Nehrin kendisinde"
+   ]
+  },
+  {
+   "q": "Krakov şehrini kim yönetiyordu?",
+   "options": [
+    "Bir şövalyeler konseyi",
+    "Kral Krak",
+    "Kunduracı Skuba",
+    "Bir piskopos"
+   ]
+  },
+  {
+   "q": "Skuba'nın planı neydi?",
+   "options": [
+    "Ejderhayla kılıçla dövüşmek",
+    "Ejderhayı bir ağa yakalamak",
+    "Ejderhanın yemesi için bir koyunu kükürtle doldurmak",
+    "Nehir suyunu zehirlemek"
+   ]
+  },
+  {
+   "q": "Ejderha nasıl öldü?",
+   "options": [
+    "Bir şövalye onu ateşle öldürdü",
+    "O kadar çok su içti ki karnı patladı",
+    "Kral onu zehirledi",
+    "Wawel tepesinden düştü"
+   ]
+  }
+ ],
+ "fk-pl-02": [
+  {
+   "q": "Altın ördek nerede yaşar?",
+   "options": [
+    "Kasaba dışındaki bir kuyuda",
+    "Eski bir evin derin bir mahzeninde",
+    "Bir kilise kulesinde",
+    "Bir orman mağarasında"
+   ]
+  },
+  {
+   "q": "Çırak ustaların geceleyin ne yaptığını gördü?",
+   "options": [
+    "Ekmek pişirdiklerini",
+    "Kötü ruhları çağırdıklarını",
+    "Hazine sattıklarını",
+    "Ev inşa ettiklerini"
+   ]
+  },
+  {
+   "q": "Ördek neyi korumak zorundadır?",
+   "options": [
+    "Eski kitaplardan oluşan bir koleksiyonu",
+    "Altın ve değerli taşlardan oluşan bir hazineyi",
+    "Sihirli bir kılıcı",
+    "Kraliyet tacını"
+   ]
+  },
+  {
+   "q": "Hazineyi bulmak için kaç zorlu sınavdan geçilmesi gerekir?",
+   "options": [
+    "İki",
+    "Üç",
+    "Beş",
+    "Bir"
+   ]
+  }
+ ],
+ "fk-pl-03": [
+  {
+   "q": "Denizkızı nereden geldi?",
+   "options": [
+    "Baltık Denizi'nden",
+    "Karadeniz'den",
+    "Bir dağ gölünden",
+    "Okyanustan"
+   ]
+  },
+  {
+   "q": "Tüccar denizkızına ne yapmak istedi?",
+   "options": [
+    "Onu hemen serbest bırakmak",
+    "Onu yakalayıp para karşılığında sergilemek",
+    "Onunla evlenmek",
+    "Ona bir hediye vermek"
+   ]
+  },
+  {
+   "q": "Denizkızını kim serbest bıraktı?",
+   "options": [
+    "Bir balıkçı",
+    "Tüccarın kendisi",
+    "Kulübe sahibinin oğlu",
+    "Bir asker"
+   ]
+  },
+  {
+   "q": "Denizkızı şehri savunurken ne taşır?",
+   "options": [
+    "Bir kılıç ve kalkan",
+    "Bir taç ve asa",
+    "Bir ağ ve kanca",
+    "Bir arp ve flüt"
+   ]
+  }
+ ],
+ "fk-pl-04": [
+  {
+   "q": "Üç kardeş neden seyahat ediyordu?",
+   "options": [
+    "Yeni topraklar bulup kendi devletlerini kurmak için",
+    "Bir ejderhadan kaçmak için",
+    "Hazine bulmak için",
+    "Bir kralı ziyaret etmek için"
+   ]
+  },
+  {
+   "q": "Rus hangi yöne gitti?",
+   "options": [
+    "Batıya",
+    "Doğuya",
+    "Güneye",
+    "Kuzeye"
+   ]
+  },
+  {
+   "q": "Lech yerleşimine ne ad verdi ve hangi kelimeden esinlenerek?",
+   "options": [
+    "\"gniazdo\" (yuva) kelimesinden esinlenerek Gniezno",
+    "\"kruk\" (kuzgun) kelimesinden esinlenerek Kraków",
+    "\"wars\" kelimesinden esinlenerek Warszawa",
+    "\"poznać\" (bilmek) kelimesinden esinlenerek Poznań"
+   ]
+  },
+  {
+   "q": "Beyaz kartal neye dönüştü?",
+   "options": [
+    "Lech'in yeni devletinin, sonra da Polonya'nın simgesine",
+    "Czech'in dağının simgesine",
+    "Rus'un nehirlerinin simgesine",
+    "Kötü şansın simgesine"
+   ]
+  }
+ ],
+ "fk-pl-05": [
+  {
+   "q": "Pan Twardowski'nin yapabildiği söylenen şey neydi?",
+   "options": [
+    "Başka ülkelere uçmak",
+    "Ölüleri diriltmek ve geleceği tahmin etmek",
+    "Sadece kurşunu altına dönüştürmek",
+    "Hayvanlarla konuşmak"
+   ]
+  },
+  {
+   "q": "Şeytan Twardowski'nin ruhunu hangi koşulda alabilirdi?",
+   "options": [
+    "Sadece Roma'da",
+    "Sadece gece yarısı",
+    "Sadece Twardowski evlenirse",
+    "Sadece Krakov'da"
+   ]
+  },
+  {
+   "q": "Twardowski dua ettikten sonra nerede son buldu?",
+   "options": [
+    "Güvenle evde",
+    "Ay'da",
+    "Roma'da",
+    "Meyhanede"
+   ]
+  },
+  {
+   "q": "Bu efsaneden hangi Lehçe deyim geliyor?",
+   "options": [
+    "\"Twardowski gibi Ay'da kaybolmak\"",
+    "\"Şeytan gibi dans etmek\"",
+    "\"Bir aziz gibi dua etmek\"",
+    "\"Bir tüccar gibi ticaret yapmak\""
+   ]
+  }
+ ],
+ "fk-pl-06": [
+  {
+   "q": "Bazilisk'in güya neyden çıktığı söylenir?",
+   "options": [
+    "Yaşlı bir horozun yumurtladığı bir yumurtadan",
+    "Bir cadı lanetinden",
+    "Bir ejderhanın dişinden",
+    "Lanetli bir kuyudan"
+   ]
+  },
+  {
+   "q": "Halk bilgeliğine göre bazilisk'in hangi zayıflığı vardı?",
+   "options": [
+    "Kendi yansımasını gördüğünde ölür",
+    "Ateşten korkar",
+    "Suyu geçemez",
+    "Gündüzleri uyur"
+   ]
+  },
+  {
+   "q": "Bazilisk'i yendikten sonra mahkuma ne oldu?",
+   "options": [
+    "Yine de idam edildi",
+    "Söz verildiği gibi affedildi",
+    "Belediye başkanı oldu",
+    "Şehirden kaçtı"
+   ]
+  },
+  {
+   "q": "Bazilisk kroniklerde hangi diğer efsanelerin yanında anılır?",
+   "options": [
+    "Wawel ejderhası ve Varşova denizkızı",
+    "Pan Twardowski ve Janosik",
+    "Lech ve Czech",
+    "Altın Ördek ve Krak"
+   ]
+  }
+ ],
+ "fk-pt-01": [
+  {
+   "q": "Saci-Pererê'nin iki bacak yerine nesi var?",
+   "options": [
+    "Sadece tek bacağı",
+    "Üç bacağı",
+    "Bir balık kuyruğu",
+    "Kanatları"
+   ]
+  },
+  {
+   "q": "Hikayeye göre Saci ineklerin sütüne ne yapar?",
+   "options": [
+    "Gece boyunca ekşimesine izin verir",
+    "Onu peynire dönüştürür",
+    "Yere döker",
+    "Hepsini içer"
+   ]
+  },
+  {
+   "q": "Efsaneye göre biri Saci'yi nasıl tuzağa düşürebilir?",
+   "options": [
+    "Kasırgaya bir kalbur veya tespih atarak",
+    "Ona yiyecek teklif ederek",
+    "Özel bir şarkı söyleyerek",
+    "Yanında ateş yakarak"
+   ]
+  },
+  {
+   "q": "Yaşlı çiftçi Saci'yi nasıl yakalamayı başardı?",
+   "options": [
+    "Mantar ve haçla mühürlenmiş cam bir şişede",
+    "Ahşap bir kutuda",
+    "Üzerine bir ağ atarak",
+    "Bacağını bir ağaca bağlayarak"
+   ]
+  }
+ ],
+ "fk-pt-02": [
+  {
+   "q": "Jurupari çocuğu neden öldürdü?",
+   "options": [
+    "Çocuğun ne kadar sevildiğine kıskandığı için",
+    "Çocuk ondan çaldığı için",
+    "Bir av sırasında kazayla",
+    "Çocuk ona hakaret ettiği için"
+   ]
+  },
+  {
+   "q": "Kutsal ses anneye ne yapmasını söyledi?",
+   "options": [
+    "Çocuğun iki gözünü, birini ormana, birini eve yakın dikmesini",
+    "Çocuğu bir guaraná ağacının altına gömmesini",
+    "Çocuğun gözlerini nehre atmasını",
+    "Çocuğun gözlerini şamana vermesini"
+   ]
+  },
+  {
+   "q": "Dikilen iki gözden ne tür bitkiler büyüdü?",
+   "options": [
+    "Ormanda vahşi bir bitki ve eve yakın evcil bir bitki",
+    "İki özdeş vahşi bitki",
+    "Meyve vermeyen bir bitki",
+    "Bir ağaç ve bir asma"
+   ]
+  },
+  {
+   "q": "Meyveye neden guaraná adı verildi?",
+   "options": [
+    "Çünkü tohumu ve özü bir insan gözüne benziyordu",
+    "Çünkü Guaraná adlı bir nehrin yakınında bulunduğu için",
+    "Çünkü çocuğun annesinin adından geldiği için",
+    "Küçük bir gitara benzeyen şekli nedeniyle"
+   ]
+  }
+ ],
+ "fk-pt-03": [
+  {
+   "q": "Curupira'nın ters ayakları insanları neden şaşırtır?",
+   "options": [
+    "Çünkü ayak izleri gerçekte gittiği yönün tam tersini gösterir",
+    "Çünkü yerin üzerinde uçabildiği için",
+    "Çünkü sadece geceleri yürüdüğü için",
+    "Çünkü ayakları hiç iz bırakmadığı için"
+   ]
+  },
+  {
+   "q": "Curupira gerekenden fazla hayvan öldüren avcılara ne yapardı?",
+   "options": [
+    "Onlardan intikam alırdı",
+    "Onlara uyarı mektubu verirdi",
+    "Onları basitçe görmezden gelirdi",
+    "Hayvanlardan onları affetmelerini isterdi"
+   ]
+  },
+  {
+   "q": "Chico'nun sonunda gitmesine izin vermesi için Curupira'yı ikna eden neydi?",
+   "options": [
+    "Chico gerekenden fazla avlanmayı bırakacağına söz verdi",
+    "Chico, Curupira'ya tütün hediye etti",
+    "Chico ormanda bir tapınak inşa etti",
+    "Chico bölgeyi sonsuza dek terk etti"
+   ]
+  },
+  {
+   "q": "Yolcular hâlâ Curupira'ya sunu olarak ne bırakır?",
+   "options": [
+    "Bir ağaç gövdesine biraz tütün veya cachaça",
+    "Orman girişinde taze meyve",
+    "Küçük oyulmuş heykelcikler",
+    "Toprağa gömülü paralar"
+   ]
+  }
+ ],
+ "fk-pt-04": [
+  {
+   "q": "Efsaneye göre Iara neye benzer?",
+   "options": [
+    "Uzun yeşil saçlı ve balık kuyruklu bir kadın",
+    "Gümüş pullu yaşlı bir kadın",
+    "İnsan gözlü dev bir yılan",
+    "Kadın yüzlü bir kuş"
+   ]
+  },
+  {
+   "q": "Iara nasıl bir nehir yaratığı oldu?",
+   "options": [
+    "Babası onu nehre attıktan sonra balıklar ona acıdı",
+    "Bir fırtınadan kaçmak için nehre daldı",
+    "Bir büyücü evlenmeyi reddettiği için onu lanetledi",
+    "Nehrin kendisinden doğdu"
+   ]
+  },
+  {
+   "q": "Beto, Iara'nın şarkısını ilk duyduğunda ne yapıyordu?",
+   "options": [
+    "Alacakaranlıkta nehir kenarında tek başına çalışıyordu",
+    "Büyükannesiyle balık tutuyordu",
+    "Kanosunda uyuyordu",
+    "Arkadaşlarıyla yüzüyordu"
+   ]
+  },
+  {
+   "q": "Beto, Iara'nın büyüsünden nasıl kaçmayı başardı?",
+   "options": [
+    "Kulaklarını kapatıp kanosuna geri koştu",
+    "Onu bastırmak için daha yüksek sesle şarkı söyledi",
+    "Ağını üzerine attı",
+    "Büyükannesinden kişisel olarak onu kurtarmasını istedi"
+   ]
+  }
+ ],
+ "fk-pt-05": [
+  {
+   "q": "Pedro Malasartes genellikle nasıl tarif edilir?",
+   "options": [
+    "Mal varlığı az ama zeki ve becerikli",
+    "Zengin ama dürüst olmayan bir toprak sahibi",
+    "Hırsı olmayan sessiz bir çiftçi",
+    "Geçmekte olan yabancı bir tüccar"
+   ]
+  },
+  {
+   "q": "Pedro gösteriden önce tencerenin içine ne sakladı?",
+   "options": [
+    "Zaten pişmiş bir güveç",
+    "Bir yığın sıcak kömür",
+    "İkinci, daha küçük bir tencere",
+    "Hiçbir şey, tencere gerçekten boştu"
+   ]
+  },
+  {
+   "q": "Tüccar tencereyi evde denediğinde ne oldu?",
+   "options": [
+    "Çiğ sebzeler asla pişmedi",
+    "Tencere patladı",
+    "Tencere yemeği anında pişirdi",
+    "Tencere alev aldı"
+   ]
+  },
+  {
+   "q": "Tüccar, Pedro ile yüzleşmek için geri döndüğünde ne buldu?",
+   "options": [
+    "Pedro parayla köyü çoktan terk etmişti",
+    "Pedro özür dileyip parayı geri verdi",
+    "Pedro ona ikinci bir sihirli eşya teklif etti",
+    "Pedro köylüler tarafından tutuklanmıştı"
+   ]
+  }
+ ],
+ "fk-pt-06": [
+  {
+   "q": "Hikaye başlangıçta hangi atmosferi tanımlıyor?",
+   "options": [
+    "Geceleyin nehir kenarında bir festa junina panayırı",
+    "Sessiz bir cenaze alayı",
+    "Kalabalık bir sabah pazarı",
+    "Fırtınalı bir balıkçılık gezisi"
+   ]
+  },
+  {
+   "q": "Yabancının dans etme şeklinde dikkat çekici olan neydi?",
+   "options": [
+    "Dünyaya ait olmayan bir zarafetle dans ediyordu",
+    "Kimseyle dans etmeyi reddediyordu",
+    "Sadece bir köşede tek başına dans ediyordu",
+    "Herkese yeni bir dans öğretiyordu"
+   ]
+  },
+  {
+   "q": "Festivalden aylar sonra genç kıza ne oldu?",
+   "options": [
+    "Babanın kim olduğuna dair bir açıklama olmadan hamile bulundu",
+    "Yabancıyı bulmak için köyü terk etti",
+    "Panayırdan başka bir adamla evlendi",
+    "Hastalandı ve bir daha iyileşmedi"
+   ]
+  },
+  {
+   "q": "Yaşlı ebelere göre yabancı gerçekte kimdi?",
+   "options": [
+    "Erkek kılığında büyülü bir nehir yunusu olan boto",
+    "Sabit bir biçimi olmayan gezgin bir ruh",
+    "Kılık değiştirmiş rakip bir köyün reisi",
+    "Boğulmuş bir balıkçının hayaleti"
+   ]
+  }
+ ],
+ "fk-ru-01": [
+  {
+   "q": "Büyükbaba önce kimden yardım ister?",
+   "options": [
+    "Köpekten",
+    "Büyükanneden",
+    "Kediden",
+    "Fareden"
+   ]
+  },
+  {
+   "q": "Torun kimden yardım ister?",
+   "options": [
+    "Fareden",
+    "Kediden",
+    "Zhuchka adlı köpekten",
+    "Büyükbabadan"
+   ]
+  },
+  {
+   "q": "Zhuchka kimden yardım ister?",
+   "options": [
+    "Kediden",
+    "Fareden",
+    "Büyükanneden",
+    "Torundan"
+   ]
+  },
+  {
+   "q": "Şalgamı sonunda kim çıkarmayı mümkün kılar?",
+   "options": [
+    "Büyükbaba tek başına",
+    "Kedi",
+    "Fare",
+    "Büyükanne tek başına"
+   ]
+  }
+ ],
+ "fk-ru-02": [
+  {
+   "q": "Kolobok yol boyunca yuvarlanmaya neden başladı?",
+   "options": [
+    "Kendi kendine pencere kenarından atladı",
+    "Yaşlı kadın onu dışarı itti",
+    "Bir kurt onu götürdü",
+    "Rüzgar tarafından savruldu"
+   ]
+  },
+  {
+   "q": "Kolobok tavşandan ve kurttan nasıl kaçar?",
+   "options": [
+    "Bir deliğe saklanır",
+    "Bir şarkı söyler ve yuvarlanıp gider",
+    "Ayıyı çağırır",
+    "Onları ısırır"
+   ]
+  },
+  {
+   "q": "Tilki kolobok'tan ne yapmasını ister?",
+   "options": [
+    "Hızla yuvarlanıp gitmesini",
+    "Ona biraz ekmek vermesini",
+    "Şarkısını tekrar, kendisine daha yakından söylemesini",
+    "Ayıyla tanışmasını"
+   ]
+  },
+  {
+   "q": "Kolobok'a sonunda ne olur?",
+   "options": [
+    "Sonsuza dek kaçar",
+    "Tilki onu yer",
+    "Ayı onu yer",
+    "Eve döner"
+   ]
+  }
+ ],
+ "fk-ru-03": [
+  {
+   "q": "Üvey anne üvey kızını ormana neden gönderir?",
+   "options": [
+    "Odun toplamak için",
+    "Ondan hoşlanmadığı için onu orada tek başına bırakmak için",
+    "Kasıtlı olarak Morozko ile tanışması için",
+    "Ona bir koca bulmak için"
+   ]
+  },
+  {
+   "q": "Üvey kız, Morozko sıcak olup olmadığını sorduğunda nasıl karşılık verir?",
+   "options": [
+    "Ağlar ve yardım için yalvarır",
+    "Kaçar",
+    "Nazikçe sıcak olduğunu söyler",
+    "Cevap vermeyi reddeder"
+   ]
+  },
+  {
+   "q": "Morozko üvey kıza hangi ödülü verir?",
+   "options": [
+    "Hiçbir şey",
+    "Sıcak bir kürk manto ve bir sandık mücevher",
+    "Sihirli bir at",
+    "Yeni bir ev"
+   ]
+  },
+  {
+   "q": "Üvey annenin öz kızına ormanda ne olur?",
+   "options": [
+    "Daha da büyük zenginlikler alır",
+    "Kaba davrandığı için Morozko onu dondurur",
+    "Morozko ile evlenir",
+    "Kaybolur ama güvenle eve döner"
+   ]
+  }
+ ],
+ "fk-ru-04": [
+  {
+   "q": "Bahçeden altın elmaları çalan neydi?",
+   "options": [
+    "Bir ayı",
+    "Ateşkuşu",
+    "Bir kurt",
+    "En büyük kardeş"
+   ]
+  },
+  {
+   "q": "Boz Kurt, atını yedikten sonra İvan'a ne teklif etti?",
+   "options": [
+    "Hiçbir şey, kaçıp gitti",
+    "At yerine kendi yardımını",
+    "Altın bir tüy",
+    "Sihirli bir kılıç"
+   ]
+  },
+  {
+   "q": "İvan'ın kardeşleri eve dönüş yolunda ona ne yaptı?",
+   "options": [
+    "Ganimetlerini taşımasına yardım ettiler",
+    "Onu öldürüp ödüllerini aldılar",
+    "Onu terk ettiler ama yaşamasına izin verdiler",
+    "Elena ile kendileri evlendiler"
+   ]
+  },
+  {
+   "q": "Hikaye İvan ve Boz Kurt için nasıl sona erer?",
+   "options": [
+    "İkisi de bozkırda ölür",
+    "İvan, Elena ile evlenir ve kurt ormana döner",
+    "Kurt çar olur",
+    "İvan kardeşlerini asla affetmez"
+   ]
+  }
+ ],
+ "fk-ru-05": [
+  {
+   "q": "Sadko, Deniz Kralı'nın iltifatını ilk nasıl kazandı?",
+   "options": [
+    "Ona altın verdi",
+    "Bir deniz canavarıyla savaştı",
+    "Gusli'yi öyle güzel çaldı ki onu büyüledi",
+    "Ona bir saray inşa etti"
+   ]
+  },
+  {
+   "q": "Sadko'nun gemileri denizde neden aniden durdu?",
+   "options": [
+    "Bir fırtına onları harap etti",
+    "Deniz Kralı, hiç ödenmemiş bir haraç talep etti",
+    "Rüzgarları bitti",
+    "Korsanlar yolu kesti"
+   ]
+  },
+  {
+   "q": "Sadko denizdeki yıkıcı dansı durdurmak için ne yaptı?",
+   "options": [
+    "Daha yüksek sesle şarkı söyledi",
+    "Gusli'nin tellerini kopardı",
+    "Suya daldı",
+    "Deniz kızlarından yardım istedi"
+   ]
+  },
+  {
+   "q": "Sadko sonunda Deniz Kralı'nın su altındaki krallığından nasıl ayrıldı?",
+   "options": [
+    "Savaşarak çıktı",
+    "Bir deniz kızıyla evlenip sonsuza dek kaldı",
+    "Çernavuşka'nın yanında uykuya daldı ve evinin kıyısında uyandı",
+    "Deniz Kralı onu sürgün etti"
+   ]
+  }
+ ],
+ "fk-ru-06": [
+  {
+   "q": "Snegurochka nasıl var oldu?",
+   "options": [
+    "Ormanda terk edilmiş halde bulundu",
+    "Yaşlı, çocuksuz bir çift onu kardan yaptı ve o canlandı",
+    "Çifte olağan şekilde doğdu",
+    "Bahar Ana onu en baştan bir hediye olarak gönderdi"
+   ]
+  },
+  {
+   "q": "Çoban Lel ile tanıştıktan sonra Snegurochka'ya ne oldu?",
+   "options": [
+    "Hemen hastalandı",
+    "Kalbinde ilk kez sıcak bir duygu uyandı",
+    "Ebeveynlerine geri kaçtı",
+    "Onun şarkısını dinlemeyi reddetti"
+   ]
+  },
+  {
+   "q": "Bahar Ana'nın gerçek aşk hediyesi sonunda Snegurochka'ya neye mal oldu?",
+   "options": [
+    "Hafızasına",
+    "Hiçbir şeye, bedeli olmayan bir hediyeydi",
+    "Hayatına, çünkü yaz güneşiyle karşılaşmak ölümcül çıktı",
+    "Güzelliğine"
+   ]
+  },
+  {
+   "q": "İnsanlar daha sonra Snegurochka'nın kaderini nasıl yorumladı?",
+   "options": [
+    "Büyünün var olmadığının kanıtı olarak",
+    "Gerçek yaşamın sıcaklığına dayanamayan kırılgan güzellik hakkında bir kıssa olarak",
+    "Festivallerde şarkı söylemeye karşı bir uyarı olarak",
+    "Önemsiz yerel bir dedikodu olarak"
+   ]
+  }
+ ],
+ "fk-sv-01": [
+  {
+   "q": "Tomte nerede yaşardı?",
+   "options": [
+    "Çiftlik evinin mutfağında",
+    "Ahırda ya da tavan arasında",
+    "Yakındaki ormanda",
+    "Köy kilisesinde"
+   ]
+  },
+  {
+   "q": "Aile Noel arifesinde tomte için ne bırakırdı?",
+   "options": [
+    "Bir bardak süt ve ekmek",
+    "Tereyağlı pirinç lapası",
+    "Yeni kırmızı bir başlık",
+    "Paralar ve gümüş"
+   ]
+  },
+  {
+   "q": "Tomte neden öfkeliydi?",
+   "options": [
+    "Aile taşındı",
+    "Bir çocuk kendisi için ayrılan tereyağını yedi",
+    "Ahır yandı",
+    "Çiftçi inekleri sattı"
+   ]
+  },
+  {
+   "q": "Aile durumu düzelttikten sonra ne oldu?",
+   "options": [
+    "Tomte çiftliği sonsuza dek terk etti",
+    "Çiftliğin şansı yeniden yerine geldi",
+    "Çocuk çiftçi oldu",
+    "Tomte bir ineğe dönüştü"
+   ]
+  }
+ ],
+ "fk-sv-02": [
+  {
+   "q": "Tilki ve ayı ne yapmaya karar verdi?",
+   "options": [
+    "Kışın birlikte avlanmak",
+    "Birlikte bir tarla ekip hasadı paylaşmak",
+    "Birlikte bir ev inşa etmek",
+    "Ormanda birbirleriyle yarışmak"
+   ]
+  },
+  {
+   "q": "İlk yıl hangi ürünü ektiler ve kim yararlandı?",
+   "options": [
+    "Tahıl, ve ayı yararlandı",
+    "Şalgam, ve tilki yararlandı",
+    "Şalgam, ve ayı yararlandı",
+    "Tahıl, ve tilki her şeyi kaybetti"
+   ]
+  },
+  {
+   "q": "İkinci mahsulle ne oldu?",
+   "options": [
+    "Ayı sonunda daha iyi payı aldı",
+    "Tilki yine değerli kısmı aldı",
+    "Bu sefer eşit paylaştılar",
+    "Hasat tamamen başarısız oldu"
+   ]
+  },
+  {
+   "q": "Hikaye nasıl sona erer?",
+   "options": [
+    "Tilki ayıdan özür diler",
+    "Ayı tilkiyi yakalayıp yer",
+    "Tilki kaçar ve en zeki hayvan olarak hatırlanır",
+    "Ayı ve tilki tekrar arkadaş olur"
+   ]
+  }
+ ],
+ "fk-sv-03": [
+  {
+   "q": "Halk inanışına göre Näcken ne yapar?",
+   "options": [
+    "Geceleri çiftlik hayvanlarını korur",
+    "Nehir kenarlarında keman çalarak oturur ve insanları suya çeker",
+    "Nehirlerin üzerine köprüler inşa eder",
+    "Çocukları boğulmaktan korur"
+   ]
+  },
+  {
+   "q": "Anders akıntıların yanında ne gördü?",
+   "options": [
+    "Çamaşır yıkayan yaşlı bir kadın",
+    "Bir kayanın üzerinde keman çalan genç bir adam",
+    "Dans eden bir grup çocuk",
+    "Hiçbir şey, sadece boş su"
+   ]
+  },
+  {
+   "q": "Anders'in büyükannesi onu ne konusunda uyardı?",
+   "options": [
+    "Buzun çok ince olduğu konusunda",
+    "Adamın Näcken olduğu ve sonunda onu suya çekeceği konusunda",
+    "Kemanın çalıntı olduğu konusunda",
+    "Yabancılara asla parayla güvenilmemesi konusunda"
+   ]
+  },
+  {
+   "q": "Anders kendini korumak için ne yaptı?",
+   "options": [
+    "Köyden taşındı",
+    "Suya bir parça çelik attı",
+    "Bir rahipten nehri kutsamasını istedi",
+    "Akıntıların etrafına bir çit yaptı"
+   ]
+  }
+ ],
+ "fk-sv-04": [
+  {
+   "q": "Gustav Eriksson Dalarna'dan neden geçiyordu?",
+   "options": [
+    "Hac yolculuğundaydı",
+    "Danimarka kralından kaçıp yardım arıyordu",
+    "Spor için avlanıyordu",
+    "Yeni bir kilise inşa ediyordu"
+   ]
+  },
+  {
+   "q": "Dalarna halkı başlangıçta ne yaptı?",
+   "options": [
+    "Ona hemen bir ordu verdiler",
+    "Ona yardım etmeyi reddettiler",
+    "Onu Danimarkalılara teslim ettiler",
+    "Onu hemen kral seçtiler"
+   ]
+  },
+  {
+   "q": "Dalarna çiftçilerini fikirlerini değiştirmeye ikna eden neydi?",
+   "options": [
+    "Norveç'ten bir mektup",
+    "Stockholm Kan Banyosu haberi",
+    "Yiyecek kıtlığı",
+    "Papa'dan bir mesaj"
+   ]
+  },
+  {
+   "q": "Gustav Vasa'nın peşinden koşuşun anısına bugün ne yapılıyor?",
+   "options": [
+    "Her Noel'de bir kilise ayini",
+    "Vasaloppet kayak yarışı",
+    "Stockholm'de bir tiyatro oyunu",
+    "Sälen'de bir heykel dikildi"
+   ]
+  }
+ ],
+ "fk-sv-05": [
+  {
+   "q": "Skogsrået'nin görünüşünde belirgin olan nedir?",
+   "options": [
+    "Hiç yüzü yoktur",
+    "Önden güzeldir ama çürük bir ağaç gibi arkası oyuktur",
+    "Sadece geceleri görünmezdir",
+    "Her zaman yaşlı bir kadın olarak görünür"
+   ]
+  },
+  {
+   "q": "Kadın, Olof'tan ne istedi?",
+   "options": [
+    "Kış için yiyecek ve barınak",
+    "Ateşinin yanında ısınmak",
+    "Köye giden yolu",
+    "Kızağında bir yolculuk"
+   ]
+  },
+  {
+   "q": "Olof onun kim olduğunu fark ettiğinde nasıl tepki verdi?",
+   "options": [
+    "Çığlık atarak kaçtı",
+    "Sakince ona teşekkür edip iyi geceler diledi",
+    "Onu korkutmak için ateşe kül attı",
+    "Hemen gitmesini istedi"
+   ]
+  },
+  {
+   "q": "Olof'un nezaketinin sonucu ne oldu?",
+   "options": [
+    "Hiçbir şey değişmedi",
+    "O sezon hem fırını hem de av şansı iyileşti",
+    "Hayatı boyunca lanetlendi",
+    "Ormanda yaşamaya davet edildi"
+   ]
+  }
+ ],
+ "fk-sv-06": [
+  {
+   "q": "Thor ve yoldaşları alacakaranlıkta Jotunheim'da ne buldu?",
+   "options": [
+    "Küçük bir çiftçi köyü",
+    "Tepesini görmek için başlarını geriye atmaları gereken kadar devasa bir kale",
+    "Yolunu kesen donmuş bir nehir",
+    "Boş bir savaş alanı"
+   ]
+  },
+  {
+   "q": "Loki'nin Logi'ye karşı yemek yarışmasında ne oldu?",
+   "options": [
+    "Loki kolayca kazandı",
+    "Loki ağır bir yenilgi aldı, çünkü Logi eti, kemikleri ve teknenin kendisini bile yuttu",
+    "Berabere kaldılar ve eti paylaştılar",
+    "Loki yarışmayı reddetti"
+   ]
+  },
+  {
+   "q": "Thor'un karşılaştığı üç sınav neydi?",
+   "options": [
+    "Güreş, okçuluk ve yüzme",
+    "Bir boynuzdan içmek, bir kediyi kaldırmak ve yaşlı bir kadınla güreşmek",
+    "Bir dağa tırmanmak, bir taş kaldırmak ve koşu yarışı",
+    "Şarkı söylemek, içmek ve zıplamak"
+   ]
+  },
+  {
+   "q": "Thor'un içtiği boynuz gerçekte neye bağlıydı?",
+   "options": [
+    "Kalenin altındaki bir kuyuya",
+    "Okyanusa, bu yüzden yudumları gelgitlerin çekilmesine neden oldu",
+    "Bir ateş nehrine",
+    "Hiçbir şeye — sadece çok derin bir boynuzdu"
+   ]
+  }
+ ],
+ "fk-tr-01": [
+  {
+   "q": "Hoca kazanı geri verdiğinde komşu içinde ne buldu?",
+   "options": [
+    "Bir mektup",
+    "Küçük bir tencere",
+    "Biraz para",
+    "Bir parça kumaş"
+   ]
+  },
+  {
+   "q": "Komşu kazanı Hoca'ya ikinci kez neden seve seve ödünç verdi?",
+   "options": [
+    "Hoca'nın onu tamir etmesini istedi",
+    "Yine doğurabileceğini düşündü",
+    "Evinde yer açmak istedi",
+    "Hoca ona para ödedi"
+   ]
+  },
+  {
+   "q": "Hoca komşusuna kazan hakkında hangi haberi verdi?",
+   "options": [
+    "Çalındığını",
+    "Kırıldığını",
+    "Öldüğünü",
+    "Sattığını"
+   ]
+  },
+  {
+   "q": "Hoca'nın hikayenin sonundaki zekice savunması neydi?",
+   "options": [
+    "Kazanların pahalı olduğunu",
+    "Komşunun yeni bir kazan alması gerektiğini",
+    "Komşu kazanın doğurduğuna inandıysa, öldüğüne de inanması gerektiğini",
+    "Komşunun çok açgözlü olduğunu"
+   ]
+  }
+ ],
+ "fk-tr-02": [
+  {
+   "q": "Hizmetkarlar Hoca'yı başlangıçta düğüne neden almadı?",
+   "options": [
+    "Çok geç kaldı",
+    "Çok yoksul göründü",
+    "Davetli değildi",
+    "Onlar için bir yabancıydı"
+   ]
+  },
+  {
+   "q": "İnsanlar döndüğünde Hoca'ya nasıl farklı davrandı?",
+   "options": [
+    "Onu tamamen görmezden geldiler",
+    "Ona daha kötü yemek verdiler",
+    "Ona saygıyla davranıp en iyi koltuğu verdiler",
+    "Yine gitmesini istediler"
+   ]
+  },
+  {
+   "q": "Hoca masada kürk mantosuyla ne yaptı?",
+   "options": [
+    "Onu sattı",
+    "Kolunu yemeğe daldırdı",
+    "Ev sahibine verdi",
+    "Onu çıkardı"
+   ]
+  },
+  {
+   "q": "\"Ye kürküm ye\" sözünün anlamı nedir?",
+   "options": [
+    "Güzel kıyafetlerin şans getirdiğini",
+    "Yemeğin asla israf edilmemesi gerektiğini",
+    "İnsanlara kim olduklarına göre, kıyafetlerine göre değil, saygı gösterilmesi gerektiğini",
+    "Konukların her zaman resmi giyinmesi gerektiğini"
+   ]
+  }
+ ],
+ "fk-tr-03": [
+  {
+   "q": "Köylüler devle kendi başlarına neden baş edemedi?",
+   "options": [
+    "Liderleri yoktu",
+    "Onunla dövüşecek güçleri yoktu",
+    "Köyü çoktan terk etmişlerdi",
+    "Var olduğuna inanmıyorlardı"
+   ]
+  },
+  {
+   "q": "Keloğlan devi korkutmak için hangi hileyi kullandı?",
+   "options": [
+    "Ona ateş fırlattı",
+    "Bir taştan su sıkıyormuş gibi yaptı",
+    "Askerlerden yardım istedi",
+    "Deve bir kılıç gösterdi"
+   ]
+  },
+  {
+   "q": "Kandırıldıktan sonra dev ne yapmaya karar verdi?",
+   "options": [
+    "Yine de Keloğlan'la dövüşmek",
+    "Köyden sonsuza dek uzaklaşmak",
+    "Keloğlan'dan arkadaş olmasını istemek",
+    "Gitmeden önce daha fazla hayvan çalmak"
+   ]
+  },
+  {
+   "q": "Bu masal, metne göre hangi dersi öğretiyor?",
+   "options": [
+    "Gücün her zaman kazandığını",
+    "Zekanın güç kadar önemli olduğunu",
+    "Devlerin asla gerçek olmadığını",
+    "Köylülerin yabancılara asla güvenmemesi gerektiğini"
+   ]
+  }
+ ],
+ "fk-tr-04": [
+  {
+   "q": "Cami inşaatı neden yavaşladı?",
+   "options": [
+    "Yeterince taş yoktu",
+    "İşçiler Karagöz ve Hacivat'ın konuşmasını dinlemek için durdu",
+    "Padişahın parası tükendi",
+    "Bir fırtına inşaat alanına zarar verdi"
+   ]
+  },
+  {
+   "q": "Padişah idam emrini verdikten sonra ne hissetti?",
+   "options": [
+    "Cami daha hızlı biteceği için rahatladı",
+    "Sohbetlerini özlediği için pişmanlık",
+    "İşçilere öfke",
+    "Kararından gurur"
+   ]
+  },
+  {
+   "q": "Şair kuklaları yapmak için hangi malzemeyi kullandı?",
+   "options": [
+    "Ahşap",
+    "Kağıt",
+    "Deve derisi",
+    "Kumaş"
+   ]
+  },
+  {
+   "q": "Karagöz-Hacivat gölge oyunları bugün geleneksel olarak ne zaman sergilenir?",
+   "options": [
+    "Düğünlerde",
+    "Ramazan ayında",
+    "Yılbaşı gecesi",
+    "Hasat festivallerinde"
+   ]
+  }
+ ],
+ "fk-tr-05": [
+  {
+   "q": "Beylerin ordularının Tepegöz'ü yenmesini imkansız kılan neydi?",
+   "options": [
+    "Onlardan uçarak kaçabiliyordu",
+    "Derisi demir gibiydi ve zarar görmüyordu",
+    "Kimsenin bulamayacağı bir yere saklanıyordu",
+    "Ona yardım eden başka devleri vardı"
+   ]
+  },
+  {
+   "q": "Oğuz beyleri yardım için neden Basat'a başvurdu?",
+   "options": [
+    "En yaşlı ve en bilge beydi",
+    "Bir dişi aslan tarafından büyütülmüş olağanüstü bir savaşçıydı",
+    "Tepegöz'ün kardeşiydi",
+    "Daha önce devleri yenmişti"
+   ]
+  },
+  {
+   "q": "Basat, Tepegöz'ü kör ettikten sonra nasıl kaçtı?",
+   "options": [
+    "Kılıçla yolunu keserek geçti",
+    "Kendini bir koyun postuna sarıp yanından süzüldü",
+    "Mağaranın altından tünel kazdı",
+    "Devin uykuya dalmasını bekledi"
+   ]
+  },
+  {
+   "q": "Metne göre bu hikaye Türk destan geleneğinde neyi gösteriyor?",
+   "options": [
+    "Devlerin sonunda her zaman kazandığını",
+    "Zeka ve cesaretin kaba güce üstün gelebileceğini",
+    "Çobanların en cesur kahramanlar olduğunu",
+    "Perilerin Oğuz halkını koruduğunu"
+   ]
+  }
+ ],
+ "fk-tr-06": [
+  {
+   "q": "Mehmene Banu, Ferhat'ın Şirin'in elini kazanması için hangi koşulu koydu?",
+   "options": [
+    "Rakip bir prensi yenmesi gerekiyordu",
+    "Su getirmek için Bisütun Dağı'nı yarması gerekiyordu",
+    "Bir soylu olması gerekiyordu",
+    "Krallığı sonsuza dek terk etmesi gerekiyordu"
+   ]
+  },
+  {
+   "q": "Dağ neredeyse delindiğinde Mehmene Banu ne yaptı?",
+   "options": [
+    "Sözünü hemen tuttu",
+    "Ferhat'a Şirin'in öldüğünü yalanla söylemesi için yaşlı bir kadın gönderdi",
+    "Ferhat'a bunun yerine altın teklif etti",
+    "Şirin'den açıkça başka biriyle evlenmesini istedi"
+   ]
+  },
+  {
+   "q": "Şirin nasıl öldü?",
+   "options": [
+    "Mehmene Banu tarafından öldürüldü",
+    "Yaşlılıktan öldü",
+    "Ferhat'ın mezarında son nefesini verene kadar ağladı",
+    "Dağdan düştü"
+   ]
+  },
+  {
+   "q": "Metin bu masalın mirasını nasıl tanımlıyor?",
+   "options": [
+    "Festivallerde sergilenen bir komedi olarak",
+    "Sadakat ve yıkıcı bir yalanın bedeli hakkında ibretlik bir hikaye olarak",
+    "Gerçek bir savaşın tarihi kaydı olarak",
+    "Çocuklar için bir ninni olarak"
+   ]
+  }
+ ],
+ "fk-vi-01": [
+  {
+   "q": "Kral Hùng oğullarını neden arayışa çıkardı?",
+   "options": [
+    "Atalarına sunmak için en lezzetli yemeği bulmaları için",
+    "Saray için altın ve hazine bulmaları için",
+    "Kral için bir eş bulmaları için",
+    "Krallığın sınırlarını haritalamaları için"
+   ]
+  },
+  {
+   "q": "Tanrı, Lang Liêu'ya rüyasında ne söyledi?",
+   "options": [
+    "Altının en değerli şey olduğunu",
+    "Pirincin gökyüzünün altındaki en değerli şey olduğunu",
+    "Ormanda avlanması gerektiğini",
+    "Uzak bir adaya yelken açması gerektiğini"
+   ]
+  },
+  {
+   "q": "Kral Hùng, Lang Liêu'nun keklerini nasıl buldu?",
+   "options": [
+    "Çok sade buldu ve reddetti",
+    "Derinden etkilendi ve anlamlarını övdü",
+    "Onları hizmetkarlara verdi",
+    "Lang Liêu'dan onun yerine daha egzotik yemek yapmasını istedi"
+   ]
+  },
+  {
+   "q": "Vietnamlılar bugün bánh chưng ile ne yapar?",
+   "options": [
+    "Sadece kırsalda satarlar",
+    "Köklerini hatırlamak için her Tết'te sararlar",
+    "Artık onu yapmazlar",
+    "Sadece düğünlerde yerler"
+   ]
+  }
+ ],
+ "fk-vi-02": [
+  {
+   "q": "Öğretmenin kızı neden yanlış kardeşe aşık oldu?",
+   "options": [
+    "Lang'in kişiliğini tercih etti",
+    "İki kardeş birbirinin tıpatıp aynısıydı",
+    "Tân onunla konuşmayı reddetti",
+    "İkisiyle de hiç tanışmamıştı"
+   ]
+  },
+  {
+   "q": "Yanlış anlaşılmadan sonra Lang'a ne oldu?",
+   "options": [
+    "Öğretmenin diğer kızıyla evlendi",
+    "Evi terk etti, bir nehir kenarında yığıldı ve bir taşa dönüştü",
+    "Saraya taşındı",
+    "Hemen Tân ile barıştı"
+   ]
+  },
+  {
+   "q": "Tân'ı ararken ölen karısı neye dönüştü?",
+   "options": [
+    "Bir kireç taşı bloğuna",
+    "Bir fıstık palmiyesine",
+    "Bir tambul sarmaşığına",
+    "Bir nehre"
+   ]
+  },
+  {
+   "q": "Bugün Vietnam'da tambul ve fıstık neyi simgeliyor?",
+   "options": [
+    "Zenginliği ve iyi şansı",
+    "Eşler ve kardeşler arasındaki bağı",
+    "Savaşta zaferi",
+    "Kıskançlığa karşı bir uyarıyı"
+   ]
+  }
+ ],
+ "fk-vi-03": [
+  {
+   "q": "Üç yaşına geldiğinde çocukta olağandışı olan neydi?",
+   "options": [
+    "Zaten at binebiliyordu",
+    "Konuşamıyor, gülemiyor, yürüyemiyordu ve sadece hareketsiz yatıyordu",
+    "Zaten evi terk etmişti",
+    "Sadece kralla konuşuyordu"
+   ]
+  },
+  {
+   "q": "Çocuk kraldan kendisi için hangi üç şeyi dövmesini istedi?",
+   "options": [
+    "Ahşap bir kılıç, bir kalkan ve bir yay",
+    "Demir bir at, demir zırh ve demir bir kamçı",
+    "Altın bir taç, bir cübbe ve bir bayrak",
+    "Bir tekne, bir ağ ve bir mızrak"
+   ]
+  },
+  {
+   "q": "Demir kamçısı kırıldığında savaşçı ne kullandı?",
+   "options": [
+    "Çıplak ellerini",
+    "Dağdan taşları",
+    "Yol kenarından kopardığı bambuları",
+    "Bir köylüden ödünç aldığı bir kılıcı"
+   ]
+  },
+  {
+   "q": "Savaşçı istilacıları yendikten sonra ne oldu?",
+   "options": [
+    "Köye yerleşip köyü yönetti",
+    "Kraldan büyük bir ödül istedi",
+    "Zırhını çıkarıp atıyla gökyüzüne uçtu",
+    "Son bir savaşta öldürüldü"
+   ]
+  }
+ ],
+ "fk-vi-04": [
+  {
+   "q": "Sơn Tinh ve Thủy Tinh'in her birinin hangi gücü vardı?",
+   "options": [
+    "Sơn Tinh uçabilirdi; Thủy Tinh görünmez olabilirdi",
+    "Sơn Tinh dağları hareket ettirebilirdi; Thủy Tinh yağmur ve rüzgar çağırabilirdi",
+    "İkisi de sadece kılıçla savaşabilirdi",
+    "Sơn Tinh denize hükmederdi; Thủy Tinh gökyüzüne hükmederdi"
+   ]
+  },
+  {
+   "q": "Sơn Tinh nişan hediyelerini önce getirdikten sonra ne oldu?",
+   "options": [
+    "Kral fikrini değiştirip bunun yerine Thủy Tinh'i seçti",
+    "Sơn Tinh, Mỵ Nương ile evlendi ve Thủy Tinh öfkeyle sular yükseltti",
+    "İki talip de reddedildi",
+    "Mỵ Nương ikisiyle de evlenmeyi reddetti"
+   ]
+  },
+  {
+   "q": "Kızıl Nehir deltasındaki insanlar her yıl neden set inşa eder?",
+   "options": [
+    "Tarım için tatlı su depolamak için",
+    "Thủy Tinh'in Sơn Tinh'le yeniden savaşmak için nehri her yıl taşırdığına inandıkları için",
+    "Kral Hùng'un doğum gününü onurlandırmak için",
+    "Sơn Tinh onlara emrettiği için"
+   ]
+  },
+  {
+   "q": "Sơn Tinh ve Thủy Tinh hikayesi hangi dersi veriyor?",
+   "options": [
+    "Zenginliğin sonunda her zaman kazandığını",
+    "Tanrıların asla kızdırılmaması gerektiğini",
+    "İnsanların sert, tekrar eden bir doğaya karşı direndiğini ve sebat ettiğini",
+    "Evlilik yarışmalarının her zaman kötü sonuçlandığını"
+   ]
+  }
+ ],
+ "fk-vi-05": [
+  {
+   "q": "Cám daha fazla karides yakalama ödülünü nasıl kazandı?",
+   "options": [
+    "Tấm'den iki kat daha çok çalıştı",
+    "Tấm'i eğilmesi için kandırdı, sonra karidesini çaldı",
+    "Bir balıkçıdan karides satın aldı",
+    "Annesinden karidesi yakalamasını istedi"
+   ]
+  },
+  {
+   "q": "Cám, gudgeon balığını öldürdükten sonra Buda, Tấm'e balık kemikleriyle ne yapmasını söyledi?",
+   "options": [
+    "Onları nehre atmasını",
+    "Yatağının dört ayağının altına gömmesini",
+    "Üvey anneye bir sunu olarak vermesini",
+    "Köy tapınağında yakmasını"
+   ]
+  },
+  {
+   "q": "Tấm, yaşlı çay satıcısıyla yaşamadan önce hangi biçimlere büründü?",
+   "options": [
+    "Altın bir saka kuşu, bir şeftali ağacı ve bir dokuma tezgahı",
+    "Bir balık, bir kuş ve bir çiçek",
+    "Bir ayakkabı, bir at ve bir elbise",
+    "Bir kuyu, bir bahçe ve bir fener"
+   ]
+  },
+  {
+   "q": "Kral, çay tezgahında Tấm'i nasıl tanıdı?",
+   "options": [
+    "Kraliyet cübbelerini giyiyordu",
+    "Sadece onun katlamayı bildiği anka kuşu şeklindeki tambul lokmasını tanıdı",
+    "Bir haberci ona nerede olduğunu söyledi",
+    "Ona adıyla seslendi"
+   ]
+  }
+ ],
+ "fk-vi-06": [
+  {
+   "q": "Hikayeye göre Lạc Long Quân karaya her çıktığında ne yaptı?",
+   "options": [
+    "Köylerden haraç topladı",
+    "Halka tarım, ev inşaatı ve balıkçılık öğretti",
+    "Kuzeyden gelen istilacılarla savaştı",
+    "Dağlar boyunca Âu Cơ'yu aradı"
+   ]
+  },
+  {
+   "q": "Lạc Long Quân ve Âu Cơ sonunda neden ayrılmaya karar verdi?",
+   "options": [
+    "Taht konusunda tartıştılar",
+    "Doğaları iki farklı dünyaya, denize ve dağlara bağlıydı, ki bu uzlaştırılması zor çıktı",
+    "Âu Cơ tek başına peri krallığına dönmek istedi",
+    "Yüz oğul ikiye bölünmeyi talep etti"
+   ]
+  },
+  {
+   "q": "Çift ayrılmadan önce neye karar verdi?",
+   "options": [
+    "Soylarının bir daha asla konuşmayacağına",
+    "Dağ oğullarının deniz oğullarını yöneteceğine",
+    "Soylarının birbirini her zaman akraba sayacağına ve zorlukta birbirine yardım edeceğine",
+    "Yüz yıl sonra yeniden birleşeceklerine"
+   ]
+  },
+  {
+   "q": "Vietnam kültürel belleğinde \"yüz yumurta\" neyi simgeliyor?",
+   "options": [
+    "On sekiz Hùng hanedanının zenginliğini",
+    "Nerede yaşarlarsa yaşasınlar tüm Vietnamlılar arasındaki akrabalığı",
+    "Kendi türünün dışında evlenmeye karşı bir uyarıyı",
+    "Özellikle Phong Châu'nun kuruluşunu"
+   ]
+  }
+ ],
+ "fk-yue-01": [
+  {
+   "q": "Ölümsüzler gelmeden önce Guangzhou halkının sorunu neydi?",
+   "options": [
+    "Hiç yağmur yoktu ve hiçbir şey yetişmiyordu",
+    "Aşırı sel vardı",
+    "Komşu bir şehirle savaş vardı",
+    "Vahşi hayvanlar tarlalara saldırıyordu"
+   ]
+  },
+  {
+   "q": "Her ölümsüz ne taşıyordu?",
+   "options": [
+    "Bir yeşim kılıç",
+    "Beş renkli bir pirinç sapı",
+    "Altın bir çan",
+    "Ahşap bir asa"
+   ]
+  },
+  {
+   "q": "Ölümsüzler ayrıldıktan sonra beş koça ne oldu?",
+   "options": [
+    "Dağlara kaçtılar",
+    "Taşa dönüştüler",
+    "Onlar da gökyüzüne uçtular",
+    "Köylüler tarafından yendiler"
+   ]
+  },
+  {
+   "q": "Guangzhou bu efsane yüzünden hangi lakabı aldı?",
+   "options": [
+    "Çiçekler Şehri",
+    "Koçlar Şehri",
+    "Yağmur Şehri",
+    "Ölümsüzler Şehri"
+   ]
+  }
+ ],
+ "fk-yue-02": [
+  {
+   "q": "Hou Yi dünyayı kurtarmak için ne yaptı?",
+   "options": [
+    "Büyük bir sur inşa etti",
+    "Dokuz güneşi vurup düşürdü",
+    "Bir ejderhayı yendi",
+    "Sihirli bir kuyu buldu"
+   ]
+  },
+  {
+   "q": "Hou Yi ölümsüzlük hapını neden hemen yemedi?",
+   "options": [
+    "Kraliçe Ana'ya güvenmiyordu",
+    "Karısından ayrılmak istemiyordu",
+    "Hapın tadı kötüydü",
+    "Onu köylülerle paylaşmak istedi"
+   ]
+  },
+  {
+   "q": "Chang'e hapı neden kendisi yuttu?",
+   "options": [
+    "Güçlü olmak istedi",
+    "Açtı",
+    "Kötü bir adam onu tehdit ederek almaya çalıştı",
+    "Kocasına gökyüzünde katılmak istedi"
+   ]
+  },
+  {
+   "q": "Hou Yi her Sonbahar Ortası Festivali'nde ne yapar?",
+   "options": [
+    "Aya bir ok atar",
+    "Chang'e'yi onurlandırmak için ay kekleri koyar",
+    "Bir dağa tırmanır",
+    "Dönüşü için fenerler yakar"
+   ]
+  }
+ ],
+ "fk-yue-03": [
+  {
+   "q": "Chu Kralı, Qu Yuan'a güvenmeyi neden bıraktı?",
+   "options": [
+    "Qu Yuan bir savaş kaybetti",
+    "Hain memurların iftirasını dinledi",
+    "Qu Yuan onun için şiir yazmayı reddetti",
+    "Qu Yuan tahtı ele geçirmeye çalıştı"
+   ]
+  },
+  {
+   "q": "Sürgündeyken Qu Yuan'a hangi haber ulaştı?",
+   "options": [
+    "Ailesi ölmüştü",
+    "Chu'nun başkenti Qin'e düşmüştü",
+    "Kral onu geri istiyordu",
+    "Ülkede kıtlık çıkmıştı"
+   ]
+  },
+  {
+   "q": "Balıkçılar nehre neden pirinç topları attı?",
+   "options": [
+    "Arama sırasında kendilerini beslemek için",
+    "Boğulduğu yeri işaretlemek için",
+    "Balık ve karidesler bedenini yemesin diye",
+    "Nehir tanrısına bir sunu olarak"
+   ]
+  },
+  {
+   "q": "Bu hikayeden hangi festival doğdu?",
+   "options": [
+    "Sonbahar Ortası Festivali",
+    "Ejderha Teknesi Festivali",
+    "Fener Festivali",
+    "Qingming Festivali"
+   ]
+  }
+ ],
+ "fk-yue-04": [
+  {
+   "q": "Wong Cho-ping, ölümsüzle tanıştığında ne yapıyordu?",
+   "options": [
+    "Bir nehir kenarında balık tutuyordu",
+    "Dağlarda koyun otlatıyordu",
+    "Bir tapınakta ders çalışıyordu",
+    "Pirinç ekiyordu"
+   ]
+  },
+  {
+   "q": "Ağabey, Wong Cho-ping'e ne olduğuna inanıyordu?",
+   "options": [
+    "Zengin olduğuna",
+    "Öldüğüne",
+    "Ülkeyi terk ettiğine",
+    "Başka bir eyalette rahip olduğuna"
+   ]
+  },
+  {
+   "q": "Wong Cho-ping güçlerini kardeşine kanıtlamak için ne yaptı?",
+   "options": [
+    "Taşları tekrar koyuna dönüştürdü",
+    "Hasta bir köylüyü iyileştirdi",
+    "Gökyüzüne uçtu",
+    "Havayı tahmin etti"
+   ]
+  },
+  {
+   "q": "Wong Tai Sin'in içten inanan tapınıcılar için ne yaptığına inanılır?",
+   "options": [
+    "Sadece zenginlik bahşeder",
+    "İçtenlikle istedikleri her şeye cevap verir",
+    "Sadece hastalığı iyileştirir",
+    "Denizcileri korur"
+   ]
+  }
+ ],
+ "fk-yue-05": [
+  {
+   "q": "Lo Chun'un askerleri adalarda yaşamaya nasıl başladı?",
+   "options": [
+    "Balık tutmak için imparator tarafından oraya gönderildiler",
+    "İsyanları yenildikten sonra oraya kaçtılar",
+    "Kazazede denizcilerdi",
+    "Sürgün edilmiş suçlulardı"
+   ]
+  },
+  {
+   "q": "Efsaneye göre Lo Ting neye benziyordu?",
+   "options": [
+    "Tamamen insan ama yeşil ciltli",
+    "Balık gövdeli, bebek gibi ağlayan insan yüzlü",
+    "İnsan özelliği olmayan dev balıklar",
+    "Ağaçlarda yaşayan kanatlı yaratıklar"
+   ]
+  },
+  {
+   "q": "Lo Ting yakındaki balıkçılara güya nasıl yardım etti?",
+   "options": [
+    "Onlar için balık tuttular",
+    "Yaklaşan fırtınaları uyarmak için bağırdılar",
+    "Hasarlı tekneleri onardılar",
+    "Gemileri sisin içinde yönlendirdiler"
+   ]
+  },
+  {
+   "q": "Lantau Adası çevresindeki balıkçı aileleri geleneksel olarak Lo Ting'i nasıl görürdü?",
+   "options": [
+    "Korkulması gereken tehlikeli canavarlar olarak",
+    "Sunularla onurlandırılması gereken denizin koruyucuları olarak",
+    "Avlarını mahveden zararlılar olarak",
+    "Rakip bir köyün casusları olarak"
+   ]
+  }
+ ],
+ "fk-yue-06": [
+  {
+   "q": "Maymun Kral nasıl var oldu?",
+   "options": [
+    "Maymun ebeveynlerden doğdu",
+    "Taş bir yumurtadan fırladı",
+    "Yeşim İmparator tarafından yaratıldı",
+    "Büyüyle dönüştürülmüş bir insandı"
+   ]
+  },
+  {
+   "q": "Maymun Kral, İstediğim Gibi Altın Bantlı Sopa'yı nasıl elde etti?",
+   "options": [
+    "Onu kendisi dövdü",
+    "Ejderha Kral ile bir yarışmada kazandı",
+    "Ejderha Kral'dan talep etti, onun da başka seçeneği kalmadı",
+    "Yeşim İmparator'dan bir hediyeydi"
+   ]
+  },
+  {
+   "q": "Maymun Kral \"Atların Koruyucusu\" olmak konusunda neden çok öfkelendi?",
+   "options": [
+    "Bunun cennet sarayındaki en düşük görev olduğunu keşfetti",
+    "Atlar ona saldırdı",
+    "Bunun yerine general olmak istedi",
+    "Yeşim İmparator ona ödeme yapmayı reddetti"
+   ]
+  },
+  {
+   "q": "Yeşim İmparator'un Maymun Kral'a karşı yüz bin gök askeri göndermesine ne sebep oldu?",
+   "options": [
+    "Çiçek-Meyve Dağı'na dönmeyi reddetti",
+    "Ölümsüz şeftalileri ve iksiri çaldı ve Şeftali Ziyafeti'ni mahvetti",
+    "Ejderha Kral'ın sarayına yeniden saldırdı",
+    "Yeşim İmparator'un tahtını çalmaya çalıştı"
+   ]
+  }
+ ],
+ "fk-zh-01": [
+  {
+   "q": "Anne eve ne getirdi?",
+   "options": [
+    "Bir sepet armut",
+    "Bir sepet elma",
+    "Bir torba pirinç",
+    "Bir kutu şeker"
+   ]
+  },
+  {
+   "q": "Kong Rong hangi armudu aldı?",
+   "options": [
+    "En büyüğünü",
+    "En küçüğünü",
+    "İki orta boy olanı",
+    "Hiçbirini"
+   ]
+  },
+  {
+   "q": "Kong Rong küçük armudu aldığını neden söyledi?",
+   "options": [
+    "Armut sevmediğini söyledi",
+    "Aç olmadığını söyledi",
+    "Genç olduğu ve ağabeylerinin daha büyük olduğu için",
+    "Annesinin ona söylediği için"
+   ]
+  },
+  {
+   "q": "İnsanlar genellikle bu hikayeden hangi dersi çıkarır?",
+   "options": [
+    "Her zaman hızlı ye",
+    "Güzel şeyleri başkalarına pay et ve bırak",
+    "Kardeşlerine asla güvenme",
+    "Büyük meyve daha lezzetlidir"
+   ]
+  }
+ ],
+ "fk-zh-02": [
+  {
+   "q": "Çocuklar nerede oynuyordu?",
+   "options": [
+    "Okulda",
+    "Büyük bir su küpü olan bir bahçede",
+    "Bir nehir kenarında",
+    "Bir mutfakta"
+   ]
+  },
+  {
+   "q": "Çocuklardan birine ne oldu?",
+   "options": [
+    "Bir ağaca tırmandı",
+    "Su küpüne düştü",
+    "Eve koştu",
+    "Bir oyuncak kırdı"
+   ]
+  },
+  {
+   "q": "Sima Guang arkadaşını kurtarmak için ne yaptı?",
+   "options": [
+    "Küpe atladı",
+    "Bir yetişkin çağırıp bekledi",
+    "Küpü kırmak için bir taş fırlattı",
+    "Küpü devirdi"
+   ]
+  },
+  {
+   "q": "Hikaye hangi dersi öğretiyor?",
+   "options": [
+    "Suyun yakınında asla oynama",
+    "Sakin kalıp açık düşünmenin tehlikede yardımcı olduğunu",
+    "Sorunları çözmek için her zaman yetişkinlere ihtiyaç duyulduğunu",
+    "Büyük taşların tehlikeli olduğunu"
+   ]
+  }
+ ],
+ "fk-zh-03": [
+  {
+   "q": "Gökyüzünün hasar görmesine ne sebep oldu?",
+   "options": [
+    "Bir meteor çarpması",
+    "Gonggong'un bir savaşı kaybettikten sonra Buzhou Dağı'na çarpması",
+    "Nüwa'nın kendi hatası",
+    "Büyük bir kuraklık"
+   ]
+  },
+  {
+   "q": "Gökyüzünün çökmesinin ardından hangi felaketler geldi?",
+   "options": [
+    "Sadece karanlık çöktü",
+    "Seller boşaldı ve canavarlar insanlara saldırdı",
+    "Güneş kayboldu",
+    "Dünya daha soğudu"
+   ]
+  },
+  {
+   "q": "Nüwa gökyüzünü nasıl onardı?",
+   "options": [
+    "Onu ipek iplikle dokudu",
+    "Beş renkli taşları eritip çatlakları doldurdu",
+    "Ateş tanrısından yardım istedi",
+    "Güneşe dua etti"
+   ]
+  },
+  {
+   "q": "Nüwa gökyüzünün köşelerini desteklemek için ne kullandı?",
+   "options": [
+    "Ahşap direkler",
+    "Dağ zirveleri",
+    "Dev bir kaplumbağanın dört ayağı",
+    "Demir zincirler"
+   ]
+  }
+ ],
+ "fk-zh-04": [
+  {
+   "q": "İnekçi, Dokumacı Kız ile nasıl evlenmeyi başardı?",
+   "options": [
+    "Doğrudan Yeşim İmparator'dan istedi",
+    "Yaşlı öküzün tavsiyesiyle onun cübbesini sakladı",
+    "Ona bir saray inşa etti",
+    "Kız onu tesadüfen seçti"
+   ]
+  },
+  {
+   "q": "Yeşim İmparator neden öfkelendi?",
+   "options": [
+    "İnekçi hazine çaldı",
+    "Bir peri gizlice bir ölümlüyle evlenmişti",
+    "Öküz konuşabiliyordu",
+    "Çocuklar yaramazlık yaptı"
+   ]
+  },
+  {
+   "q": "Batı'nın Kraliçe Anası çifti ayırmak için ne yarattı?",
+   "options": [
+    "Bir dağ silsilesi",
+    "Ateşten bir duvar",
+    "Gümüş Nehir (Samanyolu)",
+    "Derin bir orman"
+   ]
+  },
+  {
+   "q": "İnekçi ve Dokumacı Kız yılda bir kez nasıl buluşabiliyor?",
+   "options": [
+    "Yeşim İmparator onları kişisel olarak taşır",
+    "Saksağanlar nehrin üzerinde bir köprü oluşturur",
+    "Yüzerek geçerler",
+    "Bir ejderha onları taşır"
+   ]
+  }
+ ],
+ "fk-zh-05": [
+  {
+   "q": "İki dağ yaşlı adama ne gibi bir sorun yarattı?",
+   "options": [
+    "Tarım arazisini engellediler",
+    "Evine gidip gelmeyi engellediler",
+    "Sellere neden oldular",
+    "Güneşi gizlediler"
+   ]
+  },
+  {
+   "q": "Yaşlı adamın karısı ne itirazda bulundu?",
+   "options": [
+    "Planın tehlikeli olduğunu düşündü",
+    "Gücünden şüphe etti ve toprağın nereye gideceğini sordu",
+    "Bunun yerine taşınmak istedi",
+    "Oğullarının yardım etmesine izin vermeyi reddetti"
+   ]
+  },
+  {
+   "q": "\"Bilge Yaşlı Adam\" Aptal Yaşlı Adam'la neden alay etti?",
+   "options": [
+    "Çok zengin olduğu için",
+    "Yaşlı gücünün ötesinde bir şeye kalkıştığı için",
+    "Seyahat etmeyi reddettiği için",
+    "Ruhlarla konuştuğu için"
+   ]
+  },
+  {
+   "q": "Hikaye sonunda nasıl çözüldü?",
+   "options": [
+    "Yaşlı adam vazgeçti",
+    "Ailesi projeyi terk etti",
+    "Yeşim İmparator dağların taşınmasını sağladı",
+    "Bir sel dağları yıkayıp götürdü"
+   ]
+  }
+ ],
+ "fk-zh-06": [
+  {
+   "q": "Nüwa yelken açarken ona ne oldu?",
+   "options": [
+    "Yeni bir kıtaya ulaştı",
+    "Bir fırtına teknesini alabora etti ve boğuldu",
+    "Balıkçılar tarafından kurtarıldı",
+    "Uykuya daldı ve kıyıya sürüklendi"
+   ]
+  },
+  {
+   "q": "Nüwa'nın ruhu neye dönüştü?",
+   "options": [
+    "Bir ejderhaya",
+    "Jingwei adlı garip bir kuşa",
+    "Taş bir heykele",
+    "Bir ağaca"
+   ]
+  },
+  {
+   "q": "Jingwei hangi yemini etti?",
+   "options": [
+    "Denizden sonsuza dek kaçınmayı",
+    "Denizi doldurup başkalarının orada ölmemesini sağlamayı",
+    "Yeniden insan olmayı",
+    "Çığlığıyla denizcileri uyarmayı"
+   ]
+  },
+  {
+   "q": "\"Jingwei denizi doldurur\" ifadesi neyi simgeliyor?",
+   "options": [
+    "Pervasız tehlikeyi",
+    "İmkansız olasılıklara karşı sebatlı kararlılığı",
+    "Doğanın insanlar üzerindeki gücünü",
+    "Aşırı özgüvene karşı bir uyarıyı"
+   ]
+  }
+ ],
+ "st-b1-01": [
+  {
+   "q": "Tren neden gecikti?",
+   "options": [
+    "Raylarda bir sorun vardı",
+    "Yağmur yağıyordu",
+    "Şoför hastaydı",
+    "Çok fazla yolcu vardı"
+   ]
+  },
+  {
+   "q": "Adam Ana ve Marco'ya ne teklif etti?",
+   "options": [
+    "Biraz su",
+    "Bir gazete",
+    "Bir parça ekmek",
+    "Kendi koltuğunu"
+   ]
+  },
+  {
+   "q": "Adam ne iş yapıyordu?",
+   "options": [
+    "Tren kullanıyordu",
+    "Pazarda sebze satıyordu",
+    "Gemilerde çalışıyordu",
+    "Öğretmendi"
+   ]
+  },
+  {
+   "q": "Ana hikayenin sonunda nasıl hissetti?",
+   "options": [
+    "Gecikmeye kızgın",
+    "Yorgun ve sıkılmış",
+    "Dostane bir yabancıyla tanıştıkları için mutlu",
+    "Şehri kaçırmaktan endişeli"
+   ]
+  }
+ ],
+ "st-b1-02": [
+  {
+   "q": "Sam neden gergindi?",
+   "options": [
+    "Çorbayı sevmiyordu",
+    "Yuki'nin ailesini iyi tanımıyordu",
+    "Akşam yemeğine geç kalmıştı",
+    "Bir hediye unutmuştu"
+   ]
+  },
+  {
+   "q": "Sam, Yuki'nin babasına ne anlattı?",
+   "options": [
+    "Geminin nasıl çalıştığını",
+    "Rosetta'nın birçok kasabayı ziyaret ettiğini ve insanlara yardım ettiğini",
+    "Yorgun olduğunu",
+    "Pirinç yiyemediğini"
+   ]
+  },
+  {
+   "q": "Özel pasta tarifini kim hazırladı?",
+   "options": [
+    "Yuki",
+    "Sam",
+    "Yuki'nin annesi, kendi annesinin tarifinden",
+    "Köydeki bir restoran"
+   ]
+  },
+  {
+   "q": "Sam aileler hakkında ne söyledi?",
+   "options": [
+    "Hepsinin farklı olduğunu",
+    "Her yerde sıcak ve cömert olduklarını",
+    "Çok fazla yediklerini",
+    "Çok az konuştuklarını"
+   ]
+  }
+ ],
+ "st-b2-01": [
+  {
+   "q": "Marco mekanik işini neden istedi?",
+   "options": [
+    "Acilen paraya ihtiyacı vardı",
+    "Yer ekiplerinin sorunları gelişmiş aletler olmadan nasıl çözdüğünü merak ediyordu",
+    "Ana ondan kişisel olarak istedi",
+    "Rosetta'yı kalıcı olarak terk etmek istedi"
+   ]
+  },
+  {
+   "q": "Bir makine yedek parça olmadan bozulursa Marco ne yapardı?",
+   "options": [
+    "Parça için Rosetta'yı arardı",
+    "Onarımdan vazgeçerdi",
+    "Elde bulunan her ne varsa onunla doğaçlama yapardı",
+    "Yeni parçaların gelmesini beklerdi"
+   ]
+  },
+  {
+   "q": "Ana, Marco'nun diğer başvuru sahiplerine kıyasla neyinin dikkat çektiğini söyledi?",
+   "options": [
+    "Teknik sertifikaları",
+    "Özgüveni",
+    "Dürüstlüğü, çünkü çoğu başvuru sahibi abartıyordu",
+    "Dakikliği"
+   ]
+  },
+  {
+   "q": "Görüşmeden birkaç gün sonra ne oldu?",
+   "options": [
+    "Marco reddedildi",
+    "Marco bir deneme haftası için geri davet edildi",
+    "Atölye kapandı",
+    "Ana kasabadan ayrıldı"
+   ]
+  }
+ ],
+ "st-b2-02": [
+  {
+   "q": "Yuki neden yanına okuyacak bir şey almış olmayı diledi?",
+   "options": [
+    "Gazeteden sıkılmıştı",
+    "Bu kadar uzun bir bekleyiş beklemiyordu",
+    "Hemşire ona söyledi",
+    "Sam ona okumasını istedi"
+   ]
+  },
+  {
+   "q": "Yaşlı adam Yuki'ye ziyaretleri hakkında ne söyledi?",
+   "options": [
+    "İlk kez ziyaret ediyordu",
+    "Rutin bir kontrol için her ay geliyordu",
+    "Hastanede çalışıyordu",
+    "Kızını bekliyordu"
+   ]
+  },
+  {
+   "q": "Sam'de gerçekte sorun ne miydi?",
+   "options": [
+    "Ciddi bir hastalık",
+    "Hiçbir şey",
+    "Antibiyotiklerle tedavi edilebilir bir enfeksiyon",
+    "Kırık bir kemik"
+   ]
+  },
+  {
+   "q": "Sam hastanelerin insanlarda neyi ortaya çıkardığını söyledi?",
+   "options": [
+    "Sabırsızlığı",
+    "Sessiz bir nezaketi",
+    "Korkuyu",
+    "Sıkıntıyı"
+   ]
+  }
+ ],
+ "st-c1-01": [
+  {
+   "q": "Kitapçı sahibinin ana argümanı neydi?",
+   "options": [
+    "Düzenlemelerin büyük satıcıları haksız şekilde kayırdığını",
+    "Denetim olmadan pazarın kaotik ve güvenilmez hale geldiğini",
+    "Dükkanını kapatmak istediğini",
+    "Meyve satıcısını tamamen desteklediğini"
+   ]
+  },
+  {
+   "q": "Meyve satıcısı ikinci kahvesinden sonra hangi suçlamayı yaptı?",
+   "options": [
+    "Kitapçı sahibinin yalan söylediğini",
+    "Meclisin daha zengin tüccarların baskısına boyun eğdiğini",
+    "Kafenin kötü kahve servis ettiğini",
+    "Düzenlemelerin var olmadığını"
+   ]
+  },
+  {
+   "q": "Kafe sahibi gerilimi nasıl yatıştırdı?",
+   "options": [
+    "Onlardan gitmelerini isteyerek",
+    "Yetkilileri arayarak",
+    "İğneleyici bir sözle hamur işleri sunarak",
+    "Tartışmayı tamamen görmezden gelerek"
+   ]
+  },
+  {
+   "q": "İki adam sonunda hangi ortak noktayı buldu?",
+   "options": [
+    "Pazarın kapatılması gerektiğini",
+    "Meclisin sıradan tüccarlara danışmadığını",
+    "Fiyatların hükümet tarafından belirlenmesi gerektiğini",
+    "Meyve satıcısının baştan beri haklı olduğunu"
+   ]
+  }
+ ],
+ "st-c2-01": [
+  {
+   "q": "Sam'in son sabahında Marco'nun yaptığı ve Sam'e alışılmadık gelen şey neydi?",
+   "options": [
+    "Yolculara bağırmak",
+    "Anma pirinç levhasını alışılmadık bir duygusallıkla parlatmak",
+    "Sam'le konuşmayı reddetmek",
+    "Ayrılmak için eşyalarını toplamak"
+   ]
+  },
+  {
+   "q": "Kuzeye giden tren neden gecikti?",
+   "options": [
+    "Bir sinyal arızası",
+    "Kötü hava",
+    "Yolcu azlığı",
+    "Rosetta rayları kapatmıştı"
+   ]
+  },
+  {
+   "q": "Marco, Sam'in elini sadece sıkmak yerine ne yaptı?",
+   "options": [
+    "Ona bir hediye verdi",
+    "Bunu bir istisna diye tanımlayarak beceriksizce sarıldı",
+    "Tek kelime etmeden uzaklaştı",
+    "Onu kalıcı olarak kalmaya davet etti"
+   ]
+  },
+  {
+   "q": "Sam, Marco'nun asimetri hakkındaki sözüne hangi fikri atfetti?",
+   "options": [
+    "Gezginlerin kalanlardan her zaman daha mutlu olduğunu",
+    "Bir kişinin anıyı ileriye taşıdığını, diğerinin ise olayın geçtiği yeri koruduğunu",
+    "Vedaların tamamen kaçınılması gerektiğini",
+    "Rutinin yeniliğe üstün olduğunu"
+   ]
+  }
+ ]
+}

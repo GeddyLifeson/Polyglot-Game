@@ -1,0 +1,4790 @@
+{
+ "fk-ar-01": [
+  {
+   "q": "Cur Juha primum ab asino descendit?",
+   "options": [
+    "Quia asinus fessus erat",
+    "Quia quidam viri eum reprehenderunt quod ipse equitabat dum filius ambulabat",
+    "Quia filius eius solus equitare rogavit",
+    "Quia via nimis ardua erat"
+   ]
+  },
+  {
+   "q": "Quid Juha et filius eius facere constituerunt postquam senex sub arbore questus est?",
+   "options": [
+    "Asinum vendere",
+    "Ambo simul in asino vehi",
+    "Ambo ambulare et asinum vacuum iuxta se sinere ambulare",
+    "Domum reverti"
+   ]
+  },
+  {
+   "q": "Quam sententiam Juha filio suo dixit?",
+   "options": [
+    "Numquam peregrinis auscultandum esse",
+    "Impossibile esse omnibus placere",
+    "Semper solum in asino vehendum esse",
+    "Agricolas optime scire"
+   ]
+  },
+  {
+   "q": "Quid fabula facta est, secundum postremum paragraphum?",
+   "options": [
+    "Lex in urbe",
+    "Carmen in nuptiis cantatum",
+    "Fabula pueris narrata ut sententiam doceret",
+    "Carmen a filio Juhae scriptum"
+   ]
+  }
+ ],
+ "fk-ar-02": [
+  {
+   "q": "Quod pactum animalia cum leone fecerunt?",
+   "options": [
+    "Simul leonem oppugnare constituerunt",
+    "Constituerunt unum animal cotidie mittere ut leo ceteros in pace sineret",
+    "Constituerunt silvam relinquere",
+    "Constituerunt leoni mel pro carne dare"
+   ]
+  },
+  {
+   "q": "Cur lepus leoni dixit se sero venisse?",
+   "options": [
+    "Dixit se aberravisse",
+    "Dixit alterum leonem in via se devorare conatum esse",
+    "Dixit se aegrotare",
+    "Dixit cetera animalia se tenuisse"
+   ]
+  },
+  {
+   "q": "Quid leo in puteo vidit?",
+   "options": [
+    "Piscem",
+    "Alterum leporem",
+    "Suam ipsius imaginem, quam pro aemulo leone habuit",
+    "Nihil omnino"
+   ]
+  },
+  {
+   "q": "Quam sententiam fabula docet, secundum ultimum paragraphum?",
+   "options": [
+    "Vim semper vincere",
+    "Calliditatem vi superiorem esse posse",
+    "Leones aquam bibere non debere",
+    "Lepores omnium animalium velocissima esse"
+   ]
+  }
+ ],
+ "fk-ar-03": [
+  {
+   "q": "Quid ante Sindbadi navigationem accidit?",
+   "options": [
+    "Divitias hereditate accepit, eas celeriter consumpsit, et res per mare mercari constituit",
+    "Piscator erat qui mercator fieri volebat",
+    "A piratis in navem coactus est",
+    "Navem a patre hereditate accepit"
+   ]
+  },
+  {
+   "q": "Quid revera erat insula in qua nautae navis constiterunt?",
+   "options": [
+    "Ratis natans",
+    "Ingens cetus dormiens",
+    "Vadum harenosum",
+    "Castellum desertum"
+   ]
+  },
+  {
+   "q": "Quomodo Sindbad ad alteram insulam pervenit?",
+   "options": [
+    "A navi praetereunte servatus est",
+    "Fluctus eum in ligni fragmento illuc impulerunt",
+    "Totum iter sua sponte natavit",
+    "Alter cetus eum portavit"
+   ]
+  },
+  {
+   "q": "Quid Sindbad fecit postquam tandem Baghdadum rediit?",
+   "options": [
+    "Navigare in perpetuum omisit",
+    "Equorum magister factus est",
+    "Non multo post, iterum in mare profectus est",
+    "A Baghdado in perpetuum discessit"
+   ]
+  }
+ ],
+ "fk-ar-04": [
+  {
+   "q": "Quid Ali Baba quadraginta latrones facientes vidit?",
+   "options": [
+    "Corpus in silva sepelientes",
+    "Verbum magicum dicentes quo ianua arcana in saxo aperiretur",
+    "Caravanam praetereuntem oppugnantes",
+    "De auro furato disputantes"
+   ]
+  },
+  {
+   "q": "Quomodo Qasim arcanum Ali Babae cognovit?",
+   "options": [
+    "Ali Baba ei ipse dixit",
+    "Uxor eius nummum aureum cerae in trutina mutuata haerentem invenit",
+    "Ali Babam in silvam secutus est",
+    "Latro ei confessus est"
+   ]
+  },
+  {
+   "q": "Quid Qasim in spelunca passus est?",
+   "options": [
+    "Cum thesauro effugit",
+    "Verba magica ut exiret oblitus est et postea a latronibus interfectus est",
+    "Cum latronibus amicitiam fecit",
+    "Thesaurum abscondit et tutus rediit"
+   ]
+  },
+  {
+   "q": "Quomodo Marjana latrones vicit?",
+   "options": [
+    "Eos custodibus regis nuntiavit",
+    "Oleum ferventem in dolia in quibus latitabant infudit",
+    "Eos in spelunca inclusit",
+    "Eos ex urbe dolo abduxit"
+   ]
+  }
+ ],
+ "fk-ar-05": [
+  {
+   "q": "Cur nuntius regis ad tentorium Hatimi venit?",
+   "options": [
+    "Ut equos cum eo commutaret",
+    "Ut equam eius pretiosam peteret, celebrem eius liberalitatem temptans",
+    "Ut eum ad regis aulam invitaret",
+    "Ut eum ad certamen carminum provocaret"
+   ]
+  },
+  {
+   "q": "Cur Hatim unicam equam suam mactavit?",
+   "options": [
+    "Nullo alio modo hospitem alere poterat, cum illa nocte nullum cibum haberet",
+    "Equa aegrota erat et mox moritura",
+    "Praemium a rege cupiebat",
+    "Nuntius id exigebat"
+   ]
+  },
+  {
+   "q": "Cur Hatim ignem magnum quaque nocte in colle accendebat?",
+   "options": [
+    "Ut familiae suae cibum coqueret",
+    "Ut viatores errantes ad tentorium suum ad cibum et hospitium duceret",
+    "Ut tribum suam in incursionibus moneret",
+    "Ut feras arceret"
+   ]
+  },
+  {
+   "q": "Secundum ultimum paragraphum, cur Hatim per saecula memoratur?",
+   "options": [
+    "Quia omnibus circa se ditior erat",
+    "Quia liberalitatem etiam in rebus adversis firmum principium fecit",
+    "Quia multa bella vicit",
+    "Quia carmina sui temporis celeberrima scripsit"
+   ]
+  }
+ ],
+ "fk-ar-06": [
+  {
+   "q": "Cur Antarah in tribu sua primum plena dignitate caruit?",
+   "options": [
+    "In tribu aemula natus erat",
+    "Mater eius ancilla Abyssinica erat, ideoque 'servus Banu Abs' vocabatur",
+    "In proeliis pugnare recusabat",
+    "Nimis iuvenis erat quam ut agnosceretur"
+   ]
+  },
+  {
+   "q": "Quomodo Antarah libertatem et agnitionem tamquam filius Shaddadis meruit?",
+   "options": [
+    "Patri pretium redemptionis solvit",
+    "Camelos raptos ferociter recuperare pugnavit, ita patrem coegit ut eum publice agnosceret",
+    "Ablam clam in matrimonium duxit",
+    "Certamen carminum vicit"
+   ]
+  },
+  {
+   "q": "Quam condicionem impossibilem Malik posuit ut Abla Antarae nuberet?",
+   "options": [
+    "Antarah Malik singulari certamine vincere debebat",
+    "Antarah mille camelas rarissimas rubro colore insignes afferre debebat",
+    "Antarah prius poeta fieri debebat",
+    "Antarah tribum suam in perpetuum relinquere debebat"
+   ]
+  },
+  {
+   "q": "Secundum ultimum paragraphum, quid Antarah in hereditate Arabica significat?",
+   "options": [
+    "Figuram tragicam quae numquam id quod cupivit assecuta est",
+    "Equitem amore captum qui dignitatem et libertatem propriis factis, non genere, meruit",
+    "Victorem crudelem quem omnes timebant",
+    "Mercatorem divitem qui statum suum emit"
+   ]
+  }
+ ],
+ "fk-de-01": [
+  {
+   "q": "Quid molitor regi de filia sua dixit?",
+   "options": [
+    "Eam stramen in aurum nere posse",
+    "Eam panem magicum coquere posse",
+    "Eam pulchre canere posse",
+    "Eam pannum sericum texere posse"
+   ]
+  },
+  {
+   "q": "Quid puella homunculo dedit cum primum eam adiuvit?",
+   "options": [
+    "Nummum aureum",
+    "Monile suum",
+    "Calceos suos",
+    "Panem"
+   ]
+  },
+  {
+   "q": "Quid puella homunculo tertia nocte promisit?",
+   "options": [
+    "Dimidium regni",
+    "Primum liberum suum",
+    "Se eum in matrimonium ducturam",
+    "Anulum suum"
+   ]
+  },
+  {
+   "q": "Quomodo regina nomen homunculi cognovit?",
+   "options": [
+    "Ille ipse ei dixit",
+    "In libro legit",
+    "Nuntius eum in silva id canentem audivit",
+    "Rex id divinavit"
+   ]
+  }
+ ],
+ "fk-de-02": [
+  {
+   "q": "Cur mater capra liberos suos monuit?",
+   "options": [
+    "Propter lupum improbum",
+    "Propter tempestatem",
+    "Propter venatores",
+    "Propter ignem"
+   ]
+  },
+  {
+   "q": "Quid lupus fecit ut vox eius mollis sonaret?",
+   "options": [
+    "Lac calidum bibit",
+    "Cretam comedit",
+    "Carmen cecinit",
+    "Susurravit"
+   ]
+  },
+  {
+   "q": "Quomodo mater capra sex haedos servavit?",
+   "options": [
+    "Lupum territum fugavit",
+    "Ventrem eius secuit et eos liberavit",
+    "Eum in puteum dolo duxit",
+    "Venatorem vocavit"
+   ]
+  },
+  {
+   "q": "Quomodo lupus tandem periit?",
+   "options": [
+    "A venatore sagitta ictus est",
+    "Ex arbore cecidit",
+    "Lapides in ventre eum in puteum traxerunt",
+    "Aufugit et numquam rediit"
+   ]
+  }
+ ],
+ "fk-de-03": [
+  {
+   "q": "Quod malum oppidum Hamelinum afflixit?",
+   "options": [
+    "Murium copia",
+    "Siccitas",
+    "Morbi pestis",
+    "Diluvium"
+   ]
+  },
+  {
+   "q": "Cur praefectus fistulatori pretium solvere recusavit?",
+   "options": [
+    "Nullam pecuniam reliquam habebat",
+    "Putabat totam summam non iustam esse",
+    "Non credebat fistulatorem opus perfecisse",
+    "Postea solvere volebat"
+   ]
+  },
+  {
+   "q": "Quid plerisque pueris Hamelini accidit?",
+   "options": [
+    "In montem ducti evanuerunt",
+    "In aliud oppidum aufugerunt",
+    "A praefecto servati sunt",
+    "In ecclesia obdormiverunt"
+   ]
+  },
+  {
+   "q": "Quae lex post illum diem Hamelini remansit?",
+   "options": [
+    "Nulli mures in oppidum admittebantur",
+    "Nulla musica in via qua pueri abierant permittebatur",
+    "Nulla festa iterum habebantur",
+    "Nulli peregrini in oppidum admittebantur"
+   ]
+  }
+ ],
+ "fk-de-04": [
+  {
+   "q": "Quo notus erat Till Eulenspiegel?",
+   "options": [
+    "Quod mandata ad litteram accipiebat ut ioca faceret",
+    "Quod optimum panem in Germania coquebat",
+    "Quod fortunam viatoribus praedicebat",
+    "Quod in certaminibus pugnabat"
+   ]
+  },
+  {
+   "q": "Quid Till pro pane coxit?",
+   "options": [
+    "Nihil omnino",
+    "Figuras bubonum et simiarum",
+    "Panes formae animalium rusticorum",
+    "Massam ambustam et non edulem"
+   ]
+  },
+  {
+   "q": "Quomodo cives Brunsvicenses ad haec pistoria mira responderunt?",
+   "options": [
+    "Ea emere recusaverunt",
+    "Apud praefectum questi sunt",
+    "Ea curiositate mota emerunt",
+    "Pecuniam reddi postulaverunt"
+   ]
+  },
+  {
+   "q": "Quid Till post pistorem reliquit egit?",
+   "options": [
+    "In Brunsvico in perpetuum consedit",
+    "Veniam petivit et ioca facere destitit",
+    "Porro peregrinatus est, in aliis oppidis ioca faciens",
+    "Ipse pistor factus est"
+   ]
+  }
+ ],
+ "fk-de-05": [
+  {
+   "q": "Cur nautae saxum Loreleae timebant?",
+   "options": [
+    "Propter piratas ibi latentes",
+    "Quia cursus aquae periculosus erat et multae naves ibi frangebantur",
+    "Quia a rege maledictum esse dicebatur",
+    "Quia unicum iter per Rhenum claudebat"
+   ]
+  },
+  {
+   "q": "Secundum legendam, cur tot naves prope saxum franguntur?",
+   "options": [
+    "Tempestas semper sub vesperum irruebat",
+    "Nautae cantu virginis avocabantur",
+    "Flumen nimis angustum magnis navibus erat",
+    "Saxum ipsum in aquam movebatur"
+   ]
+  },
+  {
+   "q": "Quid Lorelei fecit cum ultimum ad summum saxum pervenit?",
+   "options": [
+    "Ultimum carmen cecinit et in silvam evanuit",
+    "Navem amati sui amissi vidit et se in flumen praecipitavit",
+    "A militibus comitis palatini servata est",
+    "In avem mutata avolavit"
+   ]
+  },
+  {
+   "q": "Quis legendam Loreleae longe ultra Rhenaniam celebrem fecit?",
+   "options": [
+    "Henricus Heine, carmine suo celeberrimo",
+    "Scriptor medii aevi",
+    "Fratres Grimm",
+    "Piscator quidam loci"
+   ]
+  }
+ ],
+ "fk-de-06": [
+  {
+   "q": "Quid Barbarossae accidisse dicitur, non autem in proelio mortuus est?",
+   "options": [
+    "Vi supera in montem latus est ut adventum futurum exspectaret",
+    "Quiete in monasterium se recepit",
+    "A filio suo proditus et in vincula coniectus est",
+    "Navigavit et numquam postea visus est"
+   ]
+  },
+  {
+   "q": "Quid Barbarossa dixisse fertur cum pastor confirmavit corvos adhuc montem circumvolare?",
+   "options": [
+    "Se statim excitaturum",
+    "Se centum annos amplius dormire debere antequam tempus eius adveniret",
+    "Corvos necandos esse",
+    "Pastorem numquam redire debere"
+   ]
+  },
+  {
+   "q": "Quomodo fabula Barbarossae saeculo undevicesimo mutata est?",
+   "options": [
+    "Prorsus oblivioni data est",
+    "Ab historicis pro falsa reiecta est",
+    "Renovationem vidit, cum desiderio unitatis politicae Germaniae coniunctam",
+    "Cum alia fabula diversa coniuncta est"
+   ]
+  },
+  {
+   "q": "Quid hodie visitatores montis Kyffhauser symbolice quaerunt, secundum textum?",
+   "options": [
+    "Thesaurum in monte absconditum dici",
+    "Imperatorem dormientem cuius expergefactio aetatem meliorem afferret",
+    "Remedium morbi ad fontem sacrum",
+    "Sepulcrum corvi ex fabula"
+   ]
+  }
+ ],
+ "fk-el-01": [
+  {
+   "q": "Quid testudo leperi suasit?",
+   "options": [
+    "Cursum",
+    "Natationem trans lacum",
+    "Cenam simul",
+    "Nihil certum"
+   ]
+  },
+  {
+   "q": "Cur lepus currere destitit?",
+   "options": [
+    "Putavit se satis temporis ad quiescendum habere",
+    "In silva aberravit",
+    "Vulneratus erat",
+    "Aliquid edere voluit"
+   ]
+  },
+  {
+   "q": "Quid testudo fecit dum lepus dormiebat?",
+   "options": [
+    "Constanter ad metam ambulare perrexit",
+    "Eum excitavit",
+    "Retro rediit",
+    "Eum exspectavit"
+   ]
+  },
+  {
+   "q": "Quae est sententia fabulae?",
+   "options": [
+    "Constans labor festinationem vincit",
+    "Celeritas semper vincit",
+    "Somnus periculosus est",
+    "Animalia certare non debent"
+   ]
+  }
+ ],
+ "fk-el-02": [
+  {
+   "q": "Quid cicada faciebat dum formica laborabat?",
+   "options": [
+    "In ramo canebat",
+    "Dormiebat",
+    "Cibum quoque colligebat",
+    "Nidum aedificabat"
+   ]
+  },
+  {
+   "q": "Cur cicada nullum cibum collegit?",
+   "options": [
+    "Credebat aestatem numquam finituram esse",
+    "Nullum cibum colligendum habebat",
+    "Aegrota erat",
+    "Formicam adiuvabat"
+   ]
+  },
+  {
+   "q": "Quid cicada hieme a formica petivit?",
+   "options": [
+    "Paulum cibi",
+    "Locum calidum ad dormiendum",
+    "Auxilium ad familiam inveniendam",
+    "Pecuniam"
+   ]
+  },
+  {
+   "q": "Quid fabula docet?",
+   "options": [
+    "Quam magni momenti sit in futurum providere",
+    "Canere labore graviorem esse",
+    "Formicas esse avaras",
+    "Hiemem numquam vere venire"
+   ]
+  }
+ ],
+ "fk-el-03": [
+  {
+   "q": "Cur Daedalus et Icarus terra vel mari effugere non poterant?",
+   "options": [
+    "Rex Minos utramque viam custodiebat",
+    "Nullam navem habebant",
+    "Viam nesciebant",
+    "Icarus abire recusabat"
+   ]
+  },
+  {
+   "q": "Quod monitum Daedalus Icaro dedit?",
+   "options": [
+    "Ne nimis basse neve nimis alte volaret",
+    "Ne solem aspiceret",
+    "Ne noctu volaret",
+    "Ne trans mare volaret"
+   ]
+  },
+  {
+   "q": "Cur cera in alis Icari liquefacta est?",
+   "options": [
+    "Nimis prope solem volavit",
+    "Per tempestatem volavit",
+    "Nimis celeriter volavit",
+    "Nimis dure descendit"
+   ]
+  },
+  {
+   "q": "Quid hodie significat dictum 'nimis prope solem volare'?",
+   "options": [
+    "Pericula ex nimia ambitione suscipere",
+    "Longissime iter facere",
+    "Nimis dure laborare",
+    "Valde fortem esse"
+   ]
+  }
+ ],
+ "fk-el-04": [
+  {
+   "q": "Quomodo Gordias rex factus est?",
+   "options": [
+    "Plaustro in urbem ingressus, oraculum implevit",
+    "Proelium vicit",
+    "A populo electus est",
+    "Regnum hereditate accepit"
+   ]
+  },
+  {
+   "q": "Quid oraculum de nodo promisit?",
+   "options": [
+    "Qui eum solveret totam Asiam regnaturum esse",
+    "Qui eum solveret agricolam futurum esse",
+    "Nodum numquam solvi posse",
+    "Nodum malam fortunam allaturum esse"
+   ]
+  },
+  {
+   "q": "Quomodo Alexander nodum solvit?",
+   "options": [
+    "Gladio eum secuit",
+    "Patienter eum solvit",
+    "Eum cremavit",
+    "Sacerdotes rogavit ut eum solverent"
+   ]
+  },
+  {
+   "q": "Quid hodie significat 'nodum Gordium secare'?",
+   "options": [
+    "Solutionem audacem et insolitam problematis difficilis invenire",
+    "Certamen amittere",
+    "Regulas ad amussim sequi",
+    "Ab opere desistere"
+   ]
+  }
+ ],
+ "fk-el-05": [
+  {
+   "q": "Ubi Ulixes et socii se invenerunt?",
+   "options": [
+    "In spelunca Cyclopis nomine Polyphemi",
+    "In insula deserta sine incolis",
+    "In aula regis Minois",
+    "In navi inter tempestatem"
+   ]
+  },
+  {
+   "q": "Quod nomen Ulixes Cyclopi dedit?",
+   "options": [
+    "'Nemo'",
+    "Nomen suum verum",
+    "'Hospes'",
+    "Nomen dare recusavit"
+   ]
+  },
+  {
+   "q": "Cur ceteri Cyclopes Polyphemum non adiuverunt?",
+   "options": [
+    "Dixit 'Nemo' se laedere, ideo nihil mali esse putaverunt",
+    "Ulixem timebant",
+    "Nimis procul erant quam ut eum audirent",
+    "Polyphemum non amabant"
+   ]
+  },
+  {
+   "q": "Quam poenam superbia Ulixis attulit?",
+   "options": [
+    "Ira Neptuni reditum eius domum decem annos distulit",
+    "Statim omnes socios amisit",
+    "In saxum mutatus est",
+    "Domum mature acceptus est"
+   ]
+  }
+ ],
+ "fk-el-06": [
+  {
+   "q": "Quid Proserpina faciebat cum eam Pluto primum animadvertit?",
+   "options": [
+    "Flores cum Nymphis legebat",
+    "In templo precabatur",
+    "Trans mare navigabat",
+    "In prato dormiebat"
+   ]
+  },
+  {
+   "q": "Quomodo luctus Cereris mundum affecit?",
+   "options": [
+    "Terram marcescere et fruges perire sivit, famem afferens",
+    "Mortales in flores mutavit",
+    "Terram pluvia inundavit",
+    "Iovem rogavit ut Inferos deleret"
+   ]
+  },
+  {
+   "q": "Cur Proserpina Inferos omnino relinquere non potuit?",
+   "options": [
+    "Grana mali punici ex Inferis ederat",
+    "Pluto portas clausit",
+    "Memoriam amisit",
+    "Iuppiter eam abire vetuit"
+   ]
+  },
+  {
+   "q": "Quid tempora anni in hac fabula significant?",
+   "options": [
+    "Gaudium Cereris cum Proserpina redit et luctum cum abit",
+    "Proelia inter deos",
+    "Mutabiles animos Plutonis",
+    "Transitum generationum humanarum"
+   ]
+  }
+ ],
+ "fk-es-01": [
+  {
+   "q": "Quid vulpes in puteo reflexum videt, quod lepori consilium dat?",
+   "options": [
+    "Solem",
+    "Vultum suum",
+    "Lunam",
+    "Piscem"
+   ]
+  },
+  {
+   "q": "Quid accidit cum vulpes in puteum salit?",
+   "options": [
+    "Leporem capit",
+    "Caseum verum invenit",
+    "Caseus evanescit et ipsa madefit",
+    "Submergitur"
+   ]
+  },
+  {
+   "q": "Quam excusationem lepus altera vice fingit ut effugiat?",
+   "options": [
+    "Dicit se aegrotare",
+    "Dicit caelum casurum esse et vulpem rogat ut arborem sustineat",
+    "Dicit venatorem adventare",
+    "Dicit se carne carere"
+   ]
+  },
+  {
+   "q": "Qua sententia fabula finitur?",
+   "options": [
+    "Vim semper postremo vincere",
+    "Vulpes leporibus sagaciores esse",
+    "Eum qui melius cogitat interdum eo qui fortior est vincere",
+    "Numquam peregrino fidendum esse"
+   ]
+  }
+ ],
+ "fk-es-02": [
+  {
+   "q": "Quam condicionem imperator ponit antequam Popocatepetl filiam suam ducat?",
+   "options": [
+    "Templum aedificare debet",
+    "Ad bellum ire et victor reverti debet",
+    "Decem annos exspectare debet",
+    "Imperatorem singulari certamine vincere debet"
+   ]
+  },
+  {
+   "q": "Quod mendacium aemulus invidus Iztaccihuatli narrat?",
+   "options": [
+    "Popocatepetl alteram duxisse",
+    "Popocatepetl in bello periisse",
+    "Imperatorem nuptias vetuisse",
+    "Popocatepetl eam non iam amare"
+   ]
+  },
+  {
+   "q": "Quid dii amantium miseriti faciunt?",
+   "options": [
+    "Iztaccihuatlem ad vitam revocant",
+    "Aemulum invidum puniunt",
+    "Duo amantes in duos montes ignivomos mutant",
+    "Popocatepetl ad Inferos mittunt"
+   ]
+  },
+  {
+   "q": "Quid fumus Popocatepetl, secundum legendam, significat?",
+   "options": [
+    "Monitum periculi",
+    "Luctum eius pro Iztaccihuatle",
+    "Iram deorum",
+    "Finem belli"
+   ]
+  }
+ ],
+ "fk-es-03": [
+  {
+   "q": "Quomodo maritus Mariae eam per annos tractare coepit?",
+   "options": [
+    "Amantior fiebat",
+    "Eam neglegebat, saepe a pago absens",
+    "Eam ad parentes remisit",
+    "Eam secum peregrinari rogavit"
+   ]
+  },
+  {
+   "q": "Quid Maria momento irae ad flumen facit?",
+   "options": [
+    "Comitem mariti convenit",
+    "Liberos suos submergit",
+    "Cum liberis fugit",
+    "Carpentum incendit"
+   ]
+  },
+  {
+   "q": "Quid matres in America Latina liberos suos de La Llorona traditione monent?",
+   "options": [
+    "Ne solae in fluminibus nent",
+    "Ne noctu exeant, ne eos rapiat",
+    "Ne cum ignotis colloquantur",
+    "Ne propter pecuniam nubant"
+   ]
+  },
+  {
+   "q": "Quae est summa sententia quam narrator ex legenda ducit?",
+   "options": [
+    "Flumina noctu semper periculosa esse",
+    "Divitias felicitatem non praestare",
+    "Momentum furoris id quod quis maxime amat auferre posse",
+    "Umbris ignosci non posse"
+   ]
+  }
+ ],
+ "fk-es-04": [
+  {
+   "q": "Quod iudicium narrator fert de matrimonio Infantum de Carrion cum filiabus Cidis?",
+   "options": [
+    "Verum amoris matrimonium fuisse",
+    "Praecipue propter utilitatem propriam initum esse",
+    "A rege coactum esse",
+    "Contra Cidis voluntatem factum esse"
+   ]
+  },
+  {
+   "q": "Quomodo Infantes de Carrion respondent cum leo effugit?",
+   "options": [
+    "Cidem adiuvant ut eum capiat",
+    "Territi fugiunt et se occultant, tantum sui memores",
+    "Leonem necant",
+    "Ceteros hospites tranquille ad tutum locum ducunt"
+   ]
+  },
+  {
+   "q": "Quomodo Cid leonem solutum tractat?",
+   "options": [
+    "Milites vocat ut eum retibus capiant",
+    "Placide eum iuba prehendit et in caveam reducit",
+    "Eum gladio necat",
+    "Se in palatio includit"
+   ]
+  },
+  {
+   "q": "Quem effectum durabilem hic casus in Infantibus de Carrion habet?",
+   "options": [
+    "Fideles Cidis admiratores fiunt",
+    "Pudor eorum in odium crescens mutatur",
+    "Statim Valentia discedunt",
+    "Propter cautelam laudantur"
+   ]
+  }
+ ],
+ "fk-es-05": [
+  {
+   "q": "Cur Sancho Panza Don Quixoti armigeri munus praestare consentit?",
+   "options": [
+    "Propter fidem familiae",
+    "Pro futuro insulae praesidatu",
+    "Quia et ipse libros de re equestri amat",
+    "Quia nusquam alibi habitare potest"
+   ]
+  },
+  {
+   "q": "Quid Sancho Don Quixoti dicit molendina revera esse?",
+   "options": [
+    "Speculas ab hoste aedificatas",
+    "Molendina ventaria quorum vela tantum brachiis similia sunt",
+    "Gigantes incantatos dormientes",
+    "Statuas ab equitibus antiquis relictas"
+   ]
+  },
+  {
+   "q": "Quomodo Don Quixote cladem suam post molendinum offensum explicat?",
+   "options": [
+    "Fatetur se simpliciter erravisse",
+    "Sanchonem accusat quod se avocaverit",
+    "Affirmat magum gigantes in molendina mutavisse ut se gloria fraudaret",
+    "Dicit Rosinantem casu titubavisse"
+   ]
+  },
+  {
+   "q": "Secundum ultimum paragraphum, quid hic casus de Don Quixote significare venit?",
+   "options": [
+    "Peritiam eius ut veri bellatoris",
+    "Facultatem eius magnitudinem in rebus communibus videndi et idealia sua persequendi, quamvis semper falsus esse probetur",
+    "Crescentem eius in Sanchonem diffidentiam",
+    "Consilium eius equestrem disciplinam relinquendi"
+   ]
+  }
+ ],
+ "fk-es-06": [
+  {
+   "q": "Quo praetextu gemini ad Xibalba vocantur?",
+   "options": [
+    "Convivium nuptiale",
+    "Ludus pilae",
+    "Caerimonia religiosa",
+    "Iudicium propter scelera patris"
+   ]
+  },
+  {
+   "q": "Quid Hunahpu in Domo Vespertilionum accidit?",
+   "options": [
+    "Gelu prorsus congelatur",
+    "Totus devoratur",
+    "Vespertilio caput ei avellit",
+    "Illaesus effugit"
+   ]
+  },
+  {
+   "q": "Quod ultimum periculum domini Xibalbae geminis proponunt?",
+   "options": [
+    "Iaguarum certamine vincere",
+    "Se invicem immolare et deinde ad vitam redire",
+    "Noctem in Domo Obscura sine ope transigere",
+    "Aenigma de maioribus suis solvere"
+   ]
+  },
+  {
+   "q": "Quomodo fabula pro Hun-Came et Vucub-Came finitur?",
+   "options": [
+    "Resuscitantur et geminorum socii fiunt",
+    "Gemini eos post immolationem perpetuo mori sinunt",
+    "Victi ex Xibalba fugiunt",
+    "Ignoscuntur et exsilio potius quam morte puniuntur"
+   ]
+  }
+ ],
+ "fk-fr-01": [
+  {
+   "q": "Quid formica tota aestate fecit?",
+   "options": [
+    "Cibum collegit et condidit",
+    "In agris saltavit",
+    "In sole dormivit",
+    "Cum cicada cecinit"
+   ]
+  },
+  {
+   "q": "Quid accidit cum hiems venit?",
+   "options": [
+    "Cicada satis cibi condiderat",
+    "Cicadae nihil cibi supererat",
+    "Formica domum reliquit",
+    "Cicada in alium agrum migravit"
+   ]
+  },
+  {
+   "q": "Quid cicada formicae de aestate rogatae respondit?",
+   "options": [
+    "Se cibum condidisse",
+    "Se totam aestatem cecinisse",
+    "Se longe peregrinatam esse",
+    "Se multum dormivisse"
+   ]
+  },
+  {
+   "q": "Quid fabula docet?",
+   "options": [
+    "Quantum intersit in futurum providere",
+    "Quantum intersit clara voce canere",
+    "Quantum intersit cibum communicare",
+    "Quantum intersit bene dormire"
+   ]
+  }
+ ],
+ "fk-fr-02": [
+  {
+   "q": "Cur vulpes sub arbore constitit?",
+   "options": [
+    "Caseum in rostro cornicis olfecit",
+    "Ibi dormire volebat",
+    "Aquam quaerebat",
+    "Cantare volebat"
+   ]
+  },
+  {
+   "q": "Quid vulpes de cornice affirmavit?",
+   "options": [
+    "Eam turpem esse",
+    "Eam regem silvae futuram esse si vox pennis par esset",
+    "Eam silvam relinquere debere",
+    "Pennas eius obscuras esse"
+   ]
+  },
+  {
+   "q": "Quid caseo accidit?",
+   "options": [
+    "Cornix eum ipsa comedit",
+    "Cecidit et vulpes eum cepit",
+    "Vulpes eum reddidit",
+    "In arbore evanuit"
+   ]
+  },
+  {
+   "q": "Quae est fabulae sententia?",
+   "options": [
+    "Numquam ei fidendum qui nimis adulatur",
+    "Semper clara voce in silva canendum",
+    "Vulpes animalia periculosa esse",
+    "Cornices noctu volare non debere"
+   ]
+  }
+ ],
+ "fk-fr-03": [
+  {
+   "q": "Quis portas urbis quaque nocte claudere debebat?",
+   "options": [
+    "Ipsa regina Dahut",
+    "Custos quidam, dum rex clavem tenebat",
+    "Sanctus Corentinus",
+    "Diabolus specie mutata"
+   ]
+  },
+  {
+   "q": "Quid Dahut per tempestatem fecit?",
+   "options": [
+    "Patrem de periculo monuit",
+    "Clavem furata portam aperuit",
+    "Sola ex urbe fugit",
+    "Cum peregrino pugnavit"
+   ]
+  },
+  {
+   "q": "Quid Dahut tandem accidit, secundum legendam?",
+   "options": [
+    "Submersa est et numquam postea visa",
+    "In mare deiecta est et in sirenem mutata",
+    "Tuto Kemperem effugit",
+    "Daemonem vicit"
+   ]
+  },
+  {
+   "q": "Quid piscatores Britanniae adhuc audire se dicunt?",
+   "options": [
+    "Vocem Dahut canentis",
+    "Campanas urbis submersae sub fluctibus sonantes",
+    "Equum regis currentem",
+    "Diabolum ridentem"
+   ]
+  }
+ ],
+ "fk-fr-04": [
+  {
+   "q": "Quid erat olifantum?",
+   "options": [
+    "Gladius Rolandi",
+    "Cornu eboreum quod longe audiri poterat",
+    "Genus scuti",
+    "Nomen saltus montani"
+   ]
+  },
+  {
+   "q": "Cur Roland cornu primum sonare recusavit?",
+   "options": [
+    "Nesciebat quomodo eo uteretur",
+    "Propter superbiam, ne timidus videretur",
+    "Quia Olivier id vetuit",
+    "Quia cornu fractum erat"
+   ]
+  },
+  {
+   "q": "Quid Carolus Magnus cum Roncevallem pervenit invenit?",
+   "options": [
+    "Rolandum vivum sed vulneratum",
+    "Rolandum et socios iam mortuos",
+    "Campum vacuum sine ullo pugnae vestigio",
+    "Mauros pactionem exspectantes"
+   ]
+  },
+  {
+   "q": "Quid fabula Rolandi in Gallia significat?",
+   "options": [
+    "Solam artem militarem",
+    "Fortitudinem, fidem, et pretium superbiae",
+    "Conditam esse Parisios",
+    "Foedera pacis cum Hispania"
+   ]
+  }
+ ],
+ "fk-fr-05": [
+  {
+   "q": "Quam condicionem Melusina matrimonio posuit?",
+   "options": [
+    "Numquam verum nomen eius cognoscendum esse",
+    "Numquam eam Sabbatis, cum se recludebat, videndam esse",
+    "Terras suas relinquendas esse",
+    "Numquam iterum uxorem ducendam esse"
+   ]
+  },
+  {
+   "q": "Quid Raymondinum ad Melusinam speculandam impulit?",
+   "options": [
+    "Somnium quod habuerat",
+    "Fratris invidi suspiciones eam infidam esse",
+    "Epistula quam invenerat",
+    "Consilium sacerdotis"
+   ]
+  },
+  {
+   "q": "Quomodo arcanum tandem omnibus patefactum est?",
+   "options": [
+    "Melusina ipsa id confessa est",
+    "Raymondinus eam in aula, in contentione, 'serpentem' vocavit",
+    "Filius eorum id detexit",
+    "Servus rumorem sparsit"
+   ]
+  },
+  {
+   "q": "Quid legenda dicit fieri cum descendens domus Lusiniacensis moriturus est?",
+   "options": [
+    "Campana in arce sonat",
+    "Clamor Melusinae auditur",
+    "Draco in caelo apparet",
+    "Fons aresci incipit"
+   ]
+  }
+ ],
+ "fk-fr-06": [
+  {
+   "q": "Quae erant duae condiciones pacti cum diabolo?",
+   "options": [
+    "Aurum solvere et numquam redire",
+    "Numquam nomen Dei dicere et ante galli cantum reverti",
+    "Numquam retro aspicere neque loqui",
+    "Donum afferre et clara voce canere"
+   ]
+  },
+  {
+   "q": "Quid accidit cum viri ad vicum pervenerunt?",
+   "options": [
+    "Ab incolis reiecti sunt",
+    "Usque ad multam noctem saltaverunt et festum egerunt",
+    "Propter intrusionem comprehensi sunt",
+    "Cur venissent obliti sunt"
+   ]
+  },
+  {
+   "q": "Quomodo reditus prope in cladem finitus est?",
+   "options": [
+    "Fomite caruerunt",
+    "Unus vir per caelum iuravit, pactum rumpens, et canoa moderari desiit",
+    "In nive aberraverunt",
+    "Diabolus plures animas priusquam eos redire sineret poposcit"
+   ]
+  },
+  {
+   "q": "Quam sententiam veteres narratores Quebecenses ex hac legenda ducunt?",
+   "options": [
+    "Numquam hieme solum iter faciendum esse",
+    "Promissum diabolo factum, etiam per iocum, semper graviter constare",
+    "Semper oblationi ignoti fidendum esse",
+    "Canoas in nive periculosas esse"
+   ]
+  }
+ ],
+ "fk-hi-01": [
+  {
+   "q": "Quo cibo simius vivebat?",
+   "options": [
+    "Dulci fructu ex arbore jamun",
+    "Piscibus ex flumine",
+    "Oryza ex pago",
+    "Foliis ex arbore"
+   ]
+  },
+  {
+   "q": "Cur uxor crocodili cor simii cupiebat?",
+   "options": [
+    "Credebat fructum dulcem cor dulce significare",
+    "Simio irata erat",
+    "Maritum suum temptare volebat",
+    "Valde esuriebat"
+   ]
+  },
+  {
+   "q": "Quomodo simius effugit?",
+   "options": [
+    "Crocodilum dolo ad arborem redire persuasit",
+    "Statim in aquam salivit",
+    "Auxilium ab avibus petivit",
+    "Cum crocodilo pugnavit"
+   ]
+  },
+  {
+   "q": "Quid fabula docet?",
+   "options": [
+    "Calliditatem a proditione servare posse",
+    "Crocodilos semper fide dignos esse",
+    "Fructum numquam communicandum esse",
+    "Amicitiam inter animalia esse impossibilem"
+   ]
+  }
+ ],
+ "fk-hi-02": [
+  {
+   "q": "Quod pactum animalia cum leone fecerunt?",
+   "options": [
+    "Unum animal cotidie mittere pro eo quod venarentur",
+    "Fructum pro carne dare",
+    "Ab eo in speluncis se occultare",
+    "Simul cum eo pugnare"
+   ]
+  },
+  {
+   "q": "Quomodo lepus tarditatem suam explicavit?",
+   "options": [
+    "Dixit se alterum leonem regem se vocantem convenisse",
+    "Dixit se in silva aberravisse",
+    "Dixit se cibum quaesivisse",
+    "Cetera animalia accusavit"
+   ]
+  },
+  {
+   "q": "Quid leo in puteo vidit?",
+   "options": [
+    "Suam ipsius imaginem, quam pro aemulo habuit",
+    "Verum alterum leonem",
+    "Piscem",
+    "Umbram suam in terra"
+   ]
+  },
+  {
+   "q": "Quae est sententia fabulae?",
+   "options": [
+    "Intellegentiam vi maiorem esse",
+    "Vim semper vincere",
+    "Animalia se invicem decipere non posse",
+    "Leones omnium sapientissimos esse"
+   ]
+  }
+ ],
+ "fk-hi-03": [
+  {
+   "q": "Quod certamen Akbar proposuit?",
+   "options": [
+    "Num quis totam noctem in stagno frigido stare posset",
+    "Num quis cibum celerrime coquere posset",
+    "Num quis aenigma solvere posset",
+    "Num quis murum palatii scandere posset"
+   ]
+  },
+  {
+   "q": "Cur pauperi praemium negatum est?",
+   "options": [
+    "Akbar dixit calorem lucernae distantis certamen irritum fecisse",
+    "In certamine obdormivit",
+    "Nimiam pecuniam petivit",
+    "Numquam vere in stagnum intravit"
+   ]
+  },
+  {
+   "q": "Quid demonstratio khichdi Birbalis probavit?",
+   "options": [
+    "Priorem rationem de calore distanti absurdam et iniustam fuisse",
+    "Birbalem meliorem coquum quam coquos regios esse",
+    "Ignem cibum semper e longinquo celerius coquere",
+    "Iudicium Akbaris semper rectum fuisse"
+   ]
+  },
+  {
+   "q": "Quid fabula demum de Birbale ostendit?",
+   "options": [
+    "Calliditatem cum forti iustitiae sensu coniunxisse",
+    "Semper imperatori assensum esse ut tutus maneret",
+    "Coquendum consilio praetulisse",
+    "Pauperes non amasse"
+   ]
+  }
+ ],
+ "fk-hi-04": [
+  {
+   "q": "Quid rex Krishnadevaraya de mangis raris fecit?",
+   "options": [
+    "Singulas aulicis dilectis distribuit",
+    "Omnes sibi servavit",
+    "Eas in foro vendidit",
+    "Eas elephantis suis dedit"
+   ]
+  },
+  {
+   "q": "Cur aulicus invidus apud regem questus est?",
+   "options": [
+    "Nullum mangum accepit et putavit Tenali Ramam honore indignum esse",
+    "Putavit manga putrida esse",
+    "Aurum pro fructu magis cupiebat",
+    "Credebat regem peregrinos favere"
+   ]
+  },
+  {
+   "q": "Quomodo Tenali Rama se coram rege defendit?",
+   "options": [
+    "Verbum suum ut laudem liberalitatis regis reinterpretans",
+    "Veniam petens et mangum reddens",
+    "Aulicum invidum aperte accusans",
+    "Quaestionem regis ignorans"
+   ]
+  },
+  {
+   "q": "Quid fabula de ingenio Tenali Ramae ostendit?",
+   "options": [
+    "Accusationem gravem in laudem vertere et discordiam sedare potuisse",
+    "Eum semper in maiora pericula duxisse",
+    "Contra aulicos invidos inutile fuisse",
+    "Tantum absente rege valuisse"
+   ]
+  }
+ ],
+ "fk-hi-05": [
+  {
+   "q": "Quid cervum, quem Sita vidit, tam mirum faciebat?",
+   "options": [
+    "Corpus aureum et cornua gemmis ornata",
+    "Magnitudo ingens et color obscurus",
+    "Facultas loquendi",
+    "Oculi rubri fulgentes"
+   ]
+  },
+  {
+   "q": "Quis cervus revera erat, et cur missus est?",
+   "options": [
+    "Daemon Maricha, a Ravana missus ut Ramam a Sita seduceret",
+    "Spiritus silvae Ramae patientiam temptans",
+    "Cervus verus quem Sita ab infantia aluerat",
+    "Illusio Lakshmanae ad Sitam temptandam"
+   ]
+  },
+  {
+   "q": "Cur Lakshmana tandem casam reliquit, quamvis dubitaret?",
+   "options": [
+    "Sita institit, clamore quem Ramae esse credidit perturbata",
+    "Cervum aureum ipse videre voluit",
+    "Rama eum ipse vocaverat",
+    "Suspicabatur Ravanam iam prope esse"
+   ]
+  },
+  {
+   "q": "Quae fuit summa consequentia doli cervi aurei?",
+   "options": [
+    "Sitam rapi effecit, bellum inter Ramam et Ravanam praeparans",
+    "Ramam cum fratre amisso reunivit",
+    "Veram naturam Ravanae Lakshmanae patefecit",
+    "Ramam quaestionem Sitae relinquere coegit"
+   ]
+  }
+ ],
+ "fk-hi-06": [
+  {
+   "q": "Quem Savitri in matrimonium legit, et quid in eo insolitum erat?",
+   "options": [
+    "Satyavantem, principem exsulem qui in silva vitam eremiticam agebat, fato occulto",
+    "Mercatorem divitem quem pater eius destinaverat",
+    "Bellatorem ex regno aemulo",
+    "Sapientem qui matrimonio prorsus renuntiaverat"
+   ]
+  },
+  {
+   "q": "Quid Savitri fecit cum dies fato Satyavanti destinatus mortis appropinquaret?",
+   "options": [
+    "Votum severum trium noctium sine somno vel quiete servavit",
+    "Satyavantem in longinquum regnum tuto misit",
+    "Naradam rogavit ut fatum mutaret",
+    "Magnum convivium toti silvae paravit"
+   ]
+  },
+  {
+   "q": "Quomodo Savitri Yamam calliditate vicit?",
+   "options": [
+    "Beneficium centum filiorum ex Satyavante extorsit, quod eum ratione coegit ut vitam Satyavantis redderet",
+    "Cum Yama singulari certamine pugnavit",
+    "Eum dolo in somnum dedit",
+    "Eum thesauro regio corrupit"
+   ]
+  },
+  {
+   "q": "Quam traditionem perennem fabula Savitri excitat?",
+   "options": [
+    "Ieiunium Vat Savitri, ab uxoribus in eius honorem servatum",
+    "Festum annuum venationis in silva",
+    "Peregrinationem ad palatium regis Ashvapati",
+    "Prohibitionem ligna caedendi aestate"
+   ]
+  }
+ ],
+ "fk-ind-01": [
+  {
+   "q": "Cur capreolus-mus flumen transire volebat?",
+   "options": [
+    "Ut fructum in altera ripa ederet",
+    "Ut cognatos viseret",
+    "Ut tempestatem effugeret",
+    "Ut aquam ad bibendum inveniret"
+   ]
+  },
+  {
+   "q": "Quo dolo capreolus-mus flumen transiit?",
+   "options": [
+    "Cito praeter crocodilos natavit",
+    "Crocodilos rogavit ut in ordinem se collocarent, ut eos numeraret",
+    "Ratem ligneam aedificavit",
+    "Exspectavit dum crocodili obdormirent"
+   ]
+  },
+  {
+   "q": "Quid crocodili senserunt cum se deceptos esse cognoverunt?",
+   "options": [
+    "Delectati sunt",
+    "Grati fuerunt",
+    "Furentes erant",
+    "Indifferentes erant"
+   ]
+  },
+  {
+   "q": "Quid capreolus-mus in fabula significare venit?",
+   "options": [
+    "Robur corporis",
+    "Calliditatem vim vincentem",
+    "Timiditatem",
+    "Crudelitatem"
+   ]
+  }
+ ],
+ "fk-ind-02": [
+  {
+   "q": "Quid gigas Mbok Sirni dedit?",
+   "options": [
+    "Saccum auri",
+    "Semen cucumeris magicum",
+    "Par calceorum magicorum",
+    "Avem loquentem"
+   ]
+  },
+  {
+   "q": "Quid Mbok Sirni intra cucumerem aureum invenit?",
+   "options": [
+    "Infantem masculum",
+    "Arcam gemmarum",
+    "Infantem femellam",
+    "Gladium magicum"
+   ]
+  },
+  {
+   "q": "Quid eremita Timun Mas dedit ut gigantem effugeret?",
+   "options": [
+    "Quattuor fasciculos magicos: semina cucumeris, acum, salem, et pastam cammarorum",
+    "Pallium magicum invisibilitatis",
+    "Equum volantem",
+    "Chartam ad speluncam occultam"
+   ]
+  },
+  {
+   "q": "Quid gigas tandem passus est?",
+   "options": [
+    "Amicus Timun Mas factus est",
+    "In luto ferventi devoratus est",
+    "In saxum mutatus est",
+    "In aliud regnum aufugit"
+   ]
+  }
+ ],
+ "fk-ind-03": [
+  {
+   "q": "Cur mater Malini sola duriter laborare debebat?",
+   "options": [
+    "Malin eam adiuvare recusabat",
+    "Pater eius in mari perierat",
+    "Domum emere volebat",
+    "Pecuniam ad iter servabat"
+   ]
+  },
+  {
+   "q": "Quid Malin factus erat cum navis eius in pagum rediit?",
+   "options": [
+    "Piscator pauper sicut pater eius",
+    "Mercator dives nobili nupta",
+    "Navarchus sine familia",
+    "Fabulator celeber"
+   ]
+  },
+  {
+   "q": "Quomodo Malin respondit cum mater eum amplecti venit?",
+   "options": [
+    "Laete eam uxori suae praesentavit",
+    "Negavit eam matrem suam esse",
+    "Eam in navem invitavit",
+    "Prae gaudio flevit"
+   ]
+  },
+  {
+   "q": "Quid Malini ex maledictione matris accidit?",
+   "options": [
+    "Immensis divitiis auctus est",
+    "In tempestate in saxum mutatus est",
+    "E pago exactus est",
+    "Memoriam amisit"
+   ]
+  }
+ ],
+ "fk-ind-04": [
+  {
+   "q": "Quomodo Bawang Putih in domo sua propria tractabatur?",
+   "options": [
+    "Ut filia unica et dilecta",
+    "Ut ancilla",
+    "Ut regina",
+    "Ad scholam missa est"
+   ]
+  },
+  {
+   "q": "Quam condicionem anus posuit ut pannum redderet?",
+   "options": [
+    "Bawang Putih anulum amissum invenire debebat",
+    "Bawang Putih per aliquot dies in domesticis operibus adiuvare debebat",
+    "Bawang Putih carmen canere debebat",
+    "Bawang Putih auro solvere debebat"
+   ]
+  },
+  {
+   "q": "Cur Bawang Merah ad idem flumen ivit?",
+   "options": [
+    "Ut vestes suas lavaret",
+    "Ut sororem inveniret",
+    "Ut Bawang Putih imitaretur et simile praemium acciperet",
+    "Ut aquam potabilem hauriret"
+   ]
+  },
+  {
+   "q": "Quid intra magnam cucurbitam quam Bawang Merah elegit erat?",
+   "options": [
+    "Aurum et gemmae",
+    "Fructus recens",
+    "Serpentes et animalia venenata",
+    "Nihil omnino"
+   ]
+  }
+ ],
+ "fk-ind-05": [
+  {
+   "q": "Quis revera erat Tumang?",
+   "options": [
+    "Canis communis",
+    "Deus in formam canis damnatus",
+    "Frater Dayang Sumbi",
+    "Rex vicinus"
+   ]
+  },
+  {
+   "q": "Cur Sangkuriang et Dayang Sumbi consenserunt nubere?",
+   "options": [
+    "Ambo se cognatos esse sciebant et officii causa nupserunt",
+    "Sangkuriang eam agnovit, sed illa eum non agnovit",
+    "Neuter alterum matrem filiumve esse agnovit",
+    "Rex nuptias paravit"
+   ]
+  },
+  {
+   "q": "Quomodo Dayang Sumbi spiritus impedivit quominus navem perficerent?",
+   "options": [
+    "Sangkuriangum ipsum ut desisteret oravit",
+    "Falsam auroram facibus et oryza pinsenda creavit",
+    "Navem per noctem occultavit",
+    "Deos rogavit ut pluviam mitterent"
+   ]
+  },
+  {
+   "q": "Quid navis eversa facta est?",
+   "options": [
+    "Flumen",
+    "Spelunca",
+    "Mons, Tangkuban Perahu",
+    "Lacus"
+   ]
+  }
+ ],
+ "fk-ind-06": [
+  {
+   "q": "Cur Bandung Bondowoso Roro Jonggrang amavit?",
+   "options": [
+    "Filia regis erat quem vicerat, et pulchritudine celebris",
+    "Ei in proelio vincendo auxilium tulit",
+    "Regina peregrina aulam visitans erat",
+    "Ab infantia amici fuerant"
+   ]
+  },
+  {
+   "q": "Quid accidit cum Bandung Bondowoso in puteum descendit?",
+   "options": [
+    "Thesaurum invenit",
+    "Asseclae Roro Jonggrang eum vivum sepelierunt, sed effugit",
+    "Statim submersus est",
+    "Descendere recusavit"
+   ]
+  },
+  {
+   "q": "Quomodo Roro Jonggrang spiritus dolo coegit ut opus desisterent?",
+   "options": [
+    "Eos gladio minata est",
+    "Falsam auroram oryza pinsenda et stramine ardenti creavit",
+    "Eos auro corrupit",
+    "Bandung Bondowoso rogavit ut eos revocaret"
+   ]
+  },
+  {
+   "q": "Quid tandem Roro Jonggrang accidit?",
+   "options": [
+    "Laeta Bandung Bondowoso nupsit",
+    "In statuam lapideam maledicta est",
+    "In aliud regnum aufugit",
+    "Regina Prambanae facta est"
+   ]
+  }
+ ],
+ "fk-it-01": [
+  {
+   "q": "Quid Amulius facit cum cognoscit Ream Silviam geminos peperisse?",
+   "options": [
+    "Iubet infantes necari",
+    "Ipse eos alit",
+    "Eos heredes facit",
+    "Ream Silviam in exsilium mittit"
+   ]
+  },
+  {
+   "q": "Quid corbi cum geminis accidit?",
+   "options": [
+    "In flumine mergitur",
+    "Per Tiberim fluitat et ripam attingit",
+    "Piscator eam statim invenit",
+    "A flumine destruitur"
+   ]
+  },
+  {
+   "q": "Quis Romulum et Remum post lupam alit?",
+   "options": [
+    "Rex Amulius",
+    "Pastor nomine Faustulus et uxor eius",
+    "Ipse Numitor",
+    "Sacerdotes templi"
+   ]
+  },
+  {
+   "q": "Quomodo urbs Roma condita est?",
+   "options": [
+    "Fratres urbem pacifice simul aedificant",
+    "Numitor locum ubi aedificaretur statuit",
+    "Remus murum Romuli irridet, Romulus eum necat, deinde Romam condit",
+    "Remus pro Romulo rex fit"
+   ]
+  }
+ ],
+ "fk-it-02": [
+  {
+   "q": "Quid Pinocchio agit potius quam ad scholam ire?",
+   "options": [
+    "Geppettum visere it",
+    "In silvam aufugit",
+    "Ad opus it",
+    "Domi manet"
+   ]
+  },
+  {
+   "q": "Quod mendacium Pinocchio Fatae narrat?",
+   "options": [
+    "Se nummos aleae amisisse",
+    "Geppettum pecuniam suam sustulisse",
+    "Duos viros malos nummos aureos sibi furatos esse",
+    "Se numquam nummos habuisse"
+   ]
+  },
+  {
+   "q": "Quid naso Pinocchionis dum mentitur accidit?",
+   "options": [
+    "Caeruleus fit",
+    "Tam longus crescit ut per ianuam exire non possit",
+    "Decidit",
+    "Nihil accidit"
+   ]
+  },
+  {
+   "q": "Quomodo fabula finitur, et quam sententiam Pinocchio discit?",
+   "options": [
+    "Fata nasum eius praecidit",
+    "Nasus Pinocchionis in perpetuum longus manet",
+    "Geppettus nasum eius instrumentis reficit",
+    "Picae nasum longum corrodunt et discit ne mentiatur"
+   ]
+  }
+ ],
+ "fk-it-03": [
+  {
+   "q": "Qualis homo Giufa est, secundum fabulam?",
+   "options": [
+    "Astutus deceptor qui omnes fallit",
+    "Vir simplex qui mandata ad litteram accipit",
+    "Mercator dives",
+    "Magister scholae severus"
+   ]
+  },
+  {
+   "q": "Quid Giufa putat accidisse cum in puteum aspicit?",
+   "options": [
+    "Putat thesaurum ibi absconditum esse",
+    "Putat monstrum ibi habitare",
+    "Putat lunam in puteum cecidisse",
+    "Putat puteum siccum esse"
+   ]
+  },
+  {
+   "q": "Quid Giufa facit ut lunam servet?",
+   "options": [
+    "Ipse in puteum salit",
+    "Sacerdotem rogat ut adiuvet",
+    "Scalam deorsum aedificat",
+    "Funem cum unco in puteum demittit"
+   ]
+  },
+  {
+   "q": "Quomodo fabula finitur, et quid 'novus Giufa' in pago significare venit?",
+   "options": [
+    "Vicani Giufam puniunt quod tempus eorum perdiderit",
+    "Giufa praefectus pagi fit",
+    "Giufa credit se lunam servavisse, et dictum iocus fit de quolibet rem impossibilem iactante",
+    "Luna revera in perpetuum evanescit"
+   ]
+  }
+ ],
+ "fk-it-04": [
+  {
+   "q": "Quid Befana facit, secundum initium legendae?",
+   "options": [
+    "Traha a reno tracta vehitur",
+    "Super tecta scopa volat, dona pueris ferens",
+    "In caminis omnium domuum habitat",
+    "Tantum pueros Romae visit"
+   ]
+  },
+  {
+   "q": "Cur anus se cum tribus Magis iungere recusavit?",
+   "options": [
+    "Non credidit fabulae de stella",
+    "Noctu iter facere timuit",
+    "Dixit se nimia domestica officia habere",
+    "Viam nesciebat"
+   ]
+  },
+  {
+   "q": "Quid accidit postquam anus animum mutavit et Magos sequi conata est?",
+   "options": [
+    "Eos tempestive assecuta est",
+    "Alium infantem cui dona daret invenit",
+    "Statim domum rediit",
+    "Numquam rectam viam Bethlehem invenire potuit"
+   ]
+  },
+  {
+   "q": "Quomodo legenda traditionem calcei et carbonis explicat?",
+   "options": [
+    "Carbonem omnibus pueris relinquit in memoriam erroris sui",
+    "Traditio calcei nihil cum ea commune habet",
+    "Befana dulcia bonis pueris et carbonem improbis relinquit",
+    "Tantum pueris a Magis nominatis dona dat"
+   ]
+  }
+ ],
+ "fk-it-05": [
+  {
+   "q": "Quid oppidum Eugubii initio fabulae terrebat?",
+   "options": [
+    "Latronum turma in silvis latens",
+    "Lupus ferox qui pecora et etiam homines oppugnabat",
+    "Pestis per oppidum grassans",
+    "Diluvium ex flumine vicino"
+   ]
+  },
+  {
+   "q": "Quid Franciscus fecit cum lupus in eum impetum fecit?",
+   "options": [
+    "Ad muros oppidi tutus refugit",
+    "Hastam in lupum iecit",
+    "Signum crucis fecit et eum in nomine Dei sistere iussit",
+    "Lupo statim cibum obtulit"
+   ]
+  },
+  {
+   "q": "Quod pactum Franciscus inter lupum et oppidanos proposuit?",
+   "options": [
+    "Lupum regionem in perpetuum relicturum",
+    "Oppidanos lupo tectum aedificaturos",
+    "Lupum oppidum noctu custoditurum",
+    "Lupum non amplius oppugnaturum si cotidie pasceretur"
+   ]
+  },
+  {
+   "q": "Quomodo legenda lupi Eugubini finitur?",
+   "options": [
+    "Lupus tandem iterum oppugnavit et occisus est",
+    "Lupus post annum in silvam rediit",
+    "Lupus inter oppidanos duos annos amplius pacifice vixit et, cum mortuus est, defletus et sepultus est",
+    "Lupus Assisium ductus est ut cum Francisco viveret"
+   ]
+  }
+ ],
+ "fk-it-06": [
+  {
+   "q": "Quid Venetiis initio legendae accidit?",
+   "options": [
+    "Classis bellica lacunam oppugnat",
+    "Tempestas violenta urbem obruere minatur",
+    "Ingens incendium per urbem serpit",
+    "Pestis incolas necat"
+   ]
+  },
+  {
+   "q": "Quid piscator facit postquam primum peregrinum sustulit?",
+   "options": [
+    "Recusat alios vectores accipere",
+    "Statim ad litus revertitur",
+    "Duos alios peregrinos in navem accipit et omnes tres in altum ducit",
+    "A peregrino in mare deicitur"
+   ]
+  },
+  {
+   "q": "Quid Sanctus Marcus piscatori dat, et cur?",
+   "options": [
+    "Summam auri pro itinere",
+    "Chartam unde daemones venissent",
+    "Anulum, in argumentum ut Dux ei credat",
+    "Nihil, quia sancti simpliciter evanescunt"
+   ]
+  },
+  {
+   "q": "Quomodo fabula piscatoris tandem confirmatur?",
+   "options": [
+    "Dux ei sine ullo argumento simpliciter credit",
+    "Alii testes de tempestate confirmanda prodeunt",
+    "Piscator fabulam suam nullo modo probare potest",
+    "Anulus ex thesauro basilicae deesse invenitur, cum eo qui ei datus est congruens"
+   ]
+  }
+ ],
+ "fk-ja-01": [
+  {
+   "q": "Quid anus in flumine vestes lavans invenit?",
+   "options": [
+    "Magnum malum Persicum",
+    "Parvum piscem",
+    "Arcam ligneam",
+    "Nummum aureum"
+   ]
+  },
+  {
+   "q": "Quae animalia Momotaro comites facta erant hoc in fabulae loco?",
+   "options": [
+    "Canis, feles, et avis",
+    "Tigris, simia, et grus",
+    "Canis, simia, et phasianus",
+    "Canis, ursus, et vulpes"
+   ]
+  },
+  {
+   "q": "Quomodo Momotaro daemones vicit?",
+   "options": [
+    "Daemones dolo ab insula abduxit",
+    "Cum principe daemonum cum tribus animalibus comitibus pugnavit et vicit",
+    "Thesaurum a daemonibus redemit",
+    "Vicanos rogavit ut pro se pugnarent"
+   ]
+  },
+  {
+   "q": "Quid in fine fabulae accidit?",
+   "options": [
+    "Daemones Momotarum ceperunt",
+    "Malum Persicum in aurum mutatum est",
+    "Momotaro in insula in perpetuum mansit",
+    "Momotaro et comites thesaurum domum tulerunt et pagus in pace vixit"
+   ]
+  }
+ ],
+ "fk-ja-02": [
+  {
+   "q": "Cur testudo Taronem ad Palatium Draconis duxit?",
+   "options": [
+    "Ut eum puniret quod nimium piscatus esset",
+    "Ut ei gratias ageret quod vitam suam servaverat",
+    "Quia aberraverat et auxilio egebat",
+    "Ut eum thesauro commutaret"
+   ]
+  },
+  {
+   "q": "Quid Otohime Taroni dedit cum discedere constituit?",
+   "options": [
+    "Arcam gemmatam quam numquam aperire deberet",
+    "Rete piscatorium magicum",
+    "Chartam viae ad pagum reducentem",
+    "Monile margaritarum"
+   ]
+  },
+  {
+   "q": "Quid revera per dies quos Taro in Palatio Draconis egit accidit?",
+   "options": [
+    "Familia eius migraverat",
+    "Pagus tempestate deletus erat",
+    "Nihil omnino mutatum erat",
+    "Centum anni in pago eius natali transierant"
+   ]
+  },
+  {
+   "q": "Quid accidit cum Taro arcam aperuit?",
+   "options": [
+    "Nummi aurei effusi sunt",
+    "Testudo iterum apparuit",
+    "Fumus albus exiit et statim senex factus est",
+    "Nihil omnino accidit"
+   ]
+  }
+ ],
+ "fk-ja-03": [
+  {
+   "q": "Quid quoties senex bambusum secabat postquam puellam invenit fieri coepit?",
+   "options": [
+    "Bambusus in argentum mutabatur",
+    "Culmi lucere coeperunt",
+    "Aurum intra culmos inveniebatur",
+    "Nihil insoliti accidebat"
+   ]
+  },
+  {
+   "q": "Quam condicionem Kaguya-hime cuilibet proco posuit qui eam ducere vellet?",
+   "options": [
+    "Eam certamine carminum vincere debebat",
+    "Ab Imperatore probari debebat",
+    "Decem annos exspectare debebat",
+    "Thesaurum ei paene impossibilem afferre debebat"
+   ]
+  },
+  {
+   "q": "Quid Kaguya-hime tandem parentibus sollicitis confessa est?",
+   "options": [
+    "Se ex luna esse et mox illuc reversuram",
+    "Se clam Imperatorem amare",
+    "Se tandem proco nubere velle",
+    "Se aegrotare et moriturum esse"
+   ]
+  },
+  {
+   "q": "Secundum fabulam, cur mons Fuji nomen suum accepisse dicitur?",
+   "options": [
+    "Quia Kaguya-hime ibi nata est",
+    "Quia Imperator elixir immortalitatis in vertice cremari iussit",
+    "Quia bambusi caesor in monte habitabat",
+    "Quia nuntii lunae ibi descenderunt"
+   ]
+  }
+ ],
+ "fk-ja-04": [
+  {
+   "q": "Quid mulier mira ab homine petivit ea nocte qua advenit?",
+   "options": [
+    "Ut eam statim in matrimonium duceret",
+    "Ut sibi cibum et pecuniam daret",
+    "Ut se gruem invenire adiuvaret",
+    "Ut sinat se manere quia viam amiserat"
+   ]
+  },
+  {
+   "q": "Quam condicionem uxor posuit antequam texere coepit?",
+   "options": [
+    "Ut novum telam sibi emeret",
+    "Ut numquam in cubiculum, dum texeret, aspiceret",
+    "Ut nemini de panno diceret",
+    "Ut ipse texere adiuvaret"
+   ]
+  },
+  {
+   "q": "Quam veram naturam uxoris vir invenit?",
+   "options": [
+    "Vulpem specie mutata",
+    "Textricem ex pago vicino",
+    "Gruem quam ipse olim e laqueo servaverat",
+    "Umbram matris suae defunctae"
+   ]
+  },
+  {
+   "q": "Quomodo fabula finitur?",
+   "options": [
+    "Grus avolat et vir solus cum dolore relinquitur",
+    "Vir et grus in perpetuum feliciter simul vivunt",
+    "Vir quoque in gruem mutatur",
+    "Vicani virum puniunt"
+   ]
+  }
+ ],
+ "fk-ja-05": [
+  {
+   "q": "Quid erat cotidiana consuetudo Kintaronis cum ursis?",
+   "options": [
+    "Cum eis luctari",
+    "Cum eis in montem currere",
+    "Eas piscibus pascere",
+    "Eas artes docere"
+   ]
+  },
+  {
+   "q": "Cur Yorimitsu matrem Kintaronis adiit?",
+   "options": [
+    "Ut agrum familiae emeret",
+    "Ut eam moneret Kintaronem nimis periculosum esse",
+    "Ut ei munus in urbe regia offerret",
+    "Ut rogaret num filium suum tamquam clientem secum in urbem duceret"
+   ]
+  },
+  {
+   "q": "Quomodo viri Yorimitsuonis daemonem Shuten-doji vicerunt, secundum legendam?",
+   "options": [
+    "Eum ad certamen singulare provocaverunt",
+    "Eum vino sake ebrium fecerunt et inermem percusserunt",
+    "Eum in spelunca inclusrunt",
+    "Eum speculo magico deceperunt"
+   ]
+  },
+  {
+   "q": "Quid Kintaro hodie in Iaponia significat?",
+   "options": [
+    "Fortunam in negotiis",
+    "Praesidium a daemonibus",
+    "Sanam pueris crescentiam, in Festo Puerorum pupis honoratam",
+    "Successum in sagittandi arte"
+   ]
+  }
+ ],
+ "fk-ja-06": [
+  {
+   "q": "Quam cupiditatem Issun-boshi clam tenebat, quamvis ab aliis irrideretur?",
+   "options": [
+    "Votum arte magica altior crescendi",
+    "Desiderium aliquando nomen in urbe regia sibi comparandi",
+    "Cupiditatem agricola fiendi",
+    "Spem parentes naturales inveniendi"
+   ]
+  },
+  {
+   "q": "Quod munus Issun-boshi in domo nobilis tenuit?",
+   "options": [
+    "Caput custodum domus",
+    "Coquus in culina",
+    "Minister a filia domus fidus habitus",
+    "Nuntius inter pagos"
+   ]
+  },
+  {
+   "q": "Quomodo Issun-boshi effugit postquam a daemone devoratus est?",
+   "options": [
+    "Intra ventrem daemonis acu pupugit donec eum evomeret",
+    "Gladio sibi viam aperuit",
+    "Se minuens elapsus est",
+    "A domina servatus est"
+   ]
+  },
+  {
+   "q": "Quid malleus felix Issun-boshi praestitit?",
+   "options": [
+    "Eum invisibilem fecit",
+    "Ei magnas divitias dedit",
+    "Eum in daemonem mutavit",
+    "Corpus eius ad staturam humanam communem crescere fecit"
+   ]
+  }
+ ],
+ "fk-ko-01": [
+  {
+   "q": "Quid post mortem parentum accidit?",
+   "options": [
+    "Nolbu bona aequa parte partitus est",
+    "Nolbu omnia bona sibi sumpsit et Heungbu eiecit",
+    "Heungbu dives factus est",
+    "Fratres simul migraverunt"
+   ]
+  },
+  {
+   "q": "Quid hirundo insequenti vere Heungbu rettulit?",
+   "options": [
+    "Saccum oryzae",
+    "Parvum semen",
+    "Epistulam",
+    "Corbem fructuum"
+   ]
+  },
+  {
+   "q": "Quid Nolbu fecit postquam audivit Heungbu divitem factum esse?",
+   "options": [
+    "Heungbu gratulatus est",
+    "Consulto crus hirundinis fregit",
+    "In austrum migravit",
+    "Divitias suas Heungbu dedit"
+   ]
+  },
+  {
+   "q": "Quid ex cucurbita Nolbu exiit?",
+   "options": [
+    "Aurum et thesaurus",
+    "Serpentes et monstra quae eum omnibus bonis spoliaverunt",
+    "Nihil omnino",
+    "Aqua tantum"
+   ]
+  }
+ ],
+ "fk-ko-02": [
+  {
+   "q": "Quid tigris a matre in semita montana petivit?",
+   "options": [
+    "Vestes eius",
+    "Placentam oryzae",
+    "Viam domum",
+    "Pecuniam"
+   ]
+  },
+  {
+   "q": "Quomodo fratres cognoverunt hospitem matrem suam non esse?",
+   "options": [
+    "Caudam eius viderunt",
+    "Manus eius pilis tecta erat",
+    "Lingua peregrina loquebatur",
+    "Sicut tigris olebat"
+   ]
+  },
+  {
+   "q": "Quid fumi tigridis accidit?",
+   "options": [
+    "Ex auro factus erat",
+    "Putris erat et ruptus est",
+    "In serpentem mutatus est",
+    "Nimis brevis erat"
+   ]
+  },
+  {
+   "q": "Quid frater et soror facti sunt?",
+   "options": [
+    "Stellae",
+    "Sol et luna",
+    "Aves",
+    "Montes"
+   ]
+  }
+ ],
+ "fk-ko-03": [
+  {
+   "q": "Quod opus impossibile noverca Kongjwi imposuit?",
+   "options": [
+    "Totum pagum verrere",
+    "Urnam fundo fracto aqua implere",
+    "Centum vestes suere",
+    "Bovem ferum capere"
+   ]
+  },
+  {
+   "q": "Quis Kongjwi adiuvit ut agrum lapidosum sarriret?",
+   "options": [
+    "Bufo",
+    "Pater eius",
+    "Bos nigra e caelo",
+    "Patjwi"
+   ]
+  },
+  {
+   "q": "Quid Kongjwi transiens rivum amisit?",
+   "options": [
+    "Vestem suam",
+    "Unum calceum floreum",
+    "Corbem placentarum oryzae",
+    "Acum crinalem"
+   ]
+  },
+  {
+   "q": "Quomodo magistratus sponsam elegit?",
+   "options": [
+    "Certamine virium habito",
+    "Quaerens cuius pes calceo amisso conveniret",
+    "Senes pagi rogando",
+    "Ditissimam feminam ducendo"
+   ]
+  }
+ ],
+ "fk-ko-04": [
+  {
+   "q": "Quid patri Shim Cheong accidit antequam monachum convenit?",
+   "options": [
+    "Officium amisit",
+    "In rivum cecidit",
+    "Spoliatus est",
+    "In montibus aberravit"
+   ]
+  },
+  {
+   "q": "Cur Shim Cheong nautas quaesivit?",
+   "options": [
+    "Ut ab eis opus peteret",
+    "Ut se ipsam pro oryza patri danda victimam offerret",
+    "Ut opus acu factum venderet",
+    "Ut viam ad alium pagum inveniret"
+   ]
+  },
+  {
+   "q": "Quid Rex Draco de Shim Cheong fecit?",
+   "options": [
+    "Eam perpetuo captivam tenuit",
+    "Eam intra florem lotum rursus sursum misit",
+    "Eam in piscem mutavit",
+    "Eam quod mentita esset punivit"
+   ]
+  },
+  {
+   "q": "Quomodo pater Shim Cheong visum recuperavit?",
+   "options": [
+    "Medicus eum sanavit",
+    "Potionem magicam bibit",
+    "Prae gaudio, cum filiam tandem iterum vidit",
+    "Rex Draco ei visum reddidit"
+   ]
+  }
+ ],
+ "fk-ko-05": [
+  {
+   "q": "Quam condicionem cervus posuit ut vestem plumatam nymphae redderet?",
+   "options": [
+    "Ne eam redderet donec decem annos nupti fuissent",
+    "Ne eam redderet donec nympha tres liberos peperisset",
+    "Ne eam redderet donec hiems venisset",
+    "Ne eam redderet donec cervus ipse id diceret"
+   ]
+  },
+  {
+   "q": "Cur nympha tandem vestem plumatam recuperavit?",
+   "options": [
+    "Eam ipsa domum purgans invenit",
+    "Cervus eam ei reddidit",
+    "Lignator precibus eius cessit et eam ei ostendit",
+    "Liberi eam invenerunt et ei dederunt"
+   ]
+  },
+  {
+   "q": "Quomodo lignator caelum attigit?",
+   "options": [
+    "Ipse alas sibi genuit",
+    "In situla qua nymphae aquam haurire solebant sursum vectus est",
+    "Ingentem arborem scandit",
+    "Auxilium a venatoribus petivit"
+   ]
+  },
+  {
+   "q": "Secundum fabulam, quid in una fabulae exitus versione accidit?",
+   "options": [
+    "Lignator in caelo sine ullo eventu in perpetuum manet",
+    "Lignator, matrem visere conatus, regulam violat et in caelum redire non potest",
+    "Nympha in terram redit ut cum eo vivat",
+    "Cervus homo fit"
+   ]
+  }
+ ],
+ "fk-ko-06": [
+  {
+   "q": "Quid Mong-ryong Chunhyang promisit antequam Hanyangum discederet?",
+   "options": [
+    "Se ei cotidie pecuniam missurum",
+    "Se examen regium superaturum et reversurum ut eam rite duceret",
+    "Se eam statim Hanyangum ducturum",
+    "Se studia oblitum iri"
+   ]
+  },
+  {
+   "q": "Quomodo Chunhyang respondit cum Byun Hak-do postulavit ut sibi serviret?",
+   "options": [
+    "Timore mota consensit",
+    "Namwon reliquit",
+    "Recusavit, dicens se iam viro suo pertinere",
+    "Eum pecunia corrupit ut se sineret"
+   ]
+  },
+  {
+   "q": "Quod munus Mong-ryong post examen regium superatum meruit?",
+   "options": [
+    "Magistratus localis Namwon",
+    "Inspector regius secretus",
+    "Poeta aulicus",
+    "Custos palatii"
+   ]
+  },
+  {
+   "q": "Quem titulum rex Chunhyang ob fidem dedit?",
+   "options": [
+    "Regina Namwon",
+    "Domina Castitatis",
+    "Inspector Regius",
+    "Gisaeng emerita"
+   ]
+  }
+ ],
+ "fk-la-01": [
+  {
+   "q": "Cur Amulius geminos pueros in flumine reliquit?",
+   "options": [
+    "Quia eos timebat",
+    "Quia eos amabat",
+    "Quia sacerdos id iussit",
+    "Quia pueri aegrotabant"
+   ]
+  },
+  {
+   "q": "Quis pueros post lupam invenit et aluit?",
+   "options": [
+    "Pastor nomine Faustulus",
+    "Rex",
+    "Sacerdos",
+    "Miles"
+   ]
+  },
+  {
+   "q": "Cur fratres ante urbem conditam disceptaverunt?",
+   "options": [
+    "Non consentiebant ubi eam aedificarent",
+    "Non consentiebant quae esset mater eorum",
+    "De lupa contenderunt",
+    "De avo suo disceptaverunt"
+   ]
+  },
+  {
+   "q": "Quid inter fratres accidit?",
+   "options": [
+    "Romulus Remum ira motus occidit",
+    "Remus Romulum occidit",
+    "Reges consortes facti sunt",
+    "Simul urbem reliquerunt"
+   ]
+  }
+ ],
+ "fk-la-02": [
+  {
+   "q": "Cur Androcles in spelunca se occultavit?",
+   "options": [
+    "A domino suo fugiebat",
+    "Animalia venabatur",
+    "In tempestate aberraverat",
+    "Thesaurum quaerebat"
+   ]
+  },
+  {
+   "q": "Quid Androcles leoni fecit?",
+   "options": [
+    "Spinam e pede eius eduxit",
+    "Ei cibum dedit",
+    "Ei specum aedificavit",
+    "Eum artes docuit"
+   ]
+  },
+  {
+   "q": "Cur Androcles in harenam missus est?",
+   "options": [
+    "Ut a leone fero poena devoraretur",
+    "Ut cum gladiatoribus pugnaret",
+    "Ut leonem spectantibus domaret",
+    "Ut ab imperatore liberaretur"
+   ]
+  },
+  {
+   "q": "Cur leo Androclem non impetivit?",
+   "options": [
+    "Leo eum ut amicum qui se olim adiuverat agnovit",
+    "Leo nimis senex erat quam ut impeteret",
+    "Leo dormiebat",
+    "Domitores leonem placaverant"
+   ]
+  }
+ ],
+ "fk-la-03": [
+  {
+   "q": "Quid cornix in rostro tenebat?",
+   "options": [
+    "Caseum quem furata erat",
+    "Piscem",
+    "Anulum aureum",
+    "Nidum ovorum"
+   ]
+  },
+  {
+   "q": "Quid vulpes cornici dixit?",
+   "options": [
+    "Vocem eius cantandi tam pulchram esse quam pennas eius fortasse esse",
+    "Pennas eius turpes esse",
+    "Caseum sibi directe dandum esse",
+    "Vulpes et cornices amicas esse debere"
+   ]
+  },
+  {
+   "q": "Quid caseo accidit?",
+   "options": [
+    "Vulpes eum, postquam cornix dimisit, rapuit et comedit",
+    "Cornix eum comedit antequam vulpes advenit",
+    "Caseus nimis altus erat quam ut vulpes attingeret",
+    "Canis eum ab utraque abstulit"
+   ]
+  },
+  {
+   "q": "Quae est sententia fabulae?",
+   "options": [
+    "Adulatoribus non fidendum, qui plerumque aliquid a te volunt",
+    "Aves prope vulpes canere non debere",
+    "Caseum semper in arboribus abscondendum esse",
+    "Vulpes cornicibus semper periculosas esse"
+   ]
+  }
+ ],
+ "fk-la-04": [
+  {
+   "q": "Cur Lars Porsena in Romam contendit?",
+   "options": [
+    "Ut regem exsulem in potestatem restitueret",
+    "Ut novos agros vinceret",
+    "Ut Horatium ipsum puniret",
+    "Ut tributum non solutum exigeret"
+   ]
+  },
+  {
+   "q": "Quid Horatius facere proposuit?",
+   "options": [
+    "Pontem cum duobus sociis tenere dum Romani eum diruerent",
+    "Urbem dedere ut vitae servarentur",
+    "Cum Porsena de pace agere",
+    "Pontem solus ipse incendere"
+   ]
+  },
+  {
+   "q": "Quid Horatius fecit cum pons paene dirutus esset?",
+   "options": [
+    "Socios suos tutos remisit et ipse extremam partem solus tenuit",
+    "Statim cum sociis se recepit",
+    "Pontem ipse rursus aedificavit",
+    "Auxilia ex urbe accivit"
+   ]
+  },
+  {
+   "q": "Quomodo Horatius, ponte collapso, effugit?",
+   "options": [
+    "Deum fluminis precatus, armatus flumen tranavit",
+    "A navi praetereunte servatus est",
+    "Secundum ripam ad vadum cucurrit",
+    "Se Etruscis dedidit"
+   ]
+  }
+ ],
+ "fk-la-05": [
+  {
+   "q": "Quid nomen Cincinnatus significat, et quid ante famam agebat?",
+   "options": [
+    "Significat 'crispum capillum habentem', et parvum agrum colebat",
+    "Significat 'fortem', et exercitum ducebat",
+    "Significat 'sapientem', et in senatu serviebat",
+    "Significat 'exsulem', et peregre vivebat"
+   ]
+  },
+  {
+   "q": "Cur senatus dictatorem creare constituit?",
+   "options": [
+    "Quia consul et exercitus eius ab hoste circumventi erant et res desperata videbatur",
+    "Quia consules interfecti erant",
+    "Quia pestis urbem afflixerat",
+    "Quia plebs seditionem fecerat"
+   ]
+  },
+  {
+   "q": "Quid Cincinnatus simul ac Romam venit fecit?",
+   "options": [
+    "Omnes iuniores cives statim ad arma vocavit",
+    "Pompam triumphalem duxit",
+    "Priorem consulem necavit",
+    "Novas munitiones aedificavit"
+   ]
+  },
+  {
+   "q": "Quid Cincinnatus post bellum victum fecit?",
+   "options": [
+    "Sponte potestatem, multo ante quam lex permitteret, deposuit et ad agrum suum rediit",
+    "Potestatem sex menses integros tenuit et deinde consul factus est",
+    "Se regem Romae declaravit",
+    "Aequos victos ex Italia expulit"
+   ]
+  }
+ ],
+ "fk-la-06": [
+  {
+   "q": "Quid Iuppiter et Mercurius, mortalium specie induti, faciebant?",
+   "options": [
+    "Hospitium apud Phrygas quaerebant, et ubique reiciebantur",
+    "Vires bellatorum localium temptabant",
+    "Templum amissum quaerebant",
+    "Tributa a vicanis exigebant"
+   ]
+  },
+  {
+   "q": "Quid Baucis et Philemon hospitibus fecerunt, quamvis nescirent qui essent?",
+   "options": [
+    "Omnia quae habebant hilariter obtulerunt, quamvis humilia essent",
+    "Peregrinos in domum admittere recusaverunt",
+    "Eos ad vicinum ditiorem miserunt",
+    "A peregrinis prius pretium poposcerunt"
+   ]
+  },
+  {
+   "q": "Quod prodigium senes intellegere fecit hospites suos deos esse?",
+   "options": [
+    "Crater vini se ipse semper implebat, quantumcumque effusum esset",
+    "Domus subito calida facta est",
+    "Anser eorum loqui coepit",
+    "Stella lucida super tectum apparuit"
+   ]
+  },
+  {
+   "q": "Quid tandem Baucidi et Philemoni accidit?",
+   "options": [
+    "Cum mors demum venit, simul in duas arbores, non seiuncti, mutati sunt",
+    "Immortales facti in templo marmoreo in perpetuum vixerunt",
+    "In diluvio in saxa mutati sunt",
+    "Seiuncti sunt, altero multo ante altero mortuo"
+   ]
+  }
+ ],
+ "fk-nl-01": [
+  {
+   "q": "Quid nauclerus fecit quamvis nautae timerent?",
+   "options": [
+    "Navem convertit",
+    "Nihilominus navigare perrexit",
+    "Nautas rogavit ut suffragium ferrent",
+    "Navem ancoravit"
+   ]
+  },
+  {
+   "q": "Quod est nomen navis nauclerorum in legenda?",
+   "options": [
+    "Cerva Aurea",
+    "Batavus Volans",
+    "Stella Argentea",
+    "Umbra Maris"
+   ]
+  },
+  {
+   "q": "De quo legenda Batavi Volantis homines monet?",
+   "options": [
+    "Ne umquam prope Africam navigent",
+    "Ne nimis superbi sint",
+    "Ne peregrinis fidant",
+    "Ne noctu navigent"
+   ]
+  },
+  {
+   "q": "Secundum fabulam, quid Batavus Volans semper quaerit?",
+   "options": [
+    "Thesaurum",
+    "Nautas suos amissos",
+    "Portum tutum",
+    "Novum nauclerum"
+   ]
+  }
+ ],
+ "fk-nl-02": [
+  {
+   "q": "Quae sunt, secundum legendam, Mulieres Albae?",
+   "options": [
+    "Spiritus mulierum sapientium olim viventium",
+    "Umbrae nautarum amissorum",
+    "Nymphae quae thesaurum custodiunt",
+    "Spiritus agricolarum"
+   ]
+  },
+  {
+   "q": "Quid Mulieres Albae facere poterant?",
+   "options": [
+    "Aegrotos sanare",
+    "Futura praedicere",
+    "Tempestates regere",
+    "In animalia mutari"
+   ]
+  },
+  {
+   "q": "Ubi hodie tumuli sepulcrales visitari possunt?",
+   "options": [
+    "In provinciis ut Drenthe et Overijssel",
+    "Tantum Amstelodami",
+    "Tantum in Belgio",
+    "Non iam exsistunt"
+   ]
+  },
+  {
+   "q": "Quomodo legenda hodie adhuc vivit?",
+   "options": [
+    "Tantum per libros scholasticos",
+    "Per fabulas quas avi pueris narrant",
+    "Per festum annuum",
+    "Oblivioni data est"
+   ]
+  }
+ ],
+ "fk-nl-03": [
+  {
+   "q": "Quid mulier nauclerum reportare iussit?",
+   "options": [
+    "Aurum et gemmas",
+    "Merces pretiosissimas quas invenire posset",
+    "Novam navem",
+    "Aromata ex Oriente"
+   ]
+  },
+  {
+   "q": "Quid mulier de tritico quod nauclerus attulit fecit?",
+   "options": [
+    "Id vendidit",
+    "Id pauperibus dedit",
+    "Id in mare proici iussit",
+    "Id ad hiemem condidit"
+   ]
+  },
+  {
+   "q": "Quid uxor piscatoris intra piscem invenit?",
+   "options": [
+    "Chartam",
+    "Anulum aureum mercatricis",
+    "Epistulam",
+    "Monile margaritarum"
+   ]
+  },
+  {
+   "q": "Quid ibi ubi triticum submersum est formatum esse dicitur?",
+   "options": [
+    "Nova insula",
+    "Pharus",
+    "Vadum harenosum nomine Vrouwenzand",
+    "Vertex aquarum"
+   ]
+  }
+ ],
+ "fk-nl-04": [
+  {
+   "q": "Quid rex Bruin Ursum facere iussit?",
+   "options": [
+    "Cum Reynardo pugnare",
+    "Reynardum ad aulam ducere",
+    "Arcem Reynardi custodire",
+    "Agricolas punire"
+   ]
+  },
+  {
+   "q": "Quid Bruino accidit cum se e trunco arboris avulsit?",
+   "options": [
+    "Crus fregit",
+    "Cutem capitis et pedum amisit",
+    "In flumen cecidit",
+    "Ab agricolis captus est"
+   ]
+  },
+  {
+   "q": "Quid Tiberto Feli accidit?",
+   "options": [
+    "Multos mures cepit",
+    "In insidias missus vix effugit",
+    "Ire recusavit",
+    "Amicus Reynardi factus est"
+   ]
+  },
+  {
+   "q": "Quid fabula docet, secundum ultimum paragraphum?",
+   "options": [
+    "Vim semper vincere",
+    "Reges nemini fidere debere",
+    "Calliditatem saepe plus quam nudam vim efficere",
+    "Animalibus fidendum non esse"
+   ]
+  }
+ ],
+ "fk-nl-05": [
+  {
+   "q": "Quid Sanctus Nicolaus, secundum traditionem, filiabus pauperis clam fecit?",
+   "options": [
+    "Ipse eis maritos invenit",
+    "Nummos aureos per fenestram noctu iecit",
+    "Eis domum dedit",
+    "Regi pro eis scripsit"
+   ]
+  },
+  {
+   "q": "Quo nomine ministri Sinterklaas tradito vocantur?",
+   "options": [
+    "Zwarte Pieten",
+    "De Wieven",
+    "De Kabouters",
+    "De Boeken"
+   ]
+  },
+  {
+   "q": "Unde, secundum textum, nomen Americani Santa Claus venit?",
+   "options": [
+    "Ex vetere verbo Germanico",
+    "Ex verbo Batavo Sinterklaas",
+    "Ex legenda Hispanica",
+    "Ex deo hiemis ante-Christiano"
+   ]
+  },
+  {
+   "q": "Quam summam sententiam ultimus paragraphus dicit intactam manere?",
+   "options": [
+    "Pueros semper oboedientes esse debere",
+    "Liberalitatem in occulto datam esse pulcherrimam formam donandi",
+    "Episcopos divites esse debere",
+    "Hispaniam et Belgium coniunctas esse"
+   ]
+  }
+ ],
+ "fk-nl-06": [
+  {
+   "q": "Qui erant, secundum legendam, victimae dilectae Lange Wapper?",
+   "options": [
+    "Pueri foris ludentes",
+    "Ebrii et otiosi post horas claudendi vagantes",
+    "Nautae in portum redeuntes",
+    "Institores fori"
+   ]
+  },
+  {
+   "q": "Quid accidit cum vigiles Lange Wapper comprehendere conati sunt?",
+   "options": [
+    "Se in muris magnitudinem minuens effugit",
+    "Intumuit, vincula rupit, et super tecta evanuit",
+    "Eos auro corrupit",
+    "In fumum mutatus est"
+   ]
+  },
+  {
+   "q": "Quomodo Lange Wapper hodie Antverpiae adhuc adest?",
+   "options": [
+    "Ut statua in portu",
+    "Ut figura gigantea quae in pompis festis per vias ducitur",
+    "Tantum ut nomen cerevisiae localis",
+    "Prorsus oblitus est"
+   ]
+  },
+  {
+   "q": "Quid ultimus paragraphus de vera natura huius entis suggerit?",
+   "options": [
+    "Ab ecclesia tantum inventum esse",
+    "Praecipue in imaginatione eorum qui adhuc credunt exsistere",
+    "Latronem vere historicum fuisse",
+    "Nullam iam significationem habere"
+   ]
+  }
+ ],
+ "fk-pl-01": [
+  {
+   "q": "Ubi draco habitabat?",
+   "options": [
+    "In spelunca sub colle Wawel",
+    "In arce regia",
+    "In silva",
+    "In ipso flumine"
+   ]
+  },
+  {
+   "q": "Quis urbi Cracoviae imperabat?",
+   "options": [
+    "Concilium equitum",
+    "Rex Krak",
+    "Sutor Skuba",
+    "Episcopus"
+   ]
+  },
+  {
+   "q": "Quod erat consilium Skubae?",
+   "options": [
+    "Cum dracone gladio pugnare",
+    "Draconem rete capere",
+    "Ovem sulphure implere ut draco eam devoraret",
+    "Aquam fluminis venenare"
+   ]
+  },
+  {
+   "q": "Quomodo draco periit?",
+   "options": [
+    "Eques eum igni interfecit",
+    "Tantam aquam bibit ut venter ei rumperetur",
+    "Rex eum veneno necavit",
+    "E colle Wawel cecidit"
+   ]
+  }
+ ],
+ "fk-pl-02": [
+  {
+   "q": "Ubi anas aurea habitat?",
+   "options": [
+    "In puteo extra oppidum",
+    "In profundo cellario sub domo vetere",
+    "In turri ecclesiae",
+    "In spelunca silvestri"
+   ]
+  },
+  {
+   "q": "Quid discipulus magistros noctu facientes vidit?",
+   "options": [
+    "Panem coquentes",
+    "Spiritus malos evocantes",
+    "Thesaurum vendentes",
+    "Domum aedificantes"
+   ]
+  },
+  {
+   "q": "Quid anas custodire debet?",
+   "options": [
+    "Librorum veterum collectionem",
+    "Thesaurum auri et gemmarum",
+    "Gladium magicum",
+    "Coronam regiam"
+   ]
+  },
+  {
+   "q": "Quot difficiles probationes superandae sunt ut thesaurus inveniatur?",
+   "options": [
+    "Duae",
+    "Tres",
+    "Quinque",
+    "Una"
+   ]
+  }
+ ],
+ "fk-pl-03": [
+  {
+   "q": "Unde sirena venit?",
+   "options": [
+    "Ex Mari Baltico",
+    "Ex Mari Nigro",
+    "Ex lacu montano",
+    "Ex oceano"
+   ]
+  },
+  {
+   "q": "Quid mercator de sirena facere volebat?",
+   "options": [
+    "Eam statim liberare",
+    "Eam capere et pecuniae causa ostendere",
+    "Eam in matrimonium ducere",
+    "Ei donum dare"
+   ]
+  },
+  {
+   "q": "Quis sirenam liberavit?",
+   "options": [
+    "Piscator",
+    "Ipse mercator",
+    "Filius domini tabernae",
+    "Miles"
+   ]
+  },
+  {
+   "q": "Quid sirena gerit cum urbem defendit?",
+   "options": [
+    "Gladium et scutum",
+    "Coronam et sceptrum",
+    "Rete et uncum",
+    "Citharam et tibiam"
+   ]
+  }
+ ],
+ "fk-pl-04": [
+  {
+   "q": "Cur tres fratres peregrinabantur?",
+   "options": [
+    "Ut novam terram invenirent et sua ipsorum regna conderent",
+    "Ut draconem effugerent",
+    "Ut thesaurum invenirent",
+    "Ut regem viserent"
+   ]
+  },
+  {
+   "q": "Quam in partem Rus profectus est?",
+   "options": [
+    "Occidentem",
+    "Orientem",
+    "Meridiem",
+    "Septentrionem"
+   ]
+  },
+  {
+   "q": "Quo nomine Lech sedem suam appellavit, et ex quo verbo?",
+   "options": [
+    "Gniezno, ex 'gniazdo' (nidus)",
+    "Cracovia, ex 'kruk' (corvus)",
+    "Varsavia, ex 'wars'",
+    "Posnania, ex 'poznac' (cognoscere)"
+   ]
+  },
+  {
+   "q": "Quid aquila alba facta est?",
+   "options": [
+    "Signum novae civitatis Lechi, postea insigne Poloniae",
+    "Signum montis Bohemici",
+    "Signum fluminum Rus",
+    "Signum malae fortunae"
+   ]
+  }
+ ],
+ "fk-pl-05": [
+  {
+   "q": "Quid Pan Twardowski facere posse dicebatur?",
+   "options": [
+    "In alias terras volare",
+    "Mortuos excitare et futura praedicere",
+    "Plumbum tantum in aurum mutare",
+    "Cum animalibus loqui"
+   ]
+  },
+  {
+   "q": "Qua condicione diabolus animam Twardowski capere poterat?",
+   "options": [
+    "Tantum Romae",
+    "Tantum media nocte",
+    "Tantum si Twardowski nuberet",
+    "Tantum Cracoviae"
+   ]
+  },
+  {
+   "q": "Quo Twardowski, postquam oravit, pervenit?",
+   "options": [
+    "Tuto domum",
+    "In Lunam",
+    "Romam",
+    "In tabernam"
+   ]
+  },
+  {
+   "q": "Quod dictum Polonicum ex hac legenda venit?",
+   "options": [
+    "'Sicut Twardowski in Luna evanescere'",
+    "'Sicut diabolus saltare'",
+    "'Sicut sanctus orare'",
+    "'Sicut mercator commercium agere'"
+   ]
+  }
+ ],
+ "fk-pl-06": [
+  {
+   "q": "Ex quo basiliscus creatus esse dicebatur?",
+   "options": [
+    "Ex ovo a vetere gallo posito",
+    "Ex maledictione sagae",
+    "Ex dente draconis",
+    "Ex puteo maledicto"
+   ]
+  },
+  {
+   "q": "Quam infirmitatem sapientia popularis basilisco tribuebat?",
+   "options": [
+    "Imaginem suam videns moritur",
+    "Ignem timet",
+    "Aquam transire non potest",
+    "Interdiu dormit"
+   ]
+  },
+  {
+   "q": "Quid captivo accidit postquam basiliscum vicit?",
+   "options": [
+    "Nihilominus interfectus est",
+    "Ut promissum erat ignotus est",
+    "Praefectus urbis factus est",
+    "Ex urbe fugit"
+   ]
+  },
+  {
+   "q": "Cum quibus aliis legendis basiliscus in chronicis commemoratur?",
+   "options": [
+    "Dracone Wawel et sirena Varsaviensi",
+    "Pan Twardowski et Janosik",
+    "Lecho et Bohemo",
+    "Anate Aurea et Krak"
+   ]
+  }
+ ],
+ "fk-pt-01": [
+  {
+   "q": "Quid Saci-Pererê pro duobus cruribus habet?",
+   "options": [
+    "Unum tantum crus",
+    "Tria crura",
+    "Caudam piscis",
+    "Alas"
+   ]
+  },
+  {
+   "q": "Secundum fabulam, quid Saci lacti vaccarum facit?",
+   "options": [
+    "Sinit id nocte acescere",
+    "In caseum mutat",
+    "In terram effundit",
+    "Totum bibit"
+   ]
+  },
+  {
+   "q": "Quomodo aliquis, secundum legendam, Saci capere potest?",
+   "options": [
+    "Cribrum vel coronam precatoriam in turbinem iaciendo",
+    "Cibum ei offerendo",
+    "Carmen speciale canendo",
+    "Ignem prope eum accendendo"
+   ]
+  },
+  {
+   "q": "Quomodo senex agricola Saci tandem cepit?",
+   "options": [
+    "In lagena vitrea cortice et cruce obturata",
+    "In arca lignea",
+    "Rete super eum iacto",
+    "Crus eius ad arborem alligans"
+   ]
+  }
+ ],
+ "fk-pt-02": [
+  {
+   "q": "Cur Jurupari puerum necavit?",
+   "options": [
+    "Propter invidiam quantum puer amaretur",
+    "Quia puer ei furatus erat",
+    "Casu in venatione",
+    "Quia puer eum contumelia affecit"
+   ]
+  },
+  {
+   "q": "Quid vox sacra matrem facere iussit?",
+   "options": [
+    "Duos oculos pueri serere, unum in silva, alterum prope domum",
+    "Puerum sub arbore guarana sepelire",
+    "Oculos pueri in flumen iacere",
+    "Oculos pueri sacerdoti dare"
+   ]
+  },
+  {
+   "q": "Quales plantae ex duobus oculis satis creverunt?",
+   "options": [
+    "Planta silvestris in silva et planta domestica prope domum",
+    "Duae plantae silvestres omnino similes",
+    "Planta quae nullum fructum ferebat",
+    "Arbor et vitis"
+   ]
+  },
+  {
+   "q": "Cur fructus guaraná appellatus est?",
+   "options": [
+    "Quia semen et pulpa oculum humanum referebant",
+    "Quia prope flumen Guaraná nomine inventus est",
+    "Quia ex nomine matris pueri appellatus est",
+    "Propter figuram suam, cithara parva similem"
+   ]
+  }
+ ],
+ "fk-pt-03": [
+  {
+   "q": "Cur pedes Curupira retrorsum versi homines confundunt?",
+   "options": [
+    "Quia vestigia in contrariam partem ducunt quam ille vere it",
+    "Quia super terram volare potest",
+    "Quia tantum noctu ambulat",
+    "Quia pedes eius nullum vestigium relinquunt"
+   ]
+  },
+  {
+   "q": "Quid Curupira venatoribus qui plura animalia quam necesse occiderant fecit?",
+   "options": [
+    "Ultionem de eis sumpsit",
+    "Litteris monitoriis eos monuit",
+    "Eos simpliciter neglexit",
+    "Animalia rogavit ut eis ignoscerent"
+   ]
+  },
+  {
+   "q": "Quid Curupira persuasit ut Chico tandem dimitteret?",
+   "options": [
+    "Chico promisit se plura quam necesse non venaturum",
+    "Chico Curupirae donum tabaci dedit",
+    "Chico fanum in silva aedificavit",
+    "Chico regionem in perpetuum reliquit"
+   ]
+  },
+  {
+   "q": "Quid viatores adhuc Curupirae tamquam donum relinquunt?",
+   "options": [
+    "Paulum tabaci vel cachaçae in trunco arboris",
+    "Fructum recentem ad initium silvae",
+    "Parvas statuas sculptas",
+    "Nummos in terra defossos"
+   ]
+  }
+ ],
+ "fk-pt-04": [
+  {
+   "q": "Cuius speciem, secundum legendam, Iara habet?",
+   "options": [
+    "Mulieris crinibus viridibus longis et cauda piscis",
+    "Anus squamis argenteis",
+    "Serpentis ingentis oculis humanis",
+    "Avis facie muliebri"
+   ]
+  },
+  {
+   "q": "Quomodo Iara creatura fluminis facta est?",
+   "options": [
+    "Pisces eius misertae sunt postquam pater eam in flumen iecit",
+    "In flumen se demersit ut tempestatem effugeret",
+    "Magus eam maledixit quia nuptias recusaverat",
+    "Ex ipso flumine nata est"
+   ]
+  },
+  {
+   "q": "Quid Beto agebat cum primum carmen Iarae audivit?",
+   "options": [
+    "Solus prope flumen sub vesperum laborabat",
+    "Cum avia sua piscabatur",
+    "In sua cymba dormiebat",
+    "Cum amicis natabat"
+   ]
+  },
+  {
+   "q": "Quomodo Beto incantationi Iarae effugit?",
+   "options": [
+    "Aures texit et ad cymbam suam recucurrit",
+    "Carmen clarius cecinit ut eam obruaret",
+    "Rete super eam iecit",
+    "Aviam suam rogavit ut ipsa se servaret"
+   ]
+  }
+ ],
+ "fk-pt-05": [
+  {
+   "q": "Quomodo Pedro Malasartes plerumque describitur?",
+   "options": [
+    "Pauper opibus sed callidus et sollers",
+    "Dominus dives sed fraudulentus",
+    "Agricola quietus sine ulla ambitione",
+    "Mercator peregrinus transiens"
+   ]
+  },
+  {
+   "q": "Quid Pedro intra ollam ante demonstrationem abscondit?",
+   "options": [
+    "Pulmentum iam coctum",
+    "Acervum carbonum ardentium",
+    "Alteram ollam minorem",
+    "Nihil, olla vere vacua erat"
+   ]
+  },
+  {
+   "q": "Quid accidit cum mercator ollam domi temptavit?",
+   "options": [
+    "Holera cruda numquam cocta sunt",
+    "Olla displosa est",
+    "Olla cibum statim coxit",
+    "Olla ignem concepit"
+   ]
+  },
+  {
+   "q": "Quid mercator invenit cum ad Pedrum conveniendum rediit?",
+   "options": [
+    "Pedrum iam cum pecunia e pago discessisse",
+    "Pedrum veniam petivisse et pecuniam reddidisse",
+    "Pedrum sibi alterum rem magicam obtulisse",
+    "Pedrum a vicanis comprehensum esse"
+   ]
+  }
+ ],
+ "fk-pt-06": [
+  {
+   "q": "Quam rerum faciem fabula initio describit?",
+   "options": [
+    "Nundinas festas iunias secundum flumen noctu",
+    "Pompam funebrem quietam",
+    "Forum matutinum frequens",
+    "Expeditionem piscatoriam in tempestate"
+   ]
+  },
+  {
+   "q": "Quid notabile erat in modo quo peregrinus saltabat?",
+   "options": [
+    "Saltabat gratia quadam quasi non huius mundi",
+    "Cum nemine saltare recusabat",
+    "Solus tantum in angulo saltabat",
+    "Omnes novam saltationem docuit"
+   ]
+  },
+  {
+   "q": "Quid puellae aliquot mensibus post festum accidit?",
+   "options": [
+    "Praegnans inventa est nullo patre explicato",
+    "E pago discessit ut peregrinum quaereret",
+    "Alteri viro ex nundinis nupsit",
+    "Aegrota facta numquam convaluit"
+   ]
+  },
+  {
+   "q": "Secundum obstetrices veteres, quis vere erat peregrinus?",
+   "options": [
+    "Boto, delphinus fluminis incantatus in hominem mutatus",
+    "Spiritus vagus sine forma certa",
+    "Princeps pagi aemuli specie mutata",
+    "Umbra piscatoris submersi"
+   ]
+  }
+ ],
+ "fk-ru-01": [
+  {
+   "q": "Quem avus primum auxilii causa vocat?",
+   "options": [
+    "Canem",
+    "Aviam",
+    "Felem",
+    "Murem"
+   ]
+  },
+  {
+   "q": "Quem neptis auxilii causa vocat?",
+   "options": [
+    "Murem",
+    "Felem",
+    "Canem Zhuchka",
+    "Avum"
+   ]
+  },
+  {
+   "q": "Quem Zhuchka auxilii causa vocat?",
+   "options": [
+    "Felem",
+    "Murem",
+    "Aviam",
+    "Neptem"
+   ]
+  },
+  {
+   "q": "Quis tandem efficit ut rapum extrahi possit?",
+   "options": [
+    "Avus solus",
+    "Feles",
+    "Mus",
+    "Avia sola"
+   ]
+  }
+ ],
+ "fk-ru-02": [
+  {
+   "q": "Cur kolobok per viam volvi coepit?",
+   "options": [
+    "Ipse sua sponte de pluteo fenestrae desiluit",
+    "Anus eum foras impulit",
+    "Lupus eum abstulit",
+    "Vento flatus est"
+   ]
+  },
+  {
+   "q": "Quomodo kolobok leporem et lupum effugit?",
+   "options": [
+    "In foramine se occultat",
+    "Carmen canit et abvolvitur",
+    "Ursum vocat",
+    "Eos mordet"
+   ]
+  },
+  {
+   "q": "Quid vulpes kolobok facere rogat?",
+   "options": [
+    "Cito abvolvi",
+    "Sibi panem dare",
+    "Carmen suum iterum, propius sibi, canere",
+    "Ursum convenire"
+   ]
+  },
+  {
+   "q": "Quid tandem kolobok accidit?",
+   "options": [
+    "In perpetuum effugit",
+    "Vulpes eum devorat",
+    "Ursus eum devorat",
+    "Domum redit"
+   ]
+  }
+ ],
+ "fk-ru-03": [
+  {
+   "q": "Cur noverca privignam in silvam mittit?",
+   "options": [
+    "Ut ligna colligat",
+    "Ut eam ibi solam relinquat, odio mota",
+    "Ut Morozko consulto conveniat",
+    "Ut maritum ei inveniat"
+   ]
+  },
+  {
+   "q": "Quomodo privigna respondet cum Morozko rogat num calida sit?",
+   "options": [
+    "Flet et auxilium implorat",
+    "Aufugit",
+    "Comiter dicit se calidam esse",
+    "Respondere recusat"
+   ]
+  },
+  {
+   "q": "Quod praemium Morozko privignae dat?",
+   "options": [
+    "Nihil omnino",
+    "Pellem calidam et arcam gemmarum",
+    "Equum magicum",
+    "Domum novam"
+   ]
+  },
+  {
+   "q": "Quid filiae ipsius novercae in silva accidit?",
+   "options": [
+    "Etiam maiores divitias accipit",
+    "Morozko eam, quia superba est, gelu necat",
+    "Morozko eam ducit",
+    "Aberrat sed tuto domum redit"
+   ]
+  }
+ ],
+ "fk-ru-04": [
+  {
+   "q": "Quid mala aurea ex horto furabatur?",
+   "options": [
+    "Ursus",
+    "Avis Ignea",
+    "Lupus",
+    "Frater maximus natu"
+   ]
+  },
+  {
+   "q": "Quid Lupus Cinereus Ivani obtulit postquam equum eius devoravit?",
+   "options": [
+    "Nihil, aufugit",
+    "Auxilium suum pro equo",
+    "Pennam auream",
+    "Gladium magicum"
+   ]
+  },
+  {
+   "q": "Quid fratres Ivani ei in via domum facientes fecerunt?",
+   "options": [
+    "Eum adiuverunt thesauros portare",
+    "Eum necaverunt et praemia abstulerunt",
+    "Eum reliquerunt sed vivere siverunt",
+    "Ipsi Elenam duxerunt"
+   ]
+  },
+  {
+   "q": "Quomodo fabula pro Ivane et Lupo Cinereo finitur?",
+   "options": [
+    "Ambo in campis moriuntur",
+    "Ivan Elenam ducit et lupus in silvam redit",
+    "Lupus tsar fit",
+    "Ivan fratribus numquam ignoscit"
+   ]
+  }
+ ],
+ "fk-ru-05": [
+  {
+   "q": "Quomodo Sadko primum favorem Regis Maris obtinuit?",
+   "options": [
+    "Ei aurum dedit",
+    "Cum monstro marino pugnavit",
+    "Gusli tam bene cecinit ut eum incantaret",
+    "Ei palatium aedificavit"
+   ]
+  },
+  {
+   "q": "Cur naves Sadko subito in mari steterunt?",
+   "options": [
+    "Tempestas eas fregit",
+    "Rex Maris tributum numquam solutum poposcit",
+    "Ventus defecit",
+    "Piratae viam clauserunt"
+   ]
+  },
+  {
+   "q": "Quid Sadko fecit ut saltationem perniciosam in mari sisteret?",
+   "options": [
+    "Clarius cecinit",
+    "Chordas gusli sui rupit",
+    "In aquam se demersit",
+    "Auxilium a virginibus maris petivit"
+   ]
+  },
+  {
+   "q": "Quomodo Sadko tandem regnum submarinum Regis Maris reliquit?",
+   "options": [
+    "Pugnando viam sibi aperuit",
+    "Virginem maris duxit et ibi in perpetuum mansit",
+    "Iuxta Chernavuscham obdormivit et in ripa fluminis domi evigilavit",
+    "Rex Maris eum exsulare iussit"
+   ]
+  }
+ ],
+ "fk-ru-06": [
+  {
+   "q": "Quomodo Snegurochka orta est?",
+   "options": [
+    "In silva derelicta inventa est",
+    "Senes sine liberis ex nive eam finxerunt et ipsa vivens facta est",
+    "Coniugibus modo solito nata est",
+    "Mater Ver eam ab initio tamquam donum misit"
+   ]
+  },
+  {
+   "q": "Quid Snegurochka accidit postquam pastorem Lel convenit?",
+   "options": [
+    "Statim aegrota facta est",
+    "Sensus calidus primum in corde eius commotus est",
+    "Ad parentes refugit",
+    "Cantum eius audire recusavit"
+   ]
+  },
+  {
+   "q": "Quid donum veri amoris a Matre Vere datum Snegurocham tandem constitit?",
+   "options": [
+    "Memoriam eius",
+    "Nihil, donum sine pretio erat",
+    "Vitam eius, quia solem aestivum obviam ire fatale fuit",
+    "Pulchritudinem eius"
+   ]
+  },
+  {
+   "q": "Quomodo homines postea fatum Snegurochae interpretati sunt?",
+   "options": [
+    "Ut argumentum magiam non exsistere",
+    "Ut parabolam de pulchritudine fragili quae calorem verae vitae sustinere non potest",
+    "Ut monitum ne in festis cantetur",
+    "Ut rumorem localem parvi momenti"
+   ]
+  }
+ ],
+ "fk-sv-01": [
+  {
+   "q": "Ubi tomte habitabat?",
+   "options": [
+    "In culina villae",
+    "In horreo vel in tecto",
+    "In silva propinqua",
+    "In ecclesia pagi"
+   ]
+  },
+  {
+   "q": "Quid familia tomti in vigilia Nativitatis reliquit?",
+   "options": [
+    "Poculum lactis et panem",
+    "Puls oryzae cum butyro",
+    "Novum pileum rubrum",
+    "Nummos et argentum"
+   ]
+  },
+  {
+   "q": "Cur tomte iratus erat?",
+   "options": [
+    "Familia migraverat",
+    "Puer butyrum sibi destinatum comederat",
+    "Horreum incendio deletum erat",
+    "Agricola boves vendiderat"
+   ]
+  },
+  {
+   "q": "Quid accidit postquam familia rem correxit?",
+   "options": [
+    "Tomte a villa in perpetuum discessit",
+    "Villae iterum bona fortuna affuit",
+    "Puer ipse agricola factus est",
+    "Tomte in bovem mutatus est"
+   ]
+  }
+ ],
+ "fk-sv-02": [
+  {
+   "q": "Quid vulpes et ursus facere constituerunt?",
+   "options": [
+    "Hieme simul venari",
+    "Agrum simul serere et messem dividere",
+    "Domum simul aedificare",
+    "Inter se per silvam certare"
+   ]
+  },
+  {
+   "q": "Quam frugem primo anno seruerunt, et cui profuit?",
+   "options": [
+    "Frumentum, et ursus profuit",
+    "Rapa, et vulpes profuit",
+    "Rapa, et ursus profuit",
+    "Frumentum, et vulpes omnia amisit"
+   ]
+  },
+  {
+   "q": "Quid altera messe accidit?",
+   "options": [
+    "Ursus tandem meliorem partem accepit",
+    "Vulpes iterum partem pretiosiorem sumpsit",
+    "Hac vice aeque diviserunt",
+    "Messis omnino periit"
+   ]
+  },
+  {
+   "q": "Quomodo fabula finitur?",
+   "options": [
+    "Vulpes urso veniam petit",
+    "Ursus vulpem capit et devorat",
+    "Vulpes effugit et callidissimum animal memoratur",
+    "Ursus et vulpes iterum amici fiunt"
+   ]
+  }
+ ],
+ "fk-sv-03": [
+  {
+   "q": "Secundum opinionem popularem, quid Näcken facit?",
+   "options": [
+    "Pecora noctu custodit",
+    "Ad flumina sedens fidibus canit et homines in aquam allicit",
+    "Pontes trans flumina aedificat",
+    "Pueros a submersione servat"
+   ]
+  },
+  {
+   "q": "Quid Anders ad rapidas vidit?",
+   "options": [
+    "Anum vestes lavantem",
+    "Iuvenem in saxo fidibus canentem",
+    "Grege puerorum saltantium",
+    "Nihil omnino, tantum aquam vacuam"
+   ]
+  },
+  {
+   "q": "De quo avia Andrem monuit?",
+   "options": [
+    "Glaciem nimis tenuem esse",
+    "Virum esse Näcken, qui eum tandem in aquam traheret",
+    "Fides furtivas esse",
+    "Numquam peregrinis de pecunia fidendum esse"
+   ]
+  },
+  {
+   "q": "Quid Anders fecit ut se tueretur?",
+   "options": [
+    "E pago discessit",
+    "Frustum ferri chalybati in aquam iecit",
+    "Sacerdotem rogavit ut flumen benediceret",
+    "Saepem circa rapidas aedificavit"
+   ]
+  }
+ ],
+ "fk-sv-04": [
+  {
+   "q": "Cur Gustavus Eriksson per Dalarnam iter faciebat?",
+   "options": [
+    "Peregrinationem sacram faciebat",
+    "Regem Danicum fugiebat et auxilium quaerebat",
+    "Venatu voluptatis causa fruebatur",
+    "Novam ecclesiam aedificabat"
+   ]
+  },
+  {
+   "q": "Quid incolae Dalarnae primum fecerunt?",
+   "options": [
+    "Statim ei exercitum dederunt",
+    "Auxilium ei negaverunt",
+    "Eum Danis tradiderunt",
+    "Eum statim regem elegerunt"
+   ]
+  },
+  {
+   "q": "Quid agricolas Dalarnae persuasit ut sententiam mutarent?",
+   "options": [
+    "Epistula ex Norvegia",
+    "Nuntius de Caede Holmiensi",
+    "Inopia cibi",
+    "Nuntius a Papa"
+   ]
+  },
+  {
+   "q": "Quid hodie in memoriam insecutionis post Gustavum Vasam fit?",
+   "options": [
+    "Officium ecclesiasticum quoque Nativitate",
+    "Cursus schidiis Vasaloppet",
+    "Fabula scaenica Holmiae",
+    "Statua in Sälen aedificata est"
+   ]
+  }
+ ],
+ "fk-sv-05": [
+  {
+   "q": "Quid in specie skogsrået insigne est?",
+   "options": [
+    "Nullam prorsus faciem habet",
+    "A fronte pulchra est sed a tergo cava, sicut arbor putrida",
+    "Invisibilis est nisi noctu",
+    "Semper ut anus apparet"
+   ]
+  },
+  {
+   "q": "Quid mulier ab Olofo petivit?",
+   "options": [
+    "Cibum et hospitium per hiemem",
+    "Ut ad ignem eius se calefaceret",
+    "Viam ad pagum",
+    "Vecturam domum in traha eius"
+   ]
+  },
+  {
+   "q": "Quomodo Olof respondit simul ac cognovit quis esset?",
+   "options": [
+    "Clamans aufugit",
+    "Placide ei gratias egit et bonam noctem optavit",
+    "Cinerem in ignem iecit ut eam terreret",
+    "Postulavit ut statim abiret"
+   ]
+  },
+  {
+   "q": "Quis fuit exitus comitatis Olofi?",
+   "options": [
+    "Nihil omnino mutatum est",
+    "Et fornax eius et fortuna venandi illo anno meliores factae sunt",
+    "In reliquam vitam maledictus est",
+    "Invitatus est ut in silva habitaret"
+   ]
+  }
+ ],
+ "fk-sv-06": [
+  {
+   "q": "Quid Thor et socii sub vesperum in Jotunheim invenerunt?",
+   "options": [
+    "Parvum pagum agricolarum",
+    "Arcem tam vastam ut caput reflectere deberent ut summum viderent",
+    "Flumen gelu clausum viam obstruens",
+    "Campum pugnae vacuum"
+   ]
+  },
+  {
+   "q": "Quid in certamine edendi Loki contra Logi accidit?",
+   "options": [
+    "Loki facile vicit",
+    "Loki graviter victus est, nam Logi et carnem et ossa et alveum ipsum devoravit",
+    "Pares fuerunt et carnem diviserunt",
+    "Loki certare recusavit"
+   ]
+  },
+  {
+   "q": "Quae fuerunt tria certamina quae Thor subiit?",
+   "options": [
+    "Luctatio, arte sagittandi, et natatio",
+    "Cornu bibere, felem tollere, et cum anu luctari",
+    "Montem scandere, saxum tollere, et cursus",
+    "Cantus, potus, et saltus"
+   ]
+  },
+  {
+   "q": "Cui revera cornu ex quo Thor bibebat coniunctum erat?",
+   "options": [
+    "Puteo sub arce",
+    "Oceano, ita ut haustus eius aestus minueret",
+    "Flumini ignis",
+    "Nulli rei — mere cornu profundissimum erat"
+   ]
+  }
+ ],
+ "fk-tr-01": [
+  {
+   "q": "Quid vicinus intra cortinam invenit cum Hodja eam reddidit?",
+   "options": [
+    "Epistulam",
+    "Ollulam parvam",
+    "Aliquot nummos",
+    "Frustum panni"
+   ]
+  },
+  {
+   "q": "Cur vicinus libenter cortinam Hodjae iterum commodavit?",
+   "options": [
+    "Volebat Hodjam eam reficere",
+    "Putavit eam fortasse iterum parituram esse",
+    "Spatio in domo egebat",
+    "Hodja ei pecuniam dedit"
+   ]
+  },
+  {
+   "q": "Quem nuntium Hodja vicino de cortina dedit?",
+   "options": [
+    "Eam furatam esse",
+    "Eam fractam esse",
+    "Eam mortuam esse",
+    "Se eam vendidisse"
+   ]
+  },
+  {
+   "q": "Quod erat argumentum callidum Hodjae in fine fabulae?",
+   "options": [
+    "Cortinas caras esse",
+    "Vicinum novam cortinam emere debere",
+    "Si vicinus credidit eam peperisse, debere quoque credere eam mortuam esse",
+    "Vicinum nimis avarum esse"
+   ]
+  }
+ ],
+ "fk-tr-02": [
+  {
+   "q": "Cur ministri Hodjam ad nuptias primum non admiserunt?",
+   "options": [
+    "Nimis sero venit",
+    "Nimis pauper videbatur",
+    "Non invitatus erat",
+    "Ignotus eis erat"
+   ]
+  },
+  {
+   "q": "Quomodo homines Hodjam aliter tractaverunt cum rediit?",
+   "options": [
+    "Eum prorsus neglexerunt",
+    "Ei peiorem cibum dederunt",
+    "Eum honore tractaverunt et optimam sedem ei dederunt",
+    "Eum iterum abire rogaverunt"
+   ]
+  },
+  {
+   "q": "Quid Hodja cum pellicea sua veste ad mensam fecit?",
+   "options": [
+    "Eam vendidit",
+    "Manicam eius in cibum immersit",
+    "Eam hospiti dedit",
+    "Eam exuit"
+   ]
+  },
+  {
+   "q": "Quid sibi vult dictum 'Ede, pellis mea, ede'?",
+   "options": [
+    "Vestes pulchras bonam fortunam afferre",
+    "Cibum numquam perdendum esse",
+    "Homines propter id quod sunt, non propter vestes, honorandos esse",
+    "Hospites semper solemniter vestitos esse debere"
+   ]
+  }
+ ],
+ "fk-tr-03": [
+  {
+   "q": "Cur vicani ipsi gigantem tractare non poterant?",
+   "options": [
+    "Nullum ducem habebant",
+    "Nullas vires ad pugnandum habebant",
+    "Iam e pago discesserant",
+    "Non credebant eum vere exsistere"
+   ]
+  },
+  {
+   "q": "Quo dolo Keloğlan gigantem territavit?",
+   "options": [
+    "Ignem in eum iecit",
+    "Simulavit se aquam ex saxo exprimere",
+    "Auxilium a militibus vocavit",
+    "Gladium giganti ostendit"
+   ]
+  },
+  {
+   "q": "Quid gigas post deceptus constituit facere?",
+   "options": [
+    "Nihilominus cum Keloğlan pugnare",
+    "In perpetuum e pago discedere",
+    "Keloğlan rogare ut amicus fieret",
+    "Plura animalia rapere antequam discederet"
+   ]
+  },
+  {
+   "q": "Quam sententiam haec fabula docet, secundum textum?",
+   "options": [
+    "Vim semper vincere",
+    "Ingenium tantum quantum vires valere",
+    "Gigantes numquam veros esse",
+    "Vicanos numquam peregrinis fidere debere"
+   ]
+  }
+ ],
+ "fk-tr-04": [
+  {
+   "q": "Cur aedificatio moscheae tardior facta est?",
+   "options": [
+    "Non satis saxi erat",
+    "Opifices restiterunt ut Karagöz et Hacivat loquentes audirent",
+    "Sultanus pecunia caruit",
+    "Tempestas locum vastavit"
+   ]
+  },
+  {
+   "q": "Quid sultanus post caedem imperatam sensit?",
+   "options": [
+    "Levamen quod moschea celerius perficeretur",
+    "Paenitentiam, quia sermones eorum desiderabat",
+    "Iram in opifices",
+    "Superbiam de sua sententia"
+   ]
+  },
+  {
+   "q": "Qua materia poeta pupas fecit?",
+   "options": [
+    "Ligno",
+    "Charta",
+    "Pelle cameli",
+    "Panno"
+   ]
+  },
+  {
+   "q": "Quando ludi umbratiles Karagöz-Hacivat hodie tradite aguntur?",
+   "options": [
+    "In nuptiis",
+    "Mense Ramadani",
+    "In vigilia anni novi",
+    "In festis messis"
+   ]
+  }
+ ],
+ "fk-tr-05": [
+  {
+   "q": "Cur exercitus dominorum Tepegöz vincere non poterant?",
+   "options": [
+    "Ab eis avolare poterat",
+    "Cutis eius instar ferri erat et laedi non poterat",
+    "In loco quem nemo invenire posset se occultabat",
+    "Multi alii gigantes eum adiuvabant"
+   ]
+  },
+  {
+   "q": "Cur domini Oghuz ad Basat auxilium petendum se verterunt?",
+   "options": [
+    "Senior et sapientissimus dominus erat",
+    "Bellator insignis erat, a leaena nutritus",
+    "Frater Tepegöz erat",
+    "Iam gigantes ante vicerat"
+   ]
+  },
+  {
+   "q": "Quomodo Basat, postquam Tepegöz excaecavit, effugit?",
+   "options": [
+    "Gladio sibi viam pugnando aperuit",
+    "Se pelle ovina involvit et clam praeteriit",
+    "Sub spelunca cuniculum fodit",
+    "Exspectavit dum gigas obdormiret"
+   ]
+  },
+  {
+   "q": "Quid textus dicit hanc fabulam in traditione epica Turcica demonstrare?",
+   "options": [
+    "Gigantes semper tandem vincere",
+    "Ingenium et fortitudinem vim brutam superare posse",
+    "Pastores esse heroas fortissimos",
+    "Nymphas populum Oghuz tueri"
+   ]
+  }
+ ],
+ "fk-tr-06": [
+  {
+   "q": "Quam condicionem Mehmene Banu posuit ut Ferhat manum Şirin obtineret?",
+   "options": [
+    "Principem aemulum vincere debebat",
+    "Montem Bisütun perfodere debebat ut aquam adduceret",
+    "Nobilis fieri debebat",
+    "Regnum in perpetuum relinquere debebat"
+   ]
+  },
+  {
+   "q": "Quid Mehmene Banu fecit cum mons paene perfossus esset?",
+   "options": [
+    "Promissum suum statim servavit",
+    "Anum misit quae falso Ferhat diceret Şirin mortuam esse",
+    "Ferhat aurum obtulit potius",
+    "Şirin aperte rogavit ut alii nuberet"
+   ]
+  },
+  {
+   "q": "Quomodo Şirin mortua est?",
+   "options": [
+    "A Mehmene Banu occisa est",
+    "Senectute mortua est",
+    "Ad sepulcrum Ferhat flevit donec ultimum spiritum duxit",
+    "E monte cecidit"
+   ]
+  },
+  {
+   "q": "Quomodo textus memoriam huius fabulae describit?",
+   "options": [
+    "Ut comoediam in festis actam",
+    "Ut fabulam monitoriam de fide et pretio mendacii exitiosi",
+    "Ut memoriam historicam veri belli",
+    "Ut cantilenam pueris canendam"
+   ]
+  }
+ ],
+ "fk-vi-01": [
+  {
+   "q": "Cur rex Hung filios suos ad quaerendum misit?",
+   "options": [
+    "Ut cibum suavissimum invenirent quo maioribus offerrent",
+    "Ut aurum et thesaurum palatio quaererent",
+    "Ut regi uxorem invenirent",
+    "Ut fines regni describerent"
+   ]
+  },
+  {
+   "q": "Quid deus Lang Lieu in somnio dixit?",
+   "options": [
+    "Aurum rem pretiosissimam esse",
+    "Oryzam sub caelo rem pretiosissimam esse",
+    "Se in silva venari debere",
+    "Se ad insulam longinquam navigare debere"
+   ]
+  },
+  {
+   "q": "Quid rex Hung de liba Lang Lieu sensit?",
+   "options": [
+    "Nimis simplicia ea putavit et reiecit",
+    "Vehementer motus est et significationem eorum laudavit",
+    "Ea servis dedit",
+    "Lang Lieu rogavit ut cibum exoticiorem faceret"
+   ]
+  },
+  {
+   "q": "Quid Vietnamitae hodie de bánh chưng faciunt?",
+   "options": [
+    "Tantum in agris vendunt",
+    "Quoque Tết involvunt ut originum suarum meminerint",
+    "Non iam faciunt",
+    "Tantum in nuptiis edunt"
+   ]
+  }
+ ],
+ "fk-vi-02": [
+  {
+   "q": "Cur filia magistri primum errore fratrem alterum adamavit?",
+   "options": [
+    "Indolem Lang praeferebat",
+    "Duo fratres omnino similes erant",
+    "Tân cum ea loqui recusabat",
+    "Neutrum umquam convenerat"
+   ]
+  },
+  {
+   "q": "Quid Lang post errorem accidit?",
+   "options": [
+    "Alteram filiam magistri duxit",
+    "Domo discessit, prope flumen collapsus est, et in saxum mutatus est",
+    "In palatium migravit",
+    "Statim cum Tân reconciliatus est"
+   ]
+  },
+  {
+   "q": "In quid uxor Tân mutata est postquam eum quaerens mortua est?",
+   "options": [
+    "In massam calcis",
+    "In arborem areca",
+    "In vitem betel",
+    "In flumen"
+   ]
+  },
+  {
+   "q": "Quid betel et areca hodie in Vietnamia significant?",
+   "options": [
+    "Divitias et bonam fortunam",
+    "Vinculum inter coniuges et fratres",
+    "Victoriam in bello",
+    "Monitum contra invidiam"
+   ]
+  }
+ ],
+ "fk-vi-03": [
+  {
+   "q": "Quid insigne erat in puero cum tres annos haberet?",
+   "options": [
+    "Iam equitare poterat",
+    "Loqui, ridere, vel ambulare non poterat, et immotus iacebat",
+    "Iam domo discesserat",
+    "Tantum cum rege loquebatur"
+   ]
+  },
+  {
+   "q": "Quae tria a rege puer fabricanda petivit?",
+   "options": [
+    "Gladium ligneum, scutum, et arcum",
+    "Equum ferreum, loricam ferream, et flagellum ferreum",
+    "Coronam auream, vestem, et vexillum",
+    "Navem, rete, et hastam"
+   ]
+  },
+  {
+   "q": "Quid bellator usus est postquam flagellum ferreum fractum est?",
+   "options": [
+    "Manibus nudis",
+    "Saxis e monte",
+    "Bambusis a via avulsis",
+    "Gladio a vicano mutuato"
+   ]
+  },
+  {
+   "q": "Quid bellatori accidit postquam invasores vicit?",
+   "options": [
+    "Consedit et pago imperavit",
+    "Regem magnum praemium rogavit",
+    "Loricam exuit et cum equo suo in caelum volavit",
+    "In ultimo proelio occisus est"
+   ]
+  }
+ ],
+ "fk-vi-04": [
+  {
+   "q": "Quas potestates Son Tinh et Thuy Tinh singuli habebant?",
+   "options": [
+    "Son Tinh volare poterat; Thuy Tinh invisibilis fieri poterat",
+    "Son Tinh montes movere poterat; Thuy Tinh pluviam et ventum ciere poterat",
+    "Ambo tantum gladiis pugnare poterant",
+    "Son Tinh mari imperabat; Thuy Tinh caelo imperabat"
+   ]
+  },
+  {
+   "q": "Quid accidit postquam Son Tinh dona sponsalia prior attulit?",
+   "options": [
+    "Rex sententiam mutavit et Thuy Tinh potius elegit",
+    "Son Tinh My Nuong duxit, et Thuy Tinh aquas ira commotus sustulit",
+    "Ambo proci reiecti sunt",
+    "My Nuong neutri nubere voluit"
+   ]
+  },
+  {
+   "q": "Cur incolae deltae fluminis Rubri quotannis aggeres aedificant?",
+   "options": [
+    "Ut aquam dulcem ad agriculturam condant",
+    "Quia credunt Thuy Tinh quotannis flumen inundare ut iterum cum Son Tinh pugnet",
+    "Ut natalem regis Hung honorent",
+    "Quia Son Tinh id iubet"
+   ]
+  },
+  {
+   "q": "Quam sententiam fabula Son Tinh et Thuy Tinh affert?",
+   "options": [
+    "Divitias semper postremo vincere",
+    "Deos numquam irritandos esse",
+    "Homines perseverare et firmiter stare contra naturam duram et recurrentem",
+    "Certamina nuptialia semper male finiri"
+   ]
+  }
+ ],
+ "fk-vi-05": [
+  {
+   "q": "Quomodo Cam praemium pro pluribus cammaris captis obtinuit?",
+   "options": [
+    "Bis tam diligenter quam Tam laboravit",
+    "Tam dolo persuasit ut se inclinaret, deinde cammaros eius furata est",
+    "Cammaros a piscatore emit",
+    "Matrem rogavit ut sibi cammaros caperet"
+   ]
+  },
+  {
+   "q": "Quid Buddha Tam de ossibus piscis fieri iussit postquam Cam gobium necavit?",
+   "options": [
+    "In flumen ea iacere",
+    "Sub quattuor pedibus lecti sui ea sepelire",
+    "Ea novercae tamquam oblationem dare",
+    "Ea ad fanum pagi cremare"
+   ]
+  },
+  {
+   "q": "Quam formam Tam sumpsit antequam cum anu quae theam vendebat vixit?",
+   "options": [
+    "Oriolum aureum, arborem ligni persici, et telam",
+    "Piscem, avem, et florem",
+    "Calceum, equum, et vestem",
+    "Puteum, hortum, et lucernam"
+   ]
+  },
+  {
+   "q": "Quomodo rex Tam ad tabernam theae agnovit?",
+   "options": [
+    "Vestes regias gerebat",
+    "Buccellam betel forma phoenicis agnovit, quam sola illa plicare sciebat",
+    "Nuntius ei dixit ubi esset",
+    "Ipsa eum nomine vocavit"
+   ]
+  }
+ ],
+ "fk-vi-06": [
+  {
+   "q": "Quid Lac Long Quan, secundum fabulam, quotiens in litus ascendit fecit?",
+   "options": [
+    "Tributum a pagis collegit",
+    "Populum agriculturam, domos aedificandi artem, et piscationem docuit",
+    "Invasores a septentrione depulit",
+    "Au Co per montes quaesivit"
+   ]
+  },
+  {
+   "q": "Cur Lac Long Quan et Au Co tandem separari constituerunt?",
+   "options": [
+    "De regno inter se contenderunt",
+    "Naturae eorum duobus mundis diversis, mari et montibus, alligatae erant, quod difficile conciliatu erat",
+    "Au Co sola ad regnum fatale suum redire voluit",
+    "Centum filii se dividi postulaverunt"
+   ]
+  },
+  {
+   "q": "Quid coniuges ante discessum inter se constituerunt?",
+   "options": [
+    "Posteros suos numquam inter se locuturos esse",
+    "Filios montanos filiis maritimis imperaturos esse",
+    "Posteros suos semper se invicem ut cognatos habituros et in adversis se invicem adiuturos esse",
+    "Se post centum annos iterum coniuncturos esse"
+   ]
+  },
+  {
+   "q": "Quid 'centum ova' in memoria culturali Vietnamica significant?",
+   "options": [
+    "Divitias octodecim dynastiarum Hung",
+    "Cognationem omnium Vietnamitarum, ubicumque vivant",
+    "Monitum ne extra genus suum nubatur",
+    "Conditionem Phong Chau proprie dictam"
+   ]
+  }
+ ],
+ "fk-yue-01": [
+  {
+   "q": "Quod malum incolae Guangzhou ante adventum immortalium habebant?",
+   "options": [
+    "Nulla pluvia erat et nihil crescere poterat",
+    "Nimium diluvii erat",
+    "Bellum cum urbe vicina",
+    "Ferae agros oppugnabant"
+   ]
+  },
+  {
+   "q": "Quid quisque immortalis ferebat?",
+   "options": [
+    "Gladium e iade",
+    "Culmum oryzae quinque colorum",
+    "Campanam auream",
+    "Baculum ligneum"
+   ]
+  },
+  {
+   "q": "Quid quinque arietibus accidit postquam immortales discesserunt?",
+   "options": [
+    "In montes cucurrerunt",
+    "In saxum mutati sunt",
+    "Etiam ipsi in caelum revolaverunt",
+    "A vicanis comesti sunt"
+   ]
+  },
+  {
+   "q": "Quod cognomen Guangzhou propter hanc legendam accepit?",
+   "options": [
+    "Urbs Florum",
+    "Urbs Arietum",
+    "Urbs Pluviae",
+    "Urbs Immortalium"
+   ]
+  }
+ ],
+ "fk-yue-02": [
+  {
+   "q": "Quid Hou Yi fecit ut mundum servaret?",
+   "options": [
+    "Magnum murum aedificavit",
+    "Novem soles sagittis deiecit",
+    "Draconem vicit",
+    "Puteum magicum invenit"
+   ]
+  },
+  {
+   "q": "Cur Hou Yi pilulam immortalitatis non statim comedit?",
+   "options": [
+    "Reginae Matri non fidebat",
+    "Uxorem suam relinquere noluit",
+    "Pilula male sapiebat",
+    "Volebat eam cum vicanis communicare"
+   ]
+  },
+  {
+   "q": "Cur Chang'e pilulam ipsa devoravit?",
+   "options": [
+    "Potens fieri voluit",
+    "Esuriebat",
+    "Vir malus eam minatus est ut eam sibi traderet",
+    "Cum marito in caelo esse voluit"
+   ]
+  },
+  {
+   "q": "Quid Hou Yi quoque Festo Mediae Autumni facit?",
+   "options": [
+    "Sagittam in lunam mittit",
+    "Placentas lunares ponit ut Chang'e honoret",
+    "Montem scandit",
+    "Lucernas accendit ut eam reducat"
+   ]
+  }
+ ],
+ "fk-yue-03": [
+  {
+   "q": "Cur rex Chu Qu Yuan fidere destitit?",
+   "options": [
+    "Qu Yuan proelium amisit",
+    "Calumniis officialium perfidorum auscultavit",
+    "Qu Yuan carmina ei scribere recusavit",
+    "Qu Yuan regnum occupare conatus est"
+   ]
+  },
+  {
+   "q": "Quis nuntius Qu Yuan in exsilio pervenit?",
+   "options": [
+    "Familiam eius periisse",
+    "Caput Chu a Qin captum esse",
+    "Regem eum revocare velle",
+    "Famem terram afflixisse"
+   ]
+  },
+  {
+   "q": "Cur piscatores glutina oryzae in flumen iecerunt?",
+   "options": [
+    "Ut se ipsos in quaerendo alerent",
+    "Ut locum ubi submersus esset notarent",
+    "Ne pisces et cammari corpus eius ederent",
+    "Ut oblationem deo fluminis facerent"
+   ]
+  },
+  {
+   "q": "Quod festum ex hac fabula ortum est?",
+   "options": [
+    "Festum Mediae Autumni",
+    "Festum Navium Draconis",
+    "Festum Lucernarum",
+    "Festum Qingming"
+   ]
+  }
+ ],
+ "fk-yue-04": [
+  {
+   "q": "Quid Wong Cho-ping faciebat cum immortalem convenit?",
+   "options": [
+    "Prope flumen piscabatur",
+    "In montibus oves pascebat",
+    "In templo studebat",
+    "Oryzam colebat"
+   ]
+  },
+  {
+   "q": "Quid frater maior natu credidit Wong Cho-ping accidisse?",
+   "options": [
+    "Divitem factum esse",
+    "Mortuum esse",
+    "E patria discessisse",
+    "Monachum in alia provincia factum esse"
+   ]
+  },
+  {
+   "q": "Quid Wong Cho-ping fecit ut fratri potestates suas probaret?",
+   "options": [
+    "Saxa rursus in oves mutavit",
+    "Vicanum aegrotum sanavit",
+    "In caelum volavit",
+    "Tempestatem praedixit"
+   ]
+  },
+  {
+   "q": "Quid Wong Tai Sin creditur cultoribus piis praestare?",
+   "options": [
+    "Tantum divitias dare",
+    "Quidquid sincere petant concedere",
+    "Tantum morbos sanare",
+    "Nautas in mari tueri"
+   ]
+  }
+ ],
+ "fk-yue-05": [
+  {
+   "q": "Quomodo milites Lo Chun in insulis tandem habitare coeperunt?",
+   "options": [
+    "Illuc missi sunt ut imperatori piscarentur",
+    "Illuc fugerunt postquam rebellio eorum victa est",
+    "Nautae naufragi erant",
+    "Criminosi exsules erant"
+   ]
+  },
+  {
+   "q": "Secundum legendam, quales erant Lo Ting specie?",
+   "options": [
+    "Prorsus humani sed pelle viridi",
+    "Facie humana, corpore piscis, et voce infantis",
+    "Pisces ingentes sine ulla forma humana",
+    "Creaturae alatae in arboribus habitantes"
+   ]
+  },
+  {
+   "q": "Quomodo Lo Ting piscatoribus vicinis auxilium ferre dicebantur?",
+   "options": [
+    "Pisces pro eis capiebant",
+    "Clamando tempestates venturas monebant",
+    "Naves laesas reficiebant",
+    "Naves per nebulam ducebant"
+   ]
+  },
+  {
+   "q": "Quomodo familiae piscatorum circa insulam Lantau Lo Ting tradite habebant?",
+   "options": [
+    "Ut monstra periculosa timenda",
+    "Ut custodes maris oblationibus honorandos",
+    "Ut pestes quae capturas eorum vastarent",
+    "Ut speculatores pagi aemuli"
+   ]
+  }
+ ],
+ "fk-yue-06": [
+  {
+   "q": "Quomodo Rex Simiarum ortus est?",
+   "options": [
+    "Parentibus simiis natus est",
+    "Ex ovo lapideo erupit",
+    "Ab Imperatore Iade creatus est",
+    "Homo erat arte magica mutatus"
+   ]
+  },
+  {
+   "q": "Quomodo Rex Simiarum Baculum Aureum Ruyi obtinuit?",
+   "options": [
+    "Ipse id cudit",
+    "In certamine cum Rege Draconum id vicit",
+    "A Rege Draconum id exegit, cui nulla alia optio erat quam dare",
+    "Donum ab Imperatore Iade fuit"
+   ]
+  },
+  {
+   "q": "Cur Rex Simiarum ira exarsit quod 'Custos Equorum' factus est?",
+   "options": [
+    "Invenit id munus humillimum aulae caelestis esse",
+    "Equi eum oppugnaverunt",
+    "Dux exercitus fieri voluit",
+    "Imperator Iade ei solvere recusavit"
+   ]
+  },
+  {
+   "q": "Quid Imperatorem Iade movit ut centum milia militum caelestium contra Regem Simiarum mitteret?",
+   "options": [
+    "Ad Montem Florum et Fructuum redire recusavit",
+    "Poma et elixirem immortalitatis furatus est et Convivium Persicorum vastavit",
+    "Iterum palatium Regis Draconum oppugnavit",
+    "Thronum Imperatoris Iade rapere conatus est"
+   ]
+  }
+ ],
+ "fk-zh-01": [
+  {
+   "q": "Quid mater domum attulit?",
+   "options": [
+    "Corbem pirorum",
+    "Corbem malorum",
+    "Saccum oryzae",
+    "Capsam dulciorum"
+   ]
+  },
+  {
+   "q": "Quod pirum Kong Rong sumpsit?",
+   "options": [
+    "Maximum",
+    "Minimum",
+    "Duo media",
+    "Nullum omnino"
+   ]
+  },
+  {
+   "q": "Cur Kong Rong dixit se pirum parvum sumpsisse?",
+   "options": [
+    "Pira non amabat",
+    "Non esuriebat",
+    "Quia iuvenis erat et fratres maiores natu",
+    "Quia mater id iusserat"
+   ]
+  },
+  {
+   "q": "Quam sententiam homines plerumque ex hac fabula ducunt?",
+   "options": [
+    "Semper celeriter edendum esse",
+    "Res bonas aliis communicandas et cedendas esse",
+    "Numquam fratribus fidendum esse",
+    "Fructum maiorem melius sapere"
+   ]
+  }
+ ],
+ "fk-zh-02": [
+  {
+   "q": "Ubi pueri ludebant?",
+   "options": [
+    "In schola",
+    "In horto cum magno vase aquae",
+    "Ad flumen",
+    "In culina"
+   ]
+  },
+  {
+   "q": "Quid uni ex pueris accidit?",
+   "options": [
+    "In arborem scandit",
+    "In vas aquae cecidit",
+    "Domum cucurrit",
+    "Ludicrum fregit"
+   ]
+  },
+  {
+   "q": "Quid Sima Guang fecit ut amicum servaret?",
+   "options": [
+    "In vas ipse salivit",
+    "Adultum vocavit et exspectavit",
+    "Saxum iecit ut vas frangeret",
+    "Vas evertit"
+   ]
+  },
+  {
+   "q": "Quid fabula docet?",
+   "options": [
+    "Numquam prope aquam ludendum esse",
+    "In periculo animo tranquillo et clare cogitanti prodesse",
+    "Adultos semper necessarios esse ad res solvendas",
+    "Saxa magna periculosa esse"
+   ]
+  }
+ ],
+ "fk-zh-03": [
+  {
+   "q": "Quid caelum laesit?",
+   "options": [
+    "Ictus stellae cadentis",
+    "Gonggong, proelio victus, in montem Buzhou se illisit",
+    "Error ipsius Nuwae",
+    "Magna siccitas"
+   ]
+  },
+  {
+   "q": "Quae clades caeli ruinam secutae sunt?",
+   "options": [
+    "Tantum tenebrae ceciderunt",
+    "Diluvia effusa sunt et ferae homines oppugnaverunt",
+    "Sol evanuit",
+    "Terra frigidior facta est"
+   ]
+  },
+  {
+   "q": "Quomodo Nuwa caelum reficit?",
+   "options": [
+    "Filo serico id texuit",
+    "Lapides quinque colorum liquefecit et rimas implevit",
+    "Auxilium a deo ignis petivit",
+    "Solem precata est"
+   ]
+  },
+  {
+   "q": "Quo Nuwa angulos caeli sustinuit?",
+   "options": [
+    "Columnis ligneis",
+    "Verticibus montium",
+    "Quattuor cruribus testudinis ingentis",
+    "Catenis ferreis"
+   ]
+  }
+ ],
+ "fk-zh-04": [
+  {
+   "q": "Quomodo Bubulcus Textricem in matrimonium ducere potuit?",
+   "options": [
+    "Ipsum Imperatorem Iade directe rogavit",
+    "Vestem eius, sicut bos vetus suaserat, abscondit",
+    "Ei palatium aedificavit",
+    "Illa eum casu elegit"
+   ]
+  },
+  {
+   "q": "Cur Imperator Iade iratus est?",
+   "options": [
+    "Bubulcus thesaurum furatus erat",
+    "Nympha mortalem clam duxerat",
+    "Bos loqui poterat",
+    "Liberi male se gesserant"
+   ]
+  },
+  {
+   "q": "Quid Regina Mater Occidentis creavit ut coniuges separaret?",
+   "options": [
+    "Montium catenam",
+    "Murum ignis",
+    "Flumen Argenteum (Via Lactea)",
+    "Silvam profundam"
+   ]
+  },
+  {
+   "q": "Quomodo Bubulcus et Textrix semel in anno convenire possunt?",
+   "options": [
+    "Imperator Iade ipse eos portat",
+    "Picae pontem trans flumen faciunt",
+    "Trans flumen natant",
+    "Draco eos transvehit"
+   ]
+  }
+ ],
+ "fk-zh-05": [
+  {
+   "q": "Quod malum duo montes seni afferebant?",
+   "options": [
+    "Agros obstruebant",
+    "Iter ad domum et ex domo impediebant",
+    "Diluvia causabant",
+    "Solem occultabant"
+   ]
+  },
+  {
+   "q": "Quam obiectionem uxor senis fecit?",
+   "options": [
+    "Consilium periculosum esse putabat",
+    "De viribus eius dubitabat et rogavit quo terra iretur",
+    "Potius migrare volebat",
+    "Filios adiuvare vetuit"
+   ]
+  },
+  {
+   "q": "De quo 'Senex Sapiens' Senem Stultum irrisit?",
+   "options": [
+    "Quod nimis dives erat",
+    "Quod rem vires senectutis suae superantem conabatur",
+    "Quod iter facere recusabat",
+    "Quod cum spiritibus loquebatur"
+   ]
+  },
+  {
+   "q": "Quomodo fabula tandem soluta est?",
+   "options": [
+    "Senex destitit",
+    "Familia eius opus reliquit",
+    "Imperator Iade montes auferri iussit",
+    "Diluvium montes abstulit"
+   ]
+  }
+ ],
+ "fk-zh-06": [
+  {
+   "q": "Quid Nuwae accidit dum navigabat?",
+   "options": [
+    "Ad novum continentem pervenit",
+    "Tempestas navem evertit et submersa est",
+    "A piscatoribus servata est",
+    "Obdormivit et ad litus delata est"
+   ]
+  },
+  {
+   "q": "In quid spiritus Nuwae mutatus est?",
+   "options": [
+    "In draconem",
+    "In avem miram nomine Jingwei",
+    "In statuam lapideam",
+    "In arborem"
+   ]
+  },
+  {
+   "q": "Quod votum Jingwei fecit?",
+   "options": [
+    "Mare in perpetuum vitare",
+    "Mare implere ne alii in eo morerentur",
+    "Iterum humana fieri",
+    "Nautas clamore suo de periculo monere"
+   ]
+  },
+  {
+   "q": "Quid dictum 'Jingwei mare implet' significat?",
+   "options": [
+    "Periculum temerarium",
+    "Constantiam perseverantem contra spem impossibilem",
+    "Vim naturae super homines",
+    "Monitum contra nimiam fiduciam"
+   ]
+  }
+ ],
+ "st-b1-01": [
+  {
+   "q": "Cur hamaxostichus serus erat?",
+   "options": [
+    "Aliquid mali cum semitis ferreis erat",
+    "Pluebat",
+    "Gubernator aegrotabat",
+    "Nimis multi vectores erant"
+   ]
+  },
+  {
+   "q": "Quid vir Anae et Marco obtulit?",
+   "options": [
+    "Paulum aquae",
+    "Diurnum",
+    "Frustum panis",
+    "Sedem suam"
+   ]
+  },
+  {
+   "q": "Quo opere vir vivebat?",
+   "options": [
+    "Hamaxostichos gubernabat",
+    "Holera in foro vendebat",
+    "In navibus laborabat",
+    "Magister erat"
+   ]
+  },
+  {
+   "q": "Quomodo Ana in fine fabulae se sensit?",
+   "options": [
+    "Irata propter moram",
+    "Fessa et taedio affecta",
+    "Laeta quod peregrinum amicum invenerant",
+    "Sollicita ne urbem amitterent"
+   ]
+  }
+ ],
+ "st-b1-02": [
+  {
+   "q": "Cur Sam anxius erat?",
+   "options": [
+    "Ius non amabat",
+    "Familiam Yuki bene non noverat",
+    "Ad cenam sero venerat",
+    "Donum oblitus erat"
+   ]
+  },
+  {
+   "q": "Quid Sam patri Yuki explicavit?",
+   "options": [
+    "Quomodo navis funcionaret",
+    "Rosettam multa oppida visitare et hominibus adiuvare",
+    "Se fessum esse",
+    "Se oryzam edere non posse"
+   ]
+  },
+  {
+   "q": "Quis recipe placentae specialis fecit?",
+   "options": [
+    "Yuki",
+    "Sam",
+    "Mater Yuki, ex recipe suae ipsius matris",
+    "Popina in pago"
+   ]
+  },
+  {
+   "q": "Quid Sam de familiis dixit?",
+   "options": [
+    "Omnes diversas esse",
+    "Ubique calidas et liberales esse",
+    "Nimium edere",
+    "Nimis parum loqui"
+   ]
+  }
+ ],
+ "st-b2-01": [
+  {
+   "q": "Cur Marco munus fabri machinarii cupiebat?",
+   "options": [
+    "Pecunia statim egebat",
+    "Curiosus erat quomodo operarii terrestres problemata sine instrumentis provectis solverent",
+    "Ana eum ipsa rogaverat",
+    "Rosettam in perpetuum relinquere volebat"
+   ]
+  },
+  {
+   "q": "Quid Marco faceret si machina sine partibus repositoriis frangeretur?",
+   "options": [
+    "Rosettam de partibus rogaret",
+    "Reparationem omitteret",
+    "Quibuscumque materiis praesto essent improvisus uteretur",
+    "Novas partes advenire exspectaret"
+   ]
+  },
+  {
+   "q": "Quid Ana dixit in Marco, prae aliis petitoribus, eminere?",
+   "options": [
+    "Testimonia technica eius",
+    "Fiduciam eius",
+    "Honestatem eius, cum plerique petitores exaggerarent",
+    "Diligentiam temporis eius"
+   ]
+  },
+  {
+   "q": "Quid post aliquot dies ab conloquio accidit?",
+   "options": [
+    "Marco reiectus est",
+    "Marco invitationem ad hebdomadam probationis accepit",
+    "Officina clausa est",
+    "Ana ex oppido discessit"
+   ]
+  }
+ ],
+ "st-b2-02": [
+  {
+   "q": "Cur Yuki optavit se aliquid legendum attulisse?",
+   "options": [
+    "Diurni taedebat",
+    "Tam longam exspectationem non exspectaverat",
+    "Infirmaria id iusserat",
+    "Sam eam rogaverat ut sibi legeret"
+   ]
+  },
+  {
+   "q": "Quid senex Yuki de visitationibus suis dixit?",
+   "options": [
+    "Se primum visitare",
+    "Se quoque mense ad inspectionem sollemnem venire",
+    "Se in nosocomio laborare",
+    "Se filiam suam exspectare"
+   ]
+  },
+  {
+   "q": "Quid vere Sam male habebat?",
+   "options": [
+    "Morbus gravis",
+    "Nihil omnino",
+    "Infectio antibioticis curabilis",
+    "Os fractum"
+   ]
+  },
+  {
+   "q": "Quid Sam dixit nosocomia in hominibus efficere?",
+   "options": [
+    "Impatientiam",
+    "Benignitatem quietam",
+    "Timorem",
+    "Taedium"
+   ]
+  }
+ ],
+ "st-c1-01": [
+  {
+   "q": "Quod erat argumentum praecipuum bibliopolae?",
+   "options": [
+    "Leges venditoribus magnis inique favere",
+    "Sine ulla custodia forum turbidum et infidum factum esse",
+    "Se tabernam claudere velle",
+    "Se pomarium omnino defendere"
+   ]
+  },
+  {
+   "q": "Quam accusationem pomarius post secundum poculum coffeae fecit?",
+   "options": [
+    "Bibliopolam mentiri",
+    "Concilium mercatoribus ditioribus cessisse",
+    "Cauponam malam coffeam praebere",
+    "Nullas leges exsistere"
+   ]
+  },
+  {
+   "q": "Quomodo caupo tensionem lenivit?",
+   "options": [
+    "Eos abire iussit",
+    "Magistratus vocavit",
+    "Crustula cum dicto lepido obtulit",
+    "Contentionem prorsus neglexit"
+   ]
+  },
+  {
+   "q": "Quam sententiam communem duo viri tandem invenerunt?",
+   "options": [
+    "Forum claudendum esse",
+    "Concilium mercatores communes consulere neglexisse",
+    "Pretia a gubernio statuenda esse",
+    "Pomarium omnino rectum fuisse"
+   ]
+  }
+ ],
+ "st-c2-01": [
+  {
+   "q": "Quid Marco mane ultimo Sam faciebat quod Sam insolitum visum est?",
+   "options": [
+    "Vectoribus clamabat",
+    "Laminam aeream commemorativam insolita affectione poliebat",
+    "Cum Sam loqui recusabat",
+    "Res suas ut discederet colligebat"
+   ]
+  },
+  {
+   "q": "Cur hamaxostichus septentrionem petens moratus est?",
+   "options": [
+    "Vitium signorum",
+    "Tempestas mala",
+    "Inopia vectorum",
+    "Rosetta semitas obstruxit"
+   ]
+  },
+  {
+   "q": "Quid Marco fecit potius quam simpliciter manum Sam prehendere?",
+   "options": [
+    "Sine verbo abiit",
+    "Ei donum dedit",
+    "Amplexum ineptum obtulit, id exceptionem vocans",
+    "Eum invitavit ut in perpetuum maneret"
+   ]
+  },
+  {
+   "q": "Quam sententiam Sam verbo Marconis de asymmetria tribuit?",
+   "options": [
+    "Peregrinantes semper laetiores esse quam eos qui manent",
+    "Alterum memoriam porro ferre, alterum locum ubi res acciderit custodire",
+    "Valedictiones prorsus vitandas esse",
+    "Consuetudinem novitati superiorem esse"
+   ]
+  }
+ ]
+}
