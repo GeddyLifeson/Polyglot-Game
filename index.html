@@ -461,6 +461,7 @@
         <div class="home-stats" id="home-stats"></div>
         <div class="hub-map" id="hub-map"></div>
         <div class="storm-card" id="storm-card"></div>
+        <div class="storm-card" id="sweep-card" hidden></div>
         <div class="asc-row" id="asc-row" hidden></div>
         <div class="warp-card" id="warp-card"></div>
         <div class="home-actions">
@@ -539,6 +540,8 @@
         <div class="ticket-romaji" id="pl-romaji" hidden></div>
         <button class="btn btn-sm btn-ghost replay-btn" id="btn-replay" hidden title="Replay the transmission">🔊 Replay</button>
         <button class="btn btn-sm btn-ghost replay-btn" id="btn-flag" title="Flag this pronunciation as wrong so it can be re-recorded">🚩</button>
+        <button class="btn btn-sm btn-ghost replay-btn" id="btn-note" hidden title="Show the grammar note for this transmission">📘 Note</button>
+        <button class="btn btn-sm btn-ghost replay-btn" id="btn-shadow" hidden title="Shadowing: record yourself for four seconds, then hear the native clip and your take back to back">🎤 Shadow</button>
         <div class="timer-track"><div class="timer-bar" id="pl-timerbar"></div></div>
         <div class="ticket-tear" aria-hidden="true"></div>
       </div>
@@ -5969,9 +5972,10 @@
     blank:    {label:'Grammar',      icon:'🔧', count:'grammar checks',     time:9},
     idiom:    {label:'Idioms',       icon:'🎭', count:'idioms to crack',    time:9},
     nuance:   {label:'Nuance',       icon:'🎯', count:'nuance calls',       time:9},
-    listen:   {label:'Listening',    icon:'🎧', count:'spoken transmissions', time:10}
+    listen:   {label:'Listening',    icon:'🎧', count:'spoken transmissions', time:10},
+    cloze:    {label:'Fill the Gap', icon:'🕳️', count:'gaps to fill',        time:12}
   };
-  var TYPE_ORDER = ['match','dialogue','build','blank','idiom','nuance','listen'];
+  var TYPE_ORDER = ['match','dialogue','build','cloze','blank','idiom','nuance','listen'];
   var HOW_TEXT = {
     match:'Match the signal to its meaning before the transmission cuts out.',
     dialogue:'Someone says a line to you. Pick the reply that actually fits — in their language.',
@@ -6418,7 +6422,7 @@
     return { stars:[0,0,0,0,0,0], bestFusion:0, learned:[], facts:[], muted:false,
       tips:0, shopOwned:[], bestFloorIdx:-1, bestScore:0, clearedDungeons:{},
       chain:{len:0, best:0, carried:[]}, xp:0, ascension:0, missed:{}, commendations:[], voices:{}, speechRate:0, useClips:true,
-      interference:[], dark:0, refitOwned:[], tuning:{}, warp:{cores:0, jumps:0, spent:0, drive:{}}, flagged:{},
+      interference:[], dark:0, refitOwned:[], tuning:{}, warp:{cores:0, jumps:0, spent:0, drive:{}}, flagged:{}, srs:{},
       journey:{langs:['es','fr','it','pt','ja','zh'], set:false},
       storm:{date:'', best:0, runs:0, cleared:false},
       stats:{decodes:0, correct:0, relaysCleared:0, relaysFailed:0, perfectRelays:0, encryptedCracked:0, events:0,
@@ -6444,6 +6448,7 @@
     if(!save.warp || typeof save.warp!=='object') save.warp = {cores:0, jumps:0};
     if(typeof save.warp.spent!=='number') save.warp.spent = 0; if(!save.warp.drive || typeof save.warp.drive!=='object') save.warp.drive = {};
     if(!save.flagged || typeof save.flagged!=='object') save.flagged = {};
+    if(!save.srs || typeof save.srs!=='object') save.srs = {};
     if(!save.journey || typeof save.journey!=='object' || !Array.isArray(save.journey.langs)) save.journey = {langs:['es','fr','it','pt','ja','zh'], set:false};
     /* a voyage that already has progress was started before the Journey screen existed: keep its six */
     if(!save.journey.set && (save.xp>0 || Object.keys(save.clearedDungeons||{}).length)) save.journey.set = true;
@@ -6717,6 +6722,8 @@
   /* ---- hub / dungeon completion ---- */
   /* a "dungeon" is now scoped to one tier + one language + one topic subsection */
   function isDungeonCleared(tierIdx, lang, topic){ return !!save.clearedDungeons[tierIdx+':'+lang+':'+topic]; }
+  /* drills never count as relays: recovery (missed words), maintenance sweep (spaced repetition), intercept (your own text) */
+  function isDrillTopic(t){ return t==='__recovery' || t==='__sweep' || t==='__intercept'; }
   function isLangCleared(tierIdx, lang){
     var tier = TIERS[tierIdx];
     var topics = topicsForTier(tier, lang);
@@ -6757,7 +6764,7 @@
   function rankInfo(){ var i = rankIndex(); return {idx:i, rank:RANKS[i], next:RANKS[i+1]||null}; }
   function addXp(n){
     var before = rankIndex();
-    var gained = Math.round(n * (st.perkFlags && st.perkFlags.xpMult || 1) * (1 + 0.08*(st.runActive && st.topic!=='__recovery' ? (st.noise||0) : 0)) * (1 + 0.02*warpCores()) * (1 + 0.02*tuningLevel('tune_xp')) * (1 + 0.1*driveLevel('wd_xp')));
+    var gained = Math.round(n * (st.perkFlags && st.perkFlags.xpMult || 1) * (1 + 0.08*(st.runActive && !isDrillTopic(st.topic) ? (st.noise||0) : 0)) * (1 + 0.02*warpCores()) * (1 + 0.02*tuningLevel('tune_xp')) * (1 + 0.1*driveLevel('wd_xp')));
     save.xp += gained; save.stats.xpLifetime = (save.stats.xpLifetime||0) + gained;
     var after = rankIndex();
     if(after > before){
@@ -6860,6 +6867,33 @@
     return out.slice(0,24).map(function(x){ return x.id; });
   }
   function wordsInLang(lang){ var n = 0; learnedSet.forEach(function(k){ if(k.slice(-3)===':'+lang) n++; }); return n; }
+
+  /* ---- spaced repetition: one card per (word, language). Intervals 1 → 3 → ×ease days; a miss resets to tomorrow. ---- */
+  function srsDay(){ return Math.floor(Date.now()/86400000); }
+  function srsUpdate(conceptId, lang, correct){
+    if(!conceptId || !lang) return;
+    var k = conceptId+':'+lang; var c = save.srs[k] || {d:0, i:0, e:2.5, n:0};
+    if(correct){ c.n++; c.i = c.n===1 ? 1 : c.n===2 ? 3 : Math.max(c.i+1, Math.round(c.i*c.e)); c.e = Math.min(3.0, c.e+0.05); }
+    else { c.n = 0; c.i = 1; c.e = Math.max(1.3, c.e-0.2); }
+    c.d = srsDay() + c.i;
+    save.srs[k] = c;
+  }
+  function srsDueIds(lang, tierCode){
+    var today = srsDay(), out = [];
+    for(var k in save.srs){
+      var i = k.lastIndexOf(':'); if(k.slice(i+1)!==lang) continue;
+      var c = save.srs[k]; if(c.d > today) continue;
+      var item = ITEM[k.slice(0,i)]; if(!item || !item.emoji) continue;
+      if(tierCode && item.tier!==tierCode) continue;
+      out.push({id:item.id, overdue: today-c.d});
+    }
+    out.sort(function(a,b){ return b.overdue-a.overdue; });
+    return out.map(function(x){ return x.id; });
+  }
+  function sweepIds(tier, lang){ return srsDueIds(lang, tier.code).slice(0, 30); }
+  function dueSummary(){
+    var out = {}; journeyLangs().forEach(function(l){ var n = srsDueIds(l).length; if(n) out[l] = n; }); return out;
+  }
 
   /* ---- daily Signal Storm: seeded by the date, same modifiers for everyone that day ---- */
   function stormDate(){ var d = new Date(); return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2); }
@@ -7028,6 +7062,7 @@
       (ri.next && ri.next.unlock ? '<div class="pf-sub" style="margin-top:6px;">Next: '+ri.next.unlock+'</div>' : '')+
       '</div>';
     el.stormCard.innerHTML = stormCardHtml();
+    renderSweepCard();
     var stormBtn = document.getElementById('btn-storm'); if(stormBtn) stormBtn.addEventListener('click', startStorm);
     var ascOk = rankIndex()>=2 || save.interference.length>0;
     el.ascRow.hidden = !ascOk;
@@ -7041,6 +7076,24 @@
       statBox('🌌 '+(save.dark||0),'Dark matter');
     renderHubMap();
     refreshHud();
+  }
+
+  function renderSweepCard(){
+    var card = document.getElementById('sweep-card'); if(!card) return;
+    var due = dueSummary(); var langs = Object.keys(due);
+    if(!langs.length){ card.hidden = true; return; }
+    card.hidden = false;
+    var total = langs.reduce(function(s,l){ return s+due[l]; }, 0);
+    card.innerHTML = '<div class="storm-head">🛰️ Maintenance Sweep · <b>'+total+'</b> words due for review</div>'+
+      '<div class="storm-body">Spaced repetition keeps decoded words decoded. Sweeps are chain-neutral and pay like a drill.</div>'+
+      '<div class="storm-actions">'+langs.map(function(l){ return '<button class="btn btn-sm btn-ghost sweep-btn" data-lang="'+l+'">'+LANG_META[l].flag+' '+LANGS[l].name+' · '+due[l]+'</button>'; }).join('')+'</div>';
+    Array.prototype.forEach.call(card.querySelectorAll('.sweep-btn'), function(b){
+      b.addEventListener('click', function(){
+        var l = b.getAttribute('data-lang'); var best = 0, bestN = -1;
+        TIERS.forEach(function(t, i){ if(t.endless) return; var k = srsDueIds(l, t.code).length; if(k > bestN){ bestN = k; best = i; } });
+        enterDungeon(best, l, '__sweep');
+      });
+    });
   }
 
   function renderInterferencePanel(){
@@ -7150,6 +7203,15 @@
       rtile.innerHTML = '<span class="dungeon-flag">🩺</span><div class="dungeon-name" style="color:var(--paprika);">Signal Recovery</div><div class="dungeon-meta">'+rec.length+' words you keep missing · chain-neutral</div>';
       rtile.addEventListener('click', function(){ enterDungeon(idx, lang, '__recovery'); });
       el.topicGrid.appendChild(rtile);
+    }
+    var due = sweepIds(tier, lang);
+    if(due.length>=4){
+      var shead = document.createElement('div'); shead.className = 'topic-section'; shead.textContent = '🛰️ Maintenance Sweep · '+due.length+' due';
+      el.topicGrid.appendChild(shead);
+      var stile = document.createElement('button'); stile.type='button'; stile.className='dungeon-tile'; stile.setAttribute('data-state','recovery'); stile.setAttribute('data-locked','0');
+      stile.innerHTML = '<span class="dungeon-flag">🛰️</span><div class="dungeon-name" style="color:#7fd4ff;">Maintenance Sweep</div><div class="dungeon-meta">'+due.length+' words due for review · chain-neutral</div>';
+      stile.addEventListener('click', function(){ enterDungeon(idx, lang, '__sweep'); });
+      el.topicGrid.appendChild(stile);
     }
     TYPE_ORDER.forEach(function(type){
       var group = mods.filter(function(m){ return m.type===type; });
@@ -7315,9 +7377,9 @@
     }
     /* trail shows the topic subsections within the language already chosen for this relay */
     var currentChip = null;
-    if(topic==='__storm' || topic==='__recovery'){
+    if(topic==='__storm' || isDrillTopic(topic)){
       var sc = document.createElement('div'); sc.className = 'shift-chip'; sc.setAttribute('data-state','current');
-      sc.innerHTML = '<span class="lvl-badge" style="background:'+(topic==='__storm'?'#ffd93e':'var(--paprika)')+';color:#1a1400">'+(topic==='__storm'?'⚡':'🩺')+'</span><div class="shift-title">'+topicLabel(topic)+'</div><div class="shift-meta">'+(topic==='__storm'?'every language · chain-neutral':LANGS[lang].name+' · chain-neutral')+'</div>';
+      sc.innerHTML = '<span class="lvl-badge" style="background:'+(topic==='__storm'?'#ffd93e':'var(--paprika)')+';color:#1a1400">'+(topic==='__storm'?'⚡':topic==='__sweep'?'🛰️':topic==='__intercept'?'📰':'🩺')+'</span><div class="shift-title">'+topicLabel(topic)+'</div><div class="shift-meta">'+(topic==='__storm'?'every language · chain-neutral':LANGS[lang].name+' · chain-neutral')+'</div>';
       el.shiftRibbon.appendChild(sc);
       return;
     }
@@ -7354,7 +7416,7 @@
     Object.keys(carriedCounts).forEach(function(id){ var p = perkById(id); if(p) chips.push(perkChipHtml(p,'carried',carriedCounts[id]>1?' ×'+carriedCounts[id]:'')); });
     Object.keys(ownCounts).forEach(function(id){ var p = perkById(id); if(p) chips.push(perkChipHtml(p,'',ownCounts[id]>1?' ×'+ownCounts[id]:'')); });
     (st.chainMilestoneNames||[]).forEach(function(m){ chips.push('<span class="perk-chip chain" title="'+m.desc+'"><span class="pc-icon">'+m.icon+'</span>'+m.name+'</span>'); });
-    if(st.noise && st.runActive && st.topic!=='__recovery'){ chips.push(noiseChipHtml(st.noise, st.noiseList)); }
+    if(st.noise && st.runActive && !isDrillTopic(st.topic)){ chips.push(noiseChipHtml(st.noise, st.noiseList)); }
     if(st.storm){ st.storm.mods.forEach(function(m){ chips.push('<span class="perk-chip chain" title="'+m.desc+'" style="color:#ffd93e;border-color:#ffd93e;"><span class="pc-icon">'+m.icon+'</span>'+m.name+'</span>'); }); }
     if(!chips.length){ el.runPerks.hidden = true; el.runPerks.innerHTML=''; return; }
     el.runPerks.hidden = false;
@@ -7370,6 +7432,9 @@
   function topicLabel(topic){
     if(!topic) return '';
     if(topic==='__recovery') return 'Signal Recovery';
+    if(topic==='__sweep') return 'Maintenance Sweep';
+    if(topic==='__intercept') return 'Signal Intercept';
+    if(topic && topic.indexOf('cloze-')===0) return 'Fill the Gap';
     if(topic==='__storm') return 'Signal Storm';
     return TOPIC_LABELS[topic] || topic.replace(/^(build|gram|idiom|nuance|talk|listen)-/,'').replace(/-/g,' ').replace(/\b\w/g, function(c){ return c.toUpperCase(); });
   }
@@ -7389,6 +7454,7 @@
     scan(CONCEPTS, 'match');
     scan(DIALOGUES, 'dialogue');
     scan(BUILD_SENTENCES, 'build');
+    if(BUILD_SENTENCES.some(function(s){ return s.tier===tier.code; })){ out.push({key:'cloze-'+tier.code.toLowerCase(), type:'cloze'}); }
     scan(GRAMMAR_ITEMS, 'blank');
     scan(IDIOMS, 'idiom');
     scan(NUANCE, 'nuance');
@@ -7401,6 +7467,7 @@
     if(m.type==='match') return langHasTier(lang, tier);
     if(m.type==='dialogue') return DIALOGUES.some(function(d){ return d.tier===tier.code && d.topic===m.key && Array.isArray(d[lang]); });
     if(m.type==='build') return BUILD_SENTENCES.some(function(s){ return s.tier===tier.code && s.topic===m.key && Array.isArray(s[lang]); });
+    if(m.type==='cloze') return BUILD_SENTENCES.some(function(s){ return s.tier===tier.code && Array.isArray(s[lang]); });
     if(m.type==='listen'){ var lm = listenModule(tier, m.key); return lm && lm.source==='vocab' ? langHasTier(lang, tier)
       : lm && lm.source==='sentences' ? BUILD_SENTENCES.some(function(s){ return s.tier===tier.code && Array.isArray(s[lang]); })
       : DIALOGUES.some(function(d){ return d.tier===tier.code && Array.isArray(d[lang]); }); }
@@ -7409,7 +7476,8 @@
   function modulesForLang(tier, lang){ return modulesForTier(tier).filter(function(m){ return moduleHasLang(tier, m, lang); }); }
   function topicsForTier(tier, lang){ return (lang ? modulesForLang(tier, lang) : modulesForTier(tier)).map(function(m){ return m.key; }); }
   function moduleFor(tier, topic){
-    if(topic==='__recovery' || topic==='__storm') return {key:topic, type:'match'};
+    if(isDrillTopic(topic) || topic==='__storm') return {key:topic, type:'match'};
+    if(topic && topic.indexOf('cloze-')===0) return {key:topic, type:'cloze'};
     var mods = modulesForTier(tier);
     for(var i=0;i<mods.length;i++){ if(mods[i].key===topic) return mods[i]; }
     return null;
@@ -7423,6 +7491,8 @@
      what gets shuffled fresh every attempt, and its length is the dungeon's actual mastery count */
   function dungeonItemIds(tier, lang, topic){
     if(topic==='__recovery') return recoveryIds(tier, lang);
+    if(topic==='__sweep') return sweepIds(tier, lang);
+    if(topic==='__intercept') return (st.interceptIds||[]).slice();
     if(topic==='__storm') return st.storm ? stormQueue() : [];
     var mod = moduleFor(tier, topic);
     if(!mod) return [];
@@ -7431,6 +7501,7 @@
     if(mod.type==='match') return byTopic(CONCEPTS);
     if(mod.type==='dialogue') return byTopic(DIALOGUES);
     if(mod.type==='build') return byTopic(BUILD_SENTENCES);
+    if(mod.type==='cloze') return BUILD_SENTENCES.filter(function(s){ return s.tier===tier.code && Array.isArray(s[lang]); }).map(function(s){ return s.id; });
     if(mod.type==='blank') return byTopicLang(GRAMMAR_ITEMS);
     if(mod.type==='idiom') return byTopicLang(IDIOMS);
     if(mod.type==='nuance') return byTopicLang(NUANCE);
@@ -7498,7 +7569,7 @@
         return;
       }
       var cleared = isDungeonCleared(idx, lang, topic);
-      if(topic==='__recovery'){ cleared = false; }
+      if(isDrillTopic(topic)){ cleared = false; }
       el.pvTitle.textContent = tier.name+' — '+LANGS[lang].name+' — '+topicLabel(topic)+(cleared?' ✓':'');
       el.pvSub.textContent = tier.sub;
       el.pvHow.textContent = tier.how;
@@ -7506,7 +7577,7 @@
       var items = dungeonItemIds(tier, lang, topic);
       var mod = moduleFor(tier, topic) || {type:'match'};
       if(mod.type==='match'){
-        var sample = topic==='__recovery' ? items.slice(0,8).map(function(id){ return ITEM[id]; }) : shuffle(CONCEPTS.filter(function(c){ return c.tier===tier.code && c.topic===topic; })).slice(0,8);
+        var sample = isDrillTopic(topic) ? items.slice(0,8).map(function(id){ return ITEM[id]; }) : shuffle(CONCEPTS.filter(function(c){ return c.tier===tier.code && c.topic===topic; })).slice(0,8);
         el.pvConcepts.hidden = false;
         el.pvConcepts.innerHTML = sample.map(function(c){ return '<span title="'+c.en+'">'+c.emoji+'</span>'; }).join('');
       } else {
@@ -7516,10 +7587,12 @@
       el.pvHow.textContent = HOW_TEXT[mod.type] || tier.how;
       var extra = mod.type==='listen' ? ' · a fresh sample of this sector’s material every attempt' : ' · order reshuffles every attempt';
       el.pvCount.textContent = items.length+' '+rt.count+extra+' · lose all your power and the relay restarts';
-      el.pvChain.hidden = false; el.pvChain.innerHTML = topic==='__recovery' ? chainBoxHtml(false, true).replace('Open Channel runs never extend or break the chain','Recovery drills never extend or break the chain') : chainBoxHtml(!cleared, false);
+      el.pvChain.hidden = false; el.pvChain.innerHTML = isDrillTopic(topic) ? chainBoxHtml(false, true).replace('Open Channel runs never extend or break the chain','Recovery drills never extend or break the chain') : chainBoxHtml(!cleared, false);
       if(topic==='__recovery'){ el.pvSub.textContent = 'The '+LANGS[lang].name+' words in this sector you keep getting wrong, drilled until they stick. Every miss adds a strike, every correct decode clears one — a word with no strikes left leaves the list.'; }
-      el.btnStart.textContent = topic==='__recovery' ? '🩺 Start Recovery' : cleared ? '↺ Re-run Relay' : '▶ Engage Relay';
-      if(noiseLevel() && topic!=='__recovery'){ el.pvCount.textContent += ' · 📡 Noise '+noiseLevel(); }
+      if(topic==='__sweep'){ el.pvSub.textContent = 'Spaced repetition. These '+LANGS[lang].name+' words are due for review today: a correct decode pushes the next review further out, a miss brings it back tomorrow. Chain-neutral.'; }
+      if(topic==='__intercept'){ el.pvSub.textContent = 'The words from your own text that are in the ladder but not yet decoded in '+LANGS[lang].name+'. Chain-neutral.'; }
+      el.btnStart.textContent = topic==='__recovery' ? '🩺 Start Recovery' : topic==='__sweep' ? '🛰️ Start Sweep' : topic==='__intercept' ? '📰 Decode Intercept' : cleared ? '↺ Re-run Relay' : '▶ Engage Relay';
+      if(noiseLevel() && !isDrillTopic(topic)){ el.pvCount.textContent += ' · 📡 Noise '+noiseLevel(); }
       el.btnPreviewBack.textContent = '← Back to Topics';
       el.btnPreviewBack.onclick = function(){ showTopics(idx, lang); };
     }
@@ -7537,7 +7610,7 @@
   /* Loadout draft — one perk pick before a dungeon attempt begins. Resets every attempt. */
   function showLoadoutDraft(idx, lang, topic){
     hideToast();
-    if(interferenceOn('cold') && topic!=='__recovery'){ startDungeonAttempt(idx, lang, topic, null); return; }
+    if(interferenceOn('cold') && !isDrillTopic(topic)){ startDungeonAttempt(idx, lang, topic, null); return; }
     el.screenHome.hidden = true; el.screenHub.hidden = true; el.screenTopics.hidden = true; el.screenPreview.hidden = true;
     el.screenPlaying.hidden = true; el.screenComplete.hidden = true; el.screenShop.hidden = true;
     el.screenPerks.hidden = false;
@@ -7578,10 +7651,11 @@
     hideToast();
     st.tierIdx = idx; st.lang = lang; st.topic = topic || null;
     var tier = TIERS[idx];
-    st.firstAttempt = !tier.endless && !!lang && !!topic && topic!=='__recovery' && topic!=='__storm' && !isDungeonCleared(idx, lang, topic);
+    st.firstAttempt = !tier.endless && !!lang && !!topic && !isDrillTopic(topic) && topic!=='__storm' && !isDungeonCleared(idx, lang, topic);
     if(topic!=='__storm') st.storm = null;
     st.temp = null; st.encryptedExtra = 0; st.encryptAll = false; st.blackout = false; st.phoenixUsed = false; st.echoUsed = false;
     st.flare = false; st.flareSteps = 0; st.breach = false; st.crosstalk = false; st.floor = 0; st.noise = 0; st.noiseList = []; st.darkEarned = 0; st.bestComboRun = 0;
+    st.requeued = {};
     st.encryptedThisRun = 0; st.eventsThisRun = 0; st.runStart = Date.now();
     st.draftedPerkId = perk ? perk.id : null;
     st.maxLives = 3 + (owned('shop_life1')?1:0) + (owned('shop_life2')?1:0) + (owned('shop_life3')?1:0) + (owned('shop_life4')?1:0) + driveLevel('wd_cell');
@@ -7637,7 +7711,7 @@
     f.scoreMult *= 1 + 0.03*warpCores(); f.tipMult += 0.03*warpCores();
     f.timeMult *= 1 + 0.015*tuningLevel('tune_time');
     /* Interference — self-imposed noise on the signal for better pay */
-    if(topic!=='__recovery'){
+    if(!isDrillTopic(topic)){
       st.noiseList = save.interference.slice();
       st.noiseList.forEach(function(id){ applyInterference(id, f); });
       st.noise = noiseLevel(st.noiseList);
@@ -7661,8 +7735,8 @@
     /* Signal Storm modifiers apply last and override */
     if(st.storm){ st.storm.mods.forEach(function(m){ m.apply(f, st); }); }
     /* Single Cell wins over every cell bonus; Gravity Anchor gives the hard modes a shield */
-    if(interferenceOn('single') && topic!=='__recovery'){ st.maxLives = 1; st.lives = 1; }
-    if(refitOwned('rf_anchor') && (interferenceOn('single') || interferenceOn('breach')) && topic!=='__recovery'){ f.shieldCharges = (f.shieldCharges||0) + 1; }
+    if(interferenceOn('single') && !isDrillTopic(topic)){ st.maxLives = 1; st.lives = 1; }
+    if(refitOwned('rf_anchor') && (interferenceOn('single') || interferenceOn('breach')) && !isDrillTopic(topic)){ f.shieldCharges = (f.shieldCharges||0) + 1; }
     beginDungeonPlay();
   }
 
@@ -7831,6 +7905,7 @@
     }
     if(mod.type==='dialogue'){ return dialogueRound(item, st.lang, tier); }
     if(mod.type==='build'){ return buildRound(item, tier); }
+    if(mod.type==='cloze'){ return clozeRound(item, st.lang, tier); }
     if(mod.type==='blank'){ return blankRound(item, tier); }
     if(mod.type==='idiom'){ return idiomRound(item, tier); }
     if(mod.type==='nuance'){ return nuanceRound(item, tier); }
@@ -7907,6 +7982,22 @@
       uiMode:'buttons', kind:'match', conceptId:concept.id, lang:lang, clipKey:concept.id+':'+lang, pool:pool,
       lang2:lang, main:concept[lang].t, mainClass:'', sub: concept[lang].r ? concept[lang].r : null,
       time: roundTime(tier, 'match'), options: opts, note:null
+    };
+  }
+  /* Fill the Gap: one tile of a sentence is blanked; the options are tiles from other sentences of the same band */
+  function clozeRound(s, lang, tier){
+    var tiles = s[lang]; var joiner = (lang==='ja'||lang==='zh'||lang==='yue') ? '' : ' ';
+    var cand = []; tiles.forEach(function(t, i){ if(plainText(t).replace(/[^\p{L}]/gu,'').length>=2) cand.push(i); });
+    var bi = cand.length ? pick(cand) : 0;
+    var others = []; var seen = {}; seen[plainText(tiles[bi]).toLowerCase()] = true;
+    shuffle(BUILD_SENTENCES.filter(function(x){ return x.id!==s.id && x.tier===s.tier && Array.isArray(x[lang]); })).forEach(function(x){
+      x[lang].forEach(function(t){ var k = plainText(t).toLowerCase(); if(!seen[k] && others.length<3 && plainText(t).replace(/[^\p{L}]/gu,'').length>=2){ seen[k] = true; others.push(t); } });
+    });
+    var opts = shuffle([{t:tiles[bi], ok:true}].concat(others.map(function(t){ return {t:t}; }))).map(function(o){ return {key:o.t, emoji:null, main:o.t, sub:null, correct:!!o.ok}; });
+    var gap = tiles.map(function(t, i){ return i===bi ? '____' : t; }).join(joiner);
+    return {
+      uiMode:'buttons', kind:'cloze', lang:lang, sentenceId:s.id, clipKey:s.id+':'+lang, main:gap, mainClass:'is-sentence',
+      sub:'“'+s.en+'” — fill the gap', time: roundTime(tier, 'cloze'), options: opts, note: s.note, reveal: tiles.join(joiner), silent:true
     };
   }
   function blankRound(g, tier){
@@ -7990,7 +8081,9 @@
         el.btnReplay.hidden = false;
         speakText(round.spoken, round.lang, true, round.clipKey || null);
       }
-    } else if(round.lang && round.kind!=='nuance'){ speakText(round.main, round.lang, false, round.clipKey || null); }
+    } else if(round.lang && round.kind!=='nuance' && !round.silent){ speakText(round.main, round.lang, false, round.clipKey || null); }
+    var nb = document.getElementById('btn-note'); if(nb){ nb.hidden = !round.note; }
+    var sb = document.getElementById('btn-shadow'); if(sb){ sb.hidden = !(round.clipKey && hasClip(round.clipKey)); sb.textContent = '🎤 Shadow'; }
 
     if(round.uiMode==='buttons'){
       el.plAnswers.hidden = false; el.plBuilder.hidden = true;
@@ -8095,6 +8188,7 @@
       el.btnReplay.hidden = true;
     }
 
+    var tier = TIERS[st.tierIdx];
     var shielded = false, held = false, echoed = false;
     var missKey = (round.kind==='match'||round.kind==='listen') && round.conceptId && round.lang ? missedKey(round.conceptId, round.lang) : null;
     if(!correct && opts.timeout && st.holdCharges>0){ held = true; st.holdCharges--; }
@@ -8104,6 +8198,12 @@
     bumpStat('decodes'); if(correct) bumpStat('correct');
     bumpLangType(round.lang, round.kind, correct);
     if(missKey){ if(correct) noteHit(round.conceptId, round.lang); else noteMiss(round.conceptId, round.lang); }
+    if(missKey && !st.storm){ srsUpdate(round.conceptId, round.lang, correct); }
+    /* graduated recall: a missed word comes back a few rounds later, then further out */
+    if(!correct && missKey && !tier.endless && !st.storm && st.queue && st.pos < st.queue.length){
+      st.requeued = st.requeued || {}; var rq = st.requeued[missKey]||0;
+      if(rq < 2){ st.requeued[missKey] = rq+1; var at = Math.min(st.queue.length, st.pos+1+(rq===0 ? 4 : 9)); st.queue.splice(at, 0, st.queue[st.pos]); }
+    }
     if(round.encrypted && correct){ bumpStat('encryptedCracked'); st.encryptedThisRun++; }
     if(st.perkFlags.creditsPerCorrect && correct){ st.tipsThisRun += st.perkFlags.creditsPerCorrect; }
     var gambleHit = false;
@@ -8145,6 +8245,9 @@
         var li = ITEM[round.conceptId];
         if(li && li.emoji && li.tier){ learnedSet.add(round.conceptId+':'+round.lang); }
         toast('✅ +'+roundScore+' — 🎧 “'+plainText(round.reveal)+'”');
+      } else if(round.kind==='cloze'){
+        speakText(round.reveal, round.lang, false, round.clipKey || null);
+        toast('✅ +'+roundScore+' — “'+plainText(round.reveal)+'”'+(round.note ? ' · '+round.note : ''));
       } else if(round.note){
         toast('✅ +'+roundScore+' — '+round.note);
       } else {
@@ -8307,7 +8410,7 @@
   function scheduleEvents(){
     st.eventsAt = [];
     var tier = TIERS[st.tierIdx];
-    if(tier.endless || st.storm || st.topic==='__recovery') return;
+    if(tier.endless || st.storm || isDrillTopic(st.topic)) return;
     if(rankIndex()<1) return;
     var q = st.queue.length; if(q<12) return;
     st.eventsAt = [Math.floor(q*0.4), Math.floor(q*0.75)];
@@ -8350,11 +8453,11 @@
     bumpStat('playMs', Date.now()-st.runStart);
     if(st.topic==='__storm'){ onStormCleared(); return; }
     var tier = TIERS[st.tierIdx];
-    var isRecovery = st.topic==='__recovery';
+    var isRecovery = isDrillTopic(st.topic);
     var key = st.tierIdx+':'+st.lang+':'+st.topic;
     var firstClear = !isRecovery && !save.clearedDungeons[key];
     if(!isRecovery) save.clearedDungeons[key] = true;
-    bumpStat('relaysCleared'); if(isRecovery) bumpStat('recoveryCleared');
+    bumpStat('relaysCleared'); if(isRecovery) bumpStat('recoveryCleared'); if(st.topic==='__sweep') bumpStat('sweepsCleared');
     var perfect = st.total>0 && st.correct===st.total;
     if(perfect) bumpStat('perfectRelays');
     if(st.riskActive) bumpStat('riskClears');
@@ -8400,7 +8503,7 @@
       (dmEarned ? statBox('+'+dmEarned+' 🌌','Dark matter'+(noise?' · Noise '+noise:'')) : '');
     el.cpStats.innerHTML += '<div class="chain-box" style="grid-column:1 / -1;">'+chainResult.text+(isRecovery?' 🩺 '+Object.keys(save.missed).filter(function(k){ return k.slice(-3)===':'+st.lang; }).length+' weak '+LANGS[st.lang].name+' words remain.':'')+'</div>';
     if(chainResult.milestones && chainResult.milestones.length){ toast('🎉 Chain milestone: '+chainResult.milestones[0].icon+' <b>'+chainResult.milestones[0].name+'</b> is now online.'); }
-    el.btnRetry.textContent = isRecovery ? '🩺 Drill Again' : '↺ Re-run Relay';
+    el.btnRetry.textContent = st.topic==='__recovery' ? '🩺 Drill Again' : st.topic==='__sweep' ? '🛰️ Sweep Again' : st.topic==='__intercept' ? '📰 Decode Again' : '↺ Re-run Relay';
     el.btnRetry.onclick = function(){ enterDungeon(st.tierIdx, st.lang, st.topic); };
     el.btnBackHub.textContent = hubNowCleared ? '🗺️ Star Chart' : langNowCleared ? '← Back to Sector' : '← Back to Topics';
     var tierIdxAtClear = st.tierIdx, langAtClear = st.lang;
@@ -8582,6 +8685,28 @@
   el.btnTopicsBack.addEventListener('click', function(){ showHub(st.tierIdx); });
   el.btnOpenShop.addEventListener('click', showShop);
   document.getElementById('btn-open-journey').addEventListener('click', showJourney);
+  document.getElementById('btn-note').addEventListener('click', function(){ if(st.round && st.round.note) toast('📘 '+st.round.note); });
+  /* shadowing: record ~4 s from the microphone, then play the native clip and the recording back to back */
+  var shadowRec = null;
+  document.getElementById('btn-shadow').addEventListener('click', function(){
+    var b = this; var r = st.round; if(!r || !r.clipKey) return;
+    if(shadowRec){ try{ shadowRec.stop(); }catch(e){} return; }
+    if(!navigator.mediaDevices || !window.MediaRecorder){ toast('🎤 This browser cannot record audio.'); return; }
+    navigator.mediaDevices.getUserMedia({audio:true}).then(function(stream){
+      var chunks = []; var rec = new MediaRecorder(stream); shadowRec = rec;
+      rec.ondataavailable = function(e){ if(e.data && e.data.size) chunks.push(e.data); };
+      rec.onstop = function(){
+        shadowRec = null; stream.getTracks().forEach(function(t){ t.stop(); }); b.textContent = '🎤 Shadow';
+        var mine = new Audio(URL.createObjectURL(new Blob(chunks, {type: rec.mimeType || 'audio/webm'})));
+        var native = new Audio(clipSrc(r.clipKey));
+        toast('🎧 Native first, then you.');
+        native.onended = function(){ setTimeout(function(){ mine.play().catch(function(){}); }, 250); };
+        native.play().catch(function(){ mine.play().catch(function(){}); });
+      };
+      rec.start(); b.textContent = '⏺️ Recording… tap to stop';
+      setTimeout(function(){ if(shadowRec===rec){ try{ rec.stop(); }catch(e){} } }, 4000);
+    }).catch(function(){ toast('🎤 Microphone access was refused.'); });
+  });
   /* pronunciation flags: the exact clip key plus the text, so the clip can be re-recorded or the voice swapped */
   document.getElementById('btn-flag').addEventListener('click', function(){
     var r = st.round; if(!r) return;
