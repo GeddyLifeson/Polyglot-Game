@@ -1,0 +1,3649 @@
+{
+ "fk-ar-01": [
+  {
+   "q": "Por que Juha desceu do burro pela primeira vez?",
+   "options": [
+    "Porque o burro estava cansado",
+    "Porque alguns homens o criticaram por andar montado enquanto o filho ia a pé",
+    "Porque o filho pediu para andar sozinho",
+    "Porque a estrada era muito íngreme"
+   ]
+  },
+  {
+   "q": "O que Juha e o filho decidiram fazer depois que o velho debaixo da árvore reclamou?",
+   "options": [
+    "Vender o burro",
+    "Montar os dois juntos no burro",
+    "Andar os dois a pé e deixar o burro andar vazio ao lado deles",
+    "Voltar para casa"
+   ]
+  },
+  {
+   "q": "Que lição Juha deu ao filho?",
+   "options": [
+    "Nunca ouvir estranhos",
+    "É impossível agradar a todos",
+    "Sempre andar sozinho no burro",
+    "Os fazendeiros sabem mais"
+   ]
+  },
+  {
+   "q": "No que a história se transformou, segundo o parágrafo final?",
+   "options": [
+    "Uma lei na cidade",
+    "Uma canção cantada em casamentos",
+    "Um conto contado às crianças para ensinar uma lição",
+    "Um poema escrito pelo filho de Juha"
+   ]
+  }
+ ],
+ "fk-ar-02": [
+  {
+   "q": "Que acordo os animais fizeram com o leão?",
+   "options": [
+    "Lutariam contra o leão juntos",
+    "Enviariam um animal por dia para que o leão deixasse os demais em paz",
+    "Deixariam a floresta",
+    "Dariam mel ao leão em vez de carne"
+   ]
+  },
+  {
+   "q": "Por que a lebre disse ao leão que estava atrasada?",
+   "options": [
+    "Disse que tinha se perdido",
+    "Disse que outro leão tentou devorá-la no caminho",
+    "Disse que estava doente",
+    "Disse que os outros animais a detiveram"
+   ]
+  },
+  {
+   "q": "O que o leão viu no poço?",
+   "options": [
+    "Um peixe",
+    "Outra lebre",
+    "Seu próprio reflexo, que confundiu com um leão rival",
+    "Nada"
+   ]
+  },
+  {
+   "q": "Que lição a história ensina, segundo o último parágrafo?",
+   "options": [
+    "A força sempre vence",
+    "A esperteza pode triunfar sobre a força",
+    "Leões não devem beber água",
+    "As lebres são os animais mais rápidos"
+   ]
+  }
+ ],
+ "fk-ar-03": [
+  {
+   "q": "O que aconteceu antes de a viagem de Sindbad começar?",
+   "options": [
+    "Ele herdou riqueza, gastou-a rapidamente e decidiu comerciar mercadorias por mar",
+    "Era um pescador que queria se tornar comerciante",
+    "Foi forçado a embarcar por piratas",
+    "Herdou um navio do pai"
+   ]
+  },
+  {
+   "q": "O que se revelou ser a ilha em que a tripulação do navio desembarcou?",
+   "options": [
+    "Uma jangada à deriva",
+    "Uma enorme baleia adormecida",
+    "Um banco de areia",
+    "Um forte abandonado"
+   ]
+  },
+  {
+   "q": "Como Sindbad chegou à segunda ilha?",
+   "options": [
+    "Foi resgatado por um navio que passava",
+    "As ondas o levaram até lá sobre um pedaço de madeira",
+    "Nadou todo o caminho por vontade própria",
+    "Outra baleia o carregou"
+   ]
+  },
+  {
+   "q": "O que Sindbad fez depois de finalmente voltar para casa em Bagdá?",
+   "options": [
+    "Desistiu de navegar para sempre",
+    "Tornou-se treinador de cavalos",
+    "Pouco depois, partiu em outra viagem marítima",
+    "Mudou-se de Bagdá permanentemente"
+   ]
+  }
+ ],
+ "fk-ar-04": [
+  {
+   "q": "O que Ali Baba testemunhou os quarenta ladrões fazerem?",
+   "options": [
+    "Enterrar um corpo na floresta",
+    "Dizer uma frase mágica que abria uma porta secreta numa rocha",
+    "Atacar uma caravana que passava",
+    "Discutir sobre ouro roubado"
+   ]
+  },
+  {
+   "q": "Como Cassim descobriu o segredo de Ali Baba?",
+   "options": [
+    "Ali Baba lhe contou diretamente",
+    "A esposa dele encontrou uma moeda de ouro grudada em cera numa balança emprestada",
+    "Ele seguiu Ali Baba até a floresta",
+    "Um ladrão confessou a ele"
+   ]
+  },
+  {
+   "q": "O que aconteceu a Cassim na caverna?",
+   "options": [
+    "Escapou com o tesouro",
+    "Esqueceu as palavras mágicas para sair e depois foi morto pelos ladrões",
+    "Tornou-se amigo dos ladrões",
+    "Escondeu o tesouro e voltou em segurança"
+   ]
+  },
+  {
+   "q": "Como Morgiana derrotou os ladrões?",
+   "options": [
+    "Denunciou-os aos guardas do rei",
+    "Derramou óleo fervente nas jarras onde estavam escondidos",
+    "Trancou-os dentro da caverna",
+    "Enganou-os para que deixassem a cidade"
+   ]
+  }
+ ],
+ "fk-ar-05": [
+  {
+   "q": "Por que o mensageiro do rei foi até a tenda de Hatim?",
+   "options": [
+    "Para trocar cavalos com ele",
+    "Para pedir sua égua premiada, testando sua fama de generosidade",
+    "Para convidá-lo ao palácio do rei",
+    "Para desafiá-lo a um concurso de poesia"
+   ]
+  },
+  {
+   "q": "Por que Hatim sacrificou sua única égua?",
+   "options": [
+    "Não tinha outra forma de alimentar seu convidado, pois não havia comida naquela noite",
+    "A égua estava doente e prestes a morrer de qualquer forma",
+    "Queria uma recompensa do rei",
+    "O mensageiro exigiu isso"
+   ]
+  },
+  {
+   "q": "Por que Hatim acendia uma grande fogueira toda noite numa colina?",
+   "options": [
+    "Para cozinhar comida para a família",
+    "Para guiar viajantes perdidos até sua tenda em busca de comida e abrigo",
+    "Para sinalizar sua tribo durante ataques",
+    "Para afastar animais selvagens"
+   ]
+  },
+  {
+   "q": "Segundo o parágrafo final, por que Hatim é lembrado através das gerações?",
+   "options": [
+    "Porque era mais rico que todos ao seu redor",
+    "Porque fez da generosidade um princípio inabalável mesmo em tempos difíceis",
+    "Porque venceu muitas guerras",
+    "Porque escreveu os poemas mais famosos de sua época"
+   ]
+  }
+ ],
+ "fk-ar-06": [
+  {
+   "q": "Por que Antar não teve reconhecimento pleno em sua tribo no início?",
+   "options": [
+    "Nasceu numa tribo rival",
+    "Sua mãe era uma escrava abissínia, então ele era chamado de \"o escravo dos Banu Abs\"",
+    "Recusava-se a lutar em batalhas",
+    "Era jovem demais para ser reconhecido"
+   ]
+  },
+  {
+   "q": "Como Antar conquistou sua liberdade e reconhecimento como filho de Shaddad?",
+   "options": [
+    "Pagou um resgate ao pai",
+    "Lutou ferozmente para recuperar os camelos roubados, levando o pai a reconhecê-lo publicamente",
+    "Casou-se com Abla em segredo",
+    "Venceu um concurso de poesia"
+   ]
+  },
+  {
+   "q": "Que condição impossível Malik impôs para casar Abla com Antar?",
+   "options": [
+    "Antar teria que derrotar Malik em combate individual",
+    "Antar teria que trazer mil raras camelas de pelagem avermelhada",
+    "Antar teria que se tornar poeta primeiro",
+    "Antar teria que deixar sua tribo para sempre"
+   ]
+  },
+  {
+   "q": "Segundo o parágrafo final, o que Antar simboliza na herança árabe?",
+   "options": [
+    "Uma figura trágica que nunca alcançou seus objetivos",
+    "O cavaleiro apaixonado que conquistou dignidade e liberdade por seus próprios feitos, não por seu nascimento",
+    "Um conquistador cruel temido por todos",
+    "Um comerciante rico que comprou seu status"
+   ]
+  }
+ ],
+ "fk-de-01": [
+  {
+   "q": "O que o moleiro disse ao rei sobre a filha?",
+   "options": [
+    "Que ela sabia transformar palha em ouro",
+    "Que ela sabia assar pão mágico",
+    "Que ela cantava lindamente",
+    "Que ela sabia tecer tecido de seda"
+   ]
+  },
+  {
+   "q": "O que a moça deu ao homenzinho na primeira vez que ele a ajudou?",
+   "options": [
+    "Uma moeda de ouro",
+    "Seu colar",
+    "Seus sapatos",
+    "Um pão"
+   ]
+  },
+  {
+   "q": "O que a moça prometeu ao homenzinho na terceira noite?",
+   "options": [
+    "Metade do reino",
+    "Seu primeiro filho",
+    "Casar-se com ele",
+    "Seu anel"
+   ]
+  },
+  {
+   "q": "Como a rainha descobriu o nome do homenzinho?",
+   "options": [
+    "Ele mesmo contou a ela",
+    "Ela leu num livro",
+    "Um mensageiro o ouviu cantando o nome na floresta",
+    "O rei adivinhou"
+   ]
+  }
+ ],
+ "fk-de-02": [
+  {
+   "q": "Por que a mãe cabra avisou seus filhos?",
+   "options": [
+    "Por causa do lobo malvado",
+    "Por causa de uma tempestade",
+    "Por causa de caçadores",
+    "Por causa de um incêndio"
+   ]
+  },
+  {
+   "q": "O que o lobo fez para deixar sua voz suave?",
+   "options": [
+    "Bebeu leite morno",
+    "Comeu giz",
+    "Cantou uma canção",
+    "Sussurrou"
+   ]
+  },
+  {
+   "q": "Como a mãe cabra salvou os seis cabritinhos?",
+   "options": [
+    "Espantou o lobo",
+    "Cortou a barriga dele e os libertou",
+    "Enganou-o para que caísse no poço",
+    "Chamou um caçador"
+   ]
+  },
+  {
+   "q": "Como o lobo morreu no final?",
+   "options": [
+    "Foi baleado por um caçador",
+    "Caiu de uma árvore",
+    "As pedras em sua barriga o puxaram para dentro do poço",
+    "Fugiu e nunca mais voltou"
+   ]
+  }
+ ],
+ "fk-de-03": [
+  {
+   "q": "Que problema a cidade de Hamelin tinha?",
+   "options": [
+    "Uma infestação de ratos",
+    "Uma seca",
+    "Uma praga de doença",
+    "Uma enchente"
+   ]
+  },
+  {
+   "q": "Por que o prefeito se recusou a pagar o flautista?",
+   "options": [
+    "Não tinha mais dinheiro",
+    "Achou que a quantia total não era justificada",
+    "Não acreditava que o flautista havia feito o trabalho",
+    "Queria pagá-lo depois"
+   ]
+  },
+  {
+   "q": "O que aconteceu com a maioria das crianças de Hamelin?",
+   "options": [
+    "Foram levadas para dentro de uma montanha e desapareceram",
+    "Fugiram para outra cidade",
+    "Foram resgatadas pelo prefeito",
+    "Adormeceram na igreja"
+   ]
+  },
+  {
+   "q": "Que regra permaneceu em Hamelin depois daquele dia?",
+   "options": [
+    "Nenhum rato era permitido dentro da cidade",
+    "Nenhuma música era permitida na rua por onde as crianças passaram",
+    "Nenhum festival era realizado novamente",
+    "Nenhum estranho era permitido na cidade"
+   ]
+  }
+ ],
+ "fk-de-04": [
+  {
+   "q": "Pelo que Till Eulenspiegel era conhecido?",
+   "options": [
+    "Por levar instruções ao pé da letra para pregar peças",
+    "Por assar o melhor pão da Alemanha",
+    "Por prever o futuro de viajantes",
+    "Por lutar em torneios"
+   ]
+  },
+  {
+   "q": "O que Till assava em vez de pão?",
+   "options": [
+    "Nada",
+    "Figuras de corujas e macacos",
+    "Pães em forma de animais de fazenda",
+    "Massa queimada e intragável"
+   ]
+  },
+  {
+   "q": "Como os cidadãos de Braunschweig reagiram aos doces estranhos?",
+   "options": [
+    "Recusaram-se a comprá-los",
+    "Reclamaram ao prefeito",
+    "Compraram-nos por curiosidade",
+    "Exigiram reembolso"
+   ]
+  },
+  {
+   "q": "O que Till fez depois de deixar o padeiro?",
+   "options": [
+    "Estabeleceu-se permanentemente em Braunschweig",
+    "Pediu desculpas e parou de pregar peças",
+    "Continuou viajando, pregando peças em outras cidades",
+    "Tornou-se padeiro ele mesmo"
+   ]
+  }
+ ],
+ "fk-de-05": [
+  {
+   "q": "Por que os barqueiros temiam o rochedo de Loreley?",
+   "options": [
+    "Por causa de piratas escondidos ali",
+    "Porque a corrente é traiçoeira e muitos barcos naufragaram ali",
+    "Porque dizia-se ser amaldiçoado por um rei",
+    "Porque bloqueava o único caminho pelo Reno"
+   ]
+  },
+  {
+   "q": "Por que tantos barcos se chocavam perto do rochedo, segundo a lenda?",
+   "options": [
+    "Uma tempestade sempre atacava ao anoitecer",
+    "Os barqueiros se distraíam com o canto da donzela",
+    "O rio era estreito demais para barcos grandes",
+    "O próprio rochedo se movia para dentro d'água"
+   ]
+  },
+  {
+   "q": "O que a Loreley fez ao chegar ao topo do rochedo pela última vez?",
+   "options": [
+    "Cantou uma última canção e desapareceu na floresta",
+    "Viu o barco do amado perdido e se atirou no rio",
+    "Foi resgatada pelos soldados do conde palatino",
+    "Transformou-se num pássaro e voou para longe"
+   ]
+  },
+  {
+   "q": "Quem tornou a lenda de Loreley famosa muito além da região do Reno?",
+   "options": [
+    "Heinrich Heine, com seu famoso poema",
+    "Um cronista medieval",
+    "Os Irmãos Grimm",
+    "Um pescador local"
+   ]
+  }
+ ],
+ "fk-de-06": [
+  {
+   "q": "O que se diz ter acontecido a Barba Ruiva em vez de morrer em batalha?",
+   "options": [
+    "Foi levado para dentro da montanha por poderes sobrenaturais para aguardar um futuro retorno",
+    "Retirou-se tranquilamente para um mosteiro",
+    "Foi traído e aprisionado pelo próprio filho",
+    "Navegou para longe e nunca mais foi visto"
+   ]
+  },
+  {
+   "q": "O que Barba Ruiva teria dito quando o pastor confirmou que os corvos ainda circulavam a montanha?",
+   "options": [
+    "Que acordaria imediatamente",
+    "Que precisava dormir mais cem anos antes de seu tempo chegar",
+    "Que os corvos deveriam ser mortos",
+    "Que o pastor nunca deveria voltar"
+   ]
+  },
+  {
+   "q": "Como o mito de Barba Ruiva mudou no século dezenove?",
+   "options": [
+    "Foi completamente esquecido",
+    "Foi descartado como falso pelos historiadores",
+    "Viveu um renascimento ligado ao desejo de unificação política alemã",
+    "Passou a ser associado a uma lenda diferente e sem relação"
+   ]
+  },
+  {
+   "q": "O que os visitantes de Kyffhäuser buscam simbolicamente hoje, segundo o texto?",
+   "options": [
+    "Um tesouro enterrado que se diz escondido na montanha",
+    "O imperador adormecido cujo despertar traria uma era melhor",
+    "Uma cura para doenças numa fonte sagrada",
+    "O túmulo do corvo da lenda"
+   ]
+  }
+ ],
+ "fk-el-01": [
+  {
+   "q": "O que a tartaruga propôs à lebre?",
+   "options": [
+    "Uma corrida",
+    "Uma travessia a nado pelo lago",
+    "Uma refeição juntas",
+    "Nada em particular"
+   ]
+  },
+  {
+   "q": "Por que a lebre decidiu parar de correr?",
+   "options": [
+    "Achou que tinha muito tempo para descansar",
+    "Perdeu-se na floresta",
+    "Estava machucada",
+    "Queria comer alguma coisa"
+   ]
+  },
+  {
+   "q": "O que a tartaruga fez enquanto a lebre dormia?",
+   "options": [
+    "Continuou caminhando firme rumo à chegada",
+    "Acordou-a",
+    "Voltou para trás",
+    "Esperou por ela"
+   ]
+  },
+  {
+   "q": "Qual é a lição da história?",
+   "options": [
+    "O esforço constante vence a pressa",
+    "A velocidade sempre vence",
+    "Dormir é perigoso",
+    "Animais não devem correr"
+   ]
+  }
+ ],
+ "fk-el-02": [
+  {
+   "q": "O que a cigarra fazia enquanto a formiga trabalhava?",
+   "options": [
+    "Cantava num galho",
+    "Dormia",
+    "Também juntava comida",
+    "Construía um ninho"
+   ]
+  },
+  {
+   "q": "Por que a cigarra não juntou nenhuma comida?",
+   "options": [
+    "Acreditava que o verão nunca acabaria",
+    "Não tinha comida para juntar",
+    "Estava doente",
+    "Estava ajudando a formiga"
+   ]
+  },
+  {
+   "q": "O que a cigarra pediu à formiga no inverno?",
+   "options": [
+    "Um pouco de comida",
+    "Um lugar quente para dormir",
+    "Ajuda para encontrar sua família",
+    "Dinheiro"
+   ]
+  },
+  {
+   "q": "O que a história ensina?",
+   "options": [
+    "A importância de se preparar para o futuro",
+    "Cantar é mais importante que trabalhar",
+    "As formigas são egoístas",
+    "O inverno nunca chega de verdade"
+   ]
+  }
+ ],
+ "fk-el-03": [
+  {
+   "q": "Por que Dédalo e Ícaro não podiam escapar por terra ou por mar?",
+   "options": [
+    "O rei Minos guardava as duas rotas",
+    "Não tinham barco",
+    "Não conheciam o caminho",
+    "Ícaro se recusava a partir"
+   ]
+  },
+  {
+   "q": "Que aviso Dédalo deu a Ícaro?",
+   "options": [
+    "Não voar nem muito baixo nem muito alto",
+    "Não olhar para o sol",
+    "Não voar à noite",
+    "Não voar sobre o mar"
+   ]
+  },
+  {
+   "q": "Por que a cera das asas de Ícaro derreteu?",
+   "options": [
+    "Ele voou perto demais do sol",
+    "Voou por uma tempestade",
+    "Voou rápido demais",
+    "Pousou com muita força"
+   ]
+  },
+  {
+   "q": "O que significa hoje a expressão \"voar perto demais do sol\"?",
+   "options": [
+    "Correr riscos perigosos por ambição excessiva",
+    "Viajar para muito longe",
+    "Trabalhar demais",
+    "Ser muito corajoso"
+   ]
+  }
+ ],
+ "fk-el-04": [
+  {
+   "q": "Como Górdio se tornou rei?",
+   "options": [
+    "Entrou na cidade numa carroça, cumprindo um oráculo",
+    "Venceu uma batalha",
+    "Foi eleito pelo povo",
+    "Herdou o trono"
+   ]
+  },
+  {
+   "q": "O que o oráculo prometia sobre o nó?",
+   "options": [
+    "Quem o desatasse governaria toda a Ásia",
+    "Quem o desatasse se tornaria fazendeiro",
+    "O nó jamais poderia ser desatado",
+    "O nó traria má sorte"
+   ]
+  },
+  {
+   "q": "Como Alexandre resolveu o nó?",
+   "options": [
+    "Cortou-o com a espada",
+    "Desatou-o pacientemente",
+    "Queimou-o",
+    "Pediu aos sacerdotes para resolvê-lo"
+   ]
+  },
+  {
+   "q": "O que significa hoje \"cortar o nó górdio\"?",
+   "options": [
+    "Encontrar uma solução ousada e não convencional para um problema difícil",
+    "Perder uma competição",
+    "Seguir as regras à risca",
+    "Desistir de uma tarefa"
+   ]
+  }
+ ],
+ "fk-el-05": [
+  {
+   "q": "Onde Ulisses e seus homens se encontraram?",
+   "options": [
+    "Numa caverna pertencente a um Ciclope chamado Polifemo",
+    "Numa ilha deserta sem habitantes",
+    "No palácio do rei Minos",
+    "Num navio em plena tempestade"
+   ]
+  },
+  {
+   "q": "Que nome Ulisses deu ao Ciclope?",
+   "options": [
+    "\"Ninguém\"",
+    "Seu nome verdadeiro",
+    "\"Estrangeiro\"",
+    "Recusou-se a dar um nome"
+   ]
+  },
+  {
+   "q": "Por que os outros Ciclopes não ajudaram Polifemo?",
+   "options": [
+    "Ele disse que \"Ninguém\" o estava ferindo, então pensaram que nada estava errado",
+    "Tinham medo de Ulisses",
+    "Estavam longe demais para ouvi-lo",
+    "Não gostavam de Polifemo"
+   ]
+  },
+  {
+   "q": "Que consequência o orgulho de Ulisses trouxe?",
+   "options": [
+    "A fúria de Poseidon atrasou seu retorno por dez anos",
+    "Perdeu todos os seus homens imediatamente",
+    "Foi transformado em pedra",
+    "Foi recebido em casa mais cedo"
+   ]
+  }
+ ],
+ "fk-el-06": [
+  {
+   "q": "O que Perséfone fazia quando Hades a notou pela primeira vez?",
+   "options": [
+    "Colhia flores com as ninfas",
+    "Orava num templo",
+    "Navegava pelo mar",
+    "Dormia num prado"
+   ]
+  },
+  {
+   "q": "Como a tristeza de Deméter afetou o mundo?",
+   "options": [
+    "Deixou a terra murchar e as colheitas fracassarem, causando fome",
+    "Transformou mortais em flores",
+    "Inundou a terra com chuva",
+    "Pediu a Zeus para destruir o Submundo"
+   ]
+  },
+  {
+   "q": "Por que Perséfone não podia deixar o Submundo completamente?",
+   "options": [
+    "Havia comido sementes de romã do Submundo",
+    "Hades trancou os portões",
+    "Perdeu a memória",
+    "Zeus a proibiu de partir"
+   ]
+  },
+  {
+   "q": "O que as estações representam neste mito?",
+   "options": [
+    "A alegria de Deméter quando Perséfone volta e sua tristeza quando ela parte",
+    "As batalhas entre os deuses",
+    "Os humores mutáveis de Hades",
+    "A passagem das gerações humanas"
+   ]
+  }
+ ],
+ "fk-es-01": [
+  {
+   "q": "O que o coiote vê refletido no poço que dá à lebre uma ideia?",
+   "options": [
+    "O sol",
+    "Seu próprio rosto",
+    "A lua",
+    "Um peixe"
+   ]
+  },
+  {
+   "q": "O que acontece quando o coiote pula no poço?",
+   "options": [
+    "Ele captura a lebre",
+    "Ele encontra queijo de verdade",
+    "O queijo desaparece e ele fica encharcado",
+    "Ele se afoga"
+   ]
+  },
+  {
+   "q": "Que desculpa a lebre usa da segunda vez para escapar?",
+   "options": [
+    "Diz que está doente",
+    "Diz que o céu está caindo e pede ao coiote que segure uma árvore",
+    "Diz que um caçador está chegando",
+    "Diz que não tem carne nos ossos"
+   ]
+  },
+  {
+   "q": "Com que lição a história termina?",
+   "options": [
+    "A força sempre vence no final",
+    "Coiotes são mais espertos que lebres",
+    "Quem pensa melhor às vezes vence quem é mais forte",
+    "Nunca confie em um estranho"
+   ]
+  }
+ ],
+ "fk-es-02": [
+  {
+   "q": "Que condição o imperador impõe antes de Popocatépetl poder se casar com sua filha?",
+   "options": [
+    "Ele deve construir um templo",
+    "Ele deve ir à guerra e voltar vitorioso",
+    "Ele deve esperar dez anos",
+    "Ele deve derrotar o imperador em combate"
+   ]
+  },
+  {
+   "q": "Que mentira o rival ciumento conta a Iztaccíhuatl?",
+   "options": [
+    "Que Popocatépetl se casou com outra",
+    "Que Popocatépetl morreu na guerra",
+    "Que o imperador proibiu o casamento",
+    "Que Popocatépetl não a ama mais"
+   ]
+  },
+  {
+   "q": "O que os deuses fazem por piedade dos amantes?",
+   "options": [
+    "Trazem Iztaccíhuatl de volta à vida",
+    "Punem o rival ciumento",
+    "Transformam o casal em dois vulcões",
+    "Enviam Popocatépetl ao submundo"
+   ]
+  },
+  {
+   "q": "O que a fumaça de Popocatépetl representa, segundo a lenda?",
+   "options": [
+    "Um aviso de perigo",
+    "Sua tristeza por Iztaccíhuatl",
+    "A ira dos deuses",
+    "O fim da guerra"
+   ]
+  }
+ ],
+ "fk-es-03": [
+  {
+   "q": "Como o marido de María passou a tratá-la com o passar dos anos?",
+   "options": [
+    "Tornou-se mais afetuoso",
+    "Negligenciou-a, ficando frequentemente longe do povoado",
+    "Mandou-a de volta para os pais",
+    "Pediu que ela viajasse com ele"
+   ]
+  },
+  {
+   "q": "O que María faz num momento de fúria à beira do rio?",
+   "options": [
+    "Confronta a companheira do marido",
+    "Afoga os próprios filhos",
+    "Foge com os filhos",
+    "Ateia fogo à carruagem"
+   ]
+  },
+  {
+   "q": "O que as mães da América Latina tradicionalmente avisam aos filhos sobre a Llorona?",
+   "options": [
+    "Para não nadarem sozinhos em rios",
+    "Para não saírem à noite, ou ela os levará",
+    "Para não falarem com estranhos",
+    "Para não se casarem por dinheiro"
+   ]
+  },
+  {
+   "q": "Qual é a mensagem central que o narrador tira da lenda?",
+   "options": [
+    "Rios são sempre perigosos à noite",
+    "Riqueza não garante felicidade",
+    "Um momento de fúria pode custar o que mais se ama",
+    "Fantasmas não podem ser perdoados"
+   ]
+  }
+ ],
+ "fk-es-04": [
+  {
+   "q": "Qual é a avaliação do narrador sobre o casamento dos Infantes de Carrión com as filhas do Cid?",
+   "options": [
+    "Foi um casamento de amor verdadeiro",
+    "Foi arranjado principalmente por interesse próprio",
+    "Foi imposto pelo rei",
+    "Aconteceu contra a vontade do Cid"
+   ]
+  },
+  {
+   "q": "Como os Infantes de Carrión reagem quando o leão escapa?",
+   "options": [
+    "Ajudam o Cid a capturá-lo",
+    "Fogem apavorados e se escondem, pensando só em si mesmos",
+    "Matam o leão",
+    "Guiam com calma os outros convidados até a segurança"
+   ]
+  },
+  {
+   "q": "Como o Cid lida com o leão solto?",
+   "options": [
+    "Chama os soldados para prendê-lo com redes",
+    "Calmamente o segura pela juba e o devolve à jaula",
+    "Mata-o com a espada",
+    "Tranca-se no palácio"
+   ]
+  },
+  {
+   "q": "Que efeito duradouro o episódio tem sobre os Infantes de Carrión?",
+   "options": [
+    "Tornam-se admiradores leais do Cid",
+    "A vergonha se transforma em ressentimento crescente contra ele",
+    "Deixam Valência imediatamente",
+    "São elogiados por sua cautela"
+   ]
+  }
+ ],
+ "fk-es-05": [
+  {
+   "q": "Por que Sancho Pança aceita servir como escudeiro de Dom Quixote?",
+   "options": [
+    "Por lealdade familiar",
+    "Em troca do futuro governo de uma ilha",
+    "Porque também ama livros de cavalaria",
+    "Porque não tem onde morar"
+   ]
+  },
+  {
+   "q": "O que Sancho diz a Dom Quixote que os moinhos de vento realmente são?",
+   "options": [
+    "Torres de vigia construídas por um inimigo",
+    "Moinhos de vento cujas velas só parecem braços",
+    "Gigantes adormecidos sob um feitiço",
+    "Estátuas deixadas por cavaleiros antigos"
+   ]
+  },
+  {
+   "q": "Como Dom Quixote explica sua derrota depois de se chocar contra o moinho?",
+   "options": [
+    "Admite que simplesmente estava errado",
+    "Culpa Sancho por tê-lo distraído",
+    "Afirma que um encantador transformou os gigantes em moinhos para roubar-lhe a glória",
+    "Diz que Rocinante tropeçou por acidente"
+   ]
+  },
+  {
+   "q": "Segundo o parágrafo final, o que esse episódio passa a simbolizar sobre Dom Quixote?",
+   "options": [
+    "Sua habilidade como guerreiro de verdade",
+    "Sua capacidade de ver grandeza em coisas comuns e perseguir seus ideais apesar de provas constantes de que está errado",
+    "Sua desconfiança crescente em relação a Sancho",
+    "Sua decisão de abandonar a cavalaria"
+   ]
+  }
+ ],
+ "fk-es-06": [
+  {
+   "q": "Sob que pretexto os gêmeos são convocados a Xibalbá?",
+   "options": [
+    "Um banquete de casamento",
+    "Um jogo de bola",
+    "Uma cerimônia religiosa",
+    "Um julgamento pelos crimes do pai"
+   ]
+  },
+  {
+   "q": "O que acontece a Hunahpú na Casa dos Morcegos?",
+   "options": [
+    "Fica completamente congelado",
+    "É devorado por inteiro",
+    "Um morcego arranca sua cabeça",
+    "Escapa ileso"
+   ]
+  },
+  {
+   "q": "Que prova final os senhores de Xibalbá pedem aos gêmeos?",
+   "options": [
+    "Derrotar um jaguar em combate",
+    "Sacrificar um ao outro e depois voltar à vida",
+    "Passar uma noite na Casa Escura sem ajuda",
+    "Resolver um enigma sobre seus antepassados"
+   ]
+  },
+  {
+   "q": "Como a história termina para Hun-Camé e Vucub-Camé?",
+   "options": [
+    "São ressuscitados e se tornam aliados dos gêmeos",
+    "Os gêmeos os deixam morrer definitivamente depois que eles também se submetem ao sacrifício",
+    "Fogem de Xibalbá derrotados",
+    "São perdoados e exilados em vez de mortos"
+   ]
+  }
+ ],
+ "fk-fr-01": [
+  {
+   "q": "O que a formiga fez o verão todo?",
+   "options": [
+    "Juntou e guardou comida",
+    "Dançou nos campos",
+    "Dormiu ao sol",
+    "Cantou com a cigarra"
+   ]
+  },
+  {
+   "q": "O que aconteceu quando o inverno chegou?",
+   "options": [
+    "A cigarra tinha bastante comida guardada",
+    "A cigarra não tinha mais nada para comer",
+    "A formiga deixou sua casa",
+    "A cigarra se mudou para outro campo"
+   ]
+  },
+  {
+   "q": "Como a cigarra respondeu à pergunta da formiga sobre o verão?",
+   "options": [
+    "Disse que tinha guardado comida",
+    "Disse que tinha cantado o verão todo",
+    "Disse que tinha viajado para longe",
+    "Disse que tinha dormido muito"
+   ]
+  },
+  {
+   "q": "Que lição a história ensina?",
+   "options": [
+    "A importância de se preparar para o futuro",
+    "A importância de cantar alto",
+    "A importância de partilhar comida",
+    "A importância de dormir bem"
+   ]
+  }
+ ],
+ "fk-fr-02": [
+  {
+   "q": "Por que a raposa parou debaixo da árvore?",
+   "options": [
+    "Sentiu o cheiro do queijo no bico do corvo",
+    "Queria dormir ali",
+    "Estava procurando água",
+    "Queria cantar"
+   ]
+  },
+  {
+   "q": "O que a raposa afirmou sobre o corvo?",
+   "options": [
+    "Que ele era feio",
+    "Que seria o rei da floresta se sua voz combinasse com suas penas",
+    "Que deveria deixar a floresta",
+    "Que suas penas eram sem graça"
+   ]
+  },
+  {
+   "q": "O que aconteceu com o queijo?",
+   "options": [
+    "O corvo comeu-o ele mesmo",
+    "Caiu e a raposa o pegou",
+    "A raposa o devolveu",
+    "Desapareceu dentro da árvore"
+   ]
+  },
+  {
+   "q": "Qual é a moral da fábula?",
+   "options": [
+    "Nunca confie em quem lhe bajula demais",
+    "Sempre cante alto na floresta",
+    "Raposas são animais perigosos",
+    "Corvos não devem voar à noite"
+   ]
+  }
+ ],
+ "fk-fr-03": [
+  {
+   "q": "Quem era responsável por fechar os portões da cidade toda noite?",
+   "options": [
+    "A própria princesa Dahut",
+    "Um guardião, enquanto o rei guardava a chave",
+    "São Corentin",
+    "O diabo disfarçado"
+   ]
+  },
+  {
+   "q": "O que Dahut fez durante a tempestade?",
+   "options": [
+    "Avisou o pai do perigo",
+    "Roubou a chave e abriu o portão",
+    "Fugiu sozinha da cidade",
+    "Enfrentou o estranho"
+   ]
+  },
+  {
+   "q": "O que aconteceu a Dahut no final, segundo a lenda?",
+   "options": [
+    "Afogou-se e nunca mais foi vista",
+    "Foi empurrada para o mar e se tornou uma sereia",
+    "Escapou em segurança para Quimper",
+    "Derrotou o demônio"
+   ]
+  },
+  {
+   "q": "O que os pescadores bretões dizem ainda conseguir ouvir?",
+   "options": [
+    "A voz de Dahut cantando",
+    "Os sinos da cidade afundada tocando sob as ondas",
+    "O galope do cavalo do rei",
+    "O riso do diabo"
+   ]
+  }
+ ],
+ "fk-fr-04": [
+  {
+   "q": "O que era o olifante?",
+   "options": [
+    "A espada de Roldão",
+    "Uma trompa de marfim que podia ser ouvida de longe",
+    "Um tipo de escudo",
+    "O nome do desfiladeiro"
+   ]
+  },
+  {
+   "q": "Por que Roldão se recusou a soar a trompa a princípio?",
+   "options": [
+    "Não sabia como usá-la",
+    "Por orgulho, para não parecer com medo",
+    "Porque Olivier lhe disse para não fazê-lo",
+    "Porque a trompa estava quebrada"
+   ]
+  },
+  {
+   "q": "O que Carlos Magno encontrou ao chegar a Roncesvales?",
+   "options": [
+    "Roldão vivo, mas ferido",
+    "Roldão e seus companheiros já mortos",
+    "Um campo de batalha vazio, sem sinal de combate",
+    "Os mouros esperando para negociar"
+   ]
+  },
+  {
+   "q": "O que a história de Roldão simboliza na França?",
+   "options": [
+    "Apenas estratégia militar",
+    "Coragem, lealdade e o preço do orgulho",
+    "A fundação de Paris",
+    "Tratados de paz com a Espanha"
+   ]
+  }
+ ],
+ "fk-fr-05": [
+  {
+   "q": "Que condição Melusina impôs para o casamento deles?",
+   "options": [
+    "Ele nunca deveria saber seu verdadeiro nome",
+    "Ele nunca deveria vê-la aos sábados, quando ela se trancava",
+    "Ele deveria abrir mão de suas terras",
+    "Ele nunca deveria se casar novamente"
+   ]
+  },
+  {
+   "q": "O que levou Raymondin a espionar Melusina?",
+   "options": [
+    "Um sonho que teve",
+    "As insinuações ciumentas do irmão de que ela era infiel",
+    "Uma carta que encontrou",
+    "O conselho de um padre"
+   ]
+  },
+  {
+   "q": "Como o segredo finalmente foi revelado a todos?",
+   "options": [
+    "Melusina confessou-o ela mesma",
+    "Raymondin a chamou de \"serpente\" diante da corte durante uma discussão",
+    "O filho deles descobriu",
+    "Um criado espalhou o boato"
+   ]
+  },
+  {
+   "q": "O que a lenda diz que acontece quando um descendente da casa de Lusignan está prestes a morrer?",
+   "options": [
+    "Um sino toca no castelo",
+    "O grito de Melusina é ouvido",
+    "Um dragão aparece no céu",
+    "A fonte seca"
+   ]
+  }
+ ],
+ "fk-fr-06": [
+  {
+   "q": "Quais eram as duas condições do pacto com o diabo?",
+   "options": [
+    "Pagar ouro e nunca voltar",
+    "Nunca dizer o nome de Deus e voltar antes do canto do galo",
+    "Nunca olhar para trás e nunca falar",
+    "Trazer um presente e cantar alto"
+   ]
+  },
+  {
+   "q": "O que aconteceu assim que os homens chegaram ao povoado?",
+   "options": [
+    "Foram expulsos pelos moradores",
+    "Dançaram e festejaram até tarde da noite",
+    "Foram presos por invasão",
+    "Esqueceram por que tinham ido"
+   ]
+  },
+  {
+   "q": "Como a viagem de volta quase terminou em desastre?",
+   "options": [
+    "Ficaram sem combustível",
+    "Um homem jurou pelos céus, quebrando o pacto, e a canoa perdeu o controle",
+    "Perderam-se numa nevasca",
+    "O diabo exigiu mais almas antes de deixá-los voltar"
+   ]
+  },
+  {
+   "q": "Que lição os velhos contadores de histórias quebequenses tiram desta lenda?",
+   "options": [
+    "Nunca viajar sozinho no inverno",
+    "Uma promessa feita ao diabo, mesmo de brincadeira, sempre custa caro",
+    "Sempre confiar na oferta de um estranho",
+    "Canoas são perigosas na neve"
+   ]
+  }
+ ],
+ "fk-hi-01": [
+  {
+   "q": "Do que o macaco vivia?",
+   "options": [
+    "De frutas doces de uma jambeira",
+    "De peixes do rio",
+    "De arroz do povoado",
+    "De folhas da árvore"
+   ]
+  },
+  {
+   "q": "Por que a esposa do crocodilo queria o coração do macaco?",
+   "options": [
+    "Achava que fruta doce significava coração doce",
+    "Estava zangada com o macaco",
+    "Queria testar o marido",
+    "Estava com muita fome"
+   ]
+  },
+  {
+   "q": "Como o macaco escapou?",
+   "options": [
+    "Enganou o crocodilo para que voltasse à árvore",
+    "Pulou direto na água",
+    "Chamou pássaros para ajudar",
+    "Lutou contra o crocodilo"
+   ]
+  },
+  {
+   "q": "Que lição a história ensina?",
+   "options": [
+    "A esperteza pode salvá-lo de uma traição",
+    "Crocodilos são sempre confiáveis",
+    "Frutas nunca devem ser partilhadas",
+    "A amizade é impossível entre animais"
+   ]
+  }
+ ],
+ "fk-hi-02": [
+  {
+   "q": "Que acordo os animais fizeram com o leão?",
+   "options": [
+    "Enviar-lhe um animal por dia em vez de serem caçados",
+    "Dar-lhe fruta em vez de carne",
+    "Esconder-se dele em cavernas",
+    "Lutar contra ele juntos"
+   ]
+  },
+  {
+   "q": "Como o coelho explicou seu atraso?",
+   "options": [
+    "Alegou ter encontrado outro leão que se dizia rei",
+    "Disse que tinha se perdido na selva",
+    "Disse que estava caçando comida",
+    "Culpou os outros animais"
+   ]
+  },
+  {
+   "q": "O que o leão viu no poço?",
+   "options": [
+    "Seu próprio reflexo, que confundiu com um rival",
+    "Um segundo leão de verdade",
+    "Um peixe",
+    "Sua sombra no chão"
+   ]
+  },
+  {
+   "q": "Qual é a moral da história?",
+   "options": [
+    "A inteligência é maior que a força",
+    "A força sempre vence",
+    "Os animais não conseguem enganar uns aos outros",
+    "Os leões são os mais sábios de todos"
+   ]
+  }
+ ],
+ "fk-hi-03": [
+  {
+   "q": "Que desafio Akbar propôs?",
+   "options": [
+    "Se alguém conseguiria ficar a noite toda num lago gelado",
+    "Se alguém conseguiria cozinhar a refeição mais rápida",
+    "Se alguém conseguiria resolver um enigma",
+    "Se alguém conseguiria escalar o muro do palácio"
+   ]
+  },
+  {
+   "q": "Por que o homem pobre foi negado sua recompensa?",
+   "options": [
+    "Akbar disse que o calor de uma lâmpada distante invalidava o teste",
+    "Adormeceu durante o teste",
+    "Pediu dinheiro demais",
+    "Nunca de fato entrou no lago"
+   ]
+  },
+  {
+   "q": "O que a demonstração do khichdi de Birbal provou?",
+   "options": [
+    "Que o raciocínio anterior sobre o calor distante era absurdo e injusto",
+    "Que Birbal era melhor cozinheiro que os chefs reais",
+    "Que o fogo sempre cozinha comida mais rápido à distância",
+    "Que o julgamento de Akbar sempre estava correto"
+   ]
+  },
+  {
+   "q": "O que a história finalmente mostra sobre Birbal?",
+   "options": [
+    "Combinava esperteza com um forte senso de justiça",
+    "Sempre concordava com o imperador para ficar em segurança",
+    "Preferia cozinhar a dar conselhos",
+    "Não gostava de pessoas pobres"
+   ]
+  }
+ ],
+ "fk-hi-04": [
+  {
+   "q": "O que o rei Krishnadevaraya fez com as mangas raras?",
+   "options": [
+    "Distribuiu uma para cada cortesão favorito",
+    "Guardou todas para si mesmo",
+    "Vendeu-as no mercado",
+    "Alimentou seus elefantes com elas"
+   ]
+  },
+  {
+   "q": "Por que o cortesão ciumento reclamou ao rei?",
+   "options": [
+    "Não recebeu nenhuma manga e achou Tenali Rama indigno da honra",
+    "Achou que as mangas estavam estragadas",
+    "Queria mais ouro em vez de fruta",
+    "Acreditava que o rei favorecia estrangeiros"
+   ]
+  },
+  {
+   "q": "Como Tenali Rama se defendeu diante do rei?",
+   "options": [
+    "Reformulando seu comentário como um elogio à generosidade do rei",
+    "Pedindo desculpas e devolvendo a manga",
+    "Culpando o cortesão ciumento abertamente",
+    "Ignorando a pergunta do rei"
+   ]
+  },
+  {
+   "q": "O que a história ilustra sobre o engenho de Tenali Rama?",
+   "options": [
+    "Podia transformar uma acusação tensa em elogio e desarmar o conflito",
+    "Sempre o metia em problemas maiores",
+    "Era inútil contra cortesãos ciumentos",
+    "Só funcionava quando o rei estava ausente"
+   ]
+  }
+ ],
+ "fk-hi-05": [
+  {
+   "q": "O que tornava tão extraordinário o cervo que Sita viu?",
+   "options": [
+    "Seu corpo dourado e chifres cravejados de joias",
+    "Seu tamanho enorme e cor escura",
+    "Sua capacidade de falar",
+    "Seus olhos vermelhos e brilhantes"
+   ]
+  },
+  {
+   "q": "Quem era o cervo na verdade, e por que foi enviado?",
+   "options": [
+    "O demônio Maricha, enviado por Ravana para afastar Rama de Sita",
+    "Um espírito da floresta testando a paciência de Rama",
+    "Um cervo real que Sita criara desde o nascimento",
+    "Uma ilusão de Lakshmana para testar Sita"
+   ]
+  },
+  {
+   "q": "Por que Lakshmana finalmente deixou a cabana apesar de sua hesitação?",
+   "options": [
+    "Sita insistiu, angustiada com o grito que acreditava ser de Rama",
+    "Queria ver o cervo dourado ele mesmo",
+    "Rama o havia convocado diretamente",
+    "Suspeitava que Ravana já estava por perto"
+   ]
+  },
+  {
+   "q": "Qual foi a consequência final do truque do cervo dourado?",
+   "options": [
+    "Levou ao sequestro de Sita, preparando o terreno para a guerra entre Rama e Ravana",
+    "Reuniu Rama com seu irmão perdido",
+    "Revelou a verdadeira identidade de Ravana a Lakshmana",
+    "Fez Rama abandonar sua busca por Sita"
+   ]
+  }
+ ],
+ "fk-hi-06": [
+  {
+   "q": "Com quem Savitri escolheu se casar, e o que havia de incomum nele?",
+   "options": [
+    "Satyavan, um príncipe exilado que vivia como asceta na floresta com um destino oculto",
+    "Um comerciante rico que o pai dela havia arranjado",
+    "Um guerreiro de um reino rival",
+    "Um sábio que havia renunciado ao casamento por completo"
+   ]
+  },
+  {
+   "q": "O que Savitri fez à medida que se aproximava o dia fatídico da morte de Satyavan?",
+   "options": [
+    "Manteve um rigoroso voto de três noites sem sono nem descanso",
+    "Mandou Satyavan para um reino distante por segurança",
+    "Pediu a Narada que mudasse a profecia",
+    "Deu um grande banquete para toda a floresta"
+   ]
+  },
+  {
+   "q": "Como Savitri enganou Yama?",
+   "options": [
+    "Obteve a graça de ter cem filhos de Satyavan, o que o obrigou, por lógica, a devolver a vida dele",
+    "Lutou contra Yama em combate individual",
+    "Enganou-o para que adormecesse",
+    "Subornou-o com o tesouro real"
+   ]
+  },
+  {
+   "q": "Que tradição duradoura a história de Savitri inspira?",
+   "options": [
+    "O jejum de Vat Savitri observado por mulheres casadas em sua honra",
+    "Um festival anual de caça na floresta",
+    "Uma peregrinação ao palácio do rei Ashvapati",
+    "Uma proibição de cortar madeira no verão"
+   ]
+  }
+ ],
+ "fk-ind-01": [
+  {
+   "q": "Por que o cervo-rato queria atravessar o rio?",
+   "options": [
+    "Para comer fruta do outro lado",
+    "Para visitar parentes",
+    "Para escapar de uma tempestade",
+    "Para encontrar água para beber"
+   ]
+  },
+  {
+   "q": "Que truque o cervo-rato usou para atravessar o rio?",
+   "options": [
+    "Nadou rapidamente passando pelos crocodilos",
+    "Pediu aos crocodilos que se enfileirassem para que ele os contasse",
+    "Construiu uma jangada de madeira",
+    "Esperou até que os crocodilos adormecessem"
+   ]
+  },
+  {
+   "q": "Como os crocodilos se sentiram ao perceber que haviam sido enganados?",
+   "options": [
+    "Divertidos",
+    "Gratos",
+    "Furiosos",
+    "Indiferentes"
+   ]
+  },
+  {
+   "q": "O que o cervo-rato passa a simbolizar na história?",
+   "options": [
+    "Força física",
+    "A esperteza vencendo a força",
+    "Covardia",
+    "Crueldade"
+   ]
+  }
+ ],
+ "fk-ind-02": [
+  {
+   "q": "O que o gigante deu a Mbok Sirni?",
+   "options": [
+    "Um saco de ouro",
+    "Uma semente mágica de pepino",
+    "Um par de sapatos mágicos",
+    "Um pássaro falante"
+   ]
+  },
+  {
+   "q": "O que Mbok Sirni encontrou dentro do pepino dourado?",
+   "options": [
+    "Um menino",
+    "Um baú de joias",
+    "Uma menina",
+    "Uma espada mágica"
+   ]
+  },
+  {
+   "q": "O que o eremita deu a Timun Mas para escapar do gigante?",
+   "options": [
+    "Quatro trouxinhas mágicas: sementes de pepino, uma agulha, sal e pasta de camarão",
+    "Um manto mágico de invisibilidade",
+    "Um cavalo voador",
+    "Um mapa para uma caverna escondida"
+   ]
+  },
+  {
+   "q": "O que aconteceu ao gigante no final?",
+   "options": [
+    "Tornou-se amigo de Timun Mas",
+    "Foi engolido por lama fervente",
+    "Transformou-se em pedra",
+    "Fugiu para outro reino"
+   ]
+  }
+ ],
+ "fk-ind-03": [
+  {
+   "q": "Por que a mãe de Malin teve de trabalhar duro sozinha?",
+   "options": [
+    "Malin se recusava a ajudá-la",
+    "O pai dele havia morrido no mar",
+    "Ela queria comprar uma casa",
+    "Estava economizando para uma viagem"
+   ]
+  },
+  {
+   "q": "No que Malin havia se tornado quando seu navio voltou ao povoado?",
+   "options": [
+    "Um pescador pobre como o pai",
+    "Um comerciante rico casado com uma nobre",
+    "Um capitão de navio sem família",
+    "Um contador de histórias famoso"
+   ]
+  },
+  {
+   "q": "Como Malin reagiu quando sua mãe foi abraçá-lo?",
+   "options": [
+    "Apresentou-a alegremente à esposa",
+    "Negou que ela fosse sua mãe",
+    "Convidou-a a bordo do navio",
+    "Chorou de alegria"
+   ]
+  },
+  {
+   "q": "O que aconteceu a Malin como resultado da maldição da mãe?",
+   "options": [
+    "Ficou rico além da medida",
+    "Transformou-se em pedra numa tempestade",
+    "Foi banido do povoado",
+    "Perdeu a memória"
+   ]
+  }
+ ],
+ "fk-ind-04": [
+  {
+   "q": "Como Bawang Putih era tratada na própria casa?",
+   "options": [
+    "Como uma filha única e amada",
+    "Como uma criada",
+    "Como realeza",
+    "Foi mandada estudar longe"
+   ]
+  },
+  {
+   "q": "Que condição a velha impôs para devolver o pano?",
+   "options": [
+    "Bawang Putih tinha que encontrar um anel perdido",
+    "Bawang Putih tinha que ajudar nas tarefas domésticas por vários dias",
+    "Bawang Putih tinha que cantar uma canção",
+    "Bawang Putih tinha que pagar com ouro"
+   ]
+  },
+  {
+   "q": "Por que Bawang Merah foi ao mesmo rio?",
+   "options": [
+    "Para lavar suas próprias roupas",
+    "Para encontrar a irmã",
+    "Para imitar Bawang Putih e ganhar uma recompensa parecida",
+    "Para buscar água potável"
+   ]
+  },
+  {
+   "q": "O que havia dentro da grande abóbora que Bawang Merah escolheu?",
+   "options": [
+    "Ouro e joias",
+    "Fruta fresca",
+    "Cobras e criaturas venenosas",
+    "Nada"
+   ]
+  }
+ ],
+ "fk-ind-05": [
+  {
+   "q": "Quem era Tumang, na verdade?",
+   "options": [
+    "Um cão comum",
+    "Um deus amaldiçoado a tomar forma canina",
+    "O irmão de Dayang Sumbi",
+    "Um rei vizinho"
+   ]
+  },
+  {
+   "q": "Por que Sangkuriang e Dayang Sumbi concordaram em se casar?",
+   "options": [
+    "Ambos sabiam que eram parentes e casaram por dever",
+    "Sangkuriang a reconheceu, mas ela não o reconheceu",
+    "Nenhum dos dois reconheceu o outro como mãe e filho",
+    "Um rei arranjou o casamento"
+   ]
+  },
+  {
+   "q": "Como Dayang Sumbi impediu que os espíritos terminassem o barco?",
+   "options": [
+    "Implorou diretamente a Sangkuriang que parasse",
+    "Criou uma falsa alvorada com tochas e o barulho de socar arroz",
+    "Escondeu o barco durante a noite",
+    "Pediu aos deuses que enviassem chuva"
+   ]
+  },
+  {
+   "q": "No que o barco virado se transformou?",
+   "options": [
+    "Um rio",
+    "Uma caverna",
+    "Uma montanha, o Tangkuban Perahu",
+    "Um lago"
+   ]
+  }
+ ],
+ "fk-ind-06": [
+  {
+   "q": "Por que Bandung Bondowoso se apaixonou por Roro Jonggrang?",
+   "options": [
+    "Ela era filha do rei que ele havia derrotado, e famosa por sua beleza",
+    "Ela o ajudou a vencer a batalha",
+    "Era uma princesa estrangeira visitando a corte",
+    "Eram amigos de infância"
+   ]
+  },
+  {
+   "q": "O que aconteceu quando Bandung Bondowoso desceu ao poço?",
+   "options": [
+    "Encontrou um tesouro",
+    "Os seguidores de Roro Jonggrang o enterraram vivo, mas ele escapou",
+    "Afogou-se instantaneamente",
+    "Recusou-se a descer"
+   ]
+  },
+  {
+   "q": "Como Roro Jonggrang enganou os espíritos para que parassem o trabalho?",
+   "options": [
+    "Ameaçou-os com uma espada",
+    "Criou uma falsa alvorada com o socar de arroz e palha queimando",
+    "Subornou-os com ouro",
+    "Pediu a Bandung Bondowoso que os chamasse de volta"
+   ]
+  },
+  {
+   "q": "O que finalmente aconteceu a Roro Jonggrang?",
+   "options": [
+    "Casou-se feliz com Bandung Bondowoso",
+    "Foi amaldiçoada e transformada em estátua de pedra",
+    "Fugiu para outro reino",
+    "Tornou-se rainha de Prambanan"
+   ]
+  }
+ ],
+ "fk-it-01": [
+  {
+   "q": "O que Amúlio faz quando sabe que Reia Sílvia teve gêmeos?",
+   "options": [
+    "Ordena que os bebês sejam mortos",
+    "Cria-os ele mesmo",
+    "Torna-os seus herdeiros",
+    "Exila Reia Sílvia"
+   ]
+  },
+  {
+   "q": "O que acontece com o cesto com os gêmeos?",
+   "options": [
+    "Afunda no rio",
+    "Flutua pelo Tibre e chega à margem",
+    "Um pescador o encontra imediatamente",
+    "É destruído pela correnteza"
+   ]
+  },
+  {
+   "q": "Quem cria Rômulo e Remo depois da loba?",
+   "options": [
+    "O rei Amúlio",
+    "Um pastor chamado Fáustulo e sua esposa",
+    "O próprio Numitor",
+    "Sacerdotes de um templo"
+   ]
+  },
+  {
+   "q": "Como a cidade de Roma acaba sendo fundada?",
+   "options": [
+    "Os irmãos constroem a cidade juntos, pacificamente",
+    "Numitor decide onde construí-la",
+    "Remo zomba do muro de Rômulo, Rômulo o mata e depois funda Roma",
+    "Remo se torna rei em vez de Rômulo"
+   ]
+  }
+ ],
+ "fk-it-02": [
+  {
+   "q": "O que Pinóquio faz em vez de ir à escola?",
+   "options": [
+    "Vai ver Gepeto",
+    "Foge para o bosque",
+    "Vai trabalhar",
+    "Fica em casa"
+   ]
+  },
+  {
+   "q": "Que mentira Pinóquio conta à Fada?",
+   "options": [
+    "Que perdeu as moedas jogando",
+    "Que Gepeto ficou com o dinheiro dele",
+    "Que dois homens maus roubaram suas moedas de ouro",
+    "Que nunca teve moedas"
+   ]
+  },
+  {
+   "q": "O que acontece ao nariz de Pinóquio enquanto ele mente?",
+   "options": [
+    "Fica azul",
+    "Cresce tanto que ele não consegue sair pela porta",
+    "Cai",
+    "Nada acontece"
+   ]
+  },
+  {
+   "q": "Como a história se resolve, e que lição Pinóquio aprende?",
+   "options": [
+    "A Fada corta o nariz dele",
+    "O nariz de Pinóquio fica comprido para sempre",
+    "Gepeto conserta o nariz dele com ferramentas",
+    "Pica-paus comem o nariz comprido e ele aprende a não mentir"
+   ]
+  }
+ ],
+ "fk-it-03": [
+  {
+   "q": "Que tipo de pessoa é Giufà, segundo a história?",
+   "options": [
+    "Um trapaceiro astuto que engana a todos",
+    "Um homem simples que leva instruções ao pé da letra",
+    "Um comerciante rico",
+    "Um professor rigoroso"
+   ]
+  },
+  {
+   "q": "O que Giufà pensa ter acontecido quando olha para o poço?",
+   "options": [
+    "Pensa que há um tesouro escondido ali",
+    "Pensa que um monstro vive ali",
+    "Pensa que a lua caiu no poço",
+    "Pensa que o poço está seco"
+   ]
+  },
+  {
+   "q": "O que Giufà faz para tentar salvar a lua?",
+   "options": [
+    "Pula ele mesmo no poço",
+    "Pede ajuda ao padre",
+    "Constrói uma escada para descer",
+    "Desce uma corda com um gancho no poço"
+   ]
+  },
+  {
+   "q": "Como a história termina, e o que \"um novo Giufà\" passa a significar no povoado?",
+   "options": [
+    "Os moradores punem Giufà por perder o tempo deles",
+    "Giufà se torna prefeito do povoado",
+    "Giufà acredita que salvou a lua, e a frase vira piada para quem se gaba de um feito impossível",
+    "A lua realmente desaparece para sempre"
+   ]
+  }
+ ],
+ "fk-it-04": [
+  {
+   "q": "O que a Befana faz, segundo o início da lenda?",
+   "options": [
+    "Anda de trenó puxado por renas",
+    "Voa sobre os telhados numa vassoura entregando presentes às crianças",
+    "Vive nas chaminés de todas as casas",
+    "Só visita crianças em Roma"
+   ]
+  },
+  {
+   "q": "Por que a velha se recusou a se juntar aos Três Reis Magos?",
+   "options": [
+    "Não acreditou na história deles sobre a estrela",
+    "Tinha medo de viajar à noite",
+    "Disse que tinha afazeres domésticos demais",
+    "Não sabia o caminho"
+   ]
+  },
+  {
+   "q": "O que aconteceu depois que a velha mudou de ideia e tentou seguir os Reis Magos?",
+   "options": [
+    "Alcançou-os bem a tempo",
+    "Encontrou outro bebê para dar presentes",
+    "Voltou para casa imediatamente",
+    "Nunca conseguiu encontrar o caminho certo até Belém"
+   ]
+  },
+  {
+   "q": "Como a lenda explica a tradição da meia e do carvão?",
+   "options": [
+    "Ela deixa carvão para todas as crianças como lembrete de seu erro",
+    "A tradição da meia não tem nada a ver com ela",
+    "A Befana deixa doces para as crianças boas e carvão para as levadas",
+    "Ela só dá presentes a crianças com o nome dos Reis Magos"
+   ]
+  }
+ ],
+ "fk-it-05": [
+  {
+   "q": "O que aterrorizava a cidade de Gúbbio no início da história?",
+   "options": [
+    "Um bando de ladrões escondidos no bosque",
+    "Um lobo feroz que atacava o gado e até pessoas",
+    "Uma peste se espalhando pela cidade",
+    "Uma enchente de um rio próximo"
+   ]
+  },
+  {
+   "q": "O que Francisco fez quando o lobo avançou contra ele?",
+   "options": [
+    "Correu de volta para as muralhas da cidade",
+    "Atirou uma lança no lobo",
+    "Fez o sinal da cruz e ordenou que parasse em nome de Deus",
+    "Ofereceu comida ao lobo imediatamente"
+   ]
+  },
+  {
+   "q": "Qual foi o pacto que Francisco propôs entre o lobo e os moradores?",
+   "options": [
+    "O lobo deixaria a região para sempre",
+    "Os moradores construiriam um abrigo para o lobo",
+    "O lobo vigiaria a cidade à noite",
+    "O lobo pararia de atacar em troca de ser alimentado todos os dias"
+   ]
+  },
+  {
+   "q": "Como termina a lenda do lobo de Gúbbio?",
+   "options": [
+    "O lobo acabou atacando novamente e foi morto",
+    "O lobo voltou à floresta depois de um ano",
+    "O lobo viveu em paz entre os moradores por mais dois anos e foi pranteado e enterrado quando morreu",
+    "O lobo foi levado a Assis para viver com Francisco"
+   ]
+  }
+ ],
+ "fk-it-06": [
+  {
+   "q": "O que está acontecendo em Veneza no início da lenda?",
+   "options": [
+    "Uma frota de guerra ataca a lagoa",
+    "Uma tempestade violenta ameaça arrasar a cidade",
+    "Um grande incêndio se espalha pela cidade",
+    "Uma peste está matando os habitantes"
+   ]
+  },
+  {
+   "q": "O que o pescador faz depois de recolher o primeiro estranho?",
+   "options": [
+    "Recusa-se a levar mais passageiros",
+    "Volta imediatamente para a costa",
+    "Leva mais dois estranhos a bordo e os três rumam para o mar aberto",
+    "É jogado ao mar pelo estranho"
+   ]
+  },
+  {
+   "q": "O que São Marcos dá ao pescador, e por quê?",
+   "options": [
+    "Uma soma em ouro como pagamento pela viagem",
+    "Um mapa mostrando de onde vinham os demônios",
+    "Um anel, como prova para que o Doge acredite em seu relato",
+    "Nada, pois os santos simplesmente desaparecem"
+   ]
+  },
+  {
+   "q": "Como a história do pescador é finalmente confirmada?",
+   "options": [
+    "O Doge simplesmente escolhe acreditar nele sem provas",
+    "Outras testemunhas se apresentam para confirmar a tempestade",
+    "O pescador não consegue provar sua história de forma alguma",
+    "Descobre-se que falta o anel no tesouro da basílica, coincidindo com o que lhe foi dado"
+   ]
+  }
+ ],
+ "fk-ja-01": [
+  {
+   "q": "O que a velha encontrou enquanto lavava roupa no rio?",
+   "options": [
+    "Um pêssego grande",
+    "Um peixinho",
+    "Uma caixa de madeira",
+    "Uma moeda de ouro"
+   ]
+  },
+  {
+   "q": "Que animais haviam se juntado a Momotaro como companheiros até este ponto da história?",
+   "options": [
+    "Um cão, um gato e um pássaro",
+    "Um tigre, um macaco e um grou",
+    "Um cão, um macaco e um faisão",
+    "Um cão, um urso e uma raposa"
+   ]
+  },
+  {
+   "q": "Como Momotaro derrotou os ogros?",
+   "options": [
+    "Enganou os ogros para que deixassem a ilha",
+    "Lutou contra o chefe dos ogros com seus três companheiros animais e venceu",
+    "Comprou o tesouro de volta dos ogros",
+    "Pediu aos moradores que lutassem por ele"
+   ]
+  },
+  {
+   "q": "O que aconteceu no final da história?",
+   "options": [
+    "Os ogros capturaram Momotaro",
+    "O pêssego se transformou em ouro",
+    "Momotaro ficou na ilha para sempre",
+    "Momotaro e seus companheiros trouxeram o tesouro para casa e o povoado viveu em paz"
+   ]
+  }
+ ],
+ "fk-ja-02": [
+  {
+   "q": "Por que a tartaruga levou Taro ao Palácio do Dragão?",
+   "options": [
+    "Para puni-lo por pescar demais",
+    "Para agradecer por ter salvado sua vida",
+    "Porque estava perdida e precisava de ajuda",
+    "Para trocá-lo por um tesouro"
+   ]
+  },
+  {
+   "q": "O que Otohime deu a Taro quando ele decidiu partir?",
+   "options": [
+    "Uma caixa enfeitada que ele nunca deveria abrir",
+    "Uma rede de pesca mágica",
+    "Um mapa de volta ao povoado",
+    "Um colar de pérolas"
+   ]
+  },
+  {
+   "q": "O que realmente havia acontecido durante os dias que Taro passou no Palácio do Dragão?",
+   "options": [
+    "A família dele havia se mudado",
+    "O povoado havia sido destruído por uma tempestade",
+    "Nada havia mudado",
+    "Centenas de anos haviam se passado em seu povoado natal"
+   ]
+  },
+  {
+   "q": "O que aconteceu quando Taro abriu a caixa?",
+   "options": [
+    "Moedas de ouro se derramaram",
+    "A tartaruga apareceu de novo",
+    "Saiu fumaça branca e ele se transformou instantaneamente num velho",
+    "Nada aconteceu"
+   ]
+  }
+ ],
+ "fk-ja-03": [
+  {
+   "q": "O que começou a acontecer toda vez que o velho cortava bambu depois de encontrar a menina?",
+   "options": [
+    "O bambu virava prata",
+    "Os caules começaram a brilhar",
+    "Encontrava-se ouro dentro dos caules",
+    "Nada de incomum acontecia"
+   ]
+  },
+  {
+   "q": "Que condição Kaguya-hime impôs a qualquer pretendente que desejasse se casar com ela?",
+   "options": [
+    "Tinha que derrotá-la num concurso de poesia",
+    "Tinha que ser aprovado pelo Imperador",
+    "Tinha que esperar dez anos",
+    "Tinha que trazer um tesouro quase impossível de obter"
+   ]
+  },
+  {
+   "q": "O que Kaguya-hime finalmente confessou aos pais preocupados?",
+   "options": [
+    "Que era da lua e logo teria que voltar para lá",
+    "Que estava secretamente apaixonada pelo Imperador",
+    "Que afinal desejava se casar com um pretendente",
+    "Que estava doente e morrendo"
+   ]
+  },
+  {
+   "q": "Segundo o conto, por que se diz que o monte Fuji recebeu esse nome?",
+   "options": [
+    "Porque Kaguya-hime nasceu ali",
+    "Porque o Imperador mandou queimar o elixir da imortalidade em seu cume",
+    "Porque o cortador de bambu vivia na montanha",
+    "Porque os mensageiros da lua pousaram ali"
+   ]
+  }
+ ],
+ "fk-ja-04": [
+  {
+   "q": "O que a misteriosa mulher pediu ao homem na noite em que chegou?",
+   "options": [
+    "Para se casar com ela imediatamente",
+    "Para lhe dar comida e dinheiro",
+    "Para ajudá-la a encontrar o grou",
+    "Para deixá-la ficar porque havia se perdido"
+   ]
+  },
+  {
+   "q": "Que condição a esposa impôs antes de começar a tecer?",
+   "options": [
+    "Que ele lhe comprasse um tear novo",
+    "Que ele nunca olhasse para dentro do quarto enquanto ela tecia",
+    "Que ele nunca contasse a ninguém sobre o tecido",
+    "Que ele a ajudasse a tecer"
+   ]
+  },
+  {
+   "q": "O que o homem descobriu ser a verdadeira identidade da esposa?",
+   "options": [
+    "Um espírito raposa disfarçado",
+    "Uma tecelã de um povoado vizinho",
+    "O grou que ele havia salvado de uma armadilha",
+    "O fantasma de sua falecida mãe"
+   ]
+  },
+  {
+   "q": "Como a história termina?",
+   "options": [
+    "O grou voa para longe e o homem fica sozinho com seu arrependimento",
+    "O homem e o grou vivem felizes juntos para sempre",
+    "O homem também se transforma em grou",
+    "Os moradores punem o homem"
+   ]
+  }
+ ],
+ "fk-ja-05": [
+  {
+   "q": "Qual era a rotina diária de Kintaro com os ursos?",
+   "options": [
+    "Lutar com eles",
+    "Correr com eles montanha acima",
+    "Alimentá-los com peixe",
+    "Ensinar-lhes truques"
+   ]
+  },
+  {
+   "q": "Por que Yorimitsu procurou a mãe de Kintaro?",
+   "options": [
+    "Para comprar as terras da família",
+    "Para avisá-la de que Kintaro era perigoso demais",
+    "Para oferecer-lhe um emprego na capital",
+    "Para pedir que ele levasse o filho dela à capital como vassalo"
+   ]
+  },
+  {
+   "q": "Como os homens de Yorimitsu derrotaram o ogro Shuten-doji, segundo a lenda?",
+   "options": [
+    "Desafiaram-no para um combate individual",
+    "Embebedaram-no com saquê e o atacaram enquanto estava indefeso",
+    "Prenderam-no numa caverna",
+    "Enganaram-no com um espelho mágico"
+   ]
+  },
+  {
+   "q": "O que Kintaro simboliza no Japão hoje?",
+   "options": [
+    "Boa sorte nos negócios",
+    "Proteção contra ogros",
+    "Crescimento saudável para meninos, homenageado com bonecos no Festival dos Meninos",
+    "Sucesso no tiro com arco"
+   ]
+  }
+ ],
+ "fk-ja-06": [
+  {
+   "q": "Que ambição Issun-boshi secretamente mantinha apesar da zombaria alheia?",
+   "options": [
+    "O desejo de crescer por magia",
+    "O anseio de um dia fazer nome na capital",
+    "O desejo de se tornar fazendeiro",
+    "A esperança de encontrar seus pais biológicos"
+   ]
+  },
+  {
+   "q": "Que papel Issun-boshi passou a ocupar na casa do nobre?",
+   "options": [
+    "Chefe dos guardas da casa",
+    "Cozinheiro na cozinha",
+    "Um assistente de confiança da jovem senhora da casa",
+    "Um mensageiro entre povoados"
+   ]
+  },
+  {
+   "q": "Como Issun-boshi escapou depois de ser engolido pelo ogro?",
+   "options": [
+    "Picou o interior da barriga do ogro com sua agulha até ele o cuspir",
+    "Abriu caminho para fora com uma espada",
+    "Encolheu-se e escapuliu",
+    "Foi resgatado pela senhora"
+   ]
+  },
+  {
+   "q": "O que o martelo da sorte fez por Issun-boshi?",
+   "options": [
+    "Tornou-o invisível",
+    "Deu-lhe grande riqueza",
+    "Transformou-o num ogro",
+    "Fez seu corpo crescer até a estatura humana normal"
+   ]
+  }
+ ],
+ "fk-ko-01": [
+  {
+   "q": "O que aconteceu depois que os pais morreram?",
+   "options": [
+    "Nolbu dividiu a propriedade igualmente",
+    "Nolbu ficou com toda a propriedade e expulsou Heungbu",
+    "Heungbu ficou rico",
+    "Os irmãos se mudaram juntos"
+   ]
+  },
+  {
+   "q": "O que a andorinha trouxe de volta a Heungbu na primavera seguinte?",
+   "options": [
+    "Um saco de arroz",
+    "Uma pequena semente",
+    "Uma carta",
+    "Um cesto de fruta"
+   ]
+  },
+  {
+   "q": "O que Nolbu fez ao saber que Heungbu havia ficado rico?",
+   "options": [
+    "Parabenizou Heungbu",
+    "Quebrou deliberadamente a perna de uma andorinha",
+    "Mudou-se para o sul",
+    "Deu sua riqueza a Heungbu"
+   ]
+  },
+  {
+   "q": "O que saiu da cabaça de Nolbu?",
+   "options": [
+    "Ouro e tesouro",
+    "Duendes que o puniram",
+    "Mais andorinhas",
+    "Nada"
+   ]
+  }
+ ],
+ "fk-ko-02": [
+  {
+   "q": "O que o tigre pediu à mãe na trilha da montanha?",
+   "options": [
+    "Suas roupas",
+    "Um bolinho de arroz",
+    "Direções para casa",
+    "Dinheiro"
+   ]
+  },
+  {
+   "q": "Como os irmãos perceberam que a visitante não era a mãe deles?",
+   "options": [
+    "Viram sua cauda",
+    "Sua mão estava coberta de pelo",
+    "Falava uma língua estrangeira",
+    "Cheirava a tigre"
+   ]
+  },
+  {
+   "q": "O que aconteceu com a corda do tigre?",
+   "options": [
+    "Era feita de ouro",
+    "Estava podre e arrebentou",
+    "Transformou-se numa cobra",
+    "Era curta demais para alcançar"
+   ]
+  },
+  {
+   "q": "No que o irmão e a irmã se transformaram?",
+   "options": [
+    "Estrelas",
+    "O sol e a lua",
+    "Pássaros",
+    "Montanhas"
+   ]
+  }
+ ],
+ "fk-ko-03": [
+  {
+   "q": "Que tarefa impossível a madrasta deu a Kongjwi?",
+   "options": [
+    "Varrer o povoado inteiro",
+    "Encher com água um jarro com o fundo quebrado",
+    "Costurar cem vestidos",
+    "Capturar um boi selvagem"
+   ]
+  },
+  {
+   "q": "Quem ajudou Kongjwi a capinar o campo pedregoso?",
+   "options": [
+    "Um sapo",
+    "Seu pai",
+    "Um boi negro vindo do céu",
+    "Patjwi"
+   ]
+  },
+  {
+   "q": "O que Kongjwi perdeu ao atravessar o riacho?",
+   "options": [
+    "Seu vestido",
+    "Um de seus sapatos floridos",
+    "Um cesto de bolinhos de arroz",
+    "Seu grampo de cabelo"
+   ]
+  },
+  {
+   "q": "Como o magistrado escolheu sua noiva?",
+   "options": [
+    "Realizando um concurso de força",
+    "Encontrando quem tinha o pé que cabia no sapato perdido",
+    "Perguntando aos anciãos do povoado",
+    "Casando-se com a mulher mais rica"
+   ]
+  }
+ ],
+ "fk-ko-04": [
+  {
+   "q": "O que aconteceu ao pai de Shim Cheong antes de ele encontrar o monge?",
+   "options": [
+    "Perdeu o emprego",
+    "Caiu num riacho",
+    "Foi roubado",
+    "Perdeu-se nas montanhas"
+   ]
+  },
+  {
+   "q": "Por que Shim Cheong procurou os marinheiros?",
+   "options": [
+    "Para pedir-lhes emprego",
+    "Para se oferecer como sacrifício em troca de arroz para o pai",
+    "Para vender seus bordados",
+    "Para encontrar passagem a outro povoado"
+   ]
+  },
+  {
+   "q": "O que o Rei Dragão fez com Shim Cheong?",
+   "options": [
+    "Manteve-a presa para sempre",
+    "Mandou-a de volta à superfície dentro de uma flor de lótus",
+    "Transformou-a em peixe",
+    "Puniu-a por mentir"
+   ]
+  },
+  {
+   "q": "Como o pai de Shim Cheong recuperou a visão?",
+   "options": [
+    "Um médico o curou",
+    "Bebeu uma poção mágica",
+    "Encheu-se de alegria ao finalmente reencontrar a filha",
+    "O Rei Dragão a restaurou"
+   ]
+  }
+ ],
+ "fk-ko-05": [
+  {
+   "q": "Que condição o cervo impôs para devolver o manto de penas da fada?",
+   "options": [
+    "Não devolvê-lo até que estivessem casados por dez anos",
+    "Não devolvê-lo até que a fada tivesse dado à luz três filhos",
+    "Não devolvê-lo até o inverno chegar",
+    "Não devolvê-lo até que o próprio cervo dissesse"
+   ]
+  },
+  {
+   "q": "Por que a fada finalmente recuperou seu manto de penas?",
+   "options": [
+    "Encontrou-o sozinha enquanto limpava",
+    "O cervo o devolveu a ela",
+    "O lenhador cedeu às súplicas dela e mostrou-o",
+    "As crianças o encontraram e deram a ela"
+   ]
+  },
+  {
+   "q": "Como o lenhador chegou ao céu?",
+   "options": [
+    "Fez crescer asas ele mesmo",
+    "Subiu num balde que as fadas usavam para tirar água",
+    "Escalou uma árvore enorme",
+    "Pediu ajuda aos caçadores"
+   ]
+  },
+  {
+   "q": "Segundo a história, o que acontece numa versão do final do conto?",
+   "options": [
+    "O lenhador fica no céu para sempre sem incidentes",
+    "O lenhador quebra uma regra ao tentar visitar a mãe e não consegue voltar ao céu",
+    "A fada volta à terra para viver com ele",
+    "O cervo se torna humano"
+   ]
+  }
+ ],
+ "fk-ko-06": [
+  {
+   "q": "O que Mong-ryong prometeu a Chunhyang antes de partir para Hanyang?",
+   "options": [
+    "Enviar-lhe dinheiro todo mês",
+    "Passar no exame estatal e voltar para se casar com ela de forma apropriada",
+    "Levá-la a Hanyang imediatamente",
+    "Esquecer os estudos"
+   ]
+  },
+  {
+   "q": "Como Chunhyang respondeu à exigência de Byun Hak-do de que o servisse?",
+   "options": [
+    "Concordou por medo",
+    "Fugiu de Namwon",
+    "Recusou-se, dizendo que já pertencia a um marido",
+    "Subornou-o para que a deixasse em paz"
+   ]
+  },
+  {
+   "q": "Que cargo Mong-ryong conquistou depois de passar no exame estatal?",
+   "options": [
+    "Magistrado local de Namwon",
+    "Inspetor real secreto",
+    "Poeta da corte",
+    "Guarda do palácio"
+   ]
+  },
+  {
+   "q": "Que título o rei deu a Chunhyang por sua fidelidade?",
+   "options": [
+    "Rainha de Namwon",
+    "Dama da Castidade",
+    "Inspetora Real",
+    "Gisaeng aposentada"
+   ]
+  }
+ ],
+ "fk-la-01": [
+  {
+   "q": "Por que Amúlio deixou os gêmeos no rio?",
+   "options": [
+    "Porque tinha medo deles",
+    "Porque os amava",
+    "Porque um sacerdote ordenou",
+    "Porque os meninos estavam doentes"
+   ]
+  },
+  {
+   "q": "Quem encontrou e criou os meninos depois da loba?",
+   "options": [
+    "Um pastor chamado Fáustulo",
+    "Um rei",
+    "Um sacerdote",
+    "Um soldado"
+   ]
+  },
+  {
+   "q": "Por que os irmãos discutiram antes de fundar a cidade?",
+   "options": [
+    "Discordavam sobre onde construí-la",
+    "Discordavam sobre quem era a mãe deles",
+    "Brigaram por causa da loba",
+    "Discutiram sobre o avô"
+   ]
+  },
+  {
+   "q": "O que aconteceu entre os irmãos?",
+   "options": [
+    "Rômulo matou Remo com raiva",
+    "Remo matou Rômulo",
+    "Tornaram-se reis conjuntos",
+    "Deixaram a cidade juntos"
+   ]
+  }
+ ],
+ "fk-la-02": [
+  {
+   "q": "Por que Androcles se escondeu numa caverna?",
+   "options": [
+    "Estava fugindo do senhor",
+    "Estava caçando animais",
+    "Estava perdido numa tempestade",
+    "Estava procurando tesouro"
+   ]
+  },
+  {
+   "q": "O que Androcles fez pelo leão?",
+   "options": [
+    "Removeu um espinho da pata dele",
+    "Deu-lhe comida",
+    "Construiu-lhe uma toca",
+    "Ensinou-lhe truques"
+   ]
+  },
+  {
+   "q": "Por que Androcles foi enviado à arena?",
+   "options": [
+    "Para ser devorado por um leão selvagem como punição",
+    "Para lutar contra gladiadores",
+    "Para domar o leão diante da plateia",
+    "Para ser libertado pelo imperador"
+   ]
+  },
+  {
+   "q": "Por que o leão não atacou Androcles?",
+   "options": [
+    "O leão o reconheceu como o amigo que uma vez o havia ajudado",
+    "O leão estava velho demais para atacar",
+    "O leão estava dormindo",
+    "Os treinadores haviam acalmado o leão"
+   ]
+  }
+ ],
+ "fk-la-03": [
+  {
+   "q": "O que o corvo segurava no bico?",
+   "options": [
+    "Um pedaço de queijo que havia roubado",
+    "Um peixe",
+    "Um anel de ouro",
+    "Um ninho de ovos"
+   ]
+  },
+  {
+   "q": "O que a raposa disse ao corvo?",
+   "options": [
+    "Que sua voz cantante provavelmente era tão bela quanto suas penas",
+    "Que suas penas eram feias",
+    "Que ele deveria lhe dar o queijo diretamente",
+    "Que raposas e corvos deveriam ser amigos"
+   ]
+  },
+  {
+   "q": "O que aconteceu com o queijo?",
+   "options": [
+    "A raposa o pegou e comeu depois que o corvo o deixou cair",
+    "O corvo o comeu antes de a raposa chegar",
+    "O queijo estava alto demais para a raposa alcançar",
+    "Um cão o roubou de ambos"
+   ]
+  },
+  {
+   "q": "Qual é a moral da fábula?",
+   "options": [
+    "Não confie em bajuladores, que geralmente querem algo de você",
+    "Os pássaros não devem cantar perto de raposas",
+    "O queijo deve sempre ser escondido em árvores",
+    "As raposas são sempre perigosas para os corvos"
+   ]
+  }
+ ],
+ "fk-la-04": [
+  {
+   "q": "Por que Lars Porsena marchou contra Roma?",
+   "options": [
+    "Para restaurar o rei exilado ao poder",
+    "Para conquistar novas terras agrícolas",
+    "Para punir Horácio pessoalmente",
+    "Para cobrar um tributo não pago"
+   ]
+  },
+  {
+   "q": "O que Horácio propôs fazer?",
+   "options": [
+    "Defender a ponte com dois companheiros enquanto os romanos a destruíam",
+    "Render a cidade para salvar vidas",
+    "Negociar a paz com Porsena",
+    "Queimar a ponte sozinho"
+   ]
+  },
+  {
+   "q": "O que Horácio fez quando a ponte estava quase destruída?",
+   "options": [
+    "Mandou os companheiros de volta em segurança e defendeu sozinho a extremidade distante",
+    "Recuou imediatamente com os companheiros",
+    "Reconstruiu a ponte ele mesmo",
+    "Pediu reforços da cidade"
+   ]
+  },
+  {
+   "q": "Como Horácio escapou depois que a ponte desabou?",
+   "options": [
+    "Orou ao deus do rio e atravessou a nado com a armadura",
+    "Foi resgatado por um barco que passava",
+    "Correu pela margem até um vau",
+    "Rendeu-se aos etruscos"
+   ]
+  }
+ ],
+ "fk-la-05": [
+  {
+   "q": "O que significa o nome Cincinato, e o que ele fazia antes de ficar famoso?",
+   "options": [
+    "Significa \"cacheado\", e ele cultivava um pequeno pedaço de terra",
+    "Significa \"o forte\", e ele liderava o exército",
+    "Significa \"o sábio\", e ele servia no senado",
+    "Significa \"o exilado\", e ele vivia no exterior"
+   ]
+  },
+  {
+   "q": "Por que o Senado decidiu nomear um ditador?",
+   "options": [
+    "Porque um cônsul e seu exército estavam cercados pelo inimigo e a situação parecia desesperadora",
+    "Porque os cônsules haviam sido assassinados",
+    "Porque uma peste havia atingido a cidade",
+    "Porque o povo comum estava se rebelando"
+   ]
+  },
+  {
+   "q": "O que Cincinato fez assim que chegou a Roma?",
+   "options": [
+    "Convocou de imediato todos os cidadãos mais jovens às armas",
+    "Realizou um desfile triunfal",
+    "Executou o cônsul anterior",
+    "Construiu novas fortificações"
+   ]
+  },
+  {
+   "q": "O que Cincinato fez depois de vencer a guerra?",
+   "options": [
+    "Abriu mão do poder voluntariamente, bem antes do que a lei permitia, e voltou à sua fazenda",
+    "Manteve o poder pelos seis meses inteiros e depois se candidatou a cônsul",
+    "Declarou-se rei de Roma",
+    "Exilou os equos derrotados da Itália"
+   ]
+  }
+ ],
+ "fk-la-06": [
+  {
+   "q": "O que Júpiter e Mercúrio faziam, disfarçados de mortais?",
+   "options": [
+    "Buscavam hospitalidade entre o povo da Frígia, sendo recusados por todos",
+    "Testavam a força dos guerreiros locais",
+    "Procuravam um templo perdido",
+    "Cobravam impostos dos aldeões"
+   ]
+  },
+  {
+   "q": "O que Baúcis e Filêmon fizeram por seus convidados, mesmo sem saber quem eram?",
+   "options": [
+    "Ofereceram tudo o que tinham, alegremente, embora fosse comida humilde",
+    "Recusaram-se a deixar estranhos entrarem em casa",
+    "Mandaram-nos a um vizinho mais rico",
+    "Pediram pagamento adiantado aos estranhos"
+   ]
+  },
+  {
+   "q": "Que prodígio fez o velho casal perceber que os convidados eram deuses?",
+   "options": [
+    "A tigela de vinho continuava se enchendo por mais que se servisse dela",
+    "A casa de repente ficou quente",
+    "O ganso deles começou a falar com eles",
+    "Uma estrela brilhante apareceu sobre o telhado"
+   ]
+  },
+  {
+   "q": "O que finalmente aconteceu a Baúcis e Filêmon?",
+   "options": [
+    "Quando a morte finalmente chegou, foram transformados juntos em duas árvores em vez de serem separados",
+    "Tornaram-se imortais e viveram para sempre no templo de mármore",
+    "Foram transformados em pedra pela enchente",
+    "Foram separados, um morrendo muito antes do outro"
+   ]
+  }
+ ],
+ "fk-nl-01": [
+  {
+   "q": "O que o capitão fez mesmo com a tripulação amedrontada?",
+   "options": [
+    "Fez o navio dar meia-volta",
+    "Continuou navegando mesmo assim",
+    "Pediu à tripulação que votasse",
+    "Ancorou o navio"
+   ]
+  },
+  {
+   "q": "Qual é o nome do navio do capitão na lenda?",
+   "options": [
+    "The Golden Hind",
+    "O Holandês Voador",
+    "A Estrela de Prata",
+    "O Fantasma do Mar"
+   ]
+  },
+  {
+   "q": "Sobre o que a lenda do Holandês Voador alerta as pessoas?",
+   "options": [
+    "Nunca navegar perto da África",
+    "Ser orgulhoso demais",
+    "Confiar em estranhos",
+    "Navegar à noite"
+   ]
+  },
+  {
+   "q": "Segundo a história, o que o Holandês Voador está sempre procurando?",
+   "options": [
+    "Tesouro",
+    "Sua tripulação perdida",
+    "Um porto seguro",
+    "Um novo capitão"
+   ]
+  }
+ ],
+ "fk-nl-02": [
+  {
+   "q": "Quem são as Mulheres Brancas, segundo a lenda?",
+   "options": [
+    "Espíritos de mulheres sábias do passado",
+    "Fantasmas de marinheiros perdidos",
+    "Fadas que guardam tesouro",
+    "Espíritos de fazendeiros"
+   ]
+  },
+  {
+   "q": "O que as Mulheres Brancas conseguiam fazer?",
+   "options": [
+    "Curar os doentes",
+    "Prever o futuro",
+    "Controlar o clima",
+    "Transformar-se em animais"
+   ]
+  },
+  {
+   "q": "Onde é possível visitar os túmulos hoje?",
+   "options": [
+    "Em províncias como Drenthe e Overijssel",
+    "Somente em Amsterdã",
+    "Somente na Bélgica",
+    "Não existem mais"
+   ]
+  },
+  {
+   "q": "Como a lenda continua viva hoje?",
+   "options": [
+    "Apenas por livros escolares",
+    "Por histórias que avós contam às crianças",
+    "Por um festival anual",
+    "Foi esquecida"
+   ]
+  }
+ ],
+ "fk-nl-03": [
+  {
+   "q": "O que a mulher ordenou que o capitão trouxesse de volta?",
+   "options": [
+    "Ouro e joias",
+    "A carga mais preciosa que ele pudesse encontrar",
+    "Um navio novo",
+    "Especiarias do Oriente"
+   ]
+  },
+  {
+   "q": "O que a mulher fez com o trigo que o capitão trouxe?",
+   "options": [
+    "Vendeu-o",
+    "Deu-o aos pobres",
+    "Mandou jogá-lo ao mar",
+    "Guardou-o para o inverno"
+   ]
+  },
+  {
+   "q": "O que a esposa do pescador encontrou dentro do peixe?",
+   "options": [
+    "Um mapa",
+    "O anel de ouro da comerciante",
+    "Uma carta",
+    "Um colar de pérolas"
+   ]
+  },
+  {
+   "q": "O que se diz que se formou onde o trigo afundou?",
+   "options": [
+    "Uma nova ilha",
+    "Um farol",
+    "Um banco de areia chamado Vrouwenzand",
+    "Um redemoinho"
+   ]
+  }
+ ],
+ "fk-nl-04": [
+  {
+   "q": "O que o rei mandou o urso Bruin fazer?",
+   "options": [
+    "Lutar contra Reinaldo",
+    "Trazer Reinaldo à corte",
+    "Vigiar a fortaleza de Reinaldo",
+    "Punir os fazendeiros"
+   ]
+  },
+  {
+   "q": "O que aconteceu a Bruin quando ele se libertou à força do tronco da árvore?",
+   "options": [
+    "Quebrou a perna",
+    "Perdeu a pele da cabeça e das patas",
+    "Caiu num rio",
+    "Foi capturado por fazendeiros"
+   ]
+  },
+  {
+   "q": "O que aconteceu ao gato Tibert?",
+   "options": [
+    "Capturou muitos ratos",
+    "Foi enviado a uma armadilha, mas escapou por pouco",
+    "Recusou-se a ir",
+    "Tornou-se amigo de Reinaldo"
+   ]
+  },
+  {
+   "q": "O que a história ensina, segundo o parágrafo final?",
+   "options": [
+    "Que a força sempre vence",
+    "Que os reis não devem confiar em ninguém",
+    "Que a astúcia muitas vezes consegue mais que a força bruta",
+    "Que os animais não são confiáveis"
+   ]
+  }
+ ],
+ "fk-nl-05": [
+  {
+   "q": "O que São Nicolau fez secretamente pelas filhas do homem pobre, segundo a tradição?",
+   "options": [
+    "Ele mesmo arranjou maridos para elas",
+    "Jogou moedas de ouro pela janela à noite",
+    "Deu-lhes uma casa",
+    "Escreveu ao rei em nome delas"
+   ]
+  },
+  {
+   "q": "Como os ajudantes de Sinterklaas são tradicionalmente chamados?",
+   "options": [
+    "Zwarte Pieten",
+    "De Wieven",
+    "De Kabouters",
+    "De Boeken"
+   ]
+  },
+  {
+   "q": "De onde vem o nome do Papai Noel americano, segundo o texto?",
+   "options": [
+    "De uma antiga palavra alemã",
+    "Da palavra holandesa Sinterklaas",
+    "De uma lenda espanhola",
+    "De um deus pré-cristão do inverno"
+   ]
+  },
+  {
+   "q": "Que ideia central da história o parágrafo final diz permanecer intocada?",
+   "options": [
+    "Que as crianças devem sempre ser obedientes",
+    "Que a generosidade dada em segredo é a forma mais bonita de doar",
+    "Que os bispos devem ser ricos",
+    "Que Espanha e Países Baixos estão ligados"
+   ]
+  }
+ ],
+ "fk-nl-06": [
+  {
+   "q": "Quem eram as vítimas favoritas de Lange Wapper, segundo a lenda?",
+   "options": [
+    "Crianças brincando na rua",
+    "Bêbados e vadios fora depois do horário de fechamento",
+    "Marinheiros voltando ao porto",
+    "Vendedores de mercado"
+   ]
+  },
+  {
+   "q": "O que aconteceu quando os guardas tentaram prender Lange Wapper?",
+   "options": [
+    "Ele escapou encolhendo-se até o tamanho de um rato",
+    "Ele inchou, quebrou os grilhões e desapareceu sobre os telhados",
+    "Ele os subornou com ouro",
+    "Ele se transformou em fumaça"
+   ]
+  },
+  {
+   "q": "Como Lange Wapper ainda está presente em Antuérpia hoje?",
+   "options": [
+    "Como uma estátua no porto",
+    "Como uma figura gigante que desfila pelas ruas em procissões festivas",
+    "Apenas como o nome de uma cerveja local",
+    "Está completamente esquecido"
+   ]
+  },
+  {
+   "q": "O que o parágrafo final sugere sobre a verdadeira natureza do ser?",
+   "options": [
+    "Que foi puramente inventado pela igreja",
+    "Que existe principalmente na imaginação de quem ainda acredita nele",
+    "Que foi um criminoso histórico real",
+    "Que já não tem mais nenhum significado hoje"
+   ]
+  }
+ ],
+ "fk-pl-01": [
+  {
+   "q": "Onde o dragão vivia?",
+   "options": [
+    "Numa caverna sob a colina de Wawel",
+    "No castelo real",
+    "Numa floresta",
+    "No próprio rio"
+   ]
+  },
+  {
+   "q": "Quem governava a cidade de Cracóvia?",
+   "options": [
+    "Um conselho de cavaleiros",
+    "O rei Krak",
+    "O sapateiro Skuba",
+    "Um bispo"
+   ]
+  },
+  {
+   "q": "Qual era o plano de Skuba?",
+   "options": [
+    "Lutar contra o dragão com uma espada",
+    "Prender o dragão numa rede",
+    "Encher uma ovelha com enxofre para o dragão comer",
+    "Envenenar a água do rio"
+   ]
+  },
+  {
+   "q": "Como o dragão morreu?",
+   "options": [
+    "Um cavaleiro o matou com fogo",
+    "Bebeu tanta água que sua barriga estourou",
+    "O rei o envenenou",
+    "Caiu da colina de Wawel"
+   ]
+  }
+ ],
+ "fk-pl-02": [
+  {
+   "q": "Onde vive o pato dourado?",
+   "options": [
+    "Num poço fora da cidade",
+    "Num porão profundo sob uma casa antiga",
+    "Numa torre de igreja",
+    "Numa caverna na floresta"
+   ]
+  },
+  {
+   "q": "O que o aprendiz viu os mestres fazendo à noite?",
+   "options": [
+    "Assando pão",
+    "Invocando espíritos malignos",
+    "Vendendo tesouro",
+    "Construindo uma casa"
+   ]
+  },
+  {
+   "q": "O que o pato deve guardar?",
+   "options": [
+    "Uma coleção de livros antigos",
+    "Um tesouro de ouro e pedras preciosas",
+    "Uma espada mágica",
+    "Uma coroa real"
+   ]
+  },
+  {
+   "q": "Quantas provas difíceis é preciso passar para encontrar o tesouro?",
+   "options": [
+    "Duas",
+    "Três",
+    "Cinco",
+    "Uma"
+   ]
+  }
+ ],
+ "fk-pl-03": [
+  {
+   "q": "De onde veio a sereia?",
+   "options": [
+    "Do Mar Báltico",
+    "Do Mar Negro",
+    "De um lago de montanha",
+    "Do oceano"
+   ]
+  },
+  {
+   "q": "O que o comerciante queria fazer com a sereia?",
+   "options": [
+    "Libertá-la imediatamente",
+    "Capturá-la e exibi-la por dinheiro",
+    "Casar-se com ela",
+    "Dar-lhe um presente"
+   ]
+  },
+  {
+   "q": "Quem libertou a sereia?",
+   "options": [
+    "Um pescador",
+    "O próprio comerciante",
+    "O filho do dono do galpão",
+    "Um soldado"
+   ]
+  },
+  {
+   "q": "O que a sereia carrega ao defender a cidade?",
+   "options": [
+    "Uma espada e um escudo",
+    "Uma coroa e um cetro",
+    "Uma rede e um gancho",
+    "Uma harpa e uma flauta"
+   ]
+  }
+ ],
+ "fk-pl-04": [
+  {
+   "q": "Por que os três irmãos viajavam?",
+   "options": [
+    "Para encontrar novas terras e fundar seus próprios estados",
+    "Para escapar de um dragão",
+    "Para encontrar tesouro",
+    "Para visitar um rei"
+   ]
+  },
+  {
+   "q": "Em que direção Rus viajou?",
+   "options": [
+    "Oeste",
+    "Leste",
+    "Sul",
+    "Norte"
+   ]
+  },
+  {
+   "q": "Como Lech nomeou seu povoado, e a partir de qual palavra?",
+   "options": [
+    "Gniezno, a partir de \"gniazdo\" (ninho)",
+    "Cracóvia, a partir de \"kruk\" (corvo)",
+    "Varsóvia, a partir de \"wars\"",
+    "Poznań, a partir de \"poznać\" (conhecer)"
+   ]
+  },
+  {
+   "q": "No que a águia branca se tornou?",
+   "options": [
+    "O símbolo do novo estado de Lech, depois emblema da Polônia",
+    "Um símbolo da montanha da Boêmia",
+    "Um símbolo dos rios de Rus",
+    "Um símbolo de má sorte"
+   ]
+  }
+ ],
+ "fk-pl-05": [
+  {
+   "q": "O que se dizia que Pan Twardowski era capaz de fazer?",
+   "options": [
+    "Voar para outros países",
+    "Ressuscitar os mortos e prever o futuro",
+    "Transformar chumbo apenas em ouro",
+    "Falar com os animais"
+   ]
+  },
+  {
+   "q": "Sob que condição o diabo poderia levar a alma de Twardowski?",
+   "options": [
+    "Somente em Roma",
+    "Somente à meia-noite",
+    "Somente se Twardowski se casasse",
+    "Somente em Cracóvia"
+   ]
+  },
+  {
+   "q": "Onde Twardowski acabou depois de rezar?",
+   "options": [
+    "De volta a casa, em segurança",
+    "Na Lua",
+    "Em Roma",
+    "Na taverna"
+   ]
+  },
+  {
+   "q": "Que expressão polonesa vem desta lenda?",
+   "options": [
+    "\"Desaparecer como Twardowski na Lua\"",
+    "\"Dançar como o diabo\"",
+    "\"Rezar como um santo\"",
+    "\"Negociar como um comerciante\""
+   ]
+  }
+ ],
+ "fk-pl-06": [
+  {
+   "q": "De onde se dizia que o basilisco havia nascido?",
+   "options": [
+    "De um ovo posto por um galo velho",
+    "De uma maldição de bruxa",
+    "De um dente de dragão",
+    "De um poço amaldiçoado"
+   ]
+  },
+  {
+   "q": "Que fraqueza a sabedoria popular dizia que o basilisco tinha?",
+   "options": [
+    "Morre ao ver seu próprio reflexo",
+    "Tem medo do fogo",
+    "Não consegue atravessar água",
+    "Dorme durante o dia"
+   ]
+  },
+  {
+   "q": "O que aconteceu ao prisioneiro depois de derrotar o basilisco?",
+   "options": [
+    "Foi executado mesmo assim",
+    "Foi perdoado, como prometido",
+    "Tornou-se prefeito",
+    "Fugiu da cidade"
+   ]
+  },
+  {
+   "q": "Ao lado de quais outras lendas o basilisco é mencionado em crônicas?",
+   "options": [
+    "O dragão de Wawel e a sereia de Varsóvia",
+    "Pan Twardowski e Janosik",
+    "Lech e Czech",
+    "O Pato Dourado e Krak"
+   ]
+  }
+ ],
+ "fk-pt-01": [
+  {
+   "q": "O que o Saci-Pererê tem em vez de duas pernas?",
+   "options": [
+    "Apenas uma perna",
+    "Três pernas",
+    "Uma cauda de peixe",
+    "Asas"
+   ]
+  },
+  {
+   "q": "Segundo a história, o que o Saci faz com o leite das vacas?",
+   "options": [
+    "Deixa azedar durante a noite",
+    "Transforma em queijo",
+    "Derrama no chão",
+    "Bebe tudo"
+   ]
+  },
+  {
+   "q": "Como alguém pode prender o Saci, segundo a lenda?",
+   "options": [
+    "Jogando uma peneira ou um terço dentro do redemoinho",
+    "Oferecendo-lhe comida",
+    "Cantando uma canção especial",
+    "Acendendo uma fogueira perto dele"
+   ]
+  },
+  {
+   "q": "Como o velho fazendeiro conseguiu capturar o Saci?",
+   "options": [
+    "Numa garrafa de vidro lacrada com rolha e uma cruz",
+    "Numa caixa de madeira",
+    "Com uma rede jogada sobre ele",
+    "Amarrando sua perna a uma árvore"
+   ]
+  }
+ ],
+ "fk-pt-02": [
+  {
+   "q": "Por que Jurupari matou o menino?",
+   "options": [
+    "Por ciúme de quanto o menino era amado",
+    "Porque o menino roubou dele",
+    "Por acidente durante uma caçada",
+    "Porque o menino o insultou"
+   ]
+  },
+  {
+   "q": "O que a voz sagrada disse à mãe para fazer?",
+   "options": [
+    "Plantar os dois olhos do menino, um na floresta e outro perto de casa",
+    "Enterrar o menino sob um pé de guaraná",
+    "Jogar os olhos do menino no rio",
+    "Dar os olhos do menino ao xamã"
+   ]
+  },
+  {
+   "q": "Que tipo de plantas cresceram dos dois olhos plantados?",
+   "options": [
+    "Uma planta selvagem na floresta e uma planta domesticada perto de casa",
+    "Duas plantas selvagens idênticas",
+    "Uma planta que não deu frutos",
+    "Uma árvore e uma trepadeira"
+   ]
+  },
+  {
+   "q": "Por que a fruta foi chamada de guaraná?",
+   "options": [
+    "Porque sua semente e polpa lembravam um olho humano",
+    "Porque foi encontrada perto de um rio chamado Guaraná",
+    "Porque recebeu o nome da mãe do menino",
+    "Por causa de sua forma, como um pequeno violão"
+   ]
+  }
+ ],
+ "fk-pt-03": [
+  {
+   "q": "Por que os pés ao contrário do Curupira confundem as pessoas?",
+   "options": [
+    "Porque as pegadas apontam para o lado oposto de onde ele realmente vai",
+    "Porque ele consegue voar sobre o chão",
+    "Porque ele só anda à noite",
+    "Porque seus pés não deixam nenhuma marca"
+   ]
+  },
+  {
+   "q": "O que o Curupira fazia com caçadores que matavam mais animais do que precisavam?",
+   "options": [
+    "Vingava-se deles",
+    "Dava-lhes uma carta de aviso",
+    "Simplesmente os ignorava",
+    "Pedia aos animais que os perdoassem"
+   ]
+  },
+  {
+   "q": "O que convenceu o Curupira a finalmente deixar Chico ir embora?",
+   "options": [
+    "Chico prometeu parar de caçar mais do que o necessário",
+    "Chico deu ao Curupira um presente de tabaco",
+    "Chico construiu um altar na floresta",
+    "Chico deixou a região para sempre"
+   ]
+  },
+  {
+   "q": "O que os viajantes ainda deixam como oferendas para o Curupira?",
+   "options": [
+    "Um pouco de tabaco ou cachaça num tronco de árvore",
+    "Fruta fresca na entrada da floresta",
+    "Pequenas estátuas esculpidas",
+    "Moedas enterradas no chão"
+   ]
+  }
+ ],
+ "fk-pt-04": [
+  {
+   "q": "Como é a aparência de Iara, segundo a lenda?",
+   "options": [
+    "Uma mulher de cabelos longos e verdes e cauda de peixe",
+    "Uma velha com escamas prateadas",
+    "Uma serpente gigante com olhos humanos",
+    "Um pássaro com rosto de mulher"
+   ]
+  },
+  {
+   "q": "Como Iara se tornou uma criatura do rio?",
+   "options": [
+    "Os peixes tiveram piedade dela depois que o pai a jogou no rio",
+    "Mergulhou no rio para escapar de uma tempestade",
+    "Um feiticeiro a amaldiçoou por recusar um casamento",
+    "Nasceu do próprio rio"
+   ]
+  },
+  {
+   "q": "O que Beto fazia quando ouviu o canto de Iara pela primeira vez?",
+   "options": [
+    "Trabalhava sozinho à beira do rio ao entardecer",
+    "Pescava com a avó",
+    "Dormia em sua canoa",
+    "Nadava com os amigos"
+   ]
+  },
+  {
+   "q": "Como Beto conseguiu escapar do feitiço de Iara?",
+   "options": [
+    "Tapou os ouvidos e correu de volta para a canoa",
+    "Cantou uma canção mais alta para abafar a dela",
+    "Jogou sua rede sobre ela",
+    "Pediu à avó que o salvasse pessoalmente"
+   ]
+  }
+ ],
+ "fk-pt-05": [
+  {
+   "q": "Como Pedro Malasartes é geralmente descrito?",
+   "options": [
+    "Pobre em posses, mas esperto e cheio de recursos",
+    "Um proprietário de terras rico, mas desonesto",
+    "Um fazendeiro tranquilo sem ambições",
+    "Um comerciante estrangeiro de passagem"
+   ]
+  },
+  {
+   "q": "O que Pedro escondeu dentro da panela antes da demonstração?",
+   "options": [
+    "Um ensopado já pronto",
+    "Uma pilha de brasas",
+    "Uma segunda panela, menor",
+    "Nada, a panela estava realmente vazia"
+   ]
+  },
+  {
+   "q": "O que aconteceu quando o comerciante experimentou a panela em casa?",
+   "options": [
+    "Os legumes crus nunca cozinharam",
+    "A panela explodiu",
+    "A panela cozinhou a comida instantaneamente",
+    "A panela pegou fogo"
+   ]
+  },
+  {
+   "q": "O que o comerciante encontrou ao voltar para confrontar Pedro?",
+   "options": [
+    "Pedro já havia deixado o povoado com o dinheiro",
+    "Pedro pediu desculpas e devolveu o dinheiro",
+    "Pedro lhe ofereceu um segundo item mágico",
+    "Pedro foi preso pelos moradores"
+   ]
+  }
+ ],
+ "fk-pt-06": [
+  {
+   "q": "Que atmosfera a história descreve no início?",
+   "options": [
+    "Uma festa junina à beira do rio, à noite",
+    "Um cortejo fúnebre silencioso",
+    "Um mercado movimentado de manhã",
+    "Uma expedição de pesca em meio a uma tempestade"
+   ]
+  },
+  {
+   "q": "O que havia de notável na forma como o estranho dançava?",
+   "options": [
+    "Dançava com uma graça que parecia sobrenatural",
+    "Recusava-se a dançar com qualquer pessoa",
+    "Só dançava sozinho num canto",
+    "Ensinou uma nova dança a todos"
+   ]
+  },
+  {
+   "q": "O que aconteceu com a moça meses depois da festa?",
+   "options": [
+    "Descobriu-se grávida sem explicação sobre o pai",
+    "Deixou o povoado para procurar o estranho",
+    "Casou-se com outro homem da festa",
+    "Adoeceu e nunca se recuperou"
+   ]
+  },
+  {
+   "q": "Segundo as parteiras mais velhas, quem era o estranho de verdade?",
+   "options": [
+    "O boto, um golfinho-do-rio encantado disfarçado de homem",
+    "Um espírito errante sem forma fixa",
+    "O chefe de um povoado rival disfarçado",
+    "O fantasma de um pescador afogado"
+   ]
+  }
+ ],
+ "fk-ru-01": [
+  {
+   "q": "Quem o Vovô chama primeiro para ajudar?",
+   "options": [
+    "O cachorro",
+    "A Vovó",
+    "O gato",
+    "O rato"
+   ]
+  },
+  {
+   "q": "Quem a Netinha chama para ajudar?",
+   "options": [
+    "O rato",
+    "O gato",
+    "A cadela Zhutchka",
+    "O Vovô"
+   ]
+  },
+  {
+   "q": "Quem Zhutchka chama para ajudar?",
+   "options": [
+    "O gato",
+    "O rato",
+    "A Vovó",
+    "A Netinha"
+   ]
+  },
+  {
+   "q": "Quem finalmente torna possível arrancar o nabo?",
+   "options": [
+    "O Vovô sozinho",
+    "O gato",
+    "O rato",
+    "A Vovó sozinha"
+   ]
+  }
+ ],
+ "fk-ru-02": [
+  {
+   "q": "Por que o kolobok começou a rolar pela estrada?",
+   "options": [
+    "Pulou sozinho do parapeito da janela",
+    "A velha o empurrou para fora",
+    "Um lobo o levou",
+    "Foi soprado pelo vento"
+   ]
+  },
+  {
+   "q": "Como o kolobok escapa da lebre e do lobo?",
+   "options": [
+    "Esconde-se num buraco",
+    "Canta uma canção e rola para longe",
+    "Chama o urso",
+    "Morde-os"
+   ]
+  },
+  {
+   "q": "O que a raposa pede ao kolobok que faça?",
+   "options": [
+    "Rolar para longe rapidamente",
+    "Dar-lhe um pouco de pão",
+    "Cantar sua canção de novo, mais perto dela",
+    "Encontrar o urso"
+   ]
+  },
+  {
+   "q": "O que finalmente acontece ao kolobok?",
+   "options": [
+    "Escapa para sempre",
+    "A raposa o come",
+    "O urso o come",
+    "Volta para casa"
+   ]
+  }
+ ],
+ "fk-ru-03": [
+  {
+   "q": "Por que a madrasta manda a enteada para a floresta?",
+   "options": [
+    "Para juntar lenha",
+    "Para deixá-la lá sozinha, por antipatia",
+    "Para encontrar Morozko de propósito",
+    "Para lhe arranjar um marido"
+   ]
+  },
+  {
+   "q": "Como a enteada responde quando Morozko pergunta se ela está com calor?",
+   "options": [
+    "Chora e implora ajuda",
+    "Sai correndo",
+    "Diz educadamente que está com calor",
+    "Recusa-se a responder"
+   ]
+  },
+  {
+   "q": "Que recompensa Morozko dá à enteada?",
+   "options": [
+    "Nada",
+    "Um casaco de pele quente e um baú de joias",
+    "Um cavalo mágico",
+    "Uma casa nova"
+   ]
+  },
+  {
+   "q": "O que acontece à própria filha da madrasta na floresta?",
+   "options": [
+    "Recebe riquezas ainda maiores",
+    "Morozko a congela porque ela é rude",
+    "Casa-se com Morozko",
+    "Perde-se e volta para casa em segurança"
+   ]
+  }
+ ],
+ "fk-ru-04": [
+  {
+   "q": "O que estava roubando as maçãs douradas do jardim?",
+   "options": [
+    "Um urso",
+    "O Pássaro de Fogo",
+    "Um lobo",
+    "O irmão mais velho"
+   ]
+  },
+  {
+   "q": "O que o Lobo Cinzento ofereceu a Ivã depois de comer seu cavalo?",
+   "options": [
+    "Nada, ele fugiu",
+    "Sua própria ajuda no lugar do cavalo",
+    "Uma pena dourada",
+    "Uma espada mágica"
+   ]
+  },
+  {
+   "q": "O que os irmãos de Ivã fizeram com ele no caminho de casa?",
+   "options": [
+    "Ajudaram-no a carregar os tesouros",
+    "Mataram-no e ficaram com seus prêmios",
+    "Abandonaram-no, mas o deixaram viver",
+    "Casaram-se com Elena eles mesmos"
+   ]
+  },
+  {
+   "q": "Como a história termina para Ivã e o Lobo Cinzento?",
+   "options": [
+    "Ambos morrem na estepe",
+    "Ivã se casa com Elena e o lobo volta para a floresta",
+    "O lobo se torna czar",
+    "Ivã nunca perdoa os irmãos"
+   ]
+  }
+ ],
+ "fk-ru-05": [
+  {
+   "q": "Como Sadko conquistou pela primeira vez o favor do Rei do Mar?",
+   "options": [
+    "Deu-lhe ouro",
+    "Lutou contra um monstro marinho",
+    "Tocou o gusli tão bem que o encantou",
+    "Construiu-lhe um palácio"
+   ]
+  },
+  {
+   "q": "Por que os navios de Sadko de repente pararam no mar?",
+   "options": [
+    "Uma tempestade os destruiu",
+    "O Rei do Mar exigiu um tributo que nunca havia sido pago",
+    "Ficaram sem vento",
+    "Piratas bloquearam o caminho"
+   ]
+  },
+  {
+   "q": "O que Sadko fez para parar a dança destrutiva no mar?",
+   "options": [
+    "Cantou mais alto",
+    "Arrebentou as cordas de seu gusli",
+    "Mergulhou na água",
+    "Pediu ajuda às donzelas do mar"
+   ]
+  },
+  {
+   "q": "Como Sadko finalmente deixou o reino submarino do Rei do Mar?",
+   "options": [
+    "Lutou para sair",
+    "Casou-se com uma donzela do mar e ficou para sempre",
+    "Adormeceu ao lado de Chernavushka e acordou na margem do rio, em casa",
+    "O Rei do Mar o baniu"
+   ]
+  }
+ ],
+ "fk-ru-06": [
+  {
+   "q": "Como Snegúrotchka surgiu?",
+   "options": [
+    "Foi encontrada abandonada na floresta",
+    "Um casal idoso sem filhos a esculpiu na neve e ela ganhou vida",
+    "Nasceu do casal da forma comum",
+    "A Mãe Primavera a enviou como presente desde o início"
+   ]
+  },
+  {
+   "q": "O que aconteceu a Snegúrotchka depois que ela conheceu o pastor Lel?",
+   "options": [
+    "Ficou doente imediatamente",
+    "Um sentimento de calor despertou em seu coração pela primeira vez",
+    "Fugiu de volta aos pais",
+    "Recusou-se a ouvir seu canto"
+   ]
+  },
+  {
+   "q": "O que o presente do amor verdadeiro da Mãe Primavera finalmente custou a Snegúrotchka?",
+   "options": [
+    "Sua memória",
+    "Nada, foi um presente sem preço",
+    "Sua vida, já que o encontro com o sol de verão se mostrou fatal",
+    "Sua beleza"
+   ]
+  },
+  {
+   "q": "Como o povo interpretou depois o destino de Snegúrotchka?",
+   "options": [
+    "Como prova de que a magia não existe",
+    "Como uma parábola sobre a beleza frágil incapaz de suportar o calor da vida verdadeira",
+    "Como um aviso contra cantar em festivais",
+    "Como um boato local sem importância"
+   ]
+  }
+ ],
+ "fk-sv-01": [
+  {
+   "q": "Onde o tomte vivia?",
+   "options": [
+    "Na cozinha da fazenda",
+    "No celeiro ou no sótão",
+    "Na floresta próxima",
+    "Na igreja do povoado"
+   ]
+  },
+  {
+   "q": "O que a família deixava para o tomte na véspera de Natal?",
+   "options": [
+    "Um copo de leite e pão",
+    "Mingau de arroz com manteiga",
+    "Um gorro vermelho novo",
+    "Moedas e prata"
+   ]
+  },
+  {
+   "q": "Por que o tomte ficou zangado?",
+   "options": [
+    "A família se mudou",
+    "Um menino comeu a manteiga destinada a ele",
+    "O celeiro pegou fogo",
+    "O fazendeiro vendeu as vacas"
+   ]
+  },
+  {
+   "q": "O que aconteceu depois que a família consertou as coisas?",
+   "options": [
+    "O tomte deixou a fazenda para sempre",
+    "A fazenda voltou a ter boa sorte",
+    "O menino se tornou fazendeiro",
+    "O tomte se transformou numa vaca"
+   ]
+  }
+ ],
+ "fk-sv-02": [
+  {
+   "q": "O que a raposa e o urso decidiram fazer?",
+   "options": [
+    "Caçar juntos no inverno",
+    "Semear um campo juntos e dividir a colheita",
+    "Construir uma casa juntos",
+    "Correr um contra o outro pela floresta"
+   ]
+  },
+  {
+   "q": "Que cultura plantaram no primeiro ano, e quem se beneficiou?",
+   "options": [
+    "Trigo, e o urso se beneficiou",
+    "Nabos, e a raposa se beneficiou",
+    "Nabos, e o urso se beneficiou",
+    "Trigo, e a raposa perdeu tudo"
+   ]
+  },
+  {
+   "q": "O que aconteceu com a segunda colheita?",
+   "options": [
+    "O urso finalmente ficou com a melhor parte",
+    "A raposa novamente ficou com a parte valiosa",
+    "Dividiram igualmente desta vez",
+    "A colheita fracassou completamente"
+   ]
+  },
+  {
+   "q": "Como a história termina?",
+   "options": [
+    "A raposa pede desculpas ao urso",
+    "O urso captura e come a raposa",
+    "A raposa escapa e é lembrada como o animal mais esperto",
+    "O urso e a raposa voltam a ser amigos"
+   ]
+  }
+ ],
+ "fk-sv-03": [
+  {
+   "q": "Segundo a crença popular, o que Näcken faz?",
+   "options": [
+    "Vigia os animais da fazenda à noite",
+    "Senta-se junto aos rios tocando violino e atrai as pessoas para a água",
+    "Constrói pontes sobre rios",
+    "Protege crianças de se afogarem"
+   ]
+  },
+  {
+   "q": "O que Anders viu nas corredeiras?",
+   "options": [
+    "Uma velha lavando roupa",
+    "Um rapaz tocando violino sobre uma pedra",
+    "Um grupo de crianças dançando",
+    "Nada, apenas a água vazia"
+   ]
+  },
+  {
+   "q": "Sobre o que a avó de Anders o avisou?",
+   "options": [
+    "Que o gelo era fino demais",
+    "Que o homem era Näcken e acabaria por puxá-lo para dentro da água",
+    "Que o violino era roubado",
+    "Que nunca se deve confiar dinheiro a estranhos"
+   ]
+  },
+  {
+   "q": "O que Anders fez para se proteger?",
+   "options": [
+    "Mudou-se para longe do povoado",
+    "Jogou um pedaço de aço na água",
+    "Pediu a um padre que abençoasse o rio",
+    "Construiu uma cerca ao redor das corredeiras"
+   ]
+  }
+ ],
+ "fk-sv-04": [
+  {
+   "q": "Por que Gustav Eriksson viajava por Dalarna?",
+   "options": [
+    "Estava em peregrinação",
+    "Fugia do rei dinamarquês e buscava ajuda",
+    "Estava caçando por esporte",
+    "Estava construindo uma igreja nova"
+   ]
+  },
+  {
+   "q": "O que o povo de Dalarna fez a princípio?",
+   "options": [
+    "Deu-lhe um exército imediatamente",
+    "Recusou-se a ajudá-lo",
+    "Entregou-o aos dinamarqueses",
+    "Elegeu-o rei ali mesmo"
+   ]
+  },
+  {
+   "q": "O que convenceu os fazendeiros de Dalarna a mudar de ideia?",
+   "options": [
+    "Uma carta da Noruega",
+    "A notícia do Banho de Sangue de Estocolmo",
+    "Uma escassez de comida",
+    "Uma mensagem do Papa"
+   ]
+  },
+  {
+   "q": "O que se faz hoje em memória da perseguição a Gustav Vasa?",
+   "options": [
+    "Um culto religioso todo Natal",
+    "A corrida de esqui Vasaloppet",
+    "Uma peça de teatro em Estocolmo",
+    "Uma estátua foi construída em Sälen"
+   ]
+  }
+ ],
+ "fk-sv-05": [
+  {
+   "q": "O que é distintivo na aparência da skogsrået?",
+   "options": [
+    "Não tem rosto algum",
+    "É bela pela frente, mas oca nas costas como uma árvore podre",
+    "É invisível exceto à noite",
+    "Sempre aparece como uma velha"
+   ]
+  },
+  {
+   "q": "O que a mulher pediu a Olof?",
+   "options": [
+    "Comida e abrigo para o inverno",
+    "Para se aquecer junto ao fogo dele",
+    "Direções de volta ao povoado",
+    "Uma carona para casa em seu trenó"
+   ]
+  },
+  {
+   "q": "Como Olof reagiu ao perceber quem ela era?",
+   "options": [
+    "Fugiu gritando",
+    "Agradeceu-lhe com calma e desejou-lhe boa noite",
+    "Jogou cinzas no fogo para afastá-la",
+    "Exigiu que ela fosse embora imediatamente"
+   ]
+  },
+  {
+   "q": "Qual foi o resultado da cortesia de Olof?",
+   "options": [
+    "Nada mudou",
+    "Sua fornalha e sua sorte na caça melhoraram naquela temporada",
+    "Foi amaldiçoado pelo resto da vida",
+    "Foi convidado a viver na floresta"
+   ]
+  }
+ ],
+ "fk-sv-06": [
+  {
+   "q": "O que Thor e seus companheiros encontraram ao anoitecer em Jotunheim?",
+   "options": [
+    "Um pequeno povoado de fazendeiros",
+    "Uma fortaleza tão vasta que tiveram de inclinar a cabeça para ver o topo",
+    "Um rio congelado bloqueando o caminho",
+    "Um campo de batalha vazio"
+   ]
+  },
+  {
+   "q": "O que aconteceu na competição de comer de Loki contra Logi?",
+   "options": [
+    "Loki venceu com facilidade",
+    "Loki perdeu feio, já que Logi devorou carne, ossos e a gamela também",
+    "Empataram e dividiram a carne",
+    "Loki recusou-se a competir"
+   ]
+  },
+  {
+   "q": "Quais foram as três provas que Thor enfrentou?",
+   "options": [
+    "Luta, tiro com arco e natação",
+    "Beber de um chifre, levantar um gato e lutar contra uma velha",
+    "Escalar uma montanha, levantar uma pedra e uma corrida",
+    "Cantar, beber e saltar"
+   ]
+  },
+  {
+   "q": "A que o chifre de que Thor bebia estava realmente conectado?",
+   "options": [
+    "Um poço sob o castelo",
+    "O oceano, de modo que seus goles faziam a maré baixar",
+    "Um rio de fogo",
+    "A nada — era simplesmente um chifre muito profundo"
+   ]
+  }
+ ],

@@ -6992,6 +6992,31 @@
     BUILD_SENTENCES.forEach(function(s){ if(!s.en_src) s.en_src = s.en; if(Array.isArray(s[nat])) s.en = plainText(s[nat].join(isCjkLang(nat) ? '' : ' ')); });
   }
   applyNative();
+  /* The English-only layer (coach texts, notes, idiom meanings, nuance situations, dialogue scenes, story
+     questions, and the folk tales' other side) is translated per language into l10n/<lang>.json, built by
+     build.py from l10n_out/. Fetched once at boot for a non-English player and applied in place. */
+  var L10N = null;
+  function applyL10n(L){
+    if(!L) return; L10N = L;
+    if(L.coach){ for(var k in L.coach){ if(L.coach[k] && typeof COACH!=='undefined') COACH[k] = L.coach[k]; } }
+    if(L.notes){ for(var id in L.notes){ if(ITEM[id] && L.notes[id]) ITEM[id].note = L.notes[id]; } }
+    if(L.idiom_options){ IDIOMS.forEach(function(it){ var o = L.idiom_options[it.id]; if(!o || o.length!==it.options.length) return; var ci = it.options.indexOf(it.correct); it.options = o.slice(); if(ci>=0) it.correct = o[ci]; }); }
+    if(L.nuance_context){ NUANCE.forEach(function(it){ if(L.nuance_context[it.id]) it.context = L.nuance_context[it.id]; }); }
+    if(L.setups){ DIALOGUES.forEach(function(d){ if(L.setups[d.id]) d.setup = L.setups[d.id]; }); }
+    if(L.questions){ STORIES.forEach(function(s){ var qs = L.questions[s.id]; if(!qs || qs.length!==s.questions.length) return; s.questions.forEach(function(q, i){ if(qs[i].q) q.q = qs[i].q; if(qs[i].options && qs[i].options.length===q.options.length) q.options = qs[i].options.slice(); }); }); }
+    if(L.folk){ var nat = nativeLang(); STORIES.forEach(function(s){ var f = L.folk[s.id]; if(s.only && f && f.paras && f.paras.length===7){ s.xl = s.xl || {}; s.xl[nat] = {title:f.title, paras:f.paras}; } }); }
+  }
+  function loadL10n(){
+    var nat = nativeLang(); if(nat==='en' || typeof fetch!=='function') return;
+    var base = (window.L10N_BASE || 'l10n/').replace(/\/?$/, '/');
+    try{
+      fetch(base+nat+'.json', {cache:'no-cache'}).then(function(r){ return r.ok ? r.json() : null; }).then(function(L){
+        if(!L) return; applyL10n(L);
+        var home = document.getElementById('screen-home'); if(home && !home.hidden && typeof showHome==='function') showHome();
+      }).catch(function(){});
+    }catch(e){}
+  }
+  loadL10n();
   CONCEPTS.forEach(function(c){ ITEM[c.id]=c; });
 
   /* ============================= DOM ============================= */

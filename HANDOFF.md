@@ -185,6 +185,19 @@ Phase 3 (2026-09-11 afternoon, owner's request): Library modes Read / Translate 
 `applyNative` swaps c.en / s.en to that language at boot; originals kept in `en_src`), and English as a target
 language (`eng`: `c.eng`, `s.eng`, `LANG_META.eng`, hidden while the native language is English). Changing the
 native language reloads the page. README 3d documents it.
+Phase 4 (2026-09-11 evening, owner: "THEN FIX THAT"): the English-only layer is being translated into all
+twenty languages. `tools/l10n_prep.py` extracts sources into `l10n_in/` (coach texts, item notes, idiom option
+meanings, nuance situations, dialogue setups, story questions, the folk tales' English side in 3 chunks); one
+Sonnet agent per (language, chunk) writes `l10n_out/<lang>_<chunk>.json` (100 agents, prompts in the session
+scratchpad `l10n_<lang>_<chunk>.txt`), validated by `tools/l10n_check.py <lang> <chunk>`; build.py assembles
+`l10n/<lang>.json`; the game fetches it at boot for a non-English player (`loadL10n` / `applyL10n`).
+Missing chunks simply leave that piece in English, so partial coverage is safe to ship. Check coverage with
+`ls l10n_out` (expect 100 files) and the "l10n files:" line build.py prints.
+
+English recordings: `--backend edge` with en-US-AriaNeural (Kokoro's English G2P needs spacy, whose DLL is
+blocked by Application Control on this machine). Two recorders: `staging_edge_eng1` (A1 A2 B1) and
+`staging_edge_eng2` (C2 C1 B2 TILES), logs `gen_edge_eng<1|2>.log`. Merge both, then set
+`LANG_META.eng.audio = true` in index.html (eng is defined in JS, not in build.py's LANG_META).
 Open follow-ups from Phase 2: the new drill items and story paragraphs have no recorded clips (the running
 Chatterbox chains were started before they existed); after the chains finish, re-run gen_audio.py per language
 (it only records missing keys) if studio voice is wanted for them. Web Speech covers them meanwhile.

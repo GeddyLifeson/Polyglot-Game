@@ -298,6 +298,34 @@ if errors:
 for w in warnings[:40]:
     print('  warn:', w)
 
+# ---------------- localization files: l10n/<lang>.json from l10n_out/<lang>_<chunk>.json ----------------
+L10N_OUT = os.path.join(HERE, 'l10n_out'); L10N_DIR = os.path.join(HERE, 'l10n')
+os.makedirs(L10N_DIR, exist_ok=True)
+l10n_report = []
+for lang in LANG_META:
+    parts = {}
+    for chunk in ('notes', 'questions', 'folk_1', 'folk_2', 'folk_3'):
+        f = os.path.join(L10N_OUT, '%s_%s.json' % (lang, chunk))
+        if not os.path.exists(f): continue
+        try:
+            parts[chunk] = json.load(open(f, encoding='utf-8'))
+        except Exception as e:
+            warnings.append('l10n %s/%s does not parse: %s' % (lang, chunk, str(e)[:60]))
+    if not parts: continue
+    L = {}
+    if 'notes' in parts: L.update(parts['notes'])
+    if 'questions' in parts: L['questions'] = parts['questions']
+    folk = {}
+    for k in ('folk_1', 'folk_2', 'folk_3'):
+        if k in parts:
+            for sid, v in parts[k].items():
+                if isinstance(v, dict) and isinstance(v.get('paras'), list) and len(v['paras']) == 7 and v.get('title'):
+                    folk[sid] = {'title': v['title'], 'paras': v['paras']}
+    if folk: L['folk'] = folk
+    with open(os.path.join(L10N_DIR, lang + '.json'), 'w', encoding='utf-8') as fh:
+        json.dump(L, fh, ensure_ascii=False, separators=(',', ':'))
+    l10n_report.append('%s:%s' % (lang, '+'.join(sorted(parts))))
+
 # ---------------- emit ----------------
 def js(v):
     return json.dumps(v, ensure_ascii=False, separators=(',', ':'))
@@ -357,6 +385,7 @@ print('vocab: %d total  %s' % (len(vocab_rows), '  '.join('%s=%d' % (t, per_tier
 print('stories: %d shared (in %s) + %d folk tales for %s' % (
     sum(1 for d in stories if not d.get('only')), ','.join(sorted(set(l for d in stories if not d.get('only') for l in d['xl']))) or 'nothing yet',
     sum(1 for d in stories if d.get('only')), ','.join(sorted(set(d['only'] for d in stories if d.get('only')))) or 'no language yet'))
+print('l10n files:', ' '.join(l10n_report) or 'none yet')
 print('sentences %d | grammar %d | idioms %d | nuance %d | dialogues %d | listen modules %d' % (
     len(sentences), len(grammar), len(idioms), len(nuance), len(dialogues), len(listen)))
 for code in EXTRA:

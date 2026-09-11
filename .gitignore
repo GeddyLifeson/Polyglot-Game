@@ -4,3 +4,4 @@ __pycache__/
 *.wav
 *.png
 models
+l10n_in/

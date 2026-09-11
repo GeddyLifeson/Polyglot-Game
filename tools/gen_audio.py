@@ -88,9 +88,15 @@ rows = block('VOCAB_RAW')
 sentences = block('BUILD_SENTENCES')
 dialogues = block('DIALOGUES')
 nuance = block('NUANCE')
-COL = {'es':5,'fr':6,'it':7,'pt':8,'ja':9,'zh':10}
+COL = {'es':5,'fr':6,'it':7,'pt':8,'ja':9,'zh':10, 'eng':1}   # 'eng' = English as a target language (the en column)
 KOKO = {'es':('e','ef_dora'), 'fr':('f','ff_siwis'), 'it':('i','if_sara'), 'pt':('p','pf_dora'), 'ja':('j','jf_alpha'), 'zh':('z','zf_xiaobei'),
-        'hi':('h','hf_alpha')}
+        'hi':('h','hf_alpha'), 'eng':('a','af_heart')}
+# English sentence tiles are derived at runtime in index.html (s.eng = s.en without final punctuation, split on spaces);
+# mirror that here so the tile keys match
+def _eng_tiles(s):
+    return re.sub(r'[.!?]$', '', s['en']).split(' ') if isinstance(s.get('en'), str) else None
+for _s in sentences:
+    if _eng_tiles(_s): _s['eng'] = _eng_tiles(_s)
 # Chatterbox Multilingual V3 (Resemble AI, MIT): our code -> its language id. Latin reads through the Italian
 # model, Indonesian through Malay; Cantonese and Vietnamese are not covered (use --backend azure for those).
 CBX = {'es':'es', 'fr':'fr', 'it':'it', 'pt':'pt', 'ja':'ja', 'zh':'zh', 'de':'de', 'nl':'nl', 'sv':'sv', 'pl':'pl', 'ru':'ru',
@@ -101,7 +107,8 @@ AZURE = {
     'ja':('ja-JP','ja-JP-NanamiNeural'), 'zh':('zh-CN','zh-CN-XiaoxiaoNeural'), 'de':('de-DE','de-DE-KatjaNeural'), 'nl':('nl-NL','nl-NL-ColetteNeural'),
     'sv':('sv-SE','sv-SE-SofieNeural'), 'pl':('pl-PL','pl-PL-ZofiaNeural'), 'ru':('ru-RU','ru-RU-SvetlanaNeural'), 'el':('el-GR','el-GR-AthinaNeural'),
     'la':('it-IT','it-IT-DiegoNeural'), 'tr':('tr-TR','tr-TR-EmelNeural'), 'ar':('ar-SA','ar-SA-ZariyahNeural'), 'hi':('hi-IN','hi-IN-SwaraNeural'),
-    'ko':('ko-KR','ko-KR-SunHiNeural'), 'yue':('zh-HK','zh-HK-HiuMaanNeural'), 'vi':('vi-VN','vi-VN-HoaiMyNeural'), 'ind':('id-ID','id-ID-GadisNeural')}
+    'ko':('ko-KR','ko-KR-SunHiNeural'), 'yue':('zh-HK','zh-HK-HiuMaanNeural'), 'vi':('vi-VN','vi-VN-HoaiMyNeural'), 'ind':('id-ID','id-ID-GadisNeural'),
+         'eng':('en-US','en-US-AriaNeural')}
 ESPEAK_LANG = {'e':'es', 'f':'fr-fr', 'i':'it', 'p':'pt-br'}   # what kokoro.KPipeline uses per lang_code
 
 
@@ -123,6 +130,9 @@ class OnnxPipeline:
         elif lang_code == 'z':
             from misaki import zh
             self.g2p = zh.ZHG2P(version=None)
+        elif lang_code == 'a':
+            from misaki import en
+            self.g2p = en.G2P(trf=False, british=False, fallback=None)   # American English, dictionary-first
         else:
             self.g2p = espeak.EspeakG2P(language=ESPEAK_LANG[lang_code])
 
