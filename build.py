@@ -33,7 +33,7 @@ LANG_META = {
     'pt': ('Portuguese', 'Português', '🇧🇷', 'pt-BR', False, True),
     'ja': ('Japanese', '日本語', '🇯🇵', 'ja-JP', False, True),
     'zh': ('Mandarin', '普通话', '🇨🇳', 'zh-CN', True, True),
-    'de': ('German', 'Deutsch', '🇩🇪', 'de-DE', False, False),
+    'de': ('German', 'Deutsch', '🇩🇪', 'de-DE', False, True),
     'nl': ('Dutch', 'Nederlands', '🇳🇱', 'nl-NL', False, False),
     'sv': ('Swedish', 'Svenska', '🇸🇪', 'sv-SE', False, False),
     'pl': ('Polish', 'Polski', '🇵🇱', 'pl-PL', False, False),
