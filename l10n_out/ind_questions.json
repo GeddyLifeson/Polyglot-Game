@@ -1,0 +1,4561 @@
+{
+ "fk-ar-01": [
+  {
+   "q": "Mengapa Juha turun dari keledai untuk pertama kalinya?",
+   "options": [
+    "Karena keledainya lelah",
+    "Karena beberapa pria mengkritiknya karena menunggangi keledai sementara anaknya berjalan kaki",
+    "Karena anaknya minta menunggangi sendirian",
+    "Karena jalannya terlalu curam"
+   ]
+  },
+  {
+   "q": "Apa yang diputuskan Juha dan anaknya setelah orang tua di bawah pohon mengeluh?",
+   "options": [
+    "Menjual keledai itu",
+    "Menunggangi keledai itu berdua sekaligus",
+    "Berjalan kaki berdua dan membiarkan keledai berjalan kosong di samping mereka",
+    "Kembali pulang"
+   ]
+  },
+  {
+   "q": "Pelajaran apa yang disampaikan Juha kepada anaknya?",
+   "options": [
+    "Jangan pernah mendengarkan orang asing",
+    "Tidak mungkin menyenangkan semua orang",
+    "Selalu menunggangi keledai sendirian",
+    "Petani paling tahu segalanya"
+   ]
+  },
+  {
+   "q": "Menurut paragraf terakhir, kisah itu berubah menjadi apa?",
+   "options": [
+    "Sebuah hukum di kota",
+    "Lagu yang dinyanyikan pada pesta pernikahan",
+    "Kisah yang diceritakan kepada anak-anak untuk mengajarkan sebuah pelajaran",
+    "Puisi yang ditulis oleh anak Juha"
+   ]
+  }
+ ],
+ "fk-ar-02": [
+  {
+   "q": "Kesepakatan apa yang dibuat para hewan dengan singa?",
+   "options": [
+    "Mereka akan melawan singa itu bersama-sama",
+    "Mereka akan mengirim satu hewan setiap hari agar singa membiarkan yang lain hidup tenang",
+    "Mereka akan meninggalkan hutan",
+    "Mereka akan memberi singa madu, bukan daging"
+   ]
+  },
+  {
+   "q": "Mengapa kelinci memberi tahu singa bahwa ia terlambat?",
+   "options": [
+    "Ia bilang tersesat",
+    "Ia bilang singa lain mencoba memakannya di jalan",
+    "Ia bilang sedang sakit",
+    "Ia menyalahkan hewan-hewan lain yang menahannya"
+   ]
+  },
+  {
+   "q": "Apa yang dilihat singa di dalam sumur?",
+   "options": [
+    "Seekor ikan",
+    "Kelinci lain",
+    "Bayangannya sendiri, yang ia kira singa saingan",
+    "Tidak ada apa-apa"
+   ]
+  },
+  {
+   "q": "Pelajaran apa yang diajarkan kisah ini, menurut paragraf terakhir?",
+   "options": [
+    "Kekuatan selalu menang",
+    "Kecerdikan bisa mengalahkan kekuatan",
+    "Singa tidak boleh minum air",
+    "Kelinci adalah hewan tercepat"
+   ]
+  }
+ ],
+ "fk-ar-03": [
+  {
+   "q": "Apa yang terjadi sebelum pelayaran Sindbad dimulai?",
+   "options": [
+    "Ia mewarisi kekayaan, menghabiskannya dengan cepat, lalu memutuskan berdagang lewat laut",
+    "Ia seorang nelayan yang ingin menjadi pedagang",
+    "Ia dipaksa naik kapal oleh bajak laut",
+    "Ia mewarisi sebuah kapal dari ayahnya"
+   ]
+  },
+  {
+   "q": "Ternyata apa sebenarnya pulau tempat awak kapal itu mendarat?",
+   "options": [
+    "Sebuah rakit yang terapung",
+    "Seekor paus raksasa yang sedang tidur",
+    "Sebuah gundukan pasir",
+    "Sebuah benteng yang ditinggalkan"
+   ]
+  },
+  {
+   "q": "Bagaimana Sindbad mencapai pulau kedua?",
+   "options": [
+    "Ia diselamatkan oleh kapal yang lewat",
+    "Ombak mendorongnya ke sana di atas sepotong kayu",
+    "Ia berenang sepanjang jalan atas kemauannya sendiri",
+    "Paus lain membawanya"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Sindbad setelah akhirnya kembali ke Baghdad?",
+   "options": [
+    "Ia berhenti berlayar selamanya",
+    "Ia menjadi pelatih kuda",
+    "Tidak lama kemudian, ia berangkat lagi dalam pelayaran laut lainnya",
+    "Ia pindah dari Baghdad untuk selamanya"
+   ]
+  }
+ ],
+ "fk-ar-04": [
+  {
+   "q": "Apa yang disaksikan Ali Baba dilakukan oleh empat puluh pencuri itu?",
+   "options": [
+    "Mengubur mayat di hutan",
+    "Mengucapkan kalimat ajaib yang membuka pintu rahasia di batu karang",
+    "Menyerang kafilah yang lewat",
+    "Bertengkar soal emas curian"
+   ]
+  },
+  {
+   "q": "Bagaimana Qasim menemukan rahasia Ali Baba?",
+   "options": [
+    "Ali Baba memberitahunya langsung",
+    "Istrinya menemukan koin emas yang menempel pada lilin di timbangan pinjaman",
+    "Ia mengikuti Ali Baba ke hutan",
+    "Seorang pencuri mengakuinya kepadanya"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada Qasim di dalam gua?",
+   "options": [
+    "Ia berhasil kabur membawa harta karun",
+    "Ia lupa kata-kata ajaib untuk keluar dan kemudian dibunuh oleh para pencuri",
+    "Ia berteman dengan para pencuri",
+    "Ia menyembunyikan harta itu dan kembali dengan selamat"
+   ]
+  },
+  {
+   "q": "Bagaimana Marjana mengalahkan para pencuri?",
+   "options": [
+    "Ia melaporkan mereka kepada penjaga raja",
+    "Ia menuangkan minyak mendidih ke dalam guci tempat mereka bersembunyi",
+    "Ia mengunci mereka di dalam gua",
+    "Ia menipu mereka agar meninggalkan kota"
+   ]
+  }
+ ],
+ "fk-ar-05": [
+  {
+   "q": "Mengapa utusan raja datang ke tenda Hatim?",
+   "options": [
+    "Untuk menukar kuda dengannya",
+    "Untuk meminta kuda betinanya yang berharga, guna menguji kemurahan hatinya yang termasyhur",
+    "Untuk mengundangnya ke istana raja",
+    "Untuk menantangnya berlomba puisi"
+   ]
+  },
+  {
+   "q": "Mengapa Hatim menyembelih satu-satunya kuda betinanya?",
+   "options": [
+    "Ia tidak punya cara lain untuk menjamu tamunya, karena malam itu ia tidak punya makanan",
+    "Kuda itu sakit dan akan mati juga",
+    "Ia ingin hadiah dari raja",
+    "Utusan itu menuntutnya"
+   ]
+  },
+  {
+   "q": "Mengapa Hatim menyalakan api besar setiap malam di sebuah bukit?",
+   "options": [
+    "Untuk memasak makanan bagi keluarganya",
+    "Untuk menuntun musafir yang tersesat ke tendanya demi makanan dan tempat berlindung",
+    "Untuk memberi sinyal kepada sukunya saat penyerbuan",
+    "Untuk menjauhkan hewan liar"
+   ]
+  },
+  {
+   "q": "Menurut paragraf terakhir, mengapa Hatim dikenang turun-temurun?",
+   "options": [
+    "Karena ia lebih kaya daripada semua orang di sekitarnya",
+    "Karena ia menjadikan kemurahan hati sebagai prinsip yang tak tergoyahkan bahkan di masa sulit",
+    "Karena ia memenangkan banyak perang",
+    "Karena ia menulis puisi paling terkenal pada zamannya"
+   ]
+  }
+ ],
+ "fk-ar-06": [
+  {
+   "q": "Mengapa Antarah tidak diakui sepenuhnya dalam sukunya pada awalnya?",
+   "options": [
+    "Ia lahir di suku saingan",
+    "Ibunya seorang budak perempuan Abesinia, sehingga ia disebut \"budak Banu Abs\"",
+    "Ia menolak ikut bertempur dalam peperangan",
+    "Ia terlalu muda untuk diakui"
+   ]
+  },
+  {
+   "q": "Bagaimana Antarah mendapatkan kebebasan dan pengakuan sebagai anak Syaddad?",
+   "options": [
+    "Ia membayar tebusan kepada ayahnya",
+    "Ia bertarung dengan gagah berani untuk merebut kembali unta yang dicuri, sehingga ayahnya mengakuinya di depan umum",
+    "Ia menikahi Abla secara diam-diam",
+    "Ia memenangkan lomba puisi"
+   ]
+  },
+  {
+   "q": "Syarat mustahil apa yang ditetapkan Malik untuk menikahkan Abla dengan Antarah?",
+   "options": [
+    "Antarah harus mengalahkan Malik dalam duel satu lawan satu",
+    "Antarah harus membawa seribu unta betina langka berwarna merah menyala",
+    "Antarah harus menjadi penyair terlebih dahulu",
+    "Antarah harus meninggalkan sukunya selamanya"
+   ]
+  },
+  {
+   "q": "Menurut paragraf terakhir, apa yang dilambangkan Antarah dalam warisan budaya Arab?",
+   "options": [
+    "Sosok tragis yang tak pernah mencapai tujuannya",
+    "Kesatria pemabuk asmara yang meraih martabat dan kebebasan lewat perbuatannya sendiri, bukan kelahirannya",
+    "Penakluk kejam yang ditakuti semua orang",
+    "Pedagang kaya yang membeli statusnya"
+   ]
+  }
+ ],
+ "fk-de-01": [
+  {
+   "q": "Apa yang dikatakan si penggilingan tentang putrinya kepada raja?",
+   "options": [
+    "Bahwa ia bisa memintal jerami menjadi emas",
+    "Bahwa ia bisa memanggang roti ajaib",
+    "Bahwa ia bisa bernyanyi dengan indah",
+    "Bahwa ia bisa menenun kain sutra"
+   ]
+  },
+  {
+   "q": "Apa yang diberikan gadis itu kepada lelaki kecil saat pertama kali membantunya?",
+   "options": [
+    "Sekeping koin emas",
+    "Kalungnya",
+    "Sepatunya",
+    "Sebuah roti"
+   ]
+  },
+  {
+   "q": "Apa yang dijanjikan gadis itu kepada lelaki kecil pada malam ketiga?",
+   "options": [
+    "Setengah kerajaan",
+    "Anak pertamanya",
+    "Untuk menikahinya",
+    "Cincinnya"
+   ]
+  },
+  {
+   "q": "Bagaimana sang ratu mengetahui nama lelaki kecil itu?",
+   "options": [
+    "Ia sendiri yang memberitahunya",
+    "Ia membacanya dalam sebuah buku",
+    "Seorang utusan mendengarnya bernyanyi di hutan",
+    "Raja menebaknya"
+   ]
+  }
+ ],
+ "fk-de-02": [
+  {
+   "q": "Mengapa induk kambing memperingatkan anak-anaknya?",
+   "options": [
+    "Karena serigala jahat",
+    "Karena badai",
+    "Karena pemburu",
+    "Karena kebakaran"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan serigala agar suaranya terdengar lembut?",
+   "options": [
+    "Ia minum susu hangat",
+    "Ia memakan kapur",
+    "Ia menyanyikan lagu",
+    "Ia berbisik"
+   ]
+  },
+  {
+   "q": "Bagaimana induk kambing menyelamatkan keenam anaknya?",
+   "options": [
+    "Ia menakut-nakuti serigala hingga pergi",
+    "Ia membelah perutnya dan membebaskan mereka",
+    "Ia menipu serigala masuk ke sumur",
+    "Ia memanggil pemburu"
+   ]
+  },
+  {
+   "q": "Bagaimana serigala itu akhirnya mati?",
+   "options": [
+    "Ia ditembak pemburu",
+    "Ia jatuh dari pohon",
+    "Batu-batu di dalam perutnya menariknya ke dalam sumur",
+    "Ia lari dan tak pernah kembali"
+   ]
+  }
+ ],
+ "fk-de-03": [
+  {
+   "q": "Masalah apa yang dihadapi kota Hamelin?",
+   "options": [
+    "Wabah tikus",
+    "Kekeringan",
+    "Wabah penyakit",
+    "Banjir"
+   ]
+  },
+  {
+   "q": "Mengapa wali kota menolak membayar si peniup seruling?",
+   "options": [
+    "Ia tidak punya uang lagi",
+    "Ia merasa jumlah penuh itu tidak pantas",
+    "Ia tidak percaya si peniup seruling sudah melakukan pekerjaannya",
+    "Ia ingin membayarnya belakangan"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada sebagian besar anak-anak Hamelin?",
+   "options": [
+    "Mereka dibawa masuk ke sebuah gunung dan lenyap",
+    "Mereka lari ke kota lain",
+    "Mereka diselamatkan oleh wali kota",
+    "Mereka tertidur di gereja"
+   ]
+  },
+  {
+   "q": "Aturan apa yang tetap berlaku di Hamelin setelah hari itu?",
+   "options": [
+    "Tikus tidak boleh masuk ke dalam kota",
+    "Musik tidak boleh dimainkan di jalan yang dilalui anak-anak itu",
+    "Tidak ada lagi festival yang diadakan",
+    "Orang asing tidak boleh masuk ke kota"
+   ]
+  }
+ ],
+ "fk-de-04": [
+  {
+   "q": "Till Eulenspiegel dikenal karena apa?",
+   "options": [
+    "Menerjemahkan perintah secara harfiah untuk mengerjai orang",
+    "Membuat roti terbaik di Jerman",
+    "Meramal nasib para musafir",
+    "Bertarung dalam turnamen"
+   ]
+  },
+  {
+   "q": "Apa yang dipanggang Till, bukannya roti?",
+   "options": [
+    "Tidak ada sama sekali",
+    "Bentuk-bentuk burung hantu dan monyet",
+    "Roti berbentuk hewan-hewan ternak",
+    "Adonan gosong yang tak bisa dimakan"
+   ]
+  },
+  {
+   "q": "Bagaimana reaksi warga Braunschweig terhadap kue-kue aneh itu?",
+   "options": [
+    "Mereka menolak membelinya",
+    "Mereka mengadu ke wali kota",
+    "Mereka membelinya karena penasaran",
+    "Mereka menuntut uang kembali"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Till setelah meninggalkan si pembuat roti?",
+   "options": [
+    "Ia menetap selamanya di Braunschweig",
+    "Ia minta maaf dan berhenti mengerjai orang",
+    "Ia melanjutkan perjalanan, mengerjai orang di kota-kota lain",
+    "Ia sendiri menjadi tukang roti"
+   ]
+  }
+ ],
+ "fk-de-05": [
+  {
+   "q": "Mengapa para juragan perahu takut pada batu karang Loreley?",
+   "options": [
+    "Karena bajak laut bersembunyi di sana",
+    "Karena arusnya berbahaya dan banyak perahu karam di sana",
+    "Karena konon dikutuk oleh seorang raja",
+    "Karena menghalangi satu-satunya jalur menyusuri Sungai Rhein"
+   ]
+  },
+  {
+   "q": "Menurut legenda, mengapa begitu banyak perahu menabrak batu karang itu?",
+   "options": [
+    "Badai selalu datang saat senja",
+    "Para juragan perahu teralihkan oleh nyanyian sang gadis",
+    "Sungainya terlalu sempit untuk perahu besar",
+    "Batu karang itu sendiri bergerak ke air"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Loreley ketika ia mencapai puncak batu karang untuk terakhir kalinya?",
+   "options": [
+    "Ia menyanyikan satu lagu terakhir dan menghilang ke hutan",
+    "Ia melihat perahu kekasihnya yang hilang dan melompat ke sungai",
+    "Ia diselamatkan oleh prajurit sang count palatine",
+    "Ia berubah menjadi burung dan terbang pergi"
+   ]
+  },
+  {
+   "q": "Siapa yang membuat legenda Loreley terkenal jauh melampaui wilayah Rhineland?",
+   "options": [
+    "Heinrich Heine, lewat puisinya yang terkenal",
+    "Seorang penulis sejarah abad pertengahan",
+    "Grimm bersaudara",
+    "Seorang nelayan setempat"
+   ]
+  }
+ ],
+ "fk-de-06": [
+  {
+   "q": "Menurut kisah itu, apa yang terjadi pada Barbarossa alih-alih gugur dalam pertempuran?",
+   "options": [
+    "Ia dibawa masuk ke dalam gunung oleh kekuatan gaib untuk menanti kebangkitannya kelak",
+    "Ia pensiun dengan tenang ke sebuah biara",
+    "Ia dikhianati dan dipenjara oleh anaknya sendiri",
+    "Ia berlayar pergi dan tak pernah terlihat lagi"
+   ]
+  },
+  {
+   "q": "Apa yang konon dikatakan Barbarossa saat sang gembala memastikan gagak-gagak masih berputar-putar di atas gunung?",
+   "options": [
+    "Bahwa ia akan segera bangun",
+    "Bahwa ia harus tidur seratus tahun lagi sebelum waktunya tiba",
+    "Bahwa gagak-gagak itu harus dibunuh",
+    "Bahwa sang gembala tidak boleh kembali lagi"
+   ]
+  },
+  {
+   "q": "Bagaimana mitos Barbarossa berubah pada abad kesembilan belas?",
+   "options": [
+    "Ia sepenuhnya dilupakan",
+    "Ia dianggap salah oleh para sejarawan",
+    "Ia mengalami kebangkitan kembali seiring kerinduan akan persatuan politik Jerman",
+    "Ia mulai dikaitkan dengan legenda lain yang tak berhubungan"
+   ]
+  },
+  {
+   "q": "Menurut bacaan ini, apa yang secara simbolis dicari para pengunjung Kyffhäuser saat ini?",
+   "options": [
+    "Harta karun terpendam yang konon tersembunyi di gunung",
+    "Sang kaisar yang tertidur, yang kebangkitannya akan membawa masa yang lebih baik",
+    "Obat untuk penyakit di sebuah mata air suci",
+    "Makam gagak dari legenda itu"
+   ]
+  }
+ ],
+ "fk-el-01": [
+  {
+   "q": "Apa yang diusulkan kura-kura kepada kelinci?",
+   "options": [
+    "Sebuah perlombaan",
+    "Berenang menyeberangi danau",
+    "Makan bersama",
+    "Tidak ada yang khusus"
+   ]
+  },
+  {
+   "q": "Mengapa kelinci memutuskan berhenti berlari?",
+   "options": [
+    "Ia pikir masih punya banyak waktu untuk beristirahat",
+    "Ia tersesat di hutan",
+    "Ia terluka",
+    "Ia ingin makan sesuatu"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan kura-kura sementara kelinci tidur?",
+   "options": [
+    "Ia terus berjalan mantap menuju garis akhir",
+    "Ia membangunkannya",
+    "Ia berbalik arah",
+    "Ia menunggunya"
+   ]
+  },
+  {
+   "q": "Apa pelajaran dari kisah ini?",
+   "options": [
+    "Usaha yang tekun mengalahkan ketergesaan",
+    "Kecepatan selalu menang",
+    "Tidur itu berbahaya",
+    "Hewan tidak boleh berlomba"
+   ]
+  }
+ ],
+ "fk-el-02": [
+  {
+   "q": "Apa yang dilakukan jangkrik sementara semut bekerja?",
+   "options": [
+    "Bernyanyi di dahan",
+    "Tidur",
+    "Ikut mengumpulkan makanan",
+    "Membangun sarang"
+   ]
+  },
+  {
+   "q": "Mengapa jangkrik tidak mengumpulkan makanan?",
+   "options": [
+    "Ia percaya musim panas tidak akan pernah berakhir",
+    "Ia tidak punya makanan untuk dikumpulkan",
+    "Ia sedang sakit",
+    "Ia sedang membantu semut"
+   ]
+  },
+  {
+   "q": "Apa yang diminta jangkrik dari semut di musim dingin?",
+   "options": [
+    "Sedikit makanan",
+    "Tempat hangat untuk tidur",
+    "Bantuan mencari keluarganya",
+    "Uang"
+   ]
+  },
+  {
+   "q": "Apa yang diajarkan kisah ini?",
+   "options": [
+    "Betapa pentingnya mempersiapkan masa depan",
+    "Bernyanyi lebih penting daripada bekerja",
+    "Semut itu egois",
+    "Musim dingin sebenarnya tidak pernah datang"
+   ]
+  }
+ ],
+ "fk-el-03": [
+  {
+   "q": "Mengapa Daedalus dan Icarus tidak bisa melarikan diri lewat darat atau laut?",
+   "options": [
+    "Raja Minos menjaga kedua jalur itu",
+    "Mereka tidak punya perahu",
+    "Mereka tidak tahu jalannya",
+    "Icarus menolak untuk pergi"
+   ]
+  },
+  {
+   "q": "Peringatan apa yang diberikan Daedalus kepada Icarus?",
+   "options": [
+    "Jangan terbang terlalu rendah atau terlalu tinggi",
+    "Jangan menatap matahari",
+    "Jangan terbang di malam hari",
+    "Jangan terbang di atas laut"
+   ]
+  },
+  {
+   "q": "Mengapa lilin pada sayap Icarus meleleh?",
+   "options": [
+    "Ia terbang terlalu dekat ke matahari",
+    "Ia terbang menembus badai",
+    "Ia terbang terlalu cepat",
+    "Ia mendarat terlalu keras"
+   ]
+  },
+  {
+   "q": "Apa arti ungkapan 'terbang terlalu dekat ke matahari' saat ini?",
+   "options": [
+    "Mengambil risiko berbahaya karena ambisi berlebihan",
+    "Bepergian sangat jauh",
+    "Bekerja terlalu keras",
+    "Sangat berani"
+   ]
+  }
+ ],
+ "fk-el-04": [
+  {
+   "q": "Bagaimana Gordias menjadi raja?",
+   "options": [
+    "Ia memasuki kota dengan kereta, memenuhi sebuah ramalan",
+    "Ia memenangkan pertempuran",
+    "Ia dipilih oleh rakyat",
+    "Ia mewarisi takhta"
+   ]
+  },
+  {
+   "q": "Apa yang dijanjikan ramalan tentang simpul itu?",
+   "options": [
+    "Siapa pun yang berhasil melepasnya akan menguasai seluruh Asia",
+    "Siapa pun yang berhasil melepasnya akan menjadi petani",
+    "Simpul itu tidak akan pernah bisa dilepas",
+    "Simpul itu akan membawa sial"
+   ]
+  },
+  {
+   "q": "Bagaimana Alexander memecahkan simpul itu?",
+   "options": [
+    "Ia memotongnya dengan pedangnya",
+    "Ia melepasnya dengan sabar",
+    "Ia membakarnya",
+    "Ia meminta para pendeta menyelesaikannya"
+   ]
+  },
+  {
+   "q": "Apa arti 'memotong simpul Gordian' saat ini?",
+   "options": [
+    "Menemukan solusi berani dan tak lazim untuk masalah sulit",
+    "Kalah dalam sebuah kompetisi",
+    "Mengikuti aturan dengan tepat",
+    "Menyerah pada sebuah tugas"
+   ]
+  }
+ ],
+ "fk-el-05": [
+  {
+   "q": "Di mana Odysseus dan anak buahnya mendapati diri mereka?",
+   "options": [
+    "Di dalam gua milik Cyclops bernama Polyphemus",
+    "Di sebuah pulau terpencil tanpa penghuni",
+    "Di istana Raja Minos",
+    "Di sebuah kapal di tengah badai"
+   ]
+  },
+  {
+   "q": "Nama apa yang diberikan Odysseus kepada Cyclops itu?",
+   "options": [
+    "'Tak Seorang Pun'",
+    "Nama aslinya",
+    "'Orang Asing'",
+    "Ia menolak memberikan nama"
+   ]
+  },
+  {
+   "q": "Mengapa para Cyclops lain tidak menolong Polyphemus?",
+   "options": [
+    "Ia bilang 'Tak Seorang Pun' yang melukainya, jadi mereka pikir tidak ada masalah",
+    "Mereka takut pada Odysseus",
+    "Mereka terlalu jauh untuk mendengarnya",
+    "Mereka tidak menyukai Polyphemus"
+   ]
+  },
+  {
+   "q": "Akibat apa yang ditimbulkan kesombongan Odysseus?",
+   "options": [
+    "Amarah Poseidon menunda kepulangannya selama sepuluh tahun",
+    "Ia langsung kehilangan semua anak buahnya",
+    "Ia diubah menjadi batu",
+    "Ia disambut pulang lebih awal"
+   ]
+  }
+ ],
+ "fk-el-06": [
+  {
+   "q": "Apa yang sedang dilakukan Persephone ketika Hades pertama kali melihatnya?",
+   "options": [
+    "Memetik bunga bersama para Nimfa",
+    "Berdoa di sebuah kuil",
+    "Berlayar menyeberangi laut",
+    "Tidur di padang rumput"
+   ]
+  },
+  {
+   "q": "Bagaimana kesedihan Demeter memengaruhi dunia?",
+   "options": [
+    "Ia membiarkan bumi layu dan panen gagal, menyebabkan kelaparan",
+    "Ia mengubah manusia menjadi bunga",
+    "Ia membanjiri daratan dengan hujan",
+    "Ia meminta Zeus menghancurkan Dunia Bawah"
+   ]
+  },
+  {
+   "q": "Mengapa Persephone tidak bisa sepenuhnya meninggalkan Dunia Bawah?",
+   "options": [
+    "Ia telah memakan biji delima dari Dunia Bawah",
+    "Hades mengunci gerbangnya",
+    "Ia kehilangan ingatannya",
+    "Zeus melarangnya pergi"
+   ]
+  },
+  {
+   "q": "Apa yang dilambangkan musim-musim dalam mitos ini?",
+   "options": [
+    "Kegembiraan Demeter saat Persephone kembali dan kesedihannya saat ia pergi",
+    "Pertempuran antardewa",
+    "Perubahan suasana hati Hades",
+    "Pergantian generasi manusia"
+   ]
+  }
+ ],
+ "fk-es-01": [
+  {
+   "q": "Apa yang dilihat serigala terpantul di dalam sumur yang memberi ide kepada kelinci?",
+   "options": [
+    "Matahari",
+    "Wajahnya sendiri",
+    "Bulan",
+    "Seekor ikan"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi ketika serigala melompat ke dalam sumur?",
+   "options": [
+    "Ia menangkap kelinci itu",
+    "Ia menemukan keju sungguhan",
+    "Kejunya lenyap dan ia basah kuyup",
+    "Ia tenggelam"
+   ]
+  },
+  {
+   "q": "Alasan apa yang dipakai kelinci untuk kabur kedua kalinya?",
+   "options": [
+    "Ia bilang sedang sakit",
+    "Ia bilang langit akan runtuh dan meminta serigala menahan sebatang pohon",
+    "Ia bilang ada pemburu datang",
+    "Ia bilang tidak ada daging di tubuhnya"
+   ]
+  },
+  {
+   "q": "Pelajaran apa yang menutup kisah ini?",
+   "options": [
+    "Kekuatan selalu menang pada akhirnya",
+    "Serigala lebih cerdas daripada kelinci",
+    "Yang berpikir lebih baik terkadang mengalahkan yang lebih kuat",
+    "Jangan pernah mempercayai orang asing"
+   ]
+  }
+ ],
+ "fk-es-02": [
+  {
+   "q": "Syarat apa yang ditetapkan kaisar sebelum Popocatépetl bisa menikahi putrinya?",
+   "options": [
+    "Ia harus membangun sebuah kuil",
+    "Ia harus pergi berperang dan kembali dengan jaya",
+    "Ia harus menunggu sepuluh tahun",
+    "Ia harus mengalahkan kaisar dalam pertarungan"
+   ]
+  },
+  {
+   "q": "Kebohongan apa yang disampaikan saingan yang cemburu kepada Iztaccíhuatl?",
+   "options": [
+    "Bahwa Popocatépetl telah menikahi orang lain",
+    "Bahwa Popocatépetl telah tewas dalam perang",
+    "Bahwa kaisar telah melarang pernikahan itu",
+    "Bahwa Popocatépetl tidak lagi mencintainya"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan para dewa karena iba pada sepasang kekasih itu?",
+   "options": [
+    "Mereka menghidupkan kembali Iztaccíhuatl",
+    "Mereka menghukum saingan yang cemburu itu",
+    "Mereka mengubah pasangan itu menjadi dua gunung berapi",
+    "Mereka mengirim Popocatépetl ke dunia bawah"
+   ]
+  },
+  {
+   "q": "Menurut legenda, apa yang dilambangkan asap Popocatépetl?",
+   "options": [
+    "Peringatan akan bahaya",
+    "Kesedihannya bagi Iztaccíhuatl",
+    "Amarah para dewa",
+    "Berakhirnya perang"
+   ]
+  }
+ ],
+ "fk-es-03": [
+  {
+   "q": "Bagaimana suami María mulai memperlakukannya seiring bertahun-tahun?",
+   "options": [
+    "Ia menjadi lebih sayang",
+    "Ia mengabaikannya, sering pergi jauh dari desa",
+    "Ia mengirimnya kembali ke orang tuanya",
+    "Ia mengajaknya bepergian bersamanya"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan María dalam sesaat kemarahan di tepi sungai?",
+   "options": [
+    "Ia menghadapi teman suaminya",
+    "Ia menenggelamkan anak-anaknya sendiri",
+    "Ia lari membawa anak-anaknya",
+    "Ia membakar kereta kuda"
+   ]
+  },
+  {
+   "q": "Apa yang secara tradisional diperingatkan para ibu di Amerika Latin kepada anak-anak mereka tentang La Llorona?",
+   "options": [
+    "Jangan berenang sendirian di sungai",
+    "Jangan keluar malam-malam, atau ia akan membawa mereka",
+    "Jangan bicara dengan orang asing",
+    "Jangan menikah demi uang"
+   ]
+  },
+  {
+   "q": "Apa pesan utama yang diambil narator dari legenda ini?",
+   "options": [
+    "Sungai selalu berbahaya di malam hari",
+    "Kekayaan tidak menjamin kebahagiaan",
+    "Sesaat kemarahan bisa merenggut apa yang paling dicintai seseorang",
+    "Hantu tidak bisa dimaafkan"
+   ]
+  }
+ ],
+ "fk-es-04": [
+  {
+   "q": "Bagaimana penilaian narator terhadap pernikahan para Infante de Carrión dengan putri-putri sang Cid?",
+   "options": [
+    "Itu adalah pernikahan cinta sejati",
+    "Itu diatur terutama demi kepentingan diri sendiri",
+    "Itu dipaksakan oleh raja",
+    "Itu terjadi berlawanan dengan keinginan sang Cid"
+   ]
+  },
+  {
+   "q": "Bagaimana reaksi para Infante de Carrión ketika singa itu lepas?",
+   "options": [
+    "Mereka membantu sang Cid menangkapnya",
+    "Mereka lari ketakutan dan bersembunyi, hanya memikirkan diri sendiri",
+    "Mereka membunuh singa itu",
+    "Mereka dengan tenang menuntun tamu-tamu lain ke tempat aman"
+   ]
+  },
+  {
+   "q": "Bagaimana sang Cid menangani singa yang lepas itu?",
+   "options": [
+    "Ia memanggil prajuritnya untuk menjebaknya dengan jaring",
+    "Ia dengan tenang memegang surainya dan mengembalikannya ke kandang",
+    "Ia membunuhnya dengan pedang",
+    "Ia mengunci diri di istana"
+   ]
+  },
+  {
+   "q": "Efek jangka panjang apa yang ditimbulkan peristiwa itu bagi para Infante de Carrión?",
+   "options": [
+    "Mereka menjadi pengagum setia sang Cid",
+    "Rasa malu mereka berubah menjadi kebencian yang terus tumbuh terhadapnya",
+    "Mereka segera meninggalkan Valencia",
+    "Mereka dipuji karena kehati-hatian mereka"
+   ]
+  }
+ ],
+ "fk-es-05": [
+  {
+   "q": "Mengapa Sancho Panza setuju menjadi pengawal Don Quixote?",
+   "options": [
+    "Karena kesetiaan keluarga",
+    "Sebagai ganti jabatan gubernur sebuah pulau di masa depan",
+    "Karena ia juga menyukai kisah-kisah kesatria",
+    "Karena ia tidak punya tempat lain untuk tinggal"
+   ]
+  },
+  {
+   "q": "Menurut Sancho, kincir angin itu sebenarnya apa kepada Don Quixote?",
+   "options": [
+    "Menara pengawas yang dibangun musuh",
+    "Kincir angin yang baling-balingnya hanya tampak seperti lengan",
+    "Raksasa yang sedang tidur karena sihir",
+    "Patung yang ditinggalkan para kesatria kuno"
+   ]
+  },
+  {
+   "q": "Bagaimana Don Quixote menjelaskan kekalahannya setelah menabrak kincir angin itu?",
+   "options": [
+    "Ia mengakui bahwa ia memang salah",
+    "Ia menyalahkan Sancho karena mengalihkan perhatiannya",
+    "Ia mengklaim seorang penyihir mengubah para raksasa itu menjadi kincir angin untuk merampas kejayaannya",
+    "Ia bilang Rocinante tersandung tanpa sengaja"
+   ]
+  },
+  {
+   "q": "Menurut paragraf penutup, apa makna simbolis peristiwa ini bagi Don Quixote?",
+   "options": [
+    "Kemampuannya sebagai petarung sejati",
+    "Kemampuannya melihat keagungan dalam hal-hal biasa dan mengejar cita-citanya meski terus-menerus terbukti salah",
+    "Rasa curiganya yang semakin besar terhadap Sancho",
+    "Keputusannya untuk meninggalkan dunia kesatria"
+   ]
+  }
+ ],
+ "fk-es-06": [
+  {
+   "q": "Dengan dalih apa si kembar dipanggil ke Xibalbá?",
+   "options": [
+    "Sebuah pesta pernikahan",
+    "Sebuah pertandingan bola",
+    "Sebuah upacara keagamaan",
+    "Sebuah pengadilan atas kejahatan ayah mereka"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada Hunahpú di Rumah Kelelawar?",
+   "options": [
+    "Ia membeku total",
+    "Ia dimakan habis",
+    "Seekor kelelawar merobek kepalanya",
+    "Ia lolos tanpa cedera"
+   ]
+  },
+  {
+   "q": "Ujian terakhir apa yang diminta para penguasa Xibalbá kepada si kembar?",
+   "options": [
+    "Mengalahkan seekor jaguar dalam pertarungan",
+    "Mengorbankan satu sama lain lalu hidup kembali",
+    "Melewati semalam di Rumah Gelap tanpa bantuan",
+    "Memecahkan teka-teki tentang leluhur mereka"
+   ]
+  },
+  {
+   "q": "Bagaimana akhir kisah bagi Hun-Camé dan Vucub-Camé?",
+   "options": [
+    "Mereka dihidupkan kembali dan dijadikan sekutu si kembar",
+    "Si kembar membiarkan mereka mati untuk selamanya setelah mereka pun tunduk pada pengorbanan itu",
+    "Mereka melarikan diri dari Xibalbá dalam kekalahan",
+    "Mereka diampuni dan diasingkan alih-alih dibunuh"
+   ]
+  }
+ ],
+ "fk-fr-01": [
+  {
+   "q": "Apa yang dilakukan semut sepanjang musim panas?",
+   "options": [
+    "Mengumpulkan dan menyimpan makanan",
+    "Menari di padang",
+    "Tidur di bawah sinar matahari",
+    "Bernyanyi bersama jangkrik"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi ketika musim dingin tiba?",
+   "options": [
+    "Jangkrik punya banyak makanan tersimpan",
+    "Jangkrik tidak punya apa-apa lagi untuk dimakan",
+    "Semut meninggalkan rumahnya",
+    "Jangkrik pindah ke padang lain"
+   ]
+  },
+  {
+   "q": "Bagaimana jangkrik menjawab pertanyaan semut tentang musim panas?",
+   "options": [
+    "Ia bilang telah menyimpan makanan",
+    "Ia bilang telah bernyanyi sepanjang musim panas",
+    "Ia bilang telah bepergian jauh",
+    "Ia bilang telah banyak tidur"
+   ]
+  },
+  {
+   "q": "Pelajaran apa yang diajarkan kisah ini?",
+   "options": [
+    "Pentingnya mempersiapkan masa depan",
+    "Pentingnya bernyanyi keras-keras",
+    "Pentingnya berbagi makanan",
+    "Pentingnya tidur nyenyak"
+   ]
+  }
+ ],
+ "fk-fr-02": [
+  {
+   "q": "Mengapa rubah berhenti di bawah pohon itu?",
+   "options": [
+    "Ia mencium bau keju di paruh gagak",
+    "Ia ingin tidur di sana",
+    "Ia sedang mencari air",
+    "Ia ingin bernyanyi"
+   ]
+  },
+  {
+   "q": "Apa yang diklaim rubah tentang gagak itu?",
+   "options": [
+    "Bahwa ia buruk rupa",
+    "Bahwa ia akan menjadi raja hutan jika suaranya sebagus bulunya",
+    "Bahwa ia sebaiknya meninggalkan hutan",
+    "Bahwa bulunya kusam"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada keju itu?",
+   "options": [
+    "Gagak memakannya sendiri",
+    "Keju itu jatuh dan ditangkap rubah",
+    "Rubah mengembalikannya",
+    "Keju itu lenyap ke dalam pohon"
+   ]
+  },
+  {
+   "q": "Apa pesan moral dari fabel ini?",
+   "options": [
+    "Jangan pernah percaya pada orang yang terlalu banyak menjilat",
+    "Selalu bernyanyi keras-keras di hutan",
+    "Rubah adalah hewan berbahaya",
+    "Gagak tidak boleh terbang di malam hari"
+   ]
+  }
+ ],
+ "fk-fr-03": [
+  {
+   "q": "Siapa yang bertanggung jawab menutup gerbang kota setiap malam?",
+   "options": [
+    "Putri Dahut sendiri",
+    "Seorang penjaga, sementara raja memegang kuncinya",
+    "Santo Corentin",
+    "Iblis yang menyamar"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Dahut selama badai?",
+   "options": [
+    "Ia memperingatkan ayahnya akan bahaya",
+    "Ia mencuri kunci itu dan membuka gerbang",
+    "Ia melarikan diri sendirian dari kota",
+    "Ia melawan orang asing itu"
+   ]
+  },
+  {
+   "q": "Menurut legenda, apa yang akhirnya terjadi pada Dahut?",
+   "options": [
+    "Ia tenggelam dan tak pernah terlihat lagi",
+    "Ia didorong ke laut dan menjadi putri duyung",
+    "Ia berhasil kabur dengan selamat ke Quimper",
+    "Ia mengalahkan iblis itu"
+   ]
+  },
+  {
+   "q": "Apa yang konon masih bisa didengar oleh para nelayan Breton?",
+   "options": [
+    "Suara Dahut bernyanyi",
+    "Lonceng kota yang tenggelam berdentang di bawah gelombang",
+    "Derap kuda sang raja",
+    "Tawa iblis"
+   ]
+  }
+ ],
+ "fk-fr-04": [
+  {
+   "q": "Apa itu olifant?",
+   "options": [
+    "Pedang Roland",
+    "Sebuah tanduk gading yang bisa terdengar dari jauh",
+    "Sejenis perisai",
+    "Nama jalur pegunungan itu"
+   ]
+  },
+  {
+   "q": "Mengapa Roland pada awalnya menolak meniup tanduk itu?",
+   "options": [
+    "Ia tidak tahu cara memakainya",
+    "Karena harga diri, tidak ingin tampak takut",
+    "Karena Olivier melarangnya",
+    "Karena tanduk itu rusak"
+   ]
+  },
+  {
+   "q": "Apa yang ditemukan Charlemagne saat tiba di Roncevaux?",
+   "options": [
+    "Roland hidup tetapi terluka",
+    "Roland dan para sahabatnya sudah tewas",
+    "Medan pertempuran kosong tanpa jejak perkelahian",
+    "Bangsa Moor menunggu untuk berunding"
+   ]
+  },
+  {
+   "q": "Apa yang dilambangkan kisah Roland di Prancis?",
+   "options": [
+    "Hanya strategi militer",
+    "Keberanian, kesetiaan, dan harga dari kesombongan",
+    "Pendirian kota Paris",
+    "Perjanjian damai dengan Spanyol"
+   ]
+  }
+ ],
+ "fk-fr-05": [
+  {
+   "q": "Syarat apa yang ditetapkan Mélusine untuk pernikahan mereka?",
+   "options": [
+    "Ia tidak boleh mengetahui nama aslinya",
+    "Ia tidak boleh melihatnya pada hari Sabtu, saat ia mengurung diri",
+    "Ia harus melepaskan tanahnya",
+    "Ia tidak boleh menikah lagi"
+   ]
+  },
+  {
+   "q": "Apa yang mendorong Raymondin memata-matai Mélusine?",
+   "options": [
+    "Sebuah mimpi yang ia alami",
+    "Sindiran cemburu dari saudaranya bahwa Mélusine tidak setia",
+    "Sepucuk surat yang ia temukan",
+    "Nasihat dari seorang pastor"
+   ]
+  },
+  {
+   "q": "Bagaimana akhirnya rahasia itu terungkap kepada semua orang?",
+   "options": [
+    "Mélusine mengakuinya sendiri",
+    "Raymondin memanggilnya \"serpente\" (si ular) di depan istana saat pertengkaran",
+    "Anak mereka menemukannya",
+    "Seorang pelayan menyebarkan desas-desus"
+   ]
+  },
+  {
+   "q": "Menurut legenda, apa yang terjadi ketika seorang keturunan wangsa Lusignan akan meninggal?",
+   "options": [
+    "Sebuah lonceng berbunyi di kastel",
+    "Tangisan Mélusine terdengar",
+    "Seekor naga muncul di langit",
+    "Air mancur itu mengering"
+   ]
+  }
+ ],
+ "fk-fr-06": [
+  {
+   "q": "Apa dua syarat perjanjian dengan iblis itu?",
+   "options": [
+    "Membayar emas dan tak pernah kembali",
+    "Tidak menyebut nama Tuhan dan kembali sebelum ayam berkokok",
+    "Tidak boleh menoleh ke belakang dan tidak boleh bicara",
+    "Membawa hadiah dan bernyanyi keras-keras"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi begitu para lelaki itu tiba di desa?",
+   "options": [
+    "Mereka diusir oleh warga desa",
+    "Mereka menari dan berpesta hingga larut malam",
+    "Mereka ditangkap karena menerobos masuk",
+    "Mereka lupa alasan kedatangan mereka"
+   ]
+  },
+  {
+   "q": "Bagaimana perjalanan pulang hampir berakhir dengan bencana?",
+   "options": [
+    "Mereka kehabisan bahan bakar",
+    "Seorang pria bersumpah demi surga, melanggar perjanjian, dan kano itu jadi tak terkendali",
+    "Mereka tersesat dalam badai salju",
+    "Iblis menuntut lebih banyak jiwa sebelum membiarkan mereka pulang"
+   ]
+  },
+  {
+   "q": "Pelajaran apa yang diambil para pendongeng tua Québécois dari legenda ini?",
+   "options": [
+    "Jangan pernah bepergian sendirian di musim dingin",
+    "Janji kepada iblis, bahkan bercanda sekalipun, selalu berharga mahal",
+    "Selalu percaya pada tawaran orang asing",
+    "Kano berbahaya di salju"
+   ]
+  }
+ ],
+ "fk-hi-01": [
+  {
+   "q": "Apa yang menjadi makanan pokok si monyet?",
+   "options": [
+    "Buah manis dari pohon jamun",
+    "Ikan dari sungai",
+    "Nasi dari desa",
+    "Dedaunan dari pohon"
+   ]
+  },
+  {
+   "q": "Mengapa istri buaya menginginkan jantung monyet itu?",
+   "options": [
+    "Ia percaya buah yang manis berarti hati yang manis pula",
+    "Ia marah pada monyet itu",
+    "Ia ingin menguji suaminya",
+    "Ia sangat lapar"
+   ]
+  },
+  {
+   "q": "Bagaimana monyet itu meloloskan diri?",
+   "options": [
+    "Ia menipu buaya agar kembali ke pohon",
+    "Ia langsung melompat ke dalam air",
+    "Ia meminta bantuan burung-burung",
+    "Ia melawan buaya itu"
+   ]
+  },
+  {
+   "q": "Pelajaran apa yang diajarkan kisah ini?",
+   "options": [
+    "Kecerdikan bisa menyelamatkanmu dari pengkhianatan",
+    "Buaya selalu bisa dipercaya",
+    "Buah tidak boleh dibagi-bagi",
+    "Persahabatan mustahil di antara hewan"
+   ]
+  }
+ ],
+ "fk-hi-02": [
+  {
+   "q": "Kesepakatan apa yang dibuat para hewan dengan singa?",
+   "options": [
+    "Mengirimnya satu hewan setiap hari daripada diburu",
+    "Memberinya buah, bukan daging",
+    "Bersembunyi darinya di dalam gua",
+    "Melawannya bersama-sama"
+   ]
+  },
+  {
+   "q": "Bagaimana kelinci menjelaskan keterlambatannya?",
+   "options": [
+    "Ia mengaku bertemu singa lain yang menyebut dirinya raja",
+    "Ia bilang tersesat di hutan",
+    "Ia bilang sedang berburu makanan",
+    "Ia menyalahkan hewan-hewan lain"
+   ]
+  },
+  {
+   "q": "Apa yang dilihat singa di dalam sumur?",
+   "options": [
+    "Bayangannya sendiri, yang ia kira saingannya",
+    "Seekor singa lain yang sungguhan",
+    "Seekor ikan",
+    "Bayangan dirinya di tanah"
+   ]
+  },
+  {
+   "q": "Apa pesan moral kisah ini?",
+   "options": [
+    "Kecerdasan lebih hebat daripada kekuatan",
+    "Kekuatan selalu menang",
+    "Hewan tidak bisa saling mengelabui",
+    "Singa adalah yang paling bijaksana dari semua hewan"
+   ]
+  }
+ ],
+ "fk-hi-03": [
+  {
+   "q": "Tantangan apa yang diajukan Akbar?",
+   "options": [
+    "Apakah ada yang bisa berdiri semalaman di kolam yang dingin",
+    "Apakah ada yang bisa memasak hidangan tercepat",
+    "Apakah ada yang bisa memecahkan sebuah teka-teki",
+    "Apakah ada yang bisa memanjat dinding istana"
+   ]
+  },
+  {
+   "q": "Mengapa si lelaki miskin tidak diberi hadiahnya?",
+   "options": [
+    "Akbar bilang kehangatan dari lampu yang jauh membuat ujiannya tidak sah",
+    "Ia tertidur selama ujian",
+    "Ia meminta uang terlalu banyak",
+    "Ia sebenarnya tidak pernah masuk ke kolam itu"
+   ]
+  },
+  {
+   "q": "Apa yang dibuktikan peragaan khichdi Birbal?",
+   "options": [
+    "Bahwa alasan sebelumnya tentang kehangatan jarak jauh itu konyol dan tidak adil",
+    "Bahwa Birbal koki yang lebih baik daripada juru masak istana",
+    "Bahwa api selalu memasak makanan lebih cepat dari kejauhan",
+    "Bahwa penilaian Akbar selalu benar"
+   ]
+  },
+  {
+   "q": "Pada akhirnya, apa yang ditunjukkan kisah ini tentang Birbal?",
+   "options": [
+    "Ia memadukan kecerdikan dengan rasa keadilan yang kuat",
+    "Ia selalu setuju dengan kaisar demi keamanan",
+    "Ia lebih suka memasak daripada memberi nasihat",
+    "Ia tidak menyukai orang miskin"
+   ]
+  }
+ ],
+ "fk-hi-04": [
+  {
+   "q": "Apa yang dilakukan Raja Krishnadevaraya dengan mangga langka itu?",
+   "options": [
+    "Ia membagikan satu buah kepada setiap punggawa kesayangannya",
+    "Ia menyimpan semuanya untuk dirinya sendiri",
+    "Ia menjualnya di pasar",
+    "Ia memberikannya kepada gajah-gajahnya"
+   ]
+  },
+  {
+   "q": "Mengapa punggawa yang cemburu itu mengadu kepada raja?",
+   "options": [
+    "Ia tidak mendapat mangga dan menganggap Tenali Rama tak pantas dihormati",
+    "Ia mengira mangga-mangga itu busuk",
+    "Ia ingin emas, bukan buah",
+    "Ia percaya raja lebih menyukai orang asing"
+   ]
+  },
+  {
+   "q": "Bagaimana Tenali Rama membela dirinya di hadapan raja?",
+   "options": [
+    "Dengan mengubah ucapannya menjadi pujian atas kemurahan hati raja",
+    "Dengan meminta maaf dan mengembalikan mangganya",
+    "Dengan menyalahkan punggawa yang cemburu itu secara terbuka",
+    "Dengan mengabaikan pertanyaan raja"
+   ]
+  },
+  {
+   "q": "Apa yang digambarkan kisah ini tentang kecerdasan Tenali Rama?",
+   "options": [
+    "Ia bisa mengubah tuduhan yang tegang menjadi pujian dan meredakan konflik",
+    "Ia selalu membuatnya terjerumus lebih dalam ke masalah",
+    "Ia tidak berguna melawan punggawa yang cemburu",
+    "Ia hanya berhasil saat raja tidak ada"
+   ]
+  }
+ ],
+ "fk-hi-05": [
+  {
+   "q": "Apa yang membuat rusa yang dilihat Sita begitu luar biasa?",
+   "options": [
+    "Tubuhnya yang keemasan dan tanduknya berhiaskan permata",
+    "Ukurannya yang sangat besar dan warnanya yang gelap",
+    "Kemampuannya berbicara",
+    "Matanya yang menyala merah"
+   ]
+  },
+  {
+   "q": "Siapa sebenarnya rusa itu, dan mengapa ia dikirim?",
+   "options": [
+    "Iblis Maricha, dikirim oleh Rahwana untuk memancing Rama menjauh dari Sita",
+    "Roh hutan yang menguji kesabaran Rama",
+    "Rusa sungguhan yang dipelihara Sita sejak lahir",
+    "Ilusi Laksmana untuk menguji Sita"
+   ]
+  },
+  {
+   "q": "Mengapa Laksmana akhirnya meninggalkan gubuk itu meski ragu-ragu?",
+   "options": [
+    "Sita bersikeras, sedih karena teriakan yang ia yakini adalah suara Rama",
+    "Ia ingin melihat sendiri rusa emas itu",
+    "Rama memanggilnya langsung",
+    "Ia curiga Rahwana sudah dekat"
+   ]
+  },
+  {
+   "q": "Apa akibat akhir dari tipu daya rusa emas itu?",
+   "options": [
+    "Itu menyebabkan penculikan Sita, membuka jalan bagi perang antara Rama dan Rahwana",
+    "Itu mempertemukan kembali Rama dengan saudaranya yang hilang",
+    "Itu mengungkap jati diri asli Rahwana kepada Laksmana",
+    "Itu membuat Rama berhenti mencari Sita"
+   ]
+  }
+ ],
+ "fk-hi-06": [
+  {
+   "q": "Siapa yang dipilih Savitri untuk dinikahi, dan apa yang tidak biasa darinya?",
+   "options": [
+    "Satyawan, seorang pangeran yang diasingkan dan hidup sebagai pertapa hutan dengan takdir tersembunyi",
+    "Seorang saudagar kaya yang dijodohkan ayahnya",
+    "Seorang pejuang dari kerajaan saingan",
+    "Seorang resi yang sudah sepenuhnya meninggalkan pernikahan"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Savitri saat hari kematian Satyawan yang telah ditakdirkan semakin dekat?",
+   "options": [
+    "Ia menjalankan sumpah ketat tiga malam tanpa tidur atau istirahat",
+    "Ia mengirim Satyawan ke kerajaan jauh demi keselamatan",
+    "Ia meminta Narada mengubah ramalan itu",
+    "Ia mengadakan pesta besar untuk seluruh hutan"
+   ]
+  },
+  {
+   "q": "Bagaimana Savitri mengalahkan Yama?",
+   "options": [
+    "Ia meminta anugerah seratus anak dari Satyawan, yang secara logis memaksa Yama mengembalikan nyawa Satyawan",
+    "Ia bertarung dengan Yama satu lawan satu",
+    "Ia menipunya hingga tertidur",
+    "Ia menyuapnya dengan harta kerajaan"
+   ]
+  },
+  {
+   "q": "Tradisi abadi apa yang terinspirasi oleh kisah Savitri?",
+   "options": [
+    "Puasa Vat Savitri yang dijalankan para wanita bersuami untuk menghormatinya",
+    "Sebuah festival berburu tahunan di hutan",
+    "Ziarah ke istana Raja Ashvapati",
+    "Larangan menebang kayu selama musim panas"
+   ]
+  }
+ ],
+ "fk-ind-01": [
+  {
+   "q": "Mengapa kancil ingin menyeberangi sungai?",
+   "options": [
+    "Untuk makan buah di seberang",
+    "Untuk mengunjungi sanak saudara",
+    "Untuk menghindari badai",
+    "Untuk mencari air minum"
+   ]
+  },
+  {
+   "q": "Tipu daya apa yang digunakan kancil untuk menyeberangi sungai?",
+   "options": [
+    "Ia berenang cepat melewati buaya-buaya",
+    "Ia meminta buaya-buaya berbaris agar bisa dihitung",
+    "Ia membuat rakit dari kayu",
+    "Ia menunggu sampai buaya-buaya tertidur"
+   ]
+  },
+  {
+   "q": "Bagaimana perasaan para buaya ketika sadar telah ditipu?",
+   "options": [
+    "Geli",
+    "Berterima kasih",
+    "Sangat marah",
+    "Tak acuh"
+   ]
+  },
+  {
+   "q": "Apa yang dilambangkan kancil dalam kisah ini?",
+   "options": [
+    "Kekuatan fisik",
+    "Kecerdikan yang mengalahkan kekuatan",
+    "Sifat pengecut",
+    "Kekejaman"
+   ]
+  }
+ ],
+ "fk-ind-02": [
+  {
+   "q": "Apa yang diberikan raksasa kepada Mbok Sirni?",
+   "options": [
+    "Sekantong emas",
+    "Sebutir biji timun ajaib",
+    "Sepasang sepatu ajaib",
+    "Seekor burung yang bisa bicara"
+   ]
+  },
+  {
+   "q": "Apa yang ditemukan Mbok Sirni di dalam timun emas itu?",
+   "options": [
+    "Seorang bayi laki-laki",
+    "Peti berisi permata",
+    "Seorang bayi perempuan",
+    "Sebilah pedang ajaib"
+   ]
+  },
+  {
+   "q": "Apa yang diberikan sang pertapa kepada Timun Mas untuk lolos dari raksasa itu?",
+   "options": [
+    "Empat bungkusan ajaib: biji timun, jarum, garam, dan terasi",
+    "Jubah ajaib untuk menghilang",
+    "Kuda terbang",
+    "Peta menuju gua tersembunyi"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada raksasa itu pada akhirnya?",
+   "options": [
+    "Ia menjadi sahabat Timun Mas",
+    "Ia ditelan lumpur mendidih",
+    "Ia berubah menjadi batu",
+    "Ia melarikan diri ke kerajaan lain"
+   ]
+  }
+ ],
+ "fk-ind-03": [
+  {
+   "q": "Mengapa ibu Malin harus bekerja keras sendirian?",
+   "options": [
+    "Malin menolak membantunya",
+    "Ayahnya meninggal di laut",
+    "Ia ingin membeli rumah",
+    "Ia sedang menabung untuk bepergian"
+   ]
+  },
+  {
+   "q": "Malin telah menjadi apa saat kapalnya kembali ke desanya?",
+   "options": [
+    "Nelayan miskin seperti ayahnya",
+    "Saudagar kaya yang menikah dengan bangsawan",
+    "Kapten kapal tanpa keluarga",
+    "Pendongeng terkenal"
+   ]
+  },
+  {
+   "q": "Bagaimana reaksi Malin ketika ibunya datang memeluknya?",
+   "options": [
+    "Ia dengan senang hati mengenalkannya kepada istrinya",
+    "Ia menyangkal bahwa itu ibunya",
+    "Ia mengajaknya naik ke kapal",
+    "Ia menangis bahagia"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada Malin akibat kutukan ibunya?",
+   "options": [
+    "Ia menjadi sangat kaya",
+    "Ia berubah menjadi batu di tengah badai",
+    "Ia diusir dari desa",
+    "Ia kehilangan ingatannya"
+   ]
+  }
+ ],
+ "fk-ind-04": [
+  {
+   "q": "Bagaimana Bawang Putih diperlakukan di rumahnya sendiri?",
+   "options": [
+    "Seperti anak tunggal yang disayang",
+    "Seperti pembantu",
+    "Seperti bangsawan",
+    "Ia dikirim untuk bersekolah"
+   ]
+  },
+  {
+   "q": "Syarat apa yang ditetapkan nenek tua itu untuk mengembalikan kain itu?",
+   "options": [
+    "Bawang Putih harus menemukan cincin yang hilang",
+    "Bawang Putih harus membantu pekerjaan rumah selama beberapa hari",
+    "Bawang Putih harus menyanyikan sebuah lagu",
+    "Bawang Putih harus membayar dengan emas"
+   ]
+  },
+  {
+   "q": "Mengapa Bawang Merah pergi ke sungai yang sama?",
+   "options": [
+    "Untuk mencuci pakaiannya sendiri",
+    "Untuk mencari saudarinya",
+    "Untuk meniru Bawang Putih dan mendapat hadiah serupa",
+    "Untuk mengambil air minum"
+   ]
+  },
+  {
+   "q": "Apa isi labu besar yang dipilih Bawang Merah?",
+   "options": [
+    "Emas dan permata",
+    "Buah segar",
+    "Ular dan makhluk berbisa",
+    "Tidak ada apa-apa sama sekali"
+   ]
+  }
+ ],
+ "fk-ind-05": [
+  {
+   "q": "Siapa sebenarnya Tumang itu?",
+   "options": [
+    "Anjing biasa",
+    "Dewa yang dikutuk menjelma anjing",
+    "Saudara laki-laki Dayang Sumbi",
+    "Raja dari kerajaan tetangga"
+   ]
+  },
+  {
+   "q": "Mengapa Sangkuriang dan Dayang Sumbi setuju untuk menikah?",
+   "options": [
+    "Keduanya tahu bahwa mereka bersaudara dan menikah demi kewajiban",
+    "Sangkuriang mengenalinya tetapi Dayang Sumbi tidak mengenalinya",
+    "Tak satu pun dari mereka menyadari hubungan ibu dan anak itu",
+    "Seorang raja yang mengatur pernikahan itu"
+   ]
+  },
+  {
+   "q": "Bagaimana Dayang Sumbi menghentikan para makhluk gaib menyelesaikan perahu itu?",
+   "options": [
+    "Ia memohon langsung kepada Sangkuriang untuk berhenti",
+    "Ia menciptakan fajar palsu dengan obor dan suara menumbuk padi",
+    "Ia menyembunyikan perahu itu semalaman",
+    "Ia meminta para dewa menurunkan hujan"
+   ]
+  },
+  {
+   "q": "Perahu yang terbalik itu berubah menjadi apa?",
+   "options": [
+    "Sebuah sungai",
+    "Sebuah gua",
+    "Sebuah gunung, Tangkuban Perahu",
+    "Sebuah danau"
+   ]
+  }
+ ],
+ "fk-ind-06": [
+  {
+   "q": "Mengapa Bandung Bondowoso jatuh cinta pada Roro Jonggrang?",
+   "options": [
+    "Ia putri raja yang dikalahkannya, dan terkenal cantik",
+    "Ia membantunya memenangkan pertempuran",
+    "Ia seorang putri asing yang berkunjung ke istana",
+    "Mereka bersahabat sejak kecil"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi ketika Bandung Bondowoso turun ke dalam sumur?",
+   "options": [
+    "Ia menemukan harta karun",
+    "Para pengikut Roro Jonggrang menguburnya hidup-hidup, tetapi ia berhasil lolos",
+    "Ia langsung tenggelam",
+    "Ia menolak untuk turun"
+   ]
+  },
+  {
+   "q": "Bagaimana Roro Jonggrang menipu para makhluk gaib agar berhenti bekerja?",
+   "options": [
+    "Ia mengancam mereka dengan pedang",
+    "Ia menciptakan fajar palsu dengan suara menumbuk padi dan membakar jerami",
+    "Ia menyuap mereka dengan emas",
+    "Ia meminta Bandung Bondowoso menghentikan mereka"
+   ]
+  },
+  {
+   "q": "Apa yang akhirnya terjadi pada Roro Jonggrang?",
+   "options": [
+    "Ia menikahi Bandung Bondowoso dengan bahagia",
+    "Ia dikutuk menjadi arca batu",
+    "Ia melarikan diri ke kerajaan lain",
+    "Ia menjadi ratu Prambanan"
+   ]
+  }
+ ],
+ "fk-it-01": [
+  {
+   "q": "Apa yang dilakukan Amulius saat mengetahui Rea Silvia melahirkan anak kembar?",
+   "options": [
+    "Ia memerintahkan bayi-bayi itu dibunuh",
+    "Ia membesarkan mereka sendiri",
+    "Ia menjadikan mereka pewarisnya",
+    "Ia mengasingkan Rea Silvia"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada keranjang berisi si kembar itu?",
+   "options": [
+    "Keranjang itu tenggelam di sungai",
+    "Keranjang itu hanyut di Sungai Tiber dan mencapai tepian sungai",
+    "Seorang nelayan langsung menemukannya",
+    "Keranjang itu hancur terbawa arus"
+   ]
+  },
+  {
+   "q": "Siapa yang membesarkan Romulus dan Remus setelah serigala betina itu?",
+   "options": [
+    "Raja Amulius",
+    "Seorang gembala bernama Faustulus dan istrinya",
+    "Numitor sendiri",
+    "Para pendeta sebuah kuil"
+   ]
+  },
+  {
+   "q": "Bagaimana kota Roma akhirnya didirikan?",
+   "options": [
+    "Kedua saudara itu membangun kota bersama-sama dengan damai",
+    "Numitor yang memutuskan lokasi pembangunannya",
+    "Remus mengejek tembok Romulus, Romulus membunuhnya, lalu mendirikan Roma",
+    "Remus menjadi raja alih-alih Romulus"
+   ]
+  }
+ ],
+ "fk-it-02": [
+  {
+   "q": "Apa yang dilakukan Pinokio alih-alih pergi ke sekolah?",
+   "options": [
+    "Ia pergi menemui Geppetto",
+    "Ia kabur ke hutan",
+    "Ia pergi bekerja",
+    "Ia tinggal di rumah"
+   ]
+  },
+  {
+   "q": "Kebohongan apa yang dikatakan Pinokio kepada sang Peri?",
+   "options": [
+    "Bahwa ia kehilangan koinnya karena berjudi",
+    "Bahwa Geppetto mengambil uangnya",
+    "Bahwa dua orang jahat mencuri koin emasnya",
+    "Bahwa ia tak pernah punya koin sama sekali"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada hidung Pinokio saat ia berbohong?",
+   "options": [
+    "Hidungnya berubah biru",
+    "Hidungnya memanjang hingga ia tak bisa keluar pintu",
+    "Hidungnya copot",
+    "Tidak terjadi apa-apa"
+   ]
+  },
+  {
+   "q": "Bagaimana kisah ini berakhir, dan pelajaran apa yang dipetik Pinokio?",
+   "options": [
+    "Sang Peri memotong hidungnya",
+    "Hidung Pinokio tetap panjang selamanya",
+    "Geppetto memperbaiki hidungnya dengan peralatan",
+    "Burung pelatuk memakan habis hidungnya yang panjang dan ia belajar untuk tidak berbohong"
+   ]
+  }
+ ],
+ "fk-it-03": [
+  {
+   "q": "Menurut kisah ini, Giufà itu orang seperti apa?",
+   "options": [
+    "Penipu licik yang mengecoh semua orang",
+    "Orang sederhana yang menuruti perintah secara terlalu harfiah",
+    "Saudagar kaya",
+    "Guru sekolah yang tegas"
+   ]
+  },
+  {
+   "q": "Apa yang dikira Giufà terjadi saat ia melihat ke dalam sumur?",
+   "options": [
+    "Ia mengira ada harta karun tersembunyi di sana",
+    "Ia mengira ada monster yang tinggal di sana",
+    "Ia mengira bulan telah jatuh ke dalam sumur",
+    "Ia mengira sumurnya kering"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Giufà untuk mencoba menyelamatkan bulan?",
+   "options": [
+    "Ia melompat sendiri ke dalam sumur",
+    "Ia meminta bantuan pastor",
+    "Ia membangun tangga turun",
+    "Ia menurunkan tali berkait ke dalam sumur"
+   ]
+  },
+  {
+   "q": "Bagaimana kisah ini berakhir, dan apa arti 'Giufà baru' di desa itu?",
+   "options": [
+    "Para warga menghukum Giufà karena membuang-buang waktu mereka",
+    "Giufà menjadi kepala desa",
+    "Giufà percaya ia telah menyelamatkan bulan, dan ungkapan itu menjadi lelucon untuk siapa pun yang membual soal hal mustahil",
+    "Bulan itu benar-benar hilang selamanya"
+   ]
+  }
+ ],
+ "fk-it-04": [
+  {
+   "q": "Menurut awal legenda ini, apa yang dilakukan Befana?",
+   "options": [
+    "Ia menaiki kereta luncur yang ditarik rusa kutub",
+    "Ia terbang di atas atap-atap rumah menaiki sapu, membagikan hadiah kepada anak-anak",
+    "Ia tinggal di cerobong asap setiap rumah",
+    "Ia hanya mengunjungi anak-anak di Roma"
+   ]
+  },
+  {
+   "q": "Mengapa nenek tua itu menolak bergabung dengan Tiga Raja?",
+   "options": [
+    "Ia tidak percaya kisah mereka tentang bintang itu",
+    "Ia takut bepergian di malam hari",
+    "Ia bilang punya terlalu banyak pekerjaan rumah",
+    "Ia tidak tahu jalannya"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi setelah nenek tua itu berubah pikiran dan mencoba mengejar para Raja itu?",
+   "options": [
+    "Ia berhasil menyusul mereka tepat pada waktunya",
+    "Ia menemukan bayi lain untuk diberi hadiah",
+    "Ia langsung berbalik pulang",
+    "Ia tak pernah bisa menemukan jalan yang benar ke Betlehem"
+   ]
+  },
+  {
+   "q": "Bagaimana legenda ini menjelaskan tradisi kaus kaki dan arang?",
+   "options": [
+    "Ia meninggalkan arang untuk semua anak sebagai pengingat kesalahannya",
+    "Tradisi kaus kaki sama sekali tidak berhubungan dengannya",
+    "Befana meninggalkan permen untuk anak-anak yang baik dan arang untuk yang nakal",
+    "Ia hanya memberi hadiah kepada anak-anak yang dinamai seperti para Raja itu"
+   ]
+  }
+ ],
+ "fk-it-05": [
+  {
+   "q": "Apa yang meneror kota Gubbio pada awal kisah ini?",
+   "options": [
+    "Sekelompok perampok yang bersembunyi di hutan",
+    "Seekor serigala buas yang menyerang ternak bahkan manusia",
+    "Wabah penyakit yang melanda kota",
+    "Banjir dari sungai terdekat"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Fransiskus ketika serigala itu menerkamnya?",
+   "options": [
+    "Ia lari kembali ke tembok kota untuk berlindung",
+    "Ia melemparkan tombak ke serigala itu",
+    "Ia membuat tanda salib dan memerintahkannya berhenti atas nama Tuhan",
+    "Ia langsung menawarkan makanan kepada serigala itu"
+   ]
+  },
+  {
+   "q": "Apa perjanjian yang diusulkan Fransiskus antara serigala dan warga kota?",
+   "options": [
+    "Serigala itu akan meninggalkan daerah itu selamanya",
+    "Warga kota akan membangunkan serigala itu tempat berlindung",
+    "Serigala itu akan menjaga kota di malam hari",
+    "Serigala itu akan berhenti menyerang sebagai imbalan diberi makan setiap hari"
+   ]
+  },
+  {
+   "q": "Bagaimana akhir legenda serigala Gubbio ini?",
+   "options": [
+    "Serigala itu akhirnya menyerang lagi dan dibunuh",
+    "Serigala itu kembali ke hutan setelah setahun",
+    "Serigala itu hidup damai bersama warga kota selama dua tahun lagi dan diratapi serta dikuburkan saat mati",
+    "Serigala itu dibawa ke Assisi untuk tinggal bersama Fransiskus"
+   ]
+  }
+ ],
+ "fk-it-06": [
+  {
+   "q": "Apa yang terjadi di Venesia pada awal legenda ini?",
+   "options": [
+    "Armada perang menyerang laguna",
+    "Badai dahsyat mengancam melumpuhkan kota",
+    "Kebakaran besar menjalar di seluruh kota",
+    "Wabah membunuh penduduknya"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan si nelayan setelah menjemput orang asing pertama itu?",
+   "options": [
+    "Ia menolak membawa penumpang lagi",
+    "Ia langsung berbalik ke daratan",
+    "Ia menjemput dua orang asing lagi dan membawa ketiganya ke laut lepas",
+    "Ia dilemparkan ke laut oleh orang asing itu"
+   ]
+  },
+  {
+   "q": "Apa yang diberikan Santo Markus kepada nelayan itu, dan mengapa?",
+   "options": [
+    "Sejumlah emas sebagai bayaran pelayaran",
+    "Sebuah peta menunjukkan dari mana para iblis itu berasal",
+    "Sebuah cincin, sebagai bukti agar sang Doge mempercayai ceritanya",
+    "Tidak ada apa-apa, karena para santo begitu saja menghilang"
+   ]
+  },
+  {
+   "q": "Bagaimana akhirnya kisah si nelayan itu dibenarkan?",
+   "options": [
+    "Sang Doge begitu saja memilih untuk mempercayainya tanpa bukti",
+    "Saksi-saksi lain maju untuk membenarkan adanya badai itu",
+    "Nelayan itu sama sekali tak mampu membuktikan ceritanya",
+    "Cincin itu ditemukan hilang dari perbendaharaan basilika, cocok dengan cincin yang diberikan kepadanya"
+   ]
+  }
+ ],
+ "fk-ja-01": [
+  {
+   "q": "Apa yang ditemukan nenek tua saat mencuci pakaian di sungai?",
+   "options": [
+    "Sebuah persik besar",
+    "Seekor ikan kecil",
+    "Sebuah kotak kayu",
+    "Sekeping koin emas"
+   ]
+  },
+  {
+   "q": "Hewan apa saja yang telah bergabung sebagai pengikut Momotaro sejauh ini dalam kisah?",
+   "options": [
+    "Seekor anjing, seekor kucing, dan seekor burung",
+    "Seekor harimau, seekor monyet, dan seekor bangau",
+    "Seekor anjing, seekor monyet, dan seekor burung pegar",
+    "Seekor anjing, seekor beruang, dan seekor rubah"
+   ]
+  },
+  {
+   "q": "Bagaimana Momotaro mengalahkan para iblis?",
+   "options": [
+    "Ia menipu para iblis agar meninggalkan pulau itu",
+    "Ia bertarung dengan iblis kepala bersama tiga pengikut hewannya dan menang",
+    "Ia membeli kembali harta karun dari para iblis",
+    "Ia meminta warga desa bertarung untuknya"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi di akhir kisah ini?",
+   "options": [
+    "Para iblis menawan Momotaro",
+    "Persik itu berubah menjadi emas",
+    "Momotaro tinggal di pulau itu selamanya",
+    "Momotaro dan pengikutnya membawa pulang harta karun itu dan desa hidup damai"
+   ]
+  }
+ ],
+ "fk-ja-02": [
+  {
+   "q": "Mengapa kura-kura membawa Taro ke Istana Naga?",
+   "options": [
+    "Untuk menghukumnya karena terlalu banyak memancing",
+    "Untuk berterima kasih karena telah menyelamatkan nyawanya",
+    "Karena ia tersesat dan butuh bantuan",
+    "Untuk menukarnya dengan harta karun"
+   ]
+  },
+  {
+   "q": "Apa yang diberikan Otohime kepada Taro saat ia memutuskan untuk pergi?",
+   "options": [
+    "Sebuah kotak berhias permata yang tidak boleh ia buka",
+    "Jaring pancing ajaib",
+    "Peta kembali ke desa",
+    "Kalung mutiara"
+   ]
+  },
+  {
+   "q": "Apa yang sebenarnya terjadi selama hari-hari Taro tinggal di Istana Naga?",
+   "options": [
+    "Keluarganya telah pindah",
+    "Desanya hancur akibat badai",
+    "Tidak ada yang berubah sama sekali",
+    "Ratusan tahun telah berlalu di desa asalnya"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi ketika Taro membuka kotak itu?",
+   "options": [
+    "Koin emas tumpah keluar",
+    "Kura-kura itu muncul lagi",
+    "Asap putih keluar dan ia seketika berubah menjadi lelaki tua",
+    "Tidak ada apa-apa yang terjadi"
+   ]
+  }
+ ],
+ "fk-ja-03": [
+  {
+   "q": "Apa yang mulai terjadi setiap kali lelaki tua itu memotong bambu setelah menemukan gadis itu?",
+   "options": [
+    "Bambunya berubah menjadi perak",
+    "Batang bambunya mulai bercahaya",
+    "Emas ditemukan di dalam batangnya",
+    "Tidak ada yang aneh terjadi"
+   ]
+  },
+  {
+   "q": "Syarat apa yang ditetapkan Kaguya-hime bagi setiap pelamar yang ingin menikahinya?",
+   "options": [
+    "Ia harus mengalahkannya dalam lomba puisi",
+    "Ia harus disetujui oleh Kaisar",
+    "Ia harus menunggu sepuluh tahun",
+    "Ia harus membawakannya harta yang nyaris mustahil didapat"
+   ]
+  },
+  {
+   "q": "Apa yang akhirnya diakui Kaguya-hime kepada orang tuanya yang khawatir?",
+   "options": [
+    "Bahwa ia berasal dari bulan dan harus segera kembali ke sana",
+    "Bahwa ia diam-diam mencintai sang Kaisar",
+    "Bahwa ia ingin menikahi salah satu pelamar itu",
+    "Bahwa ia sakit dan sekarat"
+   ]
+  },
+  {
+   "q": "Menurut kisah ini, mengapa Gunung Fuji konon mendapatkan namanya?",
+   "options": [
+    "Karena Kaguya-hime lahir di sana",
+    "Karena Kaisar membakar ramuan keabadian di puncaknya",
+    "Karena si penebang bambu tinggal di gunung itu",
+    "Karena para utusan bulan mendarat di sana"
+   ]
+  }
+ ],
+ "fk-ja-04": [
+  {
+   "q": "Apa yang diminta perempuan misterius itu kepada lelaki itu pada malam kedatangannya?",
+   "options": [
+    "Untuk segera menikahinya",
+    "Untuk memberinya makanan dan uang",
+    "Untuk membantunya mencari bangau itu",
+    "Untuk membiarkannya tinggal karena tersesat"
+   ]
+  },
+  {
+   "q": "Syarat apa yang ditetapkan sang istri sebelum ia mulai menenun?",
+   "options": [
+    "Bahwa ia harus membelikannya alat tenun baru",
+    "Bahwa ia tidak boleh melihat ke dalam ruangan selama ia menenun",
+    "Bahwa ia tidak boleh memberitahu siapa pun tentang kainnya",
+    "Bahwa ia harus membantunya menenun"
+   ]
+  },
+  {
+   "q": "Apa yang ditemukan lelaki itu sebagai jati diri sebenarnya dari sang istri?",
+   "options": [
+    "Roh rubah yang menyamar",
+    "Penenun dari desa tetangga",
+    "Bangau yang pernah ia selamatkan dari perangkap",
+    "Arwah ibunya yang telah tiada"
+   ]
+  },
+  {
+   "q": "Bagaimana kisah ini berakhir?",
+   "options": [
+    "Bangau itu terbang pergi dan si lelaki ditinggal sendiri dengan penyesalan",
+    "Lelaki itu dan bangau itu hidup bahagia bersama selamanya",
+    "Lelaki itu juga berubah menjadi bangau",
+    "Warga desa menghukum lelaki itu"
+   ]
+  }
+ ],
+ "fk-ja-05": [
+  {
+   "q": "Apa kegiatan harian Kintaro bersama para beruang itu?",
+   "options": [
+    "Bergulat dengan mereka",
+    "Berlomba naik gunung dengan mereka",
+    "Memberi mereka makan ikan",
+    "Mengajari mereka trik"
+   ]
+  },
+  {
+   "q": "Mengapa Yorimitsu menemui ibu Kintaro?",
+   "options": [
+    "Untuk membeli tanah keluarganya",
+    "Untuk memperingatkannya bahwa Kintaro terlalu berbahaya",
+    "Untuk menawarinya pekerjaan di ibu kota",
+    "Untuk bertanya apakah ia boleh membawa putranya ke ibu kota sebagai pengikut"
+   ]
+  },
+  {
+   "q": "Menurut legenda, bagaimana anak buah Yorimitsu mengalahkan iblis Shuten-doji?",
+   "options": [
+    "Mereka menantangnya bertarung satu lawan satu",
+    "Mereka membuatnya mabuk sake dan menyerangnya saat ia tak berdaya",
+    "Mereka menjebaknya di dalam gua",
+    "Mereka menipunya dengan cermin ajaib"
+   ]
+  },
+  {
+   "q": "Apa yang dilambangkan Kintaro di Jepang saat ini?",
+   "options": [
+    "Keberuntungan dalam bisnis",
+    "Perlindungan dari iblis",
+    "Pertumbuhan yang sehat bagi anak laki-laki, dihormati dengan boneka pada Festival Anak Laki-Laki",
+    "Keberhasilan dalam memanah"
+   ]
+  }
+ ],
+ "fk-ja-06": [
+  {
+   "q": "Ambisi apa yang diam-diam dipegang Issun-boshi meski diejek orang lain?",
+   "options": [
+    "Keinginan untuk tumbuh lebih tinggi lewat sihir",
+    "Kerinduan untuk suatu hari membuat namanya dikenal di ibu kota",
+    "Keinginan untuk menjadi petani",
+    "Harapan menemukan orang tua kandungnya"
+   ]
+  },
+  {
+   "q": "Peran apa yang dipegang Issun-boshi di rumah tangga bangsawan itu?",
+   "options": [
+    "Kepala penjaga rumah tangga",
+    "Juru masak di dapur",
+    "Pelayan yang dipercaya oleh putri muda rumah itu",
+    "Kurir antardesa"
+   ]
+  },
+  {
+   "q": "Bagaimana Issun-boshi meloloskan diri setelah ditelan iblis?",
+   "options": [
+    "Ia menusuk-nusuk perut iblis itu dengan jarumnya hingga ia dimuntahkan",
+    "Ia memotong jalan keluar dengan pedang",
+    "Ia mengecilkan tubuhnya dan menyelinap keluar",
+    "Ia diselamatkan oleh sang putri"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan palu keberuntungan itu untuk Issun-boshi?",
+   "options": [
+    "Membuatnya tak terlihat",
+    "Memberinya kekayaan besar",
+    "Mengubahnya menjadi iblis",
+    "Membuat tubuhnya tumbuh setinggi manusia biasa"
+   ]
+  }
+ ],
+ "fk-ko-01": [
+  {
+   "q": "Apa yang terjadi setelah orang tua mereka meninggal?",
+   "options": [
+    "Nolbu membagi harta secara adil",
+    "Nolbu mengambil semua harta dan mengusir Heungbu",
+    "Heungbu menjadi kaya",
+    "Kedua bersaudara itu pindah bersama"
+   ]
+  },
+  {
+   "q": "Apa yang dibawa pulang burung layang-layang untuk Heungbu pada musim semi berikutnya?",
+   "options": [
+    "Sekarung beras",
+    "Sebutir biji kecil",
+    "Sepucuk surat",
+    "Sekeranjang buah"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Nolbu setelah mendengar Heungbu menjadi kaya?",
+   "options": [
+    "Ia memberi selamat kepada Heungbu",
+    "Ia sengaja mematahkan kaki seekor burung layang-layang",
+    "Ia pindah ke selatan",
+    "Ia memberikan kekayaannya kepada Heungbu"
+   ]
+  },
+  {
+   "q": "Apa yang keluar dari labu milik Nolbu?",
+   "options": [
+    "Emas dan harta karun",
+    "Makhluk-makhluk gaib yang menghukumnya",
+    "Lebih banyak burung layang-layang",
+    "Tidak ada apa-apa sama sekali"
+   ]
+  }
+ ],
+ "fk-ko-02": [
+  {
+   "q": "Apa yang diminta harimau kepada sang ibu di jalan gunung itu?",
+   "options": [
+    "Pakaiannya",
+    "Sepotong kue beras",
+    "Petunjuk arah pulang",
+    "Uang"
+   ]
+  },
+  {
+   "q": "Bagaimana kedua bersaudara itu menyadari bahwa tamu itu bukan ibu mereka?",
+   "options": [
+    "Mereka melihat ekornya",
+    "Tangannya berbulu",
+    "Ia berbicara dalam bahasa asing",
+    "Baunya seperti harimau"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada tali harimau itu?",
+   "options": [
+    "Tali itu terbuat dari emas",
+    "Tali itu membusuk dan putus",
+    "Tali itu berubah menjadi ular",
+    "Tali itu terlalu pendek untuk mencapai"
+   ]
+  },
+  {
+   "q": "Kedua bersaudara itu berubah menjadi apa?",
+   "options": [
+    "Bintang-bintang",
+    "Matahari dan bulan",
+    "Burung",
+    "Gunung-gunung"
+   ]
+  }
+ ],
+ "fk-ko-03": [
+  {
+   "q": "Tugas mustahil apa yang diberikan ibu tiri kepada Kongjwi?",
+   "options": [
+    "Menyapu seluruh desa",
+    "Mengisi guci berdasar bocor dengan air",
+    "Menjahit seratus gaun",
+    "Menangkap seekor kerbau liar"
+   ]
+  },
+  {
+   "q": "Siapa yang membantu Kongjwi menyiangi ladang berbatu itu?",
+   "options": [
+    "Seekor kodok",
+    "Ayahnya",
+    "Seekor kerbau hitam dari langit",
+    "Patjwi"
+   ]
+  },
+  {
+   "q": "Apa yang hilang dari Kongjwi saat menyeberangi aliran sungai?",
+   "options": [
+    "Gaunnya",
+    "Salah satu sepatu bunganya",
+    "Sekeranjang kue beras",
+    "Tusuk konde rambutnya"
+   ]
+  },
+  {
+   "q": "Bagaimana sang hakim memilih calon istrinya?",
+   "options": [
+    "Dengan mengadakan lomba kekuatan",
+    "Dengan mencari siapa yang kakinya cocok dengan sepatu yang hilang itu",
+    "Dengan bertanya kepada para tetua desa",
+    "Dengan menikahi perempuan terkaya"
+   ]
+  }
+ ],
+ "fk-ko-04": [
+  {
+   "q": "Apa yang terjadi pada ayah Shim Cheong sebelum ia bertemu sang biksu?",
+   "options": [
+    "Ia kehilangan pekerjaannya",
+    "Ia jatuh ke dalam aliran sungai",
+    "Ia dirampok",
+    "Ia tersesat di pegunungan"
+   ]
+  },
+  {
+   "q": "Mengapa Shim Cheong mencari para pelaut itu?",
+   "options": [
+    "Untuk meminta pekerjaan dari mereka",
+    "Untuk menawarkan dirinya sebagai persembahan demi beras untuk ayahnya",
+    "Untuk menjual hasil jahitannya",
+    "Untuk mencari transportasi ke desa lain"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Raja Naga terhadap Shim Cheong?",
+   "options": [
+    "Ia menahannya selamanya",
+    "Ia mengirimnya kembali ke atas di dalam sebuah bunga teratai",
+    "Ia mengubahnya menjadi ikan",
+    "Ia menghukumnya karena berbohong"
+   ]
+  },
+  {
+   "q": "Bagaimana ayah Shim Cheong memperoleh kembali penglihatannya?",
+   "options": [
+    "Seorang tabib menyembuhkannya",
+    "Ia meminum ramuan ajaib",
+    "Ia begitu bahagia saat akhirnya bertemu putrinya",
+    "Raja Naga memulihkannya"
+   ]
+  }
+ ],
+ "fk-ko-05": [
+  {
+   "q": "Syarat apa yang ditetapkan rusa itu untuk mengembalikan jubah berbulu peri itu?",
+   "options": [
+    "Jangan mengembalikannya sampai mereka menikah selama sepuluh tahun",
+    "Jangan mengembalikannya sampai peri itu melahirkan tiga anak",
+    "Jangan mengembalikannya sampai musim dingin tiba",
+    "Jangan mengembalikannya sampai rusa itu sendiri yang mengatakannya"
+   ]
+  },
+  {
+   "q": "Mengapa peri itu akhirnya mendapatkan kembali jubah berbulunya?",
+   "options": [
+    "Ia menemukannya sendiri saat bersih-bersih",
+    "Rusa itu mengembalikannya kepadanya",
+    "Si penebang kayu menyerah pada bujukannya dan menunjukkannya kepadanya",
+    "Anak-anak mereka menemukannya dan memberikannya kepadanya"
+   ]
+  },
+  {
+   "q": "Bagaimana si penebang kayu mencapai surga?",
+   "options": [
+    "Ia menumbuhkan sayap sendiri",
+    "Ia naik ember yang digunakan para peri untuk menimba air",
+    "Ia memanjat pohon raksasa",
+    "Ia meminta bantuan para pemburu"
+   ]
+  },
+  {
+   "q": "Menurut kisah ini, apa yang terjadi dalam salah satu versi akhir ceritanya?",
+   "options": [
+    "Si penebang kayu tinggal di surga selamanya tanpa masalah",
+    "Si penebang kayu melanggar sebuah aturan saat mencoba mengunjungi ibunya dan tidak bisa kembali ke surga",
+    "Sang peri kembali ke bumi untuk tinggal bersamanya",
+    "Rusa itu berubah menjadi manusia"
+   ]
+  }
+ ],
+ "fk-ko-06": [
+  {
+   "q": "Apa yang dijanjikan Mong-ryong kepada Chunhyang sebelum ia berangkat ke Hanyang?",
+   "options": [
+    "Mengirimnya uang setiap bulan",
+    "Lulus ujian negara dan kembali untuk menikahinya secara resmi",
+    "Membawanya ke Hanyang segera",
+    "Melupakan studinya"
+   ]
+  },
+  {
+   "q": "Bagaimana tanggapan Chunhyang terhadap tuntutan Byun Hak-do agar ia melayaninya?",
+   "options": [
+    "Ia setuju karena takut",
+    "Ia melarikan diri dari Namwon",
+    "Ia menolak, mengatakan ia sudah menjadi milik seorang suami",
+    "Ia menyuapnya agar meninggalkannya"
+   ]
+  },
+  {
+   "q": "Jabatan apa yang diraih Mong-ryong setelah lulus ujian negara?",
+   "options": [
+    "Hakim setempat di Namwon",
+    "Inspektur kerajaan rahasia",
+    "Penyair istana",
+    "Penjaga istana"
+   ]
+  },
+  {
+   "q": "Gelar apa yang diberikan raja kepada Chunhyang atas kesetiaannya?",
+   "options": [
+    "Ratu Namwon",
+    "Wanita Kesucian",
+    "Inspektur Kerajaan",
+    "Gisaeng yang pensiun"
+   ]
+  }
+ ],
+ "fk-la-01": [
+  {
+   "q": "Mengapa Amulius meninggalkan kedua bayi kembar itu di sungai?",
+   "options": [
+    "Karena ia takut pada mereka",
+    "Karena ia menyayangi mereka",
+    "Karena seorang pendeta memerintahkannya",
+    "Karena kedua bayi itu sakit"
+   ]
+  },
+  {
+   "q": "Siapa yang menemukan dan membesarkan kedua bayi itu setelah serigala?",
+   "options": [
+    "Seorang gembala bernama Faustulus",
+    "Seorang raja",
+    "Seorang pendeta",
+    "Seorang prajurit"
+   ]
+  },
+  {
+   "q": "Mengapa kedua bersaudara itu bertengkar sebelum mendirikan kota?",
+   "options": [
+    "Mereka tidak sepakat soal lokasi pembangunannya",
+    "Mereka tidak sepakat soal siapa ibu mereka",
+    "Mereka bertengkar soal serigala itu",
+    "Mereka berdebat soal kakek mereka"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi di antara kedua bersaudara itu?",
+   "options": [
+    "Romulus membunuh Remus karena marah",
+    "Remus membunuh Romulus",
+    "Mereka menjadi raja bersama",
+    "Mereka meninggalkan kota bersama-sama"
+   ]
+  }
+ ],
+ "fk-la-02": [
+  {
+   "q": "Mengapa Androcles bersembunyi di sebuah gua?",
+   "options": [
+    "Ia sedang melarikan diri dari majikannya",
+    "Ia sedang berburu hewan",
+    "Ia tersesat dalam badai",
+    "Ia sedang mencari harta karun"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Androcles untuk singa itu?",
+   "options": [
+    "Ia mencabut duri dari cakarnya",
+    "Ia memberinya makanan",
+    "Ia membangunkannya sarang",
+    "Ia mengajarinya trik"
+   ]
+  },
+  {
+   "q": "Mengapa Androcles dikirim ke arena?",
+   "options": [
+    "Untuk dimangsa singa liar sebagai hukuman",
+    "Untuk bertarung melawan para gladiator",
+    "Untuk menjinakkan singa itu di depan penonton",
+    "Untuk dibebaskan oleh kaisar"
+   ]
+  },
+  {
+   "q": "Mengapa singa itu tidak menyerang Androcles?",
+   "options": [
+    "Singa itu mengenalinya sebagai sahabat yang pernah menolongnya",
+    "Singa itu sudah terlalu tua untuk menyerang",
+    "Singa itu sedang tidur",
+    "Para pelatih telah menenangkan singa itu"
+   ]
+  }
+ ],
+ "fk-la-03": [
+  {
+   "q": "Apa yang sedang dibawa gagak itu di paruhnya?",
+   "options": [
+    "Sepotong keju yang telah dicurinya",
+    "Seekor ikan",
+    "Sebuah cincin emas",
+    "Sebuah sarang berisi telur"
+   ]
+  },
+  {
+   "q": "Apa yang dikatakan rubah kepada gagak itu?",
+   "options": [
+    "Bahwa suara nyanyiannya mungkin seindah bulunya",
+    "Bahwa bulunya buruk",
+    "Bahwa ia sebaiknya memberikan keju itu langsung kepadanya",
+    "Bahwa rubah dan gagak sebaiknya berteman"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada keju itu?",
+   "options": [
+    "Rubah merebut dan memakannya setelah gagak menjatuhkannya",
+    "Gagak memakannya sebelum rubah tiba",
+    "Kejunya terlalu tinggi untuk dijangkau rubah",
+    "Seekor anjing mencurinya dari keduanya"
+   ]
+  },
+  {
+   "q": "Apa pesan moral fabel ini?",
+   "options": [
+    "Jangan percaya pada penjilat, yang biasanya menginginkan sesuatu darimu",
+    "Burung tidak boleh berkicau di dekat rubah",
+    "Keju harus selalu disembunyikan di pohon",
+    "Rubah selalu berbahaya bagi gagak"
+   ]
+  }
+ ],
+ "fk-la-04": [
+  {
+   "q": "Mengapa Lars Porsena berbaris menuju Roma?",
+   "options": [
+    "Untuk mengembalikan raja yang diasingkan ke tampuk kekuasaan",
+    "Untuk merebut lahan pertanian baru",
+    "Untuk menghukum Horatius secara pribadi",
+    "Untuk menagih upeti yang belum dibayar"
+   ]
+  },
+  {
+   "q": "Apa yang diusulkan Horatius untuk dilakukan?",
+   "options": [
+    "Menahan jembatan itu bersama dua rekannya sementara orang Romawi menghancurkannya",
+    "Menyerahkan kota itu untuk menyelamatkan nyawa",
+    "Berunding damai dengan Porsena",
+    "Membakar jembatan itu sendirian"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Horatius setelah jembatan itu hampir hancur seluruhnya?",
+   "options": [
+    "Ia menyuruh kedua rekannya kembali ke tempat aman dan menahan ujung jembatan sendirian",
+    "Ia langsung mundur bersama rekan-rekannya",
+    "Ia membangun kembali jembatan itu sendiri",
+    "Ia memanggil bala bantuan dari kota"
+   ]
+  },
+  {
+   "q": "Bagaimana Horatius selamat setelah jembatan itu runtuh?",
+   "options": [
+    "Ia berdoa kepada dewa sungai dan berenang menyeberang dengan baju zirahnya",
+    "Ia diselamatkan oleh sebuah perahu yang lewat",
+    "Ia berlari di sepanjang tepi sungai menuju sebuah tempat dangkal",
+    "Ia menyerah kepada orang Etruska"
+   ]
+  }
+ ],
+ "fk-la-05": [
+  {
+   "q": "Apa arti nama Cincinnatus, dan apa yang sedang ia lakukan sebelum menjadi terkenal?",
+   "options": [
+    "Artinya \"si rambut ikal,\" dan ia sedang bertani di sebidang tanah kecil",
+    "Artinya \"si kuat,\" dan ia sedang memimpin pasukan",
+    "Artinya \"si bijak,\" dan ia sedang bertugas di senat",
+    "Artinya \"sang buangan,\" dan ia sedang tinggal di luar negeri"
+   ]
+  },
+  {
+   "q": "Mengapa Senat memutuskan mengangkat seorang diktator?",
+   "options": [
+    "Karena seorang konsul dan pasukannya terperangkap musuh dan keadaan tampak putus asa",
+    "Karena para konsul telah dibunuh",
+    "Karena wabah telah melanda kota",
+    "Karena rakyat jelata sedang memberontak"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Cincinnatus begitu tiba di Roma?",
+   "options": [
+    "Ia langsung memanggil seluruh warga muda untuk mengangkat senjata",
+    "Ia mengadakan pawai kemenangan",
+    "Ia mengeksekusi konsul sebelumnya",
+    "Ia membangun benteng baru"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Cincinnatus setelah memenangkan perang?",
+   "options": [
+    "Ia secara sukarela melepaskan kekuasaannya, jauh lebih awal daripada yang diizinkan hukum, dan kembali ke ladangnya",
+    "Ia mempertahankan kekuasaannya selama enam bulan penuh lalu mencalonkan diri sebagai konsul",
+    "Ia menyatakan dirinya raja Roma",
+    "Ia mengusir bangsa Aequi yang kalah dari Italia"
+   ]
+  }
+ ],
+ "fk-la-06": [
+  {
+   "q": "Apa yang dilakukan Jupiter dan Merkurius, menyamar sebagai manusia?",
+   "options": [
+    "Mencari keramahtamahan di antara penduduk Frigia, dan ditolak di mana-mana",
+    "Menguji kekuatan para pejuang setempat",
+    "Mencari sebuah kuil yang hilang",
+    "Memungut pajak dari warga desa"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Baucis dan Filemon untuk tamu mereka meski tidak tahu siapa mereka sebenarnya?",
+   "options": [
+    "Mereka menawarkan semua yang mereka punya, dengan riang, meski hanya hidangan sederhana",
+    "Mereka menolak membiarkan orang asing masuk ke rumah mereka",
+    "Mereka mengirim tamu itu ke tetangga yang lebih kaya",
+    "Mereka meminta bayaran dulu dari orang asing itu"
+   ]
+  },
+  {
+   "q": "Keajaiban apa yang membuat pasangan tua itu sadar bahwa tamu mereka adalah dewa?",
+   "options": [
+    "Mangkuk anggur itu terus terisi penuh dengan sendirinya berapa pun yang dituangkan",
+    "Rumah itu tiba-tiba menjadi hangat",
+    "Angsa mereka mulai berbicara kepada mereka",
+    "Sebuah bintang terang muncul di atas atap"
+   ]
+  },
+  {
+   "q": "Apa yang akhirnya terjadi pada Baucis dan Filemon?",
+   "options": [
+    "Saat kematian akhirnya datang, mereka berdua diubah bersama menjadi dua pohon alih-alih terpisah",
+    "Mereka dijadikan abadi dan hidup selamanya di kuil marmer itu",
+    "Mereka diubah menjadi batu oleh banjir",
+    "Mereka dipisahkan, salah satunya meninggal jauh lebih dulu daripada yang lain"
+   ]
+  }
+ ],
+ "fk-nl-01": [
+  {
+   "q": "Apa yang dilakukan sang kapten meski awak kapalnya ketakutan?",
+   "options": [
+    "Ia memutar balik kapal itu",
+    "Ia tetap berlayar",
+    "Ia meminta awaknya memilih dengan suara",
+    "Ia melabuhkan kapal itu"
+   ]
+  },
+  {
+   "q": "Apa nama kapal sang kapten dalam legenda ini?",
+   "options": [
+    "The Golden Hind",
+    "The Flying Dutchman",
+    "The Silver Star",
+    "The Sea Ghost"
+   ]
+  },
+  {
+   "q": "Apa yang diperingatkan legenda Flying Dutchman kepada orang-orang?",
+   "options": [
+    "Jangan pernah berlayar dekat Afrika",
+    "Terlalu sombong",
+    "Mempercayai orang asing",
+    "Berlayar di malam hari"
+   ]
+  },
+  {
+   "q": "Menurut kisah ini, apa yang selalu dicari Flying Dutchman?",
+   "options": [
+    "Harta karun",
+    "Awaknya yang hilang",
+    "Pelabuhan yang aman",
+    "Kapten baru"
+   ]
+  }
+ ],
+ "fk-nl-02": [
+  {
+   "q": "Menurut legenda ini, siapakah Wanita Putih itu?",
+   "options": [
+    "Roh perempuan-perempuan bijak dari masa lalu",
+    "Hantu para pelaut yang hilang",
+    "Peri penjaga harta karun",
+    "Roh para petani"
+   ]
+  },
+  {
+   "q": "Apa yang bisa dilakukan Wanita Putih itu?",
+   "options": [
+    "Menyembuhkan orang sakit",
+    "Meramalkan masa depan",
+    "Mengendalikan cuaca",
+    "Berubah menjadi hewan"
+   ]
+  },
+  {
+   "q": "Di mana kita bisa mengunjungi gundukan pemakaman itu sekarang?",
+   "options": [
+    "Di provinsi-provinsi seperti Drenthe dan Overijssel",
+    "Hanya di Amsterdam",
+    "Hanya di Belgia",
+    "Gundukan itu sudah tidak ada lagi"
+   ]
+  },
+  {
+   "q": "Bagaimana legenda ini terus hidup hingga sekarang?",
+   "options": [
+    "Hanya lewat buku pelajaran sekolah",
+    "Lewat kisah yang diceritakan kakek-nenek kepada cucu mereka",
+    "Lewat sebuah festival tahunan",
+    "Legenda ini sudah dilupakan"
+   ]
+  }
+ ],
+ "fk-nl-03": [
+  {
+   "q": "Apa yang diperintahkan perempuan itu agar dibawa kembali oleh sang kapten?",
+   "options": [
+    "Emas dan permata",
+    "Muatan paling berharga yang bisa ia temukan",
+    "Sebuah kapal baru",
+    "Rempah-rempah dari Timur"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan perempuan itu dengan gandum yang dibawa sang kapten?",
+   "options": [
+    "Ia menjualnya",
+    "Ia memberikannya kepada orang miskin",
+    "Ia menyuruh gandum itu dibuang ke laut",
+    "Ia menyimpannya untuk musim dingin"
+   ]
+  },
+  {
+   "q": "Apa yang ditemukan istri nelayan itu di dalam ikan?",
+   "options": [
+    "Sebuah peta",
+    "Cincin emas milik perempuan saudagar itu",
+    "Sepucuk surat",
+    "Kalung mutiara"
+   ]
+  },
+  {
+   "q": "Apa yang konon terbentuk di tempat gandum itu tenggelam?",
+   "options": [
+    "Sebuah pulau baru",
+    "Sebuah mercusuar",
+    "Sebuah gosong pasir bernama Vrouwenzand",
+    "Sebuah pusaran air"
+   ]
+  }
+ ],
+ "fk-nl-04": [
+  {
+   "q": "Apa yang diperintahkan raja kepada Bruin si Beruang untuk dilakukan?",
+   "options": [
+    "Melawan Reynard",
+    "Membawa Reynard ke istana",
+    "Menjaga benteng Reynard",
+    "Menghukum para petani"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada Bruin ketika ia melepaskan diri dari batang pohon itu?",
+   "options": [
+    "Ia mematahkan kakinya",
+    "Ia kehilangan kulit kepala dan cakarnya",
+    "Ia jatuh ke sungai",
+    "Ia ditangkap para petani"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada Tibert si Kucing?",
+   "options": [
+    "Ia menangkap banyak tikus",
+    "Ia dikirim ke dalam perangkap tetapi nyaris lolos",
+    "Ia menolak untuk pergi",
+    "Ia berteman dengan Reynard"
+   ]
+  },
+  {
+   "q": "Apa yang diajarkan kisah ini, menurut paragraf terakhir?",
+   "options": [
+    "Bahwa kekuatan selalu menang",
+    "Bahwa raja tidak boleh percaya pada siapa pun",
+    "Bahwa kelicikan sering mencapai lebih banyak daripada kekuatan mentah",
+    "Bahwa hewan tidak bisa dipercaya"
+   ]
+  }
+ ],
+ "fk-nl-05": [
+  {
+   "q": "Menurut tradisi, apa yang diam-diam dilakukan Santo Nikolas untuk putri-putri si lelaki miskin?",
+   "options": [
+    "Ia sendiri yang mencarikan mereka suami",
+    "Ia melemparkan koin emas lewat jendela di malam hari",
+    "Ia memberi mereka sebuah rumah",
+    "Ia menulis surat kepada raja atas nama mereka"
+   ]
+  },
+  {
+   "q": "Apa sebutan tradisional untuk para pembantu Sinterklaas?",
+   "options": [
+    "Zwarte Pieten",
+    "De Wieven",
+    "De Kabouters",
+    "De Boeken"
+   ]
+  },
+  {
+   "q": "Menurut teks ini, dari mana asal nama Santa Claus versi Amerika?",
+   "options": [
+    "Dari sebuah kata Jerman kuno",
+    "Dari kata Belanda Sinterklaas",
+    "Dari sebuah legenda Spanyol",
+    "Dari dewa musim dingin pra-Kristen"
+   ]
+  },
+  {
+   "q": "Gagasan inti apa yang menurut paragraf terakhir tetap tak tersentuh dari kisah ini?",
+   "options": [
+    "Bahwa anak-anak harus selalu patuh",
+    "Bahwa kemurahan hati yang diberikan secara diam-diam adalah bentuk pemberian paling indah",
+    "Bahwa para uskup seharusnya kaya",
+    "Bahwa Spanyol dan Belanda saling terhubung"
+   ]
+  }
+ ],
+ "fk-nl-06": [
+  {
+   "q": "Menurut legenda ini, siapa korban favorit Lange Wapper?",
+   "options": [
+    "Anak-anak yang sedang bermain di luar",
+    "Para pemabuk dan pemalas yang keluyuran setelah jam malam",
+    "Para pelaut yang kembali ke pelabuhan",
+    "Para pedagang pasar"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi ketika para penjaga malam mencoba menangkap Lange Wapper?",
+   "options": [
+    "Ia lolos dengan mengecilkan diri sebesar tikus",
+    "Ia membesar, mematahkan rantai besi, dan menghilang di atas atap-atap",
+    "Ia menyuap mereka dengan emas",
+    "Ia berubah menjadi asap"
+   ]
+  },
+  {
+   "q": "Bagaimana Lange Wapper masih hadir di Antwerpen hingga kini?",
+   "options": [
+    "Sebagai patung di pelabuhan",
+    "Sebagai sosok raksasa yang diarak di jalan-jalan saat perayaan",
+    "Hanya sebagai nama bir setempat",
+    "Ia sudah sepenuhnya dilupakan"
+   ]
+  },
+  {
+   "q": "Apa yang disiratkan paragraf terakhir tentang jati diri sebenarnya makhluk ini?",
+   "options": [
+    "Bahwa ia murni ciptaan gereja",
+    "Bahwa ia hidup terutama dalam imajinasi orang-orang yang masih memercayainya",
+    "Bahwa ia adalah penjahat sungguhan dalam sejarah",
+    "Bahwa ia tidak lagi punya arti apa pun saat ini"
+   ]
+  }
+ ],
+ "fk-pl-01": [
+  {
+   "q": "Di mana naga itu tinggal?",
+   "options": [
+    "Di dalam gua di bawah Bukit Wawel",
+    "Di istana kerajaan",
+    "Di sebuah hutan",
+    "Di sungai itu sendiri"
+   ]
+  },
+  {
+   "q": "Siapa yang memerintah kota Krakow?",
+   "options": [
+    "Dewan para kesatria",
+    "Raja Krak",
+    "Tukang sepatu Skuba",
+    "Seorang uskup"
+   ]
+  },
+  {
+   "q": "Apa rencana Skuba?",
+   "options": [
+    "Melawan naga itu dengan pedang",
+    "Menjebak naga itu dengan jaring",
+    "Mengisi seekor domba dengan belerang untuk dimakan naga itu",
+    "Meracuni air sungai"
+   ]
+  },
+  {
+   "q": "Bagaimana naga itu mati?",
+   "options": [
+    "Seorang kesatria membunuhnya dengan api",
+    "Ia minum air begitu banyak hingga perutnya meledak",
+    "Sang raja meracuninya",
+    "Ia jatuh dari Bukit Wawel"
+   ]
+  }
+ ],
+ "fk-pl-02": [
+  {
+   "q": "Di mana bebek emas itu tinggal?",
+   "options": [
+    "Di sebuah sumur di luar kota",
+    "Di ruang bawah tanah yang dalam di bawah rumah tua",
+    "Di menara gereja",
+    "Di gua hutan"
+   ]
+  },
+  {
+   "q": "Apa yang dilihat si murid dilakukan para tuannya di malam hari?",
+   "options": [
+    "Membuat roti",
+    "Memanggil roh-roh jahat",
+    "Menjual harta karun",
+    "Membangun rumah"
+   ]
+  },
+  {
+   "q": "Apa yang harus dijaga bebek itu?",
+   "options": [
+    "Kumpulan buku-buku tua",
+    "Harta karun berupa emas dan batu permata",
+    "Sebilah pedang ajaib",
+    "Sebuah mahkota kerajaan"
+   ]
+  },
+  {
+   "q": "Berapa banyak uji coba sulit yang harus dilalui untuk menemukan harta karun itu?",
+   "options": [
+    "Dua",
+    "Tiga",
+    "Lima",
+    "Satu"
+   ]
+  }
+ ],
+ "fk-pl-03": [
+  {
+   "q": "Dari mana asal putri duyung itu?",
+   "options": [
+    "Laut Baltik",
+    "Laut Hitam",
+    "Sebuah danau gunung",
+    "Samudra"
+   ]
+  },
+  {
+   "q": "Apa yang ingin dilakukan saudagar itu terhadap putri duyung itu?",
+   "options": [
+    "Membebaskannya segera",
+    "Menangkapnya dan mempertontonkannya demi uang",
+    "Menikahinya",
+    "Memberinya hadiah"
+   ]
+  },
+  {
+   "q": "Siapa yang membebaskan putri duyung itu?",
+   "options": [
+    "Seorang nelayan",
+    "Saudagar itu sendiri",
+    "Anak pemilik gudang itu",
+    "Seorang prajurit"
+   ]
+  },
+  {
+   "q": "Apa yang dibawa putri duyung itu ketika membela kota?",
+   "options": [
+    "Pedang dan perisai",
+    "Mahkota dan tongkat kerajaan",
+    "Jaring dan kail",
+    "Harpa dan seruling"
+   ]
+  }
+ ],
+ "fk-pl-04": [
+  {
+   "q": "Mengapa ketiga bersaudara itu melakukan perjalanan?",
+   "options": [
+    "Untuk mencari tanah baru dan mendirikan negara masing-masing",
+    "Untuk melarikan diri dari naga",
+    "Untuk mencari harta karun",
+    "Untuk mengunjungi seorang raja"
+   ]
+  },
+  {
+   "q": "Ke arah mana Rus melakukan perjalanan?",
+   "options": [
+    "Barat",
+    "Timur",
+    "Selatan",
+    "Utara"
+   ]
+  },
+  {
+   "q": "Apa nama pemukiman Lech, dan berasal dari kata apa?",
+   "options": [
+    "Gniezno, dari \"gniazdo\" (sarang)",
+    "Kraków, dari \"kruk\" (gagak)",
+    "Warszawa, dari \"wars\"",
+    "Poznań, dari \"poznać\" (mengenali)"
+   ]
+  },
+  {
+   "q": "Elang putih itu berubah menjadi apa?",
+   "options": [
+    "Lambang negara baru Lech, yang kemudian menjadi lambang Polandia",
+    "Lambang gunung di Ceko",
+    "Lambang sungai-sungai Rus",
+    "Lambang nasib buruk"
+   ]
+  }
+ ],
+ "fk-pl-05": [
+  {
+   "q": "Apa yang konon bisa dilakukan Pan Twardowski?",
+   "options": [
+    "Terbang ke negara lain",
+    "Membangkitkan orang mati dan meramalkan masa depan",
+    "Mengubah timah menjadi emas saja",
+    "Berbicara dengan hewan"
+   ]
+  },
+  {
+   "q": "Dengan syarat apa iblis bisa mengambil jiwa Twardowski?",
+   "options": [
+    "Hanya di Roma",
+    "Hanya pada tengah malam",
+    "Hanya jika Twardowski menikah",
+    "Hanya di Krakow"
+   ]
+  },
+  {
+   "q": "Twardowski berakhir di mana setelah berdoa?",
+   "options": [
+    "Pulang dengan selamat",
+    "Di Bulan",
+    "Di Roma",
+    "Di kedai minum"
+   ]
+  },
+  {
+   "q": "Ungkapan bahasa Polandia apa yang berasal dari legenda ini?",
+   "options": [
+    "\"Menghilang seperti Twardowski di Bulan\"",
+    "\"Menari seperti iblis\"",
+    "\"Berdoa seperti seorang santo\"",
+    "\"Berdagang seperti seorang saudagar\""
+   ]
+  }
+ ],
+ "fk-pl-06": [
+  {
+   "q": "Basilisk itu konon menetas dari apa?",
+   "options": [
+    "Telur yang dierami ayam jantan tua",
+    "Kutukan seorang penyihir",
+    "Gigi seekor naga",
+    "Sebuah sumur terkutuk"
+   ]
+  },
+  {
+   "q": "Kelemahan apa yang menurut kearifan rakyat dimiliki basilisk?",
+   "options": [
+    "Ia mati saat melihat bayangannya sendiri",
+    "Ia takut pada api",
+    "Ia tidak bisa menyeberangi air",
+    "Ia tidur di siang hari"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada sang tahanan setelah mengalahkan basilisk itu?",
+   "options": [
+    "Ia tetap dieksekusi",
+    "Ia diampuni seperti dijanjikan",
+    "Ia menjadi wali kota",
+    "Ia melarikan diri dari kota"
+   ]
+  },
+  {
+   "q": "Bersama legenda apa lagi basilisk ini disebutkan dalam catatan sejarah?",
+   "options": [
+    "Naga Wawel dan putri duyung Warsawa",
+    "Pan Twardowski dan Janosik",
+    "Lech dan Czech",
+    "Bebek Emas dan Krak"
+   ]
+  }
+ ],
+ "fk-pt-01": [
+  {
+   "q": "Apa yang dimiliki Saci-Pererê alih-alih dua kaki?",
+   "options": [
+    "Hanya satu kaki",
+    "Tiga kaki",
+    "Ekor ikan",
+    "Sayap"
+   ]
+  },
+  {
+   "q": "Menurut kisah ini, apa yang dilakukan Saci pada susu sapi?",
+   "options": [
+    "Ia membiarkannya basi semalaman",
+    "Ia mengubahnya menjadi keju",
+    "Ia menumpahkannya ke tanah",
+    "Ia meminum semuanya"
+   ]
+  },
+  {
+   "q": "Bagaimana cara menjebak Saci menurut legenda ini?",
+   "options": [
+    "Dengan melemparkan saringan atau rosario ke dalam angin puting beliung",
+    "Dengan menawarinya makanan",
+    "Dengan menyanyikan lagu khusus",
+    "Dengan menyalakan api di dekatnya"
+   ]
+  },
+  {
+   "q": "Bagaimana petani tua itu berhasil menangkap Saci?",
+   "options": [
+    "Dalam botol kaca yang disumbat dengan gabus dan salib",
+    "Dalam kotak kayu",
+    "Dengan jaring yang dilemparkan padanya",
+    "Dengan mengikat kakinya ke pohon"
+   ]
+  }
+ ],
+ "fk-pt-02": [
+  {
+   "q": "Mengapa Jurupari membunuh anak lelaki itu?",
+   "options": [
+    "Karena cemburu pada betapa disayanginya anak itu",
+    "Karena anak itu mencuri darinya",
+    "Secara tidak sengaja saat berburu",
+    "Karena anak itu menghinanya"
+   ]
+  },
+  {
+   "q": "Apa yang diperintahkan suara suci itu kepada sang ibu untuk dilakukan?",
+   "options": [
+    "Menanam kedua mata anak itu, satu di hutan dan satu di dekat rumah",
+    "Mengubur anak itu di bawah pohon guarana",
+    "Membuang mata anak itu ke sungai",
+    "Memberikan mata anak itu kepada dukun"
+   ]
+  },
+  {
+   "q": "Tanaman jenis apa yang tumbuh dari kedua mata yang ditanam itu?",
+   "options": [
+    "Tanaman liar di hutan dan tanaman jinak di dekat rumah",
+    "Dua tanaman liar yang identik",
+    "Tanaman yang tidak berbuah",
+    "Sebuah pohon dan sebuah tanaman merambat"
+   ]
+  },
+  {
+   "q": "Mengapa buah itu dinamai guaraná?",
+   "options": [
+    "Karena biji dan dagingnya menyerupai mata manusia",
+    "Karena ditemukan dekat sungai bernama Guaraná",
+    "Karena dinamai sesuai nama ibu anak itu",
+    "Karena bentuknya seperti gitar kecil"
+   ]
+  }
+ ],
+ "fk-pt-03": [
+  {
+   "q": "Mengapa kaki terbalik Curupira membingungkan orang?",
+   "options": [
+    "Karena jejak kakinya menunjuk ke arah berlawanan dari arah ia sebenarnya pergi",
+    "Karena ia bisa terbang di atas tanah",
+    "Karena ia hanya berjalan di malam hari",
+    "Karena kakinya sama sekali tidak meninggalkan bekas"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Curupira pada pemburu yang membunuh lebih banyak hewan daripada yang dibutuhkan?",
+   "options": [
+    "Ia membalas dendam kepada mereka",
+    "Ia memberi mereka surat peringatan",
+    "Ia begitu saja mengabaikan mereka",
+    "Ia meminta hewan-hewan itu memaafkan mereka"
+   ]
+  },
+  {
+   "q": "Apa yang meyakinkan Curupira untuk akhirnya melepaskan Chico?",
+   "options": [
+    "Chico berjanji berhenti berburu melebihi yang diperlukan",
+    "Chico memberi Curupira hadiah tembakau",
+    "Chico membangun kuil kecil di hutan",
+    "Chico meninggalkan daerah itu selamanya"
+   ]
+  },
+  {
+   "q": "Apa yang masih ditinggalkan para musafir sebagai persembahan bagi Curupira?",
+   "options": [
+    "Sedikit tembakau atau cachaça di batang pohon",
+    "Buah segar di pintu masuk hutan",
+    "Patung-patung kecil ukiran",
+    "Koin yang ditanam di tanah"
+   ]
+  }
+ ],
+ "fk-pt-04": [
+  {
+   "q": "Menurut legenda ini, seperti apa rupa Iara?",
+   "options": [
+    "Seorang wanita berambut hijau panjang dengan ekor ikan",
+    "Seorang wanita tua dengan sisik perak",
+    "Seekor ular raksasa dengan mata manusia",
+    "Seekor burung berwajah wanita"
+   ]
+  },
+  {
+   "q": "Bagaimana Iara menjadi makhluk sungai?",
+   "options": [
+    "Ikan-ikan itu mengasihaninya setelah ayahnya melemparkannya ke sungai",
+    "Ia terjun ke sungai untuk menghindari badai",
+    "Seorang dukun mengutuknya karena menolak menikah",
+    "Ia terlahir dari sungai itu sendiri"
+   ]
+  },
+  {
+   "q": "Apa yang sedang dilakukan Beto ketika pertama kali mendengar nyanyian Iara?",
+   "options": [
+    "Bekerja sendirian di tepi sungai saat senja",
+    "Memancing bersama neneknya",
+    "Tidur di dalam kanonya",
+    "Berenang bersama teman-teman"
+   ]
+  },
+  {
+   "q": "Bagaimana Beto berhasil lolos dari mantra Iara?",
+   "options": [
+    "Ia menutup telinganya dan lari kembali ke kanonya",
+    "Ia menyanyikan lagu yang lebih keras untuk meredamnya",
+    "Ia melemparkan jaringnya ke arahnya",
+    "Ia meminta neneknya menyelamatkannya secara langsung"
+   ]
+  }
+ ],
+ "fk-pt-05": [
+  {
+   "q": "Bagaimana Pedro Malasartes umumnya digambarkan?",
+   "options": [
+    "Miskin harta namun cerdik dan pandai mencari akal",
+    "Tuan tanah kaya tetapi tidak jujur",
+    "Petani pendiam tanpa ambisi",
+    "Pedagang asing yang sedang lewat"
+   ]
+  },
+  {
+   "q": "Apa yang disembunyikan Pedro di dalam panci sebelum demonstrasi itu?",
+   "options": [
+    "Sup yang sudah matang",
+    "Setumpuk bara panas",
+    "Sebuah panci kedua yang lebih kecil",
+    "Tidak ada apa-apa, pancinya benar-benar kosong"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi ketika saudagar itu mencoba panci itu di rumah?",
+   "options": [
+    "Sayuran mentahnya tak pernah matang",
+    "Panci itu meledak",
+    "Panci itu memasak makanan seketika",
+    "Panci itu terbakar"
+   ]
+  },
+  {
+   "q": "Apa yang ditemukan saudagar itu ketika ia kembali untuk menghadapi Pedro?",
+   "options": [
+    "Pedro sudah meninggalkan desa itu membawa uangnya",
+    "Pedro minta maaf dan mengembalikan uangnya",
+    "Pedro menawarkan barang ajaib kedua kepadanya",
+    "Pedro ditangkap oleh warga desa"
+   ]
+  }
+ ],
+ "fk-pt-06": [
+  {
+   "q": "Suasana seperti apa yang digambarkan kisah ini di awal?",
+   "options": [
+    "Sebuah pasar malam festa junina di tepi sungai",
+    "Sebuah prosesi pemakaman yang sunyi",
+    "Sebuah pasar pagi yang ramai",
+    "Sebuah ekspedisi memancing di tengah badai"
+   ]
+  },
+  {
+   "q": "Apa yang menonjol dari cara orang asing itu menari?",
+   "options": [
+    "Ia menari dengan keanggunan yang seakan bukan dari dunia ini",
+    "Ia menolak menari dengan siapa pun",
+    "Ia hanya menari sendirian di sudut",
+    "Ia mengajarkan semua orang tarian baru"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada gadis itu beberapa bulan setelah festival?",
+   "options": [
+    "Ia diketahui hamil tanpa penjelasan siapa ayahnya",
+    "Ia meninggalkan desa untuk mencari orang asing itu",
+    "Ia menikahi pria lain dari pasar malam itu",
+    "Ia jatuh sakit dan tak pernah sembuh"
+   ]
+  },
+  {
+   "q": "Menurut para dukun beranak yang lebih tua, siapa sebenarnya orang asing itu?",
+   "options": [
+    "Boto, lumba-lumba sungai yang tersihir dan menyamar sebagai pria",
+    "Roh pengembara tanpa wujud tetap",
+    "Kepala desa saingan yang menyamar",
+    "Hantu nelayan yang tenggelam"
+   ]
+  }
+ ],
+ "fk-ru-01": [
+  {
+   "q": "Siapa yang pertama kali dipanggil Kakek untuk membantu?",
+   "options": [
+    "Si anjing",
+    "Nenek",
+    "Si kucing",
+    "Si tikus"
+   ]
+  },
+  {
+   "q": "Siapa yang dipanggil sang Cucu untuk membantu?",
+   "options": [
+    "Si tikus",
+    "Si kucing",
+    "Anjing Zhuchka",
+    "Kakek"
+   ]
+  },
+  {
+   "q": "Siapa yang dipanggil Zhuchka untuk membantu?",
+   "options": [
+    "Si kucing",
+    "Si tikus",
+    "Nenek",
+    "Sang Cucu"
+   ]
+  },
+  {
+   "q": "Siapa yang akhirnya membuat lobak itu bisa dicabut?",
+   "options": [
+    "Kakek sendirian",
+    "Si kucing",
+    "Si tikus",
+    "Nenek sendirian"
+   ]
+  }
+ ],
+ "fk-ru-02": [
+  {
+   "q": "Mengapa kolobok mulai menggelinding di jalan?",
+   "options": [
+    "Ia melompat sendiri dari ambang jendela",
+    "Nenek tua itu mendorongnya keluar",
+    "Seekor serigala membawanya pergi",
+    "Ia tertiup angin"
+   ]
+  },
+  {
+   "q": "Bagaimana kolobok lolos dari kelinci dan serigala?",
+   "options": [
+    "Ia bersembunyi di lubang",
+    "Ia menyanyikan lagu dan menggelinding pergi",
+    "Ia memanggil beruang",
+    "Ia menggigit mereka"
+   ]
+  },
+  {
+   "q": "Apa yang diminta rubah kepada kolobok?",
+   "options": [
+    "Menggelinding pergi dengan cepat",
+    "Memberinya sedikit roti",
+    "Menyanyikan lagunya lagi, lebih dekat kepadanya",
+    "Bertemu si beruang"
+   ]
+  },
+  {
+   "q": "Apa yang akhirnya terjadi pada kolobok?",
+   "options": [
+    "Ia lolos selamanya",
+    "Rubah memakannya",
+    "Beruang memakannya",
+    "Ia kembali pulang"
+   ]
+  }
+ ],
+ "fk-ru-03": [
+  {
+   "q": "Mengapa ibu tiri mengirim anak tirinya ke hutan?",
+   "options": [
+    "Untuk mengumpulkan kayu bakar",
+    "Untuk meninggalkannya sendirian di sana, karena tidak menyukainya",
+    "Untuk bertemu Morozko dengan sengaja",
+    "Untuk mencarikannya suami"
+   ]
+  },
+  {
+   "q": "Bagaimana tanggapan anak tiri itu saat Morozko bertanya apakah ia kedinginan?",
+   "options": [
+    "Ia menangis dan memohon bantuan",
+    "Ia lari",
+    "Ia dengan sopan bilang bahwa ia hangat",
+    "Ia menolak menjawab"
+   ]
+  },
+  {
+   "q": "Hadiah apa yang diberikan Morozko kepada anak tiri itu?",
+   "options": [
+    "Tidak ada apa-apa sama sekali",
+    "Mantel bulu hangat dan peti berisi permata",
+    "Kuda ajaib",
+    "Rumah baru"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada anak kandung ibu tiri itu di hutan?",
+   "options": [
+    "Ia menerima kekayaan yang lebih besar lagi",
+    "Morozko membekukannya karena ia bersikap kasar",
+    "Ia menikahi Morozko",
+    "Ia tersesat lalu pulang dengan selamat"
+   ]
+  }
+ ],
+ "fk-ru-04": [
+  {
+   "q": "Apa yang mencuri apel emas dari taman itu?",
+   "options": [
+    "Seekor beruang",
+    "Burung Api",
+    "Seekor serigala",
+    "Saudara tertua"
+   ]
+  },
+  {
+   "q": "Apa yang ditawarkan Serigala Kelabu kepada Ivan setelah memakan kudanya?",
+   "options": [
+    "Tidak ada, ia langsung kabur",
+    "Bantuannya sendiri sebagai ganti si kuda",
+    "Sebuah bulu emas",
+    "Sebilah pedang ajaib"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan para saudara Ivan kepadanya dalam perjalanan pulang?",
+   "options": [
+    "Mereka membantunya membawa harta itu",
+    "Mereka membunuhnya dan mengambil hadiahnya",
+    "Mereka meninggalkannya tapi membiarkannya hidup",
+    "Mereka menikahi Elena sendiri"
+   ]
+  },
+  {
+   "q": "Bagaimana kisah ini berakhir bagi Ivan dan Serigala Kelabu?",
+   "options": [
+    "Keduanya mati di padang stepa",
+    "Ivan menikahi Elena dan serigala itu kembali ke hutan",
+    "Serigala itu menjadi tsar",
+    "Ivan tak pernah memaafkan saudara-saudaranya"
+   ]
+  }
+ ],
+ "fk-ru-05": [
+  {
+   "q": "Bagaimana Sadko pertama kali mendapatkan restu Raja Laut?",
+   "options": [
+    "Ia memberinya emas",
+    "Ia melawan monster laut",
+    "Ia memainkan gusli dengan begitu indah hingga memesonanya",
+    "Ia membangunkannya istana"
+   ]
+  },
+  {
+   "q": "Mengapa kapal-kapal Sadko tiba-tiba berhenti di laut?",
+   "options": [
+    "Sebuah badai menghancurkannya",
+    "Raja Laut menuntut upeti yang belum pernah dibayarkan",
+    "Angin habis",
+    "Bajak laut menghalangi jalan"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Sadko untuk menghentikan tarian dahsyat di laut itu?",
+   "options": [
+    "Ia bernyanyi lebih keras",
+    "Ia memutuskan senar gusli-nya",
+    "Ia menyelam ke dalam air",
+    "Ia meminta bantuan para putri duyung"
+   ]
+  },
+  {
+   "q": "Bagaimana Sadko akhirnya meninggalkan kerajaan bawah laut Raja Laut?",
+   "options": [
+    "Ia bertarung keluar",
+    "Ia menikahi seorang putri duyung dan tinggal selamanya",
+    "Ia tertidur di samping Chernavushka dan terbangun di tepi sungai rumahnya",
+    "Raja Laut mengusirnya"
+   ]
+  }
+ ],
+ "fk-ru-06": [
+  {
+   "q": "Bagaimana Snegurochka bisa ada?",
+   "options": [
+    "Ia ditemukan terlantar di hutan",
+    "Sepasang suami istri tua yang tak punya anak membentuknya dari salju dan ia hidup",
+    "Ia lahir kepada pasangan itu dengan cara biasa",
+    "Ibu Musim Semi mengirimnya sebagai hadiah sejak awal"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada Snegurochka setelah ia bertemu gembala Lel?",
+   "options": [
+    "Ia langsung jatuh sakit",
+    "Perasaan hangat tergerak di hatinya untuk pertama kalinya",
+    "Ia lari kembali ke orang tuanya",
+    "Ia menolak mendengarkan nyanyiannya"
+   ]
+  },
+  {
+   "q": "Apa harga yang akhirnya harus dibayar Snegurochka atas hadiah cinta sejati dari Ibu Musim Semi?",
+   "options": [
+    "Ingatannya",
+    "Tidak ada, itu hadiah tanpa harga",
+    "Nyawanya, karena terkena matahari musim panas terbukti mematikan",
+    "Kecantikannya"
+   ]
+  },
+  {
+   "q": "Bagaimana orang-orang memaknai nasib Snegurochka setelahnya?",
+   "options": [
+    "Sebagai bukti bahwa sihir tidak ada",
+    "Sebagai perumpamaan tentang kecantikan rapuh yang tak sanggup menahan panasnya kehidupan sejati",
+    "Sebagai peringatan agar tidak bernyanyi di festival",
+    "Sebagai gosip lokal yang tak penting"
+   ]
+  }
+ ],
+ "fk-sv-01": [
+  {
+   "q": "Di mana tomte itu tinggal?",
+   "options": [
+    "Di dapur rumah pertanian",
+    "Di gudang atau loteng",
+    "Di hutan terdekat",
+    "Di gereja desa"
+   ]
+  },
+  {
+   "q": "Apa yang ditinggalkan keluarga itu untuk tomte pada Malam Natal?",
+   "options": [
+    "Segelas susu dan roti",
+    "Bubur beras dengan mentega",
+    "Topi merah baru",
+    "Koin dan perak"
+   ]
+  },
+  {
+   "q": "Mengapa tomte itu marah?",
+   "options": [
+    "Keluarga itu pindah",
+    "Seorang anak lelaki memakan mentega yang seharusnya untuknya",
+    "Gudangnya terbakar",
+    "Sang petani menjual sapi-sapinya"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi setelah keluarga itu memperbaiki keadaan?",
+   "options": [
+    "Tomte itu meninggalkan pertanian itu selamanya",
+    "Pertanian itu kembali beruntung",
+    "Anak lelaki itu menjadi petani sendiri",
+    "Tomte itu berubah menjadi sapi"
+   ]
+  }
+ ],
+ "fk-sv-02": [
+  {
+   "q": "Apa yang diputuskan rubah dan beruang untuk dilakukan?",
+   "options": [
+    "Berburu bersama di musim dingin",
+    "Menanam ladang bersama dan berbagi hasil panen",
+    "Membangun rumah bersama",
+    "Berlomba melintasi hutan"
+   ]
+  },
+  {
+   "q": "Tanaman apa yang mereka tanam pada tahun pertama, dan siapa yang diuntungkan?",
+   "options": [
+    "Gandum, dan beruang yang diuntungkan",
+    "Lobak, dan rubah yang diuntungkan",
+    "Lobak, dan beruang yang diuntungkan",
+    "Gandum, dan rubah kehilangan semuanya"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi dengan panen kedua?",
+   "options": [
+    "Beruang akhirnya mendapat bagian yang lebih baik",
+    "Rubah lagi-lagi mengambil bagian yang berharga",
+    "Mereka membaginya sama rata kali ini",
+    "Panen itu gagal total"
+   ]
+  },
+  {
+   "q": "Bagaimana kisah ini berakhir?",
+   "options": [
+    "Rubah meminta maaf kepada beruang",
+    "Beruang menangkap dan memakan rubah",
+    "Rubah melarikan diri dan dikenang sebagai hewan paling cerdik",
+    "Beruang dan rubah kembali berteman"
+   ]
+  }
+ ],
+ "fk-sv-03": [
+  {
+   "q": "Menurut kepercayaan rakyat, apa yang dilakukan Näcken?",
+   "options": [
+    "Ia menjaga ternak di malam hari",
+    "Ia duduk di tepi sungai memainkan biola dan memikat orang ke dalam air",
+    "Ia membangun jembatan menyeberangi sungai",
+    "Ia melindungi anak-anak dari tenggelam"
+   ]
+  },
+  {
+   "q": "Apa yang dilihat Anders di jeram itu?",
+   "options": [
+    "Seorang perempuan tua sedang mencuci pakaian",
+    "Seorang pemuda memainkan biola di atas batu",
+    "Sekelompok anak-anak menari",
+    "Tidak ada apa-apa, hanya air kosong"
+   ]
+  },
+  {
+   "q": "Apa yang diperingatkan nenek Anders kepadanya?",
+   "options": [
+    "Bahwa esnya terlalu tipis",
+    "Bahwa pria itu adalah Näcken dan pada akhirnya akan menariknya ke dalam air",
+    "Bahwa biola itu curian",
+    "Bahwa orang asing tidak boleh dipercaya soal uang"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Anders untuk melindungi dirinya?",
+   "options": [
+    "Ia pindah dari desa itu",
+    "Ia melemparkan sepotong besi ke dalam air",
+    "Ia meminta seorang pastor memberkati sungai itu",
+    "Ia membangun pagar di sekeliling jeram itu"
+   ]
+  }
+ ],
+ "fk-sv-04": [
+  {
+   "q": "Mengapa Gustav Eriksson melakukan perjalanan melalui Dalarna?",
+   "options": [
+    "Ia sedang berziarah",
+    "Ia melarikan diri dari raja Denmark dan mencari bantuan",
+    "Ia sedang berburu untuk olahraga",
+    "Ia sedang membangun gereja baru"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan penduduk Dalarna pada awalnya?",
+   "options": [
+    "Mereka langsung memberinya pasukan",
+    "Mereka menolak membantunya",
+    "Mereka menyerahkannya kepada orang Denmark",
+    "Mereka langsung memilihnya menjadi raja"
+   ]
+  },
+  {
+   "q": "Apa yang mengubah pikiran para petani Dalarna itu?",
+   "options": [
+    "Sepucuk surat dari Norwegia",
+    "Berita tentang Pembantaian Stockholm",
+    "Kekurangan pangan",
+    "Sebuah pesan dari Paus"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan hingga kini untuk mengenang pengejaran terhadap Gustav Vasa?",
+   "options": [
+    "Kebaktian gereja setiap Natal",
+    "Lomba ski Vasaloppet",
+    "Pertunjukan teater di Stockholm",
+    "Sebuah patung dibangun di Sälen"
+   ]
+  }
+ ],
+ "fk-sv-05": [
+  {
+   "q": "Apa yang khas dari penampilan skogsrået?",
+   "options": [
+    "Ia sama sekali tidak punya wajah",
+    "Ia cantik dari depan tetapi berongga di punggung seperti pohon lapuk",
+    "Ia tak terlihat kecuali di malam hari",
+    "Ia selalu tampil sebagai perempuan tua"
+   ]
+  },
+  {
+   "q": "Apa yang diminta perempuan itu kepada Olof?",
+   "options": [
+    "Makanan dan tempat berlindung untuk musim dingin",
+    "Untuk menghangatkan diri di dekat apinya",
+    "Petunjuk arah kembali ke desa",
+    "Tumpangan pulang dengan kereta luncurnya"
+   ]
+  },
+  {
+   "q": "Bagaimana reaksi Olof setelah menyadari siapa perempuan itu sebenarnya?",
+   "options": [
+    "Ia lari sambil berteriak",
+    "Ia dengan tenang berterima kasih dan mengucapkan selamat malam kepadanya",
+    "Ia melemparkan abu ke api untuk mengusirnya",
+    "Ia menuntutnya segera pergi"
+   ]
+  },
+  {
+   "q": "Apa hasil dari kesopanan Olof itu?",
+   "options": [
+    "Tidak ada yang berubah sama sekali",
+    "Tungku pembakarannya dan keberuntungan berburunya sama-sama membaik musim itu",
+    "Ia terkutuk seumur hidupnya",
+    "Ia diundang untuk tinggal di hutan"
+   ]
+  }
+ ],
+ "fk-sv-06": [
+  {
+   "q": "Apa yang ditemukan Thor dan para pengiringnya saat senja di Jotunheim?",
+   "options": [
+    "Sebuah desa kecil para petani",
+    "Sebuah benteng yang begitu luas hingga mereka harus mendongak untuk melihat puncaknya",
+    "Sebuah sungai beku yang menghalangi jalan mereka",
+    "Sebuah medan pertempuran kosong"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi dalam lomba makan Loki melawan Logi?",
+   "options": [
+    "Loki menang dengan mudah",
+    "Loki kalah telak, karena Logi melahap daging, tulang, dan bahkan wadahnya",
+    "Mereka seri dan berbagi dagingnya",
+    "Loki menolak berlomba"
+   ]
+  },
+  {
+   "q": "Apa tiga ujian yang dihadapi Thor?",
+   "options": [
+    "Gulat, memanah, dan berenang",
+    "Meminum sebuah tanduk, mengangkat seekor kucing, dan bergulat dengan perempuan tua",
+    "Mendaki gunung, mengangkat batu, dan lomba lari",
+    "Menyanyi, minum, dan melompat"
+   ]
+  },
+  {
+   "q": "Sebenarnya tersambung ke apa tanduk yang diminum Thor itu?",
+   "options": [
+    "Sebuah sumur di bawah kastel",
+    "Samudra, sehingga tegukannya menyebabkan air laut surut",
+    "Sebuah sungai api",
+    "Tidak ke mana-mana — itu hanya tanduk yang sangat dalam"
+   ]
+  }
+ ],
+ "fk-tr-01": [
+  {
+   "q": "Apa yang ditemukan tetangga itu di dalam kuali saat Hodja mengembalikannya?",
+   "options": [
+    "Sepucuk surat",
+    "Sebuah panci kecil",
+    "Beberapa keping koin",
+    "Sepotong kain"
+   ]
+  },
+  {
+   "q": "Mengapa tetangga itu dengan senang hati meminjamkan kuali itu kepada Hodja untuk kedua kalinya?",
+   "options": [
+    "Ia ingin Hodja memperbaikinya",
+    "Ia pikir kuali itu mungkin akan beranak lagi",
+    "Ia butuh ruang di rumahnya",
+    "Hodja membayarnya dengan uang"
+   ]
+  },
+  {
+   "q": "Kabar apa yang disampaikan Hodja kepada tetangganya tentang kuali itu?",
+   "options": [
+    "Bahwa kuali itu dicuri",
+    "Bahwa kuali itu pecah",
+    "Bahwa kuali itu telah mati",
+    "Bahwa ia telah menjualnya"
+   ]
+  },
+  {
+   "q": "Apa argumen cerdik Hodja di akhir kisah ini?",
+   "options": [
+    "Bahwa kuali itu mahal",
+    "Bahwa tetangganya sebaiknya membeli kuali baru",
+    "Bahwa jika tetangganya percaya kuali itu beranak, ia juga harus percaya kuali itu bisa mati",
+    "Bahwa tetangganya terlalu serakah"
+   ]
+  }
+ ],
+ "fk-tr-02": [
+  {
+   "q": "Mengapa para pelayan pada awalnya tidak mengizinkan Hodja masuk ke pesta pernikahan itu?",
+   "options": [
+    "Ia datang terlalu terlambat",
+    "Penampilannya terlihat terlalu miskin",
+    "Ia tidak diundang",
+    "Ia orang asing bagi mereka"
+   ]
+  },
+  {
+   "q": "Bagaimana orang-orang memperlakukan Hodja secara berbeda saat ia kembali?",
+   "options": [
+    "Mereka mengabaikannya sepenuhnya",
+    "Mereka memberinya makanan yang lebih buruk",
+    "Mereka memperlakukannya dengan hormat dan memberinya kursi terbaik",
+    "Mereka memintanya pergi lagi"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Hodja dengan mantel bulunya di meja makan?",
+   "options": [
+    "Ia menjualnya",
+    "Ia mencelupkan lengannya ke dalam makanan",
+    "Ia memberikannya kepada tuan rumah",
+    "Ia melepasnya"
+   ]
+  },
+  {
+   "q": "Apa makna pepatah \"Makanlah, mantel buluku, makanlah\"?",
+   "options": [
+    "Bahwa pakaian bagus membawa keberuntungan",
+    "Bahwa makanan tidak boleh disia-siakan",
+    "Bahwa orang harus dihormati karena jati dirinya, bukan pakaiannya",
+    "Bahwa tamu harus selalu berpakaian resmi"
+   ]
+  }
+ ],
+ "fk-tr-03": [
+  {
+   "q": "Mengapa warga desa tidak mampu menghadapi raksasa itu sendiri?",
+   "options": [
+    "Mereka tidak punya pemimpin",
+    "Mereka tidak punya kekuatan untuk melawannya",
+    "Mereka sudah meninggalkan desa itu",
+    "Mereka tidak percaya raksasa itu ada"
+   ]
+  },
+  {
+   "q": "Tipu daya apa yang digunakan Keloğlan untuk menakuti raksasa itu?",
+   "options": [
+    "Ia melemparkan api kepadanya",
+    "Ia berpura-pura memeras air keluar dari sebuah batu",
+    "Ia meminta bantuan para prajurit",
+    "Ia menunjukkan sebilah pedang kepada raksasa itu"
+   ]
+  },
+  {
+   "q": "Apa yang diputuskan raksasa itu setelah tertipu?",
+   "options": [
+    "Tetap melawan Keloğlan",
+    "Pindah dari desa itu selamanya",
+    "Meminta Keloğlan menjadi temannya",
+    "Mencuri lebih banyak hewan sebelum pergi"
+   ]
+  },
+  {
+   "q": "Pelajaran apa yang diajarkan kisah ini, menurut bacaan ini?",
+   "options": [
+    "Bahwa kekuatan selalu menang",
+    "Bahwa kecerdikan sama pentingnya dengan kekuatan",
+    "Bahwa raksasa tidak pernah nyata",
+    "Bahwa warga desa tidak boleh mempercayai orang asing"
+   ]
+  }
+ ],
+ "fk-tr-04": [
+  {
+   "q": "Mengapa pembangunan masjid itu melambat?",
+   "options": [
+    "Batunya tidak cukup",
+    "Para pekerja berhenti untuk mendengarkan obrolan Karagöz dan Hacivat",
+    "Sultan kehabisan uang",
+    "Sebuah badai merusak lokasi itu"
+   ]
+  },
+  {
+   "q": "Apa yang dirasakan sultan setelah memerintahkan eksekusi itu?",
+   "options": [
+    "Lega karena masjid akan selesai lebih cepat",
+    "Menyesal, karena ia merindukan percakapan mereka",
+    "Marah kepada para pekerja",
+    "Bangga dengan keputusannya"
+   ]
+  },
+  {
+   "q": "Bahan apa yang digunakan sang penyair untuk membuat boneka-boneka itu?",
+   "options": [
+    "Kayu",
+    "Kertas",
+    "Kulit unta",
+    "Kain"
+   ]
+  },
+  {
+   "q": "Kapan pertunjukan wayang Karagöz-Hacivat secara tradisional dipentaskan hingga saat ini?",
+   "options": [
+    "Saat pernikahan",
+    "Selama bulan Ramadan",
+    "Pada malam Tahun Baru",
+    "Selama festival panen"
+   ]
+  }
+ ],
+ "fk-tr-05": [
+  {
+   "q": "Apa yang membuat pasukan para bangsawan mustahil mengalahkan Tepegöz?",
+   "options": [
+    "Ia bisa terbang menjauhi mereka",
+    "Kulitnya seperti besi dan tak bisa dilukai",
+    "Ia bersembunyi di tempat yang tak seorang pun bisa temukan",
+    "Ia punya banyak raksasa lain yang membantunya"
+   ]
+  },
+  {
+   "q": "Mengapa para bangsawan Oghuz meminta bantuan Basat?",
+   "options": [
+    "Ia bangsawan paling tua dan bijaksana",
+    "Ia pejuang luar biasa yang dibesarkan oleh seekor singa betina",
+    "Ia saudara Tepegöz",
+    "Ia pernah mengalahkan raksasa sebelumnya"
+   ]
+  },
+  {
+   "q": "Bagaimana Basat melarikan diri setelah membutakan Tepegöz?",
+   "options": [
+    "Ia bertarung melewatinya dengan pedang",
+    "Ia membungkus dirinya dengan kulit domba dan menyelinap lewat",
+    "Ia menggali terowongan di bawah gua",
+    "Ia menunggu hingga raksasa itu tertidur"
+   ]
+  },
+  {
+   "q": "Menurut bacaan ini, apa yang ditunjukkan kisah ini dalam tradisi epik Turk?",
+   "options": [
+    "Bahwa raksasa selalu menang pada akhirnya",
+    "Bahwa kecerdikan dan keberanian bisa mengalahkan kekuatan mentah",
+    "Bahwa para gembala adalah pahlawan paling berani",
+    "Bahwa peri-peri melindungi bangsa Oghuz"
+   ]
+  }
+ ],
+ "fk-tr-06": [
+  {
+   "q": "Syarat apa yang ditetapkan Mehmene Banu agar Ferhat bisa memenangkan tangan Şirin?",
+   "options": [
+    "Ia harus mengalahkan seorang pangeran saingan",
+    "Ia harus memahat Gunung Bisütun untuk membawa air",
+    "Ia harus menjadi bangsawan",
+    "Ia harus meninggalkan kerajaan itu selamanya"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Mehmene Banu ketika gunung itu hampir tembus?",
+   "options": [
+    "Ia langsung menepati janjinya",
+    "Ia mengirim seorang perempuan tua untuk berbohong kepada Ferhat bahwa Şirin telah meninggal",
+    "Ia menawarkan emas kepada Ferhat sebagai gantinya",
+    "Ia meminta Şirin menikah dengan orang lain secara terang-terangan"
+   ]
+  },
+  {
+   "q": "Bagaimana Şirin meninggal?",
+   "options": [
+    "Ia dibunuh oleh Mehmene Banu",
+    "Ia meninggal karena usia tua",
+    "Ia menangis di makam Ferhat hingga menghembuskan napas terakhirnya",
+    "Ia jatuh dari gunung itu"
+   ]
+  },
+  {
+   "q": "Bagaimana bacaan ini menggambarkan warisan kisah ini?",
+   "options": [
+    "Sebagai komedi yang dipentaskan pada festival",
+    "Sebagai kisah peringatan tentang kesetiaan dan harga dari sebuah kebohongan yang menghancurkan",
+    "Sebagai catatan sejarah sebuah perang sungguhan",
+    "Sebagai nina bobo untuk anak-anak"
+   ]
+  }
+ ],
+ "fk-vi-01": [
+  {
+   "q": "Mengapa Raja Hùng mengutus para putranya untuk mencari sesuatu?",
+   "options": [
+    "Untuk menemukan hidangan paling lezat guna dipersembahkan kepada leluhur mereka",
+    "Untuk mencari emas dan harta karun bagi istana",
+    "Untuk mencarikan istri bagi sang raja",
+    "Untuk memetakan perbatasan kerajaan"
+   ]
+  },
+  {
+   "q": "Apa yang dikatakan dewa itu kepada Lang Liêu dalam mimpinya?",
+   "options": [
+    "Bahwa emas adalah yang paling berharga",
+    "Bahwa beras adalah yang paling berharga di bawah langit",
+    "Bahwa ia harus berburu di hutan",
+    "Bahwa ia harus berlayar ke pulau yang jauh"
+   ]
+  },
+  {
+   "q": "Apa pendapat Raja Hùng tentang kue-kue buatan Lang Liêu?",
+   "options": [
+    "Ia merasa kue itu terlalu sederhana dan menolaknya",
+    "Ia sangat terharu dan memuji maknanya",
+    "Ia memberikannya kepada para pelayan",
+    "Ia meminta Lang Liêu membuat makanan yang lebih eksotis"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan orang Vietnam dengan bánh chưng hingga kini?",
+   "options": [
+    "Mereka hanya menjualnya di pedesaan",
+    "Mereka membungkusnya setiap Tết untuk mengingat akar mereka",
+    "Mereka tidak lagi membuatnya",
+    "Mereka hanya memakannya saat pernikahan"
+   ]
+  }
+ ],
+ "fk-vi-02": [
+  {
+   "q": "Mengapa putri sang guru pada awalnya jatuh cinta pada saudara yang salah?",
+   "options": [
+    "Ia lebih menyukai kepribadian Lang",
+    "Kedua bersaudara itu terlihat sangat mirip",
+    "Tân menolak berbicara dengannya",
+    "Ia belum pernah bertemu keduanya"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada Lang setelah kesalahpahaman itu?",
+   "options": [
+    "Ia menikahi putri kedua sang guru",
+    "Ia meninggalkan rumah, tumbang di tepi sungai, dan berubah menjadi batu",
+    "Ia pindah ke istana",
+    "Ia langsung berbaikan dengan Tân"
+   ]
+  },
+  {
+   "q": "Istri Tân berubah menjadi apa setelah ia meninggal saat mencarinya?",
+   "options": [
+    "Sebongkah batu kapur",
+    "Pohon pinang",
+    "Tanaman sirih",
+    "Sebuah sungai"
+   ]
+  },
+  {
+   "q": "Apa yang dilambangkan sirih dan pinang di Vietnam saat ini?",
+   "options": [
+    "Kekayaan dan keberuntungan",
+    "Ikatan antara suami-istri dan saudara kandung",
+    "Kemenangan dalam perang",
+    "Peringatan terhadap kecemburuan"
+   ]
+  }
+ ],
+ "fk-vi-03": [
+  {
+   "q": "Apa yang tidak biasa dari anak lelaki itu pada usia tiga tahun?",
+   "options": [
+    "Ia sudah bisa menunggang kuda",
+    "Ia tidak bisa bicara, tertawa, atau berjalan, dan hanya berbaring diam",
+    "Ia sudah meninggalkan rumah",
+    "Ia hanya berbicara kepada raja"
+   ]
+  },
+  {
+   "q": "Tiga benda apa yang diminta anak lelaki itu agar ditempa raja untuknya?",
+   "options": [
+    "Pedang kayu, perisai, dan busur",
+    "Kuda besi, baju zirah besi, dan cambuk besi",
+    "Mahkota emas, jubah, dan bendera",
+    "Perahu, jaring, dan tombak"
+   ]
+  },
+  {
+   "q": "Apa yang digunakan sang pahlawan setelah cambuk besinya patah?",
+   "options": [
+    "Tangan kosongnya",
+    "Batu-batu dari gunung",
+    "Bambu yang dicabut dari pinggir jalan",
+    "Pedang pinjaman dari seorang warga desa"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada sang pahlawan setelah mengalahkan para penyerbu?",
+   "options": [
+    "Ia menetap dan memerintah desa itu",
+    "Ia meminta raja memberinya hadiah besar",
+    "Ia melepas baju zirahnya dan terbang ke langit bersama kudanya",
+    "Ia tewas dalam pertempuran terakhir"
+   ]
+  }
+ ],
+ "fk-vi-04": [
+  {
+   "q": "Kekuatan apa yang masing-masing dimiliki Sơn Tinh dan Thủy Tinh?",
+   "options": [
+    "Sơn Tinh bisa terbang; Thủy Tinh bisa menghilang",
+    "Sơn Tinh bisa memindahkan gunung; Thủy Tinh bisa memanggil hujan dan angin",
+    "Keduanya hanya bisa bertarung dengan pedang",
+    "Sơn Tinh menguasai laut; Thủy Tinh menguasai langit"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi setelah Sơn Tinh membawa hadiah lamaran lebih dulu?",
+   "options": [
+    "Sang raja berubah pikiran dan memilih Thủy Tinh",
+    "Sơn Tinh menikahi Mỵ Nương, dan Thủy Tinh membangkitkan air dengan murka",
+    "Kedua pelamar itu ditolak",
+    "Mỵ Nương menolak menikahi keduanya"
+   ]
+  },
+  {
+   "q": "Mengapa penduduk delta Sungai Merah membangun tanggul setiap tahun?",
+   "options": [
+    "Untuk menyimpan air tawar bagi pertanian",
+    "Karena mereka percaya Thủy Tinh membanjiri sungai setiap tahun untuk kembali melawan Sơn Tinh",
+    "Untuk menghormati hari lahir Raja Hùng",
+    "Karena Sơn Tinh memerintahkan mereka"
+   ]
+  },
+  {
+   "q": "Pelajaran apa yang disampaikan kisah Sơn Tinh dan Thủy Tinh?",
+   "options": [
+    "Bahwa kekayaan selalu menang pada akhirnya",
+    "Bahwa para dewa tidak boleh dimarahi",
+    "Bahwa manusia bertahan dan berdiri teguh melawan alam yang keras dan terus berulang",
+    "Bahwa sayembara perkawinan selalu berakhir buruk"
+   ]
+  }
+ ],
+ "fk-vi-05": [
+  {
+   "q": "Bagaimana Cám memenangkan hadiah karena menangkap lebih banyak udang?",
+   "options": [
+    "Ia bekerja dua kali lebih keras daripada Tấm",
+    "Ia menipu Tấm agar membungkuk, lalu mencuri udangnya",
+    "Ia membeli udang dari seorang nelayan",
+    "Ia meminta ibunya menangkap udang untuknya"
+   ]
+  },
+  {
+   "q": "Apa yang diperintahkan Buddha kepada Tấm untuk dilakukan dengan tulang ikan setelah Cám membunuh ikan gabus itu?",
+   "options": [
+    "Membuangnya ke sungai",
+    "Menguburnya di bawah keempat kaki ranjangnya",
+    "Memberikannya kepada ibu tirinya sebagai persembahan",
+    "Membakarnya di kuil desa"
+   ]
+  },
+  {
+   "q": "Wujud apa saja yang diambil Tấm sebelum tinggal bersama penjual teh tua itu?",
+   "options": [
+    "Burung kepodang emas, pohon kayu persik, dan alat tenun",
+    "Seekor ikan, seekor burung, dan sekuntum bunga",
+    "Sebuah sepatu, seekor kuda, dan sebuah gaun",
+    "Sebuah sumur, sebuah taman, dan sebuah lentera"
+   ]
+  },
+  {
+   "q": "Bagaimana sang raja mengenali Tấm di kedai teh itu?",
+   "options": [
+    "Ia mengenakan jubah kerajaannya",
+    "Ia mengenali gulungan sirih berbentuk burung phoenix yang hanya bisa ia lipat",
+    "Seorang utusan memberitahunya di mana Tấm berada",
+    "Ia memanggil namanya"
+   ]
+  }
+ ],
+ "fk-vi-06": [
+  {
+   "q": "Menurut kisah ini, apa yang dilakukan Lạc Long Quân setiap kali ia naik ke darat?",
+   "options": [
+    "Ia mengumpulkan upeti dari desa-desa",
+    "Ia mengajarkan bertani, membangun rumah, dan memancing kepada penduduk",
+    "Ia melawan para penyerbu dari utara",
+    "Ia mencari Âu Cơ di seluruh pegunungan"
+   ]
+  },
+  {
+   "q": "Mengapa Lạc Long Quân dan Âu Cơ akhirnya memutuskan untuk berpisah?",
+   "options": [
+    "Mereka bertengkar soal takhta",
+    "Sifat alami mereka terikat pada dua dunia berbeda, laut dan gunung, yang sulit disatukan",
+    "Âu Cơ ingin kembali sendirian ke kerajaan perinya",
+    "Seratus putra mereka menuntut untuk dibagi"
+   ]
+  },
+  {
+   "q": "Apa yang disepakati pasangan itu sebelum berpisah?",
+   "options": [
+    "Bahwa keturunan mereka tidak akan pernah lagi saling berbicara",
+    "Bahwa para putra gunung akan memerintah atas para putra laut",
+    "Bahwa keturunan mereka akan selalu menganggap satu sama lain sebagai kerabat dan saling membantu di masa sulit",
+    "Bahwa mereka akan bersatu kembali setelah seratus tahun"
+   ]
+  },
+  {
+   "q": "Apa yang dilambangkan \"seratus telur\" dalam ingatan budaya Vietnam?",
+   "options": [
+    "Kekayaan delapan belas dinasti Hùng",
+    "Persaudaraan seluruh bangsa Vietnam, di mana pun mereka tinggal",
+    "Peringatan agar tidak menikah di luar bangsa sendiri",
+    "Pendirian Phong Châu secara khusus"
+   ]
+  }
+ ],
+ "fk-yue-01": [
+  {
+   "q": "Masalah apa yang dihadapi penduduk Guangzhou sebelum para dewa itu datang?",
+   "options": [
+    "Tidak ada hujan dan tak ada yang bisa tumbuh",
+    "Banjir yang terlalu banyak",
+    "Perang dengan kota tetangga",
+    "Hewan liar menyerang ladang"
+   ]
+  },
+  {
+   "q": "Apa yang dibawa masing-masing dewa itu?",
+   "options": [
+    "Sebilah pedang giok",
+    "Setangkai padi berwarna lima warna",
+    "Sebuah lonceng emas",
+    "Sebuah tongkat kayu"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada kelima domba itu setelah para dewa pergi?",
+   "options": [
+    "Mereka lari ke pegunungan",
+    "Mereka berubah menjadi batu",
+    "Mereka juga terbang kembali ke langit",
+    "Mereka dimakan warga desa"
+   ]
+  },
+  {
+   "q": "Julukan apa yang didapat Guangzhou karena legenda ini?",
+   "options": [
+    "Kota Bunga",
+    "Kota Domba",
+    "Kota Hujan",
+    "Kota Dewa"
+   ]
+  }
+ ],
+ "fk-yue-02": [
+  {
+   "q": "Apa yang dilakukan Hou Yi untuk menyelamatkan dunia?",
+   "options": [
+    "Ia membangun tembok besar",
+    "Ia menembak jatuh sembilan matahari",
+    "Ia mengalahkan seekor naga",
+    "Ia menemukan sumur ajaib"
+   ]
+  },
+  {
+   "q": "Mengapa Hou Yi tidak langsung memakan pil keabadian itu?",
+   "options": [
+    "Ia tidak percaya kepada Ratu Ibu",
+    "Ia tidak mau meninggalkan istrinya",
+    "Pilnya terasa buruk",
+    "Ia ingin membaginya dengan warga desa"
+   ]
+  },
+  {
+   "q": "Mengapa Chang'e menelan pil itu sendiri?",
+   "options": [
+    "Ia ingin menjadi berkuasa",
+    "Ia sedang lapar",
+    "Seorang lelaki jahat mencoba mengancamnya agar menyerahkannya",
+    "Ia ingin bergabung dengan suaminya di langit"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Hou Yi setiap Festival Pertengahan Musim Gugur?",
+   "options": [
+    "Ia menembakkan panah ke bulan",
+    "Ia meletakkan kue bulan untuk menghormati Chang'e",
+    "Ia mendaki gunung",
+    "Ia menyalakan lentera untuk menantikan kepulangannya"
+   ]
+  }
+ ],
+ "fk-yue-03": [
+  {
+   "q": "Mengapa Raja Chu berhenti mempercayai Qu Yuan?",
+   "options": [
+    "Qu Yuan kalah dalam pertempuran",
+    "Ia mendengarkan fitnah dari para pejabat yang licik",
+    "Qu Yuan menolak menulis puisi untuknya",
+    "Qu Yuan mencoba merebut takhta"
+   ]
+  },
+  {
+   "q": "Kabar apa yang sampai kepada Qu Yuan selama pengasingannya?",
+   "options": [
+    "Keluarganya telah meninggal",
+    "Ibu kota Chu telah jatuh ke tangan Qin",
+    "Sang raja ingin memanggilnya kembali",
+    "Bencana kelaparan melanda negeri itu"
+   ]
+  },
+  {
+   "q": "Mengapa para nelayan melemparkan bakcang ke dalam sungai?",
+   "options": [
+    "Untuk makan sendiri selama pencarian",
+    "Untuk menandai tempat ia tenggelam",
+    "Agar ikan dan udang tidak memakan jasadnya",
+    "Sebagai persembahan kepada dewa sungai"
+   ]
+  },
+  {
+   "q": "Festival apa yang lahir dari kisah ini?",
+   "options": [
+    "Festival Pertengahan Musim Gugur",
+    "Festival Perahu Naga",
+    "Festival Lampion",
+    "Festival Qingming"
+   ]
+  }
+ ],
+ "fk-yue-04": [
+  {
+   "q": "Apa yang sedang dilakukan Wong Cho-ping saat bertemu dewa itu?",
+   "options": [
+    "Memancing di tepi sungai",
+    "Menggembalakan domba di pegunungan",
+    "Belajar di sebuah kuil",
+    "Bertani padi"
+   ]
+  },
+  {
+   "q": "Apa yang dikira sang kakak telah terjadi pada Wong Cho-ping?",
+   "options": [
+    "Ia telah menjadi kaya",
+    "Ia telah meninggal",
+    "Ia telah meninggalkan negeri itu",
+    "Ia telah menjadi biksu di provinsi lain"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Wong Cho-ping untuk membuktikan kekuatannya kepada kakaknya?",
+   "options": [
+    "Ia mengubah batu-batu kembali menjadi domba",
+    "Ia menyembuhkan seorang warga desa yang sakit",
+    "Ia terbang ke langit",
+    "Ia meramalkan cuaca"
+   ]
+  },
+  {
+   "q": "Apa yang dipercaya dilakukan Wong Tai Sin bagi para pemuja yang saleh?",
+   "options": [
+    "Hanya memberi kekayaan",
+    "Mengabulkan apa pun yang mereka minta dengan tulus",
+    "Hanya menyembuhkan penyakit",
+    "Melindungi para pelaut di laut"
+   ]
+  }
+ ],
+ "fk-yue-05": [
+  {
+   "q": "Bagaimana pasukan Lo Chun akhirnya tinggal di pulau-pulau itu?",
+   "options": [
+    "Mereka dikirim ke sana untuk memancing bagi kaisar",
+    "Mereka melarikan diri ke sana setelah pemberontakan mereka dikalahkan",
+    "Mereka adalah pelaut yang kapalnya karam",
+    "Mereka adalah penjahat yang diasingkan"
+   ]
+  },
+  {
+   "q": "Menurut legenda, seperti apa rupa Lo Ting itu?",
+   "options": [
+    "Sepenuhnya manusia tetapi berkulit hijau",
+    "Berwajah manusia dengan tubuh ikan dan tangisan seperti bayi",
+    "Ikan raksasa tanpa ciri manusia",
+    "Makhluk bersayap yang tinggal di pepohonan"
+   ]
+  },
+  {
+   "q": "Bagaimana Lo Ting konon membantu para nelayan di sekitarnya?",
+   "options": [
+    "Mereka menangkap ikan untuk mereka",
+    "Mereka berteriak untuk memperingatkan datangnya badai",
+    "Mereka memperbaiki perahu yang rusak",
+    "Mereka menuntun kapal melewati kabut"
+   ]
+  },
+  {
+   "q": "Bagaimana keluarga nelayan di sekitar Pulau Lantau secara tradisional memandang Lo Ting?",
+   "options": [
+    "Sebagai monster berbahaya yang harus ditakuti",
+    "Sebagai penjaga laut yang dihormati dengan persembahan",
+    "Sebagai hama yang merusak hasil tangkapan mereka",
+    "Sebagai mata-mata desa saingan"
+   ]
+  }
+ ],
+ "fk-yue-06": [
+  {
+   "q": "Bagaimana Raja Kera muncul ke dunia?",
+   "options": [
+    "Ia lahir dari orang tua kera",
+    "Ia meletus keluar dari sebuah telur batu",
+    "Ia diciptakan oleh Kaisar Giok",
+    "Ia manusia yang diubah lewat sihir"
+   ]
+  },
+  {
+   "q": "Bagaimana Raja Kera mendapatkan Tongkat Emas Ruyi?",
+   "options": [
+    "Ia menempanya sendiri",
+    "Ia memenangkannya dalam sayembara melawan Raja Naga",
+    "Ia menuntutnya dari Raja Naga, yang tak punya pilihan selain memberikannya",
+    "Itu hadiah dari Kaisar Giok"
+   ]
+  },
+  {
+   "q": "Mengapa Raja Kera murka menjadi \"Penjaga Kuda-Kuda\"?",
+   "options": [
+    "Ia mengetahui itu jabatan paling rendah di istana surgawi",
+    "Kuda-kuda itu menyerangnya",
+    "Ia ingin menjadi jenderal",
+    "Kaisar Giok menolak membayarnya"
+   ]
+  },
+  {
+   "q": "Apa yang memicu Kaisar Giok mengirim seratus ribu prajurit surgawi melawan Raja Kera?",
+   "options": [
+    "Ia menolak kembali ke Gunung Bunga-Buah",
+    "Ia mencuri persik dan ramuan keabadian, dan mengacaukan Perjamuan Persik",
+    "Ia menyerang istana Raja Naga lagi",
+    "Ia mencoba merebut takhta Kaisar Giok"
+   ]
+  }
+ ],
+ "fk-zh-01": [
+  {
+   "q": "Apa yang dibawa pulang sang ibu?",
+   "options": [
+    "Sekeranjang buah pir",
+    "Sekeranjang apel",
+    "Sekarung beras",
+    "Sekotak permen"
+   ]
+  },
+  {
+   "q": "Buah pir mana yang diambil Kong Rong?",
+   "options": [
+    "Yang paling besar",
+    "Yang paling kecil",
+    "Dua buah berukuran sedang",
+    "Tidak mengambil sama sekali"
+   ]
+  },
+  {
+   "q": "Mengapa Kong Rong bilang ia mengambil pir yang kecil?",
+   "options": [
+    "Ia tidak suka pir",
+    "Ia tidak lapar",
+    "Karena ia yang paling muda dan kakak-kakaknya lebih tua",
+    "Karena ibunya menyuruhnya"
+   ]
+  },
+  {
+   "q": "Pelajaran apa yang biasa diambil orang dari kisah ini?",
+   "options": [
+    "Selalu makan dengan cepat",
+    "Berbagi dan mengalah pada hal-hal baik untuk orang lain",
+    "Jangan pernah percaya pada saudaramu",
+    "Buah besar rasanya lebih enak"
+   ]
+  }
+ ],
+ "fk-zh-02": [
+  {
+   "q": "Di mana anak-anak itu sedang bermain?",
+   "options": [
+    "Di sekolah",
+    "Di taman dengan sebuah tempayan air besar",
+    "Di tepi sungai",
+    "Di dapur"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada salah satu anak itu?",
+   "options": [
+    "Ia memanjat pohon",
+    "Ia jatuh ke dalam tempayan air itu",
+    "Ia lari pulang",
+    "Ia memecahkan mainan"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan Sima Guang untuk menyelamatkan temannya?",
+   "options": [
+    "Ia melompat ke dalam tempayan itu",
+    "Ia memanggil orang dewasa dan menunggu",
+    "Ia melemparkan batu untuk memecahkan tempayan itu",
+    "Ia menjungkirkan tempayan itu"
+   ]
+  },
+  {
+   "q": "Pelajaran apa yang diajarkan kisah ini?",
+   "options": [
+    "Jangan pernah bermain dekat air",
+    "Tetap tenang dan berpikir jernih membantu dalam bahaya",
+    "Orang dewasa selalu dibutuhkan untuk menyelesaikan masalah",
+    "Batu besar itu berbahaya"
+   ]
+  }
+ ],
+ "fk-zh-03": [
+  {
+   "q": "Apa yang menyebabkan langit rusak?",
+   "options": [
+    "Hantaman meteor",
+    "Gonggong menabrak Gunung Buzhou setelah kalah dalam pertempuran",
+    "Kesalahan Nuwa sendiri",
+    "Kekeringan hebat"
+   ]
+  },
+  {
+   "q": "Bencana apa yang menyusul setelah runtuhnya langit?",
+   "options": [
+    "Hanya kegelapan yang turun",
+    "Banjir tercurah dan hewan-hewan buas menyerang manusia",
+    "Matahari menghilang",
+    "Bumi menjadi lebih dingin"
+   ]
+  },
+  {
+   "q": "Bagaimana Nuwa memperbaiki langit?",
+   "options": [
+    "Ia menenunnya dengan benang sutra",
+    "Ia melelehkan batu lima warna dan mengisi retakannya",
+    "Ia meminta bantuan dewa api",
+    "Ia berdoa kepada matahari"
+   ]
+  },
+  {
+   "q": "Apa yang digunakan Nuwa untuk menopang sudut-sudut langit?",
+   "options": [
+    "Tiang-tiang kayu",
+    "Puncak-puncak gunung",
+    "Keempat kaki seekor kura-kura raksasa",
+    "Rantai besi"
+   ]
+  }
+ ],
+ "fk-zh-04": [
+  {
+   "q": "Bagaimana Si Penggembala berhasil menikahi Sang Penenun?",
+   "options": [
+    "Ia langsung meminta izin kepada Kaisar Giok",
+    "Ia menyembunyikan jubahnya seperti disarankan sapi tua itu",
+    "Ia membangunkannya istana",
+    "Sang Penenun memilihnya secara kebetulan"
+   ]
+  },
+  {
+   "q": "Mengapa Kaisar Giok menjadi murka?",
+   "options": [
+    "Si Penggembala mencuri harta karun",
+    "Seorang dewi menikahi manusia biasa secara diam-diam",
+    "Sapi itu bisa berbicara",
+    "Anak-anaknya berperilaku buruk"
+   ]
+  },
+  {
+   "q": "Apa yang diciptakan Ratu Ibu dari Barat untuk memisahkan pasangan itu?",
+   "options": [
+    "Rangkaian pegunungan",
+    "Tembok api",
+    "Sungai Perak (Bima Sakti)",
+    "Hutan yang dalam"
+   ]
+  },
+  {
+   "q": "Bagaimana Si Penggembala dan Sang Penenun bisa bertemu setahun sekali?",
+   "options": [
+    "Kaisar Giok sendiri yang membawa mereka",
+    "Burung-burung murai membentuk jembatan melintasi sungai itu",
+    "Mereka berenang menyeberang",
+    "Seekor naga mengantar mereka"
+   ]
+  }
+ ],
+ "fk-zh-05": [
+  {
+   "q": "Masalah apa yang ditimbulkan kedua gunung itu bagi orang tua itu?",
+   "options": [
+    "Menghalangi lahan pertanian",
+    "Menghalangi perjalanan menuju dan dari rumahnya",
+    "Menyebabkan banjir",
+    "Menghalangi matahari"
+   ]
+  },
+  {
+   "q": "Keberatan apa yang diajukan istri orang tua itu?",
+   "options": [
+    "Ia pikir rencana itu berbahaya",
+    "Ia meragukan kekuatan suaminya dan bertanya ke mana tanahnya akan dibuang",
+    "Ia ingin pindah saja",
+    "Ia menolak membiarkan anak-anaknya membantu"
+   ]
+  },
+  {
+   "q": "Apa yang diejek Orang Tua Bijak dari Orang Tua Bodoh itu?",
+   "options": [
+    "Terlalu kaya",
+    "Mencoba sesuatu di luar kemampuan usianya yang lanjut",
+    "Menolak untuk bepergian",
+    "Berbicara dengan roh-roh"
+   ]
+  },
+  {
+   "q": "Bagaimana akhirnya kisah ini terselesaikan?",
+   "options": [
+    "Orang tua itu menyerah",
+    "Keluarganya meninggalkan proyek itu",
+    "Kaisar Giok memerintahkan kedua gunung itu diangkut pergi",
+    "Banjir menghanyutkan kedua gunung itu"
+   ]
+  }
+ ],
+ "fk-zh-06": [
+  {
+   "q": "Apa yang terjadi pada Nuwa saat ia sedang berlayar?",
+   "options": [
+    "Ia mencapai benua baru",
+    "Sebuah badai membalikkan perahunya dan ia tenggelam",
+    "Ia diselamatkan oleh para nelayan",
+    "Ia tertidur dan terdampar di pantai"
+   ]
+  },
+  {
+   "q": "Arwah Nuwa berubah menjadi apa?",
+   "options": [
+    "Seekor naga",
+    "Seekor burung aneh bernama Jingwei",
+    "Sebuah patung batu",
+    "Sebatang pohon"
+   ]
+  },
+  {
+   "q": "Sumpah apa yang diucapkan Jingwei?",
+   "options": [
+    "Untuk selamanya menghindari laut",
+    "Untuk mengisi laut agar orang lain tidak mati di dalamnya",
+    "Untuk menjadi manusia lagi",
+    "Untuk memperingatkan para pelaut dengan teriakannya"
+   ]
+  },
+  {
+   "q": "Apa yang dilambangkan ungkapan Jingwei mengisi laut?",
+   "options": [
+    "Bahaya yang sembrono",
+    "Tekad gigih melawan segala rintangan yang mustahil",
+    "Kekuatan alam atas manusia",
+    "Peringatan terhadap sikap terlalu percaya diri"
+   ]
+  }
+ ],

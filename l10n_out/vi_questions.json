@@ -1,0 +1,2396 @@
+{
+ "fk-ar-01": [
+  {
+   "q": "Vì sao Juha xuống lừa lần đầu tiên?",
+   "options": [
+    "Vì con lừa đã mệt",
+    "Vì một số người đàn ông chê trách ông vì cưỡi lừa trong khi con trai phải đi bộ",
+    "Vì con trai ông xin được cưỡi một mình",
+    "Vì con đường quá dốc"
+   ]
+  },
+  {
+   "q": "Juha và con trai quyết định làm gì sau khi ông lão dưới gốc cây phàn nàn?",
+   "options": [
+    "Bán con lừa",
+    "Cả hai cùng cưỡi lừa",
+    "Cả hai cùng đi bộ và để con lừa đi bên cạnh, không chở ai",
+    "Quay về nhà"
+   ]
+  },
+  {
+   "q": "Juha đã dạy con trai bài học gì?",
+   "options": [
+    "Đừng bao giờ nghe lời người lạ",
+    "Không thể làm hài lòng tất cả mọi người",
+    "Luôn cưỡi lừa một mình",
+    "Nông dân luôn biết rõ nhất"
+   ]
+  },
+  {
+   "q": "Theo đoạn cuối, câu chuyện đã trở thành điều gì?",
+   "options": [
+    "Một đạo luật trong thành phố",
+    "Một bài hát hát trong đám cưới",
+    "Một câu chuyện kể cho trẻ em để dạy bài học",
+    "Một bài thơ do con trai Juha viết"
+   ]
+  }
+ ],
+ "fk-ar-02": [
+  {
+   "q": "Các loài vật đã thỏa thuận gì với sư tử?",
+   "options": [
+    "Chúng sẽ cùng nhau chiến đấu với sư tử",
+    "Chúng sẽ gửi một con vật mỗi ngày để sư tử để yên cho những con còn lại",
+    "Chúng sẽ rời khỏi khu rừng",
+    "Chúng sẽ tặng sư tử mật ong thay vì thịt"
+   ]
+  },
+  {
+   "q": "Vì sao con thỏ nói với sư tử rằng nó đến trễ?",
+   "options": [
+    "Nó nói rằng nó bị lạc đường",
+    "Nó nói rằng một con sư tử khác đã cố ăn thịt nó trên đường đi",
+    "Nó nói rằng nó bị ốm",
+    "Nó nói rằng những con vật khác đã ngăn cản nó"
+   ]
+  },
+  {
+   "q": "Sư tử đã thấy gì trong giếng?",
+   "options": [
+    "Một con cá",
+    "Một con thỏ khác",
+    "Hình bóng của chính mình, mà nó tưởng nhầm là một con sư tử đối thủ",
+    "Không thấy gì cả"
+   ]
+  },
+  {
+   "q": "Câu chuyện dạy bài học gì, theo đoạn cuối?",
+   "options": [
+    "Sức mạnh luôn chiến thắng",
+    "Sự khôn ngoan có thể chiến thắng sức mạnh",
+    "Sư tử không nên uống nước",
+    "Thỏ là loài vật chạy nhanh nhất"
+   ]
+  }
+ ],
+ "fk-ar-03": [
+  {
+   "q": "Điều gì đã xảy ra trước khi chuyến hải trình của Sindbad bắt đầu?",
+   "options": [
+    "Ông thừa kế tài sản, tiêu xài nhanh chóng, rồi quyết định buôn bán hàng hóa bằng đường biển",
+    "Ông là một ngư dân muốn trở thành thương nhân",
+    "Ông bị cướp biển ép lên tàu",
+    "Ông thừa kế một con tàu từ cha mình"
+   ]
+  },
+  {
+   "q": "Hòn đảo mà thủy thủ đoàn đổ bộ lên hóa ra là gì?",
+   "options": [
+    "Một chiếc bè trôi nổi",
+    "Một con cá voi khổng lồ đang ngủ",
+    "Một bãi cát ngầm",
+    "Một pháo đài bỏ hoang"
+   ]
+  },
+  {
+   "q": "Sindbad đã đến hòn đảo thứ hai bằng cách nào?",
+   "options": [
+    "Ông được một con tàu đi ngang qua cứu",
+    "Sóng đã đẩy ông đến đó trên một mảnh gỗ",
+    "Ông tự nguyện bơi suốt quãng đường",
+    "Một con cá voi khác đã chở ông đi"
+   ]
+  },
+  {
+   "q": "Sindbad đã làm gì sau khi cuối cùng trở về Baghdad?",
+   "options": [
+    "Ông từ bỏ việc đi biển mãi mãi",
+    "Ông trở thành người huấn luyện ngựa",
+    "Không lâu sau, ông lại lên đường cho một chuyến hải trình khác",
+    "Ông chuyển đi khỏi Baghdad vĩnh viễn"
+   ]
+  }
+ ],
+ "fk-ar-04": [
+  {
+   "q": "Ali Baba đã chứng kiến bốn mươi tên cướp làm gì?",
+   "options": [
+    "Chôn một xác chết trong rừng",
+    "Nói một câu thần chú mở ra một cánh cửa bí mật trong tảng đá",
+    "Tấn công một đoàn lữ hành đi ngang qua",
+    "Cãi nhau về số vàng bị đánh cắp"
+   ]
+  },
+  {
+   "q": "Qasim đã phát hiện bí mật của Ali Baba bằng cách nào?",
+   "options": [
+    "Ali Baba đã nói thẳng với ông ấy",
+    "Vợ ông tìm thấy một đồng vàng dính vào sáp trên chiếc cân mượn được",
+    "Ông đã đi theo Ali Baba vào rừng",
+    "Một tên cướp đã thú nhận với ông"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra với Qasim trong hang động?",
+   "options": [
+    "Ông đã trốn thoát cùng kho báu",
+    "Ông quên mất câu thần chú để ra ngoài và sau đó bị bọn cướp giết chết",
+    "Ông trở thành bạn với bọn cướp",
+    "Ông giấu kho báu và trở về an toàn"
+   ]
+  },
+  {
+   "q": "Marjana đã đánh bại bọn cướp bằng cách nào?",
+   "options": [
+    "Cô báo cho lính canh của nhà vua",
+    "Cô đổ dầu sôi vào những chiếc vại mà chúng đang trốn trong đó",
+    "Cô nhốt chúng trong hang động",
+    "Cô lừa chúng rời khỏi thành phố"
+   ]
+  }
+ ],
+ "fk-ar-05": [
+  {
+   "q": "Vì sao sứ giả của nhà vua đến lều của Hatim?",
+   "options": [
+    "Để trao đổi ngựa với ông",
+    "Để xin con ngựa cái quý giá của ông, nhằm thử lòng hào phóng nổi tiếng của ông",
+    "Để mời ông đến cung điện của nhà vua",
+    "Để thách ông thi đấu thơ ca"
+   ]
+  },
+  {
+   "q": "Vì sao Hatim giết thịt con ngựa cái duy nhất của mình?",
+   "options": [
+    "Ông không còn cách nào khác để đãi khách, vì đêm đó ông không có thức ăn",
+    "Con ngựa cái bị ốm và sắp chết dù sao đi nữa",
+    "Ông muốn nhận phần thưởng từ nhà vua",
+    "Sứ giả đã yêu cầu điều đó"
+   ]
+  },
+  {
+   "q": "Vì sao Hatim đốt một ngọn lửa lớn mỗi đêm trên đồi?",
+   "options": [
+    "Để nấu ăn cho gia đình mình",
+    "Để dẫn đường cho những lữ khách lạc lối đến lều của ông để có thức ăn và chỗ trú",
+    "Để báo hiệu cho bộ tộc mình trong các cuộc đột kích",
+    "Để xua đuổi thú hoang"
+   ]
+  },
+  {
+   "q": "Theo đoạn cuối, vì sao Hatim được các thế hệ sau ghi nhớ?",
+   "options": [
+    "Vì ông giàu có hơn tất cả mọi người xung quanh",
+    "Vì ông đã biến lòng hào phóng thành một nguyên tắc không lay chuyển ngay cả trong lúc khó khăn",
+    "Vì ông đã thắng nhiều cuộc chiến",
+    "Vì ông đã viết những bài thơ nổi tiếng nhất thời đại mình"
+   ]
+  }
+ ],
+ "fk-ar-06": [
+  {
+   "q": "Vì sao lúc đầu Antarah không được công nhận đầy đủ trong bộ tộc của mình?",
+   "options": [
+    "Ông sinh ra trong một bộ tộc đối địch",
+    "Mẹ ông là một nô lệ người Abyssinia, nên ông bị gọi là \"nô lệ của Banu Abs\"",
+    "Ông từ chối chiến đấu trong các trận đánh",
+    "Ông còn quá trẻ để được công nhận"
+   ]
+  },
+  {
+   "q": "Antarah đã giành được tự do và được công nhận là con trai của Shaddad bằng cách nào?",
+   "options": [
+    "Ông trả tiền chuộc cho cha mình",
+    "Ông chiến đấu dũng mãnh để giành lại đàn lạc đà bị đánh cắp, khiến cha ông công khai nhận ông là con",
+    "Ông bí mật kết hôn với Abla",
+    "Ông thắng một cuộc thi thơ"
+   ]
+  },
+  {
+   "q": "Malik đã đặt ra điều kiện bất khả thi nào để gả Abla cho Antarah?",
+   "options": [
+    "Antarah phải đánh bại Malik trong một trận đấu tay đôi",
+    "Antarah phải mang về một nghìn con lạc đà cái quý hiếm lông đỏ rực",
+    "Antarah phải trở thành thi sĩ trước",
+    "Antarah phải rời bộ tộc mãi mãi"
+   ]
+  },
+  {
+   "q": "Theo đoạn cuối, Antarah tượng trưng cho điều gì trong di sản văn hóa Ả Rập?",
+   "options": [
+    "Một nhân vật bi kịch không bao giờ đạt được mục tiêu của mình",
+    "Chàng hiệp sĩ si tình đã giành được phẩm giá và tự do bằng chính hành động của mình, chứ không phải bằng xuất thân",
+    "Một kẻ chinh phục tàn bạo khiến mọi người khiếp sợ",
+    "Một thương nhân giàu có đã mua địa vị của mình"
+   ]
+  }
+ ],
+ "fk-de-01": [
+  {
+   "q": "Người thợ xay đã nói gì với nhà vua về con gái mình?",
+   "options": [
+    "Rằng cô có thể kéo rơm thành vàng",
+    "Rằng cô có thể nướng bánh mì phép thuật",
+    "Rằng cô có thể hát rất hay",
+    "Rằng cô có thể dệt vải lụa"
+   ]
+  },
+  {
+   "q": "Lần đầu tiên người đàn ông nhỏ bé giúp cô gái, cô đã đưa cho ông ta thứ gì?",
+   "options": [
+    "Một đồng tiền vàng",
+    "Chiếc vòng cổ của cô",
+    "Đôi giày của cô",
+    "Một ổ bánh mì"
+   ]
+  },
+  {
+   "q": "Cô gái đã hứa gì với người đàn ông nhỏ bé vào đêm thứ ba?",
+   "options": [
+    "Một nửa vương quốc",
+    "Đứa con đầu lòng của mình",
+    "Sẽ kết hôn với ông ta",
+    "Chiếc nhẫn của cô"
+   ]
+  },
+  {
+   "q": "Hoàng hậu đã biết tên của người đàn ông nhỏ bé bằng cách nào?",
+   "options": [
+    "Ông ta tự nói cho bà biết",
+    "Bà đọc được tên đó trong một cuốn sách",
+    "Một sứ giả nghe thấy ông ta hát tên mình trong rừng",
+    "Nhà vua đoán ra"
+   ]
+  }
+ ],
+ "fk-de-02": [
+  {
+   "q": "Vì sao dê mẹ cảnh báo các con của mình?",
+   "options": [
+    "Vì con sói độc ác",
+    "Vì một cơn bão",
+    "Vì những người thợ săn",
+    "Vì một đám cháy"
+   ]
+  },
+  {
+   "q": "Con sói đã làm gì để giọng nói của nó nghe mềm mại hơn?",
+   "options": [
+    "Nó uống sữa ấm",
+    "Nó ăn phấn",
+    "Nó hát một bài hát",
+    "Nó thì thầm"
+   ]
+  },
+  {
+   "q": "Dê mẹ đã cứu sáu chú dê con bằng cách nào?",
+   "options": [
+    "Bà dọa cho con sói bỏ chạy",
+    "Bà rạch bụng nó và giải cứu các con",
+    "Bà lừa nó rơi xuống giếng",
+    "Bà gọi một người thợ săn"
+   ]
+  },
+  {
+   "q": "Cuối cùng con sói đã chết như thế nào?",
+   "options": [
+    "Nó bị một người thợ săn bắn chết",
+    "Nó ngã từ trên cây xuống",
+    "Những viên đá trong bụng đã kéo nó rơi xuống giếng",
+    "Nó bỏ chạy và không bao giờ quay lại"
+   ]
+  }
+ ],
+ "fk-de-03": [
+  {
+   "q": "Thị trấn Hamelin gặp phải vấn đề gì?",
+   "options": [
+    "Nạn chuột hoành hành",
+    "Một trận hạn hán",
+    "Một trận dịch bệnh",
+    "Một trận lũ lụt"
+   ]
+  },
+  {
+   "q": "Vì sao thị trưởng từ chối trả tiền cho người thổi sáo?",
+   "options": [
+    "Ông không còn tiền",
+    "Ông cho rằng số tiền đầy đủ là không xứng đáng",
+    "Ông không tin rằng người thổi sáo đã hoàn thành công việc",
+    "Ông muốn trả sau"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra với phần lớn trẻ em ở Hamelin?",
+   "options": [
+    "Chúng bị dẫn vào một ngọn núi và biến mất",
+    "Chúng bỏ chạy đến một thị trấn khác",
+    "Chúng được thị trưởng cứu thoát",
+    "Chúng ngủ thiếp đi trong nhà thờ"
+   ]
+  },
+  {
+   "q": "Quy định nào vẫn còn tồn tại ở Hamelin sau ngày hôm đó?",
+   "options": [
+    "Không con chuột nào được phép vào thị trấn",
+    "Không được chơi nhạc trên con phố mà lũ trẻ đã đi qua",
+    "Không lễ hội nào được tổ chức nữa",
+    "Không người lạ nào được phép vào thị trấn"
+   ]
+  }
+ ],
+ "fk-de-04": [
+  {
+   "q": "Till Eulenspiegel nổi tiếng vì điều gì?",
+   "options": [
+    "Hiểu chỉ dẫn theo nghĩa đen để chơi khăm người khác",
+    "Nướng bánh mì ngon nhất nước Đức",
+    "Bói toán cho khách lữ hành",
+    "Thi đấu trong các giải đấu thượng võ"
+   ]
+  },
+  {
+   "q": "Till đã nướng thứ gì thay vì bánh mì?",
+   "options": [
+    "Không nướng gì cả",
+    "Những hình con cú và con khỉ",
+    "Những ổ bánh có hình các con vật trong trang trại",
+    "Bột nhào bị cháy, không ăn được"
+   ]
+  },
+  {
+   "q": "Người dân Braunschweig phản ứng thế nào trước những chiếc bánh kỳ lạ đó?",
+   "options": [
+    "Họ từ chối mua chúng",
+    "Họ than phiền với thị trưởng",
+    "Họ mua chúng vì tò mò",
+    "Họ đòi hoàn tiền"
+   ]
+  },
+  {
+   "q": "Till đã làm gì sau khi rời khỏi người thợ làm bánh?",
+   "options": [
+    "Ông định cư vĩnh viễn tại Braunschweig",
+    "Ông xin lỗi và ngừng chơi khăm người khác",
+    "Ông tiếp tục lên đường, chơi khăm ở những thị trấn khác",
+    "Ông trở thành một thợ làm bánh"
+   ]
+  }
+ ],
+ "fk-de-05": [
+  {
+   "q": "Vì sao những người lái thuyền sợ mỏm đá Loreley?",
+   "options": [
+    "Vì có cướp biển ẩn nấp ở đó",
+    "Vì dòng nước ở đó rất nguy hiểm và nhiều thuyền đã đắm ở đó",
+    "Vì người ta nói nó bị một vị vua nguyền rủa",
+    "Vì nó chặn con đường duy nhất xuôi dòng sông Rhine"
+   ]
+  },
+  {
+   "q": "Theo truyền thuyết, vì sao có nhiều thuyền đâm vào gần mỏm đá đó?",
+   "options": [
+    "Luôn có một cơn bão nổi lên vào lúc hoàng hôn",
+    "Những người lái thuyền bị phân tâm bởi tiếng hát của người thiếu nữ",
+    "Dòng sông quá hẹp đối với những chiếc thuyền lớn",
+    "Chính mỏm đá đã di chuyển ra giữa dòng nước"
+   ]
+  },
+  {
+   "q": "Nàng Loreley đã làm gì khi lên đến đỉnh mỏm đá lần cuối cùng?",
+   "options": [
+    "Nàng hát một bài hát cuối cùng rồi biến mất vào rừng",
+    "Nàng nhìn thấy thuyền của người yêu đã mất và gieo mình xuống dòng sông",
+    "Nàng được binh lính của bá tước cứu thoát",
+    "Nàng biến thành một con chim và bay đi"
+   ]
+  },
+  {
+   "q": "Ai đã khiến truyền thuyết Loreley trở nên nổi tiếng vượt xa vùng Rhineland?",
+   "options": [
+    "Heinrich Heine, với bài thơ nổi tiếng của ông",
+    "Một sử gia thời trung cổ",
+    "Anh em nhà Grimm",
+    "Một ngư dân địa phương"
+   ]
+  }
+ ],
+ "fk-de-06": [
+  {
+   "q": "Người ta kể rằng chuyện gì đã xảy ra với Barbarossa thay vì việc ông chết trận?",
+   "options": [
+    "Ông được các thế lực siêu nhiên đưa vào trong núi để chờ ngày trở lại",
+    "Ông lặng lẽ về sống ẩn dật trong một tu viện",
+    "Ông bị chính con trai mình phản bội và giam cầm",
+    "Ông giong buồm ra khơi và không bao giờ ai thấy lại"
+   ]
+  },
+  {
+   "q": "Barbarossa được cho là đã nói gì khi người chăn cừu xác nhận đàn quạ vẫn còn bay lượn quanh ngọn núi?",
+   "options": [
+    "Rằng ông sẽ thức dậy ngay lập tức",
+    "Rằng ông còn phải ngủ thêm một trăm năm nữa trước khi thời khắc của ông đến",
+    "Rằng đàn quạ phải bị giết",
+    "Rằng người chăn cừu không bao giờ được quay lại"
+   ]
+  },
+  {
+   "q": "Huyền thoại Barbarossa đã thay đổi như thế nào vào thế kỷ mười chín?",
+   "options": [
+    "Nó bị lãng quên hoàn toàn",
+    "Nó bị các sử gia bác bỏ là không có thật",
+    "Nó hồi sinh mạnh mẽ, gắn liền với khát vọng thống nhất chính trị nước Đức",
+    "Nó bị gắn với một truyền thuyết khác, không liên quan"
+   ]
+  },
+  {
+   "q": "Theo đoạn văn, ngày nay du khách đến Kyffhäuser tìm kiếm điều gì mang tính biểu tượng?",
+   "options": [
+    "Kho báu chôn giấu được cho là ẩn trong núi",
+    "Vị hoàng đế đang ngủ, mà sự thức tỉnh của ông sẽ mở ra một thời đại tốt đẹp hơn",
+    "Một phương thuốc chữa bệnh tại một dòng suối linh thiêng",
+    "Ngôi mộ của con quạ trong truyền thuyết"
+   ]
+  }
+ ],
+ "fk-el-01": [
+  {
+   "q": "Con rùa đã đề nghị điều gì với con thỏ?",
+   "options": [
+    "Một cuộc đua",
+    "Một cuộc bơi qua hồ",
+    "Một bữa ăn cùng nhau",
+    "Không đề nghị gì cụ thể"
+   ]
+  },
+  {
+   "q": "Vì sao con thỏ quyết định dừng chạy?",
+   "options": [
+    "Nó nghĩ rằng mình còn thừa thời gian để nghỉ ngơi",
+    "Nó bị lạc trong rừng",
+    "Nó bị thương",
+    "Nó muốn ăn gì đó"
+   ]
+  },
+  {
+   "q": "Con rùa đã làm gì trong lúc con thỏ ngủ?",
+   "options": [
+    "Cô tiếp tục bước đi đều đặn về đích",
+    "Cô đánh thức nó dậy",
+    "Cô quay trở lại",
+    "Cô đợi nó"
+   ]
+  },
+  {
+   "q": "Bài học của câu chuyện là gì?",
+   "options": [
+    "Nỗ lực kiên trì đánh bại sự vội vàng",
+    "Tốc độ luôn chiến thắng",
+    "Ngủ là điều nguy hiểm",
+    "Các loài vật không nên đua với nhau"
+   ]
+  }
+ ],
+ "fk-el-02": [
+  {
+   "q": "Con ve sầu đã làm gì trong khi con kiến làm việc?",
+   "options": [
+    "Hát trên cành cây",
+    "Ngủ",
+    "Cũng đi thu thập thức ăn",
+    "Xây tổ"
+   ]
+  },
+  {
+   "q": "Vì sao con ve sầu không thu thập thức ăn nào?",
+   "options": [
+    "Nó tin rằng mùa hè sẽ không bao giờ kết thúc",
+    "Nó không có thức ăn nào để thu thập",
+    "Nó bị ốm",
+    "Nó đang giúp con kiến"
+   ]
+  },
+  {
+   "q": "Con ve sầu đã xin con kiến điều gì vào mùa đông?",
+   "options": [
+    "Một chút thức ăn",
+    "Một chỗ ấm áp để ngủ",
+    "Giúp tìm gia đình của nó",
+    "Tiền"
+   ]
+  },
+  {
+   "q": "Câu chuyện dạy điều gì?",
+   "options": [
+    "Tầm quan trọng của việc chuẩn bị cho tương lai",
+    "Ca hát quan trọng hơn làm việc",
+    "Loài kiến rất ích kỷ",
+    "Mùa đông không bao giờ thực sự đến"
+   ]
+  }
+ ],
+ "fk-el-03": [
+  {
+   "q": "Vì sao Daedalus và Icarus không thể trốn thoát bằng đường bộ hay đường biển?",
+   "options": [
+    "Vua Minos canh giữ cả hai lối đi",
+    "Họ không có thuyền",
+    "Họ không biết đường",
+    "Icarus từ chối rời đi"
+   ]
+  },
+  {
+   "q": "Daedalus đã cảnh báo Icarus điều gì?",
+   "options": [
+    "Đừng bay quá thấp hoặc quá cao",
+    "Đừng nhìn vào mặt trời",
+    "Đừng bay vào ban đêm",
+    "Đừng bay qua biển"
+   ]
+  },
+  {
+   "q": "Vì sao sáp trên đôi cánh của Icarus bị chảy ra?",
+   "options": [
+    "Cậu bay quá gần mặt trời",
+    "Cậu bay qua một cơn bão",
+    "Cậu bay quá nhanh",
+    "Cậu hạ cánh quá mạnh"
+   ]
+  },
+  {
+   "q": "Ngày nay câu nói 'bay quá gần mặt trời' có nghĩa là gì?",
+   "options": [
+    "Chấp nhận những rủi ro nguy hiểm vì tham vọng quá mức",
+    "Đi du lịch rất xa",
+    "Làm việc quá sức",
+    "Rất can đảm"
+   ]
+  }
+ ],
+ "fk-el-04": [
+  {
+   "q": "Gordias đã trở thành vua bằng cách nào?",
+   "options": [
+    "Ông tiến vào thành phố bằng một cỗ xe, ứng nghiệm lời tiên tri",
+    "Ông thắng một trận chiến",
+    "Ông được người dân bầu chọn",
+    "Ông thừa kế ngai vàng"
+   ]
+  },
+  {
+   "q": "Lời tiên tri đã hứa hẹn điều gì về nút thắt?",
+   "options": [
+    "Ai gỡ được nút thắt sẽ cai trị toàn bộ châu Á",
+    "Ai gỡ được nút thắt sẽ trở thành nông dân",
+    "Nút thắt không bao giờ có thể được gỡ ra",
+    "Nút thắt sẽ mang lại vận rủi"
+   ]
+  },
+  {
+   "q": "Alexander đã giải quyết nút thắt bằng cách nào?",
+   "options": [
+    "Ông dùng kiếm chém đứt nó",
+    "Ông kiên nhẫn gỡ nó ra",
+    "Ông đốt nó",
+    "Ông nhờ các thầy tu giải quyết"
+   ]
+  },
+  {
+   "q": "Ngày nay 'chém đứt nút thắt Gordian' có nghĩa là gì?",
+   "options": [
+    "Tìm ra một giải pháp táo bạo, khác thường cho một vấn đề khó khăn",
+    "Thua một cuộc thi",
+    "Tuân theo luật lệ một cách chính xác",
+    "Từ bỏ một nhiệm vụ"
+   ]
+  }
+ ],
+ "fk-el-05": [
+  {
+   "q": "Odysseus và các thủy thủ của ông thấy mình ở đâu?",
+   "options": [
+    "Trong một hang động thuộc về một người khổng lồ một mắt tên là Polyphemus",
+    "Trên một hòn đảo hoang không có người ở",
+    "Trong cung điện của vua Minos",
+    "Trên một con tàu giữa cơn bão"
+   ]
+  },
+  {
+   "q": "Odysseus đã đặt tên gì cho người khổng lồ một mắt?",
+   "options": [
+    "\"Không Ai Cả\"",
+    "Tên thật của mình",
+    "\"Người lạ\"",
+    "Ông từ chối tiết lộ tên"
+   ]
+  },
+  {
+   "q": "Vì sao những người khổng lồ một mắt khác không giúp Polyphemus?",
+   "options": [
+    "Hắn nói rằng \"Không Ai Cả\" đang làm hại mình, nên họ nghĩ không có chuyện gì xảy ra",
+    "Họ sợ Odysseus",
+    "Họ ở quá xa để nghe thấy hắn",
+    "Họ không thích Polyphemus"
+   ]
+  },
+  {
+   "q": "Sự kiêu ngạo của Odysseus đã gây ra hậu quả gì?",
+   "options": [
+    "Cơn thịnh nộ của thần Poseidon đã trì hoãn hành trình trở về nhà của ông mười năm",
+    "Ông mất tất cả thủy thủ ngay lập tức",
+    "Ông bị biến thành đá",
+    "Ông được chào đón về nhà sớm"
+   ]
+  }
+ ],
+ "fk-el-06": [
+  {
+   "q": "Persephone đang làm gì khi thần Hades lần đầu chú ý đến nàng?",
+   "options": [
+    "Hái hoa cùng các nàng tiên nữ Nymph",
+    "Cầu nguyện tại một ngôi đền",
+    "Chèo thuyền qua biển",
+    "Ngủ trên đồng cỏ"
+   ]
+  },
+  {
+   "q": "Nỗi đau buồn của Demeter đã ảnh hưởng đến thế giới như thế nào?",
+   "options": [
+    "Bà khiến đất đai khô héo và mùa màng thất bát, gây ra nạn đói",
+    "Bà biến những người phàm thành hoa",
+    "Bà làm ngập vùng đất bằng mưa",
+    "Bà xin thần Zeus phá hủy Địa Ngục"
+   ]
+  },
+  {
+   "q": "Vì sao Persephone không thể rời khỏi Địa Ngục hoàn toàn?",
+   "options": [
+    "Nàng đã ăn những hạt lựu ở Địa Ngục",
+    "Thần Hades đã khóa các cánh cổng",
+    "Nàng đã mất trí nhớ",
+    "Thần Zeus cấm nàng rời đi"
+   ]
+  },
+  {
+   "q": "Các mùa trong năm tượng trưng cho điều gì trong thần thoại này?",
+   "options": [
+    "Niềm vui của Demeter khi Persephone trở về và nỗi buồn của bà khi nàng ra đi",
+    "Những trận chiến giữa các vị thần",
+    "Tâm trạng thất thường của thần Hades",
+    "Sự trôi qua của các thế hệ loài người"
+   ]
+  }
+ ],
+ "fk-es-01": [
+  {
+   "q": "Con sói đồng cỏ (coyote) nhìn thấy gì phản chiếu trong giếng khiến con thỏ nảy ra một ý tưởng?",
+   "options": [
+    "Mặt trời",
+    "Khuôn mặt của chính nó",
+    "Mặt trăng",
+    "Một con cá"
+   ]
+  },
+  {
+   "q": "Điều gì xảy ra khi con sói đồng cỏ nhảy xuống giếng?",
+   "options": [
+    "Nó bắt được con thỏ",
+    "Nó tìm thấy phô mai thật",
+    "Miếng phô mai biến mất và nó bị ướt sũng",
+    "Nó chết đuối"
+   ]
+  },
+  {
+   "q": "Lần thứ hai, con thỏ đã dùng lý do gì để thoát thân?",
+   "options": [
+    "Nó nói rằng nó bị ốm",
+    "Nó nói rằng bầu trời đang sụp xuống và nhờ con sói đồng cỏ giữ một cái cây",
+    "Nó nói rằng có thợ săn đang đến",
+    "Nó nói rằng nó không có thịt trên xương"
+   ]
+  },
+  {
+   "q": "Câu chuyện kết thúc với bài học gì?",
+   "options": [
+    "Sức mạnh luôn chiến thắng cuối cùng",
+    "Sói đồng cỏ thông minh hơn thỏ",
+    "Người biết suy nghĩ đôi khi thắng được kẻ mạnh hơn",
+    "Đừng bao giờ tin người lạ"
+   ]
+  }
+ ],
+ "fk-es-02": [
+  {
+   "q": "Hoàng đế đặt ra điều kiện gì trước khi Popocatépetl có thể cưới con gái ông?",
+   "options": [
+    "Chàng phải xây một ngôi đền",
+    "Chàng phải ra trận và trở về chiến thắng",
+    "Chàng phải chờ mười năm",
+    "Chàng phải đánh bại hoàng đế trong trận đấu"
+   ]
+  },
+  {
+   "q": "Kẻ ganh tị đã nói dối Iztaccíhuatl điều gì?",
+   "options": [
+    "Rằng Popocatépetl đã cưới người khác",
+    "Rằng Popocatépetl đã chết trong chiến trận",
+    "Rằng hoàng đế đã cấm cuộc hôn nhân",
+    "Rằng Popocatépetl không còn yêu nàng nữa"
+   ]
+  },
+  {
+   "q": "Vì thương xót đôi tình nhân, các vị thần đã làm gì?",
+   "options": [
+    "Họ hồi sinh Iztaccíhuatl",
+    "Họ trừng phạt kẻ ganh tị",
+    "Họ biến đôi tình nhân thành hai ngọn núi lửa",
+    "Họ đày Popocatépetl xuống địa ngục"
+   ]
+  },
+  {
+   "q": "Theo truyền thuyết, làn khói của núi Popocatépetl tượng trưng cho điều gì?",
+   "options": [
+    "Một lời cảnh báo về hiểm nguy",
+    "Nỗi đau buồn của chàng dành cho Iztaccíhuatl",
+    "Cơn giận dữ của các vị thần",
+    "Sự kết thúc của chiến tranh"
+   ]
+  }
+ ],
+ "fk-es-03": [
+  {
+   "q": "Qua nhiều năm, chồng của María đã đối xử với nàng như thế nào?",
+   "options": [
+    "Anh trở nên yêu thương nàng hơn",
+    "Anh sao nhãng nàng, thường xuyên đi xa khỏi làng",
+    "Anh gửi nàng trở về nhà cha mẹ",
+    "Anh mời nàng cùng đi du lịch"
+   ]
+  },
+  {
+   "q": "Trong một cơn giận dữ bên bờ sông, María đã làm gì?",
+   "options": [
+    "Nàng đối chất với người bạn đồng hành của chồng mình",
+    "Nàng dìm chết chính những đứa con của mình",
+    "Nàng bỏ trốn cùng các con",
+    "Nàng đốt cháy chiếc xe ngựa"
+   ]
+  },
+  {
+   "q": "Các bà mẹ ở Mỹ Latinh theo truyền thống cảnh báo con cái điều gì về La Llorona?",
+   "options": [
+    "Đừng bơi một mình dưới sông",
+    "Đừng ra ngoài vào ban đêm, nếu không bà ấy sẽ bắt chúng đi",
+    "Đừng nói chuyện với người lạ",
+    "Đừng kết hôn vì tiền"
+   ]
+  },
+  {
+   "q": "Thông điệp trung tâm mà người kể chuyện rút ra từ truyền thuyết này là gì?",
+   "options": [
+    "Những dòng sông luôn nguy hiểm vào ban đêm",
+    "Giàu có không đảm bảo hạnh phúc",
+    "Một khoảnh khắc giận dữ có thể khiến ta mất đi điều mình yêu quý nhất",
+    "Ma không thể được tha thứ"
+   ]
+  }
+ ],
+ "fk-es-04": [
+  {
+   "q": "Người kể chuyện đánh giá thế nào về cuộc hôn nhân giữa các Hoàng tử xứ Carrión và các con gái của Cid?",
+   "options": [
+    "Đó là một cuộc hôn nhân vì tình yêu đích thực",
+    "Đó là cuộc hôn nhân được sắp đặt chủ yếu vì tư lợi",
+    "Đó là cuộc hôn nhân bị nhà vua ép buộc",
+    "Nó diễn ra trái với ý muốn của Cid"
+   ]
+  },
+  {
+   "q": "Các Hoàng tử xứ Carrión phản ứng thế nào khi con sư tử sổng chuồng?",
+   "options": [
+    "Họ giúp Cid bắt lại nó",
+    "Họ hoảng sợ bỏ chạy và trốn, chỉ nghĩ đến bản thân mình",
+    "Họ giết chết con sư tử",
+    "Họ bình tĩnh dẫn các vị khách khác đến nơi an toàn"
+   ]
+  },
+  {
+   "q": "Cid đã xử lý con sư tử sổng chuồng như thế nào?",
+   "options": [
+    "Ông gọi binh lính đến giăng lưới bắt nó",
+    "Ông bình tĩnh nắm lấy bờm nó và đưa nó trở lại chuồng",
+    "Ông giết nó bằng gươm",
+    "Ông tự nhốt mình trong cung điện"
+   ]
+  },
+  {
+   "q": "Sự việc này để lại hậu quả lâu dài gì cho các Hoàng tử xứ Carrión?",
+   "options": [
+    "Họ trở thành những người ngưỡng mộ trung thành của Cid",
+    "Nỗi xấu hổ của họ biến thành mối thù oán ngày càng lớn đối với ông",
+    "Họ rời khỏi Valencia ngay lập tức",
+    "Họ được khen ngợi vì sự thận trọng"
+   ]
+  }
+ ],
+ "fk-es-05": [
+  {
+   "q": "Vì sao Sancho Panza đồng ý làm giám mã cho Don Quixote?",
+   "options": [
+    "Vì lòng trung thành với gia đình",
+    "Để đổi lấy chức thống đốc một hòn đảo trong tương lai",
+    "Vì anh cũng yêu thích những cuốn sách hiệp sĩ",
+    "Vì anh không còn nơi nào khác để sống"
+   ]
+  },
+  {
+   "q": "Sancho nói với Don Quixote rằng những cối xay gió thực ra là gì?",
+   "options": [
+    "Những tháp canh do kẻ thù xây dựng",
+    "Những cối xay gió mà cánh quạt chỉ trông giống như cánh tay",
+    "Những người khổng lồ đang ngủ dưới lời nguyền",
+    "Những bức tượng do các hiệp sĩ cổ xưa để lại"
+   ]
+  },
+  {
+   "q": "Don Quixote giải thích thất bại của mình như thế nào sau khi đâm vào cối xay gió?",
+   "options": [
+    "Ông thừa nhận rằng mình đơn giản đã sai",
+    "Ông đổ lỗi cho Sancho đã làm mình mất tập trung",
+    "Ông khẳng định rằng một pháp sư đã biến những người khổng lồ thành cối xay gió để cướp đi vinh quang của mình",
+    "Ông nói rằng Rocinante đã vô tình vấp ngã"
+   ]
+  },
+  {
+   "q": "Theo đoạn kết, sự việc này trở thành biểu tượng gì về Don Quixote?",
+   "options": [
+    "Khả năng của ông như một chiến binh thực thụ",
+    "Khả năng nhìn thấy sự vĩ đại trong những điều bình thường và theo đuổi lý tưởng của mình bất chấp những bằng chứng liên tục cho thấy ông sai",
+    "Sự ngờ vực ngày càng tăng của ông đối với Sancho",
+    "Quyết định từ bỏ tinh thần hiệp sĩ của ông"
+   ]
+  }
+ ],
+ "fk-es-06": [
+  {
+   "q": "Cặp song sinh bị triệu đến Xibalbá với lý do gì?",
+   "options": [
+    "Một bữa tiệc cưới",
+    "Một trận bóng",
+    "Một nghi lễ tôn giáo",
+    "Một phiên tòa xét xử tội của cha họ"
+   ]
+  },
+  {
+   "q": "Chuyện gì xảy ra với Hunahpú trong Nhà Dơi?",
+   "options": [
+    "Cậu bị đóng băng hoàn toàn",
+    "Cậu bị ăn thịt hoàn toàn",
+    "Một con dơi xé đầu cậu ra",
+    "Cậu thoát ra mà không hề hấn gì"
+   ]
+  },
+  {
+   "q": "Các lãnh chúa Xibalbá yêu cầu cặp song sinh thực hiện thử thách cuối cùng nào?",
+   "options": [
+    "Đánh bại một con báo đốm trong trận chiến",
+    "Hy sinh lẫn nhau rồi sống lại",
+    "Trải qua một đêm trong Nhà Tối mà không có sự trợ giúp",
+    "Giải một câu đố về tổ tiên của họ"
+   ]
+  },
+  {
+   "q": "Câu chuyện kết thúc như thế nào đối với Hun-Camé và Vucub-Camé?",
+   "options": [
+    "Họ được hồi sinh và trở thành đồng minh của cặp song sinh",
+    "Cặp song sinh để họ chết vĩnh viễn sau khi chính họ cũng chịu hy sinh",
+    "Họ bỏ chạy khỏi Xibalbá trong thất bại",
+    "Họ được tha thứ và bị lưu đày thay vì bị giết"
+   ]
+  }
+ ],
+ "fk-fr-01": [
+  {
+   "q": "Con kiến đã làm gì suốt cả mùa hè?",
+   "options": [
+    "Thu thập và tích trữ thức ăn",
+    "Nhảy múa trên cánh đồng",
+    "Ngủ dưới ánh nắng",
+    "Hát cùng con ve sầu"
+   ]
+  },
+  {
+   "q": "Chuyện gì xảy ra khi mùa đông đến?",
+   "options": [
+    "Con ve sầu đã tích trữ được rất nhiều thức ăn",
+    "Con ve sầu không còn gì để ăn",
+    "Con kiến rời bỏ tổ của mình",
+    "Con ve sầu chuyển sang một cánh đồng khác"
+   ]
+  },
+  {
+   "q": "Con ve sầu đã trả lời thế nào trước câu hỏi của con kiến về mùa hè?",
+   "options": [
+    "Nó nói rằng nó đã tích trữ thức ăn",
+    "Nó nói rằng nó đã hát suốt cả mùa hè",
+    "Nó nói rằng nó đã đi du lịch xa",
+    "Nó nói rằng nó đã ngủ rất nhiều"
+   ]
+  },
+  {
+   "q": "Câu chuyện dạy bài học gì?",
+   "options": [
+    "Tầm quan trọng của việc chuẩn bị cho tương lai",
+    "Tầm quan trọng của việc hát thật to",
+    "Tầm quan trọng của việc chia sẻ thức ăn",
+    "Tầm quan trọng của việc ngủ ngon"
+   ]
+  }
+ ],
+ "fk-fr-02": [
+  {
+   "q": "Vì sao con cáo dừng lại dưới gốc cây?",
+   "options": [
+    "Nó ngửi thấy mùi phô mai trong mỏ con quạ",
+    "Nó muốn ngủ ở đó",
+    "Nó đang tìm nước",
+    "Nó muốn hát"
+   ]
+  },
+  {
+   "q": "Con cáo đã tuyên bố điều gì về con quạ?",
+   "options": [
+    "Rằng nó xấu xí",
+    "Rằng nó sẽ là vua của khu rừng nếu giọng hát của nó xứng với bộ lông của nó",
+    "Rằng nó nên rời khỏi khu rừng",
+    "Rằng bộ lông của nó xỉn màu"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra với miếng phô mai?",
+   "options": [
+    "Con quạ tự ăn nó",
+    "Nó rơi xuống và con cáo bắt được",
+    "Con cáo trả nó lại",
+    "Nó biến mất vào trong thân cây"
+   ]
+  },
+  {
+   "q": "Bài học đạo đức của câu ngụ ngôn này là gì?",
+   "options": [
+    "Đừng bao giờ tin ai đó nịnh hót mình quá mức",
+    "Luôn hát thật to trong rừng",
+    "Cáo là loài vật nguy hiểm",
+    "Quạ không nên bay vào ban đêm"
+   ]
+  }
+ ],
+ "fk-fr-03": [
+  {
+   "q": "Ai chịu trách nhiệm đóng cổng thành mỗi đêm?",
+   "options": [
+    "Chính công chúa Dahut",
+    "Một người gác cổng, trong khi nhà vua giữ chìa khóa",
+    "Thánh Corentin",
+    "Quỷ dữ cải trang"
+   ]
+  },
+  {
+   "q": "Dahut đã làm gì trong cơn bão?",
+   "options": [
+    "Nàng cảnh báo cha mình về hiểm nguy",
+    "Nàng đánh cắp chìa khóa và mở cổng thành",
+    "Nàng một mình chạy trốn khỏi thành phố",
+    "Nàng chiến đấu chống lại kẻ lạ mặt"
+   ]
+  },
+  {
+   "q": "Theo truyền thuyết, cuối cùng chuyện gì đã xảy ra với Dahut?",
+   "options": [
+    "Nàng chết đuối và không ai còn thấy nàng nữa",
+    "Nàng bị đẩy xuống biển và trở thành nàng tiên cá",
+    "Nàng trốn thoát an toàn đến Quimper",
+    "Nàng đánh bại con quỷ"
+   ]
+  },
+  {
+   "q": "Những người ngư dân xứ Bretagne nói rằng họ vẫn có thể nghe thấy điều gì?",
+   "options": [
+    "Giọng hát của Dahut",
+    "Tiếng chuông của thành phố chìm dưới đáy biển vang lên dưới những con sóng",
+    "Tiếng vó ngựa phi của nhà vua",
+    "Tiếng cười của quỷ dữ"
+   ]
+  }
+ ],
+ "fk-fr-04": [
+  {
+   "q": "Olifant là gì?",
+   "options": [
+    "Thanh kiếm của Roland",
+    "Một chiếc tù và bằng ngà voi có thể nghe thấy từ xa",
+    "Một loại khiên",
+    "Tên của đèo núi"
+   ]
+  },
+  {
+   "q": "Vì sao lúc đầu Roland từ chối thổi tù và?",
+   "options": [
+    "Chàng không biết cách sử dụng nó",
+    "Vì lòng kiêu hãnh, không muốn tỏ ra sợ hãi",
+    "Vì Olivier bảo chàng đừng làm vậy",
+    "Vì chiếc tù và bị hỏng"
+   ]
+  },
+  {
+   "q": "Charlemagne đã thấy gì khi đến Roncevaux?",
+   "options": [
+    "Roland còn sống nhưng bị thương",
+    "Roland và các đồng đội của chàng đã chết",
+    "Một chiến trường trống trải không dấu vết giao tranh",
+    "Quân Moor đang chờ đàm phán"
+   ]
+  },
+  {
+   "q": "Câu chuyện về Roland tượng trưng cho điều gì tại Pháp?",
+   "options": [
+    "Chỉ là chiến lược quân sự",
+    "Lòng dũng cảm, sự trung thành, và cái giá của lòng kiêu hãnh",
+    "Sự thành lập thành Paris",
+    "Các hiệp ước hòa bình với Tây Ban Nha"
+   ]
+  }
+ ],
+ "fk-fr-05": [
+  {
+   "q": "Mélusine đặt điều kiện gì cho cuộc hôn nhân của họ?",
+   "options": [
+    "Chàng không bao giờ được biết tên thật của nàng",
+    "Chàng không bao giờ được nhìn thấy nàng vào ngày thứ Bảy, khi nàng tự khóa mình lại",
+    "Chàng phải từ bỏ đất đai của mình",
+    "Chàng không bao giờ được cưới người khác"
+   ]
+  },
+  {
+   "q": "Điều gì đã thúc đẩy Raymondin rình rập theo dõi Mélusine?",
+   "options": [
+    "Một giấc mơ mà chàng đã có",
+    "Những lời ám chỉ đầy ghen tị của anh trai chàng rằng nàng không chung thủy",
+    "Một lá thư mà chàng tìm thấy",
+    "Lời khuyên từ một linh mục"
+   ]
+  },
+  {
+   "q": "Cuối cùng bí mật ấy được tiết lộ cho mọi người bằng cách nào?",
+   "options": [
+    "Chính Mélusine đã thú nhận điều đó",
+    "Raymondin gọi nàng là \"con rắn\" trước triều đình trong một cuộc tranh cãi",
+    "Con trai họ đã phát hiện ra điều đó",
+    "Một người hầu đã lan truyền tin đồn"
+   ]
+  },
+  {
+   "q": "Truyền thuyết nói rằng điều gì xảy ra khi một hậu duệ của dòng họ Lusignan sắp qua đời?",
+   "options": [
+    "Một hồi chuông vang lên trong lâu đài",
+    "Tiếng khóc của Mélusine được nghe thấy",
+    "Một con rồng xuất hiện trên bầu trời",
+    "Đài phun nước cạn khô"
+   ]
+  }
+ ],
+ "fk-fr-06": [
+  {
+   "q": "Hai điều kiện của giao kèo với quỷ dữ là gì?",
+   "options": [
+    "Trả vàng và không bao giờ trở lại",
+    "Không bao giờ nhắc đến tên Chúa và phải trở về trước khi gà gáy",
+    "Không bao giờ quay đầu nhìn lại và không bao giờ nói chuyện",
+    "Mang theo một món quà và hát thật to"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra khi những người đàn ông đến được ngôi làng?",
+   "options": [
+    "Họ bị dân làng xua đuổi",
+    "Họ nhảy múa và ăn mừng đến tận khuya",
+    "Họ bị bắt vì xâm nhập trái phép",
+    "Họ quên mất lý do vì sao mình đến"
+   ]
+  },
+  {
+   "q": "Chuyến trở về suýt kết thúc trong thảm họa như thế nào?",
+   "options": [
+    "Họ hết nhiên liệu",
+    "Một người thề trước trời, phá vỡ giao kèo, khiến chiếc xuồng mất kiểm soát",
+    "Họ bị lạc trong một trận bão tuyết",
+    "Quỷ dữ đòi thêm linh hồn trước khi cho họ trở về"
+   ]
+  },
+  {
+   "q": "Những người kể chuyện già ở Québec rút ra bài học gì từ truyền thuyết này?",
+   "options": [
+    "Đừng bao giờ đi một mình vào mùa đông",
+    "Một lời hứa với quỷ dữ, dù chỉ là đùa, luôn phải trả giá đắt",
+    "Luôn tin vào lời đề nghị của người lạ",
+    "Xuồng rất nguy hiểm trong tuyết"
+   ]
+  }
+ ],
+ "fk-hi-01": [
+  {
+   "q": "Con khỉ sống nhờ vào thứ gì?",
+   "options": [
+    "Trái cây ngọt từ cây mận rừng (jamun)",
+    "Cá từ dòng sông",
+    "Gạo từ ngôi làng",
+    "Lá cây"
+   ]
+  },
+  {
+   "q": "Vì sao vợ của cá sấu muốn có trái tim của con khỉ?",
+   "options": [
+    "Bà tin rằng trái cây ngọt nghĩa là trái tim cũng ngọt ngào",
+    "Bà giận con khỉ",
+    "Bà muốn thử lòng chồng mình",
+    "Bà rất đói"
+   ]
+  },
+  {
+   "q": "Con khỉ đã thoát thân bằng cách nào?",
+   "options": [
+    "Nó lừa con cá sấu quay trở lại gốc cây",
+    "Nó nhảy thẳng xuống nước",
+    "Nó kêu gọi sự giúp đỡ từ các loài chim",
+    "Nó đánh nhau với con cá sấu"
+   ]
+  },
+  {
+   "q": "Câu chuyện dạy bài học gì?",
+   "options": [
+    "Sự khôn ngoan có thể cứu bạn khỏi sự phản bội",
+    "Cá sấu luôn đáng tin cậy",
+    "Không bao giờ nên chia sẻ trái cây",
+    "Tình bạn giữa các loài vật là điều không thể"
+   ]
+  }
+ ],
+ "fk-hi-02": [
+  {
+   "q": "Các loài vật đã thỏa thuận gì với sư tử?",
+   "options": [
+    "Gửi cho nó một con vật mỗi ngày thay vì bị săn đuổi",
+    "Tặng nó trái cây thay vì thịt",
+    "Trốn khỏi nó trong hang động",
+    "Cùng nhau chiến đấu với nó"
+   ]
+  },
+  {
+   "q": "Con thỏ đã giải thích việc đến trễ của mình như thế nào?",
+   "options": [
+    "Nó tuyên bố đã gặp một con sư tử khác tự xưng là vua",
+    "Nó nói rằng nó bị lạc trong rừng rậm",
+    "Nó nói rằng nó đang đi săn tìm thức ăn",
+    "Nó đổ lỗi cho những con vật khác"
+   ]
+  },
+  {
+   "q": "Sư tử đã thấy gì trong giếng?",
+   "options": [
+    "Hình bóng của chính mình, mà nó tưởng nhầm là một đối thủ",
+    "Một con sư tử thứ hai thật sự",
+    "Một con cá",
+    "Cái bóng của nó trên mặt đất"
+   ]
+  },
+  {
+   "q": "Bài học đạo đức của câu chuyện là gì?",
+   "options": [
+    "Trí tuệ lớn hơn sức mạnh",
+    "Sức mạnh luôn chiến thắng",
+    "Các loài vật không thể lừa được nhau",
+    "Sư tử là loài khôn ngoan nhất trong tất cả"
+   ]
+  }
+ ],
+ "fk-hi-03": [
+  {
+   "q": "Akbar đã đặt ra thử thách gì?",
+   "options": [
+    "Liệu có ai có thể đứng cả đêm trong một ao nước lạnh",
+    "Liệu có ai có thể nấu món ăn nhanh nhất",
+    "Liệu có ai có thể giải một câu đố",
+    "Liệu có ai có thể trèo lên tường cung điện"
+   ]
+  },
+  {
+   "q": "Vì sao người đàn ông nghèo bị từ chối phần thưởng?",
+   "options": [
+    "Akbar nói rằng hơi ấm từ ngọn đèn ở xa khiến bài thử không hợp lệ",
+    "Ông ngủ quên trong lúc thử thách",
+    "Ông đòi quá nhiều tiền",
+    "Ông thực ra chưa bao giờ bước vào ao nước"
+   ]
+  },
+  {
+   "q": "Màn trình diễn nấu khichdi của Birbal đã chứng minh điều gì?",
+   "options": [
+    "Rằng lý lẽ trước đó về hơi ấm từ xa là vô lý và bất công",
+    "Rằng Birbal là đầu bếp giỏi hơn các đầu bếp hoàng gia",
+    "Rằng lửa luôn nấu chín thức ăn nhanh hơn từ khoảng cách xa",
+    "Rằng phán quyết của Akbar luôn luôn đúng"
+   ]
+  },
+  {
+   "q": "Câu chuyện cuối cùng cho thấy điều gì về Birbal?",
+   "options": [
+    "Ông kết hợp sự khôn ngoan với ý thức công lý mạnh mẽ",
+    "Ông luôn đồng ý với hoàng đế để giữ an toàn cho mình",
+    "Ông thích nấu ăn hơn là đưa ra lời khuyên",
+    "Ông không ưa người nghèo"
+   ]
+  }
+ ],
+ "fk-hi-04": [
+  {
+   "q": "Vua Krishnadevaraya đã làm gì với những trái xoài quý hiếm?",
+   "options": [
+    "Ông chia cho mỗi cận thần được sủng ái một trái",
+    "Ông giữ tất cả cho riêng mình",
+    "Ông bán chúng ngoài chợ",
+    "Ông cho voi của mình ăn"
+   ]
+  },
+  {
+   "q": "Vì sao viên cận thần ghen tị lại phàn nàn với nhà vua?",
+   "options": [
+    "Ông ta không nhận được trái xoài nào và cho rằng Tenali Rama không xứng đáng được vinh danh",
+    "Ông ta nghĩ rằng những trái xoài đã bị thối",
+    "Ông ta muốn vàng nhiều hơn thay vì trái cây",
+    "Ông ta tin rằng nhà vua thiên vị người nước ngoài"
+   ]
+  },
+  {
+   "q": "Tenali Rama đã tự bào chữa cho mình trước nhà vua như thế nào?",
+   "options": [
+    "Bằng cách diễn giải lại lời nói của mình thành lời khen ngợi cho sự hào phóng của nhà vua",
+    "Bằng cách xin lỗi và trả lại trái xoài",
+    "Bằng cách công khai đổ lỗi cho viên cận thần ghen tị",
+    "Bằng cách phớt lờ câu hỏi của nhà vua"
+   ]
+  },
+  {
+   "q": "Câu chuyện minh họa điều gì về sự dí dỏm của Tenali Rama?",
+   "options": [
+    "Nó có thể biến một lời buộc tội căng thẳng thành lời khen ngợi và hóa giải xung đột",
+    "Nó luôn khiến ông gặp rắc rối lớn hơn",
+    "Nó vô dụng trước những cận thần ghen tị",
+    "Nó chỉ có hiệu quả khi nhà vua vắng mặt"
+   ]
+  }
+ ],
+ "fk-hi-05": [
+  {
+   "q": "Điều gì khiến con hươu mà Sita nhìn thấy trở nên đặc biệt lạ thường?",
+   "options": [
+    "Thân hình vàng óng và gạc nạm đầy châu báu",
+    "Kích thước khổng lồ và màu sắc đen tối",
+    "Khả năng biết nói",
+    "Đôi mắt đỏ rực phát sáng"
+   ]
+  },
+  {
+   "q": "Con hươu đó thực chất là ai, và vì sao nó được cử đến?",
+   "options": [
+    "Quỷ Maricha, được Ravana cử đến để dụ Rama rời xa Sita",
+    "Một linh hồn rừng thử thách sự kiên nhẫn của Rama",
+    "Một con hươu thật mà Sita đã nuôi từ nhỏ",
+    "Ảo ảnh do Lakshmana tạo ra để thử Sita"
+   ]
+  },
+  {
+   "q": "Vì sao cuối cùng Lakshmana rời khỏi túp lều dù đang do dự?",
+   "options": [
+    "Sita nài nỉ, đau khổ vì tiếng kêu mà nàng tin là của Rama",
+    "Chàng muốn tự mình nhìn thấy con hươu vàng",
+    "Rama đã trực tiếp triệu gọi chàng",
+    "Chàng nghi ngờ Ravana đã ở gần đó"
+   ]
+  },
+  {
+   "q": "Hậu quả cuối cùng của mưu kế con hươu vàng là gì?",
+   "options": [
+    "Nó dẫn đến việc Sita bị bắt cóc, mở đường cho cuộc chiến giữa Rama và Ravana",
+    "Nó đoàn tụ Rama với người anh trai thất lạc",
+    "Nó tiết lộ danh tính thật của Ravana cho Lakshmana",
+    "Nó khiến Rama từ bỏ việc tìm kiếm Sita"
+   ]
+  }
+ ],
+ "fk-hi-06": [
+  {
+   "q": "Savitri chọn kết hôn với ai, và điều gì bất thường về người này?",
+   "options": [
+    "Satyavan, một hoàng tử bị lưu đày sống như một ẩn sĩ trong rừng với một số phận bí mật",
+    "Một thương nhân giàu có mà cha nàng đã sắp đặt",
+    "Một chiến binh từ vương quốc đối địch",
+    "Một hiền nhân đã từ bỏ hôn nhân hoàn toàn"
+   ]
+  },
+  {
+   "q": "Savitri đã làm gì khi ngày định mệnh của Satyavan đến gần?",
+   "options": [
+    "Nàng giữ một lời thề nghiêm ngặt trong ba đêm không ngủ không nghỉ",
+    "Nàng gửi Satyavan đến một vương quốc xa xôi để đảm bảo an toàn",
+    "Nàng xin Narada thay đổi lời tiên tri",
+    "Nàng tổ chức một bữa tiệc lớn cho cả khu rừng"
+   ]
+  },
+  {
+   "q": "Savitri đã dùng trí thông minh để vượt qua thần Yama như thế nào?",
+   "options": [
+    "Nàng xin được ân huệ có một trăm người con trai với Satyavan, điều này buộc Yama phải logic trả lại mạng sống cho Satyavan",
+    "Nàng chiến đấu tay đôi với thần Yama",
+    "Nàng lừa cho thần ngủ thiếp đi",
+    "Nàng đút lót thần bằng kho báu hoàng gia"
+   ]
+  },
+  {
+   "q": "Câu chuyện về Savitri đã truyền cảm hứng cho truyền thống lâu bền nào?",
+   "options": [
+    "Lễ chay Vat Savitri mà các phụ nữ đã có chồng thực hiện để tôn vinh nàng",
+    "Một lễ hội săn bắn hàng năm trong rừng",
+    "Một cuộc hành hương đến cung điện của vua Ashvapati",
+    "Lệnh cấm đốn gỗ vào mùa hè"
+   ]
+  }
+ ],
+ "fk-ind-01": [
+  {
+   "q": "Vì sao con chuột hươu (kancil) muốn băng qua sông?",
+   "options": [
+    "Để ăn trái cây ở bờ bên kia",
+    "Để thăm họ hàng",
+    "Để trốn khỏi một cơn bão",
+    "Để tìm nước uống"
+   ]
+  },
+  {
+   "q": "Con chuột hươu đã dùng mưu kế gì để băng qua sông?",
+   "options": [
+    "Nó bơi thật nhanh qua đám cá sấu",
+    "Nó nhờ đám cá sấu xếp hàng để nó đếm chúng",
+    "Nó đóng một chiếc bè gỗ",
+    "Nó chờ cho đến khi đám cá sấu ngủ say"
+   ]
+  },
+  {
+   "q": "Đám cá sấu cảm thấy thế nào khi nhận ra mình đã bị lừa?",
+   "options": [
+    "Thấy buồn cười",
+    "Biết ơn",
+    "Vô cùng tức giận",
+    "Thờ ơ"
+   ]
+  },
+  {
+   "q": "Con chuột hươu trở thành biểu tượng cho điều gì trong câu chuyện?",
+   "options": [
+    "Sức mạnh thể chất",
+    "Sự khôn ngoan chiến thắng sức mạnh",
+    "Sự nhát gan",
+    "Sự tàn nhẫn"
+   ]
+  }
+ ],
+ "fk-ind-02": [
+  {
+   "q": "Người khổng lồ đã tặng Mbok Sirni thứ gì?",
+   "options": [
+    "Một túi vàng",
+    "Một hạt giống dưa chuột thần kỳ",
+    "Một đôi giày thần kỳ",
+    "Một con chim biết nói"
+   ]
+  },
+  {
+   "q": "Mbok Sirni đã tìm thấy gì bên trong quả dưa chuột vàng?",
+   "options": [
+    "Một bé trai",
+    "Một rương châu báu",
+    "Một bé gái",
+    "Một thanh gươm thần"
+   ]
+  },
+  {
+   "q": "Nhà ẩn sĩ đã tặng Timun Mas thứ gì để thoát khỏi người khổng lồ?",
+   "options": [
+    "Bốn túi bọc thần kỳ: hạt dưa chuột, một cây kim, muối và mắm tôm",
+    "Một chiếc áo choàng tàng hình thần kỳ",
+    "Một con ngựa biết bay",
+    "Một tấm bản đồ dẫn đến hang động bí mật"
+   ]
+  },
+  {
+   "q": "Cuối cùng chuyện gì đã xảy ra với người khổng lồ?",
+   "options": [
+    "Hắn trở thành bạn của Timun Mas",
+    "Hắn bị nuốt chửng bởi bùn sôi",
+    "Hắn hóa thành đá",
+    "Hắn bỏ trốn sang một vương quốc khác"
+   ]
+  }
+ ],
+ "fk-ind-03": [
+  {
+   "q": "Vì sao mẹ của Malin phải làm việc vất vả một mình?",
+   "options": [
+    "Malin từ chối giúp bà",
+    "Cha cậu đã chết trên biển",
+    "Bà muốn mua một căn nhà",
+    "Bà đang tiết kiệm cho một chuyến đi"
+   ]
+  },
+  {
+   "q": "Malin đã trở thành người như thế nào khi con tàu của cậu trở về làng?",
+   "options": [
+    "Một ngư dân nghèo như cha cậu",
+    "Một thương nhân giàu có kết hôn với một quý tộc",
+    "Một thuyền trưởng không có gia đình",
+    "Một người kể chuyện nổi tiếng"
+   ]
+  },
+  {
+   "q": "Malin đã phản ứng thế nào khi mẹ cậu đến ôm cậu?",
+   "options": [
+    "Cậu vui mừng giới thiệu bà với vợ mình",
+    "Cậu chối bỏ rằng bà là mẹ mình",
+    "Cậu mời bà lên tàu",
+    "Cậu khóc trong niềm vui sướng"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra với Malin do lời nguyền của mẹ cậu?",
+   "options": [
+    "Cậu trở nên giàu có vô kể",
+    "Cậu hóa thành đá trong một cơn bão",
+    "Cậu bị đuổi khỏi làng",
+    "Cậu mất trí nhớ"
+   ]
+  }
+ ],
+ "fk-ind-04": [
+  {
+   "q": "Bawang Putih bị đối xử như thế nào trong chính ngôi nhà của mình?",
+   "options": [
+    "Như một đứa con một được yêu thương",
+    "Như một người hầu",
+    "Như hoàng tộc",
+    "Cô bị gửi đi học xa"
+   ]
+  },
+  {
+   "q": "Bà lão đặt điều kiện gì để trả lại tấm vải?",
+   "options": [
+    "Bawang Putih phải tìm một chiếc nhẫn bị mất",
+    "Bawang Putih phải giúp việc nhà trong vài ngày",
+    "Bawang Putih phải hát một bài hát",
+    "Bawang Putih phải trả bằng vàng"
+   ]
+  },
+  {
+   "q": "Vì sao Bawang Merah cũng đến con sông đó?",
+   "options": [
+    "Để giặt quần áo của chính mình",
+    "Để tìm em gái mình",
+    "Để bắt chước Bawang Putih và nhận được phần thưởng tương tự",
+    "Để lấy nước uống"
+   ]
+  },
+  {
+   "q": "Bên trong quả bí ngô lớn mà Bawang Merah chọn có gì?",
+   "options": [
+    "Vàng và châu báu",
+    "Trái cây tươi",
+    "Rắn và các sinh vật có nọc độc",
+    "Không có gì cả"
+   ]
+  }
+ ],
+ "fk-ind-05": [
+  {
+   "q": "Tumang thực chất là ai?",
+   "options": [
+    "Một con chó bình thường",
+    "Một vị thần bị nguyền rủa mang hình dạng loài chó",
+    "Anh trai của Dayang Sumbi",
+    "Một vị vua láng giềng"
+   ]
+  },
+  {
+   "q": "Vì sao Sangkuriang và Dayang Sumbi đồng ý kết hôn?",
+   "options": [
+    "Cả hai đều biết họ có quan hệ huyết thống và kết hôn vì bổn phận",
+    "Sangkuriang nhận ra nàng nhưng nàng không nhận ra chàng",
+    "Không ai trong hai người nhận ra người kia là mẹ và con",
+    "Một vị vua đã sắp đặt cuộc hôn nhân"
+   ]
+  },
+  {
+   "q": "Dayang Sumbi đã ngăn các thần linh hoàn thành con thuyền bằng cách nào?",
+   "options": [
+    "Nàng trực tiếp van xin Sangkuriang dừng lại",
+    "Nàng tạo ra một buổi bình minh giả bằng đuốc và tiếng giã gạo",
+    "Nàng giấu con thuyền suốt đêm",
+    "Nàng xin các vị thần ban mưa xuống"
+   ]
+  },
+  {
+   "q": "Con thuyền bị lật úp đã trở thành gì?",
+   "options": [
+    "Một dòng sông",
+    "Một hang động",
+    "Một ngọn núi, Tangkuban Perahu",
+    "Một hồ nước"
+   ]
+  }
+ ],
+ "fk-ind-06": [
+  {
+   "q": "Vì sao Bandung Bondowoso yêu Roro Jonggrang?",
+   "options": [
+    "Nàng là con gái của vị vua mà chàng đã đánh bại, và nổi tiếng xinh đẹp",
+    "Nàng đã giúp chàng thắng trận",
+    "Nàng là một công chúa ngoại quốc đến thăm triều đình",
+    "Họ đã là bạn thời thơ ấu"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra khi Bandung Bondowoso trèo xuống giếng?",
+   "options": [
+    "Chàng tìm thấy kho báu",
+    "Các thuộc hạ của Roro Jonggrang chôn sống chàng, nhưng chàng đã thoát ra được",
+    "Chàng chết đuối ngay lập tức",
+    "Chàng từ chối xuống giếng"
+   ]
+  },
+  {
+   "q": "Roro Jonggrang đã lừa các thần linh ngừng công việc bằng cách nào?",
+   "options": [
+    "Nàng đe dọa họ bằng một thanh kiếm",
+    "Nàng tạo ra một buổi bình minh giả bằng tiếng giã gạo và đốt rơm rạ",
+    "Nàng đút lót họ bằng vàng",
+    "Nàng nhờ Bandung Bondowoso gọi họ dừng lại"
+   ]
+  },
+  {
+   "q": "Cuối cùng chuyện gì đã xảy ra với Roro Jonggrang?",
+   "options": [
+    "Nàng kết hôn hạnh phúc với Bandung Bondowoso",
+    "Nàng bị nguyền thành một pho tượng đá",
+    "Nàng chạy trốn sang một vương quốc khác",
+    "Nàng trở thành nữ hoàng của Prambanan"
+   ]
+  }
+ ],
+ "fk-it-01": [
+  {
+   "q": "Amulius đã làm gì khi biết Rea Silvia sinh đôi?",
+   "options": [
+    "Ông ra lệnh giết hai đứa trẻ",
+    "Ông tự mình nuôi dưỡng chúng",
+    "Ông biến chúng thành người thừa kế của mình",
+    "Ông đày Rea Silvia đi"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra với chiếc giỏ chứa hai đứa trẻ sinh đôi?",
+   "options": [
+    "Nó chìm xuống sông",
+    "Nó trôi theo dòng sông Tiber và dạt vào bờ",
+    "Một ngư dân tìm thấy nó ngay lập tức",
+    "Nó bị dòng nước cuốn vỡ"
+   ]
+  },
+  {
+   "q": "Ai đã nuôi dưỡng Romulus và Remus sau con sói cái?",
+   "options": [
+    "Vua Amulius",
+    "Một người chăn cừu tên Faustulus và vợ ông",
+    "Chính Numitor",
+    "Các thầy tu của một ngôi đền"
+   ]
+  },
+  {
+   "q": "Thành Rome đã được thành lập như thế nào?",
+   "options": [
+    "Hai anh em cùng nhau xây dựng thành phố trong hòa bình",
+    "Numitor quyết định nơi xây dựng nó",
+    "Remus chế giễu bức tường của Romulus, Romulus giết ông, rồi lập nên thành Rome",
+    "Remus trở thành vua thay vì Romulus"
+   ]
+  }
+ ],
+ "fk-it-02": [
+  {
+   "q": "Pinocchio đã làm gì thay vì đến trường?",
+   "options": [
+    "Cậu đi gặp Geppetto",
+    "Cậu chạy trốn vào rừng",
+    "Cậu đi làm việc",
+    "Cậu ở nhà"
+   ]
+  },
+  {
+   "q": "Pinocchio đã nói dối bà Tiên điều gì?",
+   "options": [
+    "Rằng cậu đã mất tiền vì cờ bạc",
+    "Rằng Geppetto đã lấy tiền của cậu",
+    "Rằng hai kẻ xấu đã đánh cắp những đồng tiền vàng của cậu",
+    "Rằng cậu chưa từng có đồng tiền nào"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra với mũi Pinocchio khi cậu nói dối?",
+   "options": [
+    "Nó chuyển sang màu xanh",
+    "Nó dài ra đến mức cậu không thể ra khỏi cửa",
+    "Nó rụng mất",
+    "Không có chuyện gì xảy ra"
+   ]
+  },
+  {
+   "q": "Câu chuyện được giải quyết như thế nào, và Pinocchio học được bài học gì?",
+   "options": [
+    "Bà Tiên cắt mũi cậu đi",
+    "Mũi Pinocchio mãi mãi dài ra",
+    "Geppetto sửa mũi cậu bằng dụng cụ",
+    "Những con chim gõ kiến mổ hết chiếc mũi dài của cậu và cậu học được bài học không nói dối"
+   ]
+  }
+ ],
+ "fk-it-03": [
+  {
+   "q": "Giufà là người như thế nào, theo câu chuyện?",
+   "options": [
+    "Một kẻ lừa lọc khôn khéo đánh lừa mọi người",
+    "Một người đơn giản hiểu mọi chỉ dẫn theo nghĩa đen",
+    "Một thương nhân giàu có",
+    "Một thầy giáo nghiêm khắc"
+   ]
+  },
+  {
+   "q": "Giufà nghĩ chuyện gì đã xảy ra khi anh nhìn xuống giếng?",
+   "options": [
+    "Anh nghĩ có kho báu giấu ở đó",
+    "Anh nghĩ có quái vật sống ở đó",
+    "Anh nghĩ mặt trăng đã rơi xuống giếng",
+    "Anh nghĩ giếng đã cạn khô"
+   ]
+  },
+  {
+   "q": "Giufà đã làm gì để cố cứu mặt trăng?",
+   "options": [
+    "Anh tự mình nhảy xuống giếng",
+    "Anh nhờ linh mục giúp đỡ",
+    "Anh dựng một chiếc thang xuống giếng",
+    "Anh thả một sợi dây có móc xuống giếng"
+   ]
+  },
+  {
+   "q": "Câu chuyện kết thúc như thế nào, và cụm từ 'một Giufà mới' mang ý nghĩa gì trong làng?",
+   "options": [
+    "Dân làng trừng phạt Giufà vì đã lãng phí thời gian của họ",
+    "Giufà trở thành thị trưởng của làng",
+    "Giufà tin rằng mình đã cứu được mặt trăng, và cụm từ này trở thành lời trêu chọc cho bất kỳ ai khoe khoang về một kỳ tích bất khả thi",
+    "Mặt trăng thực sự biến mất mãi mãi"
+   ]
+  }
+ ],
+ "fk-it-04": [
+  {
+   "q": "Theo phần đầu của truyền thuyết, Befana làm gì?",
+   "options": [
+    "Bà cưỡi xe trượt tuyết do tuần lộc kéo",
+    "Bà bay trên mái nhà bằng cây chổi để tặng quà cho trẻ em",
+    "Bà sống trong ống khói của mọi ngôi nhà",
+    "Bà chỉ đến thăm trẻ em ở Rome"
+   ]
+  },
+  {
+   "q": "Vì sao bà lão từ chối đi cùng Ba Nhà Thông Thái?",
+   "options": [
+    "Bà không tin câu chuyện của họ về ngôi sao",
+    "Bà sợ đi lại vào ban đêm",
+    "Bà nói rằng bà có quá nhiều việc nhà phải làm",
+    "Bà không biết đường"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra sau khi bà lão đổi ý và cố đi theo Ba Nhà Thông Thái?",
+   "options": [
+    "Bà đuổi kịp họ vừa lúc",
+    "Bà tìm thấy một em bé khác để tặng quà",
+    "Bà quay về nhà ngay lập tức",
+    "Bà không bao giờ tìm được con đường đúng đến Bethlehem"
+   ]
+  },
+  {
+   "q": "Truyền thuyết giải thích phong tục treo tất và than đá như thế nào?",
+   "options": [
+    "Bà để lại than đá cho tất cả trẻ em như một lời nhắc về sai lầm của mình",
+    "Phong tục treo tất không liên quan gì đến bà",
+    "Befana để lại kẹo ngọt cho những đứa trẻ ngoan và than đá cho những đứa trẻ nghịch ngợm",
+    "Bà chỉ tặng quà cho những đứa trẻ mang tên của Ba Nhà Thông Thái"
+   ]
+  }
+ ],
+ "fk-it-05": [
+  {
+   "q": "Điều gì đang gây kinh hoàng cho thị trấn Gubbio lúc đầu câu chuyện?",
+   "options": [
+    "Một băng cướp ẩn nấp trong rừng",
+    "Một con sói dữ tấn công gia súc và cả con người",
+    "Một trận dịch bệnh càn quét thị trấn",
+    "Một trận lũ lụt từ con sông gần đó"
+   ]
+  },
+  {
+   "q": "Francis đã làm gì khi con sói lao đến tấn công ông?",
+   "options": [
+    "Ông chạy về phía tường thành để an toàn",
+    "Ông ném một ngọn giáo vào con sói",
+    "Ông làm dấu thánh giá và ra lệnh cho nó dừng lại nhân danh Chúa",
+    "Ông cho con sói ăn ngay lập tức"
+   ]
+  },
+  {
+   "q": "Giao ước mà Francis đề xuất giữa con sói và dân làng là gì?",
+   "options": [
+    "Con sói sẽ rời khỏi khu vực đó mãi mãi",
+    "Dân làng sẽ xây cho con sói một nơi trú ẩn",
+    "Con sói sẽ canh gác thị trấn vào ban đêm",
+    "Con sói sẽ ngừng tấn công để đổi lấy việc được cho ăn mỗi ngày"
+   ]
+  },
+  {
+   "q": "Truyền thuyết về con sói ở Gubbio kết thúc như thế nào?",
+   "options": [
+    "Cuối cùng con sói lại tấn công và bị giết chết",
+    "Con sói quay về rừng sau một năm",
+    "Con sói sống hòa bình cùng dân làng thêm hai năm nữa và khi chết được thương tiếc và chôn cất",
+    "Con sói được đưa đến Assisi để sống cùng Francis"
+   ]
+  }
+ ],
+ "fk-it-06": [
+  {
+   "q": "Điều gì đang xảy ra ở Venice lúc đầu truyền thuyết?",
+   "options": [
+    "Một hạm đội chiến tranh đang tấn công đầm phá",
+    "Một cơn bão dữ dội đe dọa nhấn chìm thành phố",
+    "Một đám cháy lớn đang lan khắp thành phố",
+    "Một trận dịch bệnh đang giết chết cư dân"
+   ]
+  },
+  {
+   "q": "Người ngư dân đã làm gì sau khi đón người lạ đầu tiên lên thuyền?",
+   "options": [
+    "Ông từ chối chở thêm hành khách nào nữa",
+    "Ông quay ngay vào bờ",
+    "Ông chở thêm hai người lạ nữa lên thuyền và đưa cả ba ra khơi",
+    "Ông bị người lạ ném xuống biển"
+   ]
+  },
+  {
+   "q": "Thánh Mark đã tặng người ngư dân thứ gì, và vì sao?",
+   "options": [
+    "Một khoản vàng để trả công cho chuyến đi",
+    "Một tấm bản đồ chỉ nơi lũ quỷ đến",
+    "Một chiếc nhẫn, làm bằng chứng để vị Tổng trấn (Doge) tin lời kể của ông",
+    "Không gì cả, vì các vị thánh đơn giản biến mất"
+   ]
+  },
+  {
+   "q": "Câu chuyện của người ngư dân cuối cùng được xác nhận như thế nào?",
+   "options": [
+    "Vị Tổng trấn đơn giản chọn tin ông mà không cần bằng chứng",
+    "Những nhân chứng khác đứng ra xác nhận cơn bão",
+    "Người ngư dân hoàn toàn không thể chứng minh câu chuyện của mình",
+    "Người ta phát hiện chiếc nhẫn bị mất khỏi kho báu của vương cung thánh đường, trùng khớp với chiếc nhẫn ông được tặng"
+   ]
+  }
+ ],
+ "fk-ja-01": [
+  {
+   "q": "Bà lão đã tìm thấy gì khi giặt quần áo bên sông?",
+   "options": [
+    "Một quả đào to",
+    "Một con cá nhỏ",
+    "Một chiếc hộp gỗ",
+    "Một đồng tiền vàng"
+   ]
+  },
+  {
+   "q": "Đến thời điểm này trong câu chuyện, những con vật nào đã trở thành người theo Momotaro?",
+   "options": [
+    "Một con chó, một con mèo và một con chim",
+    "Một con hổ, một con khỉ và một con sếu",
+    "Một con chó, một con khỉ và một con trĩ",
+    "Một con chó, một con gấu và một con cáo"
+   ]
+  },
+  {
+   "q": "Momotaro đã đánh bại lũ quỷ (oni) bằng cách nào?",
+   "options": [
+    "Cậu lừa lũ quỷ rời khỏi hòn đảo",
+    "Cậu chiến đấu với tên quỷ đầu lĩnh cùng ba người bạn động vật và chiến thắng",
+    "Cậu mua lại kho báu từ lũ quỷ",
+    "Cậu nhờ dân làng chiến đấu thay mình"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra ở cuối câu chuyện?",
+   "options": [
+    "Lũ quỷ bắt được Momotaro",
+    "Quả đào biến thành vàng",
+    "Momotaro ở lại hòn đảo mãi mãi",
+    "Momotaro và các bạn đồng hành mang kho báu về nhà và ngôi làng sống trong hòa bình"
+   ]
+  }
+ ],
+ "fk-ja-02": [
+  {
+   "q": "Vì sao con rùa đưa Taro đến Long Cung?",
+   "options": [
+    "Để trừng phạt cậu vì đã câu quá nhiều cá",
+    "Để cảm ơn cậu đã cứu mạng nó",
+    "Vì nó bị lạc và cần giúp đỡ",
+    "Để đổi cậu lấy kho báu"
+   ]
+  },
+  {
+   "q": "Otohime đã tặng Taro thứ gì khi cậu quyết định rời đi?",
+   "options": [
+    "Một chiếc hộp nạm ngọc mà cậu không bao giờ được mở",
+    "Một tấm lưới đánh cá thần kỳ",
+    "Một tấm bản đồ trở về làng",
+    "Một chuỗi vòng cổ ngọc trai"
+   ]
+  },
+  {
+   "q": "Điều gì thực sự đã xảy ra trong những ngày Taro ở Long Cung?",
+   "options": [
+    "Gia đình cậu đã chuyển đi nơi khác",
+    "Ngôi làng đã bị một cơn bão phá hủy",
+    "Không có gì thay đổi cả",
+    "Hàng trăm năm đã trôi qua ở làng quê của cậu"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra khi Taro mở chiếc hộp?",
+   "options": [
+    "Những đồng tiền vàng tràn ra",
+    "Con rùa lại xuất hiện",
+    "Làn khói trắng bay ra và cậu ngay lập tức biến thành một ông lão",
+    "Không có chuyện gì xảy ra cả"
+   ]
+  }
+ ],
+ "fk-ja-03": [
+  {
+   "q": "Chuyện gì bắt đầu xảy ra mỗi khi ông lão chặt tre sau khi tìm thấy cô bé?",
+   "options": [
+    "Tre biến thành bạc",
+    "Các thân tre bắt đầu phát sáng",
+    "Vàng được tìm thấy bên trong các thân tre",
+    "Không có gì bất thường xảy ra"
+   ]
+  },
+  {
+   "q": "Kaguya-hime đặt ra điều kiện gì cho bất kỳ người cầu hôn nào muốn cưới nàng?",
+   "options": [
+    "Người đó phải đánh bại nàng trong một cuộc thi làm thơ",
+    "Người đó phải được Thiên hoàng chấp thuận",
+    "Người đó phải chờ mười năm",
+    "Người đó phải mang đến cho nàng một báu vật gần như không thể có được"
+   ]
+  },
+  {
+   "q": "Cuối cùng Kaguya-hime đã thú nhận điều gì với cha mẹ đang lo lắng của mình?",
+   "options": [
+    "Rằng nàng đến từ mặt trăng và sắp phải trở về đó",
+    "Rằng nàng thầm yêu Thiên hoàng",
+    "Rằng nàng muốn kết hôn với một người cầu hôn nào đó",
+    "Rằng nàng bị bệnh và sắp qua đời"
+   ]
+  },
+  {
+   "q": "Theo câu chuyện, vì sao núi Phú Sĩ (Fuji) được cho là có tên gọi như vậy?",
+   "options": [
+    "Vì Kaguya-hime được sinh ra ở đó",
+    "Vì Thiên hoàng đã cho đốt thuốc trường sinh trên đỉnh núi",
+    "Vì người tiều phu chặt tre sống trên núi",
+    "Vì các sứ giả mặt trăng đã hạ cánh ở đó"
+   ]
+  }
+ ],
+ "fk-ja-04": [
+  {
+   "q": "Vào đêm nàng đến, người phụ nữ bí ẩn đã xin người đàn ông điều gì?",
+   "options": [
+    "Cưới nàng ngay lập tức",
+    "Cho nàng thức ăn và tiền",
+    "Giúp nàng tìm con sếu",
+    "Cho nàng ở lại vì nàng đã lạc đường"
+   ]
+  },
+  {
+   "q": "Người vợ đặt điều kiện gì trước khi bắt đầu dệt vải?",
+   "options": [
+    "Rằng chàng phải mua cho nàng một khung cửi mới",
+    "Rằng chàng không bao giờ được nhìn vào căn phòng khi nàng dệt",
+    "Rằng chàng không bao giờ được kể cho ai về tấm vải",
+    "Rằng chàng phải giúp nàng dệt"
+   ]
+  },
+  {
+   "q": "Người đàn ông phát hiện danh tính thật của vợ mình là gì?",
+   "options": [
+    "Một hồn cáo cải trang",
+    "Một thợ dệt của ngôi làng bên cạnh",
+    "Con sếu mà chàng từng cứu khỏi bẫy",
+    "Hồn ma của mẹ chàng đã khuất"
+   ]
+  },
+  {
+   "q": "Câu chuyện kết thúc như thế nào?",
+   "options": [
+    "Con sếu bay đi và người đàn ông ở lại một mình trong nỗi hối tiếc",
+    "Người đàn ông và con sếu sống hạnh phúc bên nhau mãi mãi",
+    "Người đàn ông cũng biến thành sếu",
+    "Dân làng trừng phạt người đàn ông"
+   ]
+  }
+ ],
+ "fk-ja-05": [
+  {
+   "q": "Thói quen hằng ngày của Kintaro với những con gấu là gì?",
+   "options": [
+    "Vật lộn với chúng",
+    "Chạy đua với chúng lên núi",
+    "Cho chúng ăn cá",
+    "Dạy chúng các trò"
+   ]
+  },
+  {
+   "q": "Vì sao Yorimitsu tìm gặp mẹ của Kintaro?",
+   "options": [
+    "Để mua đất của gia đình",
+    "Để cảnh báo bà rằng Kintaro quá nguy hiểm",
+    "Để đề nghị bà một công việc ở kinh đô",
+    "Để hỏi liệu ông có thể đưa con trai bà đến kinh đô làm gia thần hay không"
+   ]
+  },
+  {
+   "q": "Theo truyền thuyết, thuộc hạ của Yorimitsu đã đánh bại con quỷ Shuten-doji bằng cách nào?",
+   "options": [
+    "Họ thách hắn đấu tay đôi",
+    "Họ chuốc rượu sake cho hắn say rồi hạ gục hắn khi hắn không phòng bị",
+    "Họ nhốt hắn trong một hang động",
+    "Họ lừa hắn bằng một tấm gương thần"
+   ]
+  },
+  {
+   "q": "Ngày nay Kintaro tượng trưng cho điều gì ở Nhật Bản?",
+   "options": [
+    "May mắn trong kinh doanh",
+    "Sự bảo vệ khỏi lũ quỷ",
+    "Sự phát triển khỏe mạnh của các bé trai, được tôn vinh bằng búp bê trong Lễ hội Bé Trai",
+    "Thành công trong bắn cung"
+   ]
+  }
+ ],
+ "fk-ja-06": [
+  {
+   "q": "Issun-boshi thầm ấp ủ hoài bão gì dù bị người khác chế giễu?",
+   "options": [
+    "Ước muốn lớn lên cao hơn nhờ phép thuật",
+    "Khát khao một ngày nào đó sẽ tạo dựng được tên tuổi tại kinh đô",
+    "Mong muốn trở thành nông dân",
+    "Hy vọng tìm được cha mẹ ruột của mình"
+   ]
+  },
+  {
+   "q": "Issun-boshi đã đảm nhận vai trò gì trong gia đình quý tộc?",
+   "options": [
+    "Người đứng đầu đội vệ sĩ của gia đình",
+    "Một đầu bếp trong bếp",
+    "Một người hầu được tiểu thư của gia đình tin cậy",
+    "Người đưa tin giữa các làng"
+   ]
+  },
+  {
+   "q": "Issun-boshi đã thoát ra như thế nào sau khi bị con quỷ nuốt chửng?",
+   "options": [
+    "Cậu dùng cây kim của mình đâm liên tục bên trong bụng con quỷ cho đến khi nó nhả cậu ra",
+    "Cậu dùng gươm chém đường thoát ra",
+    "Cậu thu nhỏ mình lại và lẻn ra ngoài",
+    "Cậu được tiểu thư cứu"
+   ]
+  },
+  {
+   "q": "Chiếc búa thần may mắn đã làm gì cho Issun-boshi?",
+   "options": [
+    "Nó khiến cậu tàng hình",
+    "Nó ban cho cậu sự giàu có lớn lao",
+    "Nó biến cậu thành một con quỷ",
+    "Nó khiến cơ thể cậu lớn lên bằng chiều cao của một người bình thường"
+   ]
+  }
+ ],
+ "fk-ko-01": [
+  {
+   "q": "Chuyện gì xảy ra sau khi cha mẹ qua đời?",
+   "options": [
+    "Nolbu chia đều tài sản",
+    "Nolbu lấy hết tài sản và đuổi Heungbu ra ngoài",
+    "Heungbu trở nên giàu có",
+    "Hai anh em cùng nhau chuyển đi"
+   ]
+  },
+  {
+   "q": "Mùa xuân năm sau, chim én đã mang gì trở lại cho Heungbu?",
+   "options": [
+    "Một túi gạo",
+    "Một hạt giống nhỏ",
+    "Một lá thư",
+    "Một giỏ trái cây"
+   ]
+  },
+  {
+   "q": "Nolbu đã làm gì sau khi nghe tin Heungbu trở nên giàu có?",
+   "options": [
+    "Ông chúc mừng Heungbu",
+    "Ông cố tình làm gãy chân một con chim én",
+    "Ông chuyển đến phương nam",
+    "Ông đem tài sản của mình cho Heungbu"
+   ]
+  },
+  {
+   "q": "Điều gì đã chui ra từ quả bầu của Nolbu?",
+   "options": [
+    "Vàng và châu báu",
+    "Những con yêu tinh trừng phạt ông ta",
+    "Thêm nhiều chim én",
+    "Không có gì cả"
+   ]
+  }
+ ],
+ "fk-ko-02": [
+  {
+   "q": "Con hổ đã xin người mẹ điều gì trên con đường núi?",
+   "options": [
+    "Quần áo của bà",
+    "Một chiếc bánh gạo",
+    "Chỉ đường về nhà",
+    "Tiền"
+   ]
+  },
+  {
+   "q": "Hai anh em đã nhận ra vị khách không phải là mẹ mình bằng cách nào?",
+   "options": [
+    "Họ nhìn thấy cái đuôi của nó",
+    "Bàn tay nó phủ đầy lông",
+    "Nó nói một thứ tiếng nước ngoài",
+    "Nó có mùi như một con hổ"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra với sợi dây thừng của con hổ?",
+   "options": [
+    "Nó được làm bằng vàng",
+    "Nó đã mục và bị đứt",
+    "Nó biến thành một con rắn",
+    "Nó quá ngắn để với tới"
+   ]
+  },
+  {
+   "q": "Hai anh em đã biến thành gì?",
+   "options": [
+    "Những vì sao",
+    "Mặt trời và mặt trăng",
+    "Những con chim",
+    "Những ngọn núi"
+   ]
+  }
+ ],
+ "fk-ko-03": [
+  {
+   "q": "Người mẹ kế đã giao cho Kongjwi nhiệm vụ bất khả thi nào?",
+   "options": [
+    "Quét dọn cả ngôi làng",
+    "Đổ đầy nước vào một chiếc chum bị thủng đáy",
+    "May một trăm chiếc váy",
+    "Bắt một con bò rừng"
+   ]
+  },
+  {
+   "q": "Ai đã giúp Kongjwi nhổ cỏ trên cánh đồng đầy đá?",
+   "options": [
+    "Một con cóc",
+    "Cha cô",
+    "Một con bò đen từ trên trời",
+    "Patjwi"
+   ]
+  },
+  {
+   "q": "Kongjwi đã đánh mất thứ gì khi băng qua con suối?",
+   "options": [
+    "Chiếc váy của cô",
+    "Một chiếc giày hoa của cô",
+    "Một giỏ bánh gạo",
+    "Cây trâm cài tóc của cô"
+   ]
+  },
+  {
+   "q": "Vị quan huyện đã chọn cô dâu của mình bằng cách nào?",
+   "options": [
+    "Bằng cách tổ chức một cuộc thi sức mạnh",
+    "Bằng cách tìm ra người có bàn chân vừa với chiếc giày bị mất",
+    "Bằng cách hỏi các bô lão trong làng",
+    "Bằng cách cưới người phụ nữ giàu nhất"
+   ]
+  }
+ ],
+ "fk-ko-04": [
+  {
+   "q": "Chuyện gì đã xảy ra với cha của Shim Cheong trước khi ông gặp vị sư?",
+   "options": [
+    "Ông mất việc",
+    "Ông rơi xuống suối",
+    "Ông bị cướp",
+    "Ông bị lạc trên núi"
+   ]
+  },
+  {
+   "q": "Vì sao Shim Cheong đi tìm những người thủy thủ?",
+   "options": [
+    "Để xin họ một công việc",
+    "Để dâng mình làm vật hiến tế đổi lấy gạo cho cha nàng",
+    "Để bán đồ thêu của mình",
+    "Để tìm đường đến một ngôi làng khác"
+   ]
+  },
+  {
+   "q": "Long Vương đã làm gì với Shim Cheong?",
+   "options": [
+    "Ông giam giữ nàng mãi mãi",
+    "Ông đưa nàng trở lại mặt nước bên trong một đóa hoa sen",
+    "Ông biến nàng thành một con cá",
+    "Ông trừng phạt nàng vì đã nói dối"
+   ]
+  },
+  {
+   "q": "Cha của Shim Cheong đã lấy lại được ánh sáng bằng cách nào?",
+   "options": [
+    "Một thầy thuốc đã chữa cho ông",
+    "Ông uống một liều thuốc thần kỳ",
+    "Ông vô cùng vui sướng khi cuối cùng gặp lại con gái mình",
+    "Long Vương đã phục hồi thị lực cho ông"
+   ]
+  }
+ ],
+ "fk-ko-05": [
+  {
+   "q": "Con hươu đặt điều kiện gì để trả lại chiếc áo lông vũ cho nàng tiên?",
+   "options": [
+    "Không được trả lại cho đến khi họ đã kết hôn được mười năm",
+    "Không được trả lại cho đến khi nàng tiên đã sinh được ba đứa con",
+    "Không được trả lại cho đến khi mùa đông đến",
+    "Không được trả lại cho đến khi chính con hươu lên tiếng cho phép"
+   ]
+  },
+  {
+   "q": "Cuối cùng vì sao nàng tiên lấy lại được chiếc áo lông vũ của mình?",
+   "options": [
+    "Nàng tự tìm thấy nó khi đang dọn dẹp",
+    "Con hươu đã trả lại cho nàng",
+    "Người tiều phu mềm lòng trước lời van xin của nàng và cho nàng xem nó",
+    "Những đứa trẻ tìm thấy nó và đưa cho nàng"
+   ]
+  },
+  {
+   "q": "Người tiều phu đã lên đến thiên đình bằng cách nào?",
+   "options": [
+    "Chính anh mọc ra đôi cánh",
+    "Anh ngồi trong chiếc thùng mà các nàng tiên dùng để múc nước lên",
+    "Anh trèo lên một cây cổ thụ khổng lồ",
+    "Anh nhờ những người thợ săn giúp đỡ"
+   ]
+  },
+  {
+   "q": "Theo câu chuyện, trong một dị bản của cái kết đã xảy ra điều gì?",
+   "options": [
+    "Người tiều phu ở lại thiên đình mãi mãi mà không có sự cố nào",
+    "Người tiều phu phá vỡ một quy tắc khi cố về thăm mẹ và không thể trở lại thiên đình",
+    "Nàng tiên trở về trần gian để sống cùng anh",
+    "Con hươu biến thành người"
+   ]
+  }
+ ],
+ "fk-ko-06": [
+  {
+   "q": "Mong-ryong đã hứa gì với Chunhyang trước khi chàng lên đường đến Hanyang?",
+   "options": [
+    "Gửi tiền cho nàng mỗi tháng",
+    "Đỗ đạt kỳ thi triều đình và trở về cưới nàng đàng hoàng",
+    "Đưa nàng đến Hanyang ngay lập tức",
+    "Từ bỏ việc học của mình"
+   ]
+  },
+  {
+   "q": "Chunhyang đã phản ứng thế nào trước yêu cầu của Byun Hak-do rằng nàng phải hầu hạ ông ta?",
+   "options": [
+    "Nàng đồng ý vì sợ hãi",
+    "Nàng bỏ trốn khỏi Namwon",
+    "Nàng từ chối, nói rằng mình đã thuộc về một người chồng",
+    "Nàng đút lót ông ta để được yên"
+   ]
+  },
+  {
+   "q": "Mong-ryong giành được chức vụ gì sau khi đỗ kỳ thi triều đình?",
+   "options": [
+    "Quan huyện địa phương của Namwon",
+    "Một ngự sử bí mật của triều đình",
+    "Một thi sĩ trong cung",
+    "Một lính gác cung điện"
+   ]
+  },
+  {
+   "q": "Nhà vua đã ban tước hiệu gì cho Chunhyang vì lòng chung thủy của nàng?",
+   "options": [
+    "Nữ hoàng của Namwon",
+    "Liệt nữ (Người phụ nữ trinh tiết)",
+    "Ngự sử triều đình",
+    "Kỹ nữ về hưu"
+   ]
+  }
+ ],
+ "fk-la-01": [
+  {
+   "q": "Vì sao Amulius bỏ hai đứa trẻ song sinh xuống sông?",
+   "options": [
+    "Vì ông sợ chúng",
+    "Vì ông yêu thương chúng",
+    "Vì một thầy tu ra lệnh như vậy",
+    "Vì hai đứa trẻ bị ốm"
+   ]
+  },
+  {
+   "q": "Ai đã tìm thấy và nuôi dưỡng hai đứa trẻ sau con sói?",
+   "options": [
+    "Một người chăn cừu tên Faustulus",
+    "Một vị vua",
+    "Một thầy tu",
+    "Một người lính"
+   ]
+  },
+  {
+   "q": "Vì sao hai anh em tranh cãi trước khi lập nên thành phố?",
+   "options": [
+    "Họ bất đồng về nơi xây dựng thành phố",
+    "Họ bất đồng về việc ai là mẹ của mình",
+    "Họ tranh nhau con sói",
+    "Họ tranh cãi về ông ngoại của mình"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra giữa hai anh em?",
+   "options": [
+    "Romulus giết Remus trong cơn giận dữ",
+    "Remus giết Romulus",
+    "Họ trở thành hai vị vua cùng cai trị",
+    "Họ cùng nhau rời khỏi thành phố"
+   ]
+  }
+ ],
+ "fk-la-02": [
+  {
+   "q": "Vì sao Androcles trốn trong một hang động?",
+   "options": [
+    "Anh đang chạy trốn khỏi chủ nhân của mình",
+    "Anh đang đi săn thú",
+    "Anh bị lạc trong một cơn bão",
+    "Anh đang tìm kho báu"
+   ]
+  },
+  {
+   "q": "Androcles đã làm gì cho con sư tử?",
+   "options": [
+    "Anh gỡ một cái gai ra khỏi chân nó",
+    "Anh cho nó thức ăn",
+    "Anh xây cho nó một cái hang",
+    "Anh dạy nó các trò"
+   ]
+  },
+  {
+   "q": "Vì sao Androcles bị đưa vào đấu trường?",
+   "options": [
+    "Để bị một con sư tử hoang dã ăn thịt như một hình phạt",
+    "Để đấu với các đấu sĩ",
+    "Để thuần hóa con sư tử cho đám đông xem",
+    "Để được hoàng đế phóng thích"
+   ]
+  },
+  {
+   "q": "Vì sao con sư tử không tấn công Androcles?",
+   "options": [
+    "Con sư tử nhận ra anh là người bạn từng giúp đỡ nó",
+    "Con sư tử đã quá già để tấn công",
+    "Con sư tử đang ngủ",
+    "Những người huấn luyện đã làm dịu con sư tử"
+   ]
+  }
+ ],
+ "fk-la-03": [
+  {
+   "q": "Con quạ đang ngậm gì trong mỏ?",
+   "options": [
+    "Một miếng phô mai nó đã đánh cắp",
+    "Một con cá",
+    "Một chiếc nhẫn vàng",
+    "Một tổ trứng"
+   ]
+  },
+  {
+   "q": "Con cáo đã nói gì với con quạ?",
+   "options": [
+    "Rằng giọng hát của nó có lẽ cũng đẹp như bộ lông của nó",
+    "Rằng bộ lông của nó xấu xí",
+    "Rằng nó nên đưa miếng phô mai trực tiếp cho cáo",
+    "Rằng cáo và quạ nên làm bạn với nhau"
+   ]
+  },
+  {
+   "q": "Chuyện gì đã xảy ra với miếng phô mai?",
+   "options": [
+    "Con cáo chộp lấy và ăn nó sau khi con quạ đánh rơi",
+    "Con quạ đã ăn nó trước khi con cáo đến",
+    "Miếng phô mai ở quá cao để con cáo với tới",
+    "Một con chó đã đánh cắp nó từ cả hai"
+   ]
+  },
+  {
+   "q": "Bài học đạo đức của câu ngụ ngôn này là gì?",
+   "options": [
+    "Đừng tin những kẻ nịnh hót, vì họ thường muốn điều gì đó từ bạn",
+    "Các loài chim không nên hát gần cáo",
+    "Phô mai nên luôn được giấu trên cây",
+    "Cáo luôn nguy hiểm đối với quạ"
+   ]
+  }
+ ]
+}
