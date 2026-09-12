@@ -131,6 +131,13 @@ language and its keys from the manifest before merging, or add a `--replace` fla
   done. Notes are in `C:\Users\imarl\panscriptum-library-kit\HANDOFF.md`. The Panscriptum maintenance
   Claude session relaunches them; it must be paused or it will keep doing so.
 - A Startup-folder `Panscriptum.vbs` autostarts the loops at login.
+- 2026-09-11 22:18: something began POSTing /api/generate to Ollama every ~10 min with keep_alive=forever
+  (qwen3:8b, 6.4 GB, 43%/57% CPU/GPU split); both Chatterbox recorders collapsed to 10-190 s/step. Fixed with
+  `ollama stop qwen3:8b` and by stopping the Panscriptum `autostart.py --watch` process. That was NOT the caller: the
+  requests come from the Panscriptum maintenance Claude session itself (bash running `src/drill.py` then
+  `src/verify_math.py`, "drill run 56"), which loads qwen3:8b with keep_alive=forever. Owner notified 22:55;
+  only they can pause that session. If it recurs: `ollama ps`, `ollama stop <model>`, then find the caller in
+  `%LOCALAPPDATA%\Ollama\server.log`.
 
 ## Machine quirks that cost time
 
@@ -208,3 +215,6 @@ blocked by Application Control on this machine). Two recorders: `staging_edge_en
 Open follow-ups from Phase 2: the new drill items and story paragraphs have no recorded clips (the running
 Chatterbox chains were started before they existed); after the chains finish, re-run gen_audio.py per language
 (it only records missing keys) if studio voice is wanted for them. Web Speech covers them meanwhile.
+
+Panscriptum pause (owner, 2026-09-11 23:05): the daily scheduled task `panscriptum-maintenance` is disabled and
+its running session stopped. Re-enable after the last chain merges (pl el la / hi ko ind), when the owner says so.
