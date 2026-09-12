@@ -14,7 +14,7 @@ Everything the game needs at runtime is `index.html` plus (optionally) the `audi
 index.html            the built game (content already spliced in; audio NOT embedded)
 content/              the vocabulary & skill content, one Python module per batch
 build.py              validates content/ and splices it into index.html
-audio/                native-speaker recordings (Ogg Opus) + manifest.json  ← all six bands, 30,510 clips
+audio/                native-speaker recordings (Ogg Opus) + manifest.json  ← 21 voices, 110,691 clips
 tools/gen_audio.py    records any band: Kokoro (onnx/torch), Chatterbox, Edge, Azure  (→ audio/<TIER>/…)
 tools/merge_audio.py  merges a staging folder of recordings into audio/ (never overwrites)
 tools/embed_audio.py  optional: bakes audio/ into index.html for a single-file build

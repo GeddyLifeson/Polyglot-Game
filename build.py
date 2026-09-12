@@ -46,7 +46,7 @@ LANG_META = {
     'ko': ('Korean', '한국어', '🇰🇷', 'ko-KR', True, True),
     'yue': ('Cantonese', '廣東話', '🇭🇰', 'zh-HK', True, True),
     'vi': ('Vietnamese', 'Tiếng Việt', '🇻🇳', 'vi-VN', False, True),
-    'ind': ('Indonesian', 'Bahasa Indonesia', '🇮🇩', 'id-ID', False, False),   # 'id' would collide with the item id field
+    'ind': ('Indonesian', 'Bahasa Indonesia', '🇮🇩', 'id-ID', False, True),   # 'id' would collide with the item id field
 }
 XL = {}   # lang -> {'words': {id: (text, reading)}, 'sentences': {id: tiles}, 'dialogues': {id: 5 lines}}
 

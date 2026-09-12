@@ -10,7 +10,7 @@ function log(l, ok, x){ console.log((ok?'PASS':'FAIL')+' — '+l+(x!==undefined?
   const t0 = Date.now();
   await page.goto((process.env.QA_URL || 'http://localhost:8000') + '/qa/hub-qa-wrapped.html');
   // the external manifest is fetched asynchronously after load
-  await page.waitForFunction(() => window.__QA && window.__QA.clipsInfo().count > 0, null, { timeout: 15000 }).catch(() => {});
+  await page.waitForFunction(() => window.__QA && window.__QA.clipsInfo().count > 0, null, { timeout: 60000 }).catch(() => {});
   const load = Date.now() - t0;
   const info = await page.evaluate(() => {
     const Q = window.__QA; const L = ['es','fr','it','pt','ja','zh'];

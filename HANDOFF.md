@@ -54,44 +54,26 @@ zh (pinyin), ru, el, ar, hi, ko, yue (Jyutping). Japanese carries furigana `{漢
 - Wipe-save control, in-game 🚩 pronunciation flag (Mission Log lists flags; `gen_audio.py --only` re-records those keys).
 - All constants live in one block near `SHOP_UPGRADES` in index.html; README section 3b documents them.
 
-## Audio: the current job
+## Audio: DONE (2026-09-12 09:50)
 
-Chatterbox Multilingual V3 (Resemble AI, MIT) is recording every language. It covers 18 of our 20;
-Latin reads through the Italian model, Indonesian through Malay. **Cantonese and Vietnamese** are recorded
-with `--backend edge` (edge-tts: the free, keyless Microsoft Edge neural voices, zh-HK-HiuMaan and vi-VN-HoaiMy;
-network-bound, ~1 clip/s, no GPU). Azure is not used (owner: "azure aint free"). The `.venv312` certifi
-bundle carries the local TLS roots so edge-tts can connect.
+Every language is recorded and merged: 110,691 clips in `audio/manifest.json`, 21 voices (the twenty
+languages plus English as a target, `eng`), each 5,240 to 5,285 clips covering A1 to C2 plus the TILES band.
 
-```
-PATH="$PWD/bin:$PATH" .venv312/python.exe tools/gen_audio.py A1 A2 B1 B2 C1 C2 TILES --langs yue --backend edge --out staging_edge_yue > gen_edge_yue.log
-```
-Both (yue, vi) were started 2026-09-11 12:00 in the background; logs `gen_edge_<lang>.log`, staging `staging_edge_<lang>/`.
-Merge them exactly like the Chatterbox languages (merge_audio.py, flip the LANG_META audio flag).
+| Engine | Languages |
+|---|---|
+| Kokoro-82M (ONNX) | es fr it pt ja zh (the original six) |
+| Chatterbox Multilingual V3 | de ru nl tr sv ar pl hi el ko la (Italian model) ind (Malay model) |
+| Microsoft Edge neural (edge-tts, keyless) | yue vi eng |
 
-Recording runs as two GPU chains plus two queued chains, all resumable:
+Staging folders `staging_cbx_<lang>/` and `staging_edge_<lang>/` and the `gen_*.log` files can be deleted;
+everything is in `audio/`. Every LANG_META audio flag in build.py is True (plus `LANG_META.eng.audio` in
+index.html). The Chatterbox and Edge recorders and chain scripts stay in the repo for re-records
+(`gen_audio.py --only <keys>` with the 🚩 flag list from the Mission Log).
 
-```
-bash run_cbx_chain.sh A de nl sv pl el la      # chain A, GPU
-bash run_cbx_chain.sh B ru tr ar               # chain B, GPU
-bash run_cbx_queue.sh B C hi ko ind            # starts chain C when B logs ALL DONE
-bash run_cbx_queue.sh A D es fr it pt ja zh    # starts chain D when A logs ALL DONE (the six re-recordings)
-```
-
-Each language records into `staging_cbx_<lang>/`; logs are `gen_cbx_<lang>.log` and `gen_cbx_chain_<tag>.log`
-("finished <lang>" / "ALL DONE" lines). Throughput: one recorder on a clear card ≈ 30 clips/min, two ≈ 32.
-A third thrashes (10 GB card). Anything else on the GPU (Ollama with a model loaded) drops it to ~6/min.
-
-State at 2026-09-11 09:00:
-
-| Language | Clips staged | Status |
-|---|---|---|
-| de | 5,250 | merged, pushed, marked recorded |
-| ru | 5,249 | merged, pushed, marked recorded (with Russian stress marks) |
-| nl | 3,895 | recording (chain A) |
-| tr | 2,924 | recording (chain B) |
-| hi | 62 | partial from an earlier CPU run; chain C resumes it |
-| sv pl el la ar ko ind | 0 | queued |
-| es fr it pt ja zh | 0 | chain D dropped 2026-09-11 (owner: "do whatever is best"); Kokoro recordings stay |
+Not yet recorded: the story paragraphs, the grammar/idiom/nuance items of the fourteen added languages,
+and any new English strings are spoken by the device voice. Recording them is a per-language rerun of the
+same commands (gen_audio only records missing keys); the story paragraphs would need a STORIES band added
+to `items_for` in gen_audio.py first.
 
 ## What happens when a language finishes (repeat per language)
 
@@ -108,14 +90,13 @@ language and its keys from the manifest before merging, or add a `--replace` fla
 
 ## Next steps, in order
 
-1. Keep merging languages as chains report them (above). Watch the monitor output; if the GPU rate
-   collapses, check `nvidia-smi` and `ollama ps` for a model that reloaded onto the card.
+1. (done) All twenty languages recorded and merged; see "Audio: DONE".
 2. Chain D (re-recording the six Kokoro languages) was dropped to save ~14 h. Re-queue with
    `bash run_cbx_queue.sh A D es fr it pt ja zh` only if the owner asks for it.
-3. Cantonese and Vietnamese: Edge recordings running (see above); merge when their logs say DONE.
-4. When every language is merged: run all six QA suites against the live server, update README language
-   notes (which languages have studio voice), update the memory file, and merge.
-5. Restore what was stopped for the GPU (see below), then restart the Panscriptum loops.
+3. (done) Cantonese, Vietnamese and English recorded with Edge voices.
+4. (done 2026-09-12) Six QA suites pass on the final build; README and memory updated.
+5. Owner's call: re-enable the `panscriptum-maintenance` scheduled task (disabled 2026-09-11 23:05 at the
+   owner's request) and relaunch the Panscriptum loops. Ollama is already back on the GPU tray app.
 6. Owner's open wishes not yet started: none recorded beyond the above. Pronunciation complaints should
    now come through the 🚩 flag list; re-record flagged keys with `--only`.
 
