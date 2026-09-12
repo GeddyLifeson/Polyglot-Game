@@ -43,7 +43,7 @@ LANG_META = {
     'tr': ('Turkish', 'Türkçe', '🇹🇷', 'tr-TR', False, True),
     'ar': ('Arabic', 'العربية', '🇸🇦', 'ar-SA', True, True),
     'hi': ('Hindi', 'हिन्दी', '🇮🇳', 'hi-IN', True, True),
-    'ko': ('Korean', '한국어', '🇰🇷', 'ko-KR', True, False),
+    'ko': ('Korean', '한국어', '🇰🇷', 'ko-KR', True, True),
     'yue': ('Cantonese', '廣東話', '🇭🇰', 'zh-HK', True, True),
     'vi': ('Vietnamese', 'Tiếng Việt', '🇻🇳', 'vi-VN', False, True),
     'ind': ('Indonesian', 'Bahasa Indonesia', '🇮🇩', 'id-ID', False, False),   # 'id' would collide with the item id field
