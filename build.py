@@ -42,7 +42,7 @@ LANG_META = {
     'la': ('Latin', 'Latina', '🏛️', 'it-IT', False, False),
     'tr': ('Turkish', 'Türkçe', '🇹🇷', 'tr-TR', False, True),
     'ar': ('Arabic', 'العربية', '🇸🇦', 'ar-SA', True, True),
-    'hi': ('Hindi', 'हिन्दी', '🇮🇳', 'hi-IN', True, False),
+    'hi': ('Hindi', 'हिन्दी', '🇮🇳', 'hi-IN', True, True),
     'ko': ('Korean', '한국어', '🇰🇷', 'ko-KR', True, False),
     'yue': ('Cantonese', '廣東話', '🇭🇰', 'zh-HK', True, True),
     'vi': ('Vietnamese', 'Tiếng Việt', '🇻🇳', 'vi-VN', False, True),
