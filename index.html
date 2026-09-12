@@ -8,7 +8,8 @@
 <title>Polyglot Voyager</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"></noscript>
 <style>
   [hidden]{display:none!important}
   :root{
@@ -6857,14 +6858,14 @@
      lifetime stats and settings survive. */
   function warpCores(){ return (save.warp && save.warp.cores) || 0; }
   function warpCoresFor(xpLifetime, darkEarned){ return Math.floor(Math.sqrt(Math.max(0, xpLifetime)/100)) + Math.floor(Math.max(0, darkEarned)/25); }
-  function warpClaimable(){ return Math.max(0, warpCoresFor(save.stats.xpLifetime||0, save.stats.darkEarned||0) - warpCores()); }
+  function warpClaimable(){ return Math.max(0, warpCoresFor(save.stats.xpLifetime||0, save.stats.darkEarned||0) + ((save.warp && save.warp.granted)||0) - warpCores()); }
   function nextWarpCoreXp(){ var have = Math.floor(Math.sqrt((save.stats.xpLifetime||0)/100)); return (have+1)*(have+1)*100; }
   function doWarpJump(){
     var claim = warpClaimable(); if(claim<=0) return false;
-    var keep = { learned:Array.from(learnedSet), facts:Array.from(factsShown), muted:save.muted, commendations:save.commendations, voices:save.voices, speechRate:save.speechRate, useClips:save.useClips, stats:save.stats, bestScore:save.bestScore, interference:save.interference, journey:save.journey };
+    var keep = { learned:Array.from(learnedSet), facts:Array.from(factsShown), muted:save.muted, commendations:save.commendations, voices:save.voices, speechRate:save.speechRate, useClips:save.useClips, stats:save.stats, bestScore:save.bestScore, interference:save.interference, journey:save.journey, native:save.native, streak:save.streak, srs:save.srs, flagged:save.flagged, tutorial:save.tutorial };
     var fresh = saveDefaults();
     for(var k in keep){ fresh[k] = keep[k]; }
-    fresh.warp = { cores: warpCores() + claim, jumps: ((save.warp && save.warp.jumps)||0) + 1, spent: warpSpent(), drive: (save.warp && save.warp.drive) || {} };
+    fresh.warp = { cores: warpCores() + claim, granted: (save.warp && save.warp.granted)||0, jumps: ((save.warp && save.warp.jumps)||0) + 1, spent: warpSpent(), drive: (save.warp && save.warp.drive) || {} };
     /* memories bought with cores or Dark Matter */
     fresh.tips += 500*driveLevel('wd_fund');
     var darkKeep = Math.max(driveLevel('wd_dark') ? 0.5 : 0, refitOwned('rf_vault') ? 0.25 : 0);
@@ -7117,13 +7118,17 @@
   function loadVoices(){ try{ voiceCache = window.speechSynthesis.getVoices() || []; }catch(e){ voiceCache = []; } return voiceCache; }
   if(speechReady){ loadVoices(); try{ window.speechSynthesis.onvoiceschanged = function(){ loadVoices(); }; }catch(e){} }
   function normLang(l){ return String(l||'').replace('_','-').toLowerCase(); }
+  function speechPrefs(lang){
+    var tag = normLang(SPEECH_LANG[lang] || lang);
+    return (SPEECH_PREFER[lang] || []).concat([tag, tag.split('-')[0]]);
+  }
   function voicesFor(lang){
-    var prefs = SPEECH_PREFER[lang] || [lang];
+    var prefs = speechPrefs(lang);
     return loadVoices().filter(function(v){ var vl = normLang(v.lang); return prefs.some(function(p){ return vl===p || vl.indexOf(p+'-')===0 || (p.length===2 && vl.indexOf(p)===0); }); });
   }
   function voiceScore(v, lang){
     var n = (v.name||'').toLowerCase(), vl = normLang(v.lang), sc = 0;
-    var prefs = SPEECH_PREFER[lang] || [];
+    var prefs = speechPrefs(lang);
     var pi = prefs.indexOf(vl); if(pi!==-1) sc += (prefs.length - pi) * 2;
     if(/natural|neural|premium|enhanced|wavenet|studio/.test(n)) sc += 12;
     if(/google/.test(n)) sc += 6;
@@ -7159,9 +7164,17 @@
     var base = (window.AUDIO_BASE || 'audio/').replace(/\/?$/, '/');
     try{
       fetch(base+'manifest.json', {cache:'no-cache'})   /* always revalidate: new bands must show up on the next reload */.then(function(r){ return r.ok ? r.json() : null; }).then(function(m){
-        if(!m || !m.keys) return;
-        var set = {}; (m.keys||[]).forEach(function(k){ set[k] = m.dir && m.dir[k] ? m.dir[k] : (k.split('-')[0].toUpperCase()); });
-        AUDIO_EXT = {base:base, keys:set, tiers:m.tiers||[], count:(m.keys||[]).length};
+        if(!m) return;
+        var set = {}, count = 0;
+        function tierOf(id){ return id.slice(0,2)==='x-' ? 'TILES' : id.split('-')[0].toUpperCase(); }
+        if(m.v===2){   /* {langs, ids:{id:bitmask}, tiles:{lang:[hash]}, dir:{id:TIER}} — see tools/manifestlib.py */
+          var langs = m.langs||[], dir = m.dir||{}, ids = m.ids||{}, tiles = m.tiles||{};
+          Object.keys(ids).forEach(function(id){ var mask = ids[id], tier = dir[id] || tierOf(id); for(var b=0;b<langs.length;b++){ if((mask>>b)&1){ set[id+':'+langs[b]] = tier; count++; } } });
+          Object.keys(tiles).forEach(function(l){ tiles[l].forEach(function(h){ set['x-'+h+':'+l] = 'TILES'; count++; }); });
+        } else if(m.keys){
+          m.keys.forEach(function(k){ set[k] = (m.dir && m.dir[k]) || tierOf(k.slice(0, k.lastIndexOf(':'))); count++; });
+        } else return;
+        AUDIO_EXT = {base:base, keys:set, tiers:m.tiers||[], count:count};
         if(!AUDIO_CLIPS_INFO.count){ AUDIO_CLIPS_INFO = {tiers:AUDIO_EXT.tiers, count:AUDIO_EXT.count}; }
       }).catch(function(){});
     }catch(e){}
@@ -7180,7 +7193,7 @@
   }
   function clipSrc(key){
     if(AUDIO_CLIPS[key]) return 'data:audio/ogg;base64,'+AUDIO_CLIPS[key];
-    if(AUDIO_EXT && AUDIO_EXT.keys[key]){ return AUDIO_EXT.base+AUDIO_EXT.keys[key]+'/'+key.replace(/:([a-z]{2})$/, '_$1')+'.ogg'; }
+    if(AUDIO_EXT && AUDIO_EXT.keys[key]){ return AUDIO_EXT.base+AUDIO_EXT.keys[key]+'/'+key.replace(/:([a-z]{2,3})$/, '_$1')+'.ogg'; }
     return null;
   }
   function hasClip(key){ return !!(key && clipSupport && save.useClips!==false && clipSrc(key)); }
@@ -7225,11 +7238,16 @@
 
   /* ---- Voices panel ---- */
   var VOICE_SAMPLE = { es:'Buenos días, ¿cómo estás?', fr:'Bonjour, comment ça va ?', it:'Buongiorno, come stai?', pt:'Bom dia, tudo bem?', ja:'おはようございます、元気ですか？', zh:'早上好，你好吗？' };
+  function voiceSample(l){
+    if(VOICE_SAMPLE[l]) return VOICE_SAMPLE[l];
+    var c = ITEM['a1-hello'] || ITEM['a1-good-morning']; var t = c ? itemText(c, l) : '';
+    return t || LANGS[l].name;
+  }
   function renderVoicesPanel(){
     var all = loadVoices();
     var h = '';
     if(AUDIO_CLIPS_INFO.count){
-      h += '<div class="chain-box" style="margin:0 0 12px;"><div class="cb-title">🎧 Studio recordings</div>'+AUDIO_CLIPS_INFO.count.toLocaleString()+' native-speaker recordings are built into the game for the '+AUDIO_CLIPS_INFO.tiers.join(' + ')+' band'+(AUDIO_CLIPS_INFO.tiers.length>1?'s':'')+' (Kokoro-82M neural voices, all six languages). They play instead of your device’s voice wherever they exist'+(clipSupport?'':' — <b>but this browser can’t play Opus audio, so it’s using the device voice instead</b>')+'.'+
+      h += '<div class="chain-box" style="margin:0 0 12px;"><div class="cb-title">🎧 Studio recordings</div>'+AUDIO_CLIPS_INFO.count.toLocaleString()+' native-speaker recordings are built into the game for the '+AUDIO_CLIPS_INFO.tiers.join(' + ')+' band'+(AUDIO_CLIPS_INFO.tiers.length>1?'s':'')+' (studio voices for every language). They play instead of your device’s voice wherever they exist'+(clipSupport?'':' — <b>but this browser can’t play Opus audio, so it’s using the device voice instead</b>')+'.'+
         ' <label style="display:block;margin-top:8px;"><input type="checkbox" id="use-clips" '+(save.useClips!==false?'checked':'')+'> Use built-in recordings when available</label></div>';
     }
     h += '<p class="preview-sub" style="margin:0 0 12px;text-align:left;">For everything else the game picks the most natural native voice your device has for each language. If one sounds off, choose another here. Languages with no native voice fall back to an English voice — install one in your phone or computer’s text-to-speech settings.</p>';
@@ -7248,10 +7266,10 @@
     if(!all.length){ h += '<p class="pb-count">No voices reported yet — some browsers only list them after the first sound plays. Tap Test or close and reopen this panel.</p>'; }
     el.voicesBody.innerHTML = h;
     Array.prototype.forEach.call(el.voicesBody.querySelectorAll('.voice-sel'), function(sel){
-      sel.addEventListener('change', function(){ save.voices = save.voices || {}; save.voices[sel.getAttribute('data-lang')] = sel.value; persist(); speakText(VOICE_SAMPLE[sel.getAttribute('data-lang')], sel.getAttribute('data-lang'), true); });
+      sel.addEventListener('change', function(){ save.voices = save.voices || {}; save.voices[sel.getAttribute('data-lang')] = sel.value; persist(); speakText(voiceSample(sel.getAttribute('data-lang')), sel.getAttribute('data-lang'), true); });
     });
     Array.prototype.forEach.call(el.voicesBody.querySelectorAll('.voice-test'), function(b){
-      b.addEventListener('click', function(){ var l = b.getAttribute('data-lang'); speakText(VOICE_SAMPLE[l], l, true); });
+      b.addEventListener('click', function(){ var l = b.getAttribute('data-lang'); speakText(voiceSample(l), l, true); });
     });
     var uc = document.getElementById('use-clips'); if(uc){ uc.addEventListener('change', function(){ save.useClips = uc.checked; persist(); }); }
     Array.prototype.forEach.call(el.voicesBody.querySelectorAll('.vr'), function(b){
@@ -7265,7 +7283,8 @@
   }
 
   function wordsLearned(){ return learnedSet.size; }
-  function wordsMax(){ return journeyLangs().reduce(function(s,l){ return s + CONCEPTS.filter(function(c){ return !!c[l]; }).length; }, 0); }
+  var _wordsMax = {};
+  function wordsMax(){ var k = journeyLangs().join(','); if(_wordsMax[k]===undefined){ _wordsMax[k] = journeyLangs().reduce(function(s,l){ return s + CONCEPTS.filter(function(c){ return !!c[l]; }).length; }, 0); } return _wordsMax[k]; }
 
   /* ---- hub / dungeon completion ---- */
   /* a "dungeon" is now scoped to one tier + one language + one topic subsection */
@@ -7312,8 +7331,9 @@
   function rankInfo(){ var i = rankIndex(); return {idx:i, rank:RANKS[i], next:RANKS[i+1]||null}; }
   function addXp(n){
     var before = rankIndex();
-    var gained = Math.round(n * (st.perkFlags && st.perkFlags.xpMult || 1) * (1 + 0.08*(st.runActive && !isDrillTopic(st.topic) ? (st.noise||0) : 0)) * (1 + 0.02*warpCores()) * (1 + 0.02*tuningLevel('tune_xp')) * (1 + 0.1*driveLevel('wd_xp')));
-    save.xp += gained; save.stats.xpLifetime = (save.stats.xpLifetime||0) + gained;
+    var noise = st.runActive && !isDrillTopic(st.topic) ? (st.noise||0) : (st.xpNoise||0);
+    var gained = Math.round(n * (st.perkFlags && st.perkFlags.xpMult || 1) * (1 + 0.08*noise) * (1 + 0.02*warpCores()) * (1 + 0.02*tuningLevel('tune_xp')) * (1 + 0.1*driveLevel('wd_xp')));
+    save.xp += gained; save.stats.xpLifetime = (save.stats.xpLifetime||0) + gained; st.lastXpGain = gained;
     var after = rankIndex();
     if(after > before){
       var r = RANKS[after]; var bonus = after*40;
@@ -7521,7 +7541,7 @@
     var parts = [];
     if(r.tips){ save.tips += r.tips; parts.push('+'+r.tips+' 💠'); }
     if(r.dark){ awardDark(r.dark); parts.push('+'+r.dark+' 🌌'); }
-    if(r.core){ save.warp.cores = warpCores()+r.core; parts.push('+'+r.core+' 🚀 core'); }
+    if(r.core){ save.warp.cores = warpCores()+r.core; save.warp.granted = ((save.warp && save.warp.granted)||0) + r.core; parts.push('+'+r.core+' 🚀 core'); }
     return parts.join(' ');
   }
   function checkPlan(){
@@ -7764,7 +7784,7 @@
     flow.appendChild(para);
     var tools = document.createElement('div'); tools.className = 'story-tools';
     tools.innerHTML = '<button class="btn btn-sm btn-ghost story-say" title="Hear this paragraph">🔊</button>';
-    tools.querySelector('.story-say').addEventListener('click', function(){ speakText(text, S.lang, true); });
+    tools.querySelector('.story-say').addEventListener('click', function(){ speakText(text, S.lang, true, story.id+'-p'+i+':'+S.lang); });
     flow.appendChild(tools);
     var q = story.questions.filter(function(q){ return q.after===i; })[0];
     S.pos++;
@@ -7787,7 +7807,7 @@
                : '<div class="q">🎧 Listen, then '+(S.mode==='dictate' ? 'type what you hear in '+LANGS[S.lang].name : 'write what it means in '+nativeName())+'</div><div class="story-tools" style="justify-content:flex-start;"><button class="btn btn-sm btn-ghost story-say">🔊 Play</button></div>';
     box.innerHTML = prompt+'<textarea class="story-type" lang="'+(SPEECH_LANG[toLang]||toLang)+'" placeholder="'+(isCjkLang(toLang)?'…':'Type here…')+'"></textarea><div class="story-tools"><span class="story-meta" style="margin-right:auto;">Paragraph '+(i+1)+' of 7</span><button class="btn btn-sm btn-primary story-check">Check</button></div><div class="story-result"></div>';
     flow.appendChild(box);
-    var say = box.querySelector('.story-say'); if(say){ say.addEventListener('click', function(){ speakText(target, S.lang, true); }); setTimeout(function(){ speakText(target, S.lang, true); }, 250); }
+    var say = box.querySelector('.story-say'); if(say){ var pk = story.id+'-p'+i+':'+S.lang; say.addEventListener('click', function(){ speakText(target, S.lang, true, pk); }); setTimeout(function(){ speakText(target, S.lang, true, pk); }, 250); }
     var ta = box.querySelector('.story-type'); ta.focus();
     box.querySelector('.story-check').addEventListener('click', function(){
       var typed = ta.value; if(!typed.trim()){ toast('Type your answer first.'); return; }
@@ -7798,7 +7818,7 @@
       box.querySelector('.story-result').innerHTML = '<div class="story-verdict">'+(ok ? '✅ Close enough · '+pct+'% match' : '❌ '+pct+'% match')+'</div>'+
         '<div class="story-ref"><b>Reference:</b> '+furi(esc(ref))+(S.mode!=='translate' && S.mode!=='interpret' ? '' : '')+(S.mode==='dictate' || S.mode==='interpret' ? '<br><b>Meaning:</b> '+furi(esc(S.mode==='interpret' ? target : nat.paras[i])) : '')+'</div>'+
         '<div class="story-tools"><button class="btn btn-sm btn-primary story-more">'+(S.pos+1>=7?'Finish':'Continue ▸')+'</button></div>';
-      box.querySelector('.story-more').addEventListener('click', function(){ S.pos++; storyNext(); });
+      box.querySelector('.story-more').addEventListener('click', function(){ if(this.disabled) return; this.disabled = true; this.remove(); S.pos++; storyNext(); });
     });
     try{ box.scrollIntoView({behavior:'smooth', block:'nearest'}); }catch(e){}
   }
@@ -7953,7 +7973,7 @@
         while(c.carried.length > carryCap()) c.carried.shift();
       }
       var newly = CHAIN_MILESTONES.filter(function(m){ return before < milestoneAt(m) && c.len >= milestoneAt(m); });
-      var t = '🔗 Chain extended to <b>'+c.len+'</b>'+(links>1?' (✨ Resonance: +2)':'')+'.';
+      var t = '🔗 Chain extended to <b>'+c.len+'</b>'+(links>1?' (+'+links+' links'+((owned('shop_double') && opts.perfect)?' ✨ Resonance':'')+')':'')+'.';
       if(opts.draftedPerkId && perkById(opts.draftedPerkId)) t += ' '+perkById(opts.draftedPerkId).icon+' '+perkById(opts.draftedPerkId).name+' welded on.';
       newly.forEach(function(m){ t += ' 🎉 Milestone: '+m.icon+' <b>'+m.name+'</b> — '+m.desc+'.'; });
       return {text:t, changed:true, milestones:newly};
@@ -8374,7 +8394,8 @@
 
   /* ---- modules: every tier is a list of topic subsections, each with exactly one round type ---- */
 
-  function vocabForTier(tier){ return CONCEPTS.filter(function(c){ return c.tier===tier.code; }); }
+  var _vocabByTier = {};
+  function vocabForTier(tier){ if(!_vocabByTier[tier.code]){ _vocabByTier[tier.code] = CONCEPTS.filter(function(c){ return c.tier===tier.code; }); } return _vocabByTier[tier.code].slice(); }
 
   function topicLabel(topic){
     if(!topic) return '';
@@ -8575,7 +8596,7 @@
     if(allowed.length<3){ el.pkSub.textContent += allowed.length===1 ? ' Reach Ensign to draft Rare modules.' : ' Reach Lieutenant to draft Legendary modules.'; }
     var carriedNames = save.chain.carried.map(perkById).filter(Boolean).map(function(p){ return p.icon+' '+p.name; });
     if(carriedNames.length){ el.pkSub.textContent += ' Welded modules already online: '+carriedNames.join(', ')+'.'; }
-    var firstAttempt = lang && topic && !isDungeonCleared(idx, lang, topic);
+    var firstAttempt = lang && topic && !isDrillTopic(topic) && !isDungeonCleared(idx, lang, topic);
     if(firstAttempt){ el.pkSub.textContent += ' Clear this relay and your pick is welded onto the chain.'; }
     var rerollsLeft = (owned('shop_reroll')?1:0) + (owned('shop_reroll2')?1:0);
     function drawChoices(){
@@ -8604,7 +8625,8 @@
     st.firstAttempt = !tier.endless && !!lang && !!topic && !isDrillTopic(topic) && topic!=='__storm' && !isDungeonCleared(idx, lang, topic);
     if(topic!=='__storm') st.storm = null;
     st.temp = null; st.encryptedExtra = 0; st.encryptAll = false; st.blackout = false; st.phoenixUsed = false; st.echoUsed = false;
-    st.flare = false; st.flareSteps = 0; st.breach = false; st.crosstalk = false; st.floor = 0; st.noise = 0; st.noiseList = []; st.darkEarned = 0; st.bestComboRun = 0;
+    st.flare = false; st.flareSteps = 0; st.flareRun = false; st.breach = false; st.crosstalk = false; st.floor = 0; st.noise = 0; st.noiseList = []; st.darkEarned = 0; st.bestComboRun = 0;
+    st.settled = false; st.xpNoise = 0; st.nullRounds = 0; clearTimeout(st.advanceTimer);
     st.requeued = {};
     st.encryptedThisRun = 0; st.eventsThisRun = 0; st.runStart = Date.now();
     st.draftedPerkId = perk ? perk.id : null;
@@ -8820,6 +8842,7 @@
     return t;
   }
 
+  function journeyPool(list){ var js = journeyLangs(); var f = list.filter(function(x){ return js.indexOf(x.lang)!==-1; }); return f.length ? f : list; }
   function makeRound(){
     var tier = TIERS[st.tierIdx];
 
@@ -8831,9 +8854,9 @@
         var c = pick(cpool);
         return matchRound(c, lang, 0.5, cpool, tier);
       }
-      if(choice.t==='blank'){ return blankRound(pick(GRAMMAR_ITEMS), tier); }
-      if(choice.t==='idiom'){ return idiomRound(pick(IDIOMS), tier); }
-      if(choice.t==='nuance'){ return nuanceRound(pick(NUANCE), tier); }
+      if(choice.t==='blank'){ return blankRound(pick(journeyPool(GRAMMAR_ITEMS)), tier); }
+      if(choice.t==='idiom'){ return idiomRound(pick(journeyPool(IDIOMS)), tier); }
+      if(choice.t==='nuance'){ return nuanceRound(pick(journeyPool(NUANCE)), tier); }
       if(choice.t==='dialogue' && DIALOGUES.length){ var dl = pick(journeyLangs()); var dpool = DIALOGUES.filter(function(d){ return Array.isArray(d[dl]); }); if(!dpool.length){ dl = 'es'; dpool = DIALOGUES; } return dialogueRound(pick(dpool), dl, tier); }
       var ll = pick(journeyLangs()); var lpool = CONCEPTS.filter(function(x){ return !!x[ll]; }); if(!lpool.length){ ll = 'es'; lpool = CONCEPTS; }
       var lc = pick(lpool); return listenRound(lc, ll, lpool, tier);
@@ -8884,7 +8907,7 @@
 
   /* the spoken/displayed target-language text of any item, for one language */
   function itemText(item, lang){
-    if(item.es && Array.isArray(item.es)) return item[lang].join(lang==='ja'||lang==='zh' ? '' : ' ');   /* sentence tiles */
+    if(item.es && Array.isArray(item.es)) return item[lang].join(isCjkLang(lang) ? '' : ' ');   /* sentence tiles */
     if(item[lang] && Array.isArray(item[lang])) return item[lang][0];                                       /* dialogue line */
     if(item[lang] && item[lang].t) return item[lang].t;                                                      /* vocab */
     return '';
@@ -8918,7 +8941,7 @@
 
   /* Crosstalk: the English meaning is the prompt and the options are the target-language words */
   function crosstalkSwap(r){
-    r.crosstalk = true;
+    r.crosstalk = true; r.silent = true; r.clipKey = null;     /* the target-language clip would read out the answer */
     var target = ITEM[r.conceptId];
     r.main = (target.emoji ? target.emoji+' ' : '')+target.en; r.mainClass = 'is-sentence'; r.sub = 'Pick the '+LANGS[r.lang].name;
     r.options.forEach(function(o){ var it = ITEM[o.key]; if(it && it[r.lang]){ o.main = it[r.lang].t; o.sub = it[r.lang].r ? it[r.lang].r : null; o.emoji = null; } });
@@ -8957,7 +8980,8 @@
     return {
       uiMode:'buttons', kind:'blank', lang:g.lang, main:g.sentence, mainClass:'is-sentence',
       sub: LANGS[g.lang].name+' — complete the sentence', time: roundTime(tier, 'blank'),
-      options: opts, note: g.note
+      options: opts, note: g.note, silent:true, clipKey: g.id+':'+g.lang,
+      reveal: /_{2,}/.test(g.sentence) ? g.sentence.replace(/_{2,}/, g.correct) : g.sentence
     };
   }
   function idiomRound(i, tier){
@@ -8965,7 +8989,7 @@
       return {key:o, emoji:null, main:o, sub:null, correct:o===i.correct};
     }));
     return {
-      uiMode:'buttons', kind:'idiom', lang:i.lang, main:i.phrase, mainClass:'',
+      uiMode:'buttons', kind:'idiom', lang:i.lang, main:i.phrase, mainClass:'', clipKey: i.id+':'+i.lang,
       sub: (i.lang!=='ja' && i.romaji) ? i.romaji : null, time: roundTime(tier, 'idiom'),
       options: opts, note: i.note
     };
@@ -8997,7 +9021,12 @@
   function nextRound(){
     var tier = TIERS[st.tierIdx];
     var round = makeRound();
-    if(!round){ onDungeonCleared(); return; }
+    if(!round){                                                 /* a bad queue entry is skipped, never paid as a clear */
+      st.nullRounds = (st.nullRounds||0) + 1;
+      if(st.nullRounds > 5){ onDungeonCleared(); return; }
+      if(!tier.endless){ st.pos++; if(st.pos >= st.queue.length){ onDungeonCleared(); return; } }
+      nextRound(); return;
+    }
     if(isEncryptedNow()){ augmentEncrypted(round); if(st.encryptedExtra>0) st.encryptedExtra--; sfx('encrypted'); }
     st.round = round;
     document.querySelector('.ticket').classList.toggle('encrypted', !!round.encrypted);
@@ -9120,10 +9149,12 @@
 
   function resolveRound(correct, opts){
     opts = opts || {};
-    clearTimeout(st.roundTimer);
     var round = st.round;
+    if(!round || round.resolved) return;                       /* Skip, Answer and Transmit can race: score a round once */
+    round.resolved = true;
+    clearTimeout(st.roundTimer); clearTimeout(st.advanceTimer);
     var elapsed = (performance.now() - st.roundStart)/1000;
-    var remainFrac = Math.max(0, 1 - elapsed/round.time);
+    var remainFrac = Math.max(0, 1 - elapsed/(round.seconds || round.time));   /* speed bonus follows the real timer */
     var cognate = false;
 
     /* nuance rounds show an English context as the prompt — speak the correct target-language
@@ -9198,7 +9229,7 @@
         var li = ITEM[round.conceptId];
         if(li && li.emoji && li.tier){ learnedSet.add(round.conceptId+':'+round.lang); }
         toast('✅ +'+roundScore+' — 🎧 “'+plainText(round.reveal)+'”');
-      } else if(round.kind==='cloze'){
+      } else if(round.kind==='cloze' || (round.kind==='blank' && round.reveal)){
         speakText(round.reveal, round.lang, false, round.clipKey || null);
         toast('✅ +'+roundScore+' — “'+plainText(round.reveal)+'”'+(round.note ? ' · '+round.note : ''));
       } else if(round.note){
@@ -9232,7 +9263,7 @@
     renderLives(); renderHeat(); updateScoreDisplay();
     persist(); refreshHud();
 
-    setTimeout(advanceRound, correct ? 700 : 1700);
+    st.advanceTimer = setTimeout(advanceRound, correct ? 700 : 1700);
   }
 
   /* Decide what happens after a round resolves (or is skipped): death, dungeon clear, or the next ticket. */
@@ -9266,24 +9297,26 @@
   }
 
   function onSubmitTiles(isTimeout){
-    if(!st.round) return;
+    if(!st.round || st.round.resolved) return;
     var ok = st.placed.length===st.roundTiles.length && st.placed.every(function(idx,i){ return idx===i; });
     Array.prototype.forEach.call(el.plSlots.children, function(b,i){
       b.classList.add(ok ? 'tile-correct' : 'tile-wrong');
     });
     el.btnSubmitTiles.disabled = true;
-    var correctSentence = st.roundTiles.slice().sort(function(a,b){return a.idx-b.idx;}).map(function(t){return t.text;}).join(' ');
+    var correctSentence = st.roundTiles.slice().sort(function(a,b){return a.idx-b.idx;}).map(function(t){return t.text;}).join(isCjkLang(st.round.lang) ? '' : ' ');
     speakText(correctSentence, st.round.lang, false, st.round.sentenceId ? st.round.sentenceId+':'+st.round.lang : null);
     resolveRound(ok, {timeout: !!isTimeout, reveal: ok ? null : correctSentence});
   }
 
   function onSkip(){
-    if(!st.round || !st.skipAvailable) return;
+    if(!st.round || st.round.resolved || !st.skipAvailable) return;
+    st.round.resolved = true;
     st.skipCharges--; st.skipAvailable = st.skipCharges > 0;
-    clearTimeout(st.roundTimer);
+    clearTimeout(st.roundTimer); clearTimeout(st.advanceTimer);
+    Array.prototype.forEach.call(el.plAnswers.children, function(b){ b.disabled = true; });
     updateSkipBtn();
     toast('🧭 Autopilot engaged — transmission skipped.');
-    setTimeout(advanceRound, 500);
+    st.advanceTimer = setTimeout(advanceRound, 500);
   }
 
   /* ============================= DUNGEON CLEAR / FAIL / ENDLESS END ============================= */
@@ -9373,6 +9406,7 @@
     h += '<div class="log-section">Ranks</div>';
     RANKS.forEach(function(r,i){ var got = i<=ri.idx; h += '<div class="bar-row" style="grid-template-columns:28px 1fr 90px;opacity:'+(got?1:.5)+'"><span>'+r.icon+'</span><span style="color:var(--paper)">'+r.title+(r.unlock?' <span style="color:var(--paper-faint)">— '+r.unlock+'</span>':'')+'</span><span>'+r.xp.toLocaleString()+' XP</span></div>'; });
     el.logBody.innerHTML = h;
+    var cf = document.getElementById('btn-clear-flags'); if(cf){ cf.addEventListener('click', function(){ save.flagged = {}; persist(); showLog(); }); }
   }
 
   /* ============================= ANOMALY EVENTS ============================= */
@@ -9398,7 +9432,7 @@
       b.addEventListener('click', function(){
         var msg = ch.apply() || '';
         bumpStat('events'); st.eventsThisRun++;
-        persist(); refreshHud();
+        persist(); refreshHud(); renderLives();
         hideAllScreens(); el.screenPlaying.hidden = false;
         st.playing = true;
         if(msg) toast(ev.icon+' '+msg);
@@ -9416,6 +9450,8 @@
   }
 
   function onDungeonCleared(){
+    if(st.settled) return; st.settled = true;                  /* never pay a clear twice */
+    st.xpNoise = isDrillTopic(st.topic) ? 0 : (st.noise||0);   /* addXp reads it after runActive drops */
     st.playing = false; st.runActive = false;
     clearTimeout(st.roundTimer);
     sfx('clear');
@@ -9444,7 +9480,7 @@
     save.tips += tipsEarned;
     save.bestScore = Math.max(save.bestScore, st.score);
     var xpGain = st.correct*2 + (firstClear ? 40 : 10) + st.encryptedThisRun*5 + (perfect ? 15 : 0);
-    addXp(xpGain);
+    addXp(xpGain); var xpGot = st.lastXpGain;
     var chainResult = settleChain('clear', {firstAttempt: st.firstAttempt && firstClear, draftedPerkId: st.draftedPerkId, perfect: perfect, extraLinks: st.perkFlags.chainLinks||0});
     checkCommendations(); checkPlan();
     var langNowCleared = isLangCleared(st.tierIdx, st.lang);
@@ -9470,7 +9506,7 @@
       statBox(Math.round(accuracy*100)+'%','Accuracy') +
       statBox(st.score,'Relay score') +
       statBox(tipsEarned+' 💠','Credits earned'+(streakPay?' · 🔥 '+save.streak.days+'-day streak +'+streakPay:'')) +
-      statBox('+'+Math.round(xpGain*(1+0.08*noise))+' XP', rankInfo().rank.title) +
+      statBox('+'+xpGot+' XP', rankInfo().rank.title) +
       statBox('🔗 '+save.chain.len,'Signal chain') +
       (dmEarned ? statBox('+'+dmEarned+' 🌌','Dark matter'+(noise?' · Noise '+noise:'')) : '');
     el.cpStats.innerHTML += '<div class="chain-box" style="grid-column:1 / -1;">'+chainResult.text+(isRecovery?' 🩺 '+Object.keys(save.missed).filter(function(k){ return k.slice(-3)===':'+st.lang; }).length+' weak '+LANGS[st.lang].name+' words remain.':'')+'</div>';
@@ -9526,6 +9562,8 @@
   }
 
   function endEndless(){
+    if(st.settled) return; st.settled = true;
+    st.xpNoise = st.noise||0;
     st.playing = false; st.runActive = false;
     clearTimeout(st.roundTimer);
     var mult = st.perkFlags.tipMult * shopTipMult() * (owned('shop_deeppay') ? 1.5 : 1);
@@ -9573,7 +9611,7 @@
     streakTouch(); tipsEarned += streakBonus(st.noise||0);
     save.tips += tipsEarned; save.bestScore = Math.max(save.bestScore, st.score);
     var dmEarned = awardDark(firstToday ? 2 + Math.floor((st.noise||0)/2) + (refitOwned('rf_uplink')?1:0) : 0);
-    var xpGain = st.correct*3 + 30; addXp(xpGain);
+    addXp(st.correct*3 + 30); var xpGain = st.lastXpGain;
     checkCommendations(); checkPlan(); persist(); refreshHud();
     hideAllScreens(); el.screenComplete.hidden = false; el.btnPhrasebook.disabled = false; el.shiftRibbon.hidden = true; el.runPerks.hidden = true;
     var accuracy = st.total>0 ? st.correct/st.total : 0;
@@ -9667,17 +9705,22 @@
   document.getElementById('btn-ic-back').addEventListener('click', showHome);
   document.getElementById('btn-note').addEventListener('click', function(){ if(st.round && st.round.note) toast('📘 '+st.round.note); });
   /* shadowing: record ~4 s from the microphone, then play the native clip and the recording back to back */
-  var shadowRec = null;
+  var shadowRec = null, shadowBusy = false;
   document.getElementById('btn-shadow').addEventListener('click', function(){
     var b = this; var r = st.round; if(!r || !r.clipKey) return;
     if(shadowRec){ try{ shadowRec.stop(); }catch(e){} return; }
+    if(shadowBusy) return;                                      /* one microphone request at a time */
     if(!navigator.mediaDevices || !window.MediaRecorder){ toast('🎤 This browser cannot record audio.'); return; }
+    shadowBusy = true;
     navigator.mediaDevices.getUserMedia({audio:true}).then(function(stream){
-      var chunks = []; var rec = new MediaRecorder(stream); shadowRec = rec;
+      var chunks = []; var rec;
+      try{ rec = new MediaRecorder(stream); }catch(e){ shadowBusy = false; stream.getTracks().forEach(function(t){ t.stop(); }); toast('🎤 Recording is not supported in this browser.'); return; }
+      shadowRec = rec;
       rec.ondataavailable = function(e){ if(e.data && e.data.size) chunks.push(e.data); };
       rec.onstop = function(){
-        shadowRec = null; stream.getTracks().forEach(function(t){ t.stop(); }); b.textContent = '🎤 Shadow';
-        var mine = new Audio(URL.createObjectURL(new Blob(chunks, {type: rec.mimeType || 'audio/webm'})));
+        shadowRec = null; shadowBusy = false; stream.getTracks().forEach(function(t){ t.stop(); }); b.textContent = '🎤 Shadow';
+        var url = URL.createObjectURL(new Blob(chunks, {type: rec.mimeType || 'audio/webm'}));
+        var mine = new Audio(url); mine.onended = function(){ URL.revokeObjectURL(url); };
         var native = new Audio(clipSrc(r.clipKey));
         toast('🎧 Native first, then you.');
         native.onended = function(){ setTimeout(function(){ mine.play().catch(function(){}); }, 250); };
@@ -9685,7 +9728,7 @@
       };
       rec.start(); b.textContent = '⏺️ Recording… tap to stop';
       setTimeout(function(){ if(shadowRec===rec){ try{ rec.stop(); }catch(e){} } }, 4000);
-    }).catch(function(){ toast('🎤 Microphone access was refused.'); });
+    }).catch(function(){ shadowBusy = false; toast('🎤 Microphone access was refused.'); });
   });
   /* pronunciation flags: the exact clip key plus the text, so the clip can be re-recorded or the voice swapped */
   document.getElementById('btn-flag').addEventListener('click', function(){
@@ -9713,7 +9756,8 @@
   el.btnSubmitTiles.addEventListener('click', function(){ onSubmitTiles(false); });
   el.btnPhrasebook.addEventListener('click', function(){ el.pbTier.value = TIERS[Math.min(frontierHubIdx(), 5)].code; renderPhrasebook(); el.phrasebookOverlay.hidden = false; });
   el.pbTier.addEventListener('change', renderPhrasebook);
-  el.pbSearch.addEventListener('input', renderPhrasebook);
+  var _pbTimer = null;
+  el.pbSearch.addEventListener('input', function(){ clearTimeout(_pbTimer); _pbTimer = setTimeout(renderPhrasebook, 80); });
   el.btnClosePhrasebook.addEventListener('click', function(){ el.phrasebookOverlay.hidden = true; });
   el.phrasebookOverlay.addEventListener('click', function(e){ if(e.target===el.phrasebookOverlay){ el.phrasebookOverlay.hidden = true; } });
   el.btnMute.addEventListener('click', function(){
@@ -9727,6 +9771,8 @@
 
   document.addEventListener('keydown', function(e){
     if(!st.playing || el.screenPlaying.hidden) return;
+    if(e.ctrlKey || e.metaKey || e.altKey) return;
+    if(e.target && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
     if(!el.plAnswers.hidden && ['1','2','3','4','5','6'].indexOf(e.key)!==-1){
       var idx = parseInt(e.key,10)-1;
       var btn = el.plAnswers.children[idx];

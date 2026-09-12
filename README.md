@@ -216,7 +216,8 @@ npm run qa                                   # builds qa/hub-qa-wrapped.html and
 ```
 
 `npm run qa` (or `make qa`) runs qa_modules, qa_chain, qa_overhaul, qa_voice and qa_c2 from disk, then
-`qa/with_server.js` serves the repo on a free port and runs qa_clips against it (the clips suite needs HTTP
+`qa/with_server.js` serves the repo on a free port and runs qa_clips and qa_fixes (regression checks for the
+September 2026 bug sweep) against it (the clips suite needs HTTP
 for the audio manifest). Run one suite alone with `node qa/qa_modules.js`, or the clips suite with
 `npm run qa:clips`. Either audio build passes: external `audio/` + manifest, or embedded via `embed_audio.py`.
 

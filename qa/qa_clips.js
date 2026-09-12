@@ -21,7 +21,8 @@ function log(l, ok, x){ console.log((ok?'PASS':'FAIL')+' — '+l+(x!==undefined?
   });
   console.log('audio mode: ' + info.mode + ' ' + JSON.stringify(info.info));
   const allCovered = info.info.tiers.length > 0 && info.info.tiers.every(t => info.cov[t].covered === info.cov[t].words);
-  const expected = info.mode === 'external' ? require(path.resolve(__dirname, '..', 'audio', 'manifest.json')).keys.length : info.info.count;
+  const manifestCount = (m) => { if (m.v === 2) { let n = 0; for (const mask of Object.values(m.ids || {})) { let x = mask; while (x) { n += x & 1; x >>>= 1; } } for (const hs of Object.values(m.tiles || {})) n += hs.length; return n; } return (m.keys || []).length; };
+  const expected = info.mode === 'external' ? manifestCount(require(path.resolve(__dirname, '..', 'audio', 'manifest.json'))) : info.info.count;
   log('recordings found for every listed band — every word in all six languages; page loads', info.info.count === expected && info.info.count > 0 && allCovered && load < 60000, { ...info, expected, loadMs: load });
   // speakText takes the recording branch when a clip exists
   const play = await page.evaluate(async () => {

@@ -54,7 +54,7 @@ zh (pinyin), ru, el, ar, hi, ko, yue (Jyutping). Japanese carries furigana `{漢
 - Wipe-save control, in-game 🚩 pronunciation flag (Mission Log lists flags; `gen_audio.py --only` re-records those keys).
 - All constants live in one block near `SHOP_UPGRADES` in index.html; README section 3b documents them.
 
-## Audio: DONE (2026-09-12 09:50)
+## Audio: DONE (2026-09-12 09:50) — see the sweep section below for the DRILLS and STORIES bands added later that day
 
 Every language is recorded and merged: 110,691 clips in `audio/manifest.json`, 21 voices (the twenty
 languages plus English as a target, `eng`), each 5,240 to 5,285 clips covering A1 to C2 plus the TILES band.
@@ -119,6 +119,48 @@ language and its keys from the manifest before merging, or add a `--replace` fla
   `src/verify_math.py`, "drill run 56"), which loads qwen3:8b with keep_alive=forever. Owner notified 22:55;
   only they can pause that session. If it recurs: `ollama ps`, `ollama stop <model>`, then find the caller in
   `%LOCALAPPDATA%\Ollama\server.log`.
+
+## 2026-09-12 sweep (cloud session): bugs fixed, performance, new audio bands
+
+Verified by `qa/qa_fixes.js` (part of `npm run qa`) plus the six existing suites.
+
+Fixed in index.html:
+- HIGH: clips for three-letter language codes (eng, ind, yue — 15,816 clips) never played: `clipSrc` only rewrote
+  two-letter suffixes into the file name, and because it returned a (404) path the device voice was suppressed too.
+- HIGH: Skip and Answer (or two Transmit taps in the tile builder) could both fire in one round: double advance,
+  double scoring, and `onDungeonCleared` paid a clear twice. Rounds now carry `resolved`, one `st.advanceTimer`
+  is pending at a time, and a clear settles once (`st.settled`).
+- MEDIUM: Noise XP bonus was never credited (addXp read `st.runActive` after it was cleared) while the Complete screen
+  showed it; both now use the amount actually credited (`st.lastXpGain`).
+- MEDIUM: Warp Jump dropped native language, streak, SRS schedule, flags and tutorial state; kept now.
+- MEDIUM: the Flight Plan "+1 core" milestone was an advance on the next jump; `save.warp.granted` makes it a grant.
+- MEDIUM: Voices panel: eng/ind/yue/la matched no browser voice ("no native voice installed", wrong-voice toast); voices
+  are now matched through LANG_META speech tags. "Test" and voice previews work for every language (`voiceSample`).
+- MEDIUM: Crosstalk rounds played the correct option's clip; Open Channel drew grammar/idiom/nuance from all 20
+  languages regardless of the journey; typed story modes could skip a paragraph on a double tap; anomaly choices that
+  cost a cell left the lives HUD stale; `st.flareRun` never reset.
+- LOW: speed bonus measured against the base time not the real timer; CJK sentence reveals space-joined (yue too);
+  chain text hard-coded "Resonance: +2"; drill relays promised a chain weld; keyboard shortcuts fired with Ctrl/Cmd
+  or while typing in an input; a null round paid a clear; "Clear flags" button was dead; shadowing could leak a
+  microphone stream.
+- Performance: `wordsMax` and `vocabForTier` cached (constant per journey / tier), Lexicon search debounced (80 ms),
+  Google Fonts stylesheet no longer render-blocking, and `audio/manifest.json` is now the compact v2 format
+  (`tools/manifestlib.py`: 4.96 MB -> 160 KB, per-id language bitmasks; the loader reads v1 and v2).
+
+Tooling: `gen_audio.py --only` no longer deletes manifest keys it does not re-record; manifest writes are atomic
+(temp file + rename); a band whose every clip failed is not listed as recorded; `merge_audio.py` uses manifestlib,
+rewrites the manifest in v2 when run with no sources, and has `--replace`; `mkqa.py`/`embed_audio.py` resolve
+index.html from the repo root; build.py prints l10n warnings and drops empty l10n strings.
+
+New audio bands (recorded in the cloud for es fr it pt ja zh with the ONNX backend, which now splits long
+paragraphs into sentence-sized chunks with a language-aware limit):
+- DRILLS: grammar sentences with the gap filled (key `g-…:<lang>`, spoken after answering; the round is silent
+  before, so the clip cannot leak the answer) and idiom phrases (`i-…:<lang>`).
+- STORIES: every Library paragraph, key `<story>-p<n>:<lang>` (read mode 🔊 and the Dictate/Interpret players).
+The fourteen Chatterbox/Edge languages still use the device voice for these two bands. To record them on the PC:
+`python tools/gen_audio.py DRILLS STORIES --langs de,nl,sv,pl,ru,el,la,tr,ar,hi,ko,ind --backend chatterbox --out staging_cbx_drills`
+and `--langs yue,vi,eng --backend edge --out staging_edge_drills`, then `python tools/merge_audio.py <dirs>`.
+(Check that the Chatterbox/Edge paths cope with 500-character paragraphs; the ONNX path chunks, they may need the same.)
 
 ## Machine quirks that cost time
 

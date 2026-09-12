@@ -322,9 +322,22 @@ for lang in LANG_META:
                 if isinstance(v, dict) and isinstance(v.get('paras'), list) and len(v['paras']) == 7 and v.get('title'):
                     folk[sid] = {'title': v['title'], 'paras': v['paras']}
     if folk: L['folk'] = folk
+    def l10n_scrub(node, path):
+        """An empty string (or a list containing one) would render as a blank answer button: drop it and warn."""
+        if isinstance(node, dict):
+            for k in list(node):
+                v = node[k]
+                bad = (isinstance(v, str) and not v.strip()) or (isinstance(v, list) and v and all(isinstance(x, str) for x in v) and any(not x.strip() for x in v))
+                if bad: warnings.append('l10n %s: empty text at %s/%s, dropped' % (lang, path, k)); del node[k]
+                else: l10n_scrub(v, path + '/' + k)
+        elif isinstance(node, list):
+            for x in node: l10n_scrub(x, path)
+    l10n_scrub(L, '')
     with open(os.path.join(L10N_DIR, lang + '.json'), 'w', encoding='utf-8') as fh:
         json.dump(L, fh, ensure_ascii=False, separators=(',', ':'))
     l10n_report.append('%s:%s' % (lang, '+'.join(sorted(parts))))
+for w in [w for w in warnings if w.startswith('l10n ')][:40]:
+    print('  warn:', w)
 
 # ---------------- emit ----------------
 def js(v):

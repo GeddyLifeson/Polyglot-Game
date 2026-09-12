@@ -1,6 +1,9 @@
 # Builds qa/hub-qa-wrapped.html: the game with a window.__QA debug hook exposing its internals.
 # index.html is already a complete document; this only injects the hook and points AUDIO_BASE
 # at ../audio/ so the page works from the qa/ folder (over HTTP, for the clips suite).
+import os
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(ROOT)
 with open('index.html', encoding='utf-8') as f:
     content = f.read()
 

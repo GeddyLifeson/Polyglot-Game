@@ -11,6 +11,9 @@ What gets recorded for a band:
   * every vocabulary word/phrase in all six languages      -> audio/<TIER>/<id>_<lang>.ogg
   * every sentence-building line (spoken as a full sentence)
   * every dialogue prompt line (the line the other person says)
+Extra bands: TILES (every sentence tile and nuance option, keys x-<hash>), DRILLS (grammar sentences with
+the gap filled + idiom phrases, keys g-*/i-*), STORIES (every Library paragraph, keys <story>-p<n>).
+  python3 tools/gen_audio.py DRILLS STORIES --langs es,fr,it,pt,ja,zh
 Keys are `<id>:<lang>`; the game plays a clip whenever a key exists in audio/manifest.json.
 
 Requires: index.html already built (python3 build.py), ffmpeg on PATH, and
@@ -80,6 +83,8 @@ else:
 print('backend:', backend, flush=True)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, 'tools'))
+import manifestlib as ML
 html = open(os.path.join(ROOT, args.html), encoding='utf-8').read()
 def block(name):
     m = re.search(r'var '+name+r'\s*=\s*(\[.*?\n\s*\]);', html, re.S)
@@ -88,6 +93,9 @@ rows = block('VOCAB_RAW')
 sentences = block('BUILD_SENTENCES')
 dialogues = block('DIALOGUES')
 nuance = block('NUANCE')
+grammar = block('GRAMMAR_ITEMS')
+idioms = block('IDIOMS')
+stories = block('STORIES')
 COL = {'es':5,'fr':6,'it':7,'pt':8,'ja':9,'zh':10, 'eng':1}   # 'eng' = English as a target language (the en column)
 KOKO = {'es':('e','ef_dora'), 'fr':('f','ff_siwis'), 'it':('i','if_sara'), 'pt':('p','pf_dora'), 'ja':('j','jf_alpha'), 'zh':('z','zf_xiaobei'),
         'hi':('h','hf_alpha'), 'eng':('a','af_heart')}
@@ -137,12 +145,16 @@ class OnnxPipeline:
             self.g2p = espeak.EspeakG2P(language=ESPEAK_LANG[lang_code])
 
     def __call__(self, text, voice, speed=1.0):
-        ps = self.phonemes(text)
-        if len(ps) > 510:
-            print('WARN phonemes truncated', len(ps), text[:40], flush=True)
-        ps = ps[:510]
-        samples, _sr = OnnxPipeline._model.create(ps, voice=voice, speed=speed, is_phonemes=True)
-        yield text, ps, np.asarray(samples, dtype=np.float32)
+        parts = []
+        for chunk in split_for_tts(text, 60 if self.lang_code == 'z' else 80 if self.lang_code == 'j' else 160):   # CJK packs more phonemes per character
+            ps = self.phonemes(chunk)
+            if len(ps) > 510:
+                print('WARN phonemes truncated', len(ps), chunk[:40], flush=True)
+            ps = ps[:510]
+            samples, _sr = OnnxPipeline._model.create(ps, voice=voice, speed=speed, is_phonemes=True)
+            parts.append(np.asarray(samples, dtype=np.float32))
+            parts.append(np.zeros(int(24000 * 0.28), dtype=np.float32))   # sentence pause
+        yield text, '', np.concatenate(parts[:-1]) if parts else np.zeros(0, dtype=np.float32)
 
     def phonemes(self, text):
         """Japanese honours the furigana the content authors wrote. The kanji form gives the G2P the
@@ -258,6 +270,21 @@ def clean(text, reading=False):
     t = t.replace('〜', '').replace('~', '').replace('_', '').strip()
     return re.sub(r'\s+', ' ', t)
 
+def split_for_tts(text, limit=160):
+    """Split a paragraph into sentence-sized chunks (a single word or sentence passes through untouched).
+    Never splits inside {kanji|kana} braces; falls back to clause punctuation for very long sentences."""
+    if len(text) <= limit: return [text]
+    sents = [x for x in re.split(r'(?<=[.!?。！？])\s*', text) if x.strip()]
+    out = []
+    for x in sents:
+        if len(x) <= 2 * limit: out.append(x); continue
+        buf = ''
+        for piece in re.split(r'(?<=[,;:，、；：])\s*', x):
+            if buf and len(buf) + len(piece) > 2 * limit: out.append(buf); buf = piece
+            else: buf += piece
+        if buf: out.append(buf)
+    return out or [text]
+
 def fnv1a(text):
     """Stable id for a spoken string; index.html computes the same hash (tileClipKey) over code points."""
     h = 0x811c9dc5
@@ -279,7 +306,28 @@ def tile_items(lang):
                 seen.setdefault('x-' + fnv1a(o), o)
     return sorted(seen.items())
 
+def story_paras(story, lang):
+    """Mirrors storyText() in index.html: English targets read the source paragraphs, everything else its xl entry."""
+    if lang in ('en', 'eng'): return story.get('paras') or []
+    x = (story.get('xl') or {}).get(lang)
+    return (x.get('paras') if isinstance(x, dict) else None) or []
+
 def items_for(tier, lang):
+    if tier == 'DRILLS':
+        out = []
+        for g in grammar:
+            if g.get('lang') == lang and g.get('sentence'):
+                out.append((g['id'], re.sub(r'_{2,}', g.get('correct', ''), g['sentence'], count=1)))
+        for i in idioms:
+            if i.get('lang') == lang and i.get('phrase'): out.append((i['id'], i['phrase']))
+        return [(i, t) for i, t in out if clean(t)]
+    if tier == 'STORIES':
+        out = []
+        for s in stories:
+            if s.get('only') and s['only'] != lang: continue
+            for n, para in enumerate(story_paras(s, lang)):
+                out.append((s['id'] + '-p' + str(n), para))
+        return [(i, t) for i, t in out if clean(t)]
     if tier == 'TILES':
         # a tile that is only a parenthetical gloss, e.g. "(officieux)", is still spoken when tapped
         return [(i, t if clean(t) else t.strip('()（） ')) for i, t in tile_items(lang) if clean(t) or t.strip('()（） ')]
@@ -300,14 +348,16 @@ def items_for(tier, lang):
 out_root = os.path.join(ROOT, args.out)
 os.makedirs(out_root, exist_ok=True)
 man_path = os.path.join(out_root, 'manifest.json')
-manifest = json.load(open(man_path)) if os.path.exists(man_path) else {'keys': [], 'dir': {}, 'tiers': [], 'bitrate': args.bitrate}
-keys = set(manifest['keys'])
+manifest = ML.load(man_path); manifest.setdefault('bitrate', args.bitrate)
+keys = manifest['keys']
+def flush():
+    manifest['keys'] = keys; ML.save(man_path, manifest)
 
 only = None
 if args.only:
     raw = open(args.only, encoding='utf-8').read() if os.path.exists(args.only) else args.only
     only = set(k.strip() for k in re.split(r'[,\s]+', raw) if k.strip())
-    keys -= only   # force these to be re-recorded
+    # keys stay in the manifest until their new clip is written: a FAIL or a key outside --tiers/--langs keeps the old clip
 
 for tier in args.tiers:
     tdir = os.path.join(out_root, tier); os.makedirs(tdir, exist_ok=True)
@@ -325,7 +375,7 @@ for tier in args.tiers:
             if lang not in KOKO: print('skip', lang, '(no Kokoro voice; use --backend azure)'); continue
             code, voice = KOKO[lang]
             pipe = KPipeline(lang_code=code, repo_id='hexgrad/Kokoro-82M') if backend == 'torch' else OnnxPipeline(code)
-        todo = [(i, t) for i, t in items_for(tier, lang) if (i+':'+lang) not in keys and (only is None or (i+':'+lang) in only)]
+        todo = [(i, t) for i, t in items_for(tier, lang) if ((i+':'+lang) in only if only is not None else (i+':'+lang) not in keys)]
         print(f'{tier} {lang}: {len(todo)} clips to record', flush=True)
         t0 = time.time()
         for n, (iid, text) in enumerate(todo):
@@ -340,7 +390,7 @@ for tier in args.tiers:
                         open(ogg, 'wb').write(data)
                     keys.add(key); manifest['dir'][key] = tier
                     if n % 50 == 49:
-                        manifest['keys'] = sorted(keys); json.dump(manifest, open(man_path, 'w'))
+                        flush()
                         print(f'  {tier} {lang} {n+1}/{len(todo)} · {round(time.time()-t0)}s', flush=True)
                     continue
                 spoken = text if backend in ('onnx', 'chatterbox') else clean(text)
@@ -354,10 +404,9 @@ for tier in args.tiers:
             except Exception as e:
                 print('FAIL', key, clean(text)[:40], repr(e)[:100], flush=True)
             if n % 50 == 49:
-                manifest['keys'] = sorted(keys); json.dump(manifest, open(man_path, 'w'))
+                flush()
                 print(f'  {tier} {lang} {n+1}/{len(todo)} · {round(time.time()-t0)}s', flush=True)
-        manifest['keys'] = sorted(keys)
-        if tier not in manifest['tiers']: manifest['tiers'].append(tier)
-        json.dump(manifest, open(man_path, 'w'))
+        if tier not in manifest['tiers'] and any(k.endswith(':'+lang) and manifest['dir'].get(k)==tier for k in keys): manifest['tiers'].append(tier)
+        flush()
         print(f'{tier} {lang} done in {round(time.time()-t0)}s', flush=True)
 print('DONE —', len(keys), 'clips in manifest')
