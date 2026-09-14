@@ -199,3 +199,6 @@ Chatterbox chains were started before they existed); after the chains finish, re
 
 Panscriptum pause (owner, 2026-09-11 23:05): the daily scheduled task `panscriptum-maintenance` is disabled and
 its running session stopped. Re-enable after the last chain merges (pl el la / hi ko ind), when the owner says so.
+
+2026-09-13: Panscriptum restarted at the owner's request (scheduled task re-enabled, watcher relaunched). Item 5
+of "Next steps" is done.
