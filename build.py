@@ -48,6 +48,9 @@ LANG_META = {
     'vi': ('Vietnamese', 'Tiếng Việt', '🇻🇳', 'vi-VN', False, True),
     'ind': ('Indonesian', 'Bahasa Indonesia', '🇮🇩', 'id-ID', False, True),   # 'id' would collide with the item id field
 }
+# Total speakers (native + second language), millions, Ethnologue 2024. Orders the Journey screen.
+SPEAKERS = {'eng': 1515, 'zh': 1140, 'hi': 609, 'es': 560, 'ar': 332, 'fr': 312, 'pt': 264, 'ru': 255, 'ind': 199,
+            'de': 134, 'ja': 123, 'tr': 90, 'yue': 87, 'vi': 86, 'ko': 82, 'it': 67, 'pl': 41, 'nl': 25, 'el': 13.5, 'sv': 13, 'la': 0}
 XL = {}   # lang -> {'words': {id: (text, reading)}, 'sentences': {id: tiles}, 'dialogues': {id: 5 lines}}
 
 vocab_rows, sentences, grammar, idioms, nuance, dialogues, listen = [], [], [], [], [], [], []
@@ -359,7 +362,7 @@ lang_meta_js = {}
 for code, (name, native, flag, speech, reading, audio) in LANG_META.items():
     if code in LANGS or code in XL:
         lang_meta_js[code] = {'name': name, 'native': native, 'flag': flag, 'speech': speech, 'reading': reading,
-                              'audio': audio, 'tiers': lang_tiers.get(code, []),
+                              'audio': audio, 'tiers': lang_tiers.get(code, []), 'speakers': SPEAKERS.get(code, 0),
                               'sentences': sum(1 for d in sentences if d.get(code)), 'dialogues': sum(1 for d in dialogues if d.get(code))}
 
 # topic order per tier, in authored order

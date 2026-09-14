@@ -162,6 +162,16 @@ The fourteen Chatterbox/Edge languages still use the device voice for these two 
 and `--langs yue,vi,eng --backend edge --out staging_edge_drills`, then `python tools/merge_audio.py <dirs>`.
 (Check that the Chatterbox/Edge paths cope with 500-character paragraphs; the ONNX path chunks, they may need the same.)
 
+## 2026-09-14: crews (owner's request)
+
+Languages are added and advance in pairs. `journeyPairs()` / `pairsFor(langs, savedPairs)` derive the crews
+(`save.journey.pairs`, migrated from `langs` on load); `pairFrontier(pair)` = min cleared-tier count of the two;
+`langTierUnlocked(tierIdx, lang)`, `openChannelLangs()`, `tierLangs(endless)` and `isHubUnlocked` are per crew;
+`frontierHubIdx()` is the furthest crew. `storyOpen` uses the language's own crew frontier. The Journey screen orders
+languages by `LANG_META.speakers` (build.py `SPEAKERS`), shows "Crew N" on picked cards and refuses an odd pick.
+Placement warns when the placed language will wait for its crewmate. Tests: `qa/qa_pairs.js` (in `npm run qa`).
+README section 3e documents the rules.
+
 ## Machine quirks that cost time
 
 - Norton's TLS root breaks Python HTTPS. Fix per environment: run `tools/export_local_roots.ps1`, then append

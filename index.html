@@ -276,6 +276,8 @@
   .journey-card .jc-native{ font-size:12px; color:var(--paper-faint); }
   .journey-card .jc-meta{ font-size:10.5px; color:var(--paper-faint); margin-top:4px; line-height:1.4; }
   .journey-card.on .jc-meta{ color:var(--paper-dim); }
+  .journey-card .jc-crew{ font-size:10.5px; color:var(--basil); letter-spacing:.04em; text-transform:uppercase; }
+  .dungeon-tile[data-locked="1"]{ opacity:.55; cursor:not-allowed; }
   .wipe-btn{ color:var(--paper-faint); font-size:11px; }
   .shop-item.refit .sh-name .rf-lvl{ font-family:var(--font-mono); font-size:10px; color:#b48cff; margin-left:6px; white-space:nowrap; display:inline-block; }
   .event-card{ text-align:center; }
@@ -498,7 +500,7 @@
       <div class="card home-card">
         <div class="home-hero">🌐</div>
         <h2 style="font-size:24px;">Chart your voyage</h2>
-        <p class="preview-sub" style="margin:0 auto;">Pick the languages you want to learn. Every sector of the Star Chart holds one relay per language you choose, and a sector only clears when every chosen language in it is decoded. Add or drop languages any time; progress in a language is never lost.</p>
+        <p class="preview-sub" style="margin:0 auto;">Languages travel in crews of two. A crew's next sector opens when both of its languages have cleared the current one, so a stronger language waits for its partner. Crews are independent: adding a new pair later never locks a finished crew out of the Open Channel. Pick languages two at a time; progress in a language is never lost.</p>
         <div class="journey-grid" id="journey-grid"></div>
         <p class="preview-sub" id="journey-summary" style="margin:12px auto 0;"></p>
         <div class="home-actions">
@@ -747,7 +749,7 @@
 
   /* ==== GENERATED CONTENT START (build.py — do not hand-edit) ==== */
   /* vocab row: [id, en, emoji, topic, tier, es, fr, it, pt, ja, zh, pinyin, fact?, {lang:[text, reading]}?] */
-  var LANG_META = {"es":{"name":"Spanish","native":"Español","flag":"🇪🇸","speech":"es-ES","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"fr":{"name":"French","native":"Français","flag":"🇫🇷","speech":"fr-FR","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"it":{"name":"Italian","native":"Italiano","flag":"🇮🇹","speech":"it-IT","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"pt":{"name":"Portuguese","native":"Português","flag":"🇧🇷","speech":"pt-BR","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"ja":{"name":"Japanese","native":"日本語","flag":"🇯🇵","speech":"ja-JP","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"zh":{"name":"Mandarin","native":"普通话","flag":"🇨🇳","speech":"zh-CN","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"de":{"name":"German","native":"Deutsch","flag":"🇩🇪","speech":"de-DE","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"nl":{"name":"Dutch","native":"Nederlands","flag":"🇳🇱","speech":"nl-NL","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"sv":{"name":"Swedish","native":"Svenska","flag":"🇸🇪","speech":"sv-SE","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"pl":{"name":"Polish","native":"Polski","flag":"🇵🇱","speech":"pl-PL","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"ru":{"name":"Russian","native":"Русский","flag":"🇷🇺","speech":"ru-RU","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"el":{"name":"Greek","native":"Ελληνικά","flag":"🇬🇷","speech":"el-GR","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"la":{"name":"Latin","native":"Latina","flag":"🏛️","speech":"it-IT","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"tr":{"name":"Turkish","native":"Türkçe","flag":"🇹🇷","speech":"tr-TR","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"ar":{"name":"Arabic","native":"العربية","flag":"🇸🇦","speech":"ar-SA","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"hi":{"name":"Hindi","native":"हिन्दी","flag":"🇮🇳","speech":"hi-IN","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"ko":{"name":"Korean","native":"한국어","flag":"🇰🇷","speech":"ko-KR","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"yue":{"name":"Cantonese","native":"廣東話","flag":"🇭🇰","speech":"zh-HK","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"vi":{"name":"Vietnamese","native":"Tiếng Việt","flag":"🇻🇳","speech":"vi-VN","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40},"ind":{"name":"Indonesian","native":"Bahasa Indonesia","flag":"🇮🇩","speech":"id-ID","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"sentences":40,"dialogues":40}};
+  var LANG_META = {"es":{"name":"Spanish","native":"Español","flag":"🇪🇸","speech":"es-ES","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":560,"sentences":40,"dialogues":40},"fr":{"name":"French","native":"Français","flag":"🇫🇷","speech":"fr-FR","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":312,"sentences":40,"dialogues":40},"it":{"name":"Italian","native":"Italiano","flag":"🇮🇹","speech":"it-IT","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":67,"sentences":40,"dialogues":40},"pt":{"name":"Portuguese","native":"Português","flag":"🇧🇷","speech":"pt-BR","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":264,"sentences":40,"dialogues":40},"ja":{"name":"Japanese","native":"日本語","flag":"🇯🇵","speech":"ja-JP","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":123,"sentences":40,"dialogues":40},"zh":{"name":"Mandarin","native":"普通话","flag":"🇨🇳","speech":"zh-CN","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":1140,"sentences":40,"dialogues":40},"de":{"name":"German","native":"Deutsch","flag":"🇩🇪","speech":"de-DE","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":134,"sentences":40,"dialogues":40},"nl":{"name":"Dutch","native":"Nederlands","flag":"🇳🇱","speech":"nl-NL","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":25,"sentences":40,"dialogues":40},"sv":{"name":"Swedish","native":"Svenska","flag":"🇸🇪","speech":"sv-SE","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":13,"sentences":40,"dialogues":40},"pl":{"name":"Polish","native":"Polski","flag":"🇵🇱","speech":"pl-PL","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":41,"sentences":40,"dialogues":40},"ru":{"name":"Russian","native":"Русский","flag":"🇷🇺","speech":"ru-RU","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":255,"sentences":40,"dialogues":40},"el":{"name":"Greek","native":"Ελληνικά","flag":"🇬🇷","speech":"el-GR","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":13.5,"sentences":40,"dialogues":40},"la":{"name":"Latin","native":"Latina","flag":"🏛️","speech":"it-IT","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":0,"sentences":40,"dialogues":40},"tr":{"name":"Turkish","native":"Türkçe","flag":"🇹🇷","speech":"tr-TR","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":90,"sentences":40,"dialogues":40},"ar":{"name":"Arabic","native":"العربية","flag":"🇸🇦","speech":"ar-SA","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":332,"sentences":40,"dialogues":40},"hi":{"name":"Hindi","native":"हिन्दी","flag":"🇮🇳","speech":"hi-IN","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":609,"sentences":40,"dialogues":40},"ko":{"name":"Korean","native":"한국어","flag":"🇰🇷","speech":"ko-KR","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":82,"sentences":40,"dialogues":40},"yue":{"name":"Cantonese","native":"廣東話","flag":"🇭🇰","speech":"zh-HK","reading":true,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":87,"sentences":40,"dialogues":40},"vi":{"name":"Vietnamese","native":"Tiếng Việt","flag":"🇻🇳","speech":"vi-VN","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":86,"sentences":40,"dialogues":40},"ind":{"name":"Indonesian","native":"Bahasa Indonesia","flag":"🇮🇩","speech":"id-ID","reading":false,"audio":true,"tiers":["A1","A2","B1","B2","C1","C2"],"speakers":199,"sentences":40,"dialogues":40}};
   var VOCAB_RAW = [
     ["a1-hello","Hello","👋","greetings","A1","Hola","Bonjour","Ciao","Olá","こんにちは","你好","nǐ hǎo","",{"de":["Hallo",null],"nl":["Hallo",null],"sv":["Hej",null],"pl":["Cześć",null],"ru":["Привет","privet"],"el":["Γεια σου","ya su"],"la":["Salve",null],"tr":["Merhaba",null],"ar":["مرحبا","marhaban"],"hi":["नमस्ते","namaste"],"ko":["안녕하세요","annyeonghaseyo"],"yue":["你好","nei5 hou2"],"vi":["Xin chào",null],"ind":["Halo",null]}],
     ["a1-goodbye","Goodbye","🚪","greetings","A1","Adiós","Au revoir","Arrivederci","Adeus","さようなら","再见","zàijiàn","",{"de":["Auf Wiedersehen",null],"nl":["Tot ziens",null],"sv":["Hej då",null],"pl":["Do widzenia",null],"ru":["До свидания","do svidaniya"],"el":["Αντίο","adio"],"la":["Vale",null],"tr":["Hoşça kal",null],"ar":["مع السلامة","maa as-salama"],"hi":["अलविदा","alvida"],"ko":["안녕히 가세요","annyeonghi gaseyo"],"yue":["拜拜","baai1 baai3"],"vi":["Tạm biệt",null],"ind":["Selamat tinggal",null]}],
@@ -6419,7 +6421,9 @@
     });
   })();
   LANG_META.eng = {name:'English', native:'English', flag:'🇬🇧', speech:'en-US', reading:false, audio:true, tiers:['A1','A2','B1','B2','C1','C2'], sentences:BUILD_SENTENCES.length, dialogues:0};
+  LANG_META.eng.speakers = 1515;
   LANGS.eng = {name:'English', color:'#9ad0ec'}; LANG_ORDER.push('eng');
+  LANG_ORDER.sort(function(a,b){ return (LANG_META[b].speakers||0) - (LANG_META[a].speakers||0); });   /* most spoken first */
   BUILD_SENTENCES.forEach(function(s){ if(s.en && !s.eng) s.eng = s.en.replace(/[.!?]$/,'').split(' '); });
   var ROMANCE = ['es','fr','it','pt','la'];
   var SPEECH_LANG = {en:'en-US'};
@@ -6432,7 +6436,25 @@
     return list.filter(function(l){ return !!LANG_META[l] && !(l==='eng' && nat==='en') && !(l===nat); });
   }
   function langHasTier(l, tier){ return tier.endless || ((LANG_META[l] && LANG_META[l].tiers) || []).indexOf(tier.code)!==-1; }
-  function tierLangs(tier){ return journeyLangs().filter(function(l){ return langHasTier(l, tier); }); }
+  /* Crews: languages travel in pairs. A crew's frontier is the lower of its two members' cleared-tier counts, so the
+     stronger language waits for its partner before the next sector opens. Crews are independent of each other:
+     a new pair never holds a finished crew back from the Open Channel. */
+  function pairsFor(langs, saved){
+    var pairs = [], used = {};
+    (saved || []).forEach(function(p){ var q = (p||[]).filter(function(l){ return langs.indexOf(l)!==-1 && !used[l]; }); if(q.length){ pairs.push(q); q.forEach(function(l){ used[l] = true; }); } });
+    var rest = langs.filter(function(l){ return !used[l]; });
+    for(var i=0;i<rest.length;i+=2){ pairs.push(rest.slice(i, i+2)); }
+    for(var a=0;a<pairs.length;a++){ if(pairs[a].length!==1) continue; for(var b=a+1;b<pairs.length;b++){ if(pairs[b].length===1){ pairs[a].push(pairs[b][0]); pairs.splice(b,1); break; } } }
+    return pairs;
+  }
+  function journeyPairs(){ return pairsFor(journeyLangs(), save.journey && save.journey.pairs); }
+  function pairOf(lang){ var ps = journeyPairs(); for(var i=0;i<ps.length;i++){ if(ps[i].indexOf(lang)!==-1) return ps[i]; } return [lang]; }
+  function pairPartner(lang){ return pairOf(lang).filter(function(l){ return l!==lang; })[0] || null; }
+  function langTiersCleared(lang){ var n = 0; while(n < TIERS.length-1 && (!langHasTier(lang, TIERS[n]) || isLangCleared(n, lang))) n++; return n; }
+  function pairFrontier(pair){ return Math.min.apply(null, pair.map(langTiersCleared)); }
+  function langTierUnlocked(tierIdx, lang){ var f = pairFrontier(pairOf(lang)); return TIERS[tierIdx].endless ? f >= TIERS.length-1 : tierIdx <= f; }
+  function openChannelLangs(){ return journeyLangs().filter(function(l){ return langTierUnlocked(TIERS.length-1, l); }); }
+  function tierLangs(tier){ return tier.endless ? openChannelLangs() : journeyLangs().filter(function(l){ return langHasTier(l, tier); }); }
   function repertoireMult(){ return 1 + 0.3*Math.max(0, journeyLangs().length-1); }
 
   /* The fluency ladder. Every sector carries a frequency band of vocabulary (A1 = the most
@@ -6965,6 +6987,7 @@
     if(!save.journey || typeof save.journey!=='object' || !Array.isArray(save.journey.langs)) save.journey = {langs:['es','fr','it','pt','ja','zh'], set:false};
     /* a voyage that already has progress was started before the Journey screen existed: keep its six */
     if(!save.journey.set && (save.xp>0 || Object.keys(save.clearedDungeons||{}).length)) save.journey.set = true;
+    if(!Array.isArray(save.journey.pairs)) save.journey.pairs = pairsFor(save.journey.langs, null);
     /* lifetime XP was not tracked before Warp Jumps existed: seed it from the current rank progress */
     if(!save.stats.xpLifetime && save.xp) save.stats.xpLifetime = save.xp;
     /* Ascension became Interference: an old Ascension level carries over as Time Compression */
@@ -7303,15 +7326,11 @@
   }
   function isHubUnlocked(tierIdx){
     if(tierIdx===0) return true;
-    if(TIERS[tierIdx].endless){
-      for(var i=0;i<TIERS.length-1;i++){ if(!isHubCleared(i)) return false; }
-      return true;
-    }
-    return isHubCleared(tierIdx-1);
+    return journeyLangs().some(function(l){ return langTierUnlocked(tierIdx, l); });   /* open if any crew has reached it */
   }
   function frontierHubIdx(){
-    for(var i=0;i<TIERS.length-1;i++){ if(!isHubCleared(i)) return i; }
-    return TIERS.length-1;
+    var best = 0; journeyPairs().forEach(function(p){ best = Math.max(best, pairFrontier(p)); });
+    return Math.min(best, TIERS.length-1);
   }
   function bestFloorLabel(){ return TIERS[frontierHubIdx()].code; }
 
@@ -7465,7 +7484,7 @@
 
   /* ---- tutorial coach: one short card per screen the first time a new voyage reaches it ---- */
   var COACH = {
-    journey:  'Welcome aboard the Rosetta. First, chart your voyage: pick the languages you want to learn. One is fine to start; you can add more any time from the Star Chart.',
+    journey:  'Welcome aboard the Rosetta. First, chart your voyage: pick the languages you want to learn, two at a time. Each pair forms a crew that climbs the ladder together; you can add another crew any time from the Star Chart.',
     home:     'This is the Star Chart. Each sector is a fluency band, A1 up to C2, and holds one relay per language you chose. Tap the <b>A1</b> sector to begin.',
     hub:      'One relay per language. Clearing every relay in a sector unlocks the next one. Pick the language you want to start with.',
     topics:   'A relay is made of modules: vocabulary, conversations, sentences and more. Clear them all to decode the relay. Start with the first <b>Vocabulary</b> module.',
@@ -7638,7 +7657,9 @@
     var a = document.getElementById('btn-place-apply');
     if(a){ a.addEventListener('click', function(){
       for(var i=0;i<level;i++){ topicsForTier(TIERS[i], lang).forEach(function(topic){ save.clearedDungeons[i+':'+lang+':'+topic] = true; }); }
-      save.placed[lang] = TIERS[level].code; persist(); toast('📐 '+LANGS[lang].name+' placed at '+TIERS[level].code+'.'); showHome();
+      save.placed[lang] = TIERS[level].code; persist();
+      var mate = pairPartner(lang); var held = mate && pairFrontier(pairOf(lang)) < level;
+      toast('📐 '+LANGS[lang].name+' placed at '+TIERS[level].code+'.'+(held ? ' Crews advance together: '+LANGS[mate].name+' must reach '+TIERS[level].code+' before '+LANGS[lang].name+' goes further.' : '')); showHome();
     }); }
     document.getElementById('btn-place-back').addEventListener('click', showHome);
   }
@@ -7717,7 +7738,7 @@
     return Math.max(0, 1 - leven(a, b) / Math.max(a.length, b.length));
   }
   function storyTierIdx(story){ return TIERS.findIndex(function(t){ return t.code===story.tier; }); }
-  function storyOpen(story, lang){ var idx = storyTierIdx(story); return idx<=frontierHubIdx() && langHasTier(lang, TIERS[idx]); }
+  function storyOpen(story, lang){ var idx = storyTierIdx(story); return idx<=pairFrontier(pairOf(lang)) && langHasTier(lang, TIERS[idx]); }
   function storyKey(story, lang, mode){ return story.id+':'+lang+((mode||'read')==='read' ? '' : ':'+mode); }
   function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
   function showStories(){
@@ -8094,9 +8115,10 @@
         return '<span class="lang-dot" style="background:'+LANGS[l].color+'" title="'+LANGS[l].name+'"></span>';
       }).join('');
       var clearedN = tier.endless ? 0 : tierLangs(tier).filter(function(l){ return isLangCleared(idx,l); }).length;
+      var waiting = tier.endless ? 0 : tierLangs(tier).filter(function(l){ return !langTierUnlocked(idx, l); }).length;
       var progressHtml = tier.endless
-        ? (unlocked ? 'Unlocked — every frequency, mixed' : 'Clear every sector to unlock')
-        : ('<b>'+clearedN+'</b>/'+tierLangs(tier).length+' relays cleared');
+        ? (unlocked ? 'Open for '+tierLangs(tier).map(function(l){ return LANGS[l].name; }).join(' + ') : 'A crew that clears every sector unlocks it')
+        : ('<b>'+clearedN+'</b>/'+tierLangs(tier).length+' relays cleared'+(unlocked && waiting ? ' · ⏳ '+waiting+' waiting on a crewmate' : ''));
       tile.innerHTML =
         '<span class="lvl-badge" style="background:'+tier.color+'">'+tier.code+'</span>'+
         '<div class="hub-name">'+(unlocked?'':'🔒 ')+tier.name+'</div>'+
@@ -8128,16 +8150,17 @@
     tierLangs(tier).forEach(function(l){
       var topics = topicsForTier(tier, l);
       var cleared = isLangCleared(idx, l);
+      var open = langTierUnlocked(idx, l); var mate = pairPartner(l);
       var topicsClearedN = topics.filter(function(topic){ return isDungeonCleared(idx, l, topic); }).length;
       var tile = document.createElement('button');
       tile.type = 'button'; tile.className = 'dungeon-tile';
       tile.setAttribute('data-state', cleared?'cleared':'default');
-      tile.setAttribute('data-locked','0');
+      tile.setAttribute('data-locked', open?'0':'1');
       tile.innerHTML =
-        '<span class="dungeon-flag">'+(cleared?'✅':'📡')+'</span>'+
+        '<span class="dungeon-flag">'+(cleared?'✅':open?'📡':'🔒')+'</span>'+
         '<div class="dungeon-name" style="color:'+LANGS[l].color+';">'+LANGS[l].name+'</div>'+
-        '<div class="dungeon-meta">'+topicsClearedN+'/'+topics.length+' modules cleared</div>';
-      tile.addEventListener('click', function(){ showTopics(idx, l); });
+        '<div class="dungeon-meta">'+(open ? topicsClearedN+'/'+topics.length+' modules cleared' : 'Waiting for '+(mate ? LANGS[mate].name : 'a crewmate')+' to clear '+TIERS[pairFrontier(pairOf(l))].code+' — crews advance together')+'</div>';
+      if(open){ tile.addEventListener('click', function(){ showTopics(idx, l); }); } else { tile.disabled = true; }
       el.dungeonGrid.appendChild(tile);
     });
     refreshHud();
@@ -8842,23 +8865,24 @@
     return t;
   }
 
-  function journeyPool(list){ var js = journeyLangs(); var f = list.filter(function(x){ return js.indexOf(x.lang)!==-1; }); return f.length ? f : list; }
+  function journeyPool(list, langs){ var js = langs || journeyLangs(); var f = list.filter(function(x){ return js.indexOf(x.lang)!==-1; }); return f.length ? f : list; }
   function makeRound(){
     var tier = TIERS[st.tierIdx];
 
     if(tier.endless){
       var pools = [{t:'match'},{t:'match'},{t:'blank'},{t:'idiom'},{t:'nuance'},{t:'dialogue'},{t:'listen'}];
       var choice = pick(pools);
+      var ocl = tierLangs(tier); if(!ocl.length) ocl = journeyLangs();
       if(choice.t==='match'){
-        var lang = pick(journeyLangs()); var cpool = CONCEPTS.filter(function(x){ return !!x[lang]; }); if(!cpool.length){ lang = 'es'; cpool = CONCEPTS; }
+        var lang = pick(ocl); var cpool = CONCEPTS.filter(function(x){ return !!x[lang]; }); if(!cpool.length){ lang = 'es'; cpool = CONCEPTS; }
         var c = pick(cpool);
         return matchRound(c, lang, 0.5, cpool, tier);
       }
-      if(choice.t==='blank'){ return blankRound(pick(journeyPool(GRAMMAR_ITEMS)), tier); }
-      if(choice.t==='idiom'){ return idiomRound(pick(journeyPool(IDIOMS)), tier); }
-      if(choice.t==='nuance'){ return nuanceRound(pick(journeyPool(NUANCE)), tier); }
-      if(choice.t==='dialogue' && DIALOGUES.length){ var dl = pick(journeyLangs()); var dpool = DIALOGUES.filter(function(d){ return Array.isArray(d[dl]); }); if(!dpool.length){ dl = 'es'; dpool = DIALOGUES; } return dialogueRound(pick(dpool), dl, tier); }
-      var ll = pick(journeyLangs()); var lpool = CONCEPTS.filter(function(x){ return !!x[ll]; }); if(!lpool.length){ ll = 'es'; lpool = CONCEPTS; }
+      if(choice.t==='blank'){ return blankRound(pick(journeyPool(GRAMMAR_ITEMS, ocl)), tier); }
+      if(choice.t==='idiom'){ return idiomRound(pick(journeyPool(IDIOMS, ocl)), tier); }
+      if(choice.t==='nuance'){ return nuanceRound(pick(journeyPool(NUANCE, ocl)), tier); }
+      if(choice.t==='dialogue' && DIALOGUES.length){ var dl = pick(ocl); var dpool = DIALOGUES.filter(function(d){ return Array.isArray(d[dl]); }); if(!dpool.length){ dl = 'es'; dpool = DIALOGUES; } return dialogueRound(pick(dpool), dl, tier); }
+      var ll = pick(ocl); var lpool = CONCEPTS.filter(function(x){ return !!x[ll]; }); if(!lpool.length){ ll = 'es'; lpool = CONCEPTS; }
       var lc = pick(lpool); return listenRound(lc, ll, lpool, tier);
     }
 
@@ -9351,24 +9375,29 @@
     });
     function render(){
       grid.innerHTML = '';
+      var pairs = pairsFor(picked, save.journey.pairs);
       LANG_ORDER.forEach(function(l){
         if(l===nativeLang() || (l==='eng' && nativeLang()==='en')) return;
         var m = LANG_META[l]; var on = picked.indexOf(l)!==-1;
         var tiers = m.tiers||[]; var cover = tiers.length===6 ? 'full ladder A1–C2' : tiers.length ? tiers[0]+'–'+tiers[tiers.length-1]+' so far' : 'coming soon';
         var card = document.createElement('button'); card.type = 'button';
         card.className = 'journey-card'+(on?' on':'')+(tiers.length?'':' soon'); card.setAttribute('data-lang', l);
-        card.innerHTML = '<span class="jc-flag">'+m.flag+'</span><span class="jc-name" style="color:'+LANGS[l].color+'">'+m.name+'</span><span class="jc-native">'+m.native+'</span>'+
+        var crewIdx = -1; pairs.forEach(function(p, i){ if(p.indexOf(l)!==-1) crewIdx = i; });
+        var crewTag = on ? '<span class="jc-crew">Crew '+(crewIdx+1)+(pairs[crewIdx] && pairs[crewIdx].length===1 ? ' · needs a partner' : '')+'</span>' : '';
+        card.innerHTML = '<span class="jc-flag">'+m.flag+'</span><span class="jc-name" style="color:'+LANGS[l].color+'">'+m.name+'</span><span class="jc-native">'+m.native+(m.speakers ? ' · '+(m.speakers>=1000 ? (m.speakers/1000).toFixed(1)+'B' : Math.round(m.speakers)+'M')+' speakers' : '')+'</span>'+crewTag+
           '<span class="jc-meta">'+cover+(m.audio?' · 🎧 studio voice':' · 🎙️ device voice')+(m.reading?' · reading line':'')+'</span>';
-        if(tiers.length){ card.addEventListener('click', function(){ var i = picked.indexOf(l); if(i===-1) picked.push(l); else if(picked.length>1) picked.splice(i,1); render(); }); }
+        if(tiers.length){ card.addEventListener('click', function(){ var i = picked.indexOf(l); if(i===-1) picked.push(l); else picked.splice(i,1); render(); }); }
         grid.appendChild(card);
       });
-      var n = picked.length;
-      document.getElementById('journey-summary').innerHTML = '<b>'+n+'</b> language'+(n===1?'':'s')+' on this voyage · Engineering Bay and Refit prices ×'+(1+0.3*(n-1)).toFixed(1)+' (more languages, more relays, more income)';
+      var n = picked.length; var odd = n%2===1 || n===0;
+      document.getElementById('journey-summary').innerHTML = '<b>'+n+'</b> language'+(n===1?'':'s')+' in <b>'+Math.ceil(n/2)+'</b> crew'+(n>2?'s':'')+' · Engineering Bay and Refit prices ×'+(1+0.3*Math.max(0,n-1)).toFixed(1)+' (more languages, more relays, more income)'+
+        (odd ? '<br><b>⚠️ Crews travel in pairs — pick '+(n===0?'two languages':'one more language')+' to chart the voyage.</b>' : '');
+      var goBtn = document.getElementById('btn-journey-go'); if(goBtn) goBtn.disabled = odd;
     }
     render();
     var go = document.getElementById('btn-journey-go'), back = document.getElementById('btn-journey-back');
     go.textContent = save.journey.set ? '✓ Update voyage' : '🚀 Chart the voyage';
-    go.onclick = function(){ save.journey.langs = picked.slice(); save.journey.set = true; persist(); showHome(); toast('🌐 Voyage charted: '+picked.map(function(l){ return LANG_META[l].flag; }).join(' ')+' — change it any time from the Star Chart.'); };
+    go.onclick = function(){ if(picked.length<2 || picked.length%2){ toast('⚠️ Crews travel in pairs — pick an even number of languages.'); return; } save.journey.pairs = pairsFor(picked, save.journey.pairs); save.journey.langs = picked.slice(); save.journey.set = true; persist(); showHome(); toast('🌐 Voyage charted: '+save.journey.pairs.map(function(p){ return p.map(function(l){ return LANG_META[l].flag; }).join(''); }).join(' · ')+' — change it any time from the Star Chart.'); };
     back.hidden = !save.journey.set;
     back.onclick = showHome;
   }
