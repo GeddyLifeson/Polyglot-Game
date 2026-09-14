@@ -48,6 +48,9 @@ LANG_META = {
     'vi': ('Vietnamese', 'Tiếng Việt', '🇻🇳', 'vi-VN', False, True),
     'ind': ('Indonesian', 'Bahasa Indonesia', '🇮🇩', 'id-ID', False, True),   # 'id' would collide with the item id field
 }
+# Total speakers (native + second language), millions, Ethnologue 2024. Orders the Journey screen.
+SPEAKERS = {'eng': 1515, 'zh': 1140, 'hi': 609, 'es': 560, 'ar': 332, 'fr': 312, 'pt': 264, 'ru': 255, 'ind': 199,
+            'de': 134, 'ja': 123, 'tr': 90, 'yue': 87, 'vi': 86, 'ko': 82, 'it': 67, 'pl': 41, 'nl': 25, 'el': 13.5, 'sv': 13, 'la': 0}
 XL = {}   # lang -> {'words': {id: (text, reading)}, 'sentences': {id: tiles}, 'dialogues': {id: 5 lines}}
 
 vocab_rows, sentences, grammar, idioms, nuance, dialogues, listen = [], [], [], [], [], [], []
@@ -322,9 +325,22 @@ for lang in LANG_META:
                 if isinstance(v, dict) and isinstance(v.get('paras'), list) and len(v['paras']) == 7 and v.get('title'):
                     folk[sid] = {'title': v['title'], 'paras': v['paras']}
     if folk: L['folk'] = folk
+    def l10n_scrub(node, path):
+        """An empty string (or a list containing one) would render as a blank answer button: drop it and warn."""
+        if isinstance(node, dict):
+            for k in list(node):
+                v = node[k]
+                bad = (isinstance(v, str) and not v.strip()) or (isinstance(v, list) and v and all(isinstance(x, str) for x in v) and any(not x.strip() for x in v))
+                if bad: warnings.append('l10n %s: empty text at %s/%s, dropped' % (lang, path, k)); del node[k]
+                else: l10n_scrub(v, path + '/' + k)
+        elif isinstance(node, list):
+            for x in node: l10n_scrub(x, path)
+    l10n_scrub(L, '')
     with open(os.path.join(L10N_DIR, lang + '.json'), 'w', encoding='utf-8') as fh:
         json.dump(L, fh, ensure_ascii=False, separators=(',', ':'))
     l10n_report.append('%s:%s' % (lang, '+'.join(sorted(parts))))
+for w in [w for w in warnings if w.startswith('l10n ')][:40]:
+    print('  warn:', w)
 
 # ---------------- emit ----------------
 def js(v):
@@ -346,7 +362,7 @@ lang_meta_js = {}
 for code, (name, native, flag, speech, reading, audio) in LANG_META.items():
     if code in LANGS or code in XL:
         lang_meta_js[code] = {'name': name, 'native': native, 'flag': flag, 'speech': speech, 'reading': reading,
-                              'audio': audio, 'tiers': lang_tiers.get(code, []),
+                              'audio': audio, 'tiers': lang_tiers.get(code, []), 'speakers': SPEAKERS.get(code, 0),
                               'sentences': sum(1 for d in sentences if d.get(code)), 'dialogues': sum(1 for d in dialogues if d.get(code))}
 
 # topic order per tier, in authored order
