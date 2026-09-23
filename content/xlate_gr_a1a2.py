@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Ròdais, the Gaelic of Rodos: written by tools/import_rodais.py from the Ròdais dictionary.
 # The reading line is the pronunciation in IPA.
-LANG = 'rod'
+LANG = 'gr'
 WORDS = {
     'a1-after': ('Às dèidh sin', 'ˈaːs ˈtʃeːj ˈʃinʲ'),
     'a1-afternoon': ('Feascar', 'ˈfɛskəɾ'),

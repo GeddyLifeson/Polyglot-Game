@@ -148,7 +148,7 @@ files listed in `tools/cbx_bench.py` into `models/chatterbox/`, and run `python 
 About 8 s per clip on a 16-core CPU, well under 1 s on a GPU. On this machine Python cannot reach HTTPS hosts
 until the local TLS root is appended to certifi (`tools/export_local_roots.ps1`).
 
-Ròdais (`rod`) is recorded with espeak-ng's Scottish Gaelic voice (`gd`) through `--backend espeak`
+Ròdais (`gr`) is recorded with espeak-ng's Scottish Gaelic voice (`gd`) through `--backend espeak`
 (`pip install espeakng-loader imageio-ffmpeg`, no network or GPU; about a minute per band). Ròdais `sc` is
 rewritten as `sg` before synthesis (uisce → uisge), since both spell [sk] and the gd rules expect `sg`.
 Settings: 155 wpm, pitch 45 (`--espeak-rate`, `--espeak-pitch`); it is a formant voice, so it sounds robotic.
