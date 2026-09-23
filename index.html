@@ -463,6 +463,8 @@
   .timer-track, .heat-track{ border-radius:3px; }
   .card, .hub-tile, .dungeon-tile, .shop-item, .perk-card, .stat-box{ box-shadow:none; }
   .ticket{ border-style:solid; }
+  /* a non-English player's interface pool (l10n/<lang>.json) is loading: keep the English out of sight briefly */
+  html.l10n-wait .app, html.l10n-wait .coach{ visibility:hidden; }
 </style>
 </head>
 <body>
@@ -473,7 +475,7 @@
       <div class="brand-mark">🧑‍🚀</div>
       <div class="brand-text">
         <h1>Polyglot Voyager</h1>
-        <div class="tagline">You're the Comms Officer aboard the <em>Rosetta</em>. Every sector on the Star Chart hides one relay per language, broken into conversational topic subsections. Clear every topic in every language to unlock the next sector — lose all power mid-relay and that topic resets from the beginning, freshly reshuffled.</div>
+        <div class="tagline" data-t>You're the Comms Officer aboard the <em>Rosetta</em>. Every sector on the Star Chart hides one relay per language, broken into conversational topic subsections. Clear every topic in every language to unlock the next sector — lose all power mid-relay and that topic resets from the beginning, freshly reshuffled.</div>
       </div>
     </div>
     <div class="hud-bar">
@@ -482,9 +484,9 @@
       <div class="hud-stat">📚 <b id="hud-words">0</b>/<span id="hud-words-max">0</span></div>
       <div class="hud-stat" title="Best score in a single relay run">🏆 <b id="hud-best">0</b></div>
       <div class="hud-stat" title="Signal Chain — grows with every first-clear relay, breaks when a first attempt fails. Re-runs never touch it.">🔗 <b id="hud-chain">0</b></div>
-      <button class="btn btn-sm btn-ghost" id="btn-phrasebook">🗂️ Lexicon</button>
+      <button class="btn btn-sm btn-ghost" id="btn-phrasebook" data-t>🗂️ Lexicon</button>
       <button class="btn btn-sm btn-ghost" id="btn-mute" aria-pressed="false" title="Toggle pronunciation">🔊 Sound</button>
-      <button class="btn btn-sm btn-ghost" id="btn-voices" title="Choose the voice used for each language">🎙️ Voices</button>
+      <button class="btn btn-sm btn-ghost" id="btn-voices" title="Choose the voice used for each language" data-t>🎙️ Voices</button>
     </div>
   </div>
 
@@ -496,13 +498,13 @@
     <section class="screen" id="screen-journey" hidden>
       <div class="card home-card">
         <div class="home-hero">🌐</div>
-        <h2 style="font-size:24px;">Chart your voyage</h2>
-        <p class="preview-sub" style="margin:0 auto;">Pick the languages you want to learn. Every sector of the Star Chart holds one relay per language you choose, and a sector only clears when every chosen language in it is decoded. Add or drop languages any time; progress in a language is never lost.</p>
+        <h2 style="font-size:24px;" data-t>Chart your voyage</h2>
+        <p class="preview-sub" style="margin:0 auto;" data-t>Pick the languages you want to learn. Every sector of the Star Chart holds one relay per language you choose, and a sector only clears when every chosen language in it is decoded. Add or drop languages any time; progress in a language is never lost.</p>
         <div class="journey-grid" id="journey-grid"></div>
         <p class="preview-sub" id="journey-summary" style="margin:12px auto 0;"></p>
         <div class="home-actions">
           <button class="btn btn-primary" id="btn-journey-go">🚀 Chart the voyage</button>
-          <button class="btn btn-ghost" id="btn-journey-back" hidden>← Star Chart</button>
+          <button class="btn btn-ghost" id="btn-journey-back" hidden data-t>← Star Chart</button>
         </div>
       </div>
     </section>
@@ -510,7 +512,7 @@
     <section class="screen" id="screen-placement" hidden>
       <div class="card home-card">
         <div class="home-hero">📐</div>
-        <h2 style="font-size:24px;">Placement test</h2>
+        <h2 style="font-size:24px;" data-t>Placement test</h2>
         <div id="placement-body"></div>
       </div>
     </section>
@@ -518,10 +520,10 @@
     <section class="screen" id="screen-intercept" hidden>
       <div class="card home-card">
         <div class="home-hero">📰</div>
-        <h2 style="font-size:24px;">Signal Intercept</h2>
-        <p class="preview-sub" style="margin:0 auto;">Paste anything written in one of your languages: a headline, a paragraph, song lyrics you typed yourself. Words in the ladder light up, decoded ones in green, and the ones you haven't decoded yet become a relay.</p>
+        <h2 style="font-size:24px;" data-t>Signal Intercept</h2>
+        <p class="preview-sub" style="margin:0 auto;" data-t>Paste anything written in one of your languages: a headline, a paragraph, song lyrics you typed yourself. Words in the ladder light up, decoded ones in green, and the ones you haven't decoded yet become a relay.</p>
         <div class="ic-form"><select id="ic-lang" class="ic-select"></select><textarea id="ic-text" class="ic-textarea" rows="6" placeholder="Paste text here…"></textarea></div>
-        <div class="home-actions"><button class="btn btn-primary" id="btn-ic-run">🔎 Analyse</button><button class="btn btn-ghost" id="btn-ic-back">← Star Chart</button></div>
+        <div class="home-actions"><button class="btn btn-primary" id="btn-ic-run" data-t>🔎 Analyse</button><button class="btn btn-ghost" id="btn-ic-back" data-t>← Star Chart</button></div>
         <div id="ic-result"></div>
         <div class="home-actions" id="ic-actions"></div>
       </div>
@@ -530,8 +532,8 @@
     <section class="screen" id="screen-stories" hidden>
       <div class="card home-card">
         <div class="home-hero">📖</div>
-        <h2 style="font-size:24px;">Ship’s Library</h2>
-        <p class="preview-sub" style="margin:0 auto;" id="story-sub">Each language’s own folk tales, myths and fables, plus the crew’s shared stories, one paragraph at a time. Tap a paragraph for the English, 🔊 to hear it, and answer the questions between paragraphs. Ladder words you have decoded glow green.</p>
+        <h2 style="font-size:24px;" data-t>Ship’s Library</h2>
+        <p class="preview-sub" style="margin:0 auto;" id="story-sub" data-t>Each language’s own folk tales, myths and fables, plus the crew’s shared stories, one paragraph at a time. Tap a paragraph for the translation, 🔊 to hear it, and answer the questions between paragraphs. Ladder words you have decoded glow green.</p>
         <div id="story-body"></div>
         <div class="home-actions" id="story-actions"></div>
       </div>
@@ -540,8 +542,8 @@
     <section class="screen" id="screen-home">
       <div class="card home-card">
         <div class="home-hero">🧑‍🚀</div>
-        <h2 style="font-size:24px;">Star Chart</h2>
-        <p class="preview-sub" style="margin:0 auto;">Every sector holds one relay per language. Clear every relay in a sector to unlock the next. Lose all power mid-relay and that relay starts over from scratch, freshly reshuffled — everything else you've decoded stays decoded. Clear relays on the <b>first try</b> to build a 🔗 Signal Chain: the module you draft gets welded on and rides into your next relay, and milestone abilities come online as the chain grows. A failed first attempt breaks it; re-runs never touch it.</p>
+        <h2 style="font-size:24px;" data-t>Star Chart</h2>
+        <p class="preview-sub" style="margin:0 auto;" data-t>Every sector holds one relay per language. Clear every relay in a sector to unlock the next. Lose all power mid-relay and that relay starts over from scratch, freshly reshuffled — everything else you've decoded stays decoded. Clear relays on the <b>first try</b> to build a 🔗 Signal Chain: the module you draft gets welded on and rides into your next relay, and milestone abilities come online as the chain grows. A failed first attempt breaks it; re-runs never touch it.</p>
         <div class="profile" id="home-profile"></div>
         <div class="home-stats" id="home-stats"></div>
         <div class="hub-map" id="hub-map"></div>
@@ -551,12 +553,12 @@
         <div class="asc-row" id="asc-row" hidden></div>
         <div class="warp-card" id="warp-card"></div>
         <div class="home-actions">
-          <button class="btn btn-ghost" id="btn-open-shop">🛠️ Engineering Bay</button>
-          <button class="btn btn-ghost" id="btn-open-log">📓 Mission Log</button>
-          <button class="btn btn-ghost" id="btn-open-journey">🌐 Languages</button>
-          <button class="btn btn-ghost" id="btn-open-placement">📐 Placement</button>
-          <button class="btn btn-ghost" id="btn-open-intercept">📰 Intercept</button>
-          <button class="btn btn-ghost" id="btn-open-stories">📖 Library</button>
+          <button class="btn btn-ghost" id="btn-open-shop" data-t>🛠️ Engineering Bay</button>
+          <button class="btn btn-ghost" id="btn-open-log" data-t>📓 Mission Log</button>
+          <button class="btn btn-ghost" id="btn-open-journey" data-t>🌐 Languages</button>
+          <button class="btn btn-ghost" id="btn-open-placement" data-t>📐 Placement</button>
+          <button class="btn btn-ghost" id="btn-open-intercept" data-t>📰 Intercept</button>
+          <button class="btn btn-ghost" id="btn-open-stories" data-t>📖 Library</button>
         </div>
         <div class="wipe-row" id="wipe-row"></div>
       </div>
@@ -564,7 +566,7 @@
 
     <section class="screen" id="screen-hub" hidden>
       <div class="card">
-        <button class="btn btn-sm btn-ghost hub-back" id="btn-hub-back">← Star Chart</button>
+        <button class="btn btn-sm btn-ghost hub-back" id="btn-hub-back" data-t>← Star Chart</button>
         <span class="lvl-badge" id="hub-badge">A1</span>
         <h2 id="hub-title" style="font-size:22px;margin-top:8px;">Comms Cadet</h2>
         <p class="preview-sub" id="hub-sub"></p>
@@ -574,7 +576,7 @@
 
     <section class="screen" id="screen-topics" hidden>
       <div class="card">
-        <button class="btn btn-sm btn-ghost hub-back" id="btn-topics-back">← Back to Sector</button>
+        <button class="btn btn-sm btn-ghost hub-back" id="btn-topics-back" data-t>← Back to Sector</button>
         <span class="lvl-badge" id="topics-badge">A1</span>
         <h2 id="topics-title" style="font-size:22px;margin-top:8px;">Spanish</h2>
         <p class="preview-sub" id="topics-sub"></p>
@@ -599,20 +601,20 @@
 
     <section class="screen" id="screen-perks" hidden>
       <div class="card" style="text-align:center;">
-        <span class="lvl-badge" id="pk-badge" style="background:var(--basil);">Loadout</span>
+        <span class="lvl-badge" id="pk-badge" style="background:var(--basil);" data-t>Loadout</span>
         <h2 id="pk-title" style="font-size:22px;margin-top:8px;">Choose your loadout</h2>
         <p class="preview-sub" id="pk-sub" style="margin:0 auto;"></p>
         <div class="perk-grid" id="pk-grid"></div>
-        <button class="btn btn-ghost btn-sm" id="btn-reroll-perk" style="margin-top:14px;margin-right:8px;" hidden>🔄 Reroll draft</button>
-        <button class="btn btn-ghost btn-sm" id="btn-skip-perk" style="margin-top:14px;">Skip — start with no perk</button>
+        <button class="btn btn-ghost btn-sm" id="btn-reroll-perk" style="margin-top:14px;margin-right:8px;" hidden data-t>🔄 Reroll draft</button>
+        <button class="btn btn-ghost btn-sm" id="btn-skip-perk" style="margin-top:14px;" data-t>Skip — start with no perk</button>
       </div>
     </section>
 
     <section class="screen" id="screen-shop" hidden>
       <div class="card">
         <div class="pb-head" style="padding:0 0 14px;margin-bottom:14px;border-bottom:1px solid var(--line);">
-          <h2 style="font-size:20px;">🛠️ Engineering Bay</h2>
-          <button class="btn btn-sm" id="btn-close-shop">Close</button>
+          <h2 style="font-size:20px;" data-t>🛠️ Engineering Bay</h2>
+          <button class="btn btn-sm" id="btn-close-shop" data-t>Close</button>
         </div>
         <p class="preview-sub" id="shop-balance" style="margin-bottom:14px;"></p>
         <div class="shop-grid" id="shop-grid"></div>
@@ -627,9 +629,9 @@
         </div>
         <div class="ticket-word" id="pl-word">Pan</div>
         <div class="ticket-romaji" id="pl-romaji" hidden></div>
-        <button class="btn btn-sm btn-ghost replay-btn" id="btn-replay" hidden title="Replay the transmission">🔊 Replay</button>
+        <button class="btn btn-sm btn-ghost replay-btn" id="btn-replay" hidden title="Replay the transmission" data-t>🔊 Replay</button>
         <button class="btn btn-sm btn-ghost replay-btn" id="btn-flag" title="Flag this pronunciation as wrong so it can be re-recorded">🚩</button>
-        <button class="btn btn-sm btn-ghost replay-btn" id="btn-note" hidden title="Show the grammar note for this transmission">📘 Note</button>
+        <button class="btn btn-sm btn-ghost replay-btn" id="btn-note" hidden title="Show the grammar note for this transmission" data-t>📘 Note</button>
         <button class="btn btn-sm btn-ghost replay-btn" id="btn-shadow" hidden title="Shadowing: record yourself for four seconds, then hear the native clip and your take back to back">🎤 Shadow</button>
         <div class="timer-track"><div class="timer-bar" id="pl-timerbar"></div></div>
         <div class="ticket-tear" aria-hidden="true"></div>
@@ -641,15 +643,15 @@
         <div class="tile-slots" id="pl-slots"></div>
         <div class="tile-bank" id="pl-bank"></div>
         <div class="builder-actions">
-          <button class="btn btn-ghost btn-sm" id="btn-clear-tiles">Clear</button>
-          <button class="btn btn-primary btn-sm" id="btn-submit-tiles" disabled>Transmit →</button>
+          <button class="btn btn-ghost btn-sm" id="btn-clear-tiles" data-t>Clear</button>
+          <button class="btn btn-primary btn-sm" id="btn-submit-tiles" disabled data-t>Transmit →</button>
         </div>
       </div>
 
       <div class="play-hud">
         <div class="lives" id="pl-lives"></div>
         <button class="btn btn-sm btn-ghost" id="btn-skip-ticket" hidden title="Skip this transmission, no penalty">🧭 Skip</button>
-        <button class="btn btn-sm btn-ghost" id="btn-scan" hidden title="Signal Filter: grey out one wrong option">🔍 Scan <span id="scan-n"></span></button>
+        <button class="btn btn-sm btn-ghost" id="btn-scan" hidden title="Signal Filter: grey out one wrong option"><span data-t>🔍 Scan</span> <span id="scan-n"></span></button>
         <div class="heat-wrap">⚡<div class="heat-track"><div class="heat-fill" id="pl-heatfill"></div></div><span id="pl-heattext">x1.0</span></div>
         <div class="score-readout">📊 <span id="pl-score">0</span></div>
       </div>
@@ -658,7 +660,7 @@
     <section class="screen" id="screen-event" hidden>
       <div class="card event-card">
         <div class="ev-icon" id="ev-icon">🛰️</div>
-        <span class="lvl-badge" style="background:#ffd93e;color:#1a1400;">Anomaly</span>
+        <span class="lvl-badge" style="background:#ffd93e;color:#1a1400;" data-t>Anomaly</span>
         <h2 id="ev-title">Anomaly detected</h2>
         <p class="preview-sub" id="ev-desc" style="margin:0 auto;"></p>
         <div class="event-grid" id="ev-grid"></div>
@@ -668,8 +670,8 @@
     <section class="screen" id="screen-log" hidden>
       <div class="card">
         <div class="pb-head" style="padding:0 0 14px;margin-bottom:6px;border-bottom:1px solid var(--line);">
-          <h2 style="font-size:20px;">📓 Mission Log</h2>
-          <button class="btn btn-sm" id="btn-close-log">Close</button>
+          <h2 style="font-size:20px;" data-t>📓 Mission Log</h2>
+          <button class="btn btn-sm" id="btn-close-log" data-t>Close</button>
         </div>
         <div id="log-body"></div>
       </div>
@@ -684,40 +686,40 @@
         <div class="complete-actions" style="justify-content:center;">
           <button class="btn btn-primary" id="btn-retry">↺ Try Again</button>
           <button class="btn btn-ghost" id="btn-back-hub">← Back to Sector</button>
-          <button class="btn btn-ghost" id="btn-complete-shop">🛠️ Engineering Bay</button>
+          <button class="btn btn-ghost" id="btn-complete-shop" data-t>🛠️ Engineering Bay</button>
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer>Local mission logs &amp; decoded transmissions are saved in this browser only.</footer>
+  <footer data-t>Local mission logs &amp; decoded transmissions are saved in this browser only.</footer>
 </div>
 
 <div class="overlay" id="phrasebook-overlay" hidden>
   <div class="phrasebook-panel">
     <div class="pb-head">
-      <h3 style="font-size:17px;">🗂️ Lexicon</h3>
-      <button class="btn btn-sm" id="btn-close-phrasebook">Close</button>
+      <h3 style="font-size:17px;" data-t>🗂️ Lexicon</h3>
+      <button class="btn btn-sm" id="btn-close-phrasebook" data-t>Close</button>
     </div>
     <div class="pb-body">
       <div class="pb-progress" id="pb-progress"></div>
       <div class="pb-controls">
         <select id="pb-tier" class="pb-select" aria-label="Sector">
-          <option value="A1">A1 — Survival</option>
-          <option value="A2">A2 — Small talk</option>
-          <option value="B1">B1 — Conversation</option>
-          <option value="B2">B2 — Real conversation</option>
-          <option value="C1">C1 — Media</option>
-          <option value="C2">C2 — Native speed</option>
-          <option value="all">All sectors</option>
+          <option value="A1" data-t>A1 — Survival</option>
+          <option value="A2" data-t>A2 — Small talk</option>
+          <option value="B1" data-t>B1 — Conversation</option>
+          <option value="B2" data-t>B2 — Real conversation</option>
+          <option value="C1" data-t>C1 — Media</option>
+          <option value="C2" data-t>C2 — Native speed</option>
+          <option value="all" data-t>All sectors</option>
         </select>
         <input id="pb-search" class="pb-search" type="search" placeholder="Search a word in any language…" aria-label="Search the lexicon">
         <span class="pb-count" id="pb-count"></span>
       </div>
       <div class="pb-table-wrap">
         <table class="pb-table" id="pb-table">
-          <thead><tr><th>Word / Phrase</th><th>ES</th><th>FR</th><th>IT</th><th>PT</th><th>JA</th><th>ZH</th></tr></thead>
+          <thead><tr><th data-t>Word / Phrase</th><th>ES</th><th>FR</th><th>IT</th><th>PT</th><th>JA</th><th>ZH</th></tr></thead>
           <tbody id="pb-tbody"></tbody>
         </table>
       </div>
@@ -728,14 +730,14 @@
 <div class="overlay" id="voices-overlay" hidden>
   <div class="phrasebook-panel">
     <div class="pb-head">
-      <h3 style="font-size:17px;">🎙️ Voices</h3>
-      <button class="btn btn-sm" id="btn-close-voices">Close</button>
+      <h3 style="font-size:17px;" data-t>🎙️ Voices</h3>
+      <button class="btn btn-sm" id="btn-close-voices" data-t>Close</button>
     </div>
     <div class="pb-body" id="voices-body"></div>
   </div>
 </div>
 
-<div class="coach" id="coach" hidden><div class="coach-body"><div class="coach-tag">🧑‍🚀 Comms Chief</div><div class="coach-text" id="coach-text"></div><div class="coach-actions"><button class="btn btn-sm btn-primary" id="coach-next">Got it</button><button class="btn btn-sm btn-ghost" id="coach-skip">Skip the tutorial</button></div></div></div>
+<div class="coach" id="coach" hidden><div class="coach-body"><div class="coach-tag" data-t>🧑‍🚀 Comms Chief</div><div class="coach-text" id="coach-text"></div><div class="coach-actions"><button class="btn btn-sm btn-primary" id="coach-next">Got it</button><button class="btn btn-sm btn-ghost" id="coach-skip" data-t>Skip the tutorial</button></div></div></div>
 <div class="toast" id="toast"></div>
 
 <script>
@@ -6595,41 +6597,41 @@
   /* ============================= ANOMALY EVENTS (mid-relay) ============================= */
   var EVENTS = [
     {id:'beacon', icon:'🆘', title:'Distress Beacon', desc:'A stranded courier is broadcasting on your frequency.', choices:[
-      {icon:'🤝', name:'Answer it', desc:'<em>−1 power cell</em>, +90 credits.', apply:function(){ if(st.lives>1){ st.lives--; st.tipsThisRun += 90; return '−1 cell, +90 credits.'; } st.tipsThisRun += 30; return 'Too low on power to help — they tipped you 30 credits anyway.'; }},
-      {icon:'📍', name:'Relay coordinates', desc:'+40 credits, but the next 3 transmissions are rushed (<em>−30% time</em>).', apply:function(){ st.tipsThisRun += 40; setTemp(3, 0.7, 1); return '+40 credits · next 3 rushed.'; }},
-      {icon:'🙈', name:'Ignore it', desc:'Nothing happens.', apply:function(){ return 'You sailed on.'; }}]},
+      {icon:'🤝', name:'Answer it', desc:'<em>−1 power cell</em>, +90 credits.', apply:function(){ if(st.lives>1){ st.lives--; st.tipsThisRun += 90; return _t('−1 cell, +90 credits.'); } st.tipsThisRun += 30; return _t('Too low on power to help — they tipped you 30 credits anyway.'); }},
+      {icon:'📍', name:'Relay coordinates', desc:'+40 credits, but the next 3 transmissions are rushed (<em>−30% time</em>).', apply:function(){ st.tipsThisRun += 40; setTemp(3, 0.7, 1); return _t('+40 credits · next 3 rushed.'); }},
+      {icon:'🙈', name:'Ignore it', desc:'Nothing happens.', apply:function(){ return _t('You sailed on.'); }}]},
     {id:'drift', icon:'🛰️', title:'Salvage Drift', desc:'A derelict module is tumbling past the hull.', choices:[
-      {icon:'🧲', name:'Grab it', desc:'A random module comes online for the rest of this relay.', apply:function(){ var p = pick(PERKS.filter(function(x){ return !x.risk && x.id!=='deep_pockets'; })); applyPerk(p); renderPerkStrip(); renderLives(); return p.icon+' '+p.name+' online.'; }},
-      {icon:'🔩', name:'Strip it', desc:'+70 credits.', apply:function(){ st.tipsThisRun += 70; return '+70 credits.'; }},
-      {icon:'🛡️', name:'Weld it to the hull', desc:'+1 shield charge.', apply:function(){ st.shieldCharges++; st.shieldAvailable = true; return '+1 shield.'; }}]},
+      {icon:'🧲', name:'Grab it', desc:'A random module comes online for the rest of this relay.', apply:function(){ var p = pick(PERKS.filter(function(x){ return !x.risk && x.id!=='deep_pockets'; })); applyPerk(p); renderPerkStrip(); renderLives(); return _t('{icon} {name} online.', {icon:p.icon, name:p.name}); }},
+      {icon:'🔩', name:'Strip it', desc:'+70 credits.', apply:function(){ st.tipsThisRun += 70; return _t('+70 credits.'); }},
+      {icon:'🛡️', name:'Weld it to the hull', desc:'+1 shield charge.', apply:function(){ st.shieldCharges++; st.shieldAvailable = true; return _t('+1 shield.'); }}]},
     {id:'flare', icon:'☀️', title:'Solar Flare', desc:'Radiation is spiking. Every system is running hot.', choices:[
-      {icon:'🏄', name:'Ride it', desc:'Next 5 transmissions: <em>half time</em>, double data.', apply:function(){ setTemp(5, 0.5, 2); return 'Riding the flare — 5 transmissions at half time, ×2 data.'; }},
-      {icon:'🧊', name:'Vent the core', desc:'−40 credits, +1 power cell.', apply:function(){ save.tips = Math.max(0, save.tips-40); st.maxLives++; st.lives++; renderLives(); return '+1 cell.'; }},
-      {icon:'⏳', name:'Wait it out', desc:'Next 3 transmissions: +40% time, <em>half data</em>.', apply:function(){ setTemp(3, 1.4, 0.5); return 'Waiting it out.'; }}]},
+      {icon:'🏄', name:'Ride it', desc:'Next 5 transmissions: <em>half time</em>, double data.', apply:function(){ setTemp(5, 0.5, 2); return _t('Riding the flare — 5 transmissions at half time, ×2 data.'); }},
+      {icon:'🧊', name:'Vent the core', desc:'−40 credits, +1 power cell.', apply:function(){ save.tips = Math.max(0, save.tips-40); st.maxLives++; st.lives++; renderLives(); return _t('+1 cell.'); }},
+      {icon:'⏳', name:'Wait it out', desc:'Next 3 transmissions: +40% time, <em>half data</em>.', apply:function(){ setTemp(3, 1.4, 0.5); return _t('Waiting it out.'); }}]},
     {id:'cache', icon:'🔐', title:'Encrypted Cache', desc:'A sealed data cache is stuck to the relay array.', choices:[
-      {icon:'🧠', name:'Crack it', desc:'The next 3 transmissions are Encrypted (harder, ×2 data).', apply:function(){ st.encryptedExtra = 3; return 'Next 3 transmissions encrypted.'; }},
-      {icon:'💠', name:'Sell it sealed', desc:'+55 credits.', apply:function(){ st.tipsThisRun += 55; return '+55 credits.'; }},
-      {icon:'🔍', name:'Index it', desc:'+2 Scan charges.', apply:function(){ st.scanCharges += 2; updateScanBtn(); return '+2 scans.'; }}]},
+      {icon:'🧠', name:'Crack it', desc:'The next 3 transmissions are Encrypted (harder, ×2 data).', apply:function(){ st.encryptedExtra = 3; return _t('Next 3 transmissions encrypted.'); }},
+      {icon:'💠', name:'Sell it sealed', desc:'+55 credits.', apply:function(){ st.tipsThisRun += 55; return _t('+55 credits.'); }},
+      {icon:'🔍', name:'Index it', desc:'+2 Scan charges.', apply:function(){ st.scanCharges += 2; updateScanBtn(); return _t('+2 scans.'); }}]},
     {id:'translator', icon:'🤖', title:'Rogue Translator', desc:'An unlicensed translation AI offers to “help”.', choices:[
-      {icon:'🎲', name:'Trust it', desc:'50%: +200 data. 50%: <em>−1 power cell</em>.', apply:function(){ if(Math.random()<0.5){ st.score += 200; updateScoreDisplay(); return '+200 data. It was legit.'; } if(st.lives>1){ st.lives--; renderLives(); return 'It fried a cell. −1.'; } st.score = Math.max(0, st.score-100); updateScoreDisplay(); return 'It corrupted 100 data.'; }},
-      {icon:'💠', name:'Pay it off', desc:'−30 credits, +1 free skip.', apply:function(){ save.tips = Math.max(0, save.tips-30); st.skipCharges++; st.skipAvailable = true; updateSkipBtn(); return '+1 skip.'; }},
-      {icon:'🚫', name:'Refuse', desc:'Nothing happens.', apply:function(){ return 'Refused.'; }}]},
+      {icon:'🎲', name:'Trust it', desc:'50%: +200 data. 50%: <em>−1 power cell</em>.', apply:function(){ if(Math.random()<0.5){ st.score += 200; updateScoreDisplay(); return _t('+200 data. It was legit.'); } if(st.lives>1){ st.lives--; renderLives(); return _t('It fried a cell. −1.'); } st.score = Math.max(0, st.score-100); updateScoreDisplay(); return _t('It corrupted 100 data.'); }},
+      {icon:'💠', name:'Pay it off', desc:'−30 credits, +1 free skip.', apply:function(){ save.tips = Math.max(0, save.tips-30); st.skipCharges++; st.skipAvailable = true; updateSkipBtn(); return _t('+1 skip.'); }},
+      {icon:'🚫', name:'Refuse', desc:'Nothing happens.', apply:function(){ return _t('Refused.'); }}]},
     {id:'wormhole', icon:'🌀', title:'Wormhole', desc:'A short-lived wormhole opens ahead of the relay.', choices:[
-      {icon:'🚀', name:'Jump', desc:'Skip the next 2 transmissions (no data for them).', apply:function(){ var n = Math.min(2, st.queue.length - st.pos - 1); st.pos += n; return 'Jumped '+n+' ahead.'; }},
-      {icon:'🗺️', name:'Chart it', desc:'+80 credits, <em>−1 power cell</em>.', apply:function(){ if(st.lives>1){ st.lives--; renderLives(); st.tipsThisRun += 80; return '+80 credits, −1 cell.'; } st.tipsThisRun += 20; return 'Too low on power to chart it — +20 credits for the reading.'; }},
-      {icon:'🧭', name:'Hold course', desc:'Nothing happens.', apply:function(){ return 'Held course.'; }}]},
+      {icon:'🚀', name:'Jump', desc:'Skip the next 2 transmissions (no data for them).', apply:function(){ var n = Math.min(2, st.queue.length - st.pos - 1); st.pos += n; return _t('Jumped {n} ahead.', {n:n}); }},
+      {icon:'🗺️', name:'Chart it', desc:'+80 credits, <em>−1 power cell</em>.', apply:function(){ if(st.lives>1){ st.lives--; renderLives(); st.tipsThisRun += 80; return _t('+80 credits, −1 cell.'); } st.tipsThisRun += 20; return _t('Too low on power to chart it — +20 credits for the reading.'); }},
+      {icon:'🧭', name:'Hold course', desc:'Nothing happens.', apply:function(){ return _t('Held course.'); }}]},
     {id:'repair', icon:'🛠️', title:'Repair Bay', desc:'A mobile repair drone docks with the ship.', choices:[
-      {icon:'🔋', name:'Recharge', desc:'−60 credits, +1 power cell.', apply:function(){ if(save.tips<60) return 'Not enough credits — the drone left.'; save.tips -= 60; st.maxLives++; st.lives++; renderLives(); return '+1 cell.'; }},
-      {icon:'🎛️', name:'Retune', desc:'Sync jumps to a 6-streak.', apply:function(){ st.combo = Math.max(st.combo, 6); renderHeat(); return 'Sync retuned.'; }},
-      {icon:'👋', name:'Wave it off', desc:'Nothing happens.', apply:function(){ return 'Waved off.'; }}]},
+      {icon:'🔋', name:'Recharge', desc:'−60 credits, +1 power cell.', apply:function(){ if(save.tips<60) return _t('Not enough credits — the drone left.'); save.tips -= 60; st.maxLives++; st.lives++; renderLives(); return _t('+1 cell.'); }},
+      {icon:'🎛️', name:'Retune', desc:'Sync jumps to a 6-streak.', apply:function(){ st.combo = Math.max(st.combo, 6); renderHeat(); return _t('Sync retuned.'); }},
+      {icon:'👋', name:'Wave it off', desc:'Nothing happens.', apply:function(){ return _t('Waved off.'); }}]},
     {id:'storm', icon:'🌩️', title:'Signal Storm', desc:'Interference is rolling in across every band.', choices:[
-      {icon:'💪', name:'Push through', desc:'Next 5 transmissions: <em>−25% time</em>, ×2 data.', apply:function(){ setTemp(5, 0.75, 2); return 'Pushing through.'; }},
-      {icon:'🛡️', name:'Brace', desc:'Next 5 transmissions: +30% time, <em>×0.5 data</em>.', apply:function(){ setTemp(5, 1.3, 0.5); return 'Bracing.'; }},
-      {icon:'📡', name:'Reroute', desc:'+1 Scan charge, +1 Signal Hold.', apply:function(){ st.scanCharges++; st.holdCharges++; updateScanBtn(); return '+1 scan, +1 hold.'; }}]},
+      {icon:'💪', name:'Push through', desc:'Next 5 transmissions: <em>−25% time</em>, ×2 data.', apply:function(){ setTemp(5, 0.75, 2); return _t('Pushing through.'); }},
+      {icon:'🛡️', name:'Brace', desc:'Next 5 transmissions: +30% time, <em>×0.5 data</em>.', apply:function(){ setTemp(5, 1.3, 0.5); return _t('Bracing.'); }},
+      {icon:'📡', name:'Reroute', desc:'+1 Scan charge, +1 Signal Hold.', apply:function(){ st.scanCharges++; st.holdCharges++; updateScanBtn(); return _t('+1 scan, +1 hold.'); }}]},
     {id:'ghost', icon:'👻', title:'Ghost Signal', desc:'A transmission from a ship that shouldn’t exist.', choices:[
-      {icon:'🎧', name:'Listen', desc:'+150 data. <em>Next transmission has half time.</em>', apply:function(){ st.score += 150; updateScoreDisplay(); setTemp(1, 0.5, 1); return '+150 data.'; }},
-      {icon:'🔗', name:'Log it', desc:'If this relay is a first clear, the chain gains +1 extra link.', apply:function(){ st.perkFlags.chainLinks += 1; return 'Logged — +1 chain link on a first clear.'; }},
-      {icon:'🔇', name:'Jam it', desc:'Nothing happens.', apply:function(){ return 'Jammed.'; }}]}
+      {icon:'🎧', name:'Listen', desc:'+150 data. <em>Next transmission has half time.</em>', apply:function(){ st.score += 150; updateScoreDisplay(); setTemp(1, 0.5, 1); return _t('+150 data.'); }},
+      {icon:'🔗', name:'Log it', desc:'If this relay is a first clear, the chain gains +1 extra link.', apply:function(){ st.perkFlags.chainLinks += 1; return _t('Logged — +1 chain link on a first clear.'); }},
+      {icon:'🔇', name:'Jam it', desc:'Nothing happens.', apply:function(){ return _t('Jammed.'); }}]}
   ];
 
   /* ============================= DAILY SIGNAL STORM ============================= */
@@ -6798,7 +6800,7 @@
   function noiseLevel(list){ return (list||save.interference||[]).reduce(function(s,id){ var i = interferenceById(id); return s + (i ? i.w : 0); }, 0); }
   function noiseChipHtml(noise, list){
     var srcs = (list||save.interference||[]).map(function(id){ var i = interferenceById(id); return i ? i.icon : ''; }).join('');
-    return '<span class="perk-chip chain" title="Noise Level '+noise+' · +'+(12*noise)+'% credits · +'+(8*noise)+'% XP" style="color:#ffd93e;border-color:#ffd93e;"><span class="pc-icon">📡</span>Noise '+noise+' '+srcs+'</span>';
+    return '<span class="perk-chip chain" title="'+_t('Noise Level {n} · +{c}% credits · +{x}% XP', {n:noise, c:12*noise, x:8*noise})+'" style="color:#ffd93e;border-color:#ffd93e;"><span class="pc-icon">📡</span>'+_t('Noise {n}', {n:noise})+' '+srcs+'</span>';
   }
 
   /* ============================= DEEP SPACE REFIT (Dark Matter) =============================
@@ -6907,26 +6909,26 @@
   function renderWarpCard(){
     var card = document.getElementById('warp-card'); if(!card) return;
     var claim = warpClaimable(), cores = warpCores(), jumps = (save.warp && save.warp.jumps)||0;
-    var bonus = cores ? ('+'+(3*cores)+'% credits · +'+(3*cores)+'% data · +'+(2*cores)+'% XP') : 'no cores yet';
-    card.innerHTML = '<div class="warp-head">🚀 Warp Jump'+(jumps?' <span class="warp-n">×'+jumps+'</span>':'')+' · <b>'+cores+'</b> warp core'+(cores===1?'':'s')+' <span class="warp-bonus">'+bonus+'</span></div>'+
+    var bonus = cores ? _t('+{c}% credits · +{d}% data · +{x}% XP', {c:3*cores, d:3*cores, x:2*cores}) : _t('no cores yet');
+    card.innerHTML = '<div class="warp-head">🚀 '+_t('Warp Jump')+(jumps?' <span class="warp-n">×'+jumps+'</span>':'')+' · '+(cores===1 ? _t('<b>{n}</b> warp core', {n:cores}) : _t('<b>{n}</b> warp cores', {n:cores}))+' <span class="warp-bonus">'+bonus+'</span></div>'+
       '<div class="warp-body">'+(claim>0
-        ? 'A jump now banks <b>+'+claim+'</b> core'+(claim===1?'':'s')+' and restarts the voyage from A1: relays, credits, the bay, the chain, your rank, Dark Matter and the Refit all reset. Learned words, commendations and lifetime records stay.'
-        : 'Cores come from lifetime XP (next at '+nextWarpCoreXp().toLocaleString()+' XP, you have '+(save.stats.xpLifetime||0).toLocaleString()+') and from every 25 Dark Matter ever earned. Jump when there is something to bank.')+'</div>'+
-      (claim>0 ? '<div class="warp-actions"><button class="btn btn-sm btn-primary" id="btn-warp">🚀 Warp Jump (+'+claim+')</button></div>' : '');
+        ? _t('A jump now banks <b>+{n}</b> warp cores and restarts the voyage from A1: relays, credits, the bay, the chain, your rank, Dark Matter and the Refit all reset. Learned words, commendations and lifetime records stay.', {n:claim})
+        : _t('Cores come from lifetime XP (next at {next} XP, you have {have}) and from every 25 Dark Matter ever earned. Jump when there is something to bank.', {next:nextWarpCoreXp().toLocaleString(), have:(save.stats.xpLifetime||0).toLocaleString()}))+'</div>'+
+      (claim>0 ? '<div class="warp-actions"><button class="btn btn-sm btn-primary" id="btn-warp">🚀 '+_t('Warp Jump')+' (+'+claim+')</button></div>' : '');
     var b = document.getElementById('btn-warp');
     if(b){ b.addEventListener('click', function(){
-      if(b.getAttribute('data-armed')!=='1'){ b.setAttribute('data-armed','1'); b.textContent = '⚠️ Confirm: reset the voyage and bank +'+claim+' core'+(claim===1?'':'s'); b.className = 'btn btn-sm btn-ghost'; return; }
-      if(doWarpJump()){ showHome(); toast('🚀 <b>Warp Jump '+save.warp.jumps+'</b> — '+save.warp.cores+' warp cores online. New voyage, better ship.'); }
+      if(b.getAttribute('data-armed')!=='1'){ b.setAttribute('data-armed','1'); b.textContent = _t('⚠️ Confirm: reset the voyage and bank +{n} warp cores', {n:claim}); b.className = 'btn btn-sm btn-ghost'; return; }
+      if(doWarpJump()){ showHome(); toast(_t('🚀 <b>Warp Jump {j}</b> — {n} warp cores online. New voyage, better ship.', {j:save.warp.jumps, n:save.warp.cores})); }
     }); }
   }
   function renderWipeRow(){
     var row = document.getElementById('wipe-row'); if(!row) return;
-    row.innerHTML = '<button class="btn btn-sm btn-ghost wipe-btn" id="btn-wipe">🗑️ Wipe all progress</button>';
+    row.innerHTML = '<button class="btn btn-sm btn-ghost wipe-btn" id="btn-wipe">'+_t('🗑️ Wipe all progress')+'</button>';
     var b = document.getElementById('btn-wipe'), armed = 0;
     b.addEventListener('click', function(){
       armed++;
-      if(armed===1){ b.textContent = '⚠️ This deletes everything on this device, warp cores included. Click again to confirm.'; return; }
-      if(armed===2){ b.textContent = '🗑️ Last chance — click once more to wipe'; return; }
+      if(armed===1){ b.textContent = _t('⚠️ This deletes everything on this device, warp cores included. Click again to confirm.'); return; }
+      if(armed===2){ b.textContent = _t('🗑️ Last chance — click once more to wipe'); return; }
       wipeSave();
     });
   }
@@ -7011,7 +7013,7 @@
      word and sentence's meaning side is swapped to that language (the data carries all twenty), and English
      itself becomes a learnable language ('eng'). Grammar notes, story questions and the UI stay in English. */
   function nativeLang(){ return (save.native && save.native!=='en' && LANG_META[save.native]) ? save.native : 'en'; }
-  function nativeName(){ var l = nativeLang(); return l==='en' ? 'English' : LANGS[l].name; }
+  function nativeName(){ var l = nativeLang(); return l==='en' ? _t('English') : LANGS[l].name; }
   function applyNative(){
     var nat = nativeLang(); if(nat==='en') return;
     CONCEPTS.forEach(function(c){ if(!c.en_src) c.en_src = c.en; c.en = (c[nat] && c[nat].t) ? plainText(c[nat].t) : c.en_src; });
@@ -7031,16 +7033,65 @@
     if(L.setups){ DIALOGUES.forEach(function(d){ if(L.setups[d.id]) d.setup = L.setups[d.id]; }); }
     if(L.questions){ STORIES.forEach(function(s){ var qs = L.questions[s.id]; if(!qs || qs.length!==s.questions.length) return; s.questions.forEach(function(q, i){ if(qs[i].q) q.q = qs[i].q; if(qs[i].options && qs[i].options.length===q.options.length) q.options = qs[i].options.slice(); }); }); }
     if(L.folk){ var nat = nativeLang(); STORIES.forEach(function(s){ var f = L.folk[s.id]; if(s.only && f && f.paras && f.paras.length===7){ s.xl = s.xl || {}; s.xl[nat] = {title:f.title, paras:f.paras}; } }); }
+    if(L.ui) applyUiL10n(L.ui);
+  }
+  /* The interface in the player's own language. _t(english, {x:…}) returns the translation from the
+     ui pool of l10n/<lang>.json; English is both the source and the key, and a missing key stays English.
+     tools/l10n_prep.py extracts every _t() string literal, the data tables' display fields (name, desc, title, label,
+     ladder, sub, how, count, unlock, clearance), HOW_TEXT, RARITY_LABEL, topic labels, language names, story
+     origins, the static HTML marked data-t and its title / placeholder / aria-label attributes into
+     l10n_in/ui.json. So: never build a sentence by concatenation; pass the moving parts as {placeholders}. */
+  var UI_STR = null;
+  function _t(s, v){
+    var r = (UI_STR && UI_STR[s]) || s;
+    if(v){ r = String(r).replace(/\{(\w+)\}/g, function(m, k){ return (v[k]!==undefined && v[k]!==null) ? v[k] : m; }); }
+    return r;
+  }
+  function applyUiL10n(U){
+    if(!U || typeof U!=='object') return; UI_STR = U;
+    function tf(o, fields){ if(o) fields.forEach(function(f){ if(typeof o[f]==='string') o[f] = _t(o[f]); }); }
+    TIERS.forEach(function(x){ tf(x, ['name','ladder','sub','how']); });
+    Object.keys(ROUND_TYPES).forEach(function(k){ tf(ROUND_TYPES[k], ['label','count']); });
+    tf(HOW_TEXT, Object.keys(HOW_TEXT)); tf(RARITY_LABEL, Object.keys(RARITY_LABEL)); tf(TOPIC_LABELS, Object.keys(TOPIC_LABELS));
+    [PERKS, STORM_MODS, COMMENDATIONS, SHOP_UPGRADES, INTERFERENCE, REFIT_TUNING, REFIT_MODULES, WARP_DRIVE, CHAIN_MILESTONES, STORY_MODES].forEach(function(list){ list.forEach(function(x){ tf(x, ['name','desc','clearance']); }); });
+    RANKS.forEach(function(x){ tf(x, ['title','unlock']); });
+    EVENTS.forEach(function(e){ tf(e, ['title','desc']); e.choices.forEach(function(c){ tf(c, ['name','desc']); }); });
+    SHOP_CATS.forEach(function(x){ tf(x, ['label']); });
+    Object.keys(LANG_META).forEach(function(c){ tf(LANG_META[c], ['name']); if(LANGS[c]) LANGS[c].name = LANG_META[c].name; });
+    STORIES.forEach(function(s){ tf(s, ['origin']); });
+    CONCEPTS.forEach(function(c){ if(c.fact) c.fact = _t(c.fact); });
+    applyStaticUi();
+  }
+  /* static markup: [data-t] elements hold one ui string as their inner HTML; titles, placeholders and aria-labels too */
+  function applyStaticUi(){
+    Array.prototype.forEach.call(document.querySelectorAll('[data-t]'), function(e){ var k = e.innerHTML.trim(), v = _t(k); if(v!==k) e.innerHTML = v; });
+    ['title','placeholder','aria-label'].forEach(function(a){ Array.prototype.forEach.call(document.querySelectorAll('['+a+']'), function(e){ var k = e.getAttribute(a), v = _t(k); if(v!==k) e.setAttribute(a, v); }); });
+    var nat = nativeLang(); document.documentElement.lang = nat==='en' ? 'en' : ((LANG_META[nat] && LANG_META[nat].speech) || nat);
+  }
+  /* the pool arrives after the first render: redraw whatever is on screen */
+  function rerenderAfterL10n(){
+    if(speechReady) updateMuteBtn();
+    function vis(id){ var e = document.getElementById(id); return !!(e && !e.hidden); }
+    if(vis('screen-journey')) showJourney();
+    else if(vis('screen-home')) showHome();
+    else if(vis('screen-shop')) renderShop();
+    else if(vis('screen-log')) showLog();
+    else if(vis('screen-stories') && !st.story) showStories();
+    var box = document.getElementById('coach');
+    if(box && !box.hidden && coach.cur && COACH[coach.cur]){ document.getElementById('coach-text').innerHTML = furi(COACH[coach.cur]); document.getElementById('coach-next').textContent = coach.cur==='complete' ? _t('Onward') : _t('Got it'); }
   }
   function loadL10n(){
     var nat = nativeLang(); if(nat==='en' || typeof fetch!=='function') return;
     var base = (window.L10N_BASE || 'l10n/').replace(/\/?$/, '/');
+    var root = document.documentElement, shown = false;
+    function reveal(){ if(shown) return; shown = true; root.classList.remove('l10n-wait'); }
+    root.classList.add('l10n-wait'); setTimeout(reveal, 2500);
     try{
       fetch(base+nat+'.json', {cache:'no-cache'}).then(function(r){ return r.ok ? r.json() : null; }).then(function(L){
-        if(!L) return; applyL10n(L);
-        var home = document.getElementById('screen-home'); if(home && !home.hidden && typeof showHome==='function') showHome();
-      }).catch(function(){});
-    }catch(e){}
+        if(L){ applyL10n(L); try{ rerenderAfterL10n(); }catch(e){} }
+        reveal();
+      }).catch(reveal);
+    }catch(e){ reveal(); }
   }
   loadL10n();
   CONCEPTS.forEach(function(c){ ITEM[c.id]=c; });
@@ -7240,7 +7291,7 @@
       if(v){ u.voice = v; u.lang = v.lang || u.lang; }
       else if(lang && lang!=='en' && !missingVoiceWarned[lang] && loadVoices().length){
         missingVoiceWarned[lang] = true;
-        toast('🎙️ No '+(LANGS[lang]?LANGS[lang].name:lang)+' voice is installed on this device — the browser will fake it with an English voice. Install one in your system’s text-to-speech settings, then reopen the game.');
+        toast(_t('🎙️ No {lang} voice is installed on this device — the browser will fake it with an English voice. Install one in your system’s text-to-speech settings, then reopen the game.', {lang:(LANGS[lang]?LANGS[lang].name:lang)}));
       }
       var isSentence = clean.length > 24 || /[.!?。！？]/.test(clean);
       u.rate = save.speechRate || (lang==='ja' || lang==='zh' ? 0.85 : isSentence ? 0.92 : 0.86);
@@ -7255,23 +7306,23 @@
     var all = loadVoices();
     var h = '';
     if(AUDIO_CLIPS_INFO.count){
-      h += '<div class="chain-box" style="margin:0 0 12px;"><div class="cb-title">🎧 Studio recordings</div>'+AUDIO_CLIPS_INFO.count.toLocaleString()+' native-speaker recordings are built into the game for the '+AUDIO_CLIPS_INFO.tiers.join(' + ')+' band'+(AUDIO_CLIPS_INFO.tiers.length>1?'s':'')+' (Kokoro-82M neural voices, all six languages). They play instead of your device’s voice wherever they exist'+(clipSupport?'':' — <b>but this browser can’t play Opus audio, so it’s using the device voice instead</b>')+'.'+
-        ' <label style="display:block;margin-top:8px;"><input type="checkbox" id="use-clips" '+(save.useClips!==false?'checked':'')+'> Use built-in recordings when available</label></div>';
+      h += '<div class="chain-box" style="margin:0 0 12px;"><div class="cb-title">🎧 '+_t('Studio recordings')+'</div>'+_t('{n} native-speaker recordings are built into the game ({bands}). They play instead of your device’s voice wherever they exist.', {n:AUDIO_CLIPS_INFO.count.toLocaleString(), bands:AUDIO_CLIPS_INFO.tiers.join(' + ')})+(clipSupport?'':' <b>'+_t('This browser can’t play Opus audio, so it’s using the device voice instead.')+'</b>')+
+        ' <label style="display:block;margin-top:8px;"><input type="checkbox" id="use-clips" '+(save.useClips!==false?'checked':'')+'> '+_t('Use built-in recordings when available')+'</label></div>';
     }
-    h += '<p class="preview-sub" style="margin:0 0 12px;text-align:left;">For everything else the game picks the most natural native voice your device has for each language. If one sounds off, choose another here. Languages with no native voice fall back to an English voice — install one in your phone or computer’s text-to-speech settings.</p>';
-    h += '<div class="bar-row" style="grid-template-columns:1fr auto;"><span>Speaking rate</span><span><button class="btn btn-sm btn-ghost vr" data-r="0.75">slow</button> <button class="btn btn-sm btn-ghost vr" data-r="">auto</button> <button class="btn btn-sm btn-ghost vr" data-r="1.05">fast</button></span></div>';
+    h += '<p class="preview-sub" style="margin:0 0 12px;text-align:left;">'+_t('For everything else the game picks the most natural native voice your device has for each language. If one sounds off, choose another here. Languages with no native voice fall back to an English voice — install one in your phone or computer’s text-to-speech settings.')+'</p>';
+    h += '<div class="bar-row" style="grid-template-columns:1fr auto;"><span>'+_t('Speaking rate')+'</span><span><button class="btn btn-sm btn-ghost vr" data-r="0.75">'+_t('slow')+'</button> <button class="btn btn-sm btn-ghost vr" data-r="">'+_t('auto')+'</button> <button class="btn btn-sm btn-ghost vr" data-r="1.05">'+_t('fast')+'</button></span></div>';
     journeyLangs().forEach(function(l){
       var list = voicesFor(l).sort(function(a,b){ return voiceScore(b,l)-voiceScore(a,l); });
       var cur = voiceFor(l);
       h += '<div class="voice-row"><span class="lang-tag" style="flex:none"><span class="lang-dot" style="background:'+LANGS[l].color+'"></span>'+LANGS[l].name+'</span>';
-      if(!list.length){ h += '<span class="pb-count" style="color:var(--paprika)">no native voice installed</span>'; }
+      if(!list.length){ h += '<span class="pb-count" style="color:var(--paprika)">'+_t('no native voice installed')+'</span>'; }
       else {
         h += '<select class="pb-select voice-sel" data-lang="'+l+'">'+list.map(function(v){ return '<option value="'+v.voiceURI.replace(/"/g,'&quot;')+'"'+(cur&&v.voiceURI===cur.voiceURI?' selected':'')+'>'+v.name+' ('+v.lang+')'+(voiceScore(v,l)>=12?' ★':'')+'</option>'; }).join('')+'</select>';
-        h += '<button class="btn btn-sm btn-ghost voice-test" data-lang="'+l+'">▶ Test</button>';
+        h += '<button class="btn btn-sm btn-ghost voice-test" data-lang="'+l+'">▶ '+_t('Test')+'</button>';
       }
       h += '</div>';
     });
-    if(!all.length){ h += '<p class="pb-count">No voices reported yet — some browsers only list them after the first sound plays. Tap Test or close and reopen this panel.</p>'; }
+    if(!all.length){ h += '<p class="pb-count">'+_t('No voices reported yet — some browsers only list them after the first sound plays. Tap Test or close and reopen this panel.')+'</p>'; }
     el.voicesBody.innerHTML = h;
     Array.prototype.forEach.call(el.voicesBody.querySelectorAll('.voice-sel'), function(sel){
       sel.addEventListener('change', function(){ save.voices = save.voices || {}; save.voices[sel.getAttribute('data-lang')] = sel.value; persist(); speakText(VOICE_SAMPLE[sel.getAttribute('data-lang')], sel.getAttribute('data-lang'), true); });
@@ -7286,7 +7337,7 @@
   }
 
   function updateMuteBtn(){
-    el.btnMute.textContent = save.muted ? '🔇 Sound' : '🔊 Sound';
+    el.btnMute.textContent = (save.muted ? '🔇 ' : '🔊 ')+_t('Sound');
     el.btnMute.setAttribute('aria-pressed', save.muted ? 'true' : 'false');
   }
 
@@ -7345,7 +7396,7 @@
       var r = RANKS[after]; var bonus = after*40;
       save.tips += bonus;
       sfx('rankup');
-      toast(r.icon+' <b>Promoted: '+r.title+'</b>'+(r.unlock?' — '+r.unlock:'')+' · +'+bonus+' 💠');
+      toast(r.icon+' <b>'+_t('Promoted: {rank}', {rank:r.title})+'</b>'+(r.unlock?' — '+r.unlock:'')+' · +'+bonus+' 💠');
     }
     return after > before;
   }
@@ -7398,7 +7449,7 @@
   function tickTemp(){ if(st.temp && st.temp.rounds>0){ st.temp.rounds--; if(st.temp.rounds<=0) st.temp = null; } }
   function renderPlFlags(){
     var h = '';
-    if(st.round && st.round.encrypted) h += '<span class="enc-tag">🔐 encrypted</span>';
+    if(st.round && st.round.encrypted) h += '<span class="enc-tag">🔐 '+_t('encrypted')+'</span>';
     if(st.temp && st.temp.rounds>0) h += '<span class="temp-tag">'+(st.temp.timeMult<1?'⏱️−':st.temp.timeMult>1?'⏱️+':'')+(st.temp.scoreMult>1?'✨×'+st.temp.scoreMult:st.temp.scoreMult<1?'✨×'+st.temp.scoreMult:'')+' · '+st.temp.rounds+'</span>';
     el.plFlags.innerHTML = h;
   }
@@ -7484,22 +7535,22 @@
     if(!save.tutorial || save.tutorial.done || save.tutorial.seen[step] || !COACH[step]) return;
     var box = document.getElementById('coach'); if(!box) return;
     save.tutorial.seen[step] = true; persist();
-    document.getElementById('coach-text').innerHTML = COACH[step];
+    document.getElementById('coach-text').innerHTML = furi(COACH[step]); coach.cur = step;
     var isLast = step==='complete';
-    document.getElementById('coach-next').textContent = isLast ? 'Onward' : 'Got it';
+    document.getElementById('coach-next').textContent = isLast ? _t('Onward') : _t('Got it');
     document.getElementById('coach-skip').hidden = isLast;
     box.hidden = false;
     if(isLast){ save.tutorial.done = true; persist(); }
   }
   document.getElementById('coach-next').addEventListener('click', function(){ document.getElementById('coach').hidden = true; });
-  document.getElementById('coach-skip').addEventListener('click', function(){ save.tutorial.done = true; persist(); document.getElementById('coach').hidden = true; toast('Tutorial skipped. The Mission Log explains everything if you need it later.'); });
+  document.getElementById('coach-skip').addEventListener('click', function(){ save.tutorial.done = true; persist(); document.getElementById('coach').hidden = true; toast(_t('Tutorial skipped. The Mission Log explains everything if you need it later.')); });
 
   /* ---- streak: one cleared relay, storm or sweep a day keeps it; a Dark Matter shield covers one missed day ---- */
   function streakTouch(){
     var s = save.streak, today = srsDay();
     if(s.last===today) return 0;
     if(s.last===today-1 || s.days===0){ s.days = (s.last===today-1) ? s.days+1 : 1; }
-    else if(s.last===today-2 && s.shield>0){ s.shield--; s.days++; toast('🛡️ Streak shield spent — the streak holds at '+s.days+'.'); }
+    else if(s.last===today-2 && s.shield>0){ s.shield--; s.days++; toast(_t('🛡️ Streak shield spent — the streak holds at {n}.', {n:s.days})); }
     else { s.days = 1; }
     s.last = today; s.best = Math.max(s.best, s.days);
     return s.days;
@@ -7542,19 +7593,32 @@
     if(!save.plan || save.plan.week!==planWeek() || save.plan.langs.join(',')!==langs){ save.plan = buildPlan(); persist(); }
     return save.plan;
   }
+  function questText(q){
+    var lang = (q.lang && LANGS[q.lang]) ? LANGS[q.lang].name : '';
+    switch(q.id){
+      case 'q_words': return _t('Decode {n} new {lang} words', {n:q.target, lang:lang});
+      case 'q_relays': return _t('Clear {n} relays', {n:q.target});
+      case 'q_noise': return _t('Clear {n} relays at Noise 3 or higher', {n:q.target});
+      case 'q_perfect': return _t('{n} relays with 100% accuracy', {n:q.target});
+      case 'q_sweeps': return _t('Complete {n} Maintenance Sweeps', {n:q.target});
+      case 'q_storm': return _t('Weather a Signal Storm');
+      case 'q_decodes2': return _t('{n} correct {lang} decodes', {n:q.target, lang:lang});
+    }
+    return q.text || '';
+  }
   function questProgress(q){ return Math.max(0, Math.min(q.target, planMetric(q.metric, q.lang) - q.base)); }
   function grantReward(r){
     var parts = [];
     if(r.tips){ save.tips += r.tips; parts.push('+'+r.tips+' 💠'); }
     if(r.dark){ awardDark(r.dark); parts.push('+'+r.dark+' 🌌'); }
-    if(r.core){ save.warp.cores = warpCores()+r.core; parts.push('+'+r.core+' 🚀 core'); }
+    if(r.core){ save.warp.cores = warpCores()+r.core; parts.push('+'+r.core+' 🚀'); }
     return parts.join(' ');
   }
   function checkPlan(){
     var plan = currentPlan(); var newly = [];
-    plan.quests.forEach(function(q){ if(!q.done && questProgress(q)>=q.target){ q.done = true; newly.push('🧭 <b>'+q.text+'</b> — '+grantReward(q.reward)); } });
+    plan.quests.forEach(function(q){ if(!q.done && questProgress(q)>=q.target){ q.done = true; newly.push('🧭 <b>'+questText(q)+'</b> — '+grantReward(q.reward)); } });
     var doneN = plan.quests.filter(function(q){ return q.done; }).length;
-    plan.milestones.forEach(function(m){ if(!m.done && doneN>=m.at){ m.done = true; newly.push('🧭 <b>Flight Plan milestone '+m.at+'</b> — '+grantReward(m.reward)); } });
+    plan.milestones.forEach(function(m){ if(!m.done && doneN>=m.at){ m.done = true; newly.push('🧭 <b>'+_t('Flight Plan milestone {n}', {n:m.at})+'</b> — '+grantReward(m.reward)); } });
     if(newly.length){ persist(); newly.forEach(function(t, i){ setTimeout(function(){ toast(t); }, 1200*i); }); }
     return newly.length;
   }
@@ -7562,15 +7626,15 @@
     var card = document.getElementById('plan-card'); if(!card) return;
     var plan = currentPlan(); var doneN = plan.quests.filter(function(q){ return q.done; }).length;
     var s = save.streak;
-    var html = '<div class="storm-head">🧭 Flight Plan · this week · <b>'+doneN+'/'+plan.quests.length+'</b> objectives'+
-      '<span class="plan-streak" title="One cleared relay, storm or sweep a day keeps it">🔥 '+(streakAlive()?s.days:0)+'-day streak'+(s.shield?' · 🛡️×'+s.shield:'')+'</span></div>';
+    var html = '<div class="storm-head">🧭 '+_t('Flight Plan · this week · <b>{d}/{n}</b> objectives', {d:doneN, n:plan.quests.length})+
+      '<span class="plan-streak" title="'+_t('One cleared relay, storm or sweep a day keeps it')+'">🔥 '+_t('{n}-day streak', {n:(streakAlive()?s.days:0)})+(s.shield?' · 🛡️×'+s.shield:'')+'</span></div>';
     html += '<div class="plan-quests">'+plan.quests.map(function(q){ var pr = questProgress(q); var pct = Math.round(100*pr/q.target);
-      return '<div class="plan-q'+(q.done?' done':'')+'"><span class="pq-icon">'+q.icon+'</span><div class="pq-body"><div class="pq-text">'+q.text+'</div><div class="pq-bar"><div style="width:'+pct+'%"></div></div></div><span class="pq-meta">'+(q.done?'✓':pr+'/'+q.target)+' · '+(q.reward.tips?q.reward.tips+' 💠':q.reward.dark?q.reward.dark+' 🌌':'')+'</span></div>'; }).join('')+'</div>';
-    html += '<div class="plan-track">'+plan.milestones.map(function(m){ return '<span class="plan-ms'+(m.done?' done':'')+'">'+(m.done?'✓ ':'')+m.at+' objectives → '+(m.reward.tips?m.reward.tips+' 💠':m.reward.dark?m.reward.dark+' 🌌':'1 🚀 core')+'</span>'; }).join('')+
-      '<button class="btn btn-sm btn-ghost" id="btn-streak-shield" '+(s.shield>=2||(save.dark||0)<4?'disabled':'')+' title="Covers one missed day. 4 Dark Matter, max two.">🛡️ Streak shield · 4 🌌</button></div>';
+      return '<div class="plan-q'+(q.done?' done':'')+'"><span class="pq-icon">'+q.icon+'</span><div class="pq-body"><div class="pq-text">'+questText(q)+'</div><div class="pq-bar"><div style="width:'+pct+'%"></div></div></div><span class="pq-meta">'+(q.done?'✓':pr+'/'+q.target)+' · '+(q.reward.tips?q.reward.tips+' 💠':q.reward.dark?q.reward.dark+' 🌌':'')+'</span></div>'; }).join('')+'</div>';
+    html += '<div class="plan-track">'+plan.milestones.map(function(m){ return '<span class="plan-ms'+(m.done?' done':'')+'">'+(m.done?'✓ ':'')+_t('{n} objectives', {n:m.at})+' → '+(m.reward.tips?m.reward.tips+' 💠':m.reward.dark?m.reward.dark+' 🌌':'1 🚀')+'</span>'; }).join('')+
+      '<button class="btn btn-sm btn-ghost" id="btn-streak-shield" '+(s.shield>=2||(save.dark||0)<4?'disabled':'')+' title="'+_t('Covers one missed day. 4 Dark Matter, max two.')+'">🛡️ '+_t('Streak shield')+' · 4 🌌</button></div>';
     card.innerHTML = html; card.hidden = false;
     var b = document.getElementById('btn-streak-shield');
-    if(b){ b.addEventListener('click', function(){ if((save.dark||0)<4 || s.shield>=2) return; save.dark -= 4; s.shield++; persist(); renderPlanCard(); refreshHud(); toast('🛡️ Streak shield armed ('+s.shield+').'); }); }
+    if(b){ b.addEventListener('click', function(){ if((save.dark||0)<4 || s.shield>=2) return; save.dark -= 4; s.shield++; persist(); renderPlanCard(); refreshHud(); toast(_t('🛡️ Streak shield armed ({n}).', {n:s.shield})); }); }
   }
 
   /* ---- constellations: the same or a similar word in another language on the voyage (cognates, loanwords, shared characters) ---- */
@@ -7605,7 +7669,7 @@
   }
   function constellationHtml(list){
     if(!list.length) return '';
-    return '🌌 '+list.map(function(x){ return (x.lang==='en'?'🇬🇧':LANG_META[x.lang].flag)+' '+plainText(x.text)+(x.rel==='same'?' (same)':x.rel==='shared-char'?' (shared character)':' (similar)'); }).join(' · ');
+    return '🌌 '+list.map(function(x){ return (x.lang==='en'?'🇬🇧':LANG_META[x.lang].flag)+' '+plainText(x.text)+' ('+(x.rel==='same'?_t('same'):x.rel==='shared-char'?_t('shared character'):_t('similar'))+')'; }).join(' · ');
   }
 
   /* ---- placement test: adaptive, twelve questions, may pre-clear the tiers below the level reached ---- */
@@ -7622,7 +7686,7 @@
     var tier = TIERS[P.tierIdx]; var pool = CONCEPTS.filter(function(c){ return c.tier===tier.code && c[P.lang]; });
     var c = pick(pool); var opts = shuffle([c].concat(pickDistractors(c, 0.3, pool, P.lang)));
     var show = c[P.lang].t + (c[P.lang].r ? ' <span style="color:var(--paper-faint);font-size:12px;">'+c[P.lang].r+'</span>' : '');
-    body.innerHTML = '<div class="pl-q"><span class="lvl-badge" style="background:'+tier.color+'">'+tier.code+'</span> Question '+(P.asked+1)+' of 12</div>'+
+    body.innerHTML = '<div class="pl-q"><span class="lvl-badge" style="background:'+tier.color+'">'+tier.code+'</span> '+_t('Question {n} of {total}', {n:P.asked+1, total:12})+'</div>'+
       '<div class="pl-word">'+furi(show)+'</div><div class="answer-grid">'+opts.map(function(o){ return '<button type="button" class="answer-btn pl-ans" data-ok="'+(o.id===c.id?1:0)+'"><span class="ab-main">'+(o.emoji?o.emoji+' ':'')+o.en+'</span></button>'; }).join('')+'</div>';
     Array.prototype.forEach.call(body.querySelectorAll('.pl-ans'), function(b){ b.addEventListener('click', function(){
       var ok = b.getAttribute('data-ok')==='1'; P.history.push({tier:P.tierIdx, ok:ok}); P.asked++;
@@ -7638,21 +7702,21 @@
     if(okAtLevel<2 && level>0) level--;
     var body = document.getElementById('placement-body'); var lang = P.lang;
     var below = TIERS.slice(0, level).map(function(t){ return t.code; });
-    body.innerHTML = '<div class="pl-word">'+LANG_META[lang].flag+' '+LANGS[lang].name+': you place at <b>'+TIERS[level].code+' · '+TIERS[level].name+'</b></div>'+
-      '<p class="preview-sub" style="margin:0 auto;">'+(below.length ? 'Mark '+below.join(', ')+' as decoded for '+LANGS[lang].name+' and start at '+TIERS[level].code+'? Nothing is lost: pre-cleared relays can still be replayed, they just count as done for the sector.' : 'You start at A1, which is where the ladder begins. Nothing to skip.')+'</p>'+
-      '<div class="home-actions">'+(below.length ? '<button class="btn btn-primary" id="btn-place-apply">✓ Start at '+TIERS[level].code+'</button>' : '')+'<button class="btn btn-ghost" id="btn-place-back">← Star Chart</button></div>';
+    body.innerHTML = '<div class="pl-word">'+LANG_META[lang].flag+' '+_t('{lang}: you place at <b>{level}</b>', {lang:LANGS[lang].name, level:TIERS[level].code+' · '+TIERS[level].name})+'</div>'+
+      '<p class="preview-sub" style="margin:0 auto;">'+(below.length ? _t('Mark {tiers} as decoded for {lang} and start at {level}? Nothing is lost: pre-cleared relays can still be replayed, they just count as done for the sector.', {tiers:below.join(', '), lang:LANGS[lang].name, level:TIERS[level].code}) : _t('You start at A1, which is where the ladder begins. Nothing to skip.'))+'</p>'+
+      '<div class="home-actions">'+(below.length ? '<button class="btn btn-primary" id="btn-place-apply">'+_t('✓ Start at {level}', {level:TIERS[level].code})+'</button>' : '')+'<button class="btn btn-ghost" id="btn-place-back">'+_t('← Star Chart')+'</button></div>';
     var a = document.getElementById('btn-place-apply');
     if(a){ a.addEventListener('click', function(){
       for(var i=0;i<level;i++){ topicsForTier(TIERS[i], lang).forEach(function(topic){ save.clearedDungeons[i+':'+lang+':'+topic] = true; }); }
-      save.placed[lang] = TIERS[level].code; persist(); toast('📐 '+LANGS[lang].name+' placed at '+TIERS[level].code+'.'); showHome();
+      save.placed[lang] = TIERS[level].code; persist(); toast(_t('📐 {lang} placed at {level}.', {lang:LANGS[lang].name, level:TIERS[level].code})); showHome();
     }); }
     document.getElementById('btn-place-back').addEventListener('click', showHome);
   }
   function showPlacementPicker(){
     hideToast(); hideAllScreens();
     var sc = document.getElementById('screen-placement'); sc.hidden = false;
-    document.getElementById('placement-body').innerHTML = '<p class="preview-sub" style="margin:0 auto 12px;">Twelve quick questions that climb when you are right and drop when you are wrong. Pick a language:</p><div class="home-actions">'+
-      journeyLangs().map(function(l){ return '<button class="btn btn-ghost pl-lang" data-lang="'+l+'">'+LANG_META[l].flag+' '+LANGS[l].name+(save.placed[l]?' · placed '+save.placed[l]:'')+'</button>'; }).join('')+'<button class="btn btn-ghost" id="btn-place-back">← Star Chart</button></div>';
+    document.getElementById('placement-body').innerHTML = '<p class="preview-sub" style="margin:0 auto 12px;">'+_t('Twelve quick questions that climb when you are right and drop when you are wrong. Pick a language:')+'</p><div class="home-actions">'+
+      journeyLangs().map(function(l){ return '<button class="btn btn-ghost pl-lang" data-lang="'+l+'">'+LANG_META[l].flag+' '+LANGS[l].name+(save.placed[l]?' · '+_t('placed {level}', {level:save.placed[l]}):'')+'</button>'; }).join('')+'<button class="btn btn-ghost" id="btn-place-back">'+_t('← Star Chart')+'</button></div>';
     Array.prototype.forEach.call(document.querySelectorAll('.pl-lang'), function(b){ b.addEventListener('click', function(){ showPlacement(b.getAttribute('data-lang')); }); });
     document.getElementById('btn-place-back').addEventListener('click', showHome);
   }
@@ -7692,14 +7756,14 @@
   }
   function interceptRun(){
     var lang = document.getElementById('ic-lang').value; var text = document.getElementById('ic-text').value || '';
-    if(!text.trim()){ toast('📰 Paste some '+LANGS[lang].name+' text first.'); return; }
+    if(!text.trim()){ toast(_t('📰 Paste some {lang} text first.', {lang:LANGS[lang].name})); return; }
     var a = interceptAnalyze(text, lang);
     var known = a.ids.filter(function(id){ return learnedSet.has(id+':'+lang); }); var todo = a.ids.filter(function(id){ return !learnedSet.has(id+':'+lang); });
     var html = a.tokens.map(function(t){ if(!t.id) return t.t.replace(/</g,'&lt;'); var cls = learnedSet.has(t.id+':'+lang) ? 'ic-known' : 'ic-ladder'; return '<span class="'+cls+'" title="'+ITEM[t.id].en.replace(/"/g,'')+'">'+t.t.replace(/</g,'&lt;')+'</span>'; }).join('');
-    document.getElementById('ic-result').innerHTML = '<div class="ic-text">'+html+'</div><div class="ic-stats">'+a.ids.length+' ladder words in this text · <span class="ic-known">'+known.length+' decoded</span> · <span class="ic-ladder">'+todo.length+' not yet</span></div>';
+    document.getElementById('ic-result').innerHTML = '<div class="ic-text">'+html+'</div><div class="ic-stats">'+_t('{n} ladder words in this text', {n:a.ids.length})+' · <span class="ic-known">'+_t('{n} decoded', {n:known.length})+'</span> · <span class="ic-ladder">'+_t('{n} not yet', {n:todo.length})+'</span></div>';
     var act = document.getElementById('ic-actions'); act.innerHTML = '';
     if(todo.length){
-      var b = document.createElement('button'); b.className = 'btn btn-primary'; b.textContent = '📰 Decode the '+Math.min(30, todo.length)+' unknown words';
+      var b = document.createElement('button'); b.className = 'btn btn-primary'; b.textContent = _t('📰 Decode the {n} unknown words', {n:Math.min(30, todo.length)});
       b.addEventListener('click', function(){ st.interceptIds = todo.slice(0, 30); var tiers = st.interceptIds.map(function(id){ return TIERS.findIndex(function(t){ return t.code===ITEM[id].tier; }); }); var idx = tiers.sort(function(x,y){ return x-y; })[Math.floor(tiers.length/2)]; enterDungeon(idx, lang, '__intercept'); });
       act.appendChild(b);
     }
@@ -7735,16 +7799,16 @@
     st.storyLang = cur;
     var pick = langs.length>1 ? '<div class="storm-actions" style="margin-top:12px;">'+langs.map(function(l){ return '<button class="btn btn-sm '+(l===cur?'btn-primary':'btn-ghost')+' story-lang" data-lang="'+l+'">'+LANG_META[l].flag+' '+LANGS[l].name+'</button>'; }).join('')+'</div>' : '';
     var mode = storyMode();
-    pick += '<div class="story-modes">'+STORY_MODES.map(function(m){ return '<button class="btn btn-sm '+(m.id===mode.id?'btn-primary':'btn-ghost')+' story-mode" data-mode="'+m.id+'" title="'+m.desc+'">'+m.icon+' '+m.name+'</button>'; }).join('')+'</div><div class="story-meta" style="text-align:center;">'+mode.desc+(mode.mult>1?' · pays ×'+mode.mult:'')+'</div>';
+    pick += '<div class="story-modes">'+STORY_MODES.map(function(m){ return '<button class="btn btn-sm '+(m.id===mode.id?'btn-primary':'btn-ghost')+' story-mode" data-mode="'+m.id+'" title="'+m.desc+'">'+m.icon+' '+m.name+'</button>'; }).join('')+'</div><div class="story-meta" style="text-align:center;">'+mode.desc+(mode.mult>1?' · '+_t('pays ×{m}', {m:mode.mult}):'')+'</div>';
     var tiles = STORIES.filter(function(s){ return !s.only || s.only===cur; }).map(function(s){
       var tx = storyText(s, cur);
-      if(!tx) return '<div class="story-tile locked"><div class="story-tier">'+s.tier+'</div><div class="story-title">'+esc(s.title)+'</div><div class="story-meta">Not yet translated into '+LANGS[cur].name+'</div></div>';
+      if(!tx) return '<div class="story-tile locked"><div class="story-tier">'+s.tier+'</div><div class="story-title">'+esc(s.title)+'</div><div class="story-meta">'+_t('Not yet translated into {lang}', {lang:LANGS[cur].name})+'</div></div>';
       var open = storyOpen(s, cur); var rec = save.stories[storyKey(s, cur, mode.id)]; var pay = STORY_PAY[s.tier]; var outOf = mode.id==='read' ? 4 : 7;
-      var meta = !open ? '🔒 Clear the '+TIERS[storyTierIdx(s)-1].code+' sector first' : rec ? '✅ Done · best '+rec.best+'/'+outOf+(rec.best===outOf?' · perfect':'') : 'Not done yet · +'+Math.round(pay.tips*mode.mult)+' 💠'+(pay.dark?' +'+pay.dark+' 🌌':'')+' on first finish';
-      return '<div class="story-tile'+(open?'':' locked')+'" data-id="'+s.id+'"><div class="story-tier">'+s.tier+' · '+TIERS[storyTierIdx(s)].name+(s.only?' · 📜 '+esc(s.origin||'traditional tale'):' · 🚀 crew story')+'</div><div class="story-title">'+furi(esc(tx.title))+'</div><div class="story-meta">'+esc(s.title)+' · '+meta+'</div></div>';
+      var meta = !open ? _t('🔒 Clear the {tier} sector first', {tier:TIERS[storyTierIdx(s)-1].code}) : rec ? _t('✅ Done · best {b}/{n}', {b:rec.best, n:outOf})+(rec.best===outOf?' · '+_t('perfect'):'') : _t('Not done yet · {reward} on first finish', {reward:'+'+Math.round(pay.tips*mode.mult)+' 💠'+(pay.dark?' +'+pay.dark+' 🌌':'')});
+      return '<div class="story-tile'+(open?'':' locked')+'" data-id="'+s.id+'"><div class="story-tier">'+s.tier+' · '+TIERS[storyTierIdx(s)].name+(s.only?' · 📜 '+esc(s.origin||_t('traditional tale')):' · 🚀 '+_t('crew story'))+'</div><div class="story-title">'+furi(esc(tx.title))+'</div><div class="story-meta">'+furi(esc(storyNative(s).title))+' · '+meta+'</div></div>';
     }).join('');
     body.innerHTML = pick+'<div class="story-list">'+tiles+'</div>';
-    act.innerHTML = '<button class="btn btn-ghost" id="btn-story-back">← Star Chart</button>';
+    act.innerHTML = '<button class="btn btn-ghost" id="btn-story-back">'+_t('← Star Chart')+'</button>';
     document.getElementById('btn-story-back').addEventListener('click', showHome);
     Array.prototype.forEach.call(body.querySelectorAll('.story-lang'), function(b){ b.addEventListener('click', function(){ st.storyLang = b.getAttribute('data-lang'); showStories(); }); });
     Array.prototype.forEach.call(body.querySelectorAll('.story-mode'), function(b){ b.addEventListener('click', function(){ st.storyMode = b.getAttribute('data-mode'); showStories(); }); });
@@ -7770,9 +7834,9 @@
     st.storyMode = mode || st.storyMode || 'read'; var M = storyMode();
     st.story = {id:id, lang:lang, mode:M.id, pos:0, answered:{}, right:0};
     var body = document.getElementById('story-body'), act = document.getElementById('story-actions');
-    var natNote = (nativeLang()!=='en' && !storyText(story, nativeLang())) ? '<div class="story-meta">This tale has no '+nativeName()+' text yet, so the English side is used.</div>' : '';
+    var natNote = (nativeLang()!=='en' && !storyText(story, nativeLang())) ? '<div class="story-meta">'+_t('This tale has no {lang} text yet, so the English side is used.', {lang:nativeName()})+'</div>' : '';
     body.innerHTML = '<div class="story-read"><div class="story-head"><span class="story-tier">'+story.tier+' · '+LANG_META[lang].flag+' '+LANGS[lang].name+' · '+M.icon+' '+M.name+'</span><h3 style="margin:0;">'+furi(esc(tx.title))+'</h3></div>'+natNote+'<div id="story-flow"></div></div>';
-    act.innerHTML = '<button class="btn btn-ghost" id="btn-story-list">← Library</button>';
+    act.innerHTML = '<button class="btn btn-ghost" id="btn-story-list">'+_t('← Library')+'</button>';
     document.getElementById('btn-story-list').addEventListener('click', showStories);
     storyNext();
   }
@@ -7789,7 +7853,7 @@
     para.addEventListener('click', function(){ para.classList.toggle('open'); });
     flow.appendChild(para);
     var tools = document.createElement('div'); tools.className = 'story-tools';
-    tools.innerHTML = '<button class="btn btn-sm btn-ghost story-say" title="Hear this paragraph">🔊</button>';
+    tools.innerHTML = '<button class="btn btn-sm btn-ghost story-say" title="'+_t('Hear this paragraph')+'">🔊</button>';
     tools.querySelector('.story-say').addEventListener('click', function(){ speakText(text, S.lang, true); });
     flow.appendChild(tools);
     var q = story.questions.filter(function(q){ return q.after===i; })[0];
@@ -7797,7 +7861,7 @@
     if(q){ storyAsk(story, q, flow); }
     else {
       var more = document.createElement('div'); more.className = 'story-tools';
-      more.innerHTML = '<button class="btn btn-sm btn-primary story-more">'+(S.pos>=tx.paras.length?'Finish':'Continue ▸')+'</button>';
+      more.innerHTML = '<button class="btn btn-sm btn-primary story-more">'+(S.pos>=tx.paras.length?_t('Finish'):_t('Continue ▸'))+'</button>';
       more.querySelector('button').addEventListener('click', function(){ more.remove(); storyNext(); });
       flow.appendChild(more);
     }
@@ -7809,21 +7873,21 @@
     var toLang = S.mode==='interpret' ? nativeLang() : S.lang;                       /* the language the player writes in */
     var ref = S.mode==='interpret' ? nat.paras[i] : target;                         /* what the answer is compared with */
     var box = document.createElement('div'); box.className = 'story-q';
-    var prompt = S.mode==='translate' ? '<div class="story-para" style="cursor:auto;">'+furi(esc(nat.paras[i]))+'</div><div class="q">✍️ Write it in '+LANGS[S.lang].name+'</div>'
-               : '<div class="q">🎧 Listen, then '+(S.mode==='dictate' ? 'type what you hear in '+LANGS[S.lang].name : 'write what it means in '+nativeName())+'</div><div class="story-tools" style="justify-content:flex-start;"><button class="btn btn-sm btn-ghost story-say">🔊 Play</button></div>';
-    box.innerHTML = prompt+'<textarea class="story-type" lang="'+(SPEECH_LANG[toLang]||toLang)+'" placeholder="'+(isCjkLang(toLang)?'…':'Type here…')+'"></textarea><div class="story-tools"><span class="story-meta" style="margin-right:auto;">Paragraph '+(i+1)+' of 7</span><button class="btn btn-sm btn-primary story-check">Check</button></div><div class="story-result"></div>';
+    var prompt = S.mode==='translate' ? '<div class="story-para" style="cursor:auto;">'+furi(esc(nat.paras[i]))+'</div><div class="q">'+_t('✍️ Write it in {lang}', {lang:LANGS[S.lang].name})+'</div>'
+               : '<div class="q">'+(S.mode==='dictate' ? _t('🎧 Listen, then type what you hear in {lang}', {lang:LANGS[S.lang].name}) : _t('🎧 Listen, then write what it means in {lang}', {lang:nativeName()}))+'</div><div class="story-tools" style="justify-content:flex-start;"><button class="btn btn-sm btn-ghost story-say">🔊 '+_t('Play')+'</button></div>';
+    box.innerHTML = prompt+'<textarea class="story-type" lang="'+(SPEECH_LANG[toLang]||toLang)+'" placeholder="'+(isCjkLang(toLang)?'…':_t('Type here…'))+'"></textarea><div class="story-tools"><span class="story-meta" style="margin-right:auto;">'+_t('Paragraph {n} of {total}', {n:i+1, total:7})+'</span><button class="btn btn-sm btn-primary story-check">'+_t('Check')+'</button></div><div class="story-result"></div>';
     flow.appendChild(box);
     var say = box.querySelector('.story-say'); if(say){ say.addEventListener('click', function(){ speakText(target, S.lang, true); }); setTimeout(function(){ speakText(target, S.lang, true); }, 250); }
     var ta = box.querySelector('.story-type'); ta.focus();
     box.querySelector('.story-check').addEventListener('click', function(){
-      var typed = ta.value; if(!typed.trim()){ toast('Type your answer first.'); return; }
+      var typed = ta.value; if(!typed.trim()){ toast(_t('Type your answer first.')); return; }
       var sim = storySim(typed, ref, toLang); var ok = sim >= (S.mode==='interpret' ? 0.45 : 0.72);
       if(ok) S.right++; S.answered[i] = sim; bumpLangType(S.lang, 'story-'+S.mode, ok);
       ta.disabled = true; this.disabled = true;
       var pct = Math.round(sim*100);
-      box.querySelector('.story-result').innerHTML = '<div class="story-verdict">'+(ok ? '✅ Close enough · '+pct+'% match' : '❌ '+pct+'% match')+'</div>'+
-        '<div class="story-ref"><b>Reference:</b> '+furi(esc(ref))+(S.mode!=='translate' && S.mode!=='interpret' ? '' : '')+(S.mode==='dictate' || S.mode==='interpret' ? '<br><b>Meaning:</b> '+furi(esc(S.mode==='interpret' ? target : nat.paras[i])) : '')+'</div>'+
-        '<div class="story-tools"><button class="btn btn-sm btn-primary story-more">'+(S.pos+1>=7?'Finish':'Continue ▸')+'</button></div>';
+      box.querySelector('.story-result').innerHTML = '<div class="story-verdict">'+(ok ? _t('✅ Close enough · {p}% match', {p:pct}) : _t('❌ {p}% match', {p:pct}))+'</div>'+
+        '<div class="story-ref"><b>'+_t('Reference:')+'</b> '+furi(esc(ref))+(S.mode==='dictate' || S.mode==='interpret' ? '<br><b>'+_t('Meaning:')+'</b> '+furi(esc(S.mode==='interpret' ? target : nat.paras[i])) : '')+'</div>'+
+        '<div class="story-tools"><button class="btn btn-sm btn-primary story-more">'+(S.pos+1>=7?_t('Finish'):_t('Continue ▸'))+'</button></div>';
       box.querySelector('.story-more').addEventListener('click', function(){ S.pos++; storyNext(); });
     });
     try{ box.scrollIntoView({behavior:'smooth', block:'nearest'}); }catch(e){}
@@ -7842,7 +7906,7 @@
         if(!ok) b.classList.add('wrong');
         bumpLangType(S.lang, 'story', ok);
         var more = document.createElement('div'); more.className = 'story-tools';
-        more.innerHTML = '<span class="story-meta" style="margin-right:auto;">'+(ok?'✅ Right':'❌ The answer was: '+esc(q.options[q.correct]))+'</span><button class="btn btn-sm btn-primary story-more">'+(S.pos>=7?'Finish':'Continue ▸')+'</button>';
+        more.innerHTML = '<span class="story-meta" style="margin-right:auto;">'+(ok?_t('✅ Right'):_t('❌ The answer was: {a}', {a:esc(q.options[q.correct])}))+'</span><button class="btn btn-sm btn-primary story-more">'+(S.pos>=7?_t('Finish'):_t('Continue ▸'))+'</button>';
         more.querySelector('button').addEventListener('click', function(){ more.remove(); storyNext(); });
         box.appendChild(more);
       });
@@ -7857,7 +7921,7 @@
     streakTouch(); persist(); refreshHud();
     var flow = document.getElementById('story-flow');
     var d = document.createElement('div'); d.className = 'story-done';
-    d.innerHTML = M.icon+' <b>'+furi(esc(storyText(story, S.lang).title))+'</b> — '+S.right+'/'+outOf+(S.mode==='read' ? ' questions right' : ' paragraphs matched')+(gained ? ' · '+gained : first ? '' : ' · already read')+'<div class="home-actions"><button class="btn btn-primary" id="btn-story-again">← Library</button></div>';
+    d.innerHTML = M.icon+' <b>'+furi(esc(storyText(story, S.lang).title))+'</b> — '+(S.mode==='read' ? _t('{r}/{n} questions right', {r:S.right, n:outOf}) : _t('{r}/{n} paragraphs matched', {r:S.right, n:outOf}))+(gained ? ' · '+gained : first ? '' : ' · '+_t('already read'))+'<div class="home-actions"><button class="btn btn-primary" id="btn-story-again">'+_t('← Library')+'</button></div>';
     flow.appendChild(d); try{ d.scrollIntoView({behavior:'smooth', block:'nearest'}); }catch(e){}
     document.getElementById('btn-story-again').addEventListener('click', showStories);
     checkPlan(); checkCommendations();
@@ -7898,11 +7962,11 @@
   function stormCardHtml(){
     var info = stormToday();
     var mods = info.mods.map(function(m){ return '<span class="perk-chip chain" title="'+m.desc+'"><span class="pc-icon">'+m.icon+'</span>'+m.name+'</span>'; }).join('');
-    return '<div class="sc-title">🌩️ Today’s Signal Storm — '+info.date+'</div>'+
-      '<div class="sc-meta">20 mixed transmissions from every sector you’ve opened, every language, with today’s modifiers:</div>'+
+    return '<div class="sc-title">'+_t('🌩️ Today’s Signal Storm — {date}', {date:info.date})+'</div>'+
+      '<div class="sc-meta">'+_t('20 mixed transmissions from every sector you’ve opened, every language, with today’s modifiers:')+'</div>'+
       '<div class="sc-mods">'+mods+'</div>'+
-      '<div class="sc-meta">'+(save.storm.cleared ? '✅ Cleared today · best '+save.storm.best : save.storm.runs ? 'Best today: '+save.storm.best+' · '+save.storm.runs+' attempt'+(save.storm.runs===1?'':'s') : 'Not attempted yet · +120 💠 on first clear')+' · chain-neutral</div>'+
-      '<div style="margin-top:10px;"><button class="btn btn-sm btn-primary" id="btn-storm">⚡ Enter the Storm</button></div>';
+      '<div class="sc-meta">'+(save.storm.cleared ? _t('✅ Cleared today · best {b}', {b:save.storm.best}) : save.storm.runs ? _t('Best today: {b}', {b:save.storm.best})+' · '+(save.storm.runs===1 ? _t('{n} attempt', {n:1}) : _t('{n} attempts', {n:save.storm.runs})) : _t('Not attempted yet · +120 💠 on first clear'))+' · '+_t('chain-neutral')+'</div>'+
+      '<div style="margin-top:10px;"><button class="btn btn-sm btn-primary" id="btn-storm">'+_t('⚡ Enter the Storm')+'</button></div>';
   }
 
   /* ---- commendations ---- */
@@ -7913,7 +7977,7 @@
       var ok = false; try{ ok = !!c.check(); }catch(e){}
       if(ok){ save.commendations.push(c.id); save.tips += c.reward; fresh.push(c); }
     });
-    if(fresh.length){ persist(); refreshHud(); toast('🎖️ <b>Commendation: '+fresh[0].name+'</b> — '+fresh[0].desc+' +'+fresh[0].reward+' 💠'+(fresh.length>1?' (+'+(fresh.length-1)+' more)':'')); }
+    if(fresh.length){ persist(); refreshHud(); toast('🎖️ <b>'+_t('Commendation: {name}', {name:fresh[0].name})+'</b> — '+fresh[0].desc+' +'+fresh[0].reward+' 💠'+(fresh.length>1?' '+_t('(+{n} more)', {n:fresh.length-1}):'')); }
     return fresh;
   }
   function bumpStat(k, n){ save.stats[k] = (save.stats[k]||0) + (n===undefined?1:n); }
@@ -7946,26 +8010,27 @@
     return '<span class="perk-chip'+(cls?' '+cls:'')+'" title="'+perk.desc.replace(/<[^>]+>/g,'')+'"><span class="pc-icon">'+perk.icon+'</span>'+perk.name+(suffix||'')+'</span>';
   }
   /* what a first attempt at this relay means for the chain — shown before the run */
-  function chainBoxHtml(firstAttempt, endless){
+  function chainBoxHtml(firstAttempt, endless, drill){
     var c = save.chain;
     var carried = c.carried.map(perkById).filter(Boolean);
     var active = activeMilestones(c.len);
     var next = nextMilestone(c.len);
-    var html = '<div class="cb-title">🔗 Signal Chain — <b>'+c.len+'</b> link'+(c.len===1?'':'s')+(c.best>c.len?' · best '+c.best:'')+'</div>';
-    if(endless){ html += 'Open Channel runs never extend or break the chain, but every welded module and milestone is live.'; }
-    else if(firstAttempt){ html += 'First attempt. <b>Clear it</b> → the chain grows and the module you draft is welded on. <b>Fail it</b> → the chain breaks'+(owned('shop_insure')?' (🧿 Chain Insurance is armed)':owned('shop_anchor')?' (⚓ Anchor keeps half)':'')+'.'; }
-    else { html += 'Re-run — chain unaffected either way. Carried modules and milestones still apply.'; }
+    var html = '<div class="cb-title">🔗 '+_t('Signal Chain')+' — '+(c.len===1 ? _t('<b>{n}</b> link', {n:c.len}) : _t('<b>{n}</b> links', {n:c.len}))+(c.best>c.len?' · '+_t('best {n}', {n:c.best}):'')+'</div>';
+    if(drill){ html += _t('Recovery drills never extend or break the chain, but every welded module and milestone is live.'); }
+    else if(endless){ html += _t('Open Channel runs never extend or break the chain, but every welded module and milestone is live.'); }
+    else if(firstAttempt){ html += _t('First attempt. <b>Clear it</b> → the chain grows and the module you draft is welded on. <b>Fail it</b> → the chain breaks.')+(owned('shop_insure')?' '+_t('(🧿 Chain Insurance is armed)'):owned('shop_anchor')?' '+_t('(⚓ Anchor keeps half)'):''); }
+    else { html += _t('Re-run — chain unaffected either way. Carried modules and milestones still apply.'); }
     var mods = carried.map(function(p){ return perkChipHtml(p,'carried'); });
     active.forEach(function(m){ mods.push('<span class="perk-chip chain" title="'+m.desc+'"><span class="pc-icon">'+m.icon+'</span>'+m.name+'</span>'); });
     if(mods.length){ html += '<div class="cb-mods">'+mods.join('')+'</div>'; }
-    else { html += '<div style="margin-top:4px;">Nothing welded yet — carry up to <b>'+carryCap()+'</b> modules.</div>'; }
-    if(next){ html += '<div style="margin-top:6px;">Next milestone at <b>'+milestoneAt(next)+'</b>: '+next.icon+' '+next.name+' — '+next.desc+'</div>'; }
+    else { html += '<div style="margin-top:4px;">'+_t('Nothing welded yet — carry up to <b>{n}</b> modules.', {n:carryCap()})+'</div>'; }
+    if(next){ html += '<div style="margin-top:6px;">'+_t('Next milestone at <b>{n}</b>:', {n:milestoneAt(next)})+' '+next.icon+' '+next.name+' — '+next.desc+'</div>'; }
     return html;
   }
   /* apply the chain outcome after a relay ends; returns a human summary for the results screen */
   function settleChain(outcome, opts){
     var c = save.chain;
-    if(!opts.firstAttempt) return {text:'🔗 Re-run — chain holds at '+c.len+'.', changed:false};
+    if(!opts.firstAttempt) return {text:_t('🔗 Re-run — chain holds at {n}.', {n:c.len}), changed:false};
     if(outcome==='clear'){
       var before = c.len;
       var links = ((owned('shop_double') && opts.perfect) ? 2 : 1) + (opts.extraLinks||0) + ((owned('shop_double2') && opts.perfect) ? 1 : 0);
@@ -7979,25 +8044,25 @@
         while(c.carried.length > carryCap()) c.carried.shift();
       }
       var newly = CHAIN_MILESTONES.filter(function(m){ return before < milestoneAt(m) && c.len >= milestoneAt(m); });
-      var t = '🔗 Chain extended to <b>'+c.len+'</b>'+(links>1?' (✨ Resonance: +2)':'')+'.';
-      if(opts.draftedPerkId && perkById(opts.draftedPerkId)) t += ' '+perkById(opts.draftedPerkId).icon+' '+perkById(opts.draftedPerkId).name+' welded on.';
-      newly.forEach(function(m){ t += ' 🎉 Milestone: '+m.icon+' <b>'+m.name+'</b> — '+m.desc+'.'; });
+      var t = _t('🔗 Chain extended to <b>{n}</b>.', {n:c.len})+(links>1?' '+_t('(✨ Resonance: +{n})', {n:links}):'');
+      if(opts.draftedPerkId && perkById(opts.draftedPerkId)) t += ' '+_t('{icon} {name} welded on.', {icon:perkById(opts.draftedPerkId).icon, name:perkById(opts.draftedPerkId).name});
+      newly.forEach(function(m){ t += ' 🎉 '+_t('Milestone: {icon} <b>{name}</b> — {desc}.', {icon:m.icon, name:m.name, desc:m.desc}); });
       return {text:t, changed:true, milestones:newly};
     }
     /* failed first attempt */
     var was = c.len;
-    if(opts.iron){ return {text:'⛓️ Iron Link held — the chain stays at <b>'+c.len+'</b>.', changed:false}; }
+    if(opts.iron){ return {text:_t('⛓️ Iron Link held — the chain stays at <b>{n}</b>.', {n:c.len}), changed:false}; }
     if(owned('shop_insure')){
       save.shopOwned.splice(save.shopOwned.indexOf('shop_insure'),1);
-      return {text:'🧿 Chain Insurance absorbed the break — chain holds at <b>'+c.len+'</b>. Re-arm it at the Engineering Bay.', changed:true};
+      return {text:_t('🧿 Chain Insurance absorbed the break — chain holds at <b>{n}</b>. Re-arm it at the Engineering Bay.', {n:c.len}), changed:true};
     }
     if(owned('shop_anchor')){
       c.len = Math.floor(c.len * (owned('shop_anchor2') ? 0.75 : 0.5));
       c.carried = c.carried.slice(-1);
-      return {text:'⚓ Chain broke at '+was+' — the Anchor held <b>'+c.len+'</b> link'+(c.len===1?'':'s')+' and your newest module.', changed:true};
+      return {text:_t('⚓ Chain broke at {was} — the Anchor held <b>{n}</b> links and your newest module.', {was:was, n:c.len}), changed:true};
     }
     c.len = 0; c.carried = [];
-    return {text: was>0 ? '💥 Chain broken — it was <b>'+was+'</b>'+(c.best>0?' (best '+c.best+')':'')+'. Welded modules lost.' : '🔗 Chain stays at 0 — clear a relay on the first try to start one.', changed:true};
+    return {text: was>0 ? _t('💥 Chain broken — it was <b>{n}</b>.', {n:was})+(c.best>0?' '+_t('(best {n})', {n:c.best}):'')+' '+_t('Welded modules lost.') : _t('🔗 Chain stays at 0 — clear a relay on the first try to start one.'), changed:true};
   }
 
   /* ============================= WORLD MAP / HUB / SHOP ============================= */
@@ -8026,10 +8091,10 @@
     var pct = ri.next ? Math.round(100*(save.xp-ri.rank.xp)/(ri.next.xp-ri.rank.xp)) : 100;
     el.homeProfile.innerHTML =
       '<div class="pf-badge">'+ri.rank.icon+'</div><div class="pf-body">'+
-      '<div class="pf-rank">'+ri.rank.title+' <span style="color:var(--paper-faint);font-weight:400;font-size:12px;">· rank '+(ri.idx+1)+'/'+RANKS.length+'</span></div>'+
-      '<div class="pf-sub">'+save.xp.toLocaleString()+' XP'+(ri.next ? ' · '+(ri.next.xp-save.xp).toLocaleString()+' to '+ri.next.title : ' · max rank')+' · 🎖️ '+save.commendations.length+'/'+COMMENDATIONS.length+' commendations'+(noiseLevel()?' · 📡 Noise '+noiseLevel():'')+(warpCores()?' · 🚀 '+warpCores()+' cores':'')+(streakAlive()?' · 🔥 '+save.streak.days+'-day streak':'')+'</div>'+
+      '<div class="pf-rank">'+ri.rank.title+' <span style="color:var(--paper-faint);font-weight:400;font-size:12px;">· '+_t('rank {n}/{total}', {n:ri.idx+1, total:RANKS.length})+'</span></div>'+
+      '<div class="pf-sub">'+save.xp.toLocaleString()+' XP'+(ri.next ? ' · '+_t('{n} to {rank}', {n:(ri.next.xp-save.xp).toLocaleString(), rank:ri.next.title}) : ' · '+_t('max rank'))+' · 🎖️ '+_t('{n}/{total} commendations', {n:save.commendations.length, total:COMMENDATIONS.length})+(noiseLevel()?' · 📡 '+_t('Noise {n}', {n:noiseLevel()}):'')+(warpCores()?' · 🚀 '+_t('{n} cores', {n:warpCores()}):'')+(streakAlive()?' · 🔥 '+_t('{n}-day streak', {n:save.streak.days}):'')+'</div>'+
       '<div class="xp-track"><div class="xp-fill" style="width:'+pct+'%"></div></div>'+
-      (ri.next && ri.next.unlock ? '<div class="pf-sub" style="margin-top:6px;">Next: '+ri.next.unlock+'</div>' : '')+
+      (ri.next && ri.next.unlock ? '<div class="pf-sub" style="margin-top:6px;">'+_t('Next: {x}', {x:ri.next.unlock})+'</div>' : '')+
       '</div>';
     el.stormCard.innerHTML = stormCardHtml();
     renderSweepCard(); renderPlanCard();
@@ -8041,10 +8106,10 @@
     checkCommendations();
     renderWarpCard(); renderWipeRow();
     el.homeStats.innerHTML =
-      statBox(save.tips+' 💠','Credits banked') +
-      statBox(clearedCount+'/'+totalDungeons,'Relays decoded') +
-      statBox('🔗 '+save.chain.len,'Signal chain'+(save.chain.best>save.chain.len?' · best '+save.chain.best:'')) +
-      statBox('🌌 '+(save.dark||0),'Dark matter');
+      statBox(save.tips+' 💠',_t('Credits banked')) +
+      statBox(clearedCount+'/'+totalDungeons,_t('Relays decoded')) +
+      statBox('🔗 '+save.chain.len,_t('Signal chain')+(save.chain.best>save.chain.len?' · '+_t('best {n}', {n:save.chain.best}):'')) +
+      statBox('🌌 '+(save.dark||0),_t('Dark matter'));
     renderHubMap();
     refreshHud();
   }
@@ -8055,8 +8120,8 @@
     if(!langs.length){ card.hidden = true; return; }
     card.hidden = false;
     var total = langs.reduce(function(s,l){ return s+due[l]; }, 0);
-    card.innerHTML = '<div class="storm-head">🛰️ Maintenance Sweep · <b>'+total+'</b> words due for review</div>'+
-      '<div class="storm-body">Spaced repetition keeps decoded words decoded. Sweeps are chain-neutral and pay like a drill.</div>'+
+    card.innerHTML = '<div class="storm-head">🛰️ '+_t('Maintenance Sweep')+' · '+_t('<b>{n}</b> words due for review', {n:total})+'</div>'+
+      '<div class="storm-body">'+_t('Spaced repetition keeps decoded words decoded. Sweeps are chain-neutral and pay like a drill.')+'</div>'+
       '<div class="storm-actions">'+langs.map(function(l){ return '<button class="btn btn-sm btn-ghost sweep-btn" data-lang="'+l+'">'+LANG_META[l].flag+' '+LANGS[l].name+' · '+due[l]+'</button>'; }).join('')+'</div>';
     Array.prototype.forEach.call(card.querySelectorAll('.sweep-btn'), function(b){
       b.addEventListener('click', function(){
@@ -8069,13 +8134,13 @@
 
   function renderInterferencePanel(){
     var noise = noiseLevel();
-    var html = '<div class="noise-head">📡 Interference · Noise Level <b>'+noise+'</b>'+
-      '<span class="noise-pay">+'+(12*noise)+'% credits · +'+(8*noise)+'% XP'+(noise>=3?' · 🌌 Dark Matter':' · Dark Matter from Noise 3')+'</span></div><div class="noise-grid">';
+    var html = '<div class="noise-head">📡 '+_t('Interference · Noise Level <b>{n}</b>', {n:noise})+
+      '<span class="noise-pay">'+_t('+{c}% credits · +{x}% XP', {c:12*noise, x:8*noise})+(noise>=3?' · 🌌 '+_t('Dark Matter'):' · '+_t('Dark Matter from Noise 3'))+'</span></div><div class="noise-grid">';
     INTERFERENCE.forEach(function(i){
       var on = interferenceOn(i.id);
       html += '<button type="button" class="noise-chip'+(on?' on':'')+'" data-id="'+i.id+'" title="'+i.desc+'"><span class="nc-icon">'+i.icon+'</span><span class="nc-name">'+i.name+'</span><span class="nc-w">+'+i.w+'</span></button>';
     });
-    html += '</div><div class="noise-desc" id="noise-desc">'+(noise ? save.interference.map(function(id){ var i = interferenceById(id); return i ? i.icon+' '+i.desc : ''; }).join(' ') : 'Add interference to the signal for better pay. Everything here applies to relays, storms and Open Channel runs; never to recovery drills.')+'</div>';
+    html += '</div><div class="noise-desc" id="noise-desc">'+(noise ? save.interference.map(function(id){ var i = interferenceById(id); return i ? i.icon+' '+i.desc : ''; }).join(' ') : _t('Add interference to the signal for better pay. Everything here applies to relays, storms and Open Channel runs; never to recovery drills.'))+'</div>';
     el.ascRow.innerHTML = html;
     Array.prototype.forEach.call(el.ascRow.querySelectorAll('.noise-chip'), function(b){
       b.addEventListener('click', function(){
@@ -8101,8 +8166,8 @@
       }).join('');
       var clearedN = tier.endless ? 0 : tierLangs(tier).filter(function(l){ return isLangCleared(idx,l); }).length;
       var progressHtml = tier.endless
-        ? (unlocked ? 'Unlocked — every frequency, mixed' : 'Clear every sector to unlock')
-        : ('<b>'+clearedN+'</b>/'+tierLangs(tier).length+' relays cleared');
+        ? (unlocked ? _t('Unlocked — every frequency, mixed') : _t('Clear every sector to unlock'))
+        : _t('<b>{n}</b>/{total} relays cleared', {n:clearedN, total:tierLangs(tier).length});
       tile.innerHTML =
         '<span class="lvl-badge" style="background:'+tier.color+'">'+tier.code+'</span>'+
         '<div class="hub-name">'+(unlocked?'':'🔒 ')+tier.name+'</div>'+
@@ -8142,7 +8207,7 @@
       tile.innerHTML =
         '<span class="dungeon-flag">'+(cleared?'✅':'📡')+'</span>'+
         '<div class="dungeon-name" style="color:'+LANGS[l].color+';">'+LANGS[l].name+'</div>'+
-        '<div class="dungeon-meta">'+topicsClearedN+'/'+topics.length+' modules cleared</div>';
+        '<div class="dungeon-meta">'+_t('{n}/{total} modules cleared', {n:topicsClearedN, total:topics.length})+'</div>';
       tile.addEventListener('click', function(){ showTopics(idx, l); });
       el.dungeonGrid.appendChild(tile);
     });
@@ -8166,23 +8231,23 @@
     var mods = modulesForLang(tier, lang);
     var clearedMods = mods.filter(function(m){ return isDungeonCleared(idx, lang, m.key); }).length;
     var vocabN = vocabForTier(tier).length;
-    el.topicsSub.textContent = tier.ladder+' — '+clearedMods+'/'+mods.length+' modules cleared'+(vocabN ? ' · '+vocabN+' words in this band' : '')+'. Clear every module to decode this relay.';
+    el.topicsSub.textContent = tier.ladder+' — '+_t('{n}/{total} modules cleared', {n:clearedMods, total:mods.length})+(vocabN ? ' · '+_t('{n} words in this band', {n:vocabN}) : '')+'. '+_t('Clear every module to decode this relay.');
     el.topicGrid.innerHTML = '';
     var rec = recoveryIds(tier, lang);
     if(rec.length>=4){
-      var rhead = document.createElement('div'); rhead.className = 'topic-section'; rhead.textContent = '🩺 Signal Recovery · '+rec.length+' weak words';
+      var rhead = document.createElement('div'); rhead.className = 'topic-section'; rhead.textContent = '🩺 '+_t('Signal Recovery')+' · '+_t('{n} weak words', {n:rec.length});
       el.topicGrid.appendChild(rhead);
       var rtile = document.createElement('button'); rtile.type='button'; rtile.className='dungeon-tile'; rtile.setAttribute('data-state','recovery'); rtile.setAttribute('data-locked','0');
-      rtile.innerHTML = '<span class="dungeon-flag">🩺</span><div class="dungeon-name" style="color:var(--paprika);">Signal Recovery</div><div class="dungeon-meta">'+rec.length+' words you keep missing · chain-neutral</div>';
+      rtile.innerHTML = '<span class="dungeon-flag">🩺</span><div class="dungeon-name" style="color:var(--paprika);">'+_t('Signal Recovery')+'</div><div class="dungeon-meta">'+_t('{n} words you keep missing', {n:rec.length})+' · '+_t('chain-neutral')+'</div>';
       rtile.addEventListener('click', function(){ enterDungeon(idx, lang, '__recovery'); });
       el.topicGrid.appendChild(rtile);
     }
     var due = sweepIds(tier, lang);
     if(due.length>=4){
-      var shead = document.createElement('div'); shead.className = 'topic-section'; shead.textContent = '🛰️ Maintenance Sweep · '+due.length+' due';
+      var shead = document.createElement('div'); shead.className = 'topic-section'; shead.textContent = '🛰️ '+_t('Maintenance Sweep')+' · '+_t('{n} due', {n:due.length});
       el.topicGrid.appendChild(shead);
       var stile = document.createElement('button'); stile.type='button'; stile.className='dungeon-tile'; stile.setAttribute('data-state','recovery'); stile.setAttribute('data-locked','0');
-      stile.innerHTML = '<span class="dungeon-flag">🛰️</span><div class="dungeon-name" style="color:#7fd4ff;">Maintenance Sweep</div><div class="dungeon-meta">'+due.length+' words due for review · chain-neutral</div>';
+      stile.innerHTML = '<span class="dungeon-flag">🛰️</span><div class="dungeon-name" style="color:#7fd4ff;">'+_t('Maintenance Sweep')+'</div><div class="dungeon-meta">'+_t('{n} words due for review', {n:due.length})+' · '+_t('chain-neutral')+'</div>';
       stile.addEventListener('click', function(){ enterDungeon(idx, lang, '__sweep'); });
       el.topicGrid.appendChild(stile);
     }
@@ -8204,7 +8269,7 @@
         tile.innerHTML =
           '<span class="dungeon-flag">'+(cleared?'✅':ROUND_TYPES[type].icon)+'</span>'+
           '<div class="dungeon-name" style="color:'+LANGS[lang].color+';">'+topicLabel(topic)+'</div>'+
-          '<div class="dungeon-meta">'+count+' to decode</div>';
+          '<div class="dungeon-meta">'+_t('{n} to decode', {n:count})+'</div>';
         tile.addEventListener('click', function(){ enterDungeon(idx, lang, topic); });
         el.topicGrid.appendChild(tile);
       });
@@ -8223,7 +8288,7 @@
   }
 
   function renderShop(){
-    el.shopBalance.innerHTML = '💠 <b style="color:var(--brass);">'+save.tips+'</b> credits · 🌌 <b style="color:#b48cff;">'+(save.dark||0)+'</b> dark matter'+(warpCores()?' · 🚀 <b style="color:#7fd4ff;">'+warpAvailable()+'</b>/'+warpCores()+' cores':'')+' · 🔗 chain '+save.chain.len+' · carrying '+save.chain.carried.length+'/'+carryCap()+' modules · prices +1.5% per upgrade fitted'+(journeyLangs().length>1?' · ×'+repertoireMult().toFixed(1)+' for '+journeyLangs().length+' languages':'');
+    el.shopBalance.innerHTML = '💠 '+_t('{n} credits', {n:'<b style="color:var(--brass);">'+save.tips+'</b>'})+' · 🌌 '+_t('{n} dark matter', {n:'<b style="color:#b48cff;">'+(save.dark||0)+'</b>'})+(warpCores()?' · 🚀 '+_t('{n} cores', {n:'<b style="color:#7fd4ff;">'+warpAvailable()+'</b>/'+warpCores()}):'')+' · 🔗 '+_t('chain {n}', {n:save.chain.len})+' · '+_t('carrying {n}/{cap} modules', {n:save.chain.carried.length, cap:carryCap()})+' · '+_t('prices +1.5% per upgrade fitted')+(journeyLangs().length>1?' · '+_t('×{m} for {n} languages', {m:repertoireMult().toFixed(1), n:journeyLangs().length}):'');
     el.shopGrid.innerHTML = '';
     SHOP_CATS.forEach(function(cat){
       var head = document.createElement('div'); head.className = 'shop-cat'; head.textContent = cat.label;
@@ -8234,12 +8299,12 @@
         var row = document.createElement('div');
         row.className = 'shop-item' + (isOwned ? (u.consumable?' armed':' owned') : '') + (locked && !isOwned?' locked':'');
         var btnHtml;
-        if(isOwned){ btnHtml = '<span class="sh-buy">'+(u.consumable?'🧿 Armed':'✓ Owned')+'</span>'; }
+        if(isOwned){ btnHtml = '<span class="sh-buy">'+(u.consumable?_t('🧿 Armed'):_t('✓ Owned'))+'</span>'; }
         var price = shopPrice(u);
-        if(!isOwned && locked){ btnHtml = '<span class="sh-buy" title="Requires '+(SHOP_UPGRADES.filter(function(x){ return x.id===u.requires; })[0]||{}).name+'">🔒 '+price+'</span>'; }
+        if(!isOwned && locked){ btnHtml = '<span class="sh-buy" title="'+_t('Requires {name}', {name:(SHOP_UPGRADES.filter(function(x){ return x.id===u.requires; })[0]||{}).name})+'">🔒 '+price+'</span>'; }
         else if(!isOwned){ btnHtml = '<button class="btn btn-sm '+(save.tips>=price?'btn-primary':'btn-ghost')+' sh-buy" '+(save.tips<price?'disabled':'')+'>'+price+' 💠</button>'; }
         var reqName = locked ? (SHOP_UPGRADES.filter(function(x){ return x.id===u.requires; })[0]||{}).name : null;
-        row.innerHTML = '<span class="sh-icon">'+u.icon+'</span><div class="sh-body"><div class="sh-name">'+u.name+'</div><div class="sh-desc">'+u.desc+(reqName?' <em>Needs '+reqName+'.</em>':'')+'</div></div>'+btnHtml;
+        row.innerHTML = '<span class="sh-icon">'+u.icon+'</span><div class="sh-body"><div class="sh-name">'+u.name+'</div><div class="sh-desc">'+u.desc+(reqName?' <em>'+_t('Needs {name}.', {name:reqName})+'</em>':'')+'</div></div>'+btnHtml;
         if(!isOwned && !locked){
           row.querySelector('.sh-buy').addEventListener('click', function(){
             var priceNow = shopPrice(u);
@@ -8257,12 +8322,12 @@
 
   /* Deep Space Refit: the Dark Matter wing of the bay */
   function renderRefit(){
-    var head = document.createElement('div'); head.className = 'shop-cat'; head.textContent = '🌌 Deep Space Refit — Dark Matter';
+    var head = document.createElement('div'); head.className = 'shop-cat'; head.textContent = _t('🌌 Deep Space Refit — Dark Matter');
     el.shopGrid.appendChild(head);
     var wdHead = null;
     if(!refitUnlocked()){
       var lockRow = document.createElement('div'); lockRow.className = 'shop-item locked';
-      lockRow.innerHTML = '<span class="sh-icon">🔒</span><div class="sh-body"><div class="sh-name">Clearance required</div><div class="sh-desc">The Refit opens at <b>Lieutenant</b> rank, or the first time you clear a C1/C2 relay with any Interference on. Dark Matter comes from C1/C2 relays, from any relay at Noise 3+, from first storm clears and from Deep Space floors.</div></div>';
+      lockRow.innerHTML = '<span class="sh-icon">🔒</span><div class="sh-body"><div class="sh-name">'+_t('Clearance required')+'</div><div class="sh-desc">'+_t('The Refit opens at <b>Lieutenant</b> rank, or the first time you clear a C1/C2 relay with any Interference on. Dark Matter comes from C1/C2 relays, from any relay at Noise 3+, from first storm clears and from Deep Space floors.')+'</div></div>';
       el.shopGrid.appendChild(lockRow);
       renderWarpDrive();
       return;
@@ -8270,7 +8335,7 @@
     REFIT_TUNING.forEach(function(t){
       var lvl = tuningLevel(t.id), cost = tuningCost(t);
       var row = document.createElement('div'); row.className = 'shop-item refit';
-      row.innerHTML = '<span class="sh-icon">'+t.icon+'</span><div class="sh-body"><div class="sh-name">'+t.name+' <span class="rf-lvl">Lv '+lvl+'</span></div><div class="sh-desc">'+t.desc+' No cap: each level costs 25% more.</div></div>'+
+      row.innerHTML = '<span class="sh-icon">'+t.icon+'</span><div class="sh-body"><div class="sh-name">'+t.name+' <span class="rf-lvl">'+_t('Lv {n}', {n:lvl})+'</span></div><div class="sh-desc">'+t.desc+' '+_t('No cap: each level costs 25% more.')+'</div></div>'+
         '<button class="btn btn-sm '+((save.dark||0)>=cost?'btn-primary':'btn-ghost')+' sh-buy" '+((save.dark||0)<cost?'disabled':'')+'>'+cost+' 🌌</button>';
       row.querySelector('.sh-buy').addEventListener('click', function(){
         var c = tuningCost(t); if((save.dark||0) < c) return;
@@ -8282,10 +8347,10 @@
     REFIT_MODULES.forEach(function(m){
       var isOwned = refitOwned(m.id), cleared = false; try{ cleared = !!m.met(); }catch(e){}
       var row = document.createElement('div'); row.className = 'shop-item refit'+(isOwned?' owned':'')+(!isOwned && !cleared?' locked':'');
-      var btnHtml = isOwned ? '<span class="sh-buy">✓ Fitted</span>'
+      var btnHtml = isOwned ? '<span class="sh-buy">'+_t('✓ Fitted')+'</span>'
         : !cleared ? '<span class="sh-buy" title="'+m.clearance+'">🔒 '+m.cost+'</span>'
         : '<button class="btn btn-sm '+((save.dark||0)>=m.cost?'btn-primary':'btn-ghost')+' sh-buy" '+((save.dark||0)<m.cost?'disabled':'')+'>'+m.cost+' 🌌</button>';
-      row.innerHTML = '<span class="sh-icon">'+m.icon+'</span><div class="sh-body"><div class="sh-name">'+m.name+'</div><div class="sh-desc">'+m.desc+' <em>Clearance: '+m.clearance+(cleared||isOwned?' ✓':'')+'</em></div></div>'+btnHtml;
+      row.innerHTML = '<span class="sh-icon">'+m.icon+'</span><div class="sh-body"><div class="sh-name">'+m.name+'</div><div class="sh-desc">'+m.desc+' <em>'+_t('Clearance: {c}', {c:m.clearance})+(cleared||isOwned?' ✓':'')+'</em></div></div>'+btnHtml;
       if(!isOwned && cleared){
         row.querySelector('.sh-buy').addEventListener('click', function(){
           if((save.dark||0) < m.cost) return;
@@ -8300,24 +8365,24 @@
 
   /* Warp Drive: permanent upgrades bought with warp cores */
   function renderWarpDrive(){
-    var head = document.createElement('div'); head.className = 'shop-cat'; head.textContent = '🚀 Warp Drive — Warp Cores';
+    var head = document.createElement('div'); head.className = 'shop-cat'; head.textContent = _t('🚀 Warp Drive — Warp Cores');
     el.shopGrid.appendChild(head);
     if(!warpCores() && !((save.warp&&save.warp.jumps)||0)){
       var lockRow = document.createElement('div'); lockRow.className = 'shop-item locked';
-      lockRow.innerHTML = '<span class="sh-icon">🚀</span><div class="sh-body"><div class="sh-name">No warp cores yet</div><div class="sh-desc">Warp cores come from a Warp Jump (Star Chart). Spending them here never reduces their passive bonus.</div></div>';
+      lockRow.innerHTML = '<span class="sh-icon">🚀</span><div class="sh-body"><div class="sh-name">'+_t('No warp cores yet')+'</div><div class="sh-desc">'+_t('Warp cores come from a Warp Jump (Star Chart). Spending them here never reduces their passive bonus.')+'</div></div>';
       el.shopGrid.appendChild(lockRow);
       return;
     }
     var avail = warpAvailable();
     var bal = document.createElement('div'); bal.className = 'shop-item refit';
-    bal.innerHTML = '<span class="sh-icon">🚀</span><div class="sh-body"><div class="sh-name">'+avail+' of '+warpCores()+' cores unspent</div><div class="sh-desc">Every core still pays +3% credits, +3% data, +2% XP whether spent or not.</div></div>';
+    bal.innerHTML = '<span class="sh-icon">🚀</span><div class="sh-body"><div class="sh-name">'+_t('{a} of {n} cores unspent', {a:avail, n:warpCores()})+'</div><div class="sh-desc">'+_t('Every core still pays +3% credits, +3% data, +2% XP whether spent or not.')+'</div></div>';
     el.shopGrid.appendChild(bal);
     WARP_DRIVE.forEach(function(d){
       var lvl = driveLevel(d.id), maxed = lvl >= d.max, cost = driveCost(d);
       var row = document.createElement('div'); row.className = 'shop-item refit warp'+(maxed?' owned':'');
-      var btnHtml = maxed ? '<span class="sh-buy">✓ Max</span>'
+      var btnHtml = maxed ? '<span class="sh-buy">'+_t('✓ Max')+'</span>'
         : '<button class="btn btn-sm '+(avail>=cost?'btn-primary':'btn-ghost')+' sh-buy" '+(avail<cost?'disabled':'')+'>'+cost+' 🚀</button>';
-      row.innerHTML = '<span class="sh-icon">'+d.icon+'</span><div class="sh-body"><div class="sh-name">'+d.name+' <span class="rf-lvl">Lv '+lvl+'/'+d.max+'</span></div><div class="sh-desc">'+d.desc+'</div></div>'+btnHtml;
+      row.innerHTML = '<span class="sh-icon">'+d.icon+'</span><div class="sh-body"><div class="sh-name">'+d.name+' <span class="rf-lvl">'+_t('Lv {n}', {n:lvl+'/'+d.max})+'</span></div><div class="sh-desc">'+d.desc+'</div></div>'+btnHtml;
       if(!maxed){
         row.querySelector('.sh-buy').addEventListener('click', function(){
           var c = driveCost(d); if(warpAvailable() < c) return;
@@ -8352,7 +8417,7 @@
     var currentChip = null;
     if(topic==='__storm' || isDrillTopic(topic)){
       var sc = document.createElement('div'); sc.className = 'shift-chip'; sc.setAttribute('data-state','current');
-      sc.innerHTML = '<span class="lvl-badge" style="background:'+(topic==='__storm'?'#ffd93e':'var(--paprika)')+';color:#1a1400">'+(topic==='__storm'?'⚡':topic==='__sweep'?'🛰️':topic==='__intercept'?'📰':'🩺')+'</span><div class="shift-title">'+topicLabel(topic)+'</div><div class="shift-meta">'+(topic==='__storm'?'every language · chain-neutral':LANGS[lang].name+' · chain-neutral')+'</div>';
+      sc.innerHTML = '<span class="lvl-badge" style="background:'+(topic==='__storm'?'#ffd93e':'var(--paprika)')+';color:#1a1400">'+(topic==='__storm'?'⚡':topic==='__sweep'?'🛰️':topic==='__intercept'?'📰':'🩺')+'</span><div class="shift-title">'+topicLabel(topic)+'</div><div class="shift-meta">'+(topic==='__storm'?_t('every language'):LANGS[lang].name)+' · '+_t('chain-neutral')+'</div>';
       el.shiftRibbon.appendChild(sc);
       return;
     }
@@ -8404,11 +8469,11 @@
 
   function topicLabel(topic){
     if(!topic) return '';
-    if(topic==='__recovery') return 'Signal Recovery';
-    if(topic==='__sweep') return 'Maintenance Sweep';
-    if(topic==='__intercept') return 'Signal Intercept';
-    if(topic && topic.indexOf('cloze-')===0) return 'Fill the Gap';
-    if(topic==='__storm') return 'Signal Storm';
+    if(topic==='__recovery') return _t('Signal Recovery');
+    if(topic==='__sweep') return _t('Maintenance Sweep');
+    if(topic==='__intercept') return _t('Signal Intercept');
+    if(topic && topic.indexOf('cloze-')===0) return _t('Fill the Gap');
+    if(topic==='__storm') return _t('Signal Storm');
     return TOPIC_LABELS[topic] || topic.replace(/^(build|gram|idiom|nuance|talk|listen)-/,'').replace(/-/g,' ').replace(/\b\w/g, function(c){ return c.toUpperCase(); });
   }
 
@@ -8522,23 +8587,23 @@
         return '<span class="lang-tag"><span class="lang-dot" style="background:'+LANGS[l].color+'"></span>'+LANGS[l].name+'</span>';
       }).join('');
       el.pvConcepts.hidden = true; el.pvConcepts.innerHTML='';
-      el.pvCount.textContent = 'Deep Space Run — every relay you’ve cracked, every language, until the power runs out. Every 10 decodes is a floor, and every floor adds interference. Floors past the first pay 🌌 Dark Matter.'+(noiseLevel()?' · 📡 Noise '+noiseLevel():'');
+      el.pvCount.textContent = _t('Deep Space Run — every relay you’ve cracked, every language, until the power runs out. Every 10 decodes is a floor, and every floor adds interference. Floors past the first pay 🌌 Dark Matter.')+(noiseLevel()?' · 📡 '+_t('Noise {n}', {n:noiseLevel()}):'');
       el.pvChain.hidden = false; el.pvChain.innerHTML = chainBoxHtml(false, true);
-      el.btnStart.textContent = '▶ Open the Channel';
-      el.btnPreviewBack.textContent = '← Star Chart';
+      el.btnStart.textContent = _t('▶ Open the Channel');
+      el.btnPreviewBack.textContent = _t('← Star Chart');
       el.btnPreviewBack.onclick = showHome;
     } else {
       if(topic==='__storm'){
         var info = stormToday();
-        el.pvTitle.textContent = '🌩️ Signal Storm — '+info.date;
-        el.pvSub.textContent = 'Twenty mixed transmissions from every sector you’ve opened, in every language, under today’s modifiers. Same storm for everyone today. Chain-neutral: nothing you do here touches the Signal Chain.';
-        el.pvHow.textContent = 'Modifiers: '+info.mods.map(function(m){ return m.icon+' '+m.name+' ('+m.desc+')'; }).join(' · ');
+        el.pvTitle.textContent = '🌩️ '+_t('Signal Storm')+' — '+info.date;
+        el.pvSub.textContent = _t('Twenty mixed transmissions from every sector you’ve opened, in every language, under today’s modifiers. Same storm for everyone today. Chain-neutral: nothing you do here touches the Signal Chain.');
+        el.pvHow.textContent = _t('Modifiers:')+' '+info.mods.map(function(m){ return m.icon+' '+m.name+' ('+m.desc+')'; }).join(' · ');
         el.pvLangs.innerHTML = journeyLangs().map(function(l){ return '<span class="lang-tag"><span class="lang-dot" style="background:'+LANGS[l].color+'"></span>'+LANGS[l].name+'</span>'; }).join('');
         el.pvConcepts.hidden = true; el.pvConcepts.innerHTML='';
-        el.pvCount.textContent = st.stormLen+' transmissions · best today '+save.storm.best+' · '+(save.storm.cleared?'already cleared today':'+120 💠 on first clear');
+        el.pvCount.textContent = _t('{n} transmissions · best today {b}', {n:st.stormLen, b:save.storm.best})+' · '+(save.storm.cleared?_t('already cleared today'):_t('+120 💠 on first clear'));
         el.pvChain.hidden = false; el.pvChain.innerHTML = chainBoxHtml(false, true);
-        el.btnStart.textContent = '⚡ Enter the Storm';
-        el.btnPreviewBack.textContent = '← Star Chart';
+        el.btnStart.textContent = _t('⚡ Enter the Storm');
+        el.btnPreviewBack.textContent = _t('← Star Chart');
         el.btnPreviewBack.onclick = showHome;
         el.btnPhrasebook.disabled = false;
         return;
@@ -8560,15 +8625,15 @@
       }
       var rt = ROUND_TYPES[mod.type];
       el.pvHow.textContent = HOW_TEXT[mod.type] || tier.how;
-      var extra = mod.type==='listen' ? ' · a fresh sample of this sector’s material every attempt' : ' · order reshuffles every attempt';
-      el.pvCount.textContent = items.length+' '+rt.count+extra+' · lose all your power and the relay restarts';
-      el.pvChain.hidden = false; el.pvChain.innerHTML = isDrillTopic(topic) ? chainBoxHtml(false, true).replace('Open Channel runs never extend or break the chain','Recovery drills never extend or break the chain') : chainBoxHtml(!cleared, false);
-      if(topic==='__recovery'){ el.pvSub.textContent = 'The '+LANGS[lang].name+' words in this sector you keep getting wrong, drilled until they stick. Every miss adds a strike, every correct decode clears one — a word with no strikes left leaves the list.'; }
-      if(topic==='__sweep'){ el.pvSub.textContent = 'Spaced repetition. These '+LANGS[lang].name+' words are due for review today: a correct decode pushes the next review further out, a miss brings it back tomorrow. Chain-neutral.'; }
-      if(topic==='__intercept'){ el.pvSub.textContent = 'The words from your own text that are in the ladder but not yet decoded in '+LANGS[lang].name+'. Chain-neutral.'; }
-      el.btnStart.textContent = topic==='__recovery' ? '🩺 Start Recovery' : topic==='__sweep' ? '🛰️ Start Sweep' : topic==='__intercept' ? '📰 Decode Intercept' : cleared ? '↺ Re-run Relay' : '▶ Engage Relay';
-      if(noiseLevel() && !isDrillTopic(topic)){ el.pvCount.textContent += ' · 📡 Noise '+noiseLevel(); }
-      el.btnPreviewBack.textContent = '← Back to Topics';
+      var extra = mod.type==='listen' ? ' · '+_t('a fresh sample of this sector’s material every attempt') : ' · '+_t('order reshuffles every attempt');
+      el.pvCount.textContent = items.length+' '+rt.count+extra+' · '+_t('lose all your power and the relay restarts');
+      el.pvChain.hidden = false; el.pvChain.innerHTML = isDrillTopic(topic) ? chainBoxHtml(false, true, true) : chainBoxHtml(!cleared, false);
+      if(topic==='__recovery'){ el.pvSub.textContent = _t('The {lang} words in this sector you keep getting wrong, drilled until they stick. Every miss adds a strike, every correct decode clears one — a word with no strikes left leaves the list.', {lang:LANGS[lang].name}); }
+      if(topic==='__sweep'){ el.pvSub.textContent = _t('Spaced repetition. These {lang} words are due for review today: a correct decode pushes the next review further out, a miss brings it back tomorrow. Chain-neutral.', {lang:LANGS[lang].name}); }
+      if(topic==='__intercept'){ el.pvSub.textContent = _t('The words from your own text that are in the ladder but not yet decoded in {lang}. Chain-neutral.', {lang:LANGS[lang].name}); }
+      el.btnStart.textContent = topic==='__recovery' ? _t('🩺 Start Recovery') : topic==='__sweep' ? _t('🛰️ Start Sweep') : topic==='__intercept' ? _t('📰 Decode Intercept') : cleared ? _t('↺ Re-run Relay') : _t('▶ Engage Relay');
+      if(noiseLevel() && !isDrillTopic(topic)){ el.pvCount.textContent += ' · 📡 '+_t('Noise {n}', {n:noiseLevel()}); }
+      el.btnPreviewBack.textContent = _t('← Back to Topics');
       el.btnPreviewBack.onclick = function(){ showTopics(idx, lang); };
     }
     el.btnPhrasebook.disabled = false;
@@ -8593,16 +8658,16 @@
     renderHubTrail(idx, lang, topic);
     var tier = TIERS[idx];
     el.pkBadge.textContent = tier.code; el.pkBadge.style.background = tier.color;
-    el.pkTitle.textContent = 'Choose your loadout';
+    el.pkTitle.textContent = _t('Choose your loadout');
     el.pkSub.textContent = lang
-      ? ('One module for this run through '+tier.name+' ('+tier.code+') — '+LANGS[lang].name+(topic?' — '+topicLabel(topic):'')+'. It resets when the relay ends.')
-      : 'One module for this open-channel run.';
+      ? _t('One module for this run through {relay}. It resets when the relay ends.', {relay:tier.name+' ('+tier.code+') — '+LANGS[lang].name+(topic?' — '+topicLabel(topic):'')})
+      : _t('One module for this open-channel run.');
     var allowed = rarityAllowed();
-    if(allowed.length<3){ el.pkSub.textContent += allowed.length===1 ? ' Reach Ensign to draft Rare modules.' : ' Reach Lieutenant to draft Legendary modules.'; }
+    if(allowed.length<3){ el.pkSub.textContent += ' '+(allowed.length===1 ? _t('Reach Ensign to draft Rare modules.') : _t('Reach Lieutenant to draft Legendary modules.')); }
     var carriedNames = save.chain.carried.map(perkById).filter(Boolean).map(function(p){ return p.icon+' '+p.name; });
-    if(carriedNames.length){ el.pkSub.textContent += ' Welded modules already online: '+carriedNames.join(', ')+'.'; }
+    if(carriedNames.length){ el.pkSub.textContent += ' '+_t('Welded modules already online: {list}.', {list:carriedNames.join(', ')}); }
     var firstAttempt = lang && topic && !isDungeonCleared(idx, lang, topic);
-    if(firstAttempt){ el.pkSub.textContent += ' Clear this relay and your pick is welded onto the chain.'; }
+    if(firstAttempt){ el.pkSub.textContent += ' '+_t('Clear this relay and your pick is welded onto the chain.'); }
     var rerollsLeft = (owned('shop_reroll')?1:0) + (owned('shop_reroll2')?1:0);
     function drawChoices(){
       var choices = draftPool();
@@ -8610,14 +8675,14 @@
       choices.forEach(function(perk){
         var card = document.createElement('button');
         card.type = 'button'; card.className = 'perk-card'+(perk.risk?' risk':''); card.setAttribute('data-rarity', perk.rarity);
-        card.innerHTML = '<span class="pk-rarity">'+RARITY_LABEL[perk.rarity]+(perk.risk?' · risk':'')+'</span><span class="pk-icon">'+perk.icon+'</span><span class="pk-name">'+perk.name+'</span><span class="pk-desc">'+perk.desc+'</span>';
+        card.innerHTML = '<span class="pk-rarity">'+RARITY_LABEL[perk.rarity]+(perk.risk?' · '+_t('risk'):'')+'</span><span class="pk-icon">'+perk.icon+'</span><span class="pk-name">'+perk.name+'</span><span class="pk-desc">'+perk.desc+'</span>';
         card.addEventListener('click', function(){ startDungeonAttempt(idx, lang, topic, perk); });
         el.pkGrid.appendChild(card);
       });
       el.btnRerollPerk.hidden = !(rerollsLeft>0);
     }
     drawChoices();
-    el.btnRerollPerk.onclick = function(){ if(rerollsLeft<=0) return; rerollsLeft--; drawChoices(); toast('🔄 Draft rerolled.'+(rerollsLeft?' '+rerollsLeft+' left.':'')); };
+    el.btnRerollPerk.onclick = function(){ if(rerollsLeft<=0) return; rerollsLeft--; drawChoices(); toast(_t('🔄 Draft rerolled.')+(rerollsLeft?' '+_t('{n} left.', {n:rerollsLeft}):'')); };
     el.btnSkipPerk.onclick = function(){ startDungeonAttempt(idx, lang, topic, null); };
   }
 
@@ -8706,7 +8771,7 @@
       applyPerk(starter);
       if(owned('shop_startperk2')){ applyPerk(pick(PERKS.filter(function(p){ return p.id!=='deep_pockets' && p.id!==starter.id; }))); }
     }
-    if(perk){ applyPerk(perk); toast(perk.icon+' <b>'+perk.name+'</b> — loadout set.'); }
+    if(perk){ applyPerk(perk); toast(perk.icon+' <b>'+perk.name+'</b> — '+_t('loadout set.')); }
     st.riskActive = st.activePerkIds.some(function(id){ var p = perkById(id); return p && p.risk; });
     /* Signal Storm modifiers apply last and override */
     if(st.storm){ st.storm.mods.forEach(function(m){ m.apply(f, st); }); }
@@ -8738,9 +8803,9 @@
       st.noiseList.push(id); applyInterference(id, st.perkFlags);
       var i = interferenceById(id); st.noise = noiseLevel(st.noiseList); st.perkFlags.tipMult += (0.12 + 0.04*driveLevel('wd_noise'))*i.w;
       renderPerkStrip();
-      toast('🌌 <b>Floor '+floor+'</b> — '+i.icon+' '+i.name+' cuts in. '+i.desc);
+      toast('🌌 <b>'+_t('Floor {n}', {n:floor})+'</b> — '+_t('{icon} {name} cuts in.', {icon:i.icon, name:i.name})+' '+i.desc);
     } else {
-      toast('🌌 <b>Floor '+floor+'</b> — deeper still.');
+      toast('🌌 <b>'+_t('Floor {n}', {n:floor})+'</b> — '+_t('deeper still.'));
     }
   }
 
@@ -8780,7 +8845,7 @@
   function updateScoreDisplay(){ el.plScore.textContent = st.score; }
   function updateSkipBtn(){
     el.btnSkipTicket.hidden = !st.skipAvailable;
-    if(st.skipAvailable && st.skipCharges>1) el.btnSkipTicket.textContent = '🧭 Skip ×'+st.skipCharges; else el.btnSkipTicket.textContent = '🧭 Skip';
+    if(st.skipAvailable && st.skipCharges>1) el.btnSkipTicket.textContent = '🧭 '+_t('Skip')+' ×'+st.skipCharges; else el.btnSkipTicket.textContent = '🧭 '+_t('Skip');
     updateScanBtn();
   }
   function updateScanBtn(){
@@ -8797,7 +8862,7 @@
     var i = pick(wrongIdx);
     btns[i].disabled = true; btns[i].style.opacity = '.25'; btns[i].style.textDecoration = 'line-through';
     st.scanCharges--; st.round.scanned = true;
-    toast('🔍 Signal filtered — one wrong option removed.');
+    toast(_t('🔍 Signal filtered — one wrong option removed.'));
     updateScanBtn();
   }
 
@@ -8926,7 +8991,7 @@
     var text = itemText(item, lang);
     return {
       uiMode:'buttons', kind:'listen', conceptId:item.id, lang:lang, clipKey:item.id+':'+lang, spoken:text, pool:pool,
-      main:'🎧', mainClass:'is-listen', sub:'Decode the spoken transmission',
+      main:'🎧', mainClass:'is-listen', sub:_t('Decode the spoken transmission'),
       time: roundTime(tier, 'listen'), options: opts, note:null, reveal:text
     };
   }
@@ -8946,7 +9011,7 @@
   function crosstalkSwap(r){
     r.crosstalk = true;
     var target = ITEM[r.conceptId];
-    r.main = (target.emoji ? target.emoji+' ' : '')+target.en; r.mainClass = 'is-sentence'; r.sub = 'Pick the '+LANGS[r.lang].name;
+    r.main = (target.emoji ? target.emoji+' ' : '')+target.en; r.mainClass = 'is-sentence'; r.sub = _t('Pick the {lang} word', {lang:LANGS[r.lang].name});
     r.options.forEach(function(o){ var it = ITEM[o.key]; if(it && it[r.lang]){ o.main = it[r.lang].t; o.sub = it[r.lang].r ? it[r.lang].r : null; o.emoji = null; } });
   }
   function matchRound(concept, lang, bias, pool, tier){
@@ -8973,7 +9038,7 @@
     var gap = tiles.map(function(t, i){ return i===bi ? '____' : t; }).join(joiner);
     return {
       uiMode:'buttons', kind:'cloze', lang:lang, sentenceId:s.id, clipKey:s.id+':'+lang, main:gap, mainClass:'is-sentence',
-      sub:'“'+s.en+'” — fill the gap', time: roundTime(tier, 'cloze'), options: opts, note: s.note, reveal: tiles.join(joiner), silent:true
+      sub:'“'+s.en+'” — '+_t('fill the gap'), time: roundTime(tier, 'cloze'), options: opts, note: s.note, reveal: tiles.join(joiner), silent:true
     };
   }
   function blankRound(g, tier){
@@ -8982,7 +9047,7 @@
     }));
     return {
       uiMode:'buttons', kind:'blank', lang:g.lang, main:g.sentence, mainClass:'is-sentence',
-      sub: LANGS[g.lang].name+' — complete the sentence', time: roundTime(tier, 'blank'),
+      sub: LANGS[g.lang].name+' — '+_t('complete the sentence'), time: roundTime(tier, 'blank'),
       options: opts, note: g.note
     };
   }
@@ -9002,14 +9067,14 @@
     }));
     return {
       uiMode:'buttons', kind:'nuance', lang:n.lang, main:'“'+n.context+'”', mainClass:'is-sentence',
-      sub:'Choose the '+LANGS[n.lang].name+' word', time: roundTime(tier, 'nuance'),
+      sub:_t('Choose the {lang} word', {lang:LANGS[n.lang].name}), time: roundTime(tier, 'nuance'),
       options: opts, note: n.note
     };
   }
   function buildRound(s, tier){
     return {
       uiMode:'build', kind:'build', lang:null, sentenceId:s.id, main:s.en, mainClass:'is-sentence',
-      sub:'Arrange the tiles in order', time: roundTime(tier, 'build'), tiles: s, note: s.note
+      sub:_t('Arrange the tiles in order'), time: roundTime(tier, 'build'), tiles: s, note: s.note
     };
   }
 
@@ -9038,7 +9103,7 @@
     }
     var orderNum = tier.endless ? (st.total+1) : (st.pos+1);
     var orderDen = tier.endless ? '∞' : st.queue.length;
-    el.plOrderno.textContent = 'order '+orderNum+'/'+orderDen;
+    el.plOrderno.textContent = _t('order {n}/{total}', {n:orderNum, total:orderDen});
     el.plWord.className = 'ticket-word' + (round.mainClass ? ' '+round.mainClass : '');
     el.plWord.innerHTML = furi(round.main);
     if(round.sub){ el.plRomaji.hidden = false; el.plRomaji.textContent = round.sub; }
@@ -9052,7 +9117,7 @@
         /* no audio available: degrade to a reading round so the module stays clearable */
         el.plWord.className = 'ticket-word';
         el.plWord.innerHTML = furi(round.spoken);
-        el.plRomaji.hidden = false; el.plRomaji.textContent = 'No audio available — reading mode. Unmute to decode by ear.';
+        el.plRomaji.hidden = false; el.plRomaji.textContent = _t('No audio available — reading mode. Unmute to decode by ear.');
       } else {
         el.btnReplay.hidden = false;
         speakText(round.spoken, round.lang, true, round.clipKey || null);
@@ -9060,7 +9125,7 @@
     } else if(round.lang && round.kind!=='nuance' && !round.silent){ speakText(round.main, round.lang, false, round.clipKey || null); }
     var nb = document.getElementById('btn-note'); if(nb){ nb.hidden = !round.note; }
     if(st.pos===0 && !tier.endless) coach('play');
-    var sb = document.getElementById('btn-shadow'); if(sb){ sb.hidden = !(round.clipKey && hasClip(round.clipKey)); sb.textContent = '🎤 Shadow'; }
+    var sb = document.getElementById('btn-shadow'); if(sb){ sb.hidden = !(round.clipKey && hasClip(round.clipKey)); sb.textContent = '🎤 '+_t('Shadow'); }
 
     if(round.uiMode==='buttons'){
       el.plAnswers.hidden = false; el.plBuilder.hidden = true;
@@ -9210,16 +9275,16 @@
       }
 
       if(healed){
-        toast('🆘 <b>Emergency Reserve!</b> Back up to '+st.lives+' power cells.');
+        toast(_t('🆘 <b>Emergency Reserve!</b> Back up to {n} power cells.', {n:st.lives}));
       } else if(round.kind==='match'){
         var wasLearned = learnedSet.has(round.conceptId+':'+round.lang);
         learnedSet.add(round.conceptId+':'+round.lang);
         var concept = ITEM[round.conceptId];
         var stars = constellationHtml(constellationsFor(round.conceptId, round.lang));
-        if(cognate){ toast('🔗 <b>Cross-reference!</b> You already decoded “'+concept.en+'” on another Romance-language relay. +'+cognateBonus+(stars?' '+stars:'')); }
+        if(cognate){ toast(_t('🔗 <b>Cross-reference!</b> You already decoded “{w}” on another relay.', {w:concept.en})+' +'+cognateBonus+(stars?' '+stars:'')); }
         else if(!wasLearned && concept.fact && !factsShown.has(concept.id)){ factsShown.add(concept.id); toast('💡 '+concept.fact+(stars?' '+stars:'')); }
-        else if(stars && !wasLearned){ toast('✅ Decoded! +'+roundScore+' '+stars); }
-        else { toast('✅ Decoded! +'+roundScore); }
+        else if(stars && !wasLearned){ toast(_t('✅ Decoded!')+' +'+roundScore+' '+stars); }
+        else { toast(_t('✅ Decoded!')+' +'+roundScore); }
       } else if(round.kind==='listen'){
         var li = ITEM[round.conceptId];
         if(li && li.emoji && li.tier){ learnedSet.add(round.conceptId+':'+round.lang); }
@@ -9230,31 +9295,31 @@
       } else if(round.note){
         toast('✅ +'+roundScore+' — '+round.note);
       } else {
-        toast('✅ Decoded! +'+roundScore);
+        toast(_t('✅ Decoded!')+' +'+roundScore);
       }
     } else if(echoed){
       if(st.perkFlags.softCombo){ st.combo = Math.floor(st.combo/2); } else { st.combo = 0; }
-      toast('🔁 Echo Buffer — a word you’ve missed before, no cell lost.'+(opts.reveal ? ' '+opts.reveal : ''));
+      toast(_t('🔁 Echo Buffer — a word you’ve missed before, no cell lost.')+(opts.reveal ? ' '+opts.reveal : ''));
     } else if(held){
       if(st.perkFlags.softCombo){ st.combo = Math.floor(st.combo/2); } else { st.combo = 0; }
-      toast('⏸️ Signal Hold caught the dropped transmission — no cell lost.');
+      toast(_t('⏸️ Signal Hold caught the dropped transmission — no cell lost.'));
     } else if(shielded){
       if(st.perkFlags.softCombo){ st.combo = Math.floor(st.combo/2); } else { st.combo = 0; }
-      toast('🛡️ Redundant array absorbed that — no cell lost.');
+      toast(_t('🛡️ Redundant array absorbed that — no cell lost.'));
     } else {
       if(st.perkFlags.softCombo){ st.combo = Math.floor(st.combo/2); } else { st.combo = 0; }
       st.lives--;
-      if(breachHit && st.lives>0){ st.lives--; toast('💥 <b>Hull Breach</b> — a second cell vents.'); }
-      if(st.lives<=0 && st.perkFlags.phoenix && !st.phoenixUsed){ st.lives = 1; st.phoenixUsed = true; toast('🔥 <b>Phoenix Cell</b> — one cell rekindled.'); }
-      var msg = opts.timeout ? 'Signal lost!' : 'Off frequency.';
+      if(breachHit && st.lives>0){ st.lives--; toast(_t('💥 <b>Hull Breach</b> — a second cell vents.')); }
+      if(st.lives<=0 && st.perkFlags.phoenix && !st.phoenixUsed){ st.lives = 1; st.phoenixUsed = true; toast(_t('🔥 <b>Phoenix Cell</b> — one cell rekindled.')); }
+      var msg = opts.timeout ? _t('Signal lost!') : _t('Off frequency.');
       var extra = round.note ? ' '+round.note : (opts.reveal ? ' '+opts.reveal : '');
       toast('❌ '+msg+extra);
     }
 
     st.total++; st.floorTotal++;
     tickTemp();
-    if(correct && gambleHit){ toast('🎲 <b>Gambler’s Array</b> hit — +120 data.'); }
-    if(correct && round.encrypted){ toast('🔐 <b>Encrypted transmission cracked</b> — ×'+(st.perkFlags.cipher?3:2)+' data.'); }
+    if(correct && gambleHit){ toast(_t('🎲 <b>Gambler’s Array</b> hit — +120 data.')); }
+    if(correct && round.encrypted){ toast(_t('🔐 <b>Encrypted transmission cracked</b> — ×{n} data.', {n:(st.perkFlags.cipher?3:2)})); }
     renderLives(); renderHeat(); updateScoreDisplay();
     persist(); refreshHud();
 
@@ -9285,9 +9350,9 @@
         if(round.options[i] && round.options[i].correct){ b.classList.add('correct'); }
       });
     }
-    var reveal = (!isCorrect && round.kind==='match') ? ('"'+round.main+'" means "'+correctOpt.main+'".')
-               : (!isCorrect && round.kind==='listen') ? ('🎧 "'+plainText(round.reveal)+'" means "'+correctOpt.main+'".')
-               : (!isCorrect && round.kind==='dialogue') ? ('The reply that fit: "'+plainText(correctOpt.main)+'".') : null;
+    var reveal = (!isCorrect && round.kind==='match') ? _t('"{a}" means "{b}".', {a:round.main, b:correctOpt.main})
+               : (!isCorrect && round.kind==='listen') ? '🎧 '+_t('"{a}" means "{b}".', {a:plainText(round.reveal), b:correctOpt.main})
+               : (!isCorrect && round.kind==='dialogue') ? _t('The reply that fit: "{a}".', {a:plainText(correctOpt.main)}) : null;
     resolveRound(isCorrect, {timeout: choiceKey===null, reveal: reveal});
   }
 
@@ -9308,7 +9373,7 @@
     st.skipCharges--; st.skipAvailable = st.skipCharges > 0;
     clearTimeout(st.roundTimer);
     updateSkipBtn();
-    toast('🧭 Autopilot engaged — transmission skipped.');
+    toast(_t('🧭 Autopilot engaged — transmission skipped.'));
     setTimeout(advanceRound, 500);
   }
 
@@ -9334,34 +9399,35 @@
       natBox = document.createElement('div'); natBox.id = 'journey-native'; natBox.className = 'journey-native';
       grid.parentNode.insertBefore(natBox, grid);
     }
-    natBox.innerHTML = '<label for="native-sel">🗣️ I speak</label> <select id="native-sel" class="ic-select" style="width:auto;display:inline-block;">'+
-      [['en','🇬🇧 English']].concat(LANG_ORDER.filter(function(l){ return l!=='eng'; }).map(function(l){ return [l, LANG_META[l].flag+' '+LANG_META[l].name+' · '+LANG_META[l].native]; })).map(function(o){ return '<option value="'+o[0]+'"'+(o[0]===nativeLang()?' selected':'')+'>'+o[1]+'</option>'; }).join('')+
-      '</select><div class="jc-meta" style="margin-top:6px;">Meanings, answer options and story translations are shown in your language. Coach notes and story questions stay in English.'+(nativeLang()!=='en'?' English is on the chart as a language to learn.':'')+'</div>';
+    /* each language by its own name, then by its name in the player's language */
+    natBox.innerHTML = '<label for="native-sel">'+_t('🗣️ I speak')+'</label> <select id="native-sel" class="ic-select" style="width:auto;display:inline-block;">'+
+      [['en','🇬🇧 English'+(nativeLang()!=='en' ? ' · '+_t('English') : '')]].concat(LANG_ORDER.filter(function(l){ return l!=='eng'; }).map(function(l){ var m = LANG_META[l]; return [l, m.flag+' '+m.native+(m.name!==m.native ? ' · '+m.name : '')]; })).map(function(o){ return '<option value="'+o[0]+'"'+(o[0]===nativeLang()?' selected':'')+'>'+o[1]+'</option>'; }).join('')+
+      '</select><div class="jc-meta" style="margin-top:6px;">'+_t('The whole interface, meanings, answer options, notes and story translations are shown in your language.')+(nativeLang()!=='en'?' '+_t('English is on the chart as a language to learn.'):'')+'</div>';
     document.getElementById('native-sel').addEventListener('change', function(){
       var v = this.value; if(v===nativeLang()) return;
       save.native = v; save.journey.langs = picked.filter(function(l){ return l!==v; }); if(!save.journey.langs.length) save.journey.langs = [v==='es'?'fr':'es'];
-      persist(); toast('🗣️ Switching to '+(v==='en'?'English':LANGS[v].name)+'…'); setTimeout(function(){ location.reload(); }, 400);
+      persist(); toast(_t('🗣️ Switching to {lang}…', {lang:(v==='en'?'English':LANG_META[v].native)})); setTimeout(function(){ location.reload(); }, 400);
     });
     function render(){
       grid.innerHTML = '';
       LANG_ORDER.forEach(function(l){
         if(l===nativeLang() || (l==='eng' && nativeLang()==='en')) return;
         var m = LANG_META[l]; var on = picked.indexOf(l)!==-1;
-        var tiers = m.tiers||[]; var cover = tiers.length===6 ? 'full ladder A1–C2' : tiers.length ? tiers[0]+'–'+tiers[tiers.length-1]+' so far' : 'coming soon';
+        var tiers = m.tiers||[]; var cover = tiers.length===6 ? _t('full ladder A1–C2') : tiers.length ? _t('{a}–{b} so far', {a:tiers[0], b:tiers[tiers.length-1]}) : _t('coming soon');
         var card = document.createElement('button'); card.type = 'button';
         card.className = 'journey-card'+(on?' on':'')+(tiers.length?'':' soon'); card.setAttribute('data-lang', l);
         card.innerHTML = '<span class="jc-flag">'+m.flag+'</span><span class="jc-name" style="color:'+LANGS[l].color+'">'+m.name+'</span><span class="jc-native">'+m.native+'</span>'+
-          '<span class="jc-meta">'+cover+(m.audio?' · 🎧 studio voice':' · 🎙️ device voice')+(m.reading?' · reading line':'')+'</span>';
+          '<span class="jc-meta">'+cover+(m.audio?' · 🎧 '+_t('studio voice'):' · 🎙️ '+_t('device voice'))+(m.reading?' · '+_t('reading line'):'')+'</span>';
         if(tiers.length){ card.addEventListener('click', function(){ var i = picked.indexOf(l); if(i===-1) picked.push(l); else if(picked.length>1) picked.splice(i,1); render(); }); }
         grid.appendChild(card);
       });
       var n = picked.length;
-      document.getElementById('journey-summary').innerHTML = '<b>'+n+'</b> language'+(n===1?'':'s')+' on this voyage · Engineering Bay and Refit prices ×'+(1+0.3*(n-1)).toFixed(1)+' (more languages, more relays, more income)';
+      document.getElementById('journey-summary').innerHTML = (n===1 ? _t('<b>{n}</b> language on this voyage', {n:n}) : _t('<b>{n}</b> languages on this voyage', {n:n}))+' · '+_t('Engineering Bay and Refit prices ×{m} (more languages, more relays, more income)', {m:(1+0.3*(n-1)).toFixed(1)});
     }
     render();
     var go = document.getElementById('btn-journey-go'), back = document.getElementById('btn-journey-back');
-    go.textContent = save.journey.set ? '✓ Update voyage' : '🚀 Chart the voyage';
-    go.onclick = function(){ save.journey.langs = picked.slice(); save.journey.set = true; persist(); showHome(); toast('🌐 Voyage charted: '+picked.map(function(l){ return LANG_META[l].flag; }).join(' ')+' — change it any time from the Star Chart.'); };
+    go.textContent = save.journey.set ? _t('✓ Update voyage') : _t('🚀 Chart the voyage');
+    go.onclick = function(){ save.journey.langs = picked.slice(); save.journey.set = true; persist(); showHome(); toast(_t('🌐 Voyage charted: {flags} — change it any time from the Star Chart.', {flags:picked.map(function(l){ return LANG_META[l].flag; }).join(' ')})); };
     back.hidden = !save.journey.set;
     back.onclick = showHome;
   }
@@ -9373,32 +9439,33 @@
     var S = save.stats; var ri = rankInfo();
     var acc = S.decodes ? Math.round(100*S.correct/S.decodes) : 0;
     var h = '';
-    h += '<div class="log-section">Officer</div>';
-    h += '<div class="stat-grid">'+statBox(ri.rank.icon+' '+ri.rank.title,'Rank')+statBox(save.xp.toLocaleString(),'XP')+statBox('🔗 '+save.chain.len+' / '+save.chain.best,'Chain · best')+statBox('🌌 '+(save.dark||0)+' / '+(save.stats.darkEarned||0),'Dark matter · total')+statBox('🚀 '+warpCores()+' · ×'+((save.warp&&save.warp.jumps)||0),'Warp cores · jumps')+'</div>';
-    h += '<div class="log-section">Transmissions</div>';
-    h += '<div class="stat-grid">'+statBox(S.decodes.toLocaleString(),'Decodes')+statBox(acc+'%','Accuracy')+statBox(S.relaysCleared,'Relays cleared')+statBox(S.relaysFailed,'Relays failed')+statBox(S.perfectRelays,'Perfect relays')+statBox(S.encryptedCracked,'Encrypted cracked')+statBox(S.events,'Anomalies resolved')+statBox(S.stormsCleared,'Storms cleared')+statBox(Math.round(S.playMs/60000)+' min','Time on channel')+statBox(Object.keys(save.missed).length,'Weak words')+'</div>';
+    h += '<div class="log-section">'+_t('Officer')+'</div>';
+    h += '<div class="stat-grid">'+statBox(ri.rank.icon+' '+ri.rank.title,_t('Rank'))+statBox(save.xp.toLocaleString(),'XP')+statBox('🔗 '+save.chain.len+' / '+save.chain.best,_t('Chain · best'))+statBox('🌌 '+(save.dark||0)+' / '+(save.stats.darkEarned||0),_t('Dark matter · total'))+statBox('🚀 '+warpCores()+' · ×'+((save.warp&&save.warp.jumps)||0),_t('Warp cores · jumps'))+'</div>';
+    h += '<div class="log-section">'+_t('Transmissions')+'</div>';
+    h += '<div class="stat-grid">'+statBox(S.decodes.toLocaleString(),_t('Decodes'))+statBox(acc+'%',_t('Accuracy'))+statBox(S.relaysCleared,_t('Relays cleared'))+statBox(S.relaysFailed,_t('Relays failed'))+statBox(S.perfectRelays,_t('Perfect relays'))+statBox(S.encryptedCracked,_t('Encrypted cracked'))+statBox(S.events,_t('Anomalies resolved'))+statBox(S.stormsCleared,_t('Storms cleared'))+statBox(_t('{n} min', {n:Math.round(S.playMs/60000)}),_t('Time on channel'))+statBox(Object.keys(save.missed).length,_t('Weak words'))+'</div>';
     var flags = Object.keys(save.flagged||{});
     if(flags.length){
-      h += '<div class="log-section">🚩 Flagged pronunciations · '+flags.length+'</div>';
-      h += '<p class="preview-sub" style="margin:0 0 8px;text-align:left;">Copy this list into a message and every one of these clips gets re-recorded.</p>';
+      h += '<div class="log-section">🚩 '+_t('Flagged pronunciations')+' · '+flags.length+'</div>';
+      h += '<p class="preview-sub" style="margin:0 0 8px;text-align:left;">'+_t('Copy this list into a message and every one of these clips gets re-recorded.')+'</p>';
       h += '<textarea readonly class="flag-box" onclick="this.select()">'+flags.map(function(k){ return k+'\t'+(save.flagged[k].text||''); }).join('\n').replace(/</g,'&lt;')+'</textarea>';
-      h += '<div style="margin:6px 0 12px;"><button class="btn btn-sm btn-ghost" id="btn-clear-flags">Clear flags</button></div>';
+      h += '<div style="margin:6px 0 12px;"><button class="btn btn-sm btn-ghost" id="btn-clear-flags">'+_t('Clear flags')+'</button></div>';
     }
-    h += '<div class="log-section">Words learned by language</div>';
+    h += '<div class="log-section">'+_t('Words learned by language')+'</div>';
     journeyLangs().forEach(function(l){
       var n = wordsInLang(l); var pct = Math.round(100*n/CONCEPTS.length); var L = S.byLang[l];
       h += '<div class="bar-row"><span style="color:'+LANGS[l].color+'">'+LANGS[l].name+'</span><div class="bar"><div style="width:'+pct+'%;background:'+LANGS[l].color+'"></div></div><span>'+n.toLocaleString()+(L&&L.t?' · '+Math.round(100*L.c/L.t)+'%':'')+'</span></div>';
     });
-    h += '<div class="log-section">Accuracy by module type</div>';
+    h += '<div class="log-section">'+_t('Accuracy by module type')+'</div>';
     TYPE_ORDER.forEach(function(t){ var T = S.byType[t]; if(!T||!T.t) return; var p = Math.round(100*T.c/T.t);
       h += '<div class="bar-row"><span>'+ROUND_TYPES[t].icon+' '+ROUND_TYPES[t].label+'</span><div class="bar"><div style="width:'+p+'%;background:var(--basil)"></div></div><span>'+p+'% · '+T.t+'</span></div>'; });
-    h += '<div class="log-section">Commendations · '+save.commendations.length+'/'+COMMENDATIONS.length+'</div><div class="cmd-grid">';
+    h += '<div class="log-section">'+_t('Commendations')+' · '+save.commendations.length+'/'+COMMENDATIONS.length+'</div><div class="cmd-grid">';
     COMMENDATIONS.forEach(function(c){ var got = save.commendations.indexOf(c.id)!==-1;
       h += '<div class="cmd-tile '+(got?'earned':'locked')+'"><span class="cm-icon">'+c.icon+'</span><div><div class="cm-name">'+c.name+'</div><div class="cm-desc">'+c.desc+' · +'+c.reward+' 💠</div></div></div>'; });
     h += '</div>';
-    h += '<div class="log-section">Ranks</div>';
+    h += '<div class="log-section">'+_t('Ranks')+'</div>';
     RANKS.forEach(function(r,i){ var got = i<=ri.idx; h += '<div class="bar-row" style="grid-template-columns:28px 1fr 90px;opacity:'+(got?1:.5)+'"><span>'+r.icon+'</span><span style="color:var(--paper)">'+r.title+(r.unlock?' <span style="color:var(--paper-faint)">— '+r.unlock+'</span>':'')+'</span><span>'+r.xp.toLocaleString()+' XP</span></div>'; });
     el.logBody.innerHTML = h;
+    var cf = document.getElementById('btn-clear-flags'); if(cf){ cf.addEventListener('click', function(){ save.flagged = {}; persist(); showLog(); }); }
   }
 
   /* ============================= ANOMALY EVENTS ============================= */
@@ -9437,8 +9504,8 @@
 
   function nextLockedHint(){
     var nextIdx = st.tierIdx + 1;
-    if(nextIdx < TIERS.length){ return TIERS[nextIdx].name+' ('+TIERS[nextIdx].code+') is now open on the Star Chart!'; }
-    return 'You’ve decoded the whole frequency spectrum!';
+    if(nextIdx < TIERS.length){ return _t('{tier} is now open on the Star Chart!', {tier:TIERS[nextIdx].name+' ('+TIERS[nextIdx].code+')'}); }
+    return _t('You’ve decoded the whole frequency spectrum!');
   }
 
   function onDungeonCleared(){
@@ -9483,34 +9550,34 @@
     el.shiftRibbon.hidden = true; el.runPerks.hidden = true;
 
     var accuracy = st.total>0 ? st.correct/st.total : 0;
-    el.cpTitle.textContent = '✅ Relay locked in!';
+    el.cpTitle.textContent = _t('✅ Relay locked in!');
     coach('complete');
-    el.cpStars.innerHTML = LANGS[st.lang].name+' — '+tier.name+' ('+tier.code+') — '+topicLabel(st.topic)+' mastered'+(firstClear?'':' again');
+    el.cpStars.innerHTML = LANGS[st.lang].name+' — '+tier.name+' ('+tier.code+') — '+topicLabel(st.topic)+' · '+(firstClear?_t('mastered'):_t('mastered again'));
     el.cpSub.textContent = hubNowCleared
-      ? ('Every relay in '+tier.name+' is decoded! '+nextLockedHint())
+      ? (_t('Every relay in {tier} is decoded!', {tier:tier.name})+' '+nextLockedHint())
       : langNowCleared
-        ? ('Every topic in '+LANGS[st.lang].name+' — '+tier.name+' is decoded! Clear every language in this sector to unlock the next one.')
-        : 'Nice pass. Clear every topic in this language to fully decode it.';
+        ? _t('Every topic in {relay} is decoded! Clear every language in this sector to unlock the next one.', {relay:LANGS[st.lang].name+' — '+tier.name})
+        : _t('Nice pass. Clear every topic in this language to fully decode it.');
     el.cpStats.innerHTML =
-      statBox(st.correct+'/'+st.total,'Decoded correctly') +
-      statBox(Math.round(accuracy*100)+'%','Accuracy') +
-      statBox(st.score,'Relay score') +
-      statBox(tipsEarned+' 💠','Credits earned'+(streakPay?' · 🔥 '+save.streak.days+'-day streak +'+streakPay:'')) +
+      statBox(st.correct+'/'+st.total,_t('Decoded correctly')) +
+      statBox(Math.round(accuracy*100)+'%',_t('Accuracy')) +
+      statBox(st.score,_t('Relay score')) +
+      statBox(tipsEarned+' 💠',_t('Credits earned')+(streakPay?' · 🔥 '+_t('{n}-day streak', {n:save.streak.days})+' +'+streakPay:'')) +
       statBox('+'+Math.round(xpGain*(1+0.08*noise))+' XP', rankInfo().rank.title) +
-      statBox('🔗 '+save.chain.len,'Signal chain') +
-      (dmEarned ? statBox('+'+dmEarned+' 🌌','Dark matter'+(noise?' · Noise '+noise:'')) : '');
-    el.cpStats.innerHTML += '<div class="chain-box" style="grid-column:1 / -1;">'+chainResult.text+(isRecovery?' 🩺 '+Object.keys(save.missed).filter(function(k){ return k.slice(-3)===':'+st.lang; }).length+' weak '+LANGS[st.lang].name+' words remain.':'')+'</div>';
-    if(chainResult.milestones && chainResult.milestones.length){ toast('🎉 Chain milestone: '+chainResult.milestones[0].icon+' <b>'+chainResult.milestones[0].name+'</b> is now online.'); }
-    el.btnRetry.textContent = st.topic==='__recovery' ? '🩺 Drill Again' : st.topic==='__sweep' ? '🛰️ Sweep Again' : st.topic==='__intercept' ? '📰 Decode Again' : '↺ Re-run Relay';
+      statBox('🔗 '+save.chain.len,_t('Signal chain')) +
+      (dmEarned ? statBox('+'+dmEarned+' 🌌',_t('Dark matter')+(noise?' · '+_t('Noise {n}', {n:noise}):'')) : '');
+    el.cpStats.innerHTML += '<div class="chain-box" style="grid-column:1 / -1;">'+chainResult.text+(isRecovery?' 🩺 '+_t('{n} weak {lang} words remain.', {n:Object.keys(save.missed).filter(function(k){ return k.slice(-3)===':'+st.lang; }).length, lang:LANGS[st.lang].name}):'')+'</div>';
+    if(chainResult.milestones && chainResult.milestones.length){ toast(_t('🎉 Chain milestone: {icon} <b>{name}</b> is now online.', {icon:chainResult.milestones[0].icon, name:chainResult.milestones[0].name})); }
+    el.btnRetry.textContent = st.topic==='__recovery' ? _t('🩺 Drill Again') : st.topic==='__sweep' ? _t('🛰️ Sweep Again') : st.topic==='__intercept' ? _t('📰 Decode Again') : _t('↺ Re-run Relay');
     el.btnRetry.onclick = function(){ enterDungeon(st.tierIdx, st.lang, st.topic); };
-    el.btnBackHub.textContent = hubNowCleared ? '🗺️ Star Chart' : langNowCleared ? '← Back to Sector' : '← Back to Topics';
+    el.btnBackHub.textContent = hubNowCleared ? _t('🗺️ Star Chart') : langNowCleared ? _t('← Back to Sector') : _t('← Back to Topics');
     var tierIdxAtClear = st.tierIdx, langAtClear = st.lang;
     el.btnBackHub.onclick = function(){
       if(hubNowCleared){ showHome(); }
       else if(langNowCleared){ showHub(tierIdxAtClear); }
       else { showTopics(tierIdxAtClear, langAtClear); }
     };
-    if(hubNowCleared){ toast('🎉 Sector cleared! '+nextLockedHint()); }
+    if(hubNowCleared){ toast(_t('🎉 Sector cleared!')+' '+nextLockedHint()); }
   }
 
   function onDungeonFailed(){
@@ -9534,19 +9601,19 @@
     el.shiftRibbon.hidden = true; el.runPerks.hidden = true;
 
     var accuracy = st.total>0 ? st.correct/st.total : 0;
-    el.cpTitle.textContent = 'Power cells depleted!';
+    el.cpTitle.textContent = _t('Power cells depleted!');
     el.cpStars.innerHTML = LANGS[st.lang].name+' — '+tier.name+' ('+tier.code+') — '+topicLabel(st.topic);
-    el.cpSub.textContent = 'You ran out of power mid-relay — this '+LANGS[st.lang].name+' topic restarts from the beginning, freshly reshuffled. Anything already decoded elsewhere stays decoded.';
+    el.cpSub.textContent = _t('You ran out of power mid-relay — this {lang} topic restarts from the beginning, freshly reshuffled. Anything already decoded elsewhere stays decoded.', {lang:LANGS[st.lang].name});
     el.cpStats.innerHTML =
-      statBox(st.correct+'/'+st.total,'Decoded correctly') +
-      statBox(Math.round(accuracy*100)+'%','Accuracy') +
-      statBox(st.score,'Run score') +
-      statBox(tipsEarned+' 💠','Credits earned') +
-      statBox('🔗 '+save.chain.len,'Signal chain');
+      statBox(st.correct+'/'+st.total,_t('Decoded correctly')) +
+      statBox(Math.round(accuracy*100)+'%',_t('Accuracy')) +
+      statBox(st.score,_t('Run score')) +
+      statBox(tipsEarned+' 💠',_t('Credits earned')) +
+      statBox('🔗 '+save.chain.len,_t('Signal chain'));
     el.cpStats.innerHTML += '<div class="chain-box" style="grid-column:1 / -1;">'+chainResult.text+'</div>';
-    el.btnRetry.textContent = '↺ Try Again';
+    el.btnRetry.textContent = _t('↺ Try Again');
     el.btnRetry.onclick = function(){ enterDungeon(st.tierIdx, st.lang, st.topic); };
-    el.btnBackHub.textContent = '← Back to Topics';
+    el.btnBackHub.textContent = _t('← Back to Topics');
     var tierIdxAtFail = st.tierIdx, langAtFail = st.lang;
     el.btnBackHub.onclick = function(){ showTopics(tierIdxAtFail, langAtFail); };
   }
@@ -9571,19 +9638,19 @@
     el.shiftRibbon.hidden = true; el.runPerks.hidden = true;
 
     var accuracy = st.total>0 ? st.correct/st.total : 0;
-    el.cpTitle.textContent = 'Channel closed — signal lost';
-    el.cpStars.innerHTML = '🏅 Deep Space Run — floor '+(st.floor||0)+' — final score '+st.score;
-    el.cpSub.textContent = 'You held the channel open as long as you could. Every power cell has a limit.';
+    el.cpTitle.textContent = _t('Channel closed — signal lost');
+    el.cpStars.innerHTML = '🏅 '+_t('Deep Space Run — floor {f} — final score {s}', {f:(st.floor||0), s:st.score});
+    el.cpSub.textContent = _t('You held the channel open as long as you could. Every power cell has a limit.');
     el.cpStats.innerHTML =
-      statBox(st.correct+'/'+st.total,'Decoded correctly') +
-      statBox(Math.round(accuracy*100)+'%','Accuracy') +
-      statBox(st.score,'Session score') +
-      statBox(tipsEarned+' 💠','Credits earned') +
-      statBox('🌌 '+(st.floor||0),'Floor reached') +
-      (dmEarned ? statBox('+'+dmEarned+' 🌌','Dark matter') : '');
-    el.btnRetry.textContent = '↺ Reopen Channel';
+      statBox(st.correct+'/'+st.total,_t('Decoded correctly')) +
+      statBox(Math.round(accuracy*100)+'%',_t('Accuracy')) +
+      statBox(st.score,_t('Session score')) +
+      statBox(tipsEarned+' 💠',_t('Credits earned')) +
+      statBox('🌌 '+(st.floor||0),_t('Floor reached')) +
+      (dmEarned ? statBox('+'+dmEarned+' 🌌',_t('Dark matter')) : '');
+    el.btnRetry.textContent = _t('↺ Reopen Channel');
     el.btnRetry.onclick = function(){ enterDungeon(TIERS.length-1, null); };
-    el.btnBackHub.textContent = '🗺️ Star Chart';
+    el.btnBackHub.textContent = _t('🗺️ Star Chart');
     el.btnBackHub.onclick = showHome;
   }
 
@@ -9603,12 +9670,12 @@
     checkCommendations(); checkPlan(); persist(); refreshHud();
     hideAllScreens(); el.screenComplete.hidden = false; el.btnPhrasebook.disabled = false; el.shiftRibbon.hidden = true; el.runPerks.hidden = true;
     var accuracy = st.total>0 ? st.correct/st.total : 0;
-    el.cpTitle.textContent = '🌩️ Storm weathered!';
-    el.cpStars.innerHTML = 'Signal Storm — '+save.storm.date+' — '+st.storm.mods.map(function(m){ return m.icon+' '+m.name; }).join(' · ');
-    el.cpSub.textContent = firstToday ? 'First clear of today’s storm. Come back tomorrow for a new one — or run it again for a better score.' : 'Storm cleared again. Best today: '+save.storm.best+'.';
-    el.cpStats.innerHTML = statBox(st.correct+'/'+st.total,'Decoded correctly') + statBox(Math.round(accuracy*100)+'%','Accuracy') + statBox(st.score,'Storm score') + statBox(tipsEarned+' 💠','Credits earned') + statBox('+'+xpGain+' XP', rankInfo().rank.title) + statBox('🔗 '+save.chain.len,'Chain (unchanged)') + (dmEarned ? statBox('+'+dmEarned+' 🌌','Dark matter') : '');
-    el.btnRetry.textContent = '⚡ Run it again'; el.btnRetry.onclick = startStorm;
-    el.btnBackHub.textContent = '🗺️ Star Chart'; el.btnBackHub.onclick = showHome;
+    el.cpTitle.textContent = _t('🌩️ Storm weathered!');
+    el.cpStars.innerHTML = _t('Signal Storm')+' — '+save.storm.date+' — '+st.storm.mods.map(function(m){ return m.icon+' '+m.name; }).join(' · ');
+    el.cpSub.textContent = firstToday ? _t('First clear of today’s storm. Come back tomorrow for a new one — or run it again for a better score.') : _t('Storm cleared again. Best today: {b}.', {b:save.storm.best});
+    el.cpStats.innerHTML = statBox(st.correct+'/'+st.total,_t('Decoded correctly')) + statBox(Math.round(accuracy*100)+'%',_t('Accuracy')) + statBox(st.score,_t('Storm score')) + statBox(tipsEarned+' 💠',_t('Credits earned')) + statBox('+'+xpGain+' XP', rankInfo().rank.title) + statBox('🔗 '+save.chain.len,_t('Chain (unchanged)')) + (dmEarned ? statBox('+'+dmEarned+' 🌌',_t('Dark matter')) : '');
+    el.btnRetry.textContent = _t('⚡ Run it again'); el.btnRetry.onclick = startStorm;
+    el.btnBackHub.textContent = _t('🗺️ Star Chart'); el.btnBackHub.onclick = showHome;
   }
   function onStormFailed(){
     save.storm.runs++; save.storm.best = Math.max(save.storm.best, st.score);
@@ -9616,12 +9683,12 @@
     addXp(st.correct); persist(); refreshHud();
     hideAllScreens(); el.screenComplete.hidden = false; el.btnPhrasebook.disabled = false; el.shiftRibbon.hidden = true; el.runPerks.hidden = true;
     var accuracy = st.total>0 ? st.correct/st.total : 0;
-    el.cpTitle.textContent = 'Lost in the storm';
-    el.cpStars.innerHTML = 'Signal Storm — '+save.storm.date;
-    el.cpSub.textContent = 'The storm took every cell. Same modifiers all day — regroup and try again.';
-    el.cpStats.innerHTML = statBox(st.correct+'/'+st.total,'Decoded correctly') + statBox(Math.round(accuracy*100)+'%','Accuracy') + statBox(st.score,'Storm score') + statBox(tipsEarned+' 💠','Credits earned') + statBox('🔗 '+save.chain.len,'Chain (unchanged)');
-    el.btnRetry.textContent = '⚡ Try the storm again'; el.btnRetry.onclick = startStorm;
-    el.btnBackHub.textContent = '🗺️ Star Chart'; el.btnBackHub.onclick = showHome;
+    el.cpTitle.textContent = _t('Lost in the storm');
+    el.cpStars.innerHTML = _t('Signal Storm')+' — '+save.storm.date;
+    el.cpSub.textContent = _t('The storm took every cell. Same modifiers all day — regroup and try again.');
+    el.cpStats.innerHTML = statBox(st.correct+'/'+st.total,_t('Decoded correctly')) + statBox(Math.round(accuracy*100)+'%',_t('Accuracy')) + statBox(st.score,_t('Storm score')) + statBox(tipsEarned+' 💠',_t('Credits earned')) + statBox('🔗 '+save.chain.len,_t('Chain (unchanged)'));
+    el.btnRetry.textContent = _t('⚡ Try the storm again'); el.btnRetry.onclick = startStorm;
+    el.btnBackHub.textContent = _t('🗺️ Star Chart'); el.btnBackHub.onclick = showHome;
   }
 
   var toastTimer = null;
@@ -9640,7 +9707,9 @@
 
   function renderPhrasebook(){
     var learnedCount = wordsLearned();
-    el.pbProgress.textContent = learnedCount+' / '+wordsMax()+' words decoded across all six languages — correct answers reveal them here for good.';
+    el.pbProgress.textContent = _t('{n} / {total} words decoded across your voyage’s languages — correct answers reveal them here for good.', {n:learnedCount, total:wordsMax()});
+    var head = document.querySelector('#pb-table thead tr');
+    if(head){ head.innerHTML = '<th>'+_t('Word / Phrase')+'</th>'+journeyLangs().map(function(l){ return '<th title="'+LANGS[l].name+'">'+LANG_META[l].flag+' '+(l==='eng'?'EN':l.toUpperCase())+'</th>'; }).join(''); }
     var tierSel = el.pbTier.value;
     var q = (el.pbSearch.value||'').trim().toLowerCase();
     var pool = CONCEPTS.filter(function(c){ return (tierSel==='all' || c.tier===tierSel); });
@@ -9653,18 +9722,18 @@
     }
     var MAXROWS = 300;
     var shown = pool.slice(0, MAXROWS);
-    el.pbCount.textContent = pool.length===shown.length ? pool.length+' entries' : 'showing '+shown.length+' of '+pool.length+' — narrow the search to see the rest';
+    el.pbCount.textContent = pool.length===shown.length ? _t('{n} entries', {n:pool.length}) : _t('showing {a} of {b} — narrow the search to see the rest', {a:shown.length, b:pool.length});
     var lastTopic = null, html = '';
     shown.forEach(function(c){
       if(c.topic!==lastTopic){
         lastTopic = c.topic;
-        html += '<tr class="pb-topic-row"><td colspan="7"><span class="lvl-badge" style="background:'+tierColor(c.tier)+'">'+c.tier+'</span> '+topicLabel(c.topic)+'</td></tr>';
+        html += '<tr class="pb-topic-row"><td colspan="'+(journeyLangs().length+1)+'"><span class="lvl-badge" style="background:'+tierColor(c.tier)+'">'+c.tier+'</span> '+topicLabel(c.topic)+'</td></tr>';
       }
       var cells = journeyLangs().map(function(l){
         var key = c.id+':'+l;
         if(learnedSet.has(key)){
           var stars = constellationsFor(c.id, l).filter(function(x){ return x.lang!=='en'; });
-          var sh = stars.length ? '<div class="pb-stars" title="Same or similar word elsewhere on your voyage">'+stars.map(function(x){ return LANG_META[x.lang].flag+(x.rel==='same'?'=':'≈'); }).join(' ')+'</div>' : '';
+          var sh = stars.length ? '<div class="pb-stars" title="'+_t('Same or similar word elsewhere on your voyage')+'">'+stars.map(function(x){ return LANG_META[x.lang].flag+(x.rel==='same'?'=':'≈'); }).join(' ')+'</div>' : '';
           if(l==='ja'){ return '<td>'+furi(c[l].t)+sh+'</td>'; }
           var r = c[l].r ? '<div style="font-size:10.5px;color:var(--paper-faint);">'+c[l].r+'</div>' : '';
           return '<td>'+c[l].t+r+sh+'</td>';
@@ -9697,31 +9766,31 @@
   document.getElementById('btn-shadow').addEventListener('click', function(){
     var b = this; var r = st.round; if(!r || !r.clipKey) return;
     if(shadowRec){ try{ shadowRec.stop(); }catch(e){} return; }
-    if(!navigator.mediaDevices || !window.MediaRecorder){ toast('🎤 This browser cannot record audio.'); return; }
+    if(!navigator.mediaDevices || !window.MediaRecorder){ toast(_t('🎤 This browser cannot record audio.')); return; }
     navigator.mediaDevices.getUserMedia({audio:true}).then(function(stream){
       var chunks = []; var rec = new MediaRecorder(stream); shadowRec = rec;
       rec.ondataavailable = function(e){ if(e.data && e.data.size) chunks.push(e.data); };
       rec.onstop = function(){
-        shadowRec = null; stream.getTracks().forEach(function(t){ t.stop(); }); b.textContent = '🎤 Shadow';
+        shadowRec = null; stream.getTracks().forEach(function(t){ t.stop(); }); b.textContent = '🎤 '+_t('Shadow');
         var mine = new Audio(URL.createObjectURL(new Blob(chunks, {type: rec.mimeType || 'audio/webm'})));
         var native = new Audio(clipSrc(r.clipKey));
-        toast('🎧 Native first, then you.');
+        toast(_t('🎧 Native first, then you.'));
         native.onended = function(){ setTimeout(function(){ mine.play().catch(function(){}); }, 250); };
         native.play().catch(function(){ mine.play().catch(function(){}); });
       };
-      rec.start(); b.textContent = '⏺️ Recording… tap to stop';
+      rec.start(); b.textContent = _t('⏺️ Recording… tap to stop');
       setTimeout(function(){ if(shadowRec===rec){ try{ rec.stop(); }catch(e){} } }, 4000);
-    }).catch(function(){ toast('🎤 Microphone access was refused.'); });
+    }).catch(function(){ toast(_t('🎤 Microphone access was refused.')); });
   });
   /* pronunciation flags: the exact clip key plus the text, so the clip can be re-recorded or the voice swapped */
   document.getElementById('btn-flag').addEventListener('click', function(){
     var r = st.round; if(!r) return;
     var key = r.clipKey || (r.conceptId && r.lang ? r.conceptId+':'+r.lang : null);
-    if(!key){ toast('🚩 Nothing to flag on this round.'); return; }
+    if(!key){ toast(_t('🚩 Nothing to flag on this round.')); return; }
     var text = r.spoken || (r.conceptId && ITEM[r.conceptId] && ITEM[r.conceptId][r.lang] ? ITEM[r.conceptId][r.lang].t : r.main) || '';
-    if(save.flagged[key]){ delete save.flagged[key]; persist(); toast('🏳️ Flag removed for '+key+'.'); return; }
+    if(save.flagged[key]){ delete save.flagged[key]; persist(); toast(_t('🏳️ Flag removed for {key}.', {key:key})); return; }
     save.flagged[key] = {text: plainText(text), lang: r.lang, at: Date.now(), clip: hasClip(key)};
-    persist(); toast('🚩 Flagged <b>'+key+'</b> — it will be re-recorded. '+Object.keys(save.flagged).length+' flagged so far; the list is in the Mission Log.');
+    persist(); toast(_t('🚩 Flagged <b>{key}</b> — it will be re-recorded. {n} flagged so far; the list is in the Mission Log.', {key:key, n:Object.keys(save.flagged).length}));
   });
   el.btnCloseShop.addEventListener('click', showHome);
   el.btnCompleteShop.addEventListener('click', showShop);
@@ -9748,7 +9817,7 @@
     updateMuteBtn();
     persist();
   });
-  if(!speechReady){ el.btnMute.disabled = true; el.btnMute.title = 'Pronunciation isn’t supported in this browser'; el.btnMute.textContent = '🔇 Sound'; }
+  if(!speechReady){ el.btnMute.disabled = true; el.btnMute.title = _t('Pronunciation isn’t supported in this browser'); el.btnMute.textContent = '🔇 '+_t('Sound'); }
   else { updateMuteBtn(); }
 
   document.addEventListener('keydown', function(e){

@@ -6,11 +6,15 @@ translation agents can work from compact sources. Run after build.py.
                   meanings, nuance contexts, dialogue setups
   questions.json  comprehension questions for every story (shared + folk)
   folk_<k>.json   the folk tales' English side (title + 7 paragraphs), in three chunks
+  ui.json         every interface string (menus, buttons, screens, toasts, shop, achievements, tooltips…),
+                  keyed by the English itself; see tools/ui_strings.py for what is collected
 
 Agents write l10n_out/<lang>_<chunk>.json with the same shape; tools/l10n_check.py validates; build.py
 assembles l10n/<lang>.json for the game."""
 import json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, 'tools'))
+import ui_strings
 h = open(os.path.join(ROOT, 'index.html'), encoding='utf-8').read()
 
 def block(name):
@@ -41,4 +45,7 @@ k = 3
 for i in range(k):
     chunk = {s['id']: {'lang': s['only'], 'title': s['title'], 'paras': s['paras']} for s in folk[i::k]}
     json.dump(chunk, open(os.path.join(ROOT, 'l10n_in', 'folk_%d.json' % (i + 1)), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+ui = ui_strings.extract(h)
+json.dump(ui, open(os.path.join(ROOT, 'l10n_in', 'ui.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+print('ui', len(ui), 'strings')
 print('notes', len(notes), 'coach', len(coach), 'idiom opts', len(I), 'nuance ctx', len(N), 'setups', len(D), 'stories', len(ST), 'folk', len(folk), 'chunks', k)
