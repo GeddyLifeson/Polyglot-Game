@@ -210,7 +210,7 @@ of "Next steps" is done.
 Owner: "the ipa spelling of the words doesn't help someone that doesn't know how to read that stuff ... if
 someone's native tongue [is] japanese ... there should be Katakana below ... For English natives it would be
 spelling it how english would spell out to pronounce it." Built for all 21 native × 21 target languages:
-- `tools/gen_pron.py` → `pron/<lang>.json` ({text: IPA}, 22 files incl. `eng`, 4.6 MB, ~112k strings). Needs
+- `tools/gen_pron.py` → `pron/<lang>.json` ({text: IPA}, 22 files incl. `eng`, 6.0 MB, ~118k strings incl. story sentences). Needs
   `pip install espeakng-loader pypinyin pycantonese`. Run after build.py whenever content changes (resumable;
   `--fresh` recomputes everything in about a minute). README 3d lists the source per language.
 - `PRON` block in index.html (`/* ==== PRONUNCIATION START/END ==== */`, ~42 KB): IPA parser, fallback map,
@@ -220,7 +220,12 @@ spelling it how english would spell out to pronounce it." Built for all 21 nativ
   (it refills when a pron file arrives or the IPA toggle changes). Covered: match prompts, crosstalk / blank /
   nuance / cloze / dialogue options, dialogue lines, idiom phrases, placement test, Lexicon.
 - Voices panel checkbox "Show IPA and the original reading under each word" (`save.showIpa`, via `_t`).
-- Not covered yet: story paragraphs (Library), Signal Intercept, sentence-builder tiles, the listening reveal.
+- Also covered (second pass): Library stories (title line; 🗣️ under each paragraph opens one line per
+  sentence, remembered in `save.storyPron`; typed modes show the lines under the reference), sentence-builder
+  tiles (a line inside each tile, the whole sentence after Transmit), the listening reveal and the filled cloze
+  gap (`round.revealPr`), and Signal Intercept (ladder words carry their reading as ruby underneath; pasted
+  words outside the ladder have no IPA, since there is no G2P in the browser). Sentences are pron keys split by
+  the same pattern in gen_pron.py (`sentences`) and PRON.sentences; tile sequences are joined with PRON.SEP.
   Quality is rule-based: espeak-ng is weakest for Arabic (the data's romanization is used instead; it has no
   vowel length), Japanese pitch accent and Mandarin/Cantonese tones are not shown in the respellings (tones stay
   visible with the IPA toggle). Spot-checks by native speakers per script are the next step; the converters are

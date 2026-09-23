@@ -196,7 +196,9 @@ Settings: 155 wpm, pitch 45 (`--espeak-rate`, `--espeak-pitch`); it is a formant
   story questions stay in English. Folk tales carry only their own language plus English, so their other side
   is English for everyone.
 - **Pronunciation in your own script** (`PRON` block in index.html, data in `pron/<lang>.json`): the line under
-  every target-language word, phrase, reply and answer option (relays, placement test, Lexicon) is written for
+  every target-language word, phrase, reply and answer option (relays, sentence-builder tiles, the listening
+  reveal, placement test, Lexicon, Signal Intercept, and the Library, where 🗣️ opens a line under each sentence)
+  is written for
   the player's own language: an English respelling with the stressed syllable in capitals (Привет → pree-VYET),
   katakana for Japanese (プリヴェット), Hangul for Korean (프리볘트), Devanagari, Arabic script, Cyrillic and Greek
   with the stress accented, pinyin-style syllables for Mandarin speakers (pu-li-wei-te: every mainland learner
@@ -204,7 +206,7 @@ Settings: 155 wpm, pitch 45 (`--espeak-rate`, `--espeak-pitch`); it is a formant
   characters drag in; tones are left off), Jyutping-style syllables for Cantonese, and respellings in their own
   orthography for the Latin-script languages (Spanish pri-VIET, German pri-WJET, Polish pri-WIET, Latin with
   macrons, Ròdais with grave accents). Data: `python3 tools/gen_pron.py` (after build.py; resumable, `--fresh`
-  recomputes; ~1 minute for all 22 files, 4.6 MB total, ~200-290 KB per language) writes one IPA string per
+  recomputes; ~1 minute for all 22 files, 6.0 MB total, ~190-390 KB per language) writes one IPA string per
   displayed text, keyed by the exact text (Japanese keeps its furigana markup). Sources: espeak-ng through
   `espeakng-loader` for es fr it pt de nl sv pl ru el la tr hi vi ind eng; Japanese from its kana/furigana,
   Mandarin from the pinyin (pypinyin where the data has none), Cantonese from the Jyutping (pycantonese),
