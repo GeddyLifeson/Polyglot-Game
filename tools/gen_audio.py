@@ -26,6 +26,10 @@ Backends (--backend auto|torch|onnx, default auto = torch if `kokoro` is importa
   espeak espeak-ng formant voices, offline, via `pip install espeakng-loader` (ships libespeak-ng and its data).
          Used for Ròdais (gr), read by the Scottish Gaelic voice `gd` after rewriting Ròdais `sc` as `sg`.
          --espeak-rate (words per minute) and --espeak-pitch (0-100) tune it.
+  omnivoice  k2-fsa/OmniVoice (Apache-2.0 code, CC-BY-NC weights; 646 languages), `pip install omnivoice` on CPU torch.
+         Used for Ròdais (gr): its Irish voice reads Ròdais spelling once the grave accents become Irish acutes.
+         One voice throughout: every clip clones tools/voices/omni_gr_man.wav (--omni-ref / --omni-ref-text);
+         --omni-steps sets the diffusion steps (32 default, 16 is about twice as fast). About 10 s a clip on 4 CPU cores.
 """
 import sys, os, re, json, subprocess, time, warnings, argparse
 warnings.filterwarnings('ignore')
@@ -37,11 +41,14 @@ ap.add_argument('--bitrate', default='16k')
 ap.add_argument('--out', default='audio')
 ap.add_argument('--html', default='index.html')
 ap.add_argument('--speed', type=float, default=0.95)
-ap.add_argument('--backend', choices=['auto', 'torch', 'onnx', 'azure', 'chatterbox', 'edge', 'espeak'], default='auto')
+ap.add_argument('--backend', choices=['auto', 'torch', 'onnx', 'azure', 'chatterbox', 'edge', 'espeak', 'omnivoice'], default='auto')
 ap.add_argument('--cbx-prompt', default=os.environ.get('CBX_PROMPT', ''), help='chatterbox: reference wav for the narrator voice (optional)')
 ap.add_argument('--cbx-device', default=os.environ.get('CBX_DEVICE', 'cuda'))
 ap.add_argument('--espeak-rate', type=int, default=155, help='espeak: words per minute')
 ap.add_argument('--espeak-pitch', type=int, default=45, help='espeak: base pitch 0-100 (espeak default 50)')
+ap.add_argument('--omni-steps', type=int, default=32, help='omnivoice: diffusion steps')
+ap.add_argument('--omni-ref', default='tools/voices/omni_gr_man.wav', help='omnivoice: reference clip the voice is cloned from')
+ap.add_argument('--omni-ref-text', default='tools/voices/omni_gr_man.txt', help='omnivoice: file with the reference clip\'s text')
 ap.add_argument('--azure-key', default=os.environ.get('AZURE_TTS_KEY', ''))
 ap.add_argument('--azure-region', default=os.environ.get('AZURE_TTS_REGION', 'eastus'))
 ap.add_argument('--voice', default='', help='override the voice name for every language in --langs')
@@ -63,6 +70,8 @@ if backend == 'chatterbox':
     import torch
 elif backend == 'espeak':
     import ctypes, espeakng_loader
+elif backend == 'omnivoice':
+    import torch, unicodedata
 elif backend == 'edge':
     import asyncio, edge_tts   # free Microsoft Edge neural voices (same voice names as Azure); needs the internet, no key
 elif backend == 'azure':
@@ -119,6 +128,9 @@ AZURE = {
 # espeak-ng voices: our code -> (espeak voice, text rewrite). Ròdais spells [sk] `sc` where Scottish Gaelic
 # writes `sg` (uisce/uisge, sceul/sgeul, iasc/iasg); the gd rules read `sg` as the unaspirated Gaelic stop.
 ESPEAK = {'gr': ('gd', lambda t: t.replace('sc', 'sg').replace('Sc', 'Sg').replace('SC', 'SG'))}
+# OmniVoice: our code -> (its language id, text rewrite). Ròdais is read by the Irish model: grave accents -> acutes.
+def _acute(t): return unicodedata.normalize('NFC', unicodedata.normalize('NFD', t).replace('\u0300', '\u0301'))
+OMNI = {'gr': ('ga', _acute)}
 ESPEAK_LANG = {'e':'es', 'f':'fr-fr', 'i':'it', 'p':'pt-br'}   # what kokoro.KPipeline uses per lang_code
 
 
@@ -293,6 +305,31 @@ class EspeakPipeline:
         if not EspeakPipeline._buf: raise RuntimeError('empty audio from espeak')
         yield text, '', np.concatenate(EspeakPipeline._buf)
 
+class OmniPipeline:
+    """OmniVoice on CPU (or CUDA if present), cloning one reference voice so every clip is the same speaker.
+    Its own post-processing is off (it fails on some one-word clips); the loop below trims and ffmpeg normalises."""
+    _model = None; _prompt = None
+    def __init__(self, lang):
+        from omnivoice import OmniVoice
+        from omnivoice.models.omnivoice import OmniVoiceGenerationConfig
+        self.lang, self.rewrite = OMNI[lang]
+        self.sr = 24000
+        self.cfg = OmniVoiceGenerationConfig(num_step=args.omni_steps, postprocess_output=False)
+        if OmniPipeline._model is None:
+            dev = 'cuda:0' if torch.cuda.is_available() else 'cpu'
+            torch.set_num_threads(os.cpu_count() or 4)
+            OmniPipeline._model = OmniVoice.from_pretrained('k2-fsa/OmniVoice', device_map=dev,
+                                                            dtype=torch.float16 if dev != 'cpu' else torch.float32)
+            ref_text = open(os.path.join(ROOT, args.omni_ref_text), encoding='utf-8').read().strip()
+            OmniPipeline._prompt = OmniPipeline._model.create_voice_clone_prompt(
+                ref_audio=os.path.join(ROOT, args.omni_ref), ref_text=ref_text)
+    def __call__(self, text, voice=None, speed=1.0):
+        a = OmniPipeline._model.generate(text=self.rewrite(clean(text)), language=self.lang,
+                                         voice_clone_prompt=OmniPipeline._prompt, generation_config=self.cfg)[0]
+        if not len(a): raise RuntimeError('empty audio from omnivoice')
+        a = np.asarray(a, dtype=np.float32)
+        yield text, '', a / (np.abs(a).max() + 1e-9) * 0.9
+
 def clean(text, reading=False):
     if reading: t = re.sub(r'\{[^|{}]+\|([^}]+)\}', r'\1', text)   # {漢字|かな} -> かな
     else:       t = re.sub(r'\{([^|{}]+)\|[^}]+\}', r'\1', text)   # {漢字|かな} -> 漢字
@@ -363,6 +400,9 @@ for tier in args.tiers:
         elif backend == 'espeak':
             if lang not in ESPEAK: print('skip', lang, '(no espeak voice mapped)'); continue
             pipe = EspeakPipeline(lang); voice = pipe.voice
+        elif backend == 'omnivoice':
+            if lang not in OMNI: print('skip', lang, '(no OmniVoice language mapped)'); continue
+            pipe = OmniPipeline(lang); voice = 'omnivoice'
         elif backend == 'chatterbox':
             if lang not in CBX: print('skip', lang, '(chatterbox has no model for it; use --backend azure)'); continue
             pipe = ChatterboxPipeline(lang); voice = 'chatterbox'
