@@ -379,6 +379,10 @@
   .answer-btn .a-emoji{ font-size:19px; flex:none; }
   .a-text{ display:flex; flex-direction:column; gap:2px; min-width:0; }
   .a-sub{ font-family:var(--font-mono); font-size:10.5px; color:var(--paper-faint); font-weight:400; }
+  .pron:empty{ display:none; }
+  .a-sub.pron, .pl-pron, .pb-pron{ font-family:inherit; letter-spacing:.02em; }
+  .pl-pron{ font-size:13px; color:var(--paper-faint); font-weight:400; margin-top:4px; }
+  .pb-pron{ font-size:10.5px; color:var(--paper-faint); }
   .answer-btn .a-key{ font-family:var(--font-mono); font-size:10.5px; color:var(--paper-faint); margin-left:auto; flex:none; }
   .answer-btn:hover:not([disabled]){ border-color:var(--brass-dim); transform:translateY(-1px); }
   .answer-btn:focus-visible{ outline:2px solid var(--brass); outline-offset:2px; }
@@ -7096,6 +7100,614 @@
   loadL10n();
   CONCEPTS.forEach(function(c){ ITEM[c.id]=c; });
 
+  /* ==== PRONUNCIATION START (reading line in the player's own writing system) ====
+     pron/<lang>.json (tools/gen_pron.py) holds one IPA transcription per target-language string, keyed by the
+     exact text shown. PRON.line(lang, text) turns it into the player's native script at runtime: an English
+     respelling for English speakers ("pree-VYET"), katakana for Japanese, Hangul for Korean, Devanagari for
+     Hindi, Arabic script, Cyrillic, Greek, pinyin-style syllables for Mandarin, Jyutping-style for Cantonese,
+     and a respelling in their own orthography for every Latin-script language. Stressed syllables are in
+     capitals (Latin scripts) or carry an accent (Cyrillic, Greek). */
+  var PRON = (function(){
+    var DATA = {}, PENDING = {}, listeners = [];
+    var VOW = 'iyɨʉɯuɪʏʊeøɘɵɤoəɛœɜɞʌɔæɐaɶɑɒɚɝᵻä';
+    var CANON = {'ɡ':'g','q':'k','ɴ':'n','ɳ':'n','χ':'x','ɦ':'h','ħ':'h','ʕ':'ʔ','ɻ':'ɹ','ɽ':'ɾ','ɫ':'l','ɭ':'l','ʋ':'v','β':'b','ɸ':'f',
+      'ʝ':'j','ɟ':'dʒ','c':'tʃ','ʈ':'t','ɖ':'d','ʀ':'ʁ','ɰ':'ɣ','ɗ':'d','ɓ':'b','ʉ':'y','ʏ':'y','ɘ':'ə','ɵ':'ø','ɤ':'ə','ɞ':'ø',
+      'ɐ':'ʌ','ɶ':'ø','ä':'a','ᵻ':'ɪ','ʈʂ':'tʂ','ɖʐ':'dʐ','ɹ\u0329':'ɨ','ɻ\u0329':'ɨ'};
+    var AFF = {'tʃ':1,'dʒ':1,'ts':1,'dz':1,'tɕ':1,'dʑ':1,'ʈʂ':1,'ɖʐ':1,'pf':1,'tʂ':1};
+    var FRONT = {i:1,ɪ:1,e:1,ɛ:1,y:1,ø:1,æ:1};
+    var PALC = {'ʃ':1,'ɕ':1,'ʒ':1,'ʑ':1,'tɕ':1,'dʑ':1,'tʃ':1,'dʒ':1,'ɲ':1,'ʎ':1,'ç':1};
+
+    /* ---- IPA (as written by gen_pron.py) -> words -> syllables {on:[ph], nu:[ph], co:[ph], st:1|2|0} ---- */
+    function phones(s){
+      var out = [], i = 0;
+      while(i < s.length){
+        var ch = s[i];
+        if('˥˦˧˨˩'.indexOf(ch)!==-1){ i++; continue; }
+        if(/[\u0300-\u036f]/.test(ch) || 'ːˑʰʲʷˠˤⁿˡʱ\u031aʼ'.indexOf(ch)!==-1){
+          var p = out[out.length-1];
+          if(p){
+            if(ch==='ː') p.long = true; else if(ch==='ʰ' || ch==='ʱ') p.asp = true; else if(ch==='ʲ') p.pal = true;
+            else if(ch==='\u0303') p.nas = true; else if(ch==='\u0348') p.tense = true;
+            else if(ch==='\u0329'){ p.v = true; if(p.s==='ɹ' || p.s==='ɻ') p.s = 'ɨ'; else p.syl = true; }
+            else if(ch==='ʷ') p.lab = true;
+          }
+          i++; continue;
+        }
+        if(ch==='\u0361' || ch==='\u035c'){ if(out.length && i+1<s.length){ out[out.length-1].s += s[i+1]; i += 2; } else i++; continue; }
+        var two = s.substr(i, 2);
+        var sym;
+        if(AFF[two]){ sym = two; i += 2; } else { sym = ch; i++; }
+        if(sym==='ɚ'){ out.push({s:'ə', v:true}); out.push({s:'ɹ'}); continue; }
+        if(sym==='ɝ'){ out.push({s:'ɜ', v:true}); out.push({s:'ɹ'}); continue; }
+        var v = VOW.indexOf(sym)!==-1;
+        if(CANON[sym]) sym = CANON[sym];
+        out.push({s:sym, v:v});
+      }
+      return out;
+    }
+    function parse(ipa){
+      return ipa.split(' ').filter(Boolean).map(function(w){
+        var sy = [], cur = '', st = 0;
+        for(var i=0;i<w.length;i++){
+          var ch = w[i];
+          if(ch==='.' || ch==='ˈ' || ch==='ˌ'){ if(cur) sy.push({raw:cur, st:st}); cur = ''; st = ch==='ˈ' ? 1 : ch==='ˌ' ? 2 : 0; }
+          else cur += ch;
+        }
+        if(cur) sy.push({raw:cur, st:st});
+        return sy.map(function(x){
+          var ph = phones(x.raw), on = [], nu = [], co = [], k = 0;
+          while(k<ph.length && !ph[k].v) on.push(ph[k++]);
+          while(k<ph.length && ph[k].v) nu.push(ph[k++]);
+          while(k<ph.length) co.push(ph[k++]);
+          if(!nu.length && on.length){ co = on; on = []; }
+          /* canonical fixes: ɲ/ʎ before i are plain n/l, a syllabic nasal is a vowel-less nucleus */
+          on.forEach(function(p, j){ var n = on[j+1] || nu[0]; if(n && n.s==='i' && (p.s==='ɲ' || p.s==='ʎ')) p.s = p.s==='ɲ' ? 'n' : 'l'; });
+          co.forEach(function(p){ if(p.s==='ɲ') p.s = 'n'; });
+          return {on:on, nu:nu, co:co, st:x.st};
+        });
+      });
+    }
+
+    /* ---- fallbacks: a sound a script has no letter for becomes its nearest neighbour ---- */
+    var FB = {'ɕ':'ʃ','ʑ':'ʒ','tɕ':'tʃ','dʑ':'dʒ','ʂ':'ʃ','ʐ':'ʒ','tʂ':'tʃ','dʐ':'dʒ','ɧ':'ʃ','ɬ':'l','ç':'x','x':'h','ɣ':'g','ʁ':'r',
+      'ɹ':'r','ɾ':'r','ɥ':'w','pf':'f','dz':'z','ʔ':'','θ':'s','ð':'d','ʎ':'l','ɲ':'n',
+      'ɪ':'i','ʊ':'u','ɛ':'e','ɔ':'o','æ':'ɛ','ɑ':'a','ɒ':'ɔ','ʌ':'a','ə':'ʌ','ɜ':'ə','ɯ':'u','ɨ':'i','y':'i','ø':'e','œ':'ø'};
+    function fb(sym, has){ var n = 0; while(!has(sym) && FB[sym]!==undefined && n++<6) sym = FB[sym]; return sym; }
+
+    /* ---- alphabetic spelling (Latin, Cyrillic, Greek): tables of sound -> letters, with small context rules ---- */
+    function alpha(T){
+      function has(s){ return T.m[s]!==undefined; }
+      function get(ph, cx){
+        var s = fb(ph.s, has), r = T.m[s];
+        if(typeof r==='function') r = r(cx, ph);
+        return r==null ? '' : r;
+      }
+      return function(words){
+        return words.map(function(w){
+          var multi = w.length>1;
+          return w.map(function(sy, si){
+            var out = '', nsy = w[si+1], psy = w[si-1];
+            var nuc0 = sy.nu[0], open = !sy.co.length;
+            function cx(pos, idx, list){
+              var nx = list[idx+1] || (pos==='on' ? sy.nu[0] : pos==='co' ? (nsy && (nsy.on[0] || nsy.nu[0])) : null);
+              var pv = list[idx-1] || (pos==='co' ? sy.nu[sy.nu.length-1] : pos==='on' ? (psy && (psy.co[psy.co.length-1] || psy.nu[psy.nu.length-1])) : null);
+              return {pos:pos, next: nx ? fb(nx.s, has) : null, nextPh:nx, prev: pv ? fb(pv.s, has) : null, prevPh:pv,
+                      first: si===0 && idx===0 && pos==='on', last: !nsy && pos==='co' && idx===list.length-1,
+                      open: open, stressed: sy.st===1, onsetLen: sy.on.length, syl:sy, si:si, n:w.length, T:T};
+            }
+            var soft = false;
+            sy.on.forEach(function(ph, k){
+              var c = cx('on', k, sy.on), isLast = k===sy.on.length-1;
+              if(ph.s==='j' && k>0 && PALC[sy.on[k-1].s]) return;
+              if(ph.s==='j' && isLast && sy.nu.length && T.jv && T.jv[fb(sy.nu[0].s, has)]!==undefined && !(k===0 && T.jvInitialOnly===false)){ soft = true; return; }
+              out += get(ph, c);
+              if(ph.pal){
+                if(isLast && sy.nu.length && T.jv && T.jv[fb(sy.nu[0].s, has)]!==undefined) soft = true;
+                else if(isLast && sy.nu.length){ var pv0 = sy.nu[0].s; if(pv0!=='i' && pv0!=='ɪ' && pv0!=='y' && T.palGlide) out += T.palGlide; }
+                else if(T.palSoft) out += T.palSoft;
+              }
+            });
+            var nStart = out.length;
+            if(sy.nu.length){
+              var v0 = fb(sy.nu[0].s, has), v1 = sy.nu[1] ? fb(sy.nu[1].s, has) : null, nt = '';
+              var ncx = cx('nu', 0, sy.nu); ncx.long = !!sy.nu[0].long; ncx.soft = soft; ncx.second = v1;
+              if(v1 && T.di && T.di[v0+v1]!==undefined){ nt = T.di[v0+v1]; if(typeof nt==='function') nt = nt(ncx); }
+              else {
+                if(soft){ nt = T.jv[v0]; soft = false; } else nt = get(sy.nu[0], ncx);
+                if(sy.nu[0].long && T.longMark) nt = T.longMark(nt, v0);
+                if(v1){ var c2 = cx('nu', 1, sy.nu); c2.long = !!sy.nu[1].long; c2.glide = true; nt += (T.glideV && T.glideV[v1]!==undefined) ? T.glideV[v1] : get(sy.nu[1], c2); }
+              }
+              if(sy.nu.some(function(p){ return p.nas; })) nt = T.nasal ? T.nasal(nt, v0, ncx) : nt + 'n';
+              out += nt;
+              if(sy.st===1 && multi && T.accent) out = out.slice(0, nStart) + T.accent(nt) ;
+            }
+            sy.co.forEach(function(ph, k){
+              out += get(ph, cx('co', k, sy.co));
+              if(ph.pal && T.palSoft) out += T.palSoft;
+            });
+            if(T.caps && sy.st===1 && multi) out = T.upper ? T.upper(out) : out.toUpperCase();
+            return out;
+          }).join(T.sep==null ? '-' : T.sep);
+        }).map(function(x){ return T.post ? T.post(x) : x; }).join(' ');
+      };
+    }
+    function tab(str, extra){
+      var m = {};
+      str.split(' ').forEach(function(p){ var i = p.indexOf('='); if(i>0) m[p.slice(0,i)] = p.slice(i+1); });
+      for(var k in extra) m[k] = extra[k];
+      return m;
+    }
+    function frontNext(c){ return c.next && FRONT[c.next]; }
+    var LAT = 'p=p b=b t=t d=d k=k g=g m=m n=n ŋ=ng f=f v=v s=s z=z l=l r=r h=h w=w j=j ts=ts';
+
+    var ENG = alpha({caps:true, palGlide:'y', m:tab(LAT+' ʔ= θ=th ð=dh ʃ=sh ʒ=zh x=kh ç=kh ɣ=gh ɹ=r ɾ=r ʁ=r j=y tʃ=ch dʒ=j ɲ=ny ʎ=ly ɬ=hl ɕ=sh ʑ=zh'+
+      ' i=ee y=ew ø=uh œ=uh ɜ=ur u=oo ʊ=oo ɯ=oo o=oh ɔ=aw a=ah ɑ=ah æ=a ə=uh', {
+        'ɪ':function(c){ return c.open ? 'ih' : 'i'; }, 'e':function(c){ return c.open ? 'eh' : 'e'; }, 'ɛ':function(c){ return c.open ? 'eh' : 'e'; },
+        'ʌ':function(c){ return c.open ? 'uh' : 'u'; }, 'ɒ':function(c){ return c.open ? 'ah' : 'o'; }, 'ɨ':function(c){ return c.open ? 'ih' : 'i'; },
+        'g':function(c){ return (c.next==='i' || c.next==='e' || c.next==='ɪ' || c.next==='ɛ' || c.next==='y') ? 'gh' : 'g'; },
+        's':function(c){ return c.last && c.prevPh && c.prevPh.v ? 'ss' : 's'; }
+      }),
+      di:{'ai':function(c){ return !c.open ? 'igh' : c.onsetLen ? 'y' : 'eye'; }, 'aɪ':function(c){ return !c.open ? 'igh' : c.onsetLen ? 'y' : 'eye'; },
+          'ei':'ay','eɪ':'ay','ɛi':'ay','ɛɪ':'ay','au':'ow','aʊ':'ow','ou':'oh','oʊ':'oh','əʊ':'oh','oi':'oy','ɔi':'oy','ɔɪ':'oy','ɔy':'oy','ui':'wee','ɪə':'eer','eə':'air','ʊə':'oor'},
+      nasal:function(t){ return t+'n'; }});
+
+    /* Spanish / Italian / Portuguese / French / German / Dutch / Swedish / Polish / Turkish / Vietnamese / Indonesian / Latin / Ròdais */
+    var FRONT_G = function(front, back){ return function(c){ return frontNext(c) ? front : back; }; };
+    var ES = alpha({caps:true, palGlide:'i', m:tab(LAT+' ʔ= θ=z ð=d ʃ=sh ʒ=y x=j h=j ç=j ɣ=g ɹ=r ɾ=r ʁ=r tʃ=ch dʒ=dy ɲ=ñ ʎ=ll z=s v=v'+
+      ' i=i ɪ=i e=e ɛ=e æ=a a=a ɑ=a ɒ=o ɔ=o o=o ʊ=u u=u ɯ=u ɨ=i y=iu ø=eu œ=eu ə=e ʌ=a ɜ=e', {
+        'g':FRONT_G('gu','g'), 'r':function(c){ return (c.pos==='on' && !c.first && c.prevPh && c.prevPh.v) ? 'rr' : 'r'; },
+        'j':function(c){ return (c.pos==='on' && c.prev && !(c.prevPh && c.prevPh.v) && c.onsetLen>1) ? 'i' : 'y'; },
+        'w':function(c){ return c.first ? 'hu' : 'u'; }})});
+    var IT = alpha({caps:true, palGlide:'i', m:tab(LAT+' ʔ= θ=th ð=dh x=kh h=h ç=h ɣ=g ɹ=r ɾ=r ʁ=r ɲ=gn z=ś ts=z dz=z j=i w=u'+
+      ' i=i ɪ=i e=e ɛ=e æ=e a=a ɑ=a ɒ=o ɔ=o o=o ʊ=u u=u ɯ=u ɨ=i y=iu ø=eu œ=eu ə=e ʌ=a ɜ=e', {
+        'k':FRONT_G('ch','c'), 'g':FRONT_G('gh','g'),
+        'tʃ':function(c){ return frontNext(c) ? 'c' : c.next && c.nextPh && c.nextPh.v ? 'ci' : 'c'; },
+        'dʒ':function(c){ return frontNext(c) ? 'g' : c.next && c.nextPh && c.nextPh.v ? 'gi' : 'g'; },
+        'ʃ':function(c){ return frontNext(c) ? 'sc' : c.next && c.nextPh && c.nextPh.v ? 'sci' : 'sh'; },
+        'ʒ':function(c){ return 'j'; }, 'ʎ':function(c){ return c.nextPh && c.nextPh.v ? 'gli' : 'gl'; }})});
+    var PT = alpha({caps:true, palGlide:'i', m:tab(LAT+' ʔ= θ=th ð=dh ʃ=ch ʒ=j ç=rr ɣ=g ɹ=r ɾ=r ʁ=rr tʃ=tch dʒ=dj ɲ=nh ʎ=lh j=i w=u'+
+      ' i=i ɪ=i e=ê ɛ=é æ=é a=a ɑ=a ɒ=ó ɔ=ó o=ô ʊ=u u=u ɯ=u ɨ=i y=iu ø=eu œ=eu ə=e ʌ=a ɜ=e', {
+        'k':FRONT_G('qu','c'), 'g':FRONT_G('gu','g'),
+        'x':function(c){ return c.pos==='co' ? 'h' : c.first ? 'r' : 'rr'; }, 'h':function(c){ return c.pos==='co' ? 'h' : c.first ? 'r' : 'rr'; },
+        's':function(c){ return (c.pos==='on' && c.prevPh && c.prevPh.v) ? 'ss' : 's'; },
+        'r':function(c){ return 'r'; }}),
+      nasal:function(t, v){ return ({a:'ã', o:'õ', ô:'õ', ó:'õ'})[t] || t+'n'; }});
+    var FR = alpha({caps:true, palGlide:'i', m:tab(LAT+' ʔ= θ=th ð=dh ʃ=ch ʒ=j x=kh h=h ç=kh ɣ=gh ɹ=r ɾ=r ʁ=r tʃ=tch dʒ=dj ɲ=gn ʎ=ly j=y w=ou'+
+      ' i=i ɪ=i e=é ɛ=è æ=a a=a ɑ=a ɒ=o ɔ=o o=o ʊ=ou u=ou ɯ=ou ɨ=i y=u ø=eu œ=eu ə=eu ʌ=a ɜ=eu', {
+        'g':FRONT_G('gu','g'), 's':function(c){ return (c.pos==='on' && c.prevPh && c.prevPh.v) ? 'ss' : 's'; },
+        'n':function(c){ return (c.pos==='co' && c.prevPh && c.prevPh.v && !c.prevPh.nas) ? 'nn' : 'n'; },
+        'm':function(c){ return (c.pos==='co' && c.prevPh && c.prevPh.v && !c.prevPh.nas) ? 'mm' : 'm'; },
+        'k':function(c){ return 'k'; }, 't':function(c){ return c.last ? 'tt' : 't'; }}),
+      nasal:function(t, v){ return ({a:'an', 'é':'in', 'è':'in', o:'on', eu:'un', i:'in', ou:'oun'})[t] || t+'n'; }});
+    var DE = alpha({caps:true, palGlide:'j', m:tab(LAT+' ʔ= θ=th ð=dh ʃ=sch ʒ=sh x=ch ç=ch ɣ=gh ɹ=r ɾ=r ʁ=r tʃ=tsch dʒ=dsch ɲ=nj ʎ=lj ts=z v=w f=f w=u z=s'+
+      ' i=i ɪ=i e=e ɛ=ä æ=ä a=a ɑ=a ɒ=o ɔ=o o=o ʊ=u u=u ɯ=u ɨ=i y=ü ø=ö œ=ö ə=e ʌ=a ɜ=ö', {
+        's':function(c){ return (c.pos==='on' && c.prevPh && c.prevPh.v && c.nextPh && c.nextPh.v) ? 'ß' : 's'; }}),
+      longMark:function(t, v){ return ({i:'ie', a:'ah', e:'eh', o:'oh', u:'uh', 'ü':'üh', 'ö':'öh', 'ä':'äh'})[t] || t; },
+      di:{'ai':'ei','aɪ':'ei','au':'au','aʊ':'au','ɔɪ':'eu','ɔy':'eu','oi':'eu'}});
+    var NL = alpha({caps:true, palGlide:'j', m:tab(LAT+' ʔ= θ=th ð=dh ʃ=sj ʒ=zj x=ch ç=ch ɣ=g ɹ=r ɾ=r ʁ=r tʃ=tsj dʒ=dzj ɲ=nj ʎ=lj h=h'+
+      ' i=ie ɪ=i e=ee ɛ=e æ=e a=a ɑ=a ɒ=o ɔ=o o=oo ʊ=oe u=oe ɯ=oe ɨ=i y=uu ø=eu œ=eu ə=e ʌ=a ɜ=eu', {
+        'g':function(c){ return 'g'; }, 'e':function(c){ return c.open ? 'ee' : 'ee'; }, 'a':function(c){ return c.long ? 'aa' : 'a'; },
+        'o':function(c){ return c.open ? 'o' : 'oo'; }}),
+      di:{'ai':'aai','aɪ':'aai','ei':'ee','eɪ':'ee','au':'auw','aʊ':'auw','ɔɪ':'oi','oi':'oi','ɛi':'ei','œy':'ui'}});
+    var SV = alpha({caps:true, palGlide:'j', m:tab(LAT+' ʔ= θ=th ð=dh ʃ=sj ʒ=sj x=ch ç=tj ɕ=tj ɧ=sj ɣ=g ɹ=r ɾ=r ʁ=r tʃ=tsj dʒ=dsj ɲ=nj ʎ=lj z=s w=w h=h'+
+      ' i=i ɪ=i e=e ɛ=ä æ=ä a=a ɑ=a ɒ=å ɔ=å o=å ʊ=o u=o ɯ=o ɨ=i y=y ø=ö œ=ö ə=e ʌ=a ɜ=ö', {})});
+    var PL = alpha({caps:true, palGlide:'i', palSoft:'', m:tab(LAT+' ʔ= θ=th ð=dh ʃ=sz ʒ=ż tʃ=cz dʒ=dż ts=c dz=dz ɕ=ś ʑ=ź tɕ=ć dʑ=dź x=ch h=h ç=ch ɣ=g ɹ=r ɾ=r ʁ=r ɲ=ń ʎ=l j=j w=ł v=w'+
+      ' i=i ɪ=y e=e ɛ=e æ=e a=a ɑ=a ɒ=o ɔ=o o=o ʊ=u u=u ɯ=u ɨ=y y=iu ø=e œ=e ə=e ʌ=a ɜ=e', {}),
+      nasal:function(t){ return ({e:'ę', o:'ą', a:'ą'})[t] || t+'n'; }});
+    var TR = alpha({caps:true, palGlide:'y', upper:function(s){ return s.toLocaleUpperCase('tr'); }, m:tab(LAT+' ʔ= θ=s ð=z ʃ=ş ʒ=j tʃ=ç dʒ=c x=h h=h ç=h ɣ=ğ ɹ=r ɾ=r ʁ=r ɲ=ny ʎ=ly j=y w=v'+
+      ' i=i ɪ=i e=e ɛ=e æ=e a=a ɑ=a ɒ=o ɔ=o o=o ʊ=u u=u ɯ=ı ɨ=ı y=ü ø=ö œ=ö ə=ı ʌ=a ɜ=ö', {
+        'g':function(c){ return 'g'; }})});
+    var VI = alpha({caps:true, palGlide:'i', m:tab(LAT+' ʔ= θ=th ð=đ d=đ f=ph s=x z=d ʃ=s ʒ=gi tʃ=ch dʒ=gi ts=ts x=kh ç=h ɣ=g ɹ=r ɾ=r ʁ=r ɲ=nh ʎ=l j=y w=u'+
+      ' i=i ɪ=i e=ê ɛ=e æ=e a=a ɑ=a ɒ=o ɔ=o o=ô ʊ=u u=u ɯ=ư ɨ=ư y=uy ø=ơ œ=ơ ə=ơ ʌ=â ɜ=ơ', {
+        'k':function(c){ return (c.pos==='on' && (c.next==='i' || c.next==='e' || c.next==='ɛ' || c.next==='ɪ')) ? 'k' : 'c'; },
+        'g':function(c){ return (c.next==='i' || c.next==='e' || c.next==='ɛ' || c.next==='ɪ') ? 'gh' : 'g'; },
+        'ŋ':function(c){ return (c.pos==='on' && (c.next==='i' || c.next==='e' || c.next==='ɛ')) ? 'ngh' : 'ng'; }})});
+    var IND = alpha({caps:true, palGlide:'y', m:tab(LAT+' ʔ=\' θ=ts ð=dh ʃ=sy ʒ=zy tʃ=c dʒ=j x=kh h=h ç=h ɣ=gh ɹ=r ɾ=r ʁ=r ɲ=ny ʎ=ly j=y w=w'+
+      ' i=i ɪ=i e=é ɛ=è æ=è a=a ɑ=a ɒ=o ɔ=o o=o ʊ=u u=u ɯ=u ɨ=i y=iu ø=eu œ=eu ə=e ʌ=a ɜ=e', {})});
+    var LA = alpha({caps:true, palGlide:'i', m:tab(LAT+' ʔ= k=c θ=th ð=dh ʃ=sh ʒ=zh tʃ=tsh dʒ=dzh x=ch h=h ç=ch ɣ=gh ɹ=r ɾ=r ʁ=r ɲ=gn ʎ=li j=i w=u v=v'+
+      ' i=i ɪ=i e=e ɛ=e æ=ae a=a ɑ=a ɒ=o ɔ=o o=o ʊ=u u=u ɯ=u ɨ=i y=y ø=oe œ=oe ə=e ʌ=a ɜ=e', {}),
+      longMark:function(t){ return ({a:'ā', e:'ē', i:'ī', o:'ō', u:'ū', y:'ȳ'})[t] || t; }});
+    var GD = alpha({caps:true, palGlide:'i', m:tab(LAT+' ʔ= k=c θ=t ð=d x=ch h=h ç=ch ɣ=gh ɹ=r ɾ=r ʁ=r ɲ=nn ʎ=ll j=i w=u v=bh z=s ʒ=s ts=ts dʒ=di'+
+      ' i=i ɪ=i e=e ɛ=e æ=e a=a ɑ=a ɒ=o ɔ=o o=o ʊ=u u=u ɯ=ao ɨ=ao y=iu ø=eò œ=eò ə=a ʌ=a ɜ=a', {
+        'ʃ':function(c){ return frontNext(c) ? 's' : c.pos==='co' ? 'is' : 'si'; },
+        'tʃ':function(c){ return frontNext(c) ? 't' : 'ti'; }, 'dʒ':function(c){ return frontNext(c) ? 'd' : 'di'; }}),
+      longMark:function(t){ return ({a:'à', e:'è', i:'ì', o:'ò', u:'ù'})[t] || t; }});
+
+    /* Cyrillic and Greek: whole words, stress as an accent on the vowel */
+    var RU = alpha({sep:'', palSoft:'ь', nasal:function(t){ return t+'н'; }, accent:function(t){ var i = t.search(/[аеёиоуыэюяАЕЁИОУЫЭЮЯ]/); return i<0 ? t : t.slice(0,i+1)+'\u0301'+t.slice(i+1); },
+      jv:{a:'я', ɑ:'я', u:'ю', ʊ:'ю', e:'е', ɛ:'е', o:'ё', ɔ:'ё', i:'и', ɪ:'и', ə:'я', ʌ:'я', æ:'я', y:'ю', ø:'ё', ɜ:'ё', ɯ:'ю', ɨ:'и'},
+      m:tab('p=п b=б t=т d=д k=к g=г m=м n=н ŋ=нг f=ф v=в s=с z=з ʃ=ш ʒ=ж tʃ=ч dʒ=дж ts=ц dz=дз x=х h=х ç=х ɣ=г ʔ= θ=с ð=д l=л r=р ɾ=р ɹ=р ʁ=р ɲ=нь ʎ=ль j=й w=у ɕ=щ tɕ=ч'+
+        ' i=и ɪ=и e=э ɛ=э æ=э a=а ɑ=а ɒ=о ɔ=о o=о ʊ=у u=у ɯ=у ɨ=ы y=ю ø=ё œ=ё ə=э ʌ=а ɜ=ё', {
+        'e':function(c){ return (c.prevPh && !c.prevPh.v) ? 'е' : 'э'; }, 'ɛ':function(c){ return (c.prevPh && !c.prevPh.v) ? 'е' : 'э'; },
+        'y':function(c){ return (c.prevPh && !c.prevPh.v) ? 'ю' : 'ю'; }}),
+      di:{'ai':'ай','aɪ':'ай','ei':'эй','eɪ':'эй','ɛi':'эй','oi':'ой','ɔɪ':'ой','ɔi':'ой','ui':'уй','au':'ау','aʊ':'ау','ou':'оу','oʊ':'оу'}});
+    var TONOS = {'α':'ά','ε':'έ','η':'ή','ι':'ί','ο':'ό','υ':'ύ','ω':'ώ'};
+    var EL = alpha({sep:'', palGlide:'ι', nasal:function(t){ return t+'ν'; }, accent:function(t){
+        if(/^ου/.test(t) || /^ευ|^αυ|^ει|^οι|^αι/.test(t)) return t[0]+(TONOS[t[1]]||t[1])+t.slice(2);
+        return (TONOS[t[0]]||t[0])+t.slice(1); },
+      post:function(w){ return w.replace(/σ$/,'ς'); },
+      m:tab('p=π b=μπ t=τ d=ντ k=κ g=γκ m=μ n=ν ŋ=γκ f=φ v=β s=σ z=ζ ʃ=σ ʒ=ζ tʃ=τσ dʒ=τζ ts=τσ dz=τζ x=χ h=χ ç=χ ɣ=γ ʔ= θ=θ ð=δ l=λ r=ρ ɾ=ρ ɹ=ρ ʁ=ρ ɲ=νι ʎ=λι w=ου'+
+        ' i=ι ɪ=ι e=ε ɛ=ε æ=ε a=α ɑ=α ɒ=ο ɔ=ο o=ο ʊ=ου u=ου ɯ=ου ɨ=ι y=ιου ø=ε œ=ε ə=ε ʌ=α ɜ=ε', {
+        'j':function(c){ return (c.pos==='on' && c.nextPh && c.nextPh.v && c.onsetLen===1) ? 'γι' : 'ι'; },
+        'ŋ':function(c){ return c.pos==='co' ? 'ν' : 'γκ'; }}),
+      di:{'ai':'άι','aɪ':'άι','ei':'έι','eɪ':'έι','oi':'όι','ɔɪ':'όι','au':'άου','aʊ':'άου','ou':'όου','oʊ':'όου'}});
+
+    /* ---- syllabic scripts share one step: a word becomes (consonant, vowel) units; stranded consonants get
+       the script's own treatment (an echo vowel in katakana/Hangul/pinyin, a virama in Devanagari) ---- */
+    function vclass(s){
+      s = fb(s, function(x){ return 'aeiouyø'.indexOf(x)!==-1 || x==='ə' || x==='ɛ' || x==='ɔ'; });
+      if(s==='ə') return 'ə'; if(s==='ɛ') return 'e'; if(s==='ɔ') return 'o';
+      return s;
+    }
+    function units(w){
+      /* -> [{c:ph|null, g:'j'|'w'|null, v:ph|null, v2:ph|null, coda:bool, last:bool}] */
+      var U = [];
+      w.forEach(function(sy, si){
+        var on = sy.on.slice(), glide = null;
+        if(on.length && sy.nu.length && (on[on.length-1].s==='j' || on[on.length-1].s==='w' || on[on.length-1].s==='ɥ') && on.length>1){ glide = on.pop().s; if(glide==='ɥ') glide='w'; }
+        for(var i=0;i<on.length-1;i++) U.push({c:on[i], v:null, cl:true});
+        var c = on.length ? on[on.length-1] : null;
+        if(c && c.pal && !glide && sy.nu.length && sy.nu[0].s!=='i') glide = 'j';
+        if(sy.nu.length){
+          var v = sy.nu[0];
+          if(v.syl){ U.push({c:c, v:null, syl:v}); }
+          else U.push({c:c, g:glide, v:v, v2:sy.nu[1]||null, st:sy.st});
+        } else if(c) U.push({c:c, v:null});
+        sy.co.forEach(function(p, k){ U.push({c:p, v:null, coda:true, pal:p.pal, final: si===w.length-1 && k===sy.co.length-1}); });
+      });
+      for(var i=0;i<U.length;i++){ U[i].next = U[i+1] || null; U[i].prev = U[i-1] || null; }
+      return U;
+    }
+
+    /* Japanese: katakana */
+    var KROW = {'':'アイウエオ', k:'カキクケコ', g:'ガギグゲゴ', s:'サ|スィ|ス|セ|ソ', z:'ザ|ズィ|ズ|ゼ|ゾ', 'ʃ':'シャ|シ|シュ|シェ|ショ', 'ʒ':'ジャ|ジ|ジュ|ジェ|ジョ',
+      'tʃ':'チャ|チ|チュ|チェ|チョ', 'dʒ':'ジャ|ジ|ジュ|ジェ|ジョ', t:'タ|ティ|トゥ|テ|ト', d:'ダ|ディ|ドゥ|デ|ド', ts:'ツァ|ツィ|ツ|ツェ|ツォ', dz:'ザ|ズィ|ズ|ゼ|ゾ',
+      n:'ナニヌネノ', 'ɲ':'ニャ|ニ|ニュ|ニェ|ニョ', h:'ハヒフヘホ', x:'ハヒフヘホ', 'ç':'ヒャ|ヒ|ヒュ|ヒェ|ヒョ', f:'ファ|フィ|フ|フェ|フォ', v:'ヴァ|ヴィ|ヴ|ヴェ|ヴォ',
+      b:'バビブベボ', p:'パピプペポ', m:'マミムメモ', j:'ヤ|イ|ユ|イェ|ヨ', w:'ワ|ウィ|ウ|ウェ|ウォ', r:'ラリルレロ', 'ʎ':'リャ|リ|リュ|リェ|リョ',
+      'θ':'サ|シ|ス|セ|ソ', 'ð':'ダ|ディ|ドゥ|デ|ド', 'ɕ':'シャ|シ|シュ|シェ|ショ', 'tɕ':'チャ|チ|チュ|チェ|チョ', 'dʑ':'ジャ|ジ|ジュ|ジェ|ジョ'};
+    var KROWS = {}; Object.keys(KROW).forEach(function(k){ var r = KROW[k]; KROWS[k] = r.indexOf('|')>=0 ? r.split('|') : r.split(''); });
+    var KSMALL = {a:'ャ', u:'ュ', e:'ェ', o:'ョ'}, KSMALLV = {a:'ァ', i:'ィ', u:'ゥ', e:'ェ', o:'ォ'};
+    var KV = {a:0, i:1, u:2, e:3, o:4};
+    function krow(s){ var h = function(x){ return !!KROWS[x] || x==='ŋ'; }; s = fb(s, h); if(s==='l' || s==='ɾ' || s==='ɹ' || s==='ʁ') s = 'r'; if(s==='ŋ') s = 'g'; return KROWS[s] ? s : ''; }
+    function kvow(ph){ var v = vclass(ph.s); if(v==='ə') return 'a'; if(v==='y') return 'yu'; if(v==='ø') return 'e'; return KV[v]!==undefined ? v : 'a'; }
+    function kana(c, g, v){
+      var row = KROWS[c];
+      if(v==='yu'){ g = 'j'; v = 'u'; }
+      if(g==='j' && c!=='' && c!=='j'){
+        if(v==='i') return row[1];
+        var base = row[1]; if(base.length>1 && c!=='ʃ' && c!=='ʒ' && c!=='tʃ' && c!=='dʒ') base = base[0];
+        if(c==='ʃ' || c==='ʒ' || c==='tʃ' || c==='dʒ' || c==='ɲ' || c==='ç' || c==='ʎ') return row[KV[v]];
+        return base + (KSMALL[v] || KSMALLV[v]);
+      }
+      if(g==='w' && c!=='' && c!=='w'){ return (c==='k' || c==='g') ? row[2] + KSMALLV[v] : row[2] + KROWS[''][KV[v]]; }
+      if(g && c===''){ return KROWS[g][KV[v]]; }
+      return row[KV[v]];
+    }
+    function JA(words, src){
+      return words.map(function(w){
+        var U = units(w), out = '';
+        U.forEach(function(u, i){
+          var cs = u.c ? krow(u.c.s) : '';
+          if(u.syl){ out += (u.c ? kana(cs, null, 'u') : '') + (u.syl.s==='m' ? 'ム' : 'ン'); return; }
+          if(u.v){
+            var v = kvow(u.v);
+            if(u.c && u.c.s==='ŋ') out += 'ン';
+            if(u.c && u.c.s==='ʔ') cs = '';
+            out += kana(cs, u.g, v);
+            if(u.v.long || (u.v.s==='ɜ')) out += 'ー';
+            if(u.v2){ var v2 = kvow(u.v2); out += ((v2===v && v!=='yu') || (v==='o' && v2==='u' && src==='eng')) ? 'ー' : KROWS[''][KV[v2==='yu'?'u':v2]]; if(u.v2.long) out += 'ー'; }
+            if(u.v.nas && !u.v2) out += 'ン';
+            return;
+          }
+          /* consonant without a vowel */
+          var s = u.c.s, n = u.next;
+          if(u.coda){
+            if(s==='n' || s==='ŋ' || s==='ɲ' || (s==='m' && n && n.c && /^[pbm]/.test(n.c.s))) { out += 'ン'; return; }
+            if(s==='m'){ out += (n && n.v===undefined) ? 'ム' : 'ム'; return; }
+            if((s==='ɹ' || (s==='r' && src==='eng')) ){ if(out.slice(-1)!=='ー') out += 'ー'; return; }
+            if(s==='j'){ out += 'イ'; return; }
+            if(s==='w'){ out += 'ウ'; return; }
+            if(s==='ʔ') return;
+            if(n && n.c && n.c.s===s && /^(p|t|k|tʃ|ʃ|s|ts|f|b|d|g|dʒ|z)$/.test(s)){ out += 'ッ'; return; }
+            if(u.final && src!=='ja' && /^(p|t|k|tʃ)$/.test(s) && u.prev && u.prev.v && !u.prev.v.long && !u.prev.v2 && (u.prev.st===1 || w.length===1)) out += 'ッ';
+          }
+          if(s==='ŋ'){ out += 'ン'; return; }
+          if(s==='ʔ') return;
+          var r = krow(s);
+          var ev = (r==='t' || r==='d') ? 'o' : (r==='tʃ' || r==='dʒ' || r==='ç' || s==='tɕ' || s==='dʑ') ? 'i' : 'u';
+          if(s==='x' || s==='h') { out += 'フ'; return; }
+          if(u.pal){ out += kana(r, null, 'i'); return; }
+          out += kana(r, null, ev);
+        });
+        return out;
+      }).join('・');
+    }
+
+    /* Korean: Hangul blocks */
+    var HL = {g:0,kk:1,n:2,d:3,tt:4,r:5,m:6,b:7,pp:8,s:9,ss:10,'':11,j:12,jj:13,ch:14,k:15,t:16,p:17,h:18};
+    var HV = {a:0,ae:1,ya:2,yae:3,eo:4,e:5,yeo:6,ye:7,o:8,wa:9,wae:10,oe:11,yo:12,u:13,wo:14,we:15,wi:16,yu:17,eu:18,ui:19,i:20};
+    var HT = {'':0,k:1,n:4,l:8,m:16,p:17,t:19,ng:21};
+    function hblock(L, V, T){ return String.fromCharCode(0xAC00 + (HL[L]*21 + HV[V])*28 + HT[T||'']); }
+    function hini(ph, asp){
+      var s = fb(ph.s, function(x){ return HIM[x]!==undefined; });
+      var r = HIM[s]; if(r===undefined) r = '';
+      if(asp && !ph.asp){ r = ({p:'b', t:'d', k:'g', ch:'j'})[r] || r; if(ph.tense) r = ({b:'pp', d:'tt', g:'kk', j:'jj', s:'ss'})[r] || r; }
+      return r;
+    }
+    var HIM = {p:'p', b:'b', t:'t', d:'d', k:'k', g:'g', f:'p', v:'b', s:'s', z:'j', 'ʃ':'s', 'ʒ':'j', 'tʃ':'ch', 'dʒ':'j', ts:'ch', dz:'j', 'θ':'s', 'ð':'d',
+      x:'h', h:'h', 'ç':'h', 'ɣ':'g', m:'m', n:'n', 'ŋ':'', 'ɲ':'n', 'ʎ':'r', l:'r', r:'r', 'ɾ':'r', 'ɹ':'r', 'ʁ':'r', j:'', w:'', 'ʔ':'', 'ɕ':'s', 'tɕ':'ch', 'dʑ':'j'};
+    function hvow(ph){ var s = fb(ph.s, function(x){ return HVM[x]!==undefined; }); return HVM[s] || 'a'; }
+    var HVM = {a:'a', 'ɑ':'a', e:'e', 'ɛ':'e', 'æ':'ae', i:'i', 'ɪ':'i', o:'o', 'ɔ':'o', 'ɒ':'o', u:'u', 'ʊ':'u', 'ə':'eo', 'ʌ':'eo', 'ɜ':'eo', 'ɨ':'eu', 'ɯ':'eu', y:'wi', 'ø':'oe', 'œ':'oe'};
+    function hglide(g, v){
+      if(g==='j') return ({a:'ya', ae:'yae', eo:'yeo', e:'ye', o:'yo', u:'yu', i:'i', eu:'i', wi:'yu', oe:'ye'})[v] || v;
+      if(g==='w') return ({a:'wa', ae:'wae', eo:'wo', e:'we', o:'wo', u:'u', i:'wi', eu:'u', wi:'wi', oe:'we'})[v] || v;
+      return v;
+    }
+    var ASP_SRC = {zh:1, yue:1, hi:1, ko:1, gr:1};
+    function KO(words, src){
+      var asp = !!ASP_SRC[src];
+      return words.map(function(w){
+        var U = units(w), B = [];   /* blocks [L, V, T] */
+        U.forEach(function(u){
+          if(u.syl){ if(u.c) B.push([hini(u.c, asp), 'eu', '', 1]); B.push(['', 'eu', u.syl.s==='m' ? 'm' : u.syl.s==='ŋ' ? 'ng' : 'n', 1]); return; }
+          if(u.v){
+            var L = u.c ? hini(u.c, asp) : '', v = hvow(u.v), g = u.g || (u.c && (u.c.s==='j' || u.c.s==='ɲ' || u.c.s==='ʎ' || u.c.s==='ʃ' || u.c.s==='ɕ') ? 'j' : u.c && u.c.s==='w' ? 'w' : null);
+            if(u.c && (u.c.s==='ʃ' || u.c.s==='ɕ') && v==='i') g = null;
+            if(u.c && (u.c.s==='l' || u.c.s==='ʎ') && B.length && !B[B.length-1][2] && B[B.length-1][1]!=='eu+') B[B.length-1][2] = 'l';
+            if(u.c && u.c.s==='ŋ' && B.length && !B[B.length-1][2]) B[B.length-1][2] = 'ng';
+            B.push([L, hglide(g, v), '']);
+            if(u.v2){ var v2 = hvow(u.v2); B.push(['', v2==='i' && (v==='a' || v==='e' || v==='o' || v==='u' || v==='eo') ? 'i' : v2, '']); }
+            if(u.v.nas && !u.v2) B[B.length-1][2] = 'n';
+            return;
+          }
+          var s = u.c.s, last = B[B.length-1];
+          var free = last && !last[2] && !last[3];
+          if(u.coda && last && !last[2] && (s==='j' || s==='w')){
+            if(s==='j' && last[1]==='eu' && !last[3]) last[1] = 'ui'; else B.push(['', s==='j' ? 'i' : 'u', '']);
+            return;
+          }
+          if(u.coda && free && u.next && u.next.c && u.next.c.s===s && !u.next.cl){ var gT = ({p:'p', k:'k', t:'t', tʃ:'t', ts:'t', s:'t', m:'m', n:'n', l:'l'})[s]; if(gT){ last[2] = gT; return; } }
+          if(u.coda && free){
+            var T = ({n:'n', m:'m', 'ŋ':'ng', l:'l', p:'p', k:'k'})[s];
+            if((s==='ɹ' || s==='r') && src==='eng') return;
+            if(s==='j'){ B.push(['', 'i', '']); return; }
+            if(s==='w'){ B.push(['', 'u', '']); return; }
+            if(T && !(s==='p' && last[1].length>2) ){ last[2] = T; return; }
+          }
+          if(s==='ʔ') return;
+          if(s==='ŋ'){ if(last && !last[2]) last[2] = 'ng'; else B.push(['', 'eu', 'ng']); return; }
+          if(s==='l' || s==='r' || s==='ɾ' || s==='ɹ' || s==='ʁ'){
+            if(last && !last[2] && u.coda && !u.next){ last[2] = 'l'; return; }
+            if(last && !last[2] && u.cl) last[2] = 'l';
+          }
+          var L2 = hini(u.c, asp);
+          var ev = (s==='ʃ' || s==='tʃ' || s==='dʒ' || s==='ʒ' || s==='ɕ' || s==='tɕ' || s==='dʑ' || u.pal) ? 'i' : 'eu';
+          B.push([L2, ev, '', 1]);
+        });
+        return B.map(function(b){ return hblock(b[0], b[1], b[2]); }).join('');
+      }).join(' ');
+    }
+
+    /* Mandarin speakers: pinyin-style syllables (every mainland learner reads pinyin from primary school; it
+       spells sounds without dragging in character meanings) — tones are left off, syllables hyphenated */
+    var PYI = {p:'p', b:'b', t:'t', d:'d', k:'k', g:'g', f:'f', v:'w', m:'m', n:'n', l:'l', r:'l', 'ɾ':'l', 'ɹ':'l', 'ʁ':'l', s:'s', z:'z', 'ʃ':'sh', 'ʒ':'r',
+      'tʃ':'ch', 'dʒ':'zh', ts:'c', dz:'z', x:'h', h:'h', 'ç':'x', 'ɕ':'x', 'tɕ':'q', 'dʑ':'j', 'ʂ':'sh', 'ʐ':'r', 'tʂ':'ch', 'θ':'s', 'ð':'d', 'ɣ':'g',
+      j:'y', w:'w', 'ɲ':'n', 'ʎ':'l', 'ŋ':'n', 'ʔ':''};
+    var PYV = {a:'a', 'ɑ':'a', 'æ':'ai', e:'ei', 'ɛ':'ei', 'ə':'e', 'ʌ':'a', 'ɜ':'e', i:'i', 'ɪ':'i', u:'u', 'ʊ':'u', o:'o', 'ɔ':'o', 'ɒ':'o', y:'ü', 'ø':'e', 'œ':'e', 'ɨ':'i', 'ɯ':'e'};
+    var PYE = {p:'pu', b:'bu', t:'te', d:'de', k:'ke', g:'ge', f:'fu', v:'fu', s:'si', z:'zi', 'ʃ':'shi', 'ʒ':'ri', 'tʃ':'qi', 'dʒ':'ji', ts:'ci', dz:'zi',
+      x:'he', h:'he', 'ç':'xi', 'θ':'si', 'ð':'de', m:'mu', n:'n', l:'le', r:'le', 'ɾ':'le', 'ɹ':'le', 'ʁ':'he', 'ɣ':'ge', 'ɕ':'xi', 'tɕ':'qi', 'dʑ':'ji', 'ʂ':'shi', 'ʐ':'ri', 'tʂ':'chi', 'ɲ':'ni', 'ʎ':'li'};
+    function pyfix(ini, fin){
+      if(/^[iü]/.test(fin) && /^(s|z|c|sh|zh|ch|r)$/.test(ini)) ini = ({s:'x', z:'j', c:'q', sh:'x', zh:'j', ch:'q', r:'r'})[ini];
+      if(/^(j|q|x|y)$/.test(ini) && fin[0]==='ü') fin = 'u'+fin.slice(1);
+      if(ini==='' ){
+        if(fin[0]==='i') fin = fin.length===1 || fin==='in' || fin==='ing' ? 'y'+fin : 'y'+fin.slice(1);
+        else if(fin[0]==='u') fin = fin.length===1 ? 'wu' : 'w'+fin.slice(1);
+        else if(fin[0]==='ü') fin = 'yu'+fin.slice(1);
+      }
+      if(ini==='y' && fin[0]==='i' && fin.length>1 && fin!=='in' && fin!=='ing') fin = fin.slice(1);
+      if(ini==='w' && fin[0]==='u' && fin.length>1) fin = fin.slice(1);
+      if(ini==='w' && fin[0]==='i') fin = fin==='i' ? 'ei' : 'e'+fin.slice(1);
+      if(fin==='o' && !/^(b|p|m|f|w|y|)$/.test(ini)) fin = 'uo';
+      return ini + fin;
+    }
+    function jyfix(ini, fin){ return ini + fin; }
+    function sinoSyll(words, src, I, Vm, E, fix, codaOk, diph, vlong, gemSkip){
+      var asp = !!ASP_SRC[src];
+      return words.map(function(w){
+        var U = units(w), S = [];
+        U.forEach(function(u){
+          if(u.syl){ if(u.c) S.push(E[fb(u.c.s, function(x){ return E[x]!==undefined; })] || ''); S.push(u.syl.s==='m' ? (fix===jyfix ? 'm' : 'mu') : 'n'); return; }
+          if(u.v){
+            var cs = u.c ? fb(u.c.s, function(x){ return I[x]!==undefined; }) : '';
+            var ini = u.c ? (I[cs]||'') : '';
+            if(u.c && !u.c.asp && asp) ini = ({p:'b', t:'d', k:'g', ch:'zh', q:'j', c:'z'})[ini] || ini;
+            var v = Vm[fb(u.v.s, function(x){ return Vm[x]!==undefined; })] || 'a';
+            if(vlong && u.v.long) v = vlong(v);
+            var fin = v;
+            if(u.v2){ var v2 = Vm[fb(u.v2.s, function(x){ return Vm[x]!==undefined; })] || ''; fin = diph[v+v2] || (/i$/.test(v) && (v2==='i' || v2==='ei') ? v : v + (v2==='i' || v2==='ei' ? 'i' : v2==='u' ? (fix===pyfix ? 'o' : 'u') : '')); }
+            var g = u.g==='w' ? 'w' : (u.g==='j' && !(u.c && u.c.pal)) ? 'j' : null;
+            if(g==='j' && fin[0]!=='i') fin = (fin==='ei' || fin==='ai') ? 'ie' : 'i'+fin;
+            if(g==='w' && fin[0]!=='u') fin = 'u'+fin;
+            if(u.c && (u.c.s==='ɲ' || u.c.s==='ʎ') && fin[0]!=='i') fin = 'i'+fin;
+            if(u.v.nas && !u.v2) fin += 'n';
+            S.push(fix(ini, fin)); return;
+          }
+          var s = u.c.s;
+          if(u.coda && S.length){
+            if(u.next && u.next.c && u.next.c.s===s && !u.next.cl && gemSkip) return;
+            var cd = codaOk(s, src, u);
+            if(cd && cd.charAt(0)==='+'){ S.push(cd.slice(1)); return; }
+            if(cd!==null){ if(cd!==false){ if(fix===pyfix && (cd==='n' || cd==='ng')) S[S.length-1] = S[S.length-1].replace(/([^i])ei$|^ei$/, '$1e').replace(/ai$/, 'a'); S[S.length-1] += cd; } return; }
+          }
+          if(s==='ʔ' || s==='j' || s==='w') return;
+          var e = E[fb(s, function(x){ return E[x]!==undefined; })];
+          if(e) S.push(e);
+        });
+        return S.join('-');
+      }).join(' ');
+    }
+    function ZH(words, src){
+      return sinoSyll(words, src, PYI, PYV, PYE, pyfix, function(s, src, u){
+        if(s==='n') return 'n'; if(s==='ŋ') return 'ng'; if(s==='m') return (u.next && u.next.c) ? 'n' : null;
+        if((s==='ɹ' || s==='r') && src==='eng') return false;
+        if(s==='ɹ' || s==='r' || s==='l' || s==='ɾ' || s==='ʁ') return '+er';
+        if(s==='j') return 'i'; if(s==='w') return 'u';
+        return null;
+      }, {ai:'ai', ei:'ei', au:'ao', ou:'ou', aiei:'ai', oi:'oyi', 'eiei':'ei', eiu:'ou', ou_:'ou'}, null, true);
+    }
+    var JYI = {p:'p', b:'b', t:'t', d:'d', k:'k', g:'g', f:'f', v:'f', m:'m', n:'n', l:'l', r:'l', 'ɾ':'l', 'ɹ':'l', 'ʁ':'h', s:'s', z:'s', 'ʃ':'s', 'ʒ':'s',
+      'tʃ':'c', 'dʒ':'z', ts:'c', dz:'z', x:'h', h:'h', 'ç':'h', 'θ':'s', 'ð':'d', 'ɣ':'g', j:'j', w:'w', 'ɲ':'n', 'ʎ':'l', 'ŋ':'ng', 'ʔ':''};
+    JYI.v = 'w';
+    var JYV = {a:'aa', 'ɑ':'aa', 'æ':'e', e:'e', 'ɛ':'e', 'ə':'a', 'ʌ':'a', 'ɜ':'oe', i:'i', 'ɪ':'i', u:'u', 'ʊ':'u', o:'o', 'ɔ':'o', 'ɒ':'o', y:'yu', 'ø':'oe', 'œ':'oe', 'ɨ':'i', 'ɯ':'u'};
+    var JYE = {p:'pu', b:'bu', t:'tu', d:'du', k:'ku', g:'gu', f:'fu', v:'fu', s:'si', z:'si', 'ʃ':'si', 'ʒ':'si', 'tʃ':'ci', 'dʒ':'zi', ts:'ci', dz:'zi',
+      x:'ho', h:'ho', 'ç':'hi', 'θ':'si', 'ð':'du', m:'m', n:'n', l:'lou', r:'lou', 'ɾ':'lou', 'ɹ':'lou', 'ʁ':'ho', 'ɣ':'gu'};
+    function YUE(words, src){
+      return sinoSyll(words, src, JYI, JYV, JYE, jyfix, function(s, src, u){
+        var m = ({n:'n', 'ŋ':'ng', m:'m', p:'p', b:'p', t:'t', d:'t', k:'k', g:'k'})[s];
+        if(m && !(u.next && u.next.c && u.next.c.s===s && !u.next.v && false)) return m;
+        if((s==='ɹ' || s==='r') && src==='eng') return false;
+        if(s==='j') return 'i'; if(s==='w') return 'u';
+        return null;
+      }, {aai:'aai', aau:'aau', ei:'ei', ou:'ou', oi:'oi', ui:'ui', aaei:'aai', ai:'ai'});
+    }
+
+    /* Hindi: Devanagari (consonant + vowel sign; a bare consonant inside a cluster takes a virama) */
+    var DC = {p:'प', b:'ब', t:'त', d:'द', k:'क', g:'ग', f:'फ़', v:'व', 'θ':'थ', 'ð':'द', s:'स', z:'ज़', 'ʃ':'श', 'ʒ':'झ़', 'tʃ':'च', 'dʒ':'ज', ts:'त्स', dz:'द्ज़',
+      x:'ख़', 'ɣ':'ग़', h:'ह', 'ç':'ह', m:'म', n:'न', 'ŋ':'ङ', 'ɲ':'ञ', l:'ल', r:'र', 'ɾ':'र', 'ɹ':'र', 'ʁ':'र', j:'य', w:'व', 'ʂ':'ष', 'ɕ':'श', 'tɕ':'च', 'dʑ':'ज'};
+    var DASP = {'प':'फ', 'ब':'भ', 'त':'थ', 'द':'ध', 'क':'ख', 'ग':'घ', 'च':'छ', 'ज':'झ', 'ट':'ठ', 'ड':'ढ'};
+    /* [independent, sign] */
+    var DV = {'ə':['अ',''], 'ʌ':['अ',''], 'ɜ':['अ',''], a:['आ','ा'], 'ɑ':['आ','ा'], 'æ':['ऐ','ै'], i:['इ','ि'], iL:['ई','ी'], 'ɪ':['इ','ि'], u:['उ','ु'], uL:['ऊ','ू'],
+      'ʊ':['उ','ु'], e:['ए','े'], 'ɛ':['ए','े'], o:['ओ','ो'], 'ɔ':['ऑ','ॉ'], 'ɒ':['ऑ','ॉ'], y:['यू','्यू'], 'ø':['ओ','ो'], 'œ':['ओ','ो'], 'ɨ':['इ','ि'], 'ɯ':['उ','ु'],
+      ai:['ऐ','ै'], au:['औ','ौ']};
+    function HI(words, src){
+      var asp = !!ASP_SRC[src], retro = src==='eng';
+      return words.map(function(w){
+        var U = units(w), out = '';
+        U.forEach(function(u, i){
+          function cons(ph){
+            var s = fb(ph.s, function(x){ return DC[x]!==undefined; });
+            var c = DC[s] || '';
+            if(retro && s==='t') c = 'ट'; if(retro && s==='d') c = 'ड';
+            if(ph.asp && DASP[c]) c = DASP[c];
+            return c;
+          }
+          if(u.syl){ if(u.c) out += cons(u.c); out += u.syl.s==='m' ? 'म' : 'न'; return; }
+          if(u.v){
+            var c = u.c && u.c.s!=='ʔ' ? cons(u.c) : '';
+            if(u.g && !(u.g==='j' && /^[iɪy]$/.test(u.v.s))) c += (c ? '्' : '') + (u.g==='j' ? 'य' : 'व');
+            var vs = fb(u.v.s, function(x){ return DV[x]!==undefined; });
+            if((vs==='i' || vs==='u') && (u.v.long || u.st===1)) vs += 'L';
+            if(vs==='ə' && u.st===1 && src!=='eng' && src!=='hi') vs = 'a';
+            if((vs==='ə' || vs==='ʌ') && !u.next && src!=='hi') vs = 'a';
+            if(u.v2){ var v2 = fb(u.v2.s, function(x){ return DV[x]!==undefined; }); if((vs==='a' || vs==='ə' || vs==='ʌ' || vs==='ɛ' || vs==='e') && (v2==='i' || v2==='ɪ')) { vs = 'ai'; u.v2 = null; } else if((vs==='a' || vs==='ə' || vs==='ʌ' || vs==='o' || vs==='ɔ') && (v2==='u' || v2==='ʊ')) { vs = 'au'; u.v2 = null; } }
+            var pair = DV[vs] || DV['ə'];
+            out += c ? c + pair[1] : pair[0];
+            if(u.v2){ var q = fb(u.v2.s, function(x){ return DV[x]!==undefined; }); out += (DV[q]||DV['ɪ'])[0]; }
+            if(u.v.nas) out += 'ं';
+            return;
+          }
+          if(u.c.s==='ʔ') return;
+          var cc = cons(u.c);
+          if(u.c.s==='ŋ' && u.coda){ out += 'ं'; return; }
+          if(u.c.s==='n' && u.coda && u.next && u.next.c){ out += 'ं'; return; }
+          out += cc + (u.final ? '' : '्');
+        });
+        return out;
+      }).join(' ');
+    }
+
+    /* Arabic script: long / stressed / final vowels as letters, other short vowels as harakat */
+    var AC = {p:'ب', b:'ب', t:'ت', d:'د', k:'ك', g:'غ', f:'ف', v:'ف', 'θ':'ث', 'ð':'ذ', s:'س', z:'ز', 'ʃ':'ش', 'ʒ':'ج', 'tʃ':'تش', 'dʒ':'ج', ts:'تس', dz:'دز',
+      x:'خ', 'ɣ':'غ', h:'ه', 'ç':'خ', m:'م', n:'ن', 'ŋ':'نغ', 'ɲ':'ني', 'ʎ':'لي', l:'ل', r:'ر', 'ɾ':'ر', 'ɹ':'ر', 'ʁ':'ر', j:'ي', w:'و', 'ʔ':'ء', 'ɕ':'ش', 'tɕ':'تش', 'dʑ':'ج'};
+    function avq(s){ s = fb(s, function(x){ return 'aiueo'.indexOf(x)!==-1 || x==='ə' || x==='ɛ' || x==='ɔ' || x==='y' || x==='ø'; });
+      return (s==='a' || s==='ə') ? 'a' : (s==='i' || s==='e' || s==='ɛ' || s==='y') ? 'i' : 'u'; }
+    function AR(words, src){
+      var LET = {a:'ا', i:'ي', u:'و'}, HAR = {a:'َ', i:'ِ', u:'ُ'}, INIT = {a:'أ', i:'إي', u:'أو'};
+      return words.map(function(w){
+        var U = units(w), out = '', gem = false;
+        U.forEach(function(u, i){
+          function cons(ph){ var s = fb(ph.s, function(x){ return AC[x]!==undefined; }); return (AC[s]||''); }
+          if(u.syl){ if(u.c) out += cons(u.c); out += u.syl.s==='m' ? 'م' : 'ن'; return; }
+          if(u.v){
+            var q = avq(u.v.s), c = u.c ? cons(u.c) : '';
+            if(u.g && !(u.g==='j' && avq(u.v.s)==='i')) c += u.g==='j' ? 'ي' : 'و';
+            var full = u.v.long || u.st===1 || !u.next || u.v2 || !c;
+            if(gem){ c += '\u0651'; gem = false; }
+            if(!c){ out += (out ? LET[q] : INIT[q]); }
+            else out += c + (full ? LET[q] : HAR[q]);
+            if(u.v2){ out += LET[avq(u.v2.s)]; }
+            if(u.v.nas) out += 'ن';
+            return;
+          }
+          if(u.coda && u.next && u.next.c && u.next.c.s===u.c.s && !u.next.cl){ gem = true; return; }
+          out += cons(u.c);
+        });
+        return out;
+      }).join(' ');
+    }
+
+    var ENGINES = {en:ENG, es:ES, it:IT, pt:PT, fr:FR, de:DE, nl:NL, sv:SV, pl:PL, tr:TR, vi:VI, ind:IND, la:LA, gr:GD, ru:RU, el:EL,
+      ja:JA, ko:KO, zh:ZH, yue:YUE, hi:HI, ar:AR};
+    var SRC_LANG = {eng:'en'};   /* target code -> native code when they are the same language */
+
+    function respell(ipa, native, src){
+      var eng = ENGINES[native]; if(!eng || !ipa) return '';
+      try{
+        var W = parse(ipa);
+        if(src==='ja') W.forEach(function(w){ w.forEach(function(sy){ sy.nu.forEach(function(p){ if(p.s==='ɯ') p.s = 'u'; }); }); });
+        if(src==='zh') W.forEach(function(w){ w.forEach(function(sy){ sy.on.forEach(function(p){ if(p.s==='x') p.s = 'h'; }); }); });
+        return eng(W, src);
+      }catch(e){ return ''; }
+    }
+    function ipaOf(lang, text){ var d = DATA[lang]; return d ? (d[text] || null) : null; }
+    function load(lang){
+      if(DATA[lang] || PENDING[lang] || typeof fetch!=='function') return;
+      var base = (window.PRON_BASE || 'pron/').replace(/\/?$/, '/');
+      PENDING[lang] = true;
+      try{
+        fetch(base+lang+'.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(j){
+          PENDING[lang] = false;
+          if(j && j.ipa){ DATA[lang] = j.ipa; listeners.forEach(function(f){ try{ f(lang); }catch(e){} }); }
+        }).catch(function(){ PENDING[lang] = false; });
+      }catch(e){ PENDING[lang] = false; }
+    }
+    return {
+      parse: parse, respell: respell, ipa: ipaOf, load: load, data: DATA, engines: ENGINES,
+      onload: function(f){ listeners.push(f); },
+      /* the reading line under a target-language word: native-script respelling; with "show IPA" on, also the
+         original reading (pinyin / Jyutping / romanization) and the IPA */
+      line: function(lang, text, reading, native, showIpa){
+        if(!lang || !text) return reading || '';
+        if(SRC_LANG[lang]===native || lang===native) return reading || '';
+        var ipa = ipaOf(lang, text);
+        if(!ipa){ load(lang); return reading || ''; }
+        var r = respell(ipa, native, lang);
+        if(!showIpa) return r || reading || '';
+        return [r, reading, '/'+ipa.replace(/[˥˦˧˨˩]/g,'')+'/'].filter(Boolean).join('  ·  ');
+      }
+    };
+  })();
+  /* the reading line under a target-language word, in the player's own script; save.showIpa adds the original
+     reading (pinyin, Jyutping, romanization) and the IPA. Lines are marked with data-pl/data-pt/data-pr so they
+     fill in when their language's pron file arrives and redraw when the IPA toggle changes. */
+  function pronLine(lang, text, reading){ return PRON.line(lang, text, reading || null, nativeLang(), !!save.showIpa); }
+  function pronAttr(s){ return String(s==null ? '' : s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/\{/g,'&#123;').replace(/\|/g,'&#124;'); }
+  function pronHtml(lang, text, reading, cls){
+    var t = pronLine(lang, text, reading);
+    return '<div class="'+(cls||'a-sub')+' pron" dir="auto" data-pl="'+pronAttr(lang)+'" data-pt="'+pronAttr(text)+'" data-pr="'+pronAttr(reading||'')+'">'+pronAttr(t)+'</div>';
+  }
+  function pronFill(e){
+    var t = pronLine(e.getAttribute('data-pl'), e.getAttribute('data-pt'), e.getAttribute('data-pr'));
+    var extra = e.getAttribute('data-px');
+    e.textContent = t; if(extra){ if(t) e.appendChild(document.createElement('br')); e.appendChild(document.createTextNode(extra)); }
+    if(e.id==='pl-romaji') e.hidden = !(t || extra);
+  }
+  function pronRefresh(lang){ Array.prototype.forEach.call(document.querySelectorAll(lang ? '[data-pl="'+lang+'"]' : '[data-pl]'), pronFill); }
+  PRON.onload(pronRefresh);
+  function pronPreload(){ try{ journeyLangs().forEach(function(l){ PRON.load(l); }); }catch(e){} }
+  pronPreload();
+  /* ==== PRONUNCIATION END ==== */
+
   /* ============================= DOM ============================= */
 
   var el = {};
@@ -7311,6 +7923,7 @@
     }
     h += '<p class="preview-sub" style="margin:0 0 12px;text-align:left;">'+_t('For everything else the game picks the most natural native voice your device has for each language. If one sounds off, choose another here. Languages with no native voice fall back to an English voice — install one in your phone or computer’s text-to-speech settings.')+'</p>';
     h += '<div class="bar-row" style="grid-template-columns:1fr auto;"><span>'+_t('Speaking rate')+'</span><span><button class="btn btn-sm btn-ghost vr" data-r="0.75">'+_t('slow')+'</button> <button class="btn btn-sm btn-ghost vr" data-r="">'+_t('auto')+'</button> <button class="btn btn-sm btn-ghost vr" data-r="1.05">'+_t('fast')+'</button></span></div>';
+    h += '<label style="display:block;margin:0 0 12px;"><input type="checkbox" id="show-ipa" '+(save.showIpa?'checked':'')+'> '+_t('Show IPA and the original reading under each word')+'</label>';
     journeyLangs().forEach(function(l){
       var list = voicesFor(l).sort(function(a,b){ return voiceScore(b,l)-voiceScore(a,l); });
       var cur = voiceFor(l);
@@ -7331,6 +7944,7 @@
       b.addEventListener('click', function(){ var l = b.getAttribute('data-lang'); speakText(VOICE_SAMPLE[l], l, true); });
     });
     var uc = document.getElementById('use-clips'); if(uc){ uc.addEventListener('change', function(){ save.useClips = uc.checked; persist(); }); }
+    var si = document.getElementById('show-ipa'); if(si){ si.addEventListener('change', function(){ save.showIpa = si.checked; persist(); pronRefresh(); }); }
     Array.prototype.forEach.call(el.voicesBody.querySelectorAll('.vr'), function(b){
       b.addEventListener('click', function(){ var r = b.getAttribute('data-r'); save.speechRate = r ? parseFloat(r) : 0; persist(); speakText(VOICE_SAMPLE.es, 'es', true); });
     });
@@ -7685,7 +8299,7 @@
     if(P.asked>=12){ return placementFinish(); }
     var tier = TIERS[P.tierIdx]; var pool = CONCEPTS.filter(function(c){ return c.tier===tier.code && c[P.lang]; });
     var c = pick(pool); var opts = shuffle([c].concat(pickDistractors(c, 0.3, pool, P.lang)));
-    var show = c[P.lang].t + (c[P.lang].r ? ' <span style="color:var(--paper-faint);font-size:12px;">'+c[P.lang].r+'</span>' : '');
+    var show = c[P.lang].t + pronHtml(P.lang, c[P.lang].t, c[P.lang].r, 'pl-pron');
     body.innerHTML = '<div class="pl-q"><span class="lvl-badge" style="background:'+tier.color+'">'+tier.code+'</span> '+_t('Question {n} of {total}', {n:P.asked+1, total:12})+'</div>'+
       '<div class="pl-word">'+furi(show)+'</div><div class="answer-grid">'+opts.map(function(o){ return '<button type="button" class="answer-btn pl-ans" data-ok="'+(o.id===c.id?1:0)+'"><span class="ab-main">'+(o.emoji?o.emoji+' ':'')+o.en+'</span></button>'; }).join('')+'</div>';
     Array.prototype.forEach.call(body.querySelectorAll('.pl-ans'), function(b){ b.addEventListener('click', function(){
@@ -9000,9 +9614,9 @@
   function dialogueRound(d, lang, tier){
     var v = d[lang];
     var replies = shuffle([{t:v[1], ok:true},{t:v[2]},{t:v[3]},{t:v[4]}]);
-    var opts = replies.map(function(r){ return {key:r.t, emoji:null, main:r.t, sub:null, correct:!!r.ok}; });
+    var opts = replies.map(function(r){ return {key:r.t, emoji:null, main:r.t, sub:null, pr:[lang, r.t], correct:!!r.ok}; });
     return {
-      uiMode:'buttons', kind:'dialogue', lang:lang, clipKey:d.id+':'+lang, main:'“'+v[0]+'”', mainClass:'is-sentence',
+      uiMode:'buttons', kind:'dialogue', lang:lang, clipKey:d.id+':'+lang, main:'“'+v[0]+'”', mainClass:'is-sentence', pr:[lang, v[0]],
       sub:'💬 '+d.setup, time: roundTime(tier, 'dialogue'), options: opts, note: d.note
     };
   }
@@ -9012,7 +9626,7 @@
     r.crosstalk = true;
     var target = ITEM[r.conceptId];
     r.main = (target.emoji ? target.emoji+' ' : '')+target.en; r.mainClass = 'is-sentence'; r.sub = _t('Pick the {lang} word', {lang:LANGS[r.lang].name});
-    r.options.forEach(function(o){ var it = ITEM[o.key]; if(it && it[r.lang]){ o.main = it[r.lang].t; o.sub = it[r.lang].r ? it[r.lang].r : null; o.emoji = null; } });
+    r.options.forEach(function(o){ var it = ITEM[o.key]; if(it && it[r.lang]){ o.main = it[r.lang].t; o.sub = it[r.lang].r ? it[r.lang].r : null; o.pr = [r.lang, it[r.lang].t, it[r.lang].r]; o.emoji = null; } });
   }
   function matchRound(concept, lang, bias, pool, tier){
     var distractors = pickDistractors(concept, bias, pool, lang);
@@ -9021,7 +9635,7 @@
     });
     return {
       uiMode:'buttons', kind:'match', conceptId:concept.id, lang:lang, clipKey:concept.id+':'+lang, pool:pool,
-      lang2:lang, main:concept[lang].t, mainClass:'', sub: concept[lang].r ? concept[lang].r : null,
+      lang2:lang, main:concept[lang].t, mainClass:'', sub:null, pr:[lang, concept[lang].t, concept[lang].r],
       time: roundTime(tier, 'match'), options: opts, note:null
     };
   }
@@ -9034,8 +9648,8 @@
     shuffle(BUILD_SENTENCES.filter(function(x){ return x.id!==s.id && x.tier===s.tier && Array.isArray(x[lang]); })).forEach(function(x){
       x[lang].forEach(function(t){ var k = plainText(t).toLowerCase(); if(!seen[k] && others.length<3 && plainText(t).replace(/[^\p{L}]/gu,'').length>=2){ seen[k] = true; others.push(t); } });
     });
-    var opts = shuffle([{t:tiles[bi], ok:true}].concat(others.map(function(t){ return {t:t}; }))).map(function(o){ return {key:o.t, emoji:null, main:o.t, sub:null, correct:!!o.ok}; });
-    var gap = tiles.map(function(t, i){ return i===bi ? '____' : t; }).join(joiner);
+    var opts = shuffle([{t:tiles[bi], ok:true}].concat(others.map(function(t){ return {t:t}; }))).map(function(o){ return {key:o.t, emoji:null, main:o.t, sub:null, pr:[lang, o.t], correct:!!o.ok}; });
+    var gap =tiles.map(function(t, i){ return i===bi ? '____' : t; }).join(joiner);
     return {
       uiMode:'buttons', kind:'cloze', lang:lang, sentenceId:s.id, clipKey:s.id+':'+lang, main:gap, mainClass:'is-sentence',
       sub:'“'+s.en+'” — '+_t('fill the gap'), time: roundTime(tier, 'cloze'), options: opts, note: s.note, reveal: tiles.join(joiner), silent:true
@@ -9043,7 +9657,7 @@
   }
   function blankRound(g, tier){
     var opts = shuffle(g.options.map(function(o){
-      return {key:o, emoji:null, main:o, sub: g.romaji ? g.romaji[o] : null, correct:o===g.correct};
+      return {key:o, emoji:null, main:o, sub: g.romaji ? g.romaji[o] : null, pr:[g.lang, o, g.romaji ? g.romaji[o] : null], correct:o===g.correct};
     }));
     return {
       uiMode:'buttons', kind:'blank', lang:g.lang, main:g.sentence, mainClass:'is-sentence',
@@ -9057,13 +9671,13 @@
     }));
     return {
       uiMode:'buttons', kind:'idiom', lang:i.lang, main:i.phrase, mainClass:'',
-      sub: (i.lang!=='ja' && i.romaji) ? i.romaji : null, time: roundTime(tier, 'idiom'),
+      sub:null, pr:[i.lang, i.phrase, (i.lang!=='ja' && i.romaji) ? i.romaji : null], time: roundTime(tier, 'idiom'),
       options: opts, note: i.note
     };
   }
   function nuanceRound(n, tier){
     var opts = shuffle(n.options.map(function(o){
-      return {key:o, emoji:null, main:o, sub: n.romaji ? n.romaji[o] : null, correct:o===n.correct};
+      return {key:o, emoji:null, main:o, sub: n.romaji ? n.romaji[o] : null, pr:[n.lang, o, n.romaji ? n.romaji[o] : null], correct:o===n.correct};
     }));
     return {
       uiMode:'buttons', kind:'nuance', lang:n.lang, main:'“'+n.context+'”', mainClass:'is-sentence',
@@ -9106,7 +9720,13 @@
     el.plOrderno.textContent = _t('order {n}/{total}', {n:orderNum, total:orderDen});
     el.plWord.className = 'ticket-word' + (round.mainClass ? ' '+round.mainClass : '');
     el.plWord.innerHTML = furi(round.main);
-    if(round.sub){ el.plRomaji.hidden = false; el.plRomaji.textContent = round.sub; }
+    ['data-pl','data-pt','data-pr','data-px'].forEach(function(a){ el.plRomaji.removeAttribute(a); });
+    if(round.pr){   /* reading line of a target-language prompt (PRON); a round's own sub line goes under it */
+      el.plRomaji.setAttribute('data-pl', round.pr[0]); el.plRomaji.setAttribute('data-pt', round.pr[1]); el.plRomaji.setAttribute('data-pr', round.pr[2]||'');
+      if(round.sub) el.plRomaji.setAttribute('data-px', round.sub);
+      el.plRomaji.dir = 'auto'; pronFill(el.plRomaji);
+    }
+    else if(round.sub){ el.plRomaji.hidden = false; el.plRomaji.textContent = round.sub; }
     else { el.plRomaji.hidden = true; el.plRomaji.textContent=''; }
 
     /* speak the target-language prompt as soon as it appears — nuance rounds show an
@@ -9157,7 +9777,7 @@
       var b = document.createElement('button');
       b.className = 'answer-btn'; b.type = 'button';
       var emojiHtml = opt.emoji ? '<span class="a-emoji">'+opt.emoji+'</span>' : '';
-      var subHtml = opt.sub ? '<div class="a-sub">'+opt.sub+'</div>' : '';
+      var subHtml = opt.pr ? pronHtml(opt.pr[0], opt.pr[1], opt.pr[2]) : opt.sub ? '<div class="a-sub">'+opt.sub+'</div>' : '';
       b.innerHTML = emojiHtml+'<span class="a-text"><span class="a-main">'+furi(opt.main)+'</span>'+subHtml+'</span><span class="a-key">'+(i+1)+'</span>';
       b.addEventListener('click', function(){ onAnswer(opt.key, b); });
       el.plAnswers.appendChild(b);
@@ -9734,9 +10354,8 @@
         if(learnedSet.has(key)){
           var stars = constellationsFor(c.id, l).filter(function(x){ return x.lang!=='en'; });
           var sh = stars.length ? '<div class="pb-stars" title="'+_t('Same or similar word elsewhere on your voyage')+'">'+stars.map(function(x){ return LANG_META[x.lang].flag+(x.rel==='same'?'=':'≈'); }).join(' ')+'</div>' : '';
-          if(l==='ja'){ return '<td>'+furi(c[l].t)+sh+'</td>'; }
-          var r = c[l].r ? '<div style="font-size:10.5px;color:var(--paper-faint);">'+c[l].r+'</div>' : '';
-          return '<td>'+c[l].t+r+sh+'</td>';
+          var r = pronHtml(l, c[l].t, c[l].r, 'pb-pron');
+          return '<td>'+furi(c[l].t)+r+sh+'</td>';
         }
         return '<td class="pb-locked">?????</td>';
       }).join('');

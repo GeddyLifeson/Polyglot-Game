@@ -18,7 +18,8 @@ hook = """
     topicsForTier: topicsForTier, modulesForTier: modulesForTier, moduleFor: moduleFor, topicLabel: topicLabel,
     dungeonItemIds: dungeonItemIds, vocabForTier: vocabForTier,
     enterDungeon: enterDungeon, showHome: showHome, showHub: showHub, showTopics: showTopics,
-    showDungeonIntro: showDungeonIntro, nextRound: nextRound, makeRound: makeRound, renderPhrasebook: renderPhrasebook
+    showDungeonIntro: showDungeonIntro, nextRound: nextRound, makeRound: makeRound, renderPhrasebook: renderPhrasebook,
+    PRON: PRON, pronLine: pronLine, pronRefresh: pronRefresh
   };
 
   save.journey.set = true;   /* QA drives the Journey screen explicitly via showJourney() */
@@ -29,7 +30,7 @@ hook = """
 assert "\n  showHome();\n})();\n" in content
 assert "<head>\n" in content
 content = content.replace("\n  showHome();\n})();\n", hook, 1)
-content = content.replace("<head>\n", '<head>\n<script>window.AUDIO_BASE="../audio/";window.L10N_BASE="../l10n/";</script>\n', 1)
+content = content.replace("<head>\n", '<head>\n<script>window.AUDIO_BASE="../audio/";window.L10N_BASE="../l10n/";window.PRON_BASE="../pron/";</script>\n', 1)
 with open('qa/hub-qa-wrapped.html', 'w', encoding='utf-8') as f:
     f.write(content)
 print('qa/hub-qa-wrapped.html rebuilt')

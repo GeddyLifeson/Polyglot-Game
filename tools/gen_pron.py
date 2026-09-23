@@ -273,7 +273,7 @@ def ja_ipa(text):
         i = 0
         while i < len(w):
             c = w[i]
-            if c == 'う' and segs and segs[-1][1] == 'o' and not (i + 1 < len(w) and w[i + 1] in SMALL_Y):
+            if c == 'う' and segs and segs[-1][1] in ('o', 'ɯ') and not (i + 1 < len(w) and w[i + 1] in SMALL_Y):
                 segs[-1][1] += 'ː'; i += 1; continue      # おう / こう / とう: a long o
             if c in KANA:
                 v = KANA[c]
@@ -655,7 +655,7 @@ def gr_text_ipa(text, reading, lex):
 def clean_espeak(ipa, lang):
     if lang == 'vi': ipa = re.sub(r'[\dɜ]', '', ipa).replace('y', 'ɨ')
     if lang == 'sv': ipa = ipa.replace('sx', 'ɧ')
-    if lang == 'ru': ipa = ipa.replace('y', 'ɨ')
+    if lang == 'ru': ipa = ipa.replace('y', 'ɨ').replace('ɵ', 'o')
     if lang == 'eng': ipa = ipa.replace('ɾ', 't')
     ipa = ipa.replace('ɚ', 'ɚ')
     return ipa
