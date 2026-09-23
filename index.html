@@ -9209,6 +9209,7 @@
     hideToast();
     st.playing = false;
     if(!isDrillTopic(topic) && topic!=='__storm') coach('preview');
+    ['screen-journey','screen-placement','screen-intercept','screen-stories','screen-log','screen-event'].forEach(function(id){ var e = document.getElementById(id); if(e) e.hidden = true; });
     el.screenHome.hidden = true;
     el.screenHub.hidden = true;
     el.screenTopics.hidden = true;

@@ -192,9 +192,23 @@ Settings: 155 wpm, pitch 45 (`--espeak-rate`, `--espeak-pitch`); it is a formant
   (45% for Interpret). Typed modes pay ×1.6 / ×1.6 / ×1.4 and track their own best per story and language.
 - **Your own language** (`save.native`, `applyNative`, picked at the top of the Journey screen): the meaning
   side of every word and sentence is swapped to that language at boot, the story "other side" follows it, and
-  English joins the chart as a learnable language (code `eng`, device voice). Coach notes, grammar notes and
-  story questions stay in English. Folk tales carry only their own language plus English, so their other side
-  is English for everyone.
+  English joins the chart as a learnable language (code `eng`, device voice). Coach notes, grammar notes, story
+  questions and the folk tales' other side come from `l10n/<lang>.json`.
+- **The interface in your own language** (`_t`, `applyUiL10n`, `applyStaticUi` in index.html): every menu,
+  button, heading, toast, tooltip, placeholder, the Engineering Bay, commendations, ranks, events, topic names,
+  story origins and language names follow the native language. English is both the source and the key:
+  `_t('Clear {n} relays', {n:6})` looks the string up in the `ui` pool of `l10n/<lang>.json` and substitutes
+  the placeholders; a missing key stays English, so a language without a pack simply shows English. Data tables
+  (PERKS, SHOP_UPGRADES, COMMENDATIONS, TIERS, EVENTS…) are translated in place when the pool arrives; static
+  markup carries `data-t` (its inner HTML is one ui string) and title / placeholder / aria-label attributes
+  are translated automatically. The page stays hidden (`html.l10n-wait`, 2.5 s cap) until the pool loads, then
+  redraws the visible screen. The language picker shows each language by its own name plus its name in yours.
+  Adding UI text: wrap it as `_t('English {x}', {x:…})` (never concatenate a sentence), run `build.py`,
+  `tools/l10n_prep.py` (writes `l10n_in/ui.json`, extraction rules in `tools/ui_strings.py`), translate the new
+  keys into `l10n_out/<lang>_ui.json`, validate with `tools/l10n_check.py <lang> ui` (placeholders and HTML
+  tags must survive), rebuild. build.py prints ui coverage per language and drops keys the page no longer has.
+  `qa/qa_ui_l10n.js` (run via `node qa/with_server.js qa/qa_ui_l10n.js`, `UI_LANGS=es,ja,...`) walks every
+  screen and fails on any English ui string left where a translation exists.
 - **Pronunciation in your own script** (`PRON` block in index.html, data in `pron/<lang>.json`): the line under
   every target-language word, phrase, reply and answer option (relays, sentence-builder tiles, the listening
   reveal, placement test, Lexicon, Signal Intercept, and the Library, where 🗣️ opens a line under each sentence)

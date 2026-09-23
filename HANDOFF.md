@@ -230,3 +230,22 @@ spelling it how english would spell out to pronounce it." Built for all 21 nativ
   vowel length), Japanese pitch accent and Mandarin/Cantonese tones are not shown in the respellings (tones stay
   visible with the IPA toggle). Spot-checks by native speakers per script are the next step; the converters are
   small tables in the PRON block, so a complaint is usually a one-line fix.
+
+## Interface in the player's own language (2026-09-23)
+
+Owner: "all languages should have themselves represented on the website at every word possible, even the pages
+themselves ... turned into whatever the native language speaker's tongue is when they select their native language."
+- Runtime: `_t(english, vars)` + `applyUiL10n` (tables translated in place) + `applyStaticUi` (`data-t` markup and
+  title/placeholder/aria-label) + `rerenderAfterL10n`; `html.l10n-wait` hides the page until `l10n/<lang>.json`
+  arrives (2.5 s cap, then English). README 3d has the rules for adding strings.
+- Source: `tools/ui_strings.py` extracts ~1,300 strings (≈6,750 words) → `l10n_in/ui.json` via `tools/l10n_prep.py`.
+- Packs: `l10n_out/<lang>_ui.json` for all 21 native languages, assembled into `l10n/<lang>.json` (`ui` key) by
+  build.py; `tools/l10n_check.py <lang> ui` validates. Ròdais (gr) has only the ui pool so far (no notes/questions/
+  folk chunks yet), so its coach notes and story questions are still English.
+- QA: `qa/qa_ui_l10n.js` (needs HTTP: `node qa/with_server.js qa/qa_ui_l10n.js`).
+- Also fixed on the way: the Lexicon table header now follows the voyage's languages; the Mission Log's "Clear
+  flags" button works; coach texts render furigana; Flight Plan quest text is rendered from the quest id (old
+  saves stored English text).
+- Known limits: plurals use a singular/plural key pair only where English branches; languages with more plural
+  forms use neutral phrasing ("label: {n}"). Translations were written by AI agents; a native read-through per
+  language is the next step.
