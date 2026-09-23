@@ -96,7 +96,7 @@ const CASES = [['en', ['ru', 'zh']], ['ja', ['ru', 'es']], ['ko', ['fr', 'ja']],
       await page.waitForTimeout(900);
       // Library: 🗣️ opens one line per sentence
       const sid = await page.evaluate((l) => (window.__QA.STORIES.find(s => !s.only && s.xl && s.xl[l]) || {}).id, L);
-      await page.evaluate(([id, l]) => window.__QA.startStory(id, l, 'read'), [sid, L]); await page.waitForTimeout(200);
+      await page.evaluate(([id, l]) => { window.__QA.showStories(); window.__QA.startStory(id, l, 'read'); }, [sid, L]); await page.waitForTimeout(200);
       await page.click('.story-pron-btn'); await page.waitForTimeout(100);
       const sp = await page.$$eval('.story-para .story-pron .sp-line', els => els.map(e => e.textContent));
       log(nat + '←' + L + ': story paragraph shows a line per sentence', sp.length > 0 && sp.every(Boolean), sp.slice(0, 3));
