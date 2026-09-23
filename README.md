@@ -1,9 +1,9 @@
 # Polyglot Voyager — source & build kit
 
 A single-file, sci-fi roguelite language-learning game: a 5,005-word A1→C2 fluency ladder in
-twenty languages (Spanish, French, Italian, Brazilian Portuguese, Japanese, Mandarin, German, Dutch,
+twenty-one languages (Spanish, French, Italian, Brazilian Portuguese, Japanese, Mandarin, German, Dutch,
 Swedish, Polish, Russian, Greek, Latin, Turkish, Arabic, Hindi, Korean, Cantonese, Vietnamese,
-Indonesian) with
+Indonesian, and Ròdais, the Gaelic of Rodos) with
 vocabulary, dialogue, sentence-building, grammar, idiom, nuance and listening modules,
 a Signal Chain meta-progression, an Engineering Bay, anomaly events, daily Signal Storms,
 officer ranks, commendations, and native-speaker recordings generated with Kokoro-82M.
@@ -147,6 +147,11 @@ with `pip install -r requirements-chatterbox.txt` in a Python 3.11 env with CUDA
 files listed in `tools/cbx_bench.py` into `models/chatterbox/`, and run `python tools/cbx_bench.py cuda` to check.
 About 8 s per clip on a 16-core CPU, well under 1 s on a GPU. On this machine Python cannot reach HTTPS hosts
 until the local TLS root is appended to certifi (`tools/export_local_roots.ps1`).
+
+Ròdais (`rod`) is recorded with espeak-ng's Scottish Gaelic voice (`gd`) through `--backend espeak`
+(`pip install espeakng-loader imageio-ffmpeg`, no network or GPU; about a minute per band). Ròdais `sc` is
+rewritten as `sg` before synthesis (uisce → uisge), since both spell [sk] and the gd rules expect `sg`.
+Settings: 155 wpm, pitch 45 (`--espeak-rate`, `--espeak-pitch`); it is a formant voice, so it sounds robotic.
 
 ## 3d. Learning systems (September 2026)
 
