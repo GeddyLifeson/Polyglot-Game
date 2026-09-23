@@ -23,6 +23,8 @@ tools/l10n_prep.py    extracts the English-only layer (coach, notes, questions, 
 tools/l10n_check.py   validates one translated chunk in l10n_out/ (shape, no empties, not still English)
 tools/l10n_ollama.py  translates one chunk with a local Ollama model (resumable; cloud agents did the first pass)
 l10n/<lang>.json      assembled by build.py from l10n_out/; fetched by the game for a non-English player
+tools/gen_pron.py     writes pron/<lang>.json: IPA for every target-language word/phrase (espeak-ng + own rules)
+pron/<lang>.json      {text: IPA}; fetched per voyage language, respelled at runtime in the player's own script
 qa/*.js               Playwright test suites (content, chain, overhaul, voices, clips)
 ```
 
@@ -193,6 +195,27 @@ Settings: 155 wpm, pitch 45 (`--espeak-rate`, `--espeak-pitch`); it is a formant
   English joins the chart as a learnable language (code `eng`, device voice). Coach notes, grammar notes and
   story questions stay in English. Folk tales carry only their own language plus English, so their other side
   is English for everyone.
+- **Pronunciation in your own script** (`PRON` block in index.html, data in `pron/<lang>.json`): the line under
+  every target-language word, phrase, reply and answer option (relays, placement test, Lexicon) is written for
+  the player's own language: an English respelling with the stressed syllable in capitals (Привет → pree-VYET),
+  katakana for Japanese (プリヴェット), Hangul for Korean (프리볘트), Devanagari, Arabic script, Cyrillic and Greek
+  with the stress accented, pinyin-style syllables for Mandarin speakers (pu-li-wei-te: every mainland learner
+  reads pinyin from primary school, and it spells sound without the meanings and homophones that transliteration
+  characters drag in; tones are left off), Jyutping-style syllables for Cantonese, and respellings in their own
+  orthography for the Latin-script languages (Spanish pri-VIET, German pri-WJET, Polish pri-WIET, Latin with
+  macrons, Ròdais with grave accents). Data: `python3 tools/gen_pron.py` (after build.py; resumable, `--fresh`
+  recomputes; ~1 minute for all 22 files, 4.6 MB total, ~200-290 KB per language) writes one IPA string per
+  displayed text, keyed by the exact text (Japanese keeps its furigana markup). Sources: espeak-ng through
+  `espeakng-loader` for es fr it pt de nl sv pl ru el la tr hi vi ind eng; Japanese from its kana/furigana,
+  Mandarin from the pinyin (pypinyin where the data has none), Cantonese from the Jyutping (pycantonese),
+  Korean by Hangul rules (liaison, nasalisation, tensing, aspiration), Arabic from the romanization (a word
+  lexicon built from the vocabulary covers sentences), Ròdais from its dictionary IPA. The game fetches the
+  files for the voyage's languages and a small converter per native language turns IPA into spelling at
+  runtime (no 21×21 tables stored). **Voices → "Show IPA and the original reading"** (`save.showIpa`) adds the
+  old reading line (pinyin, Jyutping, romanization) and the IPA. Without the files (file://, single-file build)
+  the line falls back to the old reading. `qa/qa_pron.js` (run through `qa/with_server.js`) checks ten native
+  languages end to end and every native × target pair. Re-run gen_pron.py whenever content changes; new strings
+  simply show the old reading until then.
 - **Skill drills for every language**: the fourteen added languages have their own B2 grammar, C1 idiom and
   C2 nuance items in `content/xlate_<lang>_skills2.py` (same schema and topic keys as the core six), so the
   grammar / idiom / nuance modules now appear in those sectors for every language on the voyage.

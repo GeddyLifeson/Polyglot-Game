@@ -204,3 +204,24 @@ its running session stopped. Re-enable after the last chain merges (pl el la / h
 
 2026-09-13: Panscriptum restarted at the owner's request (scheduled task re-enabled, watcher relaunched). Item 5
 of "Next steps" is done.
+
+## Pronunciation in the learner's own script (2026-09-23)
+
+Owner: "the ipa spelling of the words doesn't help someone that doesn't know how to read that stuff ... if
+someone's native tongue [is] japanese ... there should be Katakana below ... For English natives it would be
+spelling it how english would spell out to pronounce it." Built for all 21 native × 21 target languages:
+- `tools/gen_pron.py` → `pron/<lang>.json` ({text: IPA}, 22 files incl. `eng`, 4.6 MB, ~112k strings). Needs
+  `pip install espeakng-loader pypinyin pycantonese`. Run after build.py whenever content changes (resumable;
+  `--fresh` recomputes everything in about a minute). README 3d lists the source per language.
+- `PRON` block in index.html (`/* ==== PRONUNCIATION START/END ==== */`, ~42 KB): IPA parser, fallback map,
+  one converter per native language (alphabetic tables for the Latin/Cyrillic/Greek scripts, syllable builders
+  for katakana, Hangul, pinyin-style, Jyutping-style, Devanagari, Arabic). `pronLine(lang, text, reading)`,
+  `pronHtml`, `pronRefresh`; rounds and options carry `pr:[lang, text, reading]` and the renderer fills the line
+  (it refills when a pron file arrives or the IPA toggle changes). Covered: match prompts, crosstalk / blank /
+  nuance / cloze / dialogue options, dialogue lines, idiom phrases, placement test, Lexicon.
+- Voices panel checkbox "Show IPA and the original reading under each word" (`save.showIpa`, via `_t`).
+- Not covered yet: story paragraphs (Library), Signal Intercept, sentence-builder tiles, the listening reveal.
+  Quality is rule-based: espeak-ng is weakest for Arabic (the data's romanization is used instead; it has no
+  vowel length), Japanese pitch accent and Mandarin/Cantonese tones are not shown in the respellings (tones stay
+  visible with the IPA toggle). Spot-checks by native speakers per script are the next step; the converters are
+  small tables in the PRON block, so a complaint is usually a one-line fix.

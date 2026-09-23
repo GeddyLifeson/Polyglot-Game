@@ -5,6 +5,8 @@
   python3 tools/gen_pron.py ru ja      # just these
   python3 tools/gen_pron.py --fresh    # recompute everything
 
+Needs: pip install espeakng-loader pypinyin pycantonese   (espeakng-loader ships libespeak-ng and its data)
+
 Writes pron/<lang>.json = {"lang": .., "ipa": {text: ipa}} keyed by the exact text the game displays
 (Japanese keeps its {漢字|かな} markup). The game fetches the file for each language on the voyage and turns the
 IPA into the player's own writing system at runtime (katakana for a Japanese speaker, an English respelling for

@@ -86,8 +86,8 @@ function log(label, ok, extra) {
   await page.click('#btn-start'); await page.waitForTimeout(150);
   await page.click('#btn-skip-perk'); await page.waitForTimeout(300);
   await page.screenshot({ path: 'mod_04_match_zh_verbs.png' });
-  const mState = await page.evaluate(() => ({ kind: window.__QA.st.round.kind, queue: window.__QA.st.queue.length, sub: window.__QA.st.round.sub, opts: window.__QA.st.round.options.map(o => o.main) }));
-  log('A1 verbs-1 zh: 24-item match module with pinyin sub', mState.kind === 'match' && mState.queue === 24 && !!mState.sub, mState);
+  const mState = await page.evaluate(() => ({ kind: window.__QA.st.round.kind, queue: window.__QA.st.queue.length, sub: (window.__QA.st.round.pr || [])[2] || window.__QA.st.round.sub, line: document.getElementById('pl-romaji').textContent, opts: window.__QA.st.round.options.map(o => o.main) }));
+  log('A1 verbs-1 zh: 24-item match module with pinyin sub', mState.kind === 'match' && mState.queue === 24 && !!mState.sub && !!mState.line, mState);
 
   // 7. Lexicon: tier filter + search
   await page.evaluate(() => window.__QA.showHome());

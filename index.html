@@ -9625,7 +9625,7 @@
   function crosstalkSwap(r){
     r.crosstalk = true;
     var target = ITEM[r.conceptId];
-    r.main = (target.emoji ? target.emoji+' ' : '')+target.en; r.mainClass = 'is-sentence'; r.sub = _t('Pick the {lang} word', {lang:LANGS[r.lang].name});
+    r.main = (target.emoji ? target.emoji+' ' : '')+target.en; r.mainClass = 'is-sentence'; r.pr = null; r.sub = _t('Pick the {lang} word', {lang:LANGS[r.lang].name});
     r.options.forEach(function(o){ var it = ITEM[o.key]; if(it && it[r.lang]){ o.main = it[r.lang].t; o.sub = it[r.lang].r ? it[r.lang].r : null; o.pr = [r.lang, it[r.lang].t, it[r.lang].r]; o.emoji = null; } });
   }
   function matchRound(concept, lang, bias, pool, tier){
