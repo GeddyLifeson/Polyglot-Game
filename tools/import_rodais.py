@@ -1,5 +1,5 @@
 """
-import_rodais.py -- write the Ròdais word files (content/xlate_rod_<band>.py) from the Ròdais dictionary.
+import_rodais.py -- write the Ròdais word files (content/xlate_gr_<band>.py) from the Ròdais dictionary.
 
     python3 tools/import_rodais.py <rodais-folder>
 
@@ -11,7 +11,7 @@ every word of the ladder under the ladder's own ids. Each word becomes (text, re
               verbal noun (Ithe "eating, to eat"), the form a Gaelic phrasebook gives
     reading   the pronunciation in IPA, from the language's own pronunciation rules
 
-Re-run it whenever the dictionary changes; it overwrites only the five xlate_rod_<band>.py word files.
+Re-run it whenever the dictionary changes; it overwrites only the five xlate_gr_<band>.py word files.
 """
 import json
 import os
@@ -42,10 +42,10 @@ def main():
             text = e.get('vn') if e.get('pos') == 'v' and e.get('vn') and ' ' not in e['rod'] else e['rod']
             text = cap(text)
             rows.append('    %r: (%r, %r),' % (i, text, R.pronounce(text.rstrip('?!.'))))
-        path = os.path.join(CONTENT, 'xlate_rod_%s.py' % band)
+        path = os.path.join(CONTENT, 'xlate_gr_%s.py' % band)
         with open(path, 'w', encoding='utf-8') as fh:
             fh.write('# -*- coding: utf-8 -*-\n# Ròdais, the Gaelic of Rodos: written by tools/import_rodais.py from the Ròdais dictionary.\n'
-                     "# The reading line is the pronunciation in IPA.\nLANG = 'rod'\nWORDS = {\n%s\n}\n" % '\n'.join(rows))
+                     "# The reading line is the pronunciation in IPA.\nLANG = 'gr'\nWORDS = {\n%s\n}\n" % '\n'.join(rows))
         print('%s: %d words' % (os.path.basename(path), len(rows)))
 
 

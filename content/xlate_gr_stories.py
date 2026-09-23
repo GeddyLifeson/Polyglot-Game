@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Ròdais, the Gaelic of Rodos: the six shared crew stories, paragraph for paragraph with stories_src.py.
-LANG = 'rod'
+LANG = 'gr'
 STORIES = {
     'st-b1-01': {
         'title': 'An Carbad-iarainn Anmoch',

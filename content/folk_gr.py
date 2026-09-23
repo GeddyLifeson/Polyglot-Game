@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 # Tales told on Rodos, in Ròdais with the English alongside, graded for the Ship's Library
-LANG = 'rod'
+LANG = 'gr'
 FOLK = [
     {
-        'id': 'fk-rod-01', 'tier': 'B1', 'title': 'Bean an Ròin', 'title_en': 'The Seal Wife',
+        'id': 'fk-gr-01', 'tier': 'B1', 'title': 'Bean an Ròin', 'title_en': 'The Seal Wife',
         'origin': 'Told on the Rodos coast at Ceann Dubh; a tale of the Ròdaich',
         'paras': [
             "Bha siud ann uair iascair a bha a' fuireach leis fhèin ann am bothan beag aig Ceann Dubh, air costa an iar Ròdais.",
@@ -31,7 +31,7 @@ FOLK = [
         ],
     },
     {
-        'id': 'fk-rod-02', 'tier': 'B1', 'title': 'Fionn agus Bradan an Eòlais', 'title_en': 'Fionn and the Salmon of Knowledge',
+        'id': 'fk-gr-02', 'tier': 'B1', 'title': 'Fionn agus Bradan an Eòlais', 'title_en': 'Fionn and the Salmon of Knowledge',
         'origin': 'Told on the banks of the Abhainn mhòr, Rodos; a tale of Fionn',
         'paras': [
             "Bha siud ann uair, fada mus robh rìgh ann an Cathair dhearg, bàrd aosta ris an canadh daoine Fionn-Èigeas. Bha e a' fuireach leis fhèin aig linne dhomhainn air an Abhainn mhòir, far an robh an abhainn a' dòrtadh dhan mhuir.",
@@ -59,7 +59,7 @@ FOLK = [
         ],
     },
     {
-        'id': 'fk-rod-03', 'tier': 'B2', 'title': 'An t-Each-Uisce', 'title_en': 'The Water Horse',
+        'id': 'fk-gr-03', 'tier': 'B2', 'title': 'An t-Each-Uisce', 'title_en': 'The Water Horse',
         'origin': 'Told at Loch Dubh in the high glens of Rodos; a tale of the Ròdaich',
         'paras': [
             "Bha siud ann uair, ann an glinn àrda Ròdais, loch dorcha ris an canadh daoine Loch Dubh. Cha rachadh duine glic faisc air an loch sin às dèidh dol fodha na grèine, oir bha fios aig a h-uile duine gun robh an t-each-uisce a' fuireach fo a uisce.",
@@ -87,7 +87,7 @@ FOLK = [
         ],
     },
     {
-        'id': 'fk-rod-04', 'tier': 'B2', 'title': 'Carson a Chaidh na Tuathaich gu Tuath', 'title_en': 'Why the Tuathaich Went North',
+        'id': 'fk-gr-04', 'tier': 'B2', 'title': 'Carson a Chaidh na Tuathaich gu Tuath', 'title_en': 'Why the Tuathaich Went North',
         'origin': 'Told by the Tuathaich around the fire in the north of Rodos; their side of the coal-blood tale',
         'paras': [
             "Tha na Ròdaich ag innse an sceòil seo ann an aon dòigh, agus na Tuathaich ann an dòigh eile. Seo mar a dh'innseas na Tuathaich e, timcheall air an teine ann an oidhcheannan fada a' gheamhraidh.",
@@ -115,7 +115,7 @@ FOLK = [
         ],
     },
     {
-        'id': 'fk-rod-05', 'tier': 'C1', 'title': "Mar a Dh'fhalbh na Seann-Dhaoine", 'title_en': 'How the Old Ones Left',
+        'id': 'fk-gr-05', 'tier': 'C1', 'title': "Mar a Dh'fhalbh na Seann-Dhaoine", 'title_en': 'How the Old Ones Left',
         'origin': 'Told by old fishermen at Seann Dunn, Rodos; a legend of the Old Ones',
         'paras': [
             "Fada mus tàinig na Ròdaich, bha sluagh eile a' fuireach air Ròdos. Cha robh an cànan aca coltach ri cànan sam bith a tha air a bhruidhinn an-diugh, agus cha do scrìobh iad dad sìos. Canaidh sinne na Seann-Dhaoine riutha, a chionn 's nach eil fios aig duine beò dè an t-ainm a bh' aca orra fhèin.",
@@ -143,7 +143,7 @@ FOLK = [
         ],
     },
     {
-        'id': 'fk-rod-06', 'tier': 'C2', 'title': 'Mar a Thàinig an Gual dhan Fhuil', 'title_en': 'How Coal Came into the Blood',
+        'id': 'fk-gr-06', 'tier': 'C2', 'title': 'Mar a Thàinig an Gual dhan Fhuil', 'title_en': 'How Coal Came into the Blood',
         'origin': 'Told in Cathair dhearg, Rodos; a legend of the Ròdaich and the coal-blood',
         'paras': [
             "Seo mar a dh'innis na seann daoine e, agus mar a chuala mise e bho mo sheanmhair ann an Cathair dhearg. Chan eil fhios agam an e an fhìrinn a th' ann; ach is e seo an sceul. Anns na làithean a dh'fhalbh, nuair nach robh rìgh no rìoghachd air Ròdos, bha gobha a' fuireach aig bonn cnuic ann am meadhan an eilein. Bhiodh an cnoc sin a' smocadh fad na bliadhna, agus air oidhcheannan geamhraidh chitheadh daoine lasraichean dearga a' ruith tro na scàinidhean na thaobh. Cha rachadh duine suas air ach an gobha.",

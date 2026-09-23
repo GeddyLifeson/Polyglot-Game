@@ -24,7 +24,7 @@ Backends (--backend auto|torch|onnx, default auto = torch if `kokoro` is importa
          (kokoro-v1.0.onnx, voices-v1.0.bin) — pass them with --onnx-model/--onnx-voices or put
          them in models/.
   espeak espeak-ng formant voices, offline, via `pip install espeakng-loader` (ships libespeak-ng and its data).
-         Used for Ròdais (rod), read by the Scottish Gaelic voice `gd` after rewriting Ròdais `sc` as `sg`.
+         Used for Ròdais (gr), read by the Scottish Gaelic voice `gd` after rewriting Ròdais `sc` as `sg`.
          --espeak-rate (words per minute) and --espeak-pitch (0-100) tune it.
 """
 import sys, os, re, json, subprocess, time, warnings, argparse
@@ -118,7 +118,7 @@ AZURE = {
          'eng':('en-US','en-US-AriaNeural')}
 # espeak-ng voices: our code -> (espeak voice, text rewrite). Ròdais spells [sk] `sc` where Scottish Gaelic
 # writes `sg` (uisce/uisge, sceul/sgeul, iasc/iasg); the gd rules read `sg` as the unaspirated Gaelic stop.
-ESPEAK = {'rod': ('gd', lambda t: t.replace('sc', 'sg').replace('Sc', 'Sg').replace('SC', 'SG'))}
+ESPEAK = {'gr': ('gd', lambda t: t.replace('sc', 'sg').replace('Sc', 'Sg').replace('SC', 'SG'))}
 ESPEAK_LANG = {'e':'es', 'f':'fr-fr', 'i':'it', 'p':'pt-br'}   # what kokoro.KPipeline uses per lang_code
 
 

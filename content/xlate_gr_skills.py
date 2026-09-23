@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-LANG = 'rod'
+LANG = 'gr'
 SENTENCES = {
     'b1-dr1': ['Tha mi', 'ag ionnsachadh', 'stiùireadh-carbaid'],
     'b1-dr2': ['Mar as trice,', 'dùiscidh mi', 'tràth'],

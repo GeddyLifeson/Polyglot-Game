@@ -38,7 +38,7 @@ way through C2), pronunciations must be as natural as possible, and the whole th
 
 ## Language codes
 
-es fr it pt ja zh (core, Kokoro-recorded) · de nl sv pl ru el la tr ar hi ko yue vi ind · rod (Ròdais, the Gaelic of
+es fr it pt ja zh (core, Kokoro-recorded) · de nl sv pl ru el la tr ar hi ko yue vi ind · gr (Ròdais, the Gaelic of
 Rodos; words from the Ròdais dictionary via `tools/import_rodais.py`, reading line = IPA, espeak-ng Gaelic voice).
 Indonesian is `ind`, never `id` (`id` collides with the item id field). Languages with a reading line:
 zh (pinyin), ru, el, ar, hi, ko, yue (Jyutping). Japanese carries furigana `{漢字|かな}` in the text itself.
@@ -65,7 +65,7 @@ languages plus English as a target, `eng`), each 5,240 to 5,285 clips covering A
 | Kokoro-82M (ONNX) | es fr it pt ja zh (the original six) |
 | Chatterbox Multilingual V3 | de ru nl tr sv ar pl hi el ko la (Italian model) ind (Malay model) |
 | Microsoft Edge neural (edge-tts, keyless) | yue vi eng |
-| espeak-ng `gd` voice (`--backend espeak`, sc read as sg; 155 wpm, pitch 45) | rod (Ròdais) |
+| espeak-ng `gd` voice (`--backend espeak`, sc read as sg; 155 wpm, pitch 45) | gr (Ròdais) |
 
 Staging folders `staging_cbx_<lang>/` and `staging_edge_<lang>/` and the `gen_*.log` files can be deleted;
 everything is in `audio/`. Every LANG_META audio flag in build.py is True (plus `LANG_META.eng.audio` in
