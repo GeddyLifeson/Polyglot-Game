@@ -33,13 +33,19 @@ def load_content():
         m = re.search(r'var ' + name + r' = (\[.*?\n  \]);', h, re.S)
         return json.loads(m.group(1))
     m = re.search(r'var LANG_META = (\{.*?\});\n', h)
-    return json.loads(m.group(1)), block('VOCAB_RAW'), block('BUILD_SENTENCES'), block('GRAMMAR_ITEMS'), block('IDIOMS'), block('NUANCE'), block('DIALOGUES')
+    return (json.loads(m.group(1)), block('VOCAB_RAW'), block('BUILD_SENTENCES'), block('GRAMMAR_ITEMS'), block('IDIOMS'), block('NUANCE'),
+            block('DIALOGUES'), block('STORIES'))
+
+# Library stories get one line per sentence; index.html's pronSentences() splits with the same pattern
+SENT_RE = re.compile(r'[^.!?。！？؟।]+(?:[.!?。！？؟।]+["”»」』’)]*)?')
+def sentences(text):
+    return [x.strip() for x in SENT_RE.findall(text) if re.search(r'[^\W\d_]', x)]
 
 CORE = ['es', 'fr', 'it', 'pt', 'ja', 'zh']
 
 def collect():
     """lang -> {text: reading-or-None}: every string shown as a target-language word/phrase/option."""
-    meta, V, S, G, I, N, D = load_content()
+    meta, V, S, G, I, N, D, ST = load_content()
     langs = list(meta.keys()) + ['eng']
     items = {l: {} for l in langs}
     def add(l, t, r=None):
@@ -67,6 +73,13 @@ def collect():
         for o in g['options']: add(g['lang'], o, rom.get(o) if isinstance(rom, dict) else None)
     for i in I:
         add(i['lang'], i['phrase'], i.get('romaji') if isinstance(i.get('romaji'), str) else None)
+    for st in ST:
+        sides = dict(st.get('xl') or {})
+        if not st.get('only'): sides['eng'] = {'title': st['title'], 'paras': st['paras']}
+        for l, tx in sides.items():
+            if l not in items: continue
+            for t in [tx.get('title') or ''] + list(tx.get('paras') or []):
+                for x in sentences(t): add(l, x)
     return items
 
 # ---------------------------------------------------------------- espeak-ng through ctypes
@@ -260,12 +273,14 @@ def kata2hira(s):
     return ''.join(chr(ord(c) - 0x60) if 'ァ' <= c <= 'ヶ' else c for c in s)
 
 def ja_ipa(text):
-    t = re.sub(r'\{([^|}]*)\|([^}]*)\}(は(?=$|[、。！？!?\s」）)]))?', lambda m: m.group(2) + ('ワ' if m.group(3) else ''), text)
+    text = re.sub(r'は(?=\{)', '\x01', text)                  # は right before a kanji word ends a phrase: topic particle
+    t = re.sub(r'\{([^|}]*)\|([^}]*)\}(は)?', lambda m: m.group(2) + ('ワ' if m.group(3) else ''), text)
     t = t.replace('ワ', '\x01')
     t = re.sub(r'[（(][^）)]*[）)]', '', t)
     t = kata2hira(t).replace('\x01', 'わ')
     # topic particle は / direction へ at the end of a phrase
-    t = re.sub(r'(?<=[でにとも])は(?=$|[、。！？!?\s])', 'わ', t)
+    t = re.sub(r'(?<=[でにとの])は', 'わ', t)
+    t = re.sub(r'(?<=も)は(?=$|[、。！？!?\s])', 'わ', t)
     t = re.sub(r'(?<=[ちば])は$', 'わ', t)          # こんにちは, こんばんは
     words = re.split(r'[\s、。！？!?「」『』・〜~…]+', t)
     out = []

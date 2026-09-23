@@ -383,6 +383,10 @@
   .a-sub.pron, .pl-pron, .pb-pron{ font-family:inherit; letter-spacing:.02em; }
   .pl-pron{ font-size:13px; color:var(--paper-faint); font-weight:400; margin-top:4px; }
   .pb-pron{ font-size:10.5px; color:var(--paper-faint); }
+  .tile-pron{ display:block; font-size:10px; color:var(--paper-faint); line-height:1.3; }
+  .ic-r{ ruby-position:under; } .ic-r rt.pron{ font-size:.62em; color:var(--paper-faint); }
+  .story-pron{ margin:6px 0 2px; } .sp-line{ font-size:12.5px; color:var(--paper-faint); line-height:1.5; font-style:normal; }
+  .story-pron[hidden]{ display:none; }
   .answer-btn .a-key{ font-family:var(--font-mono); font-size:10.5px; color:var(--paper-faint); margin-left:auto; flex:none; }
   .answer-btn:hover:not([disabled]){ border-color:var(--brass-dim); transform:translateY(-1px); }
   .answer-btn:focus-visible{ outline:2px solid var(--brass); outline-offset:2px; }
@@ -7659,7 +7663,18 @@
         return eng(W, src);
       }catch(e){ return ''; }
     }
-    function ipaOf(lang, text){ var d = DATA[lang]; return d ? (d[text] || null) : null; }
+    /* a text may be several pieces joined with SEP (sentence-builder tiles): their IPA is joined in order */
+    var SEP = '␞';
+    function ipaOf(lang, text){
+      var d = DATA[lang]; if(!d) return null;
+      if(text.indexOf(SEP)===-1) return d[text] || null;
+      var parts = text.split(SEP).map(function(p){ return d[p] || null; });
+      return parts.every(Boolean) ? parts.join(' ') : null;
+    }
+    /* Library paragraphs get one line per sentence; tools/gen_pron.py splits with the same pattern */
+    function sentences(text){
+      return (String(text).match(/[^.!?。！？؟।]+(?:[.!?。！？؟।]+["”»」』’)]*)?/g) || []).map(function(x){ return x.trim(); }).filter(function(x){ return /\p{L}/u.test(x); });
+    }
     function load(lang){
       if(DATA[lang] || PENDING[lang] || typeof fetch!=='function') return;
       var base = (window.PRON_BASE || 'pron/').replace(/\/?$/, '/');
@@ -7672,7 +7687,7 @@
       }catch(e){ PENDING[lang] = false; }
     }
     return {
-      parse: parse, respell: respell, ipa: ipaOf, load: load, data: DATA, engines: ENGINES,
+      parse: parse, respell: respell, ipa: ipaOf, load: load, data: DATA, engines: ENGINES, SEP: SEP, sentences: sentences,
       onload: function(f){ listeners.push(f); },
       /* the reading line under a target-language word: native-script respelling; with "show IPA" on, also the
          original reading (pinyin / Jyutping / romanization) and the IPA */
@@ -7692,9 +7707,20 @@
      fill in when their language's pron file arrives and redraw when the IPA toggle changes. */
   function pronLine(lang, text, reading){ return PRON.line(lang, text, reading || null, nativeLang(), !!save.showIpa); }
   function pronAttr(s){ return String(s==null ? '' : s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/\{/g,'&#123;').replace(/\|/g,'&#124;'); }
-  function pronHtml(lang, text, reading, cls){
-    var t = pronLine(lang, text, reading);
-    return '<div class="'+(cls||'a-sub')+' pron" dir="auto" data-pl="'+pronAttr(lang)+'" data-pt="'+pronAttr(text)+'" data-pr="'+pronAttr(reading||'')+'">'+pronAttr(t)+'</div>';
+  function pronHtml(lang, text, reading, cls, tag){
+    var t = pronLine(lang, text, reading); tag = tag || 'div';
+    return '<'+tag+' class="'+(cls||'a-sub')+' pron" dir="auto" data-pl="'+pronAttr(lang)+'" data-pt="'+pronAttr(text)+'" data-pr="'+pronAttr(reading||'')+'">'+pronAttr(t)+'</'+tag+'>';
+  }
+  /* a Library paragraph: one reading line per sentence, shown by the 🗣️ button */
+  function pronParaHtml(lang, text){
+    return '<div class="story-pron" hidden>'+PRON.sentences(text).map(function(x){ return pronHtml(lang, x, null, 'sp-line'); }).join('')+'</div>';
+  }
+  /* the reading line of a whole answer (listening reveal, rebuilt sentence, filled gap) on the ticket */
+  function pronReveal(pr){
+    if(!pr) return;
+    ['data-pl','data-pt','data-pr','data-px'].forEach(function(a){ el.plRomaji.removeAttribute(a); });
+    el.plRomaji.setAttribute('data-pl', pr[0]); el.plRomaji.setAttribute('data-pt', pr[1]); el.plRomaji.setAttribute('data-pr', pr[2]||'');
+    el.plRomaji.dir = 'auto'; pronFill(el.plRomaji);
   }
   function pronFill(e){
     var t = pronLine(e.getAttribute('data-pl'), e.getAttribute('data-pt'), e.getAttribute('data-pr'));
@@ -8373,7 +8399,7 @@
     if(!text.trim()){ toast(_t('📰 Paste some {lang} text first.', {lang:LANGS[lang].name})); return; }
     var a = interceptAnalyze(text, lang);
     var known = a.ids.filter(function(id){ return learnedSet.has(id+':'+lang); }); var todo = a.ids.filter(function(id){ return !learnedSet.has(id+':'+lang); });
-    var html = a.tokens.map(function(t){ if(!t.id) return t.t.replace(/</g,'&lt;'); var cls = learnedSet.has(t.id+':'+lang) ? 'ic-known' : 'ic-ladder'; return '<span class="'+cls+'" title="'+ITEM[t.id].en.replace(/"/g,'')+'">'+t.t.replace(/</g,'&lt;')+'</span>'; }).join('');
+    var html = a.tokens.map(function(t){ if(!t.id) return t.t.replace(/</g,'&lt;'); var cls = learnedSet.has(t.id+':'+lang) ? 'ic-known' : 'ic-ladder'; var w = ITEM[t.id][lang]; return '<span class="'+cls+'" title="'+ITEM[t.id].en.replace(/"/g,'')+'"><ruby class="ic-r">'+t.t.replace(/</g,'&lt;')+(w ? pronHtml(lang, w.t, w.r, 'ic-pron', 'rt') : '')+'</ruby></span>'; }).join('');
     document.getElementById('ic-result').innerHTML = '<div class="ic-text">'+html+'</div><div class="ic-stats">'+_t('{n} ladder words in this text', {n:a.ids.length})+' · <span class="ic-known">'+_t('{n} decoded', {n:known.length})+'</span> · <span class="ic-ladder">'+_t('{n} not yet', {n:todo.length})+'</span></div>';
     var act = document.getElementById('ic-actions'); act.innerHTML = '';
     if(todo.length){
@@ -8449,7 +8475,7 @@
     st.story = {id:id, lang:lang, mode:M.id, pos:0, answered:{}, right:0};
     var body = document.getElementById('story-body'), act = document.getElementById('story-actions');
     var natNote = (nativeLang()!=='en' && !storyText(story, nativeLang())) ? '<div class="story-meta">'+_t('This tale has no {lang} text yet, so the English side is used.', {lang:nativeName()})+'</div>' : '';
-    body.innerHTML = '<div class="story-read"><div class="story-head"><span class="story-tier">'+story.tier+' · '+LANG_META[lang].flag+' '+LANGS[lang].name+' · '+M.icon+' '+M.name+'</span><h3 style="margin:0;">'+furi(esc(tx.title))+'</h3></div>'+natNote+'<div id="story-flow"></div></div>';
+    body.innerHTML = '<div class="story-read"><div class="story-head"><span class="story-tier">'+story.tier+' · '+LANG_META[lang].flag+' '+LANGS[lang].name+' · '+M.icon+' '+M.name+'</span><h3 style="margin:0;">'+furi(esc(tx.title))+'</h3>'+PRON.sentences(tx.title).map(function(x){ return pronHtml(lang, x, null, 'sp-line'); }).join('')+'</div>'+natNote+'<div id="story-flow"></div></div>';
     act.innerHTML = '<button class="btn btn-ghost" id="btn-story-list">'+_t('← Library')+'</button>';
     document.getElementById('btn-story-list').addEventListener('click', showStories);
     storyNext();
@@ -8463,12 +8489,14 @@
     if(S.mode!=='read'){ storyTypedStep(story, tx, i, flow); return; }
     var nat = storyNative(story);
     var para = document.createElement('div'); para.className = 'story-para'+(isCjkLang(S.lang)?' cjk':''); para.setAttribute('lang', SPEECH_LANG[S.lang]||S.lang);
-    para.innerHTML = storyParaHtml(text, S.lang)+'<div class="en">'+furi(esc(nat.paras[i]))+'</div>';
+    para.innerHTML = storyParaHtml(text, S.lang)+pronParaHtml(S.lang, text)+'<div class="en">'+furi(esc(nat.paras[i]))+'</div>';
     para.addEventListener('click', function(){ para.classList.toggle('open'); });
     flow.appendChild(para);
     var tools = document.createElement('div'); tools.className = 'story-tools';
-    tools.innerHTML = '<button class="btn btn-sm btn-ghost story-say" title="'+_t('Hear this paragraph')+'">🔊</button>';
+    tools.innerHTML = '<button class="btn btn-sm btn-ghost story-pron-btn" title="'+_t('Show how to pronounce it')+'">🗣️</button> <button class="btn btn-sm btn-ghost story-say" title="'+_t('Hear this paragraph')+'">🔊</button>';
     tools.querySelector('.story-say').addEventListener('click', function(){ speakText(text, S.lang, true); });
+    tools.querySelector('.story-pron-btn').addEventListener('click', function(){ var pb = para.querySelector('.story-pron'); save.storyPron = pb.hidden; persist(); pb.hidden = !pb.hidden; });
+    if(save.storyPron) para.querySelector('.story-pron').hidden = false;
     flow.appendChild(tools);
     var q = story.questions.filter(function(q){ return q.after===i; })[0];
     S.pos++;
@@ -8500,7 +8528,7 @@
       ta.disabled = true; this.disabled = true;
       var pct = Math.round(sim*100);
       box.querySelector('.story-result').innerHTML = '<div class="story-verdict">'+(ok ? _t('✅ Close enough · {p}% match', {p:pct}) : _t('❌ {p}% match', {p:pct}))+'</div>'+
-        '<div class="story-ref"><b>'+_t('Reference:')+'</b> '+furi(esc(ref))+(S.mode==='dictate' || S.mode==='interpret' ? '<br><b>'+_t('Meaning:')+'</b> '+furi(esc(S.mode==='interpret' ? target : nat.paras[i])) : '')+'</div>'+
+        '<div class="story-ref"><b>'+_t('Reference:')+'</b> '+furi(esc(ref))+(S.mode==='dictate' || S.mode==='interpret' ? '<br><b>'+_t('Meaning:')+'</b> '+furi(esc(S.mode==='interpret' ? target : nat.paras[i])) : '')+'</div>'+pronParaHtml(S.lang, target).replace(' hidden>', '>')+
         '<div class="story-tools"><button class="btn btn-sm btn-primary story-more">'+(S.pos+1>=7?_t('Finish'):_t('Continue ▸'))+'</button></div>';
       box.querySelector('.story-more').addEventListener('click', function(){ S.pos++; storyNext(); });
     });
@@ -9606,7 +9634,8 @@
     return {
       uiMode:'buttons', kind:'listen', conceptId:item.id, lang:lang, clipKey:item.id+':'+lang, spoken:text, pool:pool,
       main:'🎧', mainClass:'is-listen', sub:_t('Decode the spoken transmission'),
-      time: roundTime(tier, 'listen'), options: opts, note:null, reveal:text
+      time: roundTime(tier, 'listen'), options: opts, note:null, reveal:text,
+      revealPr: [lang, (item.es && Array.isArray(item[lang])) ? item[lang].join(PRON.SEP) : Array.isArray(item[lang]) ? item[lang][0] : text]
     };
   }
 
@@ -9652,7 +9681,7 @@
     var gap =tiles.map(function(t, i){ return i===bi ? '____' : t; }).join(joiner);
     return {
       uiMode:'buttons', kind:'cloze', lang:lang, sentenceId:s.id, clipKey:s.id+':'+lang, main:gap, mainClass:'is-sentence',
-      sub:'“'+s.en+'” — '+_t('fill the gap'), time: roundTime(tier, 'cloze'), options: opts, note: s.note, reveal: tiles.join(joiner), silent:true
+      sub:'“'+s.en+'” — '+_t('fill the gap'), time: roundTime(tier, 'cloze'), options: opts, note: s.note, reveal: tiles.join(joiner), revealPr: [lang, tiles.join(PRON.SEP)], silent:true
     };
   }
   function blankRound(g, tier){
@@ -9801,6 +9830,7 @@
     st.roundTiles = shuffle(st.roundTiles);
     st.placed = [];
     st.round.correctLen = correctTiles.length;
+    st.round.revealPr = [lang, correctTiles.join(PRON.SEP)];
     drawBuilder();
   }
   function drawBuilder(){
@@ -9808,7 +9838,7 @@
     el.plSlots.innerHTML = '';
     st.placed.forEach(function(idx){
       var b = document.createElement('button');
-      b.className='tile'; b.type='button'; b.innerHTML = furi(byIdx[idx]);
+      b.className='tile'; b.type='button'; b.innerHTML = furi(byIdx[idx])+pronHtml(st.round.lang, byIdx[idx], null, 'tile-pron', 'span');
       b.addEventListener('click', function(){
         speakText(byIdx[idx], st.round.lang, false, tileClipKey(byIdx[idx], st.round.lang));
         var i = st.placed.indexOf(idx);
@@ -9820,7 +9850,7 @@
     st.roundTiles.forEach(function(t){
       if(st.placed.indexOf(t.idx)!==-1) return;
       var b = document.createElement('button');
-      b.className='tile'; b.type='button'; b.innerHTML = furi(t.text);
+      b.className='tile'; b.type='button'; b.innerHTML = furi(t.text)+pronHtml(st.round.lang, t.text, null, 'tile-pron', 'span');
       b.addEventListener('click', function(){ speakText(t.text, st.round.lang, false, tileClipKey(t.text, st.round.lang)); st.placed.push(t.idx); drawBuilder(); });
       el.plBank.appendChild(b);
     });
@@ -9849,6 +9879,7 @@
       el.plWord.innerHTML = furi(round.reveal);
       el.btnReplay.hidden = true;
     }
+    if(round.revealPr) pronReveal(round.revealPr);
 
     var tier = TIERS[st.tierIdx];
     var shielded = false, held = false, echoed = false;

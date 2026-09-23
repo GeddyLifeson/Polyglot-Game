@@ -11,6 +11,7 @@ function log(label, ok, extra) {
 }
 const BASE = (process.env.QA_URL || 'http://localhost:8000') + '/qa/hub-qa-wrapped.html';
 const SHOTS = process.env.SHOT_DIR || '.';
+const FULL = ['en', 'ja', 'ko', 'ar', 'zh'];   // natives also walked through builder tiles, listening, Library and Intercept
 const SCRIPT = {
   en: /^[A-Za-z' -]+$/, ja: /^[゠-ヿ・ー]+$/, ko: /^[가-힣 ]+$/, ar: /^[؀-ۿ ]+$/, ru: /^[Ѐ-ӿ́ ]+$/,
   el: /^[Ͱ-Ͽἀ-῿ ]+$/, hi: /^[ऀ-ॿ ]+$/, zh: /^[a-zü -]+$/, yue: /^[a-z -]+$/,
@@ -65,6 +66,50 @@ const CASES = [['en', ['ru', 'zh']], ['ja', ['ru', 'es']], ['ko', ['fr', 'ja']],
     log(nat + ': IPA toggle adds the IPA', /\/.+\//.test(withIpa), withIpa);
     await page.screenshot({ path: path.join(SHOTS, 'pron_' + nat + '_' + langs[0] + '_ipa.png') });
     await page.evaluate(() => { window.__QA.save.showIpa = false; window.__QA.pronRefresh(); });
+
+    if (FULL.indexOf(nat) !== -1) {
+      const L = langs[0];
+      const start = async (tierIdx, topic) => {
+        await page.evaluate(([t, l, k]) => window.__QA.enterDungeon(t, l, k), [tierIdx, L, topic]); await page.waitForTimeout(150);
+        await page.click('#btn-start'); await page.waitForTimeout(150);
+        const pk = await page.$('#btn-skip-perk'); if (pk && await pk.isVisible()) { await pk.click(); await page.waitForTimeout(300); }
+      };
+      // sentence-builder tiles carry their own line; the rebuilt sentence gets one after submitting
+      await start(2, 'build-daily-routine');
+      const tiles = await page.$$eval('#pl-bank .tile .tile-pron', els => els.map(e => e.textContent));
+      log(nat + '←' + L + ': builder tiles show a reading line', tiles.length > 1 && tiles.every(Boolean), tiles);
+      await page.screenshot({ path: path.join(SHOTS, 'pron_' + nat + '_tiles.png') });
+      await page.evaluate(() => { const Q = window.__QA; Q.st.placed = Q.st.roundTiles.map(t => t.idx).sort((a, b) => a - b); });
+      await page.evaluate(() => document.getElementById('btn-submit-tiles').disabled = false);
+      await page.click('#btn-submit-tiles'); await page.waitForTimeout(200);
+      const built = await page.evaluate(() => ({ pl: document.getElementById('pl-romaji').getAttribute('data-pl'), line: document.getElementById('pl-romaji').textContent }));
+      log(nat + '←' + L + ': rebuilt sentence gets a reading line', !!built.pl && built.line.length > 3, built);
+      await page.waitForTimeout(900);
+      // listening: the line appears with the revealed text
+      await page.evaluate(() => { window.__QA.save.muted = false; });
+      await start(0, 'listen-first-words');
+      const ck = await page.evaluate(() => window.__QA.st.round.options.findIndex(o => o.correct));
+      const bt = await page.$$('#pl-answers .answer-btn'); await bt[ck].click(); await page.waitForTimeout(200);
+      const lr = await page.evaluate(() => ({ word: document.getElementById('pl-word').textContent, line: document.getElementById('pl-romaji').textContent, hidden: document.getElementById('pl-romaji').hidden }));
+      log(nat + '←' + L + ': listening reveal shows a reading line', !lr.hidden && lr.line.length > 0 && lr.word !== '🎧', lr);
+      await page.screenshot({ path: path.join(SHOTS, 'pron_' + nat + '_listen.png') });
+      await page.waitForTimeout(900);
+      // Library: 🗣️ opens one line per sentence
+      const sid = await page.evaluate((l) => (window.__QA.STORIES.find(s => !s.only && s.xl && s.xl[l]) || {}).id, L);
+      await page.evaluate(([id, l]) => window.__QA.startStory(id, l, 'read'), [sid, L]); await page.waitForTimeout(200);
+      await page.click('.story-pron-btn'); await page.waitForTimeout(100);
+      const sp = await page.$$eval('.story-para .story-pron .sp-line', els => els.map(e => e.textContent));
+      log(nat + '←' + L + ': story paragraph shows a line per sentence', sp.length > 0 && sp.every(Boolean), sp.slice(0, 3));
+      await page.screenshot({ path: path.join(SHOTS, 'pron_' + nat + '_story.png') });
+      // Signal Intercept: ladder words carry a reading under them
+      const sample = await page.evaluate((l) => window.__QA.CONCEPTS.filter(c => c[l]).slice(0, 5).map(c => c[l].t.replace(/\{([^|}]*)\|[^}]*\}/g, '$1')).join(l === 'ja' || l === 'zh' || l === 'yue' ? '、' : ', '), L);
+      await page.evaluate(() => window.__QA.showIntercept());
+      await page.selectOption('#ic-lang', L); await page.fill('#ic-text', sample);
+      await page.evaluate(() => window.__QA.interceptRun()); await page.waitForTimeout(150);
+      const ic = await page.$$eval('#ic-result rt.pron', els => els.map(e => e.textContent));
+      log(nat + '←' + L + ': Signal Intercept words carry a reading', ic.length >= 3 && ic.every(Boolean), ic);
+      await page.screenshot({ path: path.join(SHOTS, 'pron_' + nat + '_intercept.png') });
+    }
     await ctx.close();
   }
 
