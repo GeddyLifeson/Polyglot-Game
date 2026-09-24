@@ -4786,5 +4786,233 @@
     "Rằng thói quen tốt hơn sự mới lạ"
    ]
   }
+ ],
+ "fk-gr-01": [
+  {
+   "q": "Vào một đêm trăng sáng, người đánh cá đã thấy gì trên bờ biển?",
+   "options": [
+    "Những con hải cẩu tranh nhau cá",
+    "Những thiếu nữ nhảy múa, với những bộ da hải cẩu trên đá",
+    "Một chiếc thuyền trôi dạt lên cát",
+    "Hàng xóm của anh đang vá lưới"
+   ]
+  },
+  {
+   "q": "Chiều nào người vợ cũng làm gì?",
+   "options": [
+    "Nàng hát cho lũ trẻ nghe",
+    "Nàng vá lưới đánh cá",
+    "Nàng đứng ở cửa nhìn ra biển",
+    "Nàng đi bộ ra bến cảng"
+   ]
+  },
+  {
+   "q": "Ai đã tìm thấy tấm da bị giấu?",
+   "options": [
+    "Người đánh cá",
+    "Một người hàng xóm",
+    "Người con trai cả",
+    "Cô con gái út"
+   ]
+  },
+  {
+   "q": "Người dân Ceann Dubh đã nói gì sau khi nàng ra đi?",
+   "options": [
+    "Người đánh cá đã dọn đi nơi khác",
+    "Một con hải cẩu xám to lớn dõi theo lũ trẻ và lưới lúc nào cũng đầy",
+    "Mùa xuân nào nàng cũng trở về",
+    "Biển không cho cá nữa"
+   ]
+  }
+ ],
+ "fk-gr-02": [
+  {
+   "q": "Người đầu tiên nếm con cá hồi sẽ nhận được gì?",
+   "options": [
+    "Sức mạnh phi thường",
+    "Sống lâu",
+    "Hiểu biết về mọi điều đã có và sẽ đến",
+    "Một vương quốc"
+   ]
+  },
+  {
+   "q": "Nhà thơ đã dặn Fionn điều gì khi đưa con cá hồi cho cậu?",
+   "options": [
+    "Đem bán nó ở chợ",
+    "Nướng nó nhưng không được nếm",
+    "Thả nó về sông",
+    "Chia nó cho cả đảo"
+   ]
+  },
+  {
+   "q": "Fionn đã nếm con cá hồi như thế nào?",
+   "options": [
+    "Cậu ăn một miếng khi nhà thơ đi vắng",
+    "Cậu bị bỏng ngón tay cái vì bọng nước trên da cá và đưa nó lên miệng",
+    "Nhà thơ cho cậu cái đầu cá",
+    "Cậu uống nước luộc cá"
+   ]
+  },
+  {
+   "q": "Mỗi khi Fionn đặt ngón tay cái dưới răng thì điều gì xảy ra?",
+   "options": [
+    "Trí tuệ của thế gian đến với cậu",
+    "Cậu có thể nói chuyện với cá",
+    "Ngón tay cái của cậu lành lại",
+    "Cậu ngủ thiếp đi"
+   ]
+  }
+ ],
+ "fk-gr-03": [
+  {
+   "q": "Con ngựa nước bước lên khỏi hồ trong hình dạng gì?",
+   "options": [
+    "Một con bò mộng đen",
+    "Một con ngựa trắng tuyệt đẹp với rong biển trong bờm",
+    "Một ông lão",
+    "Một con hải cẩu xám"
+   ]
+  },
+  {
+   "q": "Điều gì xảy ra với con ngựa khi lũ trẻ trèo lên?",
+   "options": [
+    "Nó quỳ xuống",
+    "Nó mọc cánh",
+    "Lưng nó dài thêm ra",
+    "Nó bắt đầu thu nhỏ lại"
+   ]
+  },
+  {
+   "q": "Cậu bé thứ bảy đã thoát thân bằng cách nào?",
+   "options": [
+    "Cậu nhảy xuống hồ và bơi đi",
+    "Cậu gọi bà mình",
+    "Cậu tự cắt đứt ngón tay của mình",
+    "Cậu lừa con ngựa ngủ thiếp đi"
+   ]
+  },
+  {
+   "q": "Các bà mẹ ở Loch Dubh dặn con mình điều gì?",
+   "options": [
+    "Đừng bao giờ bơi trong hồ",
+    "Hãy nhìn bờm và chân của con ngựa lạ",
+    "Lúc nào cũng mang theo dao",
+    "Ở nhà vào những buổi chiều hè"
+   ]
+  }
+ ],
+ "fk-gr-04": [
+  {
+   "q": "Theo câu chuyện, tổ tiên của người Tuathaich là ai?",
+   "options": [
+    "Những ông chủ của Công ty",
+    "Những người làm thuê và khai hoang vượt biển đến trên các con tàu",
+    "Những Người Xưa",
+    "Những người Dia-thìrich từ chối than"
+   ]
+  },
+  {
+   "q": "Chuyến đi lên phương bắc diễn ra thế nào?",
+   "options": [
+    "Họ bị tấn công trên đường",
+    "Họ đi thuyền vòng quanh bờ biển",
+    "Không ai đánh họ, nhưng cũng không ai cho họ nước",
+    "Người Dia-thìrich đi cùng để giúp họ"
+   ]
+  },
+  {
+   "q": "Tổ tiên họ đã giữ lại điều gì ở phương bắc?",
+   "options": [
+    "Một vị vua của riêng họ",
+    "Giáo hội mà họ đã mang qua biển",
+    "Những cái tên mới cho mọi thị trấn",
+    "Dòng máu than"
+   ]
+  },
+  {
+   "q": "Các cụ già nói gì với lũ trẻ?",
+   "options": [
+    "Rằng một ngày nào đó họ sẽ vượt biển trở về",
+    "Rằng họ bị đuổi lên phương bắc, nhưng chính họ đã biến nơi đó thành nhà",
+    "Rằng dòng máu than sẽ thức tỉnh trong họ",
+    "Rằng nhà vua sẽ gọi họ về phương nam"
+   ]
+  }
+ ],
+ "fk-gr-05": [
+  {
+   "q": "Theo câu chuyện, Những Người Xưa có thể làm gì?",
+   "options": [
+    "Viết bằng một thứ chữ bí mật",
+    "Gọi hải cẩu bằng một bài hát",
+    "Biến đá thành bánh mì",
+    "Nói được mọi thứ tiếng"
+   ]
+  },
+  {
+   "q": "Vì sao Những Người Xưa quyết định ra đi?",
+   "options": [
+    "Bọn cướp tấn công các thị trấn của họ",
+    "Lúa mất mùa, cá trích không quay về, và hòn đảo dường như đã mỏi mệt vì họ",
+    "Một vị vua ra lệnh đuổi họ đi",
+    "Các thị trấn của họ sụp xuống biển"
+   ]
+  },
+  {
+   "q": "Người đời sau tìm thấy gì từ chuyến ra khơi của Những Người Xưa?",
+   "options": [
+    "Xác thuyền trên bờ biển phía tây",
+    "Một ngôi mộ duy nhất",
+    "Hoàn toàn không có gì: không ván thuyền, không mộ, không bia tưởng niệm",
+    "Thuyền của họ trong một hang động"
+   ]
+  },
+  {
+   "q": "Vì sao các thị trấn cũ có chữ \"Seann\" đứng trước tên?",
+   "options": [
+    "Người Dia-thìrich giữ những cái tên gió hát và thêm một từ để tỏ lòng tôn kính",
+    "Những Người Xưa đã đặt tên như vậy",
+    "Một vị vua đã đổi tên chúng",
+    "Để phân biệt với những thị trấn mới cùng tên"
+   ]
+  }
+ ],
+ "fk-gr-06": [
+  {
+   "q": "Ai là người duy nhất dám lên ngọn đồi bốc khói?",
+   "options": [
+    "Nhà vua",
+    "Người thợ rèn",
+    "Bọn cướp",
+    "Lũ trẻ"
+   ]
+  },
+  {
+   "q": "Điều gì khiến người thợ rèn leo lên đồi đêm ấy?",
+   "options": [
+    "Ông muốn có vàng",
+    "Đứa con trai út của ông sắp chết vì lạnh",
+    "Bọn cướp đã đốt lò rèn của ông",
+    "Một giọng nói đã gọi ông"
+   ]
+  },
+  {
+   "q": "Ngọn lửa đòi cái giá gì cho món quà của nó?",
+   "options": [
+    "Chính mạng sống của người thợ rèn",
+    "Những ai mang hơi nóng của nó sẽ mắc nợ nó chừng nào còn than",
+    "Mỗi năm cống nạp sắt",
+    "Cây búa của người thợ rèn"
+   ]
+  },
+  {
+   "q": "Ngày nay vẫn có người đặt câu hỏi gì về dòng máu than?",
+   "options": [
+    "Người thợ rèn có thật sự từng sống hay không",
+    "Những món nợ đã bao giờ được trả chưa, và ai đã trả",
+    "Ngọn lửa đã đi đâu",
+    "Vì sao ngọn đồi có màu đỏ"
+   ]
+  }
  ]
 }

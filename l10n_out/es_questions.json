@@ -4786,5 +4786,233 @@
     "Que la rutina es superior a la novedad"
    ]
   }
+ ],
+ "fk-gr-01": [
+  {
+   "q": "¿Qué vio el pescador en la orilla una noche de luna?",
+   "options": [
+    "Focas peleándose por el pescado",
+    "Muchachas bailando, con pieles de foca sobre las rocas",
+    "Una barca varada en la arena",
+    "A sus vecinos remendando redes"
+   ]
+  },
+  {
+   "q": "¿Qué hacía la esposa cada tarde?",
+   "options": [
+    "Les cantaba a los niños",
+    "Remendaba la red de pesca",
+    "Se quedaba en la puerta mirando el mar",
+    "Caminaba hasta el puerto"
+   ]
+  },
+  {
+   "q": "¿Quién encontró la piel escondida?",
+   "options": [
+    "El pescador",
+    "Un vecino",
+    "El hijo mayor",
+    "La hija menor"
+   ]
+  },
+  {
+   "q": "¿Qué decía la gente de Ceann Dubh después de que ella se fue?",
+   "options": [
+    "Que el pescador se mudó",
+    "Que una gran foca gris vigilaba a los niños y la red siempre estaba llena",
+    "Que ella volvía cada primavera",
+    "Que el mar ya no daba pescado"
+   ]
+  }
+ ],
+ "fk-gr-02": [
+  {
+   "q": "¿Qué obtendría la primera persona que probara el salmón?",
+   "options": [
+    "Una gran fuerza",
+    "Una larga vida",
+    "El conocimiento de todo lo que fue y sería",
+    "Un reino"
+   ]
+  },
+  {
+   "q": "¿Qué le dijo el poeta a Fionn al darle el salmón?",
+   "options": [
+    "Que lo vendiera en el mercado",
+    "Que lo asara pero no lo probara",
+    "Que lo soltara en el río",
+    "Que lo compartiera con la isla"
+   ]
+  },
+  {
+   "q": "¿Cómo llegó Fionn a probar el salmón?",
+   "options": [
+    "Se comió un trozo cuando el poeta no estaba",
+    "Se quemó el pulgar con una ampolla y se lo llevó a la boca",
+    "El poeta le dio la cabeza",
+    "Se bebió el agua en que se había cocido"
+   ]
+  },
+  {
+   "q": "¿Qué pasaba cada vez que Fionn se ponía el pulgar bajo el diente?",
+   "options": [
+    "Le llegaba la sabiduría del mundo",
+    "Podía hablar con los peces",
+    "Se le curaba el pulgar",
+    "Se quedaba dormido"
+   ]
+  }
+ ],
+ "fk-gr-03": [
+  {
+   "q": "¿Con qué forma salía del lago el caballo de agua?",
+   "options": [
+    "Un toro negro",
+    "Un hermoso caballo blanco con algas en la crin",
+    "Un anciano",
+    "Una foca gris"
+   ]
+  },
+  {
+   "q": "¿Qué le pasaba al caballo a medida que subían los niños?",
+   "options": [
+    "Se arrodillaba",
+    "Le salían alas",
+    "Se le alargaba el lomo",
+    "Empezaba a encogerse"
+   ]
+  },
+  {
+   "q": "¿Cómo escapó el séptimo niño?",
+   "options": [
+    "Saltó al lago y se fue nadando",
+    "Llamó a su abuela",
+    "Se cortó su propio dedo",
+    "Engañó al caballo para que se durmiera"
+   ]
+  },
+  {
+   "q": "¿Qué les dicen las madres de Loch Dubh a sus hijos?",
+   "options": [
+    "Que nunca naden en el lago",
+    "Que miren la crin y las patas de un caballo que no conocen",
+    "Que lleven siempre una navaja",
+    "Que se queden en casa las tardes de verano"
+   ]
+  }
+ ],
+ "fk-gr-04": [
+  {
+   "q": "Según el cuento, ¿quiénes eran los antepasados de los Tuathaich?",
+   "options": [
+    "Los amos de la Compañía",
+    "Jornaleros y colonos que llegaron por mar en los barcos",
+    "Los Antiguos",
+    "Dia-thìrich que rechazaron el carbón"
+   ]
+  },
+  {
+   "q": "¿Cómo fue el viaje hacia el norte?",
+   "options": [
+    "Los atacaron en el camino",
+    "Navegaron bordeando la costa",
+    "Nadie les pegó, pero nadie les dio agua tampoco",
+    "Los Dia-thìrich caminaron con ellos para ayudarlos"
+   ]
+  },
+  {
+   "q": "¿Qué conservaron los antepasados en el norte?",
+   "options": [
+    "Un rey propio",
+    "La Iglesia que habían traído por mar",
+    "Nombres nuevos para cada pueblo",
+    "La sangre de carbón"
+   ]
+  },
+  {
+   "q": "¿Qué les dicen los viejos a los niños?",
+   "options": [
+    "Que algún día volverán por mar",
+    "Que los mandaron al norte, pero ellos mismos hicieron de él un hogar",
+    "Que la sangre de carbón despertará en ellos",
+    "Que el rey los llamará al sur"
+   ]
+  }
+ ],
+ "fk-gr-05": [
+  {
+   "q": "Según el cuento, ¿qué sabían hacer los Antiguos?",
+   "options": [
+    "Escribir con una escritura secreta",
+    "Llamar a las focas con una canción",
+    "Convertir la piedra en pan",
+    "Hablar todas las lenguas"
+   ]
+  },
+  {
+   "q": "¿Por qué decidieron marcharse los Antiguos?",
+   "options": [
+    "Unos saqueadores atacaron sus pueblos",
+    "El grano no creció y el arenque no volvió, y la isla parecía cansada de ellos",
+    "Un rey les ordenó irse",
+    "Sus pueblos se hundieron en el mar"
+   ]
+  },
+  {
+   "q": "¿Qué encontraron los que llegaron después del viaje de los Antiguos?",
+   "options": [
+    "Restos de naufragio en la costa oeste",
+    "Una sola tumba",
+    "Nada en absoluto: ni una tabla, ni una tumba, ni una piedra conmemorativa",
+    "Sus barcas en una cueva"
+   ]
+  },
+  {
+   "q": "¿Por qué los pueblos antiguos llevan «Seann» delante de su nombre?",
+   "options": [
+    "Los Dia-thìrich conservaron los nombres que cantaba el viento y añadieron una palabra de respeto",
+    "Los Antiguos los llamaron así",
+    "Un rey les cambió el nombre",
+    "Para distinguirlos de pueblos nuevos con el mismo nombre"
+   ]
+  }
+ ],
+ "fk-gr-06": [
+  {
+   "q": "¿Quién era el único que subía a la colina humeante?",
+   "options": [
+    "El rey",
+    "El herrero",
+    "Los saqueadores",
+    "Los niños"
+   ]
+  },
+  {
+   "q": "¿Qué llevó al herrero a subir la colina aquella noche?",
+   "options": [
+    "Quería oro",
+    "Su hijo menor se moría de frío",
+    "Los saqueadores habían quemado su fragua",
+    "Una voz lo había llamado"
+   ]
+  },
+  {
+   "q": "¿Qué precio puso el fuego a su don?",
+   "options": [
+    "La vida del propio herrero",
+    "Quienes tuvieran su calor estarían en deuda con él mientras hubiera carbón",
+    "Un tributo de hierro cada año",
+    "El martillo del herrero"
+   ]
+  },
+  {
+   "q": "¿Qué pregunta se hacen todavía algunos sobre la sangre de carbón?",
+   "options": [
+    "Si el herrero existió de verdad",
+    "Si las deudas se pagaron alguna vez, y quién las pagó",
+    "Adónde se fue el fuego",
+    "Por qué la colina es roja"
+   ]
+  }
  ]
 }

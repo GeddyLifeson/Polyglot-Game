@@ -4786,5 +4786,233 @@
     "Rutinin yeniliğe üstün olduğunu"
    ]
   }
+ ],
+ "fk-gr-01": [
+  {
+   "q": "Balıkçı mehtaplı bir gece kıyıda ne gördü?",
+   "options": [
+    "Balık için kavga eden foklar",
+    "Dans eden genç kadınlar ve kayalarda fok derileri",
+    "Kuma vurmuş bir kayık",
+    "Ağ onaran komşuları"
+   ]
+  },
+  {
+   "q": "Kadın her akşam ne yapardı?",
+   "options": [
+    "Çocuklara şarkı söylerdi",
+    "Balık ağını onarırdı",
+    "Kapıda durup denize bakardı",
+    "Limana yürürdü"
+   ]
+  },
+  {
+   "q": "Saklanan deriyi kim buldu?",
+   "options": [
+    "Balıkçı",
+    "Bir komşu",
+    "En büyük oğul",
+    "En küçük kız"
+   ]
+  },
+  {
+   "q": "Kadın gittikten sonra Ceann Dubh'daki insanlar ne söyledi?",
+   "options": [
+    "Balıkçının başka yere taşındığını",
+    "Büyük, gri bir fokun çocukları izlediğini ve ağın hep dolu olduğunu",
+    "Kadının her bahar geri geldiğini",
+    "Denizin artık balık vermediğini"
+   ]
+  }
+ ],
+ "fk-gr-02": [
+  {
+   "q": "Somonun tadına ilk bakan kişi ne kazanacaktı?",
+   "options": [
+    "Büyük bir güç",
+    "Uzun bir ömür",
+    "Olmuş ve olacak her şeyin bilgisi",
+    "Bir krallık"
+   ]
+  },
+  {
+   "q": "Ozan somonu Fionn'a verirken ona ne dedi?",
+   "options": [
+    "Onu pazarda satmasını",
+    "Onu kızartmasını ama tadına bakmamasını",
+    "Onu ırmağa salmasını",
+    "Onu bütün adayla paylaşmasını"
+   ]
+  },
+  {
+   "q": "Fionn somonun tadına nasıl baktı?",
+   "options": [
+    "Ozan yokken bir parça yedi",
+    "Başparmağını bir kabarcıkta yakıp ağzına götürdü",
+    "Ozan ona balığın başını verdi",
+    "Pişirildiği suyu içti"
+   ]
+  },
+  {
+   "q": "Fionn başparmağını dişinin altına koyduğunda ne olurdu?",
+   "options": [
+    "Dünyanın bilgeliği ona gelirdi",
+    "Balıklarla konuşabilirdi",
+    "Başparmağı iyileşirdi",
+    "Uykuya dalardı"
+   ]
+  }
+ ],
+ "fk-gr-03": [
+  {
+   "q": "Su atı gölden hangi kılıkta çıkardı?",
+   "options": [
+    "Kara bir boğa",
+    "Yelesinde yosun olan güzel bir beyaz at",
+    "Yaşlı bir adam",
+    "Gri bir fok"
+   ]
+  },
+  {
+   "q": "Çocuklar bindikçe ata ne oldu?",
+   "options": [
+    "Diz çöktü",
+    "Kanatları çıktı",
+    "Sırtı uzadı",
+    "Küçülmeye başladı"
+   ]
+  },
+  {
+   "q": "Yedinci oğlan nasıl kurtuldu?",
+   "options": [
+    "Göle atlayıp yüzerek kaçtı",
+    "Ninesini çağırdı",
+    "Kendi parmağını kesti",
+    "Atı kandırıp uyuttu"
+   ]
+  },
+  {
+   "q": "Loch Dubh'daki anneler çocuklarına ne der?",
+   "options": [
+    "Gölde asla yüzmeyin",
+    "Tanımadığınız bir atın yelesine ve ayaklarına bakın",
+    "Yanınızda hep bir bıçak taşıyın",
+    "Yaz akşamları evde kalın"
+   ]
+  }
+ ],
+ "fk-gr-04": [
+  {
+   "q": "Masala göre Tuathaich'in ataları kimlerdi?",
+   "options": [
+    "Şirket'in efendileri",
+    "Gemilerle denizi aşıp gelen işçiler ve yerleşimciler",
+    "Eskiler",
+    "Kömürü reddeden Dia-thìrich"
+   ]
+  },
+  {
+   "q": "Kuzeye yolculuk nasıl geçti?",
+   "options": [
+    "Yolda saldırıya uğradılar",
+    "Kıyı boyunca gemiyle dolaştılar",
+    "Kimse onlara vurmadı, ama kimse su da vermedi",
+    "Dia-thìrich yardım etmek için onlarla yürüdü"
+   ]
+  },
+  {
+   "q": "Atalar kuzeyde neyi korudu?",
+   "options": [
+    "Kendilerine ait bir kralı",
+    "Denizi aşıp getirdikleri Kilise'yi",
+    "Her kasaba için yeni adları",
+    "Kömür kanını"
+   ]
+  },
+  {
+   "q": "Yaşlılar çocuklara ne der?",
+   "options": [
+    "Bir gün denizi aşıp geri döneceklerini",
+    "Kuzeye gönderildiklerini ama orayı kendilerinin yurt yaptığını",
+    "Kömür kanının onlarda uyanacağını",
+    "Kralın onları güneye çağıracağını"
+   ]
+  }
+ ],
+ "fk-gr-05": [
+  {
+   "q": "Masala göre Eskiler ne yapabilirdi?",
+   "options": [
+    "Gizli bir yazıyla yazmak",
+    "Bir şarkıyla fokları çağırmak",
+    "Taşı ekmeğe çevirmek",
+    "Her dili konuşmak"
+   ]
+  },
+  {
+   "q": "Eskiler neden gitmeye karar verdi?",
+   "options": [
+    "Akıncılar kasabalarına saldırdı",
+    "Tahıl bitmedi, ringa balıkları dönmedi ve ada onlardan bıkmış gibiydi",
+    "Bir kral onlara gitmelerini emretti",
+    "Kasabaları denize çöktü"
+   ]
+  },
+  {
+   "q": "Sonradan gelenler Eskiler'in yolculuğundan geriye ne buldu?",
+   "options": [
+    "Batı kıyısında enkaz",
+    "Tek bir mezar",
+    "Hiçbir şey: ne tahta, ne mezar, ne anıt taşı",
+    "Bir mağarada kayıklarını"
+   ]
+  },
+  {
+   "q": "Eski kasabaların adlarının önünde neden “Seann” var?",
+   "options": [
+    "Dia-thìrich rüzgârın söylediği adları korudu ve bir saygı kelimesi ekledi",
+    "Eskiler onlara böyle ad verdi",
+    "Bir kral onlara yeni ad verdi",
+    "Aynı adı taşıyan yeni kasabalardan ayırmak için"
+   ]
+  }
+ ],
+ "fk-gr-06": [
+  {
+   "q": "Tüten tepeye yalnızca kim çıkardı?",
+   "options": [
+    "Kral",
+    "Demirci",
+    "Akıncılar",
+    "Çocuklar"
+   ]
+  },
+  {
+   "q": "O gece demirciyi tepeye tırmanmaya ne itti?",
+   "options": [
+    "Altın istiyordu",
+    "En küçük oğlu soğuktan ölüyordu",
+    "Akıncılar demirhanesini yakmıştı",
+    "Bir ses onu çağırmıştı"
+   ]
+  },
+  {
+   "q": "Ateş armağanı için ne bedel koydu?",
+   "options": [
+    "Demircinin kendi canını",
+    "Sıcaklığını taşıyanlar, kömür olduğu sürece ona borçlu olacaktı",
+    "Her yıl demirden bir haraç",
+    "Demircinin çekicini"
+   ]
+  },
+  {
+   "q": "Bazı insanlar kömür kanı hakkında hâlâ hangi soruyu soruyor?",
+   "options": [
+    "Demircinin gerçekten yaşayıp yaşamadığını",
+    "Borçların hiç ödenip ödenmediğini ve kimin ödediğini",
+    "Ateşin nereye gittiğini",
+    "Tepenin neden kızıl olduğunu"
+   ]
+  }
  ]
 }
