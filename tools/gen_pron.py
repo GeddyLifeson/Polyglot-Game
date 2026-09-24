@@ -660,7 +660,7 @@ def ar_text_ipa(text, reading, lex):
     return ' '.join(x for x in out if x)
 
 # The island's own names are not in the dictionary; the owner's IPA (espeak gd would read them as Scottish Gaelic).
-GR_NAMES = {'diathìr': 'ˈtʲiəhiːɾʲ', 'diathìris': 'ˈtʲiəhiːɾʲɪʃ', 'diathìrich': 'ˈtʲiəhiːɾʲɪç', 'diathìreach': 'ˈtʲiəhiːɾʲəx'}
+GR_NAMES = {'diathìr': 'ˈtʃiə.iːɾʲ', 'diathìris': 'ˈtʃiə.iːɾʲɪʃ', 'diathìrich': 'ˈtʃiə.iːɾʲɪç', 'diathìreach': 'ˈtʃiə.iːɾʲəx'}   # as rodais_engine.pronounce() gives them
 
 def gr_text_ipa(text, reading, lex):
     if reading: return syllabify(reading.replace('|', ' '))
