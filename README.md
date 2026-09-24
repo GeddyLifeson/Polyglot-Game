@@ -150,10 +150,11 @@ files listed in `tools/cbx_bench.py` into `models/chatterbox/`, and run `python 
 About 8 s per clip on a 16-core CPU, well under 1 s on a GPU. On this machine Python cannot reach HTTPS hosts
 until the local TLS root is appended to certifi (`tools/export_local_roots.ps1`).
 
-Ròdais (`gr`) is recorded with espeak-ng's Scottish Gaelic voice (`gd`) through `--backend espeak`
-(`pip install espeakng-loader imageio-ffmpeg`, no network or GPU; about a minute per band). Ròdais `sc` is
-rewritten as `sg` before synthesis (uisce → uisge), since both spell [sk] and the gd rules expect `sg`.
-Settings: 155 wpm, pitch 45 (`--espeak-rate`, `--espeak-pitch`); it is a formant voice, so it sounds robotic.
+Ròdais (`gr`) is recorded with OmniVoice (k2-fsa/OmniVoice; Apache-2.0 code, CC-BY-NC weights) through
+`--backend omnivoice` (`pip install omnivoice` on CPU torch). Its Irish voice reads Ròdais spelling once the grave
+accents are written as Irish acutes, and every clip clones one speaker, `tools/voices/omni_gr_man.wav`, so the voice
+is the same man throughout. `--omni-steps 16` was used for all 5,282 clips: about 9 s a clip on 4 CPU cores, well
+under a second on a GPU. The older `--backend espeak` (espeak-ng's formant `gd` voice) is kept but sounds robotic.
 
 ## 3d. Learning systems (September 2026)
 
