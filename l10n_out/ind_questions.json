@@ -4786,5 +4786,233 @@
     "Bahwa rutinitas lebih unggul daripada hal baru"
    ]
   }
+ ],
+ "fk-gr-01": [
+  {
+   "q": "Apa yang dilihat nelayan di pantai pada suatu malam terang bulan?",
+   "options": [
+    "Anjing laut berebut ikan",
+    "Perempuan-perempuan muda menari, dengan kulit anjing laut di atas batu",
+    "Sebuah perahu terdampar di pasir",
+    "Tetangganya memperbaiki jala"
+   ]
+  },
+  {
+   "q": "Apa yang dilakukan sang istri setiap petang?",
+   "options": [
+    "Bernyanyi untuk anak-anak",
+    "Memperbaiki jala ikan",
+    "Berdiri di pintu memandang ke laut",
+    "Berjalan ke pelabuhan"
+   ]
+  },
+  {
+   "q": "Siapa yang menemukan kulit yang disembunyikan?",
+   "options": [
+    "Si nelayan",
+    "Seorang tetangga",
+    "Anak laki-laki sulung",
+    "Anak perempuan bungsu"
+   ]
+  },
+  {
+   "q": "Apa kata orang-orang di Ceann Dubh setelah ia pergi?",
+   "options": [
+    "Nelayan itu pindah ke tempat lain",
+    "Seekor anjing laut abu-abu besar mengawasi anak-anak dan jalanya selalu penuh",
+    "Ia kembali setiap musim semi",
+    "Laut tidak lagi memberi ikan"
+   ]
+  }
+ ],
+ "fk-gr-02": [
+  {
+   "q": "Apa yang akan diperoleh orang pertama yang mencicipi salmon itu?",
+   "options": [
+    "Kekuatan yang besar",
+    "Umur panjang",
+    "Pengetahuan tentang segala yang telah dan akan ada",
+    "Sebuah kerajaan"
+   ]
+  },
+  {
+   "q": "Apa kata penyair kepada Fionn ketika memberinya salmon itu?",
+   "options": [
+    "Menjualnya di pasar",
+    "Memanggangnya tetapi tidak mencicipinya",
+    "Melepaskannya ke sungai",
+    "Membaginya dengan seluruh pulau"
+   ]
+  },
+  {
+   "q": "Bagaimana Fionn sampai mencicipi salmon itu?",
+   "options": [
+    "Ia memakan sepotong ketika penyair pergi",
+    "Ibu jarinya terbakar oleh lepuh dan ia memasukkannya ke mulut",
+    "Penyair memberinya kepala ikan itu",
+    "Ia meminum air rebusannya"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi setiap kali Fionn menaruh ibu jarinya di bawah giginya?",
+   "options": [
+    "Kebijaksanaan dunia datang kepadanya",
+    "Ia bisa berbicara dengan ikan",
+    "Ibu jarinya sembuh",
+    "Ia tertidur"
+   ]
+  }
+ ],
+ "fk-gr-03": [
+  {
+   "q": "Dalam wujud apa kuda air keluar dari danau?",
+   "options": [
+    "Seekor banteng hitam",
+    "Seekor kuda putih yang indah dengan rumput laut di surainya",
+    "Seorang lelaki tua",
+    "Seekor anjing laut abu-abu"
+   ]
+  },
+  {
+   "q": "Apa yang terjadi pada kuda itu ketika anak-anak naik?",
+   "options": [
+    "Ia berlutut",
+    "Ia tumbuh sayap",
+    "Punggungnya bertambah panjang",
+    "Ia mulai menyusut"
+   ]
+  },
+  {
+   "q": "Bagaimana anak ketujuh meloloskan diri?",
+   "options": [
+    "Ia melompat ke danau dan berenang pergi",
+    "Ia memanggil neneknya",
+    "Ia memotong jarinya sendiri",
+    "Ia memperdaya kuda itu sampai tertidur"
+   ]
+  },
+  {
+   "q": "Apa yang dikatakan para ibu di Loch Dubh kepada anak-anak mereka?",
+   "options": [
+    "Jangan pernah berenang di danau",
+    "Lihat surai dan kaki kuda yang tidak kalian kenal",
+    "Selalu bawa pisau",
+    "Tinggallah di rumah pada petang musim panas"
+   ]
+  }
+ ],
+ "fk-gr-04": [
+  {
+   "q": "Menurut kisah ini, siapakah leluhur kaum Tuathaich?",
+   "options": [
+    "Para tuan dari Perusahaan",
+    "Buruh dan pemukim yang datang menyeberangi laut dengan kapal",
+    "Kaum Purba",
+    "Orang Dia-thìrich yang menolak batu bara"
+   ]
+  },
+  {
+   "q": "Bagaimana perjalanan ke utara berlangsung?",
+   "options": [
+    "Mereka diserang di jalan",
+    "Mereka berlayar menyusuri pesisir",
+    "Tak seorang pun memukul mereka, tetapi tak seorang pun memberi mereka air juga",
+    "Kaum Dia-thìrich berjalan bersama mereka untuk membantu"
+   ]
+  },
+  {
+   "q": "Apa yang dipertahankan leluhur di utara?",
+   "options": [
+    "Seorang raja mereka sendiri",
+    "Gereja yang mereka bawa menyeberangi laut",
+    "Nama baru untuk setiap kota",
+    "Darah-batu-bara"
+   ]
+  },
+  {
+   "q": "Apa yang dikatakan orang-orang tua kepada anak-anak?",
+   "options": [
+    "Bahwa suatu hari mereka akan kembali menyeberangi laut",
+    "Bahwa mereka dikirim ke utara, tetapi merekalah yang menjadikannya rumah",
+    "Bahwa darah-batu-bara akan terbangun dalam diri mereka",
+    "Bahwa raja akan memanggil mereka ke selatan"
+   ]
+  }
+ ],
+ "fk-gr-05": [
+  {
+   "q": "Menurut kisah ini, apa yang bisa dilakukan Kaum Purba?",
+   "options": [
+    "Menulis dengan aksara rahasia",
+    "Memanggil anjing laut dengan sebuah lagu",
+    "Mengubah batu menjadi roti",
+    "Berbicara dalam semua bahasa"
+   ]
+  },
+  {
+   "q": "Mengapa Kaum Purba memutuskan untuk pergi?",
+   "options": [
+    "Perampok menyerang kota-kota mereka",
+    "Gandum gagal tumbuh, ikan haring tidak kembali, dan pulau itu seolah jemu dengan mereka",
+    "Seorang raja mengusir mereka",
+    "Kota-kota mereka runtuh ke laut"
+   ]
+  },
+  {
+   "q": "Apa yang ditemukan orang-orang sesudahnya dari pelayaran Kaum Purba?",
+   "options": [
+    "Puing-puing di pantai barat",
+    "Sebuah makam",
+    "Tidak ada sama sekali: tak ada papan, makam, atau batu peringatan",
+    "Perahu-perahu mereka di sebuah gua"
+   ]
+  },
+  {
+   "q": "Mengapa kota-kota tua itu memakai kata “Seann” di depan namanya?",
+   "options": [
+    "Kaum Dia-thìrich mempertahankan nama yang dinyanyikan angin dan menambahkan kata penghormatan",
+    "Kaum Purba menamainya begitu",
+    "Seorang raja mengganti namanya",
+    "Untuk membedakannya dari kota-kota baru yang bernama sama"
+   ]
+  }
+ ],
+ "fk-gr-06": [
+  {
+   "q": "Siapa satu-satunya yang mau mendaki bukit berasap itu?",
+   "options": [
+    "Sang raja",
+    "Si pandai besi",
+    "Para perampok",
+    "Anak-anak"
+   ]
+  },
+  {
+   "q": "Apa yang mendorong si pandai besi mendaki bukit malam itu?",
+   "options": [
+    "Ia menginginkan emas",
+    "Putra bungsunya sekarat karena kedinginan",
+    "Para perampok telah membakar bengkelnya",
+    "Sebuah suara telah memanggilnya"
+   ]
+  },
+  {
+   "q": "Harga apa yang ditetapkan api untuk karunianya?",
+   "options": [
+    "Nyawa si pandai besi sendiri",
+    "Siapa pun yang membawa panasnya akan berutang kepadanya selama masih ada batu bara",
+    "Upeti besi setiap tahun",
+    "Palu si pandai besi"
+   ]
+  },
+  {
+   "q": "Pertanyaan apa yang masih diajukan sebagian orang tentang darah-batu-bara?",
+   "options": [
+    "Apakah si pandai besi benar-benar pernah hidup",
+    "Apakah utang-utang itu pernah dilunasi, dan oleh siapa",
+    "Ke mana api itu pergi",
+    "Mengapa bukit itu merah"
+   ]
+  }
  ]
 }
