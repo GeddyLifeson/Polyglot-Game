@@ -4786,5 +4786,233 @@
     "Que la routine est supérieure à la nouveauté"
    ]
   }
+ ],
+ "fk-gr-01": [
+  {
+   "q": "Qu'a vu le pêcheur sur le rivage, une nuit de pleine lune ?",
+   "options": [
+    "Des phoques qui se disputaient du poisson",
+    "De jeunes femmes qui dansaient, avec des peaux de phoque sur les rochers",
+    "Un bateau échoué sur le sable",
+    "Ses voisins qui raccommodaient des filets"
+   ]
+  },
+  {
+   "q": "Que faisait l'épouse chaque soir ?",
+   "options": [
+    "Elle chantait pour les enfants",
+    "Elle raccommodait le filet de pêche",
+    "Elle se tenait sur le seuil et regardait la mer",
+    "Elle marchait jusqu'au port"
+   ]
+  },
+  {
+   "q": "Qui a trouvé la peau cachée ?",
+   "options": [
+    "Le pêcheur",
+    "Un voisin",
+    "Le fils aîné",
+    "La plus jeune fille"
+   ]
+  },
+  {
+   "q": "Que disaient les gens de Ceann Dubh après son départ ?",
+   "options": [
+    "Que le pêcheur avait déménagé",
+    "Qu'un grand phoque gris veillait sur les enfants et que le filet était toujours plein",
+    "Qu'elle revenait chaque printemps",
+    "Que la mer ne donnait plus de poisson"
+   ]
+  }
+ ],
+ "fk-gr-02": [
+  {
+   "q": "Qu'obtiendrait la première personne qui goûterait le saumon ?",
+   "options": [
+    "Une grande force",
+    "Une longue vie",
+    "La connaissance de tout ce qui a été et de tout ce qui sera",
+    "Un royaume"
+   ]
+  },
+  {
+   "q": "Qu'a dit le poète à Fionn en lui donnant le saumon ?",
+   "options": [
+    "De le vendre au marché",
+    "De le rôtir, mais de ne pas y goûter",
+    "De le relâcher dans le fleuve",
+    "De le partager avec toute l'île"
+   ]
+  },
+  {
+   "q": "Comment Fionn en est-il venu à goûter le saumon ?",
+   "options": [
+    "Il en a mangé un morceau pendant l'absence du poète",
+    "Il s'est brûlé le pouce sur une cloque et l'a mis dans sa bouche",
+    "Le poète lui a donné la tête",
+    "Il a bu l'eau de cuisson"
+   ]
+  },
+  {
+   "q": "Que se passait-il chaque fois que Fionn mettait son pouce sous sa dent ?",
+   "options": [
+    "La sagesse du monde lui venait",
+    "Il pouvait parler aux poissons",
+    "Son pouce guérissait",
+    "Il s'endormait"
+   ]
+  }
+ ],
+ "fk-gr-03": [
+  {
+   "q": "Sous quelle forme le cheval des eaux sortait-il du lac ?",
+   "options": [
+    "Un taureau noir",
+    "Un magnifique cheval blanc avec des algues dans la crinière",
+    "Un vieil homme",
+    "Un phoque gris"
+   ]
+  },
+  {
+   "q": "Qu'arrivait-il au cheval à mesure que les enfants montaient ?",
+   "options": [
+    "Il s'agenouillait",
+    "Des ailes lui poussaient",
+    "Son dos s'allongeait",
+    "Il se mettait à rapetisser"
+   ]
+  },
+  {
+   "q": "Comment le septième garçon s'est-il échappé ?",
+   "options": [
+    "Il a sauté dans le lac et s'est enfui à la nage",
+    "Il a appelé sa grand-mère",
+    "Il s'est coupé lui-même le doigt",
+    "Il a trompé le cheval pour l'endormir"
+   ]
+  },
+  {
+   "q": "Que disent les mères de Loch Dubh à leurs enfants ?",
+   "options": [
+    "De ne jamais nager dans le lac",
+    "De regarder la crinière et les pieds d'un cheval qu'ils ne connaissent pas",
+    "D'avoir toujours un couteau sur eux",
+    "De rester à la maison les soirs d'été"
+   ]
+  }
+ ],
+ "fk-gr-04": [
+  {
+   "q": "D'après le conte, qui étaient les ancêtres des Tuathaich ?",
+   "options": [
+    "Les maîtres de la Compagnie",
+    "Des ouvriers et des colons venus par la mer sur les navires",
+    "Les Anciens",
+    "Des Dia-thìrich qui avaient refusé le charbon"
+   ]
+  },
+  {
+   "q": "Comment s'est passé le voyage vers le nord ?",
+   "options": [
+    "Ils ont été attaqués en chemin",
+    "Ils ont longé la côte en bateau",
+    "Personne ne les a frappés, mais personne ne leur a donné d'eau non plus",
+    "Les Dia-thìrich ont marché avec eux pour les aider"
+   ]
+  },
+  {
+   "q": "Qu'ont gardé les ancêtres dans le nord ?",
+   "options": [
+    "Un roi à eux",
+    "L'Église qu'ils avaient apportée par la mer",
+    "De nouveaux noms pour chaque ville",
+    "Le sang de charbon"
+   ]
+  },
+  {
+   "q": "Que disent les anciens aux enfants ?",
+   "options": [
+    "Qu'un jour ils repartiront par la mer",
+    "Qu'on les a envoyés au nord, mais qu'ils en ont fait eux-mêmes leur foyer",
+    "Que le sang de charbon s'éveillera en eux",
+    "Que le roi les rappellera dans le sud"
+   ]
+  }
+ ],
+ "fk-gr-05": [
+  {
+   "q": "D'après le conte, que savaient faire les Anciens ?",
+   "options": [
+    "Écrire dans une écriture secrète",
+    "Appeler les phoques par un chant",
+    "Changer la pierre en pain",
+    "Parler toutes les langues"
+   ]
+  },
+  {
+   "q": "Pourquoi les Anciens ont-ils décidé de partir ?",
+   "options": [
+    "Des pillards ont attaqué leurs villes",
+    "Le blé n'a pas poussé, le hareng n'est pas revenu, et l'île semblait lassée d'eux",
+    "Un roi leur a ordonné de partir",
+    "Leurs villes se sont effondrées dans la mer"
+   ]
+  },
+  {
+   "q": "Qu'ont retrouvé les peuples venus après eux du voyage des Anciens ?",
+   "options": [
+    "Des épaves sur la côte ouest",
+    "Une seule tombe",
+    "Rien du tout : ni planche, ni tombe, ni pierre commémorative",
+    "Leurs barques dans une grotte"
+   ]
+  },
+  {
+   "q": "Pourquoi les vieilles villes ont-elles « Seann » devant leur nom ?",
+   "options": [
+    "Les Dia-thìrich ont gardé les noms que chantait le vent et y ont ajouté un mot de respect",
+    "Les Anciens les avaient nommées ainsi",
+    "Un roi les a rebaptisées",
+    "Pour les distinguer de villes nouvelles du même nom"
+   ]
+  }
+ ],
+ "fk-gr-06": [
+  {
+   "q": "Qui était le seul à monter sur la colline qui fume ?",
+   "options": [
+    "Le roi",
+    "Le forgeron",
+    "Les pillards",
+    "Les enfants"
+   ]
+  },
+  {
+   "q": "Qu'est-ce qui a poussé le forgeron à gravir la colline cette nuit-là ?",
+   "options": [
+    "Il voulait de l'or",
+    "Son plus jeune fils se mourait de froid",
+    "Les pillards avaient incendié sa forge",
+    "Une voix l'avait appelé"
+   ]
+  },
+  {
+   "q": "Quel prix le feu a-t-il fixé pour son don ?",
+   "options": [
+    "La vie du forgeron lui-même",
+    "Ceux qui auraient sa chaleur seraient ses débiteurs tant qu'il y aurait du charbon",
+    "Un tribut de fer chaque année",
+    "Le marteau du forgeron"
+   ]
+  },
+  {
+   "q": "Quelle question certains se posent-ils encore au sujet du sang de charbon ?",
+   "options": [
+    "Si le forgeron a vraiment existé",
+    "Si les dettes ont jamais été payées, et par qui",
+    "Où le feu est parti",
+    "Pourquoi la colline est rouge"
+   ]
+  }
  ]
 }

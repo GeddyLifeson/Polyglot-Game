@@ -4786,5 +4786,233 @@
     "Dass Routine dem Neuen überlegen sei"
    ]
   }
+ ],
+ "fk-gr-01": [
+  {
+   "q": "Was sah der Fischer in einer Mondnacht am Strand?",
+   "options": [
+    "Robben, die um Fische kämpften",
+    "Junge Frauen, die tanzten, und Robbenfelle auf den Felsen",
+    "Ein Boot, das im Sand angespült war",
+    "Seine Nachbarn, die Netze flickten"
+   ]
+  },
+  {
+   "q": "Was tat die Frau jeden Abend?",
+   "options": [
+    "Sie sang den Kindern vor",
+    "Sie flickte das Fischernetz",
+    "Sie stand in der Tür und blickte aufs Meer",
+    "Sie ging zum Hafen"
+   ]
+  },
+  {
+   "q": "Wer fand das versteckte Fell?",
+   "options": [
+    "Der Fischer",
+    "Ein Nachbar",
+    "Der älteste Sohn",
+    "Die jüngste Tochter"
+   ]
+  },
+  {
+   "q": "Was erzählten die Leute in Ceann Dubh, nachdem sie gegangen war?",
+   "options": [
+    "Der Fischer sei weggezogen",
+    "Eine große graue Robbe sehe den Kindern zu, und das Netz sei immer voll",
+    "Sie komme jeden Frühling zurück",
+    "Das Meer gebe keinen Fisch mehr"
+   ]
+  }
+ ],
+ "fk-gr-02": [
+  {
+   "q": "Was würde der Erste gewinnen, der vom Lachs kostete?",
+   "options": [
+    "Große Stärke",
+    "Ein langes Leben",
+    "Das Wissen um alles, was war und sein wird",
+    "Ein Königreich"
+   ]
+  },
+  {
+   "q": "Was sagte der Dichter zu Fionn, als er ihm den Lachs gab?",
+   "options": [
+    "Er solle ihn auf dem Markt verkaufen",
+    "Er solle ihn braten, aber nicht davon kosten",
+    "Er solle ihn im Fluss freilassen",
+    "Er solle ihn mit der ganzen Insel teilen"
+   ]
+  },
+  {
+   "q": "Wie kam Fionn dazu, vom Lachs zu kosten?",
+   "options": [
+    "Er aß ein Stück, als der Dichter fort war",
+    "Er verbrannte sich den Daumen an einer Blase und steckte ihn in den Mund",
+    "Der Dichter gab ihm den Kopf",
+    "Er trank das Kochwasser"
+   ]
+  },
+  {
+   "q": "Was geschah, sooft Fionn den Daumen unter seinen Zahn legte?",
+   "options": [
+    "Die Weisheit der Welt kam zu ihm",
+    "Er konnte mit Fischen sprechen",
+    "Sein Daumen heilte",
+    "Er schlief ein"
+   ]
+  }
+ ],
+ "fk-gr-03": [
+  {
+   "q": "In welcher Gestalt kam das Wasserpferd aus dem See?",
+   "options": [
+    "Als schwarzer Stier",
+    "Als schönes weißes Pferd mit Seetang in der Mähne",
+    "Als alter Mann",
+    "Als graue Robbe"
+   ]
+  },
+  {
+   "q": "Was geschah mit dem Pferd, als die Kinder aufstiegen?",
+   "options": [
+    "Es kniete nieder",
+    "Ihm wuchsen Flügel",
+    "Sein Rücken wurde länger",
+    "Es begann zu schrumpfen"
+   ]
+  },
+  {
+   "q": "Wie entkam der siebte Junge?",
+   "options": [
+    "Er sprang in den See und schwamm davon",
+    "Er rief nach seiner Großmutter",
+    "Er schnitt sich den eigenen Finger ab",
+    "Er brachte das Pferd mit einer List zum Einschlafen"
+   ]
+  },
+  {
+   "q": "Was sagen die Mütter in Loch Dubh zu ihren Kindern?",
+   "options": [
+    "Sie sollen nie im See schwimmen",
+    "Sie sollen sich Mähne und Füße eines fremden Pferdes ansehen",
+    "Sie sollen immer ein Messer bei sich tragen",
+    "Sie sollen an Sommerabenden zu Hause bleiben"
+   ]
+  }
+ ],
+ "fk-gr-04": [
+  {
+   "q": "Wer waren laut der Geschichte die Vorfahren der Tuathaich?",
+   "options": [
+    "Die Herren der Kompanie",
+    "Arbeiter und Siedler, die auf den Schiffen über das Meer kamen",
+    "Die Alten",
+    "Dia-thìrich, die die Kohle ablehnten"
+   ]
+  },
+  {
+   "q": "Wie verlief der Weg nach Norden?",
+   "options": [
+    "Sie wurden unterwegs angegriffen",
+    "Sie segelten an der Küste entlang",
+    "Niemand schlug sie, aber es gab ihnen auch niemand Wasser",
+    "Die Dia-thìrich gingen mit, um ihnen zu helfen"
+   ]
+  },
+  {
+   "q": "Was behielten die Vorfahren im Norden?",
+   "options": [
+    "Einen eigenen König",
+    "Die Kirche, die sie über das Meer gebracht hatten",
+    "Neue Namen für jede Stadt",
+    "Das Kohlenblut"
+   ]
+  },
+  {
+   "q": "Was sagen die Alten zu den Kindern?",
+   "options": [
+    "Dass sie eines Tages über das Meer zurückkehren werden",
+    "Dass man sie nach Norden geschickt hat, sie selbst aber eine Heimat daraus gemacht haben",
+    "Dass das Kohlenblut in ihnen erwachen wird",
+    "Dass der König sie in den Süden rufen wird"
+   ]
+  }
+ ],
+ "fk-gr-05": [
+  {
+   "q": "Was konnten die Alten laut der Geschichte?",
+   "options": [
+    "In einer geheimen Schrift schreiben",
+    "Die Robben mit einem Lied herbeirufen",
+    "Stein in Brot verwandeln",
+    "Alle Sprachen sprechen"
+   ]
+  },
+  {
+   "q": "Warum beschlossen die Alten fortzugehen?",
+   "options": [
+    "Räuber griffen ihre Städte an",
+    "Das Korn wuchs nicht, der Hering kehrte nicht zurück, und die Insel schien ihrer müde",
+    "Ein König befahl ihnen zu gehen",
+    "Ihre Städte stürzten ins Meer"
+   ]
+  },
+  {
+   "q": "Was fanden spätere Völker von der Reise der Alten?",
+   "options": [
+    "Wrackteile an der Westküste",
+    "Ein einziges Grab",
+    "Gar nichts: keine Planke, kein Grab, keinen Gedenkstein",
+    "Ihre Boote in einer Höhle"
+   ]
+  },
+  {
+   "q": "Warum steht vor den Namen der alten Städte „Seann“?",
+   "options": [
+    "Die Dia-thìrich behielten die Namen, die der Wind sang, und setzten ein Wort der Achtung davor",
+    "Die Alten hatten sie so genannt",
+    "Ein König benannte sie um",
+    "Um sie von neuen Städten mit demselben Namen zu unterscheiden"
+   ]
+  }
+ ],
+ "fk-gr-06": [
+  {
+   "q": "Wer allein stieg auf den rauchenden Hügel?",
+   "options": [
+    "Der König",
+    "Der Schmied",
+    "Die Räuber",
+    "Die Kinder"
+   ]
+  },
+  {
+   "q": "Was trieb den Schmied in jener Nacht auf den Hügel?",
+   "options": [
+    "Er wollte Gold",
+    "Sein jüngster Sohn starb an der Kälte",
+    "Die Räuber hatten seine Schmiede niedergebrannt",
+    "Eine Stimme hatte ihn gerufen"
+   ]
+  },
+  {
+   "q": "Welchen Preis verlangte das Feuer für seine Gabe?",
+   "options": [
+    "Das Leben des Schmieds selbst",
+    "Wer seine Wärme trug, würde in seiner Schuld stehen, solange es Kohle gibt",
+    "Jedes Jahr einen Tribut aus Eisen",
+    "Den Hammer des Schmieds"
+   ]
+  },
+  {
+   "q": "Welche Frage stellen manche noch heute über das Kohlenblut?",
+   "options": [
+    "Ob der Schmied je gelebt hat",
+    "Ob die Schulden je bezahlt wurden, und von wem",
+    "Wohin das Feuer gegangen ist",
+    "Warum der Hügel rot ist"
+   ]
+  }
  ]
 }

@@ -4786,5 +4786,233 @@
     "Att rutin är överlägsen nyhet"
    ]
   }
+ ],
+ "fk-gr-01": [
+  {
+   "q": "Vad såg fiskaren på stranden en månljus natt?",
+   "options": [
+    "Sälar som slogs om fisk",
+    "Unga kvinnor som dansade, med sälskinn på klipporna",
+    "En båt som flutit i land på sanden",
+    "Sina grannar som lagade nät"
+   ]
+  },
+  {
+   "q": "Vad gjorde hustrun varje kväll?",
+   "options": [
+    "Hon sjöng för barnen",
+    "Hon lagade fiskenätet",
+    "Hon stod i dörren och såg ut över havet",
+    "Hon promenerade till hamnen"
+   ]
+  },
+  {
+   "q": "Vem hittade det gömda skinnet?",
+   "options": [
+    "Fiskaren",
+    "En granne",
+    "Den äldste sonen",
+    "Den yngsta dottern"
+   ]
+  },
+  {
+   "q": "Vad sade folket vid Ceann Dubh efter att hon gett sig av?",
+   "options": [
+    "Att fiskaren flyttade därifrån",
+    "Att en stor grå säl vakade över barnen och att nätet alltid var fullt",
+    "Att hon kom tillbaka varje vår",
+    "Att havet inte gav någon fisk längre"
+   ]
+  }
+ ],
+ "fk-gr-02": [
+  {
+   "q": "Vad skulle den som först smakade laxen få?",
+   "options": [
+    "Stor styrka",
+    "Ett långt liv",
+    "Kunskap om allt som varit och skulle komma",
+    "Ett kungarike"
+   ]
+  },
+  {
+   "q": "Vad sade skalden till Fionn när han gav honom laxen?",
+   "options": [
+    "Att sälja den på marknaden",
+    "Att steka den men inte smaka på den",
+    "Att släppa den fri i floden",
+    "Att dela den med hela ön"
+   ]
+  },
+  {
+   "q": "Hur kom det sig att Fionn smakade på laxen?",
+   "options": [
+    "Han åt en bit medan skalden var borta",
+    "Han brände tummen på en blåsa och stoppade den i munnen",
+    "Skalden gav honom huvudet",
+    "Han drack vattnet som den kokats i"
+   ]
+  },
+  {
+   "q": "Vad hände varje gång Fionn satte tummen under tanden?",
+   "options": [
+    "Världens visdom kom till honom",
+    "Han kunde tala med fiskar",
+    "Tummen läktes",
+    "Han somnade"
+   ]
+  }
+ ],
+ "fk-gr-03": [
+  {
+   "q": "I vilken skepnad steg vattenhästen upp ur sjön?",
+   "options": [
+    "En svart tjur",
+    "En vacker vit häst med tång i manen",
+    "En gammal man",
+    "En grå säl"
+   ]
+  },
+  {
+   "q": "Vad hände med hästen när barnen klättrade upp?",
+   "options": [
+    "Den knäböjde",
+    "Den fick vingar",
+    "Dess rygg blev längre",
+    "Den började krympa"
+   ]
+  },
+  {
+   "q": "Hur kom den sjunde pojken undan?",
+   "options": [
+    "Han hoppade i sjön och simmade bort",
+    "Han ropade på sin mormor",
+    "Han skar av sitt eget finger",
+    "Han lurade hästen att somna"
+   ]
+  },
+  {
+   "q": "Vad säger mödrarna vid Loch Dubh till sina barn?",
+   "options": [
+    "Bada aldrig i sjön",
+    "Titta på manen och fötterna på en häst ni inte känner",
+    "Bär alltid en kniv",
+    "Stanna hemma på sommarkvällarna"
+   ]
+  }
+ ],
+ "fk-gr-04": [
+  {
+   "q": "Vilka var Tuathaichs förfäder, enligt berättelsen?",
+   "options": [
+    "Kompaniets herrar",
+    "Arbetare och nybyggare som kom över havet med skeppen",
+    "De Gamla",
+    "Dia-thìrich som vägrade kolet"
+   ]
+  },
+  {
+   "q": "Hur gick färden norrut?",
+   "options": [
+    "De blev anfallna på vägen",
+    "De seglade runt kusten",
+    "Ingen slog dem, men ingen gav dem heller vatten",
+    "Dia-thìrich gick med dem för att hjälpa"
+   ]
+  },
+  {
+   "q": "Vad höll förfäderna fast vid i norr?",
+   "options": [
+    "En egen kung",
+    "Kyrkan som de fört med sig över havet",
+    "Nya namn på varje stad",
+    "Kolblodet"
+   ]
+  },
+  {
+   "q": "Vad säger de gamla till barnen?",
+   "options": [
+    "Att de en dag ska återvända över havet",
+    "Att de skickades norrut, men själva gjorde det till ett hem",
+    "Att kolblodet ska vakna i dem",
+    "Att kungen ska kalla dem söderut"
+   ]
+  }
+ ],
+ "fk-gr-05": [
+  {
+   "q": "Vad kunde de Gamla göra, enligt berättelsen?",
+   "options": [
+    "Skriva med en hemlig skrift",
+    "Locka till sig sälarna med en sång",
+    "Förvandla sten till bröd",
+    "Tala alla språk"
+   ]
+  },
+  {
+   "q": "Varför bestämde sig de Gamla för att ge sig av?",
+   "options": [
+    "Plundrare anföll deras städer",
+    "Säden slog fel och sillen kom inte tillbaka, och ön verkade ha tröttnat på dem",
+    "En kung beordrade bort dem",
+    "Deras städer rasade ner i havet"
+   ]
+  },
+  {
+   "q": "Vad fann senare människor av de Gamlas färd?",
+   "options": [
+    "Vrakdelar på västra stranden",
+    "En enda grav",
+    "Ingenting alls: ingen planka, grav eller minnessten",
+    "Deras båtar i en grotta"
+   ]
+  },
+  {
+   "q": "Varför står det \"Seann\" framför de gamla städernas namn?",
+   "options": [
+    "Dia-thìrich behöll de namn som vinden sjöng och lade till ett ord av respekt",
+    "De Gamla gav dem de namnen",
+    "En kung döpte om dem",
+    "För att skilja dem från nya städer med samma namn"
+   ]
+  }
+ ],
+ "fk-gr-06": [
+  {
+   "q": "Vem var den ende som gick upp på den rykande kullen?",
+   "options": [
+    "Kungen",
+    "Smeden",
+    "Plundrarna",
+    "Barnen"
+   ]
+  },
+  {
+   "q": "Vad drev smeden att klättra upp på kullen den natten?",
+   "options": [
+    "Han ville ha guld",
+    "Hans yngste son höll på att dö av kylan",
+    "Plundrarna hade bränt ner hans smedja",
+    "En röst hade kallat på honom"
+   ]
+  },
+  {
+   "q": "Vilket pris satte elden på sin gåva?",
+   "options": [
+    "Smedens eget liv",
+    "De som hade dess värme skulle stå i skuld till den så länge det finns kol",
+    "En tribut i järn varje år",
+    "Smedens hammare"
+   ]
+  },
+  {
+   "q": "Vilken fråga ställer en del fortfarande om kolblodet?",
+   "options": [
+    "Om smeden någonsin har levat",
+    "Om skulderna någonsin blev betalda, och av vem",
+    "Vart elden tog vägen",
+    "Varför kullen är röd"
+   ]
+  }
  ]
 }

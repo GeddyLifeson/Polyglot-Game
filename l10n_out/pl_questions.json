@@ -4786,5 +4786,233 @@
     "Że rutyna jest lepsza niż nowość"
    ]
   }
+ ],
+ "fk-gr-01": [
+  {
+   "q": "Co rybak zobaczył na brzegu pewnej księżycowej nocy?",
+   "options": [
+    "Foki walczące o ryby",
+    "Młode kobiety tańczące, z foczymi skórami na skałach",
+    "Łódź wyrzuconą na piasek",
+    "Sąsiadów naprawiających sieci"
+   ]
+  },
+  {
+   "q": "Co żona robiła co wieczór?",
+   "options": [
+    "Śpiewała dzieciom",
+    "Naprawiała sieć rybacką",
+    "Stała w drzwiach i patrzyła na morze",
+    "Chodziła do portu"
+   ]
+  },
+  {
+   "q": "Kto znalazł ukrytą skórę?",
+   "options": [
+    "Rybak",
+    "Sąsiad",
+    "Najstarszy syn",
+    "Najmłodsza córka"
+   ]
+  },
+  {
+   "q": "Co mówili ludzie w Ceann Dubh po jej odejściu?",
+   "options": [
+    "Że rybak się wyprowadził",
+    "Że duża szara foka pilnowała dzieci, a sieć zawsze była pełna",
+    "Że wracała każdej wiosny",
+    "Że morze nie dawało już ryb"
+   ]
+  }
+ ],
+ "fk-gr-02": [
+  {
+   "q": "Co miał zyskać ten, kto pierwszy skosztuje łososia?",
+   "options": [
+    "Wielką siłę",
+    "Długie życie",
+    "Wiedzę o wszystkim, co było i co będzie",
+    "Królestwo"
+   ]
+  },
+  {
+   "q": "Co poeta powiedział Fionnowi, dając mu łososia?",
+   "options": [
+    "Żeby sprzedał go na targu",
+    "Żeby go upiekł, ale go nie kosztował",
+    "Żeby wypuścił go do rzeki",
+    "Żeby podzielił się nim z całą wyspą"
+   ]
+  },
+  {
+   "q": "Jak to się stało, że Fionn skosztował łososia?",
+   "options": [
+    "Zjadł kawałek, gdy poety nie było",
+    "Oparzył kciuk o pęcherz i włożył go do ust",
+    "Poeta dał mu głowę ryby",
+    "Wypił wodę, w której ryba się gotowała"
+   ]
+  },
+  {
+   "q": "Co się działo, ilekroć Fionn wkładał kciuk pod ząb?",
+   "options": [
+    "Spływała na niego mądrość świata",
+    "Mógł rozmawiać z rybami",
+    "Kciuk mu się goił",
+    "Zasypiał"
+   ]
+  }
+ ],
+ "fk-gr-03": [
+  {
+   "q": "Pod jaką postacią wodny koń wychodził z jeziora?",
+   "options": [
+    "Czarnego byka",
+    "Pięknego białego konia z wodorostami w grzywie",
+    "Starca",
+    "Szarej foki"
+   ]
+  },
+  {
+   "q": "Co działo się z koniem, gdy dzieci na niego wsiadały?",
+   "options": [
+    "Klękał",
+    "Wyrastały mu skrzydła",
+    "Jego grzbiet się wydłużał",
+    "Zaczynał się kurczyć"
+   ]
+  },
+  {
+   "q": "Jak uciekł siódmy chłopiec?",
+   "options": [
+    "Skoczył do jeziora i odpłynął",
+    "Zawołał babcię",
+    "Odciął sobie palec",
+    "Podstępem uśpił konia"
+   ]
+  },
+  {
+   "q": "Co matki w Loch Dubh mówią swoim dzieciom?",
+   "options": [
+    "Nigdy nie pływajcie w jeziorze",
+    "Patrzcie na grzywę i nogi konia, którego nie znacie",
+    "Zawsze noście przy sobie nóż",
+    "Zostawajcie w domu w letnie wieczory"
+   ]
+  }
+ ],
+ "fk-gr-04": [
+  {
+   "q": "Kim byli według opowieści przodkowie Tuathaich?",
+   "options": [
+    "Panami Kompanii",
+    "Robotnikami i osadnikami, którzy przypłynęli statkami przez morze",
+    "Dawnymi",
+    "Dia-thìrich, którzy odrzucili węgiel"
+   ]
+  },
+  {
+   "q": "Jak przebiegła wędrówka na północ?",
+   "options": [
+    "Napadnięto ich w drodze",
+    "Opłynęli wybrzeże",
+    "Nikt ich nie uderzył, ale nikt też nie dał im wody",
+    "Dia-thìrich szli z nimi, żeby pomóc"
+   ]
+  },
+  {
+   "q": "Co przodkowie zachowali na północy?",
+   "options": [
+    "Własnego króla",
+    "Kościół, który przywieźli przez morze",
+    "Nowe nazwy dla każdego miasteczka",
+    "Węglową krew"
+   ]
+  },
+  {
+   "q": "Co starzy ludzie mówią dzieciom?",
+   "options": [
+    "Że pewnego dnia wrócą przez morze",
+    "Że wysłano ich na północ, ale sami uczynili z niej dom",
+    "Że obudzi się w nich węglowa krew",
+    "Że król wezwie ich na południe"
+   ]
+  }
+ ],
+ "fk-gr-05": [
+  {
+   "q": "Co potrafili Dawni według opowieści?",
+   "options": [
+    "Pisać tajnym pismem",
+    "Przywoływać foki pieśnią",
+    "Zmieniać kamień w chleb",
+    "Mówić każdym językiem"
+   ]
+  },
+  {
+   "q": "Dlaczego Dawni postanowili odejść?",
+   "options": [
+    "Łupieżcy napadli ich miasta",
+    "Zboże nie obrodziło, śledzie nie wróciły, a wyspa zdawała się nimi zmęczona",
+    "Król kazał im odejść",
+    "Ich miasta zapadły się w morze"
+   ]
+  },
+  {
+   "q": "Co późniejsi ludzie znaleźli po wyprawie Dawnych?",
+   "options": [
+    "Szczątki wraku na zachodnim brzegu",
+    "Jeden grób",
+    "Zupełnie nic: ani deski, ani grobu, ani kamienia pamiątkowego",
+    "Ich łodzie w jaskini"
+   ]
+  },
+  {
+   "q": "Dlaczego przed nazwami starych miast stoi słowo „Seann”?",
+   "options": [
+    "Dia-thìrich zachowali nazwy, które śpiewał wiatr, i dodali słowo szacunku",
+    "Tak nazwali je Dawni",
+    "Król zmienił im nazwy",
+    "Żeby odróżnić je od nowych miast o tej samej nazwie"
+   ]
+  }
+ ],
+ "fk-gr-06": [
+  {
+   "q": "Kto jako jedyny wchodził na dymiące wzgórze?",
+   "options": [
+    "Król",
+    "Kowal",
+    "Łupieżcy",
+    "Dzieci"
+   ]
+  },
+  {
+   "q": "Co skłoniło kowala, by tej nocy wspiąć się na wzgórze?",
+   "options": [
+    "Chciał zdobyć złoto",
+    "Jego najmłodszy syn umierał z zimna",
+    "Łupieżcy spalili mu kuźnię",
+    "Wezwał go jakiś głos"
+   ]
+  },
+  {
+   "q": "Jaką cenę ogień wyznaczył za swój dar?",
+   "options": [
+    "Życie samego kowala",
+    "Kto ma jego ciepło, będzie jego dłużnikiem, dopóki istnieje węgiel",
+    "Daninę z żelaza co roku",
+    "Młot kowala"
+   ]
+  },
+  {
+   "q": "Jakie pytanie o węglową krew wciąż zadają niektórzy?",
+   "options": [
+    "Czy kowal w ogóle istniał",
+    "Czy długi zostały kiedyś spłacone i przez kogo",
+    "Dokąd odszedł ogień",
+    "Dlaczego wzgórze jest czerwone"
+   ]
+  }
  ]
 }

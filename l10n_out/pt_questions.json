@@ -4786,5 +4786,233 @@
     "Que a rotina é superior à novidade"
    ]
   }
+ ],
+ "fk-gr-01": [
+  {
+   "q": "O que o pescador viu na praia numa noite de luar?",
+   "options": [
+    "Focas brigando por peixe",
+    "Moças dançando, com peles de foca sobre as pedras",
+    "Um barco encalhado na areia",
+    "Os vizinhos consertando redes"
+   ]
+  },
+  {
+   "q": "O que a esposa fazia toda tarde?",
+   "options": [
+    "Cantava para as crianças",
+    "Consertava a rede de pesca",
+    "Ficava na porta olhando o mar",
+    "Caminhava até o porto"
+   ]
+  },
+  {
+   "q": "Quem encontrou a pele escondida?",
+   "options": [
+    "O pescador",
+    "Um vizinho",
+    "O filho mais velho",
+    "A filha caçula"
+   ]
+  },
+  {
+   "q": "O que o povo de Ceann Dubh dizia depois que ela foi embora?",
+   "options": [
+    "Que o pescador se mudou",
+    "Que uma grande foca cinzenta observava as crianças e a rede estava sempre cheia",
+    "Que ela voltava toda primavera",
+    "Que o mar não dava mais peixe"
+   ]
+  }
+ ],
+ "fk-gr-02": [
+  {
+   "q": "O que ganharia a primeira pessoa que provasse o salmão?",
+   "options": [
+    "Uma grande força",
+    "Uma vida longa",
+    "O conhecimento de tudo o que foi e seria",
+    "Um reino"
+   ]
+  },
+  {
+   "q": "O que o poeta disse a Fionn quando lhe deu o salmão?",
+   "options": [
+    "Que o vendesse na feira",
+    "Que o assasse, mas não o provasse",
+    "Que o soltasse no rio",
+    "Que o dividisse com a ilha"
+   ]
+  },
+  {
+   "q": "Como Fionn acabou provando o salmão?",
+   "options": [
+    "Comeu um pedaço quando o poeta não estava",
+    "Queimou o polegar numa bolha e o levou à boca",
+    "O poeta lhe deu a cabeça",
+    "Bebeu a água em que ele foi cozido"
+   ]
+  },
+  {
+   "q": "O que acontecia sempre que Fionn punha o polegar debaixo do dente?",
+   "options": [
+    "A sabedoria do mundo lhe vinha",
+    "Ele conseguia falar com os peixes",
+    "O polegar sarava",
+    "Ele pegava no sono"
+   ]
+  }
+ ],
+ "fk-gr-03": [
+  {
+   "q": "Em que forma o cavalo d'água saía do lago?",
+   "options": [
+    "Um touro preto",
+    "Um lindo cavalo branco com algas na crina",
+    "Um velho",
+    "Uma foca cinzenta"
+   ]
+  },
+  {
+   "q": "O que acontecia com o cavalo à medida que as crianças subiam?",
+   "options": [
+    "Ele se ajoelhava",
+    "Criava asas",
+    "As costas dele se alongavam",
+    "Começava a encolher"
+   ]
+  },
+  {
+   "q": "Como o sétimo menino escapou?",
+   "options": [
+    "Pulou no lago e fugiu nadando",
+    "Chamou a avó",
+    "Cortou o próprio dedo",
+    "Enganou o cavalo para ele dormir"
+   ]
+  },
+  {
+   "q": "O que as mães de Loch Dubh dizem aos filhos?",
+   "options": [
+    "Nunca nadar no lago",
+    "Olhar a crina e os pés de um cavalo que não conhecem",
+    "Andar sempre com uma faca",
+    "Ficar em casa nas tardes de verão"
+   ]
+  }
+ ],
+ "fk-gr-04": [
+  {
+   "q": "Segundo o conto, quem eram os antepassados dos Tuathaich?",
+   "options": [
+    "Os patrões da Companhia",
+    "Trabalhadores e colonos que vieram pelo mar nos navios",
+    "Os Antigos",
+    "Dia-thìrich que recusaram o carvão"
+   ]
+  },
+  {
+   "q": "Como foi a viagem para o norte?",
+   "options": [
+    "Eles foram atacados no caminho",
+    "Navegaram contornando a costa",
+    "Ninguém bateu neles, mas ninguém lhes deu água também",
+    "Os Dia-thìrich caminharam com eles para ajudar"
+   ]
+  },
+  {
+   "q": "O que os antepassados mantiveram no norte?",
+   "options": [
+    "Um rei próprio",
+    "A Igreja que tinham trazido pelo mar",
+    "Nomes novos para cada cidade",
+    "O sangue de carvão"
+   ]
+  },
+  {
+   "q": "O que os velhos dizem às crianças?",
+   "options": [
+    "Que um dia voltarão pelo mar",
+    "Que foram mandados para o norte, mas eles mesmos fizeram dele um lar",
+    "Que o sangue de carvão vai despertar neles",
+    "Que o rei vai chamá-los de volta ao sul"
+   ]
+  }
+ ],
+ "fk-gr-05": [
+  {
+   "q": "Segundo o conto, o que os Antigos sabiam fazer?",
+   "options": [
+    "Escrever numa escrita secreta",
+    "Chamar as focas com uma canção",
+    "Transformar pedra em pão",
+    "Falar todas as línguas"
+   ]
+  },
+  {
+   "q": "Por que os Antigos decidiram partir?",
+   "options": [
+    "Saqueadores atacaram suas cidades",
+    "O trigo não cresceu e o arenque não voltou, e a ilha parecia cansada deles",
+    "Um rei mandou que fossem embora",
+    "Suas cidades afundaram no mar"
+   ]
+  },
+  {
+   "q": "O que os povos que vieram depois encontraram da viagem dos Antigos?",
+   "options": [
+    "Destroços na costa oeste",
+    "Um único túmulo",
+    "Nada: nem uma tábua, nem um túmulo, nem uma pedra memorial",
+    "Os barcos deles numa caverna"
+   ]
+  },
+  {
+   "q": "Por que as cidades antigas têm \"Seann\" antes do nome?",
+   "options": [
+    "Os Dia-thìrich mantiveram os nomes que o vento cantava e acrescentaram uma palavra de respeito",
+    "Os Antigos lhes deram esse nome",
+    "Um rei trocou o nome delas",
+    "Para distingui-las de cidades novas com o mesmo nome"
+   ]
+  }
+ ],
+ "fk-gr-06": [
+  {
+   "q": "Quem era o único que subia o morro que solta fumaça?",
+   "options": [
+    "O rei",
+    "O ferreiro",
+    "Os saqueadores",
+    "As crianças"
+   ]
+  },
+  {
+   "q": "O que levou o ferreiro a subir o morro naquela noite?",
+   "options": [
+    "Ele queria ouro",
+    "O filho caçula estava morrendo de frio",
+    "Os saqueadores tinham queimado a sua forja",
+    "Uma voz o tinha chamado"
+   ]
+  },
+  {
+   "q": "Que preço o fogo cobrou pelo seu dom?",
+   "options": [
+    "A vida do próprio ferreiro",
+    "Quem tivesse o seu calor estaria em dívida com ele enquanto houvesse carvão",
+    "Um tributo de ferro todo ano",
+    "O martelo do ferreiro"
+   ]
+  },
+  {
+   "q": "Que pergunta algumas pessoas ainda fazem sobre o sangue de carvão?",
+   "options": [
+    "Se o ferreiro existiu mesmo",
+    "Se as dívidas algum dia foram pagas, e por quem",
+    "Para onde o fogo foi",
+    "Por que o morro é vermelho"
+   ]
+  }
  ]
 }

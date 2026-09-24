@@ -4786,5 +4786,233 @@
     "Dat routine superieur is aan vernieuwing"
    ]
   }
+ ],
+ "fk-gr-01": [
+  {
+   "q": "Wat zag de visser op een maanverlichte nacht op het strand?",
+   "options": [
+    "Zeehonden die om vis vochten",
+    "Jonge vrouwen die dansten, met zeehondenvellen op de rotsen",
+    "Een boot die op het zand was aangespoeld",
+    "Zijn buren die netten repareerden"
+   ]
+  },
+  {
+   "q": "Wat deed de vrouw elke avond?",
+   "options": [
+    "Ze zong voor de kinderen",
+    "Ze repareerde het visnet",
+    "Ze stond in de deuropening en keek naar de zee",
+    "Ze liep naar de haven"
+   ]
+  },
+  {
+   "q": "Wie vond het verstopte vel?",
+   "options": [
+    "De visser",
+    "Een buurman",
+    "De oudste zoon",
+    "De jongste dochter"
+   ]
+  },
+  {
+   "q": "Wat zeiden de mensen van Ceann Dubh nadat ze vertrokken was?",
+   "options": [
+    "Dat de visser was verhuisd",
+    "Dat een grote grijze zeehond naar de kinderen keek en dat het net altijd vol zat",
+    "Dat ze elk voorjaar terugkwam",
+    "Dat de zee geen vis meer gaf"
+   ]
+  }
+ ],
+ "fk-gr-02": [
+  {
+   "q": "Wat zou de eerste die van de zalm proefde krijgen?",
+   "options": [
+    "Grote kracht",
+    "Een lang leven",
+    "Kennis van alles wat was en zou komen",
+    "Een koninkrijk"
+   ]
+  },
+  {
+   "q": "Wat zei de dichter tegen Fionn toen hij hem de zalm gaf?",
+   "options": [
+    "Dat hij hem op de markt moest verkopen",
+    "Dat hij hem moest roosteren maar er niet van mocht proeven",
+    "Dat hij hem in de rivier moest vrijlaten",
+    "Dat hij hem met het eiland moest delen"
+   ]
+  },
+  {
+   "q": "Hoe kwam het dat Fionn van de zalm proefde?",
+   "options": [
+    "Hij at een stukje toen de dichter weg was",
+    "Hij brandde zijn duim aan een blaar en stak die in zijn mond",
+    "De dichter gaf hem de kop",
+    "Hij dronk het water waarin de vis was gekookt"
+   ]
+  },
+  {
+   "q": "Wat gebeurde er als Fionn zijn duim onder zijn tand legde?",
+   "options": [
+    "De wijsheid van de wereld kwam tot hem",
+    "Hij kon met vissen praten",
+    "Zijn duim genas",
+    "Hij viel in slaap"
+   ]
+  }
+ ],
+ "fk-gr-03": [
+  {
+   "q": "In welke gedaante kwam het waterpaard uit het meer?",
+   "options": [
+    "Een zwarte stier",
+    "Een prachtig wit paard met zeewier in zijn manen",
+    "Een oude man",
+    "Een grijze zeehond"
+   ]
+  },
+  {
+   "q": "Wat gebeurde er met het paard toen de kinderen erop klommen?",
+   "options": [
+    "Het knielde neer",
+    "Het kreeg vleugels",
+    "Zijn rug werd langer",
+    "Het begon te krimpen"
+   ]
+  },
+  {
+   "q": "Hoe ontsnapte de zevende jongen?",
+   "options": [
+    "Hij sprong in het meer en zwom weg",
+    "Hij riep zijn grootmoeder",
+    "Hij sneed zijn eigen vinger af",
+    "Hij liet het paard met een list in slaap vallen"
+   ]
+  },
+  {
+   "q": "Wat zeggen de moeders van Loch Dubh tegen hun kinderen?",
+   "options": [
+    "Zwem nooit in het meer",
+    "Kijk naar de manen en de voeten van een paard dat je niet kent",
+    "Draag altijd een mes bij je",
+    "Blijf op zomeravonden thuis"
+   ]
+  }
+ ],
+ "fk-gr-04": [
+  {
+   "q": "Wie waren volgens het verhaal de voorouders van de Tuathaich?",
+   "options": [
+    "De meesters van de Compagnie",
+    "Arbeiders en kolonisten die met de schepen over zee kwamen",
+    "De Ouden",
+    "Dia-thìrich die de steenkool weigerden"
+   ]
+  },
+  {
+   "q": "Hoe verliep de tocht naar het noorden?",
+   "options": [
+    "Ze werden onderweg aangevallen",
+    "Ze zeilden langs de kust",
+    "Niemand sloeg hen, maar niemand gaf hun ook water",
+    "De Dia-thìrich liepen mee om te helpen"
+   ]
+  },
+  {
+   "q": "Wat hielden de voorouders in het noorden in ere?",
+   "options": [
+    "Een eigen koning",
+    "De Kerk die ze over zee hadden meegebracht",
+    "Nieuwe namen voor elke stad",
+    "Het kolenbloed"
+   ]
+  },
+  {
+   "q": "Wat zeggen de oude mensen tegen de kinderen?",
+   "options": [
+    "Dat ze ooit over zee zullen teruggaan",
+    "Dat ze naar het noorden zijn gestuurd, maar er zelf een thuis van hebben gemaakt",
+    "Dat het kolenbloed in hen zal ontwaken",
+    "Dat de koning hen naar het zuiden zal roepen"
+   ]
+  }
+ ],
+ "fk-gr-05": [
+  {
+   "q": "Wat konden de Ouden volgens het verhaal?",
+   "options": [
+    "Schrijven in een geheim schrift",
+    "De zeehonden roepen met een lied",
+    "Steen in brood veranderen",
+    "Elke taal spreken"
+   ]
+  },
+  {
+   "q": "Waarom besloten de Ouden te vertrekken?",
+   "options": [
+    "Rovers vielen hun steden aan",
+    "Het koren mislukte en de haring kwam niet terug, en het eiland leek hen moe te zijn",
+    "Een koning stuurde hen weg",
+    "Hun steden stortten in zee"
+   ]
+  },
+  {
+   "q": "Wat vonden latere mensen terug van de reis van de Ouden?",
+   "options": [
+    "Wrakhout op de westkust",
+    "Eén enkel graf",
+    "Helemaal niets: geen plank, graf of gedenksteen",
+    "Hun boten in een grot"
+   ]
+  },
+  {
+   "q": "Waarom staat er \"Seann\" voor de namen van de oude steden?",
+   "options": [
+    "De Dia-thìrich hielden de namen die de wind zong en zetten er een woord van respect voor",
+    "De Ouden noemden ze zo",
+    "Een koning gaf ze een nieuwe naam",
+    "Om ze te onderscheiden van nieuwe steden met dezelfde naam"
+   ]
+  }
+ ],
+ "fk-gr-06": [
+  {
+   "q": "Wie was de enige die de rokende heuvel op ging?",
+   "options": [
+    "De koning",
+    "De smid",
+    "De rovers",
+    "De kinderen"
+   ]
+  },
+  {
+   "q": "Waarom beklom de smid die nacht de heuvel?",
+   "options": [
+    "Hij wilde goud",
+    "Zijn jongste zoon was stervende van de kou",
+    "De rovers hadden zijn smidse platgebrand",
+    "Een stem had hem geroepen"
+   ]
+  },
+  {
+   "q": "Welke prijs vroeg het vuur voor zijn gave?",
+   "options": [
+    "Het leven van de smid zelf",
+    "Wie zijn warmte had, zou bij hem in de schuld staan zolang er steenkool is",
+    "Elk jaar een schatting in ijzer",
+    "De hamer van de smid"
+   ]
+  },
+  {
+   "q": "Welke vraag stellen sommigen nog steeds over het kolenbloed?",
+   "options": [
+    "Of de smid ooit heeft bestaan",
+    "Of de schulden ooit zijn betaald, en door wie",
+    "Waar het vuur naartoe is gegaan",
+    "Waarom de heuvel rood is"
+   ]
+  }
  ]
 }

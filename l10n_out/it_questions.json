@@ -4786,5 +4786,233 @@
         "Che la routine è superiore alla novità"
       ]
     }
+  ],
+  "fk-gr-01": [
+    {
+      "q": "Che cosa vide il pescatore sulla riva una notte di luna?",
+      "options": [
+        "Delle foche che litigavano per il pesce",
+        "Delle giovani donne che danzavano, con pelli di foca sugli scogli",
+        "Una barca arenata sulla sabbia",
+        "I vicini che rammendavano le reti"
+      ]
+    },
+    {
+      "q": "Che cosa faceva la moglie ogni sera?",
+      "options": [
+        "Cantava per i bambini",
+        "Rammendava la rete da pesca",
+        "Stava sulla porta a guardare il mare",
+        "Andava a piedi fino al porto"
+      ]
+    },
+    {
+      "q": "Chi trovò la pelle nascosta?",
+      "options": [
+        "Il pescatore",
+        "Un vicino",
+        "Il figlio maggiore",
+        "La figlia più piccola"
+      ]
+    },
+    {
+      "q": "Che cosa diceva la gente di Ceann Dubh dopo che lei se ne fu andata?",
+      "options": [
+        "Che il pescatore si era trasferito",
+        "Che una grossa foca grigia guardava i bambini e la rete era sempre piena",
+        "Che lei tornava ogni primavera",
+        "Che il mare non dava più pesce"
+      ]
+    }
+  ],
+  "fk-gr-02": [
+    {
+      "q": "Che cosa avrebbe ottenuto la prima persona ad assaggiare il salmone?",
+      "options": [
+        "Una grande forza",
+        "Una lunga vita",
+        "La conoscenza di tutto ciò che è stato e che sarà",
+        "Un regno"
+      ]
+    },
+    {
+      "q": "Che cosa disse il poeta a Fionn quando gli diede il salmone?",
+      "options": [
+        "Di venderlo al mercato",
+        "Di arrostirlo ma di non assaggiarlo",
+        "Di liberarlo nel fiume",
+        "Di dividerlo con tutta l'isola"
+      ]
+    },
+    {
+      "q": "Come fece Fionn ad assaggiare il salmone?",
+      "options": [
+        "Ne mangiò un pezzo mentre il poeta non c'era",
+        "Si scottò il pollice su una vescica e se lo mise in bocca",
+        "Il poeta gli diede la testa",
+        "Bevve l'acqua in cui era stato cotto"
+      ]
+    },
+    {
+      "q": "Che cosa succedeva ogni volta che Fionn si metteva il pollice sotto il dente?",
+      "options": [
+        "Gli veniva la saggezza del mondo",
+        "Poteva parlare con i pesci",
+        "Il pollice gli guariva",
+        "Si addormentava"
+      ]
+    }
+  ],
+  "fk-gr-03": [
+    {
+      "q": "Sotto quale forma usciva dal lago il cavallo d'acqua?",
+      "options": [
+        "Un toro nero",
+        "Un bellissimo cavallo bianco con le alghe nella criniera",
+        "Un vecchio",
+        "Una foca grigia"
+      ]
+    },
+    {
+      "q": "Che cosa succedeva al cavallo man mano che i bambini salivano?",
+      "options": [
+        "Si inginocchiava",
+        "Gli spuntavano le ali",
+        "La schiena gli si allungava",
+        "Cominciava a rimpicciolire"
+      ]
+    },
+    {
+      "q": "Come si salvò il settimo bambino?",
+      "options": [
+        "Si tuffò nel lago e scappò a nuoto",
+        "Chiamò sua nonna",
+        "Si tagliò il dito da solo",
+        "Ingannò il cavallo facendolo addormentare"
+      ]
+    },
+    {
+      "q": "Che cosa dicono le madri di Loch Dubh ai loro figli?",
+      "options": [
+        "Di non nuotare mai nel lago",
+        "Di guardare la criniera e i piedi di un cavallo che non conoscono",
+        "Di portare sempre un coltello",
+        "Di restare a casa nelle sere d'estate"
+      ]
+    }
+  ],
+  "fk-gr-04": [
+    {
+      "q": "Secondo il racconto, chi erano gli antenati dei Tuathaich?",
+      "options": [
+        "I padroni della Compagnia",
+        "Braccianti e coloni arrivati dal mare sulle navi",
+        "Gli Antichi",
+        "Dia-thìrich che avevano rifiutato il carbone"
+      ]
+    },
+    {
+      "q": "Come andò il viaggio verso nord?",
+      "options": [
+        "Furono attaccati lungo la strada",
+        "Navigarono lungo la costa",
+        "Nessuno li colpì, ma nessuno diede loro nemmeno l'acqua",
+        "I Dia-thìrich camminarono con loro per aiutarli"
+      ]
+    },
+    {
+      "q": "Che cosa conservarono gli antenati nel nord?",
+      "options": [
+        "Un re tutto loro",
+        "La Chiesa che avevano portato dal mare",
+        "Nomi nuovi per ogni paese",
+        "Il sangue di carbone"
+      ]
+    },
+    {
+      "q": "Che cosa dicono i vecchi ai bambini?",
+      "options": [
+        "Che un giorno torneranno oltre il mare",
+        "Che li hanno mandati a nord, ma sono stati loro a farne una casa",
+        "Che il sangue di carbone si risveglierà in loro",
+        "Che il re li richiamerà al sud"
+      ]
+    }
+  ],
+  "fk-gr-05": [
+    {
+      "q": "Secondo il racconto, che cosa sapevano fare gli Antichi?",
+      "options": [
+        "Scrivere in una scrittura segreta",
+        "Chiamare le foche con un canto",
+        "Trasformare la pietra in pane",
+        "Parlare tutte le lingue"
+      ]
+    },
+    {
+      "q": "Perché gli Antichi decisero di partire?",
+      "options": [
+        "I predoni attaccarono le loro città",
+        "Il grano non crebbe e le aringhe non tornarono, e l'isola sembrava stanca di loro",
+        "Un re ordinò loro di andarsene",
+        "Le loro città sprofondarono in mare"
+      ]
+    },
+    {
+      "q": "Che cosa trovarono i popoli venuti dopo del viaggio degli Antichi?",
+      "options": [
+        "Dei rottami sulla costa occidentale",
+        "Una sola tomba",
+        "Proprio nulla: né un'asse, né una tomba, né una pietra commemorativa",
+        "Le loro barche in una grotta"
+      ]
+    },
+    {
+      "q": "Perché le vecchie città hanno \"Seann\" davanti al nome?",
+      "options": [
+        "I Dia-thìrich tennero i nomi che cantava il vento e aggiunsero una parola di rispetto",
+        "Gli Antichi le avevano chiamate così",
+        "Un re cambiò loro nome",
+        "Per distinguerle da città nuove con lo stesso nome"
+      ]
+    }
+  ],
+  "fk-gr-06": [
+    {
+      "q": "Chi era l'unico a salire sulla collina che fuma?",
+      "options": [
+        "Il re",
+        "Il fabbro",
+        "I predoni",
+        "I bambini"
+      ]
+    },
+    {
+      "q": "Che cosa spinse il fabbro a salire sulla collina quella notte?",
+      "options": [
+        "Voleva l'oro",
+        "Il figlio più piccolo stava morendo di freddo",
+        "I predoni gli avevano bruciato la fucina",
+        "Una voce lo aveva chiamato"
+      ]
+    },
+    {
+      "q": "Quale prezzo chiese il fuoco per il suo dono?",
+      "options": [
+        "La vita stessa del fabbro",
+        "Chi avesse il suo calore sarebbe stato in debito con lui finché ci fosse stato carbone",
+        "Un tributo di ferro ogni anno",
+        "Il martello del fabbro"
+      ]
+    },
+    {
+      "q": "Quale domanda si pone ancora qualcuno sul sangue di carbone?",
+      "options": [
+        "Se il fabbro sia davvero esistito",
+        "Se i debiti siano mai stati pagati, e da chi",
+        "Dove sia andato il fuoco",
+        "Perché la collina sia rossa"
+      ]
+    }
   ]
 }
