@@ -44,7 +44,7 @@ def main():
             rows.append('    %r: (%r, %r),' % (i, text, R.pronounce(text.rstrip('?!.'))))
         path = os.path.join(CONTENT, 'xlate_gr_%s.py' % band)
         with open(path, 'w', encoding='utf-8') as fh:
-            fh.write('# -*- coding: utf-8 -*-\n# Ròdais, the Gaelic of Rodos: written by tools/import_rodais.py from the Ròdais dictionary.\n'
+            fh.write('# -*- coding: utf-8 -*-\n# Ròdais, the tongue of Rodos: written by tools/import_rodais.py from the Ròdais dictionary.\n'
                      "# The reading line is the pronunciation in IPA.\nLANG = 'gr'\nWORDS = {\n%s\n}\n" % '\n'.join(rows))
         print('%s: %d words' % (os.path.basename(path), len(rows)))
 
