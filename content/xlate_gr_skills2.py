@@ -71,7 +71,7 @@ NUANCE = [
     {"id": "n-gr5", "tier": "C2", "topic": "nuance-spoken-register",
      "context": "Pausing to think before you answer, in natural Ròdais speech (\"well, now…\").", "correct": "Seadh…",
      "options": ["Seadh…", "Uill…", "Okay…", "Uime sin…"],
-     "note": "A Ròdach fills the pause with seadh or ma-thà. The fillers uill and okay, borrowed from English elsewhere in the Gaelic world, never took root in Ròdais, and uime sin is a formal \"therefore.\""},
+     "note": "A Ròdach fills the pause with seadh or ma-thà. The fillers uill and okay, which the humans brought, never took root in Ròdais, and uime sin is a formal \"therefore.\""},
     {"id": "n-gr6", "tier": "C2", "topic": "nuance-spoken-register",
      "context": "Speaking carefully to an elder about the doctor who came to the house.", "correct": "an lighiche",
      "options": ["an lighiche", "an dotair", "an t-oide", "an t-iascair"],

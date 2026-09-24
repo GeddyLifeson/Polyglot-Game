@@ -3,7 +3,7 @@
 A single-file, sci-fi roguelite language-learning game: a 5,005-word A1→C2 fluency ladder in
 twenty-one languages (Spanish, French, Italian, Brazilian Portuguese, Japanese, Mandarin, German, Dutch,
 Swedish, Polish, Russian, Greek, Latin, Turkish, Arabic, Hindi, Korean, Cantonese, Vietnamese,
-Indonesian, and Ròdais, the Gaelic of Rodos) with
+Indonesian, and Ròdais, the tongue of Rodos) with
 vocabulary, dialogue, sentence-building, grammar, idiom, nuance and listening modules,
 a Signal Chain meta-progression, an Engineering Bay, anomaly events, daily Signal Storms,
 officer ranks, commendations, and native-speaker recordings generated with Kokoro-82M.
