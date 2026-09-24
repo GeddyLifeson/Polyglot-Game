@@ -1,9 +1,9 @@
 """
-import_rodais.py -- write the Diathìris word files (content/xlate_gr_<band>.py) from the Diathìris dictionary.
+import_rodais.py -- write the Dia-thìris word files (content/xlate_gr_<band>.py) from the Dia-thìris dictionary.
 
     python3 tools/import_rodais.py <rodais-folder>
 
-<rodais-folder> is the folder of the Diathìris language (GeddyLifeson/panscriptum,
+<rodais-folder> is the folder of the Dia-thìris language (GeddyLifeson/panscriptum,
 reference/owner_source_material/rodais/), holding LEXICON.json and rodais_engine.py. Its dictionary covers
 every word of the ladder under the ladder's own ids. Each word becomes (text, reading):
 
@@ -44,7 +44,7 @@ def main():
             rows.append('    %r: (%r, %r),' % (i, text, R.pronounce(text.rstrip('?!.'))))
         path = os.path.join(CONTENT, 'xlate_gr_%s.py' % band)
         with open(path, 'w', encoding='utf-8') as fh:
-            fh.write('# -*- coding: utf-8 -*-\n# Diathìris, the tongue of Diathìr: written by tools/import_rodais.py from the Diathìris dictionary.\n'
+            fh.write('# -*- coding: utf-8 -*-\n# Dia-thìris, the tongue of Dia-thìr: written by tools/import_rodais.py from the Dia-thìris dictionary.\n'
                      "# The reading line is the pronunciation in IPA.\nLANG = 'gr'\nWORDS = {\n%s\n}\n" % '\n'.join(rows))
         print('%s: %d words' % (os.path.basename(path), len(rows)))
 

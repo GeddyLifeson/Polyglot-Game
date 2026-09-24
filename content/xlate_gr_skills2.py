@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Diathìris skill layer: grammar (storytelling, complex conditionals, everyday descriptions),
+# Dia-thìris skill layer: grammar (storytelling, complex conditionals, everyday descriptions),
 # idioms (character, everyday moments, media), and C2 nuance (register, precision, tone)
 LANG = 'gr'
 
@@ -11,7 +11,7 @@ GRAMMAR = [
     {"id": "g-gr2", "tier": "B2", "topic": "gram-telling-stories",
      "sentence": "Bha am filidh a' leughadh ___ fad na h-oidhche.", "correct": "an leabhair",
      "options": ["an leabhair", "an leabhar", "leabhar", "na leabhraichean"],
-     "note": "The object of a verbal noun in the progressive goes into the genitive, because it is the \"possessor\" of the action (at the reading of the book): a' leughadh an leabhair. Careful Diathìris always keeps this genitive."},
+     "note": "The object of a verbal noun in the progressive goes into the genitive, because it is the \"possessor\" of the action (at the reading of the book): a' leughadh an leabhair. Careful Dia-thìris always keeps this genitive."},
     {"id": "g-gr3", "tier": "B2", "topic": "gram-conditionals-complex",
      "sentence": "Ma ___ an t-uisce ann a-màireach, cha tèid sinn a-mach.", "correct": "bhios",
      "options": ["bhios", "bidh", "biodh", "robh"],
@@ -19,7 +19,7 @@ GRAMMAR = [
     {"id": "g-gr4", "tier": "B2", "topic": "gram-conditionals-complex",
      "sentence": "Nam biodh long agam, ___ gu Inis bhàn.", "correct": "sheòlainn",
      "options": ["sheòlainn", "seòlaidh mi", "sheòl mi", "seòlam"],
-     "note": "An unreal condition (nam biodh, \"if I had\") pairs with the conditional in the main clause. Good Diathìris uses the synthetic first person sheòlainn \"I would sail\"; seòlaidh mi is future, sheòl mi past, and seòlam an imperative."},
+     "note": "An unreal condition (nam biodh, \"if I had\") pairs with the conditional in the main clause. Good Dia-thìris uses the synthetic first person sheòlainn \"I would sail\"; seòlaidh mi is future, sheòl mi past, and seòlam an imperative."},
     {"id": "g-gr5", "tier": "B2", "topic": "gram-everyday-descriptions",
      "sentence": "___ iascair e, mar a bha athair roimhe.", "correct": "Is",
      "options": ["Is", "Tha", "Bha", "Bidh"],
@@ -55,7 +55,7 @@ NUANCE = [
     {"id": "n-gr1", "tier": "C2", "topic": "nuance-politeness-register",
      "context": "Greeting an older stranger you meet on the road.", "correct": "Dia dhuibh",
      "options": ["Dia dhuibh", "Dia dhut", "Halò", "Seadh"],
-     "note": "Sibh is the polite \"you\" for anyone older, of rank or unknown to you, so the greeting is Dia dhuibh. Dia dhut is for friends and family; Diathìris never took the loan halò, and seadh means \"I see, go on.\""},
+     "note": "Sibh is the polite \"you\" for anyone older, of rank or unknown to you, so the greeting is Dia dhuibh. Dia dhut is for friends and family; Dia-thìris never took the loan halò, and seadh means \"I see, go on.\""},
     {"id": "n-gr2", "tier": "C2", "topic": "nuance-politeness-register",
      "context": "Saying \"please\" when asking your friend's grandmother to pass the bread.", "correct": "mas e ur toil e",
      "options": ["mas e ur toil e", "mas e do thoil e", "siuthad", "trobhad"],
@@ -69,9 +69,9 @@ NUANCE = [
      "options": ["Is leamsa i.", "Tha i agam.", "Tha i orm.", "Is aithne dhomh i."],
      "note": "Ownership as a fact about the thing takes the copula + le, here emphatic because it answers \"whose?\". Tha i agam only says the ship is in your keeping, which is true of a borrowed one too."},
     {"id": "n-gr5", "tier": "C2", "topic": "nuance-spoken-register",
-     "context": "Pausing to think before you answer, in natural Diathìris speech (\"well, now…\").", "correct": "Seadh…",
+     "context": "Pausing to think before you answer, in natural Dia-thìris speech (\"well, now…\").", "correct": "Seadh…",
      "options": ["Seadh…", "Uill…", "Okay…", "Uime sin…"],
-     "note": "A Diathìreach fills the pause with seadh or ma-thà. The fillers uill and okay, which the humans brought, never took root in Diathìris, and uime sin is a formal \"therefore.\""},
+     "note": "A Dia-thìreach fills the pause with seadh or ma-thà. The fillers uill and okay, which the humans brought, never took root in Dia-thìris, and uime sin is a formal \"therefore.\""},
     {"id": "n-gr6", "tier": "C2", "topic": "nuance-spoken-register",
      "context": "Speaking carefully to an elder about the doctor who came to the house.", "correct": "an lighiche",
      "options": ["an lighiche", "an dotair", "an t-oide", "an t-iascair"],

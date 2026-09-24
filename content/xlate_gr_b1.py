@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Diathìris, the tongue of Diathìr: written by tools/import_rodais.py from the Diathìris dictionary.
+# Dia-thìris, the tongue of Dia-thìr: written by tools/import_rodais.py from the Dia-thìris dictionary.
 # The reading line is the pronunciation in IPA.
 LANG = 'gr'
 WORDS = {
