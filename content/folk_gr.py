@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-# Tales told on Rodos, in Ròdais with the English alongside, graded for the Ship's Library
+# Tales told on Dia-thìr, in Dia-thìris with the English alongside, graded for the Ship's Library
 LANG = 'gr'
 FOLK = [
     {
         'id': 'fk-gr-01', 'tier': 'B1', 'title': 'Bean an Ròin', 'title_en': 'The Seal Wife',
-        'origin': 'Told on the Rodos coast at Ceann Dubh; a tale of the Ròdaich',
+        'origin': 'Told on the Dia-thìr coast at Ceann Dubh; a tale of the Dia-thìrich',
         'paras': [
-            "Bha siud ann uair iascair a bha a' fuireach leis fhèin ann am bothan beag aig Ceann Dubh, air costa an iar Ròdais.",
+            "Bha siud ann uair iascair a bha a' fuireach leis fhèin ann am bothan beag aig Ceann Dubh, air costa an iar Dia-thìr.",
             "Aon oidhche ghealaich, chaidh e sìos chun a' chladaich. Chunnaic e buidheann de mhnathan òga a' dannsadh air a' ghainmhich, agus na craicnean-ròin aca nan laighe air na creagan.",
             "Ghoid an t-iascair aon de na craicnean agus dh'fhalaich e fo a chòta e. Nuair a chunnaic na mnathan e, ruith iad chun na mara, chuir iad orra na craicnean aca, agus leum iad dhan uisce nan ròin. Ach dh'fhuirich tè dhiubh air a' chladach, a' caoineadh, oir cha b' urrainn dhi tilleadh gun a craiceann.",
             "Thug an t-iascair dhachaigh i, agus an ceann ùine phòs iad. Bha i na bean-phòsta chòir, dhìleas, agus rug i triùir chloinne dha. Ach gach feascar sheasadh i aig an doras, a' coimhead a-mach air a' mhuir le sùilean brònach.",
@@ -15,7 +15,7 @@ FOLK = [
             "Cha do thill i tuilleadh. Ach thuirt na daoine aig Ceann Dubh gum faicte ròn mòr glas gach feascar faisc air a' chladach, a' coimhead air a' chlann, agus gum biodh iasc gu leòr an-còmhnaidh ann an lìon an iascair.",
         ],
         'paras_en': [
-            'There was once a fisherman who lived alone in a small cottage at Ceann Dubh, on the west coast of Rodos.',
+            'There was once a fisherman who lived alone in a small cottage at Ceann Dubh, on the west coast of Dia-thìr.',
             'One moonlit night, he went down to the shore. He saw a group of young women dancing on the sand, and their seal-skins lying on the rocks.',
             'The fisherman stole one of the skins and hid it under his coat. When the women saw him, they ran to the sea, put on their skins, and leapt into the water as seals. But one of them stayed on the shore, weeping, for she could not go back without her skin.',
             'The fisherman took her home, and in time they married. She was a kind, faithful wife, and she bore him three children. But every evening she would stand at the door, looking out at the sea with sad eyes.',
@@ -32,7 +32,7 @@ FOLK = [
     },
     {
         'id': 'fk-gr-02', 'tier': 'B1', 'title': 'Fionn agus Bradan an Eòlais', 'title_en': 'Fionn and the Salmon of Knowledge',
-        'origin': 'Told on the banks of the Abhainn mhòr, Rodos; a tale of Fionn',
+        'origin': 'Told on the banks of the Abhainn mhòr, Dia-thìr; a tale of Fionn',
         'paras': [
             "Bha siud ann uair, fada mus robh rìgh ann an Cathair dhearg, bàrd aosta ris an canadh daoine Fionn-Èigeas. Bha e a' fuireach leis fhèin aig linne dhomhainn air an Abhainn mhòir, far an robh an abhainn a' dòrtadh dhan mhuir.",
             "Anns an linne sin bha bradan mòr, sean, agus bha a h-uile gliocas air an t-saoghal ann. Bha e air a ràdh gum faigheadh a' chiad duine a bhlaiseadh de fheòil a' bhradain sin eòlas air gach nì a bha ann agus a bhiodh ann. Fad seachd bliadhna bha am bàrd ag iascach air a shon, agus cha d' fhuair e grèim air.",
@@ -60,9 +60,9 @@ FOLK = [
     },
     {
         'id': 'fk-gr-03', 'tier': 'B2', 'title': 'An t-Each-Uisce', 'title_en': 'The Water Horse',
-        'origin': 'Told at Loch Dubh in the high glens of Rodos; a tale of the Ròdaich',
+        'origin': 'Told at Loch Dubh in the high glens of Dia-thìr; a tale of the Dia-thìrich',
         'paras': [
-            "Bha siud ann uair, ann an glinn àrda Ròdais, loch dorcha ris an canadh daoine Loch Dubh. Cha rachadh duine glic faisc air an loch sin às dèidh dol fodha na grèine, oir bha fios aig a h-uile duine gun robh an t-each-uisce a' fuireach fo a uisce.",
+            "Bha siud ann uair, ann an glinn àrda Dia-thìr, loch dorcha ris an canadh daoine Loch Dubh. Cha rachadh duine glic faisc air an loch sin às dèidh dol fodha na grèine, oir bha fios aig a h-uile duine gun robh an t-each-uisce a' fuireach fo a uisce.",
             "Air an oidhche, thigeadh e às an loch ann an riochd eich bhrèagha ghil, le muing fhada air a sceadachadh le feamainn. Sheasadh e air a' bhruaich cho socair ri caora, a' feitheamh ri cuideigin a bha gòrach gu leòr airson a dhol air a mhuin.",
             "Ge b' e cò a rachadh air a mhuin, leanadh a chraiceann ris an each mar ghlaodh, agus ruitheadh an t-each-uisce dìreach dhan loch. Chan fhacas a-riamh tuilleadh duine sam bith a ghabh an turas sin; cha tilleadh ach a ghrùthan, air a thilgeil air a' bhruaich.",
             "Anns a' bhaile ri taobh an locha, bha seachdnar chloinne a' cluich aon fheascar samhraidh. Nochd each bàn air a' bhruaich, agus bha e cho ciùin 's gun deach sianar dhiubh air a mhuin, fear às dèidh fir. Dh'fhàs druim an eich na b' fhaide leis gach leanabh a shreap air.",
@@ -71,7 +71,7 @@ FOLK = [
             'Ach bha e ro fhadalach. Leum an t-each-uisce dhan loch le screuch uamhasach, agus chaidh e fodha leis a\' chloinn eile air a dhruim. Cha d\' fhuaireadh sceul orra tuilleadh. Gus an latha an-diugh, cha leig na màthraichean aig Loch Dubh leis a\' chloinn aca each sam bith a shlìobadh nach aithne dhaibh. "Seall air a mhuing," their iad, "agus seall air a chasan."',
         ],
         'paras_en': [
-            'Once upon a time, in the high glens of Rodos, there was a dark loch that people called Loch Dubh. No wise person would go near that loch after sunset, for everyone knew that the water horse lived beneath its water.',
+            'Once upon a time, in the high glens of Dia-thìr, there was a dark loch that people called Loch Dubh. No wise person would go near that loch after sunset, for everyone knew that the water horse lived beneath its water.',
             'At night it would come out of the loch in the shape of a beautiful white horse, with a long mane adorned with seaweed. It would stand on the bank as gentle as a sheep, waiting for someone foolish enough to get on its back.',
             'Whoever got on its back, his skin would stick to the horse like glue, and the water horse would run straight into the loch. No one who took that journey was ever seen again; only his liver would come back, thrown up on the bank.',
             "In the village beside the loch, seven children were playing one summer evening. A white horse appeared on the bank, and it was so gentle that six of them got on its back, one after another. The horse's back grew longer with every child who climbed onto it.",
@@ -88,80 +88,80 @@ FOLK = [
     },
     {
         'id': 'fk-gr-04', 'tier': 'B2', 'title': 'Carson a Chaidh na Tuathaich gu Tuath', 'title_en': 'Why the Tuathaich Went North',
-        'origin': 'Told by the Tuathaich around the fire in the north of Rodos; their side of the coal-blood tale',
+        'origin': 'Told by the Tuathaich around the fire in the north of Dia-thìr; their side of the coal-blood tale',
         'paras': [
-            "Tha na Ròdaich ag innse an sceòil seo ann an aon dòigh, agus na Tuathaich ann an dòigh eile. Seo mar a dh'innseas na Tuathaich e, timcheall air an teine ann an oidhcheannan fada a' gheamhraidh.",
+            "Tha na Dia-thìrich ag innse an sceòil seo ann an aon dòigh, agus na Tuathaich ann an dòigh eile. Seo mar a dh'innseas na Tuathaich e, timcheall air an teine ann an oidhcheannan fada a' gheamhraidh.",
             'Nuair a thàinig an teas às a\' chnoc a-steach do fhuil teaghlach a\' ghobha, cha do ghabh a h-uile duine ris. Bha teaghlaichean ann a chuala mun chùmhnant agus a thuirt, "Chan eil sinn airson a bhith fo fhiachan do theine. Is fheàrr leinn a bhith fuar agus saor."',
-            "Airson ùine, bha an dà shluagh a' fuireach taobh ri taobh. Ach dh'fhàs na daoine aig an robh an fhuil-ghuail làidir agus lìonmhor. Thog iad ballachan dearga, thagh iad rìgh às am measc fhèin, agus thàinig Rìoghachd Ròdais gu bith. Cha b' urrainn do na daoine eile cumail suas riutha, ann an obair no ann an cogadh.",
+            "Airson ùine, bha an dà shluagh a' fuireach taobh ri taobh. Ach dh'fhàs na daoine aig an robh an fhuil-ghuail làidir agus lìonmhor. Thog iad ballachan dearga, thagh iad rìgh às am measc fhèin, agus thàinig Rìoghachd Dia-thìr gu bith. Cha b' urrainn do na daoine eile cumail suas riutha, ann an obair no ann an cogadh.",
             'An toiseach cha robh ann ach cìs bheag, agus an uair sin cìs mhòr. An uair sin thàinig lagh bhon chathair: nach fhaodadh duine gun teas na fhuil fearann a chumail an taobh a-staigh de latha coiseachd bho na ballachan dearga. Cha do thog duine claidheamh. Cha robh feum air.',
             "Mar sin, aon earrach, chruinnich na teaghlaichean saora an crodh agus an caoraich agus na bha aca de ghoireasan, agus thog iad orra gu tuath. Choisich iad seachad air na cnuic loiscte agus tro na coilltean, gus an do ràinig iad fearann creagach far an robh a' ghaoth geur agus an talamh tana. Cha robh duine eile ga iarraidh.",
-            'Is ann an sin a fhuair iad an t-ainm a th\' orra an-diugh. Cha b\' e ainm a thagh iad fhèin a bh\' ann: bha na Ròdaich a\' bruidhinn orra mar "na daoine a tuath", agus an ceann ùine, cha robh annta ach na Tuathaich. Ach ghabh iad ris an ainm le uaill, oir cha robh fiachan orra do dhuine.',
+            'Is ann an sin a fhuair iad an t-ainm a th\' orra an-diugh. Cha b\' e ainm a thagh iad fhèin a bh\' ann: bha na Dia-thìrich a\' bruidhinn orra mar "na daoine a tuath", agus an ceann ùine, cha robh annta ach na Tuathaich. Ach ghabh iad ris an ainm le uaill, oir cha robh fiachan orra do dhuine.',
             'Tha beatha chruaidh aca fhathast ann an ceann a tuath an eilein. Bidh iad a\' loscadh mònach an àite guail, agus bidh iad a\' bàsachadh le fuachd agus le aois mar a h-uile duine eile air an t-saoghal. Ach nuair a dh\'fhaighnicheas clann nan Tuathach carson a tha iad cho fada bhon chathair, their na seann daoine riutha: "Tha sinn bochd, ach tha ar fuil fhèin againn."',
         ],
         'paras_en': [
-            'The Ròdaich tell this story one way, and the Tuathaich another. This is how the Tuathaich tell it, around the fire on the long nights of winter.',
+            'The Dia-thìrich tell this story one way, and the Tuathaich another. This is how the Tuathaich tell it, around the fire on the long nights of winter.',
             'When the heat came out of the hill into the blood of the smith\'s family, not everyone accepted it. There were families who heard about the bargain and who said, "We don\'t want to be in debt to a fire. We would rather be cold and free."',
-            'For a time, the two peoples lived side by side. But the people who had the coal-blood grew strong and numerous. They built red walls, chose a king from among themselves, and the Kingdom of Rodos came into being. The other people could not keep up with them, in work or in war.',
+            'For a time, the two peoples lived side by side. But the people who had the coal-blood grew strong and numerous. They built red walls, chose a king from among themselves, and the Kingdom of Dia-thìr came into being. The other people could not keep up with them, in work or in war.',
             "At first there was only a small tax, and then a large tax. Then a law came from the city: that no one without heat in his blood might hold land within a day's walk of the red walls. No one raised a sword. There was no need.",
             'So, one spring, the free families gathered their cattle and their sheep and whatever goods they had, and they set off north. They walked past the burnt hills and through the woods, until they reached a rocky land where the wind was sharp and the soil thin. No one else wanted it.',
-            'It was there that they got the name they bear today. It was not a name they chose themselves: the Ròdaich spoke of them as "the people from the north", and in time they were simply the Tuathaich. But they took the name with pride, for they owed no debt to anyone.',
+            'It was there that they got the name they bear today. It was not a name they chose themselves: the Dia-thìrich spoke of them as "the people from the north", and in time they were simply the Tuathaich. But they took the name with pride, for they owed no debt to anyone.',
             'They still have a hard life in the northern end of the island. They burn peat instead of coal, and they die of cold and of age like everyone else in the world. But when the children of the Tuathaich ask why they are so far from the city, the old people say to them: "We are poor, but we have our own blood."',
         ],
         'questions': [
             {'after': 1, 'q': 'Why did some families refuse the heat in their blood?', 'options': ['They feared the smith', 'They did not want to be in debt to a fire', 'They had no children', 'They were already warm'], 'correct': 1},
             {'after': 3, 'q': 'How were the free families pushed off their land?', 'options': ['By a war with the king', 'By taxes and then a law about who could hold land', 'By a great flood', 'By a failed harvest'], 'correct': 1},
-            {'after': 5, 'q': 'Where does the name "Tuathaich" come from?', 'options': ['A king gave it to them', 'They chose it at a gathering', 'The Ròdaich called them "the people from the north"', 'It was the name of their first chief'], 'correct': 2},
-            {'after': 6, 'q': 'What do the old Tuathaich tell their children?', 'options': ['That they will return to the city one day', 'That they are poor but have their own blood', 'That the Ròdaich are their enemies', 'That coal is a gift'], 'correct': 1},
+            {'after': 5, 'q': 'Where does the name "Tuathaich" come from?', 'options': ['A king gave it to them', 'They chose it at a gathering', 'The Dia-thìrich called them "the people from the north"', 'It was the name of their first chief'], 'correct': 2},
+            {'after': 6, 'q': 'What do the old Tuathaich tell their children?', 'options': ['That they will return to the city one day', 'That they are poor but have their own blood', 'That the Dia-thìrich are their enemies', 'That coal is a gift'], 'correct': 1},
         ],
     },
     {
         'id': 'fk-gr-05', 'tier': 'C1', 'title': "Mar a Dh'fhalbh na Seann-Dhaoine", 'title_en': 'How the Old Ones Left',
-        'origin': 'Told by old fishermen at Seann Dunn, Rodos; a legend of the Old Ones',
+        'origin': 'Told by old fishermen at Seann Dunn, Dia-thìr; a legend of the Old Ones',
         'paras': [
-            "Fada mus tàinig na Ròdaich, bha sluagh eile a' fuireach air Ròdos. Cha robh an cànan aca coltach ri cànan sam bith a tha air a bhruidhinn an-diugh, agus cha do scrìobh iad dad sìos. Canaidh sinne na Seann-Dhaoine riutha, a chionn 's nach eil fios aig duine beò dè an t-ainm a bh' aca orra fhèin.",
+            "Fada mus tàinig na Dia-thìrich, bha sluagh eile a' fuireach air Dia-thìr. Cha robh an cànan aca coltach ri cànan sam bith a tha air a bhruidhinn an-diugh, agus cha do scrìobh iad dad sìos. Canaidh sinne na Seann-Dhaoine riutha, a chionn 's nach eil fios aig duine beò dè an t-ainm a bh' aca orra fhèin.",
             "Bha bailtean aca air feadh a' chladaich: Dunn air a' chreig os cionn a' chaolais, Cwen ann am bàgh foidhpe, agus Skell air an rubha a b' fhaide an iar. Bha iad eòlach air a' mhuir mar a tha iascair eòlach air a lìon, agus b' urrainn dhaibh na ròin a ghairm le òran.",
             "Ach thàinig bliadhna nuair nach do dh'fhàs an t-arbhar agus nach do thill an scadan. Bha na seann daoine glic aca ag ràdh gun robh an t-eilean scìth dhiubh, agus gun robh e a' fuadach nan daoine a bhuineadh dha bho thùs. Chruinnich iad uile aig Dunn air oidhche na gealaich ùire, agus chuir iad comhairle ri chèile gus an do shoilleirich an latha.",
             "Anns a' mhadainn, rinn iad an co-dhùnadh. Thog iad bàtaichean fada de dharach dubh, luchdaich iad annta an clann agus an sìol agus clachan an teallaichean, agus sheòl iad a-mach air a' chuan mhòr, an iar, a dh'ionnsaigh na grèine a bha a' dol fodha.",
             "Chan fhacas iad a-riamh tuilleadh. Cha do lorg duine bòrd de na bàtaichean aca, no uaigh, no clach-chuimhne. Chaidh an cànan à cuimhne ann an aon ghinealach, mar shneachda air a' ghainmhich nuair a thig an làn.",
-            "Nuair a thàinig na Ròdaich gu na cladaichean sin, fhuair iad bailtean falamh le ballachan cloiche a bha fhathast nan seasamh. Cha robh duine ann a dh'innseadh dhaibh dè an t-ainm a bh' orra. Ach nuair a sheas iad anns na seann bhailtean, chuala iad a' ghaoth a' seinn trì ainmean thairis air na ballachan: Dunn, Cwen, Skell. Cha b' urrainn do na Ròdaich na h-ainmean sin a thuigsinn, ach cha do chuir iad ainmean ùra nan àite. Chuir iad dìreach aon fhacal romhpa, mar chomharra urraim: Seann Dunn, Seann Chwen, Seann Skell. Agus is ann mar sin a tha iad air a' mhapa chun an latha an-diugh.",
+            "Nuair a thàinig na Dia-thìrich gu na cladaichean sin, fhuair iad bailtean falamh le ballachan cloiche a bha fhathast nan seasamh. Cha robh duine ann a dh'innseadh dhaibh dè an t-ainm a bh' orra. Ach nuair a sheas iad anns na seann bhailtean, chuala iad a' ghaoth a' seinn trì ainmean thairis air na ballachan: Dunn, Cwen, Skell. Cha b' urrainn do na Dia-thìrich na h-ainmean sin a thuigsinn, ach cha do chuir iad ainmean ùra nan àite. Chuir iad dìreach aon fhacal romhpa, mar chomharra urraim: Seann Dunn, Seann Chwen, Seann Skell. Agus is ann mar sin a tha iad air a' mhapa chun an latha an-diugh.",
             "Their seann iascairean nach do dh'fhalbh na Seann-Dhaoine buileach. Air oidhche na gealaich ùire, ma dh'èisteas tu gu cùramach aig Seann Dunn, cluinnidh tu òran ann an cànan nach aithne do dhuine beò, a' tighinn thar an uisce on àird an iar.",
         ],
         'paras_en': [
-            'Long before the Ròdaich came, another people lived on Rodos. Their language was like no language spoken today, and they wrote nothing down. We call them the Old Ones, because no living person knows what name they had for themselves.',
+            'Long before the Dia-thìrich came, another people lived on Dia-thìr. Their language was like no language spoken today, and they wrote nothing down. We call them the Old Ones, because no living person knows what name they had for themselves.',
             'They had towns all along the shore: Dunn on the rock above the strait, Cwen in a bay beneath it, and Skell on the westernmost headland. They knew the sea as a fisherman knows his net, and they could call the seals with a song.',
             'But there came a year when the corn did not grow and the herring did not return. Their wise elders said that the island had grown tired of them, and that it was driving away the people who had belonged to it from the beginning. They all gathered at Dunn on the night of the new moon, and they took counsel together until the day dawned.',
             'In the morning, they made their decision. They built long boats of black oak, loaded into them their children and their seed and the stones of their hearths, and sailed out onto the great ocean, westward, toward the setting sun.',
             'They were never seen again. No one found a plank of their boats, nor a grave, nor a memorial stone. Their language passed out of memory in a single generation, like snow on the sand when the tide comes in.',
-            'When the Ròdaich came to those shores, they found empty towns with stone walls that were still standing. There was no one there to tell them what the towns were called. But when they stood in the old towns, they heard the wind singing three names over the walls: Dunn, Cwen, Skell. The Ròdaich could not understand those names, but they did not put new names in their place. They simply put one word in front of them, as a mark of respect: Seann Dunn, Seann Chwen, Seann Skell (Old Dunn, Old Cwen, Old Skell). And that is how they stand on the map to this day.',
+            'When the Dia-thìrich came to those shores, they found empty towns with stone walls that were still standing. There was no one there to tell them what the towns were called. But when they stood in the old towns, they heard the wind singing three names over the walls: Dunn, Cwen, Skell. The Dia-thìrich could not understand those names, but they did not put new names in their place. They simply put one word in front of them, as a mark of respect: Seann Dunn, Seann Chwen, Seann Skell (Old Dunn, Old Cwen, Old Skell). And that is how they stand on the map to this day.',
             'Old fishermen say that the Old Ones did not leave entirely. On the night of the new moon, if you listen carefully at Seann Dunn, you will hear a song in a language no living person knows, coming over the water from the west.',
         ],
         'questions': [
             {'after': 1, 'q': 'What could the Old Ones do, according to the tale?', 'options': ['Write in a secret script', 'Call the seals with a song', 'Turn stone into bread', 'Speak every language'], 'correct': 1},
             {'after': 2, 'q': 'Why did the Old Ones decide to leave?', 'options': ['Raiders attacked their towns', 'The corn failed and the herring did not return, and the island seemed tired of them', 'A king ordered them away', 'Their towns fell into the sea'], 'correct': 1},
             {'after': 4, 'q': 'What did later people find of the Old Ones’ voyage?', 'options': ['Wreckage on the western shore', 'A single grave', 'Nothing at all: no plank, grave or memorial stone', 'Their boats in a cave'], 'correct': 2},
-            {'after': 5, 'q': 'Why do the old towns have "Seann" in front of their names?', 'options': ['The Ròdaich kept the names the wind sang and added a word of respect', 'The Old Ones named them that way', 'A king renamed them', 'To tell them apart from new towns of the same name'], 'correct': 0},
+            {'after': 5, 'q': 'Why do the old towns have "Seann" in front of their names?', 'options': ['The Dia-thìrich kept the names the wind sang and added a word of respect', 'The Old Ones named them that way', 'A king renamed them', 'To tell them apart from new towns of the same name'], 'correct': 0},
         ],
     },
     {
         'id': 'fk-gr-06', 'tier': 'C2', 'title': 'Mar a Thàinig an Gual dhan Fhuil', 'title_en': 'How Coal Came into the Blood',
-        'origin': 'Told in Cathair dhearg, Rodos; a legend of the Ròdaich and the coal-blood',
+        'origin': 'Told in Cathair dhearg, Dia-thìr; a legend of the Dia-thìrich and the coal-blood',
         'paras': [
-            "Seo mar a dh'innis na seann daoine e, agus mar a chuala mise e bho mo sheanmhair ann an Cathair dhearg. Chan eil fhios agam an e an fhìrinn a th' ann; ach is e seo an sceul. Anns na làithean a dh'fhalbh, nuair nach robh rìgh no rìoghachd air Ròdos, bha gobha a' fuireach aig bonn cnuic ann am meadhan an eilein. Bhiodh an cnoc sin a' smocadh fad na bliadhna, agus air oidhcheannan geamhraidh chitheadh daoine lasraichean dearga a' ruith tro na scàinidhean na thaobh. Cha rachadh duine suas air ach an gobha.",
+            "Seo mar a dh'innis na seann daoine e, agus mar a chuala mise e bho mo sheanmhair ann an Cathair dhearg. Chan eil fhios agam an e an fhìrinn a th' ann; ach is e seo an sceul. Anns na làithean a dh'fhalbh, nuair nach robh rìgh no rìoghachd air Dia-thìr, bha gobha a' fuireach aig bonn cnuic ann am meadhan an eilein. Bhiodh an cnoc sin a' smocadh fad na bliadhna, agus air oidhcheannan geamhraidh chitheadh daoine lasraichean dearga a' ruith tro na scàinidhean na thaobh. Cha rachadh duine suas air ach an gobha.",
             "Bha an gobha na b' fheàrr air a cheàird na duine eile air an eilean, ach bha e bochd, agus bha an sluagh aige lag. Bha iad air an sàrachadh le reothadh a' gheamhraidh agus le creachadairean a thigeadh thar na mara. Aon oidhche, nuair a bha a mhac as òige a' bàsachadh leis an fhuachd, ghabh an gobha a òrd na làimh agus dhìrich e an cnoc loiscte gu a mhullach.",
             'Aig a\' mhullach bha sloc, agus anns an t-sloc bha teine nach do las làmh duine a-riamh. Bhruidhinn guth às na lasraichean, cho domhainn ris an talamh. "Carson a thàinig thu, a ghobha?"',
             '"Tha mo shluagh fuar, agus tha iad lag," fhreagair an gobha. "Thoir dhaibh do theas. Thoir dhaibh neart nach bris iarann no reothadh." Rinn an teine gàire mar ghlag. "Bheir mi sin dhut," ars an guth, "ach cha toir mi an ascaidh e. Gach neach aig am bi mo theas na fhuil, bidh e fo fhiachan dhomhsa, e fhèin agus a chlann, cho fad \'s a bhios gual fon talamh."',
             'Cha do smaoinich an gobha fada. Smaoinich e air a mhac. "Gabhaidh mi ris a\' chùmhnant," ars esan. Chuir e a làmh dìreach dhan teine, agus cha do loisc i. Dh\'fhairich e an teas a\' sruthadh suas a ghàirdean, dubh agus dearg, mar ghual a\' dùscadh ann an teallach.',
             "Nuair a thill e dhachaigh, bha a mhac beò agus blàth, agus bha dath dorcha, mar luaithre, fo chraiceann a làmhan. Bho sin a-mach, cha do dh'fhairich teaghlach a' ghobha fuachd a' gheamhraidh, agus cha do thuit iad fo chlaidhmhean nan creachadairean. Scaoil an teas bho ghinealach gu ginealach, agus is iadsan a thog Cathair dhearg de chlach dhearg a' chnuic.",
-            "Is e fuil-ghuail a chanas na Ròdaich ris an tiodhlac sin. Ach tha cuid ann fhathast, 's iad a' coimhead air a' chnoc a tha a' smocadh gu sàmhach, a bhios a' faighneachd: an deach na fiachan a phàigheadh a-riamh? Agus ma chaidh, cò a phàigh iad?",
+            "Is e fuil-ghuail a chanas na Dia-thìrich ris an tiodhlac sin. Ach tha cuid ann fhathast, 's iad a' coimhead air a' chnoc a tha a' smocadh gu sàmhach, a bhios a' faighneachd: an deach na fiachan a phàigheadh a-riamh? Agus ma chaidh, cò a phàigh iad?",
         ],
         'paras_en': [
-            "This is how the old people told it, and how I heard it from my grandmother in Cathair dhearg. I don't know whether it is the truth; but this is the tale. In the days gone by, when there was neither king nor kingdom on Rodos, a smith lived at the foot of a hill in the middle of the island. That hill would smoke all year round, and on winter nights people would see red flames running through the cracks in its side. No one would go up it but the smith.",
+            "This is how the old people told it, and how I heard it from my grandmother in Cathair dhearg. I don't know whether it is the truth; but this is the tale. In the days gone by, when there was neither king nor kingdom on Dia-thìr, a smith lived at the foot of a hill in the middle of the island. That hill would smoke all year round, and on winter nights people would see red flames running through the cracks in its side. No one would go up it but the smith.",
             'The smith was better at his craft than anyone else on the island, but he was poor, and his people were weak. They were harried by the winter frost and by raiders who would come over the sea. One night, when his youngest son was dying of the cold, the smith took his hammer in his hand and climbed the burning hill to its summit.',
             'At the summit there was a pit, and in the pit there was a fire that no human hand had ever lit. A voice spoke out of the flames, as deep as the earth. "Why have you come, smith?"',
             '"My people are cold, and they are weak," the smith answered. "Give them your heat. Give them a strength that neither iron nor frost can break." The fire laughed like a bell. "I will give you that," said the voice, "but I will not give it for nothing. Every person who has my heat in his blood will be in my debt, he and his children, for as long as there is coal under the ground."',
             'The smith did not think long. He thought of his son. "I accept the bargain," he said. He put his hand straight into the fire, and it did not burn. He felt the heat flowing up his arm, black and red, like coal waking in a hearth.',
             "When he returned home, his son was alive and warm, and there was a dark colour, like ash, under the skin of his hands. From then on, the smith's family never felt the cold of winter, and they did not fall under the raiders' swords. The heat spread from generation to generation, and it was they who built Cathair dhearg from the red stone of the hill.",
-            'Coal-blood is what the Ròdaich call that gift. But there are still some, watching the hill that smokes quietly, who ask: were the debts ever paid? And if they were, who paid them?',
+            'Coal-blood is what the Dia-thìrich call that gift. But there are still some, watching the hill that smokes quietly, who ask: were the debts ever paid? And if they were, who paid them?',
         ],
         'questions': [
             {'after': 0, 'q': 'Who alone would go up the smoking hill?', 'options': ['The king', 'The smith', 'The raiders', 'The children'], 'correct': 1},

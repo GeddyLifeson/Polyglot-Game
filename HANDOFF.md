@@ -38,8 +38,8 @@ way through C2), pronunciations must be as natural as possible, and the whole th
 
 ## Language codes
 
-es fr it pt ja zh (core, Kokoro-recorded) · de nl sv pl ru el la tr ar hi ko yue vi ind · gr (Ròdais, the Gaelic of
-Rodos; words from the Ròdais dictionary via `tools/import_rodais.py`, reading line = IPA, OmniVoice Irish voice, one cloned speaker).
+es fr it pt ja zh (core, Kokoro-recorded) · de nl sv pl ru el la tr ar hi ko yue vi ind · gr (Dia-thìris, the Gaelic of
+Dia-thìr; words from the Dia-thìris dictionary via `tools/import_rodais.py`, reading line = IPA, OmniVoice Irish voice, one cloned speaker).
 Indonesian is `ind`, never `id` (`id` collides with the item id field). Languages with a reading line:
 zh (pinyin), ru, el, ar, hi, ko, yue (Jyutping). Japanese carries furigana `{漢字|かな}` in the text itself.
 
@@ -65,7 +65,7 @@ languages plus English as a target, `eng`), each 5,240 to 5,285 clips covering A
 | Kokoro-82M (ONNX) | es fr it pt ja zh (the original six) |
 | Chatterbox Multilingual V3 | de ru nl tr sv ar pl hi el ko la (Italian model) ind (Malay model) |
 | Microsoft Edge neural (edge-tts, keyless) | yue vi eng |
-| OmniVoice Irish voice (`--backend omnivoice --omni-steps 16`, graves read as acutes; clones `tools/voices/omni_gr_man.wav`) | gr (Ròdais) |
+| OmniVoice Irish voice (`--backend omnivoice --omni-steps 16`, graves read as acutes; clones `tools/voices/omni_gr_man.wav`) | gr (Dia-thìris) |
 
 Staging folders `staging_cbx_<lang>/` and `staging_edge_<lang>/` and the `gen_*.log` files can be deleted;
 everything is in `audio/`. Every LANG_META audio flag in build.py is True (plus `LANG_META.eng.audio` in
@@ -240,7 +240,7 @@ themselves ... turned into whatever the native language speaker's tongue is when
   arrives (2.5 s cap, then English). README 3d has the rules for adding strings.
 - Source: `tools/ui_strings.py` extracts ~1,300 strings (≈6,750 words) → `l10n_in/ui.json` via `tools/l10n_prep.py`.
 - Packs: `l10n_out/<lang>_ui.json` for all 21 native languages, assembled into `l10n/<lang>.json` (`ui` key) by
-  build.py; `tools/l10n_check.py <lang> ui` validates. Ròdais (gr) has only the ui pool so far (no notes/questions/
+  build.py; `tools/l10n_check.py <lang> ui` validates. Dia-thìris (gr) has only the ui pool so far (no notes/questions/
   folk chunks yet), so its coach notes and story questions are still English.
 - QA: `qa/qa_ui_l10n.js` (needs HTTP: `node qa/with_server.js qa/qa_ui_l10n.js`).
 - Also fixed on the way: the Lexicon table header now follows the voyage's languages; the Mission Log's "Clear

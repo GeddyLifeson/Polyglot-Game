@@ -35,7 +35,7 @@ function log(l, ok, x){ console.log((ok?'PASS':'FAIL')+' — '+l+(x!==undefined?
   // real playback check: create Audio from the resolved clip source and wait for 'ended'
   const ended = await page.evaluate(async () => { const Q = window.__QA; const a = new Audio(Q.clipSrc('a1-hello:es')); const p = new Promise(r => { a.addEventListener('ended', () => r('ended')); a.addEventListener('error', () => r('error')); setTimeout(() => r('timeout'), 8000); }); try { await a.play(); } catch (e) { return 'play-rejected:' + e.message; } return { r: await p, dur: a.duration, src: a.currentSrc.slice(0, 80) }; });
   log('an Opus clip decodes and plays to the end in Chromium', ended.r === 'ended' && ended.dur > 0.3, ended);
-  // three-letter codes (ind, yue, eng) and Ròdais (gr) resolve to <id>_<lang>.ogg and play
+  // three-letter codes (ind, yue, eng) and Dia-thìris (gr) resolve to <id>_<lang>.ogg and play
   const codes = await page.evaluate(async () => { const Q = window.__QA; const out = {}; for (const l of ['gr', 'ind', 'yue', 'eng']) { const src = Q.clipSrc('a1-hello:' + l); if (!src) { out[l] = 'no-clip'; continue; } const a = new Audio(src); out[l] = await new Promise(r => { a.addEventListener('ended', () => r(src.split('/').pop())); a.addEventListener('error', () => r('error:' + src.split('/').pop())); setTimeout(() => r('timeout'), 8000); a.play().catch(e => r('play-rejected')); }); } return out; });
   log('clips play for gr and three-letter codes', Object.entries(codes).every(([l, v]) => v === 'a1-hello_' + l + '.ogg'), codes);
   // a match round in A1 gets a clipKey; a tier without recordings (B1) falls back to the TTS path

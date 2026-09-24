@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Ròdais, the tongue of Rodos: the six shared crew stories, paragraph for paragraph with stories_src.py.
+# Dia-thìris, the tongue of Dia-thìr: the six shared crew stories, paragraph for paragraph with stories_src.py.
 LANG = 'gr'
 STORIES = {
     'st-b1-01': {

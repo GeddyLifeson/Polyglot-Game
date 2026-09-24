@@ -24,10 +24,10 @@ Backends (--backend auto|torch|onnx, default auto = torch if `kokoro` is importa
          (kokoro-v1.0.onnx, voices-v1.0.bin) — pass them with --onnx-model/--onnx-voices or put
          them in models/.
   espeak espeak-ng formant voices, offline, via `pip install espeakng-loader` (ships libespeak-ng and its data).
-         Used for Ròdais (gr), read by the Scottish Gaelic voice `gd` after rewriting Ròdais `sc` as `sg`.
+         Used for Dia-thìris (gr), read by the Scottish Gaelic voice `gd` after rewriting Dia-thìris `sc` as `sg`.
          --espeak-rate (words per minute) and --espeak-pitch (0-100) tune it.
   omnivoice  k2-fsa/OmniVoice (Apache-2.0 code, CC-BY-NC weights; 646 languages), `pip install omnivoice` on CPU torch.
-         Used for Ròdais (gr): its Irish voice reads Ròdais spelling once the grave accents become Irish acutes.
+         Used for Dia-thìris (gr): its Irish voice reads Dia-thìris spelling once the grave accents become Irish acutes.
          One voice throughout: every clip clones tools/voices/omni_gr_man.wav (--omni-ref / --omni-ref-text);
          --omni-steps sets the diffusion steps (32 default, 16 is about twice as fast). About 10 s a clip on 4 CPU cores.
 """
@@ -125,10 +125,10 @@ AZURE = {
     'la':('it-IT','it-IT-DiegoNeural'), 'tr':('tr-TR','tr-TR-EmelNeural'), 'ar':('ar-SA','ar-SA-ZariyahNeural'), 'hi':('hi-IN','hi-IN-SwaraNeural'),
     'ko':('ko-KR','ko-KR-SunHiNeural'), 'yue':('zh-HK','zh-HK-HiuMaanNeural'), 'vi':('vi-VN','vi-VN-HoaiMyNeural'), 'ind':('id-ID','id-ID-GadisNeural'),
          'eng':('en-US','en-US-AriaNeural')}
-# espeak-ng voices: our code -> (espeak voice, text rewrite). Ròdais spells [sk] `sc` where Scottish Gaelic
+# espeak-ng voices: our code -> (espeak voice, text rewrite). Dia-thìris spells [sk] `sc` where Scottish Gaelic
 # writes `sg` (uisce/uisge, sceul/sgeul, iasc/iasg); the gd rules read `sg` as the unaspirated Gaelic stop.
 ESPEAK = {'gr': ('gd', lambda t: t.replace('sc', 'sg').replace('Sc', 'Sg').replace('SC', 'SG'))}
-# OmniVoice: our code -> (its language id, text rewrite). Ròdais is read by the Irish model: grave accents -> acutes.
+# OmniVoice: our code -> (its language id, text rewrite). Dia-thìris is read by the Irish model: grave accents -> acutes.
 def _acute(t): return unicodedata.normalize('NFC', unicodedata.normalize('NFD', t).replace('\u0300', '\u0301'))
 OMNI = {'gr': ('ga', _acute)}
 ESPEAK_LANG = {'e':'es', 'f':'fr-fr', 'i':'it', 'p':'pt-br'}   # what kokoro.KPipeline uses per lang_code
