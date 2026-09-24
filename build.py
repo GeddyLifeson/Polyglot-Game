@@ -47,7 +47,7 @@ LANG_META = {
     'yue': ('Cantonese', '廣東話', '🇭🇰', 'zh-HK', True, True),
     'vi': ('Vietnamese', 'Tiếng Việt', '🇻🇳', 'vi-VN', False, True),
     'ind': ('Indonesian', 'Bahasa Indonesia', '🇮🇩', 'id-ID', False, True),   # 'id' would collide with the item id field
-    'gr': ('Ròdais', 'Ròdais', '🏝️', 'gd-GB', True, True),   # the tongue of Rodos; reading line = IPA; recorded with OmniVoice (tools/gen_audio.py --backend omnivoice)
+    'gr': ('Diathìris', 'Diathìris', '🏝️', 'gd-GB', True, True),   # the tongue of Diathìr; reading line = IPA; recorded with OmniVoice (tools/gen_audio.py --backend omnivoice)
 }
 XL = {}   # lang -> {'words': {id: (text, reading)}, 'sentences': {id: tiles}, 'dialogues': {id: 5 lines}}
 

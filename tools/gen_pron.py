@@ -19,7 +19,7 @@ IPA conventions of the output (the runtime parser relies on them): words separat
   ja    kana from the text and its furigana (own kana table)     zh   pinyin (data, else pypinyin)
   yue   Jyutping (data, else pycantonese)                        ko   own Hangul rules (liaison, assimilation)
   ar    the romanization in the data (word lexicon for sentences, espeak fallback)
-  gr    Ròdais IPA from the dictionary (word lexicon for sentences, espeak gd fallback with sc read as sg)
+  gr    Diathìris IPA from the dictionary (word lexicon for sentences, espeak gd fallback with sc read as sg)
 """
 import ctypes, json, os, re, sys, unicodedata
 
@@ -659,6 +659,9 @@ def ar_text_ipa(text, reading, lex):
             out.append(syllabify(espeak(w, 'ar')))
     return ' '.join(x for x in out if x)
 
+# The island's own names are not in the dictionary; the owner's IPA (espeak gd would read them as Scottish Gaelic).
+GR_NAMES = {'diathìr': 'ˈtʲiəhiːɾʲ', 'diathìris': 'ˈtʲiəhiːɾʲɪʃ', 'diathìrich': 'ˈtʲiəhiːɾʲɪç', 'diathìreach': 'ˈtʲiəhiːɾʲəx'}
+
 def gr_text_ipa(text, reading, lex):
     if reading: return syllabify(reading.replace('|', ' '))
     out = []
@@ -703,6 +706,7 @@ def main():
         ctx['ar_lex'] = build_lexicon(items['ar'], 'ar', lambda r: [x for x in re.split(r'[\s,;:!?()]+', r) if x])
     if 'gr' in langs:
         ctx['gr_lex'] = build_lexicon(items['gr'], 'gr', lambda r: [x for x in re.split(r'[\s|]+', r) if x])
+        ctx['gr_lex'].update(GR_NAMES)
     for lang in langs:
         path = os.path.join(OUT, lang + '.json')
         old = {}

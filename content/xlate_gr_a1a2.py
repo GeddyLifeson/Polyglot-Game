@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Ròdais, the tongue of Rodos: written by tools/import_rodais.py from the Ròdais dictionary.
+# Diathìris, the tongue of Diathìr: written by tools/import_rodais.py from the Diathìris dictionary.
 # The reading line is the pronunciation in IPA.
 LANG = 'gr'
 WORDS = {
