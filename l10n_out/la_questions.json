@@ -4786,5 +4786,233 @@
     "Consuetudinem novitati superiorem esse"
    ]
   }
+ ],
+ "fk-gr-01": [
+  {
+   "q": "Quid piscator nocte quadam lunari in litore vidit?",
+   "options": [
+    "Phocas de piscibus pugnantes",
+    "Puellas saltantes, cum pellibus phocinis in saxis",
+    "Navem in harenam eiectam",
+    "Vicinos suos retia reficientes"
+   ]
+  },
+  {
+   "q": "Quid uxor cotidie vesperi faciebat?",
+   "options": [
+    "Liberis canebat",
+    "Rete piscatorium reficiebat",
+    "Ad ianuam stabat mare prospiciens",
+    "Ad portum ambulabat"
+   ]
+  },
+  {
+   "q": "Quis pellem celatam invenit?",
+   "options": [
+    "Piscator",
+    "Vicinus quidam",
+    "Filius natu maximus",
+    "Filia minima"
+   ]
+  },
+  {
+   "q": "Quid homines apud Ceann Dubh dixerunt postquam illa abiit?",
+   "options": [
+    "Piscatorem alio migravisse",
+    "Magnam phocam canam liberos spectavisse et rete semper plenum fuisse",
+    "Eam quoque vere rediisse",
+    "Mare nullos iam pisces dedisse"
+   ]
+  }
+ ],
+ "fk-gr-02": [
+  {
+   "q": "Quid adipisceretur qui primus salmonem gustavisset?",
+   "options": [
+    "Magnum robur",
+    "Longam vitam",
+    "Scientiam omnium quae fuissent et futura essent",
+    "Regnum"
+   ]
+  },
+  {
+   "q": "Quid poeta puero Fionn dixit, cum ei salmonem daret?",
+   "options": [
+    "Ut eum in foro venderet",
+    "Ut eum torreret sed non gustaret",
+    "Ut eum in flumen dimitteret",
+    "Ut eum cum tota insula communicaret"
+   ]
+  },
+  {
+   "q": "Quomodo Fionn salmonem gustavit?",
+   "options": [
+    "Frustum edit dum poeta aberat",
+    "Pollicem in pustula ussit et in os posuit",
+    "Poeta ei caput dedit",
+    "Aquam bibit in qua coctus erat"
+   ]
+  },
+  {
+   "q": "Quid accidebat quotiens Fionn pollicem sub dentem ponebat?",
+   "options": [
+    "Sapientia mundi ad eum veniebat",
+    "Cum piscibus loqui poterat",
+    "Pollex eius sanabatur",
+    "Obdormiebat"
+   ]
+  }
+ ],
+ "fk-gr-03": [
+  {
+   "q": "Qua forma equus aquaticus e lacu exibat?",
+   "options": [
+    "Taurus niger",
+    "Pulcher equus albus cum algis in iuba",
+    "Senex",
+    "Phoca cana"
+   ]
+  },
+  {
+   "q": "Quid equo accidit dum liberi ascendebant?",
+   "options": [
+    "Genua flexit",
+    "Alae ei creverunt",
+    "Tergum eius longius factum est",
+    "Minui coepit"
+   ]
+  },
+  {
+   "q": "Quomodo septimus puer effugit?",
+   "options": [
+    "In lacum desiluit et natando evasit",
+    "Aviam suam vocavit",
+    "Digitum suum ipse abscidit",
+    "Equum dolo sopivit"
+   ]
+  },
+  {
+   "q": "Quid matres apud Loch Dubh liberis suis dicunt?",
+   "options": [
+    "Numquam in lacu nata",
+    "Inspice iubam et pedes equi ignoti",
+    "Semper cultellum fer",
+    "Vesperis aestivis domi mane"
+   ]
+  }
+ ],
+ "fk-gr-04": [
+  {
+   "q": "Qui erant maiores Tuathaich, secundum fabulam?",
+   "options": [
+    "Domini Societatis",
+    "Operarii et coloni qui navibus trans mare venerunt",
+    "Antiqui",
+    "Dia-thìrich qui carbonem recusaverunt"
+   ]
+  },
+  {
+   "q": "Quomodo iter in septentriones processit?",
+   "options": [
+    "In via oppugnati sunt",
+    "Circum oram navigaverunt",
+    "Nemo eos percussit, sed nemo eis ne aquam quidem dedit",
+    "Dia-thìrich cum eis ambulaverunt ut adiuvarent"
+   ]
+  },
+  {
+   "q": "Quid maiores in septentrionibus servaverunt?",
+   "options": [
+    "Regem suum",
+    "Ecclesiam quam trans mare attulerant",
+    "Nova nomina omnibus oppidis",
+    "Sanguinem carbonis"
+   ]
+  },
+  {
+   "q": "Quid senes liberis dicunt?",
+   "options": [
+    "Se aliquando trans mare redituros esse",
+    "Se in septentriones missos esse, sed ipsos ibi domum fecisse",
+    "Sanguinem carbonis in eis excitatum iri",
+    "Regem eos in meridiem vocaturum esse"
+   ]
+  }
+ ],
+ "fk-gr-05": [
+  {
+   "q": "Quid Antiqui facere poterant, secundum fabulam?",
+   "options": [
+    "Scriptura arcana scribere",
+    "Phocas cantu vocare",
+    "Lapidem in panem vertere",
+    "Omnibus linguis loqui"
+   ]
+  },
+  {
+   "q": "Cur Antiqui abire constituerunt?",
+   "options": [
+    "Praedones oppida eorum oppugnaverunt",
+    "Frumentum defecit neque haleces redierunt, et insula eorum taedio affecta videbatur",
+    "Rex eos abire iussit",
+    "Oppida eorum in mare ceciderunt"
+   ]
+  },
+  {
+   "q": "Quid posteri de navigatione Antiquorum invenerunt?",
+   "options": [
+    "Naufragii reliquias in litore occidentali",
+    "Unum sepulcrum",
+    "Nihil omnino: neque tabulam, neque sepulcrum, neque lapidem memorialem",
+    "Naves eorum in spelunca"
+   ]
+  },
+  {
+   "q": "Cur oppida vetera “Seann” ante nomina habent?",
+   "options": [
+    "Dia-thìrich nomina quae ventus canebat servaverunt et verbum reverentiae addiderunt",
+    "Antiqui ea sic nominaverunt",
+    "Rex nomina eorum mutavit",
+    "Ut ab oppidis novis eiusdem nominis distinguerentur"
+   ]
+  }
+ ],
+ "fk-gr-06": [
+  {
+   "q": "Quis solus in collem fumantem ascendebat?",
+   "options": [
+    "Rex",
+    "Faber",
+    "Praedones",
+    "Liberi"
+   ]
+  },
+  {
+   "q": "Quid fabrum impulit ut illa nocte collem ascenderet?",
+   "options": [
+    "Aurum cupiebat",
+    "Filius eius minimus frigore moriebatur",
+    "Praedones officinam eius incenderant",
+    "Vox eum vocaverat"
+   ]
+  },
+  {
+   "q": "Quod pretium ignis dono suo statuit?",
+   "options": [
+    "Vitam ipsius fabri",
+    "Qui calorem eius haberent, ei debituros esse quamdiu carbo esset",
+    "Tributum ferri quotannis",
+    "Malleum fabri"
+   ]
+  },
+  {
+   "q": "Quam quaestionem quidam etiam nunc de sanguine carbonis rogant?",
+   "options": [
+    "Utrum faber umquam vixerit",
+    "Utrum debita umquam soluta sint, et a quo",
+    "Quo ignis abierit",
+    "Cur collis ruber sit"
+   ]
+  }
  ]
 }
