@@ -7912,10 +7912,17 @@
       return true;
     }catch(e){ return false; }
   }
-  var missingVoiceWarned = {};
+  var missingVoiceWarned = {}, noRecordingWarned = false;
+  /* Languages no device ships a voice for: without a recording, an English voice would read them, which is worse
+     than silence. Dia-thìris (gr) is recorded clip by clip; anything unrecorded stays quiet with one short notice. */
+  var NO_FALLBACK_VOICE = { gr:true };
   function speakText(text, lang, force, clipKey){
     if((save.muted && !force) || !text) return;
     if(playClip(clipKey)){ try{ if(speechReady) window.speechSynthesis.cancel(); }catch(e){} return; }
+    if(NO_FALLBACK_VOICE[lang] && !(speechReady && voiceFor(lang))){
+      if(!noRecordingWarned){ noRecordingWarned = true; toast(_t('No recording of this line yet')); }
+      return;
+    }
     if(!speechReady) return;
     var clean = plainText(text)
       .replace(/[“”"]/g,'')
@@ -7941,7 +7948,8 @@
   }
 
   /* ---- Voices panel ---- */
-  var VOICE_SAMPLE = { es:'Buenos días, ¿cómo estás?', fr:'Bonjour, comment ça va ?', it:'Buongiorno, come stai?', pt:'Bom dia, tudo bem?', ja:'おはようございます、元気ですか？', zh:'早上好，你好吗？' };
+  var VOICE_SAMPLE = { es:'Buenos días, ¿cómo estás?', fr:'Bonjour, comment ça va ?', it:'Buongiorno, come stai?', pt:'Bom dia, tudo bem?', ja:'おはようございます、元気ですか？', zh:'早上好，你好吗？', gr:'Madainn mhath, ciamar a tha thu?' };
+  function voiceSampleClip(l){ return VOICE_SAMPLE[l] ? tileClipKey(VOICE_SAMPLE[l], l) : null; }   /* recorded in the STORIES band */
   function renderVoicesPanel(){
     var all = loadVoices();
     var h = '';
@@ -7956,7 +7964,7 @@
       var list = voicesFor(l).sort(function(a,b){ return voiceScore(b,l)-voiceScore(a,l); });
       var cur = voiceFor(l);
       h += '<div class="voice-row"><span class="lang-tag" style="flex:none"><span class="lang-dot" style="background:'+LANGS[l].color+'"></span>'+LANGS[l].name+'</span>';
-      if(!list.length){ h += '<span class="pb-count" style="color:var(--paprika)">'+_t('no native voice installed')+'</span>'; }
+      if(!list.length){ h += '<span class="pb-count" style="color:var(--paprika)">'+_t('no native voice installed')+'</span>'; if(hasClip(voiceSampleClip(l))) h += '<button class="btn btn-sm btn-ghost voice-test" data-lang="'+l+'">▶ '+_t('Test')+'</button>'; }
       else {
         h += '<select class="pb-select voice-sel" data-lang="'+l+'">'+list.map(function(v){ return '<option value="'+v.voiceURI.replace(/"/g,'&quot;')+'"'+(cur&&v.voiceURI===cur.voiceURI?' selected':'')+'>'+v.name+' ('+v.lang+')'+(voiceScore(v,l)>=12?' ★':'')+'</option>'; }).join('')+'</select>';
         h += '<button class="btn btn-sm btn-ghost voice-test" data-lang="'+l+'">▶ '+_t('Test')+'</button>';
@@ -7966,10 +7974,10 @@
     if(!all.length){ h += '<p class="pb-count">'+_t('No voices reported yet — some browsers only list them after the first sound plays. Tap Test or close and reopen this panel.')+'</p>'; }
     el.voicesBody.innerHTML = h;
     Array.prototype.forEach.call(el.voicesBody.querySelectorAll('.voice-sel'), function(sel){
-      sel.addEventListener('change', function(){ save.voices = save.voices || {}; save.voices[sel.getAttribute('data-lang')] = sel.value; persist(); speakText(VOICE_SAMPLE[sel.getAttribute('data-lang')], sel.getAttribute('data-lang'), true); });
+      sel.addEventListener('change', function(){ save.voices = save.voices || {}; save.voices[sel.getAttribute('data-lang')] = sel.value; persist(); var sl = sel.getAttribute('data-lang'); speakText(VOICE_SAMPLE[sl], sl, true, voiceSampleClip(sl)); });
     });
     Array.prototype.forEach.call(el.voicesBody.querySelectorAll('.voice-test'), function(b){
-      b.addEventListener('click', function(){ var l = b.getAttribute('data-lang'); speakText(VOICE_SAMPLE[l], l, true); });
+      b.addEventListener('click', function(){ var l = b.getAttribute('data-lang'); speakText(VOICE_SAMPLE[l], l, true, voiceSampleClip(l)); });
     });
     var uc = document.getElementById('use-clips'); if(uc){ uc.addEventListener('change', function(){ save.useClips = uc.checked; persist(); }); }
     var si = document.getElementById('show-ipa'); if(si){ si.addEventListener('change', function(){ save.showIpa = si.checked; persist(); pronRefresh(); }); }
@@ -8496,7 +8504,7 @@
     flow.appendChild(para);
     var tools = document.createElement('div'); tools.className = 'story-tools';
     tools.innerHTML = '<button class="btn btn-sm btn-ghost story-pron-btn" title="'+_t('Show how to pronounce it')+'">🗣️</button> <button class="btn btn-sm btn-ghost story-say" title="'+_t('Hear this paragraph')+'">🔊</button>';
-    tools.querySelector('.story-say').addEventListener('click', function(){ speakText(text, S.lang, true); });
+    tools.querySelector('.story-say').addEventListener('click', function(){ speakText(text, S.lang, true, tileClipKey(text, S.lang)); });
     tools.querySelector('.story-pron-btn').addEventListener('click', function(){ var pb = para.querySelector('.story-pron'); save.storyPron = pb.hidden; persist(); pb.hidden = !pb.hidden; });
     if(save.storyPron) para.querySelector('.story-pron').hidden = false;
     flow.appendChild(tools);
@@ -8521,7 +8529,7 @@
                : '<div class="q">'+(S.mode==='dictate' ? _t('🎧 Listen, then type what you hear in {lang}', {lang:LANGS[S.lang].name}) : _t('🎧 Listen, then write what it means in {lang}', {lang:nativeName()}))+'</div><div class="story-tools" style="justify-content:flex-start;"><button class="btn btn-sm btn-ghost story-say">🔊 '+_t('Play')+'</button></div>';
     box.innerHTML = prompt+'<textarea class="story-type" lang="'+(SPEECH_LANG[toLang]||toLang)+'" placeholder="'+(isCjkLang(toLang)?'…':_t('Type here…'))+'"></textarea><div class="story-tools"><span class="story-meta" style="margin-right:auto;">'+_t('Paragraph {n} of {total}', {n:i+1, total:7})+'</span><button class="btn btn-sm btn-primary story-check">'+_t('Check')+'</button></div><div class="story-result"></div>';
     flow.appendChild(box);
-    var say = box.querySelector('.story-say'); if(say){ say.addEventListener('click', function(){ speakText(target, S.lang, true); }); setTimeout(function(){ speakText(target, S.lang, true); }, 250); }
+    var say = box.querySelector('.story-say'); if(say){ say.addEventListener('click', function(){ speakText(target, S.lang, true, tileClipKey(target, S.lang)); }); setTimeout(function(){ speakText(target, S.lang, true, tileClipKey(target, S.lang)); }, 250); }
     var ta = box.querySelector('.story-type'); ta.focus();
     box.querySelector('.story-check').addEventListener('click', function(){
       var typed = ta.value; if(!typed.trim()){ toast(_t('Type your answer first.')); return; }

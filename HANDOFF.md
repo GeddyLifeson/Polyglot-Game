@@ -72,10 +72,13 @@ everything is in `audio/`. Every LANG_META audio flag in build.py is True (plus 
 index.html). The Chatterbox and Edge recorders and chain scripts stay in the repo for re-records
 (`gen_audio.py --only <keys>` with the 🚩 flag list from the Mission Log).
 
-Not yet recorded: the story paragraphs, the grammar/idiom/nuance items of the fourteen added languages,
-and any new English strings are spoken by the device voice. Recording them is a per-language rerun of the
-same commands (gen_audio only records missing keys); the story paragraphs would need a STORIES band added
-to `items_for` in gen_audio.py first.
+Story paragraphs have a STORIES band in gen_audio.py (keyed `x-<hash>:<lang>` by tileClipKey, files in
+`audio/STORIES/`, long paragraphs recorded sentence by sentence and joined). Recorded so far for gr only
+(2026-09-25: the six crew stories, the six folk tales fk-gr-01..06 and the Voices sample). Dia-thìris never
+falls back to a device voice (no device has one): an unrecorded gr line stays silent with one toast.
+Not yet recorded: other languages' story paragraphs, the grammar/idiom/nuance items of the fourteen added
+languages, and any new English strings are spoken by the device voice. Recording them is a per-language rerun
+of the same commands (gen_audio only records missing keys), e.g. `gen_audio.py STORIES --langs de --backend chatterbox`.
 
 ## What happens when a language finishes (repeat per language)
 
