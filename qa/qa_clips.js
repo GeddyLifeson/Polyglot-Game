@@ -41,6 +41,28 @@ function log(l, ok, x){ console.log((ok?'PASS':'FAIL')+' — '+l+(x!==undefined?
   // a match round in A1 gets a clipKey; a tier without recordings (B1) falls back to the TTS path
   const rt = await page.evaluate(() => { const Q = window.__QA; Q.startDungeonAttempt(0, 'es', 'greetings', null); Q.nextRound(); const r = Q.st.round; const tiers = Q.clipsInfo().tiers; const un = Q.CONCEPTS.find(c => tiers.indexOf(c.tier) === -1); return { kind: r.kind, key: r.conceptId + ':' + r.lang, has: Q.hasClip(r.conceptId + ':' + r.lang), unrecordedTier: un ? un.tier : null, unrecorded: un ? Q.hasClip(un.id + ':es') : false, missing: Q.hasClip('a2-no-such-word:es') }; });
   log('A1 rounds have recordings; unrecorded bands and unknown keys fall back to device voice', rt.has === true && rt.unrecorded === false && rt.missing === false, rt);
+  // Dia-thìris story paragraphs and the Voices sample are recorded (STORIES band, keyed by tileClipKey), and the
+  // story reader's 🔊 plays the clip; an unrecorded gr line stays silent with one notice instead of an English voice
+  const grs = await page.evaluate(async () => {
+    const Q = window.__QA; Q.save.muted = false; Q.save.useClips = true;
+    const paras = []; Q.STORIES.forEach(s => { const x = s.xl && s.xl.gr; if (x) x.paras.forEach(p => paras.push(p)); });
+    const missing = paras.filter(p => !Q.hasClip(Q.tileClipKey(p, 'gr')));
+    const src0 = Q.clipSrc(Q.tileClipKey(paras[0], 'gr'));
+    const played = []; const orig = HTMLMediaElement.prototype.play;
+    HTMLMediaElement.prototype.play = function(){ played.push(String(this.src)); return Promise.resolve(); };
+    const sid = Q.STORIES.find(s => s.xl && s.xl.gr && s.only === 'gr').id;
+    Q.showStories(); Q.startStory(sid, 'gr', 'read'); await new Promise(r => setTimeout(r, 200));
+    const btn = document.querySelector('#story-flow .story-say'); if (btn) btn.click();
+    let spoke = 0; const sp = window.speechSynthesis.speak; window.speechSynthesis.speak = function(){ spoke++; };
+    document.getElementById('toast').innerHTML = '';
+    Q.speakText('Seo loidhne gun chlàradh sam bith', 'gr', true, null);
+    const toast = document.getElementById('toast').textContent;
+    window.speechSynthesis.speak = sp; HTMLMediaElement.prototype.play = orig;
+    return { paras: paras.length, missing: missing.length, src0, clicked: !!btn, played: played.filter(s => /\/STORIES\/x-[0-9a-f]{8}_gr\.ogg$/.test(s)).length, sample: Q.hasClip(Q.tileClipKey('Madainn mhath, ciamar a tha thu?', 'gr')), spoke, toast };
+  });
+  log('every gr story paragraph and the gr Voices sample resolve to a STORIES clip; the reader plays it', grs.paras >= 84 && grs.missing === 0 && /STORIES\//.test(grs.src0) && grs.clicked && grs.played >= 1 && grs.sample, grs);
+  log('an unrecorded gr line is not read by a fallback voice; a notice shows instead', grs.spoke === 0 && /recording/i.test(grs.toast), grs);
+  await page.evaluate(() => window.__QA.showHome());
   const toggle = await page.evaluate(() => { const Q = window.__QA; Q.save.useClips = false; const off = Q.hasClip('a1-hello:es'); Q.save.useClips = true; return off; });
   log('"Use built-in recordings" toggle disables clips', toggle === false);
   await page.click('#btn-voices'); await page.waitForTimeout(150);

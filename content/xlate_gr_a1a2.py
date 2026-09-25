@@ -56,7 +56,7 @@ WORDS = {
     'a1-but': ('Ach', 'ˈax'),
     'a1-call-the-police': ('Gairmibh luchd na faire', 'ˈkaɾʲamɪv ˈl̪ˠuxk nə ˈfaɾʲə'),
     'a1-calm': ('Ciùin', 'ˈkʲʰuːnʲ'),
-    'a1-camera': ('Cìste-scàile', 'ˈkʲʰiːʃtʃəˈskaːlʲə'),
+    'a1-camera': ('Ciste-scàile', 'ˈkʲʰiʃtʃəˈskaːlʲə'),
     'a1-can-you-help-me': ('An urrainn dhut mo chuideachadh?', 'ən̪ˠ ˈuːr̪ˠɪɲ ˈɣuʰt̪ mə ˈxutʃəxəɣ'),
     'a1-can-you-repeat-that': ('An urrainn dhut sin a ràdh a-rithist?', 'ən̪ˠ ˈuːr̪ˠɪɲ ˈɣuʰt̪ ˈʃinʲ ə ˈr̪ˠaːɣ əˈr̪ˠihɪʃtʃ'),
     'a1-car': ('Carbad-rathaid', 'ˈkʰaɾapət̪ˈr̪ˠahɪtʃ'),

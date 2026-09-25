@@ -12,6 +12,11 @@ What gets recorded for a band:
   * every sentence-building line (spoken as a full sentence)
   * every dialogue prompt line (the line the other person says)
 Keys are `<id>:<lang>`; the game plays a clip whenever a key exists in audio/manifest.json.
+Two extra bands are keyed by a hash of the spoken text (x-<fnv1a>:<lang>, tileClipKey in index.html):
+  TILES    sentence-building tiles and nuance options             -> audio/TILES/x-<hash>_<lang>.ogg
+  STORIES  story paragraphs (crew stories, folk tales) and the Voices-panel sample, long ones recorded
+           sentence by sentence and joined                         -> audio/STORIES/x-<hash>_<lang>.ogg
+  e.g. python3 tools/gen_audio.py STORIES --langs gr --backend omnivoice --omni-steps 16
 
 Requires: index.html already built (python3 build.py), ffmpeg on PATH, and
   pip install kokoro soundfile jieba unidic-lite cn2an pypinyin fugashi jaconv mojimoji pyopenjtalk
@@ -104,6 +109,9 @@ rows = block('VOCAB_RAW')
 sentences = block('BUILD_SENTENCES')
 dialogues = block('DIALOGUES')
 nuance = block('NUANCE')
+stories = block('STORIES')
+_vs = re.search(r'var VOICE_SAMPLE\s*=\s*\{(.*?)\};', html)
+VOICE_SAMPLE = {k: (a if a else b) for k, a, b in re.findall(r"(\w+):\s*(?:'([^']*)'|\"([^\"]*)\")", _vs.group(1))} if _vs else {}
 COL = {'es':5,'fr':6,'it':7,'pt':8,'ja':9,'zh':10, 'eng':1}   # 'eng' = English as a target language (the en column)
 KOKO = {'es':('e','ef_dora'), 'fr':('f','ff_siwis'), 'it':('i','if_sara'), 'pt':('p','pf_dora'), 'ja':('j','jf_alpha'), 'zh':('z','zf_xiaobei'),
         'hi':('h','hf_alpha'), 'eng':('a','af_heart')}
@@ -358,7 +366,43 @@ def tile_items(lang):
                 seen.setdefault('x-' + fnv1a(o), o)
     return sorted(seen.items())
 
+def story_items(lang):
+    """The STORIES band: every story paragraph the reader speaks in this language (the crew stories' translations
+    and the folk tales told in it) plus the Voices-panel sample. Keyed x-<hash>:<lang> like the tiles, so index.html
+    finds them with tileClipKey(paragraph, lang); the manifest's dir map points these keys at audio/STORIES/."""
+    seen = {}
+    for s in stories:
+        tx = {'title': s.get('title'), 'paras': s.get('paras')} if lang == 'eng' else (s.get('xl') or {}).get(lang)
+        for p in (tx or {}).get('paras') or []:
+            if isinstance(p, str) and p.strip(): seen.setdefault('x-' + fnv1a(p), p)
+    if VOICE_SAMPLE.get(lang): seen.setdefault('x-' + fnv1a(VOICE_SAMPLE[lang]), VOICE_SAMPLE[lang])
+    return sorted(seen.items())
+
+def split_long(text, limit=160):
+    """Long paragraphs are read in sentence-sized pieces (OmniVoice loses the thread on long input) and the pieces
+    joined afterwards. Returns [(piece, pause_after_seconds)]. Sentences end at . ! ? … (with any closing quote,
+    before a capital); short ones are packed together up to `limit` characters so the prosody still runs across
+    them. A single sentence longer than 1.4 x limit is cut again at ; : and commas, with a shorter pause."""
+    if len(text) <= limit: return [(text, 0)]
+    def pack(parts, n):
+        out = []
+        for s in parts:
+            if out and len(out[-1]) + 1 + len(s) <= n: out[-1] += ' ' + s
+            else: out.append(s)
+        return out
+    sents = [x for x in re.split(r'(?:(?<=[.!?…])|(?<=[.!?…]["”’»]))\s+(?=["“‘«\'A-ZÀ-ÝÌÒÙ])', text) if x and x.strip()]
+    out = []
+    for s in pack(sents, limit):
+        if len(s) > limit * 1.4:
+            cl = pack([x for x in re.split(r'(?<=[;:,])\s+', s) if x.strip()], limit)
+            out += [(c, 0.18) for c in cl[:-1]] + [(cl[-1], 0.35)]
+        else: out.append((s, 0.35))
+    out[-1] = (out[-1][0], 0)
+    return out
+
 def items_for(tier, lang):
+    if tier == 'STORIES':
+        return story_items(lang)
     if tier == 'TILES':
         # a tile that is only a parenthetical gloss, e.g. "(officieux)", is still spoken when tapped
         return [(i, t if clean(t) else t.strip('()（） ')) for i, t in tile_items(lang) if clean(t) or t.strip('()（） ')]
@@ -429,10 +473,15 @@ for tier in args.tiers:
                         print(f'  {tier} {lang} {n+1}/{len(todo)} · {round(time.time()-t0)}s', flush=True)
                     continue
                 spoken = text if backend in ('onnx', 'chatterbox') else clean(text)
-                audio = np.concatenate([a for _, _, a in pipe(spoken, voice=voice, speed=args.speed)])
-                idx = np.where(np.abs(audio) > 0.01)[0]
-                if len(idx): audio = audio[max(0, idx[0]-1200): min(len(audio), idx[-1]+2400)]
-                sf.write(wav, audio, getattr(pipe, 'sr', 24000))   # ffmpeg resamples to 24 kHz
+                sr = getattr(pipe, 'sr', 24000)
+                pieces = []
+                for part, pause in (split_long(spoken) if tier == 'STORIES' else [(spoken, 0)]):   # a paragraph is recorded in sentence-sized pieces
+                    a = np.concatenate([a for _, _, a in pipe(part, voice=voice, speed=args.speed)])
+                    idx = np.where(np.abs(a) > 0.01)[0]
+                    if len(idx): a = a[max(0, idx[0]-1200): min(len(a), idx[-1]+2400)]
+                    pieces += [a, np.zeros(int(sr * pause), dtype=np.float32)]
+                audio = np.concatenate(pieces)
+                sf.write(wav, audio, sr)   # ffmpeg resamples to 24 kHz
                 subprocess.run(['ffmpeg','-y','-loglevel','error','-i',wav,'-ac','1','-ar','24000','-c:a','libopus','-b:a',args.bitrate,'-vbr','on','-application','voip','-frame_duration','40',ogg], check=True)
                 os.remove(wav)
                 keys.add(key); manifest['dir'][key] = tier
