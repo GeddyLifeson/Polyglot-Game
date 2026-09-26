@@ -1,10 +1,10 @@
 """
-import_rodais.py -- write the Dia-thìris word files (content/xlate_gr_<band>.py) from the Dia-thìris dictionary.
+import_diaithiris.py -- write the Diaithìris word files (content/xlate_gr_<band>.py) from the Diaithìris dictionary.
 
-    python3 tools/import_rodais.py <rodais-folder>
+    python3 tools/import_diaithiris.py <diaithiris-folder>
 
-<rodais-folder> is the folder of the Dia-thìris language (GeddyLifeson/panscriptum,
-reference/owner_source_material/rodais/), holding LEXICON.json and rodais_engine.py. Its dictionary covers
+<diaithiris-folder> is the folder of the Diaithìris language (its own repository), holding LEXICON.json and
+diaithiris_engine.py. Its dictionary covers
 every word of the ladder under the ladder's own ids. Each word becomes (text, reading):
 
     text      the headword as the other languages show theirs: first letter capitalised; a verb shows its
@@ -31,7 +31,7 @@ def main():
         sys.exit(__doc__)
     src = sys.argv[1]
     sys.path.insert(0, src)
-    import rodais_engine as R
+    import diaithiris_engine as R
     lex = json.load(open(os.path.join(src, 'LEXICON.json'), encoding='utf-8'))['entries']
     ladder = {e['id']: e for e in lex if not e['id'].startswith('f-')}
     for band, prefixes in BANDS:
@@ -44,7 +44,7 @@ def main():
             rows.append('    %r: (%r, %r),' % (i, text, R.pronounce(text.rstrip('?!.'))))
         path = os.path.join(CONTENT, 'xlate_gr_%s.py' % band)
         with open(path, 'w', encoding='utf-8') as fh:
-            fh.write('# -*- coding: utf-8 -*-\n# Dia-thìris, the tongue of Dia-thìr: written by tools/import_rodais.py from the Dia-thìris dictionary.\n'
+            fh.write('# -*- coding: utf-8 -*-\n# Diaithìris, the tongue of Diaithìr: written by tools/import_diaithiris.py from the Diaithìris dictionary.\n'
                      "# The reading line is the pronunciation in IPA.\nLANG = 'gr'\nWORDS = {\n%s\n}\n" % '\n'.join(rows))
         print('%s: %d words' % (os.path.basename(path), len(rows)))
 
