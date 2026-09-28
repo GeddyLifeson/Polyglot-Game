@@ -3,7 +3,7 @@
 A single-file, sci-fi roguelite language-learning game: a 5,005-word A1→C2 fluency ladder in
 twenty-one languages (Spanish, French, Italian, Brazilian Portuguese, Japanese, Mandarin, German, Dutch,
 Swedish, Polish, Russian, Greek, Latin, Turkish, Arabic, Hindi, Korean, Cantonese, Vietnamese,
-Indonesian, and Dia-thìris, the tongue of Dia-thìr) with
+Indonesian, and Diaithìris, the tongue of Diaithìr) with
 vocabulary, dialogue, sentence-building, grammar, idiom, nuance and listening modules,
 a Signal Chain meta-progression, an Engineering Bay, anomaly events, daily Signal Storms,
 officer ranks, commendations, and native-speaker recordings generated with Kokoro-82M.
@@ -150,11 +150,14 @@ files listed in `tools/cbx_bench.py` into `models/chatterbox/`, and run `python 
 About 8 s per clip on a 16-core CPU, well under 1 s on a GPU. On this machine Python cannot reach HTTPS hosts
 until the local TLS root is appended to certifi (`tools/export_local_roots.ps1`).
 
-Dia-thìris (`gr`) is recorded with OmniVoice (k2-fsa/OmniVoice; Apache-2.0 code, CC-BY-NC weights) through
-`--backend omnivoice` (`pip install omnivoice` on CPU torch). Its Irish voice reads Dia-thìris spelling once the grave
+Diaithìris (`gr`) is recorded with OmniVoice (k2-fsa/OmniVoice; Apache-2.0 code, CC-BY-NC weights) through
+`--backend omnivoice` (`pip install omnivoice` on CPU torch). Its Irish voice reads Diaithìris spelling once the grave
 accents are written as Irish acutes, and every clip clones one speaker, `tools/voices/omni_gr_man.wav`, so the voice
 is the same man throughout. `--omni-steps 16` was used for all 5,282 clips: about 9 s a clip on 4 CPU cores, well
 under a second on a GPU. The older `--backend espeak` (espeak-ng's formant `gd` voice) is kept but sounds robotic.
+Diaithìris is written without hyphens: compounds are solid (Cistescàile) and prefixes join the word (an tuisce,
+na hEaglaise). Its story and tile clips are keyed by a hash of the spelling, so a respelling renames those files
+(the pronunciation is unchanged); foreign names such as Tupi-Guarani and al-Muqaffa keep theirs.
 
 ## 3d. Learning systems (September 2026)
 
@@ -220,13 +223,13 @@ under a second on a GPU. The older `--backend espeak` (espeak-ng's formant `gd` 
   reads pinyin from primary school, and it spells sound without the meanings and homophones that transliteration
   characters drag in; tones are left off), Jyutping-style syllables for Cantonese, and respellings in their own
   orthography for the Latin-script languages (Spanish pri-VIET, German pri-WJET, Polish pri-WIET, Latin with
-  macrons, Dia-thìris with grave accents). Data: `python3 tools/gen_pron.py` (after build.py; resumable, `--fresh`
+  macrons, Diaithìris with grave accents). Data: `python3 tools/gen_pron.py` (after build.py; resumable, `--fresh`
   recomputes; ~1 minute for all 22 files, 6.0 MB total, ~190-390 KB per language) writes one IPA string per
   displayed text, keyed by the exact text (Japanese keeps its furigana markup). Sources: espeak-ng through
   `espeakng-loader` for es fr it pt de nl sv pl ru el la tr hi vi ind eng; Japanese from its kana/furigana,
   Mandarin from the pinyin (pypinyin where the data has none), Cantonese from the Jyutping (pycantonese),
   Korean by Hangul rules (liaison, nasalisation, tensing, aspiration), Arabic from the romanization (a word
-  lexicon built from the vocabulary covers sentences), Dia-thìris from its dictionary IPA. The game fetches the
+  lexicon built from the vocabulary covers sentences), Diaithìris from its dictionary IPA. The game fetches the
   files for the voyage's languages and a small converter per native language turns IPA into spelling at
   runtime (no 21×21 tables stored). **Voices → "Show IPA and the original reading"** (`save.showIpa`) adds the
   old reading line (pinyin, Jyutping, romanization) and the IPA. Without the files (file://, single-file build)
