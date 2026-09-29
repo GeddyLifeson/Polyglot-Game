@@ -55,10 +55,11 @@ zh (pinyin), ru, el, ar, hi, ko, yue (Jyutping). Japanese carries furigana `{漢
 - Wipe-save control, in-game 🚩 pronunciation flag (Mission Log lists flags; `gen_audio.py --only` re-records those keys).
 - All constants live in one block near `SHOP_UPGRADES` in index.html; README section 3b documents them.
 
-## Audio: DONE (2026-09-12 09:50)
+## Audio: DONE (2026-09-12 09:50) — see the sweep section below for the DRILLS and STORIES bands added later that day
 
-Every language is recorded and merged: 110,691 clips in `audio/manifest.json`, 21 voices (the twenty
-languages plus English as a target, `eng`), each 5,240 to 5,285 clips covering A1 to C2 plus the TILES band.
+Every language is recorded and merged: 116,640 clips in `audio/manifest.json` (110,691 on 2026-09-12; the gr
+voice, the DRILLS band and the STORIES band came later), 22 voices (the twenty-one languages plus English as a
+target, `eng`), each 5,240 to 5,367 clips covering A1 to C2 plus the TILES band.
 
 | Engine | Languages |
 |---|---|
@@ -73,11 +74,13 @@ index.html). The Chatterbox and Edge recorders and chain scripts stay in the rep
 (`gen_audio.py --only <keys>` with the 🚩 flag list from the Mission Log).
 
 Story paragraphs have a STORIES band in gen_audio.py (keyed `x-<hash>:<lang>` by tileClipKey, files in
-`audio/STORIES/`, long paragraphs recorded sentence by sentence and joined). Recorded so far for gr only
-(2026-09-25: the six crew stories, the six folk tales fk-gr-01..06 and the Voices sample). Diaithìris never
-falls back to a device voice (no device has one): an unrecorded gr line stays silent with one toast.
-Not yet recorded: other languages' story paragraphs, the grammar/idiom/nuance items of the fourteen added
-languages, and any new English strings are spoken by the device voice. Recording them is a per-language rerun
+`audio/STORIES/`, long paragraphs recorded sentence by sentence and joined). Recorded for gr (2026-09-25: the six
+crew stories, the six folk tales fk-gr-01..06 and the Voices sample) and for es fr it pt ja zh (2026-09-14 with
+Kokoro: the 84 paragraphs each language shows plus its Voices sample; the six were first keyed `<story>-p<n>` and
+were renamed to the hash keys in the 2026-09-29 merge). Diaithìris never falls back to a device voice (no device
+has one): an unrecorded gr line stays silent with one toast. Not yet recorded: the fourteen Chatterbox/Edge
+languages' story paragraphs and DRILLS items, every language's nuance items, and any new English strings are
+spoken by the device voice. Recording them is a per-language rerun
 of the same commands (gen_audio only records missing keys), e.g. `gen_audio.py STORIES --langs de --backend chatterbox`.
 
 ## What happens when a language finishes (repeat per language)
@@ -124,6 +127,70 @@ language and its keys from the manifest before merging, or add a `--replace` fla
   `src/verify_math.py`, "drill run 56"), which loads qwen3:8b with keep_alive=forever. Owner notified 22:55;
   only they can pause that session. If it recurs: `ollama ps`, `ollama stop <model>`, then find the caller in
   `%LOCALAPPDATA%\Ollama\server.log`.
+
+## 2026-09-12 sweep (cloud session): bugs fixed, performance, new audio bands
+
+Verified by `qa/qa_fixes.js` (part of `npm run qa`) plus the six existing suites.
+
+Fixed in index.html:
+- HIGH: clips for three-letter language codes (eng, ind, yue — 15,816 clips) never played: `clipSrc` only rewrote
+  two-letter suffixes into the file name, and because it returned a (404) path the device voice was suppressed too.
+- HIGH: Skip and Answer (or two Transmit taps in the tile builder) could both fire in one round: double advance,
+  double scoring, and `onDungeonCleared` paid a clear twice. Rounds now carry `resolved`, one `st.advanceTimer`
+  is pending at a time, and a clear settles once (`st.settled`).
+- MEDIUM: Noise XP bonus was never credited (addXp read `st.runActive` after it was cleared) while the Complete screen
+  showed it; both now use the amount actually credited (`st.lastXpGain`).
+- MEDIUM: Warp Jump dropped native language, streak, SRS schedule, flags and tutorial state; kept now.
+- MEDIUM: the Flight Plan "+1 core" milestone was an advance on the next jump; `save.warp.granted` makes it a grant.
+- MEDIUM: Voices panel: eng/ind/yue/la matched no browser voice ("no native voice installed", wrong-voice toast); voices
+  are now matched through LANG_META speech tags. "Test" and voice previews work for every language (`voiceSample`).
+- MEDIUM: Crosstalk rounds played the correct option's clip; Open Channel drew grammar/idiom/nuance from all 20
+  languages regardless of the journey; typed story modes could skip a paragraph on a double tap; anomaly choices that
+  cost a cell left the lives HUD stale; `st.flareRun` never reset.
+- LOW: speed bonus measured against the base time not the real timer; CJK sentence reveals space-joined (yue too);
+  chain text hard-coded "Resonance: +2"; drill relays promised a chain weld; keyboard shortcuts fired with Ctrl/Cmd
+  or while typing in an input; a null round paid a clear; "Clear flags" button was dead; shadowing could leak a
+  microphone stream.
+- Performance: `wordsMax` and `vocabForTier` cached (constant per journey / tier), Lexicon search debounced (80 ms),
+  Google Fonts stylesheet no longer render-blocking, and `audio/manifest.json` is now the compact v2 format
+  (`tools/manifestlib.py`: 5.2 MB -> 191 KB, per-id language bitmasks, a `dir` map for ids whose folder is not
+  derivable from the id such as the STORIES hashes; the loader reads v1 and v2).
+
+Tooling: `gen_audio.py --only` no longer deletes manifest keys it does not re-record; manifest writes are atomic
+(temp file + rename); a band whose every clip failed is not listed as recorded; `merge_audio.py` uses manifestlib,
+rewrites the manifest in v2 when run with no sources, and has `--replace`; `mkqa.py`/`embed_audio.py` resolve
+index.html from the repo root; build.py prints l10n warnings and drops empty l10n strings.
+
+New audio bands (recorded in the cloud for es fr it pt ja zh with the ONNX backend, which now splits long
+paragraphs into sentence-sized chunks with a language-aware limit):
+- DRILLS: grammar sentences with the gap filled (key `g-…:<lang>`, spoken after answering; the round is silent
+  before, so the clip cannot leak the answer) and idiom phrases (`i-…:<lang>`).
+- STORIES: every Library paragraph and the Voices-panel sample, keyed `x-<hash>:<lang>` by `tileClipKey` like the
+  tiles (read mode 🔊 and the Dictate/Interpret players); the manifest's dir map points these ids at `audio/STORIES/`.
+The fourteen Chatterbox/Edge languages still use the device voice for these two bands. To record them on the PC:
+`python tools/gen_audio.py DRILLS STORIES --langs de,nl,sv,pl,ru,el,la,tr,ar,hi,ko,ind --backend chatterbox --out staging_cbx_drills`
+and `--langs yue,vi,eng --backend edge --out staging_edge_drills`, then `python tools/merge_audio.py <dirs>`.
+(Check that the Chatterbox/Edge paths cope with 500-character paragraphs; the ONNX path chunks, they may need the same.)
+
+## 2026-09-14: crews (owner's request)
+
+Languages are added and advance in pairs. `journeyPairs()` / `pairsFor(langs, savedPairs)` derive the crews
+(`save.journey.pairs`, migrated from `langs` on load); `pairFrontier(pair)` = min cleared-tier count of the two;
+`langTierUnlocked(tierIdx, lang)`, `openChannelLangs()`, `tierLangs(endless)` and `isHubUnlocked` are per crew;
+`frontierHubIdx()` is the furthest crew. `storyOpen` uses the language's own crew frontier. The Journey screen orders
+languages by `LANG_META.speakers` (build.py `SPEAKERS`), shows "Crew N" on picked cards and refuses an odd pick.
+Placement warns when the placed language will wait for its crewmate. Tests: `qa/qa_pairs.js` (in `npm run qa`).
+README section 3e documents the rules. Diaithìris (constructed, 0 speakers) sorts last with Latin.
+
+## 2026-09-29: PR #7 merged with main (crews + sweep meet Diaithìris, interface l10n and pronunciation)
+
+Main had moved on (gr, the ui pool, the PRON engine, OmniVoice) while the crews branch waited. The merge keeps
+both: crews and the sweep fixes with main's `_t()` strings around them; story clips keyed by text hash the way
+main does it (the six Kokoro languages' 504 paragraph clips were renamed, none of the texts had changed, and the
+six Voices samples were recorded); the manifest rebuilt from the clips on disk into v2 (116,640 keys, one per
+.ogg, checked both ways); `npm run qa` now runs ten suites (main's qa_pron and qa_ui_l10n added). New crew
+strings are wrapped in `_t()` but not yet translated (they show in English until `l10n_prep.py` runs and the
+`ui` chunks are translated).
 
 ## Machine quirks that cost time
 

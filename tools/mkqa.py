@@ -1,6 +1,9 @@
 # Builds qa/hub-qa-wrapped.html: the game with a window.__QA debug hook exposing its internals.
 # index.html is already a complete document; this only injects the hook and points AUDIO_BASE
 # at ../audio/ so the page works from the qa/ folder (over HTTP, for the clips suite).
+import os
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(ROOT)
 with open('index.html', encoding='utf-8') as f:
     content = f.read()
 
@@ -10,7 +13,7 @@ hook = """
     IDIOMS: IDIOMS, NUANCE: NUANCE, DIALOGUES: DIALOGUES, LISTEN_MODULES: LISTEN_MODULES, SHOP_UPGRADES: SHOP_UPGRADES,
     ITEM: ITEM, st: st, save: save, persist: persist,
     isDungeonCleared: isDungeonCleared, isLangCleared: isLangCleared, isHubCleared: isHubCleared,
-    isHubUnlocked: isHubUnlocked, frontierHubIdx: frontierHubIdx,
+    isHubUnlocked: isHubUnlocked, frontierHubIdx: frontierHubIdx, journeyPairs: journeyPairs, pairOf: pairOf, pairFrontier: pairFrontier, langTierUnlocked: langTierUnlocked, openChannelLangs: openChannelLangs, langTiersCleared: langTiersCleared, tierLangs: tierLangs, LANG_ORDER: LANG_ORDER, LANG_META: LANG_META, showJourney: showJourney, journeyLangs: journeyLangs,
     CHAIN_MILESTONES: CHAIN_MILESTONES, settleChain: settleChain, activeMilestones: activeMilestones, carryCap: carryCap,
     startDungeonAttempt: startDungeonAttempt, onDungeonCleared: onDungeonCleared, onDungeonFailed: onDungeonFailed, PERKS: PERKS, onScan: onScan, showShop: showShop,
     RANKS: RANKS, EVENTS: EVENTS, COMMENDATIONS: COMMENDATIONS, STORM_MODS: STORM_MODS, rankIndex: rankIndex, addXp: addXp, draftPool: draftPool,

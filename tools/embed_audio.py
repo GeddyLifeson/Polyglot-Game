@@ -1,6 +1,6 @@
 # Splices the generated Opus clips into index.html as base64 (AUDIO_CLIPS).
 import os, json, base64, glob, sys
-P = 'index.html'
+P = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'index.html')
 s = open(P, encoding='utf-8').read()
 CLIPDIR = os.environ.get('CLIPDIR','audio')
 tiers = sys.argv[1:] or ['A1']
