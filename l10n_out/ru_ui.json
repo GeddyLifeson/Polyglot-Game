@@ -1297,5 +1297,13 @@
  "Tea words split into two families: \"cha\" (Portuguese chá, Japanese ocha) spread overland from Cantonese; \"te\" (French thé, Italian tè) spread by sea from Hokkien.": "Слова для чая делятся на две семьи: «ча» (португальское chá, японское ocha) распространилось по суше из кантонского; «те» (французское thé, итальянское tè) пришло морем из хоккиена.",
  "Show IPA and the original reading under each word": "Показывать МФА и исходное чтение под каждым словом",
  "Show how to pronounce it": "Показать, как это произносится",
- "No recording of this line yet": "Для этой фразы пока нет записи"
+ "No recording of this line yet": "Для этой фразы пока нет записи",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "Выберите языки, которые хотите изучать. Каждый язык поднимается по лестнице сам по себе: его следующий сектор открывается, как только вы пройдёте его ретранслятор в текущем секторе, так что ни один язык не ждёт другого. Добавляйте и убирайте языки в любой момент; прогресс в языке никогда не теряется.",
+ "Open for {langs}": "Открыто для: {langs}",
+ "A language that clears every sector unlocks it": "Его откроет язык, прошедший все секторы",
+ "{n} still on an earlier sector": "{n} ещё в предыдущем секторе",
+ "Clear {tier} in {lang} first — each language climbs on its own": "Сначала пройдите {tier} для языка {lang} — каждый язык поднимается сам по себе",
+ "{n} speakers": "говорящих: {n}",
+ "Pick at least one language to chart the voyage.": "Выберите хотя бы один язык, чтобы проложить маршрут.",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ Выберите хотя бы один язык, чтобы проложить маршрут."
 }

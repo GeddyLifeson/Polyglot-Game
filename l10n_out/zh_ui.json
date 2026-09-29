@@ -1297,5 +1297,13 @@
  "Show IPA and the original reading under each word": "在每个词下方显示国际音标和原文读音",
  "Show how to pronounce it": "显示发音方式",
  "Told by the Tuathaich around the fire in the north of Diaithìr; their own side of the tale": "由迪亚希尔北部的 Tuathaich 人围着炉火讲述；他们自己眼中的故事",
- "No recording of this line yet": "这句话还没有录音"
+ "No recording of this line yet": "这句话还没有录音",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "选择你想学习的语言。每种语言各自攀登阶梯:只要你通关了它在当前星区的中继站,它的下一个星区就会打开,所以任何语言都不必等待另一种语言。随时添加或移除语言;语言的进度永远不会丢失。",
+ "Open for {langs}": "已向 {langs} 开放",
+ "A language that clears every sector unlocks it": "任何通关所有星区的语言都能解锁它",
+ "{n} still on an earlier sector": "{n} 种语言仍在之前的星区",
+ "Clear {tier} in {lang} first — each language climbs on its own": "请先通关{lang}的 {tier} 星区——每种语言各自攀登",
+ "{n} speakers": "{n} 使用者",
+ "Pick at least one language to chart the voyage.": "请至少选择一种语言来规划航程。",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ 请至少选择一种语言来规划航程。"
 }

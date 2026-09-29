@@ -203,7 +203,15 @@ key is deleted on load). The Journey screen keeps the most-spoken-first order, a
 shows crew tags; the sector screen marks a language still behind as 🔒 "Clear <tier> in <language> first".
 `qa/qa_pairs.js` became `qa/qa_ladder.js` (order, per-language unlock, hub tile lock text, placement, Open Channel
 per language, Journey with an odd count). The crew `_t()` strings were removed before they were ever translated;
-the replacement strings are English until the `ui` chunks are re-prepped and translated.
+the replacement strings (eight interface lines and the hub coach text) were translated by hand into all 21 `ui`
+pools the same day, so every `ui` chunk is complete again (1304/1304 per `l10n_check.py`; gr has no notes pool,
+so its hub coach stays English). The voyage-count line reuses the already translated
+"<b>{n}</b> language(s) on this voyage" keys.
+
+Also that day: `.claude/hooks/session-start.sh` (SessionStart hook for Claude Code on the web: `npm install` if
+node_modules is missing, finds a Chromium and exports `CHROMIUM_PATH`, builds the QA page) and a read-only
+permission allowlist in `.claude/settings.json` (build, mkqa, the ten suites, `node --check`, the live-site curl,
+GitHub PR reads).
 
 ## Machine quirks that cost time
 

@@ -1297,5 +1297,13 @@
  "Japanese パン (pan) comes straight from Portuguese pão — Portuguese traders brought bread, and its name, to Japan in the 1500s.": "Tha パン (pan) na Seapanais a' tighinn dìreach on Phortagailis pão — thug marsantan Portagaileach aran, agus an tainm aige, don tSeapan anns na 1500an.",
  "Café, caffè, coffee, kāfēi — almost every language’s word for coffee traces back to Arabic qahwa.": "Caffè, coffee, kāfēi, cofaidh — tha am facal airson cofaidh ann an cha mhòr gach cànan a' dol air ais gu qahwa na hArabais.",
  "Tea words split into two families: \"cha\" (Portuguese chá, Japanese ocha) spread overland from Cantonese; \"te\" (French thé, Italian tè) spread by sea from Hokkien.": "Tha faclan airson tì air an roinn na dà theaghlach: \"cha\" (mar ocha na Seapanais agus am facal Portagaileach) a scaoil thar tìr on Chantonais; \"te\" (mar tè na hEadailtis agus am facal Frangach) a scaoil air muir on Hokkien.",
- "No recording of this line yet": "Chan eil clàradh den loidhne seo ann fhathast"
+ "No recording of this line yet": "Chan eil clàradh den loidhne seo ann fhathast",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "Tagh na cànanan a tha thu airson ionnsachadh. Bidh gach cànan a’ dìreadh na fàraidh leis fhèin: fosglaidh an ath roinn aige cho luath ’s a ghlanas tu an t-ath-sheòladair aige san roinn làithreach, mar sin cha bhi cànan a’ feitheamh ri cànan eile gu bràth. Cuir cànanan ris no thoir air falbh iad uair sam bith; cha chaill thu adhartas ann an cànan gu bràth.",
+ "Open for {langs}": "Fosgailte do {langs}",
+ "A language that clears every sector unlocks it": "Fosglaidh cànan a ghlanas gach roinn e",
+ "{n} still on an earlier sector": "{n} fhathast ann an roinn nas tràithe",
+ "Clear {tier} in {lang} first — each language climbs on its own": "Glan {tier} ann an {lang} an toiseach — bidh gach cànan a’ dìreadh leis fhèin",
+ "{n} speakers": "{n} luchd-labhairt",
+ "Pick at least one language to chart the voyage.": "Tagh co-dhiù aon chànan gus an turas a dhealbhadh.",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ Tagh co-dhiù aon chànan gus an turas a dhealbhadh."
 }

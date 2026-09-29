@@ -10127,7 +10127,7 @@
         grid.appendChild(card);
       });
       var n = picked.length;
-      document.getElementById('journey-summary').innerHTML = (n===1 ? _t('<b>{n}</b> language', {n:n}) : _t('<b>{n}</b> languages', {n:n}))+' '+_t('on this voyage')+' · '+_t('Engineering Bay and Refit prices ×{m} (more languages, more relays, more income)', {m:(1+0.3*Math.max(0,n-1)).toFixed(1)})+
+      document.getElementById('journey-summary').innerHTML = (n===1 ? _t('<b>{n}</b> language on this voyage', {n:n}) : _t('<b>{n}</b> languages on this voyage', {n:n}))+' · '+_t('Engineering Bay and Refit prices ×{m} (more languages, more relays, more income)', {m:(1+0.3*Math.max(0,n-1)).toFixed(1)})+
         (n===0 ? '<br><b>⚠️ '+_t('Pick at least one language to chart the voyage.')+'</b>' : '');
       var goBtn = document.getElementById('btn-journey-go'); if(goBtn) goBtn.disabled = n===0;
     }

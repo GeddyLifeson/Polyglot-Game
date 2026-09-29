@@ -1297,5 +1297,13 @@
  "Café, caffè, coffee, kāfēi — almost every language’s word for coffee traces back to Arabic qahwa.": "Café、caffè、coffee、kāfēi——幾乎每種語言講咖啡嘅字都可以追溯到阿拉伯文 qahwa。",
  "Tea words split into two families: \"cha\" (Portuguese chá, Japanese ocha) spread overland from Cantonese; \"te\" (French thé, Italian tè) spread by sea from Hokkien.": "講茶嘅字分成兩大家族：「cha」（葡萄牙文 chá、日文 ocha）由廣東話經陸路傳開；「te」（法文 thé、意大利文 tè）由福建話經海路傳開。",
  "Told by the Tuathaich around the fire in the north of Diaithìr; their own side of the tale": "Diaithìr 北部嘅 Tuathaich 圍住火堆講嘅；佢哋自己嗰邊嘅故事",
- "No recording of this line yet": "呢句仲未有錄音"
+ "No recording of this line yet": "呢句仲未有錄音",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "揀啲你想學嘅語言。每種語言各自爬梯級：只要你喺目前星區清咗佢嘅中繼站，佢嘅下一個星區就會開，所以冇一種語言需要等另一種。隨時加減語言；語言嘅進度永遠唔會唔見。",
+ "Open for {langs}": "已向 {langs} 開放",
+ "A language that clears every sector unlocks it": "邊種語言清晒所有星區就解鎖到",
+ "{n} still on an earlier sector": "{n} 種語言仲喺之前嘅星區",
+ "Clear {tier} in {lang} first — each language climbs on its own": "先清咗{lang}嘅 {tier} 星區——每種語言各自爬",
+ "{n} speakers": "{n} 使用者",
+ "Pick at least one language to chart the voyage.": "至少揀一種語言先可以規劃航程。",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ 至少揀一種語言先可以規劃航程。"
 }

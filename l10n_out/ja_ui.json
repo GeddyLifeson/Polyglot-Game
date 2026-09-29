@@ -1297,5 +1297,13 @@
  "Show IPA and the original reading under each word": "各単語の下にIPAと元の読みを表示",
  "Show how to pronounce it": "発音のしかたを表示",
  "Told by the Tuathaich around the fire in the north of Diaithìr; their own side of the tale": "ディアヒール島北部でトゥアハハが炉端で語る。彼ら自身の側から見た物語",
- "No recording of this line yet": "この文の録音はまだありません"
+ "No recording of this line yet": "この文の録音はまだありません",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "{学|まな}びたい{言語|げんご}を{選|えら}んでください。{言語|げんご}はそれぞれ{単独|たんどく}でラダーを{登|のぼ}ります。{現在|げんざい}のセクターでその{言語|げんご}の{中継|ちゅうけい}をクリアすれば{次|つぎ}のセクターが{開|ひら}くので、ある{言語|げんご}が{別|べつ}の{言語|げんご}を{待|ま}つことはありません。{言語|げんご}はいつでも{追加|ついか}・{削除|さくじょ}でき、{進|すす}み{具合|ぐあい}が{失|うしな}われることはありません。",
+ "Open for {langs}": "{langs} に{解放|かいほう}",
+ "A language that clears every sector unlocks it": "すべてのセクターをクリアした{言語|げんご}から{解放|かいほう}",
+ "{n} still on an earlier sector": "{n} {言語|げんご}はまだ{前|まえ}のセクター",
+ "Clear {tier} in {lang} first — each language climbs on its own": "{先|さき}に{lang}の{tier}をクリア — {言語|げんご}はそれぞれ{単独|たんどく}で{登|のぼ}ります",
+ "{n} speakers": "{話者|わしゃ} {n}",
+ "Pick at least one language to chart the voyage.": "{航路|こうろ}を{定|さだ}めるには{言語|げんご}を{最低|さいてい}{一|ひと}つ{選|えら}んでください。",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ {航路|こうろ}を{定|さだ}めるには{言語|げんご}を{最低|さいてい}{一|ひと}つ{選|えら}んでください。"
 }
