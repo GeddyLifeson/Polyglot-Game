@@ -276,7 +276,6 @@
   .journey-card .jc-native{ font-size:12px; color:var(--paper-faint); }
   .journey-card .jc-meta{ font-size:10.5px; color:var(--paper-faint); margin-top:4px; line-height:1.4; }
   .journey-card.on .jc-meta{ color:var(--paper-dim); }
-  .journey-card .jc-crew{ font-size:10.5px; color:var(--basil); letter-spacing:.04em; text-transform:uppercase; }
   .dungeon-tile[data-locked="1"]{ opacity:.55; cursor:not-allowed; }
   .wipe-btn{ color:var(--paper-faint); font-size:11px; }
   .shop-item.refit .sh-name .rf-lvl{ font-family:var(--font-mono); font-size:10px; color:#b48cff; margin-left:6px; white-space:nowrap; display:inline-block; }
@@ -512,7 +511,7 @@
       <div class="card home-card">
         <div class="home-hero">🌐</div>
         <h2 style="font-size:24px;" data-t>Chart your voyage</h2>
-        <p class="preview-sub" style="margin:0 auto;" data-t>Languages travel in crews of two. A crew's next sector opens when both of its languages have cleared the current one, so a stronger language waits for its partner. Crews are independent: adding a new pair later never locks a finished crew out of the Open Channel. Pick languages two at a time; progress in a language is never lost.</p>
+        <p class="preview-sub" style="margin:0 auto;" data-t>Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.</p>
         <div class="journey-grid" id="journey-grid"></div>
         <p class="preview-sub" id="journey-summary" style="margin:12px auto 0;"></p>
         <div class="home-actions">
@@ -6474,23 +6473,10 @@
     return list.filter(function(l){ return !!LANG_META[l] && !(l==='eng' && nat==='en') && !(l===nat); });
   }
   function langHasTier(l, tier){ return tier.endless || ((LANG_META[l] && LANG_META[l].tiers) || []).indexOf(tier.code)!==-1; }
-  /* Crews: languages travel in pairs. A crew's frontier is the lower of its two members' cleared-tier counts, so the
-     stronger language waits for its partner before the next sector opens. Crews are independent of each other:
-     a new pair never holds a finished crew back from the Open Channel. */
-  function pairsFor(langs, saved){
-    var pairs = [], used = {};
-    (saved || []).forEach(function(p){ var q = (p||[]).filter(function(l){ return langs.indexOf(l)!==-1 && !used[l]; }); if(q.length){ pairs.push(q); q.forEach(function(l){ used[l] = true; }); } });
-    var rest = langs.filter(function(l){ return !used[l]; });
-    for(var i=0;i<rest.length;i+=2){ pairs.push(rest.slice(i, i+2)); }
-    for(var a=0;a<pairs.length;a++){ if(pairs[a].length!==1) continue; for(var b=a+1;b<pairs.length;b++){ if(pairs[b].length===1){ pairs[a].push(pairs[b][0]); pairs.splice(b,1); break; } } }
-    return pairs;
-  }
-  function journeyPairs(){ return pairsFor(journeyLangs(), save.journey && save.journey.pairs); }
-  function pairOf(lang){ var ps = journeyPairs(); for(var i=0;i<ps.length;i++){ if(ps[i].indexOf(lang)!==-1) return ps[i]; } return [lang]; }
-  function pairPartner(lang){ return pairOf(lang).filter(function(l){ return l!==lang; })[0] || null; }
+  /* Each language climbs the ladder on its own: a sector is open for a language once that language has cleared
+     every sector below it. Languages never wait for each other; the Open Channel opens per language. */
   function langTiersCleared(lang){ var n = 0; while(n < TIERS.length-1 && (!langHasTier(lang, TIERS[n]) || isLangCleared(n, lang))) n++; return n; }
-  function pairFrontier(pair){ return Math.min.apply(null, pair.map(langTiersCleared)); }
-  function langTierUnlocked(tierIdx, lang){ var f = pairFrontier(pairOf(lang)); return TIERS[tierIdx].endless ? f >= TIERS.length-1 : tierIdx <= f; }
+  function langTierUnlocked(tierIdx, lang){ var f = langTiersCleared(lang); return TIERS[tierIdx].endless ? f >= TIERS.length-1 : tierIdx <= f; }
   function openChannelLangs(){ return journeyLangs().filter(function(l){ return langTierUnlocked(TIERS.length-1, l); }); }
   function tierLangs(tier){ return tier.endless ? openChannelLangs() : journeyLangs().filter(function(l){ return langHasTier(l, tier); }); }
   function repertoireMult(){ return 1 + 0.3*Math.max(0, journeyLangs().length-1); }
@@ -7025,7 +7011,7 @@
     if(!save.journey || typeof save.journey!=='object' || !Array.isArray(save.journey.langs)) save.journey = {langs:['es','fr','it','pt','ja','zh'], set:false};
     /* a voyage that already has progress was started before the Journey screen existed: keep its six */
     if(!save.journey.set && (save.xp>0 || Object.keys(save.clearedDungeons||{}).length)) save.journey.set = true;
-    if(!Array.isArray(save.journey.pairs)) save.journey.pairs = pairsFor(save.journey.langs, null);
+    if(save.journey.pairs) delete save.journey.pairs;   /* crews (languages advancing in pairs) were dropped: each language climbs alone */
     /* lifetime XP was not tracked before Warp Jumps existed: seed it from the current rank progress */
     if(!save.stats.xpLifetime && save.xp) save.stats.xpLifetime = save.xp;
     /* Ascension became Interference: an old Ascension level carries over as Time Compression */
@@ -8054,10 +8040,10 @@
   }
   function isHubUnlocked(tierIdx){
     if(tierIdx===0) return true;
-    return journeyLangs().some(function(l){ return langTierUnlocked(tierIdx, l); });   /* open if any crew has reached it */
+    return journeyLangs().some(function(l){ return langTierUnlocked(tierIdx, l); });   /* open if any language has reached it */
   }
   function frontierHubIdx(){
-    var best = 0; journeyPairs().forEach(function(p){ best = Math.max(best, pairFrontier(p)); });
+    var best = 0; journeyLangs().forEach(function(l){ best = Math.max(best, langTiersCleared(l)); });
     return Math.min(best, TIERS.length-1);
   }
   function bestFloorLabel(){ return TIERS[frontierHubIdx()].code; }
@@ -8212,9 +8198,9 @@
 
   /* ---- tutorial coach: one short card per screen the first time a new voyage reaches it ---- */
   var COACH = {
-    journey:  'Welcome aboard the Rosetta. First, chart your voyage: pick the languages you want to learn, two at a time. Each pair forms a crew that climbs the ladder together; you can add another crew any time from the Star Chart.',
+    journey:  'Welcome aboard the Rosetta. First, chart your voyage: pick the languages you want to learn. One is fine to start; you can add more any time from the Star Chart.',
     home:     'This is the Star Chart. Each sector is a fluency band, A1 up to C2, and holds one relay per language you chose. Tap the <b>A1</b> sector to begin.',
-    hub:      'One relay per language. Clearing every relay in a sector unlocks the next one. Pick the language you want to start with.',
+    hub:      'One relay per language. Clearing a language\'s relay opens the next sector for that language. Pick the language you want to start with.',
     topics:   'A relay is made of modules: vocabulary, conversations, sentences and more. Clear them all to decode the relay. Start with the first <b>Vocabulary</b> module.',
     preview:  'The briefing. You have power cells (lives), a timer per transmission, and this is a <b>first attempt</b>: clear it and your Signal Chain grows, fail it and the chain breaks. Engage when ready.',
     draft:    'Before every relay you draft one module for the run: a temporary perk. On a first clear it gets welded onto your chain and rides into the next relay. Pick one.',
@@ -8399,8 +8385,7 @@
     if(a){ a.addEventListener('click', function(){
       for(var i=0;i<level;i++){ topicsForTier(TIERS[i], lang).forEach(function(topic){ save.clearedDungeons[i+':'+lang+':'+topic] = true; }); }
       save.placed[lang] = TIERS[level].code; persist();
-      var mate = pairPartner(lang); var held = mate && pairFrontier(pairOf(lang)) < level;
-      toast(_t('📐 {lang} placed at {level}.', {lang:LANGS[lang].name, level:TIERS[level].code})+(held ? ' '+_t('Crews advance together: {mate} must reach {level} before {lang} goes further.', {mate:LANGS[mate].name, level:TIERS[level].code, lang:LANGS[lang].name}) : '')); showHome();
+      toast(_t('📐 {lang} placed at {level}.', {lang:LANGS[lang].name, level:TIERS[level].code})); showHome();
     }); }
     document.getElementById('btn-place-back').addEventListener('click', showHome);
   }
@@ -8479,7 +8464,7 @@
     return Math.max(0, 1 - leven(a, b) / Math.max(a.length, b.length));
   }
   function storyTierIdx(story){ return TIERS.findIndex(function(t){ return t.code===story.tier; }); }
-  function storyOpen(story, lang){ var idx = storyTierIdx(story); return idx<=pairFrontier(pairOf(lang)) && langHasTier(lang, TIERS[idx]); }
+  function storyOpen(story, lang){ var idx = storyTierIdx(story); return idx<=langTiersCleared(lang) && langHasTier(lang, TIERS[idx]); }
   function storyKey(story, lang, mode){ return story.id+':'+lang+((mode||'read')==='read' ? '' : ':'+mode); }
   function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
   function showStories(){
@@ -8861,8 +8846,8 @@
       var clearedN = tier.endless ? 0 : tierLangs(tier).filter(function(l){ return isLangCleared(idx,l); }).length;
       var waiting = tier.endless ? 0 : tierLangs(tier).filter(function(l){ return !langTierUnlocked(idx, l); }).length;
       var progressHtml = tier.endless
-        ? (unlocked ? _t('Open for {langs}', {langs:tierLangs(tier).map(function(l){ return LANGS[l].name; }).join(' + ')}) : _t('A crew that clears every sector unlocks it'))
-        : (_t('<b>{n}</b>/{total} relays cleared', {n:clearedN, total:tierLangs(tier).length})+(unlocked && waiting ? ' · ⏳ '+_t('{n} waiting on a crewmate', {n:waiting}) : ''));
+        ? (unlocked ? _t('Open for {langs}', {langs:tierLangs(tier).map(function(l){ return LANGS[l].name; }).join(' + ')}) : _t('A language that clears every sector unlocks it'))
+        : (_t('<b>{n}</b>/{total} relays cleared', {n:clearedN, total:tierLangs(tier).length})+(unlocked && waiting ? ' · 🔒 '+_t('{n} still on an earlier sector', {n:waiting}) : ''));
       tile.innerHTML =
         '<span class="lvl-badge" style="background:'+tier.color+'">'+tier.code+'</span>'+
         '<div class="hub-name">'+(unlocked?'':'🔒 ')+tier.name+'</div>'+
@@ -8894,7 +8879,7 @@
     tierLangs(tier).forEach(function(l){
       var topics = topicsForTier(tier, l);
       var cleared = isLangCleared(idx, l);
-      var open = langTierUnlocked(idx, l); var mate = pairPartner(l);
+      var open = langTierUnlocked(idx, l);
       var topicsClearedN = topics.filter(function(topic){ return isDungeonCleared(idx, l, topic); }).length;
       var tile = document.createElement('button');
       tile.type = 'button'; tile.className = 'dungeon-tile';
@@ -8903,7 +8888,7 @@
       tile.innerHTML =
         '<span class="dungeon-flag">'+(cleared?'✅':open?'📡':'🔒')+'</span>'+
         '<div class="dungeon-name" style="color:'+LANGS[l].color+';">'+LANGS[l].name+'</div>'+
-        '<div class="dungeon-meta">'+(open ? _t('{n}/{total} modules cleared', {n:topicsClearedN, total:topics.length}) : _t('Waiting for {mate} to clear {tier} — crews advance together', {mate:(mate ? LANGS[mate].name : _t('a crewmate')), tier:TIERS[pairFrontier(pairOf(l))].code}))+'</div>';
+        '<div class="dungeon-meta">'+(open ? _t('{n}/{total} modules cleared', {n:topicsClearedN, total:topics.length}) : _t('Clear {tier} in {lang} first — each language climbs on its own', {tier:TIERS[langTiersCleared(l)].code, lang:LANGS[l].name}))+'</div>';
       if(open){ tile.addEventListener('click', function(){ showTopics(idx, l); }); } else { tile.disabled = true; }
       el.dungeonGrid.appendChild(tile);
     });
@@ -10130,29 +10115,26 @@
     });
     function render(){
       grid.innerHTML = '';
-      var pairs = pairsFor(picked, save.journey.pairs);
       LANG_ORDER.forEach(function(l){
         if(l===nativeLang() || (l==='eng' && nativeLang()==='en')) return;
         var m = LANG_META[l]; var on = picked.indexOf(l)!==-1;
         var tiers = m.tiers||[]; var cover = tiers.length===6 ? _t('full ladder A1–C2') : tiers.length ? _t('{a}–{b} so far', {a:tiers[0], b:tiers[tiers.length-1]}) : _t('coming soon');
         var card = document.createElement('button'); card.type = 'button';
         card.className = 'journey-card'+(on?' on':'')+(tiers.length?'':' soon'); card.setAttribute('data-lang', l);
-        var crewIdx = -1; pairs.forEach(function(p, i){ if(p.indexOf(l)!==-1) crewIdx = i; });
-        var crewTag = on ? '<span class="jc-crew">'+_t('Crew {n}', {n:crewIdx+1})+(pairs[crewIdx] && pairs[crewIdx].length===1 ? ' · '+_t('needs a partner') : '')+'</span>' : '';
-        card.innerHTML = '<span class="jc-flag">'+m.flag+'</span><span class="jc-name" style="color:'+LANGS[l].color+'">'+m.name+'</span><span class="jc-native">'+m.native+(m.speakers ? ' · '+_t('{n} speakers', {n:(m.speakers>=1000 ? (m.speakers/1000).toFixed(1)+'B' : Math.round(m.speakers)+'M')}) : '')+'</span>'+crewTag+
+        card.innerHTML = '<span class="jc-flag">'+m.flag+'</span><span class="jc-name" style="color:'+LANGS[l].color+'">'+m.name+'</span><span class="jc-native">'+m.native+(m.speakers ? ' · '+_t('{n} speakers', {n:(m.speakers>=1000 ? (m.speakers/1000).toFixed(1)+'B' : Math.round(m.speakers)+'M')}) : '')+'</span>'+
           '<span class="jc-meta">'+cover+(m.audio?' · 🎧 '+_t('studio voice'):' · 🎙️ '+_t('device voice'))+(m.reading?' · '+_t('reading line'):'')+'</span>';
         if(tiers.length){ card.addEventListener('click', function(){ var i = picked.indexOf(l); if(i===-1) picked.push(l); else picked.splice(i,1); render(); }); }
         grid.appendChild(card);
       });
-      var n = picked.length; var odd = n%2===1 || n===0; var crews = Math.ceil(n/2);
-      document.getElementById('journey-summary').innerHTML = (n===1 ? _t('<b>{n}</b> language', {n:n}) : _t('<b>{n}</b> languages', {n:n}))+' '+(crews===1 ? _t('in <b>{c}</b> crew', {c:crews}) : _t('in <b>{c}</b> crews', {c:crews}))+' · '+_t('Engineering Bay and Refit prices ×{m} (more languages, more relays, more income)', {m:(1+0.3*Math.max(0,n-1)).toFixed(1)})+
-        (odd ? '<br><b>⚠️ '+(n===0 ? _t('Crews travel in pairs — pick two languages to chart the voyage.') : _t('Crews travel in pairs — pick one more language to chart the voyage.'))+'</b>' : '');
-      var goBtn = document.getElementById('btn-journey-go'); if(goBtn) goBtn.disabled = odd;
+      var n = picked.length;
+      document.getElementById('journey-summary').innerHTML = (n===1 ? _t('<b>{n}</b> language', {n:n}) : _t('<b>{n}</b> languages', {n:n}))+' '+_t('on this voyage')+' · '+_t('Engineering Bay and Refit prices ×{m} (more languages, more relays, more income)', {m:(1+0.3*Math.max(0,n-1)).toFixed(1)})+
+        (n===0 ? '<br><b>⚠️ '+_t('Pick at least one language to chart the voyage.')+'</b>' : '');
+      var goBtn = document.getElementById('btn-journey-go'); if(goBtn) goBtn.disabled = n===0;
     }
     render();
     var go = document.getElementById('btn-journey-go'), back = document.getElementById('btn-journey-back');
     go.textContent = save.journey.set ? _t('✓ Update voyage') : _t('🚀 Chart the voyage');
-    go.onclick = function(){ if(picked.length<2 || picked.length%2){ toast(_t('⚠️ Crews travel in pairs — pick an even number of languages.')); return; } save.journey.pairs = pairsFor(picked, save.journey.pairs); save.journey.langs = picked.slice(); save.journey.set = true; persist(); showHome(); toast(_t('🌐 Voyage charted: {flags} — change it any time from the Star Chart.', {flags:save.journey.pairs.map(function(p){ return p.map(function(l){ return LANG_META[l].flag; }).join(''); }).join(' · ')})); };
+    go.onclick = function(){ if(!picked.length){ toast(_t('⚠️ Pick at least one language to chart the voyage.')); return; } save.journey.langs = picked.slice(); delete save.journey.pairs; save.journey.set = true; persist(); showHome(); toast(_t('🌐 Voyage charted: {flags} — change it any time from the Star Chart.', {flags:picked.map(function(l){ return LANG_META[l].flag; }).join(' ')})); };
     back.hidden = !save.journey.set;
     back.onclick = showHome;
   }

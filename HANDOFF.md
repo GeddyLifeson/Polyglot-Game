@@ -181,6 +181,7 @@ Languages are added and advance in pairs. `journeyPairs()` / `pairsFor(langs, sa
 languages by `LANG_META.speakers` (build.py `SPEAKERS`), shows "Crew N" on picked cards and refuses an odd pick.
 Placement warns when the placed language will wait for its crewmate. Tests: `qa/qa_pairs.js` (in `npm run qa`).
 README section 3e documents the rules. Diaithìris (constructed, 0 speakers) sorts last with Latin.
+**Superseded 2026-09-29, see below: crews were dropped again.**
 
 ## 2026-09-29: PR #7 merged with main (crews + sweep meet Diaithìris, interface l10n and pronunciation)
 
@@ -191,6 +192,18 @@ six Voices samples were recorded); the manifest rebuilt from the clips on disk i
 .ogg, checked both ways); `npm run qa` now runs ten suites (main's qa_pron and qa_ui_l10n added). New crew
 strings are wrapped in `_t()` but not yet translated (they show in English until `l10n_prep.py` runs and the
 `ui` chunks are translated).
+
+## 2026-09-29: crews dropped, plain per-language gating (owner's request)
+
+The owner asked to lose the "advance in pairs" rule. Each language now climbs alone: `langTiersCleared(lang)` is
+its frontier, `langTierUnlocked(tierIdx, lang)` = tierIdx ≤ that frontier (Open Channel once all six are cleared),
+`frontierHubIdx()` is the furthest language, `storyOpen` uses the language's own frontier. `pairsFor`,
+`journeyPairs`, `pairOf`, `pairPartner`, `pairFrontier` and `save.journey.pairs` are gone (an old save's `pairs`
+key is deleted on load). The Journey screen keeps the most-spoken-first order, accepts any count ≥ 1 and no longer
+shows crew tags; the sector screen marks a language still behind as 🔒 "Clear <tier> in <language> first".
+`qa/qa_pairs.js` became `qa/qa_ladder.js` (order, per-language unlock, hub tile lock text, placement, Open Channel
+per language, Journey with an odd count). The crew `_t()` strings were removed before they were ever translated;
+the replacement strings are English until the `ui` chunks are re-prepped and translated.
 
 ## Machine quirks that cost time
 

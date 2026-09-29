@@ -240,19 +240,19 @@ na hEaglaise). Its story and tile clips are keyed by a hash of the spelling, so 
   C2 nuance items in `content/xlate_<lang>_skills2.py` (same schema and topic keys as the core six), so the
   grammar / idiom / nuance modules now appear in those sectors for every language on the voyage.
 
-## 3e. Crews: languages travel in pairs
+## 3e. Progression: each language climbs on its own
 
 The Journey screen lists languages from most spoken to least (`speakers` in LANG_META, millions, Ethnologue 2024;
-Diaithìris, a constructed language, counts 0 and sits last with Latin) and only charts an even number of them. Picks pair up in order into **crews** (`save.journey.pairs`); an existing
-crew is kept when a new pair is added. Progress is per crew:
+Diaithìris, a constructed language, counts 0 and sits last with Latin); pick any number, one is enough. Progress is
+per language:
 
-* a crew's **frontier** is the lower of its two languages' cleared-tier counts (`pairFrontier`), so the next
-  sector opens for both only when both have cleared the current one — a placement test that puts one language
-  at B1 does not let it climb past its crewmate;
-* the Star Chart tile for a tier is open when any crew has reached it, and the sector screen shows a held-back
-  language as 🔒 "Waiting for <crewmate> to clear <tier>";
-* the **Open Channel** opens for each crew that has cleared all six tiers and draws its rounds only from those
-  crews, so adding a new pair later never locks a finished crew out.
+* a language's **frontier** is its cleared-tier count (`langTiersCleared`): a sector is open for a language
+  (`langTierUnlocked`) once that language has cleared every sector below it, so a placement test that puts one
+  language at B1 lets it start there while the others stay on A1;
+* the Star Chart tile for a tier is open when any language has reached it, and the sector screen shows a language
+  that is still behind as 🔒 "Clear <tier> in <language> first";
+* the **Open Channel** opens for each language that has cleared all six tiers and draws its rounds only from
+  those languages, so adding a language later never locks a finished one out.
 
 ## 4. Edit content
 
@@ -279,7 +279,7 @@ npm run qa                                   # builds qa/hub-qa-wrapped.html and
 
 `npm run qa` (or `make qa`) runs qa_modules, qa_chain, qa_overhaul, qa_voice and qa_c2 from disk, then
 `qa/with_server.js` serves the repo on a free port and runs qa_clips and qa_fixes (regression checks for the
-September 2026 bug sweep) against it, then qa_pairs (the crews progression model), then qa_pron (pronunciation
+September 2026 bug sweep) against it, then qa_ladder (the per-language progression model), then qa_pron (pronunciation
 lines) and qa_ui_l10n (the interface in the player's language) through the server again (the clips, pron and
 ui suites need HTTP for the manifest and the JSON pools). Run one suite alone with `node qa/qa_modules.js`, or the clips suite with
 `npm run qa:clips`. Either audio build passes: external `audio/` + manifest, or embedded via `embed_audio.py`.
