@@ -15,6 +15,11 @@ Extra bands: TILES (every sentence tile and nuance option, keys x-<hash>), DRILL
 the gap filled + idiom phrases, keys g-*/i-*), STORIES (every Library paragraph, keys <story>-p<n>).
   python3 tools/gen_audio.py DRILLS STORIES --langs es,fr,it,pt,ja,zh
 Keys are `<id>:<lang>`; the game plays a clip whenever a key exists in audio/manifest.json.
+Two extra bands are keyed by a hash of the spoken text (x-<fnv1a>:<lang>, tileClipKey in index.html):
+  TILES    sentence-building tiles and nuance options             -> audio/TILES/x-<hash>_<lang>.ogg
+  STORIES  story paragraphs (crew stories, folk tales) and the Voices-panel sample, long ones recorded
+           sentence by sentence and joined                         -> audio/STORIES/x-<hash>_<lang>.ogg
+  e.g. python3 tools/gen_audio.py STORIES --langs gr --backend omnivoice --omni-steps 16
 
 Requires: index.html already built (python3 build.py), ffmpeg on PATH, and
   pip install kokoro soundfile jieba unidic-lite cn2an pypinyin fugashi jaconv mojimoji pyopenjtalk
@@ -26,6 +31,13 @@ Backends (--backend auto|torch|onnx, default auto = torch if `kokoro` is importa
          plus the two files from github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0
          (kokoro-v1.0.onnx, voices-v1.0.bin) — pass them with --onnx-model/--onnx-voices or put
          them in models/.
+  espeak espeak-ng formant voices, offline, via `pip install espeakng-loader` (ships libespeak-ng and its data).
+         Used for Diaithìris (gr), read by the Scottish Gaelic voice `gd` after rewriting Diaithìris `sc` as `sg`.
+         --espeak-rate (words per minute) and --espeak-pitch (0-100) tune it.
+  omnivoice  k2-fsa/OmniVoice (Apache-2.0 code, CC-BY-NC weights; 646 languages), `pip install omnivoice` on CPU torch.
+         Used for Diaithìris (gr): its Irish voice reads Diaithìris spelling once the grave accents become Irish acutes.
+         One voice throughout: every clip clones tools/voices/omni_gr_man.wav (--omni-ref / --omni-ref-text);
+         --omni-steps sets the diffusion steps (32 default, 16 is about twice as fast). About 10 s a clip on 4 CPU cores.
 """
 import sys, os, re, json, subprocess, time, warnings, argparse
 warnings.filterwarnings('ignore')
@@ -37,9 +49,14 @@ ap.add_argument('--bitrate', default='16k')
 ap.add_argument('--out', default='audio')
 ap.add_argument('--html', default='index.html')
 ap.add_argument('--speed', type=float, default=0.95)
-ap.add_argument('--backend', choices=['auto', 'torch', 'onnx', 'azure', 'chatterbox', 'edge'], default='auto')
+ap.add_argument('--backend', choices=['auto', 'torch', 'onnx', 'azure', 'chatterbox', 'edge', 'espeak', 'omnivoice'], default='auto')
 ap.add_argument('--cbx-prompt', default=os.environ.get('CBX_PROMPT', ''), help='chatterbox: reference wav for the narrator voice (optional)')
 ap.add_argument('--cbx-device', default=os.environ.get('CBX_DEVICE', 'cuda'))
+ap.add_argument('--espeak-rate', type=int, default=155, help='espeak: words per minute')
+ap.add_argument('--espeak-pitch', type=int, default=45, help='espeak: base pitch 0-100 (espeak default 50)')
+ap.add_argument('--omni-steps', type=int, default=32, help='omnivoice: diffusion steps')
+ap.add_argument('--omni-ref', default='tools/voices/omni_gr_man.wav', help='omnivoice: reference clip the voice is cloned from')
+ap.add_argument('--omni-ref-text', default='tools/voices/omni_gr_man.txt', help='omnivoice: file with the reference clip\'s text')
 ap.add_argument('--azure-key', default=os.environ.get('AZURE_TTS_KEY', ''))
 ap.add_argument('--azure-region', default=os.environ.get('AZURE_TTS_REGION', 'eastus'))
 ap.add_argument('--voice', default='', help='override the voice name for every language in --langs')
@@ -59,6 +76,10 @@ if backend == 'auto':
         backend = 'onnx'
 if backend == 'chatterbox':
     import torch
+elif backend == 'espeak':
+    import ctypes, espeakng_loader
+elif backend == 'omnivoice':
+    import torch, unicodedata
 elif backend == 'edge':
     import asyncio, edge_tts   # free Microsoft Edge neural voices (same voice names as Azure); needs the internet, no key
 elif backend == 'azure':
@@ -96,6 +117,8 @@ nuance = block('NUANCE')
 grammar = block('GRAMMAR_ITEMS')
 idioms = block('IDIOMS')
 stories = block('STORIES')
+_vs = re.search(r'var VOICE_SAMPLE\s*=\s*\{(.*?)\};', html)
+VOICE_SAMPLE = {k: (a if a else b) for k, a, b in re.findall(r"(\w+):\s*(?:'([^']*)'|\"([^\"]*)\")", _vs.group(1))} if _vs else {}
 COL = {'es':5,'fr':6,'it':7,'pt':8,'ja':9,'zh':10, 'eng':1}   # 'eng' = English as a target language (the en column)
 KOKO = {'es':('e','ef_dora'), 'fr':('f','ff_siwis'), 'it':('i','if_sara'), 'pt':('p','pf_dora'), 'ja':('j','jf_alpha'), 'zh':('z','zf_xiaobei'),
         'hi':('h','hf_alpha'), 'eng':('a','af_heart')}
@@ -117,6 +140,12 @@ AZURE = {
     'la':('it-IT','it-IT-DiegoNeural'), 'tr':('tr-TR','tr-TR-EmelNeural'), 'ar':('ar-SA','ar-SA-ZariyahNeural'), 'hi':('hi-IN','hi-IN-SwaraNeural'),
     'ko':('ko-KR','ko-KR-SunHiNeural'), 'yue':('zh-HK','zh-HK-HiuMaanNeural'), 'vi':('vi-VN','vi-VN-HoaiMyNeural'), 'ind':('id-ID','id-ID-GadisNeural'),
          'eng':('en-US','en-US-AriaNeural')}
+# espeak-ng voices: our code -> (espeak voice, text rewrite). Diaithìris spells [sk] `sc` where Scottish Gaelic
+# writes `sg` (uisce/uisge, sceul/sgeul, iasc/iasg); the gd rules read `sg` as the unaspirated Gaelic stop.
+ESPEAK = {'gr': ('gd', lambda t: t.replace('sc', 'sg').replace('Sc', 'Sg').replace('SC', 'SG'))}
+# OmniVoice: our code -> (its language id, text rewrite). Diaithìris is read by the Irish model: grave accents -> acutes.
+def _acute(t): return unicodedata.normalize('NFC', unicodedata.normalize('NFD', t).replace('\u0300', '\u0301'))
+OMNI = {'gr': ('ga', _acute)}
 ESPEAK_LANG = {'e':'es', 'f':'fr-fr', 'i':'it', 'p':'pt-br'}   # what kokoro.KPipeline uses per lang_code
 
 
@@ -263,6 +292,63 @@ class EdgePipeline:
                 if attempt == 4: raise
                 time.sleep(3 * (attempt + 1))
 
+class EspeakPipeline:
+    """libespeak-ng through ctypes (the copy espeakng-loader ships, with its own espeak-ng-data). Synthesis is
+    synchronous; the callback collects 16-bit PCM at the library's rate (22.05 kHz), which ffmpeg resamples."""
+    _lib = None; _sr = 0; _buf = []
+    def __init__(self, lang):
+        self.voice, self.rewrite = ESPEAK[lang]
+        if args.voice: self.voice = args.voice
+        if EspeakPipeline._lib is None:
+            lib = ctypes.CDLL(espeakng_loader.get_library_path())
+            EspeakPipeline._sr = lib.espeak_Initialize(1, 0, espeakng_loader.get_data_path().encode(), 0)   # AUDIO_OUTPUT_RETRIEVAL
+            if EspeakPipeline._sr <= 0: sys.exit('espeak backend: espeak_Initialize failed')
+            CB = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.POINTER(ctypes.c_short), ctypes.c_int, ctypes.c_void_p)
+            def cb(wav, n, events):
+                if wav and n > 0: EspeakPipeline._buf.append(np.ctypeslib.as_array(wav, (n,)).astype(np.float32) / 32768)
+                return 0
+            EspeakPipeline._cb = CB(cb)   # keep a reference so it is not garbage-collected
+            lib.espeak_SetSynthCallback(EspeakPipeline._cb)
+            EspeakPipeline._lib = lib
+        self.sr = EspeakPipeline._sr
+        lib = EspeakPipeline._lib
+        if lib.espeak_SetVoiceByName(self.voice.encode()) != 0: sys.exit('espeak backend: no voice ' + self.voice)
+        lib.espeak_SetParameter(1, args.espeak_rate, 0)    # espeakRATE (wpm)
+        lib.espeak_SetParameter(3, args.espeak_pitch, 0)   # espeakPITCH
+    def __call__(self, text, voice=None, speed=1.0):
+        b = self.rewrite(clean(text)).encode('utf-8')
+        EspeakPipeline._buf.clear()
+        if EspeakPipeline._lib.espeak_Synth(b, len(b) + 1, 0, 0, 0, 1, None, None) != 0:   # espeakCHARS_UTF8
+            raise RuntimeError('espeak_Synth failed')
+        EspeakPipeline._lib.espeak_Synchronize()
+        if not EspeakPipeline._buf: raise RuntimeError('empty audio from espeak')
+        yield text, '', np.concatenate(EspeakPipeline._buf)
+
+class OmniPipeline:
+    """OmniVoice on CPU (or CUDA if present), cloning one reference voice so every clip is the same speaker.
+    Its own post-processing is off (it fails on some one-word clips); the loop below trims and ffmpeg normalises."""
+    _model = None; _prompt = None
+    def __init__(self, lang):
+        from omnivoice import OmniVoice
+        from omnivoice.models.omnivoice import OmniVoiceGenerationConfig
+        self.lang, self.rewrite = OMNI[lang]
+        self.sr = 24000
+        self.cfg = OmniVoiceGenerationConfig(num_step=args.omni_steps, postprocess_output=False)
+        if OmniPipeline._model is None:
+            dev = 'cuda:0' if torch.cuda.is_available() else 'cpu'
+            torch.set_num_threads(os.cpu_count() or 4)
+            OmniPipeline._model = OmniVoice.from_pretrained('k2-fsa/OmniVoice', device_map=dev,
+                                                            dtype=torch.float16 if dev != 'cpu' else torch.float32)
+            ref_text = open(os.path.join(ROOT, args.omni_ref_text), encoding='utf-8').read().strip()
+            OmniPipeline._prompt = OmniPipeline._model.create_voice_clone_prompt(
+                ref_audio=os.path.join(ROOT, args.omni_ref), ref_text=ref_text)
+    def __call__(self, text, voice=None, speed=1.0):
+        a = OmniPipeline._model.generate(text=self.rewrite(clean(text)), language=self.lang,
+                                         voice_clone_prompt=OmniPipeline._prompt, generation_config=self.cfg)[0]
+        if not len(a): raise RuntimeError('empty audio from omnivoice')
+        a = np.asarray(a, dtype=np.float32)
+        yield text, '', a / (np.abs(a).max() + 1e-9) * 0.9
+
 def clean(text, reading=False):
     if reading: t = re.sub(r'\{[^|{}]+\|([^}]+)\}', r'\1', text)   # {漢字|かな} -> かな
     else:       t = re.sub(r'\{([^|{}]+)\|[^}]+\}', r'\1', text)   # {漢字|かな} -> 漢字
@@ -306,11 +392,39 @@ def tile_items(lang):
                 seen.setdefault('x-' + fnv1a(o), o)
     return sorted(seen.items())
 
-def story_paras(story, lang):
-    """Mirrors storyText() in index.html: English targets read the source paragraphs, everything else its xl entry."""
-    if lang in ('en', 'eng'): return story.get('paras') or []
-    x = (story.get('xl') or {}).get(lang)
-    return (x.get('paras') if isinstance(x, dict) else None) or []
+def story_items(lang):
+    """The STORIES band: every story paragraph the reader speaks in this language (the crew stories' translations
+    and the folk tales told in it) plus the Voices-panel sample. Keyed x-<hash>:<lang> like the tiles, so index.html
+    finds them with tileClipKey(paragraph, lang); the manifest's dir map points these keys at audio/STORIES/."""
+    seen = {}
+    for s in stories:
+        tx = {'title': s.get('title'), 'paras': s.get('paras')} if lang == 'eng' else (s.get('xl') or {}).get(lang)
+        for p in (tx or {}).get('paras') or []:
+            if isinstance(p, str) and p.strip(): seen.setdefault('x-' + fnv1a(p), p)
+    if VOICE_SAMPLE.get(lang): seen.setdefault('x-' + fnv1a(VOICE_SAMPLE[lang]), VOICE_SAMPLE[lang])
+    return sorted(seen.items())
+
+def split_long(text, limit=160):
+    """Long paragraphs are read in sentence-sized pieces (OmniVoice loses the thread on long input) and the pieces
+    joined afterwards. Returns [(piece, pause_after_seconds)]. Sentences end at . ! ? … (with any closing quote,
+    before a capital); short ones are packed together up to `limit` characters so the prosody still runs across
+    them. A single sentence longer than 1.4 x limit is cut again at ; : and commas, with a shorter pause."""
+    if len(text) <= limit: return [(text, 0)]
+    def pack(parts, n):
+        out = []
+        for s in parts:
+            if out and len(out[-1]) + 1 + len(s) <= n: out[-1] += ' ' + s
+            else: out.append(s)
+        return out
+    sents = [x for x in re.split(r'(?:(?<=[.!?…])|(?<=[.!?…]["”’»]))\s+(?=["“‘«\'A-ZÀ-ÝÌÒÙ])', text) if x and x.strip()]
+    out = []
+    for s in pack(sents, limit):
+        if len(s) > limit * 1.4:
+            cl = pack([x for x in re.split(r'(?<=[;:,])\s+', s) if x.strip()], limit)
+            out += [(c, 0.18) for c in cl[:-1]] + [(cl[-1], 0.35)]
+        else: out.append((s, 0.35))
+    out[-1] = (out[-1][0], 0)
+    return out
 
 def items_for(tier, lang):
     if tier == 'DRILLS':
@@ -322,12 +436,7 @@ def items_for(tier, lang):
             if i.get('lang') == lang and i.get('phrase'): out.append((i['id'], i['phrase']))
         return [(i, t) for i, t in out if clean(t)]
     if tier == 'STORIES':
-        out = []
-        for s in stories:
-            if s.get('only') and s['only'] != lang: continue
-            for n, para in enumerate(story_paras(s, lang)):
-                out.append((s['id'] + '-p' + str(n), para))
-        return [(i, t) for i, t in out if clean(t)]
+        return story_items(lang)
     if tier == 'TILES':
         # a tile that is only a parenthetical gloss, e.g. "(officieux)", is still spoken when tapped
         return [(i, t if clean(t) else t.strip('()（） ')) for i, t in tile_items(lang) if clean(t) or t.strip('()（） ')]
@@ -368,6 +477,12 @@ for tier in args.tiers:
         elif backend == 'edge':
             if lang not in AZURE: print('skip', lang, '(no Edge voice mapped)'); continue
             pipe = EdgePipeline(lang); voice = pipe.voice
+        elif backend == 'espeak':
+            if lang not in ESPEAK: print('skip', lang, '(no espeak voice mapped)'); continue
+            pipe = EspeakPipeline(lang); voice = pipe.voice
+        elif backend == 'omnivoice':
+            if lang not in OMNI: print('skip', lang, '(no OmniVoice language mapped)'); continue
+            pipe = OmniPipeline(lang); voice = 'omnivoice'
         elif backend == 'chatterbox':
             if lang not in CBX: print('skip', lang, '(chatterbox has no model for it; use --backend azure)'); continue
             pipe = ChatterboxPipeline(lang); voice = 'chatterbox'
@@ -394,10 +509,15 @@ for tier in args.tiers:
                         print(f'  {tier} {lang} {n+1}/{len(todo)} · {round(time.time()-t0)}s', flush=True)
                     continue
                 spoken = text if backend in ('onnx', 'chatterbox') else clean(text)
-                audio = np.concatenate([a for _, _, a in pipe(spoken, voice=voice, speed=args.speed)])
-                idx = np.where(np.abs(audio) > 0.01)[0]
-                if len(idx): audio = audio[max(0, idx[0]-1200): min(len(audio), idx[-1]+2400)]
-                sf.write(wav, audio, 24000)
+                sr = getattr(pipe, 'sr', 24000)
+                pieces = []
+                for part, pause in (split_long(spoken) if tier == 'STORIES' else [(spoken, 0)]):   # a paragraph is recorded in sentence-sized pieces
+                    a = np.concatenate([a for _, _, a in pipe(part, voice=voice, speed=args.speed)])
+                    idx = np.where(np.abs(a) > 0.01)[0]
+                    if len(idx): a = a[max(0, idx[0]-1200): min(len(a), idx[-1]+2400)]
+                    pieces += [a, np.zeros(int(sr * pause), dtype=np.float32)]
+                audio = np.concatenate(pieces)
+                sf.write(wav, audio, sr)   # ffmpeg resamples to 24 kHz
                 subprocess.run(['ffmpeg','-y','-loglevel','error','-i',wav,'-ac','1','-ar','24000','-c:a','libopus','-b:a',args.bitrate,'-vbr','on','-application','voip','-frame_duration','40',ogg], check=True)
                 os.remove(wav)
                 keys.add(key); manifest['dir'][key] = tier

@@ -10,7 +10,7 @@ function log(l, ok, x){ console.log((ok?'PASS':'FAIL')+' — '+l+(x!==undefined?
   // 1. Journey order: most spoken first
   const order = await page.evaluate(() => { const Q = window.__QA; return { first: Q.LANG_ORDER.slice(0, 6), last: Q.LANG_ORDER.slice(-3), speakers: Q.LANG_ORDER.map(l => Q.LANG_META[l].speakers) }; });
   const desc = order.speakers.every((v, i, a) => i === 0 || a[i-1] >= v);
-  log('languages ordered by world speakers, descending', desc && order.first[0] === 'eng' && order.first[1] === 'zh' && order.first[2] === 'hi' && order.first[3] === 'es' && order.last[2] === 'la', order);
+  log('languages ordered by world speakers, descending', desc && order.first[0] === 'eng' && order.first[1] === 'zh' && order.first[2] === 'hi' && order.first[3] === 'es' && order.speakers.slice(-2).every(v => v === 0) && order.last.indexOf('la') !== -1, order);   // the two zero-speaker tongues (Latin, Diaithìris) sit last
 
   // 2. pairing: picks form crews in order; an existing crew is kept when a new pair is added
   const pairs = await page.evaluate(() => { const Q = window.__QA; Q.save.native = 'en'; Q.save.clearedDungeons = {}; Q.save.journey = {set:true, langs:['es','ja','it','fr'], pairs:null}; const p1 = Q.journeyPairs(); Q.save.journey.pairs = p1; Q.save.journey.langs = ['es','ja','it','fr','de','ko']; const p2 = Q.journeyPairs(); return { p1, p2, partner: Q.pairOf('ja') }; });

@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Validate one translated chunk: python tools/l10n_check.py <lang> <chunk>   (chunk = notes | questions | folk_1..3)
+"""Validate one translated chunk: python tools/l10n_check.py <lang> <chunk>   (chunk = notes | questions | folk_1..3 | ui)
 The output must mirror the input's keys and array lengths, with no empty strings. For folk chunks, tales whose own
-language is <lang> are skipped (they already exist natively) and must NOT be present."""
+language is <lang> are skipped (they already exist natively) and must NOT be present. For the ui chunk every
+{placeholder} and HTML tag of the English must survive, and keys the English no longer has are reported."""
 import json, os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, 'tools'))
 lang, chunk = sys.argv[1], sys.argv[2]
 src = json.load(open(os.path.join(ROOT, 'l10n_in', chunk + '.json'), encoding='utf-8'))
 path = os.path.join(ROOT, 'l10n_out', '%s_%s.json' % (lang, chunk))
@@ -35,6 +37,16 @@ if chunk.startswith('folk'):
             continue
         if sid not in out: probs.append(sid + ': missing'); continue
         cmp({'title': v['title'], 'paras': v['paras']}, out[sid], sid)
+elif chunk == 'ui':
+    import ui_strings
+    for k, v in src.items():
+        if k not in out: probs.append('missing: ' + k[:70]); continue
+        if not s_ok(out[k]): probs.append('empty: ' + k[:70]); continue
+        total += 1
+        if out[k].strip() == k.strip() and len(k) > 12: same += 1
+        for p in ui_strings.check_pair(k, out[k]): probs.append(p + ': ' + k[:70])
+    stale = [k for k in out if k not in src]
+    if stale: print('note: %d stale keys (no longer in the game), e.g. %s' % (len(stale), stale[0][:60]))
 else:
     cmp(src, out, chunk)
 if total and same / total > 0.25: probs.append('%d of %d strings are unchanged English' % (same, total))

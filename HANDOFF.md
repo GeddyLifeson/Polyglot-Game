@@ -7,7 +7,7 @@ state of the work and what happens next.
 ## What the project is
 
 A single-file browser game, `index.html`, plus an `audio/` folder of Opus clips. Sci-fi roguelite framing
-over a 5,005-word A1→C2 vocabulary ladder in twenty languages. Repo: `GeddyLifeson/Polyglot-Game`, default
+over a 5,005-word A1→C2 vocabulary ladder in twenty-one languages. Repo: `GeddyLifeson/Polyglot-Game`, default
 branch `main`, published by GitHub Pages from `main` at https://geddylifeson.github.io/Polyglot-Game/.
 Every merge to `main` goes live in about a minute. Local clone: `C:\Users\imarl\polyglot_game`.
 
@@ -38,7 +38,8 @@ way through C2), pronunciations must be as natural as possible, and the whole th
 
 ## Language codes
 
-es fr it pt ja zh (core, Kokoro-recorded) · de nl sv pl ru el la tr ar hi ko yue vi ind.
+es fr it pt ja zh (core, Kokoro-recorded) · de nl sv pl ru el la tr ar hi ko yue vi ind · gr (Diaithìris, the Gaelic of
+Diaithìr; words from the Diaithìris dictionary via `tools/import_diaithiris.py`, reading line = IPA, OmniVoice Irish voice, one cloned speaker).
 Indonesian is `ind`, never `id` (`id` collides with the item id field). Languages with a reading line:
 zh (pinyin), ru, el, ar, hi, ko, yue (Jyutping). Japanese carries furigana `{漢字|かな}` in the text itself.
 
@@ -56,24 +57,31 @@ zh (pinyin), ru, el, ar, hi, ko, yue (Jyutping). Japanese carries furigana `{漢
 
 ## Audio: DONE (2026-09-12 09:50) — see the sweep section below for the DRILLS and STORIES bands added later that day
 
-Every language is recorded and merged: 110,691 clips in `audio/manifest.json`, 21 voices (the twenty
-languages plus English as a target, `eng`), each 5,240 to 5,285 clips covering A1 to C2 plus the TILES band.
+Every language is recorded and merged: 116,640 clips in `audio/manifest.json` (110,691 on 2026-09-12; the gr
+voice, the DRILLS band and the STORIES band came later), 22 voices (the twenty-one languages plus English as a
+target, `eng`), each 5,240 to 5,367 clips covering A1 to C2 plus the TILES band.
 
 | Engine | Languages |
 |---|---|
 | Kokoro-82M (ONNX) | es fr it pt ja zh (the original six) |
 | Chatterbox Multilingual V3 | de ru nl tr sv ar pl hi el ko la (Italian model) ind (Malay model) |
 | Microsoft Edge neural (edge-tts, keyless) | yue vi eng |
+| OmniVoice Irish voice (`--backend omnivoice --omni-steps 16`, graves read as acutes; clones `tools/voices/omni_gr_man.wav`) | gr (Diaithìris) |
 
 Staging folders `staging_cbx_<lang>/` and `staging_edge_<lang>/` and the `gen_*.log` files can be deleted;
 everything is in `audio/`. Every LANG_META audio flag in build.py is True (plus `LANG_META.eng.audio` in
 index.html). The Chatterbox and Edge recorders and chain scripts stay in the repo for re-records
 (`gen_audio.py --only <keys>` with the 🚩 flag list from the Mission Log).
 
-Not yet recorded: the story paragraphs, the grammar/idiom/nuance items of the fourteen added languages,
-and any new English strings are spoken by the device voice. Recording them is a per-language rerun of the
-same commands (gen_audio only records missing keys); the story paragraphs would need a STORIES band added
-to `items_for` in gen_audio.py first.
+Story paragraphs have a STORIES band in gen_audio.py (keyed `x-<hash>:<lang>` by tileClipKey, files in
+`audio/STORIES/`, long paragraphs recorded sentence by sentence and joined). Recorded for gr (2026-09-25: the six
+crew stories, the six folk tales fk-gr-01..06 and the Voices sample) and for es fr it pt ja zh (2026-09-14 with
+Kokoro: the 84 paragraphs each language shows plus its Voices sample; the six were first keyed `<story>-p<n>` and
+were renamed to the hash keys in the 2026-09-29 merge). Diaithìris never falls back to a device voice (no device
+has one): an unrecorded gr line stays silent with one toast. Not yet recorded: the fourteen Chatterbox/Edge
+languages' story paragraphs and DRILLS items, every language's nuance items, and any new English strings are
+spoken by the device voice. Recording them is a per-language rerun
+of the same commands (gen_audio only records missing keys), e.g. `gen_audio.py STORIES --langs de --backend chatterbox`.
 
 ## What happens when a language finishes (repeat per language)
 
@@ -145,7 +153,8 @@ Fixed in index.html:
   microphone stream.
 - Performance: `wordsMax` and `vocabForTier` cached (constant per journey / tier), Lexicon search debounced (80 ms),
   Google Fonts stylesheet no longer render-blocking, and `audio/manifest.json` is now the compact v2 format
-  (`tools/manifestlib.py`: 4.96 MB -> 160 KB, per-id language bitmasks; the loader reads v1 and v2).
+  (`tools/manifestlib.py`: 5.2 MB -> 191 KB, per-id language bitmasks, a `dir` map for ids whose folder is not
+  derivable from the id such as the STORIES hashes; the loader reads v1 and v2).
 
 Tooling: `gen_audio.py --only` no longer deletes manifest keys it does not re-record; manifest writes are atomic
 (temp file + rename); a band whose every clip failed is not listed as recorded; `merge_audio.py` uses manifestlib,
@@ -156,7 +165,8 @@ New audio bands (recorded in the cloud for es fr it pt ja zh with the ONNX backe
 paragraphs into sentence-sized chunks with a language-aware limit):
 - DRILLS: grammar sentences with the gap filled (key `g-…:<lang>`, spoken after answering; the round is silent
   before, so the clip cannot leak the answer) and idiom phrases (`i-…:<lang>`).
-- STORIES: every Library paragraph, key `<story>-p<n>:<lang>` (read mode 🔊 and the Dictate/Interpret players).
+- STORIES: every Library paragraph and the Voices-panel sample, keyed `x-<hash>:<lang>` by `tileClipKey` like the
+  tiles (read mode 🔊 and the Dictate/Interpret players); the manifest's dir map points these ids at `audio/STORIES/`.
 The fourteen Chatterbox/Edge languages still use the device voice for these two bands. To record them on the PC:
 `python tools/gen_audio.py DRILLS STORIES --langs de,nl,sv,pl,ru,el,la,tr,ar,hi,ko,ind --backend chatterbox --out staging_cbx_drills`
 and `--langs yue,vi,eng --backend edge --out staging_edge_drills`, then `python tools/merge_audio.py <dirs>`.
@@ -170,7 +180,17 @@ Languages are added and advance in pairs. `journeyPairs()` / `pairsFor(langs, sa
 `frontierHubIdx()` is the furthest crew. `storyOpen` uses the language's own crew frontier. The Journey screen orders
 languages by `LANG_META.speakers` (build.py `SPEAKERS`), shows "Crew N" on picked cards and refuses an odd pick.
 Placement warns when the placed language will wait for its crewmate. Tests: `qa/qa_pairs.js` (in `npm run qa`).
-README section 3e documents the rules.
+README section 3e documents the rules. Diaithìris (constructed, 0 speakers) sorts last with Latin.
+
+## 2026-09-29: PR #7 merged with main (crews + sweep meet Diaithìris, interface l10n and pronunciation)
+
+Main had moved on (gr, the ui pool, the PRON engine, OmniVoice) while the crews branch waited. The merge keeps
+both: crews and the sweep fixes with main's `_t()` strings around them; story clips keyed by text hash the way
+main does it (the six Kokoro languages' 504 paragraph clips were renamed, none of the texts had changed, and the
+six Voices samples were recorded); the manifest rebuilt from the clips on disk into v2 (116,640 keys, one per
+.ogg, checked both ways); `npm run qa` now runs ten suites (main's qa_pron and qa_ui_l10n added). New crew
+strings are wrapped in `_t()` but not yet translated (they show in English until `l10n_prep.py` runs and the
+`ui` chunks are translated).
 
 ## Machine quirks that cost time
 
@@ -251,3 +271,51 @@ Chatterbox chains were started before they existed); after the chains finish, re
 
 Panscriptum pause (owner, 2026-09-11 23:05): the daily scheduled task `panscriptum-maintenance` is disabled and
 its running session stopped. Re-enable after the last chain merges (pl el la / hi ko ind), when the owner says so.
+
+2026-09-13: Panscriptum restarted at the owner's request (scheduled task re-enabled, watcher relaunched). Item 5
+of "Next steps" is done.
+
+## Pronunciation in the learner's own script (2026-09-23)
+
+Owner: "the ipa spelling of the words doesn't help someone that doesn't know how to read that stuff ... if
+someone's native tongue [is] japanese ... there should be Katakana below ... For English natives it would be
+spelling it how english would spell out to pronounce it." Built for all 21 native × 21 target languages:
+- `tools/gen_pron.py` → `pron/<lang>.json` ({text: IPA}, 22 files incl. `eng`, 6.0 MB, ~118k strings incl. story sentences). Needs
+  `pip install espeakng-loader pypinyin pycantonese`. Run after build.py whenever content changes (resumable;
+  `--fresh` recomputes everything in about a minute). README 3d lists the source per language.
+- `PRON` block in index.html (`/* ==== PRONUNCIATION START/END ==== */`, ~42 KB): IPA parser, fallback map,
+  one converter per native language (alphabetic tables for the Latin/Cyrillic/Greek scripts, syllable builders
+  for katakana, Hangul, pinyin-style, Jyutping-style, Devanagari, Arabic). `pronLine(lang, text, reading)`,
+  `pronHtml`, `pronRefresh`; rounds and options carry `pr:[lang, text, reading]` and the renderer fills the line
+  (it refills when a pron file arrives or the IPA toggle changes). Covered: match prompts, crosstalk / blank /
+  nuance / cloze / dialogue options, dialogue lines, idiom phrases, placement test, Lexicon.
+- Voices panel checkbox "Show IPA and the original reading under each word" (`save.showIpa`, via `_t`).
+- Also covered (second pass): Library stories (title line; 🗣️ under each paragraph opens one line per
+  sentence, remembered in `save.storyPron`; typed modes show the lines under the reference), sentence-builder
+  tiles (a line inside each tile, the whole sentence after Transmit), the listening reveal and the filled cloze
+  gap (`round.revealPr`), and Signal Intercept (ladder words carry their reading as ruby underneath; pasted
+  words outside the ladder have no IPA, since there is no G2P in the browser). Sentences are pron keys split by
+  the same pattern in gen_pron.py (`sentences`) and PRON.sentences; tile sequences are joined with PRON.SEP.
+  Quality is rule-based: espeak-ng is weakest for Arabic (the data's romanization is used instead; it has no
+  vowel length), Japanese pitch accent and Mandarin/Cantonese tones are not shown in the respellings (tones stay
+  visible with the IPA toggle). Spot-checks by native speakers per script are the next step; the converters are
+  small tables in the PRON block, so a complaint is usually a one-line fix.
+
+## Interface in the player's own language (2026-09-23)
+
+Owner: "all languages should have themselves represented on the website at every word possible, even the pages
+themselves ... turned into whatever the native language speaker's tongue is when they select their native language."
+- Runtime: `_t(english, vars)` + `applyUiL10n` (tables translated in place) + `applyStaticUi` (`data-t` markup and
+  title/placeholder/aria-label) + `rerenderAfterL10n`; `html.l10n-wait` hides the page until `l10n/<lang>.json`
+  arrives (2.5 s cap, then English). README 3d has the rules for adding strings.
+- Source: `tools/ui_strings.py` extracts ~1,300 strings (≈6,750 words) → `l10n_in/ui.json` via `tools/l10n_prep.py`.
+- Packs: `l10n_out/<lang>_ui.json` for all 21 native languages, assembled into `l10n/<lang>.json` (`ui` key) by
+  build.py; `tools/l10n_check.py <lang> ui` validates. Diaithìris (gr) has only the ui pool so far (no notes/questions/
+  folk chunks yet), so its coach notes and story questions are still English.
+- QA: `qa/qa_ui_l10n.js` (needs HTTP: `node qa/with_server.js qa/qa_ui_l10n.js`).
+- Also fixed on the way: the Lexicon table header now follows the voyage's languages; the Mission Log's "Clear
+  flags" button works; coach texts render furigana; Flight Plan quest text is rendered from the quest id (old
+  saves stored English text).
+- Known limits: plurals use a singular/plural key pair only where English branches; languages with more plural
+  forms use neutral phrasing ("label: {n}"). Translations were written by AI agents; a native read-through per
+  language is the next step.

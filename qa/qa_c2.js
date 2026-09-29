@@ -57,8 +57,8 @@ function log(label, ok, extra) {
   // C2 match module (proverbs, zh) — check pinyin sub present
   await page.evaluate(() => window.__QA.enterDungeon(5, 'zh', 'proverbs-sayings'));
   await page.waitForTimeout(150); await page.click('#btn-start'); await page.waitForTimeout(150); var sk = await page.$('#btn-skip-perk'); if (sk && await sk.isVisible()) { await sk.click(); await page.waitForTimeout(250); }
-  const m = await page.evaluate(() => ({ kind: window.__QA.st.round.kind, queue: window.__QA.st.queue.length, main: window.__QA.st.round.main, sub: window.__QA.st.round.sub }));
-  log('C2 proverbs zh: 30 items with pinyin', m.kind === 'match' && m.queue === 30 && /[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]/.test(m.sub), m);
+  const m = await page.evaluate(() => ({ kind: window.__QA.st.round.kind, queue: window.__QA.st.queue.length, main: window.__QA.st.round.main, sub: (window.__QA.st.round.pr || [])[2] || window.__QA.st.round.sub, line: document.getElementById('pl-romaji').textContent }));
+  log('C2 proverbs zh: 30 items with pinyin', m.kind === 'match' && m.queue === 30 && /[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]/.test(m.sub) && !!m.line, m);
 
   // Lexicon: C2 filter count
   const pb = await page.evaluate(() => { window.__QA.renderPhrasebook && document.getElementById('pb-tier') && (document.getElementById('pb-tier').value = '5'); return null; });
