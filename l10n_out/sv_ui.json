@@ -1297,5 +1297,13 @@
  "Tea words split into two families: \"cha\" (Portuguese chá, Japanese ocha) spread overland from Cantonese; \"te\" (French thé, Italian tè) spread by sea from Hokkien.": "Orden för te delar sig i två familjer: ”cha” (portugisiska chá, japanska ocha) spreds över land från kantonesiskan; ”te” (franska thé, italienska tè) spreds sjövägen från hokkien.",
  "Show IPA and the original reading under each word": "Visa IPA och den ursprungliga läsningen under varje ord",
  "Show how to pronounce it": "Visa hur det uttalas",
- "No recording of this line yet": "Den här meningen har ingen inspelning än"
+ "No recording of this line yet": "Den här meningen har ingen inspelning än",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "Välj vilka språk du vill lära dig. Varje språk klättrar på stegen för sig själv: nästa sektor öppnas så snart du har klarat språkets relästation i den nuvarande sektorn, så ett språk väntar aldrig på ett annat. Lägg till eller ta bort språk när som helst; framstegen i ett språk går aldrig förlorade.",
+ "Open for {langs}": "Öppen för {langs}",
+ "A language that clears every sector unlocks it": "Ett språk som klarar varje sektor låser upp den",
+ "{n} still on an earlier sector": "{n} kvar i en tidigare sektor",
+ "Clear {tier} in {lang} first — each language climbs on its own": "Klara {tier} i {lang} först – varje språk klättrar för sig självt",
+ "{n} speakers": "{n} talare",
+ "Pick at least one language to chart the voyage.": "Välj minst ett språk för att planera resan.",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ Välj minst ett språk för att planera resan."
 }

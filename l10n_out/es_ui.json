@@ -1297,5 +1297,13 @@
  "Show IPA and the original reading under each word": "Mostrar el AFI y la lectura original bajo cada palabra",
  "Show how to pronounce it": "Mostrar cómo se pronuncia",
  "Told by the Tuathaich around the fire in the north of Diaithìr; their own side of the tale": "Contada por los Tuathaich junto al fuego en el norte de Diaithìr; su propia versión de la historia",
- "No recording of this line yet": "Todavía no hay grabación de esta frase"
+ "No recording of this line yet": "Todavía no hay grabación de esta frase",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "Elige los idiomas que quieres aprender. Cada idioma sube la escalera por su cuenta: su siguiente sector se abre en cuanto completas su relé en el sector actual, así que un idioma nunca espera a otro. Añade o quita idiomas cuando quieras; el progreso en un idioma nunca se pierde.",
+ "Open for {langs}": "Abierto para {langs}",
+ "A language that clears every sector unlocks it": "Un idioma que complete todos los sectores lo desbloquea",
+ "{n} still on an earlier sector": "{n} todavía en un sector anterior",
+ "Clear {tier} in {lang} first — each language climbs on its own": "Completa primero {tier} en {lang}: cada idioma sube por su cuenta",
+ "{n} speakers": "{n} hablantes",
+ "Pick at least one language to chart the voyage.": "Elige al menos un idioma para trazar el viaje.",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ Elige al menos un idioma para trazar el viaje."
 }

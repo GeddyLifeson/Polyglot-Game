@@ -2,7 +2,7 @@
  "coach": {
   "journey": "Välkommen ombord på Rosetta. Först kartlägger du din resa: välj vilka språk du vill lära dig. Ett räcker för att börja; du kan lägga till fler när som helst från Stjärnkartan.",
   "home": "Det här är Stjärnkartan. Varje sektor är en färdighetsnivå, A1 upp till C2, och rymmer en relästation per språk du valt. Tryck på sektorn <b>A1</b> för att börja.",
-  "hub": "En relästation per språk. Att klara varje relästation i en sektor låser upp nästa. Välj vilket språk du vill börja med.",
+  "hub": "En relästation per språk. Att klara ett språks relästation låser upp nästa sektor för det språket. Välj vilket språk du vill börja med.",
   "topics": "En relästation består av moduler: ordförråd, samtal, meningar och mer. Klara dem alla för att avkoda relästationen. Börja med den första modulen <b>Ordförråd</b>.",
   "preview": "Genomgången. Du har energiceller (liv), en timer per överföring, och det här är ett <b>första försök</b>: klarar du det växer din Signalkedja, misslyckas du bryts kedjan. Sätt igång när du är redo.",
   "draft": "Innan varje relästation väljer du en modul för omgången: en tillfällig förmån. Vid ett första klarande svetsas den fast på din kedja och följer med till nästa relästation. Välj en.",
@@ -492,128 +492,727 @@
   "d-c2-08": "Besvara den starkaste versionen av deras påstående, visa sedan vad översättning inte kan förmedla."
  },
  "idiom_options": {
-  "i-es1": ["Att komma igång och sätta igång med jobbet", "Att ta sig en tupplur", "Att fira en födelsedag", "Att tappa humöret"],
-  "i-es2": ["Att vara mycket dyrt", "Att vara mycket fult", "Att ta lång tid", "Att vara mycket sällsynt"],
-  "i-es3": ["Att tala mycket rakt på sak", "Att vara kräsen med mat", "Att vara mycket tystlåten", "Att ha utsökt smak"],
-  "i-es4": ["Att vara lite galen", "Att vara mycket envis", "Att vara mycket hungrig", "Att vara mycket trött"],
-  "i-fr1": ["Att bli kär vid första ögonkastet", "Att tappa aptiten", "Att få plötslig huvudvärk", "Att drabbas av otur"],
-  "i-fr2": ["Att vara sansad och jordnära", "Att vara mycket lång", "Att ha ett stort ego", "Att vara glömsk"],
-  "i-fr3": ["Att ha en groda i halsen", "Att vara mycket nervös", "Att ha en hemlighet", "Att ljuga"],
-  "i-fr4": ["Det regnar mycket kraftigt", "Det är iskallt", "Det är en vacker dag", "Det är på väg att bli storm"],
-  "i-it1": ["Lycka till", "Smaklig måltid", "Se upp", "Sov gott"],
-  "i-it2": ["Jag kan knappt vänta", "Jag har ingen tid", "Jag är sen", "Jag förstår inte"],
-  "i-it3": ["Att vara förnuftig och klok", "Att vara mycket rik", "Att vara kräsen med mat", "Att vara mycket lång"],
-  "i-it4": ["Att slå två flugor i en smäll", "Att göra ett stort misstag", "Att slösa tid", "Att vara girig"],
-  "i-pt1": ["Att ta skulden för något som inte var ens eget fel", "Att betala frikostigt", "Att fira en vinst", "Att äta för mycket"],
-  "i-pt2": ["Att klara sig eller improvisera en lösning", "Att av misstag gå sönder", "Att ta en lång paus", "Att be om hjälp"],
-  "i-pt3": ["Att vara anpassningsbar och skicklig på att hantera knepiga situationer", "Att vara en fantastisk dansare", "Att vara mycket envis", "Att vara extremt blyg"],
-  "i-pt4": ["Att vara nyckfull och oförutsägbar", "Att vara mycket lugn", "Att vara extremt lojal", "Att vara mycket organiserad"],
-  "i-ja1": ["Någon som ger upp snabbt / inte kan hålla fast vid något", "Någon som jobbar mycket hårt", "Någon som är mycket tålmodig", "Någon som älskar rutiner"],
-  "i-ja2": ["Att bli arg", "Att bli hungrig", "Att känna sig nervös", "Att känna sig mätt"],
-  "i-ja3": ["Även experter gör misstag", "Övning ger färdighet", "Sakta men säkert vinner racet", "Handling talar högre än ord"],
-  "i-ja4": ["Kan inte hålla på en hemlighet", "En slipad pratmakare", "Tystlåten", "Kräsen med mat"],
-  "i-zh1": ["Att ge upp halvvägs", "Att bli klar exakt i tid", "Att jobba som ett team", "Att planera mycket noggrant"],
-  "i-zh2": ["Sisådär, eller slarvigt", "Extremt upptagen", "Mycket begåvad", "Extremt snabb"],
-  "i-zh3": ["Att förstöra något genom att lägga till onödiga detaljer", "Att slutföra en svår uppgift", "Att jobba bra som ett team", "Att ta en stor risk"],
-  "i-zh4": ["Att slösa möda på att förklara något för någon som ändå inte fattar", "Att uppträda vackert", "Att lära ut till en total nybörjare", "Att låta mycket"],
-  "i-ar1": ["att vara envis som en åsna", "att vara snabblärd", "att vara generös med pengar", "att vara lättskrämd"],
-  "i-ar2": ["att ha ett vänligt, godhjärtat lynne", "att vara hjärtekrossad", "att vara kylig och beräknande", "att bli lätt kär"],
-  "i-ar3": ["att vara en tusenkonstnär inblandad i allt", "att vara blyg och tillbakadragen", "att vara mycket disciplinerad", "att vara en långsam, metodisk arbetare"],
-  "i-ar4": ["att inte överreagera och hålla saker i proportion", "att gå på en religiös ceremoni", "att flytta någonstans tyst", "att göra upp en gammal tvist"],
-  "i-ar5": ["att högljutt sprida något till alla", "att hålla något som en noggrant bevarad hemlighet", "att glömma något helt", "att skriva ner något noggrant"],
-  "i-ar6": ["att läsa mellan raderna", "att skumma utan att förstå", "att citera något ordagrant", "att översätta bokstavligt"],
-  "i-de1": ["att vara envis som en åsna", "att vara snabblärd", "att vara generös med pengar", "att vara lättskrämd"],
-  "i-de2": ["att ha hjärtat på rätt ställe", "att vara hjärtekrossad", "att vara kylig och beräknande", "att bli lätt kär"],
-  "i-de3": ["att vara en tusenkonstnär inblandad i allt", "att vara blyg och tillbakadragen", "att vara mycket disciplinerad", "att vara en långsam, metodisk arbetare"],
-  "i-de4": ["att inte överreagera och hålla saker i proportion", "att gå på en religiös ceremoni", "att flytta någonstans tyst", "att göra upp en gammal tvist"],
-  "i-de5": ["att högljutt sprida något till alla", "att hålla något som en noggrant bevarad hemlighet", "att glömma något helt", "att skriva ner något noggrant"],
-  "i-de6": ["att läsa mellan raderna", "att skumma utan att förstå", "att citera något ordagrant", "att översätta bokstavligt"],
-  "i-el1": ["Han spelar dum / låtsas inte märka något", "Han jobbar mycket hårt", "Han säger sanningen rakt ut", "Han ber om ursäkt direkt"],
-  "i-el2": ["Han är överdrivet petig", "Han är mycket generös", "Han blir lätt lurad", "Han är helt vårdslös"],
-  "i-el3": ["Han pratar för mycket / kan inte hålla på en hemlighet", "Han är mycket blyg", "Han talar flera språk", "Han är en bra lyssnare"],
-  "i-el4": ["Det drabbade mig helt utan förvarning", "Det gjorde mig mycket glad", "Jag väntade mig det hela tiden", "Det kostade mig en förmögenhet"],
-  "i-el5": ["Det sänds live / strömmas", "Det ställs in", "Det vinner ett pris", "Det slutar tryckas"],
-  "i-el6": ["Det blir förstasidesnyheter", "Det glöms snabbt bort", "Det sänds efter midnatt", "Det faktagranskas"],
-  "i-hi1": ["att vara illojal och otacksam mot någon som stöttat en", "att vara extremt generös med pengar", "att jobba outtröttligt utan att klaga", "att vara mycket skicklig i köket"],
-  "i-hi2": ["att vara bara yta och ingen substans", "att vara ödmjuk trots stor rikedom", "att vara pålitlig i en kris", "att snabbt erkänna misstag"],
-  "i-hi3": ["att vara en person som alltid håller sitt ord", "att prata för mycket utan att lyssna", "att tala flera språk flytande", "att ljuga övertygande"],
-  "i-hi4": ["att försvinna plötsligt / smita snabbt", "att komma exakt i tid", "att fira en liten seger", "att bråka högljutt offentligt"],
-  "i-hi5": ["att blåsa upp något ur alla proportioner", "att rapportera en historia med total noggrannhet", "att begrava en historia utan någon bevakning alls", "att noggrant faktagranska ett påstående"],
-  "i-hi6": ["att elda på en redan het konflikt", "att lugna ner en spänd situation", "att rapportera nyheterna objektivt", "att hålla en historia helt tyst"],
-  "i-ind1": ["inbilsk, självbelåten", "ödmjuk och anspråkslös", "generös med pengar", "hårt arbetande och flitig"],
-  "i-ind2": ["partisk, orättvis, ensidig", "extremt hederlig", "fysiskt utmattad", "snabb att förlåta"],
-  "i-ind3": ["envis, hårdnackad", "mycket intelligent", "lättskrämd", "glömsk"],
-  "i-ind4": ["det finns en dold baktanke", "det är en ren slump", "situationen är hopplös", "alla är överens om det"],
-  "i-ind5": ["att tala ut offentligt, bryta sin tystnad", "att viska en hemlighet", "att neka till en intervju", "att skriva ett formellt brev"],
-  "i-ind6": ["att bli samtalsämnet i stan", "att bli helt bortglömd", "att förlora ett rättsfall", "att gå i konkurs"],
-  "i-ko1": ["obeslutsam, kan inte bestämma sig", "generös till en överdrift", "envis som en åsna", "ödmjuk och anspråkslös"],
-  "i-ko2": ["extremt strikt och exakt", "mycket godhjärtad", "lättövertalad", "glömsk och vårdslös"],
-  "i-ko3": ["djärv och orädd, har mod", "mycket försiktig och noggrann", "lättskrämd", "extremt blyg"],
-  "i-ko4": ["extremt upptagen, överhopad med arbete", "helt ledig utan något att göra", "mycket uttråkad och rastlös", "djupt sovande"],
-  "i-ko5": ["bara skrapar på ytan, ytlig bevakning", "gräver djupt i varje detalj", "uppnår fullständig behärskning", "ett totalt slöseri med tid"],
-  "i-ko6": ["nagelbitande spänd och medryckande", "helt tråkig och trist", "helt förutsägbar", "djupt avslappnande"],
-  "i-la1": ["Tala om trollen, så står de i farstun", "En ulv i fårakläder", "Bränt barn skyr elden", "Morgonstund har guld i mund"],
-  "i-la2": ["Två dårar smickrar varandra", "Många bäckar små gör en stor å", "Kan lika lite som en leopard byta sina fläckar", "Tal är silver, tystnad är guld"],
-  "i-la3": ["Sken bedrar", "Ärlighet varar längst", "Handling talar högre än ord", "Första intrycket består"],
-  "i-la4": ["Fånga dagen", "Bättre sent än aldrig", "Tiden läker alla sår", "Tålamod är en dygd"],
-  "i-la5": ["Ryktet sprids fort", "Dåliga nyheter sprids långsamt", "Sanningen kommer alltid fram", "Nyheter har alltid rätt"],
-  "i-la6": ["Talade ord försvinner, skrivna består", "Handling talar högre än ord", "En bild säger mer än tusen ord", "Lösa läppar sänker skepp"],
-  "i-nl1": ["Han säger precis vad han tycker, mycket öppet", "Han är mycket blyg och tystlåten", "Han ljuger ständigt", "Han blir lätt sårad"],
-  "i-nl2": ["Hon är stel och formell, utan sinne för skoj", "Hon är extremt idrottslig", "Hon är mycket generös", "Hon är alltid sen"],
-  "i-nl3": ["Han är snabbtänkt och aldrig svarslös", "Han pratar för lite", "Han är klumpig med händerna", "Han är kräsen med mat"],
-  "i-nl4": ["Den verkliga, dolda sanningen kommer äntligen fram", "Alla börjar skratta", "Planen fungerar perfekt", "Det börjar regna plötsligt"],
-  "i-nl5": ["Att säga eller göra något som väcker kontrovers", "Att lugna ner alla", "Att göra ett tråkigt tillkännagivande", "Att hålla med alla samtidigt"],
-  "i-nl6": ["Den historien bör man ta med en nypa salt, inte lita fullt på", "Den historien är officiellt bekräftad", "Den historien är väldigt rolig", "Den historien är för lång att läsa"],
-  "i-pl1": ["skarpsinnig, inte lätt lurad", "hetlevrad och obetänksam", "smärtsamt blyg", "generös till en överdrift"],
-  "i-pl2": ["en person med mod, någon djärv", "en person som ljuger ständigt", "en mycket snål person", "en person som aldrig bestämmer sig"],
-  "i-pl3": ["att vara mycket snål", "att vara extremt nervös", "att vara en notorisk lögnare", "att vara ovanligt generös"],
-  "i-pl4": ["att oväntat hamna i trubbel", "att komma fashionabelt sent", "att lyckas utan ansträngning", "att somna direkt"],
-  "i-pl5": ["att känna någon mycket väl under lång tid", "att ha ett kort gräl med någon", "att stå i skuld till någon", "att tävla hårt med någon"],
-  "i-pl6": ["att utlösa en mediastorm", "att tyst läcka en historia", "att dra tillbaka ett offentligt uttalande", "att höja tv-tittarsiffrorna"],
-  "i-ru1": ["en allt-i-allo, skicklig på allt", "en blyg, tillbakadragen person", "någon generös med pengar", "någon som är lättskrämd"],
-  "i-ru2": ["sällskapets liv, en naturligt sällskaplig person", "en tyst, ensamvarg", "en sträng disciplinär", "någon som alltid är sen"],
-  "i-ru3": ["skulle inte göra en fluga förnär, mild och ofarlig", "är snabb att söka gräl", "ljuger alltid", "är hänsynslöst ambitiös"],
-  "i-ru4": ["att göra en höna av en fjäder, att överreagera", "att lösa ett problem snabbt", "att hålla på en hemlighet noggrant", "att planera långt i förväg"],
-  "i-ru5": ["en offentlig hemlighet som alla redan känner till", "en noggrant bevakad hemligstämplad akt", "en lögn upprepad så ofta att den tros", "ett rykte utan grund i verkligheten"],
-  "i-ru6": ["att läsa mellan raderna, att uppfatta den underförstådda betydelsen", "att skumma en text utan att förstå den", "att citera något ordagrant", "att översätta en text bokstavligt"],
-  "i-sv1": ["Han är i grunden snäll och välmenande", "Han är envis och ger aldrig med sig", "Han är känslomässigt kylig", "Han är vårdslös med pengar"],
-  "i-sv2": ["Hon är gatusmart och inte lätt lurad", "Hon är mycket blyg", "Hon är oorganiserad", "Hon växte upp rik"],
-  "i-sv3": ["Han är entusiastisk men inte särskilt skicklig", "Han är en hänsynslös professionell", "Han är djupt deprimerad", "Han är extremt försiktig"],
-  "i-sv4": ["Det är ingen brådska eller fara", "Situationen är mycket farlig", "Allt har gått fel", "Det är dags att gå omedelbart"],
-  "i-sv5": ["Nu är det för sent, skadan är skedd", "Nu går allt smidigt", "Nu är det dags att fira", "Nu börjar planen precis"],
-  "i-sv6": ["Han/hon är förvirrad eller helt fel ute", "Han/hon är på semester", "Han/hon är mycket frisk", "Han/hon tränar regelbundet"],
-  "i-tr1": ["En generös person.", "En oärlig person.", "En vårdslös person.", "En blyg person."],
-  "i-tr2": ["Han är extremt slug och egoistisk.", "Han är mycket generös.", "Han är mycket glömsk.", "Han är mycket hårt arbetande."],
-  "i-tr3": ["En person som håller på hemligheter väl.", "En person som pratar för mycket.", "En person som äter lite.", "En person som är snål."],
-  "i-tr4": ["Överhopad med arbete, upp över öronen i uppgifter.", "Helt fri från förpliktelser.", "På väg att säga upp sig.", "Söker nytt jobb."],
-  "i-tr5": ["Har mycket dåligt minne, glömmer saker snabbt.", "Är extremt intelligent.", "Är mycket observant.", "Är en bra simmare."],
-  "i-tr6": ["Att överdriva en liten miss till en enorm skandal.", "Att hjälpa någon ur en kris.", "Att hålla en hemlighet noggrant.", "Att helt ignorera kritik."],
-  "i-vi1": ["Att vänta till sista minuten med att agera (en kronisk uppskjutare)", "Att vara extremt försiktig med allt", "Att hjälpa andra utan att bli tillfrågad", "Att alltid bli klar med uppgifter i förtid"],
-  "i-vi2": ["Aldrig nöjd, alltid vill ha det man inte har", "Att vara lojal mot en plats eller grupp", "Att vara extremt ödmjuk", "Att jobba hårdare än alla andra"],
-  "i-vi3": ["Att förbli lojal mot gruppen eller platsen som stöttar en", "Att ta åt sig äran för andras arbete", "Att aldrig lita på någon", "Att ständigt byta jobb"],
-  "i-vi4": ["Man får vad man betalar för; billiga varor är dålig kvalitet", "Pengar kan inte köpa lycka", "De bästa sakerna i livet är gratis", "Spara pengarna till en regnig dag"],
-  "i-vi5": ["Information förvrängs varje gång den återberättas eller kopieras", "Sanningen kommer alltid fram till slut", "En historia med tre olika slut", "Nyheter sprids snabbare än sanningen"],
-  "i-vi6": ["Backa upp det du säger med starka bevis", "Läs brett innan du bildar dig en åsikt", "Böcker är mer pålitliga än människor", "Håll skriftliga register över allt"],
-  "i-yue1": ["att fortsätta fråga tills man kommer till botten av något", "att ge upp en fråga för lätt", "att byta ämne för att undvika att svara", "att av misstag gå sönder något av nyfikenhet"],
-  "i-yue2": ["att vända sig emot eller svika någon direkt efter att ha fått hjälp av dem", "att äta en måltid mycket snabbt av hunger", "att äta upp varenda riskorn artigt", "att generöst dela med sig av sin mat till en främling"],
-  "i-yue3": ["man kan inte tvinga någon att göra något mot sin vilja", "hårt arbete lönar sig alltid till slut", "en envis person lär sig aldrig av sina misstag", "tålamod krävs när man tränar djur"],
-  "i-yue4": ["att improvisera och anpassa sig på plats när en situation utvecklas", "att helt ge upp en plan", "att planera varje detalj långt i förväg", "att komma senare än väntat"],
-  "i-yue5": ["att titta på en kontrovers eller ett drama utspela sig som en oinblandad åskådare", "att orsaka ett gräl mellan två andra personer", "att rapportera skvaller direkt till de inblandade", "att småäta medan man jobbar sent med en artikel"],
-  "i-yue6": ["en påkostad, dramatisk föreställning iscensatt för andra, ofta för att lura dem", "en påkostad traditionell bröllopsbankett", "ett prestigefyllt pris till en artist", "en spontan, oplanerad fest"],
-  "i-es5": ["Att ge upp", "Att duscha", "Att starta ett bråk", "Att städa upp en röra"],
-  "i-es6": ["Att dagdrömma, inte vara uppmärksam", "Att vara mycket glad", "Att resa med flyg", "Att vara mycket lång"],
-  "i-fr5": ["Att burdust ta upp något pinsamt", "Att kliva i en pöl", "Att äta för fort", "Att laga en stor måltid"],
-  "i-fr6": ["Det är inte så svårt", "Det är inte värt att dricka", "Havet är farligt", "Det är för dyrt"],
-  "i-it5": ["Håll det hemligt", "Drick lite vatten", "Sluta prata strunt", "Var försiktig när du simmar"],
-  "i-it6": ["Att kosta en förmögenhet", "Att skada ögat", "Att tappa fokus", "Att vara mycket ful"],
-  "i-pt5": ["Att tappa tålamodet och strunta i reglerna", "Att spela fotboll dåligt", "Att spilla vatten överallt", "Att ta en paus"],
-  "i-pt6": ["Att tyst stå ut med obehagligheter", "Att äta exotisk mat", "Att ljuga", "Att prata mycket snabbt"],
-  "i-ja5": ["Att läsa av stämningen i rummet", "Att andas djupt", "Att studera vädret", "Att läsa högt"],
-  "i-ja6": ["Att slå två flugor i en smäll", "Att missa ett lätt tillfälle", "Att ha mycket tur", "Att göra ett sällsynt misstag"],
-  "i-zh5": ["Kom igen, du klarar det!", "Fyll på bensintanken", "Häll i mer olja i pannan", "Sakta ner"],
-  "i-zh6": ["En trångsynt person med begränsad erfarenhet", "En mycket lyckosam person", "En skicklig simmare", "En person som pratar för mycket"]
- }
-,
+  "i-es1": [
+   "Att komma igång och sätta igång med jobbet",
+   "Att ta sig en tupplur",
+   "Att fira en födelsedag",
+   "Att tappa humöret"
+  ],
+  "i-es2": [
+   "Att vara mycket dyrt",
+   "Att vara mycket fult",
+   "Att ta lång tid",
+   "Att vara mycket sällsynt"
+  ],
+  "i-es3": [
+   "Att tala mycket rakt på sak",
+   "Att vara kräsen med mat",
+   "Att vara mycket tystlåten",
+   "Att ha utsökt smak"
+  ],
+  "i-es4": [
+   "Att vara lite galen",
+   "Att vara mycket envis",
+   "Att vara mycket hungrig",
+   "Att vara mycket trött"
+  ],
+  "i-fr1": [
+   "Att bli kär vid första ögonkastet",
+   "Att tappa aptiten",
+   "Att få plötslig huvudvärk",
+   "Att drabbas av otur"
+  ],
+  "i-fr2": [
+   "Att vara sansad och jordnära",
+   "Att vara mycket lång",
+   "Att ha ett stort ego",
+   "Att vara glömsk"
+  ],
+  "i-fr3": [
+   "Att ha en groda i halsen",
+   "Att vara mycket nervös",
+   "Att ha en hemlighet",
+   "Att ljuga"
+  ],
+  "i-fr4": [
+   "Det regnar mycket kraftigt",
+   "Det är iskallt",
+   "Det är en vacker dag",
+   "Det är på väg att bli storm"
+  ],
+  "i-it1": [
+   "Lycka till",
+   "Smaklig måltid",
+   "Se upp",
+   "Sov gott"
+  ],
+  "i-it2": [
+   "Jag kan knappt vänta",
+   "Jag har ingen tid",
+   "Jag är sen",
+   "Jag förstår inte"
+  ],
+  "i-it3": [
+   "Att vara förnuftig och klok",
+   "Att vara mycket rik",
+   "Att vara kräsen med mat",
+   "Att vara mycket lång"
+  ],
+  "i-it4": [
+   "Att slå två flugor i en smäll",
+   "Att göra ett stort misstag",
+   "Att slösa tid",
+   "Att vara girig"
+  ],
+  "i-pt1": [
+   "Att ta skulden för något som inte var ens eget fel",
+   "Att betala frikostigt",
+   "Att fira en vinst",
+   "Att äta för mycket"
+  ],
+  "i-pt2": [
+   "Att klara sig eller improvisera en lösning",
+   "Att av misstag gå sönder",
+   "Att ta en lång paus",
+   "Att be om hjälp"
+  ],
+  "i-pt3": [
+   "Att vara anpassningsbar och skicklig på att hantera knepiga situationer",
+   "Att vara en fantastisk dansare",
+   "Att vara mycket envis",
+   "Att vara extremt blyg"
+  ],
+  "i-pt4": [
+   "Att vara nyckfull och oförutsägbar",
+   "Att vara mycket lugn",
+   "Att vara extremt lojal",
+   "Att vara mycket organiserad"
+  ],
+  "i-ja1": [
+   "Någon som ger upp snabbt / inte kan hålla fast vid något",
+   "Någon som jobbar mycket hårt",
+   "Någon som är mycket tålmodig",
+   "Någon som älskar rutiner"
+  ],
+  "i-ja2": [
+   "Att bli arg",
+   "Att bli hungrig",
+   "Att känna sig nervös",
+   "Att känna sig mätt"
+  ],
+  "i-ja3": [
+   "Även experter gör misstag",
+   "Övning ger färdighet",
+   "Sakta men säkert vinner racet",
+   "Handling talar högre än ord"
+  ],
+  "i-ja4": [
+   "Kan inte hålla på en hemlighet",
+   "En slipad pratmakare",
+   "Tystlåten",
+   "Kräsen med mat"
+  ],
+  "i-zh1": [
+   "Att ge upp halvvägs",
+   "Att bli klar exakt i tid",
+   "Att jobba som ett team",
+   "Att planera mycket noggrant"
+  ],
+  "i-zh2": [
+   "Sisådär, eller slarvigt",
+   "Extremt upptagen",
+   "Mycket begåvad",
+   "Extremt snabb"
+  ],
+  "i-zh3": [
+   "Att förstöra något genom att lägga till onödiga detaljer",
+   "Att slutföra en svår uppgift",
+   "Att jobba bra som ett team",
+   "Att ta en stor risk"
+  ],
+  "i-zh4": [
+   "Att slösa möda på att förklara något för någon som ändå inte fattar",
+   "Att uppträda vackert",
+   "Att lära ut till en total nybörjare",
+   "Att låta mycket"
+  ],
+  "i-ar1": [
+   "att vara envis som en åsna",
+   "att vara snabblärd",
+   "att vara generös med pengar",
+   "att vara lättskrämd"
+  ],
+  "i-ar2": [
+   "att ha ett vänligt, godhjärtat lynne",
+   "att vara hjärtekrossad",
+   "att vara kylig och beräknande",
+   "att bli lätt kär"
+  ],
+  "i-ar3": [
+   "att vara en tusenkonstnär inblandad i allt",
+   "att vara blyg och tillbakadragen",
+   "att vara mycket disciplinerad",
+   "att vara en långsam, metodisk arbetare"
+  ],
+  "i-ar4": [
+   "att inte överreagera och hålla saker i proportion",
+   "att gå på en religiös ceremoni",
+   "att flytta någonstans tyst",
+   "att göra upp en gammal tvist"
+  ],
+  "i-ar5": [
+   "att högljutt sprida något till alla",
+   "att hålla något som en noggrant bevarad hemlighet",
+   "att glömma något helt",
+   "att skriva ner något noggrant"
+  ],
+  "i-ar6": [
+   "att läsa mellan raderna",
+   "att skumma utan att förstå",
+   "att citera något ordagrant",
+   "att översätta bokstavligt"
+  ],
+  "i-de1": [
+   "att vara envis som en åsna",
+   "att vara snabblärd",
+   "att vara generös med pengar",
+   "att vara lättskrämd"
+  ],
+  "i-de2": [
+   "att ha hjärtat på rätt ställe",
+   "att vara hjärtekrossad",
+   "att vara kylig och beräknande",
+   "att bli lätt kär"
+  ],
+  "i-de3": [
+   "att vara en tusenkonstnär inblandad i allt",
+   "att vara blyg och tillbakadragen",
+   "att vara mycket disciplinerad",
+   "att vara en långsam, metodisk arbetare"
+  ],
+  "i-de4": [
+   "att inte överreagera och hålla saker i proportion",
+   "att gå på en religiös ceremoni",
+   "att flytta någonstans tyst",
+   "att göra upp en gammal tvist"
+  ],
+  "i-de5": [
+   "att högljutt sprida något till alla",
+   "att hålla något som en noggrant bevarad hemlighet",
+   "att glömma något helt",
+   "att skriva ner något noggrant"
+  ],
+  "i-de6": [
+   "att läsa mellan raderna",
+   "att skumma utan att förstå",
+   "att citera något ordagrant",
+   "att översätta bokstavligt"
+  ],
+  "i-el1": [
+   "Han spelar dum / låtsas inte märka något",
+   "Han jobbar mycket hårt",
+   "Han säger sanningen rakt ut",
+   "Han ber om ursäkt direkt"
+  ],
+  "i-el2": [
+   "Han är överdrivet petig",
+   "Han är mycket generös",
+   "Han blir lätt lurad",
+   "Han är helt vårdslös"
+  ],
+  "i-el3": [
+   "Han pratar för mycket / kan inte hålla på en hemlighet",
+   "Han är mycket blyg",
+   "Han talar flera språk",
+   "Han är en bra lyssnare"
+  ],
+  "i-el4": [
+   "Det drabbade mig helt utan förvarning",
+   "Det gjorde mig mycket glad",
+   "Jag väntade mig det hela tiden",
+   "Det kostade mig en förmögenhet"
+  ],
+  "i-el5": [
+   "Det sänds live / strömmas",
+   "Det ställs in",
+   "Det vinner ett pris",
+   "Det slutar tryckas"
+  ],
+  "i-el6": [
+   "Det blir förstasidesnyheter",
+   "Det glöms snabbt bort",
+   "Det sänds efter midnatt",
+   "Det faktagranskas"
+  ],
+  "i-hi1": [
+   "att vara illojal och otacksam mot någon som stöttat en",
+   "att vara extremt generös med pengar",
+   "att jobba outtröttligt utan att klaga",
+   "att vara mycket skicklig i köket"
+  ],
+  "i-hi2": [
+   "att vara bara yta och ingen substans",
+   "att vara ödmjuk trots stor rikedom",
+   "att vara pålitlig i en kris",
+   "att snabbt erkänna misstag"
+  ],
+  "i-hi3": [
+   "att vara en person som alltid håller sitt ord",
+   "att prata för mycket utan att lyssna",
+   "att tala flera språk flytande",
+   "att ljuga övertygande"
+  ],
+  "i-hi4": [
+   "att försvinna plötsligt / smita snabbt",
+   "att komma exakt i tid",
+   "att fira en liten seger",
+   "att bråka högljutt offentligt"
+  ],
+  "i-hi5": [
+   "att blåsa upp något ur alla proportioner",
+   "att rapportera en historia med total noggrannhet",
+   "att begrava en historia utan någon bevakning alls",
+   "att noggrant faktagranska ett påstående"
+  ],
+  "i-hi6": [
+   "att elda på en redan het konflikt",
+   "att lugna ner en spänd situation",
+   "att rapportera nyheterna objektivt",
+   "att hålla en historia helt tyst"
+  ],
+  "i-ind1": [
+   "inbilsk, självbelåten",
+   "ödmjuk och anspråkslös",
+   "generös med pengar",
+   "hårt arbetande och flitig"
+  ],
+  "i-ind2": [
+   "partisk, orättvis, ensidig",
+   "extremt hederlig",
+   "fysiskt utmattad",
+   "snabb att förlåta"
+  ],
+  "i-ind3": [
+   "envis, hårdnackad",
+   "mycket intelligent",
+   "lättskrämd",
+   "glömsk"
+  ],
+  "i-ind4": [
+   "det finns en dold baktanke",
+   "det är en ren slump",
+   "situationen är hopplös",
+   "alla är överens om det"
+  ],
+  "i-ind5": [
+   "att tala ut offentligt, bryta sin tystnad",
+   "att viska en hemlighet",
+   "att neka till en intervju",
+   "att skriva ett formellt brev"
+  ],
+  "i-ind6": [
+   "att bli samtalsämnet i stan",
+   "att bli helt bortglömd",
+   "att förlora ett rättsfall",
+   "att gå i konkurs"
+  ],
+  "i-ko1": [
+   "obeslutsam, kan inte bestämma sig",
+   "generös till en överdrift",
+   "envis som en åsna",
+   "ödmjuk och anspråkslös"
+  ],
+  "i-ko2": [
+   "extremt strikt och exakt",
+   "mycket godhjärtad",
+   "lättövertalad",
+   "glömsk och vårdslös"
+  ],
+  "i-ko3": [
+   "djärv och orädd, har mod",
+   "mycket försiktig och noggrann",
+   "lättskrämd",
+   "extremt blyg"
+  ],
+  "i-ko4": [
+   "extremt upptagen, överhopad med arbete",
+   "helt ledig utan något att göra",
+   "mycket uttråkad och rastlös",
+   "djupt sovande"
+  ],
+  "i-ko5": [
+   "bara skrapar på ytan, ytlig bevakning",
+   "gräver djupt i varje detalj",
+   "uppnår fullständig behärskning",
+   "ett totalt slöseri med tid"
+  ],
+  "i-ko6": [
+   "nagelbitande spänd och medryckande",
+   "helt tråkig och trist",
+   "helt förutsägbar",
+   "djupt avslappnande"
+  ],
+  "i-la1": [
+   "Tala om trollen, så står de i farstun",
+   "En ulv i fårakläder",
+   "Bränt barn skyr elden",
+   "Morgonstund har guld i mund"
+  ],
+  "i-la2": [
+   "Två dårar smickrar varandra",
+   "Många bäckar små gör en stor å",
+   "Kan lika lite som en leopard byta sina fläckar",
+   "Tal är silver, tystnad är guld"
+  ],
+  "i-la3": [
+   "Sken bedrar",
+   "Ärlighet varar längst",
+   "Handling talar högre än ord",
+   "Första intrycket består"
+  ],
+  "i-la4": [
+   "Fånga dagen",
+   "Bättre sent än aldrig",
+   "Tiden läker alla sår",
+   "Tålamod är en dygd"
+  ],
+  "i-la5": [
+   "Ryktet sprids fort",
+   "Dåliga nyheter sprids långsamt",
+   "Sanningen kommer alltid fram",
+   "Nyheter har alltid rätt"
+  ],
+  "i-la6": [
+   "Talade ord försvinner, skrivna består",
+   "Handling talar högre än ord",
+   "En bild säger mer än tusen ord",
+   "Lösa läppar sänker skepp"
+  ],
+  "i-nl1": [
+   "Han säger precis vad han tycker, mycket öppet",
+   "Han är mycket blyg och tystlåten",
+   "Han ljuger ständigt",
+   "Han blir lätt sårad"
+  ],
+  "i-nl2": [
+   "Hon är stel och formell, utan sinne för skoj",
+   "Hon är extremt idrottslig",
+   "Hon är mycket generös",
+   "Hon är alltid sen"
+  ],
+  "i-nl3": [
+   "Han är snabbtänkt och aldrig svarslös",
+   "Han pratar för lite",
+   "Han är klumpig med händerna",
+   "Han är kräsen med mat"
+  ],
+  "i-nl4": [
+   "Den verkliga, dolda sanningen kommer äntligen fram",
+   "Alla börjar skratta",
+   "Planen fungerar perfekt",
+   "Det börjar regna plötsligt"
+  ],
+  "i-nl5": [
+   "Att säga eller göra något som väcker kontrovers",
+   "Att lugna ner alla",
+   "Att göra ett tråkigt tillkännagivande",
+   "Att hålla med alla samtidigt"
+  ],
+  "i-nl6": [
+   "Den historien bör man ta med en nypa salt, inte lita fullt på",
+   "Den historien är officiellt bekräftad",
+   "Den historien är väldigt rolig",
+   "Den historien är för lång att läsa"
+  ],
+  "i-pl1": [
+   "skarpsinnig, inte lätt lurad",
+   "hetlevrad och obetänksam",
+   "smärtsamt blyg",
+   "generös till en överdrift"
+  ],
+  "i-pl2": [
+   "en person med mod, någon djärv",
+   "en person som ljuger ständigt",
+   "en mycket snål person",
+   "en person som aldrig bestämmer sig"
+  ],
+  "i-pl3": [
+   "att vara mycket snål",
+   "att vara extremt nervös",
+   "att vara en notorisk lögnare",
+   "att vara ovanligt generös"
+  ],
+  "i-pl4": [
+   "att oväntat hamna i trubbel",
+   "att komma fashionabelt sent",
+   "att lyckas utan ansträngning",
+   "att somna direkt"
+  ],
+  "i-pl5": [
+   "att känna någon mycket väl under lång tid",
+   "att ha ett kort gräl med någon",
+   "att stå i skuld till någon",
+   "att tävla hårt med någon"
+  ],
+  "i-pl6": [
+   "att utlösa en mediastorm",
+   "att tyst läcka en historia",
+   "att dra tillbaka ett offentligt uttalande",
+   "att höja tv-tittarsiffrorna"
+  ],
+  "i-ru1": [
+   "en allt-i-allo, skicklig på allt",
+   "en blyg, tillbakadragen person",
+   "någon generös med pengar",
+   "någon som är lättskrämd"
+  ],
+  "i-ru2": [
+   "sällskapets liv, en naturligt sällskaplig person",
+   "en tyst, ensamvarg",
+   "en sträng disciplinär",
+   "någon som alltid är sen"
+  ],
+  "i-ru3": [
+   "skulle inte göra en fluga förnär, mild och ofarlig",
+   "är snabb att söka gräl",
+   "ljuger alltid",
+   "är hänsynslöst ambitiös"
+  ],
+  "i-ru4": [
+   "att göra en höna av en fjäder, att överreagera",
+   "att lösa ett problem snabbt",
+   "att hålla på en hemlighet noggrant",
+   "att planera långt i förväg"
+  ],
+  "i-ru5": [
+   "en offentlig hemlighet som alla redan känner till",
+   "en noggrant bevakad hemligstämplad akt",
+   "en lögn upprepad så ofta att den tros",
+   "ett rykte utan grund i verkligheten"
+  ],
+  "i-ru6": [
+   "att läsa mellan raderna, att uppfatta den underförstådda betydelsen",
+   "att skumma en text utan att förstå den",
+   "att citera något ordagrant",
+   "att översätta en text bokstavligt"
+  ],
+  "i-sv1": [
+   "Han är i grunden snäll och välmenande",
+   "Han är envis och ger aldrig med sig",
+   "Han är känslomässigt kylig",
+   "Han är vårdslös med pengar"
+  ],
+  "i-sv2": [
+   "Hon är gatusmart och inte lätt lurad",
+   "Hon är mycket blyg",
+   "Hon är oorganiserad",
+   "Hon växte upp rik"
+  ],
+  "i-sv3": [
+   "Han är entusiastisk men inte särskilt skicklig",
+   "Han är en hänsynslös professionell",
+   "Han är djupt deprimerad",
+   "Han är extremt försiktig"
+  ],
+  "i-sv4": [
+   "Det är ingen brådska eller fara",
+   "Situationen är mycket farlig",
+   "Allt har gått fel",
+   "Det är dags att gå omedelbart"
+  ],
+  "i-sv5": [
+   "Nu är det för sent, skadan är skedd",
+   "Nu går allt smidigt",
+   "Nu är det dags att fira",
+   "Nu börjar planen precis"
+  ],
+  "i-sv6": [
+   "Han/hon är förvirrad eller helt fel ute",
+   "Han/hon är på semester",
+   "Han/hon är mycket frisk",
+   "Han/hon tränar regelbundet"
+  ],
+  "i-tr1": [
+   "En generös person.",
+   "En oärlig person.",
+   "En vårdslös person.",
+   "En blyg person."
+  ],
+  "i-tr2": [
+   "Han är extremt slug och egoistisk.",
+   "Han är mycket generös.",
+   "Han är mycket glömsk.",
+   "Han är mycket hårt arbetande."
+  ],
+  "i-tr3": [
+   "En person som håller på hemligheter väl.",
+   "En person som pratar för mycket.",
+   "En person som äter lite.",
+   "En person som är snål."
+  ],
+  "i-tr4": [
+   "Överhopad med arbete, upp över öronen i uppgifter.",
+   "Helt fri från förpliktelser.",
+   "På väg att säga upp sig.",
+   "Söker nytt jobb."
+  ],
+  "i-tr5": [
+   "Har mycket dåligt minne, glömmer saker snabbt.",
+   "Är extremt intelligent.",
+   "Är mycket observant.",
+   "Är en bra simmare."
+  ],
+  "i-tr6": [
+   "Att överdriva en liten miss till en enorm skandal.",
+   "Att hjälpa någon ur en kris.",
+   "Att hålla en hemlighet noggrant.",
+   "Att helt ignorera kritik."
+  ],
+  "i-vi1": [
+   "Att vänta till sista minuten med att agera (en kronisk uppskjutare)",
+   "Att vara extremt försiktig med allt",
+   "Att hjälpa andra utan att bli tillfrågad",
+   "Att alltid bli klar med uppgifter i förtid"
+  ],
+  "i-vi2": [
+   "Aldrig nöjd, alltid vill ha det man inte har",
+   "Att vara lojal mot en plats eller grupp",
+   "Att vara extremt ödmjuk",
+   "Att jobba hårdare än alla andra"
+  ],
+  "i-vi3": [
+   "Att förbli lojal mot gruppen eller platsen som stöttar en",
+   "Att ta åt sig äran för andras arbete",
+   "Att aldrig lita på någon",
+   "Att ständigt byta jobb"
+  ],
+  "i-vi4": [
+   "Man får vad man betalar för; billiga varor är dålig kvalitet",
+   "Pengar kan inte köpa lycka",
+   "De bästa sakerna i livet är gratis",
+   "Spara pengarna till en regnig dag"
+  ],
+  "i-vi5": [
+   "Information förvrängs varje gång den återberättas eller kopieras",
+   "Sanningen kommer alltid fram till slut",
+   "En historia med tre olika slut",
+   "Nyheter sprids snabbare än sanningen"
+  ],
+  "i-vi6": [
+   "Backa upp det du säger med starka bevis",
+   "Läs brett innan du bildar dig en åsikt",
+   "Böcker är mer pålitliga än människor",
+   "Håll skriftliga register över allt"
+  ],
+  "i-yue1": [
+   "att fortsätta fråga tills man kommer till botten av något",
+   "att ge upp en fråga för lätt",
+   "att byta ämne för att undvika att svara",
+   "att av misstag gå sönder något av nyfikenhet"
+  ],
+  "i-yue2": [
+   "att vända sig emot eller svika någon direkt efter att ha fått hjälp av dem",
+   "att äta en måltid mycket snabbt av hunger",
+   "att äta upp varenda riskorn artigt",
+   "att generöst dela med sig av sin mat till en främling"
+  ],
+  "i-yue3": [
+   "man kan inte tvinga någon att göra något mot sin vilja",
+   "hårt arbete lönar sig alltid till slut",
+   "en envis person lär sig aldrig av sina misstag",
+   "tålamod krävs när man tränar djur"
+  ],
+  "i-yue4": [
+   "att improvisera och anpassa sig på plats när en situation utvecklas",
+   "att helt ge upp en plan",
+   "att planera varje detalj långt i förväg",
+   "att komma senare än väntat"
+  ],
+  "i-yue5": [
+   "att titta på en kontrovers eller ett drama utspela sig som en oinblandad åskådare",
+   "att orsaka ett gräl mellan två andra personer",
+   "att rapportera skvaller direkt till de inblandade",
+   "att småäta medan man jobbar sent med en artikel"
+  ],
+  "i-yue6": [
+   "en påkostad, dramatisk föreställning iscensatt för andra, ofta för att lura dem",
+   "en påkostad traditionell bröllopsbankett",
+   "ett prestigefyllt pris till en artist",
+   "en spontan, oplanerad fest"
+  ],
+  "i-es5": [
+   "Att ge upp",
+   "Att duscha",
+   "Att starta ett bråk",
+   "Att städa upp en röra"
+  ],
+  "i-es6": [
+   "Att dagdrömma, inte vara uppmärksam",
+   "Att vara mycket glad",
+   "Att resa med flyg",
+   "Att vara mycket lång"
+  ],
+  "i-fr5": [
+   "Att burdust ta upp något pinsamt",
+   "Att kliva i en pöl",
+   "Att äta för fort",
+   "Att laga en stor måltid"
+  ],
+  "i-fr6": [
+   "Det är inte så svårt",
+   "Det är inte värt att dricka",
+   "Havet är farligt",
+   "Det är för dyrt"
+  ],
+  "i-it5": [
+   "Håll det hemligt",
+   "Drick lite vatten",
+   "Sluta prata strunt",
+   "Var försiktig när du simmar"
+  ],
+  "i-it6": [
+   "Att kosta en förmögenhet",
+   "Att skada ögat",
+   "Att tappa fokus",
+   "Att vara mycket ful"
+  ],
+  "i-pt5": [
+   "Att tappa tålamodet och strunta i reglerna",
+   "Att spela fotboll dåligt",
+   "Att spilla vatten överallt",
+   "Att ta en paus"
+  ],
+  "i-pt6": [
+   "Att tyst stå ut med obehagligheter",
+   "Att äta exotisk mat",
+   "Att ljuga",
+   "Att prata mycket snabbt"
+  ],
+  "i-ja5": [
+   "Att läsa av stämningen i rummet",
+   "Att andas djupt",
+   "Att studera vädret",
+   "Att läsa högt"
+  ],
+  "i-ja6": [
+   "Att slå två flugor i en smäll",
+   "Att missa ett lätt tillfälle",
+   "Att ha mycket tur",
+   "Att göra ett sällsynt misstag"
+  ],
+  "i-zh5": [
+   "Kom igen, du klarar det!",
+   "Fyll på bensintanken",
+   "Häll i mer olja i pannan",
+   "Sakta ner"
+  ],
+  "i-zh6": [
+   "En trångsynt person med begränsad erfarenhet",
+   "En mycket lyckosam person",
+   "En skicklig simmare",
+   "En person som pratar för mycket"
+  ]
+ },
  "nuance_context": {
   "n-es1": "Att artigt fånga en främlings uppmärksamhet på gatan",
   "n-es2": "Att artigt tacka nej till en inbjudan",
@@ -775,8 +1374,7 @@
   "n-ja8": "En vän skryter om en liten bedrift — man retas med dem",
   "n-zh7": "Artigt trycka tillbaka mot en kunds begäran",
   "n-zh8": "Sarkastiskt svar när en vän säger de ”definitivt” ska betala tillbaka imorgon"
- }
-,
+ },
  "setups": {
   "d-a2-01": "En ny kollega presenterar sig.",
   "d-a2-02": "Någon frågar var du kommer ifrån.",

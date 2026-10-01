@@ -1297,5 +1297,13 @@
  "Show IPA and the original reading under each word": "Her kelimenin altında IPA'yı ve özgün okunuşu göster",
  "Show how to pronounce it": "Nasıl okunduğunu göster",
  "Told by the Tuathaich around the fire in the north of Diaithìr; their own side of the tale": "Diaithìr'in kuzeyinde Tuathaich tarafından ateş başında anlatılır; masalın onların gözünden anlatılışı",
- "No recording of this line yet": "Bu cümlenin henüz kaydı yok"
+ "No recording of this line yet": "Bu cümlenin henüz kaydı yok",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "Öğrenmek istediğin dilleri seç. Her dil merdiveni kendi başına tırmanır: mevcut sektördeki rölesini tamamlar tamamlamaz bir sonraki sektörü açılır, bu yüzden hiçbir dil bir diğerini beklemez. İstediğin zaman dil ekle ya da çıkar; bir dildeki ilerleme asla kaybolmaz.",
+ "Open for {langs}": "{langs} için açık",
+ "A language that clears every sector unlocks it": "Her sektörü tamamlayan bir dil bunu açar",
+ "{n} still on an earlier sector": "{n} dil hâlâ önceki bir sektörde",
+ "Clear {tier} in {lang} first — each language climbs on its own": "Önce {lang} dilinde {tier} sektörünü tamamla — her dil kendi başına ilerler",
+ "{n} speakers": "{n} konuşan",
+ "Pick at least one language to chart the voyage.": "Yolculuğu planlamak için en az bir dil seç.",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ Yolculuğu planlamak için en az bir dil seç."
 }

@@ -2,7 +2,7 @@
  "coach": {
   "journey": "Witaj na pokładzie Rosetty. Najpierw zaplanuj swoją podróż: wybierz języki, których chcesz się uczyć. Na początek wystarczy jeden — możesz dodać kolejne w dowolnym momencie z Mapy Gwiazd.",
   "home": "To jest Mapa Gwiazd. Każdy sektor to poziom biegłości, od A1 do C2, i zawiera po jednym przekaźniku dla każdego wybranego języka. Dotknij sektora <b>A1</b>, aby zacząć.",
-  "hub": "Jeden przekaźnik na język. Ukończenie wszystkich przekaźników w sektorze odblokowuje kolejny. Wybierz język, od którego chcesz zacząć.",
+  "hub": "Jeden przekaźnik na język. Ukończenie przekaźnika danego języka odblokowuje dla niego następny sektor. Wybierz język, od którego chcesz zacząć.",
   "topics": "Przekaźnik składa się z modułów: słownictwa, rozmów, zdań i innych. Ukończ je wszystkie, aby odkodować przekaźnik. Zacznij od pierwszego modułu <b>Słownictwo</b>.",
   "preview": "Odprawa. Masz ogniwa zasilające (życia), limit czasu na każdą transmisję, a to jest <b>pierwsza próba</b>: ukończ ją, a twój Łańcuch Sygnału się wydłuży, oblej — a łańcuch się przerwie. Rozpocznij, gdy będziesz gotowy.",
   "draft": "Przed każdym przekaźnikiem dobierasz jeden moduł na tę rundę: tymczasową premię. Po ukończeniu za pierwszym razem zostaje wspawana w twój łańcuch i przechodzi do kolejnego przekaźnika. Wybierz jeden.",
