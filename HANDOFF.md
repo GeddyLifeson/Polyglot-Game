@@ -213,6 +213,16 @@ node_modules is missing, finds a Chromium and exports `CHROMIUM_PATH`, builds th
 permission allowlist in `.claude/settings.json` (build, mkqa, the ten suites, `node --check`, the live-site curl,
 GitHub PR reads).
 
+## 2026-10-01: Transfer codes (progress across devices, no account)
+
+💾 Transfer in the header opens a panel with this device's save as one text code (`PV1:<fnv1a>:<base64 of
+deflate-raw JSON>`, ~3 KB for a 7 KB save; `PV0:` is uncompressed for browsers without CompressionStream) with
+Copy and Download, and a paste box / file picker to import one: the code is checked (format, checksum, must carry
+`journey` and `stats`), summarised (flags, XP, relays, words), and only replaces localStorage after an explicit
+confirm, then reloads. Helpers `exportSaveCode()`, `decodeSaveCode()`, `renderTransferPanel()` are on `__QA`;
+the round trip is tested at the end of `qa/qa_ladder.js`. The panel's ~18 `_t()` strings are not yet translated
+(English fallback) — run `tools/l10n_prep.py` and translate the `ui` deltas when convenient.
+
 ## Machine quirks that cost time
 
 - Norton's TLS root breaks Python HTTPS. Fix per environment: run `tools/export_local_roots.ps1`, then append

@@ -499,6 +499,7 @@
       <button class="btn btn-sm btn-ghost" id="btn-phrasebook" data-t>🗂️ Lexicon</button>
       <button class="btn btn-sm btn-ghost" id="btn-mute" aria-pressed="false" title="Toggle pronunciation">🔊 Sound</button>
       <button class="btn btn-sm btn-ghost" id="btn-voices" title="Choose the voice used for each language" data-t>🎙️ Voices</button>
+      <button class="btn btn-sm btn-ghost" id="btn-transfer" title="Move your progress to another device with a transfer code" data-t>💾 Transfer</button>
     </div>
   </div>
 
@@ -739,6 +740,15 @@
   </div>
 </div>
 
+<div class="overlay" id="transfer-overlay" hidden>
+  <div class="phrasebook-panel">
+    <div class="pb-head">
+      <h3 style="font-size:17px;" data-t>💾 Transfer progress</h3>
+      <button class="btn btn-sm" id="btn-close-transfer" data-t>Close</button>
+    </div>
+    <div class="pb-body" id="transfer-body"></div>
+  </div>
+</div>
 <div class="overlay" id="voices-overlay" hidden>
   <div class="phrasebook-panel">
     <div class="pb-head">
@@ -7761,7 +7771,7 @@
    'screen-shop','shop-balance','shop-grid','btn-close-shop',
    'hud-level','hud-stars','hud-words','hud-words-max','hud-best','hud-chain','pv-chain','btn-reroll-perk','btn-scan',
    'home-profile','storm-card','asc-row','btn-open-log','screen-event','ev-icon','ev-title','ev-desc','ev-grid','screen-log','log-body','btn-close-log','pl-flags','btn-voices','voices-overlay','voices-body','btn-close-voices','btn-phrasebook','btn-mute','phrasebook-overlay','btn-close-phrasebook','pb-tbody','pb-progress','pb-tier','pb-search','pb-count',
-   'toast'
+   'toast','btn-transfer','transfer-overlay','transfer-body','btn-close-transfer'
   ].forEach(function(id){ el[id.replace(/-([a-z])/g,function(m,c){return c.toUpperCase();})] = document.getElementById(id); });
 
   /* ============================= STATE ============================= */
@@ -10513,6 +10523,61 @@
   el.btnSkipTicket.addEventListener('click', onSkip);
   el.btnScan.addEventListener('click', onScan);
   el.btnOpenLog.addEventListener('click', showLog);
+  /* ---- Transfer: the whole save as one text code, so progress can move between devices without an account.
+     PV1 = deflate-raw + base64 (CompressionStream, every current browser); PV0 = plain base64 for anything older.
+     A short FNV-1a checksum of the JSON catches a code that was truncated or mangled in transit. ---- */
+  function fnvHex(s){ var x = 0x811c9dc5; for(var i=0;i<s.length;i++){ x ^= s.charCodeAt(i); x = Math.imul(x, 0x01000193) >>> 0; } return ('0000000'+x.toString(16)).slice(-8); }
+  function bytesToB64(u8){ var s = ''; for(var i=0;i<u8.length;i+=0x8000){ s += String.fromCharCode.apply(null, u8.subarray(i, i+0x8000)); } return btoa(s); }
+  function b64ToBytes(b){ var s = atob(b), u8 = new Uint8Array(s.length); for(var i=0;i<s.length;i++) u8[i] = s.charCodeAt(i); return u8; }
+  function pipeBytes(u8, stream){ return new Response(new Blob([u8]).stream().pipeThrough(stream)).arrayBuffer().then(function(ab){ return new Uint8Array(ab); }); }
+  function exportSaveCode(){
+    persist(); var json = JSON.stringify(save), u8 = new TextEncoder().encode(json), sum = fnvHex(json);
+    if(typeof CompressionStream === 'undefined') return Promise.resolve('PV0:'+sum+':'+bytesToB64(u8));
+    return pipeBytes(u8, new CompressionStream('deflate-raw')).then(function(z){ return 'PV1:'+sum+':'+bytesToB64(z); });
+  }
+  function decodeSaveCode(code){
+    var m = /^PV([01]):([0-9a-f]{8}):([A-Za-z0-9+/=]+)$/.exec(String(code||'').replace(/\s+/g, ''));
+    if(!m) return Promise.reject(new Error('format'));
+    var u8 = b64ToBytes(m[3]);
+    var bytes = m[1]==='0' ? Promise.resolve(u8) : (typeof DecompressionStream === 'undefined' ? Promise.reject(new Error('unsupported')) : pipeBytes(u8, new DecompressionStream('deflate-raw')).catch(function(){ throw new Error('checksum'); }));
+    return bytes.then(function(b){
+      var json = new TextDecoder().decode(b); if(fnvHex(json)!==m[2]) throw new Error('checksum');
+      var p = JSON.parse(json); if(!p || typeof p!=='object' || !p.journey || !p.stats) throw new Error('format');
+      return p;
+    });
+  }
+  function saveSummary(p){
+    var langs = ((p.journey && p.journey.langs) || []).filter(function(l){ return LANG_META[l]; }).map(function(l){ return LANG_META[l].flag; }).join(' ');
+    return _t('{flags} · {xp} XP · {relays} relays cleared · {words} words learned', {flags:langs || '—', xp:p.xp||0, relays:(p.stats && p.stats.relaysCleared)||0, words:(p.learned||[]).length});
+  }
+  function applyImportedSave(p){ try{ localStorage.setItem(KEY, JSON.stringify(p)); }catch(e){ toast(_t('⚠️ Could not write the save on this device.')); return; } toast(_t('💾 Progress restored — reloading…')); setTimeout(function(){ location.reload(); }, 600); }
+  function renderTransferPanel(){
+    var b = el.transferBody;
+    b.innerHTML = '<p class="preview-sub" style="margin:0 0 10px;">'+_t('Progress is stored on this device only. To carry it to another device, copy the code below there and use <b>Import</b>; or paste a code from another device to replace what is here.')+'</p>'+
+      '<div class="jc-meta" style="margin-bottom:4px;">'+_t('This device:')+' '+saveSummary(save)+'</div>'+
+      '<textarea id="transfer-out" readonly rows="4" style="width:100%;box-sizing:border-box;font-family:monospace;font-size:11px;" placeholder="…"></textarea>'+
+      '<div class="home-actions" style="margin:8px 0 14px;"><button class="btn btn-sm btn-primary" id="btn-transfer-copy">'+_t('📋 Copy code')+'</button><button class="btn btn-sm btn-ghost" id="btn-transfer-download">'+_t('⬇️ Download file')+'</button></div>'+
+      '<textarea id="transfer-in" rows="4" style="width:100%;box-sizing:border-box;font-family:monospace;font-size:11px;" placeholder="'+_t('Paste a transfer code here')+'"></textarea>'+
+      '<div class="home-actions" style="margin-top:8px;"><button class="btn btn-sm btn-primary" id="btn-transfer-import">'+_t('📥 Import')+'</button><label class="btn btn-sm btn-ghost">'+_t('📂 Open file')+'<input type="file" id="transfer-file" accept=".txt,.pvsave,text/plain" hidden></label></div>'+
+      '<div class="jc-meta" id="transfer-status" style="margin-top:8px;"></div>';
+    var out = document.getElementById('transfer-out'), inp = document.getElementById('transfer-in'), status = document.getElementById('transfer-status');
+    exportSaveCode().then(function(code){ out.value = code; }).catch(function(){ out.value = ''; status.textContent = _t('⚠️ This browser cannot build a transfer code.'); });
+    document.getElementById('btn-transfer-copy').addEventListener('click', function(){ out.select(); var ok = false; try{ ok = document.execCommand('copy'); }catch(e){} if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(out.value).then(function(){ toast(_t('📋 Code copied')); }, function(){ toast(ok ? _t('📋 Code copied') : _t('Select the code and copy it by hand.')); }); } else { toast(ok ? _t('📋 Code copied') : _t('Select the code and copy it by hand.')); } });
+    document.getElementById('btn-transfer-download').addEventListener('click', function(){ var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([out.value], {type:'text/plain'})); a.download = 'polyglot-voyager-'+new Date().toISOString().slice(0,10)+'.pvsave.txt'; document.body.appendChild(a); a.click(); setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500); });
+    function tryImport(code){
+      status.textContent = '';
+      decodeSaveCode(code).then(function(p){
+        if(JSON.stringify(p)===JSON.stringify(save)){ status.textContent = _t('That code is this device’s own progress — nothing to import.'); return; }
+        status.innerHTML = _t('Code contains: {summary}', {summary:saveSummary(p)})+'<div class="home-actions" style="margin-top:8px;"><button class="btn btn-sm btn-primary" id="btn-transfer-confirm">'+_t('✓ Replace this device’s progress')+'</button></div>';
+        document.getElementById('btn-transfer-confirm').addEventListener('click', function(){ this.disabled = true; applyImportedSave(p); });
+      }).catch(function(e){ status.textContent = e && e.message==='checksum' ? _t('⚠️ That code is damaged or incomplete — copy it again.') : e && e.message==='unsupported' ? _t('⚠️ This browser cannot read compressed codes.') : _t('⚠️ That is not a Polyglot Voyager transfer code.'); });
+    }
+    document.getElementById('btn-transfer-import').addEventListener('click', function(){ tryImport(inp.value); });
+    document.getElementById('transfer-file').addEventListener('change', function(){ var f = this.files && this.files[0]; if(!f) return; var r = new FileReader(); r.onload = function(){ inp.value = String(r.result||'').trim(); tryImport(inp.value); }; r.readAsText(f); });
+  }
+  el.btnTransfer.addEventListener('click', function(){ renderTransferPanel(); el.transferOverlay.hidden = false; });
+  el.btnCloseTransfer.addEventListener('click', function(){ el.transferOverlay.hidden = true; });
+  el.transferOverlay.addEventListener('click', function(e){ if(e.target===el.transferOverlay){ el.transferOverlay.hidden = true; } });
   el.btnVoices.addEventListener('click', function(){ loadVoices(); renderVoicesPanel(); el.voicesOverlay.hidden = false; });
   el.btnCloseVoices.addEventListener('click', function(){ el.voicesOverlay.hidden = true; });
   el.voicesOverlay.addEventListener('click', function(e){ if(e.target===el.voicesOverlay){ el.voicesOverlay.hidden = true; } });
