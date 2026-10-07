@@ -5,3 +5,6 @@ __pycache__/
 *.png
 models
 l10n_in/
+
+# Runtime debug DB written by russian_text_stresser
+llmdebug.db
