@@ -16,5 +16,6 @@ Read README.md first. Quick map:
   a new English string to those pools means re-running prep and translating the new keys (missing keys stay English).
 - Generating audio: `python3 tools/gen_audio.py B1 B2 C1 C2` (needs ffmpeg + `pip install -r requirements.txt`).
   It is resumable and only records missing keys.
+- Env, tooling and model layout: HANDOFF.md, "Where things are". Old install and bench logs: `logs_recording/install/`.
 - Keep translations consistent with existing conventions: furigana `{漢字|かな}`, tone-marked pinyin,
   Brazilian Portuguese, unique English headwords across the whole ladder.
