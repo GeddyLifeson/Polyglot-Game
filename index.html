@@ -8402,7 +8402,8 @@
   var _lex = {};
   function lexiconFor(lang){
     if(_lex[lang]) return _lex[lang];
-    var m = {}; CONCEPTS.forEach(function(c){ if(!c[lang]) return; var k = normWord(c[lang].t); if(k && !m[k]) m[k] = c.id; });
+    var m = Object.create(null);   /* a plain {} would match pasted words like "constructor" (Spanish) to Object.prototype members */
+    CONCEPTS.forEach(function(c){ if(!c[lang]) return; var k = normWord(c[lang].t); if(k && !m[k]) m[k] = c.id; });
     _lex[lang] = m; return m;
   }
   function interceptAnalyze(text, lang){

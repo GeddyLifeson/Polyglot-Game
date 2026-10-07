@@ -52,5 +52,9 @@ function log(l, ok, x){ console.log((ok?'PASS':'FAIL')+' — '+l+(x!==undefined?
   const dk = await page.evaluate(() => { const Q = window.__QA; const g = Q.GRAMMAR_ITEMS[0], i = Q.IDIOMS[0]; Q.startDungeonAttempt(3, g.lang, g.topic, null); const rounds = []; for (let k = 0; k < 40 && rounds.length < 1; k++) { const r = Q.makeRound(); if (r && r.kind === 'blank') rounds.push(r); } const r = rounds[0]; return r ? { clipKey: r.clipKey, silent: r.silent, reveal: r.reveal, hasGap: /_{2,}/.test(r.reveal || '') } : null; });
   log('grammar round: clipKey g-<id>:<lang>, silent before answering, reveal has the gap filled', !!dk && /^g-/.test(dk.clipKey) && dk.silent === true && dk.hasGap === false, dk);
 
+  // 9. Signal Intercept: pasted words named like Object.prototype members ("constructor" is Spanish) must not become ladder hits
+  const ic = await page.evaluate(() => { const Q = window.__QA; const a = Q.interceptAnalyze('El constructor habla con valueOf y toString.', 'es'); return { bogus: a.ids.filter(id => !Q.ITEM[id]) }; });
+  log('interceptAnalyze returns only real ladder ids for prototype-named words', ic.bogus.length === 0, ic);
+
   await browser.close(); console.log('DONE');
 })();
