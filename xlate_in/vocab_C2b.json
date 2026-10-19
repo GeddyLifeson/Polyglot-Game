@@ -1,0 +1,4216 @@
+[
+{
+"id": "c2-auditor",
+"en": "Auditor",
+"topic": "professions-specialized",
+"es": "Auditor",
+"fr": "Auditeur (commissaire aux comptes)"
+},
+{
+"id": "c2-bailiff",
+"en": "Bailiff",
+"topic": "professions-specialized",
+"es": "Alguacil",
+"fr": "Huissier"
+},
+{
+"id": "c2-blacksmith",
+"en": "Blacksmith",
+"topic": "professions-specialized",
+"es": "Herrero",
+"fr": "Forgeron"
+},
+{
+"id": "c2-cartographer",
+"en": "Cartographer",
+"topic": "professions-specialized",
+"es": "Cartógrafo",
+"fr": "Cartographe"
+},
+{
+"id": "c2-chiropractor",
+"en": "Chiropractor",
+"topic": "professions-specialized",
+"es": "Quiropráctico",
+"fr": "Chiropracteur"
+},
+{
+"id": "c2-coroner",
+"en": "Coroner",
+"topic": "professions-specialized",
+"es": "Forense (juez de instrucción)",
+"fr": "Médecin légiste (coroner)"
+},
+{
+"id": "c2-curator",
+"en": "Curator",
+"topic": "professions-specialized",
+"es": "Conservador (comisario)",
+"fr": "Conservateur (commissaire)"
+},
+{
+"id": "c2-diplomat",
+"en": "Diplomat",
+"topic": "professions-specialized",
+"es": "Diplomático",
+"fr": "Diplomate"
+},
+{
+"id": "c2-dietitian",
+"en": "Dietitian",
+"topic": "professions-specialized",
+"es": "Dietista",
+"fr": "Diététicien"
+},
+{
+"id": "c2-entomologist",
+"en": "Entomologist",
+"topic": "professions-specialized",
+"es": "Entomólogo",
+"fr": "Entomologiste"
+},
+{
+"id": "c2-forensic-scientist",
+"en": "Forensic scientist",
+"topic": "professions-specialized",
+"es": "Científico forense",
+"fr": "Expert en criminalistique"
+},
+{
+"id": "c2-geologist",
+"en": "Geologist",
+"topic": "professions-specialized",
+"es": "Geólogo",
+"fr": "Géologue"
+},
+{
+"id": "c2-glazier",
+"en": "Glazier",
+"topic": "professions-specialized",
+"es": "Vidriero (cristalero)",
+"fr": "Vitrier"
+},
+{
+"id": "c2-interpreter-simultaneous",
+"en": "Interpreter (simultaneous)",
+"topic": "professions-specialized",
+"es": "Intérprete (simultáneo)",
+"fr": "Interprète (simultané)"
+},
+{
+"id": "c2-locksmith",
+"en": "Locksmith",
+"topic": "professions-specialized",
+"es": "Cerrajero",
+"fr": "Serrurier"
+},
+{
+"id": "c2-midwife",
+"en": "Midwife",
+"topic": "professions-specialized",
+"es": "Comadrona (matrona)",
+"fr": "Sage-femme"
+},
+{
+"id": "c2-court-clerk",
+"en": "Court clerk",
+"topic": "professions-specialized",
+"es": "Secretario judicial",
+"fr": "Greffier"
+},
+{
+"id": "c2-oncologist",
+"en": "Oncologist",
+"topic": "professions-specialized",
+"es": "Oncólogo",
+"fr": "Oncologue"
+},
+{
+"id": "c2-ophthalmologist",
+"en": "Ophthalmologist",
+"topic": "professions-specialized",
+"es": "Oftalmólogo",
+"fr": "Ophtalmologue"
+},
+{
+"id": "c2-paleontologist",
+"en": "Paleontologist",
+"topic": "professions-specialized",
+"es": "Paleontólogo",
+"fr": "Paléontologue"
+},
+{
+"id": "c2-paralegal",
+"en": "Paralegal",
+"topic": "professions-specialized",
+"es": "Auxiliar jurídico",
+"fr": "Assistant juridique"
+},
+{
+"id": "c2-pathologist",
+"en": "Pathologist",
+"topic": "professions-specialized",
+"es": "Patólogo",
+"fr": "Pathologiste (anatomopathologiste)"
+},
+{
+"id": "c2-physiotherapist",
+"en": "Physiotherapist",
+"topic": "professions-specialized",
+"es": "Fisioterapeuta",
+"fr": "Kinésithérapeute"
+},
+{
+"id": "c2-public-defender",
+"en": "Public defender",
+"topic": "professions-specialized",
+"es": "Defensor de oficio",
+"fr": "Avocat commis d’office"
+},
+{
+"id": "c2-radiologist",
+"en": "Radiologist",
+"topic": "professions-specialized",
+"es": "Radiólogo",
+"fr": "Radiologue"
+},
+{
+"id": "c2-perfumer",
+"en": "Perfumer",
+"topic": "professions-specialized",
+"es": "Perfumista",
+"fr": "Parfumeur"
+},
+{
+"id": "c2-stenographer",
+"en": "Stenographer",
+"topic": "professions-specialized",
+"es": "Estenógrafo (taquígrafo)",
+"fr": "Sténographe"
+},
+{
+"id": "c2-surveyor",
+"en": "Surveyor",
+"topic": "professions-specialized",
+"es": "Topógrafo (agrimensor)",
+"fr": "Géomètre"
+},
+{
+"id": "c2-taxidermist",
+"en": "Taxidermist",
+"topic": "professions-specialized",
+"es": "Taxidermista",
+"fr": "Taxidermiste"
+},
+{
+"id": "c2-upholsterer",
+"en": "Upholsterer",
+"topic": "professions-specialized",
+"es": "Tapicero",
+"fr": "Tapissier"
+},
+{
+"id": "c2-veterinarian-specialist",
+"en": "Veterinarian (specialist)",
+"topic": "professions-specialized",
+"es": "Veterinario",
+"fr": "Vétérinaire"
+},
+{
+"id": "c2-welder",
+"en": "Welder",
+"topic": "professions-specialized",
+"es": "Soldador",
+"fr": "Soudeur"
+},
+{
+"id": "c2-anthropology",
+"en": "Anthropology",
+"topic": "academic-fields",
+"es": "Antropología",
+"fr": "Anthropologie"
+},
+{
+"id": "c2-archaeology",
+"en": "Archaeology",
+"topic": "academic-fields",
+"es": "Arqueología",
+"fr": "Archéologie"
+},
+{
+"id": "c2-astrophysics",
+"en": "Astrophysics",
+"topic": "academic-fields",
+"es": "Astrofísica",
+"fr": "Astrophysique"
+},
+{
+"id": "c2-biochemistry",
+"en": "Biochemistry",
+"topic": "academic-fields",
+"es": "Bioquímica",
+"fr": "Biochimie"
+},
+{
+"id": "c2-botany",
+"en": "Botany",
+"topic": "academic-fields",
+"es": "Botánica",
+"fr": "Botanique"
+},
+{
+"id": "c2-cartography",
+"en": "Cartography",
+"topic": "academic-fields",
+"es": "Cartografía",
+"fr": "Cartographie"
+},
+{
+"id": "c2-criminology",
+"en": "Criminology",
+"topic": "academic-fields",
+"es": "Criminología",
+"fr": "Criminologie"
+},
+{
+"id": "c2-demography",
+"en": "Demography",
+"topic": "academic-fields",
+"es": "Demografía",
+"fr": "Démographie"
+},
+{
+"id": "c2-econometrics",
+"en": "Econometrics",
+"topic": "academic-fields",
+"es": "Econometría",
+"fr": "Économétrie"
+},
+{
+"id": "c2-epidemiology",
+"en": "Epidemiology",
+"topic": "academic-fields",
+"es": "Epidemiología",
+"fr": "Épidémiologie"
+},
+{
+"id": "c2-epistemology",
+"en": "Epistemology",
+"topic": "academic-fields",
+"es": "Epistemología",
+"fr": "Épistémologie"
+},
+{
+"id": "c2-ethnography",
+"en": "Ethnography",
+"topic": "academic-fields",
+"es": "Etnografía",
+"fr": "Ethnographie"
+},
+{
+"id": "c2-genetics",
+"en": "Genetics",
+"topic": "academic-fields",
+"es": "Genética",
+"fr": "Génétique"
+},
+{
+"id": "c2-geopolitics",
+"en": "Geopolitics",
+"topic": "academic-fields",
+"es": "Geopolítica",
+"fr": "Géopolitique"
+},
+{
+"id": "c2-hermeneutics",
+"en": "Hermeneutics",
+"topic": "academic-fields",
+"es": "Hermenéutica",
+"fr": "Herméneutique"
+},
+{
+"id": "c2-immunology",
+"en": "Immunology",
+"topic": "academic-fields",
+"es": "Inmunología",
+"fr": "Immunologie"
+},
+{
+"id": "c2-jurisprudence",
+"en": "Jurisprudence",
+"topic": "academic-fields",
+"es": "Jurisprudencia (teoría del derecho)",
+"fr": "Jurisprudence (théorie du droit)"
+},
+{
+"id": "c2-linguistics",
+"en": "Linguistics",
+"topic": "academic-fields",
+"es": "Lingüística",
+"fr": "Linguistique"
+},
+{
+"id": "c2-metaphysics",
+"en": "Metaphysics",
+"topic": "academic-fields",
+"es": "Metafísica",
+"fr": "Métaphysique"
+},
+{
+"id": "c2-meteorology",
+"en": "Meteorology",
+"topic": "academic-fields",
+"es": "Meteorología",
+"fr": "Météorologie"
+},
+{
+"id": "c2-microbiology",
+"en": "Microbiology",
+"topic": "academic-fields",
+"es": "Microbiología",
+"fr": "Microbiologie"
+},
+{
+"id": "c2-musicology",
+"en": "Musicology",
+"topic": "academic-fields",
+"es": "Musicología",
+"fr": "Musicologie"
+},
+{
+"id": "c2-neuroscience",
+"en": "Neuroscience",
+"topic": "academic-fields",
+"es": "Neurociencia",
+"fr": "Neurosciences"
+},
+{
+"id": "c2-oceanography",
+"en": "Oceanography",
+"topic": "academic-fields",
+"es": "Oceanografía",
+"fr": "Océanographie"
+},
+{
+"id": "c2-ornithology",
+"en": "Ornithology",
+"topic": "academic-fields",
+"es": "Ornitología",
+"fr": "Ornithologie"
+},
+{
+"id": "c2-pedagogy",
+"en": "Pedagogy",
+"topic": "academic-fields",
+"es": "Pedagogía",
+"fr": "Pédagogie"
+},
+{
+"id": "c2-pharmacology",
+"en": "Pharmacology",
+"topic": "academic-fields",
+"es": "Farmacología",
+"fr": "Pharmacologie"
+},
+{
+"id": "c2-philology",
+"en": "Philology",
+"topic": "academic-fields",
+"es": "Filología",
+"fr": "Philologie"
+},
+{
+"id": "c2-phonetics",
+"en": "Phonetics",
+"topic": "academic-fields",
+"es": "Fonética",
+"fr": "Phonétique"
+},
+{
+"id": "c2-seismology",
+"en": "Seismology",
+"topic": "academic-fields",
+"es": "Sismología",
+"fr": "Sismologie"
+},
+{
+"id": "c2-semiotics",
+"en": "Semiotics",
+"topic": "academic-fields",
+"es": "Semiótica",
+"fr": "Sémiotique"
+},
+{
+"id": "c2-sociolinguistics",
+"en": "Sociolinguistics",
+"topic": "academic-fields",
+"es": "Sociolingüística",
+"fr": "Sociolinguistique"
+},
+{
+"id": "c2-theology",
+"en": "Theology",
+"topic": "academic-fields",
+"es": "Teología",
+"fr": "Théologie"
+},
+{
+"id": "c2-toxicology",
+"en": "Toxicology",
+"topic": "academic-fields",
+"es": "Toxicología",
+"fr": "Toxicologie"
+},
+{
+"id": "c2-zoology",
+"en": "Zoology",
+"topic": "academic-fields",
+"es": "Zoología",
+"fr": "Zoologie"
+},
+{
+"id": "c2-acute-sudden-severe",
+"en": "Acute (sudden, severe)",
+"topic": "medical-rare",
+"es": "Agudo",
+"fr": "Aigu"
+},
+{
+"id": "c2-latent",
+"en": "Latent",
+"topic": "medical-rare",
+"es": "Latente",
+"fr": "Latent"
+},
+{
+"id": "c2-benign",
+"en": "Benign",
+"topic": "medical-rare",
+"es": "Benigno",
+"fr": "Bénin"
+},
+{
+"id": "c2-malignant",
+"en": "Malignant",
+"topic": "medical-rare",
+"es": "Maligno",
+"fr": "Malin"
+},
+{
+"id": "c2-biopsy",
+"en": "Biopsy",
+"topic": "medical-rare",
+"es": "Biopsia",
+"fr": "Biopsie"
+},
+{
+"id": "c2-prognosis",
+"en": "Prognosis",
+"topic": "medical-rare",
+"es": "Pronóstico",
+"fr": "Pronostic"
+},
+{
+"id": "c2-flare-up",
+"en": "Flare-up",
+"topic": "medical-rare",
+"es": "Brote (recrudecimiento)",
+"fr": "Poussée (crise)"
+},
+{
+"id": "c2-recurrence",
+"en": "Recurrence",
+"topic": "medical-rare",
+"es": "Recurrencia (reaparición)",
+"fr": "Récidive (récurrence)"
+},
+{
+"id": "c2-sedative",
+"en": "Sedative",
+"topic": "medical-rare",
+"es": "Sedante",
+"fr": "Sédatif"
+},
+{
+"id": "c2-anesthetic",
+"en": "Anesthetic",
+"topic": "medical-rare",
+"es": "Anestésico",
+"fr": "Anesthésique"
+},
+{
+"id": "c2-antibody",
+"en": "Antibody",
+"topic": "medical-rare",
+"es": "Anticuerpo",
+"fr": "Anticorps"
+},
+{
+"id": "c2-inflammation",
+"en": "Inflammation",
+"topic": "medical-rare",
+"es": "Inflamación",
+"fr": "Inflammation"
+},
+{
+"id": "c2-airborne",
+"en": "Airborne",
+"topic": "medical-rare",
+"es": "Transmitido por el aire",
+"fr": "Aéroporté (transmis par l’air)"
+},
+{
+"id": "c2-hereditary",
+"en": "Hereditary",
+"topic": "medical-rare",
+"es": "Hereditario",
+"fr": "Héréditaire"
+},
+{
+"id": "c2-congenital",
+"en": "Congenital",
+"topic": "medical-rare",
+"es": "Congénito",
+"fr": "Congénital"
+},
+{
+"id": "c2-dosage",
+"en": "Dosage",
+"topic": "medical-rare",
+"es": "Dosis (posología)",
+"fr": "Posologie (dosage)"
+},
+{
+"id": "c2-placebo",
+"en": "Placebo",
+"topic": "medical-rare",
+"es": "Placebo",
+"fr": "Placebo"
+},
+{
+"id": "c2-contraindication",
+"en": "Contraindication",
+"topic": "medical-rare",
+"es": "Contraindicación",
+"fr": "Contre-indication"
+},
+{
+"id": "c2-intravenous",
+"en": "Intravenous",
+"topic": "medical-rare",
+"es": "Intravenoso",
+"fr": "Intraveineux"
+},
+{
+"id": "c2-suture",
+"en": "Suture",
+"topic": "medical-rare",
+"es": "Sutura (punto)",
+"fr": "Suture (point)"
+},
+{
+"id": "c2-incision",
+"en": "Incision",
+"topic": "medical-rare",
+"es": "Incisión",
+"fr": "Incision"
+},
+{
+"id": "c2-donor",
+"en": "Donor",
+"topic": "medical-rare",
+"es": "Donante",
+"fr": "Donneur"
+},
+{
+"id": "c2-ultrasound",
+"en": "Ultrasound",
+"topic": "medical-rare",
+"es": "Ecografía",
+"fr": "Échographie"
+},
+{
+"id": "c2-referral-to-a-specialist",
+"en": "Referral (to a specialist)",
+"topic": "medical-rare",
+"es": "Derivación (volante)",
+"fr": "Orientation (lettre de recommandation)"
+},
+{
+"id": "c2-inpatient",
+"en": "Inpatient",
+"topic": "medical-rare",
+"es": "Paciente hospitalizado",
+"fr": "Patient hospitalisé"
+},
+{
+"id": "c2-palliative-care",
+"en": "Palliative care",
+"topic": "medical-rare",
+"es": "Cuidados paliativos",
+"fr": "Soins palliatifs"
+},
+{
+"id": "c2-triage",
+"en": "Triage",
+"topic": "medical-rare",
+"es": "Triaje",
+"fr": "Triage (tri des patients)"
+},
+{
+"id": "c2-convalescence",
+"en": "Convalescence",
+"topic": "medical-rare",
+"es": "Convalecencia",
+"fr": "Convalescence"
+},
+{
+"id": "c2-immunity",
+"en": "Immunity",
+"topic": "medical-rare",
+"es": "Inmunidad",
+"fr": "Immunité"
+},
+{
+"id": "c2-pandemic",
+"en": "Pandemic",
+"topic": "medical-rare",
+"es": "Pandemia",
+"fr": "Pandémie"
+},
+{
+"id": "c2-pathogen",
+"en": "Pathogen",
+"topic": "medical-rare",
+"es": "Patógeno",
+"fr": "Agent pathogène"
+},
+{
+"id": "c2-electrolyte",
+"en": "Electrolyte",
+"topic": "medical-rare",
+"es": "Electrolito",
+"fr": "Électrolyte"
+},
+{
+"id": "c2-cardiovascular",
+"en": "Cardiovascular",
+"topic": "medical-rare",
+"es": "Cardiovascular",
+"fr": "Cardiovasculaire"
+},
+{
+"id": "c2-respiratory",
+"en": "Respiratory",
+"topic": "medical-rare",
+"es": "Respiratorio",
+"fr": "Respiratoire"
+},
+{
+"id": "c2-neurological",
+"en": "Neurological",
+"topic": "medical-rare",
+"es": "Neurológico",
+"fr": "Neurologique"
+},
+{
+"id": "c2-symptomatic",
+"en": "Symptomatic",
+"topic": "medical-rare",
+"es": "Sintomático",
+"fr": "Symptomatique"
+},
+{
+"id": "c2-asymptomatic",
+"en": "Asymptomatic",
+"topic": "medical-rare",
+"es": "Asintomático",
+"fr": "Asymptomatique"
+},
+{
+"id": "c2-prescription-written-order",
+"en": "Prescription (written order)",
+"topic": "medical-rare",
+"es": "Receta médica",
+"fr": "Ordonnance"
+},
+{
+"id": "c2-generic-drug",
+"en": "Generic drug",
+"topic": "medical-rare",
+"es": "Medicamento genérico",
+"fr": "Médicament générique"
+},
+{
+"id": "c2-informed-consent",
+"en": "Informed consent",
+"topic": "medical-rare",
+"es": "Consentimiento informado",
+"fr": "Consentement éclairé"
+},
+{
+"id": "c2-acquittal",
+"en": "Acquittal",
+"topic": "crime-law-rare",
+"es": "Absolución",
+"fr": "Acquittement"
+},
+{
+"id": "c2-conviction-guilty-verdict",
+"en": "Conviction (guilty verdict)",
+"topic": "crime-law-rare",
+"es": "Condena",
+"fr": "Condamnation"
+},
+{
+"id": "c2-deposition",
+"en": "Deposition",
+"topic": "crime-law-rare",
+"es": "Declaración (testimonial)",
+"fr": "Déposition"
+},
+{
+"id": "c2-accessory-to-a-crime",
+"en": "Accessory (to a crime)",
+"topic": "crime-law-rare",
+"es": "Cómplice (encubridor)",
+"fr": "Complice (par assistance)"
+},
+{
+"id": "c2-arson",
+"en": "Arson",
+"topic": "crime-law-rare",
+"es": "Incendio provocado",
+"fr": "Incendie criminel"
+},
+{
+"id": "c2-remand",
+"en": "Remand",
+"topic": "crime-law-rare",
+"es": "Prisión preventiva",
+"fr": "Détention provisoire"
+},
+{
+"id": "c2-burden-of-proof",
+"en": "Burden of proof",
+"topic": "crime-law-rare",
+"es": "Carga de la prueba",
+"fr": "Charge de la preuve"
+},
+{
+"id": "c2-custody-detention",
+"en": "Custody (detention)",
+"topic": "crime-law-rare",
+"es": "Custodia (detención)",
+"fr": "Garde à vue (détention)"
+},
+{
+"id": "c2-defendant",
+"en": "Defendant",
+"topic": "crime-law-rare",
+"es": "Acusado",
+"fr": "Accusé (défendeur)"
+},
+{
+"id": "c2-plaintiff",
+"en": "Plaintiff",
+"topic": "crime-law-rare",
+"es": "Demandante",
+"fr": "Demandeur (plaignant)"
+},
+{
+"id": "c2-embezzlement",
+"en": "Embezzlement",
+"topic": "crime-law-rare",
+"es": "Malversación (desfalco)",
+"fr": "Détournement de fonds"
+},
+{
+"id": "c2-extortion",
+"en": "Extortion",
+"topic": "crime-law-rare",
+"es": "Extorsión",
+"fr": "Extorsion"
+},
+{
+"id": "c2-felony",
+"en": "Felony",
+"topic": "crime-law-rare",
+"es": "Delito grave",
+"fr": "Crime (délit grave)"
+},
+{
+"id": "c2-misdemeanor",
+"en": "Misdemeanor",
+"topic": "crime-law-rare",
+"es": "Delito menor (falta)",
+"fr": "Délit mineur (contravention)"
+},
+{
+"id": "c2-forgery",
+"en": "Forgery",
+"topic": "crime-law-rare",
+"es": "Falsificación",
+"fr": "Contrefaçon (faux)"
+},
+{
+"id": "c2-hearsay",
+"en": "Hearsay",
+"topic": "crime-law-rare",
+"es": "Testimonio de oídas",
+"fr": "Ouï-dire"
+},
+{
+"id": "c2-indictment",
+"en": "Indictment",
+"topic": "crime-law-rare",
+"es": "Acusación formal",
+"fr": "Mise en accusation (acte d’accusation)"
+},
+{
+"id": "c2-injunction",
+"en": "Injunction",
+"topic": "crime-law-rare",
+"es": "Mandato judicial (medida cautelar)",
+"fr": "Injonction"
+},
+{
+"id": "c2-tribunal",
+"en": "Tribunal",
+"topic": "crime-law-rare",
+"es": "Tribunal",
+"fr": "Tribunal"
+},
+{
+"id": "c2-libel",
+"en": "Libel",
+"topic": "crime-law-rare",
+"es": "Difamación (por escrito)",
+"fr": "Diffamation (écrite)"
+},
+{
+"id": "c2-slander",
+"en": "Slander",
+"topic": "crime-law-rare",
+"es": "Calumnia",
+"fr": "Calomnie (diffamation orale)"
+},
+{
+"id": "c2-manslaughter",
+"en": "Manslaughter",
+"topic": "crime-law-rare",
+"es": "Homicidio involuntario",
+"fr": "Homicide involontaire"
+},
+{
+"id": "c2-parole",
+"en": "Parole",
+"topic": "crime-law-rare",
+"es": "Libertad condicional",
+"fr": "Liberté conditionnelle"
+},
+{
+"id": "c2-perjury",
+"en": "Perjury",
+"topic": "crime-law-rare",
+"es": "Perjurio",
+"fr": "Parjure (faux témoignage)"
+},
+{
+"id": "c2-plea-bargain",
+"en": "Plea bargain",
+"topic": "crime-law-rare",
+"es": "Acuerdo con la fiscalía",
+"fr": "Négociation de peine"
+},
+{
+"id": "c2-probation",
+"en": "Probation",
+"topic": "crime-law-rare",
+"es": "Libertad vigilada",
+"fr": "Sursis avec mise à l’épreuve"
+},
+{
+"id": "c2-racketeering",
+"en": "Racketeering",
+"topic": "crime-law-rare",
+"es": "Crimen organizado (extorsión)",
+"fr": "Racket"
+},
+{
+"id": "c2-ransom",
+"en": "Ransom",
+"topic": "crime-law-rare",
+"es": "Rescate",
+"fr": "Rançon"
+},
+{
+"id": "c2-statute",
+"en": "Statute",
+"topic": "crime-law-rare",
+"es": "Ley (estatuto)",
+"fr": "Loi (statut)"
+},
+{
+"id": "c2-statute-of-limitations",
+"en": "Statute of limitations",
+"topic": "crime-law-rare",
+"es": "Prescripción",
+"fr": "Prescription"
+},
+{
+"id": "c2-subpoena",
+"en": "Subpoena",
+"topic": "crime-law-rare",
+"es": "Citación judicial",
+"fr": "Assignation (citation à comparaître)"
+},
+{
+"id": "c2-testimony",
+"en": "Testimony",
+"topic": "crime-law-rare",
+"es": "Testimonio",
+"fr": "Témoignage"
+},
+{
+"id": "c2-ruling",
+"en": "Ruling",
+"topic": "crime-law-rare",
+"es": "Fallo (resolución)",
+"fr": "Décision (arrêt)"
+},
+{
+"id": "c2-warrant",
+"en": "Warrant",
+"topic": "crime-law-rare",
+"es": "Orden judicial",
+"fr": "Mandat"
+},
+{
+"id": "c2-witness-stand",
+"en": "Witness stand",
+"topic": "crime-law-rare",
+"es": "Estrado de testigos",
+"fr": "Barre des témoins"
+},
+{
+"id": "c2-contempt-of-court",
+"en": "Contempt of court",
+"topic": "crime-law-rare",
+"es": "Desacato al tribunal",
+"fr": "Outrage à magistrat"
+},
+{
+"id": "c2-cross-examination",
+"en": "Cross-examination",
+"topic": "crime-law-rare",
+"es": "Contrainterrogatorio",
+"fr": "Contre-interrogatoire"
+},
+{
+"id": "c2-mistrial",
+"en": "Mistrial",
+"topic": "crime-law-rare",
+"es": "Juicio nulo",
+"fr": "Procès annulé (vice de procédure)"
+},
+{
+"id": "c2-sentence-punishment",
+"en": "Sentence (punishment)",
+"topic": "crime-law-rare",
+"es": "Sentencia (condena)",
+"fr": "Peine (condamnation)"
+},
+{
+"id": "c2-to-plead-guilty",
+"en": "To plead guilty",
+"topic": "crime-law-rare",
+"es": "Declararse culpable",
+"fr": "Plaider coupable"
+},
+{
+"id": "c2-thicket",
+"en": "Thicket",
+"topic": "nature-rare",
+"es": "Matorral (espesura)",
+"fr": "Fourré (taillis)"
+},
+{
+"id": "c2-undergrowth",
+"en": "Undergrowth",
+"topic": "nature-rare",
+"es": "Maleza (sotobosque)",
+"fr": "Sous-bois (broussailles)"
+},
+{
+"id": "c2-moss",
+"en": "Moss",
+"topic": "nature-rare",
+"es": "Musgo",
+"fr": "Mousse"
+},
+{
+"id": "c2-lichen",
+"en": "Lichen",
+"topic": "nature-rare",
+"es": "Liquen",
+"fr": "Lichen"
+},
+{
+"id": "c2-fern",
+"en": "Fern",
+"topic": "nature-rare",
+"es": "Helecho",
+"fr": "Fougère"
+},
+{
+"id": "c2-sap",
+"en": "Sap",
+"topic": "nature-rare",
+"es": "Savia",
+"fr": "Sève"
+},
+{
+"id": "c2-bark-of-a-tree",
+"en": "Bark (of a tree)",
+"topic": "nature-rare",
+"es": "Corteza",
+"fr": "Écorce"
+},
+{
+"id": "c2-sapling",
+"en": "Sapling",
+"topic": "nature-rare",
+"es": "Árbol joven (plantón)",
+"fr": "Jeune arbre (plant)"
+},
+{
+"id": "c2-canopy-forest",
+"en": "Canopy (forest)",
+"topic": "nature-rare",
+"es": "Dosel (copa de los árboles)",
+"fr": "Canopée"
+},
+{
+"id": "c2-grove",
+"en": "Grove",
+"topic": "nature-rare",
+"es": "Arboleda",
+"fr": "Bosquet"
+},
+{
+"id": "c2-meadow",
+"en": "Meadow",
+"topic": "nature-rare",
+"es": "Pradera (prado)",
+"fr": "Prairie (pré)"
+},
+{
+"id": "c2-marsh",
+"en": "Marsh",
+"topic": "nature-rare",
+"es": "Marisma (pantano)",
+"fr": "Marais"
+},
+{
+"id": "c2-bog",
+"en": "Bog",
+"topic": "nature-rare",
+"es": "Ciénaga (turbera)",
+"fr": "Tourbière (marécage)"
+},
+{
+"id": "c2-estuary",
+"en": "Estuary",
+"topic": "nature-rare",
+"es": "Estuario",
+"fr": "Estuaire"
+},
+{
+"id": "c2-tributary",
+"en": "Tributary",
+"topic": "nature-rare",
+"es": "Afluente",
+"fr": "Affluent"
+},
+{
+"id": "c2-ravine",
+"en": "Ravine",
+"topic": "nature-rare",
+"es": "Barranco",
+"fr": "Ravin"
+},
+{
+"id": "c2-gorge",
+"en": "Gorge",
+"topic": "nature-rare",
+"es": "Desfiladero (garganta)",
+"fr": "Gorge"
+},
+{
+"id": "c2-ridge",
+"en": "Ridge",
+"topic": "nature-rare",
+"es": "Cresta (cordillera)",
+"fr": "Crête (arête)"
+},
+{
+"id": "c2-summit",
+"en": "Summit",
+"topic": "nature-rare",
+"es": "Cumbre",
+"fr": "Sommet"
+},
+{
+"id": "c2-foothills",
+"en": "Foothills",
+"topic": "nature-rare",
+"es": "Estribaciones",
+"fr": "Contreforts"
+},
+{
+"id": "c2-escarpment",
+"en": "Escarpment",
+"topic": "nature-rare",
+"es": "Escarpa",
+"fr": "Escarpement"
+},
+{
+"id": "c2-salt-flat",
+"en": "Salt flat",
+"topic": "nature-rare",
+"es": "Salar",
+"fr": "Salar (plaine de sel)"
+},
+{
+"id": "c2-cove",
+"en": "Cove",
+"topic": "nature-rare",
+"es": "Cala (ensenada)",
+"fr": "Crique (anse)"
+},
+{
+"id": "c2-atoll",
+"en": "Atoll",
+"topic": "nature-rare",
+"es": "Atolón",
+"fr": "Atoll"
+},
+{
+"id": "c2-tide-pool",
+"en": "Tide pool",
+"topic": "nature-rare",
+"es": "Poza de marea",
+"fr": "Bassin de marée (flaque)"
+},
+{
+"id": "c2-driftwood",
+"en": "Driftwood",
+"topic": "nature-rare",
+"es": "Madera de deriva",
+"fr": "Bois flotté"
+},
+{
+"id": "c2-pebble",
+"en": "Pebble",
+"topic": "nature-rare",
+"es": "Guijarro",
+"fr": "Galet (caillou)"
+},
+{
+"id": "c2-boulder",
+"en": "Boulder",
+"topic": "nature-rare",
+"es": "Peñasco (roca grande)",
+"fr": "Rocher (bloc)"
+},
+{
+"id": "c2-sediment",
+"en": "Sediment",
+"topic": "nature-rare",
+"es": "Sedimento",
+"fr": "Sédiment"
+},
+{
+"id": "c2-erosion",
+"en": "Erosion",
+"topic": "nature-rare",
+"es": "Erosión",
+"fr": "Érosion"
+},
+{
+"id": "c2-burrow",
+"en": "Burrow",
+"topic": "nature-rare",
+"es": "Madriguera",
+"fr": "Terrier"
+},
+{
+"id": "c2-hive",
+"en": "Hive",
+"topic": "nature-rare",
+"es": "Colmena",
+"fr": "Ruche"
+},
+{
+"id": "c2-cocoon",
+"en": "Cocoon",
+"topic": "nature-rare",
+"es": "Capullo",
+"fr": "Cocon"
+},
+{
+"id": "c2-antler",
+"en": "Antler",
+"topic": "nature-rare",
+"es": "Cornamenta (asta)",
+"fr": "Bois (de cerf)"
+},
+{
+"id": "c2-talon",
+"en": "Talon",
+"topic": "nature-rare",
+"es": "Garra",
+"fr": "Serre"
+},
+{
+"id": "c2-plumage",
+"en": "Plumage",
+"topic": "nature-rare",
+"es": "Plumaje",
+"fr": "Plumage"
+},
+{
+"id": "c2-migration-animal",
+"en": "Migration (animal)",
+"topic": "nature-rare",
+"es": "Migración",
+"fr": "Migration"
+},
+{
+"id": "c2-hibernation",
+"en": "Hibernation",
+"topic": "nature-rare",
+"es": "Hibernación",
+"fr": "Hibernation"
+},
+{
+"id": "c2-pollination",
+"en": "Pollination",
+"topic": "nature-rare",
+"es": "Polinización",
+"fr": "Pollinisation"
+},
+{
+"id": "c2-germination",
+"en": "Germination",
+"topic": "nature-rare",
+"es": "Germinación",
+"fr": "Germination"
+},
+{
+"id": "c2-torrential",
+"en": "Torrential",
+"topic": "weather-rare",
+"es": "Torrencial",
+"fr": "Torrentiel"
+},
+{
+"id": "c2-monsoon",
+"en": "Monsoon",
+"topic": "weather-rare",
+"es": "Monzón",
+"fr": "Mousson"
+},
+{
+"id": "c2-sleet",
+"en": "Sleet",
+"topic": "weather-rare",
+"es": "Aguanieve",
+"fr": "Grésil (neige fondue)"
+},
+{
+"id": "c2-flurry-snow",
+"en": "Flurry (snow)",
+"topic": "weather-rare",
+"es": "Nevisca (ráfaga de nieve)",
+"fr": "Bourrasque de neige"
+},
+{
+"id": "c2-whiteout",
+"en": "Whiteout",
+"topic": "weather-rare",
+"es": "Visibilidad nula (por nieve)",
+"fr": "Blanc total (visibilité nulle)"
+},
+{
+"id": "c2-black-ice",
+"en": "Black ice",
+"topic": "weather-rare",
+"es": "Hielo negro (placa de hielo)",
+"fr": "Verglas"
+},
+{
+"id": "c2-dew",
+"en": "Dew",
+"topic": "weather-rare",
+"es": "Rocío",
+"fr": "Rosée"
+},
+{
+"id": "c2-haze",
+"en": "Haze",
+"topic": "weather-rare",
+"es": "Calima (bruma)",
+"fr": "Brume (voile)"
+},
+{
+"id": "c2-clammy",
+"en": "Clammy",
+"topic": "weather-rare",
+"es": "Húmedo (pegajoso)",
+"fr": "Moite"
+},
+{
+"id": "c2-scorcher",
+"en": "Scorcher",
+"topic": "weather-rare",
+"es": "Día abrasador",
+"fr": "Journée de canicule"
+},
+{
+"id": "c2-sultry",
+"en": "Sultry",
+"topic": "weather-rare",
+"es": "Sofocante",
+"fr": "Étouffant (lourd)"
+},
+{
+"id": "c2-balmy",
+"en": "Balmy",
+"topic": "weather-rare",
+"es": "Templado (agradable)",
+"fr": "Doux (clément)"
+},
+{
+"id": "c2-crisp-air",
+"en": "Crisp (air)",
+"topic": "weather-rare",
+"es": "Fresco (vigorizante)",
+"fr": "Vif (frais)"
+},
+{
+"id": "c2-gust",
+"en": "Gust",
+"topic": "weather-rare",
+"es": "Ráfaga",
+"fr": "Rafale"
+},
+{
+"id": "c2-gale",
+"en": "Gale",
+"topic": "weather-rare",
+"es": "Vendaval",
+"fr": "Coup de vent (tempête)"
+},
+{
+"id": "c2-squall",
+"en": "Squall",
+"topic": "weather-rare",
+"es": "Turbión (chubasco)",
+"fr": "Grain (bourrasque)"
+},
+{
+"id": "c2-thunderclap",
+"en": "Thunderclap",
+"topic": "weather-rare",
+"es": "Trueno",
+"fr": "Coup de tonnerre"
+},
+{
+"id": "c2-lightning-bolt",
+"en": "Lightning bolt",
+"topic": "weather-rare",
+"es": "Rayo",
+"fr": "Éclair (foudre)"
+},
+{
+"id": "c2-cloudburst",
+"en": "Cloudburst",
+"topic": "weather-rare",
+"es": "Tromba de agua",
+"fr": "Trombe d’eau"
+},
+{
+"id": "c2-nightfall",
+"en": "Nightfall",
+"topic": "weather-rare",
+"es": "Anochecer",
+"fr": "Tombée de la nuit"
+},
+{
+"id": "c2-cold-snap",
+"en": "Cold snap",
+"topic": "weather-rare",
+"es": "Ola de frío",
+"fr": "Vague de froid"
+},
+{
+"id": "c2-thaw",
+"en": "Thaw",
+"topic": "weather-rare",
+"es": "Deshielo",
+"fr": "Dégel"
+},
+{
+"id": "c2-humidity",
+"en": "Humidity",
+"topic": "weather-rare",
+"es": "Humedad",
+"fr": "Humidité"
+},
+{
+"id": "c2-barometer",
+"en": "Barometer",
+"topic": "weather-rare",
+"es": "Barómetro",
+"fr": "Baromètre"
+},
+{
+"id": "c2-forecast-verb",
+"en": "Forecast (verb)",
+"topic": "weather-rare",
+"es": "Pronosticar",
+"fr": "Prévoir"
+},
+{
+"id": "c2-daybreak",
+"en": "Daybreak",
+"topic": "weather-rare",
+"es": "Alba (romper del día)",
+"fr": "Point du jour"
+},
+{
+"id": "c2-aurora",
+"en": "Aurora",
+"topic": "weather-rare",
+"es": "Aurora (boreal)",
+"fr": "Aurore (boréale)"
+},
+{
+"id": "c2-twilight",
+"en": "Twilight",
+"topic": "weather-rare",
+"es": "Penumbra (crepúsculo)",
+"fr": "Pénombre (crépuscule)"
+},
+{
+"id": "c2-solstice",
+"en": "Solstice",
+"topic": "weather-rare",
+"es": "Solsticio",
+"fr": "Solstice"
+},
+{
+"id": "c2-equinox",
+"en": "Equinox",
+"topic": "weather-rare",
+"es": "Equinoccio",
+"fr": "Équinoxe"
+},
+{
+"id": "c2-arch",
+"en": "Arch",
+"topic": "architecture-rare",
+"es": "Arco",
+"fr": "Arche (arc)"
+},
+{
+"id": "c2-vault-ceiling",
+"en": "Vault (ceiling)",
+"topic": "architecture-rare",
+"es": "Bóveda",
+"fr": "Voûte"
+},
+{
+"id": "c2-dome",
+"en": "Dome",
+"topic": "architecture-rare",
+"es": "Cúpula",
+"fr": "Dôme (coupole)"
+},
+{
+"id": "c2-spire",
+"en": "Spire",
+"topic": "architecture-rare",
+"es": "Aguja (chapitel)",
+"fr": "Flèche"
+},
+{
+"id": "c2-buttress",
+"en": "Buttress",
+"topic": "architecture-rare",
+"es": "Contrafuerte",
+"fr": "Contrefort"
+},
+{
+"id": "c2-pillar",
+"en": "Pillar",
+"topic": "architecture-rare",
+"es": "Pilar",
+"fr": "Pilier"
+},
+{
+"id": "c2-column",
+"en": "Column",
+"topic": "architecture-rare",
+"es": "Columna",
+"fr": "Colonne"
+},
+{
+"id": "c2-beam-structural",
+"en": "Beam (structural)",
+"topic": "architecture-rare",
+"es": "Viga",
+"fr": "Poutre"
+},
+{
+"id": "c2-rafter",
+"en": "Rafter",
+"topic": "architecture-rare",
+"es": "Cabrio (viga del tejado)",
+"fr": "Chevron"
+},
+{
+"id": "c2-girder",
+"en": "Girder",
+"topic": "architecture-rare",
+"es": "Viga maestra",
+"fr": "Poutre maîtresse"
+},
+{
+"id": "c2-keystone",
+"en": "Keystone",
+"topic": "architecture-rare",
+"es": "Clave (de un arco)",
+"fr": "Clé de voûte"
+},
+{
+"id": "c2-facade-building-front",
+"en": "Facade (building front)",
+"topic": "architecture-rare",
+"es": "Fachada",
+"fr": "Façade"
+},
+{
+"id": "c2-cornice",
+"en": "Cornice",
+"topic": "architecture-rare",
+"es": "Cornisa",
+"fr": "Corniche"
+},
+{
+"id": "c2-gable",
+"en": "Gable",
+"topic": "architecture-rare",
+"es": "Hastial (aguilón)",
+"fr": "Pignon"
+},
+{
+"id": "c2-eaves",
+"en": "Eaves",
+"topic": "architecture-rare",
+"es": "Alero",
+"fr": "Avant-toit"
+},
+{
+"id": "c2-gutter-roof",
+"en": "Gutter (roof)",
+"topic": "architecture-rare",
+"es": "Canalón",
+"fr": "Gouttière"
+},
+{
+"id": "c2-skylight",
+"en": "Skylight",
+"topic": "architecture-rare",
+"es": "Claraboya (tragaluz)",
+"fr": "Puits de lumière (lucarne)"
+},
+{
+"id": "c2-balustrade",
+"en": "Balustrade",
+"topic": "architecture-rare",
+"es": "Balaustrada",
+"fr": "Balustrade"
+},
+{
+"id": "c2-parapet",
+"en": "Parapet",
+"topic": "architecture-rare",
+"es": "Parapeto",
+"fr": "Parapet"
+},
+{
+"id": "c2-turret",
+"en": "Turret",
+"topic": "architecture-rare",
+"es": "Torreón (torrecilla)",
+"fr": "Tourelle"
+},
+{
+"id": "c2-moat",
+"en": "Moat",
+"topic": "architecture-rare",
+"es": "Foso",
+"fr": "Douve"
+},
+{
+"id": "c2-drawbridge",
+"en": "Drawbridge",
+"topic": "architecture-rare",
+"es": "Puente levadizo",
+"fr": "Pont-levis"
+},
+{
+"id": "c2-cloister",
+"en": "Cloister",
+"topic": "architecture-rare",
+"es": "Claustro",
+"fr": "Cloître"
+},
+{
+"id": "c2-courtyard",
+"en": "Courtyard",
+"topic": "architecture-rare",
+"es": "Patio",
+"fr": "Cour intérieure"
+},
+{
+"id": "c2-alcove",
+"en": "Alcove",
+"topic": "architecture-rare",
+"es": "Nicho (hueco)",
+"fr": "Alcôve (renfoncement)"
+},
+{
+"id": "c2-mezzanine",
+"en": "Mezzanine",
+"topic": "architecture-rare",
+"es": "Entreplanta",
+"fr": "Mezzanine"
+},
+{
+"id": "c2-atrium",
+"en": "Atrium",
+"topic": "architecture-rare",
+"es": "Atrio",
+"fr": "Atrium"
+},
+{
+"id": "c2-mosaic",
+"en": "Mosaic",
+"topic": "architecture-rare",
+"es": "Mosaico",
+"fr": "Mosaïque"
+},
+{
+"id": "c2-fresco",
+"en": "Fresco",
+"topic": "architecture-rare",
+"es": "Fresco",
+"fr": "Fresque"
+},
+{
+"id": "c2-elevation-drawing",
+"en": "Elevation (drawing)",
+"topic": "architecture-rare",
+"es": "Alzado",
+"fr": "Élévation"
+},
+{
+"id": "c2-partition-wall",
+"en": "Partition wall",
+"topic": "architecture-rare",
+"es": "Tabique",
+"fr": "Cloison"
+},
+{
+"id": "c2-cladding",
+"en": "Cladding",
+"topic": "architecture-rare",
+"es": "Revestimiento",
+"fr": "Bardage (revêtement)"
+},
+{
+"id": "c2-plumbing-system",
+"en": "Plumbing (system)",
+"topic": "architecture-rare",
+"es": "Fontanería (tuberías)",
+"fr": "Plomberie"
+},
+{
+"id": "c2-ventilation-duct",
+"en": "Ventilation duct",
+"topic": "architecture-rare",
+"es": "Conducto de ventilación",
+"fr": "Gaine de ventilation"
+},
+{
+"id": "c2-retrofit",
+"en": "Retrofit",
+"topic": "architecture-rare",
+"es": "Modernización (adaptación)",
+"fr": "Rénovation (mise à niveau)"
+},
+{
+"id": "c2-colander",
+"en": "Colander",
+"topic": "household-rare",
+"es": "Colador (escurridor)",
+"fr": "Passoire"
+},
+{
+"id": "c2-ladle",
+"en": "Ladle",
+"topic": "household-rare",
+"es": "Cucharón",
+"fr": "Louche"
+},
+{
+"id": "c2-whisk",
+"en": "Whisk",
+"topic": "household-rare",
+"es": "Batidor (varillas)",
+"fr": "Fouet"
+},
+{
+"id": "c2-grater",
+"en": "Grater",
+"topic": "household-rare",
+"es": "Rallador",
+"fr": "Râpe"
+},
+{
+"id": "c2-tongs",
+"en": "Tongs",
+"topic": "household-rare",
+"es": "Pinzas (de cocina)",
+"fr": "Pince (de cuisine)"
+},
+{
+"id": "c2-spatula",
+"en": "Spatula",
+"topic": "household-rare",
+"es": "Espátula",
+"fr": "Spatule"
+},
+{
+"id": "c2-cutting-board",
+"en": "Cutting board",
+"topic": "household-rare",
+"es": "Tabla de cortar",
+"fr": "Planche à découper"
+},
+{
+"id": "c2-french-press",
+"en": "French press",
+"topic": "household-rare",
+"es": "Cafetera de émbolo",
+"fr": "Cafetière à piston"
+},
+{
+"id": "c2-coaster",
+"en": "Coaster",
+"topic": "household-rare",
+"es": "Posavasos",
+"fr": "Dessous de verre"
+},
+{
+"id": "c2-trivet",
+"en": "Trivet",
+"topic": "household-rare",
+"es": "Salvamanteles",
+"fr": "Dessous-de-plat"
+},
+{
+"id": "c2-oven-mitt",
+"en": "Oven mitt",
+"topic": "household-rare",
+"es": "Manopla (guante de horno)",
+"fr": "Gant de cuisine (manique)"
+},
+{
+"id": "c2-dish-rack",
+"en": "Dish rack",
+"topic": "household-rare",
+"es": "Escurreplatos",
+"fr": "Égouttoir"
+},
+{
+"id": "c2-dustpan",
+"en": "Dustpan",
+"topic": "household-rare",
+"es": "Recogedor",
+"fr": "Pelle (à poussière)"
+},
+{
+"id": "c2-mop",
+"en": "Mop",
+"topic": "household-rare",
+"es": "Fregona (trapeador)",
+"fr": "Serpillière (balai à franges)"
+},
+{
+"id": "c2-clothespin",
+"en": "Clothespin",
+"topic": "household-rare",
+"es": "Pinza de la ropa",
+"fr": "Pince à linge"
+},
+{
+"id": "c2-clothesline",
+"en": "Clothesline",
+"topic": "household-rare",
+"es": "Tendedero",
+"fr": "Corde à linge"
+},
+{
+"id": "c2-shoehorn",
+"en": "Shoehorn",
+"topic": "household-rare",
+"es": "Calzador",
+"fr": "Chausse-pied"
+},
+{
+"id": "c2-doormat",
+"en": "Doormat",
+"topic": "household-rare",
+"es": "Felpudo",
+"fr": "Paillasson"
+},
+{
+"id": "c2-doorknob",
+"en": "Doorknob",
+"topic": "household-rare",
+"es": "Pomo (de la puerta)",
+"fr": "Poignée de porte"
+},
+{
+"id": "c2-hinge",
+"en": "Hinge",
+"topic": "household-rare",
+"es": "Bisagra",
+"fr": "Charnière (gond)"
+},
+{
+"id": "c2-latch",
+"en": "Latch",
+"topic": "household-rare",
+"es": "Pestillo (cerrojo)",
+"fr": "Loquet"
+},
+{
+"id": "c2-peephole",
+"en": "Peephole",
+"topic": "household-rare",
+"es": "Mirilla",
+"fr": "Judas (œilleton)"
+},
+{
+"id": "c2-blinds-window",
+"en": "Blinds (window)",
+"topic": "household-rare",
+"es": "Persianas",
+"fr": "Stores"
+},
+{
+"id": "c2-windowsill",
+"en": "Windowsill",
+"topic": "household-rare",
+"es": "Alféizar",
+"fr": "Rebord de fenêtre"
+},
+{
+"id": "c2-banister",
+"en": "Banister",
+"topic": "household-rare",
+"es": "Barandilla (pasamanos)",
+"fr": "Rampe (d’escalier)"
+},
+{
+"id": "c2-landing-stairs",
+"en": "Landing (stairs)",
+"topic": "household-rare",
+"es": "Rellano (descansillo)",
+"fr": "Palier"
+},
+{
+"id": "c2-crawl-space",
+"en": "Crawl space",
+"topic": "household-rare",
+"es": "Cámara sanitaria (espacio bajo el suelo)",
+"fr": "Vide sanitaire"
+},
+{
+"id": "c2-cellar",
+"en": "Cellar",
+"topic": "household-rare",
+"es": "Bodega (sótano)",
+"fr": "Cave"
+},
+{
+"id": "c2-pantry",
+"en": "Pantry",
+"topic": "household-rare",
+"es": "Despensa",
+"fr": "Garde-manger (cellier)"
+},
+{
+"id": "c2-utility-room",
+"en": "Utility room",
+"topic": "household-rare",
+"es": "Lavadero (cuarto de servicio)",
+"fr": "Buanderie (cellier)"
+},
+{
+"id": "c2-fuse-box",
+"en": "Fuse box",
+"topic": "household-rare",
+"es": "Cuadro eléctrico (caja de fusibles)",
+"fr": "Tableau électrique (boîte à fusibles)"
+},
+{
+"id": "c2-dimmer-switch",
+"en": "Dimmer switch",
+"topic": "household-rare",
+"es": "Regulador de intensidad",
+"fr": "Variateur"
+},
+{
+"id": "c2-extension-cord",
+"en": "Extension cord",
+"topic": "household-rare",
+"es": "Alargador (extensión)",
+"fr": "Rallonge"
+},
+{
+"id": "c2-power-strip",
+"en": "Power strip",
+"topic": "household-rare",
+"es": "Regleta",
+"fr": "Multiprise"
+},
+{
+"id": "c2-carbon-monoxide-alarm",
+"en": "Carbon monoxide alarm",
+"topic": "household-rare",
+"es": "Detector de monóxido de carbono",
+"fr": "Détecteur de monoxyde de carbone"
+},
+{
+"id": "c2-first-aid-kit",
+"en": "First-aid kit",
+"topic": "household-rare",
+"es": "Botiquín",
+"fr": "Trousse de premiers secours"
+},
+{
+"id": "c2-sewing-kit",
+"en": "Sewing kit",
+"topic": "household-rare",
+"es": "Costurero",
+"fr": "Nécessaire de couture"
+},
+{
+"id": "c2-toolbox",
+"en": "Toolbox",
+"topic": "household-rare",
+"es": "Caja de herramientas",
+"fr": "Boîte à outils"
+},
+{
+"id": "c2-allen-key",
+"en": "Allen key",
+"topic": "household-rare",
+"es": "Llave Allen",
+"fr": "Clé Allen"
+},
+{
+"id": "c2-pliers",
+"en": "Pliers",
+"topic": "household-rare",
+"es": "Alicates",
+"fr": "Pince"
+},
+{
+"id": "c2-wrench",
+"en": "Wrench",
+"topic": "household-rare",
+"es": "Llave inglesa",
+"fr": "Clé (à molette)"
+},
+{
+"id": "c2-tape-measure",
+"en": "Tape measure",
+"topic": "household-rare",
+"es": "Cinta métrica (metro)",
+"fr": "Mètre ruban"
+},
+{
+"id": "c2-spirit-level",
+"en": "Spirit level",
+"topic": "household-rare",
+"es": "Nivel (de burbuja)",
+"fr": "Niveau à bulle"
+},
+{
+"id": "c2-drawer-organizer",
+"en": "Drawer organizer",
+"topic": "household-rare",
+"es": "Organizador de cajones",
+"fr": "Range-tiroir (organiseur)"
+},
+{
+"id": "c2-bin-liner",
+"en": "Bin liner",
+"topic": "household-rare",
+"es": "Bolsa de basura",
+"fr": "Sac-poubelle"
+},
+{
+"id": "c2-to-seethe",
+"en": "To seethe",
+"topic": "emotions-rare",
+"es": "Hervir de rabia",
+"fr": "Bouillir (de rage)"
+},
+{
+"id": "c2-to-sulk",
+"en": "To sulk",
+"topic": "emotions-rare",
+"es": "Enfurruñarse",
+"fr": "Bouder"
+},
+{
+"id": "c2-to-fret",
+"en": "To fret",
+"topic": "emotions-rare",
+"es": "Inquietarse (angustiarse)",
+"fr": "Se tracasser"
+},
+{
+"id": "c2-to-brood",
+"en": "To brood",
+"topic": "emotions-rare",
+"es": "Darle vueltas (rumiar)",
+"fr": "Ruminer (broyer du noir)"
+},
+{
+"id": "c2-to-wallow-in-self-pity",
+"en": "To wallow (in self-pity)",
+"topic": "emotions-rare",
+"es": "Regodearse (en la autocompasión)",
+"fr": "Se complaire (dans l’apitoiement)"
+},
+{
+"id": "c2-to-gloat-over-a-rival",
+"en": "To gloat over a rival",
+"topic": "emotions-rare",
+"es": "Regodearse de un rival",
+"fr": "Jubiler aux dépens d’un rival"
+},
+{
+"id": "c2-to-savor-the-moment",
+"en": "To savor (the moment)",
+"topic": "emotions-rare",
+"es": "Saborear (el momento)",
+"fr": "Savourer (l’instant)"
+},
+{
+"id": "c2-to-revel-in",
+"en": "To revel in",
+"topic": "emotions-rare",
+"es": "Deleitarse en",
+"fr": "Se délecter de"
+},
+{
+"id": "c2-to-marvel-at",
+"en": "To marvel at",
+"topic": "emotions-rare",
+"es": "Maravillarse de",
+"fr": "S’émerveiller de"
+},
+{
+"id": "c2-to-cringe",
+"en": "To cringe",
+"topic": "emotions-rare",
+"es": "Morirse de vergüenza (encogerse)",
+"fr": "Grimacer (de gêne)"
+},
+{
+"id": "c2-to-wince",
+"en": "To wince",
+"topic": "emotions-rare",
+"es": "Hacer una mueca de dolor",
+"fr": "Tressaillir (grimacer)"
+},
+{
+"id": "c2-to-flinch",
+"en": "To flinch",
+"topic": "emotions-rare",
+"es": "Estremecerse (retroceder)",
+"fr": "Sursauter (reculer)"
+},
+{
+"id": "c2-to-shudder",
+"en": "To shudder",
+"topic": "emotions-rare",
+"es": "Estremecerse",
+"fr": "Frissonner"
+},
+{
+"id": "c2-to-quiver",
+"en": "To quiver",
+"topic": "emotions-rare",
+"es": "Temblar (estremecerse)",
+"fr": "Trembler (frémir)"
+},
+{
+"id": "c2-to-swoon",
+"en": "To swoon",
+"topic": "emotions-rare",
+"es": "Desmayarse (de emoción)",
+"fr": "Se pâmer"
+},
+{
+"id": "c2-to-pine-for",
+"en": "To pine for",
+"topic": "emotions-rare",
+"es": "Suspirar por",
+"fr": "Se languir de"
+},
+{
+"id": "c2-to-long-for",
+"en": "To long for",
+"topic": "emotions-rare",
+"es": "Añorar (ansiar)",
+"fr": "Avoir la nostalgie de (aspirer à)"
+},
+{
+"id": "c2-to-crave",
+"en": "To crave",
+"topic": "emotions-rare",
+"es": "Ansiar (tener antojo)",
+"fr": "Avoir très envie de"
+},
+{
+"id": "c2-to-abominate",
+"en": "To abominate",
+"topic": "emotions-rare",
+"es": "Abominar",
+"fr": "Abominer (exécrer)"
+},
+{
+"id": "c2-to-nurse-a-grievance",
+"en": "To nurse a grievance",
+"topic": "emotions-rare",
+"es": "Alimentar un agravio",
+"fr": "Ruminer un grief"
+},
+{
+"id": "c2-to-begrudge",
+"en": "To begrudge",
+"topic": "emotions-rare",
+"es": "Escatimar (envidiar)",
+"fr": "Envier (donner à contrecœur)"
+},
+{
+"id": "c2-to-grovel",
+"en": "To grovel",
+"topic": "emotions-rare",
+"es": "Humillarse (arrastrarse)",
+"fr": "Ramper (s’aplatir)"
+},
+{
+"id": "c2-to-fawn-over",
+"en": "To fawn over",
+"topic": "emotions-rare",
+"es": "Adular",
+"fr": "Flatter (faire des courbettes)"
+},
+{
+"id": "c2-to-dote-on",
+"en": "To dote on",
+"topic": "emotions-rare",
+"es": "Adorar (mimar)",
+"fr": "Adorer (choyer)"
+},
+{
+"id": "c2-to-treasure",
+"en": "To treasure",
+"topic": "emotions-rare",
+"es": "Atesorar",
+"fr": "Chérir (tenir à)"
+},
+{
+"id": "c2-to-put-at-ease",
+"en": "To put at ease",
+"topic": "emotions-rare",
+"es": "Tranquilizar (poner a gusto)",
+"fr": "Mettre à l’aise"
+},
+{
+"id": "c2-to-console",
+"en": "To console",
+"topic": "emotions-rare",
+"es": "Consolar",
+"fr": "Consoler"
+},
+{
+"id": "c2-to-commiserate",
+"en": "To commiserate",
+"topic": "emotions-rare",
+"es": "Compadecerse",
+"fr": "Compatir"
+},
+{
+"id": "c2-to-exasperate",
+"en": "To exasperate",
+"topic": "emotions-rare",
+"es": "Exasperar",
+"fr": "Exaspérer"
+},
+{
+"id": "c2-to-infuriate",
+"en": "To infuriate",
+"topic": "emotions-rare",
+"es": "Enfurecer",
+"fr": "Rendre furieux"
+},
+{
+"id": "c2-to-unnerve",
+"en": "To unnerve",
+"topic": "emotions-rare",
+"es": "Desconcertar (poner nervioso)",
+"fr": "Déstabiliser (troubler)"
+},
+{
+"id": "c2-to-mortify",
+"en": "To mortify",
+"topic": "emotions-rare",
+"es": "Mortificar (avergonzar)",
+"fr": "Mortifier"
+},
+{
+"id": "c2-to-captivate",
+"en": "To captivate",
+"topic": "emotions-rare",
+"es": "Cautivar",
+"fr": "Captiver"
+},
+{
+"id": "c2-to-enrapture",
+"en": "To enrapture",
+"topic": "emotions-rare",
+"es": "Extasiar",
+"fr": "Ravir (transporter)"
+},
+{
+"id": "c2-to-disillusion",
+"en": "To disillusion",
+"topic": "emotions-rare",
+"es": "Desilusionar",
+"fr": "Désillusionner"
+},
+{
+"id": "c2-to-mollify",
+"en": "To mollify",
+"topic": "emotions-rare",
+"es": "Apaciguar (calmar)",
+"fr": "Amadouer (calmer)"
+},
+{
+"id": "c2-to-embolden",
+"en": "To embolden",
+"topic": "emotions-rare",
+"es": "Envalentonar",
+"fr": "Enhardir"
+},
+{
+"id": "c2-to-dishearten",
+"en": "To dishearten",
+"topic": "emotions-rare",
+"es": "Desanimar (descorazonar)",
+"fr": "Décourager"
+},
+{
+"id": "c2-to-rankle",
+"en": "To rankle",
+"topic": "emotions-rare",
+"es": "Escocer (doler)",
+"fr": "Rester en travers de la gorge"
+},
+{
+"id": "c2-to-smolder",
+"en": "To smolder",
+"topic": "emotions-rare",
+"es": "Arder (por dentro)",
+"fr": "Couver (bouillir intérieurement)"
+},
+{
+"id": "c2-numbness",
+"en": "Numbness",
+"topic": "body-mind-rare",
+"es": "Entumecimiento",
+"fr": "Engourdissement"
+},
+{
+"id": "c2-tingling",
+"en": "Tingling",
+"topic": "body-mind-rare",
+"es": "Hormigueo",
+"fr": "Picotement (fourmillement)"
+},
+{
+"id": "c2-cramp",
+"en": "Cramp",
+"topic": "body-mind-rare",
+"es": "Calambre",
+"fr": "Crampe"
+},
+{
+"id": "c2-twinge",
+"en": "Twinge",
+"topic": "body-mind-rare",
+"es": "Punzada",
+"fr": "Élancement"
+},
+{
+"id": "c2-throbbing",
+"en": "Throbbing",
+"topic": "body-mind-rare",
+"es": "Palpitante (punzante)",
+"fr": "Lancinant (pulsatile)"
+},
+{
+"id": "c2-dizziness",
+"en": "Dizziness",
+"topic": "body-mind-rare",
+"es": "Mareo",
+"fr": "Vertige (étourdissement)"
+},
+{
+"id": "c2-lightheaded",
+"en": "Lightheaded",
+"topic": "body-mind-rare",
+"es": "Aturdido (mareado)",
+"fr": "Étourdi (tête qui tourne)"
+},
+{
+"id": "c2-vertigo",
+"en": "Vertigo",
+"topic": "body-mind-rare",
+"es": "Vértigo",
+"fr": "Vertige"
+},
+{
+"id": "c2-queasy",
+"en": "Queasy",
+"topic": "body-mind-rare",
+"es": "Mareado (con náuseas)",
+"fr": "Nauséeux (barbouillé)"
+},
+{
+"id": "c2-lethargy",
+"en": "Lethargy",
+"topic": "body-mind-rare",
+"es": "Letargo (apatía)",
+"fr": "Léthargie"
+},
+{
+"id": "c2-fatigue",
+"en": "Fatigue",
+"topic": "body-mind-rare",
+"es": "Fatiga",
+"fr": "Fatigue (épuisement)"
+},
+{
+"id": "c2-stamina",
+"en": "Stamina",
+"topic": "body-mind-rare",
+"es": "Resistencia (aguante)",
+"fr": "Endurance"
+},
+{
+"id": "c2-reflex",
+"en": "Reflex",
+"topic": "body-mind-rare",
+"es": "Reflejo",
+"fr": "Réflexe"
+},
+{
+"id": "c2-flinch-noun",
+"en": "Flinch (noun)",
+"topic": "body-mind-rare",
+"es": "Sobresalto",
+"fr": "Sursaut (mouvement de recul)"
+},
+{
+"id": "c2-pins-and-needles",
+"en": "Pins and needles",
+"topic": "body-mind-rare",
+"es": "Hormigueo (calambre)",
+"fr": "Fourmis (dans les jambes)"
+},
+{
+"id": "c2-shiver",
+"en": "Shiver",
+"topic": "body-mind-rare",
+"es": "Escalofrío",
+"fr": "Frisson"
+},
+{
+"id": "c2-hot-flush",
+"en": "Hot flush",
+"topic": "body-mind-rare",
+"es": "Sofoco",
+"fr": "Bouffée de chaleur"
+},
+{
+"id": "c2-blush",
+"en": "Blush",
+"topic": "body-mind-rare",
+"es": "Rubor",
+"fr": "Rougissement"
+},
+{
+"id": "c2-yawn",
+"en": "Yawn",
+"topic": "body-mind-rare",
+"es": "Bostezo",
+"fr": "Bâillement"
+},
+{
+"id": "c2-hiccup",
+"en": "Hiccup",
+"topic": "body-mind-rare",
+"es": "Hipo",
+"fr": "Hoquet"
+},
+{
+"id": "c2-sneeze",
+"en": "Sneeze",
+"topic": "body-mind-rare",
+"es": "Estornudo",
+"fr": "Éternuement"
+},
+{
+"id": "c2-itch",
+"en": "Itch",
+"topic": "body-mind-rare",
+"es": "Picor (picazón)",
+"fr": "Démangeaison"
+},
+{
+"id": "c2-bruise",
+"en": "Bruise",
+"topic": "body-mind-rare",
+"es": "Moretón (hematoma)",
+"fr": "Bleu (ecchymose)"
+},
+{
+"id": "c2-blister",
+"en": "Blister",
+"topic": "body-mind-rare",
+"es": "Ampolla",
+"fr": "Ampoule (cloque)"
+},
+{
+"id": "c2-pulled-muscle",
+"en": "Pulled muscle",
+"topic": "body-mind-rare",
+"es": "Tirón muscular",
+"fr": "Claquage (élongation)"
+},
+{
+"id": "c2-stiffness",
+"en": "Stiffness",
+"topic": "body-mind-rare",
+"es": "Rigidez (agujetas)",
+"fr": "Raideur"
+},
+{
+"id": "c2-restlessness",
+"en": "Restlessness",
+"topic": "body-mind-rare",
+"es": "Inquietud (desasosiego)",
+"fr": "Agitation (nervosité)"
+},
+{
+"id": "c2-daydream",
+"en": "Daydream",
+"topic": "body-mind-rare",
+"es": "Ensoñación",
+"fr": "Rêverie"
+},
+{
+"id": "c2-deja-vu",
+"en": "Déjà vu",
+"topic": "body-mind-rare",
+"es": "Déjà vu",
+"fr": "Déjà-vu"
+},
+{
+"id": "c2-hunch",
+"en": "Hunch",
+"topic": "body-mind-rare",
+"es": "Corazonada",
+"fr": "Intuition (pressentiment)"
+},
+{
+"id": "c2-gut-feeling",
+"en": "Gut feeling",
+"topic": "body-mind-rare",
+"es": "Instinto (intuición visceral)",
+"fr": "Instinct (sentiment viscéral)"
+},
+{
+"id": "c2-brain-fog",
+"en": "Brain fog",
+"topic": "body-mind-rare",
+"es": "Niebla mental",
+"fr": "Brouillard mental"
+},
+{
+"id": "c2-second-wind",
+"en": "Second wind",
+"topic": "body-mind-rare",
+"es": "Segundo aire",
+"fr": "Second souffle"
+},
+{
+"id": "c2-adrenaline-rush",
+"en": "Adrenaline rush",
+"topic": "body-mind-rare",
+"es": "Subidón de adrenalina",
+"fr": "Montée d’adrénaline"
+},
+{
+"id": "c2-motion-sickness",
+"en": "Motion sickness",
+"topic": "body-mind-rare",
+"es": "Mareo (cinetosis)",
+"fr": "Mal des transports"
+},
+{
+"id": "c2-camaraderie",
+"en": "Camaraderie",
+"topic": "social-rare",
+"es": "Camaradería",
+"fr": "Camaraderie"
+},
+{
+"id": "c2-affinity-between-people",
+"en": "Affinity (between people)",
+"topic": "social-rare",
+"es": "Afinidad",
+"fr": "Affinité"
+},
+{
+"id": "c2-clique",
+"en": "Clique",
+"topic": "social-rare",
+"es": "Camarilla (grupito)",
+"fr": "Clique (bande)"
+},
+{
+"id": "c2-entourage",
+"en": "Entourage",
+"topic": "social-rare",
+"es": "Séquito",
+"fr": "Entourage"
+},
+{
+"id": "c2-etiquette",
+"en": "Etiquette",
+"topic": "social-rare",
+"es": "Etiqueta (protocolo)",
+"fr": "Étiquette (bienséance)"
+},
+{
+"id": "c2-faux-pas",
+"en": "Faux pas",
+"topic": "social-rare",
+"es": "Metedura de pata",
+"fr": "Faux pas (impair)"
+},
+{
+"id": "c2-gossip",
+"en": "Gossip",
+"topic": "social-rare",
+"es": "Chisme (cotilleo)",
+"fr": "Ragots (commérages)"
+},
+{
+"id": "c2-grudge",
+"en": "Grudge",
+"topic": "social-rare",
+"es": "Rencor",
+"fr": "Rancune"
+},
+{
+"id": "c2-chain-of-command",
+"en": "Chain of command",
+"topic": "social-rare",
+"es": "Cadena de mando",
+"fr": "Chaîne de commandement"
+},
+{
+"id": "c2-nepotism",
+"en": "Nepotism",
+"topic": "social-rare",
+"es": "Nepotismo (enchufismo)",
+"fr": "Népotisme (piston)"
+},
+{
+"id": "c2-ostracism",
+"en": "Ostracism",
+"topic": "social-rare",
+"es": "Ostracismo",
+"fr": "Ostracisme"
+},
+{
+"id": "c2-groupthink",
+"en": "Groupthink",
+"topic": "social-rare",
+"es": "Pensamiento de grupo",
+"fr": "Pensée de groupe"
+},
+{
+"id": "c2-pecking-order",
+"en": "Pecking order",
+"topic": "social-rare",
+"es": "Orden jerárquico",
+"fr": "Ordre hiérarchique"
+},
+{
+"id": "c2-rivalry",
+"en": "Rivalry",
+"topic": "social-rare",
+"es": "Rivalidad",
+"fr": "Rivalité"
+},
+{
+"id": "c2-solidarity",
+"en": "Solidarity",
+"topic": "social-rare",
+"es": "Solidaridad",
+"fr": "Solidarité"
+},
+{
+"id": "c2-snub",
+"en": "Snub",
+"topic": "social-rare",
+"es": "Desaire",
+"fr": "Rebuffade (camouflet)"
+},
+{
+"id": "c2-taboo",
+"en": "Taboo",
+"topic": "social-rare",
+"es": "Tabú",
+"fr": "Tabou"
+},
+{
+"id": "c2-flattery",
+"en": "Flattery",
+"topic": "social-rare",
+"es": "Adulación",
+"fr": "Flatterie"
+},
+{
+"id": "c2-backhanded-compliment",
+"en": "Backhanded compliment",
+"topic": "social-rare",
+"es": "Cumplido envenenado",
+"fr": "Compliment à double tranchant"
+},
+{
+"id": "c2-cold-shoulder",
+"en": "Cold shoulder",
+"topic": "social-rare",
+"es": "Desplante (indiferencia)",
+"fr": "Froideur (bouder quelqu’un)"
+},
+{
+"id": "c2-small-circle-inner-circle",
+"en": "Small circle (inner circle)",
+"topic": "social-rare",
+"es": "Círculo íntimo",
+"fr": "Cercle intime (premier cercle)"
+},
+{
+"id": "c2-interloper",
+"en": "Interloper",
+"topic": "social-rare",
+"es": "Intruso",
+"fr": "Intrus"
+},
+{
+"id": "c2-old-hand",
+"en": "Old hand",
+"topic": "social-rare",
+"es": "Veterano (experto)",
+"fr": "Vieux routier"
+},
+{
+"id": "c2-wingman",
+"en": "Wingman",
+"topic": "social-rare",
+"es": "Compinche (apoyo)",
+"fr": "Acolyte (compère)"
+},
+{
+"id": "c2-freeloader",
+"en": "Freeloader",
+"topic": "social-rare",
+"es": "Gorrón",
+"fr": "Parasite (pique-assiette)"
+},
+{
+"id": "c2-busybody",
+"en": "Busybody",
+"topic": "social-rare",
+"es": "Entrometido",
+"fr": "Fouineur (mêle-tout)"
+},
+{
+"id": "c2-killjoy",
+"en": "Killjoy",
+"topic": "social-rare",
+"es": "Aguafiestas",
+"fr": "Rabat-joie"
+},
+{
+"id": "c2-show-off",
+"en": "Show-off",
+"topic": "social-rare",
+"es": "Fanfarrón (presumido)",
+"fr": "Frimeur (m’as-tu-vu)"
+},
+{
+"id": "c2-pushover",
+"en": "Pushover",
+"topic": "social-rare",
+"es": "Blando (pusilánime)",
+"fr": "Poire (bonne pâte)"
+},
+{
+"id": "c2-self-starter",
+"en": "Self-starter",
+"topic": "social-rare",
+"es": "Persona con iniciativa",
+"fr": "Personne autonome (qui a de l’initiative)"
+},
+{
+"id": "c2-to-mingle",
+"en": "To mingle",
+"topic": "social-rare",
+"es": "Mezclarse (socializar)",
+"fr": "Se mêler (aux invités)"
+},
+{
+"id": "c2-to-schmooze",
+"en": "To schmooze",
+"topic": "social-rare",
+"es": "Hacer la pelota (socializar por interés)",
+"fr": "Faire de la lèche (réseauter)"
+},
+{
+"id": "c2-to-shun",
+"en": "To shun",
+"topic": "social-rare",
+"es": "Rehuir (evitar)",
+"fr": "Fuir (éviter)"
+},
+{
+"id": "c2-to-patronize",
+"en": "To patronize",
+"topic": "social-rare",
+"es": "Tratar con condescendencia",
+"fr": "Prendre de haut"
+},
+{
+"id": "c2-to-reconcile",
+"en": "To reconcile",
+"topic": "social-rare",
+"es": "Reconciliarse",
+"fr": "Se réconcilier"
+},
+{
+"id": "c2-to-estrange",
+"en": "To estrange",
+"topic": "social-rare",
+"es": "Distanciar (enajenar)",
+"fr": "Éloigner (brouiller)"
+},
+{
+"id": "c2-to-confide-in",
+"en": "To confide in",
+"topic": "social-rare",
+"es": "Confiarse a",
+"fr": "Se confier à"
+},
+{
+"id": "c2-to-hobnob",
+"en": "To hobnob",
+"topic": "social-rare",
+"es": "Codearse",
+"fr": "Frayer avec (fréquenter)"
+},
+{
+"id": "c2-to-rub-shoulders-with",
+"en": "To rub shoulders with",
+"topic": "social-rare",
+"es": "Codearse con",
+"fr": "Côtoyer"
+},
+{
+"id": "c2-to-fall-out-with",
+"en": "To fall out with",
+"topic": "social-rare",
+"es": "Pelearse con",
+"fr": "Se brouiller avec"
+},
+{
+"id": "c2-foil-character",
+"en": "Foil (character)",
+"topic": "arts-rare",
+"es": "Contrapunto (personaje)",
+"fr": "Faire-valoir"
+},
+{
+"id": "c2-anti-hero",
+"en": "Anti-hero",
+"topic": "arts-rare",
+"es": "Antihéroe",
+"fr": "Anti-héros"
+},
+{
+"id": "c2-narrator",
+"en": "Narrator",
+"topic": "arts-rare",
+"es": "Narrador",
+"fr": "Narrateur"
+},
+{
+"id": "c2-macguffin",
+"en": "MacGuffin",
+"topic": "arts-rare",
+"es": "MacGuffin (excusa argumental)",
+"fr": "MacGuffin"
+},
+{
+"id": "c2-red-herring",
+"en": "Red herring",
+"topic": "arts-rare",
+"es": "Pista falsa",
+"fr": "Fausse piste"
+},
+{
+"id": "c2-motif",
+"en": "Motif",
+"topic": "arts-rare",
+"es": "Motivo (leitmotiv)",
+"fr": "Motif (leitmotiv)"
+},
+{
+"id": "c2-frame-narrative",
+"en": "Frame narrative",
+"topic": "arts-rare",
+"es": "Relato enmarcado",
+"fr": "Récit-cadre"
+},
+{
+"id": "c2-denouement",
+"en": "Denouement",
+"topic": "arts-rare",
+"es": "Desenlace",
+"fr": "Dénouement"
+},
+{
+"id": "c2-satire",
+"en": "Satire",
+"topic": "arts-rare",
+"es": "Sátira",
+"fr": "Satire"
+},
+{
+"id": "c2-parody",
+"en": "Parody",
+"topic": "arts-rare",
+"es": "Parodia",
+"fr": "Parodie"
+},
+{
+"id": "c2-allegory",
+"en": "Allegory",
+"topic": "arts-rare",
+"es": "Alegoría",
+"fr": "Allégorie"
+},
+{
+"id": "c2-memoir",
+"en": "Memoir",
+"topic": "arts-rare",
+"es": "Memorias",
+"fr": "Mémoires"
+},
+{
+"id": "c2-anthology",
+"en": "Anthology",
+"topic": "arts-rare",
+"es": "Antología",
+"fr": "Anthologie"
+},
+{
+"id": "c2-manuscript",
+"en": "Manuscript",
+"topic": "arts-rare",
+"es": "Manuscrito",
+"fr": "Manuscrit"
+},
+{
+"id": "c2-prose",
+"en": "Prose",
+"topic": "arts-rare",
+"es": "Prosa",
+"fr": "Prose"
+},
+{
+"id": "c2-couplet",
+"en": "Couplet",
+"topic": "arts-rare",
+"es": "Pareado",
+"fr": "Distique"
+},
+{
+"id": "c2-stanza",
+"en": "Stanza",
+"topic": "arts-rare",
+"es": "Estrofa",
+"fr": "Strophe"
+},
+{
+"id": "c2-sonnet",
+"en": "Sonnet",
+"topic": "arts-rare",
+"es": "Soneto",
+"fr": "Sonnet"
+},
+{
+"id": "c2-alliteration",
+"en": "Alliteration",
+"topic": "arts-rare",
+"es": "Aliteración",
+"fr": "Allitération"
+},
+{
+"id": "c2-meter-poetry",
+"en": "Meter (poetry)",
+"topic": "arts-rare",
+"es": "Métrica",
+"fr": "Mètre (métrique)"
+},
+{
+"id": "c2-aesthetic",
+"en": "Aesthetic",
+"topic": "arts-rare",
+"es": "Estética",
+"fr": "Esthétique"
+},
+{
+"id": "c2-avant-garde",
+"en": "Avant-garde",
+"topic": "arts-rare",
+"es": "Vanguardia",
+"fr": "Avant-garde"
+},
+{
+"id": "c2-baroque",
+"en": "Baroque",
+"topic": "arts-rare",
+"es": "Barroco",
+"fr": "Baroque"
+},
+{
+"id": "c2-impressionism",
+"en": "Impressionism",
+"topic": "arts-rare",
+"es": "Impresionismo",
+"fr": "Impressionnisme"
+},
+{
+"id": "c2-surrealism",
+"en": "Surrealism",
+"topic": "arts-rare",
+"es": "Surrealismo",
+"fr": "Surréalisme"
+},
+{
+"id": "c2-still-life",
+"en": "Still life",
+"topic": "arts-rare",
+"es": "Bodegón (naturaleza muerta)",
+"fr": "Nature morte"
+},
+{
+"id": "c2-charcoal-drawing",
+"en": "Charcoal drawing",
+"topic": "arts-rare",
+"es": "Dibujo al carboncillo",
+"fr": "Fusain"
+},
+{
+"id": "c2-etching",
+"en": "Etching",
+"topic": "arts-rare",
+"es": "Aguafuerte (grabado)",
+"fr": "Eau-forte (gravure)"
+},
+{
+"id": "c2-bust-sculpture",
+"en": "Bust (sculpture)",
+"topic": "arts-rare",
+"es": "Busto",
+"fr": "Buste"
+},
+{
+"id": "c2-chisel",
+"en": "Chisel",
+"topic": "arts-rare",
+"es": "Cincel",
+"fr": "Ciseau (burin)"
+},
+{
+"id": "c2-easel",
+"en": "Easel",
+"topic": "arts-rare",
+"es": "Caballete",
+"fr": "Chevalet"
+},
+{
+"id": "c2-palette",
+"en": "Palette",
+"topic": "arts-rare",
+"es": "Paleta",
+"fr": "Palette"
+},
+{
+"id": "c2-overture",
+"en": "Overture",
+"topic": "arts-rare",
+"es": "Obertura",
+"fr": "Ouverture"
+},
+{
+"id": "c2-aria",
+"en": "Aria",
+"topic": "arts-rare",
+"es": "Aria",
+"fr": "Aria (air)"
+},
+{
+"id": "c2-encore",
+"en": "Encore",
+"topic": "arts-rare",
+"es": "Bis",
+"fr": "Rappel (bis)"
+},
+{
+"id": "c2-bandwidth",
+"en": "Bandwidth",
+"topic": "tech-rare",
+"es": "Ancho de banda",
+"fr": "Bande passante"
+},
+{
+"id": "c2-jitter",
+"en": "Jitter",
+"topic": "tech-rare",
+"es": "Fluctuación (jitter)",
+"fr": "Gigue (jitter)"
+},
+{
+"id": "c2-throughput",
+"en": "Throughput",
+"topic": "tech-rare",
+"es": "Rendimiento (caudal)",
+"fr": "Débit"
+},
+{
+"id": "c2-hashing",
+"en": "Hashing",
+"topic": "tech-rare",
+"es": "Hash (función resumen)",
+"fr": "Hachage"
+},
+{
+"id": "c2-intrusion-detection",
+"en": "Intrusion detection",
+"topic": "tech-rare",
+"es": "Detección de intrusiones",
+"fr": "Détection d’intrusion"
+},
+{
+"id": "c2-vulnerability-security",
+"en": "Vulnerability (security)",
+"topic": "tech-rare",
+"es": "Vulnerabilidad",
+"fr": "Faille (vulnérabilité)"
+},
+{
+"id": "c2-hotfix",
+"en": "Hotfix",
+"topic": "tech-rare",
+"es": "Corrección urgente (hotfix)",
+"fr": "Correctif urgent"
+},
+{
+"id": "c2-backlog",
+"en": "Backlog",
+"topic": "tech-rare",
+"es": "Trabajo pendiente (acumulado)",
+"fr": "Arriéré (backlog)"
+},
+{
+"id": "c2-rollout",
+"en": "Rollout",
+"topic": "tech-rare",
+"es": "Despliegue (lanzamiento)",
+"fr": "Déploiement"
+},
+{
+"id": "c2-rollback",
+"en": "Rollback",
+"topic": "tech-rare",
+"es": "Reversión",
+"fr": "Retour arrière"
+},
+{
+"id": "c2-uptime",
+"en": "Uptime",
+"topic": "tech-rare",
+"es": "Tiempo de actividad",
+"fr": "Temps de fonctionnement (disponibilité)"
+},
+{
+"id": "c2-redundancy-backup",
+"en": "Redundancy (backup)",
+"topic": "tech-rare",
+"es": "Redundancia",
+"fr": "Redondance"
+},
+{
+"id": "c2-load-balancing",
+"en": "Load balancing",
+"topic": "tech-rare",
+"es": "Balanceo de carga",
+"fr": "Répartition de charge"
+},
+{
+"id": "c2-legacy-system",
+"en": "Legacy system",
+"topic": "tech-rare",
+"es": "Sistema heredado",
+"fr": "Système hérité (existant)"
+},
+{
+"id": "c2-copyleft",
+"en": "Copyleft",
+"topic": "tech-rare",
+"es": "Copyleft",
+"fr": "Copyleft (gauche d’auteur)"
+},
+{
+"id": "c2-proprietary",
+"en": "Proprietary",
+"topic": "tech-rare",
+"es": "Propietario (privativo)",
+"fr": "Propriétaire"
+},
+{
+"id": "c2-interoperability",
+"en": "Interoperability",
+"topic": "tech-rare",
+"es": "Interoperabilidad",
+"fr": "Interopérabilité"
+},
+{
+"id": "c2-passkey",
+"en": "Passkey",
+"topic": "tech-rare",
+"es": "Llave de acceso",
+"fr": "Clé d’accès (passkey)"
+},
+{
+"id": "c2-social-engineering",
+"en": "Social engineering",
+"topic": "tech-rare",
+"es": "Ingeniería social",
+"fr": "Ingénierie sociale"
+},
+{
+"id": "c2-data-breach",
+"en": "Data breach",
+"topic": "tech-rare",
+"es": "Filtración de datos",
+"fr": "Fuite de données"
+},
+{
+"id": "c2-cache",
+"en": "Cache",
+"topic": "tech-rare",
+"es": "Caché",
+"fr": "Cache (mémoire cache)"
+},
+{
+"id": "c2-query",
+"en": "Query",
+"topic": "tech-rare",
+"es": "Consulta",
+"fr": "Requête"
+},
+{
+"id": "c2-metadata",
+"en": "Metadata",
+"topic": "tech-rare",
+"es": "Metadatos",
+"fr": "Métadonnées"
+},
+{
+"id": "c2-placeholder",
+"en": "Placeholder",
+"topic": "tech-rare",
+"es": "Marcador de posición",
+"fr": "Espace réservé (texte provisoire)"
+},
+{
+"id": "c2-workaround",
+"en": "Workaround",
+"topic": "tech-rare",
+"es": "Solución provisional (apaño)",
+"fr": "Solution de contournement"
+},
+{
+"id": "c2-bottleneck",
+"en": "Bottleneck",
+"topic": "tech-rare",
+"es": "Cuello de botella",
+"fr": "Goulot d’étranglement"
+},
+{
+"id": "c2-edge-case",
+"en": "Edge case",
+"topic": "tech-rare",
+"es": "Caso límite",
+"fr": "Cas limite"
+},
+{
+"id": "c2-deprecated",
+"en": "Deprecated",
+"topic": "tech-rare",
+"es": "Obsoleto (en desuso)",
+"fr": "Obsolète (déconseillé)"
+},
+{
+"id": "c2-sandbox",
+"en": "Sandbox",
+"topic": "tech-rare",
+"es": "Entorno de pruebas (sandbox)",
+"fr": "Bac à sable"
+},
+{
+"id": "c2-telemetry",
+"en": "Telemetry",
+"topic": "tech-rare",
+"es": "Telemetría",
+"fr": "Télémétrie"
+},
+{
+"id": "c2-algorithmic-bias",
+"en": "Algorithmic bias",
+"topic": "tech-rare",
+"es": "Sesgo algorítmico",
+"fr": "Biais algorithmique"
+},
+{
+"id": "c2-overfitting",
+"en": "Overfitting",
+"topic": "tech-rare",
+"es": "Sobreajuste",
+"fr": "Surapprentissage"
+},
+{
+"id": "c2-large-language-model",
+"en": "Large language model",
+"topic": "tech-rare",
+"es": "Modelo de lenguaje grande",
+"fr": "Grand modèle de langage"
+},
+{
+"id": "c2-quantum-computing",
+"en": "Quantum computing",
+"topic": "tech-rare",
+"es": "Computación cuántica",
+"fr": "Informatique quantique"
+},
+{
+"id": "c2-semiconductor",
+"en": "Semiconductor",
+"topic": "tech-rare",
+"es": "Semiconductor",
+"fr": "Semi-conducteur"
+},
+{
+"id": "c2-working-capital",
+"en": "Working capital",
+"topic": "money-rare",
+"es": "Capital circulante",
+"fr": "Fonds de roulement"
+},
+{
+"id": "c2-solvency",
+"en": "Solvency",
+"topic": "money-rare",
+"es": "Solvencia",
+"fr": "Solvabilité"
+},
+{
+"id": "c2-insolvency",
+"en": "Insolvency",
+"topic": "money-rare",
+"es": "Insolvencia",
+"fr": "Insolvabilité"
+},
+{
+"id": "c2-receivership",
+"en": "Receivership",
+"topic": "money-rare",
+"es": "Administración judicial",
+"fr": "Redressement judiciaire (mise sous séquestre)"
+},
+{
+"id": "c2-leverage-finance",
+"en": "Leverage (finance)",
+"topic": "money-rare",
+"es": "Apalancamiento",
+"fr": "Effet de levier"
+},
+{
+"id": "c2-hedge-finance",
+"en": "Hedge (finance)",
+"topic": "money-rare",
+"es": "Cobertura",
+"fr": "Couverture"
+},
+{
+"id": "c2-yield-finance",
+"en": "Yield (finance)",
+"topic": "money-rare",
+"es": "Rendimiento",
+"fr": "Rendement"
+},
+{
+"id": "c2-share-buyback",
+"en": "Share buyback",
+"topic": "money-rare",
+"es": "Recompra de acciones",
+"fr": "Rachat d’actions"
+},
+{
+"id": "c2-equity-ownership",
+"en": "Equity (ownership)",
+"topic": "money-rare",
+"es": "Capital (patrimonio neto)",
+"fr": "Capitaux propres (fonds propres)"
+},
+{
+"id": "c2-treasury-bill",
+"en": "Treasury bill",
+"topic": "money-rare",
+"es": "Letra del Tesoro",
+"fr": "Bon du Trésor"
+},
+{
+"id": "c2-asset-allocation",
+"en": "Asset allocation",
+"topic": "money-rare",
+"es": "Asignación de activos",
+"fr": "Allocation d’actifs"
+},
+{
+"id": "c2-volatility",
+"en": "Volatility",
+"topic": "money-rare",
+"es": "Volatilidad",
+"fr": "Volatilité"
+},
+{
+"id": "c2-bull-market",
+"en": "Bull market",
+"topic": "money-rare",
+"es": "Mercado alcista",
+"fr": "Marché haussier"
+},
+{
+"id": "c2-bear-market",
+"en": "Bear market",
+"topic": "money-rare",
+"es": "Mercado bajista",
+"fr": "Marché baissier"
+},
+{
+"id": "c2-downturn",
+"en": "Downturn",
+"topic": "money-rare",
+"es": "Desaceleración (recesión)",
+"fr": "Ralentissement (repli)"
+},
+{
+"id": "c2-stagflation",
+"en": "Stagflation",
+"topic": "money-rare",
+"es": "Estanflación",
+"fr": "Stagflation"
+},
+{
+"id": "c2-deflation",
+"en": "Deflation",
+"topic": "money-rare",
+"es": "Deflación",
+"fr": "Déflation"
+},
+{
+"id": "c2-interest-rate-hike",
+"en": "Interest rate hike",
+"topic": "money-rare",
+"es": "Subida de tipos de interés",
+"fr": "Hausse des taux d’intérêt"
+},
+{
+"id": "c2-fiscal-policy",
+"en": "Fiscal policy",
+"topic": "money-rare",
+"es": "Política fiscal",
+"fr": "Politique budgétaire"
+},
+{
+"id": "c2-monetary-policy",
+"en": "Monetary policy",
+"topic": "money-rare",
+"es": "Política monetaria",
+"fr": "Politique monétaire"
+},
+{
+"id": "c2-subsidy",
+"en": "Subsidy",
+"topic": "money-rare",
+"es": "Subvención",
+"fr": "Subvention"
+},
+{
+"id": "c2-trade-quota",
+"en": "Trade quota",
+"topic": "money-rare",
+"es": "Cuota (contingente) comercial",
+"fr": "Quota (contingent) commercial"
+},
+{
+"id": "c2-embargo",
+"en": "Embargo",
+"topic": "money-rare",
+"es": "Embargo",
+"fr": "Embargo"
+},
+{
+"id": "c2-belt-tightening",
+"en": "Belt-tightening",
+"topic": "money-rare",
+"es": "Apretarse el cinturón",
+"fr": "Serrage de ceinture"
+},
+{
+"id": "c2-bailout",
+"en": "Bailout",
+"topic": "money-rare",
+"es": "Rescate (financiero)",
+"fr": "Renflouement (sauvetage)"
+},
+{
+"id": "c2-windfall",
+"en": "Windfall",
+"topic": "money-rare",
+"es": "Ganancia inesperada",
+"fr": "Aubaine (manne)"
+},
+{
+"id": "c2-nest-egg",
+"en": "Nest egg",
+"topic": "money-rare",
+"es": "Ahorros (colchón)",
+"fr": "Bas de laine (pécule)"
+},
+{
+"id": "c2-slush-fund",
+"en": "Slush fund",
+"topic": "money-rare",
+"es": "Fondo de reptiles (caja B)",
+"fr": "Caisse noire"
+},
+{
+"id": "c2-kickback",
+"en": "Kickback",
+"topic": "money-rare",
+"es": "Comisión ilegal (mordida)",
+"fr": "Pot-de-vin (dessous-de-table)"
+},
+{
+"id": "c2-money-laundering",
+"en": "Money laundering",
+"topic": "money-rare",
+"es": "Blanqueo de capitales",
+"fr": "Blanchiment d’argent"
+},
+{
+"id": "c2-tax-evasion",
+"en": "Tax evasion",
+"topic": "money-rare",
+"es": "Evasión fiscal",
+"fr": "Fraude fiscale"
+},
+{
+"id": "c2-tax-loophole",
+"en": "Tax loophole",
+"topic": "money-rare",
+"es": "Laguna fiscal",
+"fr": "Niche fiscale (faille)"
+},
+{
+"id": "c2-underwriter",
+"en": "Underwriter",
+"topic": "money-rare",
+"es": "Asegurador (suscriptor)",
+"fr": "Assureur (souscripteur)"
+},
+{
+"id": "c2-sinking-fund",
+"en": "Sinking fund",
+"topic": "money-rare",
+"es": "Fondo de amortización",
+"fr": "Fonds d’amortissement"
+},
+{
+"id": "c2-arbitrage",
+"en": "Arbitrage",
+"topic": "money-rare",
+"es": "Arbitraje (financiero)",
+"fr": "Arbitrage"
+},
+{
+"id": "c2-freight",
+"en": "Freight",
+"topic": "transport-rare",
+"es": "Flete (carga)",
+"fr": "Fret"
+},
+{
+"id": "c2-cargo-hold",
+"en": "Cargo hold",
+"topic": "transport-rare",
+"es": "Bodega de carga",
+"fr": "Soute (cale)"
+},
+{
+"id": "c2-consignment",
+"en": "Consignment",
+"topic": "transport-rare",
+"es": "Envío (remesa)",
+"fr": "Envoi (expédition)"
+},
+{
+"id": "c2-customs-clearance",
+"en": "Customs clearance",
+"topic": "transport-rare",
+"es": "Despacho de aduanas",
+"fr": "Dédouanement"
+},
+{
+"id": "c2-red-eye-flight",
+"en": "Red-eye flight",
+"topic": "transport-rare",
+"es": "Vuelo nocturno",
+"fr": "Vol de nuit"
+},
+{
+"id": "c2-turbulence",
+"en": "Turbulence",
+"topic": "transport-rare",
+"es": "Turbulencia",
+"fr": "Turbulences"
+},
+{
+"id": "c2-taxiing",
+"en": "Taxiing",
+"topic": "transport-rare",
+"es": "Rodaje (en pista)",
+"fr": "Roulage"
+},
+{
+"id": "c2-cockpit",
+"en": "Cockpit",
+"topic": "transport-rare",
+"es": "Cabina de mando",
+"fr": "Cockpit (poste de pilotage)"
+},
+{
+"id": "c2-overhead-compartment",
+"en": "Overhead compartment",
+"topic": "transport-rare",
+"es": "Compartimento superior",
+"fr": "Compartiment à bagages (coffre)"
+},
+{
+"id": "c2-aisle-seat",
+"en": "Aisle seat",
+"topic": "transport-rare",
+"es": "Asiento de pasillo",
+"fr": "Siège côté couloir"
+},
+{
+"id": "c2-boarding-pass",
+"en": "Boarding pass",
+"topic": "transport-rare",
+"es": "Tarjeta de embarque",
+"fr": "Carte d’embarquement"
+},
+{
+"id": "c2-baggage-carousel",
+"en": "Baggage carousel",
+"topic": "transport-rare",
+"es": "Cinta de equipajes",
+"fr": "Tapis à bagages"
+},
+{
+"id": "c2-jet-bridge",
+"en": "Jet bridge",
+"topic": "transport-rare",
+"es": "Pasarela (finger)",
+"fr": "Passerelle"
+},
+{
+"id": "c2-tailgating-driving",
+"en": "Tailgating (driving)",
+"topic": "transport-rare",
+"es": "Conducir pegado (al de delante)",
+"fr": "Coller au pare-chocs"
+},
+{
+"id": "c2-gridlock",
+"en": "Gridlock",
+"topic": "transport-rare",
+"es": "Atasco total (colapso)",
+"fr": "Embouteillage total (paralysie)"
+},
+{
+"id": "c2-diversion-route",
+"en": "Diversion (route)",
+"topic": "transport-rare",
+"es": "Desvío (de tráfico)",
+"fr": "Déviation (de circulation)"
+},
+{
+"id": "c2-interchange-highway",
+"en": "Interchange (highway)",
+"topic": "transport-rare",
+"es": "Nudo (enlace de autopista)",
+"fr": "Échangeur"
+},
+{
+"id": "c2-overpass",
+"en": "Overpass",
+"topic": "transport-rare",
+"es": "Paso elevado",
+"fr": "Viaduc (passage supérieur)"
+},
+{
+"id": "c2-underpass",
+"en": "Underpass",
+"topic": "transport-rare",
+"es": "Paso subterráneo",
+"fr": "Passage souterrain"
+},
+{
+"id": "c2-toll-booth",
+"en": "Toll booth",
+"topic": "transport-rare",
+"es": "Peaje (cabina)",
+"fr": "Poste de péage"
+},
+{
+"id": "c2-hard-shoulder",
+"en": "Hard shoulder",
+"topic": "transport-rare",
+"es": "Arcén",
+"fr": "Bande d’arrêt d’urgence"
+},
+{
+"id": "c2-speed-bump",
+"en": "Speed bump",
+"topic": "transport-rare",
+"es": "Badén (lomo)",
+"fr": "Ralentisseur (dos-d’âne)"
+},
+{
+"id": "c2-blind-spot",
+"en": "Blind spot",
+"topic": "transport-rare",
+"es": "Punto ciego (ángulo muerto)",
+"fr": "Angle mort"
+},
+{
+"id": "c2-hazard-lights",
+"en": "Hazard lights",
+"topic": "transport-rare",
+"es": "Luces de emergencia",
+"fr": "Feux de détresse (warnings)"
+},
+{
+"id": "c2-windshield-wiper",
+"en": "Windshield wiper",
+"topic": "transport-rare",
+"es": "Limpiaparabrisas",
+"fr": "Essuie-glace"
+},
+{
+"id": "c2-clutch-car",
+"en": "Clutch (car)",
+"topic": "transport-rare",
+"es": "Embrague",
+"fr": "Embrayage"
+},
+{
+"id": "c2-handbrake",
+"en": "Handbrake",
+"topic": "transport-rare",
+"es": "Freno de mano",
+"fr": "Frein à main"
+},
+{
+"id": "c2-odometer",
+"en": "Odometer",
+"topic": "transport-rare",
+"es": "Cuentakilómetros",
+"fr": "Compteur kilométrique"
+},
+{
+"id": "c2-tow-truck",
+"en": "Tow truck",
+"topic": "transport-rare",
+"es": "Grúa",
+"fr": "Dépanneuse"
+},
+{
+"id": "c2-commute-noun",
+"en": "Commute (noun)",
+"topic": "transport-rare",
+"es": "Trayecto (al trabajo)",
+"fr": "Trajet (domicile-travail)"
+},
+{
+"id": "c2-numerator",
+"en": "Numerator",
+"topic": "numbers-math-rare",
+"es": "Numerador",
+"fr": "Numérateur"
+},
+{
+"id": "c2-denominator",
+"en": "Denominator",
+"topic": "numbers-math-rare",
+"es": "Denominador",
+"fr": "Dénominateur"
+},
+{
+"id": "c2-exponent",
+"en": "Exponent",
+"topic": "numbers-math-rare",
+"es": "Exponente",
+"fr": "Exposant"
+},
+{
+"id": "c2-square-root",
+"en": "Square root",
+"topic": "numbers-math-rare",
+"es": "Raíz cuadrada",
+"fr": "Racine carrée"
+},
+{
+"id": "c2-decimal-point",
+"en": "Decimal point",
+"topic": "numbers-math-rare",
+"es": "Coma decimal",
+"fr": "Virgule (décimale)"
+},
+{
+"id": "c2-remainder",
+"en": "Remainder",
+"topic": "numbers-math-rare",
+"es": "Resto",
+"fr": "Reste"
+},
+{
+"id": "c2-prime-number",
+"en": "Prime number",
+"topic": "numbers-math-rare",
+"es": "Número primo",
+"fr": "Nombre premier"
+},
+{
+"id": "c2-integer",
+"en": "Integer",
+"topic": "numbers-math-rare",
+"es": "Número entero",
+"fr": "Nombre entier"
+},
+{
+"id": "c2-quotient",
+"en": "Quotient",
+"topic": "numbers-math-rare",
+"es": "Cociente",
+"fr": "Quotient"
+},
+{
+"id": "c2-percentile",
+"en": "Percentile",
+"topic": "numbers-math-rare",
+"es": "Percentil",
+"fr": "Percentile"
+},
+{
+"id": "c2-mean-average",
+"en": "Mean (average)",
+"topic": "numbers-math-rare",
+"es": "Media",
+"fr": "Moyenne"
+},
+{
+"id": "c2-median",
+"en": "Median",
+"topic": "numbers-math-rare",
+"es": "Mediana",
+"fr": "Médiane"
+},
+{
+"id": "c2-outlier",
+"en": "Outlier",
+"topic": "numbers-math-rare",
+"es": "Valor atípico",
+"fr": "Valeur aberrante"
+},
+{
+"id": "c2-standard-deviation",
+"en": "Standard deviation",
+"topic": "numbers-math-rare",
+"es": "Desviación estándar",
+"fr": "Écart-type"
+},
+{
+"id": "c2-variance",
+"en": "Variance",
+"topic": "numbers-math-rare",
+"es": "Varianza",
+"fr": "Variance"
+},
+{
+"id": "c2-margin-of-error",
+"en": "Margin of error",
+"topic": "numbers-math-rare",
+"es": "Margen de error",
+"fr": "Marge d’erreur"
+},
+{
+"id": "c2-sample-size",
+"en": "Sample size",
+"topic": "numbers-math-rare",
+"es": "Tamaño de la muestra",
+"fr": "Taille de l’échantillon"
+},
+{
+"id": "c2-exponential-growth",
+"en": "Exponential growth",
+"topic": "numbers-math-rare",
+"es": "Crecimiento exponencial",
+"fr": "Croissance exponentielle"
+},
+{
+"id": "c2-order-of-magnitude",
+"en": "Order of magnitude",
+"topic": "numbers-math-rare",
+"es": "Orden de magnitud",
+"fr": "Ordre de grandeur"
+},
+{
+"id": "c2-rounding",
+"en": "Rounding",
+"topic": "numbers-math-rare",
+"es": "Redondeo",
+"fr": "Arrondi"
+},
+{
+"id": "c2-percentage-point",
+"en": "Percentage point",
+"topic": "numbers-math-rare",
+"es": "Punto porcentual",
+"fr": "Point de pourcentage"
+},
+{
+"id": "c2-threefold",
+"en": "Threefold",
+"topic": "numbers-math-rare",
+"es": "Triple (por tres)",
+"fr": "Triple (au triple)"
+},
+{
+"id": "c2-a-dozen",
+"en": "A dozen",
+"topic": "numbers-math-rare",
+"es": "Una docena",
+"fr": "Une douzaine"
+},
+{
+"id": "c2-round-number",
+"en": "Round number",
+"topic": "numbers-math-rare",
+"es": "Número redondo",
+"fr": "Chiffre rond"
+},
+{
+"id": "c2-odds-probability",
+"en": "Odds (probability)",
+"topic": "numbers-math-rare",
+"es": "Probabilidades",
+"fr": "Chances (probabilités)"
+},
+{
+"id": "c2-inseam",
+"en": "Inseam",
+"topic": "clothing-appearance-rare",
+"es": "Entrepierna (largo interior)",
+"fr": "Entrejambe"
+},
+{
+"id": "c2-dart-sewing",
+"en": "Dart (sewing)",
+"topic": "clothing-appearance-rare",
+"es": "Pinza (costura)",
+"fr": "Pince (couture)"
+},
+{
+"id": "c2-lapel",
+"en": "Lapel",
+"topic": "clothing-appearance-rare",
+"es": "Solapa",
+"fr": "Revers"
+},
+{
+"id": "c2-cuff",
+"en": "Cuff",
+"topic": "clothing-appearance-rare",
+"es": "Puño",
+"fr": "Poignet (manchette)"
+},
+{
+"id": "c2-cufflinks",
+"en": "Cufflinks",
+"topic": "clothing-appearance-rare",
+"es": "Gemelos",
+"fr": "Boutons de manchette"
+},
+{
+"id": "c2-gusset",
+"en": "Gusset",
+"topic": "clothing-appearance-rare",
+"es": "Escudete (refuerzo)",
+"fr": "Gousset (soufflet)"
+},
+{
+"id": "c2-pleat",
+"en": "Pleat",
+"topic": "clothing-appearance-rare",
+"es": "Pliegue (tabla)",
+"fr": "Pli"
+},
+{
+"id": "c2-tailored",
+"en": "Tailored",
+"topic": "clothing-appearance-rare",
+"es": "A medida",
+"fr": "Sur mesure"
+},
+{
+"id": "c2-bespoke",
+"en": "Bespoke",
+"topic": "clothing-appearance-rare",
+"es": "Hecho a medida",
+"fr": "Sur mesure (personnalisé)"
+},
+{
+"id": "c2-off-the-rack",
+"en": "Off-the-rack",
+"topic": "clothing-appearance-rare",
+"es": "De confección (prêt-à-porter)",
+"fr": "Prêt-à-porter"
+},
+{
+"id": "c2-threadbare",
+"en": "Threadbare",
+"topic": "clothing-appearance-rare",
+"es": "Raído",
+"fr": "Élimé (usé jusqu’à la corde)"
+},
+{
+"id": "c2-frayed",
+"en": "Frayed",
+"topic": "clothing-appearance-rare",
+"es": "Deshilachado",
+"fr": "Effiloché"
+},
+{
+"id": "c2-creased",
+"en": "Creased",
+"topic": "clothing-appearance-rare",
+"es": "Arrugado",
+"fr": "Froissé"
+},
+{
+"id": "c2-dapper",
+"en": "Dapper",
+"topic": "clothing-appearance-rare",
+"es": "Elegante (apuesto)",
+"fr": "Pimpant (tiré à quatre épingles)"
+},
+{
+"id": "c2-disheveled",
+"en": "Disheveled",
+"topic": "clothing-appearance-rare",
+"es": "Desaliñado",
+"fr": "Débraillé (échevelé)"
+},
+{
+"id": "c2-scruffy",
+"en": "Scruffy",
+"topic": "clothing-appearance-rare",
+"es": "Desaliñado (andrajoso)",
+"fr": "Négligé (débraillé)"
+},
+{
+"id": "c2-garish",
+"en": "Garish",
+"topic": "clothing-appearance-rare",
+"es": "Chillón",
+"fr": "Criard (tape-à-l’œil)"
+},
+{
+"id": "c2-understated",
+"en": "Understated",
+"topic": "clothing-appearance-rare",
+"es": "Discreto (sobrio)",
+"fr": "Sobre (discret)"
+},
+{
+"id": "c2-flattering-clothes",
+"en": "Flattering (clothes)",
+"topic": "clothing-appearance-rare",
+"es": "Favorecedor",
+"fr": "Seyant (flatteur)"
+},
+{
+"id": "c2-baggy",
+"en": "Baggy",
+"topic": "clothing-appearance-rare",
+"es": "Holgado (ancho)",
+"fr": "Ample (large)"
+},
+{
+"id": "c2-snug",
+"en": "Snug",
+"topic": "clothing-appearance-rare",
+"es": "Ceñido (ajustado)",
+"fr": "Ajusté (moulant)"
+},
+{
+"id": "c2-stubble",
+"en": "Stubble",
+"topic": "clothing-appearance-rare",
+"es": "Barba incipiente",
+"fr": "Barbe de trois jours"
+},
+{
+"id": "c2-freckles",
+"en": "Freckles",
+"topic": "clothing-appearance-rare",
+"es": "Pecas",
+"fr": "Taches de rousseur"
+},
+{
+"id": "c2-dimple",
+"en": "Dimple",
+"topic": "clothing-appearance-rare",
+"es": "Hoyuelo",
+"fr": "Fossette"
+},
+{
+"id": "c2-crow-s-feet",
+"en": "Crow's feet",
+"topic": "clothing-appearance-rare",
+"es": "Patas de gallo",
+"fr": "Pattes-d’oie"
+},
+{
+"id": "c2-complexion",
+"en": "Complexion",
+"topic": "clothing-appearance-rare",
+"es": "Cutis (tez)",
+"fr": "Teint"
+},
+{
+"id": "c2-gaunt",
+"en": "Gaunt",
+"topic": "clothing-appearance-rare",
+"es": "Demacrado (enjuto)",
+"fr": "Émacié (décharné)"
+},
+{
+"id": "c2-stocky",
+"en": "Stocky",
+"topic": "clothing-appearance-rare",
+"es": "Fornido (robusto)",
+"fr": "Trapu"
+},
+{
+"id": "c2-lanky",
+"en": "Lanky",
+"topic": "clothing-appearance-rare",
+"es": "Larguirucho",
+"fr": "Dégingandé"
+},
+{
+"id": "c2-poised",
+"en": "Poised",
+"topic": "clothing-appearance-rare",
+"es": "Sereno (con aplomo)",
+"fr": "Posé (plein d’assurance)"
+}
+]

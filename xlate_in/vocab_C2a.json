@@ -1,0 +1,4223 @@
+[
+{
+"id": "c2-to-abate",
+"en": "To abate",
+"topic": "rare-verbs-1",
+"es": "Amainar",
+"fr": "S’apaiser (diminuer)"
+},
+{
+"id": "c2-to-abhor",
+"en": "To abhor",
+"topic": "rare-verbs-1",
+"es": "Aborrecer (detestar)",
+"fr": "Abhorrer"
+},
+{
+"id": "c2-to-abstain",
+"en": "To abstain",
+"topic": "rare-verbs-1",
+"es": "Abstenerse (de votar)",
+"fr": "S’abstenir (vote)"
+},
+{
+"id": "c2-to-accentuate",
+"en": "To accentuate",
+"topic": "rare-verbs-1",
+"es": "Acentuar",
+"fr": "Accentuer"
+},
+{
+"id": "c2-to-acquiesce",
+"en": "To acquiesce",
+"topic": "rare-verbs-1",
+"es": "Consentir (ceder)",
+"fr": "Acquiescer"
+},
+{
+"id": "c2-to-admonish",
+"en": "To admonish",
+"topic": "rare-verbs-1",
+"es": "Amonestar",
+"fr": "Admonester"
+},
+{
+"id": "c2-to-alleviate",
+"en": "To alleviate",
+"topic": "rare-verbs-1",
+"es": "Aliviar",
+"fr": "Soulager (alléger)"
+},
+{
+"id": "c2-to-amass",
+"en": "To amass",
+"topic": "rare-verbs-1",
+"es": "Amasar (acumular)",
+"fr": "Amasser"
+},
+{
+"id": "c2-to-appease",
+"en": "To appease",
+"topic": "rare-verbs-1",
+"es": "Apaciguar",
+"fr": "Apaiser"
+},
+{
+"id": "c2-to-ascribe",
+"en": "To ascribe",
+"topic": "rare-verbs-1",
+"es": "Atribuir",
+"fr": "Attribuer (imputer)"
+},
+{
+"id": "c2-to-augment",
+"en": "To augment",
+"topic": "rare-verbs-1",
+"es": "Aumentar (incrementar)",
+"fr": "Augmenter (accroître)"
+},
+{
+"id": "c2-to-avert",
+"en": "To avert",
+"topic": "rare-verbs-1",
+"es": "Evitar (impedir)",
+"fr": "Éviter (conjurer)"
+},
+{
+"id": "c2-to-beckon",
+"en": "To beckon",
+"topic": "rare-verbs-1",
+"es": "Hacer señas",
+"fr": "Faire signe (d’approcher)"
+},
+{
+"id": "c2-to-belittle",
+"en": "To belittle",
+"topic": "rare-verbs-1",
+"es": "Menospreciar",
+"fr": "Rabaisser"
+},
+{
+"id": "c2-to-bequeath",
+"en": "To bequeath",
+"topic": "rare-verbs-1",
+"es": "Legar",
+"fr": "Léguer"
+},
+{
+"id": "c2-to-beseech",
+"en": "To beseech",
+"topic": "rare-verbs-1",
+"es": "Suplicar (implorar)",
+"fr": "Implorer (supplier)"
+},
+{
+"id": "c2-to-bewilder",
+"en": "To bewilder",
+"topic": "rare-verbs-1",
+"es": "Desconcertar",
+"fr": "Déconcerter"
+},
+{
+"id": "c2-to-brandish",
+"en": "To brandish",
+"topic": "rare-verbs-1",
+"es": "Blandir",
+"fr": "Brandir"
+},
+{
+"id": "c2-to-castigate",
+"en": "To castigate",
+"topic": "rare-verbs-1",
+"es": "Castigar (reprender)",
+"fr": "Fustiger"
+},
+{
+"id": "c2-to-coalesce",
+"en": "To coalesce",
+"topic": "rare-verbs-1",
+"es": "Fusionarse",
+"fr": "Fusionner (se fondre)"
+},
+{
+"id": "c2-to-commend",
+"en": "To commend",
+"topic": "rare-verbs-1",
+"es": "Elogiar (encomiar)",
+"fr": "Louer (féliciter)"
+},
+{
+"id": "c2-to-concede",
+"en": "To concede",
+"topic": "rare-verbs-1",
+"es": "Conceder (admitir)",
+"fr": "Concéder"
+},
+{
+"id": "c2-to-concoct",
+"en": "To concoct",
+"topic": "rare-verbs-1",
+"es": "Inventar (tramar)",
+"fr": "Concocter"
+},
+{
+"id": "c2-to-confer",
+"en": "To confer",
+"topic": "rare-verbs-1",
+"es": "Conferir (otorgar)",
+"fr": "Conférer"
+},
+{
+"id": "c2-to-contend",
+"en": "To contend",
+"topic": "rare-verbs-1",
+"es": "Sostener (argumentar)",
+"fr": "Soutenir (affirmer)"
+},
+{
+"id": "c2-to-corroborate",
+"en": "To corroborate",
+"topic": "rare-verbs-1",
+"es": "Corroborar",
+"fr": "Corroborer"
+},
+{
+"id": "c2-to-aggravate",
+"en": "To aggravate",
+"topic": "rare-verbs-1",
+"es": "Agravar (empeorar)",
+"fr": "Aggraver (irriter)"
+},
+{
+"id": "c2-to-assail",
+"en": "To assail",
+"topic": "rare-verbs-1",
+"es": "Asaltar (atacar)",
+"fr": "Assaillir"
+},
+{
+"id": "c2-to-chastise",
+"en": "To chastise",
+"topic": "rare-verbs-1",
+"es": "Reprender (castigar)",
+"fr": "Châtier (réprimander)"
+},
+{
+"id": "c2-to-condescend",
+"en": "To condescend",
+"topic": "rare-verbs-1",
+"es": "Condescender",
+"fr": "Condescendre"
+},
+{
+"id": "c2-to-debunk",
+"en": "To debunk",
+"topic": "rare-verbs-2",
+"es": "Desmentir",
+"fr": "Démystifier"
+},
+{
+"id": "c2-to-decipher",
+"en": "To decipher",
+"topic": "rare-verbs-2",
+"es": "Descifrar",
+"fr": "Déchiffrer"
+},
+{
+"id": "c2-to-decry",
+"en": "To decry",
+"topic": "rare-verbs-2",
+"es": "Condenar (censurar)",
+"fr": "Dénoncer (décrier)"
+},
+{
+"id": "c2-to-deem",
+"en": "To deem",
+"topic": "rare-verbs-2",
+"es": "Considerar (juzgar)",
+"fr": "Juger (estimer)"
+},
+{
+"id": "c2-to-defer",
+"en": "To defer",
+"topic": "rare-verbs-2",
+"es": "Aplazar (diferir)",
+"fr": "Différer (reporter)"
+},
+{
+"id": "c2-to-delineate",
+"en": "To delineate",
+"topic": "rare-verbs-2",
+"es": "Delinear",
+"fr": "Délimiter"
+},
+{
+"id": "c2-to-denounce",
+"en": "To denounce",
+"topic": "rare-verbs-2",
+"es": "Denunciar",
+"fr": "Dénoncer"
+},
+{
+"id": "c2-to-deplete",
+"en": "To deplete",
+"topic": "rare-verbs-2",
+"es": "Agotar (mermar)",
+"fr": "Épuiser"
+},
+{
+"id": "c2-to-deride",
+"en": "To deride",
+"topic": "rare-verbs-2",
+"es": "Ridiculizar",
+"fr": "Tourner en dérision"
+},
+{
+"id": "c2-to-despair",
+"en": "To despair",
+"topic": "rare-verbs-2",
+"es": "Desesperarse",
+"fr": "Désespérer"
+},
+{
+"id": "c2-to-detain",
+"en": "To detain",
+"topic": "rare-verbs-2",
+"es": "Detener (retener)",
+"fr": "Détenir (retenir)"
+},
+{
+"id": "c2-to-deviate",
+"en": "To deviate",
+"topic": "rare-verbs-2",
+"es": "Desviarse",
+"fr": "Dévier"
+},
+{
+"id": "c2-to-disdain",
+"en": "To disdain",
+"topic": "rare-verbs-2",
+"es": "Desdeñar",
+"fr": "Dédaigner"
+},
+{
+"id": "c2-to-disperse",
+"en": "To disperse",
+"topic": "rare-verbs-2",
+"es": "Dispersar",
+"fr": "Disperser"
+},
+{
+"id": "c2-to-dissuade",
+"en": "To dissuade",
+"topic": "rare-verbs-2",
+"es": "Disuadir (desaconsejar)",
+"fr": "Dissuader (déconseiller)"
+},
+{
+"id": "c2-to-divulge",
+"en": "To divulge",
+"topic": "rare-verbs-2",
+"es": "Divulgar (revelar un secreto)",
+"fr": "Divulguer (révéler)"
+},
+{
+"id": "c2-to-dwindle",
+"en": "To dwindle",
+"topic": "rare-verbs-2",
+"es": "Menguar",
+"fr": "Diminuer (s’amenuiser)"
+},
+{
+"id": "c2-to-elude",
+"en": "To elude",
+"topic": "rare-verbs-2",
+"es": "Eludir (escapar)",
+"fr": "Échapper à"
+},
+{
+"id": "c2-to-emanate",
+"en": "To emanate",
+"topic": "rare-verbs-2",
+"es": "Emanar",
+"fr": "Émaner"
+},
+{
+"id": "c2-to-embellish",
+"en": "To embellish",
+"topic": "rare-verbs-2",
+"es": "Embellecer (adornar)",
+"fr": "Enjoliver"
+},
+{
+"id": "c2-to-encompass",
+"en": "To encompass",
+"topic": "rare-verbs-2",
+"es": "Abarcar",
+"fr": "Englober"
+},
+{
+"id": "c2-to-engender",
+"en": "To engender",
+"topic": "rare-verbs-2",
+"es": "Engendrar",
+"fr": "Engendrer"
+},
+{
+"id": "c2-to-enlighten",
+"en": "To enlighten",
+"topic": "rare-verbs-2",
+"es": "Iluminar (instruir)",
+"fr": "Éclairer (instruire)"
+},
+{
+"id": "c2-to-enthrall",
+"en": "To enthrall",
+"topic": "rare-verbs-2",
+"es": "Cautivar",
+"fr": "Captiver"
+},
+{
+"id": "c2-to-entice",
+"en": "To entice",
+"topic": "rare-verbs-2",
+"es": "Tentar (atraer)",
+"fr": "Attirer (allécher)"
+},
+{
+"id": "c2-to-envision",
+"en": "To envision",
+"topic": "rare-verbs-2",
+"es": "Imaginar (visualizar)",
+"fr": "Envisager (imaginer)"
+},
+{
+"id": "c2-to-evade",
+"en": "To evade",
+"topic": "rare-verbs-2",
+"es": "Evadir",
+"fr": "Éluder (se soustraire à)"
+},
+{
+"id": "c2-to-exalt",
+"en": "To exalt",
+"topic": "rare-verbs-2",
+"es": "Exaltar",
+"fr": "Exalter"
+},
+{
+"id": "c2-to-expedite",
+"en": "To expedite",
+"topic": "rare-verbs-2",
+"es": "Acelerar (agilizar)",
+"fr": "Accélérer (expédier)"
+},
+{
+"id": "c2-to-extol",
+"en": "To extol",
+"topic": "rare-verbs-2",
+"es": "Ensalzar",
+"fr": "Vanter (louer)"
+},
+{
+"id": "c2-to-fabricate",
+"en": "To fabricate",
+"topic": "rare-verbs-3",
+"es": "Fabricar (inventar)",
+"fr": "Fabriquer (inventer)"
+},
+{
+"id": "c2-to-falter",
+"en": "To falter",
+"topic": "rare-verbs-3",
+"es": "Vacilar (flaquear)",
+"fr": "Vaciller (fléchir)"
+},
+{
+"id": "c2-to-feign",
+"en": "To feign",
+"topic": "rare-verbs-3",
+"es": "Fingir (simular)",
+"fr": "Feindre"
+},
+{
+"id": "c2-to-flourish",
+"en": "To flourish",
+"topic": "rare-verbs-3",
+"es": "Florecer",
+"fr": "Prospérer (fleurir)"
+},
+{
+"id": "c2-to-forfeit",
+"en": "To forfeit",
+"topic": "rare-verbs-3",
+"es": "Perder (por incumplimiento)",
+"fr": "Perdre (par forfait)"
+},
+{
+"id": "c2-to-forgo",
+"en": "To forgo",
+"topic": "rare-verbs-3",
+"es": "Renunciar (prescindir)",
+"fr": "Renoncer à (se passer de)"
+},
+{
+"id": "c2-to-galvanize",
+"en": "To galvanize",
+"topic": "rare-verbs-3",
+"es": "Galvanizar (impulsar)",
+"fr": "Galvaniser"
+},
+{
+"id": "c2-to-garner",
+"en": "To garner",
+"topic": "rare-verbs-3",
+"es": "Cosechar (obtener)",
+"fr": "Récolter (recueillir)"
+},
+{
+"id": "c2-to-gloat",
+"en": "To gloat",
+"topic": "rare-verbs-3",
+"es": "Regodearse",
+"fr": "Jubiler (se réjouir méchamment)"
+},
+{
+"id": "c2-to-grapple",
+"en": "To grapple",
+"topic": "rare-verbs-3",
+"es": "Lidiar (forcejear)",
+"fr": "Se débattre avec"
+},
+{
+"id": "c2-to-harness",
+"en": "To harness",
+"topic": "rare-verbs-3",
+"es": "Aprovechar (canalizar)",
+"fr": "Exploiter (canaliser)"
+},
+{
+"id": "c2-to-heed",
+"en": "To heed",
+"topic": "rare-verbs-3",
+"es": "Hacer caso",
+"fr": "Tenir compte de"
+},
+{
+"id": "c2-to-hoard",
+"en": "To hoard",
+"topic": "rare-verbs-3",
+"es": "Acaparar",
+"fr": "Amasser (thésauriser)"
+},
+{
+"id": "c2-to-impart",
+"en": "To impart",
+"topic": "rare-verbs-3",
+"es": "Impartir (transmitir)",
+"fr": "Transmettre (communiquer)"
+},
+{
+"id": "c2-to-implore",
+"en": "To implore",
+"topic": "rare-verbs-3",
+"es": "Implorar",
+"fr": "Implorer"
+},
+{
+"id": "c2-to-incite",
+"en": "To incite",
+"topic": "rare-verbs-3",
+"es": "Incitar",
+"fr": "Inciter (attiser)"
+},
+{
+"id": "c2-to-inhibit",
+"en": "To inhibit",
+"topic": "rare-verbs-3",
+"es": "Inhibir",
+"fr": "Inhiber"
+},
+{
+"id": "c2-to-instill",
+"en": "To instill",
+"topic": "rare-verbs-3",
+"es": "Inculcar",
+"fr": "Inculquer"
+},
+{
+"id": "c2-to-intercede",
+"en": "To intercede",
+"topic": "rare-verbs-3",
+"es": "Interceder",
+"fr": "Intercéder"
+},
+{
+"id": "c2-to-intimidate",
+"en": "To intimidate",
+"topic": "rare-verbs-3",
+"es": "Intimidar",
+"fr": "Intimider"
+},
+{
+"id": "c2-to-jeopardize",
+"en": "To jeopardize",
+"topic": "rare-verbs-3",
+"es": "Poner en peligro",
+"fr": "Compromettre (mettre en péril)"
+},
+{
+"id": "c2-to-languish",
+"en": "To languish",
+"topic": "rare-verbs-3",
+"es": "Languidecer",
+"fr": "Languir"
+},
+{
+"id": "c2-to-lure",
+"en": "To lure",
+"topic": "rare-verbs-3",
+"es": "Atraer (con engaño)",
+"fr": "Attirer (appâter)"
+},
+{
+"id": "c2-to-marvel",
+"en": "To marvel",
+"topic": "rare-verbs-3",
+"es": "Maravillarse",
+"fr": "S’émerveiller"
+},
+{
+"id": "c2-to-meander",
+"en": "To meander",
+"topic": "rare-verbs-3",
+"es": "Serpentear",
+"fr": "Serpenter"
+},
+{
+"id": "c2-to-muster",
+"en": "To muster",
+"topic": "rare-verbs-3",
+"es": "Reunir (fuerzas)",
+"fr": "Rassembler (son courage)"
+},
+{
+"id": "c2-to-obliterate",
+"en": "To obliterate",
+"topic": "rare-verbs-3",
+"es": "Arrasar (borrar)",
+"fr": "Anéantir"
+},
+{
+"id": "c2-to-oscillate",
+"en": "To oscillate",
+"topic": "rare-verbs-3",
+"es": "Oscilar",
+"fr": "Osciller"
+},
+{
+"id": "c2-to-ostracize",
+"en": "To ostracize",
+"topic": "rare-verbs-3",
+"es": "Marginar (condenar al ostracismo)",
+"fr": "Ostraciser"
+},
+{
+"id": "c2-to-perpetuate",
+"en": "To perpetuate",
+"topic": "rare-verbs-3",
+"es": "Perpetuar",
+"fr": "Perpétuer"
+},
+{
+"id": "c2-to-permeate",
+"en": "To permeate",
+"topic": "rare-verbs-4",
+"es": "Impregnar (permear)",
+"fr": "Imprégner (pénétrer)"
+},
+{
+"id": "c2-to-plummet",
+"en": "To plummet",
+"topic": "rare-verbs-4",
+"es": "Desplomarse",
+"fr": "Chuter (s’effondrer)"
+},
+{
+"id": "c2-to-ponder",
+"en": "To ponder",
+"topic": "rare-verbs-4",
+"es": "Reflexionar (meditar)",
+"fr": "Méditer (réfléchir)"
+},
+{
+"id": "c2-to-preach",
+"en": "To preach",
+"topic": "rare-verbs-4",
+"es": "Predicar",
+"fr": "Prêcher"
+},
+{
+"id": "c2-to-procure",
+"en": "To procure",
+"topic": "rare-verbs-4",
+"es": "Procurar (conseguir)",
+"fr": "Se procurer"
+},
+{
+"id": "c2-to-proliferate",
+"en": "To proliferate",
+"topic": "rare-verbs-4",
+"es": "Proliferar",
+"fr": "Proliférer"
+},
+{
+"id": "c2-to-propel",
+"en": "To propel",
+"topic": "rare-verbs-4",
+"es": "Propulsar",
+"fr": "Propulser"
+},
+{
+"id": "c2-to-quell",
+"en": "To quell",
+"topic": "rare-verbs-4",
+"es": "Sofocar (reprimir)",
+"fr": "Réprimer (étouffer)"
+},
+{
+"id": "c2-to-ratify",
+"en": "To ratify",
+"topic": "rare-verbs-4",
+"es": "Ratificar",
+"fr": "Ratifier"
+},
+{
+"id": "c2-to-rebuke",
+"en": "To rebuke",
+"topic": "rare-verbs-4",
+"es": "Reprender",
+"fr": "Réprimander"
+},
+{
+"id": "c2-to-rebut",
+"en": "To rebut",
+"topic": "rare-verbs-4",
+"es": "Rebatir",
+"fr": "Réfuter"
+},
+{
+"id": "c2-to-recant",
+"en": "To recant",
+"topic": "rare-verbs-4",
+"es": "Retractarse",
+"fr": "Se rétracter"
+},
+{
+"id": "c2-to-redeem",
+"en": "To redeem",
+"topic": "rare-verbs-4",
+"es": "Redimir (canjear)",
+"fr": "Racheter (échanger)"
+},
+{
+"id": "c2-to-refute",
+"en": "To refute",
+"topic": "rare-verbs-4",
+"es": "Refutar",
+"fr": "Réfuter (démentir)"
+},
+{
+"id": "c2-to-relish",
+"en": "To relish",
+"topic": "rare-verbs-4",
+"es": "Saborear (disfrutar)",
+"fr": "Savourer"
+},
+{
+"id": "c2-to-renounce",
+"en": "To renounce",
+"topic": "rare-verbs-4",
+"es": "Renunciar (abjurar)",
+"fr": "Renoncer (abjurer)"
+},
+{
+"id": "c2-to-replenish",
+"en": "To replenish",
+"topic": "rare-verbs-4",
+"es": "Reponer",
+"fr": "Réapprovisionner"
+},
+{
+"id": "c2-to-reprimand",
+"en": "To reprimand",
+"topic": "rare-verbs-4",
+"es": "Amonestar (reprender)",
+"fr": "Réprimander (blâmer)"
+},
+{
+"id": "c2-to-repudiate",
+"en": "To repudiate",
+"topic": "rare-verbs-4",
+"es": "Repudiar",
+"fr": "Répudier"
+},
+{
+"id": "c2-to-resonate",
+"en": "To resonate",
+"topic": "rare-verbs-4",
+"es": "Resonar",
+"fr": "Résonner"
+},
+{
+"id": "c2-to-retaliate",
+"en": "To retaliate",
+"topic": "rare-verbs-4",
+"es": "Tomar represalias",
+"fr": "Riposter"
+},
+{
+"id": "c2-to-revere",
+"en": "To revere",
+"topic": "rare-verbs-4",
+"es": "Reverenciar",
+"fr": "Révérer"
+},
+{
+"id": "c2-to-revoke",
+"en": "To revoke",
+"topic": "rare-verbs-4",
+"es": "Revocar",
+"fr": "Révoquer"
+},
+{
+"id": "c2-to-saturate",
+"en": "To saturate",
+"topic": "rare-verbs-4",
+"es": "Saturar",
+"fr": "Saturer"
+},
+{
+"id": "c2-to-scorn",
+"en": "To scorn",
+"topic": "rare-verbs-4",
+"es": "Despreciar (desdeñar)",
+"fr": "Mépriser (dédaigner)"
+},
+{
+"id": "c2-to-squander",
+"en": "To squander",
+"topic": "rare-verbs-4",
+"es": "Despilfarrar",
+"fr": "Gaspiller (dilapider)"
+},
+{
+"id": "c2-to-stagnate",
+"en": "To stagnate",
+"topic": "rare-verbs-4",
+"es": "Estancarse",
+"fr": "Stagner"
+},
+{
+"id": "c2-to-stifle",
+"en": "To stifle",
+"topic": "rare-verbs-4",
+"es": "Sofocar (reprimir)",
+"fr": "Étouffer (réprimer)"
+},
+{
+"id": "c2-to-subside",
+"en": "To subside",
+"topic": "rare-verbs-4",
+"es": "Amainar (remitir)",
+"fr": "S’atténuer (retomber)"
+},
+{
+"id": "c2-to-succumb",
+"en": "To succumb",
+"topic": "rare-verbs-4",
+"es": "Sucumbir",
+"fr": "Succomber"
+},
+{
+"id": "c2-to-supplant",
+"en": "To supplant",
+"topic": "rare-verbs-5",
+"es": "Suplantar",
+"fr": "Supplanter"
+},
+{
+"id": "c2-to-surmise",
+"en": "To surmise",
+"topic": "rare-verbs-5",
+"es": "Conjeturar",
+"fr": "Conjecturer"
+},
+{
+"id": "c2-to-swindle",
+"en": "To swindle",
+"topic": "rare-verbs-5",
+"es": "Estafar",
+"fr": "Escroquer"
+},
+{
+"id": "c2-to-tarnish",
+"en": "To tarnish",
+"topic": "rare-verbs-5",
+"es": "Empañar (manchar)",
+"fr": "Ternir"
+},
+{
+"id": "c2-to-thwart",
+"en": "To thwart",
+"topic": "rare-verbs-5",
+"es": "Frustrar (impedir)",
+"fr": "Contrecarrer"
+},
+{
+"id": "c2-to-transcend",
+"en": "To transcend",
+"topic": "rare-verbs-5",
+"es": "Trascender",
+"fr": "Transcender"
+},
+{
+"id": "c2-to-unravel",
+"en": "To unravel",
+"topic": "rare-verbs-5",
+"es": "Desenmarañar",
+"fr": "Démêler"
+},
+{
+"id": "c2-to-usurp",
+"en": "To usurp",
+"topic": "rare-verbs-5",
+"es": "Usurpar",
+"fr": "Usurper"
+},
+{
+"id": "c2-to-vanquish",
+"en": "To vanquish",
+"topic": "rare-verbs-5",
+"es": "Vencer (derrotar)",
+"fr": "Vaincre"
+},
+{
+"id": "c2-to-venerate",
+"en": "To venerate",
+"topic": "rare-verbs-5",
+"es": "Venerar",
+"fr": "Vénérer"
+},
+{
+"id": "c2-to-vilify",
+"en": "To vilify",
+"topic": "rare-verbs-5",
+"es": "Vilipendiar",
+"fr": "Diffamer (vilipender)"
+},
+{
+"id": "c2-to-wane",
+"en": "To wane",
+"topic": "rare-verbs-5",
+"es": "Menguar (decaer)",
+"fr": "Décliner (décroître)"
+},
+{
+"id": "c2-to-wield",
+"en": "To wield",
+"topic": "rare-verbs-5",
+"es": "Empuñar (ejercer)",
+"fr": "Manier (exercer)"
+},
+{
+"id": "c2-to-writhe",
+"en": "To writhe",
+"topic": "rare-verbs-5",
+"es": "Retorcerse",
+"fr": "Se tordre"
+},
+{
+"id": "c2-to-yearn",
+"en": "To yearn",
+"topic": "rare-verbs-5",
+"es": "Anhelar",
+"fr": "Aspirer à (languir)"
+},
+{
+"id": "c2-to-beget",
+"en": "To beget",
+"topic": "rare-verbs-5",
+"es": "Engendrar (originar)",
+"fr": "Engendrer (produire)"
+},
+{
+"id": "c2-to-besiege",
+"en": "To besiege",
+"topic": "rare-verbs-5",
+"es": "Asediar",
+"fr": "Assiéger"
+},
+{
+"id": "c2-to-cajole",
+"en": "To cajole",
+"topic": "rare-verbs-5",
+"es": "Engatusar",
+"fr": "Cajoler (amadouer)"
+},
+{
+"id": "c2-to-coax",
+"en": "To coax",
+"topic": "rare-verbs-5",
+"es": "Persuadir (con halagos)",
+"fr": "Amadouer"
+},
+{
+"id": "c2-to-deplore",
+"en": "To deplore",
+"topic": "rare-verbs-5",
+"es": "Deplorar",
+"fr": "Déplorer"
+},
+{
+"id": "c2-to-disparage",
+"en": "To disparage",
+"topic": "rare-verbs-5",
+"es": "Menospreciar (denigrar)",
+"fr": "Dénigrer"
+},
+{
+"id": "c2-to-exhort",
+"en": "To exhort",
+"topic": "rare-verbs-5",
+"es": "Exhortar",
+"fr": "Exhorter"
+},
+{
+"id": "c2-to-foment",
+"en": "To foment",
+"topic": "rare-verbs-5",
+"es": "Fomentar (incitar)",
+"fr": "Fomenter"
+},
+{
+"id": "c2-to-indulge",
+"en": "To indulge",
+"topic": "rare-verbs-5",
+"es": "Darse el gusto",
+"fr": "Se laisser aller à"
+},
+{
+"id": "c2-to-placate",
+"en": "To placate",
+"topic": "rare-verbs-5",
+"es": "Aplacar",
+"fr": "Apaiser (calmer)"
+},
+{
+"id": "c2-to-preempt",
+"en": "To preempt",
+"topic": "rare-verbs-5",
+"es": "Adelantarse a",
+"fr": "Devancer"
+},
+{
+"id": "c2-to-rescind",
+"en": "To rescind",
+"topic": "rare-verbs-5",
+"es": "Rescindir",
+"fr": "Annuler (résilier)"
+},
+{
+"id": "c2-to-stymie",
+"en": "To stymie",
+"topic": "rare-verbs-5",
+"es": "Obstaculizar (bloquear)",
+"fr": "Contrarier (bloquer)"
+},
+{
+"id": "c2-to-vindicate",
+"en": "To vindicate",
+"topic": "rare-verbs-5",
+"es": "Vindicar (reivindicar)",
+"fr": "Disculper (justifier)"
+},
+{
+"id": "c2-to-evince",
+"en": "To evince",
+"topic": "rare-verbs-5",
+"es": "Manifestar (evidenciar)",
+"fr": "Manifester (témoigner de)"
+},
+{
+"id": "c2-affable",
+"en": "Affable",
+"topic": "rare-adjectives-1",
+"es": "Afable",
+"fr": "Affable"
+},
+{
+"id": "c2-churlish",
+"en": "Churlish",
+"topic": "rare-adjectives-1",
+"es": "Grosero (hosco)",
+"fr": "Grossier (hargneux)"
+},
+{
+"id": "c2-astute",
+"en": "Astute",
+"topic": "rare-adjectives-1",
+"es": "Astuto (sagaz)",
+"fr": "Astucieux (perspicace)"
+},
+{
+"id": "c2-audacious",
+"en": "Audacious",
+"topic": "rare-adjectives-1",
+"es": "Audaz",
+"fr": "Audacieux"
+},
+{
+"id": "c2-belligerent",
+"en": "Belligerent",
+"topic": "rare-adjectives-1",
+"es": "Beligerante",
+"fr": "Belliqueux"
+},
+{
+"id": "c2-sanguine",
+"en": "Sanguine",
+"topic": "rare-adjectives-1",
+"es": "Optimista (confiado)",
+"fr": "Confiant (optimiste)"
+},
+{
+"id": "c2-brusque",
+"en": "Brusque",
+"topic": "rare-adjectives-1",
+"es": "Brusco",
+"fr": "Brusque"
+},
+{
+"id": "c2-callous",
+"en": "Callous",
+"topic": "rare-adjectives-1",
+"es": "Insensible (cruel)",
+"fr": "Insensible (dur)"
+},
+{
+"id": "c2-truculent",
+"en": "Truculent",
+"topic": "rare-adjectives-1",
+"es": "Agresivo (pendenciero)",
+"fr": "Agressif (belliqueux)"
+},
+{
+"id": "c2-capricious",
+"en": "Capricious",
+"topic": "rare-adjectives-1",
+"es": "Caprichoso (voluble)",
+"fr": "Capricieux"
+},
+{
+"id": "c2-complacent",
+"en": "Complacent",
+"topic": "rare-adjectives-1",
+"es": "Complaciente (autosatisfecho)",
+"fr": "Suffisant (complaisant)"
+},
+{
+"id": "c2-unflappable",
+"en": "Unflappable",
+"topic": "rare-adjectives-1",
+"es": "Imperturbable",
+"fr": "Imperturbable"
+},
+{
+"id": "c2-cunning",
+"en": "Cunning",
+"topic": "rare-adjectives-1",
+"es": "Astuto (taimado)",
+"fr": "Rusé"
+},
+{
+"id": "c2-diffident",
+"en": "Diffident",
+"topic": "rare-adjectives-1",
+"es": "Tímido (inseguro)",
+"fr": "Timide (peu sûr de soi)"
+},
+{
+"id": "c2-officious",
+"en": "Officious",
+"topic": "rare-adjectives-1",
+"es": "Entrometido (oficioso)",
+"fr": "Zélé (trop empressé)"
+},
+{
+"id": "c2-docile",
+"en": "Docile",
+"topic": "rare-adjectives-1",
+"es": "Dócil",
+"fr": "Docile"
+},
+{
+"id": "c2-erudite",
+"en": "Erudite",
+"topic": "rare-adjectives-1",
+"es": "Erudito",
+"fr": "Érudit"
+},
+{
+"id": "c2-fastidious",
+"en": "Fastidious",
+"topic": "rare-adjectives-1",
+"es": "Quisquilloso (meticuloso)",
+"fr": "Pointilleux (méticuleux)"
+},
+{
+"id": "c2-flippant",
+"en": "Flippant",
+"topic": "rare-adjectives-1",
+"es": "Frívolo (impertinente)",
+"fr": "Désinvolte"
+},
+{
+"id": "c2-garrulous",
+"en": "Garrulous",
+"topic": "rare-adjectives-1",
+"es": "Locuaz (parlanchín)",
+"fr": "Loquace (bavard)"
+},
+{
+"id": "c2-gregarious",
+"en": "Gregarious",
+"topic": "rare-adjectives-1",
+"es": "Sociable (gregario)",
+"fr": "Sociable (grégaire)"
+},
+{
+"id": "c2-haughty",
+"en": "Haughty",
+"topic": "rare-adjectives-1",
+"es": "Altanero",
+"fr": "Hautain"
+},
+{
+"id": "c2-impetuous",
+"en": "Impetuous",
+"topic": "rare-adjectives-1",
+"es": "Impetuoso",
+"fr": "Impétueux"
+},
+{
+"id": "c2-indolent",
+"en": "Indolent",
+"topic": "rare-adjectives-1",
+"es": "Indolente",
+"fr": "Indolent"
+},
+{
+"id": "c2-mercurial",
+"en": "Mercurial",
+"topic": "rare-adjectives-1",
+"es": "Voluble (mercurial)",
+"fr": "Lunatique (versatile)"
+},
+{
+"id": "c2-phlegmatic",
+"en": "Phlegmatic",
+"topic": "rare-adjectives-1",
+"es": "Flemático",
+"fr": "Flegmatique"
+},
+{
+"id": "c2-obsequious",
+"en": "Obsequious",
+"topic": "rare-adjectives-1",
+"es": "Obsequioso (servil)",
+"fr": "Obséquieux"
+},
+{
+"id": "c2-petulant",
+"en": "Petulant",
+"topic": "rare-adjectives-1",
+"es": "Petulante (malhumorado)",
+"fr": "Irritable (boudeur)"
+},
+{
+"id": "c2-sanctimonious",
+"en": "Sanctimonious",
+"topic": "rare-adjectives-1",
+"es": "Santurrón",
+"fr": "Moralisateur"
+},
+{
+"id": "c2-taciturn",
+"en": "Taciturn",
+"topic": "rare-adjectives-1",
+"es": "Taciturno",
+"fr": "Taciturne"
+},
+{
+"id": "c2-bountiful",
+"en": "Bountiful",
+"topic": "rare-adjectives-2",
+"es": "Generoso (abundante)",
+"fr": "Généreux (abondant)"
+},
+{
+"id": "c2-arduous",
+"en": "Arduous",
+"topic": "rare-adjectives-2",
+"es": "Arduo",
+"fr": "Ardu"
+},
+{
+"id": "c2-banal",
+"en": "Banal",
+"topic": "rare-adjectives-2",
+"es": "Banal",
+"fr": "Banal"
+},
+{
+"id": "c2-copious",
+"en": "Copious",
+"topic": "rare-adjectives-2",
+"es": "Copioso",
+"fr": "Copieux"
+},
+{
+"id": "c2-cumbersome",
+"en": "Cumbersome",
+"topic": "rare-adjectives-2",
+"es": "Engorroso",
+"fr": "Encombrant (lourd)"
+},
+{
+"id": "c2-deft",
+"en": "Deft",
+"topic": "rare-adjectives-2",
+"es": "Hábil (diestro)",
+"fr": "Habile (adroit)"
+},
+{
+"id": "c2-dire",
+"en": "Dire",
+"topic": "rare-adjectives-2",
+"es": "Terrible (extremo)",
+"fr": "Terrible (désastreux)"
+},
+{
+"id": "c2-ephemeral",
+"en": "Ephemeral",
+"topic": "rare-adjectives-2",
+"es": "Efímero",
+"fr": "Éphémère"
+},
+{
+"id": "c2-peerless",
+"en": "Peerless",
+"topic": "rare-adjectives-2",
+"es": "Sin par (incomparable)",
+"fr": "Sans égal (incomparable)"
+},
+{
+"id": "c2-feeble",
+"en": "Feeble",
+"topic": "rare-adjectives-2",
+"es": "Débil (endeble)",
+"fr": "Faible (chétif)"
+},
+{
+"id": "c2-rickety",
+"en": "Rickety",
+"topic": "rare-adjectives-2",
+"es": "Desvencijado (tambaleante)",
+"fr": "Branlant (bancal)"
+},
+{
+"id": "c2-formidable",
+"en": "Formidable",
+"topic": "rare-adjectives-2",
+"es": "Formidable (imponente)",
+"fr": "Redoutable"
+},
+{
+"id": "c2-immaculate",
+"en": "Immaculate",
+"topic": "rare-adjectives-2",
+"es": "Inmaculado",
+"fr": "Immaculé"
+},
+{
+"id": "c2-faultless",
+"en": "Faultless",
+"topic": "rare-adjectives-2",
+"es": "Intachable",
+"fr": "Irréprochable (sans faute)"
+},
+{
+"id": "c2-innocuous",
+"en": "Innocuous",
+"topic": "rare-adjectives-2",
+"es": "Inocuo",
+"fr": "Inoffensif (anodin)"
+},
+{
+"id": "c2-insidious",
+"en": "Insidious",
+"topic": "rare-adjectives-2",
+"es": "Insidioso",
+"fr": "Insidieux"
+},
+{
+"id": "c2-labyrinthine",
+"en": "Labyrinthine",
+"topic": "rare-adjectives-2",
+"es": "Laberíntico",
+"fr": "Labyrinthique"
+},
+{
+"id": "c2-profligate",
+"en": "Profligate",
+"topic": "rare-adjectives-2",
+"es": "Derrochador (disoluto)",
+"fr": "Dépensier (dissolu)"
+},
+{
+"id": "c2-perspicuous",
+"en": "Perspicuous",
+"topic": "rare-adjectives-2",
+"es": "Claro (diáfano)",
+"fr": "Limpide (clair)"
+},
+{
+"id": "c2-sparse",
+"en": "Sparse",
+"topic": "rare-adjectives-2",
+"es": "Escaso (disperso)",
+"fr": "Clairsemé (épars)"
+},
+{
+"id": "c2-infinitesimal",
+"en": "Infinitesimal",
+"topic": "rare-adjectives-2",
+"es": "Infinitesimal",
+"fr": "Infinitésimal"
+},
+{
+"id": "c2-sumptuous",
+"en": "Sumptuous",
+"topic": "rare-adjectives-2",
+"es": "Suntuoso",
+"fr": "Somptueux"
+},
+{
+"id": "c2-paltry",
+"en": "Paltry",
+"topic": "rare-adjectives-2",
+"es": "Mísero (irrisorio)",
+"fr": "Dérisoire"
+},
+{
+"id": "c2-unblemished",
+"en": "Unblemished",
+"topic": "rare-adjectives-2",
+"es": "Sin mancha (intachable)",
+"fr": "Sans tache (immaculé)"
+},
+{
+"id": "c2-indomitable",
+"en": "Indomitable",
+"topic": "rare-adjectives-2",
+"es": "Indomable",
+"fr": "Indomptable"
+},
+{
+"id": "c2-scant",
+"en": "Scant",
+"topic": "rare-adjectives-2",
+"es": "Escaso",
+"fr": "Maigre (insuffisant)"
+},
+{
+"id": "c2-transcendent",
+"en": "Transcendent",
+"topic": "rare-adjectives-2",
+"es": "Trascendente",
+"fr": "Transcendant"
+},
+{
+"id": "c2-tenuous",
+"en": "Tenuous",
+"topic": "rare-adjectives-2",
+"es": "Tenue (frágil)",
+"fr": "Ténu (fragile)"
+},
+{
+"id": "c2-unwieldy",
+"en": "Unwieldy",
+"topic": "rare-adjectives-2",
+"es": "Poco manejable",
+"fr": "Peu maniable"
+},
+{
+"id": "c2-boundless",
+"en": "Boundless",
+"topic": "rare-adjectives-2",
+"es": "Ilimitado (sin límites)",
+"fr": "Sans bornes (illimité)"
+},
+{
+"id": "c2-abstruse",
+"en": "Abstruse",
+"topic": "rare-adjectives-3",
+"es": "Abstruso",
+"fr": "Abstrus"
+},
+{
+"id": "c2-apt",
+"en": "Apt",
+"topic": "rare-adjectives-3",
+"es": "Apropiado (acertado)",
+"fr": "Approprié (juste)"
+},
+{
+"id": "c2-cogent",
+"en": "Cogent",
+"topic": "rare-adjectives-3",
+"es": "Convincente (contundente)",
+"fr": "Convaincant (pertinent)"
+},
+{
+"id": "c2-contentious",
+"en": "Contentious",
+"topic": "rare-adjectives-3",
+"es": "Polémico",
+"fr": "Controversé (litigieux)"
+},
+{
+"id": "c2-deplorable",
+"en": "Deplorable",
+"topic": "rare-adjectives-3",
+"es": "Deplorable",
+"fr": "Déplorable"
+},
+{
+"id": "c2-dubious",
+"en": "Dubious",
+"topic": "rare-adjectives-3",
+"es": "Dudoso",
+"fr": "Douteux"
+},
+{
+"id": "c2-egregious",
+"en": "Egregious",
+"topic": "rare-adjectives-3",
+"es": "Atroz (flagrante)",
+"fr": "Flagrant (énorme)"
+},
+{
+"id": "c2-exemplary",
+"en": "Exemplary",
+"topic": "rare-adjectives-3",
+"es": "Ejemplar",
+"fr": "Exemplaire"
+},
+{
+"id": "c2-fallacious",
+"en": "Fallacious",
+"topic": "rare-adjectives-3",
+"es": "Falaz",
+"fr": "Fallacieux"
+},
+{
+"id": "c2-futile",
+"en": "Futile",
+"topic": "rare-adjectives-3",
+"es": "Fútil (inútil)",
+"fr": "Futile (vain)"
+},
+{
+"id": "c2-gratuitous",
+"en": "Gratuitous",
+"topic": "rare-adjectives-3",
+"es": "Gratuito (injustificado)",
+"fr": "Gratuit (injustifié)"
+},
+{
+"id": "c2-illicit",
+"en": "Illicit",
+"topic": "rare-adjectives-3",
+"es": "Ilícito",
+"fr": "Illicite"
+},
+{
+"id": "c2-impartial",
+"en": "Impartial",
+"topic": "rare-adjectives-3",
+"es": "Imparcial",
+"fr": "Impartial"
+},
+{
+"id": "c2-incongruous",
+"en": "Incongruous",
+"topic": "rare-adjectives-3",
+"es": "Incongruente",
+"fr": "Incongru"
+},
+{
+"id": "c2-ineffable",
+"en": "Ineffable",
+"topic": "rare-adjectives-3",
+"es": "Inefable",
+"fr": "Ineffable"
+},
+{
+"id": "c2-irrefutable",
+"en": "Irrefutable",
+"topic": "rare-adjectives-3",
+"es": "Irrefutable",
+"fr": "Irréfutable"
+},
+{
+"id": "c2-laudable",
+"en": "Laudable",
+"topic": "rare-adjectives-3",
+"es": "Loable",
+"fr": "Louable"
+},
+{
+"id": "c2-moot",
+"en": "Moot",
+"topic": "rare-adjectives-3",
+"es": "Discutible (irrelevante)",
+"fr": "Sans objet (discutable)"
+},
+{
+"id": "c2-nebulous",
+"en": "Nebulous",
+"topic": "rare-adjectives-3",
+"es": "Nebuloso",
+"fr": "Nébuleux"
+},
+{
+"id": "c2-ostensible",
+"en": "Ostensible",
+"topic": "rare-adjectives-3",
+"es": "Aparente (ostensible)",
+"fr": "Apparent (prétendu)"
+},
+{
+"id": "c2-pernicious",
+"en": "Pernicious",
+"topic": "rare-adjectives-3",
+"es": "Pernicioso",
+"fr": "Pernicieux"
+},
+{
+"id": "c2-plausible",
+"en": "Plausible",
+"topic": "rare-adjectives-3",
+"es": "Plausible",
+"fr": "Plausible"
+},
+{
+"id": "c2-preposterous",
+"en": "Preposterous",
+"topic": "rare-adjectives-3",
+"es": "Absurdo (descabellado)",
+"fr": "Absurde (grotesque)"
+},
+{
+"id": "c2-salient",
+"en": "Salient",
+"topic": "rare-adjectives-3",
+"es": "Destacado (sobresaliente)",
+"fr": "Saillant"
+},
+{
+"id": "c2-spurious",
+"en": "Spurious",
+"topic": "rare-adjectives-3",
+"es": "Espurio (falso)",
+"fr": "Fallacieux (faux)"
+},
+{
+"id": "c2-superfluous",
+"en": "Superfluous",
+"topic": "rare-adjectives-3",
+"es": "Superfluo",
+"fr": "Superflu"
+},
+{
+"id": "c2-tenable",
+"en": "Tenable",
+"topic": "rare-adjectives-3",
+"es": "Sostenible (defendible)",
+"fr": "Défendable (tenable)"
+},
+{
+"id": "c2-untenable",
+"en": "Untenable",
+"topic": "rare-adjectives-3",
+"es": "Insostenible",
+"fr": "Intenable"
+},
+{
+"id": "c2-viable",
+"en": "Viable",
+"topic": "rare-adjectives-3",
+"es": "Viable",
+"fr": "Viable"
+},
+{
+"id": "c2-wanton",
+"en": "Wanton",
+"topic": "rare-adjectives-3",
+"es": "Gratuito (desenfrenado)",
+"fr": "Gratuit (débridé)"
+},
+{
+"id": "c2-ailing",
+"en": "Ailing",
+"topic": "rare-adjectives-4",
+"es": "Enfermizo (achacoso)",
+"fr": "Souffrant (mal en point)"
+},
+{
+"id": "c2-bewildered",
+"en": "Bewildered",
+"topic": "rare-adjectives-4",
+"es": "Desconcertado",
+"fr": "Désorienté (dérouté)"
+},
+{
+"id": "c2-desolate",
+"en": "Desolate",
+"topic": "rare-adjectives-4",
+"es": "Desolado",
+"fr": "Désolé (désolant)"
+},
+{
+"id": "c2-brittle",
+"en": "Brittle",
+"topic": "rare-adjectives-4",
+"es": "Quebradizo",
+"fr": "Cassant (friable)"
+},
+{
+"id": "c2-cohesive",
+"en": "Cohesive",
+"topic": "rare-adjectives-4",
+"es": "Cohesionado",
+"fr": "Cohérent (soudé)"
+},
+{
+"id": "c2-defunct",
+"en": "Defunct",
+"topic": "rare-adjectives-4",
+"es": "Difunto (desaparecido)",
+"fr": "Disparu (défunt)"
+},
+{
+"id": "c2-derelict",
+"en": "Derelict",
+"topic": "rare-adjectives-4",
+"es": "Abandonado (en ruinas)",
+"fr": "Abandonné (à l’abandon)"
+},
+{
+"id": "c2-ramshackle",
+"en": "Ramshackle",
+"topic": "rare-adjectives-4",
+"es": "Destartalado",
+"fr": "Délabré (branlant)"
+},
+{
+"id": "c2-dormant",
+"en": "Dormant",
+"topic": "rare-adjectives-4",
+"es": "Latente (inactivo)",
+"fr": "Dormant (en sommeil)"
+},
+{
+"id": "c2-drowsy",
+"en": "Drowsy",
+"topic": "rare-adjectives-4",
+"es": "Somnoliento",
+"fr": "Somnolent"
+},
+{
+"id": "c2-dwindling",
+"en": "Dwindling",
+"topic": "rare-adjectives-4",
+"es": "Menguante",
+"fr": "En baisse (déclinant)"
+},
+{
+"id": "c2-exhilarated",
+"en": "Exhilarated",
+"topic": "rare-adjectives-4",
+"es": "Eufórico",
+"fr": "Exalté (grisé)"
+},
+{
+"id": "c2-forlorn",
+"en": "Forlorn",
+"topic": "rare-adjectives-4",
+"es": "Desamparado",
+"fr": "Désespéré (abandonné)"
+},
+{
+"id": "c2-haggard",
+"en": "Haggard",
+"topic": "rare-adjectives-4",
+"es": "Demacrado",
+"fr": "Hagard (défait)"
+},
+{
+"id": "c2-imminent",
+"en": "Imminent",
+"topic": "rare-adjectives-4",
+"es": "Inminente",
+"fr": "Imminent"
+},
+{
+"id": "c2-incessant",
+"en": "Incessant",
+"topic": "rare-adjectives-4",
+"es": "Incesante",
+"fr": "Incessant"
+},
+{
+"id": "c2-inert",
+"en": "Inert",
+"topic": "rare-adjectives-4",
+"es": "Inerte",
+"fr": "Inerte"
+},
+{
+"id": "c2-jaded",
+"en": "Jaded",
+"topic": "rare-adjectives-4",
+"es": "Hastiado",
+"fr": "Blasé"
+},
+{
+"id": "c2-languid",
+"en": "Languid",
+"topic": "rare-adjectives-4",
+"es": "Lánguido",
+"fr": "Languide (alangui)"
+},
+{
+"id": "c2-listless",
+"en": "Listless",
+"topic": "rare-adjectives-4",
+"es": "Apático (desganado)",
+"fr": "Apathique (sans entrain)"
+},
+{
+"id": "c2-antiquated",
+"en": "Antiquated",
+"topic": "rare-adjectives-4",
+"es": "Anticuado",
+"fr": "Vétuste (désuet)"
+},
+{
+"id": "c2-precarious",
+"en": "Precarious",
+"topic": "rare-adjectives-4",
+"es": "Precario",
+"fr": "Précaire"
+},
+{
+"id": "c2-rampant",
+"en": "Rampant",
+"topic": "rare-adjectives-4",
+"es": "Desenfrenado (rampante)",
+"fr": "Endémique (galopant)"
+},
+{
+"id": "c2-fidgety",
+"en": "Fidgety",
+"topic": "rare-adjectives-4",
+"es": "Inquieto (nervioso)",
+"fr": "Remuant (nerveux)"
+},
+{
+"id": "c2-rife",
+"en": "Rife",
+"topic": "rare-adjectives-4",
+"es": "Plagado (abundante)",
+"fr": "Rempli de (répandu)"
+},
+{
+"id": "c2-sodden",
+"en": "Sodden",
+"topic": "rare-adjectives-4",
+"es": "Empapado",
+"fr": "Trempé (détrempé)"
+},
+{
+"id": "c2-stagnant",
+"en": "Stagnant",
+"topic": "rare-adjectives-4",
+"es": "Estancado",
+"fr": "Stagnant"
+},
+{
+"id": "c2-susceptible",
+"en": "Susceptible",
+"topic": "rare-adjectives-4",
+"es": "Susceptible (propenso)",
+"fr": "Sensible (sujet à)"
+},
+{
+"id": "c2-volatile",
+"en": "Volatile",
+"topic": "rare-adjectives-4",
+"es": "Volátil (inestable)",
+"fr": "Volatil (instable)"
+},
+{
+"id": "c2-weary",
+"en": "Weary",
+"topic": "rare-adjectives-4",
+"es": "Cansado (agotado)",
+"fr": "Las (épuisé)"
+},
+{
+"id": "c2-bombastic",
+"en": "Bombastic",
+"topic": "rare-adjectives-5",
+"es": "Grandilocuente",
+"fr": "Grandiloquent (pompeux)"
+},
+{
+"id": "c2-vernacular",
+"en": "Vernacular",
+"topic": "rare-adjectives-5",
+"es": "Vernáculo",
+"fr": "Vernaculaire"
+},
+{
+"id": "c2-concise",
+"en": "Concise",
+"topic": "rare-adjectives-5",
+"es": "Conciso",
+"fr": "Concis"
+},
+{
+"id": "c2-tortuous",
+"en": "Tortuous",
+"topic": "rare-adjectives-5",
+"es": "Tortuoso",
+"fr": "Tortueux"
+},
+{
+"id": "c2-cryptic",
+"en": "Cryptic",
+"topic": "rare-adjectives-5",
+"es": "Críptico",
+"fr": "Sibyllin (énigmatique)"
+},
+{
+"id": "c2-derogatory",
+"en": "Derogatory",
+"topic": "rare-adjectives-5",
+"es": "Despectivo",
+"fr": "Péjoratif (désobligeant)"
+},
+{
+"id": "c2-didactic",
+"en": "Didactic",
+"topic": "rare-adjectives-5",
+"es": "Didáctico",
+"fr": "Didactique"
+},
+{
+"id": "c2-silver-tongued",
+"en": "Silver-tongued",
+"topic": "rare-adjectives-5",
+"es": "De pico de oro",
+"fr": "Beau parleur"
+},
+{
+"id": "c2-emphatic",
+"en": "Emphatic",
+"topic": "rare-adjectives-5",
+"es": "Enfático",
+"fr": "Catégorique (emphatique)"
+},
+{
+"id": "c2-euphemistic",
+"en": "Euphemistic",
+"topic": "rare-adjectives-5",
+"es": "Eufemístico",
+"fr": "Euphémique"
+},
+{
+"id": "c2-facetious",
+"en": "Facetious",
+"topic": "rare-adjectives-5",
+"es": "Jocoso (guasón)",
+"fr": "Facétieux"
+},
+{
+"id": "c2-florid",
+"en": "Florid",
+"topic": "rare-adjectives-5",
+"es": "Florido (recargado)",
+"fr": "Fleuri (ampoulé)"
+},
+{
+"id": "c2-glib",
+"en": "Glib",
+"topic": "rare-adjectives-5",
+"es": "Fácil (superficial)",
+"fr": "Désinvolte (facile)"
+},
+{
+"id": "c2-hyperbolic",
+"en": "Hyperbolic",
+"topic": "rare-adjectives-5",
+"es": "Hiperbólico",
+"fr": "Hyperbolique"
+},
+{
+"id": "c2-incisive",
+"en": "Incisive",
+"topic": "rare-adjectives-5",
+"es": "Incisivo",
+"fr": "Incisif"
+},
+{
+"id": "c2-laconic",
+"en": "Laconic",
+"topic": "rare-adjectives-5",
+"es": "Lacónico",
+"fr": "Laconique"
+},
+{
+"id": "c2-long-winded",
+"en": "Long-winded",
+"topic": "rare-adjectives-5",
+"es": "Prolijo",
+"fr": "Interminable (verbeux)"
+},
+{
+"id": "c2-mordant",
+"en": "Mordant",
+"topic": "rare-adjectives-5",
+"es": "Mordaz",
+"fr": "Mordant"
+},
+{
+"id": "c2-ornate",
+"en": "Ornate",
+"topic": "rare-adjectives-5",
+"es": "Ornamentado",
+"fr": "Orné (chargé)"
+},
+{
+"id": "c2-pedantic",
+"en": "Pedantic",
+"topic": "rare-adjectives-5",
+"es": "Pedante",
+"fr": "Pédant"
+},
+{
+"id": "c2-pithy",
+"en": "Pithy",
+"topic": "rare-adjectives-5",
+"es": "Conciso (sustancioso)",
+"fr": "Concis (percutant)"
+},
+{
+"id": "c2-plaintive",
+"en": "Plaintive",
+"topic": "rare-adjectives-5",
+"es": "Lastimero",
+"fr": "Plaintif"
+},
+{
+"id": "c2-rhetorical",
+"en": "Rhetorical",
+"topic": "rare-adjectives-5",
+"es": "Retórico",
+"fr": "Rhétorique"
+},
+{
+"id": "c2-sardonic",
+"en": "Sardonic",
+"topic": "rare-adjectives-5",
+"es": "Sardónico",
+"fr": "Sardonique"
+},
+{
+"id": "c2-scathing",
+"en": "Scathing",
+"topic": "rare-adjectives-5",
+"es": "Mordaz (demoledor)",
+"fr": "Cinglant"
+},
+{
+"id": "c2-succinct",
+"en": "Succinct",
+"topic": "rare-adjectives-5",
+"es": "Sucinto",
+"fr": "Succinct"
+},
+{
+"id": "c2-terse",
+"en": "Terse",
+"topic": "rare-adjectives-5",
+"es": "Cortante (lacónico)",
+"fr": "Sec (laconique)"
+},
+{
+"id": "c2-trite",
+"en": "Trite",
+"topic": "rare-adjectives-5",
+"es": "Trillado",
+"fr": "Rebattu (banal)"
+},
+{
+"id": "c2-verbose",
+"en": "Verbose",
+"topic": "rare-adjectives-5",
+"es": "Verboso",
+"fr": "Verbeux"
+},
+{
+"id": "c2-wry",
+"en": "Wry",
+"topic": "rare-adjectives-5",
+"es": "Irónico (torcido)",
+"fr": "Pince-sans-rire (ironique)"
+},
+{
+"id": "c2-acumen",
+"en": "Acumen",
+"topic": "rare-nouns-1",
+"es": "Perspicacia",
+"fr": "Perspicacité (flair)"
+},
+{
+"id": "c2-alacrity",
+"en": "Alacrity",
+"topic": "rare-nouns-1",
+"es": "Presteza (diligencia)",
+"fr": "Empressement"
+},
+{
+"id": "c2-ambivalence",
+"en": "Ambivalence",
+"topic": "rare-nouns-1",
+"es": "Ambivalencia",
+"fr": "Ambivalence"
+},
+{
+"id": "c2-apathy",
+"en": "Apathy",
+"topic": "rare-nouns-1",
+"es": "Apatía",
+"fr": "Apathie"
+},
+{
+"id": "c2-aplomb",
+"en": "Aplomb",
+"topic": "rare-nouns-1",
+"es": "Aplomo",
+"fr": "Aplomb (sang-froid)"
+},
+{
+"id": "c2-audacity",
+"en": "Audacity",
+"topic": "rare-nouns-1",
+"es": "Audacia",
+"fr": "Audace"
+},
+{
+"id": "c2-candor",
+"en": "Candor",
+"topic": "rare-nouns-1",
+"es": "Franqueza",
+"fr": "Franchise (candeur)"
+},
+{
+"id": "c2-smugness",
+"en": "Smugness",
+"topic": "rare-nouns-1",
+"es": "Suficiencia (autocomplacencia)",
+"fr": "Suffisance"
+},
+{
+"id": "c2-scorn",
+"en": "Scorn",
+"topic": "rare-nouns-1",
+"es": "Desdén (menosprecio)",
+"fr": "Mépris (dédain)"
+},
+{
+"id": "c2-deference",
+"en": "Deference",
+"topic": "rare-nouns-1",
+"es": "Deferencia",
+"fr": "Déférence"
+},
+{
+"id": "c2-discretion",
+"en": "Discretion",
+"topic": "rare-nouns-1",
+"es": "Discreción",
+"fr": "Discrétion"
+},
+{
+"id": "c2-disdain",
+"en": "Disdain",
+"topic": "rare-nouns-1",
+"es": "Desdén",
+"fr": "Dédain"
+},
+{
+"id": "c2-forbearance",
+"en": "Forbearance",
+"topic": "rare-nouns-1",
+"es": "Paciencia (indulgencia)",
+"fr": "Indulgence (patience)"
+},
+{
+"id": "c2-fortitude",
+"en": "Fortitude",
+"topic": "rare-nouns-1",
+"es": "Fortaleza (entereza)",
+"fr": "Force d’âme (courage)"
+},
+{
+"id": "c2-hubris",
+"en": "Hubris",
+"topic": "rare-nouns-1",
+"es": "Arrogancia (soberbia)",
+"fr": "Hubris (orgueil démesuré)"
+},
+{
+"id": "c2-meekness",
+"en": "Meekness",
+"topic": "rare-nouns-1",
+"es": "Mansedumbre",
+"fr": "Douceur (humilité)"
+},
+{
+"id": "c2-umbrage",
+"en": "Umbrage",
+"topic": "rare-nouns-1",
+"es": "Ofensa (resentimiento)",
+"fr": "Ombrage"
+},
+{
+"id": "c2-ingenuity",
+"en": "Ingenuity",
+"topic": "rare-nouns-1",
+"es": "Ingenio (inventiva)",
+"fr": "Ingéniosité"
+},
+{
+"id": "c2-rectitude",
+"en": "Rectitude",
+"topic": "rare-nouns-1",
+"es": "Rectitud",
+"fr": "Rectitude (droiture)"
+},
+{
+"id": "c2-malice",
+"en": "Malice",
+"topic": "rare-nouns-1",
+"es": "Malicia (maldad)",
+"fr": "Malveillance"
+},
+{
+"id": "c2-nostalgia",
+"en": "Nostalgia",
+"topic": "rare-nouns-1",
+"es": "Nostalgia",
+"fr": "Nostalgie"
+},
+{
+"id": "c2-perseverance",
+"en": "Perseverance",
+"topic": "rare-nouns-1",
+"es": "Perseverancia",
+"fr": "Persévérance"
+},
+{
+"id": "c2-prudence",
+"en": "Prudence",
+"topic": "rare-nouns-1",
+"es": "Prudencia",
+"fr": "Prudence"
+},
+{
+"id": "c2-grit",
+"en": "Grit",
+"topic": "rare-nouns-1",
+"es": "Coraje (determinación)",
+"fr": "Cran (ténacité)"
+},
+{
+"id": "c2-reticence",
+"en": "Reticence",
+"topic": "rare-nouns-1",
+"es": "Reticencia",
+"fr": "Réticence (réserve)"
+},
+{
+"id": "c2-equanimity",
+"en": "Equanimity",
+"topic": "rare-nouns-1",
+"es": "Ecuanimidad",
+"fr": "Équanimité (sérénité)"
+},
+{
+"id": "c2-tenacity",
+"en": "Tenacity",
+"topic": "rare-nouns-1",
+"es": "Tenacidad",
+"fr": "Ténacité"
+},
+{
+"id": "c2-vanity",
+"en": "Vanity",
+"topic": "rare-nouns-1",
+"es": "Vanidad",
+"fr": "Vanité"
+},
+{
+"id": "c2-vigilance",
+"en": "Vigilance",
+"topic": "rare-nouns-1",
+"es": "Vigilancia",
+"fr": "Vigilance"
+},
+{
+"id": "c2-zeal",
+"en": "Zeal",
+"topic": "rare-nouns-1",
+"es": "Fervor (celo)",
+"fr": "Zèle (ferveur)"
+},
+{
+"id": "c2-anomaly",
+"en": "Anomaly",
+"topic": "rare-nouns-2",
+"es": "Anomalía",
+"fr": "Anomalie"
+},
+{
+"id": "c2-catalyst",
+"en": "Catalyst",
+"topic": "rare-nouns-2",
+"es": "Catalizador",
+"fr": "Catalyseur"
+},
+{
+"id": "c2-conundrum",
+"en": "Conundrum",
+"topic": "rare-nouns-2",
+"es": "Enigma (dilema)",
+"fr": "Casse-tête (énigme)"
+},
+{
+"id": "c2-debacle",
+"en": "Debacle",
+"topic": "rare-nouns-2",
+"es": "Debacle (desastre)",
+"fr": "Débâcle (fiasco)"
+},
+{
+"id": "c2-deluge",
+"en": "Deluge",
+"topic": "rare-nouns-2",
+"es": "Diluvio (avalancha)",
+"fr": "Déluge"
+},
+{
+"id": "c2-dearth",
+"en": "Dearth",
+"topic": "rare-nouns-2",
+"es": "Escasez (carencia)",
+"fr": "Pénurie (manque)"
+},
+{
+"id": "c2-dichotomy",
+"en": "Dichotomy",
+"topic": "rare-nouns-2",
+"es": "Dicotomía",
+"fr": "Dichotomie"
+},
+{
+"id": "c2-epitome",
+"en": "Epitome",
+"topic": "rare-nouns-2",
+"es": "Epítome (paradigma)",
+"fr": "Incarnation (archétype)"
+},
+{
+"id": "c2-exodus",
+"en": "Exodus",
+"topic": "rare-nouns-2",
+"es": "Éxodo",
+"fr": "Exode"
+},
+{
+"id": "c2-facade",
+"en": "Facade",
+"topic": "rare-nouns-2",
+"es": "Fachada (apariencia)",
+"fr": "Façade (apparence)"
+},
+{
+"id": "c2-fallacy",
+"en": "Fallacy",
+"topic": "rare-nouns-2",
+"es": "Falacia",
+"fr": "Sophisme (idée fausse)"
+},
+{
+"id": "c2-hindsight",
+"en": "Hindsight",
+"topic": "rare-nouns-2",
+"es": "Retrospectiva",
+"fr": "Recul (a posteriori)"
+},
+{
+"id": "c2-impasse",
+"en": "Impasse",
+"topic": "rare-nouns-2",
+"es": "Punto muerto",
+"fr": "Impasse"
+},
+{
+"id": "c2-impetus",
+"en": "Impetus",
+"topic": "rare-nouns-2",
+"es": "Impulso (ímpetu)",
+"fr": "Impulsion (élan)"
+},
+{
+"id": "c2-juncture",
+"en": "Juncture",
+"topic": "rare-nouns-2",
+"es": "Coyuntura",
+"fr": "Conjoncture (moment)"
+},
+{
+"id": "c2-loophole",
+"en": "Loophole",
+"topic": "rare-nouns-2",
+"es": "Vacío legal (resquicio)",
+"fr": "Faille (vide juridique)"
+},
+{
+"id": "c2-tipping-point",
+"en": "Tipping point",
+"topic": "rare-nouns-2",
+"es": "Punto de inflexión",
+"fr": "Point de bascule"
+},
+{
+"id": "c2-onslaught",
+"en": "Onslaught",
+"topic": "rare-nouns-2",
+"es": "Embestida (avalancha)",
+"fr": "Assaut (déferlement)"
+},
+{
+"id": "c2-vicious-circle",
+"en": "Vicious circle",
+"topic": "rare-nouns-2",
+"es": "Círculo vicioso",
+"fr": "Cercle vicieux"
+},
+{
+"id": "c2-plight",
+"en": "Plight",
+"topic": "rare-nouns-2",
+"es": "Situación difícil (apuro)",
+"fr": "Détresse (sort)"
+},
+{
+"id": "c2-precedent",
+"en": "Precedent",
+"topic": "rare-nouns-2",
+"es": "Precedente",
+"fr": "Précédent"
+},
+{
+"id": "c2-quandary",
+"en": "Quandary",
+"topic": "rare-nouns-2",
+"es": "Dilema (aprieto)",
+"fr": "Dilemme (embarras)"
+},
+{
+"id": "c2-ramification",
+"en": "Ramification",
+"topic": "rare-nouns-2",
+"es": "Ramificación (consecuencia)",
+"fr": "Ramification (conséquence)"
+},
+{
+"id": "c2-respite",
+"en": "Respite",
+"topic": "rare-nouns-2",
+"es": "Respiro (tregua)",
+"fr": "Répit"
+},
+{
+"id": "c2-setback",
+"en": "Setback",
+"topic": "rare-nouns-2",
+"es": "Revés (contratiempo)",
+"fr": "Revers (contretemps)"
+},
+{
+"id": "c2-stalemate",
+"en": "Stalemate",
+"topic": "rare-nouns-2",
+"es": "Tablas (punto muerto)",
+"fr": "Impasse (pat)"
+},
+{
+"id": "c2-surge",
+"en": "Surge",
+"topic": "rare-nouns-2",
+"es": "Oleada (aumento repentino)",
+"fr": "Poussée (flambée)"
+},
+{
+"id": "c2-turmoil",
+"en": "Turmoil",
+"topic": "rare-nouns-2",
+"es": "Agitación (confusión)",
+"fr": "Tumulte (bouleversement)"
+},
+{
+"id": "c2-upheaval",
+"en": "Upheaval",
+"topic": "rare-nouns-2",
+"es": "Trastorno (convulsión)",
+"fr": "Bouleversement"
+},
+{
+"id": "c2-watershed",
+"en": "Watershed",
+"topic": "rare-nouns-2",
+"es": "Punto de inflexión",
+"fr": "Tournant (moment charnière)"
+},
+{
+"id": "c2-accomplice",
+"en": "Accomplice",
+"topic": "rare-nouns-3",
+"es": "Cómplice",
+"fr": "Complice"
+},
+{
+"id": "c2-adversary",
+"en": "Adversary",
+"topic": "rare-nouns-3",
+"es": "Adversario",
+"fr": "Adversaire"
+},
+{
+"id": "c2-advocate",
+"en": "Advocate",
+"topic": "rare-nouns-3",
+"es": "Defensor (partidario)",
+"fr": "Défenseur (partisan)"
+},
+{
+"id": "c2-benefactor",
+"en": "Benefactor",
+"topic": "rare-nouns-3",
+"es": "Benefactor",
+"fr": "Bienfaiteur"
+},
+{
+"id": "c2-bystander",
+"en": "Bystander",
+"topic": "rare-nouns-3",
+"es": "Espectador (transeúnte)",
+"fr": "Passant (témoin)"
+},
+{
+"id": "c2-charlatan",
+"en": "Charlatan",
+"topic": "rare-nouns-3",
+"es": "Charlatán",
+"fr": "Charlatan"
+},
+{
+"id": "c2-connoisseur",
+"en": "Connoisseur",
+"topic": "rare-nouns-3",
+"es": "Entendido (conocedor)",
+"fr": "Connaisseur"
+},
+{
+"id": "c2-culprit",
+"en": "Culprit",
+"topic": "rare-nouns-3",
+"es": "Culpable",
+"fr": "Coupable"
+},
+{
+"id": "c2-demagogue",
+"en": "Demagogue",
+"topic": "rare-nouns-3",
+"es": "Demagogo",
+"fr": "Démagogue"
+},
+{
+"id": "c2-dilettante",
+"en": "Dilettante",
+"topic": "rare-nouns-3",
+"es": "Diletante",
+"fr": "Dilettante"
+},
+{
+"id": "c2-envoy",
+"en": "Envoy",
+"topic": "rare-nouns-3",
+"es": "Enviado",
+"fr": "Émissaire (envoyé)"
+},
+{
+"id": "c2-lackey",
+"en": "Lackey",
+"topic": "rare-nouns-3",
+"es": "Lacayo",
+"fr": "Laquais (larbin)"
+},
+{
+"id": "c2-understudy",
+"en": "Understudy",
+"topic": "rare-nouns-3",
+"es": "Suplente",
+"fr": "Doublure"
+},
+{
+"id": "c2-hypocrite",
+"en": "Hypocrite",
+"topic": "rare-nouns-3",
+"es": "Hipócrita",
+"fr": "Hypocrite"
+},
+{
+"id": "c2-insurgent",
+"en": "Insurgent",
+"topic": "rare-nouns-3",
+"es": "Insurgente",
+"fr": "Insurgé"
+},
+{
+"id": "c2-layperson",
+"en": "Layperson",
+"topic": "rare-nouns-3",
+"es": "Lego (profano)",
+"fr": "Profane (non-spécialiste)"
+},
+{
+"id": "c2-maverick",
+"en": "Maverick",
+"topic": "rare-nouns-3",
+"es": "Inconformista",
+"fr": "Franc-tireur (non-conformiste)"
+},
+{
+"id": "c2-sidekick",
+"en": "Sidekick",
+"topic": "rare-nouns-3",
+"es": "Compinche (ayudante)",
+"fr": "Acolyte (comparse)"
+},
+{
+"id": "c2-mercenary",
+"en": "Mercenary",
+"topic": "rare-nouns-3",
+"es": "Mercenario",
+"fr": "Mercenaire"
+},
+{
+"id": "c2-novice",
+"en": "Novice",
+"topic": "rare-nouns-3",
+"es": "Novato",
+"fr": "Novice"
+},
+{
+"id": "c2-pariah",
+"en": "Pariah",
+"topic": "rare-nouns-3",
+"es": "Paria",
+"fr": "Paria"
+},
+{
+"id": "c2-patron",
+"en": "Patron",
+"topic": "rare-nouns-3",
+"es": "Mecenas",
+"fr": "Mécène"
+},
+{
+"id": "c2-perpetrator",
+"en": "Perpetrator",
+"topic": "rare-nouns-3",
+"es": "Autor (del delito)",
+"fr": "Auteur (du crime)"
+},
+{
+"id": "c2-prodigy",
+"en": "Prodigy",
+"topic": "rare-nouns-3",
+"es": "Prodigio",
+"fr": "Prodige"
+},
+{
+"id": "c2-informant",
+"en": "Informant",
+"topic": "rare-nouns-3",
+"es": "Informante (soplón)",
+"fr": "Indicateur (informateur)"
+},
+{
+"id": "c2-recluse",
+"en": "Recluse",
+"topic": "rare-nouns-3",
+"es": "Ermitaño (solitario)",
+"fr": "Reclus (ermite)"
+},
+{
+"id": "c2-sage",
+"en": "Sage",
+"topic": "rare-nouns-3",
+"es": "Sabio",
+"fr": "Sage"
+},
+{
+"id": "c2-turncoat",
+"en": "Turncoat",
+"topic": "rare-nouns-3",
+"es": "Chaquetero (tránsfuga)",
+"fr": "Renégat (retourneur de veste)"
+},
+{
+"id": "c2-stalwart",
+"en": "Stalwart",
+"topic": "rare-nouns-3",
+"es": "Incondicional (baluarte)",
+"fr": "Pilier (fidèle)"
+},
+{
+"id": "c2-tycoon",
+"en": "Tycoon",
+"topic": "rare-nouns-3",
+"es": "Magnate",
+"fr": "Magnat"
+},
+{
+"id": "c2-ambiguity",
+"en": "Ambiguity",
+"topic": "rare-nouns-4",
+"es": "Ambigüedad",
+"fr": "Ambiguïté"
+},
+{
+"id": "c2-analogy",
+"en": "Analogy",
+"topic": "rare-nouns-4",
+"es": "Analogía",
+"fr": "Analogie"
+},
+{
+"id": "c2-axiom",
+"en": "Axiom",
+"topic": "rare-nouns-4",
+"es": "Axioma",
+"fr": "Axiome"
+},
+{
+"id": "c2-caveat",
+"en": "Caveat",
+"topic": "rare-nouns-4",
+"es": "Salvedad (advertencia)",
+"fr": "Mise en garde (réserve)"
+},
+{
+"id": "c2-consensus",
+"en": "Consensus",
+"topic": "rare-nouns-4",
+"es": "Consenso",
+"fr": "Consensus"
+},
+{
+"id": "c2-corollary",
+"en": "Corollary",
+"topic": "rare-nouns-4",
+"es": "Corolario",
+"fr": "Corollaire"
+},
+{
+"id": "c2-yardstick",
+"en": "Yardstick",
+"topic": "rare-nouns-4",
+"es": "Vara de medir (baremo)",
+"fr": "Étalon (critère de mesure)"
+},
+{
+"id": "c2-narrative",
+"en": "Narrative",
+"topic": "rare-nouns-4",
+"es": "Narrativa (relato)",
+"fr": "Récit (narratif)"
+},
+{
+"id": "c2-doctrine",
+"en": "Doctrine",
+"topic": "rare-nouns-4",
+"es": "Doctrina",
+"fr": "Doctrine"
+},
+{
+"id": "c2-dogma",
+"en": "Dogma",
+"topic": "rare-nouns-4",
+"es": "Dogma",
+"fr": "Dogme"
+},
+{
+"id": "c2-epiphany",
+"en": "Epiphany",
+"topic": "rare-nouns-4",
+"es": "Revelación (epifanía)",
+"fr": "Révélation (déclic)"
+},
+{
+"id": "c2-ethos",
+"en": "Ethos",
+"topic": "rare-nouns-4",
+"es": "Ethos (espíritu)",
+"fr": "Éthos (esprit)"
+},
+{
+"id": "c2-conjecture",
+"en": "Conjecture",
+"topic": "rare-nouns-4",
+"es": "Conjetura",
+"fr": "Conjecture"
+},
+{
+"id": "c2-idiosyncrasy",
+"en": "Idiosyncrasy",
+"topic": "rare-nouns-4",
+"es": "Idiosincrasia",
+"fr": "Idiosyncrasie (particularité)"
+},
+{
+"id": "c2-deduction",
+"en": "Deduction",
+"topic": "rare-nouns-4",
+"es": "Deducción",
+"fr": "Déduction"
+},
+{
+"id": "c2-innuendo",
+"en": "Innuendo",
+"topic": "rare-nouns-4",
+"es": "Insinuación",
+"fr": "Insinuation (sous-entendu)"
+},
+{
+"id": "c2-buzzword",
+"en": "Buzzword",
+"topic": "rare-nouns-4",
+"es": "Palabra de moda",
+"fr": "Mot à la mode"
+},
+{
+"id": "c2-simile",
+"en": "Simile",
+"topic": "rare-nouns-4",
+"es": "Símil",
+"fr": "Comparaison (simile)"
+},
+{
+"id": "c2-nuance",
+"en": "Nuance",
+"topic": "rare-nouns-4",
+"es": "Matiz",
+"fr": "Nuance"
+},
+{
+"id": "c2-archetype",
+"en": "Archetype",
+"topic": "rare-nouns-4",
+"es": "Arquetipo",
+"fr": "Archétype"
+},
+{
+"id": "c2-platitude",
+"en": "Platitude",
+"topic": "rare-nouns-4",
+"es": "Tópico (lugar común)",
+"fr": "Platitude (lieu commun)"
+},
+{
+"id": "c2-postulate",
+"en": "Postulate",
+"topic": "rare-nouns-4",
+"es": "Postulado",
+"fr": "Postulat"
+},
+{
+"id": "c2-pretext",
+"en": "Pretext",
+"topic": "rare-nouns-4",
+"es": "Pretexto",
+"fr": "Prétexte"
+},
+{
+"id": "c2-rebuttal",
+"en": "Rebuttal",
+"topic": "rare-nouns-4",
+"es": "Refutación (réplica)",
+"fr": "Réfutation (réplique)"
+},
+{
+"id": "c2-rhetoric",
+"en": "Rhetoric",
+"topic": "rare-nouns-4",
+"es": "Retórica",
+"fr": "Rhétorique"
+},
+{
+"id": "c2-semantics",
+"en": "Semantics",
+"topic": "rare-nouns-4",
+"es": "Semántica",
+"fr": "Sémantique"
+},
+{
+"id": "c2-stigma",
+"en": "Stigma",
+"topic": "rare-nouns-4",
+"es": "Estigma",
+"fr": "Stigmate"
+},
+{
+"id": "c2-tenet",
+"en": "Tenet",
+"topic": "rare-nouns-4",
+"es": "Principio (dogma)",
+"fr": "Principe (précepte)"
+},
+{
+"id": "c2-trope",
+"en": "Trope",
+"topic": "rare-nouns-4",
+"es": "Tropo (cliché narrativo)",
+"fr": "Trope (figure convenue)"
+},
+{
+"id": "c2-zeitgeist",
+"en": "Zeitgeist",
+"topic": "rare-nouns-4",
+"es": "Espíritu de la época",
+"fr": "Air du temps (Zeitgeist)"
+},
+{
+"id": "c2-acrid",
+"en": "Acrid",
+"topic": "sensory",
+"es": "Acre",
+"fr": "Âcre"
+},
+{
+"id": "c2-astringent",
+"en": "Astringent",
+"topic": "sensory",
+"es": "Astringente",
+"fr": "Astringent"
+},
+{
+"id": "c2-bland-flavorless",
+"en": "Bland (flavorless)",
+"topic": "sensory",
+"es": "Soso (insípido)",
+"fr": "Fade"
+},
+{
+"id": "c2-brackish",
+"en": "Brackish",
+"topic": "sensory",
+"es": "Salobre",
+"fr": "Saumâtre"
+},
+{
+"id": "c2-cloying",
+"en": "Cloying",
+"topic": "sensory",
+"es": "Empalagoso",
+"fr": "Écœurant (sirupeux)"
+},
+{
+"id": "c2-coarse",
+"en": "Coarse",
+"topic": "sensory",
+"es": "Áspero (basto)",
+"fr": "Grossier (rugueux)"
+},
+{
+"id": "c2-creamy",
+"en": "Creamy",
+"topic": "sensory",
+"es": "Cremoso",
+"fr": "Onctueux (crémeux)"
+},
+{
+"id": "c2-crunchy",
+"en": "Crunchy",
+"topic": "sensory",
+"es": "Crujiente",
+"fr": "Croquant"
+},
+{
+"id": "c2-dank",
+"en": "Dank",
+"topic": "sensory",
+"es": "Húmedo (mohoso)",
+"fr": "Humide (moite)"
+},
+{
+"id": "c2-earthy",
+"en": "Earthy",
+"topic": "sensory",
+"es": "Terroso",
+"fr": "Terreux"
+},
+{
+"id": "c2-fragrant",
+"en": "Fragrant",
+"topic": "sensory",
+"es": "Fragante",
+"fr": "Parfumé (odorant)"
+},
+{
+"id": "c2-gooey",
+"en": "Gooey",
+"topic": "sensory",
+"es": "Pegajoso (viscoso)",
+"fr": "Gluant (collant)"
+},
+{
+"id": "c2-grainy",
+"en": "Grainy",
+"topic": "sensory",
+"es": "Granuloso",
+"fr": "Granuleux"
+},
+{
+"id": "c2-unctuous",
+"en": "Unctuous",
+"topic": "sensory",
+"es": "Untuoso",
+"fr": "Onctueux (mielleux)"
+},
+{
+"id": "c2-gravelly-voice",
+"en": "Gravelly (voice)",
+"topic": "sensory",
+"es": "Grave y áspera (voz)",
+"fr": "Rocailleuse (voix)"
+},
+{
+"id": "c2-luscious",
+"en": "Luscious",
+"topic": "sensory",
+"es": "Delicioso (suculento)",
+"fr": "Succulent (délicieux)"
+},
+{
+"id": "c2-mellow",
+"en": "Mellow",
+"topic": "sensory",
+"es": "Suave (meloso)",
+"fr": "Moelleux (doux)"
+},
+{
+"id": "c2-hushed",
+"en": "Hushed",
+"topic": "sensory",
+"es": "Apagado (en voz baja)",
+"fr": "Feutré (étouffé)"
+},
+{
+"id": "c2-musty",
+"en": "Musty",
+"topic": "sensory",
+"es": "Rancio (a humedad)",
+"fr": "De renfermé (moisi)"
+},
+{
+"id": "c2-piercing",
+"en": "Piercing",
+"topic": "sensory",
+"es": "Penetrante (agudo)",
+"fr": "Perçant"
+},
+{
+"id": "c2-pungent",
+"en": "Pungent",
+"topic": "sensory",
+"es": "Penetrante (acre)",
+"fr": "Piquant (âcre)"
+},
+{
+"id": "c2-putrid",
+"en": "Putrid",
+"topic": "sensory",
+"es": "Pútrido",
+"fr": "Putride"
+},
+{
+"id": "c2-rancid",
+"en": "Rancid",
+"topic": "sensory",
+"es": "Rancio",
+"fr": "Rance"
+},
+{
+"id": "c2-bitter-aftertaste",
+"en": "Bitter aftertaste",
+"topic": "sensory",
+"es": "Regusto amargo",
+"fr": "Arrière-goût amer"
+},
+{
+"id": "c2-grating-sound",
+"en": "Grating (sound)",
+"topic": "sensory",
+"es": "Chirriante",
+"fr": "Grinçant"
+},
+{
+"id": "c2-silky",
+"en": "Silky",
+"topic": "sensory",
+"es": "Sedoso",
+"fr": "Soyeux"
+},
+{
+"id": "c2-slimy",
+"en": "Slimy",
+"topic": "sensory",
+"es": "Viscoso (baboso)",
+"fr": "Visqueux (gluant)"
+},
+{
+"id": "c2-soggy",
+"en": "Soggy",
+"topic": "sensory",
+"es": "Empapado (blando)",
+"fr": "Détrempé (ramolli)"
+},
+{
+"id": "c2-tangy",
+"en": "Tangy",
+"topic": "sensory",
+"es": "Ácido (con un toque fuerte)",
+"fr": "Acidulé"
+},
+{
+"id": "c2-zesty",
+"en": "Zesty",
+"topic": "sensory",
+"es": "Sabroso (con chispa)",
+"fr": "Relevé (piquant)"
+},
+{
+"id": "c2-better-late-than-never",
+"en": "Better late than never",
+"topic": "proverbs-sayings",
+"es": "Más vale tarde que nunca",
+"fr": "Mieux vaut tard que jamais"
+},
+{
+"id": "c2-actions-speak-louder-than-words",
+"en": "Actions speak louder than words",
+"topic": "proverbs-sayings",
+"es": "Obras son amores y no buenas razones",
+"fr": "Les actes valent mieux que les paroles"
+},
+{
+"id": "c2-the-early-bird-catches-the-worm",
+"en": "The early bird catches the worm",
+"topic": "proverbs-sayings",
+"es": "A quien madruga, Dios le ayuda",
+"fr": "L’avenir appartient à ceux qui se lèvent tôt"
+},
+{
+"id": "c2-don-t-count-your-chickens-before-they-hatch",
+"en": "Don't count your chickens before they hatch",
+"topic": "proverbs-sayings",
+"es": "No vendas la piel del oso antes de cazarlo",
+"fr": "Il ne faut pas vendre la peau de l’ours avant de l’avoir tué"
+},
+{
+"id": "c2-every-cloud-has-a-silver-lining",
+"en": "Every cloud has a silver lining",
+"topic": "proverbs-sayings",
+"es": "No hay mal que por bien no venga",
+"fr": "À quelque chose malheur est bon"
+},
+{
+"id": "c2-practice-makes-perfect",
+"en": "Practice makes perfect",
+"topic": "proverbs-sayings",
+"es": "La práctica hace al maestro",
+"fr": "C’est en forgeant qu’on devient forgeron"
+},
+{
+"id": "c2-when-in-rome-do-as-the-romans-do",
+"en": "When in Rome, do as the Romans do",
+"topic": "proverbs-sayings",
+"es": "Donde fueres, haz lo que vieres",
+"fr": "À Rome, fais comme les Romains"
+},
+{
+"id": "c2-two-heads-are-better-than-one",
+"en": "Two heads are better than one",
+"topic": "proverbs-sayings",
+"es": "Cuatro ojos ven más que dos",
+"fr": "Deux avis valent mieux qu’un"
+},
+{
+"id": "c2-the-grass-is-always-greener-on-the-other-side",
+"en": "The grass is always greener on the other side",
+"topic": "proverbs-sayings",
+"es": "La hierba siempre parece más verde al otro lado",
+"fr": "L’herbe est toujours plus verte ailleurs"
+},
+{
+"id": "c2-don-t-judge-a-book-by-its-cover",
+"en": "Don't judge a book by its cover",
+"topic": "proverbs-sayings",
+"es": "Las apariencias engañan",
+"fr": "L’habit ne fait pas le moine"
+},
+{
+"id": "c2-birds-of-a-feather-flock-together",
+"en": "Birds of a feather flock together",
+"topic": "proverbs-sayings",
+"es": "Dios los cría y ellos se juntan",
+"fr": "Qui se ressemble s’assemble"
+},
+{
+"id": "c2-a-bird-in-the-hand-is-worth-two-in-the-bush",
+"en": "A bird in the hand is worth two in the bush",
+"topic": "proverbs-sayings",
+"es": "Más vale pájaro en mano que ciento volando",
+"fr": "Un tiens vaut mieux que deux tu l’auras"
+},
+{
+"id": "c2-where-there-s-a-will-there-s-a-way",
+"en": "Where there's a will, there's a way",
+"topic": "proverbs-sayings",
+"es": "Querer es poder",
+"fr": "Vouloir, c’est pouvoir"
+},
+{
+"id": "c2-rome-wasn-t-built-in-a-day",
+"en": "Rome wasn't built in a day",
+"topic": "proverbs-sayings",
+"es": "Roma no se construyó en un día",
+"fr": "Rome ne s’est pas faite en un jour"
+},
+{
+"id": "c2-too-many-cooks-spoil-the-broth",
+"en": "Too many cooks spoil the broth",
+"topic": "proverbs-sayings",
+"es": "Muchas manos en un plato hacen mucho garabato",
+"fr": "Trop de cuisiniers gâtent la sauce"
+},
+{
+"id": "c2-out-of-sight-out-of-mind",
+"en": "Out of sight, out of mind",
+"topic": "proverbs-sayings",
+"es": "Ojos que no ven, corazón que no siente",
+"fr": "Loin des yeux, loin du cœur"
+},
+{
+"id": "c2-look-before-you-leap",
+"en": "Look before you leap",
+"topic": "proverbs-sayings",
+"es": "Antes de que te cases, mira lo que haces",
+"fr": "Il faut réfléchir avant d’agir"
+},
+{
+"id": "c2-necessity-is-the-mother-of-invention",
+"en": "Necessity is the mother of invention",
+"topic": "proverbs-sayings",
+"es": "La necesidad es la madre de la invención",
+"fr": "Nécessité est mère d’invention"
+},
+{
+"id": "c2-you-can-t-have-your-cake-and-eat-it-too",
+"en": "You can't have your cake and eat it too",
+"topic": "proverbs-sayings",
+"es": "No se puede estar en misa y repicando",
+"fr": "On ne peut pas avoir le beurre et l’argent du beurre"
+},
+{
+"id": "c2-honesty-is-the-best-policy",
+"en": "Honesty is the best policy",
+"topic": "proverbs-sayings",
+"es": "La honestidad es la mejor política",
+"fr": "L’honnêteté est la meilleure des politiques"
+},
+{
+"id": "c2-still-waters-run-deep",
+"en": "Still waters run deep",
+"topic": "proverbs-sayings",
+"es": "Del agua mansa líbreme Dios",
+"fr": "Il n’est pire eau que l’eau qui dort"
+},
+{
+"id": "c2-blood-is-thicker-than-water",
+"en": "Blood is thicker than water",
+"topic": "proverbs-sayings",
+"es": "La sangre tira",
+"fr": "Les liens du sang sont les plus forts"
+},
+{
+"id": "c2-absence-makes-the-heart-grow-fonder",
+"en": "Absence makes the heart grow fonder",
+"topic": "proverbs-sayings",
+"es": "La ausencia aviva el cariño",
+"fr": "L’absence renforce l’amour"
+},
+{
+"id": "c2-every-dog-has-its-day",
+"en": "Every dog has its day",
+"topic": "proverbs-sayings",
+"es": "A cada cerdo le llega su San Martín",
+"fr": "À chacun son heure de gloire"
+},
+{
+"id": "c2-haste-makes-waste",
+"en": "Haste makes waste",
+"topic": "proverbs-sayings",
+"es": "Vísteme despacio que tengo prisa",
+"fr": "Qui trop se hâte reste en chemin"
+},
+{
+"id": "c2-let-sleeping-dogs-lie",
+"en": "Let sleeping dogs lie",
+"topic": "proverbs-sayings",
+"es": "Mejor no meneallo",
+"fr": "Ne réveillez pas le chat qui dort"
+},
+{
+"id": "c2-strike-while-the-iron-is-hot",
+"en": "Strike while the iron is hot",
+"topic": "proverbs-sayings",
+"es": "Al hierro candente, batirlo de repente",
+"fr": "Il faut battre le fer tant qu’il est chaud"
+},
+{
+"id": "c2-the-pen-is-mightier-than-the-sword",
+"en": "The pen is mightier than the sword",
+"topic": "proverbs-sayings",
+"es": "La pluma es más poderosa que la espada",
+"fr": "La plume est plus forte que l’épée"
+},
+{
+"id": "c2-curiosity-killed-the-cat",
+"en": "Curiosity killed the cat",
+"topic": "proverbs-sayings",
+"es": "La curiosidad mató al gato",
+"fr": "La curiosité est un vilain défaut"
+},
+{
+"id": "c2-beggars-can-t-be-choosers",
+"en": "Beggars can't be choosers",
+"topic": "proverbs-sayings",
+"es": "A caballo regalado no le mires el diente",
+"fr": "À cheval donné on ne regarde pas les dents"
+},
+{
+"id": "c2-to-draw-a-distinction",
+"en": "To draw a distinction",
+"topic": "formal-collocations",
+"es": "Hacer una distinción",
+"fr": "Établir une distinction"
+},
+{
+"id": "c2-to-reach-a-verdict",
+"en": "To reach a verdict",
+"topic": "formal-collocations",
+"es": "Emitir un veredicto",
+"fr": "Rendre un verdict"
+},
+{
+"id": "c2-to-pose-a-threat",
+"en": "To pose a threat",
+"topic": "formal-collocations",
+"es": "Suponer una amenaza",
+"fr": "Représenter une menace"
+},
+{
+"id": "c2-to-bear-the-brunt",
+"en": "To bear the brunt",
+"topic": "formal-collocations",
+"es": "Llevarse la peor parte",
+"fr": "Subir de plein fouet"
+},
+{
+"id": "c2-to-lend-credence-to",
+"en": "To lend credence to",
+"topic": "formal-collocations",
+"es": "Dar credibilidad a",
+"fr": "Donner du crédit à"
+},
+{
+"id": "c2-to-wield-influence",
+"en": "To wield influence",
+"topic": "formal-collocations",
+"es": "Ejercer influencia",
+"fr": "Exercer une influence"
+},
+{
+"id": "c2-to-incur-a-cost",
+"en": "To incur a cost",
+"topic": "formal-collocations",
+"es": "Incurrir en un gasto",
+"fr": "Encourir un coût"
+},
+{
+"id": "c2-to-uphold-a-principle",
+"en": "To uphold a principle",
+"topic": "formal-collocations",
+"es": "Defender un principio",
+"fr": "Défendre un principe"
+},
+{
+"id": "c2-to-exert-pressure",
+"en": "To exert pressure",
+"topic": "formal-collocations",
+"es": "Ejercer presión",
+"fr": "Exercer une pression"
+},
+{
+"id": "c2-to-fulfil-an-obligation",
+"en": "To fulfil an obligation",
+"topic": "formal-collocations",
+"es": "Cumplir una obligación",
+"fr": "Remplir une obligation"
+},
+{
+"id": "c2-to-cast-doubt-on",
+"en": "To cast doubt on",
+"topic": "formal-collocations",
+"es": "Poner en duda",
+"fr": "Jeter le doute sur"
+},
+{
+"id": "c2-to-pay-tribute-to",
+"en": "To pay tribute to",
+"topic": "formal-collocations",
+"es": "Rendir homenaje a",
+"fr": "Rendre hommage à"
+},
+{
+"id": "c2-to-take-precedence-over",
+"en": "To take precedence over",
+"topic": "formal-collocations",
+"es": "Tener prioridad sobre",
+"fr": "Avoir la priorité sur"
+},
+{
+"id": "c2-to-run-the-risk-of",
+"en": "To run the risk of",
+"topic": "formal-collocations",
+"es": "Correr el riesgo de",
+"fr": "Courir le risque de"
+},
+{
+"id": "c2-to-strike-a-balance",
+"en": "To strike a balance",
+"topic": "formal-collocations",
+"es": "Encontrar un equilibrio",
+"fr": "Trouver un équilibre"
+},
+{
+"id": "c2-to-come-to-fruition",
+"en": "To come to fruition",
+"topic": "formal-collocations",
+"es": "Llegar a buen puerto",
+"fr": "Se concrétiser (porter ses fruits)"
+},
+{
+"id": "c2-to-shed-light-on",
+"en": "To shed light on",
+"topic": "formal-collocations",
+"es": "Arrojar luz sobre",
+"fr": "Faire la lumière sur"
+},
+{
+"id": "c2-to-set-a-precedent",
+"en": "To set a precedent",
+"topic": "formal-collocations",
+"es": "Sentar un precedente",
+"fr": "Créer un précédent"
+},
+{
+"id": "c2-to-give-rise-to",
+"en": "To give rise to",
+"topic": "formal-collocations",
+"es": "Dar lugar a",
+"fr": "Donner lieu à"
+},
+{
+"id": "c2-to-take-issue-with",
+"en": "To take issue with",
+"topic": "formal-collocations",
+"es": "Discrepar de",
+"fr": "Contester (s’élever contre)"
+},
+{
+"id": "c2-pursuant-to",
+"en": "Pursuant to",
+"topic": "formal-collocations",
+"es": "De conformidad con (en virtud de)",
+"fr": "Conformément à (en application de)"
+},
+{
+"id": "c2-heretofore",
+"en": "Heretofore",
+"topic": "formal-collocations",
+"es": "Hasta ahora (anteriormente)",
+"fr": "Jusqu’ici (auparavant)"
+},
+{
+"id": "c2-inasmuch-as",
+"en": "Inasmuch as",
+"topic": "formal-collocations",
+"es": "En tanto que (dado que)",
+"fr": "Dans la mesure où (attendu que)"
+},
+{
+"id": "c2-in-conjunction-with",
+"en": "In conjunction with",
+"topic": "formal-collocations",
+"es": "Junto con (conjuntamente con)",
+"fr": "Conjointement avec"
+},
+{
+"id": "c2-hitherto",
+"en": "Hitherto",
+"topic": "formal-collocations",
+"es": "Hasta ahora (hasta la fecha)",
+"fr": "Jusqu’ici (jusqu’à présent)"
+},
+{
+"id": "c2-forthwith",
+"en": "Forthwith",
+"topic": "formal-collocations",
+"es": "De inmediato (sin demora)",
+"fr": "Sur-le-champ (sans délai)"
+},
+{
+"id": "c2-whilst",
+"en": "Whilst",
+"topic": "formal-collocations",
+"es": "Mientras (si bien)",
+"fr": "Tandis que (alors que)"
+},
+{
+"id": "c2-wherein",
+"en": "Wherein",
+"topic": "formal-collocations",
+"es": "En el cual (donde)",
+"fr": "Dans lequel (où)"
+},
+{
+"id": "c2-vis-a-vis",
+"en": "Vis-à-vis",
+"topic": "formal-collocations",
+"es": "Con respecto a (frente a)",
+"fr": "Vis-à-vis de"
+},
+{
+"id": "c2-as-regards",
+"en": "As regards",
+"topic": "formal-collocations",
+"es": "En cuanto a",
+"fr": "En ce qui concerne (quant à)"
+},
+{
+"id": "c2-for-the-sake-of-argument",
+"en": "For the sake of argument",
+"topic": "formal-collocations",
+"es": "Por poner un ejemplo (supongamos)",
+"fr": "Pour les besoins de la discussion"
+},
+{
+"id": "c2-be-that-as-it-may",
+"en": "Be that as it may",
+"topic": "formal-collocations",
+"es": "Sea como fuere",
+"fr": "Quoi qu’il en soit"
+},
+{
+"id": "c2-on-balance",
+"en": "On balance",
+"topic": "formal-collocations",
+"es": "En conjunto (bien mirado)",
+"fr": "Tout bien considéré"
+},
+{
+"id": "c2-at-the-behest-of",
+"en": "At the behest of",
+"topic": "formal-collocations",
+"es": "A instancias de",
+"fr": "À la demande de"
+},
+{
+"id": "c2-in-the-wake-of",
+"en": "In the wake of",
+"topic": "formal-collocations",
+"es": "A raíz de",
+"fr": "À la suite de"
+},
+{
+"id": "c2-on-the-grounds-that",
+"en": "On the grounds that",
+"topic": "formal-collocations",
+"es": "Alegando que",
+"fr": "Au motif que"
+},
+{
+"id": "c2-in-accordance-with",
+"en": "In accordance with",
+"topic": "formal-collocations",
+"es": "De conformidad con",
+"fr": "Conformément à"
+},
+{
+"id": "c2-pending",
+"en": "Pending",
+"topic": "formal-collocations",
+"es": "A la espera de (pendiente de)",
+"fr": "En attendant (dans l’attente de)"
+},
+{
+"id": "c2-irrespective-of",
+"en": "Irrespective of",
+"topic": "formal-collocations",
+"es": "Independientemente de",
+"fr": "Indépendamment de"
+},
+{
+"id": "c2-hereinafter",
+"en": "Hereinafter",
+"topic": "formal-collocations",
+"es": "En adelante (en lo sucesivo)",
+"fr": "Ci-après"
+},
+{
+"id": "c2-beats-me",
+"en": "Beats me",
+"topic": "phrases-c2",
+"es": "Ni idea",
+"fr": "Aucune idée"
+},
+{
+"id": "c2-point-taken",
+"en": "Point taken",
+"topic": "phrases-c2",
+"es": "Tomo nota (tienes razón)",
+"fr": "Message reçu (bien vu)"
+},
+{
+"id": "c2-suit-yourself",
+"en": "Suit yourself",
+"topic": "phrases-c2",
+"es": "Como quieras",
+"fr": "Comme tu veux"
+},
+{
+"id": "c2-go-figure",
+"en": "Go figure",
+"topic": "phrases-c2",
+"es": "Vete a saber",
+"fr": "Va comprendre"
+},
+{
+"id": "c2-don-t-get-me-started",
+"en": "Don't get me started",
+"topic": "phrases-c2",
+"es": "Ni me hables",
+"fr": "Ne m’en parle pas"
+},
+{
+"id": "c2-bottom-line-is",
+"en": "Bottom line is",
+"topic": "phrases-c2",
+"es": "En resumidas cuentas",
+"fr": "En fin de compte"
+},
+{
+"id": "c2-off-the-top-of-my-head",
+"en": "Off the top of my head",
+"topic": "phrases-c2",
+"es": "Así de primeras",
+"fr": "Comme ça, de tête"
+},
+{
+"id": "c2-i-ll-say",
+"en": "I'll say",
+"topic": "phrases-c2",
+"es": "Ya te digo",
+"fr": "Et comment"
+},
+{
+"id": "c2-you-ve-got-to-be-kidding-me",
+"en": "You've got to be kidding me",
+"topic": "phrases-c2",
+"es": "No me fastidies",
+"fr": "Tu te fiches de moi"
+},
+{
+"id": "c2-no-offense-but",
+"en": "No offense, but",
+"topic": "phrases-c2",
+"es": "Sin ánimo de ofender, pero",
+"fr": "Sans vouloir te vexer, mais"
+},
+{
+"id": "c2-i-m-not-gonna-lie",
+"en": "I'm not gonna lie",
+"topic": "phrases-c2",
+"es": "No te voy a mentir",
+"fr": "Je vais pas te mentir"
+},
+{
+"id": "c2-speak-of-the-devil",
+"en": "Speak of the devil",
+"topic": "phrases-c2",
+"es": "Hablando del rey de Roma",
+"fr": "Quand on parle du loup"
+},
+{
+"id": "c2-it-s-on-the-tip-of-my-tongue",
+"en": "It's on the tip of my tongue",
+"topic": "phrases-c2",
+"es": "Lo tengo en la punta de la lengua",
+"fr": "Je l’ai sur le bout de la langue"
+},
+{
+"id": "c2-let-s-call-it-a-day",
+"en": "Let's call it a day",
+"topic": "phrases-c2",
+"es": "Lo dejamos por hoy",
+"fr": "On arrête là pour aujourd’hui"
+},
+{
+"id": "c2-it-s-not-rocket-science",
+"en": "It's not rocket science",
+"topic": "phrases-c2",
+"es": "No es tan complicado",
+"fr": "C’est pas sorcier"
+},
+{
+"id": "c2-that-s-the-last-straw",
+"en": "That's the last straw",
+"topic": "phrases-c2",
+"es": "Es la gota que colma el vaso",
+"fr": "C’est la goutte qui fait déborder le vase"
+},
+{
+"id": "c2-i-couldn-t-care-less",
+"en": "I couldn't care less",
+"topic": "phrases-c2",
+"es": "Me da exactamente igual",
+"fr": "Je m’en fiche complètement"
+},
+{
+"id": "c2-what-are-the-odds",
+"en": "What are the odds",
+"topic": "phrases-c2",
+"es": "Qué casualidad",
+"fr": "Quelle coïncidence"
+},
+{
+"id": "c2-say-no-more",
+"en": "Say no more",
+"topic": "phrases-c2",
+"es": "No digas más",
+"fr": "N’en dis pas plus"
+},
+{
+"id": "c2-hang-in-there",
+"en": "Hang in there",
+"topic": "phrases-c2",
+"es": "Aguanta",
+"fr": "Tiens bon"
+},
+{
+"id": "c2-i-m-all-ears",
+"en": "I'm all ears",
+"topic": "phrases-c2",
+"es": "Soy todo oídos",
+"fr": "Je suis tout ouïe"
+},
+{
+"id": "c2-that-s-on-me",
+"en": "That's on me",
+"topic": "phrases-c2",
+"es": "Eso es culpa mía",
+"fr": "C’est ma faute"
+},
+{
+"id": "c2-no-hard-feelings",
+"en": "No hard feelings",
+"topic": "phrases-c2",
+"es": "Sin rencores",
+"fr": "Sans rancune"
+},
+{
+"id": "c2-ditto",
+"en": "Ditto",
+"topic": "phrases-c2",
+"es": "Ídem (lo mismo)",
+"fr": "Idem (pareil)"
+},
+{
+"id": "c2-spill-the-beans",
+"en": "Spill the beans",
+"topic": "phrases-c2",
+"es": "Suelta la sopa",
+"fr": "Crache le morceau"
+},
+{
+"id": "c2-in-one-ear-and-out-the-other",
+"en": "In one ear and out the other",
+"topic": "phrases-c2",
+"es": "Por un oído le entra y por otro le sale",
+"fr": "Ça rentre par une oreille et ça sort par l’autre"
+},
+{
+"id": "c2-cut-to-the-chase",
+"en": "Cut to the chase",
+"topic": "phrases-c2",
+"es": "Ve al grano",
+"fr": "Va droit au but"
+},
+{
+"id": "c2-you-name-it",
+"en": "You name it",
+"topic": "phrases-c2",
+"es": "Lo que se te ocurra",
+"fr": "Tout ce que tu veux"
+},
+{
+"id": "c2-not-in-a-million-years",
+"en": "Not in a million years",
+"topic": "phrases-c2",
+"es": "Ni de broma",
+"fr": "Jamais de la vie"
+},
+{
+"id": "c2-it-is-what-it-is",
+"en": "It is what it is",
+"topic": "phrases-c2",
+"es": "Es lo que hay",
+"fr": "C’est comme ça"
+},
+{
+"id": "c2-give-me-a-break",
+"en": "Give me a break",
+"topic": "phrases-c2",
+"es": "Déjame en paz (venga ya)",
+"fr": "Lâche-moi un peu"
+},
+{
+"id": "c2-hold-your-horses",
+"en": "Hold your horses",
+"topic": "phrases-c2",
+"es": "Para el carro",
+"fr": "Doucement, pas si vite"
+},
+{
+"id": "c2-bite-the-bullet",
+"en": "Bite the bullet",
+"topic": "phrases-c2",
+"es": "Hacer de tripas corazón",
+"fr": "Serrer les dents"
+},
+{
+"id": "c2-take-it-with-a-grain-of-salt",
+"en": "Take it with a grain of salt",
+"topic": "phrases-c2",
+"es": "Tómalo con pinzas",
+"fr": "Prends-le avec des pincettes"
+},
+{
+"id": "c2-better-safe-than-sorry",
+"en": "Better safe than sorry",
+"topic": "phrases-c2",
+"es": "Más vale prevenir que curar",
+"fr": "Mieux vaut prévenir que guérir"
+},
+{
+"id": "c2-let-s-play-it-by-ear",
+"en": "Let's play it by ear",
+"topic": "phrases-c2",
+"es": "Ya veremos sobre la marcha",
+"fr": "On verra sur le moment"
+},
+{
+"id": "c2-i-ll-take-a-rain-check",
+"en": "I'll take a rain check",
+"topic": "phrases-c2",
+"es": "Lo dejamos para otro día",
+"fr": "Une autre fois, peut-être"
+},
+{
+"id": "c2-for-what-it-s-worth",
+"en": "For what it's worth",
+"topic": "phrases-c2",
+"es": "Por si sirve de algo",
+"fr": "Pour ce que ça vaut"
+},
+{
+"id": "c2-back-to-square-one",
+"en": "Back to square one",
+"topic": "phrases-c2",
+"es": "Vuelta a empezar",
+"fr": "Retour à la case départ"
+},
+{
+"id": "c2-touch-wood",
+"en": "Touch wood",
+"topic": "phrases-c2",
+"es": "Toco madera",
+"fr": "Je touche du bois"
+},
+{
+"id": "c2-allusion",
+"en": "Allusion",
+"topic": "communication-rare",
+"es": "Alusión",
+"fr": "Allusion"
+},
+{
+"id": "c2-anecdote",
+"en": "Anecdote",
+"topic": "communication-rare",
+"es": "Anécdota",
+"fr": "Anecdote"
+},
+{
+"id": "c2-antithesis",
+"en": "Antithesis",
+"topic": "communication-rare",
+"es": "Antítesis",
+"fr": "Antithèse"
+},
+{
+"id": "c2-aphorism",
+"en": "Aphorism",
+"topic": "communication-rare",
+"es": "Aforismo",
+"fr": "Aphorisme"
+},
+{
+"id": "c2-banter",
+"en": "Banter",
+"topic": "communication-rare",
+"es": "Bromas (pique amistoso)",
+"fr": "Plaisanteries (badinage)"
+},
+{
+"id": "c2-circumlocution",
+"en": "Circumlocution",
+"topic": "communication-rare",
+"es": "Circunloquio",
+"fr": "Circonlocution"
+},
+{
+"id": "c2-cliche",
+"en": "Cliché",
+"topic": "communication-rare",
+"es": "Cliché",
+"fr": "Cliché"
+},
+{
+"id": "c2-connotation",
+"en": "Connotation",
+"topic": "communication-rare",
+"es": "Connotación",
+"fr": "Connotation"
+},
+{
+"id": "c2-digression",
+"en": "Digression",
+"topic": "communication-rare",
+"es": "Digresión",
+"fr": "Digression"
+},
+{
+"id": "c2-double-entendre",
+"en": "Double entendre",
+"topic": "communication-rare",
+"es": "Doble sentido",
+"fr": "Double sens (sous-entendu)"
+},
+{
+"id": "c2-eloquence",
+"en": "Eloquence",
+"topic": "communication-rare",
+"es": "Elocuencia",
+"fr": "Éloquence"
+},
+{
+"id": "c2-euphemism",
+"en": "Euphemism",
+"topic": "communication-rare",
+"es": "Eufemismo",
+"fr": "Euphémisme"
+},
+{
+"id": "c2-gist",
+"en": "Gist",
+"topic": "communication-rare",
+"es": "Esencia (lo esencial)",
+"fr": "Essentiel (idée générale)"
+},
+{
+"id": "c2-hyperbole",
+"en": "Hyperbole",
+"topic": "communication-rare",
+"es": "Hipérbole",
+"fr": "Hyperbole"
+},
+{
+"id": "c2-irony",
+"en": "Irony",
+"topic": "communication-rare",
+"es": "Ironía",
+"fr": "Ironie"
+},
+{
+"id": "c2-juxtaposition",
+"en": "Juxtaposition",
+"topic": "communication-rare",
+"es": "Yuxtaposición",
+"fr": "Juxtaposition"
+},
+{
+"id": "c2-malapropism",
+"en": "Malapropism",
+"topic": "communication-rare",
+"es": "Malapropismo (lapsus)",
+"fr": "Impropriété (lapsus)"
+},
+{
+"id": "c2-oxymoron",
+"en": "Oxymoron",
+"topic": "communication-rare",
+"es": "Oxímoron",
+"fr": "Oxymore"
+},
+{
+"id": "c2-paraphrase",
+"en": "Paraphrase",
+"topic": "communication-rare",
+"es": "Paráfrasis",
+"fr": "Paraphrase"
+},
+{
+"id": "c2-pun",
+"en": "Pun",
+"topic": "communication-rare",
+"es": "Juego de palabras",
+"fr": "Jeu de mots"
+},
+{
+"id": "c2-quip",
+"en": "Quip",
+"topic": "communication-rare",
+"es": "Ocurrencia (agudeza)",
+"fr": "Bon mot (trait d’esprit)"
+},
+{
+"id": "c2-sarcasm",
+"en": "Sarcasm",
+"topic": "communication-rare",
+"es": "Sarcasmo",
+"fr": "Sarcasme"
+},
+{
+"id": "c2-slur-insult",
+"en": "Slur (insult)",
+"topic": "communication-rare",
+"es": "Insulto (calumnia)",
+"fr": "Insulte (injure)"
+},
+{
+"id": "c2-repartee",
+"en": "Repartee",
+"topic": "communication-rare",
+"es": "Réplica ingeniosa (agudeza)",
+"fr": "Répartie"
+},
+{
+"id": "c2-soliloquy",
+"en": "Soliloquy",
+"topic": "communication-rare",
+"es": "Soliloquio",
+"fr": "Soliloque"
+},
+{
+"id": "c2-subtext",
+"en": "Subtext",
+"topic": "communication-rare",
+"es": "Subtexto (trasfondo)",
+"fr": "Sous-texte (sous-entendu)"
+},
+{
+"id": "c2-tangent",
+"en": "Tangent",
+"topic": "communication-rare",
+"es": "Tangente (desvío del tema)",
+"fr": "Digression (hors-sujet)"
+},
+{
+"id": "c2-tirade",
+"en": "Tirade",
+"topic": "communication-rare",
+"es": "Diatriba",
+"fr": "Tirade (diatribe)"
+},
+{
+"id": "c2-understatement",
+"en": "Understatement",
+"topic": "communication-rare",
+"es": "Atenuación (quedarse corto)",
+"fr": "Litote (euphémisme)"
+},
+{
+"id": "c2-verbiage",
+"en": "Verbiage",
+"topic": "communication-rare",
+"es": "Palabrería",
+"fr": "Verbiage"
+},
+{
+"id": "c2-to-allude-to",
+"en": "To allude to",
+"topic": "communication-rare",
+"es": "Aludir a",
+"fr": "Faire allusion à"
+},
+{
+"id": "c2-to-enunciate",
+"en": "To enunciate",
+"topic": "communication-rare",
+"es": "Vocalizar (pronunciar con claridad)",
+"fr": "Articuler (prononcer clairement)"
+},
+{
+"id": "c2-to-belabor-the-point",
+"en": "To belabor the point",
+"topic": "communication-rare",
+"es": "Insistir demasiado",
+"fr": "Insister lourdement"
+},
+{
+"id": "c2-to-digress",
+"en": "To digress",
+"topic": "communication-rare",
+"es": "Divagar",
+"fr": "Faire une digression"
+},
+{
+"id": "c2-to-expound",
+"en": "To expound",
+"topic": "communication-rare",
+"es": "Exponer (explicar detalladamente)",
+"fr": "Exposer (développer)"
+},
+{
+"id": "c2-to-insinuate",
+"en": "To insinuate",
+"topic": "communication-rare",
+"es": "Insinuar",
+"fr": "Insinuer"
+},
+{
+"id": "c2-to-interject",
+"en": "To interject",
+"topic": "communication-rare",
+"es": "Interponer (intervenir)",
+"fr": "Intervenir (lancer)"
+},
+{
+"id": "c2-to-hammer-home",
+"en": "To hammer home",
+"topic": "communication-rare",
+"es": "Machacar (insistir en)",
+"fr": "Enfoncer le clou"
+},
+{
+"id": "c2-to-retort",
+"en": "To retort",
+"topic": "communication-rare",
+"es": "Replicar",
+"fr": "Rétorquer"
+},
+{
+"id": "c2-to-waffle-be-vague",
+"en": "To waffle (be vague)",
+"topic": "communication-rare",
+"es": "Irse por las ramas",
+"fr": "Tergiverser"
+},
+{
+"id": "c2-actuary",
+"en": "Actuary",
+"topic": "professions-specialized",
+"es": "Actuario",
+"fr": "Actuaire"
+},
+{
+"id": "c2-anesthesiologist",
+"en": "Anesthesiologist",
+"topic": "professions-specialized",
+"es": "Anestesista",
+"fr": "Anesthésiste"
+},
+{
+"id": "c2-archivist",
+"en": "Archivist",
+"topic": "professions-specialized",
+"es": "Archivero",
+"fr": "Archiviste"
+}
+]

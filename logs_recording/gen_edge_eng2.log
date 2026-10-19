@@ -1,0 +1,73 @@
+backend: edge
+C2 eng: 1217 clips to record
+  C2 eng 50/1217 · 46s
+  C2 eng 100/1217 · 79s
+  C2 eng 150/1217 · 113s
+  C2 eng 200/1217 · 152s
+  C2 eng 250/1217 · 186s
+  C2 eng 300/1217 · 221s
+  C2 eng 350/1217 · 255s
+  C2 eng 400/1217 · 288s
+  C2 eng 450/1217 · 322s
+  C2 eng 500/1217 · 360s
+  C2 eng 550/1217 · 396s
+  C2 eng 600/1217 · 431s
+  C2 eng 650/1217 · 466s
+  C2 eng 700/1217 · 499s
+  C2 eng 750/1217 · 536s
+  C2 eng 800/1217 · 567s
+  C2 eng 850/1217 · 600s
+  C2 eng 900/1217 · 634s
+  C2 eng 950/1217 · 669s
+  C2 eng 1000/1217 · 704s
+  C2 eng 1050/1217 · 740s
+  C2 eng 1100/1217 · 776s
+  C2 eng 1150/1217 · 812s
+  C2 eng 1200/1217 · 844s
+C2 eng done in 857s
+C1 eng: 904 clips to record
+  C1 eng 50/904 · 33s
+  C1 eng 100/904 · 68s
+  C1 eng 150/904 · 103s
+  C1 eng 200/904 · 137s
+  C1 eng 250/904 · 171s
+  C1 eng 300/904 · 205s
+  C1 eng 350/904 · 240s
+  C1 eng 400/904 · 275s
+  C1 eng 450/904 · 317s
+  C1 eng 500/904 · 350s
+  C1 eng 550/904 · 386s
+  C1 eng 600/904 · 418s
+  C1 eng 650/904 · 451s
+  C1 eng 700/904 · 484s
+  C1 eng 750/904 · 518s
+  C1 eng 800/904 · 553s
+  C1 eng 850/904 · 589s
+  C1 eng 900/904 · 624s
+C1 eng done in 627s
+B2 eng: 844 clips to record
+  B2 eng 50/844 · 32s
+  B2 eng 100/844 · 63s
+  B2 eng 150/844 · 95s
+  B2 eng 200/844 · 126s
+  B2 eng 250/844 · 157s
+  B2 eng 300/844 · 189s
+  B2 eng 350/844 · 221s
+  B2 eng 400/844 · 253s
+  B2 eng 450/844 · 285s
+  B2 eng 500/844 · 317s
+  B2 eng 550/844 · 347s
+  B2 eng 600/844 · 379s
+  B2 eng 650/844 · 411s
+  B2 eng 700/844 · 440s
+  B2 eng 750/844 · 469s
+  B2 eng 800/844 · 499s
+B2 eng done in 528s
+TILES eng: 233 clips to record
+FAIL x-113ed003:eng — NoAudioReceived('No audio was received. Please verify that your parameters are correct.')
+  TILES eng 50/233 · 62s
+  TILES eng 100/233 · 91s
+  TILES eng 150/233 · 121s
+  TILES eng 200/233 · 151s
+TILES eng done in 170s
+DONE — 3197 clips in manifest

@@ -1,0 +1,6246 @@
+[
+{
+"id": "c1-broadcast",
+"en": "Broadcast",
+"topic": "media-register",
+"es": "Emisión",
+"fr": "Émission (diffusion)"
+},
+{
+"id": "c1-coverage",
+"en": "Coverage",
+"topic": "media-register",
+"es": "Cobertura",
+"fr": "Couverture (médiatique)"
+},
+{
+"id": "c1-correspondent",
+"en": "Correspondent",
+"topic": "media-register",
+"es": "Corresponsal",
+"fr": "Correspondant"
+},
+{
+"id": "c1-anchor-news",
+"en": "Anchor (news)",
+"topic": "media-register",
+"es": "Presentador",
+"fr": "Présentateur"
+},
+{
+"id": "c1-editorial",
+"en": "Editorial",
+"topic": "media-register",
+"es": "Editorial",
+"fr": "Éditorial"
+},
+{
+"id": "c1-slant-bias",
+"en": "Slant (bias)",
+"topic": "media-register",
+"es": "Sesgo (enfoque)",
+"fr": "Orientation (parti pris)"
+},
+{
+"id": "c1-to-leak",
+"en": "To leak",
+"topic": "media-register",
+"es": "Filtrar",
+"fr": "Divulguer (fuiter)"
+},
+{
+"id": "c1-source-journalism",
+"en": "Source (journalism)",
+"topic": "media-register",
+"es": "Fuente",
+"fr": "Source"
+},
+{
+"id": "c1-whistleblower",
+"en": "Whistleblower",
+"topic": "media-register",
+"es": "Denunciante",
+"fr": "Lanceur d’alerte"
+},
+{
+"id": "c1-censorship",
+"en": "Censorship",
+"topic": "media-register",
+"es": "Censura",
+"fr": "Censure"
+},
+{
+"id": "c1-propaganda",
+"en": "Propaganda",
+"topic": "media-register",
+"es": "Propaganda",
+"fr": "Propagande"
+},
+{
+"id": "c1-misinformation",
+"en": "Misinformation",
+"topic": "media-register",
+"es": "Desinformación",
+"fr": "Désinformation"
+},
+{
+"id": "c1-fact-check",
+"en": "Fact-check",
+"topic": "media-register",
+"es": "Verificación de datos",
+"fr": "Vérification des faits"
+},
+{
+"id": "c1-viral",
+"en": "Viral",
+"topic": "media-register",
+"es": "Viral",
+"fr": "Viral"
+},
+{
+"id": "c1-clickbait",
+"en": "Clickbait",
+"topic": "media-register",
+"es": "Ciberanzuelo",
+"fr": "Piège à clics"
+},
+{
+"id": "c1-tabloid",
+"en": "Tabloid",
+"topic": "media-register",
+"es": "Prensa amarilla",
+"fr": "Tabloïd"
+},
+{
+"id": "c1-press-conference",
+"en": "Press conference",
+"topic": "media-register",
+"es": "Rueda de prensa",
+"fr": "Conférence de presse"
+},
+{
+"id": "c1-press-release",
+"en": "Press release",
+"topic": "media-register",
+"es": "Comunicado de prensa",
+"fr": "Communiqué de presse"
+},
+{
+"id": "c1-exclusive-story",
+"en": "Exclusive (story)",
+"topic": "media-register",
+"es": "Exclusiva",
+"fr": "Exclusivité"
+},
+{
+"id": "c1-breaking-news",
+"en": "Breaking news",
+"topic": "media-register",
+"es": "Última hora",
+"fr": "Flash info"
+},
+{
+"id": "c1-viewership",
+"en": "Viewership",
+"topic": "media-register",
+"es": "Audiencia",
+"fr": "Audience"
+},
+{
+"id": "c1-subscriber",
+"en": "Subscriber",
+"topic": "media-register",
+"es": "Suscriptor",
+"fr": "Abonné"
+},
+{
+"id": "c1-paywall",
+"en": "Paywall",
+"topic": "media-register",
+"es": "Muro de pago",
+"fr": "Paywall"
+},
+{
+"id": "c1-influencer",
+"en": "Influencer",
+"topic": "media-register",
+"es": "Influencer",
+"fr": "Influenceur"
+},
+{
+"id": "c1-to-trend",
+"en": "To trend",
+"topic": "media-register",
+"es": "Ser tendencia",
+"fr": "Être en tendance"
+},
+{
+"id": "c1-hashtag",
+"en": "Hashtag",
+"topic": "media-register",
+"es": "Etiqueta (hashtag)",
+"fr": "Hashtag"
+},
+{
+"id": "c1-op-ed",
+"en": "Op-ed",
+"topic": "media-register",
+"es": "Artículo de opinión",
+"fr": "Tribune"
+},
+{
+"id": "c1-byline",
+"en": "Byline",
+"topic": "media-register",
+"es": "Firma (del autor)",
+"fr": "Signature (article)"
+},
+{
+"id": "c1-segment-tv",
+"en": "Segment (TV)",
+"topic": "media-register",
+"es": "Segmento",
+"fr": "Séquence"
+},
+{
+"id": "c1-airtime",
+"en": "Airtime",
+"topic": "media-register",
+"es": "Tiempo en antena",
+"fr": "Temps d’antenne"
+},
+{
+"id": "c1-methodology",
+"en": "Methodology",
+"topic": "academic-register",
+"es": "Metodología",
+"fr": "Méthodologie"
+},
+{
+"id": "c1-empirical",
+"en": "Empirical",
+"topic": "academic-register",
+"es": "Empírico",
+"fr": "Empirique"
+},
+{
+"id": "c1-qualitative",
+"en": "Qualitative",
+"topic": "academic-register",
+"es": "Cualitativo",
+"fr": "Qualitatif"
+},
+{
+"id": "c1-quantitative",
+"en": "Quantitative",
+"topic": "academic-register",
+"es": "Cuantitativo",
+"fr": "Quantitatif"
+},
+{
+"id": "c1-variable",
+"en": "Variable",
+"topic": "academic-register",
+"es": "Variable",
+"fr": "Variable"
+},
+{
+"id": "c1-correlation",
+"en": "Correlation",
+"topic": "academic-register",
+"es": "Correlación",
+"fr": "Corrélation"
+},
+{
+"id": "c1-causation",
+"en": "Causation",
+"topic": "academic-register",
+"es": "Causalidad",
+"fr": "Causalité"
+},
+{
+"id": "c1-sample-study",
+"en": "Sample (study)",
+"topic": "academic-register",
+"es": "Muestra",
+"fr": "Échantillon"
+},
+{
+"id": "c1-peer-review",
+"en": "Peer review",
+"topic": "academic-register",
+"es": "Revisión por pares",
+"fr": "Évaluation par les pairs"
+},
+{
+"id": "c1-citation",
+"en": "Citation",
+"topic": "academic-register",
+"es": "Cita (referencia)",
+"fr": "Citation (référence)"
+},
+{
+"id": "c1-abstract-summary",
+"en": "Abstract (summary)",
+"topic": "academic-register",
+"es": "Resumen (abstract)",
+"fr": "Résumé (abstract)"
+},
+{
+"id": "c1-dissertation",
+"en": "Dissertation",
+"topic": "academic-register",
+"es": "Tesis doctoral",
+"fr": "Thèse de doctorat"
+},
+{
+"id": "c1-scholar",
+"en": "Scholar",
+"topic": "academic-register",
+"es": "Académico",
+"fr": "Universitaire (chercheur)"
+},
+{
+"id": "c1-discipline-field",
+"en": "Discipline (field)",
+"topic": "academic-register",
+"es": "Disciplina",
+"fr": "Discipline"
+},
+{
+"id": "c1-paradigm",
+"en": "Paradigm",
+"topic": "academic-register",
+"es": "Paradigma",
+"fr": "Paradigme"
+},
+{
+"id": "c1-phenomenon",
+"en": "Phenomenon",
+"topic": "academic-register",
+"es": "Fenómeno",
+"fr": "Phénomène"
+},
+{
+"id": "c1-premise",
+"en": "Premise",
+"topic": "academic-register",
+"es": "Premisa",
+"fr": "Prémisse"
+},
+{
+"id": "c1-inference",
+"en": "Inference",
+"topic": "academic-register",
+"es": "Inferencia",
+"fr": "Inférence"
+},
+{
+"id": "c1-to-infer",
+"en": "To infer",
+"topic": "academic-register",
+"es": "Inferir",
+"fr": "Inférer"
+},
+{
+"id": "c1-to-deduce",
+"en": "To deduce",
+"topic": "academic-register",
+"es": "Deducir",
+"fr": "Déduire"
+},
+{
+"id": "c1-rigorous",
+"en": "Rigorous",
+"topic": "academic-register",
+"es": "Riguroso",
+"fr": "Rigoureux"
+},
+{
+"id": "c1-nuanced",
+"en": "Nuanced",
+"topic": "academic-register",
+"es": "Matizado",
+"fr": "Nuancé"
+},
+{
+"id": "c1-to-synthesize",
+"en": "To synthesize",
+"topic": "academic-register",
+"es": "Sintetizar",
+"fr": "Synthétiser"
+},
+{
+"id": "c1-critique",
+"en": "Critique",
+"topic": "academic-register",
+"es": "Crítica (análisis)",
+"fr": "Critique (analyse)"
+},
+{
+"id": "c1-discourse",
+"en": "Discourse",
+"topic": "academic-register",
+"es": "Discurso",
+"fr": "Discours"
+},
+{
+"id": "c1-hierarchy",
+"en": "Hierarchy",
+"topic": "academic-register",
+"es": "Jerarquía",
+"fr": "Hiérarchie"
+},
+{
+"id": "c1-paradox",
+"en": "Paradox",
+"topic": "academic-register",
+"es": "Paradoja",
+"fr": "Paradoxe"
+},
+{
+"id": "c1-theoretical",
+"en": "Theoretical",
+"topic": "academic-register",
+"es": "Teórico",
+"fr": "Théorique"
+},
+{
+"id": "c1-findings",
+"en": "Findings",
+"topic": "academic-register",
+"es": "Hallazgos",
+"fr": "Résultats (conclusions)"
+},
+{
+"id": "c1-assumption",
+"en": "Assumption",
+"topic": "academic-register",
+"es": "Suposición",
+"fr": "Hypothèse (présupposé)"
+},
+{
+"id": "c1-to-back-up-support",
+"en": "To back up (support)",
+"topic": "phrasal-verbs-1",
+"es": "Respaldar",
+"fr": "Soutenir (appuyer)"
+},
+{
+"id": "c1-to-bring-up-mention",
+"en": "To bring up (mention)",
+"topic": "phrasal-verbs-1",
+"es": "Sacar (un tema)",
+"fr": "Aborder (un sujet)"
+},
+{
+"id": "c1-to-call-off",
+"en": "To call off",
+"topic": "phrasal-verbs-1",
+"es": "Suspender (cancelar)",
+"fr": "Annuler"
+},
+{
+"id": "c1-to-carry-on",
+"en": "To carry on",
+"topic": "phrasal-verbs-1",
+"es": "Seguir adelante",
+"fr": "Continuer"
+},
+{
+"id": "c1-to-check-out-look-at",
+"en": "To check out (look at)",
+"topic": "phrasal-verbs-1",
+"es": "Echar un vistazo",
+"fr": "Jeter un œil"
+},
+{
+"id": "c1-to-come-across",
+"en": "To come across",
+"topic": "phrasal-verbs-1",
+"es": "Toparse con",
+"fr": "Tomber sur"
+},
+{
+"id": "c1-to-cut-down-on",
+"en": "To cut down on",
+"topic": "phrasal-verbs-1",
+"es": "Reducir (el consumo)",
+"fr": "Réduire (sa consommation)"
+},
+{
+"id": "c1-to-do-without",
+"en": "To do without",
+"topic": "phrasal-verbs-1",
+"es": "Prescindir de",
+"fr": "Se passer de"
+},
+{
+"id": "c1-to-fall-apart",
+"en": "To fall apart",
+"topic": "phrasal-verbs-1",
+"es": "Desmoronarse",
+"fr": "S’effondrer"
+},
+{
+"id": "c1-to-fall-behind",
+"en": "To fall behind",
+"topic": "phrasal-verbs-1",
+"es": "Quedarse atrás",
+"fr": "Prendre du retard"
+},
+{
+"id": "c1-to-get-away-with",
+"en": "To get away with",
+"topic": "phrasal-verbs-1",
+"es": "Salirse con la suya",
+"fr": "S’en tirer"
+},
+{
+"id": "c1-to-get-by",
+"en": "To get by",
+"topic": "phrasal-verbs-1",
+"es": "Arreglárselas (sobrevivir)",
+"fr": "S’en sortir"
+},
+{
+"id": "c1-to-get-over",
+"en": "To get over",
+"topic": "phrasal-verbs-1",
+"es": "Superar (recuperarse)",
+"fr": "Se remettre de"
+},
+{
+"id": "c1-to-give-in",
+"en": "To give in",
+"topic": "phrasal-verbs-1",
+"es": "Ceder",
+"fr": "Céder"
+},
+{
+"id": "c1-to-go-through-experience",
+"en": "To go through (experience)",
+"topic": "phrasal-verbs-1",
+"es": "Pasar por",
+"fr": "Traverser (une épreuve)"
+},
+{
+"id": "c1-to-hold-on",
+"en": "To hold on",
+"topic": "phrasal-verbs-1",
+"es": "Esperar (aguantar)",
+"fr": "Attendre (tenir bon)"
+},
+{
+"id": "c1-to-keep-up-with",
+"en": "To keep up with",
+"topic": "phrasal-verbs-1",
+"es": "Mantenerse al día",
+"fr": "Suivre (le rythme)"
+},
+{
+"id": "c1-to-let-down",
+"en": "To let down",
+"topic": "phrasal-verbs-1",
+"es": "Decepcionar",
+"fr": "Décevoir"
+},
+{
+"id": "c1-to-look-into",
+"en": "To look into",
+"topic": "phrasal-verbs-1",
+"es": "Investigar (examinar)",
+"fr": "Examiner"
+},
+{
+"id": "c1-to-look-up-to",
+"en": "To look up to",
+"topic": "phrasal-verbs-1",
+"es": "Admirar",
+"fr": "Admirer"
+},
+{
+"id": "c1-to-make-up-for",
+"en": "To make up for",
+"topic": "phrasal-verbs-1",
+"es": "Compensar",
+"fr": "Compenser"
+},
+{
+"id": "c1-to-pass-out",
+"en": "To pass out",
+"topic": "phrasal-verbs-1",
+"es": "Desmayarse (perder el conocimiento)",
+"fr": "S’évanouir (tomber dans les pommes)"
+},
+{
+"id": "c1-to-point-out",
+"en": "To point out",
+"topic": "phrasal-verbs-1",
+"es": "Señalar (indicar)",
+"fr": "Faire remarquer"
+},
+{
+"id": "c1-to-put-up-with",
+"en": "To put up with",
+"topic": "phrasal-verbs-1",
+"es": "Aguantar (tolerar)",
+"fr": "Supporter"
+},
+{
+"id": "c1-to-run-into",
+"en": "To run into",
+"topic": "phrasal-verbs-1",
+"es": "Encontrarse con (por casualidad)",
+"fr": "Croiser (par hasard)"
+},
+{
+"id": "c1-to-set-up",
+"en": "To set up",
+"topic": "phrasal-verbs-1",
+"es": "Montar (establecer)",
+"fr": "Mettre en place"
+},
+{
+"id": "c1-to-sort-out",
+"en": "To sort out",
+"topic": "phrasal-verbs-1",
+"es": "Solucionar (arreglar)",
+"fr": "Régler"
+},
+{
+"id": "c1-to-stand-for",
+"en": "To stand for",
+"topic": "phrasal-verbs-1",
+"es": "Significar (representar)",
+"fr": "Signifier (représenter)"
+},
+{
+"id": "c1-to-take-after",
+"en": "To take after",
+"topic": "phrasal-verbs-1",
+"es": "Parecerse a",
+"fr": "Tenir de"
+},
+{
+"id": "c1-to-take-over",
+"en": "To take over",
+"topic": "phrasal-verbs-1",
+"es": "Hacerse cargo (asumir)",
+"fr": "Reprendre (prendre le contrôle)"
+},
+{
+"id": "c1-to-turn-down",
+"en": "To turn down",
+"topic": "phrasal-verbs-2",
+"es": "Rechazar (una oferta)",
+"fr": "Refuser (une offre)"
+},
+{
+"id": "c1-to-turn-up",
+"en": "To turn up",
+"topic": "phrasal-verbs-2",
+"es": "Aparecer (presentarse)",
+"fr": "Se pointer"
+},
+{
+"id": "c1-to-work-out-resolve",
+"en": "To work out (resolve)",
+"topic": "phrasal-verbs-2",
+"es": "Resolverse (salir bien)",
+"fr": "Se régler"
+},
+{
+"id": "c1-to-wear-off",
+"en": "To wear off",
+"topic": "phrasal-verbs-2",
+"es": "Pasarse (desaparecer)",
+"fr": "Se dissiper"
+},
+{
+"id": "c1-to-wind-up-end-up",
+"en": "To wind up (end up)",
+"topic": "phrasal-verbs-2",
+"es": "Acabar (terminar en)",
+"fr": "Se retrouver"
+},
+{
+"id": "c1-to-break-off",
+"en": "To break off",
+"topic": "phrasal-verbs-2",
+"es": "Romper (relaciones)",
+"fr": "Rompre (relations)"
+},
+{
+"id": "c1-to-brush-up-on",
+"en": "To brush up on",
+"topic": "phrasal-verbs-2",
+"es": "Repasar (refrescar)",
+"fr": "Réviser (rafraîchir)"
+},
+{
+"id": "c1-to-catch-on",
+"en": "To catch on",
+"topic": "phrasal-verbs-2",
+"es": "Ponerse de moda",
+"fr": "Prendre (devenir populaire)"
+},
+{
+"id": "c1-to-come-down-with",
+"en": "To come down with",
+"topic": "phrasal-verbs-2",
+"es": "Caer enfermo",
+"fr": "Attraper (une maladie)"
+},
+{
+"id": "c1-to-crack-down-on",
+"en": "To crack down on",
+"topic": "phrasal-verbs-2",
+"es": "Tomar medidas contra",
+"fr": "Sévir contre"
+},
+{
+"id": "c1-to-dwell-on",
+"en": "To dwell on",
+"topic": "phrasal-verbs-2",
+"es": "Darle vueltas a",
+"fr": "Ressasser"
+},
+{
+"id": "c1-to-fall-through",
+"en": "To fall through",
+"topic": "phrasal-verbs-2",
+"es": "Fracasar (un plan)",
+"fr": "Tomber à l’eau"
+},
+{
+"id": "c1-to-get-across",
+"en": "To get across",
+"topic": "phrasal-verbs-2",
+"es": "Hacerse entender",
+"fr": "Faire passer (une idée)"
+},
+{
+"id": "c1-to-hold-back",
+"en": "To hold back",
+"topic": "phrasal-verbs-2",
+"es": "Contenerse",
+"fr": "Se retenir"
+},
+{
+"id": "c1-to-iron-out",
+"en": "To iron out",
+"topic": "phrasal-verbs-2",
+"es": "Limar (asperezas)",
+"fr": "Aplanir"
+},
+{
+"id": "c1-to-live-up-to",
+"en": "To live up to",
+"topic": "phrasal-verbs-2",
+"es": "Estar a la altura de",
+"fr": "Être à la hauteur de"
+},
+{
+"id": "c1-to-narrow-down",
+"en": "To narrow down",
+"topic": "phrasal-verbs-2",
+"es": "Reducir (opciones)",
+"fr": "Restreindre (le choix)"
+},
+{
+"id": "c1-to-opt-out",
+"en": "To opt out",
+"topic": "phrasal-verbs-2",
+"es": "Darse de baja (optar por no)",
+"fr": "Se désengager"
+},
+{
+"id": "c1-to-phase-out",
+"en": "To phase out",
+"topic": "phrasal-verbs-2",
+"es": "Eliminar gradualmente",
+"fr": "Supprimer progressivement"
+},
+{
+"id": "c1-to-pull-off",
+"en": "To pull off",
+"topic": "phrasal-verbs-2",
+"es": "Lograr (con dificultad)",
+"fr": "Réussir (un coup)"
+},
+{
+"id": "c1-to-rule-out",
+"en": "To rule out",
+"topic": "phrasal-verbs-2",
+"es": "Descartar",
+"fr": "Exclure"
+},
+{
+"id": "c1-to-settle-for",
+"en": "To settle for",
+"topic": "phrasal-verbs-2",
+"es": "Conformarse con",
+"fr": "Se contenter de"
+},
+{
+"id": "c1-to-stick-to",
+"en": "To stick to",
+"topic": "phrasal-verbs-2",
+"es": "Ceñirse a",
+"fr": "S’en tenir à"
+},
+{
+"id": "c1-to-take-on-a-task",
+"en": "To take on (a task)",
+"topic": "phrasal-verbs-2",
+"es": "Asumir (una tarea)",
+"fr": "Se charger de"
+},
+{
+"id": "c1-to-touch-on",
+"en": "To touch on",
+"topic": "phrasal-verbs-2",
+"es": "Tocar (un tema)",
+"fr": "Effleurer (un sujet)"
+},
+{
+"id": "c1-to-weigh-up",
+"en": "To weigh up",
+"topic": "phrasal-verbs-2",
+"es": "Sopesar",
+"fr": "Peser (le pour et le contre)"
+},
+{
+"id": "c1-to-wrap-up",
+"en": "To wrap up",
+"topic": "phrasal-verbs-2",
+"es": "Concluir (terminar)",
+"fr": "Boucler"
+},
+{
+"id": "c1-to-zero-in-on",
+"en": "To zero in on",
+"topic": "phrasal-verbs-2",
+"es": "Centrarse en",
+"fr": "Se concentrer sur"
+},
+{
+"id": "c1-to-fend-off",
+"en": "To fend off",
+"topic": "phrasal-verbs-2",
+"es": "Repeler",
+"fr": "Repousser"
+},
+{
+"id": "c1-to-stem-from",
+"en": "To stem from",
+"topic": "phrasal-verbs-2",
+"es": "Provenir de",
+"fr": "Découler de"
+},
+{
+"id": "c1-awesome",
+"en": "Awesome",
+"topic": "colloquial",
+"es": "Genial",
+"fr": "Génial"
+},
+{
+"id": "c1-gross",
+"en": "Gross",
+"topic": "colloquial",
+"es": "Asqueroso (qué asco)",
+"fr": "Dégueu"
+},
+{
+"id": "c1-lame",
+"en": "Lame",
+"topic": "colloquial",
+"es": "Cutre",
+"fr": "Nul"
+},
+{
+"id": "c1-cheesy",
+"en": "Cheesy",
+"topic": "colloquial",
+"es": "Cursi",
+"fr": "Kitsch"
+},
+{
+"id": "c1-to-chill",
+"en": "To chill",
+"topic": "colloquial",
+"es": "Relajarse (chill)",
+"fr": "Se poser"
+},
+{
+"id": "c1-dude",
+"en": "Dude",
+"topic": "colloquial",
+"es": "Tío",
+"fr": "Mec"
+},
+{
+"id": "c1-to-ditch",
+"en": "To ditch",
+"topic": "colloquial",
+"es": "Plantar (abandonar)",
+"fr": "Laisser tomber"
+},
+{
+"id": "c1-to-bail-leave",
+"en": "To bail (leave)",
+"topic": "colloquial",
+"es": "Rajarse (irse)",
+"fr": "Se barrer"
+},
+{
+"id": "c1-to-crash-sleep",
+"en": "To crash (sleep)",
+"topic": "colloquial",
+"es": "Quedarse a dormir",
+"fr": "Pioncer"
+},
+{
+"id": "c1-to-freak-out",
+"en": "To freak out",
+"topic": "colloquial",
+"es": "Flipar (asustarse)",
+"fr": "Flipper"
+},
+{
+"id": "c1-to-nail-it",
+"en": "To nail it",
+"topic": "colloquial",
+"es": "Clavarlo",
+"fr": "Assurer"
+},
+{
+"id": "c1-to-screw-up",
+"en": "To screw up",
+"topic": "colloquial",
+"es": "Cagarla",
+"fr": "Foirer"
+},
+{
+"id": "c1-a-bummer",
+"en": "A bummer",
+"topic": "colloquial",
+"es": "Un bajón",
+"fr": "La poisse"
+},
+{
+"id": "c1-no-biggie",
+"en": "No biggie",
+"topic": "colloquial",
+"es": "No pasa nada",
+"fr": "Pas grave"
+},
+{
+"id": "c1-to-be-into",
+"en": "To be into",
+"topic": "colloquial",
+"es": "Estar metido en",
+"fr": "Être à fond dans"
+},
+{
+"id": "c1-hooked",
+"en": "Hooked",
+"topic": "colloquial",
+"es": "Enganchado",
+"fr": "Accro"
+},
+{
+"id": "c1-hype",
+"en": "Hype",
+"topic": "colloquial",
+"es": "Bombo",
+"fr": "Battage"
+},
+{
+"id": "c1-sketchy",
+"en": "Sketchy",
+"topic": "colloquial",
+"es": "Turbio",
+"fr": "Louche"
+},
+{
+"id": "c1-legit",
+"en": "Legit",
+"topic": "colloquial",
+"es": "De verdad (auténtico)",
+"fr": "Réglo"
+},
+{
+"id": "c1-a-rip-off",
+"en": "A rip-off",
+"topic": "colloquial",
+"es": "Un robo",
+"fr": "Une arnaque"
+},
+{
+"id": "c1-to-ghost",
+"en": "To ghost",
+"topic": "colloquial",
+"es": "Hacer ghosting",
+"fr": "Ghoster"
+},
+{
+"id": "c1-cringe",
+"en": "Cringe",
+"topic": "colloquial",
+"es": "Vergüenza ajena",
+"fr": "Gênant (cringe)"
+},
+{
+"id": "c1-to-wing-it",
+"en": "To wing it",
+"topic": "colloquial",
+"es": "Improvisar",
+"fr": "Improviser"
+},
+{
+"id": "c1-to-zone-out",
+"en": "To zone out",
+"topic": "colloquial",
+"es": "Quedarse en blanco",
+"fr": "Décrocher"
+},
+{
+"id": "c1-to-kick-back",
+"en": "To kick back",
+"topic": "colloquial",
+"es": "Relajarse (a tope)",
+"fr": "Se détendre"
+},
+{
+"id": "c1-for-real",
+"en": "For real",
+"topic": "colloquial",
+"es": "En serio",
+"fr": "Sérieux"
+},
+{
+"id": "c1-buddy",
+"en": "Buddy",
+"topic": "colloquial",
+"es": "Colega",
+"fr": "Pote"
+},
+{
+"id": "c1-to-hit-the-road",
+"en": "To hit the road",
+"topic": "colloquial",
+"es": "Ponerse en marcha",
+"fr": "Prendre la route"
+},
+{
+"id": "c1-to-grab-get",
+"en": "To grab (get)",
+"topic": "colloquial",
+"es": "Pillar",
+"fr": "Choper"
+},
+{
+"id": "c1-sweet-great",
+"en": "Sweet (great)",
+"topic": "colloquial",
+"es": "Qué guay",
+"fr": "Cool"
+},
+{
+"id": "c1-eloquent",
+"en": "Eloquent",
+"topic": "literary-adjectives",
+"es": "Elocuente",
+"fr": "Éloquent"
+},
+{
+"id": "c1-poignant",
+"en": "Poignant",
+"topic": "literary-adjectives",
+"es": "Conmovedor",
+"fr": "Poignant"
+},
+{
+"id": "c1-vivid",
+"en": "Vivid",
+"topic": "literary-adjectives",
+"es": "Vívido",
+"fr": "Vif (vivant)"
+},
+{
+"id": "c1-lucid",
+"en": "Lucid",
+"topic": "literary-adjectives",
+"es": "Lúcido",
+"fr": "Lucide"
+},
+{
+"id": "c1-sublime",
+"en": "Sublime",
+"topic": "literary-adjectives",
+"es": "Sublime",
+"fr": "Sublime"
+},
+{
+"id": "c1-exquisite",
+"en": "Exquisite",
+"topic": "literary-adjectives",
+"es": "Exquisito",
+"fr": "Exquis"
+},
+{
+"id": "c1-serene",
+"en": "Serene",
+"topic": "literary-adjectives",
+"es": "Sereno",
+"fr": "Serein"
+},
+{
+"id": "c1-somber",
+"en": "Somber",
+"topic": "literary-adjectives",
+"es": "Sombrío",
+"fr": "Sombre"
+},
+{
+"id": "c1-bleak",
+"en": "Bleak",
+"topic": "literary-adjectives",
+"es": "Desolador",
+"fr": "Morne"
+},
+{
+"id": "c1-grim",
+"en": "Grim",
+"topic": "literary-adjectives",
+"es": "Sombrío (lúgubre)",
+"fr": "Sinistre"
+},
+{
+"id": "c1-austere",
+"en": "Austere",
+"topic": "literary-adjectives",
+"es": "Austero",
+"fr": "Austère"
+},
+{
+"id": "c1-opulent",
+"en": "Opulent",
+"topic": "literary-adjectives",
+"es": "Opulento",
+"fr": "Opulent"
+},
+{
+"id": "c1-lavish",
+"en": "Lavish",
+"topic": "literary-adjectives",
+"es": "Lujoso (pródigo)",
+"fr": "Somptueux"
+},
+{
+"id": "c1-meager",
+"en": "Meager",
+"topic": "literary-adjectives",
+"es": "Escaso (exiguo)",
+"fr": "Maigre"
+},
+{
+"id": "c1-scarce",
+"en": "Scarce",
+"topic": "literary-adjectives",
+"es": "Escaso",
+"fr": "Rare (insuffisant)"
+},
+{
+"id": "c1-abundant",
+"en": "Abundant",
+"topic": "literary-adjectives",
+"es": "Abundante",
+"fr": "Abondant"
+},
+{
+"id": "c1-pristine",
+"en": "Pristine",
+"topic": "literary-adjectives",
+"es": "Prístino",
+"fr": "Immaculé (intact)"
+},
+{
+"id": "c1-dilapidated",
+"en": "Dilapidated",
+"topic": "literary-adjectives",
+"es": "Ruinoso",
+"fr": "Délabré"
+},
+{
+"id": "c1-quaint",
+"en": "Quaint",
+"topic": "literary-adjectives",
+"es": "Pintoresco (encantador)",
+"fr": "Pittoresque (charmant)"
+},
+{
+"id": "c1-picturesque",
+"en": "Picturesque",
+"topic": "literary-adjectives",
+"es": "Pintoresco",
+"fr": "Pittoresque"
+},
+{
+"id": "c1-ominous",
+"en": "Ominous",
+"topic": "literary-adjectives",
+"es": "Ominoso",
+"fr": "Inquiétant (de mauvais augure)"
+},
+{
+"id": "c1-eerie",
+"en": "Eerie",
+"topic": "literary-adjectives",
+"es": "Inquietante",
+"fr": "Étrange (inquiétant)"
+},
+{
+"id": "c1-uncanny",
+"en": "Uncanny",
+"topic": "literary-adjectives",
+"es": "Asombroso (extraño)",
+"fr": "Troublant"
+},
+{
+"id": "c1-whimsical",
+"en": "Whimsical",
+"topic": "literary-adjectives",
+"es": "Caprichoso (fantasioso)",
+"fr": "Fantasque"
+},
+{
+"id": "c1-wistful",
+"en": "Wistful",
+"topic": "literary-adjectives",
+"es": "Melancólico (anhelante)",
+"fr": "Mélancolique (nostalgique)"
+},
+{
+"id": "c1-fleeting",
+"en": "Fleeting",
+"topic": "literary-adjectives",
+"es": "Fugaz",
+"fr": "Fugace"
+},
+{
+"id": "c1-enduring",
+"en": "Enduring",
+"topic": "literary-adjectives",
+"es": "Perdurable",
+"fr": "Durable (persistant)"
+},
+{
+"id": "c1-ubiquitous",
+"en": "Ubiquitous",
+"topic": "literary-adjectives",
+"es": "Omnipresente",
+"fr": "Omniprésent"
+},
+{
+"id": "c1-elusive",
+"en": "Elusive",
+"topic": "literary-adjectives",
+"es": "Esquivo",
+"fr": "Insaisissable"
+},
+{
+"id": "c1-tangible",
+"en": "Tangible",
+"topic": "literary-adjectives",
+"es": "Tangible",
+"fr": "Tangible"
+},
+{
+"id": "c1-meticulous",
+"en": "Meticulous",
+"topic": "character-3",
+"es": "Meticuloso",
+"fr": "Méticuleux"
+},
+{
+"id": "c1-conscientious",
+"en": "Conscientious",
+"topic": "character-3",
+"es": "Concienzudo",
+"fr": "Consciencieux"
+},
+{
+"id": "c1-diligent",
+"en": "Diligent",
+"topic": "character-3",
+"es": "Diligente",
+"fr": "Diligent"
+},
+{
+"id": "c1-pragmatic",
+"en": "Pragmatic",
+"topic": "character-3",
+"es": "Pragmático",
+"fr": "Pragmatique"
+},
+{
+"id": "c1-cynical",
+"en": "Cynical",
+"topic": "character-3",
+"es": "Cínico",
+"fr": "Cynique"
+},
+{
+"id": "c1-skeptical",
+"en": "Skeptical",
+"topic": "character-3",
+"es": "Escéptico",
+"fr": "Sceptique"
+},
+{
+"id": "c1-gullible",
+"en": "Gullible",
+"topic": "character-3",
+"es": "Crédulo",
+"fr": "Crédule"
+},
+{
+"id": "c1-smug",
+"en": "Smug",
+"topic": "character-3",
+"es": "Engreído",
+"fr": "Suffisant"
+},
+{
+"id": "c1-aloof",
+"en": "Aloof",
+"topic": "character-3",
+"es": "Distante",
+"fr": "Distant"
+},
+{
+"id": "c1-candid",
+"en": "Candid",
+"topic": "character-3",
+"es": "Franco",
+"fr": "Franc"
+},
+{
+"id": "c1-tactless",
+"en": "Tactless",
+"topic": "character-3",
+"es": "Indiscreto (sin tacto)",
+"fr": "Maladroit (sans tact)"
+},
+{
+"id": "c1-assertive",
+"en": "Assertive",
+"topic": "character-3",
+"es": "Asertivo",
+"fr": "Affirmé"
+},
+{
+"id": "c1-submissive",
+"en": "Submissive",
+"topic": "character-3",
+"es": "Sumiso",
+"fr": "Soumis"
+},
+{
+"id": "c1-vindictive",
+"en": "Vindictive",
+"topic": "character-3",
+"es": "Vengativo",
+"fr": "Vindicatif"
+},
+{
+"id": "c1-magnanimous",
+"en": "Magnanimous",
+"topic": "character-3",
+"es": "Magnánimo",
+"fr": "Magnanime"
+},
+{
+"id": "c1-benevolent",
+"en": "Benevolent",
+"topic": "character-3",
+"es": "Benévolo",
+"fr": "Bienveillant"
+},
+{
+"id": "c1-malicious",
+"en": "Malicious",
+"topic": "character-3",
+"es": "Malicioso",
+"fr": "Malveillant"
+},
+{
+"id": "c1-frugal",
+"en": "Frugal",
+"topic": "character-3",
+"es": "Frugal",
+"fr": "Frugal"
+},
+{
+"id": "c1-extravagant",
+"en": "Extravagant",
+"topic": "character-3",
+"es": "Extravagante (derrochador)",
+"fr": "Extravagant (dépensier)"
+},
+{
+"id": "c1-impulsive",
+"en": "Impulsive",
+"topic": "character-3",
+"es": "Impulsivo",
+"fr": "Impulsif"
+},
+{
+"id": "c1-spontaneous",
+"en": "Spontaneous",
+"topic": "character-3",
+"es": "Espontáneo",
+"fr": "Spontané"
+},
+{
+"id": "c1-calculating",
+"en": "Calculating",
+"topic": "character-3",
+"es": "Calculador",
+"fr": "Calculateur"
+},
+{
+"id": "c1-eccentric",
+"en": "Eccentric",
+"topic": "character-3",
+"es": "Excéntrico",
+"fr": "Excentrique"
+},
+{
+"id": "c1-unconventional",
+"en": "Unconventional",
+"topic": "character-3",
+"es": "Poco convencional",
+"fr": "Non conventionnel"
+},
+{
+"id": "c1-sophisticated",
+"en": "Sophisticated",
+"topic": "character-3",
+"es": "Sofisticado",
+"fr": "Sophistiqué"
+},
+{
+"id": "c1-witty",
+"en": "Witty",
+"topic": "character-3",
+"es": "Ingenioso",
+"fr": "Spirituel"
+},
+{
+"id": "c1-sarcastic",
+"en": "Sarcastic",
+"topic": "character-3",
+"es": "Sarcástico",
+"fr": "Sarcastique"
+},
+{
+"id": "c1-charismatic",
+"en": "Charismatic",
+"topic": "character-3",
+"es": "Carismático",
+"fr": "Charismatique"
+},
+{
+"id": "c1-condescending",
+"en": "Condescending",
+"topic": "character-3",
+"es": "Condescendiente",
+"fr": "Condescendant"
+},
+{
+"id": "c1-pretentious",
+"en": "Pretentious",
+"topic": "character-3",
+"es": "Pretencioso",
+"fr": "Prétentieux"
+},
+{
+"id": "c1-empire",
+"en": "Empire",
+"topic": "history-politics",
+"es": "Imperio",
+"fr": "Empire"
+},
+{
+"id": "c1-colony",
+"en": "Colony",
+"topic": "history-politics",
+"es": "Colonia",
+"fr": "Colonie"
+},
+{
+"id": "c1-revolution",
+"en": "Revolution",
+"topic": "history-politics",
+"es": "Revolución",
+"fr": "Révolution"
+},
+{
+"id": "c1-uprising",
+"en": "Uprising",
+"topic": "history-politics",
+"es": "Levantamiento",
+"fr": "Soulèvement"
+},
+{
+"id": "c1-dictatorship",
+"en": "Dictatorship",
+"topic": "history-politics",
+"es": "Dictadura",
+"fr": "Dictature"
+},
+{
+"id": "c1-democracy",
+"en": "Democracy",
+"topic": "history-politics",
+"es": "Democracia",
+"fr": "Démocratie"
+},
+{
+"id": "c1-monarchy",
+"en": "Monarchy",
+"topic": "history-politics",
+"es": "Monarquía",
+"fr": "Monarchie"
+},
+{
+"id": "c1-republic",
+"en": "Republic",
+"topic": "history-politics",
+"es": "República",
+"fr": "République"
+},
+{
+"id": "c1-regime",
+"en": "Regime",
+"topic": "history-politics",
+"es": "Régimen",
+"fr": "Régime"
+},
+{
+"id": "c1-treaty",
+"en": "Treaty",
+"topic": "history-politics",
+"es": "Tratado",
+"fr": "Traité"
+},
+{
+"id": "c1-alliance",
+"en": "Alliance",
+"topic": "history-politics",
+"es": "Alianza",
+"fr": "Alliance"
+},
+{
+"id": "c1-invasion",
+"en": "Invasion",
+"topic": "history-politics",
+"es": "Invasión",
+"fr": "Invasion"
+},
+{
+"id": "c1-occupation-military",
+"en": "Occupation (military)",
+"topic": "history-politics",
+"es": "Ocupación",
+"fr": "Occupation"
+},
+{
+"id": "c1-independence",
+"en": "Independence",
+"topic": "history-politics",
+"es": "Independencia",
+"fr": "Indépendance"
+},
+{
+"id": "c1-sovereignty",
+"en": "Sovereignty",
+"topic": "history-politics",
+"es": "Soberanía",
+"fr": "Souveraineté"
+},
+{
+"id": "c1-civil-war",
+"en": "Civil war",
+"topic": "history-politics",
+"es": "Guerra civil",
+"fr": "Guerre civile"
+},
+{
+"id": "c1-ceasefire",
+"en": "Ceasefire",
+"topic": "history-politics",
+"es": "Alto el fuego",
+"fr": "Cessez-le-feu"
+},
+{
+"id": "c1-refugee",
+"en": "Refugee",
+"topic": "history-politics",
+"es": "Refugiado",
+"fr": "Réfugié"
+},
+{
+"id": "c1-asylum",
+"en": "Asylum",
+"topic": "history-politics",
+"es": "Asilo",
+"fr": "Asile"
+},
+{
+"id": "c1-exile",
+"en": "Exile",
+"topic": "history-politics",
+"es": "Exilio",
+"fr": "Exil"
+},
+{
+"id": "c1-dynasty",
+"en": "Dynasty",
+"topic": "history-politics",
+"es": "Dinastía",
+"fr": "Dynastie"
+},
+{
+"id": "c1-heir",
+"en": "Heir",
+"topic": "history-politics",
+"es": "Heredero",
+"fr": "Héritier"
+},
+{
+"id": "c1-coup",
+"en": "Coup",
+"topic": "history-politics",
+"es": "Golpe de Estado",
+"fr": "Coup d’État"
+},
+{
+"id": "c1-sanctions",
+"en": "Sanctions",
+"topic": "history-politics",
+"es": "Sanciones",
+"fr": "Sanctions"
+},
+{
+"id": "c1-diplomacy",
+"en": "Diplomacy",
+"topic": "history-politics",
+"es": "Diplomacia",
+"fr": "Diplomatie"
+},
+{
+"id": "c1-ambassador",
+"en": "Ambassador",
+"topic": "history-politics",
+"es": "Embajador",
+"fr": "Ambassadeur"
+},
+{
+"id": "c1-embassy",
+"en": "Embassy",
+"topic": "history-politics",
+"es": "Embajada",
+"fr": "Ambassade"
+},
+{
+"id": "c1-summit-meeting",
+"en": "Summit (meeting)",
+"topic": "history-politics",
+"es": "Cumbre",
+"fr": "Sommet"
+},
+{
+"id": "c1-constitution",
+"en": "Constitution",
+"topic": "history-politics",
+"es": "Constitución",
+"fr": "Constitution"
+},
+{
+"id": "c1-amendment",
+"en": "Amendment",
+"topic": "history-politics",
+"es": "Enmienda",
+"fr": "Amendement"
+},
+{
+"id": "c1-bottom-line",
+"en": "Bottom line",
+"topic": "business-idioms",
+"es": "Lo esencial (resultado final)",
+"fr": "Le résultat net (l’essentiel)"
+},
+{
+"id": "c1-ballpark-figure",
+"en": "Ballpark figure",
+"topic": "business-idioms",
+"es": "Cifra aproximada",
+"fr": "Estimation approximative"
+},
+{
+"id": "c1-to-touch-base",
+"en": "To touch base",
+"topic": "business-idioms",
+"es": "Ponerse en contacto",
+"fr": "Faire le point"
+},
+{
+"id": "c1-to-circle-back",
+"en": "To circle back",
+"topic": "business-idioms",
+"es": "Retomar (más tarde)",
+"fr": "Revenir sur"
+},
+{
+"id": "c1-bandwidth-capacity",
+"en": "Bandwidth (capacity)",
+"topic": "business-idioms",
+"es": "Capacidad (tiempo)",
+"fr": "Disponibilité (capacité)"
+},
+{
+"id": "c1-to-leverage",
+"en": "To leverage",
+"topic": "business-idioms",
+"es": "Aprovechar (apalancar)",
+"fr": "Tirer parti de"
+},
+{
+"id": "c1-synergy",
+"en": "Synergy",
+"topic": "business-idioms",
+"es": "Sinergia",
+"fr": "Synergie"
+},
+{
+"id": "c1-to-scale-up",
+"en": "To scale up",
+"topic": "business-idioms",
+"es": "Escalar (ampliar)",
+"fr": "Passer à l’échelle"
+},
+{
+"id": "c1-to-pivot",
+"en": "To pivot",
+"topic": "business-idioms",
+"es": "Pivotar (cambiar de rumbo)",
+"fr": "Pivoter"
+},
+{
+"id": "c1-to-onboard",
+"en": "To onboard",
+"topic": "business-idioms",
+"es": "Incorporar (a un empleado)",
+"fr": "Intégrer (un employé)"
+},
+{
+"id": "c1-to-roll-out",
+"en": "To roll out",
+"topic": "business-idioms",
+"es": "Lanzar (desplegar)",
+"fr": "Déployer"
+},
+{
+"id": "c1-to-ramp-up",
+"en": "To ramp up",
+"topic": "business-idioms",
+"es": "Intensificar",
+"fr": "Monter en puissance"
+},
+{
+"id": "c1-to-wind-down",
+"en": "To wind down",
+"topic": "business-idioms",
+"es": "Reducir gradualmente (cerrar)",
+"fr": "Réduire progressivement"
+},
+{
+"id": "c1-to-cut-corners",
+"en": "To cut corners",
+"topic": "business-idioms",
+"es": "Escatimar (hacer chapuzas)",
+"fr": "Bâcler"
+},
+{
+"id": "c1-red-tape",
+"en": "Red tape",
+"topic": "business-idioms",
+"es": "Burocracia (papeleo)",
+"fr": "Paperasserie"
+},
+{
+"id": "c1-to-go-the-extra-mile",
+"en": "To go the extra mile",
+"topic": "business-idioms",
+"es": "Esforzarse más de lo esperado",
+"fr": "Faire plus que le nécessaire"
+},
+{
+"id": "c1-on-the-same-page",
+"en": "On the same page",
+"topic": "business-idioms",
+"es": "En sintonía",
+"fr": "Sur la même longueur d’onde"
+},
+{
+"id": "c1-to-keep-in-the-loop",
+"en": "To keep in the loop",
+"topic": "business-idioms",
+"es": "Mantener informado",
+"fr": "Tenir au courant"
+},
+{
+"id": "c1-to-drop-the-ball",
+"en": "To drop the ball",
+"topic": "business-idioms",
+"es": "Meter la pata (fallar)",
+"fr": "Laisser tomber (rater)"
+},
+{
+"id": "c1-to-think-outside-the-box",
+"en": "To think outside the box",
+"topic": "business-idioms",
+"es": "Pensar de forma creativa",
+"fr": "Sortir des sentiers battus"
+},
+{
+"id": "c1-win-win",
+"en": "Win-win",
+"topic": "business-idioms",
+"es": "Beneficio mutuo",
+"fr": "Gagnant-gagnant"
+},
+{
+"id": "c1-game-changer",
+"en": "Game changer",
+"topic": "business-idioms",
+"es": "Punto de inflexión",
+"fr": "Révolution (bouleversement)"
+},
+{
+"id": "c1-low-hanging-fruit",
+"en": "Low-hanging fruit",
+"topic": "business-idioms",
+"es": "Objetivo fácil",
+"fr": "Gains faciles"
+},
+{
+"id": "c1-deliverable",
+"en": "Deliverable",
+"topic": "business-idioms",
+"es": "Entregable",
+"fr": "Livrable"
+},
+{
+"id": "c1-return-on-investment",
+"en": "Return on investment",
+"topic": "business-idioms",
+"es": "Retorno de la inversión",
+"fr": "Retour sur investissement"
+},
+{
+"id": "c1-to-sign-off-on",
+"en": "To sign off on",
+"topic": "business-idioms",
+"es": "Dar el visto bueno",
+"fr": "Valider"
+},
+{
+"id": "c1-to-run-something-by-someone",
+"en": "To run something by someone",
+"topic": "business-idioms",
+"es": "Consultar algo con alguien",
+"fr": "Soumettre à quelqu’un"
+},
+{
+"id": "c1-stakeholder-buy-in",
+"en": "Stakeholder buy-in",
+"topic": "business-idioms",
+"es": "Apoyo de las partes interesadas",
+"fr": "Adhésion des parties prenantes"
+},
+{
+"id": "c1-back-to-the-drawing-board",
+"en": "Back to the drawing board",
+"topic": "business-idioms",
+"es": "Volver a empezar",
+"fr": "Retour à la case départ"
+},
+{
+"id": "c1-take-it-offline",
+"en": "Take it offline",
+"topic": "business-idioms",
+"es": "Hablarlo aparte",
+"fr": "En parler en privé"
+},
+{
+"id": "c1-over-the-moon",
+"en": "Over the moon",
+"topic": "emotion-expressions",
+"es": "En las nubes (feliz)",
+"fr": "Aux anges"
+},
+{
+"id": "c1-down-in-the-dumps",
+"en": "Down in the dumps",
+"topic": "emotion-expressions",
+"es": "Deprimido (de bajón)",
+"fr": "Déprimé (avoir le cafard)"
+},
+{
+"id": "c1-on-edge",
+"en": "On edge",
+"topic": "emotion-expressions",
+"es": "Con los nervios de punta",
+"fr": "À cran"
+},
+{
+"id": "c1-fed-up",
+"en": "Fed up",
+"topic": "emotion-expressions",
+"es": "Harto",
+"fr": "Ras-le-bol"
+},
+{
+"id": "c1-at-a-loss",
+"en": "At a loss",
+"topic": "emotion-expressions",
+"es": "Sin saber qué hacer",
+"fr": "Désemparé"
+},
+{
+"id": "c1-in-two-minds",
+"en": "In two minds",
+"topic": "emotion-expressions",
+"es": "Indeciso (entre dos aguas)",
+"fr": "Partagé"
+},
+{
+"id": "c1-under-the-weather",
+"en": "Under the weather",
+"topic": "emotion-expressions",
+"es": "Pachucho",
+"fr": "Patraque"
+},
+{
+"id": "c1-taken-aback",
+"en": "Taken aback",
+"topic": "emotion-expressions",
+"es": "Desconcertado",
+"fr": "Décontenancé"
+},
+{
+"id": "c1-blown-away",
+"en": "Blown away",
+"topic": "emotion-expressions",
+"es": "Alucinado (impresionado)",
+"fr": "Époustouflé"
+},
+{
+"id": "c1-torn-between",
+"en": "Torn (between)",
+"topic": "emotion-expressions",
+"es": "Dividido (entre)",
+"fr": "Déchiré (entre)"
+},
+{
+"id": "c1-beside-oneself",
+"en": "Beside oneself",
+"topic": "emotion-expressions",
+"es": "Fuera de sí",
+"fr": "Hors de soi"
+},
+{
+"id": "c1-heartbroken",
+"en": "Heartbroken",
+"topic": "emotion-expressions",
+"es": "Con el corazón roto",
+"fr": "Le cœur brisé"
+},
+{
+"id": "c1-on-the-fence",
+"en": "On the fence",
+"topic": "emotion-expressions",
+"es": "Indeciso (sin postura)",
+"fr": "Indécis"
+},
+{
+"id": "c1-laid-back",
+"en": "Laid-back",
+"topic": "emotion-expressions",
+"es": "Relajado (tranquilo)",
+"fr": "Décontracté (cool)"
+},
+{
+"id": "c1-uptight",
+"en": "Uptight",
+"topic": "emotion-expressions",
+"es": "Tenso (estirado)",
+"fr": "Coincé"
+},
+{
+"id": "c1-sick-and-tired",
+"en": "Sick and tired",
+"topic": "emotion-expressions",
+"es": "Hasta las narices",
+"fr": "Marre"
+},
+{
+"id": "c1-in-a-rut",
+"en": "In a rut",
+"topic": "emotion-expressions",
+"es": "Estancado",
+"fr": "Dans une routine (ornière)"
+},
+{
+"id": "c1-head-over-heels",
+"en": "Head over heels",
+"topic": "emotion-expressions",
+"es": "Perdidamente enamorado",
+"fr": "Fou amoureux"
+},
+{
+"id": "c1-cold-feet",
+"en": "Cold feet",
+"topic": "emotion-expressions",
+"es": "Dudas de última hora",
+"fr": "Trac (peur au dernier moment)"
+},
+{
+"id": "c1-second-thoughts",
+"en": "Second thoughts",
+"topic": "emotion-expressions",
+"es": "Dudas (repensar)",
+"fr": "Doutes (à la réflexion)"
+},
+{
+"id": "c1-a-weight-off-my-shoulders",
+"en": "A weight off my shoulders",
+"topic": "emotion-expressions",
+"es": "Un peso menos",
+"fr": "Un poids en moins"
+},
+{
+"id": "c1-butterflies-in-my-stomach",
+"en": "Butterflies in my stomach",
+"topic": "emotion-expressions",
+"es": "Nervios (mariposas)",
+"fr": "Le trac"
+},
+{
+"id": "c1-a-lump-in-my-throat",
+"en": "A lump in my throat",
+"topic": "emotion-expressions",
+"es": "Un nudo en la garganta",
+"fr": "Une boule dans la gorge"
+},
+{
+"id": "c1-goosebumps",
+"en": "Goosebumps",
+"topic": "emotion-expressions",
+"es": "Piel de gallina",
+"fr": "La chair de poule"
+},
+{
+"id": "c1-speechless-with-joy",
+"en": "Speechless with joy",
+"topic": "emotion-expressions",
+"es": "Sin palabras de alegría",
+"fr": "Muet de joie"
+},
+{
+"id": "c1-out-of-sorts",
+"en": "Out of sorts",
+"topic": "emotion-expressions",
+"es": "Destemplado",
+"fr": "Pas dans son assiette"
+},
+{
+"id": "c1-keyed-up",
+"en": "Keyed up",
+"topic": "emotion-expressions",
+"es": "Nervioso (excitado)",
+"fr": "Excité (tendu)"
+},
+{
+"id": "c1-wound-up",
+"en": "Wound up",
+"topic": "emotion-expressions",
+"es": "Alterado",
+"fr": "Remonté"
+},
+{
+"id": "c1-mixed-feelings",
+"en": "Mixed feelings",
+"topic": "emotion-expressions",
+"es": "Sentimientos encontrados",
+"fr": "Sentiments mitigés"
+},
+{
+"id": "c1-at-peace",
+"en": "At peace",
+"topic": "emotion-expressions",
+"es": "En paz",
+"fr": "En paix"
+},
+{
+"id": "c1-bureaucracy",
+"en": "Bureaucracy",
+"topic": "bureaucracy-realestate",
+"es": "Burocracia",
+"fr": "Bureaucratie"
+},
+{
+"id": "c1-paperwork",
+"en": "Paperwork",
+"topic": "bureaucracy-realestate",
+"es": "Papeleo",
+"fr": "Paperasse"
+},
+{
+"id": "c1-to-file-documents",
+"en": "To file (documents)",
+"topic": "bureaucracy-realestate",
+"es": "Presentar (documentos)",
+"fr": "Déposer (des documents)"
+},
+{
+"id": "c1-applicant",
+"en": "Applicant",
+"topic": "bureaucracy-realestate",
+"es": "Solicitante",
+"fr": "Candidat (demandeur)"
+},
+{
+"id": "c1-eligible",
+"en": "Eligible",
+"topic": "bureaucracy-realestate",
+"es": "Elegible",
+"fr": "Éligible"
+},
+{
+"id": "c1-to-qualify",
+"en": "To qualify",
+"topic": "bureaucracy-realestate",
+"es": "Cumplir los requisitos",
+"fr": "Remplir les conditions"
+},
+{
+"id": "c1-prerequisite",
+"en": "Prerequisite",
+"topic": "bureaucracy-realestate",
+"es": "Requisito previo",
+"fr": "Prérequis"
+},
+{
+"id": "c1-clause",
+"en": "Clause",
+"topic": "bureaucracy-realestate",
+"es": "Cláusula",
+"fr": "Clause"
+},
+{
+"id": "c1-compliance",
+"en": "Compliance",
+"topic": "bureaucracy-realestate",
+"es": "Cumplimiento",
+"fr": "Conformité"
+},
+{
+"id": "c1-regulation",
+"en": "Regulation",
+"topic": "bureaucracy-realestate",
+"es": "Regulación",
+"fr": "Réglementation"
+},
+{
+"id": "c1-license-permit",
+"en": "License (permit)",
+"topic": "bureaucracy-realestate",
+"es": "Licencia",
+"fr": "Licence (permis)"
+},
+{
+"id": "c1-to-authorize",
+"en": "To authorize",
+"topic": "bureaucracy-realestate",
+"es": "Autorizar",
+"fr": "Autoriser"
+},
+{
+"id": "c1-notary",
+"en": "Notary",
+"topic": "bureaucracy-realestate",
+"es": "Notario",
+"fr": "Notaire"
+},
+{
+"id": "c1-affidavit",
+"en": "Affidavit",
+"topic": "bureaucracy-realestate",
+"es": "Declaración jurada",
+"fr": "Déclaration sous serment"
+},
+{
+"id": "c1-deed",
+"en": "Deed",
+"topic": "bureaucracy-realestate",
+"es": "Escritura",
+"fr": "Acte (de propriété)"
+},
+{
+"id": "c1-title-property",
+"en": "Title (property)",
+"topic": "bureaucracy-realestate",
+"es": "Título de propiedad",
+"fr": "Titre de propriété"
+},
+{
+"id": "c1-lien",
+"en": "Lien",
+"topic": "bureaucracy-realestate",
+"es": "Gravamen",
+"fr": "Privilège (hypothèque)"
+},
+{
+"id": "c1-easement",
+"en": "Easement",
+"topic": "bureaucracy-realestate",
+"es": "Servidumbre",
+"fr": "Servitude"
+},
+{
+"id": "c1-appraisal",
+"en": "Appraisal",
+"topic": "bureaucracy-realestate",
+"es": "Tasación",
+"fr": "Évaluation (expertise)"
+},
+{
+"id": "c1-closing-real-estate",
+"en": "Closing (real estate)",
+"topic": "bureaucracy-realestate",
+"es": "Cierre (compraventa)",
+"fr": "Signature (acte de vente)"
+},
+{
+"id": "c1-escrow",
+"en": "Escrow",
+"topic": "bureaucracy-realestate",
+"es": "Depósito en garantía",
+"fr": "Séquestre"
+},
+{
+"id": "c1-commission-fee",
+"en": "Commission (fee)",
+"topic": "bureaucracy-realestate",
+"es": "Comisión",
+"fr": "Commission"
+},
+{
+"id": "c1-listing-property",
+"en": "Listing (property)",
+"topic": "bureaucracy-realestate",
+"es": "Anuncio (inmueble)",
+"fr": "Annonce (immobilière)"
+},
+{
+"id": "c1-counteroffer",
+"en": "Counteroffer",
+"topic": "bureaucracy-realestate",
+"es": "Contraoferta",
+"fr": "Contre-offre"
+},
+{
+"id": "c1-contingency",
+"en": "Contingency",
+"topic": "bureaucracy-realestate",
+"es": "Condición (contingencia)",
+"fr": "Condition suspensive"
+},
+{
+"id": "c1-zoning-variance",
+"en": "Zoning variance",
+"topic": "bureaucracy-realestate",
+"es": "Excepción de zonificación",
+"fr": "Dérogation d’urbanisme"
+},
+{
+"id": "c1-deadline-filing",
+"en": "Deadline (filing)",
+"topic": "bureaucracy-realestate",
+"es": "Plazo (de presentación)",
+"fr": "Date limite (de dépôt)"
+},
+{
+"id": "c1-certified-copy",
+"en": "Certified copy",
+"topic": "bureaucracy-realestate",
+"es": "Copia certificada",
+"fr": "Copie certifiée"
+},
+{
+"id": "c1-jurisdiction",
+"en": "Jurisdiction",
+"topic": "bureaucracy-realestate",
+"es": "Jurisdicción",
+"fr": "Juridiction"
+},
+{
+"id": "c1-liability",
+"en": "Liability",
+"topic": "bureaucracy-realestate",
+"es": "Responsabilidad (legal)",
+"fr": "Responsabilité (civile)"
+},
+{
+"id": "c1-galaxy",
+"en": "Galaxy",
+"topic": "physical-sciences",
+"es": "Galaxia",
+"fr": "Galaxie"
+},
+{
+"id": "c1-universe",
+"en": "Universe",
+"topic": "physical-sciences",
+"es": "Universo",
+"fr": "Univers"
+},
+{
+"id": "c1-black-hole",
+"en": "Black hole",
+"topic": "physical-sciences",
+"es": "Agujero negro",
+"fr": "Trou noir"
+},
+{
+"id": "c1-telescope",
+"en": "Telescope",
+"topic": "physical-sciences",
+"es": "Telescopio",
+"fr": "Télescope"
+},
+{
+"id": "c1-asteroid",
+"en": "Asteroid",
+"topic": "physical-sciences",
+"es": "Asteroide",
+"fr": "Astéroïde"
+},
+{
+"id": "c1-eclipse",
+"en": "Eclipse",
+"topic": "physical-sciences",
+"es": "Eclipse",
+"fr": "Éclipse"
+},
+{
+"id": "c1-constellation",
+"en": "Constellation",
+"topic": "physical-sciences",
+"es": "Constelación",
+"fr": "Constellation"
+},
+{
+"id": "c1-particle",
+"en": "Particle",
+"topic": "physical-sciences",
+"es": "Partícula",
+"fr": "Particule"
+},
+{
+"id": "c1-radiation",
+"en": "Radiation",
+"topic": "physical-sciences",
+"es": "Radiación",
+"fr": "Radiation"
+},
+{
+"id": "c1-electron",
+"en": "Electron",
+"topic": "physical-sciences",
+"es": "Electrón",
+"fr": "Électron"
+},
+{
+"id": "c1-isotope",
+"en": "Isotope",
+"topic": "physical-sciences",
+"es": "Isótopo",
+"fr": "Isotope"
+},
+{
+"id": "c1-nuclear-fusion",
+"en": "Nuclear fusion",
+"topic": "physical-sciences",
+"es": "Fusión nuclear",
+"fr": "Fusion nucléaire"
+},
+{
+"id": "c1-magnetic-field",
+"en": "Magnetic field",
+"topic": "physical-sciences",
+"es": "Campo magnético",
+"fr": "Champ magnétique"
+},
+{
+"id": "c1-friction",
+"en": "Friction",
+"topic": "physical-sciences",
+"es": "Fricción",
+"fr": "Friction"
+},
+{
+"id": "c1-velocity",
+"en": "Velocity",
+"topic": "physical-sciences",
+"es": "Velocidad (vectorial)",
+"fr": "Vitesse (vecteur)"
+},
+{
+"id": "c1-acceleration",
+"en": "Acceleration",
+"topic": "physical-sciences",
+"es": "Aceleración",
+"fr": "Accélération"
+},
+{
+"id": "c1-momentum",
+"en": "Momentum",
+"topic": "physical-sciences",
+"es": "Impulso (cantidad de movimiento)",
+"fr": "Quantité de mouvement"
+},
+{
+"id": "c1-inertia",
+"en": "Inertia",
+"topic": "physical-sciences",
+"es": "Inercia",
+"fr": "Inertie"
+},
+{
+"id": "c1-density",
+"en": "Density",
+"topic": "physical-sciences",
+"es": "Densidad",
+"fr": "Densité"
+},
+{
+"id": "c1-pressure-physics",
+"en": "Pressure (physics)",
+"topic": "physical-sciences",
+"es": "Presión",
+"fr": "Pression"
+},
+{
+"id": "c1-vacuum",
+"en": "Vacuum",
+"topic": "physical-sciences",
+"es": "Vacío",
+"fr": "Vide"
+},
+{
+"id": "c1-wavelength",
+"en": "Wavelength",
+"topic": "physical-sciences",
+"es": "Longitud de onda",
+"fr": "Longueur d’onde"
+},
+{
+"id": "c1-frequency-physics",
+"en": "Frequency (physics)",
+"topic": "physical-sciences",
+"es": "Frecuencia",
+"fr": "Fréquence"
+},
+{
+"id": "c1-spectrum",
+"en": "Spectrum",
+"topic": "physical-sciences",
+"es": "Espectro",
+"fr": "Spectre"
+},
+{
+"id": "c1-photosynthesis",
+"en": "Photosynthesis",
+"topic": "physical-sciences",
+"es": "Fotosíntesis",
+"fr": "Photosynthèse"
+},
+{
+"id": "c1-enzyme",
+"en": "Enzyme",
+"topic": "physical-sciences",
+"es": "Enzima",
+"fr": "Enzyme"
+},
+{
+"id": "c1-hormone",
+"en": "Hormone",
+"topic": "physical-sciences",
+"es": "Hormona",
+"fr": "Hormone"
+},
+{
+"id": "c1-metabolism",
+"en": "Metabolism",
+"topic": "physical-sciences",
+"es": "Metabolismo",
+"fr": "Métabolisme"
+},
+{
+"id": "c1-mutation",
+"en": "Mutation",
+"topic": "physical-sciences",
+"es": "Mutación",
+"fr": "Mutation"
+},
+{
+"id": "c1-organism",
+"en": "Organism",
+"topic": "physical-sciences",
+"es": "Organismo",
+"fr": "Organisme"
+},
+{
+"id": "c1-to-allege",
+"en": "To allege",
+"topic": "verbs-10",
+"es": "Alegar",
+"fr": "Alléguer"
+},
+{
+"id": "c1-to-allude",
+"en": "To allude",
+"topic": "verbs-10",
+"es": "Aludir",
+"fr": "Faire allusion à"
+},
+{
+"id": "c1-to-ascertain",
+"en": "To ascertain",
+"topic": "verbs-10",
+"es": "Averiguar",
+"fr": "S’assurer de"
+},
+{
+"id": "c1-to-bolster",
+"en": "To bolster",
+"topic": "verbs-10",
+"es": "Reforzar (apuntalar)",
+"fr": "Renforcer (étayer)"
+},
+{
+"id": "c1-to-circumvent",
+"en": "To circumvent",
+"topic": "verbs-10",
+"es": "Eludir",
+"fr": "Contourner"
+},
+{
+"id": "c1-to-coerce",
+"en": "To coerce",
+"topic": "verbs-10",
+"es": "Coaccionar",
+"fr": "Contraindre"
+},
+{
+"id": "c1-to-condone",
+"en": "To condone",
+"topic": "verbs-10",
+"es": "Tolerar (aprobar tácitamente)",
+"fr": "Fermer les yeux sur"
+},
+{
+"id": "c1-to-consolidate",
+"en": "To consolidate",
+"topic": "verbs-10",
+"es": "Consolidar",
+"fr": "Consolider"
+},
+{
+"id": "c1-to-curb",
+"en": "To curb",
+"topic": "verbs-10",
+"es": "Frenar (contener)",
+"fr": "Freiner (juguler)"
+},
+{
+"id": "c1-to-deter",
+"en": "To deter",
+"topic": "verbs-10",
+"es": "Disuadir",
+"fr": "Dissuader"
+},
+{
+"id": "c1-to-diminish",
+"en": "To diminish",
+"topic": "verbs-10",
+"es": "Disminuir (menguar)",
+"fr": "Diminuer (amoindrir)"
+},
+{
+"id": "c1-to-disclose",
+"en": "To disclose",
+"topic": "verbs-10",
+"es": "Divulgar (revelar)",
+"fr": "Divulguer"
+},
+{
+"id": "c1-to-disrupt",
+"en": "To disrupt",
+"topic": "verbs-10",
+"es": "Perturbar",
+"fr": "Perturber"
+},
+{
+"id": "c1-to-divert",
+"en": "To divert",
+"topic": "verbs-10",
+"es": "Desviar",
+"fr": "Détourner"
+},
+{
+"id": "c1-to-elicit",
+"en": "To elicit",
+"topic": "verbs-10",
+"es": "Provocar (obtener)",
+"fr": "Susciter"
+},
+{
+"id": "c1-to-endorse",
+"en": "To endorse",
+"topic": "verbs-10",
+"es": "Respaldar (avalar)",
+"fr": "Approuver (soutenir)"
+},
+{
+"id": "c1-to-entail",
+"en": "To entail",
+"topic": "verbs-10",
+"es": "Conllevar",
+"fr": "Impliquer (entraîner)"
+},
+{
+"id": "c1-to-eradicate",
+"en": "To eradicate",
+"topic": "verbs-10",
+"es": "Erradicar",
+"fr": "Éradiquer"
+},
+{
+"id": "c1-to-exacerbate",
+"en": "To exacerbate",
+"topic": "verbs-10",
+"es": "Agravar",
+"fr": "Aggraver"
+},
+{
+"id": "c1-to-exemplify",
+"en": "To exemplify",
+"topic": "verbs-10",
+"es": "Ejemplificar",
+"fr": "Illustrer (être l’exemple de)"
+},
+{
+"id": "c1-to-foster",
+"en": "To foster",
+"topic": "verbs-10",
+"es": "Fomentar",
+"fr": "Favoriser"
+},
+{
+"id": "c1-to-hinder",
+"en": "To hinder",
+"topic": "verbs-10",
+"es": "Obstaculizar",
+"fr": "Entraver"
+},
+{
+"id": "c1-to-impede",
+"en": "To impede",
+"topic": "verbs-10",
+"es": "Impedir (obstaculizar)",
+"fr": "Empêcher (gêner)"
+},
+{
+"id": "c1-to-instigate",
+"en": "To instigate",
+"topic": "verbs-10",
+"es": "Instigar",
+"fr": "Provoquer (inciter)"
+},
+{
+"id": "c1-to-mitigate",
+"en": "To mitigate",
+"topic": "verbs-10",
+"es": "Mitigar",
+"fr": "Atténuer"
+},
+{
+"id": "c1-to-nurture",
+"en": "To nurture",
+"topic": "verbs-10",
+"es": "Nutrir (cultivar)",
+"fr": "Nourrir (cultiver)"
+},
+{
+"id": "c1-to-omit",
+"en": "To omit",
+"topic": "verbs-10",
+"es": "Omitir",
+"fr": "Omettre"
+},
+{
+"id": "c1-to-precede",
+"en": "To precede",
+"topic": "verbs-10",
+"es": "Preceder",
+"fr": "Précéder"
+},
+{
+"id": "c1-to-preclude",
+"en": "To preclude",
+"topic": "verbs-10",
+"es": "Excluir (impedir de antemano)",
+"fr": "Exclure (empêcher)"
+},
+{
+"id": "c1-to-prompt",
+"en": "To prompt",
+"topic": "verbs-10",
+"es": "Provocar (incitar)",
+"fr": "Inciter (déclencher)"
+},
+{
+"id": "c1-to-refrain",
+"en": "To refrain",
+"topic": "verbs-11",
+"es": "Abstenerse",
+"fr": "S’abstenir"
+},
+{
+"id": "c1-to-relinquish",
+"en": "To relinquish",
+"topic": "verbs-11",
+"es": "Renunciar a",
+"fr": "Renoncer à"
+},
+{
+"id": "c1-to-render",
+"en": "To render",
+"topic": "verbs-11",
+"es": "Convertir en (volver)",
+"fr": "Rendre (faire devenir)"
+},
+{
+"id": "c1-to-scrutinize",
+"en": "To scrutinize",
+"topic": "verbs-11",
+"es": "Escudriñar",
+"fr": "Scruter"
+},
+{
+"id": "c1-to-stipulate",
+"en": "To stipulate",
+"topic": "verbs-11",
+"es": "Estipular",
+"fr": "Stipuler"
+},
+{
+"id": "c1-to-substantiate",
+"en": "To substantiate",
+"topic": "verbs-11",
+"es": "Fundamentar",
+"fr": "Étayer"
+},
+{
+"id": "c1-to-thrive",
+"en": "To thrive",
+"topic": "verbs-11",
+"es": "Prosperar",
+"fr": "Prospérer"
+},
+{
+"id": "c1-to-undermine",
+"en": "To undermine",
+"topic": "verbs-11",
+"es": "Socavar",
+"fr": "Saper (miner)"
+},
+{
+"id": "c1-to-uphold",
+"en": "To uphold",
+"topic": "verbs-11",
+"es": "Defender (mantener)",
+"fr": "Faire respecter"
+},
+{
+"id": "c1-to-waive",
+"en": "To waive",
+"topic": "verbs-11",
+"es": "Renunciar a (un derecho)",
+"fr": "Renoncer à (un droit)"
+},
+{
+"id": "c1-to-yield",
+"en": "To yield",
+"topic": "verbs-11",
+"es": "Producir (rendir)",
+"fr": "Produire (rapporter)"
+},
+{
+"id": "c1-to-abolish",
+"en": "To abolish",
+"topic": "verbs-11",
+"es": "Abolir",
+"fr": "Abolir"
+},
+{
+"id": "c1-to-accommodate",
+"en": "To accommodate",
+"topic": "verbs-11",
+"es": "Acomodar (dar cabida)",
+"fr": "Accueillir (loger)"
+},
+{
+"id": "c1-to-adhere",
+"en": "To adhere",
+"topic": "verbs-11",
+"es": "Adherirse",
+"fr": "Adhérer"
+},
+{
+"id": "c1-to-attain",
+"en": "To attain",
+"topic": "verbs-11",
+"es": "Alcanzar (lograr)",
+"fr": "Atteindre"
+},
+{
+"id": "c1-to-compel",
+"en": "To compel",
+"topic": "verbs-11",
+"es": "Obligar",
+"fr": "Contraindre (forcer)"
+},
+{
+"id": "c1-to-confine",
+"en": "To confine",
+"topic": "verbs-11",
+"es": "Confinar",
+"fr": "Confiner"
+},
+{
+"id": "c1-to-contemplate",
+"en": "To contemplate",
+"topic": "verbs-11",
+"es": "Contemplar (considerar)",
+"fr": "Envisager"
+},
+{
+"id": "c1-to-depict",
+"en": "To depict",
+"topic": "verbs-11",
+"es": "Representar (describir)",
+"fr": "Dépeindre"
+},
+{
+"id": "c1-to-dispel",
+"en": "To dispel",
+"topic": "verbs-11",
+"es": "Disipar",
+"fr": "Dissiper"
+},
+{
+"id": "c1-to-embody",
+"en": "To embody",
+"topic": "verbs-11",
+"es": "Encarnar",
+"fr": "Incarner"
+},
+{
+"id": "c1-to-evoke",
+"en": "To evoke",
+"topic": "verbs-11",
+"es": "Evocar",
+"fr": "Évoquer"
+},
+{
+"id": "c1-to-forge",
+"en": "To forge",
+"topic": "verbs-11",
+"es": "Forjar",
+"fr": "Forger"
+},
+{
+"id": "c1-to-grasp",
+"en": "To grasp",
+"topic": "verbs-11",
+"es": "Captar (comprender)",
+"fr": "Saisir (comprendre)"
+},
+{
+"id": "c1-to-infringe",
+"en": "To infringe",
+"topic": "verbs-11",
+"es": "Infringir",
+"fr": "Enfreindre"
+},
+{
+"id": "c1-to-overturn",
+"en": "To overturn",
+"topic": "verbs-11",
+"es": "Anular (revocar)",
+"fr": "Annuler (renverser)"
+},
+{
+"id": "c1-to-plead",
+"en": "To plead",
+"topic": "verbs-11",
+"es": "Suplicar (alegar)",
+"fr": "Plaider"
+},
+{
+"id": "c1-to-reconcile-ideas",
+"en": "To reconcile (ideas)",
+"topic": "verbs-11",
+"es": "Conciliar",
+"fr": "Concilier"
+},
+{
+"id": "c1-to-surpass",
+"en": "To surpass",
+"topic": "verbs-11",
+"es": "Sobrepasar",
+"fr": "Surpasser"
+},
+{
+"id": "c1-to-unveil",
+"en": "To unveil",
+"topic": "verbs-11",
+"es": "Desvelar",
+"fr": "Dévoiler"
+},
+{
+"id": "c1-albeit",
+"en": "Albeit",
+"topic": "connectors-3",
+"es": "Aunque (si bien)",
+"fr": "Quoique"
+},
+{
+"id": "c1-notwithstanding",
+"en": "Notwithstanding",
+"topic": "connectors-3",
+"es": "No obstante (a pesar de)",
+"fr": "Nonobstant"
+},
+{
+"id": "c1-insofar-as",
+"en": "Insofar as",
+"topic": "connectors-3",
+"es": "En la medida en que",
+"fr": "Dans la mesure où"
+},
+{
+"id": "c1-whereby",
+"en": "Whereby",
+"topic": "connectors-3",
+"es": "Por el cual",
+"fr": "Par lequel"
+},
+{
+"id": "c1-hereby",
+"en": "Hereby",
+"topic": "connectors-3",
+"es": "Por la presente",
+"fr": "Par la présente"
+},
+{
+"id": "c1-thereby",
+"en": "Thereby",
+"topic": "connectors-3",
+"es": "Por lo tanto (de ese modo)",
+"fr": "Ainsi (de ce fait)"
+},
+{
+"id": "c1-hence",
+"en": "Hence",
+"topic": "connectors-3",
+"es": "De ahí",
+"fr": "D’où"
+},
+{
+"id": "c1-thus",
+"en": "Thus",
+"topic": "connectors-3",
+"es": "Así (por consiguiente)",
+"fr": "Ainsi"
+},
+{
+"id": "c1-henceforth",
+"en": "Henceforth",
+"topic": "connectors-3",
+"es": "De ahora en adelante",
+"fr": "Désormais"
+},
+{
+"id": "c1-likewise",
+"en": "Likewise",
+"topic": "connectors-3",
+"es": "Asimismo",
+"fr": "De même"
+},
+{
+"id": "c1-conversely",
+"en": "Conversely",
+"topic": "connectors-3",
+"es": "A la inversa",
+"fr": "Inversement"
+},
+{
+"id": "c1-namely",
+"en": "Namely",
+"topic": "connectors-3",
+"es": "A saber",
+"fr": "À savoir"
+},
+{
+"id": "c1-in-lieu-of",
+"en": "In lieu of",
+"topic": "connectors-3",
+"es": "En lugar de (en vez de)",
+"fr": "Au lieu de (en remplacement)"
+},
+{
+"id": "c1-in-light-of",
+"en": "In light of",
+"topic": "connectors-3",
+"es": "A la luz de",
+"fr": "À la lumière de"
+},
+{
+"id": "c1-in-view-of",
+"en": "In view of",
+"topic": "connectors-3",
+"es": "En vista de",
+"fr": "Compte tenu de"
+},
+{
+"id": "c1-by-virtue-of",
+"en": "By virtue of",
+"topic": "connectors-3",
+"es": "En virtud de",
+"fr": "En vertu de"
+},
+{
+"id": "c1-on-account-of",
+"en": "On account of",
+"topic": "connectors-3",
+"es": "A causa de",
+"fr": "En raison de"
+},
+{
+"id": "c1-with-a-view-to",
+"en": "With a view to",
+"topic": "connectors-3",
+"es": "Con vistas a",
+"fr": "En vue de"
+},
+{
+"id": "c1-provided-that",
+"en": "Provided that",
+"topic": "connectors-3",
+"es": "Siempre y cuando",
+"fr": "À condition que"
+},
+{
+"id": "c1-granted",
+"en": "Granted",
+"topic": "connectors-3",
+"es": "Cierto es que",
+"fr": "Certes"
+},
+{
+"id": "c1-admittedly",
+"en": "Admittedly",
+"topic": "connectors-3",
+"es": "Hay que admitir que",
+"fr": "Il faut admettre que"
+},
+{
+"id": "c1-arguably",
+"en": "Arguably",
+"topic": "connectors-3",
+"es": "Podría decirse que",
+"fr": "Sans doute (on peut dire que)"
+},
+{
+"id": "c1-presumably",
+"en": "Presumably",
+"topic": "connectors-3",
+"es": "Presumiblemente",
+"fr": "Vraisemblablement"
+},
+{
+"id": "c1-allegedly",
+"en": "Allegedly",
+"topic": "connectors-3",
+"es": "Supuestamente (según se alega)",
+"fr": "Prétendument"
+},
+{
+"id": "c1-ostensibly",
+"en": "Ostensibly",
+"topic": "connectors-3",
+"es": "Aparentemente",
+"fr": "En apparence"
+},
+{
+"id": "c1-undoubtedly",
+"en": "Undoubtedly",
+"topic": "connectors-3",
+"es": "Indudablemente",
+"fr": "Indubitablement"
+},
+{
+"id": "c1-invariably",
+"en": "Invariably",
+"topic": "connectors-3",
+"es": "Invariablemente",
+"fr": "Invariablement"
+},
+{
+"id": "c1-nevertheless-formal",
+"en": "Nevertheless (formal)",
+"topic": "connectors-3",
+"es": "Sin embargo (formal)",
+"fr": "Toutefois"
+},
+{
+"id": "c1-to-the-extent-that",
+"en": "To the extent that",
+"topic": "connectors-3",
+"es": "Hasta el punto de que",
+"fr": "Au point que"
+},
+{
+"id": "c1-for-all-intents-and-purposes",
+"en": "For all intents and purposes",
+"topic": "connectors-3",
+"es": "A todos los efectos",
+"fr": "À toutes fins utiles"
+},
+{
+"id": "c1-sommelier",
+"en": "Sommelier",
+"topic": "dining-register",
+"es": "Sumiller",
+"fr": "Sommelier"
+},
+{
+"id": "c1-vintage-wine",
+"en": "Vintage (wine)",
+"topic": "dining-register",
+"es": "Añada",
+"fr": "Millésime"
+},
+{
+"id": "c1-aroma",
+"en": "Aroma",
+"topic": "dining-register",
+"es": "Aroma",
+"fr": "Arôme"
+},
+{
+"id": "c1-palate",
+"en": "Palate",
+"topic": "dining-register",
+"es": "Paladar",
+"fr": "Palais"
+},
+{
+"id": "c1-aftertaste",
+"en": "Aftertaste",
+"topic": "dining-register",
+"es": "Regusto",
+"fr": "Arrière-goût"
+},
+{
+"id": "c1-full-bodied",
+"en": "Full-bodied",
+"topic": "dining-register",
+"es": "Con cuerpo",
+"fr": "Corsé"
+},
+{
+"id": "c1-dry-wine",
+"en": "Dry (wine)",
+"topic": "dining-register",
+"es": "Seco (vino)",
+"fr": "Sec (vin)"
+},
+{
+"id": "c1-sparkling",
+"en": "Sparkling",
+"topic": "dining-register",
+"es": "Espumoso",
+"fr": "Pétillant"
+},
+{
+"id": "c1-brew",
+"en": "Brew",
+"topic": "dining-register",
+"es": "Infusión (preparación)",
+"fr": "Infusion (breuvage)"
+},
+{
+"id": "c1-roast-coffee",
+"en": "Roast (coffee)",
+"topic": "dining-register",
+"es": "Tueste",
+"fr": "Torréfaction"
+},
+{
+"id": "c1-espresso",
+"en": "Espresso",
+"topic": "dining-register",
+"es": "Espresso",
+"fr": "Expresso"
+},
+{
+"id": "c1-decaf",
+"en": "Decaf",
+"topic": "dining-register",
+"es": "Descafeinado",
+"fr": "Déca"
+},
+{
+"id": "c1-barista",
+"en": "Barista",
+"topic": "dining-register",
+"es": "Barista",
+"fr": "Barista"
+},
+{
+"id": "c1-tasting-menu",
+"en": "Tasting menu",
+"topic": "dining-register",
+"es": "Menú degustación",
+"fr": "Menu dégustation"
+},
+{
+"id": "c1-pairing",
+"en": "Pairing",
+"topic": "dining-register",
+"es": "Maridaje",
+"fr": "Accord (mets-vins)"
+},
+{
+"id": "c1-a-la-carte",
+"en": "À la carte",
+"topic": "dining-register",
+"es": "A la carta",
+"fr": "À la carte"
+},
+{
+"id": "c1-garnish",
+"en": "Garnish",
+"topic": "dining-register",
+"es": "Guarnición (decoración)",
+"fr": "Garniture (décor)"
+},
+{
+"id": "c1-drizzle-of-oil",
+"en": "Drizzle (of oil)",
+"topic": "dining-register",
+"es": "Chorrito",
+"fr": "Filet (d’huile)"
+},
+{
+"id": "c1-reduction-sauce",
+"en": "Reduction (sauce)",
+"topic": "dining-register",
+"es": "Reducción",
+"fr": "Réduction"
+},
+{
+"id": "c1-glaze",
+"en": "Glaze",
+"topic": "dining-register",
+"es": "Glaseado",
+"fr": "Glaçage"
+},
+{
+"id": "c1-umami",
+"en": "Umami",
+"topic": "dining-register",
+"es": "Umami",
+"fr": "Umami"
+},
+{
+"id": "c1-zest",
+"en": "Zest",
+"topic": "dining-register",
+"es": "Ralladura",
+"fr": "Zeste"
+},
+{
+"id": "c1-to-caramelize",
+"en": "To caramelize",
+"topic": "dining-register",
+"es": "Caramelizar",
+"fr": "Caraméliser"
+},
+{
+"id": "c1-to-braise",
+"en": "To braise",
+"topic": "dining-register",
+"es": "Estofar",
+"fr": "Braiser"
+},
+{
+"id": "c1-to-poach",
+"en": "To poach",
+"topic": "dining-register",
+"es": "Escalfar",
+"fr": "Pocher"
+},
+{
+"id": "c1-al-dente",
+"en": "Al dente",
+"topic": "dining-register",
+"es": "Al dente",
+"fr": "Al dente"
+},
+{
+"id": "c1-medium-rare",
+"en": "Medium rare",
+"topic": "dining-register",
+"es": "Poco hecho",
+"fr": "Saignant"
+},
+{
+"id": "c1-well-done",
+"en": "Well done",
+"topic": "dining-register",
+"es": "Bien hecho",
+"fr": "Bien cuit"
+},
+{
+"id": "c1-signature-dish",
+"en": "Signature dish",
+"topic": "dining-register",
+"es": "Plato estrella",
+"fr": "Plat signature"
+},
+{
+"id": "c1-chefs-recommendation",
+"en": "Chef’s recommendation",
+"topic": "dining-register",
+"es": "Recomendación del chef",
+"fr": "Suggestion du chef"
+},
+{
+"id": "c1-floor-plan",
+"en": "Floor plan",
+"topic": "interiors-renovation",
+"es": "Plano de planta",
+"fr": "Plan d’étage"
+},
+{
+"id": "c1-open-plan",
+"en": "Open plan",
+"topic": "interiors-renovation",
+"es": "Planta abierta",
+"fr": "Espace ouvert"
+},
+{
+"id": "c1-layout",
+"en": "Layout",
+"topic": "interiors-renovation",
+"es": "Distribución",
+"fr": "Agencement"
+},
+{
+"id": "c1-fixture",
+"en": "Fixture",
+"topic": "interiors-renovation",
+"es": "Accesorio fijo",
+"fr": "Équipement fixe"
+},
+{
+"id": "c1-cabinetry",
+"en": "Cabinetry",
+"topic": "interiors-renovation",
+"es": "Armarios (mobiliario)",
+"fr": "Placards (rangements)"
+},
+{
+"id": "c1-countertop",
+"en": "Countertop",
+"topic": "interiors-renovation",
+"es": "Encimera",
+"fr": "Plan de travail"
+},
+{
+"id": "c1-backsplash",
+"en": "Backsplash",
+"topic": "interiors-renovation",
+"es": "Salpicadero (cocina)",
+"fr": "Crédence"
+},
+{
+"id": "c1-grout",
+"en": "Grout",
+"topic": "interiors-renovation",
+"es": "Lechada",
+"fr": "Joint (carrelage)"
+},
+{
+"id": "c1-hardwood-floor",
+"en": "Hardwood floor",
+"topic": "interiors-renovation",
+"es": "Suelo de madera",
+"fr": "Parquet"
+},
+{
+"id": "c1-laminate",
+"en": "Laminate",
+"topic": "interiors-renovation",
+"es": "Laminado",
+"fr": "Stratifié"
+},
+{
+"id": "c1-molding-trim",
+"en": "Molding (trim)",
+"topic": "interiors-renovation",
+"es": "Moldura",
+"fr": "Moulure"
+},
+{
+"id": "c1-baseboard",
+"en": "Baseboard",
+"topic": "interiors-renovation",
+"es": "Zócalo",
+"fr": "Plinthe"
+},
+{
+"id": "c1-crown-molding",
+"en": "Crown molding",
+"topic": "interiors-renovation",
+"es": "Moldura de techo",
+"fr": "Corniche"
+},
+{
+"id": "c1-sconce",
+"en": "Sconce",
+"topic": "interiors-renovation",
+"es": "Aplique",
+"fr": "Applique"
+},
+{
+"id": "c1-pendant-light",
+"en": "Pendant light",
+"topic": "interiors-renovation",
+"es": "Lámpara colgante",
+"fr": "Suspension"
+},
+{
+"id": "c1-recessed-lighting",
+"en": "Recessed lighting",
+"topic": "interiors-renovation",
+"es": "Iluminación empotrada",
+"fr": "Spots encastrés"
+},
+{
+"id": "c1-dimmer",
+"en": "Dimmer",
+"topic": "interiors-renovation",
+"es": "Regulador de luz",
+"fr": "Variateur"
+},
+{
+"id": "c1-vent",
+"en": "Vent",
+"topic": "interiors-renovation",
+"es": "Rejilla de ventilación",
+"fr": "Bouche d’aération"
+},
+{
+"id": "c1-duct",
+"en": "Duct",
+"topic": "interiors-renovation",
+"es": "Conducto",
+"fr": "Gaine"
+},
+{
+"id": "c1-hvac",
+"en": "HVAC",
+"topic": "interiors-renovation",
+"es": "Climatización",
+"fr": "CVC"
+},
+{
+"id": "c1-sump-pump",
+"en": "Sump pump",
+"topic": "interiors-renovation",
+"es": "Bomba de sumidero",
+"fr": "Pompe de relevage"
+},
+{
+"id": "c1-water-heater",
+"en": "Water heater",
+"topic": "interiors-renovation",
+"es": "Calentador de agua",
+"fr": "Chauffe-eau"
+},
+{
+"id": "c1-circuit-breaker",
+"en": "Circuit breaker",
+"topic": "interiors-renovation",
+"es": "Interruptor automático",
+"fr": "Disjoncteur"
+},
+{
+"id": "c1-load-bearing-wall",
+"en": "Load-bearing wall",
+"topic": "interiors-renovation",
+"es": "Muro de carga",
+"fr": "Mur porteur"
+},
+{
+"id": "c1-joist",
+"en": "Joist",
+"topic": "interiors-renovation",
+"es": "Vigueta",
+"fr": "Solive"
+},
+{
+"id": "c1-stud-wall",
+"en": "Stud (wall)",
+"topic": "interiors-renovation",
+"es": "Montante",
+"fr": "Montant"
+},
+{
+"id": "c1-subfloor",
+"en": "Subfloor",
+"topic": "interiors-renovation",
+"es": "Contrapiso",
+"fr": "Sous-plancher"
+},
+{
+"id": "c1-caulk",
+"en": "Caulk",
+"topic": "interiors-renovation",
+"es": "Sellador (masilla)",
+"fr": "Mastic"
+},
+{
+"id": "c1-primer-paint",
+"en": "Primer (paint)",
+"topic": "interiors-renovation",
+"es": "Imprimación",
+"fr": "Sous-couche"
+},
+{
+"id": "c1-punch-list",
+"en": "Punch list",
+"topic": "interiors-renovation",
+"es": "Lista de pendientes (obra)",
+"fr": "Liste des réserves"
+},
+{
+"id": "c1-change-order",
+"en": "Change order",
+"topic": "interiors-renovation",
+"es": "Orden de cambio",
+"fr": "Avenant"
+},
+{
+"id": "c1-scope-of-work",
+"en": "Scope of work",
+"topic": "interiors-renovation",
+"es": "Alcance del trabajo",
+"fr": "Périmètre des travaux"
+},
+{
+"id": "c1-rapport",
+"en": "Rapport",
+"topic": "social-nuance",
+"es": "Buena relación (sintonía)",
+"fr": "Bonne entente"
+},
+{
+"id": "c1-chemistry-between-people",
+"en": "Chemistry (between people)",
+"topic": "social-nuance",
+"es": "Química",
+"fr": "Alchimie"
+},
+{
+"id": "c1-affinity",
+"en": "Affinity",
+"topic": "social-nuance",
+"es": "Afinidad",
+"fr": "Affinité"
+},
+{
+"id": "c1-estranged",
+"en": "Estranged",
+"topic": "social-nuance",
+"es": "Distanciado",
+"fr": "Brouillé"
+},
+{
+"id": "c1-reconciliation",
+"en": "Reconciliation",
+"topic": "social-nuance",
+"es": "Reconciliación",
+"fr": "Réconciliation"
+},
+{
+"id": "c1-to-confide",
+"en": "To confide",
+"topic": "social-nuance",
+"es": "Confiar (un secreto)",
+"fr": "Se confier"
+},
+{
+"id": "c1-confidant",
+"en": "Confidant",
+"topic": "social-nuance",
+"es": "Confidente",
+"fr": "Confident"
+},
+{
+"id": "c1-to-fall-out",
+"en": "To fall out",
+"topic": "social-nuance",
+"es": "Pelearse (enemistarse)",
+"fr": "Se brouiller"
+},
+{
+"id": "c1-to-patch-things-up",
+"en": "To patch things up",
+"topic": "social-nuance",
+"es": "Arreglar las cosas",
+"fr": "Recoller les morceaux"
+},
+{
+"id": "c1-to-drift-apart",
+"en": "To drift apart",
+"topic": "social-nuance",
+"es": "Distanciarse",
+"fr": "S’éloigner"
+},
+{
+"id": "c1-to-hit-it-off",
+"en": "To hit it off",
+"topic": "social-nuance",
+"es": "Congeniar",
+"fr": "Bien s’entendre (tout de suite)"
+},
+{
+"id": "c1-to-have-a-soft-spot-for",
+"en": "To have a soft spot for",
+"topic": "social-nuance",
+"es": "Tener debilidad por",
+"fr": "Avoir un faible pour"
+},
+{
+"id": "c1-to-hold-a-grudge",
+"en": "To hold a grudge",
+"topic": "social-nuance",
+"es": "Guardar rencor",
+"fr": "Garder rancune"
+},
+{
+"id": "c1-to-bury-the-hatchet",
+"en": "To bury the hatchet",
+"topic": "social-nuance",
+"es": "Enterrar el hacha de guerra",
+"fr": "Enterrer la hache de guerre"
+},
+{
+"id": "c1-to-make-amends",
+"en": "To make amends",
+"topic": "social-nuance",
+"es": "Enmendar (reparar)",
+"fr": "Se racheter"
+},
+{
+"id": "c1-to-take-for-granted",
+"en": "To take for granted",
+"topic": "social-nuance",
+"es": "Dar por sentado",
+"fr": "Prendre pour acquis"
+},
+{
+"id": "c1-to-lean-on",
+"en": "To lean on",
+"topic": "social-nuance",
+"es": "Apoyarse en",
+"fr": "S’appuyer sur"
+},
+{
+"id": "c1-to-stick-up-for",
+"en": "To stick up for",
+"topic": "social-nuance",
+"es": "Defender (dar la cara por)",
+"fr": "Défendre (prendre la défense de)"
+},
+{
+"id": "c1-to-look-out-for",
+"en": "To look out for",
+"topic": "social-nuance",
+"es": "Velar por",
+"fr": "Veiller sur"
+},
+{
+"id": "c1-to-see-eye-to-eye",
+"en": "To see eye to eye",
+"topic": "social-nuance",
+"es": "Estar de acuerdo (ver las cosas igual)",
+"fr": "Être du même avis"
+},
+{
+"id": "c1-to-get-on-someones-nerves",
+"en": "To get on someone’s nerves",
+"topic": "social-nuance",
+"es": "Sacar de quicio",
+"fr": "Taper sur les nerfs"
+},
+{
+"id": "c1-to-give-the-benefit-of-the-doubt",
+"en": "To give the benefit of the doubt",
+"topic": "social-nuance",
+"es": "Conceder el beneficio de la duda",
+"fr": "Accorder le bénéfice du doute"
+},
+{
+"id": "c1-to-read-between-the-lines",
+"en": "To read between the lines",
+"topic": "social-nuance",
+"es": "Leer entre líneas",
+"fr": "Lire entre les lignes"
+},
+{
+"id": "c1-to-beat-around-the-bush",
+"en": "To beat around the bush",
+"topic": "social-nuance",
+"es": "Andarse con rodeos",
+"fr": "Tourner autour du pot"
+},
+{
+"id": "c1-to-get-to-the-point",
+"en": "To get to the point",
+"topic": "social-nuance",
+"es": "Ir al grano",
+"fr": "En venir au fait"
+},
+{
+"id": "c1-to-keep-someone-at-arms-length",
+"en": "To keep someone at arm’s length",
+"topic": "social-nuance",
+"es": "Mantener a distancia",
+"fr": "Tenir à distance"
+},
+{
+"id": "c1-to-go-behind-someones-back",
+"en": "To go behind someone’s back",
+"topic": "social-nuance",
+"es": "Actuar a espaldas de",
+"fr": "Agir dans le dos de"
+},
+{
+"id": "c1-to-wear-ones-heart-on-ones-sleeve",
+"en": "To wear one’s heart on one’s sleeve",
+"topic": "social-nuance",
+"es": "Mostrar los sentimientos abiertamente",
+"fr": "Avoir le cœur sur la main (montrer ses sentiments)"
+},
+{
+"id": "c1-tactfully",
+"en": "Tactfully",
+"topic": "social-nuance",
+"es": "Con tacto",
+"fr": "Avec tact"
+},
+{
+"id": "c1-passive-aggressive",
+"en": "Passive-aggressive",
+"topic": "social-nuance",
+"es": "Pasivo-agresivo",
+"fr": "Passif-agressif"
+},
+{
+"id": "c1-mediocre",
+"en": "Mediocre",
+"topic": "evaluative",
+"es": "Mediocre",
+"fr": "Médiocre"
+},
+{
+"id": "c1-subpar",
+"en": "Subpar",
+"topic": "evaluative",
+"es": "Por debajo de lo esperado",
+"fr": "En dessous de la moyenne"
+},
+{
+"id": "c1-top-notch",
+"en": "Top-notch",
+"topic": "evaluative",
+"es": "De primera",
+"fr": "De premier ordre"
+},
+{
+"id": "c1-first-rate",
+"en": "First-rate",
+"topic": "evaluative",
+"es": "Excelente (de primera clase)",
+"fr": "Excellent (de première classe)"
+},
+{
+"id": "c1-second-rate",
+"en": "Second-rate",
+"topic": "evaluative",
+"es": "De segunda",
+"fr": "De second ordre"
+},
+{
+"id": "c1-state-of-the-art",
+"en": "State-of-the-art",
+"topic": "evaluative",
+"es": "De última generación",
+"fr": "Dernier cri"
+},
+{
+"id": "c1-cutting-edge",
+"en": "Cutting-edge",
+"topic": "evaluative",
+"es": "Vanguardista",
+"fr": "De pointe"
+},
+{
+"id": "c1-run-of-the-mill",
+"en": "Run-of-the-mill",
+"topic": "evaluative",
+"es": "Del montón",
+"fr": "Ordinaire (banal)"
+},
+{
+"id": "c1-exceptional",
+"en": "Exceptional",
+"topic": "evaluative",
+"es": "Excepcional",
+"fr": "Exceptionnel"
+},
+{
+"id": "c1-flawless",
+"en": "Flawless",
+"topic": "evaluative",
+"es": "Impecable (sin defectos)",
+"fr": "Sans défaut"
+},
+{
+"id": "c1-impeccable",
+"en": "Impeccable",
+"topic": "evaluative",
+"es": "Impecable",
+"fr": "Impeccable"
+},
+{
+"id": "c1-shoddy",
+"en": "Shoddy",
+"topic": "evaluative",
+"es": "De mala calidad",
+"fr": "De mauvaise qualité"
+},
+{
+"id": "c1-sloppy",
+"en": "Sloppy",
+"topic": "evaluative",
+"es": "Descuidado (chapucero)",
+"fr": "Bâclé"
+},
+{
+"id": "c1-half-baked",
+"en": "Half-baked",
+"topic": "evaluative",
+"es": "A medias (poco elaborado)",
+"fr": "Mal ficelé"
+},
+{
+"id": "c1-polished",
+"en": "Polished",
+"topic": "evaluative",
+"es": "Pulido (refinado)",
+"fr": "Soigné"
+},
+{
+"id": "c1-crude",
+"en": "Crude",
+"topic": "evaluative",
+"es": "Tosco",
+"fr": "Grossier"
+},
+{
+"id": "c1-rudimentary",
+"en": "Rudimentary",
+"topic": "evaluative",
+"es": "Rudimentario",
+"fr": "Rudimentaire"
+},
+{
+"id": "c1-intricate",
+"en": "Intricate",
+"topic": "evaluative",
+"es": "Intrincado",
+"fr": "Complexe (élaboré)"
+},
+{
+"id": "c1-convoluted",
+"en": "Convoluted",
+"topic": "evaluative",
+"es": "Enrevesado",
+"fr": "Alambiqué"
+},
+{
+"id": "c1-user-friendly",
+"en": "User-friendly",
+"topic": "evaluative",
+"es": "Fácil de usar",
+"fr": "Convivial"
+},
+{
+"id": "c1-foolproof",
+"en": "Foolproof",
+"topic": "evaluative",
+"es": "Infalible",
+"fr": "Infaillible"
+},
+{
+"id": "c1-robust",
+"en": "Robust",
+"topic": "evaluative",
+"es": "Robusto",
+"fr": "Robuste"
+},
+{
+"id": "c1-seamless",
+"en": "Seamless",
+"topic": "evaluative",
+"es": "Fluido (sin fisuras)",
+"fr": "Fluide (sans accroc)"
+},
+{
+"id": "c1-glitchy",
+"en": "Glitchy",
+"topic": "evaluative",
+"es": "Con fallos",
+"fr": "Bugué"
+},
+{
+"id": "c1-clunky",
+"en": "Clunky",
+"topic": "evaluative",
+"es": "Torpe (poco ágil)",
+"fr": "Lourd (maladroit)"
+},
+{
+"id": "c1-sleek",
+"en": "Sleek",
+"topic": "evaluative",
+"es": "Elegante (estilizado)",
+"fr": "Élégant (épuré)"
+},
+{
+"id": "c1-bulky",
+"en": "Bulky",
+"topic": "evaluative",
+"es": "Voluminoso",
+"fr": "Encombrant"
+},
+{
+"id": "c1-compact",
+"en": "Compact",
+"topic": "evaluative",
+"es": "Compacto",
+"fr": "Compact"
+},
+{
+"id": "c1-flimsy",
+"en": "Flimsy",
+"topic": "evaluative",
+"es": "Endeble",
+"fr": "Fragile (peu solide)"
+},
+{
+"id": "c1-durable",
+"en": "Durable",
+"topic": "evaluative",
+"es": "Duradero",
+"fr": "Durable (résistant)"
+},
+{
+"id": "c1-to-mumble",
+"en": "To mumble",
+"topic": "voice-sound",
+"es": "Murmurar (entre dientes)",
+"fr": "Marmonner"
+},
+{
+"id": "c1-to-mutter",
+"en": "To mutter",
+"topic": "voice-sound",
+"es": "Mascullar",
+"fr": "Grommeler"
+},
+{
+"id": "c1-to-stutter",
+"en": "To stutter",
+"topic": "voice-sound",
+"es": "Tartamudear",
+"fr": "Bégayer"
+},
+{
+"id": "c1-to-slur",
+"en": "To slur",
+"topic": "voice-sound",
+"es": "Arrastrar las palabras",
+"fr": "Bredouiller"
+},
+{
+"id": "c1-to-ramble",
+"en": "To ramble",
+"topic": "voice-sound",
+"es": "Divagar",
+"fr": "Divaguer"
+},
+{
+"id": "c1-to-rant",
+"en": "To rant",
+"topic": "voice-sound",
+"es": "Despotricar",
+"fr": "Pester (s’emporter)"
+},
+{
+"id": "c1-to-grumble",
+"en": "To grumble",
+"topic": "voice-sound",
+"es": "Refunfuñar",
+"fr": "Ronchonner"
+},
+{
+"id": "c1-to-whine",
+"en": "To whine",
+"topic": "voice-sound",
+"es": "Lloriquear",
+"fr": "Pleurnicher"
+},
+{
+"id": "c1-to-snap-at-someone",
+"en": "To snap (at someone)",
+"topic": "voice-sound",
+"es": "Contestar bruscamente",
+"fr": "Rembarrer"
+},
+{
+"id": "c1-hoarse",
+"en": "Hoarse",
+"topic": "voice-sound",
+"es": "Ronco",
+"fr": "Enroué"
+},
+{
+"id": "c1-raspy",
+"en": "Raspy",
+"topic": "voice-sound",
+"es": "Áspero (voz)",
+"fr": "Râpeux"
+},
+{
+"id": "c1-monotone",
+"en": "Monotone",
+"topic": "voice-sound",
+"es": "Monótono",
+"fr": "Monocorde"
+},
+{
+"id": "c1-shrill",
+"en": "Shrill",
+"topic": "voice-sound",
+"es": "Estridente",
+"fr": "Strident"
+},
+{
+"id": "c1-deafening",
+"en": "Deafening",
+"topic": "voice-sound",
+"es": "Ensordecedor",
+"fr": "Assourdissant"
+},
+{
+"id": "c1-muffled",
+"en": "Muffled",
+"topic": "voice-sound",
+"es": "Amortiguado",
+"fr": "Étouffé"
+},
+{
+"id": "c1-faint-sound",
+"en": "Faint (sound)",
+"topic": "voice-sound",
+"es": "Tenue (sonido)",
+"fr": "Faible (son)"
+},
+{
+"id": "c1-to-hum",
+"en": "To hum",
+"topic": "voice-sound",
+"es": "Tararear",
+"fr": "Fredonner"
+},
+{
+"id": "c1-to-chant",
+"en": "To chant",
+"topic": "voice-sound",
+"es": "Corear",
+"fr": "Scander"
+},
+{
+"id": "c1-to-murmur",
+"en": "To murmur",
+"topic": "voice-sound",
+"es": "Murmurar (suavemente)",
+"fr": "Murmurer"
+},
+{
+"id": "c1-to-bellow",
+"en": "To bellow",
+"topic": "voice-sound",
+"es": "Bramar",
+"fr": "Beugler"
+},
+{
+"id": "c1-to-chuckle",
+"en": "To chuckle",
+"topic": "voice-sound",
+"es": "Reírse entre dientes",
+"fr": "Glousser"
+},
+{
+"id": "c1-to-giggle",
+"en": "To giggle",
+"topic": "voice-sound",
+"es": "Reír tontamente",
+"fr": "Rire bêtement"
+},
+{
+"id": "c1-to-snicker",
+"en": "To snicker",
+"topic": "voice-sound",
+"es": "Reírse con disimulo",
+"fr": "Ricaner"
+},
+{
+"id": "c1-to-sob",
+"en": "To sob",
+"topic": "voice-sound",
+"es": "Sollozar",
+"fr": "Sangloter"
+},
+{
+"id": "c1-to-wail",
+"en": "To wail",
+"topic": "voice-sound",
+"es": "Gemir (llorar a gritos)",
+"fr": "Gémir (hurler)"
+},
+{
+"id": "c1-to-howl",
+"en": "To howl",
+"topic": "voice-sound",
+"es": "Aullar",
+"fr": "Hurler"
+},
+{
+"id": "c1-to-shriek",
+"en": "To shriek",
+"topic": "voice-sound",
+"es": "Chillar",
+"fr": "Pousser un cri perçant"
+},
+{
+"id": "c1-to-gasp",
+"en": "To gasp",
+"topic": "voice-sound",
+"es": "Quedarse sin aliento",
+"fr": "Haleter (avoir le souffle coupé)"
+},
+{
+"id": "c1-pitch-voice",
+"en": "Pitch (voice)",
+"topic": "voice-sound",
+"es": "Tono",
+"fr": "Hauteur (voix)"
+},
+{
+"id": "c1-accent-stress",
+"en": "Accent (stress)",
+"topic": "voice-sound",
+"es": "Acento (énfasis)",
+"fr": "Accent tonique"
+},
+{
+"id": "c1-asset",
+"en": "Asset",
+"topic": "finance",
+"es": "Activo",
+"fr": "Actif"
+},
+{
+"id": "c1-liability-finance",
+"en": "Liability (finance)",
+"topic": "finance",
+"es": "Pasivo",
+"fr": "Passif"
+},
+{
+"id": "c1-equity",
+"en": "Equity",
+"topic": "finance",
+"es": "Capital (patrimonio)",
+"fr": "Capitaux propres"
+},
+{
+"id": "c1-portfolio",
+"en": "Portfolio",
+"topic": "finance",
+"es": "Cartera (inversiones)",
+"fr": "Portefeuille"
+},
+{
+"id": "c1-dividend",
+"en": "Dividend",
+"topic": "finance",
+"es": "Dividendo",
+"fr": "Dividende"
+},
+{
+"id": "c1-bond-finance",
+"en": "Bond (finance)",
+"topic": "finance",
+"es": "Bono",
+"fr": "Obligation"
+},
+{
+"id": "c1-hedge",
+"en": "Hedge",
+"topic": "finance",
+"es": "Cobertura (financiera)",
+"fr": "Couverture"
+},
+{
+"id": "c1-liquidity",
+"en": "Liquidity",
+"topic": "finance",
+"es": "Liquidez",
+"fr": "Liquidité"
+},
+{
+"id": "c1-collateral",
+"en": "Collateral",
+"topic": "finance",
+"es": "Garantía (aval)",
+"fr": "Garantie (nantissement)"
+},
+{
+"id": "c1-default-loan",
+"en": "Default (loan)",
+"topic": "finance",
+"es": "Impago",
+"fr": "Défaut de paiement"
+},
+{
+"id": "c1-foreclosure",
+"en": "Foreclosure",
+"topic": "finance",
+"es": "Ejecución hipotecaria",
+"fr": "Saisie"
+},
+{
+"id": "c1-appreciation-value",
+"en": "Appreciation (value)",
+"topic": "finance",
+"es": "Revalorización",
+"fr": "Plus-value"
+},
+{
+"id": "c1-depreciation",
+"en": "Depreciation",
+"topic": "finance",
+"es": "Depreciación",
+"fr": "Dépréciation"
+},
+{
+"id": "c1-capital-gains",
+"en": "Capital gains",
+"topic": "finance",
+"es": "Ganancias de capital",
+"fr": "Plus-values"
+},
+{
+"id": "c1-write-off",
+"en": "Write-off",
+"topic": "finance",
+"es": "Cancelación (deducción)",
+"fr": "Amortissement (radiation)"
+},
+{
+"id": "c1-overhead",
+"en": "Overhead",
+"topic": "finance",
+"es": "Gastos generales",
+"fr": "Frais généraux"
+},
+{
+"id": "c1-payroll",
+"en": "Payroll",
+"topic": "finance",
+"es": "Nómina",
+"fr": "Paie (masse salariale)"
+},
+{
+"id": "c1-gross-before-deductions",
+"en": "Gross (before deductions)",
+"topic": "finance",
+"es": "Bruto",
+"fr": "Brut"
+},
+{
+"id": "c1-net",
+"en": "Net",
+"topic": "finance",
+"es": "Neto",
+"fr": "Net"
+},
+{
+"id": "c1-deductible",
+"en": "Deductible",
+"topic": "finance",
+"es": "Deducible",
+"fr": "Déductible"
+},
+{
+"id": "c1-exemption",
+"en": "Exemption",
+"topic": "finance",
+"es": "Exención",
+"fr": "Exonération"
+},
+{
+"id": "c1-audit",
+"en": "Audit",
+"topic": "finance",
+"es": "Auditoría",
+"fr": "Audit"
+},
+{
+"id": "c1-ledger",
+"en": "Ledger",
+"topic": "finance",
+"es": "Libro mayor",
+"fr": "Grand livre"
+},
+{
+"id": "c1-bookkeeping",
+"en": "Bookkeeping",
+"topic": "finance",
+"es": "Contabilidad (teneduría)",
+"fr": "Comptabilité (tenue des livres)"
+},
+{
+"id": "c1-break-even",
+"en": "Break-even",
+"topic": "finance",
+"es": "Punto de equilibrio",
+"fr": "Seuil de rentabilité"
+},
+{
+"id": "c1-turnover",
+"en": "Turnover",
+"topic": "finance",
+"es": "Facturación (volumen)",
+"fr": "Chiffre d’affaires (roulement)"
+},
+{
+"id": "c1-markup",
+"en": "Markup",
+"topic": "finance",
+"es": "Margen (recargo)",
+"fr": "Marge (majoration)"
+},
+{
+"id": "c1-cash-reserve",
+"en": "Cash reserve",
+"topic": "finance",
+"es": "Reserva de efectivo",
+"fr": "Réserve de trésorerie"
+},
+{
+"id": "c1-venture-capital",
+"en": "Venture capital",
+"topic": "finance",
+"es": "Capital de riesgo",
+"fr": "Capital-risque"
+},
+{
+"id": "c1-fiscal-year",
+"en": "Fiscal year",
+"topic": "finance",
+"es": "Año fiscal",
+"fr": "Exercice fiscal"
+},
+{
+"id": "c1-expedition",
+"en": "Expedition",
+"topic": "language-migration",
+"es": "Expedición",
+"fr": "Expédition"
+},
+{
+"id": "c1-pilgrimage",
+"en": "Pilgrimage",
+"topic": "language-migration",
+"es": "Peregrinación",
+"fr": "Pèlerinage"
+},
+{
+"id": "c1-getaway",
+"en": "Getaway",
+"topic": "language-migration",
+"es": "Escapada",
+"fr": "Escapade"
+},
+{
+"id": "c1-sabbatical",
+"en": "Sabbatical",
+"topic": "language-migration",
+"es": "Año sabático",
+"fr": "Congé sabbatique"
+},
+{
+"id": "c1-nomad",
+"en": "Nomad",
+"topic": "language-migration",
+"es": "Nómada",
+"fr": "Nomade"
+},
+{
+"id": "c1-expatriate",
+"en": "Expatriate",
+"topic": "language-migration",
+"es": "Expatriado",
+"fr": "Expatrié"
+},
+{
+"id": "c1-immigrant",
+"en": "Immigrant",
+"topic": "language-migration",
+"es": "Inmigrante",
+"fr": "Immigré"
+},
+{
+"id": "c1-to-relocate",
+"en": "To relocate",
+"topic": "language-migration",
+"es": "Trasladarse",
+"fr": "Déménager (s’installer ailleurs)"
+},
+{
+"id": "c1-to-settle-down",
+"en": "To settle down",
+"topic": "language-migration",
+"es": "Establecerse",
+"fr": "S’installer"
+},
+{
+"id": "c1-culture-shock",
+"en": "Culture shock",
+"topic": "language-migration",
+"es": "Choque cultural",
+"fr": "Choc culturel"
+},
+{
+"id": "c1-to-assimilate",
+"en": "To assimilate",
+"topic": "language-migration",
+"es": "Asimilarse",
+"fr": "S’assimiler"
+},
+{
+"id": "c1-bilingual",
+"en": "Bilingual",
+"topic": "language-migration",
+"es": "Bilingüe",
+"fr": "Bilingue"
+},
+{
+"id": "c1-multilingual",
+"en": "Multilingual",
+"topic": "language-migration",
+"es": "Multilingüe",
+"fr": "Multilingue"
+},
+{
+"id": "c1-mother-tongue",
+"en": "Mother tongue",
+"topic": "language-migration",
+"es": "Lengua materna",
+"fr": "Langue maternelle"
+},
+{
+"id": "c1-dialect",
+"en": "Dialect",
+"topic": "language-migration",
+"es": "Dialecto",
+"fr": "Dialecte"
+},
+{
+"id": "c1-slang",
+"en": "Slang",
+"topic": "language-migration",
+"es": "Jerga (argot)",
+"fr": "Argot"
+},
+{
+"id": "c1-jargon",
+"en": "Jargon",
+"topic": "language-migration",
+"es": "Jerga (técnica)",
+"fr": "Jargon"
+},
+{
+"id": "c1-register-language",
+"en": "Register (language)",
+"topic": "language-migration",
+"es": "Registro",
+"fr": "Registre"
+},
+{
+"id": "c1-colloquial",
+"en": "Colloquial",
+"topic": "language-migration",
+"es": "Coloquial",
+"fr": "Familier"
+},
+{
+"id": "c1-fluency",
+"en": "Fluency",
+"topic": "language-migration",
+"es": "Fluidez",
+"fr": "Aisance"
+},
+{
+"id": "c1-proficiency",
+"en": "Proficiency",
+"topic": "language-migration",
+"es": "Dominio (competencia)",
+"fr": "Maîtrise"
+},
+{
+"id": "c1-to-master",
+"en": "To master",
+"topic": "language-migration",
+"es": "Dominar",
+"fr": "Maîtriser"
+},
+{
+"id": "c1-immersion",
+"en": "Immersion",
+"topic": "language-migration",
+"es": "Inmersión",
+"fr": "Immersion"
+},
+{
+"id": "c1-intonation",
+"en": "Intonation",
+"topic": "language-migration",
+"es": "Entonación",
+"fr": "Intonation"
+},
+{
+"id": "c1-to-mispronounce",
+"en": "To mispronounce",
+"topic": "language-migration",
+"es": "Pronunciar mal",
+"fr": "Mal prononcer"
+},
+{
+"id": "c1-false-friend",
+"en": "False friend",
+"topic": "language-migration",
+"es": "Falso amigo",
+"fr": "Faux ami"
+},
+{
+"id": "c1-cognate",
+"en": "Cognate",
+"topic": "language-migration",
+"es": "Cognado",
+"fr": "Mot apparenté"
+},
+{
+"id": "c1-loanword",
+"en": "Loanword",
+"topic": "language-migration",
+"es": "Préstamo (lingüístico)",
+"fr": "Emprunt"
+},
+{
+"id": "c1-literacy",
+"en": "Literacy",
+"topic": "language-migration",
+"es": "Alfabetización",
+"fr": "Alphabétisation"
+},
+{
+"id": "c1-interpreter",
+"en": "Interpreter",
+"topic": "language-migration",
+"es": "Intérprete",
+"fr": "Interprète"
+},
+{
+"id": "c1-latency",
+"en": "Latency",
+"topic": "technology-3",
+"es": "Latencia",
+"fr": "Latence"
+},
+{
+"id": "c1-server",
+"en": "Server",
+"topic": "technology-3",
+"es": "Servidor",
+"fr": "Serveur"
+},
+{
+"id": "c1-cloud-computing",
+"en": "Cloud computing",
+"topic": "technology-3",
+"es": "Computación en la nube",
+"fr": "Informatique en nuage"
+},
+{
+"id": "c1-backup-data",
+"en": "Backup (data)",
+"topic": "technology-3",
+"es": "Copia de seguridad",
+"fr": "Sauvegarde"
+},
+{
+"id": "c1-firewall",
+"en": "Firewall",
+"topic": "technology-3",
+"es": "Cortafuegos",
+"fr": "Pare-feu"
+},
+{
+"id": "c1-malware",
+"en": "Malware",
+"topic": "technology-3",
+"es": "Malware",
+"fr": "Logiciel malveillant"
+},
+{
+"id": "c1-phishing",
+"en": "Phishing",
+"topic": "technology-3",
+"es": "Suplantación (phishing)",
+"fr": "Hameçonnage"
+},
+{
+"id": "c1-two-factor-authentication",
+"en": "Two-factor authentication",
+"topic": "technology-3",
+"es": "Autenticación de dos factores",
+"fr": "Authentification à deux facteurs"
+},
+{
+"id": "c1-biometric",
+"en": "Biometric",
+"topic": "technology-3",
+"es": "Biométrico",
+"fr": "Biométrique"
+},
+{
+"id": "c1-open-source",
+"en": "Open source",
+"topic": "technology-3",
+"es": "Código abierto",
+"fr": "Open source"
+},
+{
+"id": "c1-interface",
+"en": "Interface",
+"topic": "technology-3",
+"es": "Interfaz",
+"fr": "Interface"
+},
+{
+"id": "c1-plugin",
+"en": "Plugin",
+"topic": "technology-3",
+"es": "Complemento",
+"fr": "Extension (plugin)"
+},
+{
+"id": "c1-patch-software",
+"en": "Patch (software)",
+"topic": "technology-3",
+"es": "Parche",
+"fr": "Correctif"
+},
+{
+"id": "c1-to-deploy",
+"en": "To deploy",
+"topic": "technology-3",
+"es": "Desplegar",
+"fr": "Déployer (mettre en production)"
+},
+{
+"id": "c1-release-version",
+"en": "Release (version)",
+"topic": "technology-3",
+"es": "Versión (lanzamiento)",
+"fr": "Version (sortie)"
+},
+{
+"id": "c1-beta",
+"en": "Beta",
+"topic": "technology-3",
+"es": "Beta",
+"fr": "Bêta"
+},
+{
+"id": "c1-blockchain",
+"en": "Blockchain",
+"topic": "technology-3",
+"es": "Cadena de bloques",
+"fr": "Chaîne de blocs"
+},
+{
+"id": "c1-cryptocurrency",
+"en": "Cryptocurrency",
+"topic": "technology-3",
+"es": "Criptomoneda",
+"fr": "Cryptomonnaie"
+},
+{
+"id": "c1-machine-learning",
+"en": "Machine learning",
+"topic": "technology-3",
+"es": "Aprendizaje automático",
+"fr": "Apprentissage automatique"
+},
+{
+"id": "c1-neural-network",
+"en": "Neural network",
+"topic": "technology-3",
+"es": "Red neuronal",
+"fr": "Réseau de neurones"
+},
+{
+"id": "c1-dataset",
+"en": "Dataset",
+"topic": "technology-3",
+"es": "Conjunto de datos",
+"fr": "Jeu de données"
+},
+{
+"id": "c1-drone",
+"en": "Drone",
+"topic": "technology-3",
+"es": "Dron",
+"fr": "Drone"
+},
+{
+"id": "c1-sensor",
+"en": "Sensor",
+"topic": "technology-3",
+"es": "Sensor",
+"fr": "Capteur"
+},
+{
+"id": "c1-augmented-reality",
+"en": "Augmented reality",
+"topic": "technology-3",
+"es": "Realidad aumentada",
+"fr": "Réalité augmentée"
+},
+{
+"id": "c1-wearable",
+"en": "Wearable",
+"topic": "technology-3",
+"es": "Dispositivo vestible",
+"fr": "Objet connecté (portable)"
+},
+{
+"id": "c1-smart-home",
+"en": "Smart home",
+"topic": "technology-3",
+"es": "Casa inteligente",
+"fr": "Maison connectée"
+},
+{
+"id": "c1-bandwidth-network",
+"en": "Bandwidth (network)",
+"topic": "technology-3",
+"es": "Ancho de banda",
+"fr": "Bande passante"
+},
+{
+"id": "c1-outage",
+"en": "Outage",
+"topic": "technology-3",
+"es": "Caída (del servicio)",
+"fr": "Panne (de service)"
+},
+{
+"id": "c1-scalability",
+"en": "Scalability",
+"topic": "technology-3",
+"es": "Escalabilidad",
+"fr": "Évolutivité"
+},
+{
+"id": "c1-encryption-key",
+"en": "Encryption key",
+"topic": "technology-3",
+"es": "Clave de cifrado",
+"fr": "Clé de chiffrement"
+},
+{
+"id": "c1-cinematography",
+"en": "Cinematography",
+"topic": "cinema-screen",
+"es": "Fotografía (cine)",
+"fr": "Photographie (cinéma)"
+},
+{
+"id": "c1-close-up",
+"en": "Close-up",
+"topic": "cinema-screen",
+"es": "Primer plano",
+"fr": "Gros plan"
+},
+{
+"id": "c1-wide-shot",
+"en": "Wide shot",
+"topic": "cinema-screen",
+"es": "Plano general",
+"fr": "Plan large"
+},
+{
+"id": "c1-montage",
+"en": "Montage",
+"topic": "cinema-screen",
+"es": "Montaje (secuencia)",
+"fr": "Montage (séquence)"
+},
+{
+"id": "c1-flashback",
+"en": "Flashback",
+"topic": "cinema-screen",
+"es": "Flashback",
+"fr": "Flash-back"
+},
+{
+"id": "c1-voice-over",
+"en": "Voice-over",
+"topic": "cinema-screen",
+"es": "Voz en off",
+"fr": "Voix off"
+},
+{
+"id": "c1-subplot",
+"en": "Subplot",
+"topic": "cinema-screen",
+"es": "Trama secundaria",
+"fr": "Intrigue secondaire"
+},
+{
+"id": "c1-protagonist",
+"en": "Protagonist",
+"topic": "cinema-screen",
+"es": "Protagonista",
+"fr": "Protagoniste"
+},
+{
+"id": "c1-antagonist",
+"en": "Antagonist",
+"topic": "cinema-screen",
+"es": "Antagonista",
+"fr": "Antagoniste"
+},
+{
+"id": "c1-cliffhanger",
+"en": "Cliffhanger",
+"topic": "cinema-screen",
+"es": "Final en suspenso",
+"fr": "Suspense (fin en suspens)"
+},
+{
+"id": "c1-plot-twist",
+"en": "Plot twist",
+"topic": "cinema-screen",
+"es": "Giro argumental",
+"fr": "Rebondissement"
+},
+{
+"id": "c1-foreshadowing",
+"en": "Foreshadowing",
+"topic": "cinema-screen",
+"es": "Presagio (anticipación)",
+"fr": "Préfiguration"
+},
+{
+"id": "c1-pacing",
+"en": "Pacing",
+"topic": "cinema-screen",
+"es": "Ritmo (narrativo)",
+"fr": "Rythme (narratif)"
+},
+{
+"id": "c1-casting",
+"en": "Casting",
+"topic": "cinema-screen",
+"es": "Reparto (casting)",
+"fr": "Casting"
+},
+{
+"id": "c1-cameo",
+"en": "Cameo",
+"topic": "cinema-screen",
+"es": "Cameo",
+"fr": "Caméo"
+},
+{
+"id": "c1-sequel",
+"en": "Sequel",
+"topic": "cinema-screen",
+"es": "Secuela",
+"fr": "Suite"
+},
+{
+"id": "c1-prequel",
+"en": "Prequel",
+"topic": "cinema-screen",
+"es": "Precuela",
+"fr": "Préquelle"
+},
+{
+"id": "c1-reboot",
+"en": "Reboot",
+"topic": "cinema-screen",
+"es": "Reinicio (reboot)",
+"fr": "Reboot"
+},
+{
+"id": "c1-box-office",
+"en": "Box office",
+"topic": "cinema-screen",
+"es": "Taquilla",
+"fr": "Box-office"
+},
+{
+"id": "c1-blockbuster",
+"en": "Blockbuster",
+"topic": "cinema-screen",
+"es": "Éxito de taquilla",
+"fr": "Blockbuster"
+},
+{
+"id": "c1-indie-film",
+"en": "Indie film",
+"topic": "cinema-screen",
+"es": "Cine independiente",
+"fr": "Film indépendant"
+},
+{
+"id": "c1-cult-classic",
+"en": "Cult classic",
+"topic": "cinema-screen",
+"es": "Película de culto",
+"fr": "Film culte"
+},
+{
+"id": "c1-critically-acclaimed",
+"en": "Critically acclaimed",
+"topic": "cinema-screen",
+"es": "Aclamado por la crítica",
+"fr": "Salué par la critique"
+},
+{
+"id": "c1-dubbed",
+"en": "Dubbed",
+"topic": "cinema-screen",
+"es": "Doblado",
+"fr": "Doublé"
+},
+{
+"id": "c1-subtitled",
+"en": "Subtitled",
+"topic": "cinema-screen",
+"es": "Subtitulado",
+"fr": "Sous-titré"
+},
+{
+"id": "c1-screening",
+"en": "Screening",
+"topic": "cinema-screen",
+"es": "Proyección",
+"fr": "Projection"
+},
+{
+"id": "c1-pilot-episode",
+"en": "Pilot episode",
+"topic": "cinema-screen",
+"es": "Episodio piloto",
+"fr": "Épisode pilote"
+},
+{
+"id": "c1-season-finale",
+"en": "Season finale",
+"topic": "cinema-screen",
+"es": "Final de temporada",
+"fr": "Final de saison"
+},
+{
+"id": "c1-showrunner",
+"en": "Showrunner",
+"topic": "cinema-screen",
+"es": "Showrunner",
+"fr": "Showrunner"
+},
+{
+"id": "c1-storyboard",
+"en": "Storyboard",
+"topic": "cinema-screen",
+"es": "Guion gráfico",
+"fr": "Storyboard"
+},
+{
+"id": "c1-on-the-mend",
+"en": "On the mend",
+"topic": "health-idioms",
+"es": "Recuperándose",
+"fr": "En voie de guérison"
+},
+{
+"id": "c1-run-down-exhausted",
+"en": "Run down (exhausted)",
+"topic": "health-idioms",
+"es": "Agotado (sin energía)",
+"fr": "À plat"
+},
+{
+"id": "c1-in-good-shape",
+"en": "In good shape",
+"topic": "health-idioms",
+"es": "En buena forma",
+"fr": "En bonne forme"
+},
+{
+"id": "c1-out-of-shape",
+"en": "Out of shape",
+"topic": "health-idioms",
+"es": "Fuera de forma",
+"fr": "Pas en forme"
+},
+{
+"id": "c1-a-clean-bill-of-health",
+"en": "A clean bill of health",
+"topic": "health-idioms",
+"es": "Un diagnóstico perfecto",
+"fr": "Un bilan de santé parfait"
+},
+{
+"id": "c1-to-pull-a-muscle",
+"en": "To pull a muscle",
+"topic": "health-idioms",
+"es": "Sufrir un tirón",
+"fr": "Se claquer un muscle"
+},
+{
+"id": "c1-wear-and-tear",
+"en": "Wear and tear",
+"topic": "health-idioms",
+"es": "Desgaste",
+"fr": "Usure"
+},
+{
+"id": "c1-to-nod-off",
+"en": "To nod off",
+"topic": "health-idioms",
+"es": "Quedarse dormido (cabecear)",
+"fr": "Piquer du nez"
+},
+{
+"id": "c1-to-sleep-like-a-log",
+"en": "To sleep like a log",
+"topic": "health-idioms",
+"es": "Dormir como un tronco",
+"fr": "Dormir comme une souche"
+},
+{
+"id": "c1-to-toss-and-turn",
+"en": "To toss and turn",
+"topic": "health-idioms",
+"es": "Dar vueltas en la cama",
+"fr": "Se tourner et se retourner"
+},
+{
+"id": "c1-over-the-counter",
+"en": "Over-the-counter",
+"topic": "health-idioms",
+"es": "Sin receta",
+"fr": "Sans ordonnance"
+},
+{
+"id": "c1-second-opinion",
+"en": "Second opinion",
+"topic": "health-idioms",
+"es": "Segunda opinión",
+"fr": "Deuxième avis"
+},
+{
+"id": "c1-bedside-manner",
+"en": "Bedside manner",
+"topic": "health-idioms",
+"es": "Trato al paciente",
+"fr": "Relation avec le patient"
+},
+{
+"id": "c1-to-be-discharged",
+"en": "To be discharged",
+"topic": "health-idioms",
+"es": "Recibir el alta",
+"fr": "Sortir (de l’hôpital)"
+},
+{
+"id": "c1-to-be-admitted-hospital",
+"en": "To be admitted (hospital)",
+"topic": "health-idioms",
+"es": "Ser ingresado",
+"fr": "Être hospitalisé"
+},
+{
+"id": "c1-outpatient",
+"en": "Outpatient",
+"topic": "health-idioms",
+"es": "Paciente ambulatorio",
+"fr": "Patient externe"
+},
+{
+"id": "c1-follow-up-appointment",
+"en": "Follow-up (appointment)",
+"topic": "health-idioms",
+"es": "Seguimiento",
+"fr": "Suivi"
+},
+{
+"id": "c1-referral",
+"en": "Referral",
+"topic": "health-idioms",
+"es": "Derivación",
+"fr": "Orientation (vers un spécialiste)"
+},
+{
+"id": "c1-to-take-a-turn-for-the-worse",
+"en": "To take a turn for the worse",
+"topic": "health-idioms",
+"es": "Empeorar",
+"fr": "Empirer"
+},
+{
+"id": "c1-to-black-out",
+"en": "To black out",
+"topic": "health-idioms",
+"es": "Desmayarse (perder el conocimiento)",
+"fr": "Perdre connaissance"
+},
+{
+"id": "c1-under-the-knife",
+"en": "Under the knife",
+"topic": "health-idioms",
+"es": "Bajo el bisturí",
+"fr": "Sur le billard"
+},
+{
+"id": "c1-slipped-disc",
+"en": "Slipped disc",
+"topic": "health-idioms",
+"es": "Hernia discal",
+"fr": "Hernie discale"
+},
+{
+"id": "c1-jet-lagged",
+"en": "Jet-lagged",
+"topic": "health-idioms",
+"es": "Con jet lag",
+"fr": "Décalé (jet-lag)"
+},
+{
+"id": "c1-on-medication",
+"en": "On medication",
+"topic": "health-idioms",
+"es": "Medicado",
+"fr": "Sous traitement"
+},
+{
+"id": "c1-immune-to",
+"en": "Immune to",
+"topic": "health-idioms",
+"es": "Inmune a",
+"fr": "Immunisé contre"
+},
+{
+"id": "c1-prone-to",
+"en": "Prone to",
+"topic": "health-idioms",
+"es": "Propenso a",
+"fr": "Sujet à"
+},
+{
+"id": "c1-relapse",
+"en": "Relapse",
+"topic": "health-idioms",
+"es": "Recaída",
+"fr": "Rechute"
+},
+{
+"id": "c1-remission",
+"en": "Remission",
+"topic": "health-idioms",
+"es": "Remisión",
+"fr": "Rémission"
+},
+{
+"id": "c1-a-no-brainer",
+"en": "A no-brainer",
+"topic": "everyday-expressions",
+"es": "Pan comido (obvio)",
+"fr": "Une évidence"
+},
+{
+"id": "c1-a-long-shot",
+"en": "A long shot",
+"topic": "everyday-expressions",
+"es": "Una posibilidad remota",
+"fr": "Un pari risqué"
+},
+{
+"id": "c1-a-close-call",
+"en": "A close call",
+"topic": "everyday-expressions",
+"es": "Por los pelos",
+"fr": "Il s’en est fallu de peu"
+},
+{
+"id": "c1-a-wake-up-call",
+"en": "A wake-up call",
+"topic": "everyday-expressions",
+"es": "Una llamada de atención",
+"fr": "Une prise de conscience"
+},
+{
+"id": "c1-a-catch-hidden-problem",
+"en": "A catch (hidden problem)",
+"topic": "everyday-expressions",
+"es": "Una trampa (pega)",
+"fr": "Un piège (un hic)"
+},
+{
+"id": "c1-the-upside",
+"en": "The upside",
+"topic": "everyday-expressions",
+"es": "La ventaja",
+"fr": "Le bon côté"
+},
+{
+"id": "c1-the-downside",
+"en": "The downside",
+"topic": "everyday-expressions",
+"es": "La desventaja",
+"fr": "L’inconvénient"
+},
+{
+"id": "c1-a-trade-off",
+"en": "A trade-off",
+"topic": "everyday-expressions",
+"es": "Un compromiso (contrapartida)",
+"fr": "Un compromis (contrepartie)"
+},
+{
+"id": "c1-a-loophole",
+"en": "A loophole",
+"topic": "everyday-expressions",
+"es": "Un vacío legal",
+"fr": "Une faille"
+},
+{
+"id": "c1-a-setback",
+"en": "A setback",
+"topic": "everyday-expressions",
+"es": "Un revés",
+"fr": "Un revers"
+},
+{
+"id": "c1-a-blessing-in-disguise",
+"en": "A blessing in disguise",
+"topic": "everyday-expressions",
+"es": "No hay mal que por bien no venga",
+"fr": "Un mal pour un bien"
+},
+{
+"id": "c1-the-tip-of-the-iceberg",
+"en": "The tip of the iceberg",
+"topic": "everyday-expressions",
+"es": "La punta del iceberg",
+"fr": "La partie émergée de l’iceberg"
+},
+{
+"id": "c1-the-last-straw",
+"en": "The last straw",
+"topic": "everyday-expressions",
+"es": "La gota que colma el vaso",
+"fr": "La goutte d’eau qui fait déborder le vase"
+},
+{
+"id": "c1-a-double-edged-sword",
+"en": "A double-edged sword",
+"topic": "everyday-expressions",
+"es": "Un arma de doble filo",
+"fr": "Une arme à double tranchant"
+},
+{
+"id": "c1-the-elephant-in-the-room",
+"en": "The elephant in the room",
+"topic": "everyday-expressions",
+"es": "El elefante en la habitación",
+"fr": "L’éléphant dans la pièce"
+},
+{
+"id": "c1-a-grey-area",
+"en": "A grey area",
+"topic": "everyday-expressions",
+"es": "Una zona gris",
+"fr": "Une zone grise"
+},
+{
+"id": "c1-a-slippery-slope",
+"en": "A slippery slope",
+"topic": "everyday-expressions",
+"es": "Una pendiente resbaladiza",
+"fr": "Une pente glissante"
+},
+{
+"id": "c1-a-vicious-circle",
+"en": "A vicious circle",
+"topic": "everyday-expressions",
+"es": "Un círculo vicioso",
+"fr": "Un cercle vicieux"
+},
+{
+"id": "c1-a-stepping-stone",
+"en": "A stepping stone",
+"topic": "everyday-expressions",
+"es": "Un trampolín (paso previo)",
+"fr": "Un tremplin"
+},
+{
+"id": "c1-a-rule-of-thumb",
+"en": "A rule of thumb",
+"topic": "everyday-expressions",
+"es": "Una regla general",
+"fr": "Une règle empirique"
+},
+{
+"id": "c1-a-rain-check",
+"en": "A rain check",
+"topic": "everyday-expressions",
+"es": "Dejarlo para otro día",
+"fr": "Remettre à plus tard"
+},
+{
+"id": "c1-a-heads-up",
+"en": "A heads-up",
+"topic": "everyday-expressions",
+"es": "Un aviso",
+"fr": "Un avertissement (prévenir)"
+},
+{
+"id": "c1-a-hunch",
+"en": "A hunch",
+"topic": "everyday-expressions",
+"es": "Una corazonada",
+"fr": "Une intuition (pressentiment)"
+},
+{
+"id": "c1-a-knack",
+"en": "A knack",
+"topic": "everyday-expressions",
+"es": "Un don (habilidad)",
+"fr": "Un don (le coup de main)"
+},
+{
+"id": "c1-a-pet-peeve",
+"en": "A pet peeve",
+"topic": "everyday-expressions",
+"es": "Una manía (algo que irrita)",
+"fr": "Une bête noire"
+},
+{
+"id": "c1-a-red-flag",
+"en": "A red flag",
+"topic": "everyday-expressions",
+"es": "Una señal de alerta",
+"fr": "Un signal d’alarme"
+},
+{
+"id": "c1-a-silver-lining",
+"en": "A silver lining",
+"topic": "everyday-expressions",
+"es": "El lado positivo",
+"fr": "Le bon côté des choses"
+},
+{
+"id": "c1-a-drop-in-the-ocean",
+"en": "A drop in the ocean",
+"topic": "everyday-expressions",
+"es": "Una gota en el océano",
+"fr": "Une goutte d’eau dans la mer"
+},
+{
+"id": "c1-a-piece-of-cake",
+"en": "A piece of cake",
+"topic": "everyday-expressions",
+"es": "Pan comido",
+"fr": "Du gâteau"
+},
+{
+"id": "c1-a-far-cry-from",
+"en": "A far cry from",
+"topic": "everyday-expressions",
+"es": "Muy lejos de",
+"fr": "Loin de"
+},
+{
+"id": "c1-a-handful",
+"en": "A handful",
+"topic": "quantities-odds",
+"es": "Un puñado",
+"fr": "Une poignée"
+},
+{
+"id": "c1-a-fair-amount",
+"en": "A fair amount",
+"topic": "quantities-odds",
+"es": "Una cantidad considerable",
+"fr": "Pas mal (une bonne quantité)"
+},
+{
+"id": "c1-the-lions-share",
+"en": "The lion’s share",
+"topic": "quantities-odds",
+"es": "La mayor parte",
+"fr": "La part du lion"
+},
+{
+"id": "c1-a-fraction",
+"en": "A fraction",
+"topic": "quantities-odds",
+"es": "Una fracción",
+"fr": "Une fraction"
+},
+{
+"id": "c1-the-vast-majority",
+"en": "The vast majority",
+"topic": "quantities-odds",
+"es": "La inmensa mayoría",
+"fr": "La grande majorité"
+},
+{
+"id": "c1-next-to-nothing",
+"en": "Next to nothing",
+"topic": "quantities-odds",
+"es": "Casi nada",
+"fr": "Presque rien"
+},
+{
+"id": "c1-a-great-deal",
+"en": "A great deal",
+"topic": "quantities-odds",
+"es": "Muchísimo",
+"fr": "Énormément"
+},
+{
+"id": "c1-at-most",
+"en": "At most",
+"topic": "quantities-odds",
+"es": "Como máximo",
+"fr": "Au plus"
+},
+{
+"id": "c1-at-best",
+"en": "At best",
+"topic": "quantities-odds",
+"es": "En el mejor de los casos",
+"fr": "Au mieux"
+},
+{
+"id": "c1-at-worst",
+"en": "At worst",
+"topic": "quantities-odds",
+"es": "En el peor de los casos",
+"fr": "Au pire"
+},
+{
+"id": "c1-in-bulk",
+"en": "In bulk",
+"topic": "quantities-odds",
+"es": "Al por mayor",
+"fr": "En gros"
+},
+{
+"id": "c1-on-average",
+"en": "On average",
+"topic": "quantities-odds",
+"es": "En promedio",
+"fr": "En moyenne"
+},
+{
+"id": "c1-per-capita",
+"en": "Per capita",
+"topic": "quantities-odds",
+"es": "Per cápita",
+"fr": "Par habitant"
+},
+{
+"id": "c1-give-or-take",
+"en": "Give or take",
+"topic": "quantities-odds",
+"es": "Más o menos (con un margen)",
+"fr": "À peu près (à quelque chose près)"
+},
+{
+"id": "c1-a-rough-estimate",
+"en": "A rough estimate",
+"topic": "quantities-odds",
+"es": "Una estimación aproximada",
+"fr": "Une estimation approximative"
+},
+{
+"id": "c1-a-round-number",
+"en": "A round number",
+"topic": "quantities-odds",
+"es": "Una cifra redonda",
+"fr": "Un chiffre rond"
+},
+{
+"id": "c1-the-odds",
+"en": "The odds",
+"topic": "quantities-odds",
+"es": "Las probabilidades",
+"fr": "Les chances (probabilités)"
+},
+{
+"id": "c1-by-a-narrow-margin",
+"en": "By a narrow margin",
+"topic": "quantities-odds",
+"es": "Por un estrecho margen",
+"fr": "De justesse"
+},
+{
+"id": "c1-by-a-landslide",
+"en": "By a landslide",
+"topic": "quantities-odds",
+"es": "Por goleada (aplastante)",
+"fr": "Haut la main"
+},
+{
+"id": "c1-one-in-ten",
+"en": "One in ten",
+"topic": "quantities-odds",
+"es": "Uno de cada diez",
+"fr": "Un sur dix"
+},
+{
+"id": "c1-twofold",
+"en": "Twofold",
+"topic": "quantities-odds",
+"es": "El doble (doble)",
+"fr": "Double (deux fois)"
+},
+{
+"id": "c1-exponentially",
+"en": "Exponentially",
+"topic": "quantities-odds",
+"es": "Exponencialmente",
+"fr": "De façon exponentielle"
+},
+{
+"id": "c1-marginally",
+"en": "Marginally",
+"topic": "quantities-odds",
+"es": "Marginalmente",
+"fr": "Légèrement (marginalement)"
+},
+{
+"id": "c1-negligible",
+"en": "Negligible",
+"topic": "quantities-odds",
+"es": "Insignificante",
+"fr": "Négligeable"
+},
+{
+"id": "c1-sizable",
+"en": "Sizable",
+"topic": "quantities-odds",
+"es": "Considerable",
+"fr": "Considérable"
+},
+{
+"id": "c1-umpteen",
+"en": "Umpteen",
+"topic": "quantities-odds",
+"es": "Un montón de",
+"fr": "Trente-six (des tas de)"
+},
+{
+"id": "c1-in-the-region-of",
+"en": "In the region of",
+"topic": "quantities-odds",
+"es": "Alrededor de",
+"fr": "De l’ordre de"
+},
+{
+"id": "c1-odds-and-ends",
+"en": "Odds and ends",
+"topic": "quantities-odds",
+"es": "Cosas sueltas",
+"fr": "Bricoles"
+},
+{
+"id": "c1-mentor",
+"en": "Mentor",
+"topic": "workplace-roles",
+"es": "Mentor",
+"fr": "Mentor"
+},
+{
+"id": "c1-protege",
+"en": "Protégé",
+"topic": "workplace-roles",
+"es": "Protegido",
+"fr": "Protégé"
+},
+{
+"id": "c1-intern",
+"en": "Intern",
+"topic": "workplace-roles",
+"es": "Becario",
+"fr": "Stagiaire"
+},
+{
+"id": "c1-veteran-experienced",
+"en": "Veteran (experienced)",
+"topic": "workplace-roles",
+"es": "Veterano",
+"fr": "Vétéran"
+},
+{
+"id": "c1-rookie",
+"en": "Rookie",
+"topic": "workplace-roles",
+"es": "Novato",
+"fr": "Débutant (bleu)"
+},
+{
+"id": "c1-whiz",
+"en": "Whiz",
+"topic": "workplace-roles",
+"es": "Genio (crack)",
+"fr": "As (crack)"
+},
+{
+"id": "c1-workaholic",
+"en": "Workaholic",
+"topic": "workplace-roles",
+"es": "Adicto al trabajo",
+"fr": "Bourreau de travail"
+},
+{
+"id": "c1-slacker",
+"en": "Slacker",
+"topic": "workplace-roles",
+"es": "Vago",
+"fr": "Fainéant"
+},
+{
+"id": "c1-know-it-all",
+"en": "Know-it-all",
+"topic": "workplace-roles",
+"es": "Sabelotodo",
+"fr": "Monsieur je-sais-tout"
+},
+{
+"id": "c1-yes-man",
+"en": "Yes-man",
+"topic": "workplace-roles",
+"es": "Pelota (que siempre dice sí)",
+"fr": "Béni-oui-oui"
+},
+{
+"id": "c1-gatekeeper",
+"en": "Gatekeeper",
+"topic": "workplace-roles",
+"es": "Guardián (filtro)",
+"fr": "Gardien (filtre)"
+},
+{
+"id": "c1-middleman",
+"en": "Middleman",
+"topic": "workplace-roles",
+"es": "Intermediario",
+"fr": "Intermédiaire"
+},
+{
+"id": "c1-liaison",
+"en": "Liaison",
+"topic": "workplace-roles",
+"es": "Enlace",
+"fr": "Agent de liaison"
+},
+{
+"id": "c1-spokesperson",
+"en": "Spokesperson",
+"topic": "workplace-roles",
+"es": "Portavoz",
+"fr": "Porte-parole"
+},
+{
+"id": "c1-figurehead",
+"en": "Figurehead",
+"topic": "workplace-roles",
+"es": "Testaferro (figura decorativa)",
+"fr": "Homme de paille (figure de proue)"
+},
+{
+"id": "c1-frontrunner",
+"en": "Frontrunner",
+"topic": "workplace-roles",
+"es": "Favorito",
+"fr": "Favori"
+},
+{
+"id": "c1-underdog",
+"en": "Underdog",
+"topic": "workplace-roles",
+"es": "El que tiene menos posibilidades",
+"fr": "Outsider"
+},
+{
+"id": "c1-dark-horse",
+"en": "Dark horse",
+"topic": "workplace-roles",
+"es": "Caballo negro (sorpresa)",
+"fr": "Outsider (surprise)"
+},
+{
+"id": "c1-wildcard",
+"en": "Wildcard",
+"topic": "workplace-roles",
+"es": "Comodín (impredecible)",
+"fr": "Joker (imprévisible)"
+},
+{
+"id": "c1-heavyweight",
+"en": "Heavyweight",
+"topic": "workplace-roles",
+"es": "Peso pesado",
+"fr": "Poids lourd"
+},
+{
+"id": "c1-newcomer",
+"en": "Newcomer",
+"topic": "workplace-roles",
+"es": "Recién llegado",
+"fr": "Nouveau venu"
+},
+{
+"id": "c1-insider",
+"en": "Insider",
+"topic": "workplace-roles",
+"es": "Persona con información privilegiada",
+"fr": "Initié"
+},
+{
+"id": "c1-outsider",
+"en": "Outsider",
+"topic": "workplace-roles",
+"es": "Forastero (ajeno)",
+"fr": "Étranger (extérieur)"
+},
+{
+"id": "c1-consultant",
+"en": "Consultant",
+"topic": "workplace-roles",
+"es": "Consultor",
+"fr": "Consultant"
+},
+{
+"id": "c1-subcontractor",
+"en": "Subcontractor",
+"topic": "workplace-roles",
+"es": "Subcontratista",
+"fr": "Sous-traitant"
+},
+{
+"id": "c1-headhunter",
+"en": "Headhunter",
+"topic": "workplace-roles",
+"es": "Cazatalentos",
+"fr": "Chasseur de têtes"
+},
+{
+"id": "c1-scapegoat",
+"en": "Scapegoat",
+"topic": "workplace-roles",
+"es": "Chivo expiatorio",
+"fr": "Bouc émissaire"
+},
+{
+"id": "c1-go-getter",
+"en": "Go-getter",
+"topic": "workplace-roles",
+"es": "Emprendedor (ambicioso)",
+"fr": "Fonceur"
+},
+{
+"id": "c1-universal-healthcare",
+"en": "Universal healthcare",
+"topic": "society-debates",
+"es": "Sanidad universal",
+"fr": "Couverture santé universelle"
+},
+{
+"id": "c1-minimum-wage",
+"en": "Minimum wage",
+"topic": "society-debates",
+"es": "Salario mínimo",
+"fr": "Salaire minimum"
+},
+{
+"id": "c1-affordable-housing",
+"en": "Affordable housing",
+"topic": "society-debates",
+"es": "Vivienda asequible",
+"fr": "Logement abordable"
+},
+{
+"id": "c1-surveillance",
+"en": "Surveillance",
+"topic": "society-debates",
+"es": "Vigilancia",
+"fr": "Surveillance"
+},
+{
+"id": "c1-privacy",
+"en": "Privacy",
+"topic": "society-debates",
+"es": "Privacidad",
+"fr": "Vie privée"
+},
+{
+"id": "c1-free-speech",
+"en": "Free speech",
+"topic": "society-debates",
+"es": "Libertad de expresión",
+"fr": "Liberté d’expression"
+},
+{
+"id": "c1-polarization",
+"en": "Polarization",
+"topic": "society-debates",
+"es": "Polarización",
+"fr": "Polarisation"
+},
+{
+"id": "c1-populism",
+"en": "Populism",
+"topic": "society-debates",
+"es": "Populismo",
+"fr": "Populisme"
+},
+{
+"id": "c1-nationalism",
+"en": "Nationalism",
+"topic": "society-debates",
+"es": "Nacionalismo",
+"fr": "Nationalisme"
+},
+{
+"id": "c1-globalization",
+"en": "Globalization",
+"topic": "society-debates",
+"es": "Globalización",
+"fr": "Mondialisation"
+},
+{
+"id": "c1-austerity",
+"en": "Austerity",
+"topic": "society-debates",
+"es": "Austeridad",
+"fr": "Austérité"
+},
+{
+"id": "c1-welfare",
+"en": "Welfare",
+"topic": "society-debates",
+"es": "Asistencia social",
+"fr": "Aide sociale"
+},
+{
+"id": "c1-aging-population",
+"en": "Aging population",
+"topic": "society-debates",
+"es": "Envejecimiento de la población",
+"fr": "Vieillissement de la population"
+},
+{
+"id": "c1-birth-rate",
+"en": "Birth rate",
+"topic": "society-debates",
+"es": "Tasa de natalidad",
+"fr": "Taux de natalité"
+},
+{
+"id": "c1-brain-drain",
+"en": "Brain drain",
+"topic": "society-debates",
+"es": "Fuga de cerebros",
+"fr": "Fuite des cerveaux"
+},
+{
+"id": "c1-gig-economy",
+"en": "Gig economy",
+"topic": "society-debates",
+"es": "Economía de plataformas",
+"fr": "Économie des petits boulots"
+},
+{
+"id": "c1-job-displacement",
+"en": "Job displacement",
+"topic": "society-debates",
+"es": "Desplazamiento laboral",
+"fr": "Suppression d’emplois (automatisation)"
+},
+{
+"id": "c1-universal-basic-income",
+"en": "Universal basic income",
+"topic": "society-debates",
+"es": "Renta básica universal",
+"fr": "Revenu universel"
+},
+{
+"id": "c1-carbon-tax",
+"en": "Carbon tax",
+"topic": "society-debates",
+"es": "Impuesto al carbono",
+"fr": "Taxe carbone"
+},
+{
+"id": "c1-nuclear-energy",
+"en": "Nuclear energy",
+"topic": "society-debates",
+"es": "Energía nuclear",
+"fr": "Énergie nucléaire"
+},
+{
+"id": "c1-food-security",
+"en": "Food security",
+"topic": "society-debates",
+"es": "Seguridad alimentaria",
+"fr": "Sécurité alimentaire"
+},
+{
+"id": "c1-water-scarcity",
+"en": "Water scarcity",
+"topic": "society-debates",
+"es": "Escasez de agua",
+"fr": "Pénurie d’eau"
+},
+{
+"id": "c1-urban-sprawl",
+"en": "Urban sprawl",
+"topic": "society-debates",
+"es": "Expansión urbana",
+"fr": "Étalement urbain"
+},
+{
+"id": "c1-rent-control",
+"en": "Rent control",
+"topic": "society-debates",
+"es": "Control de alquileres",
+"fr": "Encadrement des loyers"
+},
+{
+"id": "c1-public-transit-funding",
+"en": "Public transit funding",
+"topic": "society-debates",
+"es": "Financiación del transporte público",
+"fr": "Financement des transports publics"
+},
+{
+"id": "c1-data-protection",
+"en": "Data protection",
+"topic": "society-debates",
+"es": "Protección de datos",
+"fr": "Protection des données"
+},
+{
+"id": "c1-wealth-gap",
+"en": "Wealth gap",
+"topic": "society-debates",
+"es": "Brecha de riqueza",
+"fr": "Écart de richesse"
+},
+{
+"id": "c1-voter-turnout",
+"en": "Voter turnout",
+"topic": "society-debates",
+"es": "Participación electoral",
+"fr": "Taux de participation"
+},
+{
+"id": "c1-bustling",
+"en": "Bustling",
+"topic": "describing-places",
+"es": "Bullicioso",
+"fr": "Animé (grouillant)"
+},
+{
+"id": "c1-sleepy-town",
+"en": "Sleepy (town)",
+"topic": "describing-places",
+"es": "Tranquilo (pueblo)",
+"fr": "Endormi (village)"
+},
+{
+"id": "c1-vibrant",
+"en": "Vibrant",
+"topic": "describing-places",
+"es": "Vibrante",
+"fr": "Vibrant"
+},
+{
+"id": "c1-deserted",
+"en": "Deserted",
+"topic": "describing-places",
+"es": "Desierto (vacío)",
+"fr": "Désert (vide)"
+},
+{
+"id": "c1-packed",
+"en": "Packed",
+"topic": "describing-places",
+"es": "Abarrotado",
+"fr": "Bondé"
+},
+{
+"id": "c1-cramped",
+"en": "Cramped",
+"topic": "describing-places",
+"es": "Apretado (estrecho)",
+"fr": "Exigu"
+},
+{
+"id": "c1-airy",
+"en": "Airy",
+"topic": "describing-places",
+"es": "Ventilado (luminoso)",
+"fr": "Aéré"
+},
+{
+"id": "c1-stuffy",
+"en": "Stuffy",
+"topic": "describing-places",
+"es": "Cargado (sin aire)",
+"fr": "Étouffant"
+},
+{
+"id": "c1-gloomy",
+"en": "Gloomy",
+"topic": "describing-places",
+"es": "Lúgubre (sombrío)",
+"fr": "Lugubre"
+},
+{
+"id": "c1-dingy",
+"en": "Dingy",
+"topic": "describing-places",
+"es": "Sucio y oscuro",
+"fr": "Miteux"
+},
+{
+"id": "c1-shabby",
+"en": "Shabby",
+"topic": "describing-places",
+"es": "Destartalado",
+"fr": "Miteux (défraîchi)"
+},
+{
+"id": "c1-chic",
+"en": "Chic",
+"topic": "describing-places",
+"es": "Chic (elegante)",
+"fr": "Chic"
+},
+{
+"id": "c1-trendy",
+"en": "Trendy",
+"topic": "describing-places",
+"es": "De moda (moderno)",
+"fr": "Branché"
+},
+{
+"id": "c1-upscale",
+"en": "Upscale",
+"topic": "describing-places",
+"es": "De lujo (exclusivo)",
+"fr": "Haut de gamme"
+},
+{
+"id": "c1-seedy",
+"en": "Seedy",
+"topic": "describing-places",
+"es": "Sórdido",
+"fr": "Glauque"
+},
+{
+"id": "c1-leafy",
+"en": "Leafy",
+"topic": "describing-places",
+"es": "Arbolado",
+"fr": "Verdoyant"
+},
+{
+"id": "c1-sprawling",
+"en": "Sprawling",
+"topic": "describing-places",
+"es": "Extenso (desparramado)",
+"fr": "Tentaculaire"
+},
+{
+"id": "c1-walkable",
+"en": "Walkable",
+"topic": "describing-places",
+"es": "Transitable a pie",
+"fr": "Praticable à pied"
+},
+{
+"id": "c1-secluded",
+"en": "Secluded",
+"topic": "describing-places",
+"es": "Apartado",
+"fr": "Isolé (retiré)"
+},
+{
+"id": "c1-remote-place",
+"en": "Remote (place)",
+"topic": "describing-places",
+"es": "Remoto",
+"fr": "Reculé"
+},
+{
+"id": "c1-touristy",
+"en": "Touristy",
+"topic": "describing-places",
+"es": "Turístico (masificado)",
+"fr": "Touristique (trop)"
+},
+{
+"id": "c1-unspoiled",
+"en": "Unspoiled",
+"topic": "describing-places",
+"es": "Virgen (intacto)",
+"fr": "Préservé"
+},
+{
+"id": "c1-well-kept",
+"en": "Well-kept",
+"topic": "describing-places",
+"es": "Bien cuidado",
+"fr": "Bien entretenu"
+},
+{
+"id": "c1-overgrown",
+"en": "Overgrown",
+"topic": "describing-places",
+"es": "Cubierto de maleza",
+"fr": "Envahi par la végétation"
+},
+{
+"id": "c1-tucked-away",
+"en": "Tucked away",
+"topic": "describing-places",
+"es": "Escondido",
+"fr": "Niché"
+},
+{
+"id": "c1-nestled",
+"en": "Nestled",
+"topic": "describing-places",
+"es": "Enclavado",
+"fr": "Niché (blotti)"
+},
+{
+"id": "c1-lively",
+"en": "Lively",
+"topic": "describing-places",
+"es": "Animado (con vida)",
+"fr": "Vivant (animé)"
+},
+{
+"id": "c1-run-down-place",
+"en": "Run-down (place)",
+"topic": "describing-places",
+"es": "Deteriorado",
+"fr": "Délabré (usé)"
+}
+]

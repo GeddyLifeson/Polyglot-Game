@@ -1,0 +1,5910 @@
+[
+{
+"id": "b2-honesty",
+"en": "Honesty",
+"topic": "values-ethics",
+"es": "Honestidad",
+"fr": "Honnêteté"
+},
+{
+"id": "b2-integrity",
+"en": "Integrity",
+"topic": "values-ethics",
+"es": "Integridad",
+"fr": "Intégrité"
+},
+{
+"id": "b2-dignity",
+"en": "Dignity",
+"topic": "values-ethics",
+"es": "Dignidad",
+"fr": "Dignité"
+},
+{
+"id": "b2-morality",
+"en": "Morality",
+"topic": "values-ethics",
+"es": "Moralidad",
+"fr": "Moralité"
+},
+{
+"id": "b2-principle",
+"en": "Principle",
+"topic": "values-ethics",
+"es": "Principio",
+"fr": "Principe"
+},
+{
+"id": "b2-virtue",
+"en": "Virtue",
+"topic": "values-ethics",
+"es": "Virtud",
+"fr": "Vertu"
+},
+{
+"id": "b2-vice",
+"en": "Vice",
+"topic": "values-ethics",
+"es": "Vicio",
+"fr": "Vice"
+},
+{
+"id": "b2-greed",
+"en": "Greed",
+"topic": "values-ethics",
+"es": "Codicia",
+"fr": "Avidité"
+},
+{
+"id": "b2-courage",
+"en": "Courage",
+"topic": "values-ethics",
+"es": "Coraje",
+"fr": "Courage"
+},
+{
+"id": "b2-cowardice",
+"en": "Cowardice",
+"topic": "values-ethics",
+"es": "Cobardía",
+"fr": "Lâcheté"
+},
+{
+"id": "b2-generosity",
+"en": "Generosity",
+"topic": "values-ethics",
+"es": "Generosidad",
+"fr": "Générosité"
+},
+{
+"id": "b2-gratitude",
+"en": "Gratitude",
+"topic": "values-ethics",
+"es": "Gratitud",
+"fr": "Gratitude"
+},
+{
+"id": "b2-compassion",
+"en": "Compassion",
+"topic": "values-ethics",
+"es": "Compasión",
+"fr": "Compassion"
+},
+{
+"id": "b2-tolerance",
+"en": "Tolerance",
+"topic": "values-ethics",
+"es": "Tolerancia",
+"fr": "Tolérance"
+},
+{
+"id": "b2-prejudice",
+"en": "Prejudice",
+"topic": "values-ethics",
+"es": "Prejuicio",
+"fr": "Préjugé"
+},
+{
+"id": "b2-discrimination",
+"en": "Discrimination",
+"topic": "values-ethics",
+"es": "Discriminación",
+"fr": "Discrimination"
+},
+{
+"id": "b2-equality",
+"en": "Equality",
+"topic": "values-ethics",
+"es": "Igualdad",
+"fr": "Égalité"
+},
+{
+"id": "b2-inequality",
+"en": "Inequality",
+"topic": "values-ethics",
+"es": "Desigualdad",
+"fr": "Inégalité"
+},
+{
+"id": "b2-fairness",
+"en": "Fairness",
+"topic": "values-ethics",
+"es": "Justicia (equidad)",
+"fr": "Équité"
+},
+{
+"id": "b2-corruption",
+"en": "Corruption",
+"topic": "values-ethics",
+"es": "Corrupción",
+"fr": "Corruption"
+},
+{
+"id": "b2-temptation",
+"en": "Temptation",
+"topic": "values-ethics",
+"es": "Tentación",
+"fr": "Tentation"
+},
+{
+"id": "b2-guilt",
+"en": "Guilt",
+"topic": "values-ethics",
+"es": "Culpa",
+"fr": "Culpabilité"
+},
+{
+"id": "b2-shame",
+"en": "Shame",
+"topic": "values-ethics",
+"es": "Vergüenza",
+"fr": "Honte"
+},
+{
+"id": "b2-pride-self-respect",
+"en": "Pride (self-respect)",
+"topic": "values-ethics",
+"es": "Orgullo",
+"fr": "Fierté"
+},
+{
+"id": "b2-humility",
+"en": "Humility",
+"topic": "values-ethics",
+"es": "Humildad",
+"fr": "Humilité"
+},
+{
+"id": "b2-ambition",
+"en": "Ambition",
+"topic": "values-ethics",
+"es": "Ambición",
+"fr": "Ambition"
+},
+{
+"id": "b2-patience",
+"en": "Patience",
+"topic": "values-ethics",
+"es": "Paciencia",
+"fr": "Patience"
+},
+{
+"id": "b2-sacrifice",
+"en": "Sacrifice",
+"topic": "values-ethics",
+"es": "Sacrificio",
+"fr": "Sacrifice"
+},
+{
+"id": "b2-duty",
+"en": "Duty",
+"topic": "values-ethics",
+"es": "Deber",
+"fr": "Devoir (obligation)"
+},
+{
+"id": "b2-conscience",
+"en": "Conscience",
+"topic": "values-ethics",
+"es": "Conciencia",
+"fr": "Conscience"
+},
+{
+"id": "b2-hypocrisy",
+"en": "Hypocrisy",
+"topic": "values-ethics",
+"es": "Hipocresía",
+"fr": "Hypocrisie"
+},
+{
+"id": "b2-forgiveness",
+"en": "Forgiveness",
+"topic": "values-ethics",
+"es": "Perdón",
+"fr": "Pardon"
+},
+{
+"id": "b2-agenda",
+"en": "Agenda",
+"topic": "business",
+"es": "Orden del día",
+"fr": "Ordre du jour"
+},
+{
+"id": "b2-minutes-of-a-meeting",
+"en": "Minutes (of a meeting)",
+"topic": "business",
+"es": "Acta",
+"fr": "Compte rendu"
+},
+{
+"id": "b2-department",
+"en": "Department",
+"topic": "business",
+"es": "Departamento",
+"fr": "Service (département)"
+},
+{
+"id": "b2-branch-office",
+"en": "Branch (office)",
+"topic": "business",
+"es": "Sucursal",
+"fr": "Succursale"
+},
+{
+"id": "b2-headquarters",
+"en": "Headquarters",
+"topic": "business",
+"es": "Sede central",
+"fr": "Siège social"
+},
+{
+"id": "b2-revenue",
+"en": "Revenue",
+"topic": "business",
+"es": "Ingresos (empresa)",
+"fr": "Chiffre d’affaires"
+},
+{
+"id": "b2-stakeholder",
+"en": "Stakeholder",
+"topic": "business",
+"es": "Parte interesada",
+"fr": "Partie prenante"
+},
+{
+"id": "b2-shareholder",
+"en": "Shareholder",
+"topic": "business",
+"es": "Accionista",
+"fr": "Actionnaire"
+},
+{
+"id": "b2-client",
+"en": "Client",
+"topic": "business",
+"es": "Cliente (empresa)",
+"fr": "Client (entreprise)"
+},
+{
+"id": "b2-supplier",
+"en": "Supplier",
+"topic": "business",
+"es": "Proveedor",
+"fr": "Fournisseur"
+},
+{
+"id": "b2-quote-price-estimate",
+"en": "Quote (price estimate)",
+"topic": "business",
+"es": "Presupuesto (cotización)",
+"fr": "Devis"
+},
+{
+"id": "b2-proposal",
+"en": "Proposal",
+"topic": "business",
+"es": "Propuesta",
+"fr": "Proposition"
+},
+{
+"id": "b2-bid",
+"en": "Bid",
+"topic": "business",
+"es": "Oferta (licitación)",
+"fr": "Offre (appel d’offres)"
+},
+{
+"id": "b2-merger",
+"en": "Merger",
+"topic": "business",
+"es": "Fusión",
+"fr": "Fusion"
+},
+{
+"id": "b2-layoff",
+"en": "Layoff",
+"topic": "business",
+"es": "Despido (recorte)",
+"fr": "Licenciement"
+},
+{
+"id": "b2-to-outsource",
+"en": "To outsource",
+"topic": "business",
+"es": "Subcontratar",
+"fr": "Externaliser"
+},
+{
+"id": "b2-to-delegate",
+"en": "To delegate",
+"topic": "business",
+"es": "Delegar",
+"fr": "Déléguer"
+},
+{
+"id": "b2-to-supervise",
+"en": "To supervise",
+"topic": "business",
+"es": "Supervisar",
+"fr": "Superviser"
+},
+{
+"id": "b2-performance-review",
+"en": "Performance review",
+"topic": "business",
+"es": "Evaluación de desempeño",
+"fr": "Entretien annuel"
+},
+{
+"id": "b2-strategy",
+"en": "Strategy",
+"topic": "business",
+"es": "Estrategia",
+"fr": "Stratégie"
+},
+{
+"id": "b2-target",
+"en": "Target",
+"topic": "business",
+"es": "Objetivo (cifra)",
+"fr": "Objectif (chiffré)"
+},
+{
+"id": "b2-quarter-business",
+"en": "Quarter (business)",
+"topic": "business",
+"es": "Trimestre",
+"fr": "Trimestre"
+},
+{
+"id": "b2-benchmark",
+"en": "Benchmark",
+"topic": "business",
+"es": "Punto de referencia",
+"fr": "Référence"
+},
+{
+"id": "b2-to-brainstorm",
+"en": "To brainstorm",
+"topic": "business",
+"es": "Hacer una lluvia de ideas",
+"fr": "Faire un brainstorming"
+},
+{
+"id": "b2-to-network",
+"en": "To network",
+"topic": "business",
+"es": "Hacer contactos",
+"fr": "Réseauter"
+},
+{
+"id": "b2-to-prioritize",
+"en": "To prioritize",
+"topic": "business",
+"es": "Priorizar",
+"fr": "Prioriser"
+},
+{
+"id": "b2-to-streamline",
+"en": "To streamline",
+"topic": "business",
+"es": "Agilizar",
+"fr": "Rationaliser"
+},
+{
+"id": "b2-startup",
+"en": "Startup",
+"topic": "business",
+"es": "Startup",
+"fr": "Start-up"
+},
+{
+"id": "b2-entrepreneur",
+"en": "Entrepreneur",
+"topic": "business",
+"es": "Emprendedor",
+"fr": "Entrepreneur"
+},
+{
+"id": "b2-profit-margin",
+"en": "Profit margin",
+"topic": "business",
+"es": "Margen de beneficio",
+"fr": "Marge bénéficiaire"
+},
+{
+"id": "b2-competitor",
+"en": "Competitor",
+"topic": "business",
+"es": "Competidor",
+"fr": "Concurrent"
+},
+{
+"id": "b2-milestone-project",
+"en": "Milestone (project)",
+"topic": "business",
+"es": "Hito (proyecto)",
+"fr": "Jalon"
+},
+{
+"id": "b2-suspect",
+"en": "Suspect",
+"topic": "law-crime",
+"es": "Sospechoso",
+"fr": "Suspect"
+},
+{
+"id": "b2-witness",
+"en": "Witness",
+"topic": "law-crime",
+"es": "Testigo",
+"fr": "Témoin"
+},
+{
+"id": "b2-victim",
+"en": "Victim",
+"topic": "law-crime",
+"es": "Víctima",
+"fr": "Victime"
+},
+{
+"id": "b2-trial",
+"en": "Trial",
+"topic": "law-crime",
+"es": "Juicio",
+"fr": "Procès"
+},
+{
+"id": "b2-judge",
+"en": "Judge",
+"topic": "law-crime",
+"es": "Juez",
+"fr": "Juge"
+},
+{
+"id": "b2-jury",
+"en": "Jury",
+"topic": "law-crime",
+"es": "Jurado",
+"fr": "Jury"
+},
+{
+"id": "b2-verdict",
+"en": "Verdict",
+"topic": "law-crime",
+"es": "Veredicto",
+"fr": "Verdict"
+},
+{
+"id": "b2-convicted",
+"en": "Convicted",
+"topic": "law-crime",
+"es": "Condenado",
+"fr": "Condamné"
+},
+{
+"id": "b2-innocent",
+"en": "Innocent",
+"topic": "law-crime",
+"es": "Inocente",
+"fr": "Innocent"
+},
+{
+"id": "b2-prison-sentence",
+"en": "Prison sentence",
+"topic": "law-crime",
+"es": "Pena de prisión",
+"fr": "Peine de prison"
+},
+{
+"id": "b2-theft",
+"en": "Theft",
+"topic": "law-crime",
+"es": "Robo (hurto)",
+"fr": "Vol"
+},
+{
+"id": "b2-robbery",
+"en": "Robbery",
+"topic": "law-crime",
+"es": "Atraco",
+"fr": "Braquage"
+},
+{
+"id": "b2-burglary",
+"en": "Burglary",
+"topic": "law-crime",
+"es": "Allanamiento",
+"fr": "Cambriolage"
+},
+{
+"id": "b2-fraud",
+"en": "Fraud",
+"topic": "law-crime",
+"es": "Fraude",
+"fr": "Fraude"
+},
+{
+"id": "b2-bribery",
+"en": "Bribery",
+"topic": "law-crime",
+"es": "Soborno",
+"fr": "Corruption (pot-de-vin)"
+},
+{
+"id": "b2-assault",
+"en": "Assault",
+"topic": "law-crime",
+"es": "Agresión",
+"fr": "Agression"
+},
+{
+"id": "b2-murder",
+"en": "Murder",
+"topic": "law-crime",
+"es": "Asesinato",
+"fr": "Meurtre"
+},
+{
+"id": "b2-kidnapping",
+"en": "Kidnapping",
+"topic": "law-crime",
+"es": "Secuestro",
+"fr": "Enlèvement"
+},
+{
+"id": "b2-smuggling",
+"en": "Smuggling",
+"topic": "law-crime",
+"es": "Contrabando",
+"fr": "Contrebande"
+},
+{
+"id": "b2-to-arrest",
+"en": "To arrest",
+"topic": "law-crime",
+"es": "Arrestar",
+"fr": "Arrêter"
+},
+{
+"id": "b2-to-charge-with-a-crime",
+"en": "To charge (with a crime)",
+"topic": "law-crime",
+"es": "Acusar",
+"fr": "Inculper"
+},
+{
+"id": "b2-to-sue",
+"en": "To sue",
+"topic": "law-crime",
+"es": "Demandar",
+"fr": "Poursuivre en justice"
+},
+{
+"id": "b2-lawsuit",
+"en": "Lawsuit",
+"topic": "law-crime",
+"es": "Demanda",
+"fr": "Procès (civil)"
+},
+{
+"id": "b2-court",
+"en": "Court",
+"topic": "law-crime",
+"es": "Tribunal",
+"fr": "Tribunal"
+},
+{
+"id": "b2-prosecutor",
+"en": "Prosecutor",
+"topic": "law-crime",
+"es": "Fiscal",
+"fr": "Procureur"
+},
+{
+"id": "b2-defense-legal",
+"en": "Defense (legal)",
+"topic": "law-crime",
+"es": "Defensa",
+"fr": "Défense"
+},
+{
+"id": "b2-appeal-legal",
+"en": "Appeal (legal)",
+"topic": "law-crime",
+"es": "Apelación",
+"fr": "Appel"
+},
+{
+"id": "b2-bail",
+"en": "Bail",
+"topic": "law-crime",
+"es": "Fianza",
+"fr": "Caution (judiciaire)"
+},
+{
+"id": "b2-alibi",
+"en": "Alibi",
+"topic": "law-crime",
+"es": "Coartada",
+"fr": "Alibi"
+},
+{
+"id": "b2-custody-police",
+"en": "Custody (police)",
+"topic": "law-crime",
+"es": "Detención",
+"fr": "Garde à vue"
+},
+{
+"id": "b2-investigation",
+"en": "Investigation",
+"topic": "law-crime",
+"es": "Investigación (policial)",
+"fr": "Enquête"
+},
+{
+"id": "b2-detective",
+"en": "Detective",
+"topic": "law-crime",
+"es": "Detective",
+"fr": "Enquêteur"
+},
+{
+"id": "b2-experiment",
+"en": "Experiment",
+"topic": "science-tech",
+"es": "Experimento",
+"fr": "Expérience"
+},
+{
+"id": "b2-hypothesis",
+"en": "Hypothesis",
+"topic": "science-tech",
+"es": "Hipótesis",
+"fr": "Hypothèse"
+},
+{
+"id": "b2-theory",
+"en": "Theory",
+"topic": "science-tech",
+"es": "Teoría",
+"fr": "Théorie"
+},
+{
+"id": "b2-data",
+"en": "Data",
+"topic": "science-tech",
+"es": "Datos",
+"fr": "Données"
+},
+{
+"id": "b2-analysis",
+"en": "Analysis",
+"topic": "science-tech",
+"es": "Análisis",
+"fr": "Analyse"
+},
+{
+"id": "b2-to-analyze",
+"en": "To analyze",
+"topic": "science-tech",
+"es": "Analizar",
+"fr": "Analyser"
+},
+{
+"id": "b2-to-measure",
+"en": "To measure",
+"topic": "science-tech",
+"es": "Medir",
+"fr": "Mesurer"
+},
+{
+"id": "b2-laboratory",
+"en": "Laboratory",
+"topic": "science-tech",
+"es": "Laboratorio",
+"fr": "Laboratoire"
+},
+{
+"id": "b2-chemical",
+"en": "Chemical",
+"topic": "science-tech",
+"es": "Químico",
+"fr": "Chimique"
+},
+{
+"id": "b2-molecule",
+"en": "Molecule",
+"topic": "science-tech",
+"es": "Molécula",
+"fr": "Molécule"
+},
+{
+"id": "b2-atom",
+"en": "Atom",
+"topic": "science-tech",
+"es": "Átomo",
+"fr": "Atome"
+},
+{
+"id": "b2-cell-biology",
+"en": "Cell (biology)",
+"topic": "science-tech",
+"es": "Célula",
+"fr": "Cellule"
+},
+{
+"id": "b2-gene",
+"en": "Gene",
+"topic": "science-tech",
+"es": "Gen",
+"fr": "Gène"
+},
+{
+"id": "b2-evolution",
+"en": "Evolution",
+"topic": "science-tech",
+"es": "Evolución",
+"fr": "Évolution"
+},
+{
+"id": "b2-species",
+"en": "Species",
+"topic": "science-tech",
+"es": "Especie",
+"fr": "Espèce"
+},
+{
+"id": "b2-gravity",
+"en": "Gravity",
+"topic": "science-tech",
+"es": "Gravedad",
+"fr": "Gravité"
+},
+{
+"id": "b2-orbit",
+"en": "Orbit",
+"topic": "science-tech",
+"es": "Órbita",
+"fr": "Orbite"
+},
+{
+"id": "b2-satellite",
+"en": "Satellite",
+"topic": "science-tech",
+"es": "Satélite",
+"fr": "Satellite"
+},
+{
+"id": "b2-artificial-intelligence",
+"en": "Artificial intelligence",
+"topic": "science-tech",
+"es": "Inteligencia artificial",
+"fr": "Intelligence artificielle"
+},
+{
+"id": "b2-algorithm",
+"en": "Algorithm",
+"topic": "science-tech",
+"es": "Algoritmo",
+"fr": "Algorithme"
+},
+{
+"id": "b2-software",
+"en": "Software",
+"topic": "science-tech",
+"es": "Software",
+"fr": "Logiciel"
+},
+{
+"id": "b2-hardware",
+"en": "Hardware",
+"topic": "science-tech",
+"es": "Hardware",
+"fr": "Matériel"
+},
+{
+"id": "b2-database",
+"en": "Database",
+"topic": "science-tech",
+"es": "Base de datos",
+"fr": "Base de données"
+},
+{
+"id": "b2-to-code-program",
+"en": "To code (program)",
+"topic": "science-tech",
+"es": "Programar",
+"fr": "Coder"
+},
+{
+"id": "b2-bug-software",
+"en": "Bug (software)",
+"topic": "science-tech",
+"es": "Error (bug)",
+"fr": "Bug"
+},
+{
+"id": "b2-encryption",
+"en": "Encryption",
+"topic": "science-tech",
+"es": "Cifrado",
+"fr": "Chiffrement"
+},
+{
+"id": "b2-cybersecurity",
+"en": "Cybersecurity",
+"topic": "science-tech",
+"es": "Ciberseguridad",
+"fr": "Cybersécurité"
+},
+{
+"id": "b2-virtual-reality",
+"en": "Virtual reality",
+"topic": "science-tech",
+"es": "Realidad virtual",
+"fr": "Réalité virtuelle"
+},
+{
+"id": "b2-innovation",
+"en": "Innovation",
+"topic": "science-tech",
+"es": "Innovación",
+"fr": "Innovation"
+},
+{
+"id": "b2-breakthrough",
+"en": "Breakthrough",
+"topic": "science-tech",
+"es": "Avance (descubrimiento)",
+"fr": "Percée"
+},
+{
+"id": "b2-robot",
+"en": "Robot",
+"topic": "science-tech",
+"es": "Robot",
+"fr": "Robot"
+},
+{
+"id": "b2-automation",
+"en": "Automation",
+"topic": "science-tech",
+"es": "Automatización",
+"fr": "Automatisation"
+},
+{
+"id": "b2-sustainability",
+"en": "Sustainability",
+"topic": "environment-2",
+"es": "Sostenibilidad",
+"fr": "Durabilité"
+},
+{
+"id": "b2-sustainable",
+"en": "Sustainable",
+"topic": "environment-2",
+"es": "Sostenible",
+"fr": "Durable"
+},
+{
+"id": "b2-carbon-footprint",
+"en": "Carbon footprint",
+"topic": "environment-2",
+"es": "Huella de carbono",
+"fr": "Empreinte carbone"
+},
+{
+"id": "b2-emissions",
+"en": "Emissions",
+"topic": "environment-2",
+"es": "Emisiones",
+"fr": "Émissions"
+},
+{
+"id": "b2-greenhouse-gas",
+"en": "Greenhouse gas",
+"topic": "environment-2",
+"es": "Gas de efecto invernadero",
+"fr": "Gaz à effet de serre"
+},
+{
+"id": "b2-global-warming",
+"en": "Global warming",
+"topic": "environment-2",
+"es": "Calentamiento global",
+"fr": "Réchauffement climatique"
+},
+{
+"id": "b2-deforestation",
+"en": "Deforestation",
+"topic": "environment-2",
+"es": "Deforestación",
+"fr": "Déforestation"
+},
+{
+"id": "b2-biodiversity",
+"en": "Biodiversity",
+"topic": "environment-2",
+"es": "Biodiversidad",
+"fr": "Biodiversité"
+},
+{
+"id": "b2-ecosystem",
+"en": "Ecosystem",
+"topic": "environment-2",
+"es": "Ecosistema",
+"fr": "Écosystème"
+},
+{
+"id": "b2-habitat",
+"en": "Habitat",
+"topic": "environment-2",
+"es": "Hábitat",
+"fr": "Habitat"
+},
+{
+"id": "b2-endangered-species",
+"en": "Endangered species",
+"topic": "environment-2",
+"es": "Especie en peligro",
+"fr": "Espèce menacée"
+},
+{
+"id": "b2-extinction",
+"en": "Extinction",
+"topic": "environment-2",
+"es": "Extinción",
+"fr": "Extinction"
+},
+{
+"id": "b2-conservation",
+"en": "Conservation",
+"topic": "environment-2",
+"es": "Conservación",
+"fr": "Conservation"
+},
+{
+"id": "b2-wildlife",
+"en": "Wildlife",
+"topic": "environment-2",
+"es": "Fauna silvestre",
+"fr": "Faune sauvage"
+},
+{
+"id": "b2-natural-resources",
+"en": "Natural resources",
+"topic": "environment-2",
+"es": "Recursos naturales",
+"fr": "Ressources naturelles"
+},
+{
+"id": "b2-fossil-fuels",
+"en": "Fossil fuels",
+"topic": "environment-2",
+"es": "Combustibles fósiles",
+"fr": "Énergies fossiles"
+},
+{
+"id": "b2-solar-panel",
+"en": "Solar panel",
+"topic": "environment-2",
+"es": "Panel solar",
+"fr": "Panneau solaire"
+},
+{
+"id": "b2-wind-turbine",
+"en": "Wind turbine",
+"topic": "environment-2",
+"es": "Turbina eólica",
+"fr": "Éolienne"
+},
+{
+"id": "b2-landfill",
+"en": "Landfill",
+"topic": "environment-2",
+"es": "Vertedero",
+"fr": "Décharge"
+},
+{
+"id": "b2-compost",
+"en": "Compost",
+"topic": "environment-2",
+"es": "Compost",
+"fr": "Compost"
+},
+{
+"id": "b2-to-conserve",
+"en": "To conserve",
+"topic": "environment-2",
+"es": "Conservar",
+"fr": "Économiser (préserver)"
+},
+{
+"id": "b2-to-preserve",
+"en": "To preserve",
+"topic": "environment-2",
+"es": "Preservar",
+"fr": "Préserver"
+},
+{
+"id": "b2-sea-level",
+"en": "Sea level",
+"topic": "environment-2",
+"es": "Nivel del mar",
+"fr": "Niveau de la mer"
+},
+{
+"id": "b2-glacier",
+"en": "Glacier",
+"topic": "environment-2",
+"es": "Glaciar",
+"fr": "Glacier"
+},
+{
+"id": "b2-to-melt",
+"en": "To melt",
+"topic": "environment-2",
+"es": "Derretirse",
+"fr": "Fondre"
+},
+{
+"id": "b2-famine",
+"en": "Famine",
+"topic": "environment-2",
+"es": "Hambruna",
+"fr": "Famine"
+},
+{
+"id": "b2-overpopulation",
+"en": "Overpopulation",
+"topic": "environment-2",
+"es": "Superpoblación",
+"fr": "Surpopulation"
+},
+{
+"id": "b2-to-pollute",
+"en": "To pollute",
+"topic": "environment-2",
+"es": "Contaminar",
+"fr": "Polluer"
+},
+{
+"id": "b2-single-use-plastic",
+"en": "Single-use plastic",
+"topic": "environment-2",
+"es": "Plástico de un solo uso",
+"fr": "Plastique à usage unique"
+},
+{
+"id": "b2-environmentalist",
+"en": "Environmentalist",
+"topic": "environment-2",
+"es": "Ecologista",
+"fr": "Écologiste"
+},
+{
+"id": "b2-recycling-bin",
+"en": "Recycling bin",
+"topic": "environment-2",
+"es": "Contenedor de reciclaje",
+"fr": "Bac de recyclage"
+},
+{
+"id": "b2-organic-farming",
+"en": "Organic farming",
+"topic": "environment-2",
+"es": "Agricultura ecológica",
+"fr": "Agriculture biologique"
+},
+{
+"id": "b2-diagnosis",
+"en": "Diagnosis",
+"topic": "medical",
+"es": "Diagnóstico",
+"fr": "Diagnostic"
+},
+{
+"id": "b2-to-diagnose",
+"en": "To diagnose",
+"topic": "medical",
+"es": "Diagnosticar",
+"fr": "Diagnostiquer"
+},
+{
+"id": "b2-treatment",
+"en": "Treatment",
+"topic": "medical",
+"es": "Tratamiento",
+"fr": "Traitement"
+},
+{
+"id": "b2-surgery",
+"en": "Surgery",
+"topic": "medical",
+"es": "Cirugía",
+"fr": "Chirurgie"
+},
+{
+"id": "b2-surgeon",
+"en": "Surgeon",
+"topic": "medical",
+"es": "Cirujano",
+"fr": "Chirurgien"
+},
+{
+"id": "b2-anesthesia",
+"en": "Anesthesia",
+"topic": "medical",
+"es": "Anestesia",
+"fr": "Anesthésie"
+},
+{
+"id": "b2-to-prescribe",
+"en": "To prescribe",
+"topic": "medical",
+"es": "Recetar",
+"fr": "Prescrire"
+},
+{
+"id": "b2-dose",
+"en": "Dose",
+"topic": "medical",
+"es": "Dosis",
+"fr": "Dose"
+},
+{
+"id": "b2-side-effect",
+"en": "Side effect",
+"topic": "medical",
+"es": "Efecto secundario",
+"fr": "Effet secondaire"
+},
+{
+"id": "b2-chronic",
+"en": "Chronic",
+"topic": "medical",
+"es": "Crónico",
+"fr": "Chronique"
+},
+{
+"id": "b2-acute",
+"en": "Acute",
+"topic": "medical",
+"es": "Agudo",
+"fr": "Aigu"
+},
+{
+"id": "b2-infection",
+"en": "Infection",
+"topic": "medical",
+"es": "Infección",
+"fr": "Infection"
+},
+{
+"id": "b2-virus",
+"en": "Virus",
+"topic": "medical",
+"es": "Virus",
+"fr": "Virus"
+},
+{
+"id": "b2-bacteria",
+"en": "Bacteria",
+"topic": "medical",
+"es": "Bacterias",
+"fr": "Bactéries"
+},
+{
+"id": "b2-immune-system",
+"en": "Immune system",
+"topic": "medical",
+"es": "Sistema inmunológico",
+"fr": "Système immunitaire"
+},
+{
+"id": "b2-antibiotic",
+"en": "Antibiotic",
+"topic": "medical",
+"es": "Antibiótico",
+"fr": "Antibiotique"
+},
+{
+"id": "b2-transplant",
+"en": "Transplant",
+"topic": "medical",
+"es": "Trasplante",
+"fr": "Greffe"
+},
+{
+"id": "b2-stroke",
+"en": "Stroke",
+"topic": "medical",
+"es": "Derrame cerebral",
+"fr": "AVC"
+},
+{
+"id": "b2-heart-attack",
+"en": "Heart attack",
+"topic": "medical",
+"es": "Infarto",
+"fr": "Crise cardiaque"
+},
+{
+"id": "b2-diabetes",
+"en": "Diabetes",
+"topic": "medical",
+"es": "Diabetes",
+"fr": "Diabète"
+},
+{
+"id": "b2-cancer",
+"en": "Cancer",
+"topic": "medical",
+"es": "Cáncer",
+"fr": "Cancer"
+},
+{
+"id": "b2-asthma",
+"en": "Asthma",
+"topic": "medical",
+"es": "Asma",
+"fr": "Asthme"
+},
+{
+"id": "b2-blood-test",
+"en": "Blood test",
+"topic": "medical",
+"es": "Análisis de sangre",
+"fr": "Prise de sang"
+},
+{
+"id": "b2-x-ray",
+"en": "X-ray",
+"topic": "medical",
+"es": "Radiografía",
+"fr": "Radio"
+},
+{
+"id": "b2-scan-medical",
+"en": "Scan (medical)",
+"topic": "medical",
+"es": "Escáner",
+"fr": "Scanner"
+},
+{
+"id": "b2-ward",
+"en": "Ward",
+"topic": "medical",
+"es": "Pabellón",
+"fr": "Service (hôpital)"
+},
+{
+"id": "b2-intensive-care",
+"en": "Intensive care",
+"topic": "medical",
+"es": "Cuidados intensivos",
+"fr": "Soins intensifs"
+},
+{
+"id": "b2-recovery",
+"en": "Recovery",
+"topic": "medical",
+"es": "Recuperación",
+"fr": "Rétablissement"
+},
+{
+"id": "b2-disability",
+"en": "Disability",
+"topic": "medical",
+"es": "Discapacidad",
+"fr": "Handicap"
+},
+{
+"id": "b2-wheelchair",
+"en": "Wheelchair",
+"topic": "medical",
+"es": "Silla de ruedas",
+"fr": "Fauteuil roulant"
+},
+{
+"id": "b2-ambulance",
+"en": "Ambulance",
+"topic": "medical",
+"es": "Ambulancia",
+"fr": "Ambulance"
+},
+{
+"id": "b2-pregnant",
+"en": "Pregnant",
+"topic": "medical",
+"es": "Embarazada",
+"fr": "Enceinte"
+},
+{
+"id": "b2-contagious",
+"en": "Contagious",
+"topic": "medical",
+"es": "Contagioso",
+"fr": "Contagieux"
+},
+{
+"id": "b2-behavior",
+"en": "Behavior",
+"topic": "psychology",
+"es": "Comportamiento",
+"fr": "Comportement"
+},
+{
+"id": "b2-personality",
+"en": "Personality",
+"topic": "psychology",
+"es": "Personalidad",
+"fr": "Personnalité"
+},
+{
+"id": "b2-trait",
+"en": "Trait",
+"topic": "psychology",
+"es": "Rasgo",
+"fr": "Trait (de caractère)"
+},
+{
+"id": "b2-motivation",
+"en": "Motivation",
+"topic": "psychology",
+"es": "Motivación",
+"fr": "Motivation"
+},
+{
+"id": "b2-willpower",
+"en": "Willpower",
+"topic": "psychology",
+"es": "Fuerza de voluntad",
+"fr": "Volonté"
+},
+{
+"id": "b2-self-esteem",
+"en": "Self-esteem",
+"topic": "psychology",
+"es": "Autoestima",
+"fr": "Estime de soi"
+},
+{
+"id": "b2-self-confidence",
+"en": "Self-confidence",
+"topic": "psychology",
+"es": "Confianza en uno mismo",
+"fr": "Confiance en soi"
+},
+{
+"id": "b2-anxiety",
+"en": "Anxiety",
+"topic": "psychology",
+"es": "Ansiedad",
+"fr": "Anxiété"
+},
+{
+"id": "b2-depression",
+"en": "Depression",
+"topic": "psychology",
+"es": "Depresión",
+"fr": "Dépression"
+},
+{
+"id": "b2-stress",
+"en": "Stress",
+"topic": "psychology",
+"es": "Estrés",
+"fr": "Stress"
+},
+{
+"id": "b2-trauma",
+"en": "Trauma",
+"topic": "psychology",
+"es": "Trauma",
+"fr": "Traumatisme"
+},
+{
+"id": "b2-grief",
+"en": "Grief",
+"topic": "psychology",
+"es": "Duelo",
+"fr": "Deuil"
+},
+{
+"id": "b2-to-cope",
+"en": "To cope",
+"topic": "psychology",
+"es": "Sobrellevar",
+"fr": "Faire face"
+},
+{
+"id": "b2-comfort-zone",
+"en": "Comfort zone",
+"topic": "psychology",
+"es": "Zona de confort",
+"fr": "Zone de confort"
+},
+{
+"id": "b2-procrastination",
+"en": "Procrastination",
+"topic": "psychology",
+"es": "Procrastinación",
+"fr": "Procrastination"
+},
+{
+"id": "b2-to-procrastinate",
+"en": "To procrastinate",
+"topic": "psychology",
+"es": "Procrastinar",
+"fr": "Procrastiner"
+},
+{
+"id": "b2-perfectionism",
+"en": "Perfectionism",
+"topic": "psychology",
+"es": "Perfeccionismo",
+"fr": "Perfectionnisme"
+},
+{
+"id": "b2-introvert",
+"en": "Introvert",
+"topic": "psychology",
+"es": "Introvertido",
+"fr": "Introverti"
+},
+{
+"id": "b2-extrovert",
+"en": "Extrovert",
+"topic": "psychology",
+"es": "Extrovertido (persona)",
+"fr": "Extraverti (personne)"
+},
+{
+"id": "b2-mindfulness",
+"en": "Mindfulness",
+"topic": "psychology",
+"es": "Atención plena",
+"fr": "Pleine conscience"
+},
+{
+"id": "b2-resilience",
+"en": "Resilience",
+"topic": "psychology",
+"es": "Resiliencia",
+"fr": "Résilience"
+},
+{
+"id": "b2-to-overcome",
+"en": "To overcome",
+"topic": "psychology",
+"es": "Superar",
+"fr": "Surmonter"
+},
+{
+"id": "b2-obsession",
+"en": "Obsession",
+"topic": "psychology",
+"es": "Obsesión",
+"fr": "Obsession"
+},
+{
+"id": "b2-addiction",
+"en": "Addiction",
+"topic": "psychology",
+"es": "Adicción",
+"fr": "Addiction"
+},
+{
+"id": "b2-denial",
+"en": "Denial",
+"topic": "psychology",
+"es": "Negación",
+"fr": "Déni"
+},
+{
+"id": "b2-bias",
+"en": "Bias",
+"topic": "psychology",
+"es": "Sesgo",
+"fr": "Biais"
+},
+{
+"id": "b2-stereotype",
+"en": "Stereotype",
+"topic": "psychology",
+"es": "Estereotipo",
+"fr": "Stéréotype"
+},
+{
+"id": "b2-peer-pressure",
+"en": "Peer pressure",
+"topic": "psychology",
+"es": "Presión social",
+"fr": "Pression des pairs"
+},
+{
+"id": "b2-self-awareness",
+"en": "Self-awareness",
+"topic": "psychology",
+"es": "Autoconciencia",
+"fr": "Conscience de soi"
+},
+{
+"id": "b2-empathy-deep",
+"en": "Empathy (deep)",
+"topic": "psychology",
+"es": "Empatía profunda",
+"fr": "Empathie profonde"
+},
+{
+"id": "b2-therapist",
+"en": "Therapist",
+"topic": "psychology",
+"es": "Terapeuta",
+"fr": "Thérapeute"
+},
+{
+"id": "b2-instinct",
+"en": "Instinct",
+"topic": "psychology",
+"es": "Instinto",
+"fr": "Instinct"
+},
+{
+"id": "b2-to-acknowledge",
+"en": "To acknowledge",
+"topic": "verbs-7",
+"es": "Reconocer (admitir)",
+"fr": "Reconnaître (admettre)"
+},
+{
+"id": "b2-to-adapt",
+"en": "To adapt",
+"topic": "verbs-7",
+"es": "Adaptarse",
+"fr": "S’adapter"
+},
+{
+"id": "b2-to-anticipate",
+"en": "To anticipate",
+"topic": "verbs-7",
+"es": "Anticipar",
+"fr": "Anticiper"
+},
+{
+"id": "b2-to-assess",
+"en": "To assess",
+"topic": "verbs-7",
+"es": "Evaluar (valorar)",
+"fr": "Évaluer"
+},
+{
+"id": "b2-to-assign",
+"en": "To assign",
+"topic": "verbs-7",
+"es": "Asignar",
+"fr": "Attribuer"
+},
+{
+"id": "b2-to-assure",
+"en": "To assure",
+"topic": "verbs-7",
+"es": "Asegurar (garantizar)",
+"fr": "Assurer (garantir)"
+},
+{
+"id": "b2-to-calculate",
+"en": "To calculate",
+"topic": "verbs-7",
+"es": "Calcular",
+"fr": "Calculer"
+},
+{
+"id": "b2-to-clarify",
+"en": "To clarify",
+"topic": "verbs-7",
+"es": "Aclarar",
+"fr": "Clarifier"
+},
+{
+"id": "b2-to-collaborate",
+"en": "To collaborate",
+"topic": "verbs-7",
+"es": "Colaborar",
+"fr": "Collaborer"
+},
+{
+"id": "b2-to-compromise",
+"en": "To compromise",
+"topic": "verbs-7",
+"es": "Llegar a un acuerdo",
+"fr": "Faire des compromis"
+},
+{
+"id": "b2-to-conclude",
+"en": "To conclude",
+"topic": "verbs-7",
+"es": "Concluir",
+"fr": "Conclure"
+},
+{
+"id": "b2-to-confirm",
+"en": "To confirm",
+"topic": "verbs-7",
+"es": "Confirmar",
+"fr": "Confirmer"
+},
+{
+"id": "b2-to-confront",
+"en": "To confront",
+"topic": "verbs-7",
+"es": "Confrontar",
+"fr": "Confronter"
+},
+{
+"id": "b2-to-contribute",
+"en": "To contribute",
+"topic": "verbs-7",
+"es": "Contribuir",
+"fr": "Contribuer"
+},
+{
+"id": "b2-to-define",
+"en": "To define",
+"topic": "verbs-7",
+"es": "Definir",
+"fr": "Définir"
+},
+{
+"id": "b2-to-demonstrate",
+"en": "To demonstrate",
+"topic": "verbs-7",
+"es": "Demostrar (mostrar)",
+"fr": "Démontrer"
+},
+{
+"id": "b2-to-dismiss",
+"en": "To dismiss",
+"topic": "verbs-7",
+"es": "Descartar",
+"fr": "Écarter"
+},
+{
+"id": "b2-to-distinguish",
+"en": "To distinguish",
+"topic": "verbs-7",
+"es": "Distinguir",
+"fr": "Distinguer"
+},
+{
+"id": "b2-to-dominate",
+"en": "To dominate",
+"topic": "verbs-7",
+"es": "Dominar",
+"fr": "Dominer"
+},
+{
+"id": "b2-to-eliminate",
+"en": "To eliminate",
+"topic": "verbs-7",
+"es": "Eliminar",
+"fr": "Éliminer"
+},
+{
+"id": "b2-to-emphasize",
+"en": "To emphasize",
+"topic": "verbs-7",
+"es": "Enfatizar",
+"fr": "Souligner (insister)"
+},
+{
+"id": "b2-to-enable",
+"en": "To enable",
+"topic": "verbs-7",
+"es": "Permitir (hacer posible)",
+"fr": "Permettre (rendre possible)"
+},
+{
+"id": "b2-to-enhance",
+"en": "To enhance",
+"topic": "verbs-7",
+"es": "Mejorar (realzar)",
+"fr": "Améliorer (renforcer)"
+},
+{
+"id": "b2-to-ensure",
+"en": "To ensure",
+"topic": "verbs-7",
+"es": "Garantizar",
+"fr": "Garantir"
+},
+{
+"id": "b2-to-establish",
+"en": "To establish",
+"topic": "verbs-7",
+"es": "Establecer",
+"fr": "Établir"
+},
+{
+"id": "b2-to-estimate",
+"en": "To estimate",
+"topic": "verbs-7",
+"es": "Estimar",
+"fr": "Estimer"
+},
+{
+"id": "b2-to-evaluate",
+"en": "To evaluate",
+"topic": "verbs-7",
+"es": "Evaluar",
+"fr": "Évaluer (juger)"
+},
+{
+"id": "b2-to-exceed",
+"en": "To exceed",
+"topic": "verbs-7",
+"es": "Superar (exceder)",
+"fr": "Dépasser"
+},
+{
+"id": "b2-to-exploit",
+"en": "To exploit",
+"topic": "verbs-7",
+"es": "Explotar",
+"fr": "Exploiter"
+},
+{
+"id": "b2-to-facilitate",
+"en": "To facilitate",
+"topic": "verbs-7",
+"es": "Facilitar",
+"fr": "Faciliter"
+},
+{
+"id": "b2-to-generate",
+"en": "To generate",
+"topic": "verbs-8",
+"es": "Generar",
+"fr": "Générer"
+},
+{
+"id": "b2-to-guarantee",
+"en": "To guarantee",
+"topic": "verbs-8",
+"es": "Garantizar (asegurar)",
+"fr": "Garantir (assurer)"
+},
+{
+"id": "b2-to-highlight",
+"en": "To highlight",
+"topic": "verbs-8",
+"es": "Destacar",
+"fr": "Mettre en évidence"
+},
+{
+"id": "b2-to-identify",
+"en": "To identify",
+"topic": "verbs-8",
+"es": "Identificar",
+"fr": "Identifier"
+},
+{
+"id": "b2-to-illustrate",
+"en": "To illustrate",
+"topic": "verbs-8",
+"es": "Ilustrar",
+"fr": "Illustrer"
+},
+{
+"id": "b2-to-implement",
+"en": "To implement",
+"topic": "verbs-8",
+"es": "Implementar",
+"fr": "Mettre en œuvre"
+},
+{
+"id": "b2-to-imply",
+"en": "To imply",
+"topic": "verbs-8",
+"es": "Implicar (dar a entender)",
+"fr": "Sous-entendre"
+},
+{
+"id": "b2-to-indicate",
+"en": "To indicate",
+"topic": "verbs-8",
+"es": "Indicar",
+"fr": "Indiquer"
+},
+{
+"id": "b2-to-influence",
+"en": "To influence",
+"topic": "verbs-8",
+"es": "Influir",
+"fr": "Influencer"
+},
+{
+"id": "b2-to-inspire",
+"en": "To inspire",
+"topic": "verbs-8",
+"es": "Inspirar",
+"fr": "Inspirer"
+},
+{
+"id": "b2-to-interpret",
+"en": "To interpret",
+"topic": "verbs-8",
+"es": "Interpretar",
+"fr": "Interpréter"
+},
+{
+"id": "b2-to-justify",
+"en": "To justify",
+"topic": "verbs-8",
+"es": "Justificar",
+"fr": "Justifier"
+},
+{
+"id": "b2-to-maintain",
+"en": "To maintain",
+"topic": "verbs-8",
+"es": "Mantener",
+"fr": "Maintenir"
+},
+{
+"id": "b2-to-modify",
+"en": "To modify",
+"topic": "verbs-8",
+"es": "Modificar",
+"fr": "Modifier"
+},
+{
+"id": "b2-to-monitor",
+"en": "To monitor",
+"topic": "verbs-8",
+"es": "Monitorear",
+"fr": "Surveiller"
+},
+{
+"id": "b2-to-motivate",
+"en": "To motivate",
+"topic": "verbs-8",
+"es": "Motivar",
+"fr": "Motiver"
+},
+{
+"id": "b2-to-obtain",
+"en": "To obtain",
+"topic": "verbs-8",
+"es": "Obtener",
+"fr": "Obtenir"
+},
+{
+"id": "b2-to-oppose",
+"en": "To oppose",
+"topic": "verbs-8",
+"es": "Oponerse",
+"fr": "S’opposer"
+},
+{
+"id": "b2-to-perceive",
+"en": "To perceive",
+"topic": "verbs-8",
+"es": "Percibir",
+"fr": "Percevoir"
+},
+{
+"id": "b2-to-persist",
+"en": "To persist",
+"topic": "verbs-8",
+"es": "Persistir",
+"fr": "Persister"
+},
+{
+"id": "b2-to-possess",
+"en": "To possess",
+"topic": "verbs-8",
+"es": "Poseer (tener)",
+"fr": "Posséder (détenir)"
+},
+{
+"id": "b2-to-prevent",
+"en": "To prevent",
+"topic": "verbs-8",
+"es": "Prevenir",
+"fr": "Prévenir (empêcher)"
+},
+{
+"id": "b2-to-pursue",
+"en": "To pursue",
+"topic": "verbs-8",
+"es": "Perseguir (buscar)",
+"fr": "Poursuivre (un but)"
+},
+{
+"id": "b2-to-reinforce",
+"en": "To reinforce",
+"topic": "verbs-8",
+"es": "Reforzar",
+"fr": "Renforcer"
+},
+{
+"id": "b2-to-resolve",
+"en": "To resolve",
+"topic": "verbs-8",
+"es": "Resolver (solucionar)",
+"fr": "Résoudre (régler)"
+},
+{
+"id": "b2-to-restrict",
+"en": "To restrict",
+"topic": "verbs-8",
+"es": "Restringir",
+"fr": "Restreindre"
+},
+{
+"id": "b2-to-retain",
+"en": "To retain",
+"topic": "verbs-8",
+"es": "Retener",
+"fr": "Retenir (conserver)"
+},
+{
+"id": "b2-to-reveal",
+"en": "To reveal",
+"topic": "verbs-8",
+"es": "Revelar",
+"fr": "Révéler"
+},
+{
+"id": "b2-to-sustain",
+"en": "To sustain",
+"topic": "verbs-8",
+"es": "Sostener",
+"fr": "Soutenir (maintenir)"
+},
+{
+"id": "b2-to-tackle",
+"en": "To tackle",
+"topic": "verbs-8",
+"es": "Abordar",
+"fr": "S’attaquer à"
+},
+{
+"id": "b2-to-transform",
+"en": "To transform",
+"topic": "verbs-9",
+"es": "Transformar",
+"fr": "Transformer"
+},
+{
+"id": "b2-to-undergo",
+"en": "To undergo",
+"topic": "verbs-9",
+"es": "Someterse a",
+"fr": "Subir"
+},
+{
+"id": "b2-to-undertake",
+"en": "To undertake",
+"topic": "verbs-9",
+"es": "Emprender",
+"fr": "Entreprendre"
+},
+{
+"id": "b2-to-verify",
+"en": "To verify",
+"topic": "verbs-9",
+"es": "Verificar",
+"fr": "Vérifier"
+},
+{
+"id": "b2-to-abandon",
+"en": "To abandon",
+"topic": "verbs-9",
+"es": "Abandonar",
+"fr": "Abandonner (quitter)"
+},
+{
+"id": "b2-to-accompany",
+"en": "To accompany",
+"topic": "verbs-9",
+"es": "Acompañar",
+"fr": "Accompagner"
+},
+{
+"id": "b2-to-accumulate",
+"en": "To accumulate",
+"topic": "verbs-9",
+"es": "Acumular",
+"fr": "Accumuler"
+},
+{
+"id": "b2-to-alter",
+"en": "To alter",
+"topic": "verbs-9",
+"es": "Alterar",
+"fr": "Altérer"
+},
+{
+"id": "b2-to-approve",
+"en": "To approve",
+"topic": "verbs-9",
+"es": "Aprobar (autorizar)",
+"fr": "Approuver"
+},
+{
+"id": "b2-to-attach",
+"en": "To attach",
+"topic": "verbs-9",
+"es": "Adjuntar",
+"fr": "Joindre (attacher)"
+},
+{
+"id": "b2-to-cease",
+"en": "To cease",
+"topic": "verbs-9",
+"es": "Cesar",
+"fr": "Cesser"
+},
+{
+"id": "b2-to-commit-to",
+"en": "To commit (to)",
+"topic": "verbs-9",
+"es": "Comprometerse",
+"fr": "S’engager"
+},
+{
+"id": "b2-to-comply",
+"en": "To comply",
+"topic": "verbs-9",
+"es": "Cumplir (acatar)",
+"fr": "Se conformer"
+},
+{
+"id": "b2-to-conduct-carry-out",
+"en": "To conduct (carry out)",
+"topic": "verbs-9",
+"es": "Llevar a cabo",
+"fr": "Mener"
+},
+{
+"id": "b2-to-consist-of",
+"en": "To consist of",
+"topic": "verbs-9",
+"es": "Consistir en",
+"fr": "Consister en"
+},
+{
+"id": "b2-to-convert",
+"en": "To convert",
+"topic": "verbs-9",
+"es": "Convertir",
+"fr": "Convertir"
+},
+{
+"id": "b2-to-cooperate",
+"en": "To cooperate",
+"topic": "verbs-9",
+"es": "Cooperar",
+"fr": "Coopérer"
+},
+{
+"id": "b2-to-decline-refuse",
+"en": "To decline (refuse)",
+"topic": "verbs-9",
+"es": "Declinar",
+"fr": "Décliner"
+},
+{
+"id": "b2-to-detect",
+"en": "To detect",
+"topic": "verbs-9",
+"es": "Detectar",
+"fr": "Détecter"
+},
+{
+"id": "b2-to-devote",
+"en": "To devote",
+"topic": "verbs-9",
+"es": "Dedicar",
+"fr": "Consacrer"
+},
+{
+"id": "b2-to-emerge",
+"en": "To emerge",
+"topic": "verbs-9",
+"es": "Surgir",
+"fr": "Émerger"
+},
+{
+"id": "b2-to-exclude",
+"en": "To exclude",
+"topic": "verbs-9",
+"es": "Excluir",
+"fr": "Exclure"
+},
+{
+"id": "b2-to-expand",
+"en": "To expand",
+"topic": "verbs-9",
+"es": "Expandir",
+"fr": "Étendre"
+},
+{
+"id": "b2-to-fulfill",
+"en": "To fulfill",
+"topic": "verbs-9",
+"es": "Cumplir (satisfacer)",
+"fr": "Accomplir"
+},
+{
+"id": "b2-to-impose",
+"en": "To impose",
+"topic": "verbs-9",
+"es": "Imponer",
+"fr": "Imposer"
+},
+{
+"id": "b2-to-integrate",
+"en": "To integrate",
+"topic": "verbs-9",
+"es": "Integrar",
+"fr": "Intégrer"
+},
+{
+"id": "b2-to-neglect",
+"en": "To neglect",
+"topic": "verbs-9",
+"es": "Descuidar",
+"fr": "Négliger"
+},
+{
+"id": "b2-to-overlook",
+"en": "To overlook",
+"topic": "verbs-9",
+"es": "Pasar por alto",
+"fr": "Passer à côté de"
+},
+{
+"id": "b2-to-reconsider",
+"en": "To reconsider",
+"topic": "verbs-9",
+"es": "Reconsiderar",
+"fr": "Reconsidérer"
+},
+{
+"id": "b2-to-withdraw-pull-out",
+"en": "To withdraw (pull out)",
+"topic": "verbs-9",
+"es": "Retirarse",
+"fr": "Se retirer"
+},
+{
+"id": "b2-accurate",
+"en": "Accurate",
+"topic": "adjectives-5",
+"es": "Preciso (exacto)",
+"fr": "Précis (exact)"
+},
+{
+"id": "b2-adequate",
+"en": "Adequate",
+"topic": "adjectives-5",
+"es": "Adecuado",
+"fr": "Adéquat"
+},
+{
+"id": "b2-ambiguous",
+"en": "Ambiguous",
+"topic": "adjectives-5",
+"es": "Ambiguo",
+"fr": "Ambigu"
+},
+{
+"id": "b2-apparent",
+"en": "Apparent",
+"topic": "adjectives-5",
+"es": "Aparente",
+"fr": "Apparent"
+},
+{
+"id": "b2-appropriate",
+"en": "Appropriate",
+"topic": "adjectives-5",
+"es": "Apropiado",
+"fr": "Approprié"
+},
+{
+"id": "b2-arbitrary",
+"en": "Arbitrary",
+"topic": "adjectives-5",
+"es": "Arbitrario",
+"fr": "Arbitraire"
+},
+{
+"id": "b2-coherent",
+"en": "Coherent",
+"topic": "adjectives-5",
+"es": "Coherente",
+"fr": "Cohérent"
+},
+{
+"id": "b2-comprehensive",
+"en": "Comprehensive",
+"topic": "adjectives-5",
+"es": "Exhaustivo",
+"fr": "Complet (exhaustif)"
+},
+{
+"id": "b2-consistent",
+"en": "Consistent",
+"topic": "adjectives-5",
+"es": "Consistente",
+"fr": "Constant (cohérent)"
+},
+{
+"id": "b2-controversial",
+"en": "Controversial",
+"topic": "adjectives-5",
+"es": "Controvertido",
+"fr": "Controversé"
+},
+{
+"id": "b2-crucial",
+"en": "Crucial",
+"topic": "adjectives-5",
+"es": "Crucial",
+"fr": "Crucial"
+},
+{
+"id": "b2-deliberate",
+"en": "Deliberate",
+"topic": "adjectives-5",
+"es": "Deliberado",
+"fr": "Délibéré"
+},
+{
+"id": "b2-distinct",
+"en": "Distinct",
+"topic": "adjectives-5",
+"es": "Distinto (claro)",
+"fr": "Distinct"
+},
+{
+"id": "b2-diverse",
+"en": "Diverse",
+"topic": "adjectives-5",
+"es": "Diverso (variado)",
+"fr": "Divers"
+},
+{
+"id": "b2-dominant",
+"en": "Dominant",
+"topic": "adjectives-5",
+"es": "Dominante",
+"fr": "Dominant"
+},
+{
+"id": "b2-efficient",
+"en": "Efficient",
+"topic": "adjectives-5",
+"es": "Eficiente",
+"fr": "Efficace"
+},
+{
+"id": "b2-elaborate",
+"en": "Elaborate",
+"topic": "adjectives-5",
+"es": "Elaborado",
+"fr": "Élaboré"
+},
+{
+"id": "b2-explicit",
+"en": "Explicit",
+"topic": "adjectives-5",
+"es": "Explícito",
+"fr": "Explicite"
+},
+{
+"id": "b2-implicit",
+"en": "Implicit",
+"topic": "adjectives-5",
+"es": "Implícito",
+"fr": "Implicite"
+},
+{
+"id": "b2-fundamental",
+"en": "Fundamental",
+"topic": "adjectives-5",
+"es": "Fundamental",
+"fr": "Fondamental"
+},
+{
+"id": "b2-genuine",
+"en": "Genuine",
+"topic": "adjectives-5",
+"es": "Genuino",
+"fr": "Authentique"
+},
+{
+"id": "b2-inevitable",
+"en": "Inevitable",
+"topic": "adjectives-5",
+"es": "Inevitable",
+"fr": "Inévitable"
+},
+{
+"id": "b2-legitimate",
+"en": "Legitimate",
+"topic": "adjectives-5",
+"es": "Legítimo",
+"fr": "Légitime"
+},
+{
+"id": "b2-mutual",
+"en": "Mutual",
+"topic": "adjectives-5",
+"es": "Mutuo",
+"fr": "Mutuel"
+},
+{
+"id": "b2-neutral",
+"en": "Neutral",
+"topic": "adjectives-5",
+"es": "Neutral",
+"fr": "Neutre"
+},
+{
+"id": "b2-notable",
+"en": "Notable",
+"topic": "adjectives-5",
+"es": "Notable",
+"fr": "Notable"
+},
+{
+"id": "b2-precise",
+"en": "Precise",
+"topic": "adjectives-5",
+"es": "Preciso (detallado)",
+"fr": "Précis (détaillé)"
+},
+{
+"id": "b2-prominent",
+"en": "Prominent",
+"topic": "adjectives-5",
+"es": "Prominente",
+"fr": "Éminent"
+},
+{
+"id": "b2-relevant",
+"en": "Relevant",
+"topic": "adjectives-5",
+"es": "Relevante",
+"fr": "Pertinent"
+},
+{
+"id": "b2-irrelevant",
+"en": "Irrelevant",
+"topic": "adjectives-5",
+"es": "Irrelevante",
+"fr": "Hors sujet"
+},
+{
+"id": "b2-rigid",
+"en": "Rigid",
+"topic": "adjectives-6",
+"es": "Rígido",
+"fr": "Rigide"
+},
+{
+"id": "b2-subtle",
+"en": "Subtle",
+"topic": "adjectives-6",
+"es": "Sutil",
+"fr": "Subtil"
+},
+{
+"id": "b2-sufficient",
+"en": "Sufficient",
+"topic": "adjectives-6",
+"es": "Suficiente (bastante)",
+"fr": "Suffisant"
+},
+{
+"id": "b2-tremendous",
+"en": "Tremendous",
+"topic": "adjectives-6",
+"es": "Tremendo",
+"fr": "Énorme (formidable)"
+},
+{
+"id": "b2-vague",
+"en": "Vague",
+"topic": "adjectives-6",
+"es": "Vago",
+"fr": "Vague"
+},
+{
+"id": "b2-vast",
+"en": "Vast",
+"topic": "adjectives-6",
+"es": "Vasto",
+"fr": "Vaste"
+},
+{
+"id": "b2-vital",
+"en": "Vital",
+"topic": "adjectives-6",
+"es": "Vital",
+"fr": "Vital"
+},
+{
+"id": "b2-widespread",
+"en": "Widespread",
+"topic": "adjectives-6",
+"es": "Generalizado",
+"fr": "Répandu"
+},
+{
+"id": "b2-reluctant",
+"en": "Reluctant",
+"topic": "adjectives-6",
+"es": "Reacio",
+"fr": "Réticent"
+},
+{
+"id": "b2-thorough",
+"en": "Thorough",
+"topic": "adjectives-6",
+"es": "Minucioso",
+"fr": "Minutieux"
+},
+{
+"id": "b2-abstract",
+"en": "Abstract",
+"topic": "adjectives-6",
+"es": "Abstracto",
+"fr": "Abstrait"
+},
+{
+"id": "b2-concrete",
+"en": "Concrete",
+"topic": "adjectives-6",
+"es": "Concreto",
+"fr": "Concret"
+},
+{
+"id": "b2-absurd",
+"en": "Absurd",
+"topic": "adjectives-6",
+"es": "Absurdo",
+"fr": "Absurde"
+},
+{
+"id": "b2-alarming",
+"en": "Alarming",
+"topic": "adjectives-6",
+"es": "Alarmante",
+"fr": "Alarmant"
+},
+{
+"id": "b2-biased",
+"en": "Biased",
+"topic": "adjectives-6",
+"es": "Parcial (sesgado)",
+"fr": "Partial"
+},
+{
+"id": "b2-compelling",
+"en": "Compelling",
+"topic": "adjectives-6",
+"es": "Convincente",
+"fr": "Convaincant"
+},
+{
+"id": "b2-contradictory",
+"en": "Contradictory",
+"topic": "adjectives-6",
+"es": "Contradictorio",
+"fr": "Contradictoire"
+},
+{
+"id": "b2-credible",
+"en": "Credible",
+"topic": "adjectives-6",
+"es": "Creíble",
+"fr": "Crédible"
+},
+{
+"id": "b2-feasible",
+"en": "Feasible",
+"topic": "adjectives-6",
+"es": "Factible",
+"fr": "Faisable"
+},
+{
+"id": "b2-flawed",
+"en": "Flawed",
+"topic": "adjectives-6",
+"es": "Defectuoso",
+"fr": "Imparfait (défectueux)"
+},
+{
+"id": "b2-innovative",
+"en": "Innovative",
+"topic": "adjectives-6",
+"es": "Innovador",
+"fr": "Innovant"
+},
+{
+"id": "b2-obsolete",
+"en": "Obsolete",
+"topic": "adjectives-6",
+"es": "Obsoleto",
+"fr": "Obsolète"
+},
+{
+"id": "b2-outstanding",
+"en": "Outstanding",
+"topic": "adjectives-6",
+"es": "Sobresaliente",
+"fr": "Exceptionnel"
+},
+{
+"id": "b2-persistent",
+"en": "Persistent",
+"topic": "adjectives-6",
+"es": "Persistente",
+"fr": "Persistant"
+},
+{
+"id": "b2-profound",
+"en": "Profound",
+"topic": "adjectives-6",
+"es": "Profundo (idea)",
+"fr": "Profond (idée)"
+},
+{
+"id": "b2-redundant",
+"en": "Redundant",
+"topic": "adjectives-6",
+"es": "Redundante",
+"fr": "Redondant"
+},
+{
+"id": "b2-superficial",
+"en": "Superficial",
+"topic": "adjectives-6",
+"es": "Superficial",
+"fr": "Superficiel"
+},
+{
+"id": "b2-trivial",
+"en": "Trivial",
+"topic": "adjectives-6",
+"es": "Trivial",
+"fr": "Insignifiant"
+},
+{
+"id": "b2-unprecedented",
+"en": "Unprecedented",
+"topic": "adjectives-6",
+"es": "Sin precedentes",
+"fr": "Sans précédent"
+},
+{
+"id": "b2-versatile",
+"en": "Versatile",
+"topic": "adjectives-6",
+"es": "Versátil",
+"fr": "Polyvalent"
+},
+{
+"id": "b2-as-far-as-im-concerned",
+"en": "As far as I’m concerned",
+"topic": "discourse-markers",
+"es": "En lo que a mí respecta",
+"fr": "En ce qui me concerne"
+},
+{
+"id": "b2-to-some-extent",
+"en": "To some extent",
+"topic": "discourse-markers",
+"es": "Hasta cierto punto",
+"fr": "Dans une certaine mesure"
+},
+{
+"id": "b2-in-terms-of",
+"en": "In terms of",
+"topic": "discourse-markers",
+"es": "En cuanto a",
+"fr": "En termes de"
+},
+{
+"id": "b2-with-regard-to",
+"en": "With regard to",
+"topic": "discourse-markers",
+"es": "Con respecto a",
+"fr": "En ce qui concerne"
+},
+{
+"id": "b2-on-the-whole",
+"en": "On the whole",
+"topic": "discourse-markers",
+"es": "En general",
+"fr": "Dans l’ensemble"
+},
+{
+"id": "b2-by-and-large",
+"en": "By and large",
+"topic": "discourse-markers",
+"es": "En líneas generales",
+"fr": "Globalement"
+},
+{
+"id": "b2-in-the-meantime",
+"en": "In the meantime",
+"topic": "discourse-markers",
+"es": "Mientras tanto (entretanto)",
+"fr": "En attendant"
+},
+{
+"id": "b2-at-the-same-time",
+"en": "At the same time",
+"topic": "discourse-markers",
+"es": "Al mismo tiempo",
+"fr": "En même temps"
+},
+{
+"id": "b2-needless-to-say",
+"en": "Needless to say",
+"topic": "discourse-markers",
+"es": "Ni que decir tiene",
+"fr": "Inutile de dire"
+},
+{
+"id": "b2-to-put-it-simply",
+"en": "To put it simply",
+"topic": "discourse-markers",
+"es": "Dicho de forma sencilla",
+"fr": "Pour faire simple"
+},
+{
+"id": "b2-in-a-nutshell",
+"en": "In a nutshell",
+"topic": "discourse-markers",
+"es": "En pocas palabras",
+"fr": "En un mot"
+},
+{
+"id": "b2-having-said-that",
+"en": "Having said that",
+"topic": "discourse-markers",
+"es": "Dicho esto",
+"fr": "Cela dit"
+},
+{
+"id": "b2-as-a-matter-of-fact",
+"en": "As a matter of fact",
+"topic": "discourse-markers",
+"es": "De hecho (en realidad)",
+"fr": "En réalité"
+},
+{
+"id": "b2-for-the-time-being",
+"en": "For the time being",
+"topic": "discourse-markers",
+"es": "Por el momento",
+"fr": "Pour le moment"
+},
+{
+"id": "b2-on-second-thought",
+"en": "On second thought",
+"topic": "discourse-markers",
+"es": "Pensándolo bien",
+"fr": "À la réflexion"
+},
+{
+"id": "b2-all-things-considered",
+"en": "All things considered",
+"topic": "discourse-markers",
+"es": "Considerándolo todo",
+"fr": "Tout bien considéré"
+},
+{
+"id": "b2-if-anything",
+"en": "If anything",
+"topic": "discourse-markers",
+"es": "En todo caso",
+"fr": "Au contraire (si tant est)"
+},
+{
+"id": "b2-in-any-case",
+"en": "In any case",
+"topic": "discourse-markers",
+"es": "En cualquier caso",
+"fr": "En tout cas"
+},
+{
+"id": "b2-more-or-less",
+"en": "More or less",
+"topic": "discourse-markers",
+"es": "Más o menos",
+"fr": "Plus ou moins"
+},
+{
+"id": "b2-sooner-or-later",
+"en": "Sooner or later",
+"topic": "discourse-markers",
+"es": "Tarde o temprano",
+"fr": "Tôt ou tard"
+},
+{
+"id": "b2-every-now-and-then",
+"en": "Every now and then",
+"topic": "discourse-markers",
+"es": "De vez en cuando",
+"fr": "De temps à autre"
+},
+{
+"id": "b2-on-purpose",
+"en": "On purpose",
+"topic": "discourse-markers",
+"es": "A propósito (adrede)",
+"fr": "Exprès"
+},
+{
+"id": "b2-by-accident",
+"en": "By accident",
+"topic": "discourse-markers",
+"es": "Por accidente",
+"fr": "Par accident"
+},
+{
+"id": "b2-by-all-means",
+"en": "By all means",
+"topic": "discourse-markers",
+"es": "Por supuesto (faltaría más)",
+"fr": "Je vous en prie"
+},
+{
+"id": "b2-for-the-sake-of",
+"en": "For the sake of",
+"topic": "discourse-markers",
+"es": "Por el bien de",
+"fr": "Pour le bien de"
+},
+{
+"id": "b2-up-to-a-point",
+"en": "Up to a point",
+"topic": "discourse-markers",
+"es": "Hasta cierto punto (con límites)",
+"fr": "Jusqu’à un certain point"
+},
+{
+"id": "b2-to-say-the-least",
+"en": "To say the least",
+"topic": "discourse-markers",
+"es": "Por decir poco",
+"fr": "Pour le moins"
+},
+{
+"id": "b2-in-hindsight",
+"en": "In hindsight",
+"topic": "discourse-markers",
+"es": "En retrospectiva",
+"fr": "Avec le recul"
+},
+{
+"id": "b2-strictly-speaking",
+"en": "Strictly speaking",
+"topic": "discourse-markers",
+"es": "Estrictamente hablando",
+"fr": "À proprement parler"
+},
+{
+"id": "b2-broadly-speaking",
+"en": "Broadly speaking",
+"topic": "discourse-markers",
+"es": "En términos generales",
+"fr": "Grosso modo"
+},
+{
+"id": "b2-parliament",
+"en": "Parliament",
+"topic": "politics-economy",
+"es": "Parlamento",
+"fr": "Parlement"
+},
+{
+"id": "b2-president",
+"en": "President",
+"topic": "politics-economy",
+"es": "Presidente",
+"fr": "Président"
+},
+{
+"id": "b2-prime-minister",
+"en": "Prime minister",
+"topic": "politics-economy",
+"es": "Primer ministro",
+"fr": "Premier ministre"
+},
+{
+"id": "b2-minister",
+"en": "Minister",
+"topic": "politics-economy",
+"es": "Ministro",
+"fr": "Ministre"
+},
+{
+"id": "b2-mayor",
+"en": "Mayor",
+"topic": "politics-economy",
+"es": "Alcalde",
+"fr": "Maire"
+},
+{
+"id": "b2-policy",
+"en": "Policy",
+"topic": "politics-economy",
+"es": "Política (medida)",
+"fr": "Politique (mesure)"
+},
+{
+"id": "b2-reform",
+"en": "Reform",
+"topic": "politics-economy",
+"es": "Reforma",
+"fr": "Réforme"
+},
+{
+"id": "b2-legislation",
+"en": "Legislation",
+"topic": "politics-economy",
+"es": "Legislación",
+"fr": "Législation"
+},
+{
+"id": "b2-bill-proposed-law",
+"en": "Bill (proposed law)",
+"topic": "politics-economy",
+"es": "Proyecto de ley",
+"fr": "Projet de loi"
+},
+{
+"id": "b2-referendum",
+"en": "Referendum",
+"topic": "politics-economy",
+"es": "Referéndum",
+"fr": "Référendum"
+},
+{
+"id": "b2-campaign",
+"en": "Campaign",
+"topic": "politics-economy",
+"es": "Campaña",
+"fr": "Campagne"
+},
+{
+"id": "b2-candidate",
+"en": "Candidate",
+"topic": "politics-economy",
+"es": "Candidato",
+"fr": "Candidat"
+},
+{
+"id": "b2-political-party",
+"en": "Political party",
+"topic": "politics-economy",
+"es": "Partido político",
+"fr": "Parti politique"
+},
+{
+"id": "b2-opposition",
+"en": "Opposition",
+"topic": "politics-economy",
+"es": "Oposición",
+"fr": "Opposition"
+},
+{
+"id": "b2-coalition",
+"en": "Coalition",
+"topic": "politics-economy",
+"es": "Coalición",
+"fr": "Coalition"
+},
+{
+"id": "b2-majority",
+"en": "Majority",
+"topic": "politics-economy",
+"es": "Mayoría",
+"fr": "Majorité"
+},
+{
+"id": "b2-minority",
+"en": "Minority",
+"topic": "politics-economy",
+"es": "Minoría",
+"fr": "Minorité"
+},
+{
+"id": "b2-scandal",
+"en": "Scandal",
+"topic": "politics-economy",
+"es": "Escándalo",
+"fr": "Scandale"
+},
+{
+"id": "b2-budget-deficit",
+"en": "Budget deficit",
+"topic": "politics-economy",
+"es": "Déficit presupuestario",
+"fr": "Déficit budgétaire"
+},
+{
+"id": "b2-national-debt",
+"en": "National debt",
+"topic": "politics-economy",
+"es": "Deuda pública",
+"fr": "Dette publique"
+},
+{
+"id": "b2-recession",
+"en": "Recession",
+"topic": "politics-economy",
+"es": "Recesión",
+"fr": "Récession"
+},
+{
+"id": "b2-economic-growth",
+"en": "Economic growth",
+"topic": "politics-economy",
+"es": "Crecimiento económico",
+"fr": "Croissance économique"
+},
+{
+"id": "b2-interest-rate",
+"en": "Interest rate",
+"topic": "politics-economy",
+"es": "Tasa de interés",
+"fr": "Taux d’intérêt"
+},
+{
+"id": "b2-stock-market",
+"en": "Stock market",
+"topic": "politics-economy",
+"es": "Bolsa de valores",
+"fr": "Bourse"
+},
+{
+"id": "b2-shares-stocks",
+"en": "Shares (stocks)",
+"topic": "politics-economy",
+"es": "Acciones",
+"fr": "Actions"
+},
+{
+"id": "b2-investor",
+"en": "Investor",
+"topic": "politics-economy",
+"es": "Inversor",
+"fr": "Investisseur"
+},
+{
+"id": "b2-trade-commerce",
+"en": "Trade (commerce)",
+"topic": "politics-economy",
+"es": "Comercio",
+"fr": "Commerce"
+},
+{
+"id": "b2-tariff",
+"en": "Tariff",
+"topic": "politics-economy",
+"es": "Arancel",
+"fr": "Droit de douane"
+},
+{
+"id": "b2-export",
+"en": "Export",
+"topic": "politics-economy",
+"es": "Exportación",
+"fr": "Exportation"
+},
+{
+"id": "b2-import",
+"en": "Import",
+"topic": "politics-economy",
+"es": "Importación",
+"fr": "Importation"
+},
+{
+"id": "b2-bankruptcy",
+"en": "Bankruptcy",
+"topic": "politics-economy",
+"es": "Bancarrota",
+"fr": "Faillite"
+},
+{
+"id": "b2-monopoly",
+"en": "Monopoly",
+"topic": "politics-economy",
+"es": "Monopolio",
+"fr": "Monopole"
+},
+{
+"id": "b2-in-laws",
+"en": "In-laws",
+"topic": "family-society",
+"es": "Suegros (familia política)",
+"fr": "Belle-famille"
+},
+{
+"id": "b2-mother-in-law",
+"en": "Mother-in-law",
+"topic": "family-society",
+"es": "Suegra",
+"fr": "Belle-mère"
+},
+{
+"id": "b2-stepmother",
+"en": "Stepmother",
+"topic": "family-society",
+"es": "Madrastra",
+"fr": "Belle-mère (marâtre)"
+},
+{
+"id": "b2-sibling",
+"en": "Sibling",
+"topic": "family-society",
+"es": "Hermano/a (sibling)",
+"fr": "Frère ou sœur"
+},
+{
+"id": "b2-spouse",
+"en": "Spouse",
+"topic": "family-society",
+"es": "Cónyuge",
+"fr": "Conjoint"
+},
+{
+"id": "b2-fiance",
+"en": "Fiancé",
+"topic": "family-society",
+"es": "Prometido",
+"fr": "Fiancé"
+},
+{
+"id": "b2-engagement",
+"en": "Engagement",
+"topic": "family-society",
+"es": "Compromiso",
+"fr": "Fiançailles"
+},
+{
+"id": "b2-to-propose-marriage",
+"en": "To propose (marriage)",
+"topic": "family-society",
+"es": "Pedir matrimonio",
+"fr": "Demander en mariage"
+},
+{
+"id": "b2-honeymoon",
+"en": "Honeymoon",
+"topic": "family-society",
+"es": "Luna de miel",
+"fr": "Lune de miel"
+},
+{
+"id": "b2-single-parent",
+"en": "Single parent",
+"topic": "family-society",
+"es": "Madre/padre soltero",
+"fr": "Parent célibataire"
+},
+{
+"id": "b2-godparent",
+"en": "Godparent",
+"topic": "family-society",
+"es": "Padrino/madrina",
+"fr": "Parrain/marraine"
+},
+{
+"id": "b2-guardian",
+"en": "Guardian",
+"topic": "family-society",
+"es": "Tutor legal",
+"fr": "Tuteur"
+},
+{
+"id": "b2-orphan",
+"en": "Orphan",
+"topic": "family-society",
+"es": "Huérfano",
+"fr": "Orphelin"
+},
+{
+"id": "b2-adoption",
+"en": "Adoption",
+"topic": "family-society",
+"es": "Adopción",
+"fr": "Adoption"
+},
+{
+"id": "b2-to-adopt",
+"en": "To adopt",
+"topic": "family-society",
+"es": "Adoptar",
+"fr": "Adopter"
+},
+{
+"id": "b2-upbringing",
+"en": "Upbringing",
+"topic": "family-society",
+"es": "Crianza",
+"fr": "Éducation (enfance)"
+},
+{
+"id": "b2-household",
+"en": "Household",
+"topic": "family-society",
+"es": "Hogar (unidad)",
+"fr": "Foyer"
+},
+{
+"id": "b2-breadwinner",
+"en": "Breadwinner",
+"topic": "family-society",
+"es": "Sostén de la familia",
+"fr": "Soutien de famille"
+},
+{
+"id": "b2-ancestor",
+"en": "Ancestor",
+"topic": "family-society",
+"es": "Antepasado",
+"fr": "Ancêtre"
+},
+{
+"id": "b2-descendant",
+"en": "Descendant",
+"topic": "family-society",
+"es": "Descendiente",
+"fr": "Descendant"
+},
+{
+"id": "b2-heritage",
+"en": "Heritage",
+"topic": "family-society",
+"es": "Herencia (cultural)",
+"fr": "Patrimoine"
+},
+{
+"id": "b2-inheritance",
+"en": "Inheritance",
+"topic": "family-society",
+"es": "Herencia (bienes)",
+"fr": "Héritage"
+},
+{
+"id": "b2-to-inherit",
+"en": "To inherit",
+"topic": "family-society",
+"es": "Heredar",
+"fr": "Hériter"
+},
+{
+"id": "b2-will-testament",
+"en": "Will (testament)",
+"topic": "family-society",
+"es": "Testamento",
+"fr": "Testament"
+},
+{
+"id": "b2-widow",
+"en": "Widow",
+"topic": "family-society",
+"es": "Viuda",
+"fr": "Veuve"
+},
+{
+"id": "b2-elderly",
+"en": "Elderly",
+"topic": "family-society",
+"es": "Ancianos",
+"fr": "Personnes âgées"
+},
+{
+"id": "b2-caregiver",
+"en": "Caregiver",
+"topic": "family-society",
+"es": "Cuidador",
+"fr": "Aidant"
+},
+{
+"id": "b2-retirement-home",
+"en": "Retirement home",
+"topic": "family-society",
+"es": "Residencia de ancianos",
+"fr": "Maison de retraite"
+},
+{
+"id": "b2-kinship",
+"en": "Kinship",
+"topic": "family-society",
+"es": "Parentesco",
+"fr": "Parenté"
+},
+{
+"id": "b2-role-model",
+"en": "Role model",
+"topic": "family-society",
+"es": "Modelo a seguir",
+"fr": "Modèle"
+},
+{
+"id": "b2-painting",
+"en": "Painting",
+"topic": "arts-culture",
+"es": "Pintura",
+"fr": "Peinture"
+},
+{
+"id": "b2-sculpture",
+"en": "Sculpture",
+"topic": "arts-culture",
+"es": "Escultura",
+"fr": "Sculpture"
+},
+{
+"id": "b2-exhibition",
+"en": "Exhibition",
+"topic": "arts-culture",
+"es": "Exposición",
+"fr": "Exposition"
+},
+{
+"id": "b2-gallery",
+"en": "Gallery",
+"topic": "arts-culture",
+"es": "Galería",
+"fr": "Galerie"
+},
+{
+"id": "b2-masterpiece",
+"en": "Masterpiece",
+"topic": "arts-culture",
+"es": "Obra maestra",
+"fr": "Chef-d’œuvre"
+},
+{
+"id": "b2-portrait",
+"en": "Portrait",
+"topic": "arts-culture",
+"es": "Retrato",
+"fr": "Portrait"
+},
+{
+"id": "b2-landscape-painting",
+"en": "Landscape (painting)",
+"topic": "arts-culture",
+"es": "Paisaje (cuadro)",
+"fr": "Paysage (tableau)"
+},
+{
+"id": "b2-canvas",
+"en": "Canvas",
+"topic": "arts-culture",
+"es": "Lienzo",
+"fr": "Toile"
+},
+{
+"id": "b2-sketch",
+"en": "Sketch",
+"topic": "arts-culture",
+"es": "Boceto",
+"fr": "Croquis"
+},
+{
+"id": "b2-festival",
+"en": "Festival",
+"topic": "arts-culture",
+"es": "Festival",
+"fr": "Festival"
+},
+{
+"id": "b2-parade",
+"en": "Parade",
+"topic": "arts-culture",
+"es": "Desfile",
+"fr": "Défilé"
+},
+{
+"id": "b2-folklore",
+"en": "Folklore",
+"topic": "arts-culture",
+"es": "Folclore",
+"fr": "Folklore"
+},
+{
+"id": "b2-myth",
+"en": "Myth",
+"topic": "arts-culture",
+"es": "Mito",
+"fr": "Mythe"
+},
+{
+"id": "b2-legend",
+"en": "Legend",
+"topic": "arts-culture",
+"es": "Leyenda",
+"fr": "Légende"
+},
+{
+"id": "b2-literature",
+"en": "Literature",
+"topic": "arts-culture",
+"es": "Literatura",
+"fr": "Littérature"
+},
+{
+"id": "b2-genre",
+"en": "Genre",
+"topic": "arts-culture",
+"es": "Género",
+"fr": "Genre"
+},
+{
+"id": "b2-metaphor",
+"en": "Metaphor",
+"topic": "arts-culture",
+"es": "Metáfora",
+"fr": "Métaphore"
+},
+{
+"id": "b2-rhyme",
+"en": "Rhyme",
+"topic": "arts-culture",
+"es": "Rima",
+"fr": "Rime"
+},
+{
+"id": "b2-verse",
+"en": "Verse",
+"topic": "arts-culture",
+"es": "Verso",
+"fr": "Vers"
+},
+{
+"id": "b2-orchestra",
+"en": "Orchestra",
+"topic": "arts-culture",
+"es": "Orquesta",
+"fr": "Orchestre"
+},
+{
+"id": "b2-symphony",
+"en": "Symphony",
+"topic": "arts-culture",
+"es": "Sinfonía",
+"fr": "Symphonie"
+},
+{
+"id": "b2-opera",
+"en": "Opera",
+"topic": "arts-culture",
+"es": "Ópera",
+"fr": "Opéra"
+},
+{
+"id": "b2-choir",
+"en": "Choir",
+"topic": "arts-culture",
+"es": "Coro",
+"fr": "Chorale"
+},
+{
+"id": "b2-rehearsal",
+"en": "Rehearsal",
+"topic": "arts-culture",
+"es": "Ensayo",
+"fr": "Répétition"
+},
+{
+"id": "b2-premiere",
+"en": "Premiere",
+"topic": "arts-culture",
+"es": "Estreno",
+"fr": "Première"
+},
+{
+"id": "b2-applause",
+"en": "Applause",
+"topic": "arts-culture",
+"es": "Aplausos",
+"fr": "Applaudissements"
+},
+{
+"id": "b2-playwright",
+"en": "Playwright",
+"topic": "arts-culture",
+"es": "Dramaturgo",
+"fr": "Dramaturge"
+},
+{
+"id": "b2-script",
+"en": "Script",
+"topic": "arts-culture",
+"es": "Guion",
+"fr": "Scénario"
+},
+{
+"id": "b2-stage",
+"en": "Stage",
+"topic": "arts-culture",
+"es": "Escenario",
+"fr": "Scène"
+},
+{
+"id": "b2-backstage",
+"en": "Backstage",
+"topic": "arts-culture",
+"es": "Entre bastidores",
+"fr": "Coulisses"
+},
+{
+"id": "b2-costume",
+"en": "Costume",
+"topic": "arts-culture",
+"es": "Vestuario (disfraz)",
+"fr": "Costume"
+},
+{
+"id": "b2-director-film",
+"en": "Director (film)",
+"topic": "arts-culture",
+"es": "Director",
+"fr": "Réalisateur"
+},
+{
+"id": "b2-producer",
+"en": "Producer",
+"topic": "arts-culture",
+"es": "Productor",
+"fr": "Producteur"
+},
+{
+"id": "b2-screenplay",
+"en": "Screenplay",
+"topic": "arts-culture",
+"es": "Guion cinematográfico",
+"fr": "Scénario (film)"
+},
+{
+"id": "b2-to-marinate",
+"en": "To marinate",
+"topic": "cooking-techniques",
+"es": "Marinar",
+"fr": "Faire mariner"
+},
+{
+"id": "b2-to-grill",
+"en": "To grill",
+"topic": "cooking-techniques",
+"es": "Asar a la parrilla",
+"fr": "Griller"
+},
+{
+"id": "b2-to-roast",
+"en": "To roast",
+"topic": "cooking-techniques",
+"es": "Asar al horno",
+"fr": "Rôtir"
+},
+{
+"id": "b2-to-steam",
+"en": "To steam",
+"topic": "cooking-techniques",
+"es": "Cocer al vapor",
+"fr": "Cuire à la vapeur"
+},
+{
+"id": "b2-to-simmer",
+"en": "To simmer",
+"topic": "cooking-techniques",
+"es": "Cocer a fuego lento",
+"fr": "Mijoter"
+},
+{
+"id": "b2-to-saute",
+"en": "To sauté",
+"topic": "cooking-techniques",
+"es": "Saltear",
+"fr": "Faire sauter"
+},
+{
+"id": "b2-to-whisk",
+"en": "To whisk",
+"topic": "cooking-techniques",
+"es": "Batir",
+"fr": "Fouetter"
+},
+{
+"id": "b2-to-knead",
+"en": "To knead",
+"topic": "cooking-techniques",
+"es": "Amasar",
+"fr": "Pétrir"
+},
+{
+"id": "b2-dough",
+"en": "Dough",
+"topic": "cooking-techniques",
+"es": "Masa",
+"fr": "Pâte"
+},
+{
+"id": "b2-batter",
+"en": "Batter",
+"topic": "cooking-techniques",
+"es": "Masa líquida",
+"fr": "Pâte à frire"
+},
+{
+"id": "b2-crust",
+"en": "Crust",
+"topic": "cooking-techniques",
+"es": "Corteza",
+"fr": "Croûte"
+},
+{
+"id": "b2-to-grate",
+"en": "To grate",
+"topic": "cooking-techniques",
+"es": "Rallar",
+"fr": "Râper"
+},
+{
+"id": "b2-to-peel",
+"en": "To peel",
+"topic": "cooking-techniques",
+"es": "Pelar",
+"fr": "Éplucher"
+},
+{
+"id": "b2-to-chop",
+"en": "To chop",
+"topic": "cooking-techniques",
+"es": "Picar",
+"fr": "Hacher"
+},
+{
+"id": "b2-to-slice",
+"en": "To slice",
+"topic": "cooking-techniques",
+"es": "Rebanar",
+"fr": "Trancher"
+},
+{
+"id": "b2-to-dice",
+"en": "To dice",
+"topic": "cooking-techniques",
+"es": "Cortar en cubos",
+"fr": "Couper en dés"
+},
+{
+"id": "b2-to-stir",
+"en": "To stir",
+"topic": "cooking-techniques",
+"es": "Remover",
+"fr": "Remuer"
+},
+{
+"id": "b2-seasoning",
+"en": "Seasoning",
+"topic": "cooking-techniques",
+"es": "Condimento",
+"fr": "Assaisonnement"
+},
+{
+"id": "b2-herb",
+"en": "Herb",
+"topic": "cooking-techniques",
+"es": "Hierba aromática",
+"fr": "Herbe aromatique"
+},
+{
+"id": "b2-spice",
+"en": "Spice",
+"topic": "cooking-techniques",
+"es": "Especia",
+"fr": "Épice"
+},
+{
+"id": "b2-cinnamon",
+"en": "Cinnamon",
+"topic": "cooking-techniques",
+"es": "Canela",
+"fr": "Cannelle"
+},
+{
+"id": "b2-ginger",
+"en": "Ginger",
+"topic": "cooking-techniques",
+"es": "Jengibre",
+"fr": "Gingembre"
+},
+{
+"id": "b2-basil",
+"en": "Basil",
+"topic": "cooking-techniques",
+"es": "Albahaca",
+"fr": "Basilic"
+},
+{
+"id": "b2-vinegar",
+"en": "Vinegar",
+"topic": "cooking-techniques",
+"es": "Vinagre",
+"fr": "Vinaigre"
+},
+{
+"id": "b2-soy-sauce",
+"en": "Soy sauce",
+"topic": "cooking-techniques",
+"es": "Salsa de soja",
+"fr": "Sauce soja"
+},
+{
+"id": "b2-broth",
+"en": "Broth",
+"topic": "cooking-techniques",
+"es": "Caldo",
+"fr": "Bouillon"
+},
+{
+"id": "b2-stew",
+"en": "Stew",
+"topic": "cooking-techniques",
+"es": "Guiso",
+"fr": "Ragoût"
+},
+{
+"id": "b2-crispy",
+"en": "Crispy",
+"topic": "cooking-techniques",
+"es": "Crujiente",
+"fr": "Croustillant"
+},
+{
+"id": "b2-tender",
+"en": "Tender",
+"topic": "cooking-techniques",
+"es": "Tierno",
+"fr": "Tendre"
+},
+{
+"id": "b2-juicy",
+"en": "Juicy",
+"topic": "cooking-techniques",
+"es": "Jugoso",
+"fr": "Juteux"
+},
+{
+"id": "b2-greasy",
+"en": "Greasy",
+"topic": "cooking-techniques",
+"es": "Grasiento",
+"fr": "Gras"
+},
+{
+"id": "b2-stale",
+"en": "Stale",
+"topic": "cooking-techniques",
+"es": "Rancio (pan duro)",
+"fr": "Rassis"
+},
+{
+"id": "b2-rotten",
+"en": "Rotten",
+"topic": "cooking-techniques",
+"es": "Podrido",
+"fr": "Pourri"
+},
+{
+"id": "b2-sour",
+"en": "Sour",
+"topic": "cooking-techniques",
+"es": "Agrio",
+"fr": "Aigre"
+},
+{
+"id": "b2-savory",
+"en": "Savory",
+"topic": "cooking-techniques",
+"es": "Salado (sabroso)",
+"fr": "Salé (savoureux)"
+},
+{
+"id": "b2-skyscraper",
+"en": "Skyscraper",
+"topic": "urban-construction",
+"es": "Rascacielos",
+"fr": "Gratte-ciel"
+},
+{
+"id": "b2-infrastructure",
+"en": "Infrastructure",
+"topic": "urban-construction",
+"es": "Infraestructura",
+"fr": "Infrastructure"
+},
+{
+"id": "b2-public-transport",
+"en": "Public transport",
+"topic": "urban-construction",
+"es": "Transporte público",
+"fr": "Transports en commun"
+},
+{
+"id": "b2-congestion",
+"en": "Congestion",
+"topic": "urban-construction",
+"es": "Congestión",
+"fr": "Congestion"
+},
+{
+"id": "b2-urban",
+"en": "Urban",
+"topic": "urban-construction",
+"es": "Urbano",
+"fr": "Urbain"
+},
+{
+"id": "b2-rural",
+"en": "Rural",
+"topic": "urban-construction",
+"es": "Rural",
+"fr": "Rural"
+},
+{
+"id": "b2-district",
+"en": "District",
+"topic": "urban-construction",
+"es": "Distrito",
+"fr": "Arrondissement"
+},
+{
+"id": "b2-gentrification",
+"en": "Gentrification",
+"topic": "urban-construction",
+"es": "Gentrificación",
+"fr": "Gentrification"
+},
+{
+"id": "b2-housing-crisis",
+"en": "Housing crisis",
+"topic": "urban-construction",
+"es": "Crisis de vivienda",
+"fr": "Crise du logement"
+},
+{
+"id": "b2-homelessness",
+"en": "Homelessness",
+"topic": "urban-construction",
+"es": "Sinhogarismo",
+"fr": "Sans-abrisme"
+},
+{
+"id": "b2-shelter",
+"en": "Shelter",
+"topic": "urban-construction",
+"es": "Refugio",
+"fr": "Refuge"
+},
+{
+"id": "b2-pedestrian-zone",
+"en": "Pedestrian zone",
+"topic": "urban-construction",
+"es": "Zona peatonal",
+"fr": "Zone piétonne"
+},
+{
+"id": "b2-bike-lane",
+"en": "Bike lane",
+"topic": "urban-construction",
+"es": "Carril bici",
+"fr": "Piste cyclable"
+},
+{
+"id": "b2-green-space",
+"en": "Green space",
+"topic": "urban-construction",
+"es": "Zona verde",
+"fr": "Espace vert"
+},
+{
+"id": "b2-high-rise",
+"en": "High-rise",
+"topic": "urban-construction",
+"es": "Edificio alto",
+"fr": "Immeuble de grande hauteur"
+},
+{
+"id": "b2-zoning",
+"en": "Zoning",
+"topic": "urban-construction",
+"es": "Zonificación",
+"fr": "Zonage"
+},
+{
+"id": "b2-demolition",
+"en": "Demolition",
+"topic": "urban-construction",
+"es": "Demolición",
+"fr": "Démolition"
+},
+{
+"id": "b2-construction-site",
+"en": "Construction site",
+"topic": "urban-construction",
+"es": "Obra",
+"fr": "Chantier"
+},
+{
+"id": "b2-crane",
+"en": "Crane",
+"topic": "urban-construction",
+"es": "Grúa",
+"fr": "Grue"
+},
+{
+"id": "b2-scaffolding",
+"en": "Scaffolding",
+"topic": "urban-construction",
+"es": "Andamio",
+"fr": "Échafaudage"
+},
+{
+"id": "b2-blueprint",
+"en": "Blueprint",
+"topic": "urban-construction",
+"es": "Plano (arquitectónico)",
+"fr": "Plan (architecture)"
+},
+{
+"id": "b2-permit",
+"en": "Permit",
+"topic": "urban-construction",
+"es": "Permiso (licencia)",
+"fr": "Permis"
+},
+{
+"id": "b2-contractor",
+"en": "Contractor",
+"topic": "urban-construction",
+"es": "Contratista",
+"fr": "Entrepreneur (BTP)"
+},
+{
+"id": "b2-foundation-building",
+"en": "Foundation (building)",
+"topic": "urban-construction",
+"es": "Cimientos",
+"fr": "Fondations"
+},
+{
+"id": "b2-insulation",
+"en": "Insulation",
+"topic": "urban-construction",
+"es": "Aislamiento",
+"fr": "Isolation"
+},
+{
+"id": "b2-plumbing",
+"en": "Plumbing",
+"topic": "urban-construction",
+"es": "Fontanería",
+"fr": "Plomberie"
+},
+{
+"id": "b2-wiring",
+"en": "Wiring",
+"topic": "urban-construction",
+"es": "Cableado",
+"fr": "Câblage"
+},
+{
+"id": "b2-beam",
+"en": "Beam",
+"topic": "urban-construction",
+"es": "Viga",
+"fr": "Poutre"
+},
+{
+"id": "b2-drywall",
+"en": "Drywall",
+"topic": "urban-construction",
+"es": "Panel de yeso",
+"fr": "Plaque de plâtre"
+},
+{
+"id": "b2-inspection",
+"en": "Inspection",
+"topic": "urban-construction",
+"es": "Inspección",
+"fr": "Inspection"
+},
+{
+"id": "b2-tenant-improvement",
+"en": "Tenant improvement",
+"topic": "urban-construction",
+"es": "Adecuación para inquilino",
+"fr": "Aménagement locataire"
+},
+{
+"id": "b2-deadline-construction",
+"en": "Deadline (construction)",
+"topic": "urban-construction",
+"es": "Plazo de obra",
+"fr": "Délai de chantier"
+},
+{
+"id": "b2-contempt",
+"en": "Contempt",
+"topic": "emotions-4",
+"es": "Desprecio",
+"fr": "Mépris"
+},
+{
+"id": "b2-resentment",
+"en": "Resentment",
+"topic": "emotions-4",
+"es": "Resentimiento",
+"fr": "Ressentiment"
+},
+{
+"id": "b2-bitterness",
+"en": "Bitterness",
+"topic": "emotions-4",
+"es": "Amargura",
+"fr": "Amertume"
+},
+{
+"id": "b2-longing",
+"en": "Longing",
+"topic": "emotions-4",
+"es": "Anhelo",
+"fr": "Désir ardent"
+},
+{
+"id": "b2-dread",
+"en": "Dread",
+"topic": "emotions-4",
+"es": "Pavor",
+"fr": "Appréhension (effroi)"
+},
+{
+"id": "b2-apprehension",
+"en": "Apprehension",
+"topic": "emotions-4",
+"es": "Aprensión",
+"fr": "Appréhension"
+},
+{
+"id": "b2-serenity",
+"en": "Serenity",
+"topic": "emotions-4",
+"es": "Serenidad",
+"fr": "Sérénité"
+},
+{
+"id": "b2-contentment",
+"en": "Contentment",
+"topic": "emotions-4",
+"es": "Satisfacción (plenitud)",
+"fr": "Contentement"
+},
+{
+"id": "b2-euphoria",
+"en": "Euphoria",
+"topic": "emotions-4",
+"es": "Euforia",
+"fr": "Euphorie"
+},
+{
+"id": "b2-melancholy",
+"en": "Melancholy",
+"topic": "emotions-4",
+"es": "Melancolía",
+"fr": "Mélancolie"
+},
+{
+"id": "b2-remorse",
+"en": "Remorse",
+"topic": "emotions-4",
+"es": "Remordimiento",
+"fr": "Remords"
+},
+{
+"id": "b2-humiliation",
+"en": "Humiliation",
+"topic": "emotions-4",
+"es": "Humillación",
+"fr": "Humiliation"
+},
+{
+"id": "b2-rage",
+"en": "Rage",
+"topic": "emotions-4",
+"es": "Rabia",
+"fr": "Rage"
+},
+{
+"id": "b2-awe",
+"en": "Awe",
+"topic": "emotions-4",
+"es": "Asombro",
+"fr": "Émerveillement"
+},
+{
+"id": "b2-indignation",
+"en": "Indignation",
+"topic": "emotions-4",
+"es": "Indignación",
+"fr": "Indignation"
+},
+{
+"id": "b2-disgust",
+"en": "Disgust",
+"topic": "emotions-4",
+"es": "Asco",
+"fr": "Dégoût"
+},
+{
+"id": "b2-boredom",
+"en": "Boredom",
+"topic": "emotions-4",
+"es": "Aburrimiento",
+"fr": "Ennui"
+},
+{
+"id": "b2-agony",
+"en": "Agony",
+"topic": "emotions-4",
+"es": "Agonía",
+"fr": "Agonie"
+},
+{
+"id": "b2-ecstasy",
+"en": "Ecstasy",
+"topic": "emotions-4",
+"es": "Éxtasis",
+"fr": "Extase"
+},
+{
+"id": "b2-complacency",
+"en": "Complacency",
+"topic": "emotions-4",
+"es": "Complacencia",
+"fr": "Complaisance"
+},
+{
+"id": "b2-disbelief",
+"en": "Disbelief",
+"topic": "emotions-4",
+"es": "Incredulidad",
+"fr": "Incrédulité"
+},
+{
+"id": "b2-suspicion",
+"en": "Suspicion",
+"topic": "emotions-4",
+"es": "Sospecha",
+"fr": "Soupçon"
+},
+{
+"id": "b2-reluctance",
+"en": "Reluctance",
+"topic": "emotions-4",
+"es": "Reticencia",
+"fr": "Réticence"
+},
+{
+"id": "b2-eagerness",
+"en": "Eagerness",
+"topic": "emotions-4",
+"es": "Entusiasmo (ansia)",
+"fr": "Empressement"
+},
+{
+"id": "b2-fondness",
+"en": "Fondness",
+"topic": "emotions-4",
+"es": "Cariño",
+"fr": "Tendresse (affection)"
+},
+{
+"id": "b2-tenderness",
+"en": "Tenderness",
+"topic": "emotions-4",
+"es": "Ternura",
+"fr": "Tendresse"
+},
+{
+"id": "b2-affection",
+"en": "Affection",
+"topic": "emotions-4",
+"es": "Afecto",
+"fr": "Affection"
+},
+{
+"id": "b2-to-resent",
+"en": "To resent",
+"topic": "emotions-4",
+"es": "Resentirse",
+"fr": "En vouloir à"
+},
+{
+"id": "b2-to-loathe",
+"en": "To loathe",
+"topic": "emotions-4",
+"es": "Aborrecer",
+"fr": "Détester (avoir en horreur)"
+},
+{
+"id": "b2-to-cherish",
+"en": "To cherish",
+"topic": "emotions-4",
+"es": "Atesorar",
+"fr": "Chérir"
+},
+{
+"id": "b2-to-despise",
+"en": "To despise",
+"topic": "emotions-4",
+"es": "Despreciar",
+"fr": "Mépriser"
+},
+{
+"id": "b2-to-dread",
+"en": "To dread",
+"topic": "emotions-4",
+"es": "Temer (con pavor)",
+"fr": "Redouter"
+},
+{
+"id": "b2-to-state",
+"en": "To state",
+"topic": "communication-2",
+"es": "Afirmar",
+"fr": "Déclarer (affirmer)"
+},
+{
+"id": "b2-statement",
+"en": "Statement",
+"topic": "communication-2",
+"es": "Declaración",
+"fr": "Déclaration"
+},
+{
+"id": "b2-to-claim",
+"en": "To claim",
+"topic": "communication-2",
+"es": "Afirmar (sostener)",
+"fr": "Prétendre"
+},
+{
+"id": "b2-to-declare",
+"en": "To declare",
+"topic": "communication-2",
+"es": "Declarar",
+"fr": "Déclarer"
+},
+{
+"id": "b2-to-announce",
+"en": "To announce",
+"topic": "communication-2",
+"es": "Anunciar",
+"fr": "Annoncer"
+},
+{
+"id": "b2-announcement",
+"en": "Announcement",
+"topic": "communication-2",
+"es": "Anuncio",
+"fr": "Annonce"
+},
+{
+"id": "b2-to-assert",
+"en": "To assert",
+"topic": "communication-2",
+"es": "Aseverar",
+"fr": "Affirmer (avec force)"
+},
+{
+"id": "b2-to-hint",
+"en": "To hint",
+"topic": "communication-2",
+"es": "Insinuar",
+"fr": "Faire allusion"
+},
+{
+"id": "b2-to-confess",
+"en": "To confess",
+"topic": "communication-2",
+"es": "Confesar",
+"fr": "Avouer"
+},
+{
+"id": "b2-confession",
+"en": "Confession",
+"topic": "communication-2",
+"es": "Confesión",
+"fr": "Aveu"
+},
+{
+"id": "b2-to-object",
+"en": "To object",
+"topic": "communication-2",
+"es": "Objetar",
+"fr": "Objecter"
+},
+{
+"id": "b2-objection",
+"en": "Objection",
+"topic": "communication-2",
+"es": "Objeción",
+"fr": "Objection"
+},
+{
+"id": "b2-to-summarize",
+"en": "To summarize",
+"topic": "communication-2",
+"es": "Resumir",
+"fr": "Résumer"
+},
+{
+"id": "b2-summary",
+"en": "Summary",
+"topic": "communication-2",
+"es": "Resumen",
+"fr": "Résumé"
+},
+{
+"id": "b2-to-elaborate",
+"en": "To elaborate",
+"topic": "communication-2",
+"es": "Explicar con detalle",
+"fr": "Développer"
+},
+{
+"id": "b2-to-paraphrase",
+"en": "To paraphrase",
+"topic": "communication-2",
+"es": "Parafrasear",
+"fr": "Paraphraser"
+},
+{
+"id": "b2-to-quote",
+"en": "To quote",
+"topic": "communication-2",
+"es": "Citar (textualmente)",
+"fr": "Citer"
+},
+{
+"id": "b2-quotation",
+"en": "Quotation",
+"topic": "communication-2",
+"es": "Cita",
+"fr": "Citation"
+},
+{
+"id": "b2-reference",
+"en": "Reference",
+"topic": "communication-2",
+"es": "Referencia",
+"fr": "Référence"
+},
+{
+"id": "b2-to-address-an-issue",
+"en": "To address (an issue)",
+"topic": "communication-2",
+"es": "Abordar (un tema)",
+"fr": "Aborder (un problème)"
+},
+{
+"id": "b2-to-convey",
+"en": "To convey",
+"topic": "communication-2",
+"es": "Transmitir",
+"fr": "Transmettre"
+},
+{
+"id": "b2-to-articulate",
+"en": "To articulate",
+"topic": "communication-2",
+"es": "Articular",
+"fr": "Articuler"
+},
+{
+"id": "b2-to-reiterate",
+"en": "To reiterate",
+"topic": "communication-2",
+"es": "Reiterar",
+"fr": "Réitérer"
+},
+{
+"id": "b2-remark",
+"en": "Remark",
+"topic": "communication-2",
+"es": "Comentario (observación)",
+"fr": "Remarque"
+},
+{
+"id": "b2-to-comment",
+"en": "To comment",
+"topic": "communication-2",
+"es": "Comentar",
+"fr": "Commenter"
+},
+{
+"id": "b2-to-consult",
+"en": "To consult",
+"topic": "communication-2",
+"es": "Consultar",
+"fr": "Consulter"
+},
+{
+"id": "b2-to-advocate",
+"en": "To advocate",
+"topic": "communication-2",
+"es": "Abogar por",
+"fr": "Prôner"
+},
+{
+"id": "b2-to-mediate",
+"en": "To mediate",
+"topic": "communication-2",
+"es": "Mediar",
+"fr": "Servir de médiateur"
+},
+{
+"id": "b2-compromise-noun",
+"en": "Compromise (noun)",
+"topic": "communication-2",
+"es": "Compromiso (acuerdo)",
+"fr": "Compromis"
+},
+{
+"id": "b2-negotiation",
+"en": "Negotiation",
+"topic": "communication-2",
+"es": "Negociación",
+"fr": "Négociation"
+},
+{
+"id": "b2-persuasive",
+"en": "Persuasive",
+"topic": "communication-2",
+"es": "Persuasivo",
+"fr": "Persuasif"
+},
+{
+"id": "b2-tactful",
+"en": "Tactful",
+"topic": "communication-2",
+"es": "Diplomático (con tacto)",
+"fr": "Plein de tact"
+},
+{
+"id": "b2-blunt-direct",
+"en": "Blunt (direct)",
+"topic": "communication-2",
+"es": "Directo (brusco)",
+"fr": "Direct (brusque)"
+},
+{
+"id": "b2-efficiency",
+"en": "Efficiency",
+"topic": "time-management",
+"es": "Eficiencia",
+"fr": "Efficacité"
+},
+{
+"id": "b2-productivity",
+"en": "Productivity",
+"topic": "time-management",
+"es": "Productividad",
+"fr": "Productivité"
+},
+{
+"id": "b2-to-do-list",
+"en": "To-do list",
+"topic": "time-management",
+"es": "Lista de tareas",
+"fr": "Liste de choses à faire"
+},
+{
+"id": "b2-reminder",
+"en": "Reminder",
+"topic": "time-management",
+"es": "Recordatorio",
+"fr": "Rappel"
+},
+{
+"id": "b2-to-reschedule",
+"en": "To reschedule",
+"topic": "time-management",
+"es": "Reprogramar",
+"fr": "Reprogrammer"
+},
+{
+"id": "b2-calendar",
+"en": "Calendar",
+"topic": "time-management",
+"es": "Calendario",
+"fr": "Calendrier"
+},
+{
+"id": "b2-time-zone",
+"en": "Time zone",
+"topic": "time-management",
+"es": "Zona horaria",
+"fr": "Fuseau horaire"
+},
+{
+"id": "b2-daylight-saving-time",
+"en": "Daylight saving time",
+"topic": "time-management",
+"es": "Horario de verano",
+"fr": "Heure d’été"
+},
+{
+"id": "b2-punctuality",
+"en": "Punctuality",
+"topic": "time-management",
+"es": "Puntualidad",
+"fr": "Ponctualité"
+},
+{
+"id": "b2-ahead-of-schedule",
+"en": "Ahead of schedule",
+"topic": "time-management",
+"es": "Adelantado",
+"fr": "En avance"
+},
+{
+"id": "b2-behind-schedule",
+"en": "Behind schedule",
+"topic": "time-management",
+"es": "Retrasado (respecto al plan)",
+"fr": "En retard (sur le planning)"
+},
+{
+"id": "b2-in-advance",
+"en": "In advance",
+"topic": "time-management",
+"es": "Con antelación",
+"fr": "À l’avance"
+},
+{
+"id": "b2-last-minute",
+"en": "Last minute",
+"topic": "time-management",
+"es": "De última hora",
+"fr": "De dernière minute"
+},
+{
+"id": "b2-overdue",
+"en": "Overdue",
+"topic": "time-management",
+"es": "Atrasado (vencido)",
+"fr": "En retard (échu)"
+},
+{
+"id": "b2-to-squeeze-in",
+"en": "To squeeze in",
+"topic": "time-management",
+"es": "Hacer un hueco",
+"fr": "Caser"
+},
+{
+"id": "b2-to-multitask",
+"en": "To multitask",
+"topic": "time-management",
+"es": "Hacer varias cosas a la vez",
+"fr": "Faire plusieurs choses à la fois"
+},
+{
+"id": "b2-to-allocate",
+"en": "To allocate",
+"topic": "time-management",
+"es": "Asignar (tiempo)",
+"fr": "Allouer"
+},
+{
+"id": "b2-downtime",
+"en": "Downtime",
+"topic": "time-management",
+"es": "Tiempo muerto",
+"fr": "Temps mort"
+},
+{
+"id": "b2-spare-time",
+"en": "Spare time",
+"topic": "time-management",
+"es": "Tiempo libre (sobrante)",
+"fr": "Temps libre (restant)"
+},
+{
+"id": "b2-to-kill-time",
+"en": "To kill time",
+"topic": "time-management",
+"es": "Matar el tiempo",
+"fr": "Tuer le temps"
+},
+{
+"id": "b2-pastime",
+"en": "Pastime",
+"topic": "time-management",
+"es": "Pasatiempo (afición)",
+"fr": "Passe-temps (loisir)"
+},
+{
+"id": "b2-leisure",
+"en": "Leisure",
+"topic": "time-management",
+"es": "Ocio",
+"fr": "Loisirs"
+},
+{
+"id": "b2-on-the-dot",
+"en": "On the dot",
+"topic": "time-management",
+"es": "En punto",
+"fr": "Pile"
+},
+{
+"id": "b2-around-the-clock",
+"en": "Around the clock",
+"topic": "time-management",
+"es": "Las veinticuatro horas",
+"fr": "Vingt-quatre heures sur vingt-quatre"
+},
+{
+"id": "b2-in-the-nick-of-time",
+"en": "In the nick of time",
+"topic": "time-management",
+"es": "Justo a tiempo",
+"fr": "Juste à temps"
+},
+{
+"id": "b2-long-term",
+"en": "Long-term",
+"topic": "time-management",
+"es": "A largo plazo (adj.)",
+"fr": "À long terme (adj.)"
+},
+{
+"id": "b2-short-term",
+"en": "Short-term",
+"topic": "time-management",
+"es": "A corto plazo",
+"fr": "À court terme"
+},
+{
+"id": "b2-simultaneously",
+"en": "Simultaneously",
+"topic": "time-management",
+"es": "Simultáneamente",
+"fr": "Simultanément"
+},
+{
+"id": "b2-continent",
+"en": "Continent",
+"topic": "geography",
+"es": "Continente",
+"fr": "Continent"
+},
+{
+"id": "b2-hemisphere",
+"en": "Hemisphere",
+"topic": "geography",
+"es": "Hemisferio",
+"fr": "Hémisphère"
+},
+{
+"id": "b2-equator",
+"en": "Equator",
+"topic": "geography",
+"es": "Ecuador (línea)",
+"fr": "Équateur"
+},
+{
+"id": "b2-latitude",
+"en": "Latitude",
+"topic": "geography",
+"es": "Latitud",
+"fr": "Latitude"
+},
+{
+"id": "b2-altitude",
+"en": "Altitude",
+"topic": "geography",
+"es": "Altitud",
+"fr": "Altitude"
+},
+{
+"id": "b2-valley",
+"en": "Valley",
+"topic": "geography",
+"es": "Valle",
+"fr": "Vallée"
+},
+{
+"id": "b2-canyon",
+"en": "Canyon",
+"topic": "geography",
+"es": "Cañón",
+"fr": "Canyon"
+},
+{
+"id": "b2-cliff",
+"en": "Cliff",
+"topic": "geography",
+"es": "Acantilado",
+"fr": "Falaise"
+},
+{
+"id": "b2-cave",
+"en": "Cave",
+"topic": "geography",
+"es": "Cueva",
+"fr": "Grotte"
+},
+{
+"id": "b2-plateau",
+"en": "Plateau",
+"topic": "geography",
+"es": "Meseta",
+"fr": "Plateau"
+},
+{
+"id": "b2-peninsula",
+"en": "Peninsula",
+"topic": "geography",
+"es": "Península",
+"fr": "Péninsule"
+},
+{
+"id": "b2-bay",
+"en": "Bay",
+"topic": "geography",
+"es": "Bahía",
+"fr": "Baie"
+},
+{
+"id": "b2-coast",
+"en": "Coast",
+"topic": "geography",
+"es": "Costa",
+"fr": "Côte"
+},
+{
+"id": "b2-shore",
+"en": "Shore",
+"topic": "geography",
+"es": "Orilla",
+"fr": "Rivage"
+},
+{
+"id": "b2-harbor",
+"en": "Harbor",
+"topic": "geography",
+"es": "Puerto",
+"fr": "Port"
+},
+{
+"id": "b2-dune",
+"en": "Dune",
+"topic": "geography",
+"es": "Duna",
+"fr": "Dune"
+},
+{
+"id": "b2-iceberg",
+"en": "Iceberg",
+"topic": "geography",
+"es": "Iceberg",
+"fr": "Iceberg"
+},
+{
+"id": "b2-swamp",
+"en": "Swamp",
+"topic": "geography",
+"es": "Pantano",
+"fr": "Marécage"
+},
+{
+"id": "b2-jungle",
+"en": "Jungle",
+"topic": "geography",
+"es": "Selva",
+"fr": "Jungle"
+},
+{
+"id": "b2-rainforest",
+"en": "Rainforest",
+"topic": "geography",
+"es": "Selva tropical",
+"fr": "Forêt tropicale"
+},
+{
+"id": "b2-savanna",
+"en": "Savanna",
+"topic": "geography",
+"es": "Sabana",
+"fr": "Savane"
+},
+{
+"id": "b2-tundra",
+"en": "Tundra",
+"topic": "geography",
+"es": "Tundra",
+"fr": "Toundra"
+},
+{
+"id": "b2-oasis",
+"en": "Oasis",
+"topic": "geography",
+"es": "Oasis",
+"fr": "Oasis"
+},
+{
+"id": "b2-waterfall",
+"en": "Waterfall",
+"topic": "geography",
+"es": "Cascada",
+"fr": "Cascade"
+},
+{
+"id": "b2-stream",
+"en": "Stream",
+"topic": "geography",
+"es": "Arroyo",
+"fr": "Ruisseau"
+},
+{
+"id": "b2-spring-water",
+"en": "Spring (water)",
+"topic": "geography",
+"es": "Manantial",
+"fr": "Source"
+},
+{
+"id": "b2-reef",
+"en": "Reef",
+"topic": "geography",
+"es": "Arrecife",
+"fr": "Récif"
+},
+{
+"id": "b2-tide",
+"en": "Tide",
+"topic": "geography",
+"es": "Marea",
+"fr": "Marée"
+},
+{
+"id": "b2-current-water",
+"en": "Current (water)",
+"topic": "geography",
+"es": "Corriente",
+"fr": "Courant"
+},
+{
+"id": "b2-horizon",
+"en": "Horizon",
+"topic": "geography",
+"es": "Horizonte",
+"fr": "Horizon"
+},
+{
+"id": "b2-skeleton",
+"en": "Skeleton",
+"topic": "anatomy",
+"es": "Esqueleto",
+"fr": "Squelette"
+},
+{
+"id": "b2-bone",
+"en": "Bone",
+"topic": "anatomy",
+"es": "Hueso",
+"fr": "Os"
+},
+{
+"id": "b2-skull",
+"en": "Skull",
+"topic": "anatomy",
+"es": "Cráneo",
+"fr": "Crâne"
+},
+{
+"id": "b2-spine",
+"en": "Spine",
+"topic": "anatomy",
+"es": "Columna vertebral",
+"fr": "Colonne vertébrale"
+},
+{
+"id": "b2-rib",
+"en": "Rib",
+"topic": "anatomy",
+"es": "Costilla",
+"fr": "Côte"
+},
+{
+"id": "b2-joint",
+"en": "Joint",
+"topic": "anatomy",
+"es": "Articulación",
+"fr": "Articulation"
+},
+{
+"id": "b2-tendon",
+"en": "Tendon",
+"topic": "anatomy",
+"es": "Tendón",
+"fr": "Tendon"
+},
+{
+"id": "b2-nerve",
+"en": "Nerve",
+"topic": "anatomy",
+"es": "Nervio",
+"fr": "Nerf"
+},
+{
+"id": "b2-brain",
+"en": "Brain",
+"topic": "anatomy",
+"es": "Cerebro",
+"fr": "Cerveau"
+},
+{
+"id": "b2-lung",
+"en": "Lung",
+"topic": "anatomy",
+"es": "Pulmón",
+"fr": "Poumon"
+},
+{
+"id": "b2-liver",
+"en": "Liver",
+"topic": "anatomy",
+"es": "Hígado",
+"fr": "Foie"
+},
+{
+"id": "b2-kidney",
+"en": "Kidney",
+"topic": "anatomy",
+"es": "Riñón",
+"fr": "Rein"
+},
+{
+"id": "b2-intestine",
+"en": "Intestine",
+"topic": "anatomy",
+"es": "Intestino",
+"fr": "Intestin"
+},
+{
+"id": "b2-artery",
+"en": "Artery",
+"topic": "anatomy",
+"es": "Arteria",
+"fr": "Artère"
+},
+{
+"id": "b2-vein",
+"en": "Vein",
+"topic": "anatomy",
+"es": "Vena",
+"fr": "Veine"
+},
+{
+"id": "b2-pulse",
+"en": "Pulse",
+"topic": "anatomy",
+"es": "Pulso",
+"fr": "Pouls"
+},
+{
+"id": "b2-wrist",
+"en": "Wrist",
+"topic": "anatomy",
+"es": "Muñeca",
+"fr": "Poignet"
+},
+{
+"id": "b2-ankle",
+"en": "Ankle",
+"topic": "anatomy",
+"es": "Tobillo",
+"fr": "Cheville"
+},
+{
+"id": "b2-elbow",
+"en": "Elbow",
+"topic": "anatomy",
+"es": "Codo",
+"fr": "Coude"
+},
+{
+"id": "b2-thigh",
+"en": "Thigh",
+"topic": "anatomy",
+"es": "Muslo",
+"fr": "Cuisse"
+},
+{
+"id": "b2-heel",
+"en": "Heel",
+"topic": "anatomy",
+"es": "Talón",
+"fr": "Talon"
+},
+{
+"id": "b2-palm",
+"en": "Palm",
+"topic": "anatomy",
+"es": "Palma",
+"fr": "Paume"
+},
+{
+"id": "b2-thumb",
+"en": "Thumb",
+"topic": "anatomy",
+"es": "Pulgar",
+"fr": "Pouce"
+},
+{
+"id": "b2-eyebrow",
+"en": "Eyebrow",
+"topic": "anatomy",
+"es": "Ceja",
+"fr": "Sourcil"
+},
+{
+"id": "b2-eyelash",
+"en": "Eyelash",
+"topic": "anatomy",
+"es": "Pestaña",
+"fr": "Cil"
+},
+{
+"id": "b2-chin",
+"en": "Chin",
+"topic": "anatomy",
+"es": "Barbilla",
+"fr": "Menton"
+},
+{
+"id": "b2-cheek",
+"en": "Cheek",
+"topic": "anatomy",
+"es": "Mejilla",
+"fr": "Joue"
+},
+{
+"id": "b2-forehead",
+"en": "Forehead",
+"topic": "anatomy",
+"es": "Frente",
+"fr": "Front"
+},
+{
+"id": "b2-jaw",
+"en": "Jaw",
+"topic": "anatomy",
+"es": "Mandíbula",
+"fr": "Mâchoire"
+},
+{
+"id": "b2-throat",
+"en": "Throat",
+"topic": "anatomy",
+"es": "Garganta",
+"fr": "Gorge"
+},
+{
+"id": "b2-tongue",
+"en": "Tongue",
+"topic": "anatomy",
+"es": "Lengua",
+"fr": "Langue (organe)"
+},
+{
+"id": "b2-lip",
+"en": "Lip",
+"topic": "anatomy",
+"es": "Labio",
+"fr": "Lèvre"
+},
+{
+"id": "b2-tailor",
+"en": "Tailor",
+"topic": "clothing-fabric",
+"es": "Sastre",
+"fr": "Tailleur"
+},
+{
+"id": "b2-fabric",
+"en": "Fabric",
+"topic": "clothing-fabric",
+"es": "Tela",
+"fr": "Tissu"
+},
+{
+"id": "b2-seam",
+"en": "Seam",
+"topic": "clothing-fabric",
+"es": "Costura",
+"fr": "Couture"
+},
+{
+"id": "b2-zipper",
+"en": "Zipper",
+"topic": "clothing-fabric",
+"es": "Cremallera",
+"fr": "Fermeture éclair"
+},
+{
+"id": "b2-button",
+"en": "Button",
+"topic": "clothing-fabric",
+"es": "Botón",
+"fr": "Bouton"
+},
+{
+"id": "b2-collar",
+"en": "Collar",
+"topic": "clothing-fabric",
+"es": "Cuello (prenda)",
+"fr": "Col"
+},
+{
+"id": "b2-sleeve",
+"en": "Sleeve",
+"topic": "clothing-fabric",
+"es": "Manga",
+"fr": "Manche"
+},
+{
+"id": "b2-hem",
+"en": "Hem",
+"topic": "clothing-fabric",
+"es": "Dobladillo",
+"fr": "Ourlet"
+},
+{
+"id": "b2-pocket",
+"en": "Pocket",
+"topic": "clothing-fabric",
+"es": "Bolsillo",
+"fr": "Poche"
+},
+{
+"id": "b2-lining",
+"en": "Lining",
+"topic": "clothing-fabric",
+"es": "Forro",
+"fr": "Doublure"
+},
+{
+"id": "b2-to-fasten",
+"en": "To fasten",
+"topic": "clothing-fabric",
+"es": "Abrochar",
+"fr": "Attacher"
+},
+{
+"id": "b2-to-unbutton",
+"en": "To unbutton",
+"topic": "clothing-fabric",
+"es": "Desabrochar",
+"fr": "Déboutonner"
+},
+{
+"id": "b2-to-fold",
+"en": "To fold",
+"topic": "clothing-fabric",
+"es": "Doblar (ropa)",
+"fr": "Plier (vêtements)"
+},
+{
+"id": "b2-wardrobe",
+"en": "Wardrobe",
+"topic": "clothing-fabric",
+"es": "Armario",
+"fr": "Armoire"
+},
+{
+"id": "b2-hanger",
+"en": "Hanger",
+"topic": "clothing-fabric",
+"es": "Percha",
+"fr": "Cintre"
+},
+{
+"id": "b2-detergent",
+"en": "Detergent",
+"topic": "clothing-fabric",
+"es": "Detergente",
+"fr": "Lessive"
+},
+{
+"id": "b2-stain",
+"en": "Stain",
+"topic": "clothing-fabric",
+"es": "Mancha",
+"fr": "Tache"
+},
+{
+"id": "b2-to-shrink",
+"en": "To shrink",
+"topic": "clothing-fabric",
+"es": "Encoger",
+"fr": "Rétrécir"
+},
+{
+"id": "b2-to-fade",
+"en": "To fade",
+"topic": "clothing-fabric",
+"es": "Desteñir",
+"fr": "Déteindre"
+},
+{
+"id": "b2-wrinkle",
+"en": "Wrinkle",
+"topic": "clothing-fabric",
+"es": "Arruga",
+"fr": "Pli (froissure)"
+},
+{
+"id": "b2-formal-wear",
+"en": "Formal wear",
+"topic": "clothing-fabric",
+"es": "Ropa formal",
+"fr": "Tenue de soirée"
+},
+{
+"id": "b2-casual-wear",
+"en": "Casual wear",
+"topic": "clothing-fabric",
+"es": "Ropa informal",
+"fr": "Tenue décontractée"
+},
+{
+"id": "b2-uniform",
+"en": "Uniform",
+"topic": "clothing-fabric",
+"es": "Uniforme",
+"fr": "Uniforme"
+},
+{
+"id": "b2-suit",
+"en": "Suit",
+"topic": "clothing-fabric",
+"es": "Traje",
+"fr": "Costume"
+},
+{
+"id": "b2-tie",
+"en": "Tie",
+"topic": "clothing-fabric",
+"es": "Corbata",
+"fr": "Cravate"
+},
+{
+"id": "b2-high-heels",
+"en": "High heels",
+"topic": "clothing-fabric",
+"es": "Tacones",
+"fr": "Talons hauts"
+},
+{
+"id": "b2-sneakers",
+"en": "Sneakers",
+"topic": "clothing-fabric",
+"es": "Zapatillas",
+"fr": "Baskets"
+},
+{
+"id": "b2-boots",
+"en": "Boots",
+"topic": "clothing-fabric",
+"es": "Botas",
+"fr": "Bottes"
+},
+{
+"id": "b2-sandals",
+"en": "Sandals",
+"topic": "clothing-fabric",
+"es": "Sandalias",
+"fr": "Sandales"
+},
+{
+"id": "b2-slippers",
+"en": "Slippers",
+"topic": "clothing-fabric",
+"es": "Pantuflas",
+"fr": "Chaussons"
+},
+{
+"id": "b2-pajamas",
+"en": "Pajamas",
+"topic": "clothing-fabric",
+"es": "Pijama",
+"fr": "Pyjama"
+},
+{
+"id": "b2-underwear",
+"en": "Underwear",
+"topic": "clothing-fabric",
+"es": "Ropa interior",
+"fr": "Sous-vêtements"
+},
+{
+"id": "b2-belt",
+"en": "Belt",
+"topic": "clothing-fabric",
+"es": "Cinturón",
+"fr": "Ceinture"
+},
+{
+"id": "b2-concept",
+"en": "Concept",
+"topic": "abstract-concepts",
+"es": "Concepto",
+"fr": "Concept"
+},
+{
+"id": "b2-notion",
+"en": "Notion",
+"topic": "abstract-concepts",
+"es": "Noción",
+"fr": "Notion"
+},
+{
+"id": "b2-aspect",
+"en": "Aspect",
+"topic": "abstract-concepts",
+"es": "Aspecto",
+"fr": "Aspect"
+},
+{
+"id": "b2-factor",
+"en": "Factor",
+"topic": "abstract-concepts",
+"es": "Factor",
+"fr": "Facteur"
+},
+{
+"id": "b2-feature",
+"en": "Feature",
+"topic": "abstract-concepts",
+"es": "Característica",
+"fr": "Caractéristique"
+},
+{
+"id": "b2-element",
+"en": "Element",
+"topic": "abstract-concepts",
+"es": "Elemento",
+"fr": "Élément"
+},
+{
+"id": "b2-component",
+"en": "Component",
+"topic": "abstract-concepts",
+"es": "Componente",
+"fr": "Composant"
+},
+{
+"id": "b2-structure",
+"en": "Structure",
+"topic": "abstract-concepts",
+"es": "Estructura",
+"fr": "Structure"
+},
+{
+"id": "b2-function",
+"en": "Function",
+"topic": "abstract-concepts",
+"es": "Función",
+"fr": "Fonction"
+},
+{
+"id": "b2-process",
+"en": "Process",
+"topic": "abstract-concepts",
+"es": "Proceso",
+"fr": "Processus"
+},
+{
+"id": "b2-procedure",
+"en": "Procedure",
+"topic": "abstract-concepts",
+"es": "Procedimiento",
+"fr": "Procédure"
+},
+{
+"id": "b2-method",
+"en": "Method",
+"topic": "abstract-concepts",
+"es": "Método",
+"fr": "Méthode"
+},
+{
+"id": "b2-approach",
+"en": "Approach",
+"topic": "abstract-concepts",
+"es": "Enfoque",
+"fr": "Approche"
+},
+{
+"id": "b2-technique",
+"en": "Technique",
+"topic": "abstract-concepts",
+"es": "Técnica",
+"fr": "Technique"
+},
+{
+"id": "b2-framework",
+"en": "Framework",
+"topic": "abstract-concepts",
+"es": "Marco",
+"fr": "Cadre"
+},
+{
+"id": "b2-criterion",
+"en": "Criterion",
+"topic": "abstract-concepts",
+"es": "Criterio",
+"fr": "Critère"
+},
+{
+"id": "b2-standard",
+"en": "Standard",
+"topic": "abstract-concepts",
+"es": "Estándar",
+"fr": "Norme (standard)"
+},
+{
+"id": "b2-norm",
+"en": "Norm",
+"topic": "abstract-concepts",
+"es": "Norma",
+"fr": "Norme"
+},
+{
+"id": "b2-exception",
+"en": "Exception",
+"topic": "abstract-concepts",
+"es": "Excepción",
+"fr": "Exception"
+},
+{
+"id": "b2-phase",
+"en": "Phase",
+"topic": "abstract-concepts",
+"es": "Fase",
+"fr": "Phase"
+},
+{
+"id": "b2-sequence",
+"en": "Sequence",
+"topic": "abstract-concepts",
+"es": "Secuencia",
+"fr": "Séquence"
+},
+{
+"id": "b2-outcome",
+"en": "Outcome",
+"topic": "abstract-concepts",
+"es": "Resultado",
+"fr": "Résultat (issue)"
+},
+{
+"id": "b2-consequence",
+"en": "Consequence",
+"topic": "abstract-concepts",
+"es": "Consecuencia",
+"fr": "Conséquence"
+},
+{
+"id": "b2-impact",
+"en": "Impact",
+"topic": "abstract-concepts",
+"es": "Impacto",
+"fr": "Impact"
+},
+{
+"id": "b2-implication",
+"en": "Implication",
+"topic": "abstract-concepts",
+"es": "Implicación",
+"fr": "Implication"
+},
+{
+"id": "b2-significance",
+"en": "Significance",
+"topic": "abstract-concepts",
+"es": "Importancia (significado)",
+"fr": "Signification (importance)"
+},
+{
+"id": "b2-context",
+"en": "Context",
+"topic": "abstract-concepts",
+"es": "Contexto",
+"fr": "Contexte"
+},
+{
+"id": "b2-scope",
+"en": "Scope",
+"topic": "abstract-concepts",
+"es": "Alcance",
+"fr": "Portée"
+},
+{
+"id": "b2-scale-magnitude",
+"en": "Scale (magnitude)",
+"topic": "abstract-concepts",
+"es": "Escala",
+"fr": "Échelle"
+},
+{
+"id": "b2-dimension",
+"en": "Dimension",
+"topic": "abstract-concepts",
+"es": "Dimensión",
+"fr": "Dimension"
+},
+{
+"id": "b2-proportion",
+"en": "Proportion",
+"topic": "abstract-concepts",
+"es": "Proporción",
+"fr": "Proportion"
+},
+{
+"id": "b2-ratio",
+"en": "Ratio",
+"topic": "abstract-concepts",
+"es": "Razón (proporción)",
+"fr": "Rapport (ratio)"
+},
+{
+"id": "b2-barely",
+"en": "Barely",
+"topic": "degree-adverbs",
+"es": "Apenas",
+"fr": "À peine"
+},
+{
+"id": "b2-hardly",
+"en": "Hardly",
+"topic": "degree-adverbs",
+"es": "Casi no",
+"fr": "Presque pas"
+},
+{
+"id": "b2-merely",
+"en": "Merely",
+"topic": "degree-adverbs",
+"es": "Meramente",
+"fr": "Simplement"
+},
+{
+"id": "b2-utterly",
+"en": "Utterly",
+"topic": "degree-adverbs",
+"es": "Totalmente",
+"fr": "Totalement"
+},
+{
+"id": "b2-thoroughly",
+"en": "Thoroughly",
+"topic": "degree-adverbs",
+"es": "A fondo",
+"fr": "À fond"
+},
+{
+"id": "b2-fairly",
+"en": "Fairly",
+"topic": "degree-adverbs",
+"es": "Bastante",
+"fr": "Assez"
+},
+{
+"id": "b2-rather",
+"en": "Rather",
+"topic": "degree-adverbs",
+"es": "Más bien",
+"fr": "Plutôt"
+},
+{
+"id": "b2-somewhat",
+"en": "Somewhat",
+"topic": "degree-adverbs",
+"es": "Algo",
+"fr": "Quelque peu"
+},
+{
+"id": "b2-slightly",
+"en": "Slightly",
+"topic": "degree-adverbs",
+"es": "Ligeramente",
+"fr": "Légèrement"
+},
+{
+"id": "b2-considerably",
+"en": "Considerably",
+"topic": "degree-adverbs",
+"es": "Considerablemente",
+"fr": "Considérablement"
+},
+{
+"id": "b2-significantly",
+"en": "Significantly",
+"topic": "degree-adverbs",
+"es": "Significativamente",
+"fr": "Sensiblement"
+},
+{
+"id": "b2-roughly",
+"en": "Roughly",
+"topic": "degree-adverbs",
+"es": "Aproximadamente",
+"fr": "Environ"
+},
+{
+"id": "b2-precisely",
+"en": "Precisely",
+"topic": "degree-adverbs",
+"es": "Precisamente",
+"fr": "Précisément"
+},
+{
+"id": "b2-virtually",
+"en": "Virtually",
+"topic": "degree-adverbs",
+"es": "Prácticamente",
+"fr": "Pratiquement"
+},
+{
+"id": "b2-entirely",
+"en": "Entirely",
+"topic": "degree-adverbs",
+"es": "Enteramente",
+"fr": "Entièrement"
+},
+{
+"id": "b2-partially",
+"en": "Partially",
+"topic": "degree-adverbs",
+"es": "Parcialmente",
+"fr": "Partiellement"
+},
+{
+"id": "b2-mostly",
+"en": "Mostly",
+"topic": "degree-adverbs",
+"es": "Mayormente",
+"fr": "Surtout (principalement)"
+},
+{
+"id": "b2-increasingly",
+"en": "Increasingly",
+"topic": "degree-adverbs",
+"es": "Cada vez más",
+"fr": "De plus en plus"
+},
+{
+"id": "b2-gradually",
+"en": "Gradually",
+"topic": "degree-adverbs",
+"es": "Gradualmente",
+"fr": "Progressivement"
+},
+{
+"id": "b2-rapidly",
+"en": "Rapidly",
+"topic": "degree-adverbs",
+"es": "Rápidamente",
+"fr": "Rapidement"
+},
+{
+"id": "b2-steadily",
+"en": "Steadily",
+"topic": "degree-adverbs",
+"es": "Constantemente",
+"fr": "Régulièrement"
+},
+{
+"id": "b2-abruptly",
+"en": "Abruptly",
+"topic": "degree-adverbs",
+"es": "Abruptamente",
+"fr": "Brusquement"
+},
+{
+"id": "b2-ultimately",
+"en": "Ultimately",
+"topic": "degree-adverbs",
+"es": "En última instancia",
+"fr": "En fin de compte"
+},
+{
+"id": "b2-altogether",
+"en": "Altogether",
+"topic": "degree-adverbs",
+"es": "En total",
+"fr": "Au total"
+},
+{
+"id": "b2-whatsoever",
+"en": "Whatsoever",
+"topic": "degree-adverbs",
+"es": "En absoluto",
+"fr": "Que ce soit"
+},
+{
+"id": "b2-nonetheless",
+"en": "Nonetheless",
+"topic": "degree-adverbs",
+"es": "Aun así",
+"fr": "Néanmoins (pourtant)"
+},
+{
+"id": "b2-deliberately",
+"en": "Deliberately",
+"topic": "degree-adverbs",
+"es": "Deliberadamente",
+"fr": "Délibérément"
+},
+{
+"id": "b2-reluctantly",
+"en": "Reluctantly",
+"topic": "degree-adverbs",
+"es": "De mala gana",
+"fr": "À contrecœur"
+},
+{
+"id": "b2-knitting",
+"en": "Knitting",
+"topic": "hobbies-making",
+"es": "Tejer (punto)",
+"fr": "Tricot"
+},
+{
+"id": "b2-sewing",
+"en": "Sewing",
+"topic": "hobbies-making",
+"es": "Costura (coser)",
+"fr": "Couture (coudre)"
+},
+{
+"id": "b2-pottery",
+"en": "Pottery",
+"topic": "hobbies-making",
+"es": "Cerámica",
+"fr": "Poterie"
+},
+{
+"id": "b2-woodworking",
+"en": "Woodworking",
+"topic": "hobbies-making",
+"es": "Carpintería",
+"fr": "Menuiserie"
+},
+{
+"id": "b2-gardening",
+"en": "Gardening",
+"topic": "hobbies-making",
+"es": "Jardinería",
+"fr": "Jardinage"
+},
+{
+"id": "b2-birdwatching",
+"en": "Birdwatching",
+"topic": "hobbies-making",
+"es": "Observación de aves",
+"fr": "Observation des oiseaux"
+},
+{
+"id": "b2-kayaking",
+"en": "Kayaking",
+"topic": "hobbies-making",
+"es": "Kayak",
+"fr": "Kayak"
+},
+{
+"id": "b2-rock-climbing",
+"en": "Rock climbing",
+"topic": "hobbies-making",
+"es": "Escalada",
+"fr": "Escalade"
+},
+{
+"id": "b2-martial-arts",
+"en": "Martial arts",
+"topic": "hobbies-making",
+"es": "Artes marciales",
+"fr": "Arts martiaux"
+},
+{
+"id": "b2-boxing",
+"en": "Boxing",
+"topic": "hobbies-making",
+"es": "Boxeo",
+"fr": "Boxe"
+},
+{
+"id": "b2-archery",
+"en": "Archery",
+"topic": "hobbies-making",
+"es": "Tiro con arco",
+"fr": "Tir à l’arc"
+},
+{
+"id": "b2-bowling",
+"en": "Bowling",
+"topic": "hobbies-making",
+"es": "Bolos",
+"fr": "Bowling"
+},
+{
+"id": "b2-karaoke",
+"en": "Karaoke",
+"topic": "hobbies-making",
+"es": "Karaoke",
+"fr": "Karaoké"
+},
+{
+"id": "b2-esports",
+"en": "Esports",
+"topic": "hobbies-making",
+"es": "Deportes electrónicos",
+"fr": "E-sport"
+},
+{
+"id": "b2-collectible",
+"en": "Collectible",
+"topic": "hobbies-making",
+"es": "Objeto de colección",
+"fr": "Objet de collection"
+},
+{
+"id": "b2-cosplay",
+"en": "Cosplay",
+"topic": "hobbies-making",
+"es": "Cosplay",
+"fr": "Cosplay"
+},
+{
+"id": "b2-3d-printing",
+"en": "3D printing",
+"topic": "hobbies-making",
+"es": "Impresión 3D",
+"fr": "Impression 3D"
+},
+{
+"id": "b2-tabletop-role-playing-game",
+"en": "Tabletop role-playing game",
+"topic": "hobbies-making",
+"es": "Juego de rol de mesa",
+"fr": "Jeu de rôle sur table"
+},
+{
+"id": "b2-miniature-figure",
+"en": "Miniature (figure)",
+"topic": "hobbies-making",
+"es": "Miniatura",
+"fr": "Figurine"
+},
+{
+"id": "b2-dice",
+"en": "Dice",
+"topic": "hobbies-making",
+"es": "Dados",
+"fr": "Dés"
+},
+{
+"id": "b2-campaign-game",
+"en": "Campaign (game)",
+"topic": "hobbies-making",
+"es": "Campaña (juego)",
+"fr": "Campagne (jeu)"
+},
+{
+"id": "b2-hobbyist",
+"en": "Hobbyist",
+"topic": "hobbies-making",
+"es": "Aficionado (hobby)",
+"fr": "Amateur (passionné)"
+},
+{
+"id": "b2-craft",
+"en": "Craft",
+"topic": "hobbies-making",
+"es": "Artesanía",
+"fr": "Artisanat"
+},
+{
+"id": "b2-workbench",
+"en": "Workbench",
+"topic": "hobbies-making",
+"es": "Banco de trabajo",
+"fr": "Établi"
+},
+{
+"id": "b2-glue",
+"en": "Glue",
+"topic": "hobbies-making",
+"es": "Pegamento",
+"fr": "Colle"
+},
+{
+"id": "b2-sandpaper",
+"en": "Sandpaper",
+"topic": "hobbies-making",
+"es": "Papel de lija",
+"fr": "Papier de verre"
+},
+{
+"id": "b2-paintbrush",
+"en": "Paintbrush",
+"topic": "hobbies-making",
+"es": "Pincel",
+"fr": "Pinceau"
+},
+{
+"id": "b2-prototype",
+"en": "Prototype",
+"topic": "hobbies-making",
+"es": "Prototipo",
+"fr": "Prototype"
+}
+]

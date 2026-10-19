@@ -1,0 +1,3803 @@
+[
+{
+"id": "a1-hello",
+"en": "Hello",
+"topic": "greetings",
+"es": "Hola",
+"fr": "Bonjour"
+},
+{
+"id": "a1-goodbye",
+"en": "Goodbye",
+"topic": "greetings",
+"es": "Adiós",
+"fr": "Au revoir"
+},
+{
+"id": "a1-please",
+"en": "Please",
+"topic": "greetings",
+"es": "Por favor",
+"fr": "S’il vous plaît"
+},
+{
+"id": "a1-thank-you",
+"en": "Thank you",
+"topic": "greetings",
+"es": "Gracias",
+"fr": "Merci"
+},
+{
+"id": "a1-excuse-me",
+"en": "Excuse me",
+"topic": "greetings",
+"es": "Disculpe",
+"fr": "Excusez-moi"
+},
+{
+"id": "a1-sorry",
+"en": "Sorry",
+"topic": "greetings",
+"es": "Lo siento",
+"fr": "Désolé"
+},
+{
+"id": "a1-yes",
+"en": "Yes",
+"topic": "people",
+"es": "Sí",
+"fr": "Oui"
+},
+{
+"id": "a1-no",
+"en": "No",
+"topic": "people",
+"es": "No",
+"fr": "Non"
+},
+{
+"id": "a1-my-name-is-alex",
+"en": "My name is Alex",
+"topic": "people",
+"es": "Me llamo Alex",
+"fr": "Je m’appelle Alex"
+},
+{
+"id": "a1-whats-your-name",
+"en": "What’s your name?",
+"topic": "people",
+"es": "¿Cómo te llamas?",
+"fr": "Comment tu t’appelles ?"
+},
+{
+"id": "a1-nice-to-meet-you",
+"en": "Nice to meet you",
+"topic": "people",
+"es": "Mucho gusto",
+"fr": "Enchanté"
+},
+{
+"id": "a1-how-are-you",
+"en": "How are you?",
+"topic": "people",
+"es": "¿Cómo estás?",
+"fr": "Comment ça va ?"
+},
+{
+"id": "a1-mother",
+"en": "Mother",
+"topic": "family",
+"es": "Madre",
+"fr": "Mère"
+},
+{
+"id": "a1-father",
+"en": "Father",
+"topic": "family",
+"es": "Padre",
+"fr": "Père"
+},
+{
+"id": "a1-sister",
+"en": "Sister",
+"topic": "family",
+"es": "Hermana",
+"fr": "Sœur"
+},
+{
+"id": "a1-brother",
+"en": "Brother",
+"topic": "family",
+"es": "Hermano",
+"fr": "Frère"
+},
+{
+"id": "a1-friend",
+"en": "Friend",
+"topic": "family",
+"es": "Amigo",
+"fr": "Ami"
+},
+{
+"id": "a1-child",
+"en": "Child",
+"topic": "family",
+"es": "Niño",
+"fr": "Enfant"
+},
+{
+"id": "a1-today",
+"en": "Today",
+"topic": "time",
+"es": "Hoy",
+"fr": "Aujourd’hui"
+},
+{
+"id": "a1-tomorrow",
+"en": "Tomorrow",
+"topic": "time",
+"es": "Mañana",
+"fr": "Demain"
+},
+{
+"id": "a1-yesterday",
+"en": "Yesterday",
+"topic": "time",
+"es": "Ayer",
+"fr": "Hier"
+},
+{
+"id": "a1-now",
+"en": "Now",
+"topic": "time",
+"es": "Ahora",
+"fr": "Maintenant"
+},
+{
+"id": "a1-morning",
+"en": "Morning",
+"topic": "time",
+"es": "Por la mañana",
+"fr": "Le matin"
+},
+{
+"id": "a1-night",
+"en": "Night",
+"topic": "time",
+"es": "Por la noche",
+"fr": "Le soir"
+},
+{
+"id": "a1-house",
+"en": "House",
+"topic": "home-places",
+"es": "Casa",
+"fr": "Maison"
+},
+{
+"id": "a1-where-is-it",
+"en": "Where is it?",
+"topic": "home-places",
+"es": "¿Dónde está?",
+"fr": "Où est-ce ?"
+},
+{
+"id": "a1-left",
+"en": "Left",
+"topic": "home-places",
+"es": "Izquierda",
+"fr": "Gauche"
+},
+{
+"id": "a1-right",
+"en": "Right",
+"topic": "home-places",
+"es": "Derecha",
+"fr": "Droite"
+},
+{
+"id": "a1-store",
+"en": "Store",
+"topic": "home-places",
+"es": "Tienda",
+"fr": "Magasin"
+},
+{
+"id": "a1-bathroom",
+"en": "Bathroom",
+"topic": "home-places",
+"es": "Baño",
+"fr": "Toilettes"
+},
+{
+"id": "a1-water",
+"en": "Water",
+"topic": "food-drink",
+"es": "Agua",
+"fr": "Eau"
+},
+{
+"id": "a1-bread",
+"en": "Bread",
+"topic": "food-drink",
+"es": "Pan",
+"fr": "Pain"
+},
+{
+"id": "a1-coffee",
+"en": "Coffee",
+"topic": "food-drink",
+"es": "Café",
+"fr": "Café"
+},
+{
+"id": "a1-tea",
+"en": "Tea",
+"topic": "food-drink",
+"es": "Té",
+"fr": "Thé"
+},
+{
+"id": "a1-delicious",
+"en": "Delicious",
+"topic": "food-drink",
+"es": "Delicioso",
+"fr": "Délicieux"
+},
+{
+"id": "a1-spicy",
+"en": "Spicy",
+"topic": "food-drink",
+"es": "Picante",
+"fr": "Épicé"
+},
+{
+"id": "a1-good-morning",
+"en": "Good morning",
+"topic": "greetings",
+"es": "Buenos días",
+"fr": "Bonjour"
+},
+{
+"id": "a1-good-evening",
+"en": "Good evening",
+"topic": "greetings",
+"es": "Buenas noches",
+"fr": "Bonsoir"
+},
+{
+"id": "a1-good-night",
+"en": "Good night",
+"topic": "greetings",
+"es": "Buenas noches (al dormir)",
+"fr": "Bonne nuit"
+},
+{
+"id": "a1-youre-welcome",
+"en": "You’re welcome",
+"topic": "greetings",
+"es": "De nada",
+"fr": "De rien"
+},
+{
+"id": "a1-see-you-soon",
+"en": "See you soon",
+"topic": "greetings",
+"es": "Hasta pronto",
+"fr": "À bientôt"
+},
+{
+"id": "a1-see-you-tomorrow",
+"en": "See you tomorrow",
+"topic": "greetings",
+"es": "Hasta mañana",
+"fr": "À demain"
+},
+{
+"id": "a1-welcome",
+"en": "Welcome",
+"topic": "greetings",
+"es": "Bienvenido",
+"fr": "Bienvenue"
+},
+{
+"id": "a1-cheers",
+"en": "Cheers!",
+"topic": "greetings",
+"es": "¡Salud!",
+"fr": "Santé !"
+},
+{
+"id": "a1-congratulations",
+"en": "Congratulations",
+"topic": "greetings",
+"es": "Felicidades",
+"fr": "Félicitations"
+},
+{
+"id": "a1-happy-birthday",
+"en": "Happy birthday",
+"topic": "greetings",
+"es": "Feliz cumpleaños",
+"fr": "Joyeux anniversaire"
+},
+{
+"id": "a1-good-luck",
+"en": "Good luck",
+"topic": "greetings",
+"es": "Buena suerte",
+"fr": "Bonne chance"
+},
+{
+"id": "a1-have-a-nice-day",
+"en": "Have a nice day",
+"topic": "greetings",
+"es": "Que tengas un buen día",
+"fr": "Bonne journée"
+},
+{
+"id": "a1-take-care",
+"en": "Take care",
+"topic": "greetings",
+"es": "Cuídate",
+"fr": "Prends soin de toi"
+},
+{
+"id": "a1-bless-you",
+"en": "Bless you",
+"topic": "greetings",
+"es": "Salud",
+"fr": "À tes souhaits"
+},
+{
+"id": "a1-enjoy-your-meal",
+"en": "Enjoy your meal",
+"topic": "greetings",
+"es": "Buen provecho",
+"fr": "Bon appétit"
+},
+{
+"id": "a1-nice-to-see-you",
+"en": "Nice to see you",
+"topic": "greetings",
+"es": "Me alegra verte",
+"fr": "Content de te voir"
+},
+{
+"id": "a1-long-time-no-see",
+"en": "Long time no see",
+"topic": "greetings",
+"es": "Cuánto tiempo",
+"fr": "Ça fait longtemps"
+},
+{
+"id": "a1-goodbye-for-now",
+"en": "Goodbye for now",
+"topic": "greetings",
+"es": "Nos vemos",
+"fr": "À bientôt"
+},
+{
+"id": "a1-i",
+"en": "I",
+"topic": "people",
+"es": "Yo",
+"fr": "Je"
+},
+{
+"id": "a1-you",
+"en": "You",
+"topic": "people",
+"es": "Tú",
+"fr": "Tu"
+},
+{
+"id": "a1-he",
+"en": "He",
+"topic": "people",
+"es": "Él",
+"fr": "Il"
+},
+{
+"id": "a1-she",
+"en": "She",
+"topic": "people",
+"es": "Ella",
+"fr": "Elle"
+},
+{
+"id": "a1-we",
+"en": "We",
+"topic": "people",
+"es": "Nosotros",
+"fr": "Nous"
+},
+{
+"id": "a1-they",
+"en": "They",
+"topic": "people",
+"es": "Ellos",
+"fr": "Ils"
+},
+{
+"id": "a1-man",
+"en": "Man",
+"topic": "people",
+"es": "Hombre",
+"fr": "Homme"
+},
+{
+"id": "a1-woman",
+"en": "Woman",
+"topic": "people",
+"es": "Mujer",
+"fr": "Femme"
+},
+{
+"id": "a1-boy",
+"en": "Boy",
+"topic": "people",
+"es": "Niño",
+"fr": "Garçon"
+},
+{
+"id": "a1-girl",
+"en": "Girl",
+"topic": "people",
+"es": "Niña",
+"fr": "Fille"
+},
+{
+"id": "a1-person",
+"en": "Person",
+"topic": "people",
+"es": "Persona",
+"fr": "Personne"
+},
+{
+"id": "a1-people",
+"en": "People",
+"topic": "people",
+"es": "Gente",
+"fr": "Gens"
+},
+{
+"id": "a1-name",
+"en": "Name",
+"topic": "people",
+"es": "Nombre",
+"fr": "Nom"
+},
+{
+"id": "a1-mister",
+"en": "Mister",
+"topic": "people",
+"es": "Señor",
+"fr": "Monsieur"
+},
+{
+"id": "a1-madam",
+"en": "Madam",
+"topic": "people",
+"es": "Señora",
+"fr": "Madame"
+},
+{
+"id": "a1-im-fine",
+"en": "I’m fine",
+"topic": "people",
+"es": "Estoy bien",
+"fr": "Je vais bien"
+},
+{
+"id": "a1-and-you",
+"en": "And you?",
+"topic": "people",
+"es": "¿Y tú?",
+"fr": "Et toi ?"
+},
+{
+"id": "a1-where-are-you-from",
+"en": "Where are you from?",
+"topic": "people",
+"es": "¿De dónde eres?",
+"fr": "Tu viens d’où ?"
+},
+{
+"id": "a1-im-from-the-united-states",
+"en": "I’m from the United States",
+"topic": "people",
+"es": "Soy de Estados Unidos",
+"fr": "Je viens des États-Unis"
+},
+{
+"id": "a1-friend-female",
+"en": "Friend (female)",
+"topic": "people",
+"es": "Amiga",
+"fr": "Amie"
+},
+{
+"id": "a1-family",
+"en": "Family",
+"topic": "family",
+"es": "Familia",
+"fr": "Famille"
+},
+{
+"id": "a1-parents",
+"en": "Parents",
+"topic": "family",
+"es": "Padres",
+"fr": "Parents"
+},
+{
+"id": "a1-son",
+"en": "Son",
+"topic": "family",
+"es": "Hijo",
+"fr": "Fils"
+},
+{
+"id": "a1-daughter",
+"en": "Daughter",
+"topic": "family",
+"es": "Hija",
+"fr": "Fille"
+},
+{
+"id": "a1-husband",
+"en": "Husband",
+"topic": "family",
+"es": "Esposo",
+"fr": "Mari"
+},
+{
+"id": "a1-wife",
+"en": "Wife",
+"topic": "family",
+"es": "Esposa",
+"fr": "Femme (épouse)"
+},
+{
+"id": "a1-grandmother",
+"en": "Grandmother",
+"topic": "family",
+"es": "Abuela",
+"fr": "Grand-mère"
+},
+{
+"id": "a1-grandfather",
+"en": "Grandfather",
+"topic": "family",
+"es": "Abuelo",
+"fr": "Grand-père"
+},
+{
+"id": "a1-baby",
+"en": "Baby",
+"topic": "family",
+"es": "Bebé",
+"fr": "Bébé"
+},
+{
+"id": "a1-uncle",
+"en": "Uncle",
+"topic": "family",
+"es": "Tío",
+"fr": "Oncle"
+},
+{
+"id": "a1-aunt",
+"en": "Aunt",
+"topic": "family",
+"es": "Tía",
+"fr": "Tante"
+},
+{
+"id": "a1-cousin",
+"en": "Cousin",
+"topic": "family",
+"es": "Primo",
+"fr": "Cousin"
+},
+{
+"id": "a1-boyfriend",
+"en": "Boyfriend",
+"topic": "family",
+"es": "Novio",
+"fr": "Copain"
+},
+{
+"id": "a1-girlfriend",
+"en": "Girlfriend",
+"topic": "family",
+"es": "Novia",
+"fr": "Copine"
+},
+{
+"id": "a1-neighbor",
+"en": "Neighbor",
+"topic": "family",
+"es": "Vecino",
+"fr": "Voisin"
+},
+{
+"id": "a1-children",
+"en": "Children",
+"topic": "family",
+"es": "Niños",
+"fr": "Enfants"
+},
+{
+"id": "a1-older-brother",
+"en": "Older brother",
+"topic": "family",
+"es": "Hermano mayor",
+"fr": "Grand frère"
+},
+{
+"id": "a1-younger-sister",
+"en": "Younger sister",
+"topic": "family",
+"es": "Hermana menor",
+"fr": "Petite sœur"
+},
+{
+"id": "a1-pet",
+"en": "Pet",
+"topic": "family",
+"es": "Mascota",
+"fr": "Animal de compagnie"
+},
+{
+"id": "a1-married",
+"en": "Married",
+"topic": "family",
+"es": "Casado",
+"fr": "Marié"
+},
+{
+"id": "a1-one",
+"en": "One",
+"topic": "numbers-1",
+"es": "Uno",
+"fr": "Un"
+},
+{
+"id": "a1-two",
+"en": "Two",
+"topic": "numbers-1",
+"es": "Dos",
+"fr": "Deux"
+},
+{
+"id": "a1-three",
+"en": "Three",
+"topic": "numbers-1",
+"es": "Tres",
+"fr": "Trois"
+},
+{
+"id": "a1-four",
+"en": "Four",
+"topic": "numbers-1",
+"es": "Cuatro",
+"fr": "Quatre"
+},
+{
+"id": "a1-five",
+"en": "Five",
+"topic": "numbers-1",
+"es": "Cinco",
+"fr": "Cinq"
+},
+{
+"id": "a1-six",
+"en": "Six",
+"topic": "numbers-1",
+"es": "Seis",
+"fr": "Six"
+},
+{
+"id": "a1-seven",
+"en": "Seven",
+"topic": "numbers-1",
+"es": "Siete",
+"fr": "Sept"
+},
+{
+"id": "a1-eight",
+"en": "Eight",
+"topic": "numbers-1",
+"es": "Ocho",
+"fr": "Huit"
+},
+{
+"id": "a1-nine",
+"en": "Nine",
+"topic": "numbers-1",
+"es": "Nueve",
+"fr": "Neuf"
+},
+{
+"id": "a1-ten",
+"en": "Ten",
+"topic": "numbers-1",
+"es": "Diez",
+"fr": "Dix"
+},
+{
+"id": "a1-eleven",
+"en": "Eleven",
+"topic": "numbers-1",
+"es": "Once",
+"fr": "Onze"
+},
+{
+"id": "a1-twelve",
+"en": "Twelve",
+"topic": "numbers-1",
+"es": "Doce",
+"fr": "Douze"
+},
+{
+"id": "a1-thirteen",
+"en": "Thirteen",
+"topic": "numbers-1",
+"es": "Trece",
+"fr": "Treize"
+},
+{
+"id": "a1-fourteen",
+"en": "Fourteen",
+"topic": "numbers-1",
+"es": "Catorce",
+"fr": "Quatorze"
+},
+{
+"id": "a1-fifteen",
+"en": "Fifteen",
+"topic": "numbers-1",
+"es": "Quince",
+"fr": "Quinze"
+},
+{
+"id": "a1-sixteen",
+"en": "Sixteen",
+"topic": "numbers-1",
+"es": "Dieciséis",
+"fr": "Seize"
+},
+{
+"id": "a1-seventeen",
+"en": "Seventeen",
+"topic": "numbers-1",
+"es": "Diecisiete",
+"fr": "Dix-sept"
+},
+{
+"id": "a1-eighteen",
+"en": "Eighteen",
+"topic": "numbers-1",
+"es": "Dieciocho",
+"fr": "Dix-huit"
+},
+{
+"id": "a1-nineteen",
+"en": "Nineteen",
+"topic": "numbers-1",
+"es": "Diecinueve",
+"fr": "Dix-neuf"
+},
+{
+"id": "a1-twenty",
+"en": "Twenty",
+"topic": "numbers-1",
+"es": "Veinte",
+"fr": "Vingt"
+},
+{
+"id": "a1-zero",
+"en": "Zero",
+"topic": "numbers-2",
+"es": "Cero",
+"fr": "Zéro"
+},
+{
+"id": "a1-thirty",
+"en": "Thirty",
+"topic": "numbers-2",
+"es": "Treinta",
+"fr": "Trente"
+},
+{
+"id": "a1-forty",
+"en": "Forty",
+"topic": "numbers-2",
+"es": "Cuarenta",
+"fr": "Quarante"
+},
+{
+"id": "a1-fifty",
+"en": "Fifty",
+"topic": "numbers-2",
+"es": "Cincuenta",
+"fr": "Cinquante"
+},
+{
+"id": "a1-sixty",
+"en": "Sixty",
+"topic": "numbers-2",
+"es": "Sesenta",
+"fr": "Soixante"
+},
+{
+"id": "a1-seventy",
+"en": "Seventy",
+"topic": "numbers-2",
+"es": "Setenta",
+"fr": "Soixante-dix"
+},
+{
+"id": "a1-eighty",
+"en": "Eighty",
+"topic": "numbers-2",
+"es": "Ochenta",
+"fr": "Quatre-vingts"
+},
+{
+"id": "a1-ninety",
+"en": "Ninety",
+"topic": "numbers-2",
+"es": "Noventa",
+"fr": "Quatre-vingt-dix"
+},
+{
+"id": "a1-one-hundred",
+"en": "One hundred",
+"topic": "numbers-2",
+"es": "Cien",
+"fr": "Cent"
+},
+{
+"id": "a1-one-thousand",
+"en": "One thousand",
+"topic": "numbers-2",
+"es": "Mil",
+"fr": "Mille"
+},
+{
+"id": "a1-one-million",
+"en": "One million",
+"topic": "numbers-2",
+"es": "Un millón",
+"fr": "Un million"
+},
+{
+"id": "a1-first",
+"en": "First",
+"topic": "numbers-2",
+"es": "Primero",
+"fr": "Premier"
+},
+{
+"id": "a1-second",
+"en": "Second",
+"topic": "numbers-2",
+"es": "Segundo",
+"fr": "Deuxième"
+},
+{
+"id": "a1-third",
+"en": "Third",
+"topic": "numbers-2",
+"es": "Tercero",
+"fr": "Troisième"
+},
+{
+"id": "a1-half",
+"en": "Half",
+"topic": "numbers-2",
+"es": "Mitad",
+"fr": "Moitié"
+},
+{
+"id": "a1-many",
+"en": "Many",
+"topic": "numbers-2",
+"es": "Muchos",
+"fr": "Beaucoup"
+},
+{
+"id": "a1-few",
+"en": "Few",
+"topic": "numbers-2",
+"es": "Pocos",
+"fr": "Peu"
+},
+{
+"id": "a1-all",
+"en": "All",
+"topic": "numbers-2",
+"es": "Todo",
+"fr": "Tout"
+},
+{
+"id": "a1-some",
+"en": "Some",
+"topic": "numbers-2",
+"es": "Algunos",
+"fr": "Quelques"
+},
+{
+"id": "a1-nothing",
+"en": "Nothing",
+"topic": "numbers-2",
+"es": "Nada",
+"fr": "Rien"
+},
+{
+"id": "a1-number",
+"en": "Number",
+"topic": "numbers-2",
+"es": "Número",
+"fr": "Nombre (chiffre)"
+},
+{
+"id": "a1-more",
+"en": "More",
+"topic": "numbers-2",
+"es": "Más",
+"fr": "Plus"
+},
+{
+"id": "a1-less",
+"en": "Less",
+"topic": "numbers-2",
+"es": "Menos",
+"fr": "Moins"
+},
+{
+"id": "a1-enough",
+"en": "Enough",
+"topic": "numbers-2",
+"es": "Suficiente",
+"fr": "Assez"
+},
+{
+"id": "a1-red",
+"en": "Red",
+"topic": "colors-shapes",
+"es": "Rojo",
+"fr": "Rouge"
+},
+{
+"id": "a1-blue",
+"en": "Blue",
+"topic": "colors-shapes",
+"es": "Azul",
+"fr": "Bleu"
+},
+{
+"id": "a1-green",
+"en": "Green",
+"topic": "colors-shapes",
+"es": "Verde",
+"fr": "Vert"
+},
+{
+"id": "a1-yellow",
+"en": "Yellow",
+"topic": "colors-shapes",
+"es": "Amarillo",
+"fr": "Jaune"
+},
+{
+"id": "a1-black",
+"en": "Black",
+"topic": "colors-shapes",
+"es": "Negro",
+"fr": "Noir"
+},
+{
+"id": "a1-white",
+"en": "White",
+"topic": "colors-shapes",
+"es": "Blanco",
+"fr": "Blanc"
+},
+{
+"id": "a1-orange-color",
+"en": "Orange (color)",
+"topic": "colors-shapes",
+"es": "Naranja",
+"fr": "Orange"
+},
+{
+"id": "a1-pink",
+"en": "Pink",
+"topic": "colors-shapes",
+"es": "Rosa",
+"fr": "Rose"
+},
+{
+"id": "a1-purple",
+"en": "Purple",
+"topic": "colors-shapes",
+"es": "Morado",
+"fr": "Violet"
+},
+{
+"id": "a1-brown",
+"en": "Brown",
+"topic": "colors-shapes",
+"es": "Marrón",
+"fr": "Marron"
+},
+{
+"id": "a1-gray",
+"en": "Gray",
+"topic": "colors-shapes",
+"es": "Gris",
+"fr": "Gris"
+},
+{
+"id": "a1-color",
+"en": "Color",
+"topic": "colors-shapes",
+"es": "Color",
+"fr": "Couleur"
+},
+{
+"id": "a1-light-color",
+"en": "Light (color)",
+"topic": "colors-shapes",
+"es": "Claro",
+"fr": "Clair"
+},
+{
+"id": "a1-dark",
+"en": "Dark",
+"topic": "colors-shapes",
+"es": "Oscuro",
+"fr": "Foncé"
+},
+{
+"id": "a1-circle",
+"en": "Circle",
+"topic": "colors-shapes",
+"es": "Círculo",
+"fr": "Cercle"
+},
+{
+"id": "a1-square",
+"en": "Square",
+"topic": "colors-shapes",
+"es": "Cuadrado",
+"fr": "Carré"
+},
+{
+"id": "a1-triangle",
+"en": "Triangle",
+"topic": "colors-shapes",
+"es": "Triángulo",
+"fr": "Triangle"
+},
+{
+"id": "a1-line",
+"en": "Line",
+"topic": "colors-shapes",
+"es": "Línea",
+"fr": "Ligne"
+},
+{
+"id": "a1-shape",
+"en": "Shape",
+"topic": "colors-shapes",
+"es": "Forma",
+"fr": "Forme"
+},
+{
+"id": "a1-big",
+"en": "Big",
+"topic": "colors-shapes",
+"es": "Grande",
+"fr": "Grand"
+},
+{
+"id": "a1-small",
+"en": "Small",
+"topic": "colors-shapes",
+"es": "Pequeño",
+"fr": "Petit"
+},
+{
+"id": "a1-long",
+"en": "Long",
+"topic": "colors-shapes",
+"es": "Largo",
+"fr": "Long"
+},
+{
+"id": "a1-short-length",
+"en": "Short (length)",
+"topic": "colors-shapes",
+"es": "Corto",
+"fr": "Court"
+},
+{
+"id": "a1-round",
+"en": "Round",
+"topic": "colors-shapes",
+"es": "Redondo",
+"fr": "Rond"
+},
+{
+"id": "a1-afternoon",
+"en": "Afternoon",
+"topic": "time",
+"es": "Tarde",
+"fr": "Après-midi"
+},
+{
+"id": "a1-evening",
+"en": "Evening",
+"topic": "time",
+"es": "Noche (temprano)",
+"fr": "Soirée"
+},
+{
+"id": "a1-day",
+"en": "Day",
+"topic": "time",
+"es": "Día",
+"fr": "Jour"
+},
+{
+"id": "a1-week",
+"en": "Week",
+"topic": "time",
+"es": "Semana",
+"fr": "Semaine"
+},
+{
+"id": "a1-month",
+"en": "Month",
+"topic": "time",
+"es": "Mes",
+"fr": "Mois"
+},
+{
+"id": "a1-year",
+"en": "Year",
+"topic": "time",
+"es": "Año",
+"fr": "An"
+},
+{
+"id": "a1-hour",
+"en": "Hour",
+"topic": "time",
+"es": "Hora",
+"fr": "Heure"
+},
+{
+"id": "a1-minute",
+"en": "Minute",
+"topic": "time",
+"es": "Minuto",
+"fr": "Minute"
+},
+{
+"id": "a1-later",
+"en": "Later",
+"topic": "time",
+"es": "Más tarde",
+"fr": "Plus tard"
+},
+{
+"id": "a1-early",
+"en": "Early",
+"topic": "time",
+"es": "Temprano",
+"fr": "Tôt"
+},
+{
+"id": "a1-late",
+"en": "Late",
+"topic": "time",
+"es": "Tarde (con retraso)",
+"fr": "Tard"
+},
+{
+"id": "a1-always",
+"en": "Always",
+"topic": "time",
+"es": "Siempre",
+"fr": "Toujours"
+},
+{
+"id": "a1-never",
+"en": "Never",
+"topic": "time",
+"es": "Nunca",
+"fr": "Jamais"
+},
+{
+"id": "a1-sometimes",
+"en": "Sometimes",
+"topic": "time",
+"es": "A veces",
+"fr": "Parfois"
+},
+{
+"id": "a1-often",
+"en": "Often",
+"topic": "time",
+"es": "A menudo",
+"fr": "Souvent"
+},
+{
+"id": "a1-soon",
+"en": "Soon",
+"topic": "time",
+"es": "Pronto",
+"fr": "Bientôt"
+},
+{
+"id": "a1-again",
+"en": "Again",
+"topic": "time",
+"es": "Otra vez",
+"fr": "Encore"
+},
+{
+"id": "a1-its-late",
+"en": "It’s late",
+"topic": "time",
+"es": "Es tarde",
+"fr": "Il est tard"
+},
+{
+"id": "a1-tonight",
+"en": "Tonight",
+"topic": "time",
+"es": "Esta noche",
+"fr": "Ce soir"
+},
+{
+"id": "a1-before",
+"en": "Before",
+"topic": "time",
+"es": "Antes",
+"fr": "Avant"
+},
+{
+"id": "a1-after",
+"en": "After",
+"topic": "time",
+"es": "Después",
+"fr": "Après"
+},
+{
+"id": "a1-noon",
+"en": "Noon",
+"topic": "time",
+"es": "Mediodía",
+"fr": "Midi"
+},
+{
+"id": "a1-midnight",
+"en": "Midnight",
+"topic": "time",
+"es": "Medianoche",
+"fr": "Minuit"
+},
+{
+"id": "a1-monday",
+"en": "Monday",
+"topic": "days-months",
+"es": "Lunes",
+"fr": "Lundi"
+},
+{
+"id": "a1-tuesday",
+"en": "Tuesday",
+"topic": "days-months",
+"es": "Martes",
+"fr": "Mardi"
+},
+{
+"id": "a1-wednesday",
+"en": "Wednesday",
+"topic": "days-months",
+"es": "Miércoles",
+"fr": "Mercredi"
+},
+{
+"id": "a1-thursday",
+"en": "Thursday",
+"topic": "days-months",
+"es": "Jueves",
+"fr": "Jeudi"
+},
+{
+"id": "a1-friday",
+"en": "Friday",
+"topic": "days-months",
+"es": "Viernes",
+"fr": "Vendredi"
+},
+{
+"id": "a1-saturday",
+"en": "Saturday",
+"topic": "days-months",
+"es": "Sábado",
+"fr": "Samedi"
+},
+{
+"id": "a1-sunday",
+"en": "Sunday",
+"topic": "days-months",
+"es": "Domingo",
+"fr": "Dimanche"
+},
+{
+"id": "a1-weekend",
+"en": "Weekend",
+"topic": "days-months",
+"es": "Fin de semana",
+"fr": "Week-end"
+},
+{
+"id": "a1-january",
+"en": "January",
+"topic": "days-months",
+"es": "Enero",
+"fr": "Janvier"
+},
+{
+"id": "a1-february",
+"en": "February",
+"topic": "days-months",
+"es": "Febrero",
+"fr": "Février"
+},
+{
+"id": "a1-march",
+"en": "March",
+"topic": "days-months",
+"es": "Marzo",
+"fr": "Mars"
+},
+{
+"id": "a1-april",
+"en": "April",
+"topic": "days-months",
+"es": "Abril",
+"fr": "Avril"
+},
+{
+"id": "a1-may",
+"en": "May",
+"topic": "days-months",
+"es": "Mayo",
+"fr": "Mai"
+},
+{
+"id": "a1-june",
+"en": "June",
+"topic": "days-months",
+"es": "Junio",
+"fr": "Juin"
+},
+{
+"id": "a1-july",
+"en": "July",
+"topic": "days-months",
+"es": "Julio",
+"fr": "Juillet"
+},
+{
+"id": "a1-august",
+"en": "August",
+"topic": "days-months",
+"es": "Agosto",
+"fr": "Août"
+},
+{
+"id": "a1-september",
+"en": "September",
+"topic": "days-months",
+"es": "Septiembre",
+"fr": "Septembre"
+},
+{
+"id": "a1-october",
+"en": "October",
+"topic": "days-months",
+"es": "Octubre",
+"fr": "Octobre"
+},
+{
+"id": "a1-november",
+"en": "November",
+"topic": "days-months",
+"es": "Noviembre",
+"fr": "Novembre"
+},
+{
+"id": "a1-december",
+"en": "December",
+"topic": "days-months",
+"es": "Diciembre",
+"fr": "Décembre"
+},
+{
+"id": "a1-spring",
+"en": "Spring",
+"topic": "days-months",
+"es": "Primavera",
+"fr": "Printemps"
+},
+{
+"id": "a1-summer",
+"en": "Summer",
+"topic": "days-months",
+"es": "Verano",
+"fr": "Été"
+},
+{
+"id": "a1-autumn",
+"en": "Autumn",
+"topic": "days-months",
+"es": "Otoño",
+"fr": "Automne"
+},
+{
+"id": "a1-winter",
+"en": "Winter",
+"topic": "days-months",
+"es": "Invierno",
+"fr": "Hiver"
+},
+{
+"id": "a1-birthday",
+"en": "Birthday",
+"topic": "days-months",
+"es": "Cumpleaños",
+"fr": "Anniversaire"
+},
+{
+"id": "a1-holiday",
+"en": "Holiday",
+"topic": "days-months",
+"es": "Día festivo",
+"fr": "Jour férié"
+},
+{
+"id": "a1-room",
+"en": "Room",
+"topic": "home-places",
+"es": "Habitación",
+"fr": "Chambre"
+},
+{
+"id": "a1-kitchen",
+"en": "Kitchen",
+"topic": "home-places",
+"es": "Cocina",
+"fr": "Cuisine"
+},
+{
+"id": "a1-bedroom",
+"en": "Bedroom",
+"topic": "home-places",
+"es": "Dormitorio",
+"fr": "Chambre à coucher"
+},
+{
+"id": "a1-door",
+"en": "Door",
+"topic": "home-places",
+"es": "Puerta",
+"fr": "Porte"
+},
+{
+"id": "a1-window",
+"en": "Window",
+"topic": "home-places",
+"es": "Ventana",
+"fr": "Fenêtre"
+},
+{
+"id": "a1-table",
+"en": "Table",
+"topic": "home-places",
+"es": "Mesa",
+"fr": "Table"
+},
+{
+"id": "a1-chair",
+"en": "Chair",
+"topic": "home-places",
+"es": "Silla",
+"fr": "Chaise"
+},
+{
+"id": "a1-bed",
+"en": "Bed",
+"topic": "home-places",
+"es": "Cama",
+"fr": "Lit"
+},
+{
+"id": "a1-street",
+"en": "Street",
+"topic": "home-places",
+"es": "Calle",
+"fr": "Rue"
+},
+{
+"id": "a1-city",
+"en": "City",
+"topic": "home-places",
+"es": "Ciudad",
+"fr": "Ville"
+},
+{
+"id": "a1-country",
+"en": "Country",
+"topic": "home-places",
+"es": "País",
+"fr": "Pays"
+},
+{
+"id": "a1-school",
+"en": "School",
+"topic": "home-places",
+"es": "Escuela",
+"fr": "École"
+},
+{
+"id": "a1-hospital",
+"en": "Hospital",
+"topic": "home-places",
+"es": "Hospital",
+"fr": "Hôpital"
+},
+{
+"id": "a1-bank",
+"en": "Bank",
+"topic": "home-places",
+"es": "Banco",
+"fr": "Banque"
+},
+{
+"id": "a1-restaurant",
+"en": "Restaurant",
+"topic": "home-places",
+"es": "Restaurante",
+"fr": "Restaurant"
+},
+{
+"id": "a1-hotel",
+"en": "Hotel",
+"topic": "home-places",
+"es": "Hotel",
+"fr": "Hôtel"
+},
+{
+"id": "a1-market",
+"en": "Market",
+"topic": "home-places",
+"es": "Mercado",
+"fr": "Marché"
+},
+{
+"id": "a1-park",
+"en": "Park",
+"topic": "home-places",
+"es": "Parque",
+"fr": "Parc"
+},
+{
+"id": "a1-church",
+"en": "Church",
+"topic": "home-places",
+"es": "Iglesia",
+"fr": "Église"
+},
+{
+"id": "a1-office",
+"en": "Office",
+"topic": "home-places",
+"es": "Oficina",
+"fr": "Bureau"
+},
+{
+"id": "a1-here",
+"en": "Here",
+"topic": "home-places",
+"es": "Aquí",
+"fr": "Ici"
+},
+{
+"id": "a1-there",
+"en": "There",
+"topic": "home-places",
+"es": "Allí",
+"fr": "Là"
+},
+{
+"id": "a1-straight-ahead",
+"en": "Straight ahead",
+"topic": "home-places",
+"es": "Todo recto",
+"fr": "Tout droit"
+},
+{
+"id": "a1-near",
+"en": "Near",
+"topic": "home-places",
+"es": "Cerca",
+"fr": "Près"
+},
+{
+"id": "a1-far",
+"en": "Far",
+"topic": "home-places",
+"es": "Lejos",
+"fr": "Loin"
+},
+{
+"id": "a1-floor-level",
+"en": "Floor (level)",
+"topic": "home-places",
+"es": "Piso",
+"fr": "Étage"
+},
+{
+"id": "a1-garden",
+"en": "Garden",
+"topic": "home-places",
+"es": "Jardín",
+"fr": "Jardin"
+},
+{
+"id": "a1-wall",
+"en": "Wall",
+"topic": "home-places",
+"es": "Pared",
+"fr": "Mur"
+},
+{
+"id": "a1-milk",
+"en": "Milk",
+"topic": "food-drink",
+"es": "Leche",
+"fr": "Lait"
+},
+{
+"id": "a1-rice",
+"en": "Rice",
+"topic": "food-drink",
+"es": "Arroz",
+"fr": "Riz"
+},
+{
+"id": "a1-meat",
+"en": "Meat",
+"topic": "food-drink",
+"es": "Carne",
+"fr": "Viande"
+},
+{
+"id": "a1-fish-food",
+"en": "Fish (food)",
+"topic": "food-drink",
+"es": "Pescado",
+"fr": "Poisson"
+},
+{
+"id": "a1-chicken",
+"en": "Chicken",
+"topic": "food-drink",
+"es": "Pollo",
+"fr": "Poulet"
+},
+{
+"id": "a1-egg",
+"en": "Egg",
+"topic": "food-drink",
+"es": "Huevo",
+"fr": "Œuf"
+},
+{
+"id": "a1-fruit",
+"en": "Fruit",
+"topic": "food-drink",
+"es": "Fruta",
+"fr": "Fruit"
+},
+{
+"id": "a1-vegetables",
+"en": "Vegetables",
+"topic": "food-drink",
+"es": "Verduras",
+"fr": "Légumes"
+},
+{
+"id": "a1-apple",
+"en": "Apple",
+"topic": "food-drink",
+"es": "Manzana",
+"fr": "Pomme"
+},
+{
+"id": "a1-sugar",
+"en": "Sugar",
+"topic": "food-drink",
+"es": "Azúcar",
+"fr": "Sucre"
+},
+{
+"id": "a1-salt",
+"en": "Salt",
+"topic": "food-drink",
+"es": "Sal",
+"fr": "Sel"
+},
+{
+"id": "a1-beer",
+"en": "Beer",
+"topic": "food-drink",
+"es": "Cerveza",
+"fr": "Bière"
+},
+{
+"id": "a1-wine",
+"en": "Wine",
+"topic": "food-drink",
+"es": "Vino",
+"fr": "Vin"
+},
+{
+"id": "a1-juice",
+"en": "Juice",
+"topic": "food-drink",
+"es": "Jugo",
+"fr": "Jus"
+},
+{
+"id": "a1-breakfast",
+"en": "Breakfast",
+"topic": "food-drink",
+"es": "Desayuno",
+"fr": "Petit-déjeuner"
+},
+{
+"id": "a1-lunch",
+"en": "Lunch",
+"topic": "food-drink",
+"es": "Almuerzo",
+"fr": "Déjeuner"
+},
+{
+"id": "a1-dinner",
+"en": "Dinner",
+"topic": "food-drink",
+"es": "Cena",
+"fr": "Dîner"
+},
+{
+"id": "a1-im-hungry",
+"en": "I’m hungry",
+"topic": "food-drink",
+"es": "Tengo hambre",
+"fr": "J’ai faim"
+},
+{
+"id": "a1-im-thirsty",
+"en": "I’m thirsty",
+"topic": "food-drink",
+"es": "Tengo sed",
+"fr": "J’ai soif"
+},
+{
+"id": "a1-cheese",
+"en": "Cheese",
+"topic": "food-drink",
+"es": "Queso",
+"fr": "Fromage"
+},
+{
+"id": "a1-soup",
+"en": "Soup",
+"topic": "food-drink",
+"es": "Sopa",
+"fr": "Soupe"
+},
+{
+"id": "a1-sweet",
+"en": "Sweet",
+"topic": "food-drink",
+"es": "Dulce",
+"fr": "Sucré"
+},
+{
+"id": "a1-food",
+"en": "Food",
+"topic": "food-drink",
+"es": "Comida",
+"fr": "Nourriture"
+},
+{
+"id": "a1-drink-noun",
+"en": "Drink (noun)",
+"topic": "food-drink",
+"es": "Bebida",
+"fr": "Boisson"
+},
+{
+"id": "a1-head",
+"en": "Head",
+"topic": "body",
+"es": "Cabeza",
+"fr": "Tête"
+},
+{
+"id": "a1-hand",
+"en": "Hand",
+"topic": "body",
+"es": "Mano",
+"fr": "Main"
+},
+{
+"id": "a1-eye",
+"en": "Eye",
+"topic": "body",
+"es": "Ojo",
+"fr": "Œil"
+},
+{
+"id": "a1-foot",
+"en": "Foot",
+"topic": "body",
+"es": "Pie",
+"fr": "Pied"
+},
+{
+"id": "a1-mouth",
+"en": "Mouth",
+"topic": "body",
+"es": "Boca",
+"fr": "Bouche"
+},
+{
+"id": "a1-nose",
+"en": "Nose",
+"topic": "body",
+"es": "Nariz",
+"fr": "Nez"
+},
+{
+"id": "a1-ear",
+"en": "Ear",
+"topic": "body",
+"es": "Oreja",
+"fr": "Oreille"
+},
+{
+"id": "a1-arm",
+"en": "Arm",
+"topic": "body",
+"es": "Brazo",
+"fr": "Bras"
+},
+{
+"id": "a1-leg",
+"en": "Leg",
+"topic": "body",
+"es": "Pierna",
+"fr": "Jambe"
+},
+{
+"id": "a1-heart",
+"en": "Heart",
+"topic": "body",
+"es": "Corazón",
+"fr": "Cœur"
+},
+{
+"id": "a1-hair",
+"en": "Hair",
+"topic": "body",
+"es": "Pelo",
+"fr": "Cheveux"
+},
+{
+"id": "a1-face",
+"en": "Face",
+"topic": "body",
+"es": "Cara",
+"fr": "Visage"
+},
+{
+"id": "a1-back-body",
+"en": "Back (body)",
+"topic": "body",
+"es": "Espalda",
+"fr": "Dos"
+},
+{
+"id": "a1-stomach",
+"en": "Stomach",
+"topic": "body",
+"es": "Estómago",
+"fr": "Ventre"
+},
+{
+"id": "a1-tooth",
+"en": "Tooth",
+"topic": "body",
+"es": "Diente",
+"fr": "Dent"
+},
+{
+"id": "a1-finger",
+"en": "Finger",
+"topic": "body",
+"es": "Dedo",
+"fr": "Doigt"
+},
+{
+"id": "a1-body",
+"en": "Body",
+"topic": "body",
+"es": "Cuerpo",
+"fr": "Corps"
+},
+{
+"id": "a1-blood",
+"en": "Blood",
+"topic": "body",
+"es": "Sangre",
+"fr": "Sang"
+},
+{
+"id": "a1-neck",
+"en": "Neck",
+"topic": "body",
+"es": "Cuello",
+"fr": "Cou"
+},
+{
+"id": "a1-shoulder",
+"en": "Shoulder",
+"topic": "body",
+"es": "Hombro",
+"fr": "Épaule"
+},
+{
+"id": "a1-knee",
+"en": "Knee",
+"topic": "body",
+"es": "Rodilla",
+"fr": "Genou"
+},
+{
+"id": "a1-skin",
+"en": "Skin",
+"topic": "body",
+"es": "Piel",
+"fr": "Peau"
+},
+{
+"id": "a1-shirt",
+"en": "Shirt",
+"topic": "clothes",
+"es": "Camisa",
+"fr": "Chemise"
+},
+{
+"id": "a1-pants",
+"en": "Pants",
+"topic": "clothes",
+"es": "Pantalones",
+"fr": "Pantalon"
+},
+{
+"id": "a1-shoes",
+"en": "Shoes",
+"topic": "clothes",
+"es": "Zapatos",
+"fr": "Chaussures"
+},
+{
+"id": "a1-dress",
+"en": "Dress",
+"topic": "clothes",
+"es": "Vestido",
+"fr": "Robe"
+},
+{
+"id": "a1-hat",
+"en": "Hat",
+"topic": "clothes",
+"es": "Sombrero",
+"fr": "Chapeau"
+},
+{
+"id": "a1-coat",
+"en": "Coat",
+"topic": "clothes",
+"es": "Abrigo",
+"fr": "Manteau"
+},
+{
+"id": "a1-jacket",
+"en": "Jacket",
+"topic": "clothes",
+"es": "Chaqueta",
+"fr": "Veste"
+},
+{
+"id": "a1-socks",
+"en": "Socks",
+"topic": "clothes",
+"es": "Calcetines",
+"fr": "Chaussettes"
+},
+{
+"id": "a1-skirt",
+"en": "Skirt",
+"topic": "clothes",
+"es": "Falda",
+"fr": "Jupe"
+},
+{
+"id": "a1-bag",
+"en": "Bag",
+"topic": "clothes",
+"es": "Bolsa",
+"fr": "Sac"
+},
+{
+"id": "a1-glasses",
+"en": "Glasses",
+"topic": "clothes",
+"es": "Gafas",
+"fr": "Lunettes"
+},
+{
+"id": "a1-watch-wrist",
+"en": "Watch (wrist)",
+"topic": "clothes",
+"es": "Reloj",
+"fr": "Montre"
+},
+{
+"id": "a1-umbrella",
+"en": "Umbrella",
+"topic": "clothes",
+"es": "Paraguas",
+"fr": "Parapluie"
+},
+{
+"id": "a1-to-wear",
+"en": "To wear",
+"topic": "clothes",
+"es": "Llevar puesto",
+"fr": "Porter"
+},
+{
+"id": "a1-sweater",
+"en": "Sweater",
+"topic": "clothes",
+"es": "Suéter",
+"fr": "Pull"
+},
+{
+"id": "a1-t-shirt",
+"en": "T-shirt",
+"topic": "clothes",
+"es": "Camiseta",
+"fr": "T-shirt"
+},
+{
+"id": "a1-scarf",
+"en": "Scarf",
+"topic": "clothes",
+"es": "Bufanda",
+"fr": "Écharpe"
+},
+{
+"id": "a1-gloves",
+"en": "Gloves",
+"topic": "clothes",
+"es": "Guantes",
+"fr": "Gants"
+},
+{
+"id": "a1-clothes",
+"en": "Clothes",
+"topic": "clothes",
+"es": "Ropa",
+"fr": "Vêtements"
+},
+{
+"id": "a1-size",
+"en": "Size",
+"topic": "clothes",
+"es": "Talla",
+"fr": "Taille"
+},
+{
+"id": "a1-to-be",
+"en": "To be",
+"topic": "verbs-1",
+"es": "Ser",
+"fr": "Être"
+},
+{
+"id": "a1-to-have",
+"en": "To have",
+"topic": "verbs-1",
+"es": "Tener",
+"fr": "Avoir"
+},
+{
+"id": "a1-to-do",
+"en": "To do",
+"topic": "verbs-1",
+"es": "Hacer",
+"fr": "Faire"
+},
+{
+"id": "a1-to-go",
+"en": "To go",
+"topic": "verbs-1",
+"es": "Ir",
+"fr": "Aller"
+},
+{
+"id": "a1-to-come",
+"en": "To come",
+"topic": "verbs-1",
+"es": "Venir",
+"fr": "Venir"
+},
+{
+"id": "a1-to-want",
+"en": "To want",
+"topic": "verbs-1",
+"es": "Querer",
+"fr": "Vouloir"
+},
+{
+"id": "a1-to-be-able-to",
+"en": "To be able to",
+"topic": "verbs-1",
+"es": "Poder",
+"fr": "Pouvoir"
+},
+{
+"id": "a1-to-know",
+"en": "To know",
+"topic": "verbs-1",
+"es": "Saber",
+"fr": "Savoir"
+},
+{
+"id": "a1-to-see",
+"en": "To see",
+"topic": "verbs-1",
+"es": "Ver",
+"fr": "Voir"
+},
+{
+"id": "a1-to-say",
+"en": "To say",
+"topic": "verbs-1",
+"es": "Decir",
+"fr": "Dire"
+},
+{
+"id": "a1-to-eat",
+"en": "To eat",
+"topic": "verbs-1",
+"es": "Comer",
+"fr": "Manger"
+},
+{
+"id": "a1-to-drink",
+"en": "To drink",
+"topic": "verbs-1",
+"es": "Beber",
+"fr": "Boire"
+},
+{
+"id": "a1-to-sleep",
+"en": "To sleep",
+"topic": "verbs-1",
+"es": "Dormir",
+"fr": "Dormir"
+},
+{
+"id": "a1-to-live",
+"en": "To live",
+"topic": "verbs-1",
+"es": "Vivir",
+"fr": "Vivre"
+},
+{
+"id": "a1-to-work",
+"en": "To work",
+"topic": "verbs-1",
+"es": "Trabajar",
+"fr": "Travailler"
+},
+{
+"id": "a1-to-speak",
+"en": "To speak",
+"topic": "verbs-1",
+"es": "Hablar",
+"fr": "Parler"
+},
+{
+"id": "a1-to-understand",
+"en": "To understand",
+"topic": "verbs-1",
+"es": "Entender",
+"fr": "Comprendre"
+},
+{
+"id": "a1-to-like",
+"en": "To like",
+"topic": "verbs-1",
+"es": "Gustar",
+"fr": "Aimer"
+},
+{
+"id": "a1-to-need",
+"en": "To need",
+"topic": "verbs-1",
+"es": "Necesitar",
+"fr": "Avoir besoin de"
+},
+{
+"id": "a1-to-give",
+"en": "To give",
+"topic": "verbs-1",
+"es": "Dar",
+"fr": "Donner"
+},
+{
+"id": "a1-to-take",
+"en": "To take",
+"topic": "verbs-1",
+"es": "Tomar",
+"fr": "Prendre"
+},
+{
+"id": "a1-to-think",
+"en": "To think",
+"topic": "verbs-1",
+"es": "Pensar",
+"fr": "Penser"
+},
+{
+"id": "a1-to-buy",
+"en": "To buy",
+"topic": "verbs-1",
+"es": "Comprar",
+"fr": "Acheter"
+},
+{
+"id": "a1-to-help",
+"en": "To help",
+"topic": "verbs-1",
+"es": "Ayudar",
+"fr": "Aider"
+},
+{
+"id": "a1-to-open",
+"en": "To open",
+"topic": "verbs-2",
+"es": "Abrir",
+"fr": "Ouvrir"
+},
+{
+"id": "a1-to-close",
+"en": "To close",
+"topic": "verbs-2",
+"es": "Cerrar",
+"fr": "Fermer"
+},
+{
+"id": "a1-to-look-for",
+"en": "To look for",
+"topic": "verbs-2",
+"es": "Buscar",
+"fr": "Chercher"
+},
+{
+"id": "a1-to-find",
+"en": "To find",
+"topic": "verbs-2",
+"es": "Encontrar",
+"fr": "Trouver"
+},
+{
+"id": "a1-to-wait",
+"en": "To wait",
+"topic": "verbs-2",
+"es": "Esperar",
+"fr": "Attendre"
+},
+{
+"id": "a1-to-call-phone",
+"en": "To call (phone)",
+"topic": "verbs-2",
+"es": "Llamar",
+"fr": "Appeler"
+},
+{
+"id": "a1-to-read",
+"en": "To read",
+"topic": "verbs-2",
+"es": "Leer",
+"fr": "Lire"
+},
+{
+"id": "a1-to-write",
+"en": "To write",
+"topic": "verbs-2",
+"es": "Escribir",
+"fr": "Écrire"
+},
+{
+"id": "a1-to-listen",
+"en": "To listen",
+"topic": "verbs-2",
+"es": "Escuchar",
+"fr": "Écouter"
+},
+{
+"id": "a1-to-learn",
+"en": "To learn",
+"topic": "verbs-2",
+"es": "Aprender",
+"fr": "Apprendre"
+},
+{
+"id": "a1-to-play",
+"en": "To play",
+"topic": "verbs-2",
+"es": "Jugar",
+"fr": "Jouer"
+},
+{
+"id": "a1-to-walk",
+"en": "To walk",
+"topic": "verbs-2",
+"es": "Caminar",
+"fr": "Marcher"
+},
+{
+"id": "a1-to-run",
+"en": "To run",
+"topic": "verbs-2",
+"es": "Correr",
+"fr": "Courir"
+},
+{
+"id": "a1-to-sit",
+"en": "To sit",
+"topic": "verbs-2",
+"es": "Sentarse",
+"fr": "S’asseoir"
+},
+{
+"id": "a1-to-stand",
+"en": "To stand",
+"topic": "verbs-2",
+"es": "Estar de pie",
+"fr": "Être debout"
+},
+{
+"id": "a1-to-arrive",
+"en": "To arrive",
+"topic": "verbs-2",
+"es": "Llegar",
+"fr": "Arriver"
+},
+{
+"id": "a1-to-leave",
+"en": "To leave",
+"topic": "verbs-2",
+"es": "Salir",
+"fr": "Partir"
+},
+{
+"id": "a1-to-return",
+"en": "To return",
+"topic": "verbs-2",
+"es": "Volver",
+"fr": "Revenir"
+},
+{
+"id": "a1-to-put",
+"en": "To put",
+"topic": "verbs-2",
+"es": "Poner",
+"fr": "Mettre"
+},
+{
+"id": "a1-to-bring",
+"en": "To bring",
+"topic": "verbs-2",
+"es": "Traer",
+"fr": "Apporter"
+},
+{
+"id": "a1-to-ask",
+"en": "To ask",
+"topic": "verbs-2",
+"es": "Preguntar",
+"fr": "Demander"
+},
+{
+"id": "a1-to-answer",
+"en": "To answer",
+"topic": "verbs-2",
+"es": "Responder",
+"fr": "Répondre"
+},
+{
+"id": "a1-to-love",
+"en": "To love",
+"topic": "verbs-2",
+"es": "Amar",
+"fr": "Aimer (d’amour)"
+},
+{
+"id": "a1-to-pay",
+"en": "To pay",
+"topic": "verbs-2",
+"es": "Pagar",
+"fr": "Payer"
+},
+{
+"id": "a1-good",
+"en": "Good",
+"topic": "adjectives-1",
+"es": "Bueno",
+"fr": "Bon"
+},
+{
+"id": "a1-bad",
+"en": "Bad",
+"topic": "adjectives-1",
+"es": "Malo",
+"fr": "Mauvais"
+},
+{
+"id": "a1-new",
+"en": "New",
+"topic": "adjectives-1",
+"es": "Nuevo",
+"fr": "Nouveau"
+},
+{
+"id": "a1-old-thing",
+"en": "Old (thing)",
+"topic": "adjectives-1",
+"es": "Viejo",
+"fr": "Vieux"
+},
+{
+"id": "a1-young",
+"en": "Young",
+"topic": "adjectives-1",
+"es": "Joven",
+"fr": "Jeune"
+},
+{
+"id": "a1-hot",
+"en": "Hot",
+"topic": "adjectives-1",
+"es": "Caliente",
+"fr": "Chaud"
+},
+{
+"id": "a1-cold",
+"en": "Cold",
+"topic": "adjectives-1",
+"es": "Frío",
+"fr": "Froid"
+},
+{
+"id": "a1-happy",
+"en": "Happy",
+"topic": "adjectives-1",
+"es": "Feliz",
+"fr": "Heureux"
+},
+{
+"id": "a1-sad",
+"en": "Sad",
+"topic": "adjectives-1",
+"es": "Triste",
+"fr": "Triste"
+},
+{
+"id": "a1-beautiful",
+"en": "Beautiful",
+"topic": "adjectives-1",
+"es": "Hermoso",
+"fr": "Beau"
+},
+{
+"id": "a1-ugly",
+"en": "Ugly",
+"topic": "adjectives-1",
+"es": "Feo",
+"fr": "Laid"
+},
+{
+"id": "a1-easy",
+"en": "Easy",
+"topic": "adjectives-1",
+"es": "Fácil",
+"fr": "Facile"
+},
+{
+"id": "a1-difficult",
+"en": "Difficult",
+"topic": "adjectives-1",
+"es": "Difícil",
+"fr": "Difficile"
+},
+{
+"id": "a1-fast",
+"en": "Fast",
+"topic": "adjectives-1",
+"es": "Rápido",
+"fr": "Rapide"
+},
+{
+"id": "a1-slow",
+"en": "Slow",
+"topic": "adjectives-1",
+"es": "Lento",
+"fr": "Lent"
+},
+{
+"id": "a1-cheap",
+"en": "Cheap",
+"topic": "adjectives-1",
+"es": "Barato",
+"fr": "Bon marché"
+},
+{
+"id": "a1-expensive",
+"en": "Expensive",
+"topic": "adjectives-1",
+"es": "Caro",
+"fr": "Cher"
+},
+{
+"id": "a1-full",
+"en": "Full",
+"topic": "adjectives-1",
+"es": "Lleno",
+"fr": "Plein"
+},
+{
+"id": "a1-empty",
+"en": "Empty",
+"topic": "adjectives-1",
+"es": "Vacío",
+"fr": "Vide"
+},
+{
+"id": "a1-clean",
+"en": "Clean",
+"topic": "adjectives-1",
+"es": "Limpio",
+"fr": "Propre"
+},
+{
+"id": "a1-dirty",
+"en": "Dirty",
+"topic": "adjectives-1",
+"es": "Sucio",
+"fr": "Sale"
+},
+{
+"id": "a1-strong",
+"en": "Strong",
+"topic": "adjectives-1",
+"es": "Fuerte",
+"fr": "Fort"
+},
+{
+"id": "a1-weak",
+"en": "Weak",
+"topic": "adjectives-1",
+"es": "Débil",
+"fr": "Faible"
+},
+{
+"id": "a1-important",
+"en": "Important",
+"topic": "adjectives-1",
+"es": "Importante",
+"fr": "Important"
+},
+{
+"id": "a1-what",
+"en": "What",
+"topic": "questions-connectors",
+"es": "Qué",
+"fr": "Quoi"
+},
+{
+"id": "a1-who",
+"en": "Who",
+"topic": "questions-connectors",
+"es": "Quién",
+"fr": "Qui"
+},
+{
+"id": "a1-where",
+"en": "Where",
+"topic": "questions-connectors",
+"es": "Dónde",
+"fr": "Où"
+},
+{
+"id": "a1-when",
+"en": "When",
+"topic": "questions-connectors",
+"es": "Cuándo",
+"fr": "Quand"
+},
+{
+"id": "a1-why",
+"en": "Why",
+"topic": "questions-connectors",
+"es": "Por qué",
+"fr": "Pourquoi"
+},
+{
+"id": "a1-how",
+"en": "How",
+"topic": "questions-connectors",
+"es": "Cómo",
+"fr": "Comment"
+},
+{
+"id": "a1-how-many",
+"en": "How many",
+"topic": "questions-connectors",
+"es": "Cuántos",
+"fr": "Combien"
+},
+{
+"id": "a1-which",
+"en": "Which",
+"topic": "questions-connectors",
+"es": "Cuál",
+"fr": "Lequel"
+},
+{
+"id": "a1-and",
+"en": "And",
+"topic": "questions-connectors",
+"es": "Y",
+"fr": "Et"
+},
+{
+"id": "a1-or",
+"en": "Or",
+"topic": "questions-connectors",
+"es": "O",
+"fr": "Ou"
+},
+{
+"id": "a1-but",
+"en": "But",
+"topic": "questions-connectors",
+"es": "Pero",
+"fr": "Mais"
+},
+{
+"id": "a1-because",
+"en": "Because",
+"topic": "questions-connectors",
+"es": "Porque",
+"fr": "Parce que"
+},
+{
+"id": "a1-with",
+"en": "With",
+"topic": "questions-connectors",
+"es": "Con",
+"fr": "Avec"
+},
+{
+"id": "a1-without",
+"en": "Without",
+"topic": "questions-connectors",
+"es": "Sin",
+"fr": "Sans"
+},
+{
+"id": "a1-for",
+"en": "For",
+"topic": "questions-connectors",
+"es": "Para",
+"fr": "Pour"
+},
+{
+"id": "a1-from",
+"en": "From",
+"topic": "questions-connectors",
+"es": "De",
+"fr": "De"
+},
+{
+"id": "a1-to-direction",
+"en": "To (direction)",
+"topic": "questions-connectors",
+"es": "A",
+"fr": "À"
+},
+{
+"id": "a1-in",
+"en": "In",
+"topic": "questions-connectors",
+"es": "En",
+"fr": "Dans"
+},
+{
+"id": "a1-on",
+"en": "On",
+"topic": "questions-connectors",
+"es": "Sobre",
+"fr": "Sur"
+},
+{
+"id": "a1-under",
+"en": "Under",
+"topic": "questions-connectors",
+"es": "Debajo de",
+"fr": "Sous"
+},
+{
+"id": "a1-this",
+"en": "This",
+"topic": "questions-connectors",
+"es": "Esto",
+"fr": "Ceci"
+},
+{
+"id": "a1-that",
+"en": "That",
+"topic": "questions-connectors",
+"es": "Eso",
+"fr": "Cela"
+},
+{
+"id": "a1-very",
+"en": "Very",
+"topic": "questions-connectors",
+"es": "Muy",
+"fr": "Très"
+},
+{
+"id": "a1-also",
+"en": "Also",
+"topic": "questions-connectors",
+"es": "También",
+"fr": "Aussi"
+},
+{
+"id": "a1-not",
+"en": "Not",
+"topic": "questions-connectors",
+"es": "No (negación)",
+"fr": "Ne… pas"
+},
+{
+"id": "a1-maybe",
+"en": "Maybe",
+"topic": "questions-connectors",
+"es": "Quizás",
+"fr": "Peut-être"
+},
+{
+"id": "a1-sun",
+"en": "Sun",
+"topic": "weather-nature",
+"es": "Sol",
+"fr": "Soleil"
+},
+{
+"id": "a1-rain",
+"en": "Rain",
+"topic": "weather-nature",
+"es": "Lluvia",
+"fr": "Pluie"
+},
+{
+"id": "a1-snow",
+"en": "Snow",
+"topic": "weather-nature",
+"es": "Nieve",
+"fr": "Neige"
+},
+{
+"id": "a1-wind",
+"en": "Wind",
+"topic": "weather-nature",
+"es": "Viento",
+"fr": "Vent"
+},
+{
+"id": "a1-cloud",
+"en": "Cloud",
+"topic": "weather-nature",
+"es": "Nube",
+"fr": "Nuage"
+},
+{
+"id": "a1-weather",
+"en": "Weather",
+"topic": "weather-nature",
+"es": "Tiempo (clima)",
+"fr": "Temps (météo)"
+},
+{
+"id": "a1-sky",
+"en": "Sky",
+"topic": "weather-nature",
+"es": "Cielo",
+"fr": "Ciel"
+},
+{
+"id": "a1-sea",
+"en": "Sea",
+"topic": "weather-nature",
+"es": "Mar",
+"fr": "Mer"
+},
+{
+"id": "a1-mountain",
+"en": "Mountain",
+"topic": "weather-nature",
+"es": "Montaña",
+"fr": "Montagne"
+},
+{
+"id": "a1-river",
+"en": "River",
+"topic": "weather-nature",
+"es": "Río",
+"fr": "Rivière"
+},
+{
+"id": "a1-tree",
+"en": "Tree",
+"topic": "weather-nature",
+"es": "Árbol",
+"fr": "Arbre"
+},
+{
+"id": "a1-flower",
+"en": "Flower",
+"topic": "weather-nature",
+"es": "Flor",
+"fr": "Fleur"
+},
+{
+"id": "a1-dog",
+"en": "Dog",
+"topic": "weather-nature",
+"es": "Perro",
+"fr": "Chien"
+},
+{
+"id": "a1-cat",
+"en": "Cat",
+"topic": "weather-nature",
+"es": "Gato",
+"fr": "Chat"
+},
+{
+"id": "a1-bird",
+"en": "Bird",
+"topic": "weather-nature",
+"es": "Pájaro",
+"fr": "Oiseau"
+},
+{
+"id": "a1-fish-animal",
+"en": "Fish (animal)",
+"topic": "weather-nature",
+"es": "Pez",
+"fr": "Poisson (animal)"
+},
+{
+"id": "a1-horse",
+"en": "Horse",
+"topic": "weather-nature",
+"es": "Caballo",
+"fr": "Cheval"
+},
+{
+"id": "a1-cow",
+"en": "Cow",
+"topic": "weather-nature",
+"es": "Vaca",
+"fr": "Vache"
+},
+{
+"id": "a1-earth",
+"en": "Earth",
+"topic": "weather-nature",
+"es": "Tierra",
+"fr": "Terre"
+},
+{
+"id": "a1-moon",
+"en": "Moon",
+"topic": "weather-nature",
+"es": "Luna",
+"fr": "Lune"
+},
+{
+"id": "a1-star",
+"en": "Star",
+"topic": "weather-nature",
+"es": "Estrella",
+"fr": "Étoile"
+},
+{
+"id": "a1-fire",
+"en": "Fire",
+"topic": "weather-nature",
+"es": "Fuego",
+"fr": "Feu"
+},
+{
+"id": "a1-its-windy",
+"en": "It’s windy",
+"topic": "weather-nature",
+"es": "Hace viento",
+"fr": "Il y a du vent"
+},
+{
+"id": "a1-its-snowing",
+"en": "It’s snowing",
+"topic": "weather-nature",
+"es": "Está nevando",
+"fr": "Il neige"
+},
+{
+"id": "a1-its-cold-today",
+"en": "It’s cold today",
+"topic": "weather-nature",
+"es": "Hoy hace frío",
+"fr": "Il fait froid aujourd’hui"
+},
+{
+"id": "a1-its-hot-today",
+"en": "It’s hot today",
+"topic": "weather-nature",
+"es": "Hoy hace calor",
+"fr": "Il fait chaud aujourd’hui"
+},
+{
+"id": "a1-help",
+"en": "Help!",
+"topic": "survival-1",
+"es": "¡Ayuda!",
+"fr": "Au secours !"
+},
+{
+"id": "a1-slowly-please",
+"en": "Slowly, please",
+"topic": "survival-1",
+"es": "Despacio, por favor",
+"fr": "Lentement, s’il vous plaît"
+},
+{
+"id": "a1-do-you-speak-english",
+"en": "Do you speak English?",
+"topic": "survival-1",
+"es": "¿Habla inglés?",
+"fr": "Parlez-vous anglais ?"
+},
+{
+"id": "a1-i-dont-know",
+"en": "I don’t know",
+"topic": "survival-1",
+"es": "No sé",
+"fr": "Je ne sais pas"
+},
+{
+"id": "a1-where-is-the-bathroom",
+"en": "Where is the bathroom?",
+"topic": "survival-1",
+"es": "¿Dónde está el baño?",
+"fr": "Où sont les toilettes ?"
+},
+{
+"id": "a1-which-way",
+"en": "Which way?",
+"topic": "survival-1",
+"es": "¿Por dónde?",
+"fr": "Par où ?"
+},
+{
+"id": "a1-one-moment-please",
+"en": "One moment, please",
+"topic": "survival-1",
+"es": "Un momento, por favor",
+"fr": "Un instant, s’il vous plaît"
+},
+{
+"id": "a1-of-course",
+"en": "Of course",
+"topic": "survival-1",
+"es": "Claro",
+"fr": "Bien sûr"
+},
+{
+"id": "a1-no-problem",
+"en": "No problem",
+"topic": "survival-1",
+"es": "No hay problema",
+"fr": "Pas de problème"
+},
+{
+"id": "a1-its-okay",
+"en": "It’s okay",
+"topic": "survival-1",
+"es": "Está bien",
+"fr": "C’est bon"
+},
+{
+"id": "a1-lets-go",
+"en": "Let’s go",
+"topic": "survival-1",
+"es": "Vamos",
+"fr": "Allons-y"
+},
+{
+"id": "a1-come-in",
+"en": "Come in",
+"topic": "survival-1",
+"es": "Entre",
+"fr": "Entrez"
+},
+{
+"id": "a1-be-careful",
+"en": "Be careful",
+"topic": "survival-1",
+"es": "Ten cuidado",
+"fr": "Fais attention"
+},
+{
+"id": "a1-can-you-help-me",
+"en": "Can you help me?",
+"topic": "survival-1",
+"es": "¿Puede ayudarme?",
+"fr": "Pouvez-vous m’aider ?"
+},
+{
+"id": "a1-what-does-that-mean",
+"en": "What does that mean?",
+"topic": "survival-1",
+"es": "¿Qué significa eso?",
+"fr": "Qu’est-ce que ça veut dire ?"
+},
+{
+"id": "a1-can-you-repeat-that",
+"en": "Can you repeat that?",
+"topic": "survival-1",
+"es": "¿Puede repetir?",
+"fr": "Pouvez-vous répéter ?"
+},
+{
+"id": "a1-slower-please",
+"en": "Slower, please",
+"topic": "survival-1",
+"es": "Más despacio, por favor",
+"fr": "Plus lentement, s’il vous plaît"
+},
+{
+"id": "a1-how-do-you-say",
+"en": "How do you say…?",
+"topic": "survival-1",
+"es": "¿Cómo se dice…?",
+"fr": "Comment dit-on… ?"
+},
+{
+"id": "a1-i-would-like",
+"en": "I would like…",
+"topic": "survival-2",
+"es": "Quisiera…",
+"fr": "Je voudrais…"
+},
+{
+"id": "a1-the-bill-please",
+"en": "The bill, please",
+"topic": "survival-2",
+"es": "La cuenta, por favor",
+"fr": "L’addition, s’il vous plaît"
+},
+{
+"id": "a1-im-tired",
+"en": "I’m tired",
+"topic": "survival-2",
+"es": "Estoy cansado",
+"fr": "Je suis fatigué"
+},
+{
+"id": "a1-im-sick",
+"en": "I’m sick",
+"topic": "survival-2",
+"es": "Estoy enfermo",
+"fr": "Je suis malade"
+},
+{
+"id": "a1-its-an-emergency",
+"en": "It’s an emergency",
+"topic": "survival-2",
+"es": "Es una emergencia",
+"fr": "C’est une urgence"
+},
+{
+"id": "a1-call-the-police",
+"en": "Call the police",
+"topic": "survival-2",
+"es": "Llame a la policía",
+"fr": "Appelez la police"
+},
+{
+"id": "a1-i-speak-a-little",
+"en": "I speak a little",
+"topic": "survival-2",
+"es": "Hablo un poco",
+"fr": "Je parle un peu"
+},
+{
+"id": "a1-i-love-it",
+"en": "I love it",
+"topic": "survival-2",
+"es": "Me encanta",
+"fr": "J’adore"
+},
+{
+"id": "a1-whats-this",
+"en": "What’s this?",
+"topic": "survival-2",
+"es": "¿Qué es esto?",
+"fr": "Qu’est-ce que c’est ?"
+},
+{
+"id": "a1-i-agree",
+"en": "I agree",
+"topic": "survival-2",
+"es": "Estoy de acuerdo",
+"fr": "Je suis d’accord"
+},
+{
+"id": "a1-i-dont-like-it",
+"en": "I don’t like it",
+"topic": "survival-2",
+"es": "No me gusta",
+"fr": "Je n’aime pas ça"
+},
+{
+"id": "a1-really",
+"en": "Really?",
+"topic": "survival-2",
+"es": "¿De verdad?",
+"fr": "Vraiment ?"
+},
+{
+"id": "a1-exactly",
+"en": "Exactly",
+"topic": "survival-2",
+"es": "Exacto",
+"fr": "Exactement"
+},
+{
+"id": "a1-i-think-so",
+"en": "I think so",
+"topic": "survival-2",
+"es": "Creo que sí",
+"fr": "Je pense que oui"
+},
+{
+"id": "a1-dont-worry",
+"en": "Don’t worry",
+"topic": "survival-2",
+"es": "No te preocupes",
+"fr": "Ne t’inquiète pas"
+},
+{
+"id": "a1-just-a-little",
+"en": "Just a little",
+"topic": "survival-2",
+"es": "Solo un poco",
+"fr": "Juste un peu"
+},
+{
+"id": "a1-wait-a-moment",
+"en": "Wait a moment",
+"topic": "survival-2",
+"es": "Espera un momento",
+"fr": "Attends un moment"
+},
+{
+"id": "a1-is-this-seat-free",
+"en": "Is this seat free?",
+"topic": "survival-2",
+"es": "¿Está libre este asiento?",
+"fr": "Cette place est libre ?"
+},
+{
+"id": "a1-money",
+"en": "Money",
+"topic": "shopping-money",
+"es": "Dinero",
+"fr": "Argent"
+},
+{
+"id": "a1-price",
+"en": "Price",
+"topic": "shopping-money",
+"es": "Precio",
+"fr": "Prix"
+},
+{
+"id": "a1-to-sell",
+"en": "To sell",
+"topic": "shopping-money",
+"es": "Vender",
+"fr": "Vendre"
+},
+{
+"id": "a1-card",
+"en": "Card",
+"topic": "shopping-money",
+"es": "Tarjeta",
+"fr": "Carte"
+},
+{
+"id": "a1-cash",
+"en": "Cash",
+"topic": "shopping-money",
+"es": "Efectivo",
+"fr": "Espèces"
+},
+{
+"id": "a1-receipt",
+"en": "Receipt",
+"topic": "shopping-money",
+"es": "Recibo",
+"fr": "Reçu"
+},
+{
+"id": "a1-open-shop",
+"en": "Open (shop)",
+"topic": "shopping-money",
+"es": "Abierto",
+"fr": "Ouvert"
+},
+{
+"id": "a1-closed-shop",
+"en": "Closed (shop)",
+"topic": "shopping-money",
+"es": "Cerrado",
+"fr": "Fermé"
+},
+{
+"id": "a1-free-no-cost",
+"en": "Free (no cost)",
+"topic": "shopping-money",
+"es": "Gratis",
+"fr": "Gratuit"
+},
+{
+"id": "a1-discount",
+"en": "Discount",
+"topic": "shopping-money",
+"es": "Descuento",
+"fr": "Réduction"
+},
+{
+"id": "a1-how-much-is-it",
+"en": "How much is it?",
+"topic": "shopping-money",
+"es": "¿Cuánto cuesta?",
+"fr": "Ça coûte combien ?"
+},
+{
+"id": "a1-too-much",
+"en": "Too much",
+"topic": "shopping-money",
+"es": "Demasiado",
+"fr": "Trop"
+},
+{
+"id": "a1-gift",
+"en": "Gift",
+"topic": "shopping-money",
+"es": "Regalo",
+"fr": "Cadeau"
+},
+{
+"id": "a1-change-coins",
+"en": "Change (coins)",
+"topic": "shopping-money",
+"es": "Cambio",
+"fr": "Monnaie"
+},
+{
+"id": "a1-supermarket",
+"en": "Supermarket",
+"topic": "shopping-money",
+"es": "Supermercado",
+"fr": "Supermarché"
+},
+{
+"id": "a1-pharmacy",
+"en": "Pharmacy",
+"topic": "shopping-money",
+"es": "Farmacia",
+"fr": "Pharmacie"
+},
+{
+"id": "a1-bakery",
+"en": "Bakery",
+"topic": "shopping-money",
+"es": "Panadería",
+"fr": "Boulangerie"
+},
+{
+"id": "a1-is-this-on-sale",
+"en": "Is this on sale?",
+"topic": "shopping-money",
+"es": "¿Está en oferta?",
+"fr": "C’est en promotion ?"
+},
+{
+"id": "a1-car",
+"en": "Car",
+"topic": "transport",
+"es": "Coche",
+"fr": "Voiture"
+},
+{
+"id": "a1-bus",
+"en": "Bus",
+"topic": "transport",
+"es": "Autobús",
+"fr": "Bus"
+},
+{
+"id": "a1-train",
+"en": "Train",
+"topic": "transport",
+"es": "Tren",
+"fr": "Train"
+},
+{
+"id": "a1-plane",
+"en": "Plane",
+"topic": "transport",
+"es": "Avión",
+"fr": "Avion"
+},
+{
+"id": "a1-bicycle",
+"en": "Bicycle",
+"topic": "transport",
+"es": "Bicicleta",
+"fr": "Vélo"
+},
+{
+"id": "a1-taxi",
+"en": "Taxi",
+"topic": "transport",
+"es": "Taxi",
+"fr": "Taxi"
+},
+{
+"id": "a1-ticket",
+"en": "Ticket",
+"topic": "transport",
+"es": "Boleto",
+"fr": "Billet"
+},
+{
+"id": "a1-station",
+"en": "Station",
+"topic": "transport",
+"es": "Estación",
+"fr": "Gare"
+},
+{
+"id": "a1-airport",
+"en": "Airport",
+"topic": "transport",
+"es": "Aeropuerto",
+"fr": "Aéroport"
+},
+{
+"id": "a1-road",
+"en": "Road",
+"topic": "transport",
+"es": "Carretera",
+"fr": "Route"
+},
+{
+"id": "a1-to-travel",
+"en": "To travel",
+"topic": "transport",
+"es": "Viajar",
+"fr": "Voyager"
+},
+{
+"id": "a1-trip",
+"en": "Trip",
+"topic": "transport",
+"es": "Viaje",
+"fr": "Voyage"
+},
+{
+"id": "a1-map",
+"en": "Map",
+"topic": "transport",
+"es": "Mapa",
+"fr": "Carte (plan)"
+},
+{
+"id": "a1-stop-bus-stop",
+"en": "Stop (bus stop)",
+"topic": "transport",
+"es": "Parada",
+"fr": "Arrêt"
+},
+{
+"id": "a1-to-drive",
+"en": "To drive",
+"topic": "transport",
+"es": "Conducir",
+"fr": "Conduire"
+},
+{
+"id": "a1-subway",
+"en": "Subway",
+"topic": "transport",
+"es": "Metro",
+"fr": "Métro"
+},
+{
+"id": "a1-passport",
+"en": "Passport",
+"topic": "transport",
+"es": "Pasaporte",
+"fr": "Passeport"
+},
+{
+"id": "a1-suitcase",
+"en": "Suitcase",
+"topic": "transport",
+"es": "Maleta",
+"fr": "Valise"
+},
+{
+"id": "a1-exit",
+"en": "Exit",
+"topic": "transport",
+"es": "Salida",
+"fr": "Sortie"
+},
+{
+"id": "a1-entrance",
+"en": "Entrance",
+"topic": "transport",
+"es": "Entrada",
+"fr": "Entrée"
+},
+{
+"id": "a1-phone",
+"en": "Phone",
+"topic": "objects",
+"es": "Teléfono",
+"fr": "Téléphone"
+},
+{
+"id": "a1-book",
+"en": "Book",
+"topic": "objects",
+"es": "Libro",
+"fr": "Livre"
+},
+{
+"id": "a1-pen",
+"en": "Pen",
+"topic": "objects",
+"es": "Bolígrafo",
+"fr": "Stylo"
+},
+{
+"id": "a1-paper",
+"en": "Paper",
+"topic": "objects",
+"es": "Papel",
+"fr": "Papier"
+},
+{
+"id": "a1-key",
+"en": "Key",
+"topic": "objects",
+"es": "Llave",
+"fr": "Clé"
+},
+{
+"id": "a1-computer",
+"en": "Computer",
+"topic": "objects",
+"es": "Computadora",
+"fr": "Ordinateur"
+},
+{
+"id": "a1-clock",
+"en": "Clock",
+"topic": "objects",
+"es": "Reloj (de pared)",
+"fr": "Horloge"
+},
+{
+"id": "a1-television",
+"en": "Television",
+"topic": "objects",
+"es": "Televisión",
+"fr": "Télévision"
+},
+{
+"id": "a1-camera",
+"en": "Camera",
+"topic": "objects",
+"es": "Cámara",
+"fr": "Appareil photo"
+},
+{
+"id": "a1-box",
+"en": "Box",
+"topic": "objects",
+"es": "Caja",
+"fr": "Boîte"
+},
+{
+"id": "a1-glass-cup",
+"en": "Glass (cup)",
+"topic": "objects",
+"es": "Vaso",
+"fr": "Verre"
+},
+{
+"id": "a1-bottle",
+"en": "Bottle",
+"topic": "objects",
+"es": "Botella",
+"fr": "Bouteille"
+},
+{
+"id": "a1-plate",
+"en": "Plate",
+"topic": "objects",
+"es": "Plato",
+"fr": "Assiette"
+},
+{
+"id": "a1-knife",
+"en": "Knife",
+"topic": "objects",
+"es": "Cuchillo",
+"fr": "Couteau"
+},
+{
+"id": "a1-fork",
+"en": "Fork",
+"topic": "objects",
+"es": "Tenedor",
+"fr": "Fourchette"
+},
+{
+"id": "a1-spoon",
+"en": "Spoon",
+"topic": "objects",
+"es": "Cuchara",
+"fr": "Cuillère"
+},
+{
+"id": "a1-cup",
+"en": "Cup",
+"topic": "objects",
+"es": "Taza",
+"fr": "Tasse"
+},
+{
+"id": "a1-soap",
+"en": "Soap",
+"topic": "objects",
+"es": "Jabón",
+"fr": "Savon"
+},
+{
+"id": "a1-towel",
+"en": "Towel",
+"topic": "objects",
+"es": "Toalla",
+"fr": "Serviette"
+},
+{
+"id": "a1-lamp",
+"en": "Lamp",
+"topic": "objects",
+"es": "Lámpara",
+"fr": "Lampe"
+},
+{
+"id": "a1-wallet",
+"en": "Wallet",
+"topic": "objects",
+"es": "Cartera",
+"fr": "Portefeuille"
+},
+{
+"id": "a1-charger",
+"en": "Charger",
+"topic": "objects",
+"es": "Cargador",
+"fr": "Chargeur"
+},
+{
+"id": "a1-thing",
+"en": "Thing",
+"topic": "objects",
+"es": "Cosa",
+"fr": "Chose"
+},
+{
+"id": "a1-toothbrush",
+"en": "Toothbrush",
+"topic": "objects",
+"es": "Cepillo de dientes",
+"fr": "Brosse à dents"
+},
+{
+"id": "a1-angry",
+"en": "Angry",
+"topic": "feelings",
+"es": "Enojado",
+"fr": "En colère"
+},
+{
+"id": "a1-scared",
+"en": "Scared",
+"topic": "feelings",
+"es": "Asustado",
+"fr": "Effrayé"
+},
+{
+"id": "a1-bored",
+"en": "Bored",
+"topic": "feelings",
+"es": "Aburrido",
+"fr": "Ennuyé"
+},
+{
+"id": "a1-excited",
+"en": "Excited",
+"topic": "feelings",
+"es": "Emocionado",
+"fr": "Excité"
+},
+{
+"id": "a1-worried",
+"en": "Worried",
+"topic": "feelings",
+"es": "Preocupado",
+"fr": "Inquiet"
+},
+{
+"id": "a1-surprised",
+"en": "Surprised",
+"topic": "feelings",
+"es": "Sorprendido",
+"fr": "Surpris"
+},
+{
+"id": "a1-calm",
+"en": "Calm",
+"topic": "feelings",
+"es": "Tranquilo",
+"fr": "Calme"
+},
+{
+"id": "a1-nervous",
+"en": "Nervous",
+"topic": "feelings",
+"es": "Nervioso",
+"fr": "Nerveux"
+},
+{
+"id": "a1-proud",
+"en": "Proud",
+"topic": "feelings",
+"es": "Orgulloso",
+"fr": "Fier"
+},
+{
+"id": "a1-lonely",
+"en": "Lonely",
+"topic": "feelings",
+"es": "Solo (solitario)",
+"fr": "Seul"
+},
+{
+"id": "a1-sleepy",
+"en": "Sleepy",
+"topic": "feelings",
+"es": "Con sueño",
+"fr": "Somnolent"
+},
+{
+"id": "a1-sick-unwell",
+"en": "Sick (unwell)",
+"topic": "feelings",
+"es": "Mal (enfermo)",
+"fr": "Malade"
+},
+{
+"id": "a1-love",
+"en": "Love",
+"topic": "feelings",
+"es": "Amor",
+"fr": "Amour"
+},
+{
+"id": "a1-fear",
+"en": "Fear",
+"topic": "feelings",
+"es": "Miedo",
+"fr": "Peur"
+},
+{
+"id": "a1-joy",
+"en": "Joy",
+"topic": "feelings",
+"es": "Alegría",
+"fr": "Joie"
+},
+{
+"id": "a1-funny",
+"en": "Funny",
+"topic": "feelings",
+"es": "Gracioso",
+"fr": "Drôle"
+}
+]

@@ -1,0 +1,844 @@
+0	b2-honesty	Honesty	values-ethics	Honestidad	Honnêteté
+1	b2-integrity	Integrity	values-ethics	Integridad	Intégrité
+2	b2-dignity	Dignity	values-ethics	Dignidad	Dignité
+3	b2-morality	Morality	values-ethics	Moralidad	Moralité
+4	b2-principle	Principle	values-ethics	Principio	Principe
+5	b2-virtue	Virtue	values-ethics	Virtud	Vertu
+6	b2-vice	Vice	values-ethics	Vicio	Vice
+7	b2-greed	Greed	values-ethics	Codicia	Avidité
+8	b2-courage	Courage	values-ethics	Coraje	Courage
+9	b2-cowardice	Cowardice	values-ethics	Cobardía	Lâcheté
+10	b2-generosity	Generosity	values-ethics	Generosidad	Générosité
+11	b2-gratitude	Gratitude	values-ethics	Gratitud	Gratitude
+12	b2-compassion	Compassion	values-ethics	Compasión	Compassion
+13	b2-tolerance	Tolerance	values-ethics	Tolerancia	Tolérance
+14	b2-prejudice	Prejudice	values-ethics	Prejuicio	Préjugé
+15	b2-discrimination	Discrimination	values-ethics	Discriminación	Discrimination
+16	b2-equality	Equality	values-ethics	Igualdad	Égalité
+17	b2-inequality	Inequality	values-ethics	Desigualdad	Inégalité
+18	b2-fairness	Fairness	values-ethics	Justicia (equidad)	Équité
+19	b2-corruption	Corruption	values-ethics	Corrupción	Corruption
+20	b2-temptation	Temptation	values-ethics	Tentación	Tentation
+21	b2-guilt	Guilt	values-ethics	Culpa	Culpabilité
+22	b2-shame	Shame	values-ethics	Vergüenza	Honte
+23	b2-pride-self-respect	Pride (self-respect)	values-ethics	Orgullo	Fierté
+24	b2-humility	Humility	values-ethics	Humildad	Humilité
+25	b2-ambition	Ambition	values-ethics	Ambición	Ambition
+26	b2-patience	Patience	values-ethics	Paciencia	Patience
+27	b2-sacrifice	Sacrifice	values-ethics	Sacrificio	Sacrifice
+28	b2-duty	Duty	values-ethics	Deber	Devoir (obligation)
+29	b2-conscience	Conscience	values-ethics	Conciencia	Conscience
+30	b2-hypocrisy	Hypocrisy	values-ethics	Hipocresía	Hypocrisie
+31	b2-forgiveness	Forgiveness	values-ethics	Perdón	Pardon
+32	b2-agenda	Agenda	business	Orden del día	Ordre du jour
+33	b2-minutes-of-a-meeting	Minutes (of a meeting)	business	Acta	Compte rendu
+34	b2-department	Department	business	Departamento	Service (département)
+35	b2-branch-office	Branch (office)	business	Sucursal	Succursale
+36	b2-headquarters	Headquarters	business	Sede central	Siège social
+37	b2-revenue	Revenue	business	Ingresos (empresa)	Chiffre d’affaires
+38	b2-stakeholder	Stakeholder	business	Parte interesada	Partie prenante
+39	b2-shareholder	Shareholder	business	Accionista	Actionnaire
+40	b2-client	Client	business	Cliente (empresa)	Client (entreprise)
+41	b2-supplier	Supplier	business	Proveedor	Fournisseur
+42	b2-quote-price-estimate	Quote (price estimate)	business	Presupuesto (cotización)	Devis
+43	b2-proposal	Proposal	business	Propuesta	Proposition
+44	b2-bid	Bid	business	Oferta (licitación)	Offre (appel d’offres)
+45	b2-merger	Merger	business	Fusión	Fusion
+46	b2-layoff	Layoff	business	Despido (recorte)	Licenciement
+47	b2-to-outsource	To outsource	business	Subcontratar	Externaliser
+48	b2-to-delegate	To delegate	business	Delegar	Déléguer
+49	b2-to-supervise	To supervise	business	Supervisar	Superviser
+50	b2-performance-review	Performance review	business	Evaluación de desempeño	Entretien annuel
+51	b2-strategy	Strategy	business	Estrategia	Stratégie
+52	b2-target	Target	business	Objetivo (cifra)	Objectif (chiffré)
+53	b2-quarter-business	Quarter (business)	business	Trimestre	Trimestre
+54	b2-benchmark	Benchmark	business	Punto de referencia	Référence
+55	b2-to-brainstorm	To brainstorm	business	Hacer una lluvia de ideas	Faire un brainstorming
+56	b2-to-network	To network	business	Hacer contactos	Réseauter
+57	b2-to-prioritize	To prioritize	business	Priorizar	Prioriser
+58	b2-to-streamline	To streamline	business	Agilizar	Rationaliser
+59	b2-startup	Startup	business	Startup	Start-up
+60	b2-entrepreneur	Entrepreneur	business	Emprendedor	Entrepreneur
+61	b2-profit-margin	Profit margin	business	Margen de beneficio	Marge bénéficiaire
+62	b2-competitor	Competitor	business	Competidor	Concurrent
+63	b2-milestone-project	Milestone (project)	business	Hito (proyecto)	Jalon
+64	b2-suspect	Suspect	law-crime	Sospechoso	Suspect
+65	b2-witness	Witness	law-crime	Testigo	Témoin
+66	b2-victim	Victim	law-crime	Víctima	Victime
+67	b2-trial	Trial	law-crime	Juicio	Procès
+68	b2-judge	Judge	law-crime	Juez	Juge
+69	b2-jury	Jury	law-crime	Jurado	Jury
+70	b2-verdict	Verdict	law-crime	Veredicto	Verdict
+71	b2-convicted	Convicted	law-crime	Condenado	Condamné
+72	b2-innocent	Innocent	law-crime	Inocente	Innocent
+73	b2-prison-sentence	Prison sentence	law-crime	Pena de prisión	Peine de prison
+74	b2-theft	Theft	law-crime	Robo (hurto)	Vol
+75	b2-robbery	Robbery	law-crime	Atraco	Braquage
+76	b2-burglary	Burglary	law-crime	Allanamiento	Cambriolage
+77	b2-fraud	Fraud	law-crime	Fraude	Fraude
+78	b2-bribery	Bribery	law-crime	Soborno	Corruption (pot-de-vin)
+79	b2-assault	Assault	law-crime	Agresión	Agression
+80	b2-murder	Murder	law-crime	Asesinato	Meurtre
+81	b2-kidnapping	Kidnapping	law-crime	Secuestro	Enlèvement
+82	b2-smuggling	Smuggling	law-crime	Contrabando	Contrebande
+83	b2-to-arrest	To arrest	law-crime	Arrestar	Arrêter
+84	b2-to-charge-with-a-crime	To charge (with a crime)	law-crime	Acusar	Inculper
+85	b2-to-sue	To sue	law-crime	Demandar	Poursuivre en justice
+86	b2-lawsuit	Lawsuit	law-crime	Demanda	Procès (civil)
+87	b2-court	Court	law-crime	Tribunal	Tribunal
+88	b2-prosecutor	Prosecutor	law-crime	Fiscal	Procureur
+89	b2-defense-legal	Defense (legal)	law-crime	Defensa	Défense
+90	b2-appeal-legal	Appeal (legal)	law-crime	Apelación	Appel
+91	b2-bail	Bail	law-crime	Fianza	Caution (judiciaire)
+92	b2-alibi	Alibi	law-crime	Coartada	Alibi
+93	b2-custody-police	Custody (police)	law-crime	Detención	Garde à vue
+94	b2-investigation	Investigation	law-crime	Investigación (policial)	Enquête
+95	b2-detective	Detective	law-crime	Detective	Enquêteur
+96	b2-experiment	Experiment	science-tech	Experimento	Expérience
+97	b2-hypothesis	Hypothesis	science-tech	Hipótesis	Hypothèse
+98	b2-theory	Theory	science-tech	Teoría	Théorie
+99	b2-data	Data	science-tech	Datos	Données
+100	b2-analysis	Analysis	science-tech	Análisis	Analyse
+101	b2-to-analyze	To analyze	science-tech	Analizar	Analyser
+102	b2-to-measure	To measure	science-tech	Medir	Mesurer
+103	b2-laboratory	Laboratory	science-tech	Laboratorio	Laboratoire
+104	b2-chemical	Chemical	science-tech	Químico	Chimique
+105	b2-molecule	Molecule	science-tech	Molécula	Molécule
+106	b2-atom	Atom	science-tech	Átomo	Atome
+107	b2-cell-biology	Cell (biology)	science-tech	Célula	Cellule
+108	b2-gene	Gene	science-tech	Gen	Gène
+109	b2-evolution	Evolution	science-tech	Evolución	Évolution
+110	b2-species	Species	science-tech	Especie	Espèce
+111	b2-gravity	Gravity	science-tech	Gravedad	Gravité
+112	b2-orbit	Orbit	science-tech	Órbita	Orbite
+113	b2-satellite	Satellite	science-tech	Satélite	Satellite
+114	b2-artificial-intelligence	Artificial intelligence	science-tech	Inteligencia artificial	Intelligence artificielle
+115	b2-algorithm	Algorithm	science-tech	Algoritmo	Algorithme
+116	b2-software	Software	science-tech	Software	Logiciel
+117	b2-hardware	Hardware	science-tech	Hardware	Matériel
+118	b2-database	Database	science-tech	Base de datos	Base de données
+119	b2-to-code-program	To code (program)	science-tech	Programar	Coder
+120	b2-bug-software	Bug (software)	science-tech	Error (bug)	Bug
+121	b2-encryption	Encryption	science-tech	Cifrado	Chiffrement
+122	b2-cybersecurity	Cybersecurity	science-tech	Ciberseguridad	Cybersécurité
+123	b2-virtual-reality	Virtual reality	science-tech	Realidad virtual	Réalité virtuelle
+124	b2-innovation	Innovation	science-tech	Innovación	Innovation
+125	b2-breakthrough	Breakthrough	science-tech	Avance (descubrimiento)	Percée
+126	b2-robot	Robot	science-tech	Robot	Robot
+127	b2-automation	Automation	science-tech	Automatización	Automatisation
+128	b2-sustainability	Sustainability	environment-2	Sostenibilidad	Durabilité
+129	b2-sustainable	Sustainable	environment-2	Sostenible	Durable
+130	b2-carbon-footprint	Carbon footprint	environment-2	Huella de carbono	Empreinte carbone
+131	b2-emissions	Emissions	environment-2	Emisiones	Émissions
+132	b2-greenhouse-gas	Greenhouse gas	environment-2	Gas de efecto invernadero	Gaz à effet de serre
+133	b2-global-warming	Global warming	environment-2	Calentamiento global	Réchauffement climatique
+134	b2-deforestation	Deforestation	environment-2	Deforestación	Déforestation
+135	b2-biodiversity	Biodiversity	environment-2	Biodiversidad	Biodiversité
+136	b2-ecosystem	Ecosystem	environment-2	Ecosistema	Écosystème
+137	b2-habitat	Habitat	environment-2	Hábitat	Habitat
+138	b2-endangered-species	Endangered species	environment-2	Especie en peligro	Espèce menacée
+139	b2-extinction	Extinction	environment-2	Extinción	Extinction
+140	b2-conservation	Conservation	environment-2	Conservación	Conservation
+141	b2-wildlife	Wildlife	environment-2	Fauna silvestre	Faune sauvage
+142	b2-natural-resources	Natural resources	environment-2	Recursos naturales	Ressources naturelles
+143	b2-fossil-fuels	Fossil fuels	environment-2	Combustibles fósiles	Énergies fossiles
+144	b2-solar-panel	Solar panel	environment-2	Panel solar	Panneau solaire
+145	b2-wind-turbine	Wind turbine	environment-2	Turbina eólica	Éolienne
+146	b2-landfill	Landfill	environment-2	Vertedero	Décharge
+147	b2-compost	Compost	environment-2	Compost	Compost
+148	b2-to-conserve	To conserve	environment-2	Conservar	Économiser (préserver)
+149	b2-to-preserve	To preserve	environment-2	Preservar	Préserver
+150	b2-sea-level	Sea level	environment-2	Nivel del mar	Niveau de la mer
+151	b2-glacier	Glacier	environment-2	Glaciar	Glacier
+152	b2-to-melt	To melt	environment-2	Derretirse	Fondre
+153	b2-famine	Famine	environment-2	Hambruna	Famine
+154	b2-overpopulation	Overpopulation	environment-2	Superpoblación	Surpopulation
+155	b2-to-pollute	To pollute	environment-2	Contaminar	Polluer
+156	b2-single-use-plastic	Single-use plastic	environment-2	Plástico de un solo uso	Plastique à usage unique
+157	b2-environmentalist	Environmentalist	environment-2	Ecologista	Écologiste
+158	b2-recycling-bin	Recycling bin	environment-2	Contenedor de reciclaje	Bac de recyclage
+159	b2-organic-farming	Organic farming	environment-2	Agricultura ecológica	Agriculture biologique
+160	b2-diagnosis	Diagnosis	medical	Diagnóstico	Diagnostic
+161	b2-to-diagnose	To diagnose	medical	Diagnosticar	Diagnostiquer
+162	b2-treatment	Treatment	medical	Tratamiento	Traitement
+163	b2-surgery	Surgery	medical	Cirugía	Chirurgie
+164	b2-surgeon	Surgeon	medical	Cirujano	Chirurgien
+165	b2-anesthesia	Anesthesia	medical	Anestesia	Anesthésie
+166	b2-to-prescribe	To prescribe	medical	Recetar	Prescrire
+167	b2-dose	Dose	medical	Dosis	Dose
+168	b2-side-effect	Side effect	medical	Efecto secundario	Effet secondaire
+169	b2-chronic	Chronic	medical	Crónico	Chronique
+170	b2-acute	Acute	medical	Agudo	Aigu
+171	b2-infection	Infection	medical	Infección	Infection
+172	b2-virus	Virus	medical	Virus	Virus
+173	b2-bacteria	Bacteria	medical	Bacterias	Bactéries
+174	b2-immune-system	Immune system	medical	Sistema inmunológico	Système immunitaire
+175	b2-antibiotic	Antibiotic	medical	Antibiótico	Antibiotique
+176	b2-transplant	Transplant	medical	Trasplante	Greffe
+177	b2-stroke	Stroke	medical	Derrame cerebral	AVC
+178	b2-heart-attack	Heart attack	medical	Infarto	Crise cardiaque
+179	b2-diabetes	Diabetes	medical	Diabetes	Diabète
+180	b2-cancer	Cancer	medical	Cáncer	Cancer
+181	b2-asthma	Asthma	medical	Asma	Asthme
+182	b2-blood-test	Blood test	medical	Análisis de sangre	Prise de sang
+183	b2-x-ray	X-ray	medical	Radiografía	Radio
+184	b2-scan-medical	Scan (medical)	medical	Escáner	Scanner
+185	b2-ward	Ward	medical	Pabellón	Service (hôpital)
+186	b2-intensive-care	Intensive care	medical	Cuidados intensivos	Soins intensifs
+187	b2-recovery	Recovery	medical	Recuperación	Rétablissement
+188	b2-disability	Disability	medical	Discapacidad	Handicap
+189	b2-wheelchair	Wheelchair	medical	Silla de ruedas	Fauteuil roulant
+190	b2-ambulance	Ambulance	medical	Ambulancia	Ambulance
+191	b2-pregnant	Pregnant	medical	Embarazada	Enceinte
+192	b2-contagious	Contagious	medical	Contagioso	Contagieux
+193	b2-behavior	Behavior	psychology	Comportamiento	Comportement
+194	b2-personality	Personality	psychology	Personalidad	Personnalité
+195	b2-trait	Trait	psychology	Rasgo	Trait (de caractère)
+196	b2-motivation	Motivation	psychology	Motivación	Motivation
+197	b2-willpower	Willpower	psychology	Fuerza de voluntad	Volonté
+198	b2-self-esteem	Self-esteem	psychology	Autoestima	Estime de soi
+199	b2-self-confidence	Self-confidence	psychology	Confianza en uno mismo	Confiance en soi
+200	b2-anxiety	Anxiety	psychology	Ansiedad	Anxiété
+201	b2-depression	Depression	psychology	Depresión	Dépression
+202	b2-stress	Stress	psychology	Estrés	Stress
+203	b2-trauma	Trauma	psychology	Trauma	Traumatisme
+204	b2-grief	Grief	psychology	Duelo	Deuil
+205	b2-to-cope	To cope	psychology	Sobrellevar	Faire face
+206	b2-comfort-zone	Comfort zone	psychology	Zona de confort	Zone de confort
+207	b2-procrastination	Procrastination	psychology	Procrastinación	Procrastination
+208	b2-to-procrastinate	To procrastinate	psychology	Procrastinar	Procrastiner
+209	b2-perfectionism	Perfectionism	psychology	Perfeccionismo	Perfectionnisme
+210	b2-introvert	Introvert	psychology	Introvertido	Introverti
+211	b2-extrovert	Extrovert	psychology	Extrovertido (persona)	Extraverti (personne)
+212	b2-mindfulness	Mindfulness	psychology	Atención plena	Pleine conscience
+213	b2-resilience	Resilience	psychology	Resiliencia	Résilience
+214	b2-to-overcome	To overcome	psychology	Superar	Surmonter
+215	b2-obsession	Obsession	psychology	Obsesión	Obsession
+216	b2-addiction	Addiction	psychology	Adicción	Addiction
+217	b2-denial	Denial	psychology	Negación	Déni
+218	b2-bias	Bias	psychology	Sesgo	Biais
+219	b2-stereotype	Stereotype	psychology	Estereotipo	Stéréotype
+220	b2-peer-pressure	Peer pressure	psychology	Presión social	Pression des pairs
+221	b2-self-awareness	Self-awareness	psychology	Autoconciencia	Conscience de soi
+222	b2-empathy-deep	Empathy (deep)	psychology	Empatía profunda	Empathie profonde
+223	b2-therapist	Therapist	psychology	Terapeuta	Thérapeute
+224	b2-instinct	Instinct	psychology	Instinto	Instinct
+225	b2-to-acknowledge	To acknowledge	verbs-7	Reconocer (admitir)	Reconnaître (admettre)
+226	b2-to-adapt	To adapt	verbs-7	Adaptarse	S’adapter
+227	b2-to-anticipate	To anticipate	verbs-7	Anticipar	Anticiper
+228	b2-to-assess	To assess	verbs-7	Evaluar (valorar)	Évaluer
+229	b2-to-assign	To assign	verbs-7	Asignar	Attribuer
+230	b2-to-assure	To assure	verbs-7	Asegurar (garantizar)	Assurer (garantir)
+231	b2-to-calculate	To calculate	verbs-7	Calcular	Calculer
+232	b2-to-clarify	To clarify	verbs-7	Aclarar	Clarifier
+233	b2-to-collaborate	To collaborate	verbs-7	Colaborar	Collaborer
+234	b2-to-compromise	To compromise	verbs-7	Llegar a un acuerdo	Faire des compromis
+235	b2-to-conclude	To conclude	verbs-7	Concluir	Conclure
+236	b2-to-confirm	To confirm	verbs-7	Confirmar	Confirmer
+237	b2-to-confront	To confront	verbs-7	Confrontar	Confronter
+238	b2-to-contribute	To contribute	verbs-7	Contribuir	Contribuer
+239	b2-to-define	To define	verbs-7	Definir	Définir
+240	b2-to-demonstrate	To demonstrate	verbs-7	Demostrar (mostrar)	Démontrer
+241	b2-to-dismiss	To dismiss	verbs-7	Descartar	Écarter
+242	b2-to-distinguish	To distinguish	verbs-7	Distinguir	Distinguer
+243	b2-to-dominate	To dominate	verbs-7	Dominar	Dominer
+244	b2-to-eliminate	To eliminate	verbs-7	Eliminar	Éliminer
+245	b2-to-emphasize	To emphasize	verbs-7	Enfatizar	Souligner (insister)
+246	b2-to-enable	To enable	verbs-7	Permitir (hacer posible)	Permettre (rendre possible)
+247	b2-to-enhance	To enhance	verbs-7	Mejorar (realzar)	Améliorer (renforcer)
+248	b2-to-ensure	To ensure	verbs-7	Garantizar	Garantir
+249	b2-to-establish	To establish	verbs-7	Establecer	Établir
+250	b2-to-estimate	To estimate	verbs-7	Estimar	Estimer
+251	b2-to-evaluate	To evaluate	verbs-7	Evaluar	Évaluer (juger)
+252	b2-to-exceed	To exceed	verbs-7	Superar (exceder)	Dépasser
+253	b2-to-exploit	To exploit	verbs-7	Explotar	Exploiter
+254	b2-to-facilitate	To facilitate	verbs-7	Facilitar	Faciliter
+255	b2-to-generate	To generate	verbs-8	Generar	Générer
+256	b2-to-guarantee	To guarantee	verbs-8	Garantizar (asegurar)	Garantir (assurer)
+257	b2-to-highlight	To highlight	verbs-8	Destacar	Mettre en évidence
+258	b2-to-identify	To identify	verbs-8	Identificar	Identifier
+259	b2-to-illustrate	To illustrate	verbs-8	Ilustrar	Illustrer
+260	b2-to-implement	To implement	verbs-8	Implementar	Mettre en œuvre
+261	b2-to-imply	To imply	verbs-8	Implicar (dar a entender)	Sous-entendre
+262	b2-to-indicate	To indicate	verbs-8	Indicar	Indiquer
+263	b2-to-influence	To influence	verbs-8	Influir	Influencer
+264	b2-to-inspire	To inspire	verbs-8	Inspirar	Inspirer
+265	b2-to-interpret	To interpret	verbs-8	Interpretar	Interpréter
+266	b2-to-justify	To justify	verbs-8	Justificar	Justifier
+267	b2-to-maintain	To maintain	verbs-8	Mantener	Maintenir
+268	b2-to-modify	To modify	verbs-8	Modificar	Modifier
+269	b2-to-monitor	To monitor	verbs-8	Monitorear	Surveiller
+270	b2-to-motivate	To motivate	verbs-8	Motivar	Motiver
+271	b2-to-obtain	To obtain	verbs-8	Obtener	Obtenir
+272	b2-to-oppose	To oppose	verbs-8	Oponerse	S’opposer
+273	b2-to-perceive	To perceive	verbs-8	Percibir	Percevoir
+274	b2-to-persist	To persist	verbs-8	Persistir	Persister
+275	b2-to-possess	To possess	verbs-8	Poseer (tener)	Posséder (détenir)
+276	b2-to-prevent	To prevent	verbs-8	Prevenir	Prévenir (empêcher)
+277	b2-to-pursue	To pursue	verbs-8	Perseguir (buscar)	Poursuivre (un but)
+278	b2-to-reinforce	To reinforce	verbs-8	Reforzar	Renforcer
+279	b2-to-resolve	To resolve	verbs-8	Resolver (solucionar)	Résoudre (régler)
+280	b2-to-restrict	To restrict	verbs-8	Restringir	Restreindre
+281	b2-to-retain	To retain	verbs-8	Retener	Retenir (conserver)
+282	b2-to-reveal	To reveal	verbs-8	Revelar	Révéler
+283	b2-to-sustain	To sustain	verbs-8	Sostener	Soutenir (maintenir)
+284	b2-to-tackle	To tackle	verbs-8	Abordar	S’attaquer à
+285	b2-to-transform	To transform	verbs-9	Transformar	Transformer
+286	b2-to-undergo	To undergo	verbs-9	Someterse a	Subir
+287	b2-to-undertake	To undertake	verbs-9	Emprender	Entreprendre
+288	b2-to-verify	To verify	verbs-9	Verificar	Vérifier
+289	b2-to-abandon	To abandon	verbs-9	Abandonar	Abandonner (quitter)
+290	b2-to-accompany	To accompany	verbs-9	Acompañar	Accompagner
+291	b2-to-accumulate	To accumulate	verbs-9	Acumular	Accumuler
+292	b2-to-alter	To alter	verbs-9	Alterar	Altérer
+293	b2-to-approve	To approve	verbs-9	Aprobar (autorizar)	Approuver
+294	b2-to-attach	To attach	verbs-9	Adjuntar	Joindre (attacher)
+295	b2-to-cease	To cease	verbs-9	Cesar	Cesser
+296	b2-to-commit-to	To commit (to)	verbs-9	Comprometerse	S’engager
+297	b2-to-comply	To comply	verbs-9	Cumplir (acatar)	Se conformer
+298	b2-to-conduct-carry-out	To conduct (carry out)	verbs-9	Llevar a cabo	Mener
+299	b2-to-consist-of	To consist of	verbs-9	Consistir en	Consister en
+300	b2-to-convert	To convert	verbs-9	Convertir	Convertir
+301	b2-to-cooperate	To cooperate	verbs-9	Cooperar	Coopérer
+302	b2-to-decline-refuse	To decline (refuse)	verbs-9	Declinar	Décliner
+303	b2-to-detect	To detect	verbs-9	Detectar	Détecter
+304	b2-to-devote	To devote	verbs-9	Dedicar	Consacrer
+305	b2-to-emerge	To emerge	verbs-9	Surgir	Émerger
+306	b2-to-exclude	To exclude	verbs-9	Excluir	Exclure
+307	b2-to-expand	To expand	verbs-9	Expandir	Étendre
+308	b2-to-fulfill	To fulfill	verbs-9	Cumplir (satisfacer)	Accomplir
+309	b2-to-impose	To impose	verbs-9	Imponer	Imposer
+310	b2-to-integrate	To integrate	verbs-9	Integrar	Intégrer
+311	b2-to-neglect	To neglect	verbs-9	Descuidar	Négliger
+312	b2-to-overlook	To overlook	verbs-9	Pasar por alto	Passer à côté de
+313	b2-to-reconsider	To reconsider	verbs-9	Reconsiderar	Reconsidérer
+314	b2-to-withdraw-pull-out	To withdraw (pull out)	verbs-9	Retirarse	Se retirer
+315	b2-accurate	Accurate	adjectives-5	Preciso (exacto)	Précis (exact)
+316	b2-adequate	Adequate	adjectives-5	Adecuado	Adéquat
+317	b2-ambiguous	Ambiguous	adjectives-5	Ambiguo	Ambigu
+318	b2-apparent	Apparent	adjectives-5	Aparente	Apparent
+319	b2-appropriate	Appropriate	adjectives-5	Apropiado	Approprié
+320	b2-arbitrary	Arbitrary	adjectives-5	Arbitrario	Arbitraire
+321	b2-coherent	Coherent	adjectives-5	Coherente	Cohérent
+322	b2-comprehensive	Comprehensive	adjectives-5	Exhaustivo	Complet (exhaustif)
+323	b2-consistent	Consistent	adjectives-5	Consistente	Constant (cohérent)
+324	b2-controversial	Controversial	adjectives-5	Controvertido	Controversé
+325	b2-crucial	Crucial	adjectives-5	Crucial	Crucial
+326	b2-deliberate	Deliberate	adjectives-5	Deliberado	Délibéré
+327	b2-distinct	Distinct	adjectives-5	Distinto (claro)	Distinct
+328	b2-diverse	Diverse	adjectives-5	Diverso (variado)	Divers
+329	b2-dominant	Dominant	adjectives-5	Dominante	Dominant
+330	b2-efficient	Efficient	adjectives-5	Eficiente	Efficace
+331	b2-elaborate	Elaborate	adjectives-5	Elaborado	Élaboré
+332	b2-explicit	Explicit	adjectives-5	Explícito	Explicite
+333	b2-implicit	Implicit	adjectives-5	Implícito	Implicite
+334	b2-fundamental	Fundamental	adjectives-5	Fundamental	Fondamental
+335	b2-genuine	Genuine	adjectives-5	Genuino	Authentique
+336	b2-inevitable	Inevitable	adjectives-5	Inevitable	Inévitable
+337	b2-legitimate	Legitimate	adjectives-5	Legítimo	Légitime
+338	b2-mutual	Mutual	adjectives-5	Mutuo	Mutuel
+339	b2-neutral	Neutral	adjectives-5	Neutral	Neutre
+340	b2-notable	Notable	adjectives-5	Notable	Notable
+341	b2-precise	Precise	adjectives-5	Preciso (detallado)	Précis (détaillé)
+342	b2-prominent	Prominent	adjectives-5	Prominente	Éminent
+343	b2-relevant	Relevant	adjectives-5	Relevante	Pertinent
+344	b2-irrelevant	Irrelevant	adjectives-5	Irrelevante	Hors sujet
+345	b2-rigid	Rigid	adjectives-6	Rígido	Rigide
+346	b2-subtle	Subtle	adjectives-6	Sutil	Subtil
+347	b2-sufficient	Sufficient	adjectives-6	Suficiente (bastante)	Suffisant
+348	b2-tremendous	Tremendous	adjectives-6	Tremendo	Énorme (formidable)
+349	b2-vague	Vague	adjectives-6	Vago	Vague
+350	b2-vast	Vast	adjectives-6	Vasto	Vaste
+351	b2-vital	Vital	adjectives-6	Vital	Vital
+352	b2-widespread	Widespread	adjectives-6	Generalizado	Répandu
+353	b2-reluctant	Reluctant	adjectives-6	Reacio	Réticent
+354	b2-thorough	Thorough	adjectives-6	Minucioso	Minutieux
+355	b2-abstract	Abstract	adjectives-6	Abstracto	Abstrait
+356	b2-concrete	Concrete	adjectives-6	Concreto	Concret
+357	b2-absurd	Absurd	adjectives-6	Absurdo	Absurde
+358	b2-alarming	Alarming	adjectives-6	Alarmante	Alarmant
+359	b2-biased	Biased	adjectives-6	Parcial (sesgado)	Partial
+360	b2-compelling	Compelling	adjectives-6	Convincente	Convaincant
+361	b2-contradictory	Contradictory	adjectives-6	Contradictorio	Contradictoire
+362	b2-credible	Credible	adjectives-6	Creíble	Crédible
+363	b2-feasible	Feasible	adjectives-6	Factible	Faisable
+364	b2-flawed	Flawed	adjectives-6	Defectuoso	Imparfait (défectueux)
+365	b2-innovative	Innovative	adjectives-6	Innovador	Innovant
+366	b2-obsolete	Obsolete	adjectives-6	Obsoleto	Obsolète
+367	b2-outstanding	Outstanding	adjectives-6	Sobresaliente	Exceptionnel
+368	b2-persistent	Persistent	adjectives-6	Persistente	Persistant
+369	b2-profound	Profound	adjectives-6	Profundo (idea)	Profond (idée)
+370	b2-redundant	Redundant	adjectives-6	Redundante	Redondant
+371	b2-superficial	Superficial	adjectives-6	Superficial	Superficiel
+372	b2-trivial	Trivial	adjectives-6	Trivial	Insignifiant
+373	b2-unprecedented	Unprecedented	adjectives-6	Sin precedentes	Sans précédent
+374	b2-versatile	Versatile	adjectives-6	Versátil	Polyvalent
+375	b2-as-far-as-im-concerned	As far as I’m concerned	discourse-markers	En lo que a mí respecta	En ce qui me concerne
+376	b2-to-some-extent	To some extent	discourse-markers	Hasta cierto punto	Dans une certaine mesure
+377	b2-in-terms-of	In terms of	discourse-markers	En cuanto a	En termes de
+378	b2-with-regard-to	With regard to	discourse-markers	Con respecto a	En ce qui concerne
+379	b2-on-the-whole	On the whole	discourse-markers	En general	Dans l’ensemble
+380	b2-by-and-large	By and large	discourse-markers	En líneas generales	Globalement
+381	b2-in-the-meantime	In the meantime	discourse-markers	Mientras tanto (entretanto)	En attendant
+382	b2-at-the-same-time	At the same time	discourse-markers	Al mismo tiempo	En même temps
+383	b2-needless-to-say	Needless to say	discourse-markers	Ni que decir tiene	Inutile de dire
+384	b2-to-put-it-simply	To put it simply	discourse-markers	Dicho de forma sencilla	Pour faire simple
+385	b2-in-a-nutshell	In a nutshell	discourse-markers	En pocas palabras	En un mot
+386	b2-having-said-that	Having said that	discourse-markers	Dicho esto	Cela dit
+387	b2-as-a-matter-of-fact	As a matter of fact	discourse-markers	De hecho (en realidad)	En réalité
+388	b2-for-the-time-being	For the time being	discourse-markers	Por el momento	Pour le moment
+389	b2-on-second-thought	On second thought	discourse-markers	Pensándolo bien	À la réflexion
+390	b2-all-things-considered	All things considered	discourse-markers	Considerándolo todo	Tout bien considéré
+391	b2-if-anything	If anything	discourse-markers	En todo caso	Au contraire (si tant est)
+392	b2-in-any-case	In any case	discourse-markers	En cualquier caso	En tout cas
+393	b2-more-or-less	More or less	discourse-markers	Más o menos	Plus ou moins
+394	b2-sooner-or-later	Sooner or later	discourse-markers	Tarde o temprano	Tôt ou tard
+395	b2-every-now-and-then	Every now and then	discourse-markers	De vez en cuando	De temps à autre
+396	b2-on-purpose	On purpose	discourse-markers	A propósito (adrede)	Exprès
+397	b2-by-accident	By accident	discourse-markers	Por accidente	Par accident
+398	b2-by-all-means	By all means	discourse-markers	Por supuesto (faltaría más)	Je vous en prie
+399	b2-for-the-sake-of	For the sake of	discourse-markers	Por el bien de	Pour le bien de
+400	b2-up-to-a-point	Up to a point	discourse-markers	Hasta cierto punto (con límites)	Jusqu’à un certain point
+401	b2-to-say-the-least	To say the least	discourse-markers	Por decir poco	Pour le moins
+402	b2-in-hindsight	In hindsight	discourse-markers	En retrospectiva	Avec le recul
+403	b2-strictly-speaking	Strictly speaking	discourse-markers	Estrictamente hablando	À proprement parler
+404	b2-broadly-speaking	Broadly speaking	discourse-markers	En términos generales	Grosso modo
+405	b2-parliament	Parliament	politics-economy	Parlamento	Parlement
+406	b2-president	President	politics-economy	Presidente	Président
+407	b2-prime-minister	Prime minister	politics-economy	Primer ministro	Premier ministre
+408	b2-minister	Minister	politics-economy	Ministro	Ministre
+409	b2-mayor	Mayor	politics-economy	Alcalde	Maire
+410	b2-policy	Policy	politics-economy	Política (medida)	Politique (mesure)
+411	b2-reform	Reform	politics-economy	Reforma	Réforme
+412	b2-legislation	Legislation	politics-economy	Legislación	Législation
+413	b2-bill-proposed-law	Bill (proposed law)	politics-economy	Proyecto de ley	Projet de loi
+414	b2-referendum	Referendum	politics-economy	Referéndum	Référendum
+415	b2-campaign	Campaign	politics-economy	Campaña	Campagne
+416	b2-candidate	Candidate	politics-economy	Candidato	Candidat
+417	b2-political-party	Political party	politics-economy	Partido político	Parti politique
+418	b2-opposition	Opposition	politics-economy	Oposición	Opposition
+419	b2-coalition	Coalition	politics-economy	Coalición	Coalition
+420	b2-majority	Majority	politics-economy	Mayoría	Majorité
+421	b2-minority	Minority	politics-economy	Minoría	Minorité
+422	b2-scandal	Scandal	politics-economy	Escándalo	Scandale
+423	b2-budget-deficit	Budget deficit	politics-economy	Déficit presupuestario	Déficit budgétaire
+424	b2-national-debt	National debt	politics-economy	Deuda pública	Dette publique
+425	b2-recession	Recession	politics-economy	Recesión	Récession
+426	b2-economic-growth	Economic growth	politics-economy	Crecimiento económico	Croissance économique
+427	b2-interest-rate	Interest rate	politics-economy	Tasa de interés	Taux d’intérêt
+428	b2-stock-market	Stock market	politics-economy	Bolsa de valores	Bourse
+429	b2-shares-stocks	Shares (stocks)	politics-economy	Acciones	Actions
+430	b2-investor	Investor	politics-economy	Inversor	Investisseur
+431	b2-trade-commerce	Trade (commerce)	politics-economy	Comercio	Commerce
+432	b2-tariff	Tariff	politics-economy	Arancel	Droit de douane
+433	b2-export	Export	politics-economy	Exportación	Exportation
+434	b2-import	Import	politics-economy	Importación	Importation
+435	b2-bankruptcy	Bankruptcy	politics-economy	Bancarrota	Faillite
+436	b2-monopoly	Monopoly	politics-economy	Monopolio	Monopole
+437	b2-in-laws	In-laws	family-society	Suegros (familia política)	Belle-famille
+438	b2-mother-in-law	Mother-in-law	family-society	Suegra	Belle-mère
+439	b2-stepmother	Stepmother	family-society	Madrastra	Belle-mère (marâtre)
+440	b2-sibling	Sibling	family-society	Hermano/a (sibling)	Frère ou sœur
+441	b2-spouse	Spouse	family-society	Cónyuge	Conjoint
+442	b2-fiance	Fiancé	family-society	Prometido	Fiancé
+443	b2-engagement	Engagement	family-society	Compromiso	Fiançailles
+444	b2-to-propose-marriage	To propose (marriage)	family-society	Pedir matrimonio	Demander en mariage
+445	b2-honeymoon	Honeymoon	family-society	Luna de miel	Lune de miel
+446	b2-single-parent	Single parent	family-society	Madre/padre soltero	Parent célibataire
+447	b2-godparent	Godparent	family-society	Padrino/madrina	Parrain/marraine
+448	b2-guardian	Guardian	family-society	Tutor legal	Tuteur
+449	b2-orphan	Orphan	family-society	Huérfano	Orphelin
+450	b2-adoption	Adoption	family-society	Adopción	Adoption
+451	b2-to-adopt	To adopt	family-society	Adoptar	Adopter
+452	b2-upbringing	Upbringing	family-society	Crianza	Éducation (enfance)
+453	b2-household	Household	family-society	Hogar (unidad)	Foyer
+454	b2-breadwinner	Breadwinner	family-society	Sostén de la familia	Soutien de famille
+455	b2-ancestor	Ancestor	family-society	Antepasado	Ancêtre
+456	b2-descendant	Descendant	family-society	Descendiente	Descendant
+457	b2-heritage	Heritage	family-society	Herencia (cultural)	Patrimoine
+458	b2-inheritance	Inheritance	family-society	Herencia (bienes)	Héritage
+459	b2-to-inherit	To inherit	family-society	Heredar	Hériter
+460	b2-will-testament	Will (testament)	family-society	Testamento	Testament
+461	b2-widow	Widow	family-society	Viuda	Veuve
+462	b2-elderly	Elderly	family-society	Ancianos	Personnes âgées
+463	b2-caregiver	Caregiver	family-society	Cuidador	Aidant
+464	b2-retirement-home	Retirement home	family-society	Residencia de ancianos	Maison de retraite
+465	b2-kinship	Kinship	family-society	Parentesco	Parenté
+466	b2-role-model	Role model	family-society	Modelo a seguir	Modèle
+467	b2-painting	Painting	arts-culture	Pintura	Peinture
+468	b2-sculpture	Sculpture	arts-culture	Escultura	Sculpture
+469	b2-exhibition	Exhibition	arts-culture	Exposición	Exposition
+470	b2-gallery	Gallery	arts-culture	Galería	Galerie
+471	b2-masterpiece	Masterpiece	arts-culture	Obra maestra	Chef-d’œuvre
+472	b2-portrait	Portrait	arts-culture	Retrato	Portrait
+473	b2-landscape-painting	Landscape (painting)	arts-culture	Paisaje (cuadro)	Paysage (tableau)
+474	b2-canvas	Canvas	arts-culture	Lienzo	Toile
+475	b2-sketch	Sketch	arts-culture	Boceto	Croquis
+476	b2-festival	Festival	arts-culture	Festival	Festival
+477	b2-parade	Parade	arts-culture	Desfile	Défilé
+478	b2-folklore	Folklore	arts-culture	Folclore	Folklore
+479	b2-myth	Myth	arts-culture	Mito	Mythe
+480	b2-legend	Legend	arts-culture	Leyenda	Légende
+481	b2-literature	Literature	arts-culture	Literatura	Littérature
+482	b2-genre	Genre	arts-culture	Género	Genre
+483	b2-metaphor	Metaphor	arts-culture	Metáfora	Métaphore
+484	b2-rhyme	Rhyme	arts-culture	Rima	Rime
+485	b2-verse	Verse	arts-culture	Verso	Vers
+486	b2-orchestra	Orchestra	arts-culture	Orquesta	Orchestre
+487	b2-symphony	Symphony	arts-culture	Sinfonía	Symphonie
+488	b2-opera	Opera	arts-culture	Ópera	Opéra
+489	b2-choir	Choir	arts-culture	Coro	Chorale
+490	b2-rehearsal	Rehearsal	arts-culture	Ensayo	Répétition
+491	b2-premiere	Premiere	arts-culture	Estreno	Première
+492	b2-applause	Applause	arts-culture	Aplausos	Applaudissements
+493	b2-playwright	Playwright	arts-culture	Dramaturgo	Dramaturge
+494	b2-script	Script	arts-culture	Guion	Scénario
+495	b2-stage	Stage	arts-culture	Escenario	Scène
+496	b2-backstage	Backstage	arts-culture	Entre bastidores	Coulisses
+497	b2-costume	Costume	arts-culture	Vestuario (disfraz)	Costume
+498	b2-director-film	Director (film)	arts-culture	Director	Réalisateur
+499	b2-producer	Producer	arts-culture	Productor	Producteur
+500	b2-screenplay	Screenplay	arts-culture	Guion cinematográfico	Scénario (film)
+501	b2-to-marinate	To marinate	cooking-techniques	Marinar	Faire mariner
+502	b2-to-grill	To grill	cooking-techniques	Asar a la parrilla	Griller
+503	b2-to-roast	To roast	cooking-techniques	Asar al horno	Rôtir
+504	b2-to-steam	To steam	cooking-techniques	Cocer al vapor	Cuire à la vapeur
+505	b2-to-simmer	To simmer	cooking-techniques	Cocer a fuego lento	Mijoter
+506	b2-to-saute	To sauté	cooking-techniques	Saltear	Faire sauter
+507	b2-to-whisk	To whisk	cooking-techniques	Batir	Fouetter
+508	b2-to-knead	To knead	cooking-techniques	Amasar	Pétrir
+509	b2-dough	Dough	cooking-techniques	Masa	Pâte
+510	b2-batter	Batter	cooking-techniques	Masa líquida	Pâte à frire
+511	b2-crust	Crust	cooking-techniques	Corteza	Croûte
+512	b2-to-grate	To grate	cooking-techniques	Rallar	Râper
+513	b2-to-peel	To peel	cooking-techniques	Pelar	Éplucher
+514	b2-to-chop	To chop	cooking-techniques	Picar	Hacher
+515	b2-to-slice	To slice	cooking-techniques	Rebanar	Trancher
+516	b2-to-dice	To dice	cooking-techniques	Cortar en cubos	Couper en dés
+517	b2-to-stir	To stir	cooking-techniques	Remover	Remuer
+518	b2-seasoning	Seasoning	cooking-techniques	Condimento	Assaisonnement
+519	b2-herb	Herb	cooking-techniques	Hierba aromática	Herbe aromatique
+520	b2-spice	Spice	cooking-techniques	Especia	Épice
+521	b2-cinnamon	Cinnamon	cooking-techniques	Canela	Cannelle
+522	b2-ginger	Ginger	cooking-techniques	Jengibre	Gingembre
+523	b2-basil	Basil	cooking-techniques	Albahaca	Basilic
+524	b2-vinegar	Vinegar	cooking-techniques	Vinagre	Vinaigre
+525	b2-soy-sauce	Soy sauce	cooking-techniques	Salsa de soja	Sauce soja
+526	b2-broth	Broth	cooking-techniques	Caldo	Bouillon
+527	b2-stew	Stew	cooking-techniques	Guiso	Ragoût
+528	b2-crispy	Crispy	cooking-techniques	Crujiente	Croustillant
+529	b2-tender	Tender	cooking-techniques	Tierno	Tendre
+530	b2-juicy	Juicy	cooking-techniques	Jugoso	Juteux
+531	b2-greasy	Greasy	cooking-techniques	Grasiento	Gras
+532	b2-stale	Stale	cooking-techniques	Rancio (pan duro)	Rassis
+533	b2-rotten	Rotten	cooking-techniques	Podrido	Pourri
+534	b2-sour	Sour	cooking-techniques	Agrio	Aigre
+535	b2-savory	Savory	cooking-techniques	Salado (sabroso)	Salé (savoureux)
+536	b2-skyscraper	Skyscraper	urban-construction	Rascacielos	Gratte-ciel
+537	b2-infrastructure	Infrastructure	urban-construction	Infraestructura	Infrastructure
+538	b2-public-transport	Public transport	urban-construction	Transporte público	Transports en commun
+539	b2-congestion	Congestion	urban-construction	Congestión	Congestion
+540	b2-urban	Urban	urban-construction	Urbano	Urbain
+541	b2-rural	Rural	urban-construction	Rural	Rural
+542	b2-district	District	urban-construction	Distrito	Arrondissement
+543	b2-gentrification	Gentrification	urban-construction	Gentrificación	Gentrification
+544	b2-housing-crisis	Housing crisis	urban-construction	Crisis de vivienda	Crise du logement
+545	b2-homelessness	Homelessness	urban-construction	Sinhogarismo	Sans-abrisme
+546	b2-shelter	Shelter	urban-construction	Refugio	Refuge
+547	b2-pedestrian-zone	Pedestrian zone	urban-construction	Zona peatonal	Zone piétonne
+548	b2-bike-lane	Bike lane	urban-construction	Carril bici	Piste cyclable
+549	b2-green-space	Green space	urban-construction	Zona verde	Espace vert
+550	b2-high-rise	High-rise	urban-construction	Edificio alto	Immeuble de grande hauteur
+551	b2-zoning	Zoning	urban-construction	Zonificación	Zonage
+552	b2-demolition	Demolition	urban-construction	Demolición	Démolition
+553	b2-construction-site	Construction site	urban-construction	Obra	Chantier
+554	b2-crane	Crane	urban-construction	Grúa	Grue
+555	b2-scaffolding	Scaffolding	urban-construction	Andamio	Échafaudage
+556	b2-blueprint	Blueprint	urban-construction	Plano (arquitectónico)	Plan (architecture)
+557	b2-permit	Permit	urban-construction	Permiso (licencia)	Permis
+558	b2-contractor	Contractor	urban-construction	Contratista	Entrepreneur (BTP)
+559	b2-foundation-building	Foundation (building)	urban-construction	Cimientos	Fondations
+560	b2-insulation	Insulation	urban-construction	Aislamiento	Isolation
+561	b2-plumbing	Plumbing	urban-construction	Fontanería	Plomberie
+562	b2-wiring	Wiring	urban-construction	Cableado	Câblage
+563	b2-beam	Beam	urban-construction	Viga	Poutre
+564	b2-drywall	Drywall	urban-construction	Panel de yeso	Plaque de plâtre
+565	b2-inspection	Inspection	urban-construction	Inspección	Inspection
+566	b2-tenant-improvement	Tenant improvement	urban-construction	Adecuación para inquilino	Aménagement locataire
+567	b2-deadline-construction	Deadline (construction)	urban-construction	Plazo de obra	Délai de chantier
+568	b2-contempt	Contempt	emotions-4	Desprecio	Mépris
+569	b2-resentment	Resentment	emotions-4	Resentimiento	Ressentiment
+570	b2-bitterness	Bitterness	emotions-4	Amargura	Amertume
+571	b2-longing	Longing	emotions-4	Anhelo	Désir ardent
+572	b2-dread	Dread	emotions-4	Pavor	Appréhension (effroi)
+573	b2-apprehension	Apprehension	emotions-4	Aprensión	Appréhension
+574	b2-serenity	Serenity	emotions-4	Serenidad	Sérénité
+575	b2-contentment	Contentment	emotions-4	Satisfacción (plenitud)	Contentement
+576	b2-euphoria	Euphoria	emotions-4	Euforia	Euphorie
+577	b2-melancholy	Melancholy	emotions-4	Melancolía	Mélancolie
+578	b2-remorse	Remorse	emotions-4	Remordimiento	Remords
+579	b2-humiliation	Humiliation	emotions-4	Humillación	Humiliation
+580	b2-rage	Rage	emotions-4	Rabia	Rage
+581	b2-awe	Awe	emotions-4	Asombro	Émerveillement
+582	b2-indignation	Indignation	emotions-4	Indignación	Indignation
+583	b2-disgust	Disgust	emotions-4	Asco	Dégoût
+584	b2-boredom	Boredom	emotions-4	Aburrimiento	Ennui
+585	b2-agony	Agony	emotions-4	Agonía	Agonie
+586	b2-ecstasy	Ecstasy	emotions-4	Éxtasis	Extase
+587	b2-complacency	Complacency	emotions-4	Complacencia	Complaisance
+588	b2-disbelief	Disbelief	emotions-4	Incredulidad	Incrédulité
+589	b2-suspicion	Suspicion	emotions-4	Sospecha	Soupçon
+590	b2-reluctance	Reluctance	emotions-4	Reticencia	Réticence
+591	b2-eagerness	Eagerness	emotions-4	Entusiasmo (ansia)	Empressement
+592	b2-fondness	Fondness	emotions-4	Cariño	Tendresse (affection)
+593	b2-tenderness	Tenderness	emotions-4	Ternura	Tendresse
+594	b2-affection	Affection	emotions-4	Afecto	Affection
+595	b2-to-resent	To resent	emotions-4	Resentirse	En vouloir à
+596	b2-to-loathe	To loathe	emotions-4	Aborrecer	Détester (avoir en horreur)
+597	b2-to-cherish	To cherish	emotions-4	Atesorar	Chérir
+598	b2-to-despise	To despise	emotions-4	Despreciar	Mépriser
+599	b2-to-dread	To dread	emotions-4	Temer (con pavor)	Redouter
+600	b2-to-state	To state	communication-2	Afirmar	Déclarer (affirmer)
+601	b2-statement	Statement	communication-2	Declaración	Déclaration
+602	b2-to-claim	To claim	communication-2	Afirmar (sostener)	Prétendre
+603	b2-to-declare	To declare	communication-2	Declarar	Déclarer
+604	b2-to-announce	To announce	communication-2	Anunciar	Annoncer
+605	b2-announcement	Announcement	communication-2	Anuncio	Annonce
+606	b2-to-assert	To assert	communication-2	Aseverar	Affirmer (avec force)
+607	b2-to-hint	To hint	communication-2	Insinuar	Faire allusion
+608	b2-to-confess	To confess	communication-2	Confesar	Avouer
+609	b2-confession	Confession	communication-2	Confesión	Aveu
+610	b2-to-object	To object	communication-2	Objetar	Objecter
+611	b2-objection	Objection	communication-2	Objeción	Objection
+612	b2-to-summarize	To summarize	communication-2	Resumir	Résumer
+613	b2-summary	Summary	communication-2	Resumen	Résumé
+614	b2-to-elaborate	To elaborate	communication-2	Explicar con detalle	Développer
+615	b2-to-paraphrase	To paraphrase	communication-2	Parafrasear	Paraphraser
+616	b2-to-quote	To quote	communication-2	Citar (textualmente)	Citer
+617	b2-quotation	Quotation	communication-2	Cita	Citation
+618	b2-reference	Reference	communication-2	Referencia	Référence
+619	b2-to-address-an-issue	To address (an issue)	communication-2	Abordar (un tema)	Aborder (un problème)
+620	b2-to-convey	To convey	communication-2	Transmitir	Transmettre
+621	b2-to-articulate	To articulate	communication-2	Articular	Articuler
+622	b2-to-reiterate	To reiterate	communication-2	Reiterar	Réitérer
+623	b2-remark	Remark	communication-2	Comentario (observación)	Remarque
+624	b2-to-comment	To comment	communication-2	Comentar	Commenter
+625	b2-to-consult	To consult	communication-2	Consultar	Consulter
+626	b2-to-advocate	To advocate	communication-2	Abogar por	Prôner
+627	b2-to-mediate	To mediate	communication-2	Mediar	Servir de médiateur
+628	b2-compromise-noun	Compromise (noun)	communication-2	Compromiso (acuerdo)	Compromis
+629	b2-negotiation	Negotiation	communication-2	Negociación	Négociation
+630	b2-persuasive	Persuasive	communication-2	Persuasivo	Persuasif
+631	b2-tactful	Tactful	communication-2	Diplomático (con tacto)	Plein de tact
+632	b2-blunt-direct	Blunt (direct)	communication-2	Directo (brusco)	Direct (brusque)
+633	b2-efficiency	Efficiency	time-management	Eficiencia	Efficacité
+634	b2-productivity	Productivity	time-management	Productividad	Productivité
+635	b2-to-do-list	To-do list	time-management	Lista de tareas	Liste de choses à faire
+636	b2-reminder	Reminder	time-management	Recordatorio	Rappel
+637	b2-to-reschedule	To reschedule	time-management	Reprogramar	Reprogrammer
+638	b2-calendar	Calendar	time-management	Calendario	Calendrier
+639	b2-time-zone	Time zone	time-management	Zona horaria	Fuseau horaire
+640	b2-daylight-saving-time	Daylight saving time	time-management	Horario de verano	Heure d’été
+641	b2-punctuality	Punctuality	time-management	Puntualidad	Ponctualité
+642	b2-ahead-of-schedule	Ahead of schedule	time-management	Adelantado	En avance
+643	b2-behind-schedule	Behind schedule	time-management	Retrasado (respecto al plan)	En retard (sur le planning)
+644	b2-in-advance	In advance	time-management	Con antelación	À l’avance
+645	b2-last-minute	Last minute	time-management	De última hora	De dernière minute
+646	b2-overdue	Overdue	time-management	Atrasado (vencido)	En retard (échu)
+647	b2-to-squeeze-in	To squeeze in	time-management	Hacer un hueco	Caser
+648	b2-to-multitask	To multitask	time-management	Hacer varias cosas a la vez	Faire plusieurs choses à la fois
+649	b2-to-allocate	To allocate	time-management	Asignar (tiempo)	Allouer
+650	b2-downtime	Downtime	time-management	Tiempo muerto	Temps mort
+651	b2-spare-time	Spare time	time-management	Tiempo libre (sobrante)	Temps libre (restant)
+652	b2-to-kill-time	To kill time	time-management	Matar el tiempo	Tuer le temps
+653	b2-pastime	Pastime	time-management	Pasatiempo (afición)	Passe-temps (loisir)
+654	b2-leisure	Leisure	time-management	Ocio	Loisirs
+655	b2-on-the-dot	On the dot	time-management	En punto	Pile
+656	b2-around-the-clock	Around the clock	time-management	Las veinticuatro horas	Vingt-quatre heures sur vingt-quatre
+657	b2-in-the-nick-of-time	In the nick of time	time-management	Justo a tiempo	Juste à temps
+658	b2-long-term	Long-term	time-management	A largo plazo (adj.)	À long terme (adj.)
+659	b2-short-term	Short-term	time-management	A corto plazo	À court terme
+660	b2-simultaneously	Simultaneously	time-management	Simultáneamente	Simultanément
+661	b2-continent	Continent	geography	Continente	Continent
+662	b2-hemisphere	Hemisphere	geography	Hemisferio	Hémisphère
+663	b2-equator	Equator	geography	Ecuador (línea)	Équateur
+664	b2-latitude	Latitude	geography	Latitud	Latitude
+665	b2-altitude	Altitude	geography	Altitud	Altitude
+666	b2-valley	Valley	geography	Valle	Vallée
+667	b2-canyon	Canyon	geography	Cañón	Canyon
+668	b2-cliff	Cliff	geography	Acantilado	Falaise
+669	b2-cave	Cave	geography	Cueva	Grotte
+670	b2-plateau	Plateau	geography	Meseta	Plateau
+671	b2-peninsula	Peninsula	geography	Península	Péninsule
+672	b2-bay	Bay	geography	Bahía	Baie
+673	b2-coast	Coast	geography	Costa	Côte
+674	b2-shore	Shore	geography	Orilla	Rivage
+675	b2-harbor	Harbor	geography	Puerto	Port
+676	b2-dune	Dune	geography	Duna	Dune
+677	b2-iceberg	Iceberg	geography	Iceberg	Iceberg
+678	b2-swamp	Swamp	geography	Pantano	Marécage
+679	b2-jungle	Jungle	geography	Selva	Jungle
+680	b2-rainforest	Rainforest	geography	Selva tropical	Forêt tropicale
+681	b2-savanna	Savanna	geography	Sabana	Savane
+682	b2-tundra	Tundra	geography	Tundra	Toundra
+683	b2-oasis	Oasis	geography	Oasis	Oasis
+684	b2-waterfall	Waterfall	geography	Cascada	Cascade
+685	b2-stream	Stream	geography	Arroyo	Ruisseau
+686	b2-spring-water	Spring (water)	geography	Manantial	Source
+687	b2-reef	Reef	geography	Arrecife	Récif
+688	b2-tide	Tide	geography	Marea	Marée
+689	b2-current-water	Current (water)	geography	Corriente	Courant
+690	b2-horizon	Horizon	geography	Horizonte	Horizon
+691	b2-skeleton	Skeleton	anatomy	Esqueleto	Squelette
+692	b2-bone	Bone	anatomy	Hueso	Os
+693	b2-skull	Skull	anatomy	Cráneo	Crâne
+694	b2-spine	Spine	anatomy	Columna vertebral	Colonne vertébrale
+695	b2-rib	Rib	anatomy	Costilla	Côte
+696	b2-joint	Joint	anatomy	Articulación	Articulation
+697	b2-tendon	Tendon	anatomy	Tendón	Tendon
+698	b2-nerve	Nerve	anatomy	Nervio	Nerf
+699	b2-brain	Brain	anatomy	Cerebro	Cerveau
+700	b2-lung	Lung	anatomy	Pulmón	Poumon
+701	b2-liver	Liver	anatomy	Hígado	Foie
+702	b2-kidney	Kidney	anatomy	Riñón	Rein
+703	b2-intestine	Intestine	anatomy	Intestino	Intestin
+704	b2-artery	Artery	anatomy	Arteria	Artère
+705	b2-vein	Vein	anatomy	Vena	Veine
+706	b2-pulse	Pulse	anatomy	Pulso	Pouls
+707	b2-wrist	Wrist	anatomy	Muñeca	Poignet
+708	b2-ankle	Ankle	anatomy	Tobillo	Cheville
+709	b2-elbow	Elbow	anatomy	Codo	Coude
+710	b2-thigh	Thigh	anatomy	Muslo	Cuisse
+711	b2-heel	Heel	anatomy	Talón	Talon
+712	b2-palm	Palm	anatomy	Palma	Paume
+713	b2-thumb	Thumb	anatomy	Pulgar	Pouce
+714	b2-eyebrow	Eyebrow	anatomy	Ceja	Sourcil
+715	b2-eyelash	Eyelash	anatomy	Pestaña	Cil
+716	b2-chin	Chin	anatomy	Barbilla	Menton
+717	b2-cheek	Cheek	anatomy	Mejilla	Joue
+718	b2-forehead	Forehead	anatomy	Frente	Front
+719	b2-jaw	Jaw	anatomy	Mandíbula	Mâchoire
+720	b2-throat	Throat	anatomy	Garganta	Gorge
+721	b2-tongue	Tongue	anatomy	Lengua	Langue (organe)
+722	b2-lip	Lip	anatomy	Labio	Lèvre
+723	b2-tailor	Tailor	clothing-fabric	Sastre	Tailleur
+724	b2-fabric	Fabric	clothing-fabric	Tela	Tissu
+725	b2-seam	Seam	clothing-fabric	Costura	Couture
+726	b2-zipper	Zipper	clothing-fabric	Cremallera	Fermeture éclair
+727	b2-button	Button	clothing-fabric	Botón	Bouton
+728	b2-collar	Collar	clothing-fabric	Cuello (prenda)	Col
+729	b2-sleeve	Sleeve	clothing-fabric	Manga	Manche
+730	b2-hem	Hem	clothing-fabric	Dobladillo	Ourlet
+731	b2-pocket	Pocket	clothing-fabric	Bolsillo	Poche
+732	b2-lining	Lining	clothing-fabric	Forro	Doublure
+733	b2-to-fasten	To fasten	clothing-fabric	Abrochar	Attacher
+734	b2-to-unbutton	To unbutton	clothing-fabric	Desabrochar	Déboutonner
+735	b2-to-fold	To fold	clothing-fabric	Doblar (ropa)	Plier (vêtements)
+736	b2-wardrobe	Wardrobe	clothing-fabric	Armario	Armoire
+737	b2-hanger	Hanger	clothing-fabric	Percha	Cintre
+738	b2-detergent	Detergent	clothing-fabric	Detergente	Lessive
+739	b2-stain	Stain	clothing-fabric	Mancha	Tache
+740	b2-to-shrink	To shrink	clothing-fabric	Encoger	Rétrécir
+741	b2-to-fade	To fade	clothing-fabric	Desteñir	Déteindre
+742	b2-wrinkle	Wrinkle	clothing-fabric	Arruga	Pli (froissure)
+743	b2-formal-wear	Formal wear	clothing-fabric	Ropa formal	Tenue de soirée
+744	b2-casual-wear	Casual wear	clothing-fabric	Ropa informal	Tenue décontractée
+745	b2-uniform	Uniform	clothing-fabric	Uniforme	Uniforme
+746	b2-suit	Suit	clothing-fabric	Traje	Costume
+747	b2-tie	Tie	clothing-fabric	Corbata	Cravate
+748	b2-high-heels	High heels	clothing-fabric	Tacones	Talons hauts
+749	b2-sneakers	Sneakers	clothing-fabric	Zapatillas	Baskets
+750	b2-boots	Boots	clothing-fabric	Botas	Bottes
+751	b2-sandals	Sandals	clothing-fabric	Sandalias	Sandales
+752	b2-slippers	Slippers	clothing-fabric	Pantuflas	Chaussons
+753	b2-pajamas	Pajamas	clothing-fabric	Pijama	Pyjama
+754	b2-underwear	Underwear	clothing-fabric	Ropa interior	Sous-vêtements
+755	b2-belt	Belt	clothing-fabric	Cinturón	Ceinture
+756	b2-concept	Concept	abstract-concepts	Concepto	Concept
+757	b2-notion	Notion	abstract-concepts	Noción	Notion
+758	b2-aspect	Aspect	abstract-concepts	Aspecto	Aspect
+759	b2-factor	Factor	abstract-concepts	Factor	Facteur
+760	b2-feature	Feature	abstract-concepts	Característica	Caractéristique
+761	b2-element	Element	abstract-concepts	Elemento	Élément
+762	b2-component	Component	abstract-concepts	Componente	Composant
+763	b2-structure	Structure	abstract-concepts	Estructura	Structure
+764	b2-function	Function	abstract-concepts	Función	Fonction
+765	b2-process	Process	abstract-concepts	Proceso	Processus
+766	b2-procedure	Procedure	abstract-concepts	Procedimiento	Procédure
+767	b2-method	Method	abstract-concepts	Método	Méthode
+768	b2-approach	Approach	abstract-concepts	Enfoque	Approche
+769	b2-technique	Technique	abstract-concepts	Técnica	Technique
+770	b2-framework	Framework	abstract-concepts	Marco	Cadre
+771	b2-criterion	Criterion	abstract-concepts	Criterio	Critère
+772	b2-standard	Standard	abstract-concepts	Estándar	Norme (standard)
+773	b2-norm	Norm	abstract-concepts	Norma	Norme
+774	b2-exception	Exception	abstract-concepts	Excepción	Exception
+775	b2-phase	Phase	abstract-concepts	Fase	Phase
+776	b2-sequence	Sequence	abstract-concepts	Secuencia	Séquence
+777	b2-outcome	Outcome	abstract-concepts	Resultado	Résultat (issue)
+778	b2-consequence	Consequence	abstract-concepts	Consecuencia	Conséquence
+779	b2-impact	Impact	abstract-concepts	Impacto	Impact
+780	b2-implication	Implication	abstract-concepts	Implicación	Implication
+781	b2-significance	Significance	abstract-concepts	Importancia (significado)	Signification (importance)
+782	b2-context	Context	abstract-concepts	Contexto	Contexte
+783	b2-scope	Scope	abstract-concepts	Alcance	Portée
+784	b2-scale-magnitude	Scale (magnitude)	abstract-concepts	Escala	Échelle
+785	b2-dimension	Dimension	abstract-concepts	Dimensión	Dimension
+786	b2-proportion	Proportion	abstract-concepts	Proporción	Proportion
+787	b2-ratio	Ratio	abstract-concepts	Razón (proporción)	Rapport (ratio)
+788	b2-barely	Barely	degree-adverbs	Apenas	À peine
+789	b2-hardly	Hardly	degree-adverbs	Casi no	Presque pas
+790	b2-merely	Merely	degree-adverbs	Meramente	Simplement
+791	b2-utterly	Utterly	degree-adverbs	Totalmente	Totalement
+792	b2-thoroughly	Thoroughly	degree-adverbs	A fondo	À fond
+793	b2-fairly	Fairly	degree-adverbs	Bastante	Assez
+794	b2-rather	Rather	degree-adverbs	Más bien	Plutôt
+795	b2-somewhat	Somewhat	degree-adverbs	Algo	Quelque peu
+796	b2-slightly	Slightly	degree-adverbs	Ligeramente	Légèrement
+797	b2-considerably	Considerably	degree-adverbs	Considerablemente	Considérablement
+798	b2-significantly	Significantly	degree-adverbs	Significativamente	Sensiblement
+799	b2-roughly	Roughly	degree-adverbs	Aproximadamente	Environ
+800	b2-precisely	Precisely	degree-adverbs	Precisamente	Précisément
+801	b2-virtually	Virtually	degree-adverbs	Prácticamente	Pratiquement
+802	b2-entirely	Entirely	degree-adverbs	Enteramente	Entièrement
+803	b2-partially	Partially	degree-adverbs	Parcialmente	Partiellement
+804	b2-mostly	Mostly	degree-adverbs	Mayormente	Surtout (principalement)
+805	b2-increasingly	Increasingly	degree-adverbs	Cada vez más	De plus en plus
+806	b2-gradually	Gradually	degree-adverbs	Gradualmente	Progressivement
+807	b2-rapidly	Rapidly	degree-adverbs	Rápidamente	Rapidement
+808	b2-steadily	Steadily	degree-adverbs	Constantemente	Régulièrement
+809	b2-abruptly	Abruptly	degree-adverbs	Abruptamente	Brusquement
+810	b2-ultimately	Ultimately	degree-adverbs	En última instancia	En fin de compte
+811	b2-altogether	Altogether	degree-adverbs	En total	Au total
+812	b2-whatsoever	Whatsoever	degree-adverbs	En absoluto	Que ce soit
+813	b2-nonetheless	Nonetheless	degree-adverbs	Aun así	Néanmoins (pourtant)
+814	b2-deliberately	Deliberately	degree-adverbs	Deliberadamente	Délibérément
+815	b2-reluctantly	Reluctantly	degree-adverbs	De mala gana	À contrecœur
+816	b2-knitting	Knitting	hobbies-making	Tejer (punto)	Tricot
+817	b2-sewing	Sewing	hobbies-making	Costura (coser)	Couture (coudre)
+818	b2-pottery	Pottery	hobbies-making	Cerámica	Poterie
+819	b2-woodworking	Woodworking	hobbies-making	Carpintería	Menuiserie
+820	b2-gardening	Gardening	hobbies-making	Jardinería	Jardinage
+821	b2-birdwatching	Birdwatching	hobbies-making	Observación de aves	Observation des oiseaux
+822	b2-kayaking	Kayaking	hobbies-making	Kayak	Kayak
+823	b2-rock-climbing	Rock climbing	hobbies-making	Escalada	Escalade
+824	b2-martial-arts	Martial arts	hobbies-making	Artes marciales	Arts martiaux
+825	b2-boxing	Boxing	hobbies-making	Boxeo	Boxe
+826	b2-archery	Archery	hobbies-making	Tiro con arco	Tir à l’arc
+827	b2-bowling	Bowling	hobbies-making	Bolos	Bowling
+828	b2-karaoke	Karaoke	hobbies-making	Karaoke	Karaoké
+829	b2-esports	Esports	hobbies-making	Deportes electrónicos	E-sport
+830	b2-collectible	Collectible	hobbies-making	Objeto de colección	Objet de collection
+831	b2-cosplay	Cosplay	hobbies-making	Cosplay	Cosplay
+832	b2-3d-printing	3D printing	hobbies-making	Impresión 3D	Impression 3D
+833	b2-tabletop-role-playing-game	Tabletop role-playing game	hobbies-making	Juego de rol de mesa	Jeu de rôle sur table
+834	b2-miniature-figure	Miniature (figure)	hobbies-making	Miniatura	Figurine
+835	b2-dice	Dice	hobbies-making	Dados	Dés
+836	b2-campaign-game	Campaign (game)	hobbies-making	Campaña (juego)	Campagne (jeu)
+837	b2-hobbyist	Hobbyist	hobbies-making	Aficionado (hobby)	Amateur (passionné)
+838	b2-craft	Craft	hobbies-making	Artesanía	Artisanat
+839	b2-workbench	Workbench	hobbies-making	Banco de trabajo	Établi
+840	b2-glue	Glue	hobbies-making	Pegamento	Colle
+841	b2-sandpaper	Sandpaper	hobbies-making	Papel de lija	Papier de verre
+842	b2-paintbrush	Paintbrush	hobbies-making	Pincel	Pinceau
+843	b2-prototype	Prototype	hobbies-making	Prototipo	Prototype

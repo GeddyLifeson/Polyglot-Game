@@ -1,0 +1,1509 @@
+{
+"sentences": [
+{
+"id": "b1-dr1",
+"tier": "B1",
+"en": "I am learning to drive.",
+"es": [
+"Estoy",
+"aprendiendo",
+"a",
+"conducir"
+],
+"fr": [
+"J’apprends",
+"à",
+"conduire"
+]
+},
+{
+"id": "b1-dr2",
+"tier": "B1",
+"en": "I usually wake up early.",
+"es": [
+"Normalmente",
+"me despierto",
+"temprano"
+],
+"fr": [
+"D’habitude,",
+"je me réveille",
+"tôt"
+]
+},
+{
+"id": "b1-dr3",
+"tier": "B1",
+"en": "Yesterday I cleaned the whole house.",
+"es": [
+"Ayer",
+"limpié",
+"toda",
+"la casa"
+],
+"fr": [
+"Hier,",
+"j’ai nettoyé",
+"toute",
+"la maison"
+]
+},
+{
+"id": "b1-dr4",
+"tier": "B1",
+"en": "I have never missed a day of work.",
+"es": [
+"Nunca",
+"he faltado",
+"un día",
+"al trabajo"
+],
+"fr": [
+"Je n’ai",
+"jamais",
+"manqué",
+"un jour de travail"
+]
+},
+{
+"id": "b1-fs1",
+"tier": "B1",
+"en": "My brother doesn’t play sports.",
+"es": [
+"Mi hermano",
+"no",
+"practica",
+"deportes"
+],
+"fr": [
+"Mon frère",
+"ne",
+"fait",
+"pas de sport"
+]
+},
+{
+"id": "b1-fs2",
+"tier": "B1",
+"en": "We should call our parents.",
+"es": [
+"Deberíamos",
+"llamar",
+"a nuestros",
+"padres"
+],
+"fr": [
+"Nous devrions",
+"appeler",
+"nos parents"
+]
+},
+{
+"id": "b1-fs3",
+"tier": "B1",
+"en": "Could you help me with this, please?",
+"es": [
+"¿Podría",
+"ayudarme",
+"con esto,",
+"por favor?"
+],
+"fr": [
+"Pourriez-vous",
+"m’aider",
+"avec ça,",
+"s’il vous plaît ?"
+]
+},
+{
+"id": "b1-fs4",
+"tier": "B1",
+"en": "My sister is more talkative than me.",
+"es": [
+"Mi hermana",
+"es",
+"más habladora",
+"que yo"
+],
+"fr": [
+"Ma sœur",
+"est",
+"plus bavarde",
+"que moi"
+]
+},
+{
+"id": "b1-te1",
+"tier": "B1",
+"en": "Yesterday I visited a new city.",
+"es": [
+"Ayer",
+"visité",
+"una ciudad",
+"nueva"
+],
+"fr": [
+"Hier,",
+"j’ai visité",
+"une nouvelle",
+"ville"
+]
+},
+{
+"id": "b1-te2",
+"tier": "B1",
+"en": "If it rains, we’ll stay at the hotel.",
+"es": [
+"Si llueve,",
+"nos quedaremos",
+"en el hotel"
+],
+"fr": [
+"S’il pleut,",
+"nous resterons",
+"à l’hôtel"
+]
+},
+{
+"id": "b1-te3",
+"tier": "B1",
+"en": "I have never been to Japan.",
+"es": [
+"Nunca",
+"he estado",
+"en Japón"
+],
+"fr": [
+"Je ne suis",
+"jamais",
+"allé",
+"au Japon"
+]
+},
+{
+"id": "b1-te4",
+"tier": "B1",
+"en": "Can you recommend a good hotel?",
+"es": [
+"¿Puedes",
+"recomendar",
+"un buen hotel?"
+],
+"fr": [
+"Peux-tu",
+"recommander",
+"un bon hôtel ?"
+]
+},
+{
+"id": "b1-op1",
+"tier": "B1",
+"en": "The music is very loud.",
+"es": [
+"La música",
+"está",
+"muy",
+"fuerte"
+],
+"fr": [
+"La musique",
+"est",
+"très",
+"forte"
+]
+},
+{
+"id": "b1-op2",
+"tier": "B1",
+"en": "This city is more expensive than that one.",
+"es": [
+"Esta ciudad",
+"es",
+"más cara",
+"que esa"
+],
+"fr": [
+"Cette ville",
+"est",
+"plus chère",
+"que celle-là"
+]
+},
+{
+"id": "b1-op3",
+"tier": "B1",
+"en": "I think this book is very interesting.",
+"es": [
+"Creo que",
+"este libro",
+"es muy",
+"interesante"
+],
+"fr": [
+"Je pense que",
+"ce livre",
+"est très",
+"intéressant"
+]
+},
+{
+"id": "b1-op4",
+"tier": "B1",
+"en": "In my opinion, we should leave early.",
+"es": [
+"En mi opinión,",
+"deberíamos",
+"salir",
+"temprano"
+],
+"fr": [
+"À mon avis,",
+"nous devrions",
+"partir",
+"tôt"
+]
+},
+{
+"id": "c2-s01",
+"tier": "C2",
+"en": "Honestly, I’d have thought twice before signing anything like that.",
+"es": [
+"Sinceramente,",
+"me lo habría pensado",
+"dos veces",
+"antes de firmar",
+"algo así"
+],
+"fr": [
+"Franchement,",
+"j’y aurais réfléchi",
+"à deux fois",
+"avant de signer",
+"un truc pareil"
+]
+},
+{
+"id": "c2-s02",
+"tier": "C2",
+"en": "It’s not that I don’t care — it’s that I’ve got nothing left to give.",
+"es": [
+"No es que",
+"no me importe,",
+"es que",
+"ya no me queda",
+"nada que dar"
+],
+"fr": [
+"C’est pas que",
+"je m’en fiche,",
+"c’est que",
+"je n’ai plus rien",
+"à donner"
+]
+},
+{
+"id": "c2-s03",
+"tier": "C2",
+"en": "Whatever you do, don’t let him talk you into it.",
+"es": [
+"Hagas lo que hagas,",
+"no dejes",
+"que te convenza",
+"de hacerlo"
+],
+"fr": [
+"Quoi que tu fasses,",
+"ne le laisse pas",
+"te convaincre",
+"de le faire"
+]
+},
+{
+"id": "c2-s04",
+"tier": "C2",
+"en": "Had I known it would drag on this long, I’d never have agreed.",
+"es": [
+"De haber sabido",
+"que se alargaría tanto,",
+"nunca habría",
+"aceptado"
+],
+"fr": [
+"Si j’avais su",
+"que ça traînerait autant,",
+"je n’aurais jamais",
+"accepté"
+]
+},
+{
+"id": "c2-s05",
+"tier": "C2",
+"en": "She brushed it off, but you could tell it had gotten to her.",
+"es": [
+"Le quitó importancia,",
+"pero se notaba",
+"que le había",
+"afectado"
+],
+"fr": [
+"Elle a fait comme si de rien n’était,",
+"mais on voyait bien",
+"que ça l’avait",
+"touchée"
+]
+},
+{
+"id": "c2-s06",
+"tier": "C2",
+"en": "Say what you like about him, but he gets things done.",
+"es": [
+"Di lo que quieras",
+"de él,",
+"pero",
+"consigue que las cosas",
+"se hagan"
+],
+"fr": [
+"Dis ce que tu veux",
+"sur lui,",
+"mais",
+"il fait avancer",
+"les choses"
+]
+},
+{
+"id": "c2-s07",
+"tier": "C2",
+"en": "I’m not about to apologise for something I didn’t even do.",
+"es": [
+"No pienso",
+"disculparme",
+"por algo",
+"que ni siquiera",
+"hice"
+],
+"fr": [
+"Je ne vais pas",
+"m’excuser",
+"pour un truc",
+"que je n’ai même pas",
+"fait"
+]
+},
+{
+"id": "c2-s08",
+"tier": "C2",
+"en": "By the time they got round to fixing it, the damage was done.",
+"es": [
+"Para cuando",
+"por fin se pusieron",
+"a arreglarlo,",
+"el daño",
+"ya estaba hecho"
+],
+"fr": [
+"Le temps qu’ils",
+"se décident",
+"à le réparer,",
+"le mal",
+"était fait"
+]
+},
+{
+"id": "c2-s09",
+"tier": "C2",
+"en": "Between you and me, I don’t think the deal is going to go through.",
+"es": [
+"Entre tú y yo,",
+"no creo",
+"que el acuerdo",
+"vaya a",
+"salir adelante"
+],
+"fr": [
+"Entre nous,",
+"je ne pense pas",
+"que l’accord",
+"va",
+"se faire"
+]
+},
+{
+"id": "c2-s10",
+"tier": "C2",
+"en": "You’d think they’d have learned by now, wouldn’t you?",
+"es": [
+"Uno pensaría",
+"que a estas alturas",
+"ya habrían",
+"aprendido,",
+"¿no?"
+],
+"fr": [
+"On pourrait croire",
+"qu’ils auraient",
+"compris",
+"depuis le temps,",
+"non ?"
+]
+},
+{
+"id": "c2-s11",
+"tier": "C2",
+"en": "No sooner had we sat down than the fire alarm went off.",
+"es": [
+"Apenas",
+"nos habíamos sentado",
+"cuando",
+"saltó",
+"la alarma de incendios"
+],
+"fr": [
+"À peine",
+"étions-nous assis",
+"que",
+"l’alarme incendie",
+"s’est déclenchée"
+]
+},
+{
+"id": "c2-s12",
+"tier": "C2",
+"en": "If it’s all the same to you, I’d rather we kept this off the record.",
+"es": [
+"Si te da igual,",
+"preferiría",
+"que esto",
+"quedara",
+"extraoficial"
+],
+"fr": [
+"Si ça ne te dérange pas,",
+"je préférerais",
+"que ça reste",
+"entre nous",
+"(officieux)"
+]
+},
+{
+"id": "c1-m01",
+"tier": "C1",
+"en": "The government announced new measures to reduce inflation.",
+"es": [
+"El gobierno",
+"anunció",
+"nuevas medidas",
+"para reducir",
+"la inflación"
+],
+"fr": [
+"Le gouvernement",
+"a annoncé",
+"de nouvelles mesures",
+"pour réduire",
+"l’inflation"
+]
+},
+{
+"id": "c1-m02",
+"tier": "C1",
+"en": "According to the report, unemployment fell for the third month in a row.",
+"es": [
+"Según el informe,",
+"el desempleo",
+"bajó",
+"por tercer mes",
+"consecutivo"
+],
+"fr": [
+"Selon le rapport,",
+"le chômage",
+"a baissé",
+"pour le troisième mois",
+"consécutif"
+]
+},
+{
+"id": "c1-m03",
+"tier": "C1",
+"en": "I never said I was leaving; I said I needed time.",
+"es": [
+"Nunca dije",
+"que me iba;",
+"dije",
+"que necesitaba",
+"tiempo"
+],
+"fr": [
+"Je n’ai jamais dit",
+"que je partais ;",
+"j’ai dit",
+"que j’avais besoin",
+"de temps"
+]
+},
+{
+"id": "c1-m04",
+"tier": "C1",
+"en": "Whatever happens tonight, don’t open that door.",
+"es": [
+"Pase lo que pase",
+"esta noche,",
+"no abras",
+"esa puerta"
+],
+"fr": [
+"Quoi qu’il arrive",
+"ce soir,",
+"n’ouvre pas",
+"cette porte"
+]
+},
+{
+"id": "c1-m05",
+"tier": "C1",
+"en": "Scientists warn that the glacier could disappear within a decade.",
+"es": [
+"Los científicos",
+"advierten",
+"que el glaciar",
+"podría desaparecer",
+"en una década"
+],
+"fr": [
+"Les scientifiques",
+"avertissent",
+"que le glacier",
+"pourrait disparaître",
+"d’ici dix ans"
+]
+},
+{
+"id": "c1-m06",
+"tier": "C1",
+"en": "If you had told me the truth, none of this would have happened.",
+"es": [
+"Si me hubieras dicho",
+"la verdad,",
+"nada de esto",
+"habría pasado"
+],
+"fr": [
+"Si tu m’avais dit",
+"la vérité,",
+"rien de tout ça",
+"ne serait arrivé"
+]
+},
+{
+"id": "c1-m07",
+"tier": "C1",
+"en": "The suspect was arrested shortly after the police received an anonymous tip.",
+"es": [
+"El sospechoso",
+"fue detenido",
+"poco después de que",
+"la policía recibiera",
+"un aviso anónimo"
+],
+"fr": [
+"Le suspect",
+"a été arrêté",
+"peu après que",
+"la police a reçu",
+"un signalement anonyme"
+]
+},
+{
+"id": "c1-m08",
+"tier": "C1",
+"en": "Honestly, I think we’re both to blame for what happened.",
+"es": [
+"Sinceramente,",
+"creo que",
+"los dos tenemos la culpa",
+"de lo que pasó"
+],
+"fr": [
+"Franchement,",
+"je pense que",
+"nous sommes tous les deux responsables",
+"de ce qui s’est passé"
+]
+},
+{
+"id": "c1-m09",
+"tier": "C1",
+"en": "The company denied the allegations but declined to comment further.",
+"es": [
+"La empresa",
+"negó",
+"las acusaciones",
+"pero se negó",
+"a hacer más comentarios"
+],
+"fr": [
+"L’entreprise",
+"a démenti",
+"les accusations",
+"mais a refusé",
+"de commenter davantage"
+]
+},
+{
+"id": "c1-m10",
+"tier": "C1",
+"en": "You have no idea what I gave up to get here.",
+"es": [
+"No tienes ni idea",
+"de lo que renuncié",
+"para llegar",
+"hasta aquí"
+],
+"fr": [
+"Tu n’as aucune idée",
+"de ce à quoi j’ai renoncé",
+"pour arriver",
+"jusqu’ici"
+]
+},
+{
+"id": "c1-m11",
+"tier": "C1",
+"en": "Voters will head to the polls on Sunday amid growing uncertainty.",
+"es": [
+"Los votantes",
+"acudirán a las urnas",
+"el domingo",
+"en medio de",
+"una creciente incertidumbre"
+],
+"fr": [
+"Les électeurs",
+"se rendront aux urnes",
+"dimanche",
+"dans un climat",
+"d’incertitude croissante"
+]
+},
+{
+"id": "c1-m12",
+"tier": "C1",
+"en": "Let’s just say it didn’t go the way I planned.",
+"es": [
+"Digamos",
+"que no salió",
+"como",
+"lo había planeado"
+],
+"fr": [
+"Disons",
+"que ça ne s’est pas passé",
+"comme",
+"je l’avais prévu"
+]
+}
+],
+"dialogues": [
+{
+"id": "d-a2-01",
+"tier": "A2",
+"setup": "A new coworker introduces themselves.",
+"en": null,
+"es": [
+"Hola, soy Marta. Encantada.",
+"Encantado, yo soy Alex.",
+"No, gracias.",
+"Está a la derecha.",
+"Son las tres."
+],
+"fr": [
+"Bonjour, je suis Marta. Enchantée.",
+"Enchanté, moi c’est Alex.",
+"Non, merci.",
+"C’est à droite.",
+"Il est trois heures."
+]
+},
+{
+"id": "d-a2-02",
+"tier": "A2",
+"setup": "Someone asks where you’re from.",
+"en": null,
+"es": [
+"¿De dónde eres?",
+"Soy de Chicago, en Estados Unidos.",
+"Tengo veinte años.",
+"Me gusta el café.",
+"Trabajo en un banco."
+],
+"fr": [
+"Tu viens d’où ?",
+"Je viens de Chicago, aux États-Unis.",
+"J’ai vingt ans.",
+"J’aime le café.",
+"Je travaille dans une banque."
+]
+},
+{
+"id": "d-a2-03",
+"tier": "A2",
+"setup": "A neighbor asks what you do for a living.",
+"en": null,
+"es": [
+"¿A qué te dedicas?",
+"Soy diseñador, trabajo desde casa.",
+"Vivo cerca del parque.",
+"Prefiero el té.",
+"Mañana llueve."
+],
+"fr": [
+"Qu’est-ce que tu fais dans la vie ?",
+"Je suis designer, je travaille de chez moi.",
+"J’habite près du parc.",
+"Je préfère le thé.",
+"Demain il pleut."
+]
+},
+{
+"id": "d-a2-04",
+"tier": "A2",
+"setup": "A friend of a friend asks how long you’ve been in town.",
+"en": null,
+"es": [
+"¿Cuánto tiempo llevas aquí?",
+"Llevo dos meses aquí.",
+"Cuesta diez euros.",
+"Está cerrado los domingos.",
+"Tengo dos hermanos."
+],
+"fr": [
+"Tu es ici depuis combien de temps ?",
+"Je suis ici depuis deux mois.",
+"Ça coûte dix euros.",
+"C’est fermé le dimanche.",
+"J’ai deux frères."
+]
+},
+{
+"id": "d-a2-05",
+"tier": "A2",
+"setup": "Someone asks if you have brothers or sisters.",
+"en": null,
+"es": [
+"¿Tienes hermanos?",
+"Sí, una hermana mayor.",
+"Sí, a las ocho.",
+"No, es muy caro.",
+"Está en la cocina."
+],
+"fr": [
+"Tu as des frères et sœurs ?",
+"Oui, une grande sœur.",
+"Oui, à huit heures.",
+"Non, c’est trop cher.",
+"C’est dans la cuisine."
+]
+},
+{
+"id": "d-a2-06",
+"tier": "A2",
+"setup": "You’re leaving a party and the host says goodbye.",
+"en": null,
+"es": [
+"¡Gracias por venir, hasta pronto!",
+"Gracias a ti, ¡fue genial! Hasta pronto.",
+"Quisiera un café.",
+"Perdón, no entiendo.",
+"El baño está allí."
+],
+"fr": [
+"Merci d’être venu, à bientôt !",
+"Merci à toi, c’était super ! À bientôt.",
+"Je voudrais un café.",
+"Pardon, je ne comprends pas.",
+"Les toilettes sont là."
+]
+},
+{
+"id": "d-a2-07",
+"tier": "A2",
+"setup": "A stranger at the bus stop comments on the weather.",
+"en": null,
+"es": [
+"Qué frío hace hoy, ¿no?",
+"Sí, muchísimo. Y dicen que mañana nieva.",
+"Sí, me llamo Alex.",
+"No, no tengo hermanos.",
+"Cuesta cinco euros."
+],
+"fr": [
+"Il fait froid aujourd’hui, non ?",
+"Oui, très ! Et il paraît qu’il neige demain.",
+"Oui, je m’appelle Alex.",
+"Non, je n’ai pas de frères.",
+"Ça coûte cinq euros."
+]
+},
+{
+"id": "d-a2-08",
+"tier": "A2",
+"setup": "A coworker asks about your weekend plans.",
+"en": null,
+"es": [
+"¿Qué planes tienes para el fin de semana?",
+"Voy a visitar a mis padres.",
+"Trabajo en una oficina.",
+"Está a la izquierda.",
+"Prefiero el rojo."
+],
+"fr": [
+"Tu fais quoi ce week-end ?",
+"Je vais voir mes parents.",
+"Je travaille dans un bureau.",
+"C’est à gauche.",
+"Je préfère le rouge."
+]
+},
+{
+"id": "d-a2-09",
+"tier": "A2",
+"setup": "A friend suggests meeting for coffee.",
+"en": null,
+"es": [
+"¿Tomamos un café mañana?",
+"¡Claro! ¿A las diez te va bien?",
+"Soy de Madrid.",
+"Tengo un perro.",
+"Está lloviendo mucho."
+],
+"fr": [
+"On prend un café demain ?",
+"Bien sûr ! Dix heures, ça te va ?",
+"Je viens de Madrid.",
+"J’ai un chien.",
+"Il pleut beaucoup."
+]
+},
+{
+"id": "d-a2-10",
+"tier": "A2",
+"setup": "Someone asks what time the movie starts.",
+"en": null,
+"es": [
+"¿A qué hora empieza la película?",
+"Empieza a las siete y media.",
+"Está muy lejos.",
+"Me gusta mucho.",
+"Soy estudiante."
+],
+"fr": [
+"Le film commence à quelle heure ?",
+"Il commence à sept heures et demie.",
+"C’est très loin.",
+"J’aime beaucoup.",
+"Je suis étudiant."
+]
+},
+{
+"id": "d-a2-11",
+"tier": "A2",
+"setup": "A friend asks how your day was.",
+"en": null,
+"es": [
+"¿Cómo te fue hoy?",
+"Bastante bien, pero estoy cansado.",
+"Son dos euros.",
+"Vivo en el tercer piso.",
+"Es mi hermana."
+],
+"fr": [
+"Ta journée s’est bien passée ?",
+"Plutôt bien, mais je suis fatigué.",
+"Ça fait deux euros.",
+"J’habite au troisième étage.",
+"C’est ma sœur."
+]
+},
+{
+"id": "d-a2-12",
+"tier": "A2",
+"setup": "You bump into a neighbor who asks where you’re headed.",
+"en": null,
+"es": [
+"¿Adónde vas?",
+"Al supermercado, no tengo nada para cenar.",
+"Tengo treinta años.",
+"Hace mucho calor.",
+"Sí, hablo un poco."
+],
+"fr": [
+"Tu vas où ?",
+"Au supermarché, je n’ai rien pour le dîner.",
+"J’ai trente ans.",
+"Il fait très chaud.",
+"Oui, je parle un peu."
+]
+},
+{
+"id": "d-b1-01",
+"tier": "B1",
+"setup": "A friend you haven’t seen in months asks what’s new.",
+"en": null,
+"es": [
+"¡Cuánto tiempo! ¿Qué has estado haciendo?",
+"Pues cambié de trabajo hace dos meses y estoy encantado.",
+"El tren sale a las nueve.",
+"Prefiero el té al café.",
+"Está a dos cuadras de aquí."
+],
+"fr": [
+"Ça fait un bail ! Qu’est-ce que tu deviens ?",
+"J’ai changé de boulot il y a deux mois et j’adore.",
+"Le train part à neuf heures.",
+"Je préfère le thé au café.",
+"C’est à deux rues d’ici."
+]
+},
+{
+"id": "d-b1-02",
+"tier": "B1",
+"setup": "Your friend says they’ve been feeling stressed lately.",
+"en": null,
+"es": [
+"Últimamente estoy muy estresado con el trabajo.",
+"Lo siento mucho. ¿Quieres hablar de ello?",
+"Yo compré una bici nueva.",
+"La película empieza a las ocho.",
+"Mi hermana vive en Roma."
+],
+"fr": [
+"Ces derniers temps, je suis très stressé au boulot.",
+"Je suis désolé. Tu veux en parler ?",
+"Moi, j’ai acheté un nouveau vélo.",
+"Le film commence à huit heures.",
+"Ma sœur vit à Rome."
+]
+},
+{
+"id": "d-b1-03",
+"tier": "B1",
+"setup": "A friend asks how your trip went.",
+"en": null,
+"es": [
+"¿Qué tal el viaje? ¡Cuéntamelo todo!",
+"Increíble. La comida, la gente… ya quiero volver.",
+"Necesito comprar leche.",
+"Trabajo de nueve a cinco.",
+"Hace frío en enero."
+],
+"fr": [
+"Alors, ce voyage ? Raconte-moi tout !",
+"Incroyable. La bouffe, les gens… j’ai déjà envie d’y retourner.",
+"Je dois acheter du lait.",
+"Je travaille de neuf à cinq.",
+"Il fait froid en janvier."
+]
+},
+{
+"id": "d-b1-04",
+"tier": "B1",
+"setup": "A friend mentions they broke up with their partner.",
+"en": null,
+"es": [
+"Lucía y yo rompimos la semana pasada.",
+"Vaya, no lo sabía. ¿Cómo estás llevándolo?",
+"¡Felicidades! Qué buena noticia.",
+"¿A qué hora quedamos?",
+"El museo cierra los lunes."
+],
+"fr": [
+"Lucie et moi, on a rompu la semaine dernière.",
+"Oh, je ne savais pas. Tu tiens le coup ?",
+"Félicitations ! Quelle bonne nouvelle.",
+"On se retrouve à quelle heure ?",
+"Le musée ferme le lundi."
+]
+},
+{
+"id": "d-b1-05",
+"tier": "B1",
+"setup": "A friend asks whether you’re still going to the gym.",
+"en": null,
+"es": [
+"¿Sigues yendo al gimnasio?",
+"La verdad, lo dejé. Ahora salgo a correr por las mañanas.",
+"Sí, el pan está muy rico.",
+"Vivo en el quinto piso.",
+"Mañana es martes."
+],
+"fr": [
+"Tu vas toujours à la salle ?",
+"Franchement, j’ai arrêté. Maintenant je cours le matin.",
+"Oui, le pain est très bon.",
+"J’habite au cinquième.",
+"Demain c’est mardi."
+]
+},
+{
+"id": "d-b1-06",
+"tier": "B1",
+"setup": "Your friend asks your opinion on a show they recommended.",
+"en": null,
+"es": [
+"¿Ya viste la serie que te recomendé? ¿Qué te pareció?",
+"Me enganchó desde el primer capítulo, aunque el final me decepcionó un poco.",
+"Cuesta veinte euros.",
+"Tengo dos gatos.",
+"El baño está al fondo."
+],
+"fr": [
+"T’as vu la série que je t’ai conseillée ? T’en as pensé quoi ?",
+"Accro dès le premier épisode, même si la fin m’a un peu déçu.",
+"Ça coûte vingt euros.",
+"J’ai deux chats.",
+"Les toilettes sont au fond."
+]
+},
+{
+"id": "d-b1-07",
+"tier": "B1",
+"setup": "A friend proposes a hike this weekend but you already have plans.",
+"en": null,
+"es": [
+"¿Vamos de senderismo el sábado?",
+"El sábado no puedo, tengo una boda. ¿Te va bien el domingo?",
+"Sí, me llamo Alex.",
+"El semáforo está en rojo.",
+"Este vino es de Chile."
+],
+"fr": [
+"On va faire une rando samedi ?",
+"Samedi je ne peux pas, j’ai un mariage. Dimanche, ça t’irait ?",
+"Oui, je m’appelle Alex.",
+"Le feu est rouge.",
+"Ce vin vient du Chili."
+]
+},
+{
+"id": "d-b1-08",
+"tier": "B1",
+"setup": "A friend is running late and texts you.",
+"en": null,
+"es": [
+"Perdona, voy a llegar quince minutos tarde.",
+"Tranquilo, te espero en la cafetería de la esquina.",
+"Me gusta el color azul.",
+"Hoy hace mucho viento.",
+"Mi cumpleaños es en mayo."
+],
+"fr": [
+"Désolé, je vais avoir quinze minutes de retard.",
+"Pas de souci, je t’attends au café du coin.",
+"J’aime bien le bleu.",
+"Il y a beaucoup de vent aujourd’hui.",
+"Mon anniversaire est en mai."
+]
+},
+{
+"id": "d-b1-09",
+"tier": "B1",
+"setup": "You’re splitting a restaurant bill with a friend.",
+"en": null,
+"es": [
+"¿Dividimos la cuenta o pago yo esta vez?",
+"Dividamos, pero la próxima invito yo.",
+"Está lloviendo otra vez.",
+"Nací en Chicago.",
+"El autobús pasa cada diez minutos."
+],
+"fr": [
+"On partage l’addition ou c’est moi qui paie cette fois ?",
+"On partage, mais la prochaine c’est pour moi.",
+"Il pleut encore.",
+"Je suis né à Chicago.",
+"Le bus passe toutes les dix minutes."
+]
+},
+{
+"id": "d-b1-10",
+"tier": "B1",
+"setup": "A friend asks you to help them move next week.",
+"en": null,
+"es": [
+"¿Me ayudas con la mudanza el jueves?",
+"Claro, cuenta conmigo. Salgo del trabajo a las seis, ¿te sirve?",
+"El queso está en la nevera.",
+"Aprendo japonés desde hace un año.",
+"La playa está lejos."
+],
+"fr": [
+"Tu peux m’aider à déménager jeudi ?",
+"Bien sûr, compte sur moi. Je finis à six heures, ça te va ?",
+"Le fromage est dans le frigo.",
+"J’apprends le japonais depuis un an.",
+"La plage est loin."
+]
+},
+{
+"id": "d-b1-11",
+"tier": "B1",
+"setup": "A friend suggests a restaurant but you have a food restriction.",
+"en": null,
+"es": [
+"¿Cenamos en el asador nuevo?",
+"Es que soy vegetariano. ¿Conoces algún sitio con más opciones?",
+"Los lunes tengo clase de piano.",
+"La calle está cortada.",
+"Mi padre es médico."
+],
+"fr": [
+"On dîne au nouveau grill ?",
+"C’est que je suis végétarien. Tu connais un endroit avec plus de choix ?",
+"Le lundi, j’ai cours de piano.",
+"La rue est fermée.",
+"Mon père est médecin."
+]
+},
+{
+"id": "d-b1-12",
+"tier": "B1",
+"setup": "A friend asks if you can lend them some money until Friday.",
+"en": null,
+"es": [
+"¿Me puedes prestar cincuenta euros hasta el viernes?",
+"Sí, sin problema. Te los paso ahora por transferencia.",
+"Prefiero la ventana al pasillo.",
+"Hace sol en la playa.",
+"Mi abuela tiene ochenta años."
+],
+"fr": [
+"Tu peux me prêter cinquante euros jusqu’à vendredi ?",
+"Oui, pas de problème. Je te fais un virement tout de suite.",
+"Je préfère la fenêtre au couloir.",
+"Il fait beau à la plage.",
+"Ma grand-mère a quatre-vingts ans."
+]
+},
+{
+"id": "d-b2-01",
+"tier": "B2",
+"setup": "A colleague argues that remote work hurts teamwork.",
+"en": null,
+"es": [
+"Yo creo que el teletrabajo perjudica el trabajo en equipo.",
+"No estoy tan seguro. En mi experiencia, con buenas herramientas el equipo rinde igual o mejor.",
+"El informe está en la carpeta azul.",
+"Prefiero el café sin azúcar.",
+"Mañana hay huelga de trenes."
+],
+"fr": [
+"Je pense que le télétravail nuit au travail d’équipe.",
+"Je n’en suis pas si sûr. D’après mon expérience, avec de bons outils, l’équipe est aussi efficace, voire plus.",
+"Le rapport est dans le dossier bleu.",
+"Je préfère le café sans sucre.",
+"Demain il y a une grève des trains."
+]
+},
+{
+"id": "d-b2-02",
+"tier": "B2",
+"setup": "A friend says social media is making people lonelier.",
+"en": null,
+"es": [
+"Las redes sociales nos están haciendo más solitarios.",
+"En parte sí, aunque también han ayudado a mucha gente a encontrar comunidades que no tenía cerca.",
+"Mi contraseña tiene ocho caracteres.",
+"Ese restaurante cierra a las once.",
+"Compré los billetes ayer."
+],
+"fr": [
+"Les réseaux sociaux nous rendent plus solitaires.",
+"En partie, oui, même s’ils ont aussi aidé beaucoup de gens à trouver des communautés qu’ils n’avaient pas près de chez eux.",
+"Mon mot de passe a huit caractères.",
+"Ce restaurant ferme à onze heures.",
+"J’ai acheté les billets hier."
+]
+},
+{
+"id": "d-b2-03",
+"tier": "B2",
+"setup": "Someone asks whether you think cities should ban cars downtown.",
+"en": null,
+"es": [
+"¿Crees que deberían prohibir los coches en el centro?",
+"Sí, siempre que mejoren el transporte público; si no, solo trasladan el problema a los barrios.",
+"El centro está a diez minutos andando.",
+"Mi coche es rojo.",
+"Los domingos no trabajo."
+],
+"fr": [
+"Tu penses qu’il faudrait interdire les voitures au centre-ville ?",
+"Oui, à condition d’améliorer les transports en commun ; sinon on ne fait que déplacer le problème vers les quartiers.",
+"Le centre est à dix minutes à pied.",
+"Ma voiture est rouge.",
+"Le dimanche, je ne travaille pas."
+]
+},
+{
+"id": "d-b2-04",
+"tier": "B2",
+"setup": "A friend claims learning six languages at once is impossible.",
+"en": null,
+"es": [
+"Aprender seis idiomas a la vez es imposible.",
+"Difícil, sí, pero no imposible: las lenguas romances se refuerzan entre sí, y el japonés y el chino comparten muchos caracteres.",
+"Hoy hace veinte grados.",
+"Tengo cita con el dentista.",
+"El paquete llega el jueves."
+],
+"fr": [
+"Apprendre six langues en même temps, c’est impossible.",
+"Difficile, oui, mais pas impossible : les langues romanes se renforcent mutuellement, et le japonais et le chinois partagent beaucoup de caractères.",
+"Il fait vingt degrés aujourd’hui.",
+"J’ai rendez-vous chez le dentiste.",
+"Le colis arrive jeudi."
+]
+},
+{
+"id": "d-b2-05",
+"tier": "B2",
+"setup": "Your landlord says the rent is going up by 20% next month.",
+"en": null,
+"es": [
+"El alquiler subirá un veinte por ciento el mes que viene.",
+"Entiendo que los costes han subido, pero un veinte por ciento es mucho. ¿Podríamos acordar un diez y renovar por dos años?",
+"El baño está al final del pasillo.",
+"Me encanta la vista desde aquí.",
+"Hoy es mi cumpleaños."
+],
+"fr": [
+"Le loyer augmentera de vingt pour cent le mois prochain.",
+"Je comprends que les coûts ont augmenté, mais vingt pour cent, c’est beaucoup. On pourrait convenir de dix et renouveler pour deux ans ?",
+"La salle de bain est au bout du couloir.",
+"J’adore la vue d’ici.",
+"C’est mon anniversaire aujourd’hui."
+]
+},
+{
+"id": "d-b2-06",
+"tier": "B2",
+"setup": "A contractor says the job will be two weeks late.",
+"en": null,
+"es": [
+"La obra se retrasará dos semanas.",
+"¿Cuál es el motivo exactamente? Necesito una fecha firme para avisar al inquilino.",
+"Los azulejos son de color gris.",
+"Trabajo en el sector inmobiliario.",
+"Hay una farmacia en la esquina."
+],
+"fr": [
+"Le chantier aura deux semaines de retard.",
+"Quelle en est la cause exactement ? J’ai besoin d’une date ferme pour prévenir le locataire.",
+"Le carrelage est gris.",
+"Je travaille dans l’immobilier.",
+"Il y a une pharmacie au coin."
+]
+},
+{
+"id": "d-b2-07",
+"tier": "B2",
+"setup": "Customer service says your refund was denied.",
+"en": null,
+"es": [
+"Lo siento, su solicitud de reembolso ha sido rechazada.",
+"Según su política, tengo treinta días para devolverlo y solo han pasado doce. ¿Con quién puedo hablar para revisar la decisión?",
+"Quisiera una mesa para cuatro.",
+"Vivo cerca del río.",
+"Mi hermano es ingeniero."
+],
+"fr": [
+"Désolé, votre demande de remboursement a été refusée.",
+"D’après votre politique, j’ai trente jours pour le retourner et il ne s’est écoulé que douze jours. À qui puis-je m’adresser pour faire réexaminer la décision ?",
+"Je voudrais une table pour quatre.",
+"J’habite près de la rivière.",
+"Mon frère est ingénieur."
+]
+},
+{
+"id": "d-b2-08",
+"tier": "B2",
+"setup": "A neighbor complains that your music was too loud last night.",
+"en": null,
+"es": [
+"Anoche la música estaba demasiado alta, no pude dormir.",
+"Tienes toda la razón, lo siento mucho. A partir de ahora bajaré el volumen después de las diez.",
+"El supermercado abre a las ocho.",
+"Me gusta mucho tu perro.",
+"Estoy aprendiendo italiano."
+],
+"fr": [
+"Hier soir, la musique était trop forte, je n’ai pas pu dormir.",
+"Vous avez tout à fait raison, je suis vraiment désolé. Désormais je baisserai le volume après vingt-deux heures.",
+"Le supermarché ouvre à huit heures.",
+"J’aime beaucoup votre chien.",
+"J’apprends l’italien."
+]
+},
+{
+"id": "d-c2-01",
+"tier": "C2",
+"setup": "A friend mocks your terrible parking.",
+"en": null,
+"es": [
+"Menudo aparcamiento, ¿te has sacado el carnet en una tómbola?",
+"Al menos yo tengo coche, tú vienes en patinete.",
+"Lo siento mucho, no volverá a pasar.",
+"El coche es azul.",
+"Hoy hace mucho calor."
+],
+"fr": [
+"Sacré créneau, tu as eu ton permis dans une pochette-surprise ?",
+"Au moins j’ai une voiture, toi tu viens en trottinette.",
+"Je suis désolé, ça n’arrivera plus.",
+"La voiture est bleue.",
+"Il fait très chaud aujourd’hui."
+]
+},
+{
+"id": "d-c2-02",
+"tier": "C2",
+"setup": "Your friend claims they could beat you at anything.",
+"en": null,
+"es": [
+"Te gano en lo que quieras, elige.",
+"Vale: a ver quién aguanta más sin mirar el móvil.",
+"Tienes razón, eres mejor en todo.",
+"El partido empieza a las ocho.",
+"Mi hermana vive en Sevilla."
+],
+"fr": [
+"Je te bats à n’importe quoi, choisis.",
+"OK : on voit qui tient le plus longtemps sans regarder son téléphone.",
+"Tu as raison, tu es meilleur en tout.",
+"Le match commence à huit heures.",
+"Ma sœur habite à Lyon."
+]
+},
+{
+"id": "d-c2-03",
+"tier": "C2",
+"setup": "A friend teases you for still using an ancient phone.",
+"en": null,
+"es": [
+"¿Ese móvil todavía funciona? Es una pieza de museo.",
+"Oye, que lo mío es vintage, no viejo.",
+"Sí, debería comprar uno nuevo mañana mismo.",
+"El museo cierra los lunes.",
+"Necesito un cargador."
+],
+"fr": [
+"Il marche encore, ce téléphone ? C’est une pièce de musée.",
+"Hé, chez moi c’est vintage, pas vieux.",
+"Oui, je devrais en acheter un neuf dès demain.",
+"Le musée est fermé le lundi.",
+"J’ai besoin d’un chargeur."
+]
+},
+{
+"id": "d-c2-04",
+"tier": "C2",
+"setup": "Your friend says your cooking “isn’t bad”.",
+"en": null,
+"es": [
+"Pues no está mal, para ser tú.",
+"Viniendo de alguien que quema el agua, me lo tomo como un elogio.",
+"Gracias, me alegro de que te guste.",
+"La sal está en la mesa.",
+"Cené a las nueve."
+],
+"fr": [
+"Bah, c’est pas mauvais, pour toi.",
+"Venant de quelqu’un qui fait brûler l’eau, je prends ça comme un compliment.",
+"Merci, je suis content que ça te plaise.",
+"Le sel est sur la table.",
+"J’ai dîné à neuf heures."
+]
+},
+{
+"id": "d-c2-05",
+"tier": "C2",
+"setup": "Someone insists social media has ruined public debate.",
+"en": null,
+"es": [
+"Las redes han destrozado el debate público, punto.",
+"Tienen su parte de culpa, sí, pero antes el debate lo controlaban cuatro periódicos.",
+"Totalmente de acuerdo, no hay más que hablar.",
+"Mi cuenta tiene mil seguidores.",
+"El periódico llega por la mañana."
+],
+"fr": [
+"Les réseaux sociaux ont détruit le débat public, point final.",
+"Ils ont leur part de responsabilité, oui, mais avant le débat était contrôlé par trois journaux.",
+"Tout à fait d’accord, il n’y a rien à ajouter.",
+"Mon compte a mille abonnés.",
+"Le journal arrive le matin."
+]
+},
+{
+"id": "d-c2-06",
+"tier": "C2",
+"setup": "A relative says young people don’t want to work anymore.",
+"en": null,
+"es": [
+"Los jóvenes de hoy no quieren trabajar, así de claro.",
+"¿O será que no quieren trabajar por sueldos que no pagan ni el alquiler?",
+"Es verdad, somos unos vagos.",
+"Yo trabajo en una oficina.",
+"El alquiler se paga el día uno."
+],
+"fr": [
+"Les jeunes d’aujourd’hui ne veulent plus travailler, c’est clair.",
+"Ou alors ils ne veulent pas travailler pour des salaires qui ne paient même pas le loyer ?",
+"C’est vrai, on est des fainéants.",
+"Je travaille dans un bureau.",
+"Le loyer se paie le premier du mois."
+]
+},
+{
+"id": "d-c2-07",
+"tier": "C2",
+"setup": "A colleague argues the city should ban all cars from the centre.",
+"en": null,
+"es": [
+"Habría que prohibir los coches en todo el centro, sin excepciones.",
+"Sin excepciones no: ¿y las ambulancias, los repartos, la gente con movilidad reducida?",
+"Sí, prohibámoslo todo mañana.",
+"Mi coche es rojo.",
+"El centro tiene muchas tiendas."
+],
+"fr": [
+"Il faudrait interdire les voitures dans tout le centre, sans exception.",
+"Sans exception, non : et les ambulances, les livraisons, les personnes à mobilité réduite ?",
+"Oui, interdisons tout dès demain.",
+"Ma voiture est rouge.",
+"Le centre a beaucoup de magasins."
+]
+},
+{
+"id": "d-c2-08",
+"tier": "C2",
+"setup": "A friend says learning languages is pointless now that AI translates everything.",
+"en": null,
+"es": [
+"Aprender idiomas ya no tiene sentido, la IA lo traduce todo.",
+"Traduce palabras, sí; pero el chiste, el tono y la confianza de la otra persona no te los traduce nadie.",
+"Cierto, dejo el curso hoy mismo.",
+"La aplicación es gratis.",
+"Estudio español los martes."
+],
+"fr": [
+"Apprendre des langues ne sert plus à rien, l’IA traduit tout.",
+"Elle traduit les mots, oui ; mais la blague, le ton et la confiance de l’autre, personne ne te les traduit.",
+"C’est vrai, j’arrête le cours aujourd’hui.",
+"L’appli est gratuite.",
+"J’étudie le français le mardi."
+]
+}
+]
+}

@@ -1,0 +1,11 @@
+backend: onnx
+onnx provider: CPUExecutionProvider
+Traceback (most recent call last):
+  File "C:\Users\imarl\polyglot_game\tools\gen_audio.py", line 326, in <module>
+    pipe = KPipeline(lang_code=code, repo_id='hexgrad/Kokoro-82M') if backend == 'torch' else OnnxPipeline(code)
+                                                                                              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\imarl\polyglot_game\tools\gen_audio.py", line 133, in __init__
+    from misaki import en
+  File "C:\Users\imarl\polyglot_game\.venv312\Lib\site-packages\misaki\en.py", line 10, in <module>
+    import spacy
+ModuleNotFoundError: No module named 'spacy'

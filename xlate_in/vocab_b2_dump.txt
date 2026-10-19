@@ -1,0 +1,845 @@
+844
+b2-honesty|Honesty|values-ethics|Honestidad|Honnêteté
+b2-integrity|Integrity|values-ethics|Integridad|Intégrité
+b2-dignity|Dignity|values-ethics|Dignidad|Dignité
+b2-morality|Morality|values-ethics|Moralidad|Moralité
+b2-principle|Principle|values-ethics|Principio|Principe
+b2-virtue|Virtue|values-ethics|Virtud|Vertu
+b2-vice|Vice|values-ethics|Vicio|Vice
+b2-greed|Greed|values-ethics|Codicia|Avidité
+b2-courage|Courage|values-ethics|Coraje|Courage
+b2-cowardice|Cowardice|values-ethics|Cobardía|Lâcheté
+b2-generosity|Generosity|values-ethics|Generosidad|Générosité
+b2-gratitude|Gratitude|values-ethics|Gratitud|Gratitude
+b2-compassion|Compassion|values-ethics|Compasión|Compassion
+b2-tolerance|Tolerance|values-ethics|Tolerancia|Tolérance
+b2-prejudice|Prejudice|values-ethics|Prejuicio|Préjugé
+b2-discrimination|Discrimination|values-ethics|Discriminación|Discrimination
+b2-equality|Equality|values-ethics|Igualdad|Égalité
+b2-inequality|Inequality|values-ethics|Desigualdad|Inégalité
+b2-fairness|Fairness|values-ethics|Justicia (equidad)|Équité
+b2-corruption|Corruption|values-ethics|Corrupción|Corruption
+b2-temptation|Temptation|values-ethics|Tentación|Tentation
+b2-guilt|Guilt|values-ethics|Culpa|Culpabilité
+b2-shame|Shame|values-ethics|Vergüenza|Honte
+b2-pride-self-respect|Pride (self-respect)|values-ethics|Orgullo|Fierté
+b2-humility|Humility|values-ethics|Humildad|Humilité
+b2-ambition|Ambition|values-ethics|Ambición|Ambition
+b2-patience|Patience|values-ethics|Paciencia|Patience
+b2-sacrifice|Sacrifice|values-ethics|Sacrificio|Sacrifice
+b2-duty|Duty|values-ethics|Deber|Devoir (obligation)
+b2-conscience|Conscience|values-ethics|Conciencia|Conscience
+b2-hypocrisy|Hypocrisy|values-ethics|Hipocresía|Hypocrisie
+b2-forgiveness|Forgiveness|values-ethics|Perdón|Pardon
+b2-agenda|Agenda|business|Orden del día|Ordre du jour
+b2-minutes-of-a-meeting|Minutes (of a meeting)|business|Acta|Compte rendu
+b2-department|Department|business|Departamento|Service (département)
+b2-branch-office|Branch (office)|business|Sucursal|Succursale
+b2-headquarters|Headquarters|business|Sede central|Siège social
+b2-revenue|Revenue|business|Ingresos (empresa)|Chiffre d’affaires
+b2-stakeholder|Stakeholder|business|Parte interesada|Partie prenante
+b2-shareholder|Shareholder|business|Accionista|Actionnaire
+b2-client|Client|business|Cliente (empresa)|Client (entreprise)
+b2-supplier|Supplier|business|Proveedor|Fournisseur
+b2-quote-price-estimate|Quote (price estimate)|business|Presupuesto (cotización)|Devis
+b2-proposal|Proposal|business|Propuesta|Proposition
+b2-bid|Bid|business|Oferta (licitación)|Offre (appel d’offres)
+b2-merger|Merger|business|Fusión|Fusion
+b2-layoff|Layoff|business|Despido (recorte)|Licenciement
+b2-to-outsource|To outsource|business|Subcontratar|Externaliser
+b2-to-delegate|To delegate|business|Delegar|Déléguer
+b2-to-supervise|To supervise|business|Supervisar|Superviser
+b2-performance-review|Performance review|business|Evaluación de desempeño|Entretien annuel
+b2-strategy|Strategy|business|Estrategia|Stratégie
+b2-target|Target|business|Objetivo (cifra)|Objectif (chiffré)
+b2-quarter-business|Quarter (business)|business|Trimestre|Trimestre
+b2-benchmark|Benchmark|business|Punto de referencia|Référence
+b2-to-brainstorm|To brainstorm|business|Hacer una lluvia de ideas|Faire un brainstorming
+b2-to-network|To network|business|Hacer contactos|Réseauter
+b2-to-prioritize|To prioritize|business|Priorizar|Prioriser
+b2-to-streamline|To streamline|business|Agilizar|Rationaliser
+b2-startup|Startup|business|Startup|Start-up
+b2-entrepreneur|Entrepreneur|business|Emprendedor|Entrepreneur
+b2-profit-margin|Profit margin|business|Margen de beneficio|Marge bénéficiaire
+b2-competitor|Competitor|business|Competidor|Concurrent
+b2-milestone-project|Milestone (project)|business|Hito (proyecto)|Jalon
+b2-suspect|Suspect|law-crime|Sospechoso|Suspect
+b2-witness|Witness|law-crime|Testigo|Témoin
+b2-victim|Victim|law-crime|Víctima|Victime
+b2-trial|Trial|law-crime|Juicio|Procès
+b2-judge|Judge|law-crime|Juez|Juge
+b2-jury|Jury|law-crime|Jurado|Jury
+b2-verdict|Verdict|law-crime|Veredicto|Verdict
+b2-convicted|Convicted|law-crime|Condenado|Condamné
+b2-innocent|Innocent|law-crime|Inocente|Innocent
+b2-prison-sentence|Prison sentence|law-crime|Pena de prisión|Peine de prison
+b2-theft|Theft|law-crime|Robo (hurto)|Vol
+b2-robbery|Robbery|law-crime|Atraco|Braquage
+b2-burglary|Burglary|law-crime|Allanamiento|Cambriolage
+b2-fraud|Fraud|law-crime|Fraude|Fraude
+b2-bribery|Bribery|law-crime|Soborno|Corruption (pot-de-vin)
+b2-assault|Assault|law-crime|Agresión|Agression
+b2-murder|Murder|law-crime|Asesinato|Meurtre
+b2-kidnapping|Kidnapping|law-crime|Secuestro|Enlèvement
+b2-smuggling|Smuggling|law-crime|Contrabando|Contrebande
+b2-to-arrest|To arrest|law-crime|Arrestar|Arrêter
+b2-to-charge-with-a-crime|To charge (with a crime)|law-crime|Acusar|Inculper
+b2-to-sue|To sue|law-crime|Demandar|Poursuivre en justice
+b2-lawsuit|Lawsuit|law-crime|Demanda|Procès (civil)
+b2-court|Court|law-crime|Tribunal|Tribunal
+b2-prosecutor|Prosecutor|law-crime|Fiscal|Procureur
+b2-defense-legal|Defense (legal)|law-crime|Defensa|Défense
+b2-appeal-legal|Appeal (legal)|law-crime|Apelación|Appel
+b2-bail|Bail|law-crime|Fianza|Caution (judiciaire)
+b2-alibi|Alibi|law-crime|Coartada|Alibi
+b2-custody-police|Custody (police)|law-crime|Detención|Garde à vue
+b2-investigation|Investigation|law-crime|Investigación (policial)|Enquête
+b2-detective|Detective|law-crime|Detective|Enquêteur
+b2-experiment|Experiment|science-tech|Experimento|Expérience
+b2-hypothesis|Hypothesis|science-tech|Hipótesis|Hypothèse
+b2-theory|Theory|science-tech|Teoría|Théorie
+b2-data|Data|science-tech|Datos|Données
+b2-analysis|Analysis|science-tech|Análisis|Analyse
+b2-to-analyze|To analyze|science-tech|Analizar|Analyser
+b2-to-measure|To measure|science-tech|Medir|Mesurer
+b2-laboratory|Laboratory|science-tech|Laboratorio|Laboratoire
+b2-chemical|Chemical|science-tech|Químico|Chimique
+b2-molecule|Molecule|science-tech|Molécula|Molécule
+b2-atom|Atom|science-tech|Átomo|Atome
+b2-cell-biology|Cell (biology)|science-tech|Célula|Cellule
+b2-gene|Gene|science-tech|Gen|Gène
+b2-evolution|Evolution|science-tech|Evolución|Évolution
+b2-species|Species|science-tech|Especie|Espèce
+b2-gravity|Gravity|science-tech|Gravedad|Gravité
+b2-orbit|Orbit|science-tech|Órbita|Orbite
+b2-satellite|Satellite|science-tech|Satélite|Satellite
+b2-artificial-intelligence|Artificial intelligence|science-tech|Inteligencia artificial|Intelligence artificielle
+b2-algorithm|Algorithm|science-tech|Algoritmo|Algorithme
+b2-software|Software|science-tech|Software|Logiciel
+b2-hardware|Hardware|science-tech|Hardware|Matériel
+b2-database|Database|science-tech|Base de datos|Base de données
+b2-to-code-program|To code (program)|science-tech|Programar|Coder
+b2-bug-software|Bug (software)|science-tech|Error (bug)|Bug
+b2-encryption|Encryption|science-tech|Cifrado|Chiffrement
+b2-cybersecurity|Cybersecurity|science-tech|Ciberseguridad|Cybersécurité
+b2-virtual-reality|Virtual reality|science-tech|Realidad virtual|Réalité virtuelle
+b2-innovation|Innovation|science-tech|Innovación|Innovation
+b2-breakthrough|Breakthrough|science-tech|Avance (descubrimiento)|Percée
+b2-robot|Robot|science-tech|Robot|Robot
+b2-automation|Automation|science-tech|Automatización|Automatisation
+b2-sustainability|Sustainability|environment-2|Sostenibilidad|Durabilité
+b2-sustainable|Sustainable|environment-2|Sostenible|Durable
+b2-carbon-footprint|Carbon footprint|environment-2|Huella de carbono|Empreinte carbone
+b2-emissions|Emissions|environment-2|Emisiones|Émissions
+b2-greenhouse-gas|Greenhouse gas|environment-2|Gas de efecto invernadero|Gaz à effet de serre
+b2-global-warming|Global warming|environment-2|Calentamiento global|Réchauffement climatique
+b2-deforestation|Deforestation|environment-2|Deforestación|Déforestation
+b2-biodiversity|Biodiversity|environment-2|Biodiversidad|Biodiversité
+b2-ecosystem|Ecosystem|environment-2|Ecosistema|Écosystème
+b2-habitat|Habitat|environment-2|Hábitat|Habitat
+b2-endangered-species|Endangered species|environment-2|Especie en peligro|Espèce menacée
+b2-extinction|Extinction|environment-2|Extinción|Extinction
+b2-conservation|Conservation|environment-2|Conservación|Conservation
+b2-wildlife|Wildlife|environment-2|Fauna silvestre|Faune sauvage
+b2-natural-resources|Natural resources|environment-2|Recursos naturales|Ressources naturelles
+b2-fossil-fuels|Fossil fuels|environment-2|Combustibles fósiles|Énergies fossiles
+b2-solar-panel|Solar panel|environment-2|Panel solar|Panneau solaire
+b2-wind-turbine|Wind turbine|environment-2|Turbina eólica|Éolienne
+b2-landfill|Landfill|environment-2|Vertedero|Décharge
+b2-compost|Compost|environment-2|Compost|Compost
+b2-to-conserve|To conserve|environment-2|Conservar|Économiser (préserver)
+b2-to-preserve|To preserve|environment-2|Preservar|Préserver
+b2-sea-level|Sea level|environment-2|Nivel del mar|Niveau de la mer
+b2-glacier|Glacier|environment-2|Glaciar|Glacier
+b2-to-melt|To melt|environment-2|Derretirse|Fondre
+b2-famine|Famine|environment-2|Hambruna|Famine
+b2-overpopulation|Overpopulation|environment-2|Superpoblación|Surpopulation
+b2-to-pollute|To pollute|environment-2|Contaminar|Polluer
+b2-single-use-plastic|Single-use plastic|environment-2|Plástico de un solo uso|Plastique à usage unique
+b2-environmentalist|Environmentalist|environment-2|Ecologista|Écologiste
+b2-recycling-bin|Recycling bin|environment-2|Contenedor de reciclaje|Bac de recyclage
+b2-organic-farming|Organic farming|environment-2|Agricultura ecológica|Agriculture biologique
+b2-diagnosis|Diagnosis|medical|Diagnóstico|Diagnostic
+b2-to-diagnose|To diagnose|medical|Diagnosticar|Diagnostiquer
+b2-treatment|Treatment|medical|Tratamiento|Traitement
+b2-surgery|Surgery|medical|Cirugía|Chirurgie
+b2-surgeon|Surgeon|medical|Cirujano|Chirurgien
+b2-anesthesia|Anesthesia|medical|Anestesia|Anesthésie
+b2-to-prescribe|To prescribe|medical|Recetar|Prescrire
+b2-dose|Dose|medical|Dosis|Dose
+b2-side-effect|Side effect|medical|Efecto secundario|Effet secondaire
+b2-chronic|Chronic|medical|Crónico|Chronique
+b2-acute|Acute|medical|Agudo|Aigu
+b2-infection|Infection|medical|Infección|Infection
+b2-virus|Virus|medical|Virus|Virus
+b2-bacteria|Bacteria|medical|Bacterias|Bactéries
+b2-immune-system|Immune system|medical|Sistema inmunológico|Système immunitaire
+b2-antibiotic|Antibiotic|medical|Antibiótico|Antibiotique
+b2-transplant|Transplant|medical|Trasplante|Greffe
+b2-stroke|Stroke|medical|Derrame cerebral|AVC
+b2-heart-attack|Heart attack|medical|Infarto|Crise cardiaque
+b2-diabetes|Diabetes|medical|Diabetes|Diabète
+b2-cancer|Cancer|medical|Cáncer|Cancer
+b2-asthma|Asthma|medical|Asma|Asthme
+b2-blood-test|Blood test|medical|Análisis de sangre|Prise de sang
+b2-x-ray|X-ray|medical|Radiografía|Radio
+b2-scan-medical|Scan (medical)|medical|Escáner|Scanner
+b2-ward|Ward|medical|Pabellón|Service (hôpital)
+b2-intensive-care|Intensive care|medical|Cuidados intensivos|Soins intensifs
+b2-recovery|Recovery|medical|Recuperación|Rétablissement
+b2-disability|Disability|medical|Discapacidad|Handicap
+b2-wheelchair|Wheelchair|medical|Silla de ruedas|Fauteuil roulant
+b2-ambulance|Ambulance|medical|Ambulancia|Ambulance
+b2-pregnant|Pregnant|medical|Embarazada|Enceinte
+b2-contagious|Contagious|medical|Contagioso|Contagieux
+b2-behavior|Behavior|psychology|Comportamiento|Comportement
+b2-personality|Personality|psychology|Personalidad|Personnalité
+b2-trait|Trait|psychology|Rasgo|Trait (de caractère)
+b2-motivation|Motivation|psychology|Motivación|Motivation
+b2-willpower|Willpower|psychology|Fuerza de voluntad|Volonté
+b2-self-esteem|Self-esteem|psychology|Autoestima|Estime de soi
+b2-self-confidence|Self-confidence|psychology|Confianza en uno mismo|Confiance en soi
+b2-anxiety|Anxiety|psychology|Ansiedad|Anxiété
+b2-depression|Depression|psychology|Depresión|Dépression
+b2-stress|Stress|psychology|Estrés|Stress
+b2-trauma|Trauma|psychology|Trauma|Traumatisme
+b2-grief|Grief|psychology|Duelo|Deuil
+b2-to-cope|To cope|psychology|Sobrellevar|Faire face
+b2-comfort-zone|Comfort zone|psychology|Zona de confort|Zone de confort
+b2-procrastination|Procrastination|psychology|Procrastinación|Procrastination
+b2-to-procrastinate|To procrastinate|psychology|Procrastinar|Procrastiner
+b2-perfectionism|Perfectionism|psychology|Perfeccionismo|Perfectionnisme
+b2-introvert|Introvert|psychology|Introvertido|Introverti
+b2-extrovert|Extrovert|psychology|Extrovertido (persona)|Extraverti (personne)
+b2-mindfulness|Mindfulness|psychology|Atención plena|Pleine conscience
+b2-resilience|Resilience|psychology|Resiliencia|Résilience
+b2-to-overcome|To overcome|psychology|Superar|Surmonter
+b2-obsession|Obsession|psychology|Obsesión|Obsession
+b2-addiction|Addiction|psychology|Adicción|Addiction
+b2-denial|Denial|psychology|Negación|Déni
+b2-bias|Bias|psychology|Sesgo|Biais
+b2-stereotype|Stereotype|psychology|Estereotipo|Stéréotype
+b2-peer-pressure|Peer pressure|psychology|Presión social|Pression des pairs
+b2-self-awareness|Self-awareness|psychology|Autoconciencia|Conscience de soi
+b2-empathy-deep|Empathy (deep)|psychology|Empatía profunda|Empathie profonde
+b2-therapist|Therapist|psychology|Terapeuta|Thérapeute
+b2-instinct|Instinct|psychology|Instinto|Instinct
+b2-to-acknowledge|To acknowledge|verbs-7|Reconocer (admitir)|Reconnaître (admettre)
+b2-to-adapt|To adapt|verbs-7|Adaptarse|S’adapter
+b2-to-anticipate|To anticipate|verbs-7|Anticipar|Anticiper
+b2-to-assess|To assess|verbs-7|Evaluar (valorar)|Évaluer
+b2-to-assign|To assign|verbs-7|Asignar|Attribuer
+b2-to-assure|To assure|verbs-7|Asegurar (garantizar)|Assurer (garantir)
+b2-to-calculate|To calculate|verbs-7|Calcular|Calculer
+b2-to-clarify|To clarify|verbs-7|Aclarar|Clarifier
+b2-to-collaborate|To collaborate|verbs-7|Colaborar|Collaborer
+b2-to-compromise|To compromise|verbs-7|Llegar a un acuerdo|Faire des compromis
+b2-to-conclude|To conclude|verbs-7|Concluir|Conclure
+b2-to-confirm|To confirm|verbs-7|Confirmar|Confirmer
+b2-to-confront|To confront|verbs-7|Confrontar|Confronter
+b2-to-contribute|To contribute|verbs-7|Contribuir|Contribuer
+b2-to-define|To define|verbs-7|Definir|Définir
+b2-to-demonstrate|To demonstrate|verbs-7|Demostrar (mostrar)|Démontrer
+b2-to-dismiss|To dismiss|verbs-7|Descartar|Écarter
+b2-to-distinguish|To distinguish|verbs-7|Distinguir|Distinguer
+b2-to-dominate|To dominate|verbs-7|Dominar|Dominer
+b2-to-eliminate|To eliminate|verbs-7|Eliminar|Éliminer
+b2-to-emphasize|To emphasize|verbs-7|Enfatizar|Souligner (insister)
+b2-to-enable|To enable|verbs-7|Permitir (hacer posible)|Permettre (rendre possible)
+b2-to-enhance|To enhance|verbs-7|Mejorar (realzar)|Améliorer (renforcer)
+b2-to-ensure|To ensure|verbs-7|Garantizar|Garantir
+b2-to-establish|To establish|verbs-7|Establecer|Établir
+b2-to-estimate|To estimate|verbs-7|Estimar|Estimer
+b2-to-evaluate|To evaluate|verbs-7|Evaluar|Évaluer (juger)
+b2-to-exceed|To exceed|verbs-7|Superar (exceder)|Dépasser
+b2-to-exploit|To exploit|verbs-7|Explotar|Exploiter
+b2-to-facilitate|To facilitate|verbs-7|Facilitar|Faciliter
+b2-to-generate|To generate|verbs-8|Generar|Générer
+b2-to-guarantee|To guarantee|verbs-8|Garantizar (asegurar)|Garantir (assurer)
+b2-to-highlight|To highlight|verbs-8|Destacar|Mettre en évidence
+b2-to-identify|To identify|verbs-8|Identificar|Identifier
+b2-to-illustrate|To illustrate|verbs-8|Ilustrar|Illustrer
+b2-to-implement|To implement|verbs-8|Implementar|Mettre en œuvre
+b2-to-imply|To imply|verbs-8|Implicar (dar a entender)|Sous-entendre
+b2-to-indicate|To indicate|verbs-8|Indicar|Indiquer
+b2-to-influence|To influence|verbs-8|Influir|Influencer
+b2-to-inspire|To inspire|verbs-8|Inspirar|Inspirer
+b2-to-interpret|To interpret|verbs-8|Interpretar|Interpréter
+b2-to-justify|To justify|verbs-8|Justificar|Justifier
+b2-to-maintain|To maintain|verbs-8|Mantener|Maintenir
+b2-to-modify|To modify|verbs-8|Modificar|Modifier
+b2-to-monitor|To monitor|verbs-8|Monitorear|Surveiller
+b2-to-motivate|To motivate|verbs-8|Motivar|Motiver
+b2-to-obtain|To obtain|verbs-8|Obtener|Obtenir
+b2-to-oppose|To oppose|verbs-8|Oponerse|S’opposer
+b2-to-perceive|To perceive|verbs-8|Percibir|Percevoir
+b2-to-persist|To persist|verbs-8|Persistir|Persister
+b2-to-possess|To possess|verbs-8|Poseer (tener)|Posséder (détenir)
+b2-to-prevent|To prevent|verbs-8|Prevenir|Prévenir (empêcher)
+b2-to-pursue|To pursue|verbs-8|Perseguir (buscar)|Poursuivre (un but)
+b2-to-reinforce|To reinforce|verbs-8|Reforzar|Renforcer
+b2-to-resolve|To resolve|verbs-8|Resolver (solucionar)|Résoudre (régler)
+b2-to-restrict|To restrict|verbs-8|Restringir|Restreindre
+b2-to-retain|To retain|verbs-8|Retener|Retenir (conserver)
+b2-to-reveal|To reveal|verbs-8|Revelar|Révéler
+b2-to-sustain|To sustain|verbs-8|Sostener|Soutenir (maintenir)
+b2-to-tackle|To tackle|verbs-8|Abordar|S’attaquer à
+b2-to-transform|To transform|verbs-9|Transformar|Transformer
+b2-to-undergo|To undergo|verbs-9|Someterse a|Subir
+b2-to-undertake|To undertake|verbs-9|Emprender|Entreprendre
+b2-to-verify|To verify|verbs-9|Verificar|Vérifier
+b2-to-abandon|To abandon|verbs-9|Abandonar|Abandonner (quitter)
+b2-to-accompany|To accompany|verbs-9|Acompañar|Accompagner
+b2-to-accumulate|To accumulate|verbs-9|Acumular|Accumuler
+b2-to-alter|To alter|verbs-9|Alterar|Altérer
+b2-to-approve|To approve|verbs-9|Aprobar (autorizar)|Approuver
+b2-to-attach|To attach|verbs-9|Adjuntar|Joindre (attacher)
+b2-to-cease|To cease|verbs-9|Cesar|Cesser
+b2-to-commit-to|To commit (to)|verbs-9|Comprometerse|S’engager
+b2-to-comply|To comply|verbs-9|Cumplir (acatar)|Se conformer
+b2-to-conduct-carry-out|To conduct (carry out)|verbs-9|Llevar a cabo|Mener
+b2-to-consist-of|To consist of|verbs-9|Consistir en|Consister en
+b2-to-convert|To convert|verbs-9|Convertir|Convertir
+b2-to-cooperate|To cooperate|verbs-9|Cooperar|Coopérer
+b2-to-decline-refuse|To decline (refuse)|verbs-9|Declinar|Décliner
+b2-to-detect|To detect|verbs-9|Detectar|Détecter
+b2-to-devote|To devote|verbs-9|Dedicar|Consacrer
+b2-to-emerge|To emerge|verbs-9|Surgir|Émerger
+b2-to-exclude|To exclude|verbs-9|Excluir|Exclure
+b2-to-expand|To expand|verbs-9|Expandir|Étendre
+b2-to-fulfill|To fulfill|verbs-9|Cumplir (satisfacer)|Accomplir
+b2-to-impose|To impose|verbs-9|Imponer|Imposer
+b2-to-integrate|To integrate|verbs-9|Integrar|Intégrer
+b2-to-neglect|To neglect|verbs-9|Descuidar|Négliger
+b2-to-overlook|To overlook|verbs-9|Pasar por alto|Passer à côté de
+b2-to-reconsider|To reconsider|verbs-9|Reconsiderar|Reconsidérer
+b2-to-withdraw-pull-out|To withdraw (pull out)|verbs-9|Retirarse|Se retirer
+b2-accurate|Accurate|adjectives-5|Preciso (exacto)|Précis (exact)
+b2-adequate|Adequate|adjectives-5|Adecuado|Adéquat
+b2-ambiguous|Ambiguous|adjectives-5|Ambiguo|Ambigu
+b2-apparent|Apparent|adjectives-5|Aparente|Apparent
+b2-appropriate|Appropriate|adjectives-5|Apropiado|Approprié
+b2-arbitrary|Arbitrary|adjectives-5|Arbitrario|Arbitraire
+b2-coherent|Coherent|adjectives-5|Coherente|Cohérent
+b2-comprehensive|Comprehensive|adjectives-5|Exhaustivo|Complet (exhaustif)
+b2-consistent|Consistent|adjectives-5|Consistente|Constant (cohérent)
+b2-controversial|Controversial|adjectives-5|Controvertido|Controversé
+b2-crucial|Crucial|adjectives-5|Crucial|Crucial
+b2-deliberate|Deliberate|adjectives-5|Deliberado|Délibéré
+b2-distinct|Distinct|adjectives-5|Distinto (claro)|Distinct
+b2-diverse|Diverse|adjectives-5|Diverso (variado)|Divers
+b2-dominant|Dominant|adjectives-5|Dominante|Dominant
+b2-efficient|Efficient|adjectives-5|Eficiente|Efficace
+b2-elaborate|Elaborate|adjectives-5|Elaborado|Élaboré
+b2-explicit|Explicit|adjectives-5|Explícito|Explicite
+b2-implicit|Implicit|adjectives-5|Implícito|Implicite
+b2-fundamental|Fundamental|adjectives-5|Fundamental|Fondamental
+b2-genuine|Genuine|adjectives-5|Genuino|Authentique
+b2-inevitable|Inevitable|adjectives-5|Inevitable|Inévitable
+b2-legitimate|Legitimate|adjectives-5|Legítimo|Légitime
+b2-mutual|Mutual|adjectives-5|Mutuo|Mutuel
+b2-neutral|Neutral|adjectives-5|Neutral|Neutre
+b2-notable|Notable|adjectives-5|Notable|Notable
+b2-precise|Precise|adjectives-5|Preciso (detallado)|Précis (détaillé)
+b2-prominent|Prominent|adjectives-5|Prominente|Éminent
+b2-relevant|Relevant|adjectives-5|Relevante|Pertinent
+b2-irrelevant|Irrelevant|adjectives-5|Irrelevante|Hors sujet
+b2-rigid|Rigid|adjectives-6|Rígido|Rigide
+b2-subtle|Subtle|adjectives-6|Sutil|Subtil
+b2-sufficient|Sufficient|adjectives-6|Suficiente (bastante)|Suffisant
+b2-tremendous|Tremendous|adjectives-6|Tremendo|Énorme (formidable)
+b2-vague|Vague|adjectives-6|Vago|Vague
+b2-vast|Vast|adjectives-6|Vasto|Vaste
+b2-vital|Vital|adjectives-6|Vital|Vital
+b2-widespread|Widespread|adjectives-6|Generalizado|Répandu
+b2-reluctant|Reluctant|adjectives-6|Reacio|Réticent
+b2-thorough|Thorough|adjectives-6|Minucioso|Minutieux
+b2-abstract|Abstract|adjectives-6|Abstracto|Abstrait
+b2-concrete|Concrete|adjectives-6|Concreto|Concret
+b2-absurd|Absurd|adjectives-6|Absurdo|Absurde
+b2-alarming|Alarming|adjectives-6|Alarmante|Alarmant
+b2-biased|Biased|adjectives-6|Parcial (sesgado)|Partial
+b2-compelling|Compelling|adjectives-6|Convincente|Convaincant
+b2-contradictory|Contradictory|adjectives-6|Contradictorio|Contradictoire
+b2-credible|Credible|adjectives-6|Creíble|Crédible
+b2-feasible|Feasible|adjectives-6|Factible|Faisable
+b2-flawed|Flawed|adjectives-6|Defectuoso|Imparfait (défectueux)
+b2-innovative|Innovative|adjectives-6|Innovador|Innovant
+b2-obsolete|Obsolete|adjectives-6|Obsoleto|Obsolète
+b2-outstanding|Outstanding|adjectives-6|Sobresaliente|Exceptionnel
+b2-persistent|Persistent|adjectives-6|Persistente|Persistant
+b2-profound|Profound|adjectives-6|Profundo (idea)|Profond (idée)
+b2-redundant|Redundant|adjectives-6|Redundante|Redondant
+b2-superficial|Superficial|adjectives-6|Superficial|Superficiel
+b2-trivial|Trivial|adjectives-6|Trivial|Insignifiant
+b2-unprecedented|Unprecedented|adjectives-6|Sin precedentes|Sans précédent
+b2-versatile|Versatile|adjectives-6|Versátil|Polyvalent
+b2-as-far-as-im-concerned|As far as I’m concerned|discourse-markers|En lo que a mí respecta|En ce qui me concerne
+b2-to-some-extent|To some extent|discourse-markers|Hasta cierto punto|Dans une certaine mesure
+b2-in-terms-of|In terms of|discourse-markers|En cuanto a|En termes de
+b2-with-regard-to|With regard to|discourse-markers|Con respecto a|En ce qui concerne
+b2-on-the-whole|On the whole|discourse-markers|En general|Dans l’ensemble
+b2-by-and-large|By and large|discourse-markers|En líneas generales|Globalement
+b2-in-the-meantime|In the meantime|discourse-markers|Mientras tanto (entretanto)|En attendant
+b2-at-the-same-time|At the same time|discourse-markers|Al mismo tiempo|En même temps
+b2-needless-to-say|Needless to say|discourse-markers|Ni que decir tiene|Inutile de dire
+b2-to-put-it-simply|To put it simply|discourse-markers|Dicho de forma sencilla|Pour faire simple
+b2-in-a-nutshell|In a nutshell|discourse-markers|En pocas palabras|En un mot
+b2-having-said-that|Having said that|discourse-markers|Dicho esto|Cela dit
+b2-as-a-matter-of-fact|As a matter of fact|discourse-markers|De hecho (en realidad)|En réalité
+b2-for-the-time-being|For the time being|discourse-markers|Por el momento|Pour le moment
+b2-on-second-thought|On second thought|discourse-markers|Pensándolo bien|À la réflexion
+b2-all-things-considered|All things considered|discourse-markers|Considerándolo todo|Tout bien considéré
+b2-if-anything|If anything|discourse-markers|En todo caso|Au contraire (si tant est)
+b2-in-any-case|In any case|discourse-markers|En cualquier caso|En tout cas
+b2-more-or-less|More or less|discourse-markers|Más o menos|Plus ou moins
+b2-sooner-or-later|Sooner or later|discourse-markers|Tarde o temprano|Tôt ou tard
+b2-every-now-and-then|Every now and then|discourse-markers|De vez en cuando|De temps à autre
+b2-on-purpose|On purpose|discourse-markers|A propósito (adrede)|Exprès
+b2-by-accident|By accident|discourse-markers|Por accidente|Par accident
+b2-by-all-means|By all means|discourse-markers|Por supuesto (faltaría más)|Je vous en prie
+b2-for-the-sake-of|For the sake of|discourse-markers|Por el bien de|Pour le bien de
+b2-up-to-a-point|Up to a point|discourse-markers|Hasta cierto punto (con límites)|Jusqu’à un certain point
+b2-to-say-the-least|To say the least|discourse-markers|Por decir poco|Pour le moins
+b2-in-hindsight|In hindsight|discourse-markers|En retrospectiva|Avec le recul
+b2-strictly-speaking|Strictly speaking|discourse-markers|Estrictamente hablando|À proprement parler
+b2-broadly-speaking|Broadly speaking|discourse-markers|En términos generales|Grosso modo
+b2-parliament|Parliament|politics-economy|Parlamento|Parlement
+b2-president|President|politics-economy|Presidente|Président
+b2-prime-minister|Prime minister|politics-economy|Primer ministro|Premier ministre
+b2-minister|Minister|politics-economy|Ministro|Ministre
+b2-mayor|Mayor|politics-economy|Alcalde|Maire
+b2-policy|Policy|politics-economy|Política (medida)|Politique (mesure)
+b2-reform|Reform|politics-economy|Reforma|Réforme
+b2-legislation|Legislation|politics-economy|Legislación|Législation
+b2-bill-proposed-law|Bill (proposed law)|politics-economy|Proyecto de ley|Projet de loi
+b2-referendum|Referendum|politics-economy|Referéndum|Référendum
+b2-campaign|Campaign|politics-economy|Campaña|Campagne
+b2-candidate|Candidate|politics-economy|Candidato|Candidat
+b2-political-party|Political party|politics-economy|Partido político|Parti politique
+b2-opposition|Opposition|politics-economy|Oposición|Opposition
+b2-coalition|Coalition|politics-economy|Coalición|Coalition
+b2-majority|Majority|politics-economy|Mayoría|Majorité
+b2-minority|Minority|politics-economy|Minoría|Minorité
+b2-scandal|Scandal|politics-economy|Escándalo|Scandale
+b2-budget-deficit|Budget deficit|politics-economy|Déficit presupuestario|Déficit budgétaire
+b2-national-debt|National debt|politics-economy|Deuda pública|Dette publique
+b2-recession|Recession|politics-economy|Recesión|Récession
+b2-economic-growth|Economic growth|politics-economy|Crecimiento económico|Croissance économique
+b2-interest-rate|Interest rate|politics-economy|Tasa de interés|Taux d’intérêt
+b2-stock-market|Stock market|politics-economy|Bolsa de valores|Bourse
+b2-shares-stocks|Shares (stocks)|politics-economy|Acciones|Actions
+b2-investor|Investor|politics-economy|Inversor|Investisseur
+b2-trade-commerce|Trade (commerce)|politics-economy|Comercio|Commerce
+b2-tariff|Tariff|politics-economy|Arancel|Droit de douane
+b2-export|Export|politics-economy|Exportación|Exportation
+b2-import|Import|politics-economy|Importación|Importation
+b2-bankruptcy|Bankruptcy|politics-economy|Bancarrota|Faillite
+b2-monopoly|Monopoly|politics-economy|Monopolio|Monopole
+b2-in-laws|In-laws|family-society|Suegros (familia política)|Belle-famille
+b2-mother-in-law|Mother-in-law|family-society|Suegra|Belle-mère
+b2-stepmother|Stepmother|family-society|Madrastra|Belle-mère (marâtre)
+b2-sibling|Sibling|family-society|Hermano/a (sibling)|Frère ou sœur
+b2-spouse|Spouse|family-society|Cónyuge|Conjoint
+b2-fiance|Fiancé|family-society|Prometido|Fiancé
+b2-engagement|Engagement|family-society|Compromiso|Fiançailles
+b2-to-propose-marriage|To propose (marriage)|family-society|Pedir matrimonio|Demander en mariage
+b2-honeymoon|Honeymoon|family-society|Luna de miel|Lune de miel
+b2-single-parent|Single parent|family-society|Madre/padre soltero|Parent célibataire
+b2-godparent|Godparent|family-society|Padrino/madrina|Parrain/marraine
+b2-guardian|Guardian|family-society|Tutor legal|Tuteur
+b2-orphan|Orphan|family-society|Huérfano|Orphelin
+b2-adoption|Adoption|family-society|Adopción|Adoption
+b2-to-adopt|To adopt|family-society|Adoptar|Adopter
+b2-upbringing|Upbringing|family-society|Crianza|Éducation (enfance)
+b2-household|Household|family-society|Hogar (unidad)|Foyer
+b2-breadwinner|Breadwinner|family-society|Sostén de la familia|Soutien de famille
+b2-ancestor|Ancestor|family-society|Antepasado|Ancêtre
+b2-descendant|Descendant|family-society|Descendiente|Descendant
+b2-heritage|Heritage|family-society|Herencia (cultural)|Patrimoine
+b2-inheritance|Inheritance|family-society|Herencia (bienes)|Héritage
+b2-to-inherit|To inherit|family-society|Heredar|Hériter
+b2-will-testament|Will (testament)|family-society|Testamento|Testament
+b2-widow|Widow|family-society|Viuda|Veuve
+b2-elderly|Elderly|family-society|Ancianos|Personnes âgées
+b2-caregiver|Caregiver|family-society|Cuidador|Aidant
+b2-retirement-home|Retirement home|family-society|Residencia de ancianos|Maison de retraite
+b2-kinship|Kinship|family-society|Parentesco|Parenté
+b2-role-model|Role model|family-society|Modelo a seguir|Modèle
+b2-painting|Painting|arts-culture|Pintura|Peinture
+b2-sculpture|Sculpture|arts-culture|Escultura|Sculpture
+b2-exhibition|Exhibition|arts-culture|Exposición|Exposition
+b2-gallery|Gallery|arts-culture|Galería|Galerie
+b2-masterpiece|Masterpiece|arts-culture|Obra maestra|Chef-d’œuvre
+b2-portrait|Portrait|arts-culture|Retrato|Portrait
+b2-landscape-painting|Landscape (painting)|arts-culture|Paisaje (cuadro)|Paysage (tableau)
+b2-canvas|Canvas|arts-culture|Lienzo|Toile
+b2-sketch|Sketch|arts-culture|Boceto|Croquis
+b2-festival|Festival|arts-culture|Festival|Festival
+b2-parade|Parade|arts-culture|Desfile|Défilé
+b2-folklore|Folklore|arts-culture|Folclore|Folklore
+b2-myth|Myth|arts-culture|Mito|Mythe
+b2-legend|Legend|arts-culture|Leyenda|Légende
+b2-literature|Literature|arts-culture|Literatura|Littérature
+b2-genre|Genre|arts-culture|Género|Genre
+b2-metaphor|Metaphor|arts-culture|Metáfora|Métaphore
+b2-rhyme|Rhyme|arts-culture|Rima|Rime
+b2-verse|Verse|arts-culture|Verso|Vers
+b2-orchestra|Orchestra|arts-culture|Orquesta|Orchestre
+b2-symphony|Symphony|arts-culture|Sinfonía|Symphonie
+b2-opera|Opera|arts-culture|Ópera|Opéra
+b2-choir|Choir|arts-culture|Coro|Chorale
+b2-rehearsal|Rehearsal|arts-culture|Ensayo|Répétition
+b2-premiere|Premiere|arts-culture|Estreno|Première
+b2-applause|Applause|arts-culture|Aplausos|Applaudissements
+b2-playwright|Playwright|arts-culture|Dramaturgo|Dramaturge
+b2-script|Script|arts-culture|Guion|Scénario
+b2-stage|Stage|arts-culture|Escenario|Scène
+b2-backstage|Backstage|arts-culture|Entre bastidores|Coulisses
+b2-costume|Costume|arts-culture|Vestuario (disfraz)|Costume
+b2-director-film|Director (film)|arts-culture|Director|Réalisateur
+b2-producer|Producer|arts-culture|Productor|Producteur
+b2-screenplay|Screenplay|arts-culture|Guion cinematográfico|Scénario (film)
+b2-to-marinate|To marinate|cooking-techniques|Marinar|Faire mariner
+b2-to-grill|To grill|cooking-techniques|Asar a la parrilla|Griller
+b2-to-roast|To roast|cooking-techniques|Asar al horno|Rôtir
+b2-to-steam|To steam|cooking-techniques|Cocer al vapor|Cuire à la vapeur
+b2-to-simmer|To simmer|cooking-techniques|Cocer a fuego lento|Mijoter
+b2-to-saute|To sauté|cooking-techniques|Saltear|Faire sauter
+b2-to-whisk|To whisk|cooking-techniques|Batir|Fouetter
+b2-to-knead|To knead|cooking-techniques|Amasar|Pétrir
+b2-dough|Dough|cooking-techniques|Masa|Pâte
+b2-batter|Batter|cooking-techniques|Masa líquida|Pâte à frire
+b2-crust|Crust|cooking-techniques|Corteza|Croûte
+b2-to-grate|To grate|cooking-techniques|Rallar|Râper
+b2-to-peel|To peel|cooking-techniques|Pelar|Éplucher
+b2-to-chop|To chop|cooking-techniques|Picar|Hacher
+b2-to-slice|To slice|cooking-techniques|Rebanar|Trancher
+b2-to-dice|To dice|cooking-techniques|Cortar en cubos|Couper en dés
+b2-to-stir|To stir|cooking-techniques|Remover|Remuer
+b2-seasoning|Seasoning|cooking-techniques|Condimento|Assaisonnement
+b2-herb|Herb|cooking-techniques|Hierba aromática|Herbe aromatique
+b2-spice|Spice|cooking-techniques|Especia|Épice
+b2-cinnamon|Cinnamon|cooking-techniques|Canela|Cannelle
+b2-ginger|Ginger|cooking-techniques|Jengibre|Gingembre
+b2-basil|Basil|cooking-techniques|Albahaca|Basilic
+b2-vinegar|Vinegar|cooking-techniques|Vinagre|Vinaigre
+b2-soy-sauce|Soy sauce|cooking-techniques|Salsa de soja|Sauce soja
+b2-broth|Broth|cooking-techniques|Caldo|Bouillon
+b2-stew|Stew|cooking-techniques|Guiso|Ragoût
+b2-crispy|Crispy|cooking-techniques|Crujiente|Croustillant
+b2-tender|Tender|cooking-techniques|Tierno|Tendre
+b2-juicy|Juicy|cooking-techniques|Jugoso|Juteux
+b2-greasy|Greasy|cooking-techniques|Grasiento|Gras
+b2-stale|Stale|cooking-techniques|Rancio (pan duro)|Rassis
+b2-rotten|Rotten|cooking-techniques|Podrido|Pourri
+b2-sour|Sour|cooking-techniques|Agrio|Aigre
+b2-savory|Savory|cooking-techniques|Salado (sabroso)|Salé (savoureux)
+b2-skyscraper|Skyscraper|urban-construction|Rascacielos|Gratte-ciel
+b2-infrastructure|Infrastructure|urban-construction|Infraestructura|Infrastructure
+b2-public-transport|Public transport|urban-construction|Transporte público|Transports en commun
+b2-congestion|Congestion|urban-construction|Congestión|Congestion
+b2-urban|Urban|urban-construction|Urbano|Urbain
+b2-rural|Rural|urban-construction|Rural|Rural
+b2-district|District|urban-construction|Distrito|Arrondissement
+b2-gentrification|Gentrification|urban-construction|Gentrificación|Gentrification
+b2-housing-crisis|Housing crisis|urban-construction|Crisis de vivienda|Crise du logement
+b2-homelessness|Homelessness|urban-construction|Sinhogarismo|Sans-abrisme
+b2-shelter|Shelter|urban-construction|Refugio|Refuge
+b2-pedestrian-zone|Pedestrian zone|urban-construction|Zona peatonal|Zone piétonne
+b2-bike-lane|Bike lane|urban-construction|Carril bici|Piste cyclable
+b2-green-space|Green space|urban-construction|Zona verde|Espace vert
+b2-high-rise|High-rise|urban-construction|Edificio alto|Immeuble de grande hauteur
+b2-zoning|Zoning|urban-construction|Zonificación|Zonage
+b2-demolition|Demolition|urban-construction|Demolición|Démolition
+b2-construction-site|Construction site|urban-construction|Obra|Chantier
+b2-crane|Crane|urban-construction|Grúa|Grue
+b2-scaffolding|Scaffolding|urban-construction|Andamio|Échafaudage
+b2-blueprint|Blueprint|urban-construction|Plano (arquitectónico)|Plan (architecture)
+b2-permit|Permit|urban-construction|Permiso (licencia)|Permis
+b2-contractor|Contractor|urban-construction|Contratista|Entrepreneur (BTP)
+b2-foundation-building|Foundation (building)|urban-construction|Cimientos|Fondations
+b2-insulation|Insulation|urban-construction|Aislamiento|Isolation
+b2-plumbing|Plumbing|urban-construction|Fontanería|Plomberie
+b2-wiring|Wiring|urban-construction|Cableado|Câblage
+b2-beam|Beam|urban-construction|Viga|Poutre
+b2-drywall|Drywall|urban-construction|Panel de yeso|Plaque de plâtre
+b2-inspection|Inspection|urban-construction|Inspección|Inspection
+b2-tenant-improvement|Tenant improvement|urban-construction|Adecuación para inquilino|Aménagement locataire
+b2-deadline-construction|Deadline (construction)|urban-construction|Plazo de obra|Délai de chantier
+b2-contempt|Contempt|emotions-4|Desprecio|Mépris
+b2-resentment|Resentment|emotions-4|Resentimiento|Ressentiment
+b2-bitterness|Bitterness|emotions-4|Amargura|Amertume
+b2-longing|Longing|emotions-4|Anhelo|Désir ardent
+b2-dread|Dread|emotions-4|Pavor|Appréhension (effroi)
+b2-apprehension|Apprehension|emotions-4|Aprensión|Appréhension
+b2-serenity|Serenity|emotions-4|Serenidad|Sérénité
+b2-contentment|Contentment|emotions-4|Satisfacción (plenitud)|Contentement
+b2-euphoria|Euphoria|emotions-4|Euforia|Euphorie
+b2-melancholy|Melancholy|emotions-4|Melancolía|Mélancolie
+b2-remorse|Remorse|emotions-4|Remordimiento|Remords
+b2-humiliation|Humiliation|emotions-4|Humillación|Humiliation
+b2-rage|Rage|emotions-4|Rabia|Rage
+b2-awe|Awe|emotions-4|Asombro|Émerveillement
+b2-indignation|Indignation|emotions-4|Indignación|Indignation
+b2-disgust|Disgust|emotions-4|Asco|Dégoût
+b2-boredom|Boredom|emotions-4|Aburrimiento|Ennui
+b2-agony|Agony|emotions-4|Agonía|Agonie
+b2-ecstasy|Ecstasy|emotions-4|Éxtasis|Extase
+b2-complacency|Complacency|emotions-4|Complacencia|Complaisance
+b2-disbelief|Disbelief|emotions-4|Incredulidad|Incrédulité
+b2-suspicion|Suspicion|emotions-4|Sospecha|Soupçon
+b2-reluctance|Reluctance|emotions-4|Reticencia|Réticence
+b2-eagerness|Eagerness|emotions-4|Entusiasmo (ansia)|Empressement
+b2-fondness|Fondness|emotions-4|Cariño|Tendresse (affection)
+b2-tenderness|Tenderness|emotions-4|Ternura|Tendresse
+b2-affection|Affection|emotions-4|Afecto|Affection
+b2-to-resent|To resent|emotions-4|Resentirse|En vouloir à
+b2-to-loathe|To loathe|emotions-4|Aborrecer|Détester (avoir en horreur)
+b2-to-cherish|To cherish|emotions-4|Atesorar|Chérir
+b2-to-despise|To despise|emotions-4|Despreciar|Mépriser
+b2-to-dread|To dread|emotions-4|Temer (con pavor)|Redouter
+b2-to-state|To state|communication-2|Afirmar|Déclarer (affirmer)
+b2-statement|Statement|communication-2|Declaración|Déclaration
+b2-to-claim|To claim|communication-2|Afirmar (sostener)|Prétendre
+b2-to-declare|To declare|communication-2|Declarar|Déclarer
+b2-to-announce|To announce|communication-2|Anunciar|Annoncer
+b2-announcement|Announcement|communication-2|Anuncio|Annonce
+b2-to-assert|To assert|communication-2|Aseverar|Affirmer (avec force)
+b2-to-hint|To hint|communication-2|Insinuar|Faire allusion
+b2-to-confess|To confess|communication-2|Confesar|Avouer
+b2-confession|Confession|communication-2|Confesión|Aveu
+b2-to-object|To object|communication-2|Objetar|Objecter
+b2-objection|Objection|communication-2|Objeción|Objection
+b2-to-summarize|To summarize|communication-2|Resumir|Résumer
+b2-summary|Summary|communication-2|Resumen|Résumé
+b2-to-elaborate|To elaborate|communication-2|Explicar con detalle|Développer
+b2-to-paraphrase|To paraphrase|communication-2|Parafrasear|Paraphraser
+b2-to-quote|To quote|communication-2|Citar (textualmente)|Citer
+b2-quotation|Quotation|communication-2|Cita|Citation
+b2-reference|Reference|communication-2|Referencia|Référence
+b2-to-address-an-issue|To address (an issue)|communication-2|Abordar (un tema)|Aborder (un problème)
+b2-to-convey|To convey|communication-2|Transmitir|Transmettre
+b2-to-articulate|To articulate|communication-2|Articular|Articuler
+b2-to-reiterate|To reiterate|communication-2|Reiterar|Réitérer
+b2-remark|Remark|communication-2|Comentario (observación)|Remarque
+b2-to-comment|To comment|communication-2|Comentar|Commenter
+b2-to-consult|To consult|communication-2|Consultar|Consulter
+b2-to-advocate|To advocate|communication-2|Abogar por|Prôner
+b2-to-mediate|To mediate|communication-2|Mediar|Servir de médiateur
+b2-compromise-noun|Compromise (noun)|communication-2|Compromiso (acuerdo)|Compromis
+b2-negotiation|Negotiation|communication-2|Negociación|Négociation
+b2-persuasive|Persuasive|communication-2|Persuasivo|Persuasif
+b2-tactful|Tactful|communication-2|Diplomático (con tacto)|Plein de tact
+b2-blunt-direct|Blunt (direct)|communication-2|Directo (brusco)|Direct (brusque)
+b2-efficiency|Efficiency|time-management|Eficiencia|Efficacité
+b2-productivity|Productivity|time-management|Productividad|Productivité
+b2-to-do-list|To-do list|time-management|Lista de tareas|Liste de choses à faire
+b2-reminder|Reminder|time-management|Recordatorio|Rappel
+b2-to-reschedule|To reschedule|time-management|Reprogramar|Reprogrammer
+b2-calendar|Calendar|time-management|Calendario|Calendrier
+b2-time-zone|Time zone|time-management|Zona horaria|Fuseau horaire
+b2-daylight-saving-time|Daylight saving time|time-management|Horario de verano|Heure d’été
+b2-punctuality|Punctuality|time-management|Puntualidad|Ponctualité
+b2-ahead-of-schedule|Ahead of schedule|time-management|Adelantado|En avance
+b2-behind-schedule|Behind schedule|time-management|Retrasado (respecto al plan)|En retard (sur le planning)
+b2-in-advance|In advance|time-management|Con antelación|À l’avance
+b2-last-minute|Last minute|time-management|De última hora|De dernière minute
+b2-overdue|Overdue|time-management|Atrasado (vencido)|En retard (échu)
+b2-to-squeeze-in|To squeeze in|time-management|Hacer un hueco|Caser
+b2-to-multitask|To multitask|time-management|Hacer varias cosas a la vez|Faire plusieurs choses à la fois
+b2-to-allocate|To allocate|time-management|Asignar (tiempo)|Allouer
+b2-downtime|Downtime|time-management|Tiempo muerto|Temps mort
+b2-spare-time|Spare time|time-management|Tiempo libre (sobrante)|Temps libre (restant)
+b2-to-kill-time|To kill time|time-management|Matar el tiempo|Tuer le temps
+b2-pastime|Pastime|time-management|Pasatiempo (afición)|Passe-temps (loisir)
+b2-leisure|Leisure|time-management|Ocio|Loisirs
+b2-on-the-dot|On the dot|time-management|En punto|Pile
+b2-around-the-clock|Around the clock|time-management|Las veinticuatro horas|Vingt-quatre heures sur vingt-quatre
+b2-in-the-nick-of-time|In the nick of time|time-management|Justo a tiempo|Juste à temps
+b2-long-term|Long-term|time-management|A largo plazo (adj.)|À long terme (adj.)
+b2-short-term|Short-term|time-management|A corto plazo|À court terme
+b2-simultaneously|Simultaneously|time-management|Simultáneamente|Simultanément
+b2-continent|Continent|geography|Continente|Continent
+b2-hemisphere|Hemisphere|geography|Hemisferio|Hémisphère
+b2-equator|Equator|geography|Ecuador (línea)|Équateur
+b2-latitude|Latitude|geography|Latitud|Latitude
+b2-altitude|Altitude|geography|Altitud|Altitude
+b2-valley|Valley|geography|Valle|Vallée
+b2-canyon|Canyon|geography|Cañón|Canyon
+b2-cliff|Cliff|geography|Acantilado|Falaise
+b2-cave|Cave|geography|Cueva|Grotte
+b2-plateau|Plateau|geography|Meseta|Plateau
+b2-peninsula|Peninsula|geography|Península|Péninsule
+b2-bay|Bay|geography|Bahía|Baie
+b2-coast|Coast|geography|Costa|Côte
+b2-shore|Shore|geography|Orilla|Rivage
+b2-harbor|Harbor|geography|Puerto|Port
+b2-dune|Dune|geography|Duna|Dune
+b2-iceberg|Iceberg|geography|Iceberg|Iceberg
+b2-swamp|Swamp|geography|Pantano|Marécage
+b2-jungle|Jungle|geography|Selva|Jungle
+b2-rainforest|Rainforest|geography|Selva tropical|Forêt tropicale
+b2-savanna|Savanna|geography|Sabana|Savane
+b2-tundra|Tundra|geography|Tundra|Toundra
+b2-oasis|Oasis|geography|Oasis|Oasis
+b2-waterfall|Waterfall|geography|Cascada|Cascade
+b2-stream|Stream|geography|Arroyo|Ruisseau
+b2-spring-water|Spring (water)|geography|Manantial|Source
+b2-reef|Reef|geography|Arrecife|Récif
+b2-tide|Tide|geography|Marea|Marée
+b2-current-water|Current (water)|geography|Corriente|Courant
+b2-horizon|Horizon|geography|Horizonte|Horizon
+b2-skeleton|Skeleton|anatomy|Esqueleto|Squelette
+b2-bone|Bone|anatomy|Hueso|Os
+b2-skull|Skull|anatomy|Cráneo|Crâne
+b2-spine|Spine|anatomy|Columna vertebral|Colonne vertébrale
+b2-rib|Rib|anatomy|Costilla|Côte
+b2-joint|Joint|anatomy|Articulación|Articulation
+b2-tendon|Tendon|anatomy|Tendón|Tendon
+b2-nerve|Nerve|anatomy|Nervio|Nerf
+b2-brain|Brain|anatomy|Cerebro|Cerveau
+b2-lung|Lung|anatomy|Pulmón|Poumon
+b2-liver|Liver|anatomy|Hígado|Foie
+b2-kidney|Kidney|anatomy|Riñón|Rein
+b2-intestine|Intestine|anatomy|Intestino|Intestin
+b2-artery|Artery|anatomy|Arteria|Artère
+b2-vein|Vein|anatomy|Vena|Veine
+b2-pulse|Pulse|anatomy|Pulso|Pouls
+b2-wrist|Wrist|anatomy|Muñeca|Poignet
+b2-ankle|Ankle|anatomy|Tobillo|Cheville
+b2-elbow|Elbow|anatomy|Codo|Coude
+b2-thigh|Thigh|anatomy|Muslo|Cuisse
+b2-heel|Heel|anatomy|Talón|Talon
+b2-palm|Palm|anatomy|Palma|Paume
+b2-thumb|Thumb|anatomy|Pulgar|Pouce
+b2-eyebrow|Eyebrow|anatomy|Ceja|Sourcil
+b2-eyelash|Eyelash|anatomy|Pestaña|Cil
+b2-chin|Chin|anatomy|Barbilla|Menton
+b2-cheek|Cheek|anatomy|Mejilla|Joue
+b2-forehead|Forehead|anatomy|Frente|Front
+b2-jaw|Jaw|anatomy|Mandíbula|Mâchoire
+b2-throat|Throat|anatomy|Garganta|Gorge
+b2-tongue|Tongue|anatomy|Lengua|Langue (organe)
+b2-lip|Lip|anatomy|Labio|Lèvre
+b2-tailor|Tailor|clothing-fabric|Sastre|Tailleur
+b2-fabric|Fabric|clothing-fabric|Tela|Tissu
+b2-seam|Seam|clothing-fabric|Costura|Couture
+b2-zipper|Zipper|clothing-fabric|Cremallera|Fermeture éclair
+b2-button|Button|clothing-fabric|Botón|Bouton
+b2-collar|Collar|clothing-fabric|Cuello (prenda)|Col
+b2-sleeve|Sleeve|clothing-fabric|Manga|Manche
+b2-hem|Hem|clothing-fabric|Dobladillo|Ourlet
+b2-pocket|Pocket|clothing-fabric|Bolsillo|Poche
+b2-lining|Lining|clothing-fabric|Forro|Doublure
+b2-to-fasten|To fasten|clothing-fabric|Abrochar|Attacher
+b2-to-unbutton|To unbutton|clothing-fabric|Desabrochar|Déboutonner
+b2-to-fold|To fold|clothing-fabric|Doblar (ropa)|Plier (vêtements)
+b2-wardrobe|Wardrobe|clothing-fabric|Armario|Armoire
+b2-hanger|Hanger|clothing-fabric|Percha|Cintre
+b2-detergent|Detergent|clothing-fabric|Detergente|Lessive
+b2-stain|Stain|clothing-fabric|Mancha|Tache
+b2-to-shrink|To shrink|clothing-fabric|Encoger|Rétrécir
+b2-to-fade|To fade|clothing-fabric|Desteñir|Déteindre
+b2-wrinkle|Wrinkle|clothing-fabric|Arruga|Pli (froissure)
+b2-formal-wear|Formal wear|clothing-fabric|Ropa formal|Tenue de soirée
+b2-casual-wear|Casual wear|clothing-fabric|Ropa informal|Tenue décontractée
+b2-uniform|Uniform|clothing-fabric|Uniforme|Uniforme
+b2-suit|Suit|clothing-fabric|Traje|Costume
+b2-tie|Tie|clothing-fabric|Corbata|Cravate
+b2-high-heels|High heels|clothing-fabric|Tacones|Talons hauts
+b2-sneakers|Sneakers|clothing-fabric|Zapatillas|Baskets
+b2-boots|Boots|clothing-fabric|Botas|Bottes
+b2-sandals|Sandals|clothing-fabric|Sandalias|Sandales
+b2-slippers|Slippers|clothing-fabric|Pantuflas|Chaussons
+b2-pajamas|Pajamas|clothing-fabric|Pijama|Pyjama
+b2-underwear|Underwear|clothing-fabric|Ropa interior|Sous-vêtements
+b2-belt|Belt|clothing-fabric|Cinturón|Ceinture
+b2-concept|Concept|abstract-concepts|Concepto|Concept
+b2-notion|Notion|abstract-concepts|Noción|Notion
+b2-aspect|Aspect|abstract-concepts|Aspecto|Aspect
+b2-factor|Factor|abstract-concepts|Factor|Facteur
+b2-feature|Feature|abstract-concepts|Característica|Caractéristique
+b2-element|Element|abstract-concepts|Elemento|Élément
+b2-component|Component|abstract-concepts|Componente|Composant
+b2-structure|Structure|abstract-concepts|Estructura|Structure
+b2-function|Function|abstract-concepts|Función|Fonction
+b2-process|Process|abstract-concepts|Proceso|Processus
+b2-procedure|Procedure|abstract-concepts|Procedimiento|Procédure
+b2-method|Method|abstract-concepts|Método|Méthode
+b2-approach|Approach|abstract-concepts|Enfoque|Approche
+b2-technique|Technique|abstract-concepts|Técnica|Technique
+b2-framework|Framework|abstract-concepts|Marco|Cadre
+b2-criterion|Criterion|abstract-concepts|Criterio|Critère
+b2-standard|Standard|abstract-concepts|Estándar|Norme (standard)
+b2-norm|Norm|abstract-concepts|Norma|Norme
+b2-exception|Exception|abstract-concepts|Excepción|Exception
+b2-phase|Phase|abstract-concepts|Fase|Phase
+b2-sequence|Sequence|abstract-concepts|Secuencia|Séquence
+b2-outcome|Outcome|abstract-concepts|Resultado|Résultat (issue)
+b2-consequence|Consequence|abstract-concepts|Consecuencia|Conséquence
+b2-impact|Impact|abstract-concepts|Impacto|Impact
+b2-implication|Implication|abstract-concepts|Implicación|Implication
+b2-significance|Significance|abstract-concepts|Importancia (significado)|Signification (importance)
+b2-context|Context|abstract-concepts|Contexto|Contexte
+b2-scope|Scope|abstract-concepts|Alcance|Portée
+b2-scale-magnitude|Scale (magnitude)|abstract-concepts|Escala|Échelle
+b2-dimension|Dimension|abstract-concepts|Dimensión|Dimension
+b2-proportion|Proportion|abstract-concepts|Proporción|Proportion
+b2-ratio|Ratio|abstract-concepts|Razón (proporción)|Rapport (ratio)
+b2-barely|Barely|degree-adverbs|Apenas|À peine
+b2-hardly|Hardly|degree-adverbs|Casi no|Presque pas
+b2-merely|Merely|degree-adverbs|Meramente|Simplement
+b2-utterly|Utterly|degree-adverbs|Totalmente|Totalement
+b2-thoroughly|Thoroughly|degree-adverbs|A fondo|À fond
+b2-fairly|Fairly|degree-adverbs|Bastante|Assez
+b2-rather|Rather|degree-adverbs|Más bien|Plutôt
+b2-somewhat|Somewhat|degree-adverbs|Algo|Quelque peu
+b2-slightly|Slightly|degree-adverbs|Ligeramente|Légèrement
+b2-considerably|Considerably|degree-adverbs|Considerablemente|Considérablement
+b2-significantly|Significantly|degree-adverbs|Significativamente|Sensiblement
+b2-roughly|Roughly|degree-adverbs|Aproximadamente|Environ
+b2-precisely|Precisely|degree-adverbs|Precisamente|Précisément
+b2-virtually|Virtually|degree-adverbs|Prácticamente|Pratiquement
+b2-entirely|Entirely|degree-adverbs|Enteramente|Entièrement
+b2-partially|Partially|degree-adverbs|Parcialmente|Partiellement
+b2-mostly|Mostly|degree-adverbs|Mayormente|Surtout (principalement)
+b2-increasingly|Increasingly|degree-adverbs|Cada vez más|De plus en plus
+b2-gradually|Gradually|degree-adverbs|Gradualmente|Progressivement
+b2-rapidly|Rapidly|degree-adverbs|Rápidamente|Rapidement
+b2-steadily|Steadily|degree-adverbs|Constantemente|Régulièrement
+b2-abruptly|Abruptly|degree-adverbs|Abruptamente|Brusquement
+b2-ultimately|Ultimately|degree-adverbs|En última instancia|En fin de compte
+b2-altogether|Altogether|degree-adverbs|En total|Au total
+b2-whatsoever|Whatsoever|degree-adverbs|En absoluto|Que ce soit
+b2-nonetheless|Nonetheless|degree-adverbs|Aun así|Néanmoins (pourtant)
+b2-deliberately|Deliberately|degree-adverbs|Deliberadamente|Délibérément
+b2-reluctantly|Reluctantly|degree-adverbs|De mala gana|À contrecœur
+b2-knitting|Knitting|hobbies-making|Tejer (punto)|Tricot
+b2-sewing|Sewing|hobbies-making|Costura (coser)|Couture (coudre)
+b2-pottery|Pottery|hobbies-making|Cerámica|Poterie
+b2-woodworking|Woodworking|hobbies-making|Carpintería|Menuiserie
+b2-gardening|Gardening|hobbies-making|Jardinería|Jardinage
+b2-birdwatching|Birdwatching|hobbies-making|Observación de aves|Observation des oiseaux
+b2-kayaking|Kayaking|hobbies-making|Kayak|Kayak
+b2-rock-climbing|Rock climbing|hobbies-making|Escalada|Escalade
+b2-martial-arts|Martial arts|hobbies-making|Artes marciales|Arts martiaux
+b2-boxing|Boxing|hobbies-making|Boxeo|Boxe
+b2-archery|Archery|hobbies-making|Tiro con arco|Tir à l’arc
+b2-bowling|Bowling|hobbies-making|Bolos|Bowling
+b2-karaoke|Karaoke|hobbies-making|Karaoke|Karaoké
+b2-esports|Esports|hobbies-making|Deportes electrónicos|E-sport
+b2-collectible|Collectible|hobbies-making|Objeto de colección|Objet de collection
+b2-cosplay|Cosplay|hobbies-making|Cosplay|Cosplay
+b2-3d-printing|3D printing|hobbies-making|Impresión 3D|Impression 3D
+b2-tabletop-role-playing-game|Tabletop role-playing game|hobbies-making|Juego de rol de mesa|Jeu de rôle sur table
+b2-miniature-figure|Miniature (figure)|hobbies-making|Miniatura|Figurine
+b2-dice|Dice|hobbies-making|Dados|Dés
+b2-campaign-game|Campaign (game)|hobbies-making|Campaña (juego)|Campagne (jeu)
+b2-hobbyist|Hobbyist|hobbies-making|Aficionado (hobby)|Amateur (passionné)
+b2-craft|Craft|hobbies-making|Artesanía|Artisanat
+b2-workbench|Workbench|hobbies-making|Banco de trabajo|Établi
+b2-glue|Glue|hobbies-making|Pegamento|Colle
+b2-sandpaper|Sandpaper|hobbies-making|Papel de lija|Papier de verre
+b2-paintbrush|Paintbrush|hobbies-making|Pincel|Pinceau
+b2-prototype|Prototype|hobbies-making|Prototipo|Prototype

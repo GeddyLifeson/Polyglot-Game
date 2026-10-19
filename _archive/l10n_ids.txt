@@ -1,0 +1,41 @@
+40
+fk-ar-03|ar|Sindbad the Sailor: The First Voyage
+fk-ar-06|ar|Antar and Abla
+fk-de-03|de|The Pied Piper of Hamelin
+fk-de-06|de|Barbarossa in the Kyffhäuser
+fk-el-03|el|Icarus
+fk-el-06|el|Persephone and Demeter
+fk-es-03|es|The Weeping Woman
+fk-es-06|es|The Twins and the Lords of Xibalbá
+fk-fr-03|fr|The Legend of the City of Ys
+fk-fr-06|fr|The Flying Canoe
+fk-hi-03|hi|Birbal's Khichdi
+fk-hi-06|hi|Savitri and Satyavan
+fk-ind-03|ind|Malin Kundang
+fk-ind-06|ind|Roro Jonggrang
+fk-it-03|it|Giufà and the Moon in the Well
+fk-it-06|it|The Legend of St. Mark's Ring
+fk-ja-03|ja|Princess Kaguya
+fk-ja-06|ja|One-Inch Boy
+fk-ko-03|ko|Kongjwi and Patjwi
+fk-ko-06|ko|The Tale of Chunhyang
+fk-la-03|la|The Fox and the Crow
+fk-la-06|la|Baucis and Philemon
+fk-nl-03|nl|The Lady of Stavoren
+fk-nl-06|nl|Lange Wapper
+fk-pl-03|pl|The Warsaw Mermaid
+fk-pl-06|pl|The Basilisk of Warsaw
+fk-pt-03|pt|Curupira, Guardian of the Forest
+fk-pt-06|pt|The Boto, Seducer of the River
+fk-ru-03|ru|Morozko (Grandfather Frost)
+fk-ru-06|ru|Snegurochka, the Snow Maiden
+fk-sv-03|sv|Näcken at the Rapids
+fk-sv-06|sv|Thor and Utgard-Loki
+fk-tr-03|tr|Keloğlan and the Giant
+fk-tr-06|tr|Ferhat and Şirin
+fk-vi-03|vi|Thánh Gióng, the Boy Hero
+fk-vi-06|vi|Children of the Dragon and the Fairy
+fk-yue-03|yue|Qu Yuan and the Dragon Boat
+fk-yue-06|yue|The Monkey King Wreaks Havoc in Heaven
+fk-zh-03|zh|Nuwa Mends the Sky
+fk-zh-06|zh|Jingwei Fills the Sea

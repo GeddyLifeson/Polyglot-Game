@@ -1,0 +1,48 @@
+backend: edge
+A1 eng: 543 clips to record
+  A1 eng 50/543 · 33s
+  A1 eng 100/543 · 64s
+  A1 eng 150/543 · 94s
+  A1 eng 200/543 · 125s
+  A1 eng 250/543 · 159s
+  A1 eng 300/543 · 188s
+  A1 eng 350/543 · 222s
+  A1 eng 400/543 · 252s
+  A1 eng 450/543 · 282s
+  A1 eng 500/543 · 312s
+A1 eng done in 337s
+A2 eng: 703 clips to record
+  A2 eng 50/703 · 37s
+  A2 eng 100/703 · 67s
+  A2 eng 150/703 · 100s
+  A2 eng 200/703 · 133s
+  A2 eng 250/703 · 164s
+  A2 eng 300/703 · 198s
+  A2 eng 350/703 · 229s
+  A2 eng 400/703 · 263s
+  A2 eng 450/703 · 295s
+  A2 eng 500/703 · 326s
+  A2 eng 550/703 · 356s
+  A2 eng 600/703 · 392s
+  A2 eng 650/703 · 424s
+  A2 eng 700/703 · 454s
+A2 eng done in 456s
+B1 eng: 834 clips to record
+  B1 eng 50/834 · 33s
+  B1 eng 100/834 · 66s
+  B1 eng 150/834 · 98s
+  B1 eng 200/834 · 129s
+  B1 eng 250/834 · 164s
+  B1 eng 300/834 · 197s
+  B1 eng 350/834 · 232s
+  B1 eng 400/834 · 263s
+  B1 eng 450/834 · 298s
+  B1 eng 500/834 · 333s
+  B1 eng 550/834 · 371s
+  B1 eng 600/834 · 408s
+  B1 eng 650/834 · 439s
+  B1 eng 700/834 · 472s
+  B1 eng 750/834 · 506s
+  B1 eng 800/834 · 545s
+B1 eng done in 569s
+DONE — 2080 clips in manifest

@@ -1,0 +1,4923 @@
+[
+{
+"id": "a2-i-work-in-an-office",
+"en": "I work in an office",
+"topic": "work-school",
+"es": "Trabajo en una oficina",
+"fr": "Je travaille dans un bureau"
+},
+{
+"id": "a2-i-am-a-student",
+"en": "I am a student",
+"topic": "work-school",
+"es": "Soy estudiante",
+"fr": "Je suis étudiant"
+},
+{
+"id": "a2-i-have-a-meeting",
+"en": "I have a meeting",
+"topic": "work-school",
+"es": "Tengo una reunión",
+"fr": "J’ai une réunion"
+},
+{
+"id": "a2-i-am-looking-for-a-job",
+"en": "I am looking for a job",
+"topic": "work-school",
+"es": "Estoy buscando trabajo",
+"fr": "Je cherche un emploi"
+},
+{
+"id": "a2-i-am-studying",
+"en": "I am studying",
+"topic": "work-school",
+"es": "Estoy estudiando",
+"fr": "J’étudie"
+},
+{
+"id": "a2-i-dont-understand",
+"en": "I don’t understand",
+"topic": "work-school",
+"es": "No entiendo",
+"fr": "Je ne comprends pas"
+},
+{
+"id": "a2-how-much-is-this",
+"en": "How much is this?",
+"topic": "shopping",
+"es": "¿Cuánto cuesta esto?",
+"fr": "Combien ça coûte ?"
+},
+{
+"id": "a2-its-too-expensive",
+"en": "It’s too expensive",
+"topic": "shopping",
+"es": "Es demasiado caro",
+"fr": "C’est trop cher"
+},
+{
+"id": "a2-can-i-pay-by-card",
+"en": "Can I pay by card?",
+"topic": "shopping",
+"es": "¿Puedo pagar con tarjeta?",
+"fr": "Puis-je payer par carte ?"
+},
+{
+"id": "a2-do-you-have-a-discount",
+"en": "Do you have a discount?",
+"topic": "shopping",
+"es": "¿Tiene algún descuento?",
+"fr": "Avez-vous une réduction ?"
+},
+{
+"id": "a2-im-just-looking",
+"en": "I’m just looking",
+"topic": "shopping",
+"es": "Solo estoy mirando",
+"fr": "Je regarde seulement"
+},
+{
+"id": "a2-ill-take-it",
+"en": "I’ll take it",
+"topic": "shopping",
+"es": "Me lo llevo",
+"fr": "Je le prends"
+},
+{
+"id": "a2-where-is-the-train-station",
+"en": "Where is the train station?",
+"topic": "travel",
+"es": "¿Dónde está la estación de tren?",
+"fr": "Où est la gare ?"
+},
+{
+"id": "a2-one-ticket-please",
+"en": "One ticket, please",
+"topic": "travel",
+"es": "Un boleto, por favor",
+"fr": "Un billet, s’il vous plaît"
+},
+{
+"id": "a2-how-do-i-get-to-the-airport",
+"en": "How do I get to the airport?",
+"topic": "travel",
+"es": "¿Cómo llego al aeropuerto?",
+"fr": "Comment aller à l’aéroport ?"
+},
+{
+"id": "a2-im-lost",
+"en": "I’m lost",
+"topic": "travel",
+"es": "Estoy perdido",
+"fr": "Je suis perdu"
+},
+{
+"id": "a2-is-it-far",
+"en": "Is it far?",
+"topic": "travel",
+"es": "¿Está lejos?",
+"fr": "Est-ce loin ?"
+},
+{
+"id": "a2-where-is-the-restroom",
+"en": "Where is the restroom?",
+"topic": "travel",
+"es": "¿Dónde está el baño?",
+"fr": "Où sont les toilettes ?"
+},
+{
+"id": "a2-i-dont-feel-well",
+"en": "I don’t feel well",
+"topic": "health",
+"es": "No me siento bien",
+"fr": "Je ne me sens pas bien"
+},
+{
+"id": "a2-i-have-a-headache",
+"en": "I have a headache",
+"topic": "health",
+"es": "Me duele la cabeza",
+"fr": "J’ai mal à la tête"
+},
+{
+"id": "a2-where-is-the-pharmacy",
+"en": "Where is the pharmacy?",
+"topic": "health",
+"es": "¿Dónde está la farmacia?",
+"fr": "Où est la pharmacie ?"
+},
+{
+"id": "a2-i-need-a-doctor",
+"en": "I need a doctor",
+"topic": "health",
+"es": "Necesito un médico",
+"fr": "J’ai besoin d’un médecin"
+},
+{
+"id": "a2-im-allergic-to-peanuts",
+"en": "I’m allergic to peanuts",
+"topic": "health",
+"es": "Soy alérgico a los cacahuetes",
+"fr": "Je suis allergique aux cacahuètes"
+},
+{
+"id": "a2-it-hurts-here",
+"en": "It hurts here",
+"topic": "health",
+"es": "Me duele aquí",
+"fr": "Ça fait mal ici"
+},
+{
+"id": "a2-its-sunny",
+"en": "It’s sunny",
+"topic": "weather-hobbies",
+"es": "Hace sol",
+"fr": "Il fait soleil"
+},
+{
+"id": "a2-its-raining",
+"en": "It’s raining",
+"topic": "weather-hobbies",
+"es": "Está lloviendo",
+"fr": "Il pleut"
+},
+{
+"id": "a2-i-like-to-read",
+"en": "I like to read",
+"topic": "weather-hobbies",
+"es": "Me gusta leer",
+"fr": "J’aime lire"
+},
+{
+"id": "a2-my-favorite-is-music",
+"en": "My favorite is music",
+"topic": "weather-hobbies",
+"es": "Mi favorita es la música",
+"fr": "Ma préférée est la musique"
+},
+{
+"id": "a2-on-weekends-i-rest",
+"en": "On weekends I rest",
+"topic": "weather-hobbies",
+"es": "Los fines de semana descanso",
+"fr": "Le week-end, je me repose"
+},
+{
+"id": "a2-i-play-sports",
+"en": "I play sports",
+"topic": "weather-hobbies",
+"es": "Practico deportes",
+"fr": "Je fais du sport"
+},
+{
+"id": "a2-what-time-is-it",
+"en": "What time is it?",
+"topic": "plans-tech",
+"es": "¿Qué hora es?",
+"fr": "Quelle heure est-il ?"
+},
+{
+"id": "a2-lets-meet-tomorrow",
+"en": "Let’s meet tomorrow",
+"topic": "plans-tech",
+"es": "Nos vemos mañana",
+"fr": "On se voit demain"
+},
+{
+"id": "a2-can-you-call-me",
+"en": "Can you call me?",
+"topic": "plans-tech",
+"es": "¿Puedes llamarme?",
+"fr": "Peux-tu m’appeler ?"
+},
+{
+"id": "a2-see-you-later",
+"en": "See you later",
+"topic": "plans-tech",
+"es": "Hasta luego",
+"fr": "À plus tard"
+},
+{
+"id": "a2-whats-your-phone-number",
+"en": "What’s your phone number?",
+"topic": "plans-tech",
+"es": "¿Cuál es tu número de teléfono?",
+"fr": "Quel est ton numéro de téléphone ?"
+},
+{
+"id": "a2-im-busy-today",
+"en": "I’m busy today",
+"topic": "plans-tech",
+"es": "Hoy estoy ocupado",
+"fr": "Aujourd’hui je suis occupé"
+},
+{
+"id": "a2-job",
+"en": "Job",
+"topic": "work-school",
+"es": "Trabajo",
+"fr": "Travail"
+},
+{
+"id": "a2-boss",
+"en": "Boss",
+"topic": "work-school",
+"es": "Jefe",
+"fr": "Patron"
+},
+{
+"id": "a2-colleague",
+"en": "Colleague",
+"topic": "work-school",
+"es": "Colega",
+"fr": "Collègue"
+},
+{
+"id": "a2-salary",
+"en": "Salary",
+"topic": "work-school",
+"es": "Salario",
+"fr": "Salaire"
+},
+{
+"id": "a2-to-earn",
+"en": "To earn",
+"topic": "work-school",
+"es": "Ganar",
+"fr": "Gagner"
+},
+{
+"id": "a2-class",
+"en": "Class",
+"topic": "work-school",
+"es": "Clase",
+"fr": "Cours"
+},
+{
+"id": "a2-teacher",
+"en": "Teacher",
+"topic": "work-school",
+"es": "Profesor",
+"fr": "Professeur"
+},
+{
+"id": "a2-exam",
+"en": "Exam",
+"topic": "work-school",
+"es": "Examen",
+"fr": "Examen"
+},
+{
+"id": "a2-homework",
+"en": "Homework",
+"topic": "work-school",
+"es": "Tarea",
+"fr": "Devoirs"
+},
+{
+"id": "a2-university",
+"en": "University",
+"topic": "work-school",
+"es": "Universidad",
+"fr": "Université"
+},
+{
+"id": "a2-to-teach",
+"en": "To teach",
+"topic": "work-school",
+"es": "Enseñar",
+"fr": "Enseigner"
+},
+{
+"id": "a2-project",
+"en": "Project",
+"topic": "work-school",
+"es": "Proyecto",
+"fr": "Projet"
+},
+{
+"id": "a2-deadline",
+"en": "Deadline",
+"topic": "work-school",
+"es": "Fecha límite",
+"fr": "Date limite"
+},
+{
+"id": "a2-interview",
+"en": "Interview",
+"topic": "work-school",
+"es": "Entrevista",
+"fr": "Entretien"
+},
+{
+"id": "a2-career",
+"en": "Career",
+"topic": "work-school",
+"es": "Carrera",
+"fr": "Carrière"
+},
+{
+"id": "a2-break-pause",
+"en": "Break (pause)",
+"topic": "work-school",
+"es": "Descanso",
+"fr": "Pause"
+},
+{
+"id": "a2-schedule",
+"en": "Schedule",
+"topic": "work-school",
+"es": "Horario",
+"fr": "Emploi du temps"
+},
+{
+"id": "a2-company",
+"en": "Company",
+"topic": "work-school",
+"es": "Empresa",
+"fr": "Entreprise"
+},
+{
+"id": "a2-customer",
+"en": "Customer",
+"topic": "work-school",
+"es": "Cliente",
+"fr": "Client"
+},
+{
+"id": "a2-unemployed",
+"en": "Unemployed",
+"topic": "work-school",
+"es": "Desempleado",
+"fr": "Au chômage"
+},
+{
+"id": "a2-to-try-on",
+"en": "To try on",
+"topic": "shopping",
+"es": "Probarse",
+"fr": "Essayer"
+},
+{
+"id": "a2-fitting-room",
+"en": "Fitting room",
+"topic": "shopping",
+"es": "Probador",
+"fr": "Cabine d’essayage"
+},
+{
+"id": "a2-sale-discount-event",
+"en": "Sale (discount event)",
+"topic": "shopping",
+"es": "Rebajas",
+"fr": "Soldes"
+},
+{
+"id": "a2-to-return-an-item",
+"en": "To return (an item)",
+"topic": "shopping",
+"es": "Devolver",
+"fr": "Rendre"
+},
+{
+"id": "a2-refund",
+"en": "Refund",
+"topic": "shopping",
+"es": "Reembolso",
+"fr": "Remboursement"
+},
+{
+"id": "a2-brand",
+"en": "Brand",
+"topic": "shopping",
+"es": "Marca",
+"fr": "Marque"
+},
+{
+"id": "a2-quality",
+"en": "Quality",
+"topic": "shopping",
+"es": "Calidad",
+"fr": "Qualité"
+},
+{
+"id": "a2-cashier",
+"en": "Cashier",
+"topic": "shopping",
+"es": "Cajero",
+"fr": "Caissier"
+},
+{
+"id": "a2-shopping-cart",
+"en": "Shopping cart",
+"topic": "shopping",
+"es": "Carrito",
+"fr": "Chariot"
+},
+{
+"id": "a2-online-shopping",
+"en": "Online shopping",
+"topic": "shopping",
+"es": "Compras en línea",
+"fr": "Achats en ligne"
+},
+{
+"id": "a2-to-order-online",
+"en": "To order (online)",
+"topic": "shopping",
+"es": "Pedir (en línea)",
+"fr": "Commander"
+},
+{
+"id": "a2-delivery",
+"en": "Delivery",
+"topic": "shopping",
+"es": "Entrega",
+"fr": "Livraison"
+},
+{
+"id": "a2-package",
+"en": "Package",
+"topic": "shopping",
+"es": "Paquete",
+"fr": "Colis"
+},
+{
+"id": "a2-to-choose",
+"en": "To choose",
+"topic": "shopping",
+"es": "Elegir",
+"fr": "Choisir"
+},
+{
+"id": "a2-to-compare",
+"en": "To compare",
+"topic": "shopping",
+"es": "Comparar",
+"fr": "Comparer"
+},
+{
+"id": "a2-it-fits-me",
+"en": "It fits me",
+"topic": "shopping",
+"es": "Me queda bien",
+"fr": "Ça me va"
+},
+{
+"id": "a2-too-big",
+"en": "Too big",
+"topic": "shopping",
+"es": "Demasiado grande",
+"fr": "Trop grand"
+},
+{
+"id": "a2-do-you-have-it-in-another-color",
+"en": "Do you have it in another color?",
+"topic": "shopping",
+"es": "¿Lo tiene en otro color?",
+"fr": "Vous l’avez dans une autre couleur ?"
+},
+{
+"id": "a2-mall",
+"en": "Mall",
+"topic": "shopping",
+"es": "Centro comercial",
+"fr": "Centre commercial"
+},
+{
+"id": "a2-cheaper",
+"en": "Cheaper",
+"topic": "shopping",
+"es": "Más barato",
+"fr": "Moins cher"
+},
+{
+"id": "a2-reservation",
+"en": "Reservation",
+"topic": "travel",
+"es": "Reserva",
+"fr": "Réservation"
+},
+{
+"id": "a2-to-book",
+"en": "To book",
+"topic": "travel",
+"es": "Reservar",
+"fr": "Réserver"
+},
+{
+"id": "a2-check-in",
+"en": "Check-in",
+"topic": "travel",
+"es": "Registro",
+"fr": "Enregistrement"
+},
+{
+"id": "a2-luggage",
+"en": "Luggage",
+"topic": "travel",
+"es": "Equipaje",
+"fr": "Bagages"
+},
+{
+"id": "a2-flight",
+"en": "Flight",
+"topic": "travel",
+"es": "Vuelo",
+"fr": "Vol"
+},
+{
+"id": "a2-delay",
+"en": "Delay",
+"topic": "travel",
+"es": "Retraso",
+"fr": "Retard"
+},
+{
+"id": "a2-departure",
+"en": "Departure",
+"topic": "travel",
+"es": "Salida (viaje)",
+"fr": "Départ"
+},
+{
+"id": "a2-arrival",
+"en": "Arrival",
+"topic": "travel",
+"es": "Llegada",
+"fr": "Arrivée"
+},
+{
+"id": "a2-gate",
+"en": "Gate",
+"topic": "travel",
+"es": "Puerta de embarque",
+"fr": "Porte d’embarquement"
+},
+{
+"id": "a2-seat",
+"en": "Seat",
+"topic": "travel",
+"es": "Asiento",
+"fr": "Siège"
+},
+{
+"id": "a2-tourist",
+"en": "Tourist",
+"topic": "travel",
+"es": "Turista",
+"fr": "Touriste"
+},
+{
+"id": "a2-guide",
+"en": "Guide",
+"topic": "travel",
+"es": "Guía",
+"fr": "Guide"
+},
+{
+"id": "a2-sightseeing",
+"en": "Sightseeing",
+"topic": "travel",
+"es": "Turismo",
+"fr": "Tourisme"
+},
+{
+"id": "a2-souvenir",
+"en": "Souvenir",
+"topic": "travel",
+"es": "Recuerdo",
+"fr": "Souvenir"
+},
+{
+"id": "a2-beach",
+"en": "Beach",
+"topic": "travel",
+"es": "Playa",
+"fr": "Plage"
+},
+{
+"id": "a2-museum",
+"en": "Museum",
+"topic": "travel",
+"es": "Museo",
+"fr": "Musée"
+},
+{
+"id": "a2-to-visit",
+"en": "To visit",
+"topic": "travel",
+"es": "Visitar",
+"fr": "Visiter"
+},
+{
+"id": "a2-round-trip",
+"en": "Round trip",
+"topic": "travel",
+"es": "Ida y vuelta",
+"fr": "Aller-retour"
+},
+{
+"id": "a2-one-way",
+"en": "One way",
+"topic": "travel",
+"es": "Solo ida",
+"fr": "Aller simple"
+},
+{
+"id": "a2-abroad",
+"en": "Abroad",
+"topic": "travel",
+"es": "En el extranjero",
+"fr": "À l’étranger"
+},
+{
+"id": "a2-doctor",
+"en": "Doctor",
+"topic": "health",
+"es": "Médico",
+"fr": "Médecin"
+},
+{
+"id": "a2-nurse",
+"en": "Nurse",
+"topic": "health",
+"es": "Enfermera",
+"fr": "Infirmière"
+},
+{
+"id": "a2-medicine",
+"en": "Medicine",
+"topic": "health",
+"es": "Medicina",
+"fr": "Médicament"
+},
+{
+"id": "a2-pain",
+"en": "Pain",
+"topic": "health",
+"es": "Dolor",
+"fr": "Douleur"
+},
+{
+"id": "a2-fever",
+"en": "Fever",
+"topic": "health",
+"es": "Fiebre",
+"fr": "Fièvre"
+},
+{
+"id": "a2-cough",
+"en": "Cough",
+"topic": "health",
+"es": "Tos",
+"fr": "Toux"
+},
+{
+"id": "a2-a-cold-illness",
+"en": "A cold (illness)",
+"topic": "health",
+"es": "Resfriado",
+"fr": "Rhume"
+},
+{
+"id": "a2-flu",
+"en": "Flu",
+"topic": "health",
+"es": "Gripe",
+"fr": "Grippe"
+},
+{
+"id": "a2-allergy",
+"en": "Allergy",
+"topic": "health",
+"es": "Alergia",
+"fr": "Allergie"
+},
+{
+"id": "a2-appointment",
+"en": "Appointment",
+"topic": "health",
+"es": "Cita",
+"fr": "Rendez-vous"
+},
+{
+"id": "a2-prescription",
+"en": "Prescription",
+"topic": "health",
+"es": "Receta médica",
+"fr": "Ordonnance"
+},
+{
+"id": "a2-stomachache",
+"en": "Stomachache",
+"topic": "health",
+"es": "Dolor de estómago",
+"fr": "Mal de ventre"
+},
+{
+"id": "a2-healthy",
+"en": "Healthy",
+"topic": "health",
+"es": "Sano",
+"fr": "En bonne santé"
+},
+{
+"id": "a2-to-rest",
+"en": "To rest",
+"topic": "health",
+"es": "Descansar",
+"fr": "Se reposer"
+},
+{
+"id": "a2-insurance",
+"en": "Insurance",
+"topic": "health",
+"es": "Seguro",
+"fr": "Assurance"
+},
+{
+"id": "a2-emergency",
+"en": "Emergency",
+"topic": "health",
+"es": "Emergencia",
+"fr": "Urgence"
+},
+{
+"id": "a2-dentist",
+"en": "Dentist",
+"topic": "health",
+"es": "Dentista",
+"fr": "Dentiste"
+},
+{
+"id": "a2-injury",
+"en": "Injury",
+"topic": "health",
+"es": "Lesión",
+"fr": "Blessure"
+},
+{
+"id": "a2-i-feel-better",
+"en": "I feel better",
+"topic": "health",
+"es": "Me siento mejor",
+"fr": "Je me sens mieux"
+},
+{
+"id": "a2-blood-pressure",
+"en": "Blood pressure",
+"topic": "health",
+"es": "Presión arterial",
+"fr": "Tension"
+},
+{
+"id": "a2-hobby",
+"en": "Hobby",
+"topic": "weather-hobbies",
+"es": "Pasatiempo",
+"fr": "Passe-temps"
+},
+{
+"id": "a2-music",
+"en": "Music",
+"topic": "weather-hobbies",
+"es": "Música",
+"fr": "Musique"
+},
+{
+"id": "a2-movie",
+"en": "Movie",
+"topic": "weather-hobbies",
+"es": "Película",
+"fr": "Film"
+},
+{
+"id": "a2-sport",
+"en": "Sport",
+"topic": "weather-hobbies",
+"es": "Deporte",
+"fr": "Sport"
+},
+{
+"id": "a2-soccer",
+"en": "Soccer",
+"topic": "weather-hobbies",
+"es": "Fútbol",
+"fr": "Football"
+},
+{
+"id": "a2-to-swim",
+"en": "To swim",
+"topic": "weather-hobbies",
+"es": "Nadar",
+"fr": "Nager"
+},
+{
+"id": "a2-to-dance",
+"en": "To dance",
+"topic": "weather-hobbies",
+"es": "Bailar",
+"fr": "Danser"
+},
+{
+"id": "a2-to-sing",
+"en": "To sing",
+"topic": "weather-hobbies",
+"es": "Cantar",
+"fr": "Chanter"
+},
+{
+"id": "a2-to-paint",
+"en": "To paint",
+"topic": "weather-hobbies",
+"es": "Pintar",
+"fr": "Peindre"
+},
+{
+"id": "a2-game",
+"en": "Game",
+"topic": "weather-hobbies",
+"es": "Juego",
+"fr": "Jeu"
+},
+{
+"id": "a2-team",
+"en": "Team",
+"topic": "weather-hobbies",
+"es": "Equipo",
+"fr": "Équipe"
+},
+{
+"id": "a2-to-win",
+"en": "To win",
+"topic": "weather-hobbies",
+"es": "Ganar (un juego)",
+"fr": "Gagner (un match)"
+},
+{
+"id": "a2-to-lose-a-game",
+"en": "To lose (a game)",
+"topic": "weather-hobbies",
+"es": "Perder",
+"fr": "Perdre"
+},
+{
+"id": "a2-concert",
+"en": "Concert",
+"topic": "weather-hobbies",
+"es": "Concierto",
+"fr": "Concert"
+},
+{
+"id": "a2-photography",
+"en": "Photography",
+"topic": "weather-hobbies",
+"es": "Fotografía",
+"fr": "Photographie"
+},
+{
+"id": "a2-to-hike",
+"en": "To hike",
+"topic": "weather-hobbies",
+"es": "Hacer senderismo",
+"fr": "Faire de la randonnée"
+},
+{
+"id": "a2-gym",
+"en": "Gym",
+"topic": "weather-hobbies",
+"es": "Gimnasio",
+"fr": "Salle de sport"
+},
+{
+"id": "a2-to-exercise",
+"en": "To exercise",
+"topic": "weather-hobbies",
+"es": "Hacer ejercicio",
+"fr": "Faire du sport"
+},
+{
+"id": "a2-cloudy",
+"en": "Cloudy",
+"topic": "weather-hobbies",
+"es": "Nublado",
+"fr": "Nuageux"
+},
+{
+"id": "a2-storm",
+"en": "Storm",
+"topic": "weather-hobbies",
+"es": "Tormenta",
+"fr": "Orage"
+},
+{
+"id": "a2-humid",
+"en": "Humid",
+"topic": "weather-hobbies",
+"es": "Húmedo",
+"fr": "Humide"
+},
+{
+"id": "a2-forecast",
+"en": "Forecast",
+"topic": "weather-hobbies",
+"es": "Pronóstico",
+"fr": "Prévisions"
+},
+{
+"id": "a2-to-plan",
+"en": "To plan",
+"topic": "plans-tech",
+"es": "Planear",
+"fr": "Prévoir"
+},
+{
+"id": "a2-to-meet-up",
+"en": "To meet up",
+"topic": "plans-tech",
+"es": "Quedar",
+"fr": "Se retrouver"
+},
+{
+"id": "a2-invitation",
+"en": "Invitation",
+"topic": "plans-tech",
+"es": "Invitación",
+"fr": "Invitation"
+},
+{
+"id": "a2-to-invite",
+"en": "To invite",
+"topic": "plans-tech",
+"es": "Invitar",
+"fr": "Inviter"
+},
+{
+"id": "a2-to-cancel",
+"en": "To cancel",
+"topic": "plans-tech",
+"es": "Cancelar",
+"fr": "Annuler"
+},
+{
+"id": "a2-free-time",
+"en": "Free time",
+"topic": "plans-tech",
+"es": "Tiempo libre",
+"fr": "Temps libre"
+},
+{
+"id": "a2-to-postpone",
+"en": "To postpone",
+"topic": "plans-tech",
+"es": "Posponer",
+"fr": "Reporter"
+},
+{
+"id": "a2-internet",
+"en": "Internet",
+"topic": "plans-tech",
+"es": "Internet",
+"fr": "Internet"
+},
+{
+"id": "a2-email",
+"en": "Email",
+"topic": "plans-tech",
+"es": "Correo electrónico",
+"fr": "E-mail"
+},
+{
+"id": "a2-message",
+"en": "Message",
+"topic": "plans-tech",
+"es": "Mensaje",
+"fr": "Message"
+},
+{
+"id": "a2-to-send",
+"en": "To send",
+"topic": "plans-tech",
+"es": "Enviar",
+"fr": "Envoyer"
+},
+{
+"id": "a2-to-download",
+"en": "To download",
+"topic": "plans-tech",
+"es": "Descargar",
+"fr": "Télécharger"
+},
+{
+"id": "a2-app",
+"en": "App",
+"topic": "plans-tech",
+"es": "Aplicación",
+"fr": "Application"
+},
+{
+"id": "a2-password",
+"en": "Password",
+"topic": "plans-tech",
+"es": "Contraseña",
+"fr": "Mot de passe"
+},
+{
+"id": "a2-screen",
+"en": "Screen",
+"topic": "plans-tech",
+"es": "Pantalla",
+"fr": "Écran"
+},
+{
+"id": "a2-wi-fi",
+"en": "Wi-Fi",
+"topic": "plans-tech",
+"es": "Wifi",
+"fr": "Wi-Fi"
+},
+{
+"id": "a2-website",
+"en": "Website",
+"topic": "plans-tech",
+"es": "Sitio web",
+"fr": "Site web"
+},
+{
+"id": "a2-video-call",
+"en": "Video call",
+"topic": "plans-tech",
+"es": "Videollamada",
+"fr": "Appel vidéo"
+},
+{
+"id": "a2-are-you-free-on-saturday",
+"en": "Are you free on Saturday?",
+"topic": "plans-tech",
+"es": "¿Estás libre el sábado?",
+"fr": "Tu es libre samedi ?"
+},
+{
+"id": "a2-sounds-good",
+"en": "Sounds good",
+"topic": "plans-tech",
+"es": "Me parece bien",
+"fr": "Ça me va"
+},
+{
+"id": "a2-to-clean",
+"en": "To clean",
+"topic": "home-chores",
+"es": "Limpiar",
+"fr": "Nettoyer"
+},
+{
+"id": "a2-to-wash",
+"en": "To wash",
+"topic": "home-chores",
+"es": "Lavar",
+"fr": "Laver"
+},
+{
+"id": "a2-dishes",
+"en": "Dishes",
+"topic": "home-chores",
+"es": "Platos (para lavar)",
+"fr": "Vaisselle"
+},
+{
+"id": "a2-laundry",
+"en": "Laundry",
+"topic": "home-chores",
+"es": "Ropa sucia",
+"fr": "Linge"
+},
+{
+"id": "a2-to-iron",
+"en": "To iron",
+"topic": "home-chores",
+"es": "Planchar",
+"fr": "Repasser"
+},
+{
+"id": "a2-trash",
+"en": "Trash",
+"topic": "home-chores",
+"es": "Basura",
+"fr": "Poubelle"
+},
+{
+"id": "a2-to-tidy-up",
+"en": "To tidy up",
+"topic": "home-chores",
+"es": "Ordenar",
+"fr": "Ranger"
+},
+{
+"id": "a2-vacuum-cleaner",
+"en": "Vacuum cleaner",
+"topic": "home-chores",
+"es": "Aspiradora",
+"fr": "Aspirateur"
+},
+{
+"id": "a2-to-repair",
+"en": "To repair",
+"topic": "home-chores",
+"es": "Reparar",
+"fr": "Réparer"
+},
+{
+"id": "a2-to-move-house",
+"en": "To move (house)",
+"topic": "home-chores",
+"es": "Mudarse",
+"fr": "Déménager"
+},
+{
+"id": "a2-rent",
+"en": "Rent",
+"topic": "home-chores",
+"es": "Alquiler",
+"fr": "Loyer"
+},
+{
+"id": "a2-landlord",
+"en": "Landlord",
+"topic": "home-chores",
+"es": "Propietario",
+"fr": "Propriétaire"
+},
+{
+"id": "a2-apartment",
+"en": "Apartment",
+"topic": "home-chores",
+"es": "Apartamento",
+"fr": "Appartement"
+},
+{
+"id": "a2-furniture",
+"en": "Furniture",
+"topic": "home-chores",
+"es": "Muebles",
+"fr": "Meubles"
+},
+{
+"id": "a2-sofa",
+"en": "Sofa",
+"topic": "home-chores",
+"es": "Sofá",
+"fr": "Canapé"
+},
+{
+"id": "a2-fridge",
+"en": "Fridge",
+"topic": "home-chores",
+"es": "Nevera",
+"fr": "Frigo"
+},
+{
+"id": "a2-oven",
+"en": "Oven",
+"topic": "home-chores",
+"es": "Horno",
+"fr": "Four"
+},
+{
+"id": "a2-stove",
+"en": "Stove",
+"topic": "home-chores",
+"es": "Estufa (cocina)",
+"fr": "Cuisinière"
+},
+{
+"id": "a2-shower",
+"en": "Shower",
+"topic": "home-chores",
+"es": "Ducha",
+"fr": "Douche"
+},
+{
+"id": "a2-mirror",
+"en": "Mirror",
+"topic": "home-chores",
+"es": "Espejo",
+"fr": "Miroir"
+},
+{
+"id": "a2-pillow",
+"en": "Pillow",
+"topic": "home-chores",
+"es": "Almohada",
+"fr": "Oreiller"
+},
+{
+"id": "a2-blanket",
+"en": "Blanket",
+"topic": "home-chores",
+"es": "Manta",
+"fr": "Couverture"
+},
+{
+"id": "a2-washing-machine",
+"en": "Washing machine",
+"topic": "home-chores",
+"es": "Lavadora",
+"fr": "Machine à laver"
+},
+{
+"id": "a2-roommate",
+"en": "Roommate",
+"topic": "home-chores",
+"es": "Compañero de piso",
+"fr": "Colocataire"
+},
+{
+"id": "a2-stairs",
+"en": "Stairs",
+"topic": "home-chores",
+"es": "Escaleras",
+"fr": "Escalier"
+},
+{
+"id": "a2-elevator",
+"en": "Elevator",
+"topic": "home-chores",
+"es": "Ascensor",
+"fr": "Ascenseur"
+},
+{
+"id": "a2-to-wake-up",
+"en": "To wake up",
+"topic": "daily-routine",
+"es": "Despertarse",
+"fr": "Se réveiller"
+},
+{
+"id": "a2-to-get-up",
+"en": "To get up",
+"topic": "daily-routine",
+"es": "Levantarse",
+"fr": "Se lever"
+},
+{
+"id": "a2-to-take-a-shower",
+"en": "To take a shower",
+"topic": "daily-routine",
+"es": "Ducharse",
+"fr": "Prendre une douche"
+},
+{
+"id": "a2-to-brush-ones-teeth",
+"en": "To brush one’s teeth",
+"topic": "daily-routine",
+"es": "Cepillarse los dientes",
+"fr": "Se brosser les dents"
+},
+{
+"id": "a2-to-get-dressed",
+"en": "To get dressed",
+"topic": "daily-routine",
+"es": "Vestirse",
+"fr": "S’habiller"
+},
+{
+"id": "a2-to-have-breakfast",
+"en": "To have breakfast",
+"topic": "daily-routine",
+"es": "Desayunar",
+"fr": "Prendre le petit-déjeuner"
+},
+{
+"id": "a2-to-commute",
+"en": "To commute",
+"topic": "daily-routine",
+"es": "Ir al trabajo",
+"fr": "Faire le trajet"
+},
+{
+"id": "a2-to-go-home",
+"en": "To go home",
+"topic": "daily-routine",
+"es": "Volver a casa",
+"fr": "Rentrer"
+},
+{
+"id": "a2-to-relax",
+"en": "To relax",
+"topic": "daily-routine",
+"es": "Relajarse",
+"fr": "Se détendre"
+},
+{
+"id": "a2-to-watch-tv",
+"en": "To watch TV",
+"topic": "daily-routine",
+"es": "Ver la tele",
+"fr": "Regarder la télé"
+},
+{
+"id": "a2-to-go-to-bed",
+"en": "To go to bed",
+"topic": "daily-routine",
+"es": "Acostarse",
+"fr": "Se coucher"
+},
+{
+"id": "a2-routine",
+"en": "Routine",
+"topic": "daily-routine",
+"es": "Rutina",
+"fr": "Routine"
+},
+{
+"id": "a2-habit",
+"en": "Habit",
+"topic": "daily-routine",
+"es": "Hábito",
+"fr": "Habitude"
+},
+{
+"id": "a2-alarm-clock",
+"en": "Alarm clock",
+"topic": "daily-routine",
+"es": "Despertador",
+"fr": "Réveil"
+},
+{
+"id": "a2-to-be-late",
+"en": "To be late",
+"topic": "daily-routine",
+"es": "Llegar tarde",
+"fr": "Être en retard"
+},
+{
+"id": "a2-to-hurry",
+"en": "To hurry",
+"topic": "daily-routine",
+"es": "Darse prisa",
+"fr": "Se dépêcher"
+},
+{
+"id": "a2-on-time",
+"en": "On time",
+"topic": "daily-routine",
+"es": "A tiempo",
+"fr": "À l’heure"
+},
+{
+"id": "a2-nap",
+"en": "Nap",
+"topic": "daily-routine",
+"es": "Siesta",
+"fr": "Sieste"
+},
+{
+"id": "a2-to-take-a-walk",
+"en": "To take a walk",
+"topic": "daily-routine",
+"es": "Dar un paseo",
+"fr": "Se promener"
+},
+{
+"id": "a2-to-have-lunch",
+"en": "To have lunch",
+"topic": "daily-routine",
+"es": "Almorzar",
+"fr": "Déjeuner"
+},
+{
+"id": "a2-to-have-dinner",
+"en": "To have dinner",
+"topic": "daily-routine",
+"es": "Cenar",
+"fr": "Dîner"
+},
+{
+"id": "a2-to-fall-asleep",
+"en": "To fall asleep",
+"topic": "daily-routine",
+"es": "Dormirse",
+"fr": "S’endormir"
+},
+{
+"id": "a2-every-day",
+"en": "Every day",
+"topic": "daily-routine",
+"es": "Todos los días",
+"fr": "Tous les jours"
+},
+{
+"id": "a2-usually",
+"en": "Usually",
+"topic": "daily-routine",
+"es": "Normalmente",
+"fr": "D’habitude"
+},
+{
+"id": "a2-corner",
+"en": "Corner",
+"topic": "city-directions",
+"es": "Esquina",
+"fr": "Coin"
+},
+{
+"id": "a2-block",
+"en": "Block",
+"topic": "city-directions",
+"es": "Cuadra",
+"fr": "Pâté de maisons"
+},
+{
+"id": "a2-traffic-light",
+"en": "Traffic light",
+"topic": "city-directions",
+"es": "Semáforo",
+"fr": "Feu"
+},
+{
+"id": "a2-bridge",
+"en": "Bridge",
+"topic": "city-directions",
+"es": "Puente",
+"fr": "Pont"
+},
+{
+"id": "a2-square-plaza",
+"en": "Square (plaza)",
+"topic": "city-directions",
+"es": "Plaza",
+"fr": "Place"
+},
+{
+"id": "a2-downtown",
+"en": "Downtown",
+"topic": "city-directions",
+"es": "Centro",
+"fr": "Centre-ville"
+},
+{
+"id": "a2-neighborhood",
+"en": "Neighborhood",
+"topic": "city-directions",
+"es": "Barrio",
+"fr": "Quartier"
+},
+{
+"id": "a2-building",
+"en": "Building",
+"topic": "city-directions",
+"es": "Edificio",
+"fr": "Bâtiment"
+},
+{
+"id": "a2-sidewalk",
+"en": "Sidewalk",
+"topic": "city-directions",
+"es": "Acera",
+"fr": "Trottoir"
+},
+{
+"id": "a2-to-cross",
+"en": "To cross",
+"topic": "city-directions",
+"es": "Cruzar",
+"fr": "Traverser"
+},
+{
+"id": "a2-to-turn",
+"en": "To turn",
+"topic": "city-directions",
+"es": "Girar",
+"fr": "Tourner"
+},
+{
+"id": "a2-address",
+"en": "Address",
+"topic": "city-directions",
+"es": "Dirección",
+"fr": "Adresse"
+},
+{
+"id": "a2-post-office",
+"en": "Post office",
+"topic": "city-directions",
+"es": "Oficina de correos",
+"fr": "Poste"
+},
+{
+"id": "a2-library",
+"en": "Library",
+"topic": "city-directions",
+"es": "Biblioteca",
+"fr": "Bibliothèque"
+},
+{
+"id": "a2-cinema",
+"en": "Cinema",
+"topic": "city-directions",
+"es": "Cine",
+"fr": "Cinéma"
+},
+{
+"id": "a2-theater",
+"en": "Theater",
+"topic": "city-directions",
+"es": "Teatro",
+"fr": "Théâtre"
+},
+{
+"id": "a2-stadium",
+"en": "Stadium",
+"topic": "city-directions",
+"es": "Estadio",
+"fr": "Stade"
+},
+{
+"id": "a2-police-station",
+"en": "Police station",
+"topic": "city-directions",
+"es": "Comisaría",
+"fr": "Commissariat"
+},
+{
+"id": "a2-town-hall",
+"en": "Town hall",
+"topic": "city-directions",
+"es": "Ayuntamiento",
+"fr": "Mairie"
+},
+{
+"id": "a2-parking-lot",
+"en": "Parking lot",
+"topic": "city-directions",
+"es": "Estacionamiento",
+"fr": "Parking"
+},
+{
+"id": "a2-gas-station",
+"en": "Gas station",
+"topic": "city-directions",
+"es": "Gasolinera",
+"fr": "Station-service"
+},
+{
+"id": "a2-traffic",
+"en": "Traffic",
+"topic": "city-directions",
+"es": "Tráfico",
+"fr": "Circulation"
+},
+{
+"id": "a2-opposite",
+"en": "Opposite",
+"topic": "city-directions",
+"es": "Enfrente",
+"fr": "En face"
+},
+{
+"id": "a2-next-to",
+"en": "Next to",
+"topic": "city-directions",
+"es": "Al lado de",
+"fr": "À côté de"
+},
+{
+"id": "a2-between",
+"en": "Between",
+"topic": "city-directions",
+"es": "Entre",
+"fr": "Entre"
+},
+{
+"id": "a2-how-do-i-get-to",
+"en": "How do I get to…?",
+"topic": "city-directions",
+"es": "¿Cómo llego a…?",
+"fr": "Comment aller à… ?"
+},
+{
+"id": "a2-menu",
+"en": "Menu",
+"topic": "cooking-eating",
+"es": "Menú",
+"fr": "Menu"
+},
+{
+"id": "a2-waiter",
+"en": "Waiter",
+"topic": "cooking-eating",
+"es": "Camarero",
+"fr": "Serveur"
+},
+{
+"id": "a2-dish",
+"en": "Dish",
+"topic": "cooking-eating",
+"es": "Plato (comida)",
+"fr": "Plat"
+},
+{
+"id": "a2-dessert",
+"en": "Dessert",
+"topic": "cooking-eating",
+"es": "Postre",
+"fr": "Dessert"
+},
+{
+"id": "a2-starter",
+"en": "Starter",
+"topic": "cooking-eating",
+"es": "Entrada",
+"fr": "Entrée"
+},
+{
+"id": "a2-main-course",
+"en": "Main course",
+"topic": "cooking-eating",
+"es": "Plato principal",
+"fr": "Plat principal"
+},
+{
+"id": "a2-vegetarian",
+"en": "Vegetarian",
+"topic": "cooking-eating",
+"es": "Vegetariano",
+"fr": "Végétarien"
+},
+{
+"id": "a2-tip",
+"en": "Tip",
+"topic": "cooking-eating",
+"es": "Propina",
+"fr": "Pourboire"
+},
+{
+"id": "a2-to-cook",
+"en": "To cook",
+"topic": "cooking-eating",
+"es": "Cocinar",
+"fr": "Cuisiner"
+},
+{
+"id": "a2-recipe",
+"en": "Recipe",
+"topic": "cooking-eating",
+"es": "Receta",
+"fr": "Recette"
+},
+{
+"id": "a2-ingredient",
+"en": "Ingredient",
+"topic": "cooking-eating",
+"es": "Ingrediente",
+"fr": "Ingrédient"
+},
+{
+"id": "a2-oil",
+"en": "Oil",
+"topic": "cooking-eating",
+"es": "Aceite",
+"fr": "Huile"
+},
+{
+"id": "a2-butter",
+"en": "Butter",
+"topic": "cooking-eating",
+"es": "Mantequilla",
+"fr": "Beurre"
+},
+{
+"id": "a2-pepper",
+"en": "Pepper",
+"topic": "cooking-eating",
+"es": "Pimienta",
+"fr": "Poivre"
+},
+{
+"id": "a2-onion",
+"en": "Onion",
+"topic": "cooking-eating",
+"es": "Cebolla",
+"fr": "Oignon"
+},
+{
+"id": "a2-garlic",
+"en": "Garlic",
+"topic": "cooking-eating",
+"es": "Ajo",
+"fr": "Ail"
+},
+{
+"id": "a2-tomato",
+"en": "Tomato",
+"topic": "cooking-eating",
+"es": "Tomate",
+"fr": "Tomate"
+},
+{
+"id": "a2-potato",
+"en": "Potato",
+"topic": "cooking-eating",
+"es": "Papa",
+"fr": "Pomme de terre"
+},
+{
+"id": "a2-noodles",
+"en": "Noodles",
+"topic": "cooking-eating",
+"es": "Fideos",
+"fr": "Nouilles"
+},
+{
+"id": "a2-sauce",
+"en": "Sauce",
+"topic": "cooking-eating",
+"es": "Salsa",
+"fr": "Sauce"
+},
+{
+"id": "a2-to-bake",
+"en": "To bake",
+"topic": "cooking-eating",
+"es": "Hornear",
+"fr": "Cuire au four"
+},
+{
+"id": "a2-to-fry",
+"en": "To fry",
+"topic": "cooking-eating",
+"es": "Freír",
+"fr": "Frire"
+},
+{
+"id": "a2-to-boil",
+"en": "To boil",
+"topic": "cooking-eating",
+"es": "Hervir",
+"fr": "Bouillir"
+},
+{
+"id": "a2-a-table-for-two",
+"en": "A table for two",
+"topic": "cooking-eating",
+"es": "Una mesa para dos",
+"fr": "Une table pour deux"
+},
+{
+"id": "a2-takeout",
+"en": "Takeout",
+"topic": "cooking-eating",
+"es": "Para llevar",
+"fr": "À emporter"
+},
+{
+"id": "a2-snack",
+"en": "Snack",
+"topic": "cooking-eating",
+"es": "Merienda",
+"fr": "Goûter"
+},
+{
+"id": "a2-salty",
+"en": "Salty",
+"topic": "cooking-eating",
+"es": "Salado",
+"fr": "Salé"
+},
+{
+"id": "a2-bitter",
+"en": "Bitter",
+"topic": "cooking-eating",
+"es": "Amargo",
+"fr": "Amer"
+},
+{
+"id": "a2-tall",
+"en": "Tall",
+"topic": "describing-people",
+"es": "Alto",
+"fr": "Grand (taille)"
+},
+{
+"id": "a2-short-height",
+"en": "Short (height)",
+"topic": "describing-people",
+"es": "Bajo",
+"fr": "Petit (taille)"
+},
+{
+"id": "a2-thin",
+"en": "Thin",
+"topic": "describing-people",
+"es": "Delgado",
+"fr": "Mince"
+},
+{
+"id": "a2-overweight",
+"en": "Overweight",
+"topic": "describing-people",
+"es": "Gordo",
+"fr": "Gros"
+},
+{
+"id": "a2-blond",
+"en": "Blond",
+"topic": "describing-people",
+"es": "Rubio",
+"fr": "Blond"
+},
+{
+"id": "a2-dark-haired",
+"en": "Dark-haired",
+"topic": "describing-people",
+"es": "Moreno",
+"fr": "Brun"
+},
+{
+"id": "a2-beard",
+"en": "Beard",
+"topic": "describing-people",
+"es": "Barba",
+"fr": "Barbe"
+},
+{
+"id": "a2-kind",
+"en": "Kind",
+"topic": "describing-people",
+"es": "Amable",
+"fr": "Gentil"
+},
+{
+"id": "a2-nice-person",
+"en": "Nice (person)",
+"topic": "describing-people",
+"es": "Simpático",
+"fr": "Sympa"
+},
+{
+"id": "a2-shy",
+"en": "Shy",
+"topic": "describing-people",
+"es": "Tímido",
+"fr": "Timide"
+},
+{
+"id": "a2-talkative",
+"en": "Talkative",
+"topic": "describing-people",
+"es": "Hablador",
+"fr": "Bavard"
+},
+{
+"id": "a2-smart",
+"en": "Smart",
+"topic": "describing-people",
+"es": "Inteligente",
+"fr": "Intelligent"
+},
+{
+"id": "a2-lazy",
+"en": "Lazy",
+"topic": "describing-people",
+"es": "Perezoso",
+"fr": "Paresseux"
+},
+{
+"id": "a2-hardworking",
+"en": "Hardworking",
+"topic": "describing-people",
+"es": "Trabajador",
+"fr": "Travailleur"
+},
+{
+"id": "a2-polite",
+"en": "Polite",
+"topic": "describing-people",
+"es": "Educado",
+"fr": "Poli"
+},
+{
+"id": "a2-rude",
+"en": "Rude",
+"topic": "describing-people",
+"es": "Grosero",
+"fr": "Impoli"
+},
+{
+"id": "a2-patient",
+"en": "Patient",
+"topic": "describing-people",
+"es": "Paciente",
+"fr": "Patient"
+},
+{
+"id": "a2-honest",
+"en": "Honest",
+"topic": "describing-people",
+"es": "Honesto",
+"fr": "Honnête"
+},
+{
+"id": "a2-serious",
+"en": "Serious",
+"topic": "describing-people",
+"es": "Serio",
+"fr": "Sérieux"
+},
+{
+"id": "a2-quiet-person",
+"en": "Quiet (person)",
+"topic": "describing-people",
+"es": "Callado",
+"fr": "Silencieux"
+},
+{
+"id": "a2-friendly",
+"en": "Friendly",
+"topic": "describing-people",
+"es": "Amistoso",
+"fr": "Amical"
+},
+{
+"id": "a2-handsome",
+"en": "Handsome",
+"topic": "describing-people",
+"es": "Guapo",
+"fr": "Beau (homme)"
+},
+{
+"id": "a2-age",
+"en": "Age",
+"topic": "describing-people",
+"es": "Edad",
+"fr": "Âge"
+},
+{
+"id": "a2-old-person",
+"en": "Old (person)",
+"topic": "describing-people",
+"es": "Mayor (edad)",
+"fr": "Âgé"
+},
+{
+"id": "a2-curly-hair",
+"en": "Curly hair",
+"topic": "describing-people",
+"es": "Pelo rizado",
+"fr": "Cheveux bouclés"
+},
+{
+"id": "a2-cheerful",
+"en": "Cheerful",
+"topic": "describing-people",
+"es": "Alegre",
+"fr": "Joyeux"
+},
+{
+"id": "a2-stubborn",
+"en": "Stubborn",
+"topic": "describing-people",
+"es": "Terco",
+"fr": "Têtu"
+},
+{
+"id": "a2-generous",
+"en": "Generous",
+"topic": "describing-people",
+"es": "Generoso",
+"fr": "Généreux"
+},
+{
+"id": "a2-to-try",
+"en": "To try",
+"topic": "verbs-3",
+"es": "Intentar",
+"fr": "Essayer (tenter)"
+},
+{
+"id": "a2-to-start",
+"en": "To start",
+"topic": "verbs-3",
+"es": "Empezar",
+"fr": "Commencer"
+},
+{
+"id": "a2-to-finish",
+"en": "To finish",
+"topic": "verbs-3",
+"es": "Terminar",
+"fr": "Finir"
+},
+{
+"id": "a2-to-change",
+"en": "To change",
+"topic": "verbs-3",
+"es": "Cambiar",
+"fr": "Changer"
+},
+{
+"id": "a2-to-use",
+"en": "To use",
+"topic": "verbs-3",
+"es": "Usar",
+"fr": "Utiliser"
+},
+{
+"id": "a2-to-receive",
+"en": "To receive",
+"topic": "verbs-3",
+"es": "Recibir",
+"fr": "Recevoir"
+},
+{
+"id": "a2-to-decide",
+"en": "To decide",
+"topic": "verbs-3",
+"es": "Decidir",
+"fr": "Décider"
+},
+{
+"id": "a2-to-forget",
+"en": "To forget",
+"topic": "verbs-3",
+"es": "Olvidar",
+"fr": "Oublier"
+},
+{
+"id": "a2-to-remember",
+"en": "To remember",
+"topic": "verbs-3",
+"es": "Recordar",
+"fr": "Se souvenir"
+},
+{
+"id": "a2-to-lose-an-object",
+"en": "To lose (an object)",
+"topic": "verbs-3",
+"es": "Perder (algo)",
+"fr": "Perdre (un objet)"
+},
+{
+"id": "a2-to-meet-someone-new",
+"en": "To meet (someone new)",
+"topic": "verbs-3",
+"es": "Conocer",
+"fr": "Rencontrer"
+},
+{
+"id": "a2-to-prefer",
+"en": "To prefer",
+"topic": "verbs-3",
+"es": "Preferir",
+"fr": "Préférer"
+},
+{
+"id": "a2-to-hope",
+"en": "To hope",
+"topic": "verbs-3",
+"es": "Esperar (tener esperanza)",
+"fr": "Espérer"
+},
+{
+"id": "a2-to-believe",
+"en": "To believe",
+"topic": "verbs-3",
+"es": "Creer",
+"fr": "Croire"
+},
+{
+"id": "a2-to-feel",
+"en": "To feel",
+"topic": "verbs-3",
+"es": "Sentir",
+"fr": "Sentir (ressentir)"
+},
+{
+"id": "a2-to-seem",
+"en": "To seem",
+"topic": "verbs-3",
+"es": "Parecer",
+"fr": "Sembler"
+},
+{
+"id": "a2-to-happen",
+"en": "To happen",
+"topic": "verbs-3",
+"es": "Pasar (ocurrir)",
+"fr": "Se passer"
+},
+{
+"id": "a2-to-stay",
+"en": "To stay",
+"topic": "verbs-3",
+"es": "Quedarse",
+"fr": "Rester"
+},
+{
+"id": "a2-to-spend-money",
+"en": "To spend (money)",
+"topic": "verbs-3",
+"es": "Gastar",
+"fr": "Dépenser"
+},
+{
+"id": "a2-to-show",
+"en": "To show",
+"topic": "verbs-3",
+"es": "Mostrar",
+"fr": "Montrer"
+},
+{
+"id": "a2-to-explain",
+"en": "To explain",
+"topic": "verbs-3",
+"es": "Explicar",
+"fr": "Expliquer"
+},
+{
+"id": "a2-to-follow",
+"en": "To follow",
+"topic": "verbs-3",
+"es": "Seguir",
+"fr": "Suivre"
+},
+{
+"id": "a2-to-keep",
+"en": "To keep",
+"topic": "verbs-3",
+"es": "Guardar",
+"fr": "Garder"
+},
+{
+"id": "a2-to-allow",
+"en": "To allow",
+"topic": "verbs-3",
+"es": "Permitir",
+"fr": "Permettre"
+},
+{
+"id": "a2-to-become",
+"en": "To become",
+"topic": "verbs-3",
+"es": "Convertirse en",
+"fr": "Devenir"
+},
+{
+"id": "a2-to-continue",
+"en": "To continue",
+"topic": "verbs-3",
+"es": "Continuar",
+"fr": "Continuer"
+},
+{
+"id": "a2-to-cut",
+"en": "To cut",
+"topic": "verbs-4",
+"es": "Cortar",
+"fr": "Couper"
+},
+{
+"id": "a2-to-break",
+"en": "To break",
+"topic": "verbs-4",
+"es": "Romper",
+"fr": "Casser"
+},
+{
+"id": "a2-to-fly",
+"en": "To fly",
+"topic": "verbs-4",
+"es": "Volar",
+"fr": "Voler"
+},
+{
+"id": "a2-to-draw",
+"en": "To draw",
+"topic": "verbs-4",
+"es": "Dibujar",
+"fr": "Dessiner"
+},
+{
+"id": "a2-to-carry",
+"en": "To carry",
+"topic": "verbs-4",
+"es": "Llevar",
+"fr": "Porter (transporter)"
+},
+{
+"id": "a2-to-push",
+"en": "To push",
+"topic": "verbs-4",
+"es": "Empujar",
+"fr": "Pousser"
+},
+{
+"id": "a2-to-pull",
+"en": "To pull",
+"topic": "verbs-4",
+"es": "Tirar (jalar)",
+"fr": "Tirer"
+},
+{
+"id": "a2-to-throw",
+"en": "To throw",
+"topic": "verbs-4",
+"es": "Lanzar",
+"fr": "Lancer"
+},
+{
+"id": "a2-to-catch",
+"en": "To catch",
+"topic": "verbs-4",
+"es": "Atrapar",
+"fr": "Attraper"
+},
+{
+"id": "a2-to-build",
+"en": "To build",
+"topic": "verbs-4",
+"es": "Construir",
+"fr": "Construire"
+},
+{
+"id": "a2-to-grow",
+"en": "To grow",
+"topic": "verbs-4",
+"es": "Crecer",
+"fr": "Grandir"
+},
+{
+"id": "a2-to-fall",
+"en": "To fall",
+"topic": "verbs-4",
+"es": "Caer",
+"fr": "Tomber"
+},
+{
+"id": "a2-to-climb",
+"en": "To climb",
+"topic": "verbs-4",
+"es": "Subir (escalar)",
+"fr": "Grimper"
+},
+{
+"id": "a2-to-jump",
+"en": "To jump",
+"topic": "verbs-4",
+"es": "Saltar",
+"fr": "Sauter"
+},
+{
+"id": "a2-to-laugh",
+"en": "To laugh",
+"topic": "verbs-4",
+"es": "Reír",
+"fr": "Rire"
+},
+{
+"id": "a2-to-cry",
+"en": "To cry",
+"topic": "verbs-4",
+"es": "Llorar",
+"fr": "Pleurer"
+},
+{
+"id": "a2-to-smile",
+"en": "To smile",
+"topic": "verbs-4",
+"es": "Sonreír",
+"fr": "Sourire"
+},
+{
+"id": "a2-to-shout",
+"en": "To shout",
+"topic": "verbs-4",
+"es": "Gritar",
+"fr": "Crier"
+},
+{
+"id": "a2-to-whisper",
+"en": "To whisper",
+"topic": "verbs-4",
+"es": "Susurrar",
+"fr": "Chuchoter"
+},
+{
+"id": "a2-to-hug",
+"en": "To hug",
+"topic": "verbs-4",
+"es": "Abrazar",
+"fr": "Prendre dans ses bras"
+},
+{
+"id": "a2-to-kiss",
+"en": "To kiss",
+"topic": "verbs-4",
+"es": "Besar",
+"fr": "Embrasser"
+},
+{
+"id": "a2-to-touch",
+"en": "To touch",
+"topic": "verbs-4",
+"es": "Tocar",
+"fr": "Toucher"
+},
+{
+"id": "a2-to-smell",
+"en": "To smell",
+"topic": "verbs-4",
+"es": "Oler",
+"fr": "Sentir (odeur)"
+},
+{
+"id": "a2-to-taste",
+"en": "To taste",
+"topic": "verbs-4",
+"es": "Probar (sabor)",
+"fr": "Goûter"
+},
+{
+"id": "a2-to-wash-oneself",
+"en": "To wash oneself",
+"topic": "verbs-4",
+"es": "Lavarse",
+"fr": "Se laver"
+},
+{
+"id": "a2-to-hide",
+"en": "To hide",
+"topic": "verbs-4",
+"es": "Esconder",
+"fr": "Cacher"
+},
+{
+"id": "a2-interesting",
+"en": "Interesting",
+"topic": "adjectives-2",
+"es": "Interesante",
+"fr": "Intéressant"
+},
+{
+"id": "a2-boring",
+"en": "Boring",
+"topic": "adjectives-2",
+"es": "Aburrido (cosa)",
+"fr": "Ennuyeux"
+},
+{
+"id": "a2-comfortable",
+"en": "Comfortable",
+"topic": "adjectives-2",
+"es": "Cómodo",
+"fr": "Confortable"
+},
+{
+"id": "a2-dangerous",
+"en": "Dangerous",
+"topic": "adjectives-2",
+"es": "Peligroso",
+"fr": "Dangereux"
+},
+{
+"id": "a2-safe",
+"en": "Safe",
+"topic": "adjectives-2",
+"es": "Seguro",
+"fr": "Sûr"
+},
+{
+"id": "a2-noisy",
+"en": "Noisy",
+"topic": "adjectives-2",
+"es": "Ruidoso",
+"fr": "Bruyant"
+},
+{
+"id": "a2-busy",
+"en": "Busy",
+"topic": "adjectives-2",
+"es": "Ocupado",
+"fr": "Occupé"
+},
+{
+"id": "a2-heavy",
+"en": "Heavy",
+"topic": "adjectives-2",
+"es": "Pesado",
+"fr": "Lourd"
+},
+{
+"id": "a2-light-weight",
+"en": "Light (weight)",
+"topic": "adjectives-2",
+"es": "Ligero",
+"fr": "Léger"
+},
+{
+"id": "a2-wide",
+"en": "Wide",
+"topic": "adjectives-2",
+"es": "Ancho",
+"fr": "Large"
+},
+{
+"id": "a2-narrow",
+"en": "Narrow",
+"topic": "adjectives-2",
+"es": "Estrecho",
+"fr": "Étroit"
+},
+{
+"id": "a2-soft",
+"en": "Soft",
+"topic": "adjectives-2",
+"es": "Suave",
+"fr": "Doux"
+},
+{
+"id": "a2-hard-firm",
+"en": "Hard (firm)",
+"topic": "adjectives-2",
+"es": "Duro",
+"fr": "Dur"
+},
+{
+"id": "a2-wet",
+"en": "Wet",
+"topic": "adjectives-2",
+"es": "Mojado",
+"fr": "Mouillé"
+},
+{
+"id": "a2-dry",
+"en": "Dry",
+"topic": "adjectives-2",
+"es": "Seco",
+"fr": "Sec"
+},
+{
+"id": "a2-rich",
+"en": "Rich",
+"topic": "adjectives-2",
+"es": "Rico",
+"fr": "Riche"
+},
+{
+"id": "a2-poor",
+"en": "Poor",
+"topic": "adjectives-2",
+"es": "Pobre",
+"fr": "Pauvre"
+},
+{
+"id": "a2-famous",
+"en": "Famous",
+"topic": "adjectives-2",
+"es": "Famoso",
+"fr": "Célèbre"
+},
+{
+"id": "a2-popular",
+"en": "Popular",
+"topic": "adjectives-2",
+"es": "Popular",
+"fr": "Populaire"
+},
+{
+"id": "a2-modern",
+"en": "Modern",
+"topic": "adjectives-2",
+"es": "Moderno",
+"fr": "Moderne"
+},
+{
+"id": "a2-traditional",
+"en": "Traditional",
+"topic": "adjectives-2",
+"es": "Tradicional",
+"fr": "Traditionnel"
+},
+{
+"id": "a2-ready",
+"en": "Ready",
+"topic": "adjectives-2",
+"es": "Listo",
+"fr": "Prêt"
+},
+{
+"id": "a2-sure",
+"en": "Sure",
+"topic": "adjectives-2",
+"es": "Seguro (cierto)",
+"fr": "Sûr (certain)"
+},
+{
+"id": "a2-wrong",
+"en": "Wrong",
+"topic": "adjectives-2",
+"es": "Equivocado",
+"fr": "Faux"
+},
+{
+"id": "a2-correct",
+"en": "Correct",
+"topic": "adjectives-2",
+"es": "Correcto",
+"fr": "Correct"
+},
+{
+"id": "a2-strange",
+"en": "Strange",
+"topic": "adjectives-2",
+"es": "Extraño",
+"fr": "Étrange"
+},
+{
+"id": "a2-same",
+"en": "Same",
+"topic": "adjectives-2",
+"es": "Mismo",
+"fr": "Même"
+},
+{
+"id": "a2-different",
+"en": "Different",
+"topic": "adjectives-2",
+"es": "Diferente",
+"fr": "Différent"
+},
+{
+"id": "a2-last-week",
+"en": "Last week",
+"topic": "time-2",
+"es": "La semana pasada",
+"fr": "La semaine dernière"
+},
+{
+"id": "a2-next-week",
+"en": "Next week",
+"topic": "time-2",
+"es": "La próxima semana",
+"fr": "La semaine prochaine"
+},
+{
+"id": "a2-this-month",
+"en": "This month",
+"topic": "time-2",
+"es": "Este mes",
+"fr": "Ce mois-ci"
+},
+{
+"id": "a2-last-year",
+"en": "Last year",
+"topic": "time-2",
+"es": "El año pasado",
+"fr": "L’année dernière"
+},
+{
+"id": "a2-next-year",
+"en": "Next year",
+"topic": "time-2",
+"es": "El próximo año",
+"fr": "L’année prochaine"
+},
+{
+"id": "a2-at-the-end",
+"en": "At the end",
+"topic": "time-2",
+"es": "Al final",
+"fr": "À la fin"
+},
+{
+"id": "a2-at-the-beginning",
+"en": "At the beginning",
+"topic": "time-2",
+"es": "Al principio",
+"fr": "Au début"
+},
+{
+"id": "a2-twice",
+"en": "Twice",
+"topic": "time-2",
+"es": "Dos veces",
+"fr": "Deux fois"
+},
+{
+"id": "a2-once",
+"en": "Once",
+"topic": "time-2",
+"es": "Una vez",
+"fr": "Une fois"
+},
+{
+"id": "a2-in-a-hurry",
+"en": "In a hurry",
+"topic": "time-2",
+"es": "Con prisa",
+"fr": "Pressé"
+},
+{
+"id": "a2-for-a-long-time",
+"en": "For a long time",
+"topic": "time-2",
+"es": "Durante mucho tiempo",
+"fr": "Longtemps"
+},
+{
+"id": "a2-recently",
+"en": "Recently",
+"topic": "time-2",
+"es": "Recientemente",
+"fr": "Récemment"
+},
+{
+"id": "a2-already",
+"en": "Already",
+"topic": "time-2",
+"es": "Ya",
+"fr": "Déjà"
+},
+{
+"id": "a2-still",
+"en": "Still",
+"topic": "time-2",
+"es": "Todavía",
+"fr": "Encore (toujours)"
+},
+{
+"id": "a2-not-yet",
+"en": "Not yet",
+"topic": "time-2",
+"es": "Todavía no",
+"fr": "Pas encore"
+},
+{
+"id": "a2-until",
+"en": "Until",
+"topic": "time-2",
+"es": "Hasta",
+"fr": "Jusqu’à"
+},
+{
+"id": "a2-since",
+"en": "Since",
+"topic": "time-2",
+"es": "Desde",
+"fr": "Depuis"
+},
+{
+"id": "a2-during",
+"en": "During",
+"topic": "time-2",
+"es": "Durante",
+"fr": "Pendant"
+},
+{
+"id": "a2-ago",
+"en": "Ago",
+"topic": "time-2",
+"es": "Hace (tiempo)",
+"fr": "Il y a (temps)"
+},
+{
+"id": "a2-at-least",
+"en": "At least",
+"topic": "time-2",
+"es": "Al menos",
+"fr": "Au moins"
+},
+{
+"id": "a2-right-away",
+"en": "Right away",
+"topic": "time-2",
+"es": "Enseguida",
+"fr": "Tout de suite"
+},
+{
+"id": "a2-finally",
+"en": "Finally",
+"topic": "time-2",
+"es": "Finalmente",
+"fr": "Enfin"
+},
+{
+"id": "a2-suddenly",
+"en": "Suddenly",
+"topic": "time-2",
+"es": "De repente",
+"fr": "Soudain"
+},
+{
+"id": "a2-the-day-after-tomorrow",
+"en": "The day after tomorrow",
+"topic": "time-2",
+"es": "Pasado mañana",
+"fr": "Après-demain"
+},
+{
+"id": "a2-conversation",
+"en": "Conversation",
+"topic": "communication",
+"es": "Conversación",
+"fr": "Conversation"
+},
+{
+"id": "a2-question",
+"en": "Question",
+"topic": "communication",
+"es": "Pregunta",
+"fr": "Question"
+},
+{
+"id": "a2-answer-noun",
+"en": "Answer (noun)",
+"topic": "communication",
+"es": "Respuesta",
+"fr": "Réponse"
+},
+{
+"id": "a2-opinion",
+"en": "Opinion",
+"topic": "communication",
+"es": "Opinión",
+"fr": "Avis"
+},
+{
+"id": "a2-to-describe",
+"en": "To describe",
+"topic": "communication",
+"es": "Describir",
+"fr": "Décrire"
+},
+{
+"id": "a2-to-promise",
+"en": "To promise",
+"topic": "communication",
+"es": "Prometer",
+"fr": "Promettre"
+},
+{
+"id": "a2-to-suggest",
+"en": "To suggest",
+"topic": "communication",
+"es": "Sugerir",
+"fr": "Suggérer"
+},
+{
+"id": "a2-to-complain",
+"en": "To complain",
+"topic": "communication",
+"es": "Quejarse",
+"fr": "Se plaindre"
+},
+{
+"id": "a2-to-apologize",
+"en": "To apologize",
+"topic": "communication",
+"es": "Disculparse",
+"fr": "S’excuser"
+},
+{
+"id": "a2-to-thank",
+"en": "To thank",
+"topic": "communication",
+"es": "Agradecer",
+"fr": "Remercier"
+},
+{
+"id": "a2-joke",
+"en": "Joke",
+"topic": "communication",
+"es": "Chiste",
+"fr": "Blague"
+},
+{
+"id": "a2-story",
+"en": "Story",
+"topic": "communication",
+"es": "Historia",
+"fr": "Histoire"
+},
+{
+"id": "a2-news",
+"en": "News",
+"topic": "communication",
+"es": "Noticias",
+"fr": "Nouvelles"
+},
+{
+"id": "a2-to-argue",
+"en": "To argue",
+"topic": "communication",
+"es": "Discutir (pelear)",
+"fr": "Se disputer"
+},
+{
+"id": "a2-to-discuss",
+"en": "To discuss",
+"topic": "communication",
+"es": "Hablar de",
+"fr": "Discuter"
+},
+{
+"id": "a2-secret",
+"en": "Secret",
+"topic": "communication",
+"es": "Secreto",
+"fr": "Secret"
+},
+{
+"id": "a2-to-mean",
+"en": "To mean",
+"topic": "communication",
+"es": "Significar",
+"fr": "Vouloir dire"
+},
+{
+"id": "a2-to-pronounce",
+"en": "To pronounce",
+"topic": "communication",
+"es": "Pronunciar",
+"fr": "Prononcer"
+},
+{
+"id": "a2-to-translate",
+"en": "To translate",
+"topic": "communication",
+"es": "Traducir",
+"fr": "Traduire"
+},
+{
+"id": "a2-word",
+"en": "Word",
+"topic": "communication",
+"es": "Palabra",
+"fr": "Mot"
+},
+{
+"id": "a2-sentence",
+"en": "Sentence",
+"topic": "communication",
+"es": "Frase",
+"fr": "Phrase"
+},
+{
+"id": "a2-language",
+"en": "Language",
+"topic": "communication",
+"es": "Idioma",
+"fr": "Langue"
+},
+{
+"id": "a2-to-spell",
+"en": "To spell",
+"topic": "communication",
+"es": "Deletrear",
+"fr": "Épeler"
+},
+{
+"id": "a2-to-lie",
+"en": "To lie",
+"topic": "communication",
+"es": "Mentir",
+"fr": "Mentir"
+},
+{
+"id": "a2-truth",
+"en": "Truth",
+"topic": "communication",
+"es": "Verdad",
+"fr": "Vérité"
+},
+{
+"id": "a2-to-chat",
+"en": "To chat",
+"topic": "communication",
+"es": "Charlar",
+"fr": "Bavarder"
+},
+{
+"id": "a2-accent",
+"en": "Accent",
+"topic": "communication",
+"es": "Acento",
+"fr": "Accent"
+},
+{
+"id": "a2-fluent",
+"en": "Fluent",
+"topic": "communication",
+"es": "Fluido",
+"fr": "Courant"
+},
+{
+"id": "a2-to-get-married",
+"en": "To get married",
+"topic": "family-life",
+"es": "Casarse",
+"fr": "Se marier"
+},
+{
+"id": "a2-wedding",
+"en": "Wedding",
+"topic": "family-life",
+"es": "Boda",
+"fr": "Mariage"
+},
+{
+"id": "a2-couple",
+"en": "Couple",
+"topic": "family-life",
+"es": "Pareja",
+"fr": "Couple"
+},
+{
+"id": "a2-childhood",
+"en": "Childhood",
+"topic": "family-life",
+"es": "Infancia",
+"fr": "Enfance"
+},
+{
+"id": "a2-teenager",
+"en": "Teenager",
+"topic": "family-life",
+"es": "Adolescente",
+"fr": "Adolescent"
+},
+{
+"id": "a2-adult",
+"en": "Adult",
+"topic": "family-life",
+"es": "Adulto",
+"fr": "Adulte"
+},
+{
+"id": "a2-to-grow-up",
+"en": "To grow up",
+"topic": "family-life",
+"es": "Crecer (madurar)",
+"fr": "Grandir (devenir adulte)"
+},
+{
+"id": "a2-anniversary",
+"en": "Anniversary",
+"topic": "family-life",
+"es": "Aniversario",
+"fr": "Anniversaire (de mariage)"
+},
+{
+"id": "a2-party",
+"en": "Party",
+"topic": "family-life",
+"es": "Fiesta",
+"fr": "Fête"
+},
+{
+"id": "a2-guest",
+"en": "Guest",
+"topic": "family-life",
+"es": "Invitado",
+"fr": "Invité"
+},
+{
+"id": "a2-to-celebrate",
+"en": "To celebrate",
+"topic": "family-life",
+"es": "Celebrar",
+"fr": "Fêter"
+},
+{
+"id": "a2-to-be-born",
+"en": "To be born",
+"topic": "family-life",
+"es": "Nacer",
+"fr": "Naître"
+},
+{
+"id": "a2-to-die",
+"en": "To die",
+"topic": "family-life",
+"es": "Morir",
+"fr": "Mourir"
+},
+{
+"id": "a2-relatives",
+"en": "Relatives",
+"topic": "family-life",
+"es": "Parientes",
+"fr": "Famille (proches)"
+},
+{
+"id": "a2-twins",
+"en": "Twins",
+"topic": "family-life",
+"es": "Gemelos",
+"fr": "Jumeaux"
+},
+{
+"id": "a2-only-child",
+"en": "Only child",
+"topic": "family-life",
+"es": "Hijo único",
+"fr": "Enfant unique"
+},
+{
+"id": "a2-to-take-care-of",
+"en": "To take care of",
+"topic": "family-life",
+"es": "Cuidar de",
+"fr": "S’occuper de"
+},
+{
+"id": "a2-nephew",
+"en": "Nephew",
+"topic": "family-life",
+"es": "Sobrino",
+"fr": "Neveu"
+},
+{
+"id": "a2-niece",
+"en": "Niece",
+"topic": "family-life",
+"es": "Sobrina",
+"fr": "Nièce"
+},
+{
+"id": "a2-grandchild",
+"en": "Grandchild",
+"topic": "family-life",
+"es": "Nieto",
+"fr": "Petit-enfant"
+},
+{
+"id": "a2-single",
+"en": "Single",
+"topic": "family-life",
+"es": "Soltero",
+"fr": "Célibataire"
+},
+{
+"id": "a2-divorced",
+"en": "Divorced",
+"topic": "family-life",
+"es": "Divorciado",
+"fr": "Divorcé"
+},
+{
+"id": "a2-christmas",
+"en": "Christmas",
+"topic": "family-life",
+"es": "Navidad",
+"fr": "Noël"
+},
+{
+"id": "a2-new-year",
+"en": "New Year",
+"topic": "family-life",
+"es": "Año Nuevo",
+"fr": "Nouvel An"
+},
+{
+"id": "a2-cake",
+"en": "Cake",
+"topic": "family-life",
+"es": "Pastel",
+"fr": "Gâteau"
+},
+{
+"id": "a2-candle",
+"en": "Candle",
+"topic": "family-life",
+"es": "Vela",
+"fr": "Bougie"
+},
+{
+"id": "a2-lesson",
+"en": "Lesson",
+"topic": "learning",
+"es": "Lección",
+"fr": "Leçon"
+},
+{
+"id": "a2-course",
+"en": "Course",
+"topic": "learning",
+"es": "Curso",
+"fr": "Cours (formation)"
+},
+{
+"id": "a2-to-practice",
+"en": "To practice",
+"topic": "learning",
+"es": "Practicar",
+"fr": "Pratiquer"
+},
+{
+"id": "a2-mistake",
+"en": "Mistake",
+"topic": "learning",
+"es": "Error",
+"fr": "Erreur"
+},
+{
+"id": "a2-to-correct",
+"en": "To correct",
+"topic": "learning",
+"es": "Corregir",
+"fr": "Corriger"
+},
+{
+"id": "a2-grade-mark",
+"en": "Grade (mark)",
+"topic": "learning",
+"es": "Nota",
+"fr": "Note"
+},
+{
+"id": "a2-to-pass-an-exam",
+"en": "To pass (an exam)",
+"topic": "learning",
+"es": "Aprobar",
+"fr": "Réussir"
+},
+{
+"id": "a2-to-fail-an-exam",
+"en": "To fail (an exam)",
+"topic": "learning",
+"es": "Suspender",
+"fr": "Échouer"
+},
+{
+"id": "a2-to-graduate",
+"en": "To graduate",
+"topic": "learning",
+"es": "Graduarse",
+"fr": "Obtenir son diplôme"
+},
+{
+"id": "a2-degree",
+"en": "Degree",
+"topic": "learning",
+"es": "Título",
+"fr": "Diplôme"
+},
+{
+"id": "a2-subject",
+"en": "Subject",
+"topic": "learning",
+"es": "Asignatura",
+"fr": "Matière"
+},
+{
+"id": "a2-math",
+"en": "Math",
+"topic": "learning",
+"es": "Matemáticas",
+"fr": "Maths"
+},
+{
+"id": "a2-history",
+"en": "History",
+"topic": "learning",
+"es": "Historia (asignatura)",
+"fr": "Histoire (matière)"
+},
+{
+"id": "a2-science",
+"en": "Science",
+"topic": "learning",
+"es": "Ciencia",
+"fr": "Science"
+},
+{
+"id": "a2-art",
+"en": "Art",
+"topic": "learning",
+"es": "Arte",
+"fr": "Art"
+},
+{
+"id": "a2-dictionary",
+"en": "Dictionary",
+"topic": "learning",
+"es": "Diccionario",
+"fr": "Dictionnaire"
+},
+{
+"id": "a2-notebook",
+"en": "Notebook",
+"topic": "learning",
+"es": "Cuaderno",
+"fr": "Cahier"
+},
+{
+"id": "a2-to-memorize",
+"en": "To memorize",
+"topic": "learning",
+"es": "Memorizar",
+"fr": "Mémoriser"
+},
+{
+"id": "a2-to-review",
+"en": "To review",
+"topic": "learning",
+"es": "Repasar",
+"fr": "Réviser"
+},
+{
+"id": "a2-classroom",
+"en": "Classroom",
+"topic": "learning",
+"es": "Aula",
+"fr": "Salle de classe"
+},
+{
+"id": "a2-semester",
+"en": "Semester",
+"topic": "learning",
+"es": "Semestre",
+"fr": "Semestre"
+},
+{
+"id": "a2-scholarship",
+"en": "Scholarship",
+"topic": "learning",
+"es": "Beca",
+"fr": "Bourse"
+},
+{
+"id": "a2-to-register",
+"en": "To register",
+"topic": "learning",
+"es": "Inscribirse",
+"fr": "S’inscrire"
+},
+{
+"id": "a2-example",
+"en": "Example",
+"topic": "learning",
+"es": "Ejemplo",
+"fr": "Exemple"
+},
+{
+"id": "a2-level",
+"en": "Level",
+"topic": "learning",
+"es": "Nivel",
+"fr": "Niveau"
+},
+{
+"id": "a2-beginner",
+"en": "Beginner",
+"topic": "learning",
+"es": "Principiante",
+"fr": "Débutant"
+},
+{
+"id": "a2-to-save-money",
+"en": "To save (money)",
+"topic": "money-banking",
+"es": "Ahorrar",
+"fr": "Économiser"
+},
+{
+"id": "a2-bank-account",
+"en": "Bank account",
+"topic": "money-banking",
+"es": "Cuenta bancaria",
+"fr": "Compte bancaire"
+},
+{
+"id": "a2-to-withdraw",
+"en": "To withdraw",
+"topic": "money-banking",
+"es": "Retirar",
+"fr": "Retirer"
+},
+{
+"id": "a2-to-deposit",
+"en": "To deposit",
+"topic": "money-banking",
+"es": "Depositar",
+"fr": "Déposer"
+},
+{
+"id": "a2-atm",
+"en": "ATM",
+"topic": "money-banking",
+"es": "Cajero automático",
+"fr": "Distributeur"
+},
+{
+"id": "a2-loan",
+"en": "Loan",
+"topic": "money-banking",
+"es": "Préstamo",
+"fr": "Prêt"
+},
+{
+"id": "a2-debt",
+"en": "Debt",
+"topic": "money-banking",
+"es": "Deuda",
+"fr": "Dette"
+},
+{
+"id": "a2-to-borrow",
+"en": "To borrow",
+"topic": "money-banking",
+"es": "Pedir prestado",
+"fr": "Emprunter"
+},
+{
+"id": "a2-to-lend",
+"en": "To lend",
+"topic": "money-banking",
+"es": "Prestar",
+"fr": "Prêter"
+},
+{
+"id": "a2-to-owe",
+"en": "To owe",
+"topic": "money-banking",
+"es": "Deber (dinero)",
+"fr": "Devoir (de l’argent)"
+},
+{
+"id": "a2-tax",
+"en": "Tax",
+"topic": "money-banking",
+"es": "Impuesto",
+"fr": "Impôt"
+},
+{
+"id": "a2-bill-utility",
+"en": "Bill (utility)",
+"topic": "money-banking",
+"es": "Factura",
+"fr": "Facture"
+},
+{
+"id": "a2-budget",
+"en": "Budget",
+"topic": "money-banking",
+"es": "Presupuesto",
+"fr": "Budget"
+},
+{
+"id": "a2-to-afford",
+"en": "To afford",
+"topic": "money-banking",
+"es": "Permitirse",
+"fr": "Avoir les moyens de"
+},
+{
+"id": "a2-interest-bank",
+"en": "Interest (bank)",
+"topic": "money-banking",
+"es": "Interés",
+"fr": "Intérêt"
+},
+{
+"id": "a2-coin",
+"en": "Coin",
+"topic": "money-banking",
+"es": "Moneda",
+"fr": "Pièce"
+},
+{
+"id": "a2-to-exchange-money",
+"en": "To exchange (money)",
+"topic": "money-banking",
+"es": "Cambiar (dinero)",
+"fr": "Changer (de l’argent)"
+},
+{
+"id": "a2-exchange-rate",
+"en": "Exchange rate",
+"topic": "money-banking",
+"es": "Tipo de cambio",
+"fr": "Taux de change"
+},
+{
+"id": "a2-credit-card",
+"en": "Credit card",
+"topic": "money-banking",
+"es": "Tarjeta de crédito",
+"fr": "Carte de crédit"
+},
+{
+"id": "a2-to-cost",
+"en": "To cost",
+"topic": "money-banking",
+"es": "Costar",
+"fr": "Coûter"
+},
+{
+"id": "a2-salary-raise",
+"en": "Salary raise",
+"topic": "money-banking",
+"es": "Aumento de sueldo",
+"fr": "Augmentation"
+},
+{
+"id": "a2-expensive-habit",
+"en": "Expensive habit",
+"topic": "money-banking",
+"es": "Vicio caro",
+"fr": "Habitude coûteuse"
+},
+{
+"id": "a2-invoice",
+"en": "Invoice",
+"topic": "money-banking",
+"es": "Factura (comercial)",
+"fr": "Facture (commerciale)"
+},
+{
+"id": "a2-payment",
+"en": "Payment",
+"topic": "money-banking",
+"es": "Pago",
+"fr": "Paiement"
+},
+{
+"id": "a2-to-miss-someone",
+"en": "To miss (someone)",
+"topic": "emotions-2",
+"es": "Extrañar",
+"fr": "Manquer (quelqu’un me manque)"
+},
+{
+"id": "a2-to-worry",
+"en": "To worry",
+"topic": "emotions-2",
+"es": "Preocuparse",
+"fr": "S’inquiéter"
+},
+{
+"id": "a2-to-enjoy",
+"en": "To enjoy",
+"topic": "emotions-2",
+"es": "Disfrutar",
+"fr": "Profiter de"
+},
+{
+"id": "a2-to-hate",
+"en": "To hate",
+"topic": "emotions-2",
+"es": "Odiar",
+"fr": "Détester"
+},
+{
+"id": "a2-to-be-afraid-of",
+"en": "To be afraid of",
+"topic": "emotions-2",
+"es": "Tener miedo de",
+"fr": "Avoir peur de"
+},
+{
+"id": "a2-ashamed",
+"en": "Ashamed",
+"topic": "emotions-2",
+"es": "Avergonzado",
+"fr": "Honteux"
+},
+{
+"id": "a2-jealous",
+"en": "Jealous",
+"topic": "emotions-2",
+"es": "Celoso",
+"fr": "Jaloux"
+},
+{
+"id": "a2-embarrassed",
+"en": "Embarrassed",
+"topic": "emotions-2",
+"es": "Apenado",
+"fr": "Gêné"
+},
+{
+"id": "a2-disappointed",
+"en": "Disappointed",
+"topic": "emotions-2",
+"es": "Decepcionado",
+"fr": "Déçu"
+},
+{
+"id": "a2-grateful",
+"en": "Grateful",
+"topic": "emotions-2",
+"es": "Agradecido",
+"fr": "Reconnaissant"
+},
+{
+"id": "a2-relieved",
+"en": "Relieved",
+"topic": "emotions-2",
+"es": "Aliviado",
+"fr": "Soulagé"
+},
+{
+"id": "a2-confused",
+"en": "Confused",
+"topic": "emotions-2",
+"es": "Confundido",
+"fr": "Confus"
+},
+{
+"id": "a2-curious",
+"en": "Curious",
+"topic": "emotions-2",
+"es": "Curioso",
+"fr": "Curieux"
+},
+{
+"id": "a2-hopeful",
+"en": "Hopeful",
+"topic": "emotions-2",
+"es": "Esperanzado",
+"fr": "Plein d’espoir"
+},
+{
+"id": "a2-frustrated",
+"en": "Frustrated",
+"topic": "emotions-2",
+"es": "Frustrado",
+"fr": "Frustré"
+},
+{
+"id": "a2-stressed",
+"en": "Stressed",
+"topic": "emotions-2",
+"es": "Estresado",
+"fr": "Stressé"
+},
+{
+"id": "a2-in-a-good-mood",
+"en": "In a good mood",
+"topic": "emotions-2",
+"es": "De buen humor",
+"fr": "De bonne humeur"
+},
+{
+"id": "a2-in-a-bad-mood",
+"en": "In a bad mood",
+"topic": "emotions-2",
+"es": "De mal humor",
+"fr": "De mauvaise humeur"
+},
+{
+"id": "a2-to-cheer-up",
+"en": "To cheer up",
+"topic": "emotions-2",
+"es": "Animarse",
+"fr": "Se remonter le moral"
+},
+{
+"id": "a2-to-calm-down",
+"en": "To calm down",
+"topic": "emotions-2",
+"es": "Calmarse",
+"fr": "Se calmer"
+},
+{
+"id": "a2-to-get-angry",
+"en": "To get angry",
+"topic": "emotions-2",
+"es": "Enojarse",
+"fr": "Se mettre en colère"
+},
+{
+"id": "a2-to-fall-in-love",
+"en": "To fall in love",
+"topic": "emotions-2",
+"es": "Enamorarse",
+"fr": "Tomber amoureux"
+},
+{
+"id": "a2-mood",
+"en": "Mood",
+"topic": "emotions-2",
+"es": "Humor (estado)",
+"fr": "Humeur"
+},
+{
+"id": "a2-satisfied",
+"en": "Satisfied",
+"topic": "emotions-2",
+"es": "Satisfecho",
+"fr": "Satisfait"
+},
+{
+"id": "a2-forest",
+"en": "Forest",
+"topic": "nature-animals",
+"es": "Bosque",
+"fr": "Forêt"
+},
+{
+"id": "a2-lake",
+"en": "Lake",
+"topic": "nature-animals",
+"es": "Lago",
+"fr": "Lac"
+},
+{
+"id": "a2-island",
+"en": "Island",
+"topic": "nature-animals",
+"es": "Isla",
+"fr": "Île"
+},
+{
+"id": "a2-desert",
+"en": "Desert",
+"topic": "nature-animals",
+"es": "Desierto",
+"fr": "Désert"
+},
+{
+"id": "a2-field",
+"en": "Field",
+"topic": "nature-animals",
+"es": "Campo",
+"fr": "Champ"
+},
+{
+"id": "a2-farm",
+"en": "Farm",
+"topic": "nature-animals",
+"es": "Granja",
+"fr": "Ferme"
+},
+{
+"id": "a2-animal",
+"en": "Animal",
+"topic": "nature-animals",
+"es": "Animal",
+"fr": "Animal"
+},
+{
+"id": "a2-insect",
+"en": "Insect",
+"topic": "nature-animals",
+"es": "Insecto",
+"fr": "Insecte"
+},
+{
+"id": "a2-mosquito",
+"en": "Mosquito",
+"topic": "nature-animals",
+"es": "Mosquito",
+"fr": "Moustique"
+},
+{
+"id": "a2-bee",
+"en": "Bee",
+"topic": "nature-animals",
+"es": "Abeja",
+"fr": "Abeille"
+},
+{
+"id": "a2-butterfly",
+"en": "Butterfly",
+"topic": "nature-animals",
+"es": "Mariposa",
+"fr": "Papillon"
+},
+{
+"id": "a2-snake",
+"en": "Snake",
+"topic": "nature-animals",
+"es": "Serpiente",
+"fr": "Serpent"
+},
+{
+"id": "a2-lion",
+"en": "Lion",
+"topic": "nature-animals",
+"es": "León",
+"fr": "Lion"
+},
+{
+"id": "a2-elephant",
+"en": "Elephant",
+"topic": "nature-animals",
+"es": "Elefante",
+"fr": "Éléphant"
+},
+{
+"id": "a2-monkey",
+"en": "Monkey",
+"topic": "nature-animals",
+"es": "Mono",
+"fr": "Singe"
+},
+{
+"id": "a2-rabbit",
+"en": "Rabbit",
+"topic": "nature-animals",
+"es": "Conejo",
+"fr": "Lapin"
+},
+{
+"id": "a2-pig",
+"en": "Pig",
+"topic": "nature-animals",
+"es": "Cerdo",
+"fr": "Cochon"
+},
+{
+"id": "a2-sheep",
+"en": "Sheep",
+"topic": "nature-animals",
+"es": "Oveja",
+"fr": "Mouton"
+},
+{
+"id": "a2-plant",
+"en": "Plant",
+"topic": "nature-animals",
+"es": "Planta",
+"fr": "Plante"
+},
+{
+"id": "a2-grass",
+"en": "Grass",
+"topic": "nature-animals",
+"es": "Hierba",
+"fr": "Herbe"
+},
+{
+"id": "a2-leaf",
+"en": "Leaf",
+"topic": "nature-animals",
+"es": "Hoja",
+"fr": "Feuille"
+},
+{
+"id": "a2-rock",
+"en": "Rock",
+"topic": "nature-animals",
+"es": "Roca",
+"fr": "Rocher"
+},
+{
+"id": "a2-sand",
+"en": "Sand",
+"topic": "nature-animals",
+"es": "Arena",
+"fr": "Sable"
+},
+{
+"id": "a2-ocean",
+"en": "Ocean",
+"topic": "nature-animals",
+"es": "Océano",
+"fr": "Océan"
+},
+{
+"id": "a2-wave",
+"en": "Wave",
+"topic": "nature-animals",
+"es": "Ola",
+"fr": "Vague"
+},
+{
+"id": "a2-thunder",
+"en": "Thunder",
+"topic": "nature-animals",
+"es": "Trueno",
+"fr": "Tonnerre"
+},
+{
+"id": "a2-fog",
+"en": "Fog",
+"topic": "nature-animals",
+"es": "Niebla",
+"fr": "Brouillard"
+},
+{
+"id": "a2-temperature",
+"en": "Temperature",
+"topic": "nature-animals",
+"es": "Temperatura",
+"fr": "Température"
+},
+{
+"id": "a2-laptop",
+"en": "Laptop",
+"topic": "tech-media",
+"es": "Portátil",
+"fr": "Ordinateur portable"
+},
+{
+"id": "a2-keyboard",
+"en": "Keyboard",
+"topic": "tech-media",
+"es": "Teclado",
+"fr": "Clavier"
+},
+{
+"id": "a2-printer",
+"en": "Printer",
+"topic": "tech-media",
+"es": "Impresora",
+"fr": "Imprimante"
+},
+{
+"id": "a2-file",
+"en": "File",
+"topic": "tech-media",
+"es": "Archivo",
+"fr": "Fichier"
+},
+{
+"id": "a2-folder",
+"en": "Folder",
+"topic": "tech-media",
+"es": "Carpeta",
+"fr": "Dossier"
+},
+{
+"id": "a2-to-print",
+"en": "To print",
+"topic": "tech-media",
+"es": "Imprimir",
+"fr": "Imprimer"
+},
+{
+"id": "a2-to-click",
+"en": "To click",
+"topic": "tech-media",
+"es": "Hacer clic",
+"fr": "Cliquer"
+},
+{
+"id": "a2-to-type",
+"en": "To type",
+"topic": "tech-media",
+"es": "Escribir a máquina",
+"fr": "Taper"
+},
+{
+"id": "a2-to-search-online",
+"en": "To search online",
+"topic": "tech-media",
+"es": "Buscar en internet",
+"fr": "Chercher sur internet"
+},
+{
+"id": "a2-social-media",
+"en": "Social media",
+"topic": "tech-media",
+"es": "Redes sociales",
+"fr": "Réseaux sociaux"
+},
+{
+"id": "a2-to-post",
+"en": "To post",
+"topic": "tech-media",
+"es": "Publicar",
+"fr": "Publier"
+},
+{
+"id": "a2-to-share",
+"en": "To share",
+"topic": "tech-media",
+"es": "Compartir",
+"fr": "Partager"
+},
+{
+"id": "a2-video",
+"en": "Video",
+"topic": "tech-media",
+"es": "Video",
+"fr": "Vidéo"
+},
+{
+"id": "a2-photo",
+"en": "Photo",
+"topic": "tech-media",
+"es": "Foto",
+"fr": "Photo"
+},
+{
+"id": "a2-selfie",
+"en": "Selfie",
+"topic": "tech-media",
+"es": "Selfi",
+"fr": "Selfie"
+},
+{
+"id": "a2-headphones",
+"en": "Headphones",
+"topic": "tech-media",
+"es": "Auriculares",
+"fr": "Écouteurs"
+},
+{
+"id": "a2-speaker",
+"en": "Speaker",
+"topic": "tech-media",
+"es": "Altavoz",
+"fr": "Enceinte"
+},
+{
+"id": "a2-battery",
+"en": "Battery",
+"topic": "tech-media",
+"es": "Batería",
+"fr": "Batterie"
+},
+{
+"id": "a2-to-turn-on",
+"en": "To turn on",
+"topic": "tech-media",
+"es": "Encender",
+"fr": "Allumer"
+},
+{
+"id": "a2-to-turn-off",
+"en": "To turn off",
+"topic": "tech-media",
+"es": "Apagar",
+"fr": "Éteindre"
+},
+{
+"id": "a2-volume",
+"en": "Volume",
+"topic": "tech-media",
+"es": "Volumen",
+"fr": "Volume"
+},
+{
+"id": "a2-channel",
+"en": "Channel",
+"topic": "tech-media",
+"es": "Canal",
+"fr": "Chaîne"
+},
+{
+"id": "a2-podcast",
+"en": "Podcast",
+"topic": "tech-media",
+"es": "Pódcast",
+"fr": "Podcast"
+},
+{
+"id": "a2-screenshot",
+"en": "Screenshot",
+"topic": "tech-media",
+"es": "Captura de pantalla",
+"fr": "Capture d’écran"
+},
+{
+"id": "a2-update",
+"en": "Update",
+"topic": "tech-media",
+"es": "Actualización",
+"fr": "Mise à jour"
+},
+{
+"id": "a2-notification",
+"en": "Notification",
+"topic": "tech-media",
+"es": "Notificación",
+"fr": "Notification"
+},
+{
+"id": "a2-to-log-in",
+"en": "To log in",
+"topic": "tech-media",
+"es": "Iniciar sesión",
+"fr": "Se connecter"
+},
+{
+"id": "a2-subtitles",
+"en": "Subtitles",
+"topic": "tech-media",
+"es": "Subtítulos",
+"fr": "Sous-titres"
+},
+{
+"id": "a2-what-do-you-think",
+"en": "What do you think?",
+"topic": "phrases-a2",
+"es": "¿Qué opinas?",
+"fr": "Qu’est-ce que tu en penses ?"
+},
+{
+"id": "a2-it-depends",
+"en": "It depends",
+"topic": "phrases-a2",
+"es": "Depende",
+"fr": "Ça dépend"
+},
+{
+"id": "a2-im-not-sure",
+"en": "I’m not sure",
+"topic": "phrases-a2",
+"es": "No estoy seguro",
+"fr": "Je ne suis pas sûr"
+},
+{
+"id": "a2-let-me-think",
+"en": "Let me think",
+"topic": "phrases-a2",
+"es": "Déjame pensar",
+"fr": "Laisse-moi réfléchir"
+},
+{
+"id": "a2-what-a-pity",
+"en": "What a pity",
+"topic": "phrases-a2",
+"es": "Qué lástima",
+"fr": "Quel dommage"
+},
+{
+"id": "a2-never-mind",
+"en": "Never mind",
+"topic": "phrases-a2",
+"es": "No importa",
+"fr": "Laisse tomber"
+},
+{
+"id": "a2-hurry-up",
+"en": "Hurry up",
+"topic": "phrases-a2",
+"es": "Date prisa",
+"fr": "Dépêche-toi"
+},
+{
+"id": "a2-watch-out",
+"en": "Watch out!",
+"topic": "phrases-a2",
+"es": "¡Cuidado!",
+"fr": "Attention !"
+},
+{
+"id": "a2-thats-a-good-idea",
+"en": "That’s a good idea",
+"topic": "phrases-a2",
+"es": "Es una buena idea",
+"fr": "C’est une bonne idée"
+},
+{
+"id": "a2-are-you-kidding",
+"en": "Are you kidding?",
+"topic": "phrases-a2",
+"es": "¿En serio?",
+"fr": "Tu plaisantes ?"
+},
+{
+"id": "a2-its-up-to-you",
+"en": "It’s up to you",
+"topic": "phrases-a2",
+"es": "Como quieras",
+"fr": "C’est toi qui vois"
+},
+{
+"id": "a2-im-on-my-way",
+"en": "I’m on my way",
+"topic": "phrases-a2",
+"es": "Ya voy",
+"fr": "J’arrive"
+},
+{
+"id": "a2-same-here",
+"en": "Same here",
+"topic": "phrases-a2",
+"es": "Igualmente",
+"fr": "Pareil"
+},
+{
+"id": "a2-me-neither",
+"en": "Me neither",
+"topic": "phrases-a2",
+"es": "Yo tampoco",
+"fr": "Moi non plus"
+},
+{
+"id": "a2-by-the-way",
+"en": "By the way",
+"topic": "phrases-a2",
+"es": "Por cierto",
+"fr": "Au fait"
+},
+{
+"id": "a2-in-my-opinion",
+"en": "In my opinion",
+"topic": "phrases-a2",
+"es": "En mi opinión",
+"fr": "À mon avis"
+},
+{
+"id": "a2-to-be-honest",
+"en": "To be honest",
+"topic": "phrases-a2",
+"es": "Para ser sincero",
+"fr": "Pour être honnête"
+},
+{
+"id": "a2-actually",
+"en": "Actually",
+"topic": "phrases-a2",
+"es": "En realidad",
+"fr": "En fait"
+},
+{
+"id": "a2-anyway",
+"en": "Anyway",
+"topic": "phrases-a2",
+"es": "De todos modos",
+"fr": "Bref"
+},
+{
+"id": "a2-for-example",
+"en": "For example",
+"topic": "phrases-a2",
+"es": "Por ejemplo",
+"fr": "Par exemple"
+},
+{
+"id": "a2-sorry-im-late",
+"en": "Sorry I’m late",
+"topic": "phrases-a2",
+"es": "Perdón por llegar tarde",
+"fr": "Désolé pour le retard"
+},
+{
+"id": "a2-no-way",
+"en": "No way!",
+"topic": "phrases-a2",
+"es": "¡Ni hablar!",
+"fr": "Pas question !"
+},
+{
+"id": "a2-that-makes-sense",
+"en": "That makes sense",
+"topic": "phrases-a2",
+"es": "Tiene sentido",
+"fr": "Ça se tient"
+},
+{
+"id": "a2-good-point",
+"en": "Good point",
+"topic": "phrases-a2",
+"es": "Buen punto",
+"fr": "Bien vu"
+},
+{
+"id": "a2-banana",
+"en": "Banana",
+"topic": "fruits-vegetables",
+"es": "Plátano",
+"fr": "Banane"
+},
+{
+"id": "a2-orange-fruit",
+"en": "Orange (fruit)",
+"topic": "fruits-vegetables",
+"es": "Naranja (fruta)",
+"fr": "Orange (fruit)"
+},
+{
+"id": "a2-grapes",
+"en": "Grapes",
+"topic": "fruits-vegetables",
+"es": "Uvas",
+"fr": "Raisin"
+},
+{
+"id": "a2-strawberry",
+"en": "Strawberry",
+"topic": "fruits-vegetables",
+"es": "Fresa",
+"fr": "Fraise"
+},
+{
+"id": "a2-lemon",
+"en": "Lemon",
+"topic": "fruits-vegetables",
+"es": "Limón",
+"fr": "Citron"
+},
+{
+"id": "a2-watermelon",
+"en": "Watermelon",
+"topic": "fruits-vegetables",
+"es": "Sandía",
+"fr": "Pastèque"
+},
+{
+"id": "a2-peach",
+"en": "Peach",
+"topic": "fruits-vegetables",
+"es": "Durazno",
+"fr": "Pêche"
+},
+{
+"id": "a2-pear",
+"en": "Pear",
+"topic": "fruits-vegetables",
+"es": "Pera",
+"fr": "Poire"
+},
+{
+"id": "a2-carrot",
+"en": "Carrot",
+"topic": "fruits-vegetables",
+"es": "Zanahoria",
+"fr": "Carotte"
+},
+{
+"id": "a2-lettuce",
+"en": "Lettuce",
+"topic": "fruits-vegetables",
+"es": "Lechuga",
+"fr": "Laitue"
+},
+{
+"id": "a2-cucumber",
+"en": "Cucumber",
+"topic": "fruits-vegetables",
+"es": "Pepino",
+"fr": "Concombre"
+},
+{
+"id": "a2-bell-pepper",
+"en": "Bell pepper",
+"topic": "fruits-vegetables",
+"es": "Pimiento",
+"fr": "Poivron"
+},
+{
+"id": "a2-mushroom",
+"en": "Mushroom",
+"topic": "fruits-vegetables",
+"es": "Champiñón",
+"fr": "Champignon"
+},
+{
+"id": "a2-corn",
+"en": "Corn",
+"topic": "fruits-vegetables",
+"es": "Maíz",
+"fr": "Maïs"
+},
+{
+"id": "a2-beans",
+"en": "Beans",
+"topic": "fruits-vegetables",
+"es": "Frijoles",
+"fr": "Haricots"
+},
+{
+"id": "a2-spinach",
+"en": "Spinach",
+"topic": "fruits-vegetables",
+"es": "Espinacas",
+"fr": "Épinards"
+},
+{
+"id": "a2-cabbage",
+"en": "Cabbage",
+"topic": "fruits-vegetables",
+"es": "Repollo",
+"fr": "Chou"
+},
+{
+"id": "a2-pumpkin",
+"en": "Pumpkin",
+"topic": "fruits-vegetables",
+"es": "Calabaza",
+"fr": "Citrouille"
+},
+{
+"id": "a2-nuts",
+"en": "Nuts",
+"topic": "fruits-vegetables",
+"es": "Frutos secos",
+"fr": "Noix"
+},
+{
+"id": "a2-coconut",
+"en": "Coconut",
+"topic": "fruits-vegetables",
+"es": "Coco",
+"fr": "Noix de coco"
+},
+{
+"id": "a2-mango",
+"en": "Mango",
+"topic": "fruits-vegetables",
+"es": "Mango",
+"fr": "Mangue"
+},
+{
+"id": "a2-pineapple",
+"en": "Pineapple",
+"topic": "fruits-vegetables",
+"es": "Piña",
+"fr": "Ananas"
+},
+{
+"id": "a2-cherry",
+"en": "Cherry",
+"topic": "fruits-vegetables",
+"es": "Cereza",
+"fr": "Cerise"
+},
+{
+"id": "a2-avocado",
+"en": "Avocado",
+"topic": "fruits-vegetables",
+"es": "Aguacate",
+"fr": "Avocat"
+},
+{
+"id": "a2-ripe",
+"en": "Ripe",
+"topic": "fruits-vegetables",
+"es": "Maduro",
+"fr": "Mûr"
+},
+{
+"id": "a2-fresh",
+"en": "Fresh",
+"topic": "fruits-vegetables",
+"es": "Fresco",
+"fr": "Frais"
+},
+{
+"id": "a2-kilogram",
+"en": "Kilogram",
+"topic": "quantities",
+"es": "Kilo",
+"fr": "Kilo"
+},
+{
+"id": "a2-gram",
+"en": "Gram",
+"topic": "quantities",
+"es": "Gramo",
+"fr": "Gramme"
+},
+{
+"id": "a2-liter",
+"en": "Liter",
+"topic": "quantities",
+"es": "Litro",
+"fr": "Litre"
+},
+{
+"id": "a2-meter",
+"en": "Meter",
+"topic": "quantities",
+"es": "Metro",
+"fr": "Mètre"
+},
+{
+"id": "a2-kilometer",
+"en": "Kilometer",
+"topic": "quantities",
+"es": "Kilómetro",
+"fr": "Kilomètre"
+},
+{
+"id": "a2-centimeter",
+"en": "Centimeter",
+"topic": "quantities",
+"es": "Centímetro",
+"fr": "Centimètre"
+},
+{
+"id": "a2-piece",
+"en": "Piece",
+"topic": "quantities",
+"es": "Pieza",
+"fr": "Morceau"
+},
+{
+"id": "a2-slice",
+"en": "Slice",
+"topic": "quantities",
+"es": "Rebanada",
+"fr": "Tranche"
+},
+{
+"id": "a2-dozen",
+"en": "Dozen",
+"topic": "quantities",
+"es": "Docena",
+"fr": "Douzaine"
+},
+{
+"id": "a2-pair",
+"en": "Pair",
+"topic": "quantities",
+"es": "Par",
+"fr": "Paire"
+},
+{
+"id": "a2-percent",
+"en": "Percent",
+"topic": "quantities",
+"es": "Por ciento",
+"fr": "Pour cent"
+},
+{
+"id": "a2-degree-temperature",
+"en": "Degree (temperature)",
+"topic": "quantities",
+"es": "Grado",
+"fr": "Degré"
+},
+{
+"id": "a2-a-bit",
+"en": "A bit",
+"topic": "quantities",
+"es": "Un poco",
+"fr": "Un peu"
+},
+{
+"id": "a2-a-lot",
+"en": "A lot",
+"topic": "quantities",
+"es": "Mucho",
+"fr": "Beaucoup (quantité)"
+},
+{
+"id": "a2-several",
+"en": "Several",
+"topic": "quantities",
+"es": "Varios",
+"fr": "Plusieurs"
+},
+{
+"id": "a2-double",
+"en": "Double",
+"topic": "quantities",
+"es": "Doble",
+"fr": "Double"
+},
+{
+"id": "a2-weight",
+"en": "Weight",
+"topic": "quantities",
+"es": "Peso",
+"fr": "Poids"
+},
+{
+"id": "a2-height",
+"en": "Height",
+"topic": "quantities",
+"es": "Altura",
+"fr": "Hauteur"
+},
+{
+"id": "a2-length",
+"en": "Length",
+"topic": "quantities",
+"es": "Longitud",
+"fr": "Longueur"
+},
+{
+"id": "a2-distance",
+"en": "Distance",
+"topic": "quantities",
+"es": "Distancia",
+"fr": "Distance"
+},
+{
+"id": "a2-speed",
+"en": "Speed",
+"topic": "quantities",
+"es": "Velocidad",
+"fr": "Vitesse"
+},
+{
+"id": "a2-total",
+"en": "Total",
+"topic": "quantities",
+"es": "Total",
+"fr": "Total"
+},
+{
+"id": "a2-almost",
+"en": "Almost",
+"topic": "quantities",
+"es": "Casi",
+"fr": "Presque"
+},
+{
+"id": "a2-only",
+"en": "Only",
+"topic": "quantities",
+"es": "Solo",
+"fr": "Seulement"
+},
+{
+"id": "a2-engineer",
+"en": "Engineer",
+"topic": "jobs",
+"es": "Ingeniero",
+"fr": "Ingénieur"
+},
+{
+"id": "a2-lawyer",
+"en": "Lawyer",
+"topic": "jobs",
+"es": "Abogado",
+"fr": "Avocat"
+},
+{
+"id": "a2-chef",
+"en": "Chef",
+"topic": "jobs",
+"es": "Cocinero",
+"fr": "Cuisinier"
+},
+{
+"id": "a2-driver",
+"en": "Driver",
+"topic": "jobs",
+"es": "Conductor",
+"fr": "Chauffeur"
+},
+{
+"id": "a2-farmer",
+"en": "Farmer",
+"topic": "jobs",
+"es": "Agricultor",
+"fr": "Agriculteur"
+},
+{
+"id": "a2-artist",
+"en": "Artist",
+"topic": "jobs",
+"es": "Artista",
+"fr": "Artiste"
+},
+{
+"id": "a2-musician",
+"en": "Musician",
+"topic": "jobs",
+"es": "Músico",
+"fr": "Musicien"
+},
+{
+"id": "a2-actor",
+"en": "Actor",
+"topic": "jobs",
+"es": "Actor",
+"fr": "Acteur"
+},
+{
+"id": "a2-writer",
+"en": "Writer",
+"topic": "jobs",
+"es": "Escritor",
+"fr": "Écrivain"
+},
+{
+"id": "a2-journalist",
+"en": "Journalist",
+"topic": "jobs",
+"es": "Periodista",
+"fr": "Journaliste"
+},
+{
+"id": "a2-police-officer",
+"en": "Police officer",
+"topic": "jobs",
+"es": "Policía",
+"fr": "Policier"
+},
+{
+"id": "a2-firefighter",
+"en": "Firefighter",
+"topic": "jobs",
+"es": "Bombero",
+"fr": "Pompier"
+},
+{
+"id": "a2-scientist",
+"en": "Scientist",
+"topic": "jobs",
+"es": "Científico",
+"fr": "Scientifique"
+},
+{
+"id": "a2-programmer",
+"en": "Programmer",
+"topic": "jobs",
+"es": "Programador",
+"fr": "Programmeur"
+},
+{
+"id": "a2-designer",
+"en": "Designer",
+"topic": "jobs",
+"es": "Diseñador",
+"fr": "Designer"
+},
+{
+"id": "a2-manager",
+"en": "Manager",
+"topic": "jobs",
+"es": "Gerente",
+"fr": "Responsable"
+},
+{
+"id": "a2-salesperson",
+"en": "Salesperson",
+"topic": "jobs",
+"es": "Vendedor",
+"fr": "Vendeur"
+},
+{
+"id": "a2-mechanic",
+"en": "Mechanic",
+"topic": "jobs",
+"es": "Mecánico",
+"fr": "Mécanicien"
+},
+{
+"id": "a2-electrician",
+"en": "Electrician",
+"topic": "jobs",
+"es": "Electricista",
+"fr": "Électricien"
+},
+{
+"id": "a2-plumber",
+"en": "Plumber",
+"topic": "jobs",
+"es": "Fontanero",
+"fr": "Plombier"
+},
+{
+"id": "a2-pilot",
+"en": "Pilot",
+"topic": "jobs",
+"es": "Piloto",
+"fr": "Pilote"
+},
+{
+"id": "a2-accountant",
+"en": "Accountant",
+"topic": "jobs",
+"es": "Contador",
+"fr": "Comptable"
+},
+{
+"id": "a2-architect",
+"en": "Architect",
+"topic": "jobs",
+"es": "Arquitecto",
+"fr": "Architecte"
+},
+{
+"id": "a2-hairdresser",
+"en": "Hairdresser",
+"topic": "jobs",
+"es": "Peluquero",
+"fr": "Coiffeur"
+},
+{
+"id": "a2-soldier",
+"en": "Soldier",
+"topic": "jobs",
+"es": "Soldado",
+"fr": "Soldat"
+},
+{
+"id": "a2-baker",
+"en": "Baker",
+"topic": "jobs",
+"es": "Panadero",
+"fr": "Boulanger"
+},
+{
+"id": "a2-basketball",
+"en": "Basketball",
+"topic": "sports-leisure",
+"es": "Baloncesto",
+"fr": "Basket"
+},
+{
+"id": "a2-tennis",
+"en": "Tennis",
+"topic": "sports-leisure",
+"es": "Tenis",
+"fr": "Tennis"
+},
+{
+"id": "a2-baseball",
+"en": "Baseball",
+"topic": "sports-leisure",
+"es": "Béisbol",
+"fr": "Baseball"
+},
+{
+"id": "a2-volleyball",
+"en": "Volleyball",
+"topic": "sports-leisure",
+"es": "Voleibol",
+"fr": "Volley"
+},
+{
+"id": "a2-running",
+"en": "Running",
+"topic": "sports-leisure",
+"es": "Correr (deporte)",
+"fr": "Course à pied"
+},
+{
+"id": "a2-cycling",
+"en": "Cycling",
+"topic": "sports-leisure",
+"es": "Ciclismo",
+"fr": "Cyclisme"
+},
+{
+"id": "a2-skiing",
+"en": "Skiing",
+"topic": "sports-leisure",
+"es": "Esquí",
+"fr": "Ski"
+},
+{
+"id": "a2-surfing",
+"en": "Surfing",
+"topic": "sports-leisure",
+"es": "Surf",
+"fr": "Surf"
+},
+{
+"id": "a2-yoga",
+"en": "Yoga",
+"topic": "sports-leisure",
+"es": "Yoga",
+"fr": "Yoga"
+},
+{
+"id": "a2-chess",
+"en": "Chess",
+"topic": "sports-leisure",
+"es": "Ajedrez",
+"fr": "Échecs"
+},
+{
+"id": "a2-cards-game",
+"en": "Cards (game)",
+"topic": "sports-leisure",
+"es": "Cartas",
+"fr": "Cartes"
+},
+{
+"id": "a2-board-game",
+"en": "Board game",
+"topic": "sports-leisure",
+"es": "Juego de mesa",
+"fr": "Jeu de société"
+},
+{
+"id": "a2-video-game",
+"en": "Video game",
+"topic": "sports-leisure",
+"es": "Videojuego",
+"fr": "Jeu vidéo"
+},
+{
+"id": "a2-puzzle",
+"en": "Puzzle",
+"topic": "sports-leisure",
+"es": "Rompecabezas",
+"fr": "Puzzle"
+},
+{
+"id": "a2-to-go-camping",
+"en": "To go camping",
+"topic": "sports-leisure",
+"es": "Ir de camping",
+"fr": "Faire du camping"
+},
+{
+"id": "a2-picnic",
+"en": "Picnic",
+"topic": "sports-leisure",
+"es": "Picnic",
+"fr": "Pique-nique"
+},
+{
+"id": "a2-fishing",
+"en": "Fishing",
+"topic": "sports-leisure",
+"es": "Pesca",
+"fr": "Pêche"
+},
+{
+"id": "a2-race",
+"en": "Race",
+"topic": "sports-leisure",
+"es": "Carrera (competición)",
+"fr": "Course"
+},
+{
+"id": "a2-competition",
+"en": "Competition",
+"topic": "sports-leisure",
+"es": "Competencia",
+"fr": "Compétition"
+},
+{
+"id": "a2-referee",
+"en": "Referee",
+"topic": "sports-leisure",
+"es": "Árbitro",
+"fr": "Arbitre"
+},
+{
+"id": "a2-coach",
+"en": "Coach",
+"topic": "sports-leisure",
+"es": "Entrenador",
+"fr": "Entraîneur"
+},
+{
+"id": "a2-medal",
+"en": "Medal",
+"topic": "sports-leisure",
+"es": "Medalla",
+"fr": "Médaille"
+},
+{
+"id": "a2-score",
+"en": "Score",
+"topic": "sports-leisure",
+"es": "Puntuación",
+"fr": "Score"
+},
+{
+"id": "a2-fan-supporter",
+"en": "Fan (supporter)",
+"topic": "sports-leisure",
+"es": "Aficionado",
+"fr": "Supporter"
+},
+{
+"id": "a2-to-train",
+"en": "To train",
+"topic": "sports-leisure",
+"es": "Entrenar",
+"fr": "S’entraîner"
+}
+]

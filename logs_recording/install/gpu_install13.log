@@ -1,0 +1,26 @@
+Collecting nvidia-cuda-runtime
+  Downloading nvidia_cuda_runtime-13.4.49-py3-none-win_amd64.whl.metadata (1.8 kB)
+Collecting nvidia-cudnn-cu13
+  Downloading nvidia_cudnn_cu13-9.25.1.1-py3-none-win_amd64.whl.metadata (1.9 kB)
+Collecting nvidia-cublas
+  Downloading nvidia_cublas-13.7.0.27-py3-none-win_amd64.whl.metadata (1.8 kB)
+Collecting nvidia-cufft
+  Downloading nvidia_cufft-12.4.0.34-py3-none-win_amd64.whl.metadata (1.8 kB)
+Collecting nvidia-curand
+  Downloading nvidia_curand-10.4.4.49-py3-none-win_amd64.whl.metadata (1.8 kB)
+Collecting nvidia-cuda-nvrtc
+  Downloading nvidia_cuda_nvrtc-13.4.59-py3-none-win_amd64.whl.metadata (1.8 kB)
+Collecting nvidia-nvjitlink
+  Downloading nvidia_nvjitlink-13.4.52-py3-none-win_amd64.whl.metadata (1.8 kB)
+Downloading nvidia_cuda_runtime-13.4.49-py3-none-win_amd64.whl (2.8 MB)
+Downloading nvidia_cudnn_cu13-9.25.1.1-py3-none-win_amd64.whl (407.8 MB)
+WARNING: Connection interrupted while downloading.
+WARNING: Attempting to resume incomplete download (40.0 MB/407.8 MB, attempt 1)
+Resuming download nvidia_cudnn_cu13-9.25.1.1-py3-none-win_amd64.whl (40.0 MB/407.8 MB)
+Downloading nvidia_cublas-13.7.0.27-py3-none-win_amd64.whl (424.5 MB)
+Downloading nvidia_cufft-12.4.0.34-py3-none-win_amd64.whl (161.0 MB)
+Downloading nvidia_curand-10.4.4.49-py3-none-win_amd64.whl (56.7 MB)
+Downloading nvidia_cuda_nvrtc-13.4.59-py3-none-win_amd64.whl (47.0 MB)
+Downloading nvidia_nvjitlink-13.4.52-py3-none-win_amd64.whl (39.1 MB)
+Installing collected packages: nvidia-nvjitlink, nvidia-curand, nvidia-cuda-runtime, nvidia-cuda-nvrtc, nvidia-cufft, nvidia-cublas, nvidia-cudnn-cu13
+Successfully installed nvidia-cublas-13.7.0.27 nvidia-cuda-nvrtc-13.4.59 nvidia-cuda-runtime-13.4.49 nvidia-cudnn-cu13-9.25.1.1 nvidia-cufft-12.4.0.34 nvidia-curand-10.4.4.49 nvidia-nvjitlink-13.4.52

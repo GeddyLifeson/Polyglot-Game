@@ -1,0 +1,818 @@
+b1-friendship	Friendship	relationships	Amistad	Amitié
+b1-trust	Trust	relationships	Confianza	Confiance
+b1-to-trust	To trust	relationships	Confiar en	Faire confiance
+b1-to-get-along	To get along	relationships	Llevarse bien	S’entendre
+b1-to-break-up	To break up	relationships	Romper	Rompre
+b1-to-date-someone	To date (someone)	relationships	Salir con	Sortir avec
+b1-argument-quarrel	Argument (quarrel)	relationships	Discusión	Dispute
+b1-to-forgive	To forgive	relationships	Perdonar	Pardonner
+b1-to-support	To support	relationships	Apoyar	Soutenir
+b1-loyalty	Loyalty	relationships	Lealtad	Loyauté
+b1-to-rely-on	To rely on	relationships	Contar con	Compter sur
+b1-close-friend	Close friend	relationships	Amigo íntimo	Ami proche
+b1-acquaintance	Acquaintance	relationships	Conocido	Connaissance
+b1-partner-romantic	Partner (romantic)	relationships	Pareja (persona)	Partenaire
+b1-ex	Ex	relationships	Ex	Ex
+b1-crush	Crush	relationships	Flechazo	Coup de cœur
+b1-to-flirt	To flirt	relationships	Coquetear	Draguer
+b1-to-make-up-reconcile	To make up (reconcile)	relationships	Reconciliarse	Se réconcilier
+b1-to-hang-out	To hang out	relationships	Pasar el rato	Traîner
+b1-to-get-to-know	To get to know	relationships	Llegar a conocer	Apprendre à connaître
+b1-to-keep-in-touch	To keep in touch	relationships	Mantenerse en contacto	Rester en contact
+b1-to-lose-touch	To lose touch	relationships	Perder el contacto	Perdre contact
+b1-reunion	Reunion	relationships	Reencuentro	Retrouvailles
+b1-to-introduce	To introduce	relationships	Presentar	Présenter
+b1-respect	Respect	relationships	Respeto	Respect
+b1-sincerity	Sincerity	relationships	Sinceridad	Sincérité
+b1-best-friend	Best friend	relationships	Mejor amigo	Meilleur ami
+b1-stranger	Stranger	relationships	Desconocido	Inconnu
+b1-to-betray	To betray	relationships	Traicionar	Trahir
+b1-bond	Bond	relationships	Vínculo	Lien
+b1-to-agree	To agree	opinions-debate	Estar de acuerdo	Être d’accord
+b1-to-disagree	To disagree	opinions-debate	No estar de acuerdo	Ne pas être d’accord
+b1-point-of-view	Point of view	opinions-debate	Punto de vista	Point de vue
+b1-argument-reasoning	Argument (reasoning)	opinions-debate	Argumento	Argument
+b1-to-convince	To convince	opinions-debate	Convencer	Convaincre
+b1-to-doubt	To doubt	opinions-debate	Dudar	Douter
+b1-to-admit	To admit	opinions-debate	Admitir	Admettre
+b1-to-deny	To deny	opinions-debate	Negar	Nier
+b1-to-insist	To insist	opinions-debate	Insistir	Insister
+b1-obviously	Obviously	opinions-debate	Obviamente	Évidemment
+b1-probably	Probably	opinions-debate	Probablemente	Probablement
+b1-definitely	Definitely	opinions-debate	Definitivamente	Absolument
+b1-according-to	According to	opinions-debate	Según	Selon
+b1-on-the-other-hand	On the other hand	opinions-debate	Por otro lado	D’un autre côté
+b1-however	However	opinions-debate	Sin embargo	Cependant
+b1-although	Although	opinions-debate	Aunque	Bien que
+b1-therefore	Therefore	opinions-debate	Por lo tanto	Donc
+b1-in-fact	In fact	opinions-debate	De hecho	En fait
+b1-whereas	Whereas	opinions-debate	Mientras que	Alors que
+b1-unless	Unless	opinions-debate	A menos que	À moins que
+b1-in-spite-of	In spite of	opinions-debate	A pesar de	Malgré
+b1-as-long-as	As long as	opinions-debate	Siempre que	Tant que
+b1-to-consider	To consider	opinions-debate	Considerar	Considérer
+b1-to-assume	To assume	opinions-debate	Suponer	Supposer
+b1-to-realize	To realize	opinions-debate	Darse cuenta	Se rendre compte
+b1-to-wonder	To wonder	opinions-debate	Preguntarse	Se demander
+b1-to-prove	To prove	opinions-debate	Demostrar	Prouver
+b1-evidence	Evidence	opinions-debate	Prueba	Preuve
+b1-to-exaggerate	To exaggerate	opinions-debate	Exagerar	Exagérer
+b1-fair	Fair	opinions-debate	Justo	Juste
+b1-unfair	Unfair	opinions-debate	Injusto	Injuste
+b1-anxious	Anxious	feelings-3	Ansioso	Anxieux
+b1-overwhelmed	Overwhelmed	feelings-3	Abrumado	Dépassé
+b1-thrilled	Thrilled	feelings-3	Entusiasmado	Ravi
+b1-homesick	Homesick	feelings-3	Nostálgico (de casa)	Nostalgique (du pays)
+b1-moved-emotionally	Moved (emotionally)	feelings-3	Conmovido	Ému
+b1-guilty	Guilty	feelings-3	Culpable	Coupable
+b1-awkward	Awkward	feelings-3	Incómodo	Gênant
+b1-upset	Upset	feelings-3	Disgustado	Contrarié
+b1-furious	Furious	feelings-3	Furioso	Furieux
+b1-delighted	Delighted	feelings-3	Encantado	Enchanté (ravi)
+b1-hesitant	Hesitant	feelings-3	Indeciso	Hésitant
+b1-indifferent	Indifferent	feelings-3	Indiferente	Indifférent
+b1-insecure	Insecure	feelings-3	Inseguro	Peu sûr de soi
+b1-confident	Confident	feelings-3	Seguro de sí mismo	Confiant
+b1-motivated	Motivated	feelings-3	Motivado	Motivé
+b1-exhausted	Exhausted	feelings-3	Agotado	Épuisé
+b1-restless	Restless	feelings-3	Inquieto	Agité
+b1-grumpy	Grumpy	feelings-3	Gruñón	Grognon
+b1-nostalgic	Nostalgic	feelings-3	Nostálgico	Nostalgique
+b1-pleased	Pleased	feelings-3	Complacido	Content
+b1-annoyed	Annoyed	feelings-3	Molesto	Agacé
+b1-terrified	Terrified	feelings-3	Aterrorizado	Terrifié
+b1-amused	Amused	feelings-3	Divertido	Amusé
+b1-envious	Envious	feelings-3	Envidioso	Envieux
+b1-hopeless	Hopeless	feelings-3	Desesperanzado	Désespéré
+b1-bittersweet	Bittersweet	feelings-3	Agridulce	Doux-amer
+b1-at-ease	At ease	feelings-3	A gusto	À l’aise
+b1-uneasy	Uneasy	feelings-3	Intranquilo	Mal à l’aise
+b1-speechless	Speechless	feelings-3	Sin palabras	Sans voix
+b1-touched	Touched	feelings-3	Emocionado (conmovido)	Touché
+b1-to-apply-for-a-job	To apply (for a job)	work-life	Solicitar	Postuler
+b1-resume	Résumé	work-life	Currículum	CV
+b1-to-get-promoted	To get promoted	work-life	Ascender	Être promu
+b1-to-quit	To quit	work-life	Renunciar	Démissionner
+b1-to-fire-someone	To fire (someone)	work-life	Despedir	Licencier
+b1-to-retire	To retire	work-life	Jubilarse	Prendre sa retraite
+b1-part-time	Part-time	work-life	A tiempo parcial	À temps partiel
+b1-full-time	Full-time	work-life	A tiempo completo	À temps plein
+b1-overtime	Overtime	work-life	Horas extra	Heures supplémentaires
+b1-shift	Shift	work-life	Turno	Poste (horaire)
+b1-to-negotiate	To negotiate	work-life	Negociar	Négocier
+b1-contract	Contract	work-life	Contrato	Contrat
+b1-to-sign	To sign	work-life	Firmar	Signer
+b1-freelance	Freelance	work-life	Autónomo	Freelance
+b1-presentation	Presentation	work-life	Presentación	Présentation
+b1-teamwork	Teamwork	work-life	Trabajo en equipo	Travail d’équipe
+b1-responsibility	Responsibility	work-life	Responsabilidad	Responsabilité
+b1-task	Task	work-life	Tarea (laboral)	Tâche
+b1-goal	Goal	work-life	Meta	Objectif
+b1-feedback	Feedback	work-life	Comentarios	Retour
+b1-to-be-in-charge	To be in charge	work-life	Estar a cargo	Être responsable
+b1-employee	Employee	work-life	Empleado	Employé
+b1-employer	Employer	work-life	Empleador	Employeur
+b1-to-earn-a-living	To earn a living	work-life	Ganarse la vida	Gagner sa vie
+b1-workload	Workload	work-life	Carga de trabajo	Charge de travail
+b1-burnout	Burnout	work-life	Agotamiento laboral	Burn-out
+b1-day-off	Day off	work-life	Día libre	Jour de congé
+b1-vacation	Vacation	work-life	Vacaciones	Vacances
+b1-coworker	Coworker	work-life	Compañero de trabajo	Collègue de bureau
+b1-experience	Experience	work-life	Experiencia	Expérience
+b1-skill	Skill	work-life	Habilidad	Compétence
+b1-to-train-someone	To train (someone)	work-life	Capacitar	Former
+b1-to-explore	To explore	travel-2	Explorar	Explorer
+b1-adventure	Adventure	travel-2	Aventura	Aventure
+b1-backpack	Backpack	travel-2	Mochila	Sac à dos
+b1-hostel	Hostel	travel-2	Albergue	Auberge de jeunesse
+b1-to-wander	To wander	travel-2	Vagar	Flâner
+b1-landmark	Landmark	travel-2	Monumento	Monument
+b1-view	View	travel-2	Vista	Vue
+b1-scenery	Scenery	travel-2	Paisaje	Paysage
+b1-local-person	Local (person)	travel-2	Lugareño	Habitant
+b1-custom-tradition	Custom (tradition)	travel-2	Costumbre	Coutume
+b1-culture	Culture	travel-2	Cultura	Culture
+b1-to-experience	To experience	travel-2	Experimentar (vivir)	Vivre (une expérience)
+b1-to-recommend	To recommend	travel-2	Recomendar	Recommander
+b1-itinerary	Itinerary	travel-2	Itinerario	Itinéraire
+b1-unforgettable	Unforgettable	travel-2	Inolvidable	Inoubliable
+b1-jet-lag	Jet lag	travel-2	Jet lag	Décalage horaire
+b1-to-pack	To pack	travel-2	Hacer la maleta	Faire sa valise
+b1-destination	Destination	travel-2	Destino	Destination
+b1-journey	Journey	travel-2	Trayecto	Trajet
+b1-cruise	Cruise	travel-2	Crucero	Croisière
+b1-to-rent-a-car	To rent a car	travel-2	Alquilar un coche	Louer une voiture
+b1-border	Border	travel-2	Frontera	Frontière
+b1-visa	Visa	travel-2	Visado	Visa
+b1-currency	Currency	travel-2	Moneda (divisa)	Devise
+b1-to-take-a-photo	To take a photo	travel-2	Sacar una foto	Prendre une photo
+b1-to-get-around	To get around	travel-2	Moverse (por la ciudad)	Se déplacer
+b1-off-the-beaten-path	Off the beaten path	travel-2	Fuera de lo común	Hors des sentiers battus
+b1-tourist-trap	Tourist trap	travel-2	Trampa para turistas	Piège à touristes
+b1-layover	Layover	travel-2	Escala	Escale
+b1-sunburn	Sunburn	travel-2	Quemadura de sol	Coup de soleil
+b1-to-work-out	To work out	health-fitness	Hacer ejercicio (entrenar)	Faire de la musculation
+b1-diet	Diet	health-fitness	Dieta	Régime
+b1-to-lose-weight	To lose weight	health-fitness	Bajar de peso	Perdre du poids
+b1-to-gain-weight	To gain weight	health-fitness	Subir de peso	Prendre du poids
+b1-muscle	Muscle	health-fitness	Músculo	Muscle
+b1-to-stretch	To stretch	health-fitness	Estirar	S’étirer
+b1-to-warm-up	To warm up	health-fitness	Calentar	S’échauffer
+b1-calories	Calories	health-fitness	Calorías	Calories
+b1-protein	Protein	health-fitness	Proteína	Protéine
+b1-to-breathe	To breathe	health-fitness	Respirar	Respirer
+b1-heartbeat	Heartbeat	health-fitness	Latido	Battement de cœur
+b1-to-sweat	To sweat	health-fitness	Sudar	Transpirer
+b1-to-recover	To recover	health-fitness	Recuperarse	Se remettre
+b1-sprain	Sprain	health-fitness	Esguince	Entorse
+b1-to-faint	To faint	health-fitness	Desmayarse	S’évanouir
+b1-dizzy	Dizzy	health-fitness	Mareado	Étourdi
+b1-nausea	Nausea	health-fitness	Náuseas	Nausée
+b1-to-sneeze	To sneeze	health-fitness	Estornudar	Éternuer
+b1-symptom	Symptom	health-fitness	Síntoma	Symptôme
+b1-vaccine	Vaccine	health-fitness	Vacuna	Vaccin
+b1-checkup	Checkup	health-fitness	Revisión médica	Bilan de santé
+b1-therapy	Therapy	health-fitness	Terapia	Thérapie
+b1-to-quit-smoking	To quit smoking	health-fitness	Dejar de fumar	Arrêter de fumer
+b1-wellbeing	Wellbeing	health-fitness	Bienestar	Bien-être
+b1-mental-health	Mental health	health-fitness	Salud mental	Santé mentale
+b1-to-meditate	To meditate	health-fitness	Meditar	Méditer
+b1-insomnia	Insomnia	health-fitness	Insomnio	Insomnie
+b1-energy	Energy	health-fitness	Energía	Énergie
+b1-painkiller	Painkiller	health-fitness	Analgésico	Antidouleur
+b1-sore	Sore	health-fitness	Adolorido	Endolori
+b1-cuisine	Cuisine	food-culture	Cocina (gastronomía)	Cuisine (gastronomie)
+b1-flavor	Flavor	food-culture	Sabor	Saveur
+b1-homemade	Homemade	food-culture	Casero	Fait maison
+b1-mild	Mild	food-culture	Suave (no picante)	Doux (pas épicé)
+b1-to-season	To season	food-culture	Sazonar	Assaisonner
+b1-portion	Portion	food-culture	Porción	Portion
+b1-leftovers	Leftovers	food-culture	Sobras	Restes
+b1-street-food	Street food	food-culture	Comida callejera	Cuisine de rue
+b1-specialty	Specialty	food-culture	Especialidad	Spécialité
+b1-to-treat-pay-for-someone	To treat (pay for someone)	food-culture	Invitar (pagar)	Offrir (payer)
+b1-to-split-the-bill	To split the bill	food-culture	Pagar a medias	Partager l’addition
+b1-tasty	Tasty	food-culture	Sabroso	Savoureux
+b1-disgusting	Disgusting	food-culture	Asqueroso	Dégoûtant
+b1-to-chew	To chew	food-culture	Masticar	Mâcher
+b1-to-swallow	To swallow	food-culture	Tragar	Avaler
+b1-appetite	Appetite	food-culture	Apetito	Appétit
+b1-craving	Craving	food-culture	Antojo	Envie
+b1-im-full	I’m full	food-culture	Estoy lleno	Je n’ai plus faim
+b1-to-skip-a-meal	To skip a meal	food-culture	Saltarse una comida	Sauter un repas
+b1-brunch	Brunch	food-culture	Brunch	Brunch
+b1-to-grab-a-bite	To grab a bite	food-culture	Comer algo rápido	Manger un morceau
+b1-a-toast	A toast	food-culture	Un brindis	Un toast
+b1-vegan	Vegan	food-culture	Vegano	Végan
+b1-gluten-free	Gluten-free	food-culture	Sin gluten	Sans gluten
+b1-organic	Organic	food-culture	Orgánico	Bio
+b1-recipe-book	Recipe book	food-culture	Libro de recetas	Livre de recettes
+b1-chopsticks	Chopsticks	food-culture	Palillos	Baguettes
+b1-napkin	Napkin	food-culture	Servilleta	Serviette (de table)
+b1-reservation-for-dinner	Reservation for dinner	food-culture	Reserva para cenar	Réservation pour dîner
+b1-buffet	Buffet	food-culture	Bufé	Buffet
+b1-mortgage	Mortgage	housing	Hipoteca	Prêt immobilier
+b1-to-own	To own	housing	Poseer	Posséder
+b1-lease	Lease	housing	Contrato de alquiler	Bail
+b1-security-deposit	Security deposit	housing	Depósito	Caution
+b1-utilities	Utilities	housing	Servicios	Charges
+b1-cozy	Cozy	housing	Acogedor	Douillet
+b1-spacious	Spacious	housing	Espacioso	Spacieux
+b1-to-decorate	To decorate	housing	Decorar	Décorer
+b1-to-renovate	To renovate	housing	Renovar	Rénover
+b1-to-move-in	To move in	housing	Mudarse a	Emménager
+b1-to-move-out	To move out	housing	Mudarse de	Déménager (partir)
+b1-suburb	Suburb	housing	Suburbio	Banlieue
+b1-countryside	Countryside	housing	Campo (rural)	Campagne
+b1-balcony	Balcony	housing	Balcón	Balcon
+b1-basement	Basement	housing	Sótano	Sous-sol
+b1-attic	Attic	housing	Ático	Grenier
+b1-garage	Garage	housing	Garaje	Garage
+b1-yard	Yard	housing	Patio	Cour
+b1-fence	Fence	housing	Valla	Clôture
+b1-to-lock	To lock	housing	Cerrar con llave	Fermer à clé
+b1-doorbell	Doorbell	housing	Timbre	Sonnette
+b1-mailbox	Mailbox	housing	Buzón	Boîte aux lettres
+b1-hallway	Hallway	housing	Pasillo	Couloir
+b1-ceiling	Ceiling	housing	Techo	Plafond
+b1-to-hang-a-picture	To hang (a picture)	housing	Colgar	Accrocher
+b1-neighborhood-watch	Neighborhood watch	housing	Vigilancia vecinal	Voisins vigilants
+b1-real-estate-agent	Real estate agent	housing	Agente inmobiliario	Agent immobilier
+b1-property	Property	housing	Propiedad	Propriété
+b1-tenant	Tenant	housing	Inquilino	Locataire
+b1-furnished	Furnished	housing	Amueblado	Meublé
+b1-bargain	Bargain	consumer	Ganga	Bonne affaire
+b1-to-haggle	To haggle	consumer	Regatear	Marchander
+b1-warranty	Warranty	consumer	Garantía	Garantie
+b1-to-exchange-goods	To exchange (goods)	consumer	Cambiar (un producto)	Échanger
+b1-customer-service	Customer service	consumer	Atención al cliente	Service client
+b1-to-file-a-complaint	To file a complaint	consumer	Presentar una queja	Déposer une réclamation
+b1-counterfeit	Counterfeit	consumer	Falsificado	Contrefaçon
+b1-second-hand	Second-hand	consumer	De segunda mano	D’occasion
+b1-to-browse	To browse	consumer	Curiosear	Flâner (dans les rayons)
+b1-to-subscribe	To subscribe	consumer	Suscribirse	S’abonner
+b1-subscription	Subscription	consumer	Suscripción	Abonnement
+b1-membership	Membership	consumer	Membresía	Adhésion
+b1-checkout	Checkout	consumer	Caja	Caisse
+b1-out-of-stock	Out of stock	consumer	Agotado	En rupture de stock
+b1-in-stock	In stock	consumer	En existencia	En stock
+b1-to-track-a-package	To track (a package)	consumer	Rastrear	Suivre (un colis)
+b1-fashion	Fashion	consumer	Moda	Mode
+b1-style	Style	consumer	Estilo	Style
+b1-trend	Trend	consumer	Tendencia	Tendance
+b1-to-match-clothes	To match (clothes)	consumer	Combinar	Aller avec
+b1-outfit	Outfit	consumer	Conjunto	Tenue
+b1-to-suit-look-good-on	To suit (look good on)	consumer	Quedar bien	Aller bien à
+b1-accessory	Accessory	consumer	Accesorio	Accessoire
+b1-jewelry	Jewelry	consumer	Joyas	Bijoux
+b1-perfume	Perfume	consumer	Perfume	Parfum
+b1-coupon	Coupon	consumer	Cupón	Bon de réduction
+b1-free-shipping	Free shipping	consumer	Envío gratis	Livraison gratuite
+b1-return-policy	Return policy	consumer	Política de devoluciones	Politique de retour
+b1-impulse-buy	Impulse buy	consumer	Compra impulsiva	Achat impulsif
+b1-value-for-money	Value for money	consumer	Relación calidad-precio	Rapport qualité-prix
+b1-to-avoid	To avoid	verbs-5	Evitar	Éviter
+b1-to-achieve	To achieve	verbs-5	Lograr	Réaliser (atteindre)
+b1-to-appreciate	To appreciate	verbs-5	Apreciar	Apprécier
+b1-to-attend	To attend	verbs-5	Asistir	Assister à
+b1-to-belong	To belong	verbs-5	Pertenecer	Appartenir
+b1-to-bother	To bother	verbs-5	Molestar	Déranger
+b1-to-care-about	To care about	verbs-5	Importar (a alguien)	Tenir à
+b1-to-deal-with	To deal with	verbs-5	Lidiar con	Gérer
+b1-to-depend-on	To depend on	verbs-5	Depender de	Dépendre de
+b1-to-deserve	To deserve	verbs-5	Merecer	Mériter
+b1-to-develop	To develop	verbs-5	Desarrollar	Développer
+b1-to-disappear	To disappear	verbs-5	Desaparecer	Disparaître
+b1-to-encourage	To encourage	verbs-5	Animar (alentar)	Encourager
+b1-to-expect	To expect	verbs-5	Esperar (anticipar)	S’attendre à
+b1-to-handle	To handle	verbs-5	Manejar	Gérer (s’occuper de)
+b1-to-imagine	To imagine	verbs-5	Imaginar	Imaginer
+b1-to-improve	To improve	verbs-5	Mejorar	Améliorer
+b1-to-increase	To increase	verbs-5	Aumentar	Augmenter
+b1-to-decrease	To decrease	verbs-5	Disminuir	Diminuer
+b1-to-involve	To involve	verbs-5	Implicar	Impliquer
+b1-to-mention	To mention	verbs-5	Mencionar	Mentionner
+b1-to-notice	To notice	verbs-5	Notar	Remarquer
+b1-to-offer	To offer	verbs-5	Ofrecer	Offrir (proposer)
+b1-to-organize	To organize	verbs-5	Organizar	Organiser
+b1-to-participate	To participate	verbs-5	Participar	Participer
+b1-to-pretend	To pretend	verbs-5	Fingir	Faire semblant
+b1-to-protect	To protect	verbs-5	Proteger	Protéger
+b1-to-provide	To provide	verbs-5	Proporcionar	Fournir
+b1-to-recognize	To recognize	verbs-5	Reconocer	Reconnaître
+b1-to-refuse	To refuse	verbs-5	Rechazar	Refuser
+b1-to-reduce	To reduce	verbs-5	Reducir	Réduire
+b1-to-regret	To regret	verbs-5	Arrepentirse	Regretter
+b1-to-remain	To remain	verbs-5	Permanecer	Rester (demeurer)
+b1-to-replace	To replace	verbs-5	Reemplazar	Remplacer
+b1-to-require	To require	verbs-5	Requerir	Exiger
+b1-to-solve	To solve	verbs-6	Resolver	Résoudre
+b1-to-struggle	To struggle	verbs-6	Luchar (esforzarse)	Avoir du mal
+b1-to-succeed	To succeed	verbs-6	Tener éxito	Réussir
+b1-to-suffer	To suffer	verbs-6	Sufrir	Souffrir
+b1-to-survive	To survive	verbs-6	Sobrevivir	Survivre
+b1-to-warn	To warn	verbs-6	Advertir	Prévenir
+b1-to-manage-to-cope	To manage (to cope)	verbs-6	Arreglárselas	Se débrouiller
+b1-to-perform	To perform	verbs-6	Actuar (realizar)	Jouer (se produire)
+b1-to-fail-in-general	To fail (in general)	verbs-6	Fracasar	Échouer (en général)
+b1-to-attempt	To attempt	verbs-6	Intentar (esforzarse)	Tenter
+b1-to-complain-about	To complain about	verbs-6	Quejarse de	Se plaindre de
+b1-to-rely-on-someone	To rely on someone	verbs-6	Depender de alguien	S’appuyer sur quelqu’un
+b1-to-take-part	To take part	verbs-6	Tomar parte	Prendre part
+b1-to-turn-out	To turn out	verbs-6	Resultar	S’avérer
+b1-to-end-up	To end up	verbs-6	Terminar (acabar)	Finir par
+b1-to-give-up	To give up	verbs-6	Rendirse	Abandonner
+b1-to-look-forward-to	To look forward to	verbs-6	Tener ganas de	Avoir hâte de
+b1-to-put-off	To put off	verbs-6	Aplazar	Remettre à plus tard
+b1-to-run-out-of	To run out of	verbs-6	Quedarse sin	Ne plus avoir de
+b1-to-get-rid-of	To get rid of	verbs-6	Deshacerse de	Se débarrasser de
+b1-to-come-up-with	To come up with	verbs-6	Idear	Trouver (une idée)
+b1-to-figure-out	To figure out	verbs-6	Resolver (entender)	Comprendre (trouver)
+b1-to-catch-up	To catch up	verbs-6	Ponerse al día	Rattraper
+b1-to-show-up	To show up	verbs-6	Aparecer	Se pointer
+b1-to-break-down-machine	To break down (machine)	verbs-6	Averiarse	Tomber en panne
+b1-to-fill-in-a-form	To fill in (a form)	verbs-6	Rellenar	Remplir
+b1-to-pick-up-collect	To pick up (collect)	verbs-6	Recoger	Récupérer
+b1-to-drop-off	To drop off	verbs-6	Dejar (a alguien)	Déposer
+b1-to-hang-up-phone	To hang up (phone)	verbs-6	Colgar	Raccrocher
+b1-to-look-after	To look after	verbs-6	Cuidar (vigilar)	Garder (s’occuper)
+b1-reliable	Reliable	adjectives-3	Confiable	Fiable
+b1-responsible	Responsible	adjectives-3	Responsable	Responsable
+b1-ambitious	Ambitious	adjectives-3	Ambicioso	Ambitieux
+b1-creative	Creative	adjectives-3	Creativo	Créatif
+b1-flexible	Flexible	adjectives-3	Flexible	Flexible
+b1-independent	Independent	adjectives-3	Independiente	Indépendant
+b1-mature	Mature	adjectives-3	Maduro (persona)	Mûr (personne)
+b1-sensitive	Sensitive	adjectives-3	Sensible	Sensible
+b1-sensible	Sensible	adjectives-3	Sensato	Raisonnable
+b1-selfish	Selfish	adjectives-3	Egoísta	Égoïste
+b1-humble	Humble	adjectives-3	Humilde	Humble
+b1-arrogant	Arrogant	adjectives-3	Arrogante	Arrogant
+b1-easygoing	Easygoing	adjectives-3	Relajado (persona)	Décontracté
+b1-outgoing	Outgoing	adjectives-3	Extrovertido	Extraverti
+b1-moody	Moody	adjectives-3	Temperamental	Lunatique
+b1-picky	Picky	adjectives-3	Quisquilloso	Difficile (exigeant)
+b1-clumsy	Clumsy	adjectives-3	Torpe	Maladroit
+b1-brave	Brave	adjectives-3	Valiente	Courageux
+b1-cowardly	Cowardly	adjectives-3	Cobarde	Lâche
+b1-wise	Wise	adjectives-3	Sabio	Sage
+b1-naive	Naive	adjectives-3	Ingenuo	Naïf
+b1-thoughtful	Thoughtful	adjectives-3	Considerado	Attentionné
+b1-careless	Careless	adjectives-3	Descuidado	Négligent
+b1-careful	Careful	adjectives-3	Cuidadoso	Prudent
+b1-punctual	Punctual	adjectives-3	Puntual	Ponctuel
+b1-greedy	Greedy	adjectives-3	Codicioso	Avide
+b1-loyal	Loyal	adjectives-3	Leal	Loyal
+b1-charming	Charming	adjectives-3	Encantador	Charmant
+b1-weird	Weird	adjectives-3	Raro	Bizarre
+b1-down-to-earth	Down-to-earth	adjectives-3	Realista (con los pies en la tierra)	Terre à terre
+b1-available	Available	adjectives-4	Disponible	Disponible
+b1-convenient	Convenient	adjectives-4	Conveniente	Pratique
+b1-complicated	Complicated	adjectives-4	Complicado	Compliqué
+b1-obvious	Obvious	adjectives-4	Obvio	Évident
+b1-essential	Essential	adjectives-4	Esencial	Essentiel
+b1-necessary	Necessary	adjectives-4	Necesario	Nécessaire
+b1-useful	Useful	adjectives-4	Útil	Utile
+b1-useless	Useless	adjectives-4	Inútil	Inutile
+b1-worth-it	Worth it	adjectives-4	Vale la pena	Ça vaut le coup
+b1-affordable	Affordable	adjectives-4	Asequible	Abordable
+b1-valuable	Valuable	adjectives-4	Valioso	Précieux
+b1-reasonable	Reasonable	adjectives-4	Razonable	Raisonnable (prix)
+b1-ridiculous	Ridiculous	adjectives-4	Ridículo	Ridicule
+b1-impressive	Impressive	adjectives-4	Impresionante	Impressionnant
+b1-disappointing	Disappointing	adjectives-4	Decepcionante	Décevant
+b1-exciting	Exciting	adjectives-4	Emocionante	Passionnant
+b1-relaxing	Relaxing	adjectives-4	Relajante	Relaxant
+b1-tiring	Tiring	adjectives-4	Agotador	Fatigant
+b1-annoying	Annoying	adjectives-4	Molesto (irritante)	Agaçant
+b1-embarrassing	Embarrassing	adjectives-4	Vergonzoso	Embarrassant
+b1-confusing	Confusing	adjectives-4	Confuso (cosa)	Déroutant
+b1-satisfying	Satisfying	adjectives-4	Satisfactorio	Satisfaisant
+b1-awful	Awful	adjectives-4	Horrible	Affreux
+b1-terrific	Terrific	adjectives-4	Estupendo	Formidable
+b1-decent	Decent	adjectives-4	Decente	Correct (convenable)
+b1-average	Average	adjectives-4	Promedio	Moyen
+b1-rare	Rare	adjectives-4	Raro (poco común)	Rare
+b1-common	Common	adjectives-4	Común	Courant
+b1-typical	Typical	adjectives-4	Típico	Typique
+b1-unusual	Unusual	adjectives-4	Inusual	Inhabituel
+b1-first-of-all	First of all	linking-words	Antes que nada	Tout d’abord
+b1-then	Then	linking-words	Luego	Ensuite
+b1-after-that	After that	linking-words	Después de eso	Après ça
+b1-in-addition	In addition	linking-words	Además	De plus
+b1-besides	Besides	linking-words	Aparte de eso	D’ailleurs
+b1-for-instance	For instance	linking-words	Por ejemplo (verbigracia)	Par exemple (notamment)
+b1-in-other-words	In other words	linking-words	En otras palabras	En d’autres termes
+b1-on-the-contrary	On the contrary	linking-words	Al contrario	Au contraire
+b1-nevertheless	Nevertheless	linking-words	No obstante	Néanmoins
+b1-meanwhile	Meanwhile	linking-words	Mientras tanto	Pendant ce temps
+b1-as-a-result	As a result	linking-words	Como resultado	Par conséquent
+b1-in-conclusion	In conclusion	linking-words	En conclusión	En conclusion
+b1-in-short	In short	linking-words	En resumen	En bref
+b1-at-first	At first	linking-words	Al principio (primero)	Au départ
+b1-eventually	Eventually	linking-words	Con el tiempo	Finalement
+b1-otherwise	Otherwise	linking-words	De lo contrario	Sinon
+b1-in-case	In case	linking-words	Por si acaso	Au cas où
+b1-as-soon-as	As soon as	linking-words	Tan pronto como	Dès que
+b1-even-though	Even though	linking-words	Aun cuando	Même si
+b1-as-if	As if	linking-words	Como si	Comme si
+b1-so-that	So that	linking-words	Para que	Pour que
+b1-in-order-to	In order to	linking-words	Con el fin de	Afin de
+b1-apart-from	Apart from	linking-words	Aparte de	À part
+b1-instead-of	Instead of	linking-words	En lugar de	Au lieu de
+b1-despite	Despite	linking-words	Pese a	En dépit de
+b1-thanks-to	Thanks to	linking-words	Gracias a	Grâce à
+b1-above-all	Above all	linking-words	Sobre todo	Surtout
+b1-basically	Basically	linking-words	Básicamente	En gros
+b1-luckily	Luckily	linking-words	Por suerte	Heureusement
+b1-unfortunately	Unfortunately	linking-words	Desafortunadamente	Malheureusement
+b1-government	Government	society-news	Gobierno	Gouvernement
+b1-election	Election	society-news	Elección	Élection
+b1-to-vote	To vote	society-news	Votar	Voter
+b1-law	Law	society-news	Ley	Loi
+b1-crime	Crime	society-news	Delito	Crime
+b1-justice	Justice	society-news	Justicia	Justice
+b1-rights	Rights	society-news	Derechos	Droits
+b1-freedom	Freedom	society-news	Libertad	Liberté
+b1-economy	Economy	society-news	Economía	Économie
+b1-unemployment	Unemployment	society-news	Desempleo	Chômage
+b1-poverty	Poverty	society-news	Pobreza	Pauvreté
+b1-wealth	Wealth	society-news	Riqueza	Richesse
+b1-immigration	Immigration	society-news	Inmigración	Immigration
+b1-protest	Protest	society-news	Protesta	Manifestation
+b1-strike	Strike	society-news	Huelga	Grève
+b1-war	War	society-news	Guerra	Guerre
+b1-peace	Peace	society-news	Paz	Paix
+b1-citizen	Citizen	society-news	Ciudadano	Citoyen
+b1-community	Community	society-news	Comunidad	Communauté
+b1-charity	Charity	society-news	Caridad	Association caritative
+b1-volunteer	Volunteer	society-news	Voluntario	Bénévole
+b1-to-donate	To donate	society-news	Donar	Faire un don
+b1-environment	Environment	society-news	Medio ambiente	Environnement
+b1-pollution	Pollution	society-news	Contaminación	Pollution
+b1-climate-change	Climate change	society-news	Cambio climático	Changement climatique
+b1-to-recycle	To recycle	society-news	Reciclar	Recycler
+b1-waste-garbage	Waste (garbage)	society-news	Residuos	Déchets
+b1-renewable-energy	Renewable energy	society-news	Energía renovable	Énergie renouvelable
+b1-population	Population	society-news	Población	Population
+b1-politics	Politics	society-news	Política	Politique
+b1-series	Series	media-entertainment	Serie	Série
+b1-episode	Episode	media-entertainment	Episodio	Épisode
+b1-season-tv	Season (TV)	media-entertainment	Temporada	Saison
+b1-plot	Plot	media-entertainment	Trama	Intrigue
+b1-character-story	Character (story)	media-entertainment	Personaje	Personnage
+b1-ending	Ending	media-entertainment	Final	Fin
+b1-spoiler	Spoiler	media-entertainment	Spoiler	Spoiler
+b1-soundtrack	Soundtrack	media-entertainment	Banda sonora	Bande originale
+b1-trailer	Trailer	media-entertainment	Tráiler	Bande-annonce
+b1-to-binge-watch	To binge-watch	media-entertainment	Ver de un tirón	Regarder d’une traite
+b1-documentary	Documentary	media-entertainment	Documental	Documentaire
+b1-comedy	Comedy	media-entertainment	Comedia	Comédie
+b1-drama	Drama	media-entertainment	Drama	Drame
+b1-thriller	Thriller	media-entertainment	Thriller	Thriller
+b1-horror	Horror	media-entertainment	Terror	Horreur
+b1-animation	Animation	media-entertainment	Animación	Animation
+b1-novel	Novel	media-entertainment	Novela	Roman
+b1-poem	Poem	media-entertainment	Poema	Poème
+b1-author	Author	media-entertainment	Autor	Auteur
+b1-chapter	Chapter	media-entertainment	Capítulo	Chapitre
+b1-headline	Headline	media-entertainment	Titular	Gros titre
+b1-article	Article	media-entertainment	Artículo	Article
+b1-magazine	Magazine	media-entertainment	Revista	Magazine
+b1-review	Review	media-entertainment	Reseña	Critique
+b1-rating	Rating	media-entertainment	Calificación	Note (évaluation)
+b1-celebrity	Celebrity	media-entertainment	Famoso (celebridad)	Célébrité
+b1-fame	Fame	media-entertainment	Fama	Célébrité (renommée)
+b1-audience	Audience	media-entertainment	Público	Public
+b1-live-broadcast	Live (broadcast)	media-entertainment	En vivo	En direct
+b1-streaming	Streaming	media-entertainment	Streaming	Streaming
+b1-material	Material	describing-things	Material	Matériau
+b1-wooden	Wooden	describing-things	De madera	En bois
+b1-plastic	Plastic	describing-things	Plástico	Plastique
+b1-metal	Metal	describing-things	Metal	Métal
+b1-glass-material	Glass (material)	describing-things	Vidrio	Verre (matière)
+b1-leather	Leather	describing-things	Cuero	Cuir
+b1-cotton	Cotton	describing-things	Algodón	Coton
+b1-wool	Wool	describing-things	Lana	Laine
+b1-silk	Silk	describing-things	Seda	Soie
+b1-smooth	Smooth	describing-things	Liso	Lisse
+b1-rough	Rough	describing-things	Rugoso	Rugueux
+b1-sharp	Sharp	describing-things	Afilado	Aiguisé
+b1-blunt	Blunt	describing-things	Desafilado	Émoussé
+b1-flat	Flat	describing-things	Plano	Plat
+b1-thick	Thick	describing-things	Grueso	Épais
+b1-slim	Slim	describing-things	Fino (delgado)	Fin
+b1-transparent	Transparent	describing-things	Transparente	Transparent
+b1-shiny	Shiny	describing-things	Brillante	Brillant
+b1-dull	Dull	describing-things	Opaco	Terne
+b1-fragile	Fragile	describing-things	Frágil	Fragile
+b1-sturdy	Sturdy	describing-things	Resistente	Solide
+b1-tiny	Tiny	describing-things	Diminuto	Minuscule
+b1-huge	Huge	describing-things	Enorme	Énorme
+b1-medium	Medium	describing-things	Mediano	Moyen (taille)
+b1-pattern	Pattern	describing-things	Patrón (diseño)	Motif
+b1-striped	Striped	describing-things	A rayas	Rayé
+b1-plain-no-pattern	Plain (no pattern)	describing-things	Liso (sin estampado)	Uni
+b1-fancy	Fancy	describing-things	Elegante (lujoso)	Chic
+b1-elegant	Elegant	describing-things	Elegante	Élégant
+b1-handmade	Handmade	describing-things	Hecho a mano	Fait à la main
+b1-lifetime	Lifetime	life-stages	Vida (duración)	Vie (durée)
+b1-decade	Decade	life-stages	Década	Décennie
+b1-century	Century	life-stages	Siglo	Siècle
+b1-era	Era	life-stages	Era	Époque
+b1-youth	Youth	life-stages	Juventud	Jeunesse
+b1-middle-age	Middle age	life-stages	Mediana edad	Âge mûr
+b1-old-age	Old age	life-stages	Vejez	Vieillesse
+b1-retirement	Retirement	life-stages	Jubilación	Retraite
+b1-milestone	Milestone	life-stages	Hito	Étape importante
+b1-to-turn-an-age	To turn (an age)	life-stages	Cumplir (años)	Avoir (un âge)
+b1-to-age	To age	life-stages	Envejecer	Vieillir
+b1-life-expectancy	Life expectancy	life-stages	Esperanza de vida	Espérance de vie
+b1-memory-recollection	Memory (recollection)	life-stages	Recuerdo	Souvenir (mémoire)
+b1-to-look-back	To look back	life-stages	Mirar atrás	Repenser au passé
+b1-the-past	The past	life-stages	El pasado	Le passé
+b1-the-present	The present	life-stages	El presente	Le présent
+b1-the-future	The future	life-stages	El futuro	L’avenir
+b1-nowadays	Nowadays	life-stages	Hoy en día	De nos jours
+b1-in-the-long-run	In the long run	life-stages	A largo plazo	À long terme
+b1-temporary	Temporary	life-stages	Temporal	Temporaire
+b1-permanent	Permanent	life-stages	Permanente	Permanent
+b1-forever	Forever	life-stages	Para siempre	Pour toujours
+b1-occasionally	Occasionally	life-stages	Ocasionalmente	De temps en temps
+b1-rarely	Rarely	life-stages	Raramente	Rarement
+b1-frequently	Frequently	life-stages	Frecuentemente	Fréquemment
+b1-daily	Daily	life-stages	Diario	Quotidien
+b1-weekly	Weekly	life-stages	Semanal	Hebdomadaire
+b1-monthly	Monthly	life-stages	Mensual	Mensuel
+b1-annual	Annual	life-stages	Anual	Annuel
+b1-generation-gap	Generation gap	life-stages	Brecha generacional	Fossé des générations
+b1-you-know-what-i-mean	You know what I mean?	phrases-b1	¿Me entiendes?	Tu vois ce que je veux dire ?
+b1-i-see-what-you-mean	I see what you mean	phrases-b1	Entiendo lo que dices	Je vois ce que tu veux dire
+b1-that-reminds-me	That reminds me	phrases-b1	Eso me recuerda	Ça me fait penser
+b1-speaking-of-which	Speaking of which	phrases-b1	Hablando de eso	En parlant de ça
+b1-long-story-short	Long story short	phrases-b1	En resumen (para no alargar)	Pour faire court
+b1-im-afraid-so	I’m afraid so	phrases-b1	Me temo que sí	J’ai bien peur que oui
+b1-i-doubt-it	I doubt it	phrases-b1	Lo dudo	J’en doute
+b1-its-worth-a-try	It’s worth a try	phrases-b1	Vale la pena intentarlo	Ça vaut le coup d’essayer
+b1-take-it-easy	Take it easy	phrases-b1	Tómalo con calma	Relax
+b1-dont-get-me-wrong	Don’t get me wrong	phrases-b1	No me malinterpretes	Ne te méprends pas
+b1-i-couldnt-agree-more	I couldn’t agree more	phrases-b1	Estoy totalmente de acuerdo	Je suis entièrement d’accord
+b1-whats-up	What’s up?	phrases-b1	¿Qué tal?	Quoi de neuf ?
+b1-not-bad	Not bad	phrases-b1	No está mal	Pas mal
+b1-so-far-so-good	So far so good	phrases-b1	Hasta ahora bien	Jusqu’ici tout va bien
+b1-its-been-a-while	It’s been a while	phrases-b1	Hace tiempo	Ça fait un bail
+b1-guess-what	Guess what?	phrases-b1	¿Adivina qué?	Devine quoi ?
+b1-tell-me-about-it	Tell me about it!	phrases-b1	¡Ni me lo digas!	M’en parle pas !
+b1-ill-let-you-know	I’ll let you know	phrases-b1	Te avisaré	Je te tiens au courant
+b1-count-me-in	Count me in	phrases-b1	Cuenta conmigo	Je suis de la partie
+b1-id-rather-not	I’d rather not	phrases-b1	Preferiría no	Je préfère pas
+b1-fair-enough	Fair enough	phrases-b1	Me parece justo	D’accord, ça se comprend
+b1-no-worries	No worries	phrases-b1	Sin problema	T’inquiète
+b1-sounds-like-a-plan	Sounds like a plan	phrases-b1	Me parece un buen plan	Ça me paraît bien
+b1-lets-play-it-by-ear	Let’s play it by ear	phrases-b1	Vamos viendo	On verra sur le moment
+b1-its-a-deal	It’s a deal	phrases-b1	Trato hecho	Marché conclu
+b1-my-bad	My bad	phrases-b1	Culpa mía	Mea culpa
+b1-how-come	How come?	phrases-b1	¿Cómo así?	Comment ça ?
+b1-never-mind-that	Never mind that	phrases-b1	Olvídalo	Oublie ça
+b1-i-cant-stand-it	I can’t stand it	phrases-b1	No lo soporto	Je ne supporte pas
+b1-it-slipped-my-mind	It slipped my mind	phrases-b1	Se me olvidó	Ça m’est sorti de la tête
+b1-thought	Thought	mind-thinking	Pensamiento	Pensée
+b1-idea	Idea	mind-thinking	Idea	Idée
+b1-to-concentrate	To concentrate	mind-thinking	Concentrarse	Se concentrer
+b1-attention	Attention	mind-thinking	Atención	Attention
+b1-to-focus	To focus	mind-thinking	Enfocarse	Se focaliser
+b1-to-daydream	To daydream	mind-thinking	Soñar despierto	Rêvasser
+b1-imagination	Imagination	mind-thinking	Imaginación	Imagination
+b1-creativity	Creativity	mind-thinking	Creatividad	Créativité
+b1-logic	Logic	mind-thinking	Lógica	Logique
+b1-reason-cause	Reason (cause)	mind-thinking	Razón	Raison
+b1-common-sense	Common sense	mind-thinking	Sentido común	Bon sens
+b1-intuition	Intuition	mind-thinking	Intuición	Intuition
+b1-to-guess	To guess	mind-thinking	Adivinar	Deviner
+b1-to-predict	To predict	mind-thinking	Predecir	Prédire
+b1-to-make-up-ones-mind	To make up one’s mind	mind-thinking	Decidirse	Se décider
+b1-decision	Decision	mind-thinking	Decisión	Décision
+b1-choice	Choice	mind-thinking	Elección (opción)	Choix
+b1-to-hesitate	To hesitate	mind-thinking	Dudar (vacilar)	Hésiter
+b1-to-plan-ahead	To plan ahead	mind-thinking	Planificar con antelación	Prévoir à l’avance
+b1-mindset	Mindset	mind-thinking	Mentalidad	État d’esprit
+b1-perspective	Perspective	mind-thinking	Perspectiva	Perspective
+b1-to-overthink	To overthink	mind-thinking	Pensar demasiado	Trop réfléchir
+b1-curiosity	Curiosity	mind-thinking	Curiosidad	Curiosité
+b1-knowledge	Knowledge	mind-thinking	Conocimiento	Connaissance (savoir)
+b1-wisdom	Wisdom	mind-thinking	Sabiduría	Sagesse
+b1-to-be-aware	To be aware	mind-thinking	Ser consciente	Être conscient
+b1-doubt-noun	Doubt (noun)	mind-thinking	Duda	Doute
+b1-belief	Belief	mind-thinking	Creencia	Croyance
+b1-confusion	Confusion	mind-thinking	Confusión	Confusion
+b1-to-reflect-think-over	To reflect (think over)	mind-thinking	Reflexionar	Réfléchir
+b1-to-nod	To nod	body-language	Asentir	Hocher la tête
+b1-to-shake-ones-head	To shake one’s head	body-language	Negar con la cabeza	Secouer la tête
+b1-to-wave	To wave	body-language	Saludar con la mano	Faire signe de la main
+b1-to-wink	To wink	body-language	Guiñar	Faire un clin d’œil
+b1-to-blink	To blink	body-language	Parpadear	Cligner des yeux
+b1-to-yawn	To yawn	body-language	Bostezar	Bâiller
+b1-to-sigh	To sigh	body-language	Suspirar	Soupirer
+b1-to-cough	To cough	body-language	Toser	Tousser
+b1-to-lean	To lean	body-language	Inclinarse	Se pencher
+b1-to-bend	To bend	body-language	Doblar	Plier
+b1-to-kneel	To kneel	body-language	Arrodillarse	S’agenouiller
+b1-to-crawl	To crawl	body-language	Gatear	Ramper
+b1-to-tiptoe	To tiptoe	body-language	Andar de puntillas	Marcher sur la pointe des pieds
+b1-to-stumble	To stumble	body-language	Tropezar	Trébucher
+b1-to-trip-over	To trip (over)	body-language	Tropezar con	Trébucher sur
+b1-to-slip	To slip	body-language	Resbalar	Glisser
+b1-to-grab	To grab	body-language	Agarrar	Attraper (saisir)
+b1-to-squeeze	To squeeze	body-language	Apretar	Serrer
+b1-to-scratch	To scratch	body-language	Rascar	Gratter
+b1-to-rub	To rub	body-language	Frotar	Frotter
+b1-to-shiver	To shiver	body-language	Temblar	Frissonner
+b1-to-bite	To bite	body-language	Morder	Mordre
+b1-to-lick	To lick	body-language	Lamer	Lécher
+b1-to-stare	To stare	body-language	Mirar fijamente	Fixer
+b1-to-glance	To glance	body-language	Echar un vistazo	Jeter un coup d’œil
+b1-to-frown	To frown	body-language	Fruncir el ceño	Froncer les sourcils
+b1-to-shrug	To shrug	body-language	Encogerse de hombros	Hausser les épaules
+b1-to-point	To point	body-language	Señalar	Pointer du doigt
+b1-to-clap	To clap	body-language	Aplaudir	Applaudir
+b1-to-bow	To bow	body-language	Hacer una reverencia	S’incliner
+b1-traffic-jam	Traffic jam	on-the-road	Atasco	Embouteillage
+b1-rush-hour	Rush hour	on-the-road	Hora punta	Heure de pointe
+b1-speed-limit	Speed limit	on-the-road	Límite de velocidad	Limitation de vitesse
+b1-fine-penalty	Fine (penalty)	on-the-road	Multa	Amende
+b1-drivers-license	Driver’s license	on-the-road	Licencia de conducir	Permis de conduire
+b1-to-park	To park	on-the-road	Aparcar	Se garer
+b1-highway	Highway	on-the-road	Autopista	Autoroute
+b1-lane	Lane	on-the-road	Carril	Voie
+b1-roundabout	Roundabout	on-the-road	Rotonda	Rond-point
+b1-toll	Toll	on-the-road	Peaje	Péage
+b1-to-overtake	To overtake	on-the-road	Adelantar	Dépasser
+b1-seatbelt	Seatbelt	on-the-road	Cinturón de seguridad	Ceinture de sécurité
+b1-engine	Engine	on-the-road	Motor	Moteur
+b1-tire	Tire	on-the-road	Neumático	Pneu
+b1-flat-tire	Flat tire	on-the-road	Pinchazo	Pneu à plat
+b1-to-tow	To tow	on-the-road	Remolcar	Remorquer
+b1-fuel	Fuel	on-the-road	Combustible	Carburant
+b1-electric-car	Electric car	on-the-road	Coche eléctrico	Voiture électrique
+b1-to-give-a-ride	To give a ride	on-the-road	Llevar en coche	Déposer (en voiture)
+b1-to-hitchhike	To hitchhike	on-the-road	Hacer autostop	Faire du stop
+b1-to-miss-the-bus	To miss the bus	on-the-road	Perder el autobús	Rater le bus
+b1-to-catch-the-train	To catch the train	on-the-road	Coger el tren	Attraper le train
+b1-platform	Platform	on-the-road	Andén	Quai
+b1-timetable	Timetable	on-the-road	Horario (transporte)	Horaires
+b1-to-be-delayed	To be delayed	on-the-road	Estar retrasado	Avoir du retard
+b1-to-transfer-change-lines	To transfer (change lines)	on-the-road	Hacer transbordo	Changer (de ligne)
+b1-pedestrian	Pedestrian	on-the-road	Peatón	Piéton
+b1-crosswalk	Crosswalk	on-the-road	Paso de peatones	Passage piéton
+b1-accident	Accident	on-the-road	Accidente	Accident
+b1-detour	Detour	on-the-road	Desvío	Déviation
+b1-income	Income	money-life	Ingresos	Revenu
+b1-expenses	Expenses	money-life	Gastos	Dépenses
+b1-to-invest	To invest	money-life	Invertir	Investir
+b1-investment	Investment	money-life	Inversión	Investissement
+b1-savings	Savings	money-life	Ahorros	Économies
+b1-pension	Pension	money-life	Pensión	Retraite (pension)
+b1-inflation	Inflation	money-life	Inflación	Inflation
+b1-cost-of-living	Cost of living	money-life	Costo de vida	Coût de la vie
+b1-to-make-ends-meet	To make ends meet	money-life	Llegar a fin de mes	Joindre les deux bouts
+b1-allowance	Allowance	money-life	Mesada	Argent de poche
+b1-to-waste-money	To waste money	money-life	Malgastar	Gaspiller de l’argent
+b1-to-be-broke	To be broke	money-life	Estar sin blanca	Être fauché
+b1-wealthy	Wealthy	money-life	Adinerado	Fortuné
+b1-to-pay-back	To pay back	money-life	Devolver (dinero)	Rembourser
+b1-installment	Installment	money-life	Cuota	Mensualité
+b1-to-insure	To insure	money-life	Asegurar	Assurer
+b1-financial	Financial	money-life	Financiero	Financier
+b1-bank-transfer	Bank transfer	money-life	Transferencia bancaria	Virement
+b1-fee	Fee	money-life	Tarifa (comisión)	Frais
+b1-to-overspend	To overspend	money-life	Gastar de más	Trop dépenser
+b1-stingy	Stingy	money-life	Tacaño	Radin
+b1-thrifty	Thrifty	money-life	Ahorrativo	Économe
+b1-cheapskate	Cheapskate	money-life	Rata (tacaño)	Pingre
+b1-profit	Profit	money-life	Ganancia	Bénéfice
+b1-loss-financial	Loss (financial)	money-life	Pérdida	Perte
+b1-receipt-proof	Receipt (proof)	money-life	Comprobante	Justificatif
+b1-tip-advice	Tip (advice)	money-life	Consejo	Conseil
+b1-to-split-costs	To split (costs)	money-life	Dividir (gastos)	Partager (les frais)
+b1-cash-flow	Cash flow	money-life	Flujo de caja	Trésorerie
+b1-deal-agreement	Deal (agreement)	money-life	Acuerdo	Accord
+b1-lecture	Lecture	higher-education	Conferencia (clase)	Cours magistral
+b1-seminar	Seminar	higher-education	Seminario	Séminaire
+b1-essay	Essay	higher-education	Ensayo	Dissertation
+b1-thesis	Thesis	higher-education	Tesis	Thèse
+b1-research	Research	higher-education	Investigación	Recherche
+b1-to-research	To research	higher-education	Investigar	Faire des recherches
+b1-tutor	Tutor	higher-education	Tutor	Tuteur
+b1-campus	Campus	higher-education	Campus	Campus
+b1-dormitory	Dormitory	higher-education	Residencia estudiantil	Résidence universitaire
+b1-major-field-of-study	Major (field of study)	higher-education	Carrera (especialidad)	Filière
+b1-to-major-in	To major in	higher-education	Especializarse en	Se spécialiser en
+b1-to-drop-out	To drop out	higher-education	Abandonar los estudios	Abandonner ses études
+b1-to-enroll	To enroll	higher-education	Matricularse	S’inscrire (université)
+b1-tuition	Tuition	higher-education	Matrícula (costo)	Frais de scolarité
+b1-assignment	Assignment	higher-education	Trabajo (tarea)	Devoir (travail)
+b1-group-work	Group work	higher-education	Trabajo en grupo	Travail de groupe
+b1-to-cheat	To cheat	higher-education	Hacer trampa	Tricher
+b1-plagiarism	Plagiarism	higher-education	Plagio	Plagiat
+b1-extension-deadline	Extension (deadline)	higher-education	Prórroga	Délai supplémentaire
+b1-to-submit	To submit	higher-education	Entregar	Rendre (remettre)
+b1-transcript	Transcript	higher-education	Expediente académico	Relevé de notes
+b1-certificate	Certificate	higher-education	Certificado	Certificat
+b1-workshop	Workshop	higher-education	Taller	Atelier
+b1-internship	Internship	higher-education	Prácticas	Stage
+b1-apprenticeship	Apprenticeship	higher-education	Aprendizaje (oficio)	Apprentissage
+b1-exchange-program	Exchange program	higher-education	Programa de intercambio	Programme d’échange
+b1-to-study-abroad	To study abroad	higher-education	Estudiar en el extranjero	Étudier à l’étranger
+b1-curriculum	Curriculum	higher-education	Plan de estudios	Programme
+b1-professor	Professor	higher-education	Catedrático	Professeur (université)
+b1-grant	Grant	higher-education	Subvención	Subvention
+b1-microwave	Microwave	home-tech-tools	Microondas	Micro-ondes
+b1-dishwasher	Dishwasher	home-tech-tools	Lavavajillas	Lave-vaisselle
+b1-toaster	Toaster	home-tech-tools	Tostadora	Grille-pain
+b1-kettle	Kettle	home-tech-tools	Hervidor	Bouilloire
+b1-blender	Blender	home-tech-tools	Licuadora	Mixeur
+b1-hair-dryer	Hair dryer	home-tech-tools	Secador	Sèche-cheveux
+b1-air-conditioner	Air conditioner	home-tech-tools	Aire acondicionado	Climatisation
+b1-heater	Heater	home-tech-tools	Calefactor	Chauffage
+b1-fan-appliance	Fan (appliance)	home-tech-tools	Ventilador	Ventilateur
+b1-remote-control	Remote control	home-tech-tools	Control remoto	Télécommande
+b1-outlet-socket	Outlet (socket)	home-tech-tools	Enchufe (toma)	Prise
+b1-plug	Plug	home-tech-tools	Enchufe (clavija)	Fiche
+b1-cable	Cable	home-tech-tools	Cable	Câble
+b1-light-bulb	Light bulb	home-tech-tools	Bombilla	Ampoule
+b1-switch	Switch	home-tech-tools	Interruptor	Interrupteur
+b1-thermostat	Thermostat	home-tech-tools	Termostato	Thermostat
+b1-smoke-detector	Smoke detector	home-tech-tools	Detector de humo	Détecteur de fumée
+b1-router	Router	home-tech-tools	Router	Routeur
+b1-appliance	Appliance	home-tech-tools	Electrodoméstico	Appareil électroménager
+b1-to-plug-in	To plug in	home-tech-tools	Enchufar	Brancher
+b1-to-unplug	To unplug	home-tech-tools	Desenchufar	Débrancher
+b1-to-adjust	To adjust	home-tech-tools	Ajustar	Régler
+b1-to-reset	To reset	home-tech-tools	Reiniciar	Réinitialiser
+b1-tool	Tool	home-tech-tools	Herramienta	Outil
+b1-screwdriver	Screwdriver	home-tech-tools	Destornillador	Tournevis
+b1-hammer	Hammer	home-tech-tools	Martillo	Marteau
+b1-nail-metal	Nail (metal)	home-tech-tools	Clavo	Clou
+b1-drill	Drill	home-tech-tools	Taladro	Perceuse
+b1-tape-adhesive	Tape (adhesive)	home-tech-tools	Cinta adhesiva	Ruban adhésif
+b1-ladder	Ladder	home-tech-tools	Escalera de mano	Échelle
+b1-breeze	Breeze	weather-extremes	Brisa	Brise
+b1-drizzle	Drizzle	weather-extremes	Llovizna	Bruine
+b1-downpour	Downpour	weather-extremes	Aguacero	Averse
+b1-hail	Hail	weather-extremes	Granizo	Grêle
+b1-frost	Frost	weather-extremes	Escarcha	Gel
+b1-ice	Ice	weather-extremes	Hielo	Glace
+b1-heatwave	Heatwave	weather-extremes	Ola de calor	Canicule
+b1-sunrise	Sunrise	weather-extremes	Amanecer	Lever du soleil
+b1-sunset	Sunset	weather-extremes	Atardecer	Coucher du soleil
+b1-dawn	Dawn	weather-extremes	Alba	Aube
+b1-dusk	Dusk	weather-extremes	Anochecer	Crépuscule
+b1-shade	Shade	weather-extremes	Sombra (resguardo)	Ombre (à l’abri)
+b1-shadow	Shadow	weather-extremes	Sombra (silueta)	Ombre (silhouette)
+b1-rainbow	Rainbow	weather-extremes	Arcoíris	Arc-en-ciel
+b1-flood	Flood	weather-extremes	Inundación	Inondation
+b1-drought	Drought	weather-extremes	Sequía	Sécheresse
+b1-earthquake	Earthquake	weather-extremes	Terremoto	Tremblement de terre
+b1-hurricane	Hurricane	weather-extremes	Huracán	Ouragan
+b1-tornado	Tornado	weather-extremes	Tornado	Tornade
+b1-blizzard	Blizzard	weather-extremes	Tormenta de nieve	Blizzard
+b1-mild-weather	Mild (weather)	weather-extremes	Templado	Doux (temps)
+b1-chilly	Chilly	weather-extremes	Fresco (frío)	Frais (froid)
+b1-freezing	Freezing	weather-extremes	Helado	Glacial
+b1-muggy	Muggy	weather-extremes	Bochornoso	Lourd (humide)
+b1-clear-sky	Clear sky	weather-extremes	Cielo despejado	Ciel dégagé
+b1-overcast	Overcast	weather-extremes	Cubierto	Couvert
+b1-lightning	Lightning	weather-extremes	Relámpago	Éclair
+b1-avalanche	Avalanche	weather-extremes	Avalancha	Avalanche
+b1-wildfire	Wildfire	weather-extremes	Incendio forestal	Feu de forêt
+b1-volcano	Volcano	weather-extremes	Volcán	Volcan
+b1-to-comfort	To comfort	social-interactions	Consolar	Consoler
+b1-to-reassure	To reassure	social-interactions	Tranquilizar	Rassurer
+b1-to-blame	To blame	social-interactions	Culpar	Blâmer
+b1-to-praise	To praise	social-interactions	Elogiar	Féliciter
+b1-compliment	Compliment	social-interactions	Cumplido	Compliment
+b1-criticism	Criticism	social-interactions	Crítica	Critique (reproche)
+b1-to-criticize	To criticize	social-interactions	Criticar	Critiquer
+b1-to-tease	To tease	social-interactions	Burlarse (cariñosamente)	Taquiner
+b1-to-bully	To bully	social-interactions	Acosar	Harceler
+b1-to-insult	To insult	social-interactions	Insultar	Insulter
+b1-to-offend	To offend	social-interactions	Ofender	Offenser
+b1-to-congratulate	To congratulate	social-interactions	Felicitar	Féliciter (célébrer)
+b1-to-greet	To greet	social-interactions	Saludar	Saluer
+b1-to-welcome	To welcome	social-interactions	Dar la bienvenida	Accueillir
+b1-sympathy	Sympathy	social-interactions	Compasión	Compassion
+b1-empathy	Empathy	social-interactions	Empatía	Empathie
+b1-to-cheer-on	To cheer on	social-interactions	Animar (alentar en público)	Encourager (supporter)
+b1-to-show-off	To show off	social-interactions	Presumir	Se la jouer
+b1-to-brag	To brag	social-interactions	Fanfarronear	Se vanter
+b1-to-gossip	To gossip	social-interactions	Chismear	Faire des commérages
+b1-rumor	Rumor	social-interactions	Rumor	Rumeur
+b1-to-ignore	To ignore	social-interactions	Ignorar	Ignorer
+b1-to-interrupt	To interrupt	social-interactions	Interrumpir	Interrompre
+b1-to-nag	To nag	social-interactions	Regañar (dar la lata)	Harceler (rabâcher)
+b1-to-persuade	To persuade	social-interactions	Persuadir	Persuader
+b1-to-beg	To beg	social-interactions	Suplicar	Supplier
+b1-to-threaten	To threaten	social-interactions	Amenazar	Menacer
+b1-to-reject	To reject	social-interactions	Rechazar (a alguien)	Rejeter
+b1-favor	Favor	social-interactions	Favor	Service (faveur)
+b1-small-talk	Small talk	social-interactions	Charla trivial	Bavardage

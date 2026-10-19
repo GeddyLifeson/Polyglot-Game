@@ -1,0 +1,18 @@
+  WARNING: The script pymorphy.exe is installed in 'C:\Users\imarl\polyglot_game\.venv311cbx\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script weasel.exe is installed in 'C:\Users\imarl\polyglot_game\.venv311cbx\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script spacy.exe is installed in 'C:\Users\imarl\polyglot_game\.venv311cbx\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+russian-text-stresser 0.1.1 requires beautifulsoup4>=4.11.1, which is not installed.
+russian-text-stresser 0.1.1 requires lxml>=4.9.1, which is not installed.
+russian-text-stresser 0.1.1 requires pymorphy2>=0.9.1, which is not installed.
+russian-text-stresser 0.1.1 requires pymorphy2-dicts-ru>=2.4.417127.4579844, which is not installed.
+russian-text-stresser 0.1.1 requires stressed-cyrillic-tools>=0.1.10, which is not installed.
+russian-text-stresser 0.1.1 requires transliterate>=1.10.2, which is not installed.
+russian-text-stresser 0.1.1 requires spacy==3.6.*, but you have spacy 3.8.16 which is incompatible.
+  WARNING: The script pymorphy.exe is installed in 'C:\Users\imarl\polyglot_game\.venv311cbx\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+russian-text-stresser 0.1.1 requires spacy==3.6.*, but you have spacy 3.8.16 which is incompatible.
