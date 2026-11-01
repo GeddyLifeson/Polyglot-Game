@@ -1297,5 +1297,13 @@
  "Café, caffè, coffee, kāfēi — almost every language’s word for coffee traces back to Arabic qahwa.": "Café, caffè, coffee, kāfēi — từ chỉ cà phê của hầu hết mọi ngôn ngữ đều bắt nguồn từ qahwa của tiếng Ả Rập.",
  "Tea words split into two families: \"cha\" (Portuguese chá, Japanese ocha) spread overland from Cantonese; \"te\" (French thé, Italian tè) spread by sea from Hokkien.": "Từ chỉ trà chia thành hai họ: “cha” (chá của tiếng Bồ Đào Nha, ocha của tiếng Nhật) lan theo đường bộ từ tiếng Quảng Đông; “te” (thé của tiếng Pháp, tè của tiếng Ý) lan theo đường biển từ tiếng Phúc Kiến.",
  "Told by the Tuathaich around the fire in the north of Diaithìr; their own side of the tale": "Được người Tuathaich kể quanh bếp lửa ở phía bắc Diaithìr; câu chuyện theo cách nhìn của riêng họ",
- "No recording of this line yet": "Câu này chưa có bản thu âm"
+ "No recording of this line yet": "Câu này chưa có bản thu âm",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "Chọn những ngôn ngữ bạn muốn học. Mỗi ngôn ngữ tự leo thang một mình: khu vực tiếp theo của nó mở ra ngay khi bạn hoàn thành chặng tiếp sóng của nó ở khu vực hiện tại, nên không ngôn ngữ nào phải chờ ngôn ngữ khác. Thêm hoặc bỏ ngôn ngữ bất cứ lúc nào; tiến độ của một ngôn ngữ không bao giờ mất.",
+ "Open for {langs}": "Mở cho {langs}",
+ "A language that clears every sector unlocks it": "Ngôn ngữ nào hoàn thành mọi khu vực sẽ mở khóa nó",
+ "{n} still on an earlier sector": "{n} vẫn còn ở khu vực trước",
+ "Clear {tier} in {lang} first — each language climbs on its own": "Hãy hoàn thành {tier} của {lang} trước — mỗi ngôn ngữ tự leo một mình",
+ "{n} speakers": "{n} người nói",
+ "Pick at least one language to chart the voyage.": "Hãy chọn ít nhất một ngôn ngữ để vạch lộ trình.",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ Hãy chọn ít nhất một ngôn ngữ để vạch lộ trình."
 }

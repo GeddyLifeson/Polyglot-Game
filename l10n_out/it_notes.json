@@ -2,7 +2,7 @@
  "coach": {
   "journey": "Benvenuto a bordo della Rosetta. Per prima cosa, traccia la tua rotta: scegli le lingue che vuoi imparare. Una sola basta per iniziare; potrai aggiungerne altre in qualsiasi momento dalla Carta Stellare.",
   "home": "Questa è la Carta Stellare. Ogni settore è un livello di competenza, da A1 a C2, e contiene un relè per ogni lingua che hai scelto. Tocca il settore <b>A1</b> per cominciare.",
-  "hub": "Un relè per ogni lingua. Completare tutti i relè di un settore sblocca quello successivo. Scegli la lingua da cui vuoi iniziare.",
+  "hub": "Un relè per ogni lingua. Completare il relè di una lingua sblocca il settore successivo per quella lingua. Scegli la lingua da cui vuoi iniziare.",
   "topics": "Un relè è composto da moduli: vocabolario, conversazioni, frasi e altro. Completali tutti per decodificare il relè. Comincia dal primo modulo di <b>Vocabolario</b>.",
   "preview": "Il briefing. Hai celle di energia (vite), un timer per ogni trasmissione, e questo è un <b>primo tentativo</b>: superalo e la tua Catena di Segnale cresce, fallisci e la catena si spezza. Avvia quando sei pronto.",
   "draft": "Prima di ogni relè scegli un modulo per la run: un potenziamento temporaneo. Al primo completamento viene saldato alla tua catena e ti accompagna nel relè successivo. Scegline uno.",

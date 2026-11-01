@@ -2,7 +2,7 @@
  "coach": {
   "journey": "Rosetta'ya hoş geldin. Önce yolculuğunu planla: öğrenmek istediğin dilleri seç. Başlangıçta bir tane yeterli; istediğin zaman Yıldız Haritası'ndan başka dil ekleyebilirsin.",
   "home": "Burası Yıldız Haritası. Her sektör bir yeterlilik seviyesi, A1'den C2'ye kadar, ve seçtiğin her dil için bir röle içeriyor. Başlamak için <b>A1</b> sektörüne dokun.",
-  "hub": "Her dil için bir röle var. Bir sektördeki tüm röleleri temizlemek bir sonrakini açar. Başlamak istediğin dili seç.",
+  "hub": "Her dil için bir röle var. Bir dilin rölesini tamamlamak o dil için bir sonraki sektörü açar. Başlamak istediğin dili seç.",
   "topics": "Bir röle modüllerden oluşur: kelime bilgisi, konuşmalar, cümleler ve daha fazlası. Röleyi çözmek için hepsini tamamla. İlk <b>Kelime Bilgisi</b> modülüyle başla.",
   "preview": "Brifing. Enerji hücrelerin (canların) var, her iletim için bir sayaç var, ve bu bir <b>ilk deneme</b>: başarırsan Sinyal Zincirin büyür, başarısız olursan zincir kırılır. Hazır olduğunda başla.",
   "draft": "Her röleden önce o koşu için bir modül seçersin: geçici bir avantaj. İlk seferde başarılı olursan zincirine kaynaklanır ve bir sonraki röleye taşınır. Birini seç.",

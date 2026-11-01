@@ -1297,5 +1297,13 @@
  "Tea words split into two families: \"cha\" (Portuguese chá, Japanese ocha) spread overland from Cantonese; \"te\" (French thé, Italian tè) spread by sea from Hokkien.": "Słowa oznaczające herbatę dzielą się na dwie rodziny: „cha” (portugalskie chá, japońskie ocha) szło lądem z kantońskiego; „te” (francuskie thé, włoskie tè) szło morzem z hokkien.",
  "Show IPA and the original reading under each word": "Pokaż IPA i oryginalny zapis wymowy pod każdym słowem",
  "Show how to pronounce it": "Pokaż, jak to wymówić",
- "No recording of this line yet": "Tego zdania jeszcze nie nagrano"
+ "No recording of this line yet": "Tego zdania jeszcze nie nagrano",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "Wybierz języki, których chcesz się uczyć. Każdy język wspina się po drabinie osobno: jego następny sektor otwiera się, gdy tylko ukończysz jego przekaźnik w bieżącym sektorze, więc żaden język nigdy nie czeka na inny. Dodawaj i usuwaj języki, kiedy chcesz; postępy w języku nigdy nie przepadają.",
+ "Open for {langs}": "Otwarte dla: {langs}",
+ "A language that clears every sector unlocks it": "Odblokuje go język, który ukończy każdy sektor",
+ "{n} still on an earlier sector": "{n} wciąż we wcześniejszym sektorze",
+ "Clear {tier} in {lang} first — each language climbs on its own": "Najpierw ukończ {tier} w języku {lang} – każdy język wspina się osobno",
+ "{n} speakers": "{n} użytkowników",
+ "Pick at least one language to chart the voyage.": "Wybierz co najmniej jeden język, aby wytyczyć podróż.",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ Wybierz co najmniej jeden język, aby wytyczyć podróż."
 }

@@ -2,7 +2,7 @@
  "coach": {
   "journey": "Bienvenue à bord du Rosetta. D'abord, trace ta route : choisis les langues que tu veux apprendre. Une seule suffit pour commencer ; tu pourras en ajouter d'autres à tout moment depuis la Carte Stellaire.",
   "home": "Voici la Carte Stellaire. Chaque secteur est un niveau de maîtrise, de A1 à C2, et contient un relais par langue choisie. Touche le secteur <b>A1</b> pour commencer.",
-  "hub": "Un relais par langue. Terminer tous les relais d'un secteur débloque le suivant. Choisis la langue par laquelle tu veux commencer.",
+  "hub": "Un relais par langue. Terminer le relais d’une langue débloque le secteur suivant pour cette langue. Choisis la langue par laquelle tu veux commencer.",
   "topics": "Un relais est composé de modules : vocabulaire, conversations, phrases et plus encore. Termine-les tous pour décoder le relais. Commence par le premier module de <b>Vocabulaire</b>.",
   "preview": "Le briefing. Tu as des cellules d'énergie (vies), un minuteur par transmission, et ceci est un <b>premier essai</b> : réussis-le et ta Chaîne de Signal grandit, échoue et la chaîne se brise. Engage-toi quand tu es prêt.",
   "draft": "Avant chaque relais, tu sélectionnes un module pour la partie : un bonus temporaire. Dès la première réussite, il se soude à ta chaîne et t'accompagne jusqu'au relais suivant. Choisis-en un.",

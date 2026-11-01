@@ -2,7 +2,7 @@
  "coach": {
   "journey": "Chào mừng bạn lên tàu Rosetta. Trước tiên, hãy vạch ra hành trình của bạn: chọn những ngôn ngữ bạn muốn học. Bắt đầu với một ngôn ngữ cũng được; bạn có thể thêm bất cứ lúc nào từ Bản Đồ Sao.",
   "home": "Đây là Bản Đồ Sao. Mỗi khu vực là một cấp độ thông thạo, từ A1 đến C2, và chứa một chặng tiếp sóng cho mỗi ngôn ngữ bạn đã chọn. Chạm vào khu vực <b>A1</b> để bắt đầu.",
-  "hub": "Mỗi ngôn ngữ có một chặng tiếp sóng. Hoàn thành mọi chặng trong một khu vực sẽ mở khóa khu vực tiếp theo. Hãy chọn ngôn ngữ bạn muốn bắt đầu.",
+  "hub": "Mỗi ngôn ngữ có một chặng tiếp sóng. Hoàn thành chặng tiếp sóng của một ngôn ngữ sẽ mở khóa khu vực tiếp theo cho ngôn ngữ đó. Hãy chọn ngôn ngữ bạn muốn bắt đầu.",
   "topics": "Một chặng tiếp sóng gồm nhiều mô-đun: từ vựng, hội thoại, câu và nhiều hơn nữa. Hoàn thành tất cả để giải mã chặng tiếp sóng. Hãy bắt đầu với mô-đun <b>Từ Vựng</b> đầu tiên.",
   "preview": "Bản tóm tắt nhiệm vụ. Bạn có các pin năng lượng (mạng sống), một bộ đếm giờ cho mỗi tín hiệu truyền, và đây là <b>lần thử đầu tiên</b>: vượt qua thì Chuỗi Tín Hiệu của bạn sẽ nối dài, thất bại thì chuỗi sẽ đứt. Bắt đầu khi bạn đã sẵn sàng.",
   "draft": "Trước mỗi chặng tiếp sóng, bạn chọn một mô-đun cho lượt chơi: một trợ lực tạm thời. Nếu hoàn thành ngay lần đầu, nó sẽ được gắn chặt vào chuỗi của bạn và theo bạn sang chặng tiếp theo. Hãy chọn một.",

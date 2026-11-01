@@ -2,7 +2,7 @@
  "coach": {
   "journey": "Willkommen an Bord der Rosetta. Wähle zuerst deine Reiseroute: die Sprachen, die du lernen willst. Eine reicht zum Start; du kannst jederzeit weitere über die Sternenkarte hinzufügen.",
   "home": "Das ist die Sternenkarte. Jeder Sektor ist eine Niveaustufe, A1 bis C2, und enthält ein Relais pro gewählter Sprache. Tippe auf den <b>A1</b>-Sektor, um zu beginnen.",
-  "hub": "Ein Relais pro Sprache. Wenn du jedes Relais in einem Sektor abschließt, schaltest du den nächsten frei. Wähle die Sprache, mit der du starten willst.",
+  "hub": "Ein Relais pro Sprache. Wenn du das Relais einer Sprache abschließt, schaltest du für diese Sprache den nächsten Sektor frei. Wähle die Sprache, mit der du anfangen willst.",
   "topics": "Ein Relais besteht aus Modulen: Wortschatz, Dialoge, Sätze und mehr. Schließe sie alle ab, um das Relais zu entschlüsseln. Beginne mit dem ersten <b>Wortschatz</b>-Modul.",
   "preview": "Das Briefing. Du hast Energiezellen (Leben), ein Zeitlimit pro Übertragung, und das hier ist ein <b>erster Versuch</b>: Schaffst du ihn, wächst deine Signalkette, scheiterst du, bricht sie ab. Starte, wenn du bereit bist.",
   "draft": "Vor jedem Relais wählst du ein Modul für den Durchlauf: einen temporären Vorteil. Bei einem ersten Erfolg wird er fest an deine Kette geschweißt und begleitet dich ins nächste Relais. Wähle eines.",

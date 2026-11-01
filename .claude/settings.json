@@ -1,0 +1,38 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/session-start.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(python3 build.py)",
+      "Bash(python3 tools/mkqa.py)",
+      "Bash(node --check *)",
+      "Bash(npm run qa)",
+      "Bash(npm run qa:build)",
+      "Bash(npm run qa:clips)",
+      "Bash(node qa/qa_modules.js)",
+      "Bash(node qa/qa_chain.js)",
+      "Bash(node qa/qa_overhaul.js)",
+      "Bash(node qa/qa_voice.js)",
+      "Bash(node qa/qa_c2.js)",
+      "Bash(node qa/qa_ladder.js)",
+      "Bash(node qa/with_server.js qa/qa_clips.js)",
+      "Bash(node qa/with_server.js qa/qa_fixes.js)",
+      "Bash(node qa/with_server.js qa/qa_pron.js)",
+      "Bash(node qa/with_server.js qa/qa_ui_l10n.js)",
+      "Bash(curl -sS https://geddylifeson.github.io/Polyglot-Game/*)",
+      "mcp__github__pull_request_read",
+      "mcp__github__list_pull_requests",
+      "mcp__github__actions_list"
+    ]
+  }
+}

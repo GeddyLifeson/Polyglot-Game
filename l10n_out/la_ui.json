@@ -1297,5 +1297,13 @@
  "Show IPA and the original reading under each word": "IPA et lectionem originalem sub quoque verbo ostende",
  "Show how to pronounce it": "Ostende quomodo pronuntietur",
  "Told by the Tuathaich around the fire in the north of Diaithìr; their own side of the tale": "A Tuathaich circa ignem in parte septentrionali Diaithìr narratur; ipsorum pars fabulae",
- "No recording of this line yet": "Huius sententiae nulla adhuc recitatio est"
+ "No recording of this line yet": "Huius sententiae nulla adhuc recitatio est",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "Elige linguas quas discere vis. Quaeque lingua scalam sua sponte ascendit: proxima eius regio aperitur simul ac stationem eius in regione praesenti confeceris, itaque nulla lingua aliam exspectat. Linguas quandocumque adde vel deme; progressus in lingua numquam perditur.",
+ "Open for {langs}": "Apertum linguis {langs}",
+ "A language that clears every sector unlocks it": "Lingua quae omnem regionem confecerit id reserat",
+ "{n} still on an earlier sector": "{n} adhuc in regione priore",
+ "Clear {tier} in {lang} first — each language climbs on its own": "Prius {tier} in lingua {lang} confice — quaeque lingua sua sponte ascendit",
+ "{n} speakers": "loquentes: {n}",
+ "Pick at least one language to chart the voyage.": "Elige saltem unam linguam ut iter describas.",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ Elige saltem unam linguam ut iter describas."
 }

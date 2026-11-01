@@ -1297,5 +1297,13 @@
  "Tea words split into two families: \"cha\" (Portuguese chá, Japanese ocha) spread overland from Cantonese; \"te\" (French thé, Italian tè) spread by sea from Hokkien.": "Οι λέξεις για το τσάι χωρίζονται σε δύο οικογένειες: το «cha» (πορτογαλικά chá, ιαπωνικά ocha) διαδόθηκε από στεριάς από τα καντονέζικα· το «te» (γαλλικά thé, ιταλικά tè) διαδόθηκε από θαλάσσης από τα χοκιέν.",
  "Show IPA and the original reading under each word": "Εμφάνιση IPA και της αρχικής ανάγνωσης κάτω από κάθε λέξη",
  "Show how to pronounce it": "Δείξε πώς προφέρεται",
- "No recording of this line yet": "Δεν υπάρχει ακόμη ηχογράφηση αυτής της φράσης"
+ "No recording of this line yet": "Δεν υπάρχει ακόμη ηχογράφηση αυτής της φράσης",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "Διάλεξε τις γλώσσες που θέλεις να μάθεις. Κάθε γλώσσα ανεβαίνει τη σκάλα μόνη της: ο επόμενος τομέας της ανοίγει μόλις ολοκληρώσεις τον αναμεταδότη της στον τρέχοντα τομέα, έτσι καμία γλώσσα δεν περιμένει άλλη. Πρόσθεσε ή αφαίρεσε γλώσσες όποτε θέλεις· η πρόοδος σε μια γλώσσα δεν χάνεται ποτέ.",
+ "Open for {langs}": "Ανοιχτό για {langs}",
+ "A language that clears every sector unlocks it": "Τον ξεκλειδώνει μια γλώσσα που ολοκληρώνει κάθε τομέα",
+ "{n} still on an earlier sector": "{n} ακόμη σε προηγούμενο τομέα",
+ "Clear {tier} in {lang} first — each language climbs on its own": "Ολοκλήρωσε πρώτα το {tier} στα {lang} — κάθε γλώσσα ανεβαίνει μόνη της",
+ "{n} speakers": "{n} ομιλητές",
+ "Pick at least one language to chart the voyage.": "Διάλεξε τουλάχιστον μία γλώσσα για να χαράξεις το ταξίδι.",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ Διάλεξε τουλάχιστον μία γλώσσα για να χαράξεις το ταξίδι."
 }

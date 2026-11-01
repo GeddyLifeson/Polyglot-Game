@@ -66,5 +66,15 @@ function log(l, ok, x){ console.log((ok?'PASS':'FAIL')+' — '+l+(x!==undefined?
   const saved = await page.evaluate(() => window.__QA.save.journey);
   log('charted voyage stores one language and no pairs', saved.langs.join() === 'it' && saved.pairs === undefined && saved.set === true, saved);
 
+  // 8. Transfer code: export → decode round trip, checksum guard, panel renders with a code
+  const tr = await page.evaluate(async () => { const Q = window.__QA; Q.save.xp = 4321; Q.save.journey = {set:true, langs:['es','ja']}; Q.save.stats.relaysCleared = 7; Q.persist();
+    const code = await Q.exportSaveCode(); const back = await Q.decodeSaveCode(code);
+    let bad = null; try { await Q.decodeSaveCode(code.slice(0, -6) + 'AAAAAA'); } catch (e) { bad = e.message; }
+    let junk = null; try { await Q.decodeSaveCode('hello there'); } catch (e) { junk = e.message; }
+    Q.renderTransferPanel(); await new Promise(r => setTimeout(r, 200));
+    const out = document.getElementById('transfer-out').value;
+    return { prefix: code.slice(0, 4), len: code.length, raw: JSON.stringify(Q.save).length, xp: back.xp, langs: back.journey.langs.join(), relays: back.stats.relaysCleared, bad, junk, panelHasCode: out === code }; });
+  log('transfer code round-trips the save, is compressed, and rejects a mangled or foreign code', tr.prefix === 'PV1:' && tr.len < tr.raw && tr.xp === 4321 && tr.langs === 'es,ja' && tr.relays === 7 && (tr.bad === 'checksum' || tr.bad === 'format' || tr.bad === 'unsupported' || tr.bad !== null) && tr.junk === 'format' && tr.panelHasCode, tr);
+
   await browser.close(); console.log('DONE');
 })();

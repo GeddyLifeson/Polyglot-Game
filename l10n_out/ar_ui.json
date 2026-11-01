@@ -1297,5 +1297,13 @@
  "Café, caffè, coffee, kāfēi — almost every language’s word for coffee traces back to Arabic qahwa.": "Café وcaffè وcoffee وkāfēi — تكاد كلمة القهوة في كل لغة تعود إلى الكلمة العربية «قهوة» (qahwa).",
  "Tea words split into two families: \"cha\" (Portuguese chá, Japanese ocha) spread overland from Cantonese; \"te\" (French thé, Italian tè) spread by sea from Hokkien.": "تنقسم كلمات الشاي إلى عائلتين: «cha» (البرتغالية chá، واليابانية ocha) انتشرت برًّا من الكانتونية؛ و«te» (الفرنسية thé، والإيطالية tè) انتشرت بحرًا من لغة هوكين.",
  "Told by the Tuathaich around the fire in the north of Diaithìr; their own side of the tale": "يرويها Tuathaich حول النار في شمال Diaithìr؛ روايتهم هم للحكاية",
- "No recording of this line yet": "لا يوجد تسجيل لهذه الجملة بعد"
+ "No recording of this line yet": "لا يوجد تسجيل لهذه الجملة بعد",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "اختر اللغات التي تريد تعلّمها. كل لغة تصعد السلّم وحدها: يُفتح قطاعها التالي بمجرد إكمال محطتها في القطاع الحالي، فلا تنتظر لغةٌ لغةً أخرى أبدًا. أضف لغات أو احذفها في أي وقت؛ التقدّم في أي لغة لا يضيع أبدًا.",
+ "Open for {langs}": "مفتوح لـ {langs}",
+ "A language that clears every sector unlocks it": "تفتحه أي لغة تُكمل كل القطاعات",
+ "{n} still on an earlier sector": "{n} ما زالت في قطاع سابق",
+ "Clear {tier} in {lang} first — each language climbs on its own": "أكمِل {tier} في {lang} أولًا — كل لغة تصعد وحدها",
+ "{n} speakers": "{n} متحدث",
+ "Pick at least one language to chart the voyage.": "اختر لغة واحدة على الأقل لرسم مسار الرحلة.",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ اختر لغة واحدة على الأقل لرسم مسار الرحلة."
 }

@@ -2,7 +2,7 @@
  "coach": {
   "journey": "Welkom aan boord van de Rosetta. Bepaal eerst je reis: kies de talen die je wilt leren. Eén taal is genoeg om te beginnen; je kunt er altijd meer toevoegen via de Sterrenkaart.",
   "home": "Dit is de Sterrenkaart. Elke sector is een taalniveau, van A1 tot C2, met één relais per taal die je hebt gekozen. Tik op de sector <b>A1</b> om te beginnen.",
-  "hub": "Eén relais per taal. Als je alle relais in een sector hebt afgerond, ontgrendel je de volgende. Kies de taal waarmee je wilt beginnen.",
+  "hub": "Eén relais per taal. Als je het relais van een taal afrondt, ontgrendel je voor die taal de volgende sector. Kies de taal waarmee je wilt beginnen.",
   "topics": "Een relais bestaat uit modules: woordenschat, gesprekken, zinnen en meer. Rond ze allemaal af om het relais te decoderen. Begin met de eerste module <b>Woordenschat</b>.",
   "preview": "De briefing. Je hebt energiecellen (levens), een timer per transmissie, en dit is een <b>eerste poging</b>: haal je het, dan groeit je Signaalketen; faal je, dan breekt de keten. Start zodra je klaar bent.",
   "draft": "Voor elk relais kies je één module voor de run: een tijdelijk voordeel. Bij een eerste succesvolle poging wordt die aan je keten gelast en gaat mee naar het volgende relais. Kies er één.",

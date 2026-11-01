@@ -1297,5 +1297,13 @@
  "Tea words split into two families: \"cha\" (Portuguese chá, Japanese ocha) spread overland from Cantonese; \"te\" (French thé, Italian tè) spread by sea from Hokkien.": "De woorden voor thee vallen in twee families uiteen: „cha” (Portugees chá, Japans ocha) verspreidde zich over land vanuit het Kantonees; „te” (Frans thé, Italiaans tè) verspreidde zich over zee vanuit het Hokkien.",
  "Show IPA and the original reading under each word": "IPA en de oorspronkelijke lezing onder elk woord tonen",
  "Show how to pronounce it": "Laten zien hoe je het uitspreekt",
- "No recording of this line yet": "Van deze zin is nog geen opname"
+ "No recording of this line yet": "Van deze zin is nog geen opname",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "Kies de talen die je wilt leren. Elke taal klimt de ladder op eigen kracht: de volgende sector gaat open zodra je het relais van die taal in de huidige sector hebt afgerond, dus geen enkele taal wacht op een andere. Voeg talen toe of haal ze weg wanneer je wilt; voortgang in een taal gaat nooit verloren.",
+ "Open for {langs}": "Open voor {langs}",
+ "A language that clears every sector unlocks it": "Een taal die elke sector afrondt, ontgrendelt hem",
+ "{n} still on an earlier sector": "{n} nog in een eerdere sector",
+ "Clear {tier} in {lang} first — each language climbs on its own": "Rond eerst {tier} in het {lang} af – elke taal klimt op eigen kracht",
+ "{n} speakers": "{n} sprekers",
+ "Pick at least one language to chart the voyage.": "Kies minstens één taal om je reis uit te stippelen.",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ Kies minstens één taal om je reis uit te stippelen."
 }

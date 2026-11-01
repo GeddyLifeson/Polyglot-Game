@@ -1297,5 +1297,13 @@
  "Café, caffè, coffee, kāfēi — almost every language’s word for coffee traces back to Arabic qahwa.": "Café, caffè, coffee, kāfēi — hampir setiap bahasa punya kata untuk kopi yang berasal dari bahasa Arab qahwa.",
  "Tea words split into two families: \"cha\" (Portuguese chá, Japanese ocha) spread overland from Cantonese; \"te\" (French thé, Italian tè) spread by sea from Hokkien.": "Kata untuk teh terbagi menjadi dua keluarga: \"cha\" (Portugis chá, Jepang ocha) menyebar lewat darat dari bahasa Kanton; \"te\" (Prancis thé, Italia tè) menyebar lewat laut dari bahasa Hokkien.",
  "Told by the Tuathaich around the fire in the north of Diaithìr; their own side of the tale": "Dituturkan oleh kaum Tuathaich di sekitar api unggun di utara Diaithìr; kisah ini menurut versi mereka sendiri",
- "No recording of this line yet": "Belum ada rekaman untuk kalimat ini"
+ "No recording of this line yet": "Belum ada rekaman untuk kalimat ini",
+ "Pick the languages you want to learn. Each language climbs the ladder on its own: its next sector opens once you have cleared its relay in the current one, so one language never waits for another. Add or drop languages any time; progress in a language is never lost.": "Pilih bahasa yang ingin kamu pelajari. Setiap bahasa menaiki tangga sendiri-sendiri: sektor berikutnya terbuka begitu kamu menuntaskan relainya di sektor saat ini, jadi satu bahasa tidak pernah menunggu bahasa lain. Tambah atau hapus bahasa kapan saja; kemajuan dalam sebuah bahasa tidak pernah hilang.",
+ "Open for {langs}": "Terbuka untuk {langs}",
+ "A language that clears every sector unlocks it": "Bahasa yang menuntaskan semua sektor akan membukanya",
+ "{n} still on an earlier sector": "{n} masih di sektor sebelumnya",
+ "Clear {tier} in {lang} first — each language climbs on its own": "Selesaikan {tier} dalam bahasa {lang} dulu — setiap bahasa naik sendiri-sendiri",
+ "{n} speakers": "{n} penutur",
+ "Pick at least one language to chart the voyage.": "Pilih setidaknya satu bahasa untuk memetakan pelayaran.",
+ "⚠️ Pick at least one language to chart the voyage.": "⚠️ Pilih setidaknya satu bahasa untuk memetakan pelayaran."
 }

@@ -2,7 +2,7 @@
  "coach": {
   "journey": "Bem-vindo a bordo da Rosetta. Primeiro, trace sua rota: escolha os idiomas que quer aprender. Um já é suficiente para começar; você pode adicionar mais a qualquer momento pelo Mapa Estelar.",
   "home": "Este é o Mapa Estelar. Cada setor é um nível de fluência, de A1 a C2, e contém um relé para cada idioma que você escolheu. Toque no setor <b>A1</b> para começar.",
-  "hub": "Um relé por idioma. Ao zerar todos os relés de um setor, você desbloqueia o próximo. Escolha o idioma pelo qual quer começar.",
+  "hub": "Um relé por idioma. Ao zerar o relé de um idioma, você desbloqueia o próximo setor para esse idioma. Escolha o idioma pelo qual quer começar.",
   "topics": "Um relé é composto de módulos: vocabulário, conversas, frases e mais. Complete todos para decodificar o relé. Comece pelo primeiro módulo de <b>Vocabulário</b>.",
   "preview": "O briefing. Você tem células de energia (vidas), um cronômetro por transmissão, e esta é uma <b>primeira tentativa</b>: complete-a e sua Cadeia de Sinal cresce, falhe e a cadeia se rompe. Avance quando estiver pronto.",
   "draft": "Antes de cada relé você seleciona um módulo para a corrida: um bônus temporário. Ao completar pela primeira vez, ele é fundido à sua cadeia e segue para o próximo relé. Escolha um.",

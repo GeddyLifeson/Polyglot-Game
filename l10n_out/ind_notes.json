@@ -2,7 +2,7 @@
  "coach": {
   "journey": "Selamat datang di kapal Rosetta. Pertama, rencanakan perjalananmu: pilih bahasa yang ingin kamu pelajari. Satu bahasa saja sudah cukup untuk memulai; kamu bisa menambah lebih banyak kapan saja dari Peta Bintang.",
   "home": "Ini adalah Peta Bintang. Setiap sektor adalah tingkat kemahiran, dari A1 sampai C2, dan berisi satu relai untuk setiap bahasa yang kamu pilih. Ketuk sektor <b>A1</b> untuk memulai.",
-  "hub": "Satu relai untuk setiap bahasa. Menuntaskan semua relai di satu sektor akan membuka sektor berikutnya. Pilih bahasa yang ingin kamu mulai.",
+  "hub": "Satu relai untuk setiap bahasa. Menuntaskan relai sebuah bahasa akan membuka sektor berikutnya untuk bahasa itu. Pilih bahasa yang ingin kamu mulai.",
   "topics": "Sebuah relai terdiri dari modul: kosakata, percakapan, kalimat, dan lainnya. Tuntaskan semuanya untuk memecahkan sandi relai. Mulai dengan modul <b>Kosakata</b> pertama.",
   "preview": "Taklimat misi. Kamu punya sel daya (nyawa), pengatur waktu per transmisi, dan ini adalah <b>percobaan pertama</b>: tuntaskan dan Rantai Sinyalmu bertambah, gagal dan rantainya putus. Mulai ketika siap.",
   "draft": "Sebelum setiap relai kamu menyusun satu modul untuk misi ini: sebuah keunggulan sementara. Pada penyelesaian pertama, modul itu akan dipatri ke rantaimu dan terbawa ke relai berikutnya. Pilih satu.",
